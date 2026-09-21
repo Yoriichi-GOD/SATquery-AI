@@ -1,0 +1,14 @@
+{
+  "cases": 9,
+  "known_reference_cases": 8,
+  "answered": 7,
+  "correct": 7,
+  "withheld": 1,
+  "partial_unscored": [
+    {
+      "id": "top-and-right",
+      "count": null
+    }
+  ],
+  "scope": "Development smoke tests: one baseball scene with related transformations/crops, a uniform image and two negative scenes. Not independent-scene counting accuracy. Ambiguous partial crop is unscored. Agreement between mirrored views is correlated, not proof of correctness."
+}

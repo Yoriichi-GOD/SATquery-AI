@@ -1,0 +1,28 @@
+{
+  "id": "flood-Pakistan_849790",
+  "kind": "water_map",
+  "name": "Pakistan \u00b7 849790 (test)",
+  "source": "Sen1Floods11 v1.1 hand-labelled",
+  "benchmark": "Official test split; first chip per event, not selected by prediction quality",
+  "files": [
+    "optical.tif",
+    "sar.tif"
+  ],
+  "source_files": [
+    {
+      "source": "/root/satquery/paired-lab/sen1floods11/S2Hand/Pakistan_849790_S2Hand.tif",
+      "source_sha256": "facb36e9d7ad50bce80d8af8be7a95af3ad20c696b77896120db86d460cc8dce",
+      "export_sha256": "7237b8586203aab061fca27fbad18eb3f80ba18132a98e9efc7543720571b8a6"
+    },
+    {
+      "source": "/root/satquery/paired-lab/sen1floods11/S1Hand/Pakistan_849790_S1Hand.tif",
+      "source_sha256": "ff1f7b9afce78918808ced5d648d4df28a2047a05f934f649e728bad38533007",
+      "export_sha256": "114b7aaccf82359f1a3eb6f0fd8eed0875f0986d2abae920ebf036eaefe12e68"
+    }
+  ],
+  "dates": {
+    "optical": "2017/06/28",
+    "sar": "2017/06/28"
+  },
+  "reference": "/root/satquery/paired-lab/sen1floods11/LabelHand/Pakistan_849790_LabelHand.tif"
+}

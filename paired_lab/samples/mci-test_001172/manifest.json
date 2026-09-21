@@ -1,0 +1,19 @@
+{
+  "id": "mci-test_001172",
+  "kind": "temporal",
+  "name": "MCI test_001172",
+  "source": "LEVIR-MCI official test",
+  "benchmark": "Change caption + road/building masks",
+  "files": [
+    "before.tif",
+    "after.tif"
+  ],
+  "registration": "Publisher paired crops; exact geographic metadata unavailable",
+  "reference_captions": [
+    " a row of houses appears on the left side of the scene and a road is built .",
+    " a row of detached houses is constructed beside the road on the bareland .",
+    " a road was rebuilt and many houses are constructed .",
+    " a t-shaped road appears and several buildings are built near roads .",
+    " two intersecting roads and some houses are constructed ."
+  ]
+}

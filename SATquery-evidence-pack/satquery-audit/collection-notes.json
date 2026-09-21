@@ -1,0 +1,6 @@
+{
+  "metric_rows": 1508,
+  "inventory_files": 587,
+  "parse_errors": [],
+  "scope": "Preserved scalar fields; NOT new benchmarks. Duplicated/historical/superseded evidence retained and identified by source. Numeric differences must not be treated as comparable timings without inspecting scope."
+}

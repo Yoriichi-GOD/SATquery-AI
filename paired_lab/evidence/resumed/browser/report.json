@@ -1,0 +1,28 @@
+{
+  "answers": {
+    "water": "The joint optical–SAR model marks 129,908 of 262,144 valid pixels as water (49.56%). Blue regions show this prediction. Water includes permanent water and floodwater; this single-date pair cannot distinguish them.",
+    "temporal": "some houses are built on the bareland along the road",
+    "single": "Estimated count: 1. Visual estimate; counts may be inaccurate. Scene description (model interpretation): There is a stadium in the middle of the city."
+  },
+  "errors": [],
+  "httpErrors": [],
+  "desktop": {
+    "width": 1600,
+    "scroll": 1600,
+    "footer": {
+      "x": 0,
+      "y": 863.734375,
+      "width": 1600,
+      "height": 130,
+      "top": 863.734375,
+      "right": 1600,
+      "bottom": 993.734375,
+      "left": 0
+    }
+  },
+  "mobile": {
+    "width": 390,
+    "scroll": 390
+  },
+  "downloadStatus": 200
+}

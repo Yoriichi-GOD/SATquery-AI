@@ -1,0 +1,36 @@
+{
+  "file": "test_000655.png",
+  "reference_changeflag": 1,
+  "raw_caption": "massive houses along the roads appear in the desert",
+  "reference_captions": [
+    " a residential area with many houses and roads appears .",
+    " many detached houses and roads appear on the bareland .",
+    " a road and many houses are built on bareland .",
+    " several buildings and a crossroad appear .",
+    " two vertical roads and some houses are constructed on the original bareland ."
+  ],
+  "caption_changeflag_heuristic": 1,
+  "confusion_rows_reference_columns_prediction": [
+    [
+      33922,
+      499,
+      1196
+    ],
+    [
+      140,
+      8302,
+      0
+    ],
+    [
+      1209,
+      0,
+      20268
+    ]
+  ],
+  "predicted_class_pixels": {
+    "0": 35271,
+    "1": 8801,
+    "2": 21464
+  },
+  "gpu_caption": "massive houses along the roads appear in the desert"
+}

@@ -1,0 +1,20 @@
+[
+  {
+    "name": "mountain-car",
+    "source": "/root/satquery/app-data/images/037f45c84eb34a89aec4cd5e9e355032.png",
+    "category": "car",
+    "expected": 1
+  },
+  {
+    "name": "river-negative",
+    "source": "/mnt/c/Users/nrgen/.codex/scratch/SATquery AI/results/reliability-20260907/counting/river.png",
+    "category": "stadium",
+    "expected": 0
+  },
+  {
+    "name": "blank-negative",
+    "source": "/mnt/c/Users/nrgen/.codex/scratch/SATquery AI/results/reliability-20260907/counting/blank.png",
+    "category": "car",
+    "expected": 0
+  }
+]

@@ -1,0 +1,47 @@
+[
+  {
+    "id": "full",
+    "image": "/mnt/c/Users/nrgen/.codex/scratch/SATquery AI/results/reliability-20260907/counting/full.png",
+    "reference": 4
+  },
+  {
+    "id": "mirror",
+    "image": "/mnt/c/Users/nrgen/.codex/scratch/SATquery AI/results/reliability-20260907/counting/mirror.png",
+    "reference": 4
+  },
+  {
+    "id": "rotate",
+    "image": "/mnt/c/Users/nrgen/.codex/scratch/SATquery AI/results/reliability-20260907/counting/rotate.png",
+    "reference": 4
+  },
+  {
+    "id": "top-single",
+    "image": "/mnt/c/Users/nrgen/.codex/scratch/SATquery AI/results/reliability-20260907/counting/top-single.png",
+    "reference": 1
+  },
+  {
+    "id": "right-single",
+    "image": "/mnt/c/Users/nrgen/.codex/scratch/SATquery AI/results/reliability-20260907/counting/right-single.png",
+    "reference": 1
+  },
+  {
+    "id": "top-and-right",
+    "image": "/mnt/c/Users/nrgen/.codex/scratch/SATquery AI/results/reliability-20260907/counting/top-and-right.png",
+    "reference": null
+  },
+  {
+    "id": "blank",
+    "image": "/mnt/c/Users/nrgen/.codex/scratch/SATquery AI/results/reliability-20260907/counting/blank.png",
+    "reference": 0
+  },
+  {
+    "id": "farmland",
+    "image": "/mnt/c/Users/nrgen/.codex/scratch/SATquery AI/results/reliability-20260907/counting/farmland.png",
+    "reference": 0
+  },
+  {
+    "id": "river",
+    "image": "/mnt/c/Users/nrgen/.codex/scratch/SATquery AI/results/reliability-20260907/counting/river.png",
+    "reference": 0
+  }
+]

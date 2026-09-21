@@ -1,0 +1,35 @@
+{
+  "file": "test_000192.png",
+  "reference_changeflag": 1,
+  "raw_caption": "the road has been removed and many houses are built along the road",
+  "reference_captions": [
+    " a road parallel to the original one appears and many houses are built alongside .",
+    " a new road is built on the left side of the old road and some villas appear along the new road .",
+    " one more road has been built near the original one and many villas have been constructed beside the roads .",
+    " a new road is built near another one and houses are built along it .",
+    " a road with houses built along replaces most of the plants ."
+  ],
+  "caption_changeflag_heuristic": 1,
+  "confusion_rows_reference_columns_prediction": [
+    [
+      45972,
+      40,
+      1594
+    ],
+    [
+      656,
+      6755,
+      0
+    ],
+    [
+      1120,
+      0,
+      9399
+    ]
+  ],
+  "predicted_class_pixels": {
+    "0": 47748,
+    "1": 6795,
+    "2": 10993
+  }
+}

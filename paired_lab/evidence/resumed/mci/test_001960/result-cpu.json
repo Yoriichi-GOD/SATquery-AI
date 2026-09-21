@@ -1,0 +1,36 @@
+{
+  "file": "test_001960.png",
+  "reference_changeflag": 1,
+  "raw_caption": "a row of houses is built on the top right",
+  "reference_captions": [
+    " a row of houses appears on the wasteland on the right .",
+    " a row of houses appear in the desert .",
+    " a row of houses is built on the bareland on the right .",
+    " a row of houses is built in the open space on the right side of the scene .",
+    " a row of villas has been constructed on the right ."
+  ],
+  "caption_changeflag_heuristic": 1,
+  "confusion_rows_reference_columns_prediction": [
+    [
+      61136,
+      33,
+      259
+    ],
+    [
+      0,
+      276,
+      0
+    ],
+    [
+      263,
+      0,
+      3569
+    ]
+  ],
+  "predicted_class_pixels": {
+    "0": 61399,
+    "1": 309,
+    "2": 3828
+  },
+  "gpu_caption": "a row of houses is built on the top right"
+}

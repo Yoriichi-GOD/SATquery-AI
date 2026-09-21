@@ -1,0 +1,109 @@
+{
+  "label": "DEVELOPMENT ONLY",
+  "run": "lora-pilot-v1",
+  "baseline_dev": {
+    "correct": 23,
+    "total": 60,
+    "invalid_format": 20,
+    "per_category": {
+      "rural_urban": {
+        "correct": 0,
+        "total": 20
+      },
+      "presence": {
+        "correct": 10,
+        "total": 20
+      },
+      "comp": {
+        "correct": 13,
+        "total": 20
+      }
+    }
+  },
+  "adapted_dev": {
+    "correct": 47,
+    "total": 60,
+    "invalid_format": 0,
+    "per_category": {
+      "rural_urban": {
+        "correct": 15,
+        "total": 20
+      },
+      "presence": {
+        "correct": 15,
+        "total": 20
+      },
+      "comp": {
+        "correct": 17,
+        "total": 20
+      }
+    }
+  },
+  "questions": 60,
+  "images": 20,
+  "source_scenes": 1,
+  "regressions": [
+    {
+      "question_id": 5440,
+      "question": "Is there a circular road?",
+      "reference": "no",
+      "original": "No",
+      "adapter": "yes",
+      "category": "presence"
+    },
+    {
+      "question_id": 1936,
+      "question": "Is there a rectangular grass area?",
+      "reference": "no",
+      "original": "No",
+      "adapter": "yes",
+      "category": "presence"
+    }
+  ],
+  "gains": 26,
+  "evidence": {
+    "baseline": {
+      "url": "/api/evidence/baseline",
+      "sha256": "f3c96d9bfe841bb11c35825b0c3751607bc5c09e3c4d8cd233394972cf01367c"
+    },
+    "adapter": {
+      "url": "/api/evidence/adapter",
+      "sha256": "75e4f287bd092bff33e0f9821b2c8c43c05927b5c3873cbf87e77ba83d262e37"
+    },
+    "development-inputs": {
+      "url": "/api/evidence/development-inputs",
+      "sha256": "c4ce050ea7fb352804e78032512a70dd5856ef7bcd695f9b56a1ef8861d87f77"
+    },
+    "manifest": {
+      "url": "/api/evidence/manifest",
+      "sha256": "a85dfafcc5f8824a97c56e76b356a416964bbbfca9d1e15a63d89ffd28a081d4"
+    },
+    "experiment": {
+      "url": "/api/evidence/experiment",
+      "sha256": "bd8b262b0d51fee4bc843446be0a3f112d670611e178dd6606a8e93900d75d8d"
+    },
+    "scoring": {
+      "url": "/api/evidence/scoring",
+      "sha256": "f8f2e21d60b478a10b3cd68f63dd24295b2d270acf3febc1d07bb19a12320cb3"
+    },
+    "protocol": {
+      "url": "/api/evidence/protocol",
+      "sha256": "878e505315ad627c479b7fd231c10cbf6e5dbbfdf8a709a120cc9674942ab778"
+    },
+    "diagnostic": {
+      "url": "/api/evidence/diagnostic",
+      "sha256": "efdcab30b2a46c25c4997513d89d3ba050e10f0d70d2d43c2bd2d57b8ae5c7e8"
+    },
+    "diagnostic-manifest": {
+      "url": "/api/evidence/diagnostic-manifest",
+      "sha256": "1efb6e1e4fae5f6f1a2a6fffbf8d6a35116a64a378a0898a5f88ba3c0d264c63"
+    }
+  },
+  "protocol": {
+    "visual_tokens": "64-128",
+    "max_new_tokens": 16,
+    "do_sample": false,
+    "scoring": "Lowercase, collapse whitespace, strip trailing space/dot/exclamation/question mark; exact label match. Invalid formats count as incorrect."
+  },
+  "majority_correct": 37
+}

@@ -1,0 +1,259 @@
+{
+  "state": "complete",
+  "stage": "Complete",
+  "plan": {
+    "task": "water_map",
+    "version": "unified-rules-v3",
+    "specialist": "WaterUNet \u00b7 SAR / optical / joint",
+    "device": "CPU",
+    "maturity": "supported",
+    "reason": "Optical 13-band / SAR pair and a water-mapping question.",
+    "threshold": 0.5,
+    "steps": [
+      "validate sensor contract",
+      "three modality predictions",
+      "save evidence"
+    ]
+  },
+  "events": [
+    {
+      "stage": "Starting WaterUNet \u00b7 SAR / optical / joint",
+      "at": "2026-09-19T21:56:39Z"
+    },
+    {
+      "stage": "Normalizing optical and SAR channels",
+      "at": "2026-09-19T21:56:39Z"
+    },
+    {
+      "stage": "Loading WaterUNet on CPU",
+      "at": "2026-09-19T21:56:39Z"
+    },
+    {
+      "stage": "Predicting water: SAR only",
+      "at": "2026-09-19T21:56:39Z"
+    },
+    {
+      "stage": "Predicting water: optical only",
+      "at": "2026-09-19T21:56:39Z"
+    },
+    {
+      "stage": "Predicting water: joint",
+      "at": "2026-09-19T21:56:39Z"
+    },
+    {
+      "stage": "Rendering water evidence and counting predicted pixels",
+      "at": "2026-09-19T21:56:39Z"
+    },
+    {
+      "stage": "Saving result and original inputs",
+      "at": "2026-09-19T21:56:40Z"
+    },
+    {
+      "stage": "Packaging evidence",
+      "at": "2026-09-19T21:56:40Z"
+    }
+  ],
+  "result": {
+    "task": "water_map",
+    "answer": "The joint optical\u2013SAR model marks 129,908 of 262,144 valid pixels as water (49.56%). Blue regions show this prediction. Water includes permanent water and floodwater; this single-date pair cannot distinguish them.",
+    "water_pixels": {
+      "s1": 134387,
+      "s2": 130106,
+      "all": 129908
+    },
+    "denominator_pixels": 262144,
+    "full_image_pixels": 262144,
+    "seconds": 1.0043411209990154,
+    "confidence": {
+      "kind": "uncalibrated softmax; threshold 0.5",
+      "threshold": 0.5
+    },
+    "trace": [
+      {
+        "tool": "SatQuery WaterUNet v1",
+        "checkpoint_sha256": "7844387fffd6c7e606895328e61be936304f979fee74411021f7312b3215f7ce",
+        "training": "Sen1Floods11 official train split; selected on validation only",
+        "selected_epoch": 23,
+        "device": "cpu",
+        "normalization": "SAR clip((dB+20)/10,-3,3); S2 L1C clip(DN/3000,0,4)",
+        "sensor_availability": "Two explicit flags; modality dropout during training",
+        "bands": {
+          "sar": [
+            "VV",
+            "VH"
+          ],
+          "optical": [
+            "B01",
+            "B02",
+            "B03",
+            "B04",
+            "B05",
+            "B06",
+            "B07",
+            "B08",
+            "B8A",
+            "B09",
+            "B10",
+            "B11",
+            "B12"
+          ]
+        }
+      }
+    ],
+    "limitations": [
+      "Water segmentation only; no building boundaries or counts.",
+      "Single-date water is not automatically flood extent.",
+      "Fixed local research model; scores are not calibrated confidence.",
+      "Sentinel-1 GRD and Sentinel-2 L1C only; no Cartosat/RISAT validation.",
+      "Coverage denominator excludes non-finite input pixels; no surveyed area claim."
+    ],
+    "execution": {
+      "task": "water_map",
+      "version": "unified-rules-v3",
+      "specialist": "WaterUNet \u00b7 SAR / optical / joint",
+      "device": "CPU",
+      "maturity": "supported",
+      "reason": "Optical 13-band / SAR pair and a water-mapping question.",
+      "threshold": 0.5,
+      "steps": [
+        "validate sensor contract",
+        "three modality predictions",
+        "save evidence"
+      ]
+    },
+    "id": "37669eaadc42442b848b767d1d576a29",
+    "query": "Map water using optical and SAR together.",
+    "input_checks": {
+      "task": "water_map",
+      "pairing_basis": "matching geographic grids and acquisition metadata",
+      "valid_pixels": 262144,
+      "full_pixels": 262144,
+      "warning": "Cross-sensor content registration is not independently certified. Time differences can move water boundaries.",
+      "inputs": [
+        {
+          "modality": "optical",
+          "date": "2016-08-12",
+          "units": "reflectance_x10000",
+          "sensor": "Sentinel-2 L1C",
+          "bands": [
+            "B01",
+            "B02",
+            "B03",
+            "B04",
+            "B05",
+            "B06",
+            "B07",
+            "B08",
+            "B8A",
+            "B09",
+            "B10",
+            "B11",
+            "B12"
+          ],
+          "shape": [
+            512,
+            512
+          ],
+          "count": 13,
+          "dtype": "int16",
+          "crs": "EPSG:4326",
+          "transform": [
+            8.983152841195215e-05,
+            0.0,
+            93.73524731062194,
+            0.0,
+            -8.983152841195215e-05,
+            26.76835816230715
+          ],
+          "sha256": "d4425d3a158a2f8f06165ccc43fd685330302b2a51cfa6fd86796fea87ea06ac",
+          "id": "5c1bc0afb0d143419853d7050f530fc1",
+          "name": "user-optical.tif"
+        },
+        {
+          "modality": "sar",
+          "date": "2016-08-12",
+          "units": "dB",
+          "sensor": "Sentinel-1 GRD",
+          "bands": [
+            "VV",
+            "VH"
+          ],
+          "shape": [
+            512,
+            512
+          ],
+          "count": 2,
+          "dtype": "float32",
+          "crs": "EPSG:4326",
+          "transform": [
+            8.983152841195215e-05,
+            0.0,
+            93.73524731062194,
+            0.0,
+            -8.983152841195215e-05,
+            26.76835816230715
+          ],
+          "sha256": "27b3735fc750c61b45d756f9d163a005a21fc82e54cf64f04dc293bb975a6f0a",
+          "id": "76b9cf1440f8456ca016efd30d50c591",
+          "name": "user-sar.tif"
+        }
+      ],
+      "plan": {
+        "task": "water_map",
+        "version": "unified-rules-v3",
+        "specialist": "WaterUNet \u00b7 SAR / optical / joint",
+        "device": "CPU",
+        "maturity": "supported",
+        "reason": "Optical 13-band / SAR pair and a water-mapping question.",
+        "threshold": 0.5,
+        "steps": [
+          "validate sensor contract",
+          "three modality predictions",
+          "save evidence"
+        ]
+      }
+    },
+    "controller": "unified-rules-v3",
+    "created_at": "2026-09-19T21:56:40Z",
+    "execution_events": [
+      {
+        "stage": "Starting WaterUNet \u00b7 SAR / optical / joint",
+        "at": "2026-09-19T21:56:39Z"
+      },
+      {
+        "stage": "Normalizing optical and SAR channels",
+        "at": "2026-09-19T21:56:39Z"
+      },
+      {
+        "stage": "Loading WaterUNet on CPU",
+        "at": "2026-09-19T21:56:39Z"
+      },
+      {
+        "stage": "Predicting water: SAR only",
+        "at": "2026-09-19T21:56:39Z"
+      },
+      {
+        "stage": "Predicting water: optical only",
+        "at": "2026-09-19T21:56:39Z"
+      },
+      {
+        "stage": "Predicting water: joint",
+        "at": "2026-09-19T21:56:39Z"
+      },
+      {
+        "stage": "Rendering water evidence and counting predicted pixels",
+        "at": "2026-09-19T21:56:39Z"
+      },
+      {
+        "stage": "Saving result and original inputs",
+        "at": "2026-09-19T21:56:40Z"
+      },
+      {
+        "stage": "Packaging evidence",
+        "at": "2026-09-19T21:56:40Z"
+      }
+    ],
+    "work_seconds_before_zip": 1.0512546110039693
+  },
+  "request_seconds": 1.2043262090010103
+}

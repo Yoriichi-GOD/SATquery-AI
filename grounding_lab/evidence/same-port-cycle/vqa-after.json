@@ -1,0 +1,64 @@
+{
+  "id": "15673256dc254636aa6a7b6877e79943",
+  "state": "complete",
+  "stage": "Complete",
+  "question": "Is there a stadium in this image?",
+  "image": {
+    "id": "c898a077a90b471c9d4e26476dbe5b35",
+    "name": "stadium.png",
+    "width": 500,
+    "height": 264,
+    "bytes": 173635,
+    "sha256": "da733a52a60a5c61655fc1f496de20114595110b45fe81e656d1b25851b7c2d2",
+    "preview": "/api/images/c898a077a90b471c9d4e26476dbe5b35",
+    "geo": null
+  },
+  "started": 1789211586.1120386,
+  "model": "AdaptLLM/remote-sensing-Qwen2-VL-2B-Instruct",
+  "revision": "7f5dd71bf0f40c282193d50160e848a387a08ffe",
+  "adapter": null,
+  "mode": "baseline",
+  "route": "Single-image optical VQA",
+  "trace": [
+    {
+      "step": "Load pinned checkpoint",
+      "seconds": 14.965
+    },
+    {
+      "step": "Generate model answer",
+      "seconds": 3.338
+    }
+  ],
+  "routing": {
+    "tool": "vqa",
+    "rule": "single_image_presence",
+    "reason": "Visual presence question; model interpretation, not independently verified detection or a measurement.",
+    "version": "rules-v5"
+  },
+  "requested_mode": "baseline",
+  "effective_question": "Is there a stadium in this image?",
+  "visual_token_bounds": [
+    256,
+    512
+  ],
+  "raw_answer": "Yes, there is a stadium in this image. The stadium is characterized by its large, oval shape and the presence of a central playing field, which is typical of sports venues designed for events like football, soccer, or track and field. The surrounding buildings and infrastructure suggest that the stadium is located within a city, likely serving as a central venue for sports and events. The image does not provide any direct information about the specific location or the events that might take place in the stadium. Therefore, the answer is yes",
+  "answer_validation": {
+    "policy": "open-visual-v1",
+    "answer": "Yes, there is a stadium in this image. The stadium is characterized by its large, oval shape and the presence of a central playing field, which is typical of sports venues designed for events like football, soccer, or track and field. The surrounding buildings and infrastructure suggest that the stadium is located within a city, likely serving as a central venue for sports and events. The image does not provide any direct information about the specific location or the events that might take place in the stadium. Therefore, the answer is yes\n\nModel interpretation; may be inaccurate.",
+    "limitation": "Model interpretation; may be inaccurate.",
+    "raw_truncated": false,
+    "changed": true,
+    "withheld": false,
+    "reasons": [
+      "model_output_preserved",
+      "estimate_label_added"
+    ]
+  },
+  "answer_policy": "open-visual-v1",
+  "answer": "Yes, there is a stadium in this image. The stadium is characterized by its large, oval shape and the presence of a central playing field, which is typical of sports venues designed for events like football, soccer, or track and field. The surrounding buildings and infrastructure suggest that the stadium is located within a city, likely serving as a central venue for sports and events. The image does not provide any direct information about the specific location or the events that might take place in the stadium. Therefore, the answer is yes\n\nModel interpretation; may be inaccurate.",
+  "seconds": 18.332,
+  "generation_seconds": 3.338,
+  "peak_allocated_GiB": 4.227,
+  "generated_tokens": 104,
+  "max_new_tokens": 128
+}

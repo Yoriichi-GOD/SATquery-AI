@@ -1,0 +1,36 @@
+{
+  "file": "test_000603.png",
+  "reference_changeflag": 1,
+  "raw_caption": "some houses are built along the road in the open space",
+  "reference_captions": [
+    " a u-shaped road appears on the bareland and many houses are scattered .",
+    " a turning road is built with many villas built along .",
+    " a road has been built on the bareland and many houses have been constructed beside the road .",
+    " on the bareland some houses appear alongside the cement road .",
+    " massive houses surrounding the new roads show up in the desert ."
+  ],
+  "caption_changeflag_heuristic": 1,
+  "confusion_rows_reference_columns_prediction": [
+    [
+      41853,
+      360,
+      1207
+    ],
+    [
+      399,
+      8991,
+      0
+    ],
+    [
+      560,
+      0,
+      12166
+    ]
+  ],
+  "predicted_class_pixels": {
+    "0": 42812,
+    "1": 9351,
+    "2": 13373
+  },
+  "gpu_caption": "some houses are built along the road in the open space"
+}

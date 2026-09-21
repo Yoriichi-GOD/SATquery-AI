@@ -1,0 +1,64 @@
+[
+  {
+    "request": {
+      "images": [
+        "bff1791c698e4f508bc172dc4a88778a"
+      ],
+      "query": "Calculate NDVI"
+    },
+    "status": 400,
+    "detail": {
+      "detail": "NDVI needs labelled, calibrated Red/NIR surface-reflectance bands. RGB alone cannot answer this request."
+    }
+  },
+  {
+    "request": {
+      "images": [
+        "7f36d9f2a8f24b7bbc426d2318fc44eb"
+      ],
+      "query": "Outline roads"
+    },
+    "status": 400,
+    "detail": {
+      "detail": "For experimental grounding, ask for one category: stadium, car, aircraft, building, ship or sports field."
+    }
+  },
+  {
+    "request": {
+      "sample": "mci-test_001682",
+      "query": "Count the changed buildings"
+    },
+    "status": 400,
+    "detail": {
+      "detail": "Temporal masks report predicted change pixels, not object counts or physical area."
+    }
+  },
+  {
+    "request": {
+      "images": [
+        "5c1bc0afb0d143419853d7050f530fc1",
+        "76b9cf1440f8456ca016efd30d50c591"
+      ],
+      "query": "Map buildings"
+    },
+    "status": 400,
+    "detail": {
+      "detail": "This specialist maps water pixels only; it cannot map buildings, count objects or measure physical area."
+    }
+  },
+  {
+    "request": {
+      "images": [
+        "missing"
+      ],
+      "query": "Describe"
+    },
+    "status": 400,
+    "detail": {
+      "detail": "Upload one optical image or two compatible TIFFs first."
+    }
+  },
+  {
+    "malformed_tiff_status": 400
+  }
+]

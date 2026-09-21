@@ -1,0 +1,102 @@
+{
+  "id": "cd5a68df20a24406aa1102b816d34069",
+  "state": "complete",
+  "stage": "Complete",
+  "image": {
+    "id": "43d0f220f06e4734b3e70d9785af91cf",
+    "name": "dehradun-sentinel2-20211125.tif",
+    "width": 512,
+    "height": 512,
+    "bytes": 3325075,
+    "sha256": "548f361711f37ec83a459d7d076944b33efb1888837b39ce4cfa619ce8b8dd79",
+    "preview": "/api/images/43d0f220f06e4734b3e70d9785af91cf",
+    "geo": {
+      "crs": "EPSG:32643",
+      "width": 512,
+      "height": 512,
+      "transform": [
+        10.0,
+        0.0,
+        788360.0,
+        0.0,
+        -10.0,
+        3359030.0
+      ],
+      "bounds": [
+        788360.0,
+        3353910.0,
+        793480.0,
+        3359030.0
+      ],
+      "bounds_wgs84": [
+        77.99766300376905,
+        30.281402875774386,
+        78.05225589782314,
+        30.328772451280432
+      ],
+      "resolution": [
+        10.0,
+        10.0
+      ],
+      "bands": {
+        "red": 1,
+        "green": 2,
+        "blue": 3,
+        "nir": 4,
+        "scl": 5
+      },
+      "band_descriptions": [
+        "red",
+        "green",
+        "blue",
+        "nir",
+        "scl"
+      ],
+      "nodata": "nan",
+      "scales": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "offsets": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "acquired": "2021-11-25T05:40:34.501000Z",
+      "source_item": "S2A_43RGP_20211125_1_L2A",
+      "attribution": "Contains modified Copernicus Sentinel data (2021), accessed through Element 84 Earth Search / AWS.",
+      "ndvi_supported": true,
+      "quality_mask_available": true,
+      "preview_processing": "Per-channel 2nd\u201398th percentile RGB display stretch; analytical values are preserved."
+    }
+  },
+  "started": 1788681700.70723,
+  "route": "NDVI from calibrated red/NIR",
+  "threshold": 0.5,
+  "answer": "NDVI \u2265 0.50: 46.75% of valid pixels. Projected grid area: 620.09 hectares. Valid pixels cover 50.60% of this crop. This is threshold-based coverage, not a vegetation-health diagnosis.",
+  "statistics": {
+    "threshold": 0.5,
+    "valid_pixels": 132645,
+    "total_pixels": 262144,
+    "selected_pixels": 62009,
+    "valid_coverage_percent": 50.60005187988281,
+    "selected_percent_of_valid": 46.74808699913302,
+    "selected_area_m2": 6200900.0,
+    "area_method": "Projected grid area from affine determinant; not terrain surface area.",
+    "ndvi_min": -0.6058399677276611,
+    "ndvi_max": 0.9994228482246399,
+    "ndvi_mean": 0.49747270345687866,
+    "quality_mask_available": true,
+    "quality_rule": "SCL 4,5,6,7 retained; other classes excluded.",
+    "interpretation": "Pixels meeting the stated NDVI threshold; not a vegetation health, density, or species diagnosis."
+  },
+  "overlay": "/api/runs/cd5a68df20a24406aa1102b816d34069/overlay",
+  "raster": "/api/runs/cd5a68df20a24406aa1102b816d34069/ndvi",
+  "seconds": 0.074,
+  "validity": "INVALID: double offset; superseded by corrected calibration audit"
+}

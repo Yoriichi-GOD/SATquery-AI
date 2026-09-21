@@ -1,0 +1,98 @@
+[
+  {
+    "question": "Compare this to last year",
+    "status": 422,
+    "detail": {
+      "detail": {
+        "tool": "refuse",
+        "rule": "temporal_unavailable",
+        "reason": "Temporal/change analysis requires dated image pairs and is not implemented.",
+        "version": "rules-v1"
+      }
+    }
+  },
+  {
+    "question": "Count the buildings",
+    "status": 422,
+    "detail": {
+      "detail": {
+        "tool": "refuse",
+        "rule": "counting_unavailable",
+        "reason": "Object counting has no validated specialist and is not supported.",
+        "version": "rules-v1"
+      }
+    }
+  },
+  {
+    "question": "Locate the buildings",
+    "status": 422,
+    "detail": {
+      "detail": {
+        "tool": "refuse",
+        "rule": "grounding_unavailable",
+        "reason": "Text-guided grounding is planned. No validated object boxes, masks or locations are available.",
+        "version": "rules-v1"
+      }
+    }
+  },
+  {
+    "question": "Analyze SAR backscatter",
+    "status": 422,
+    "detail": {
+      "detail": {
+        "tool": "refuse",
+        "rule": "sar_unavailable",
+        "reason": "SAR analysis and optical/SAR fusion are planned, not implemented.",
+        "version": "rules-v1"
+      }
+    }
+  },
+  {
+    "question": "What is vegetation health?",
+    "status": 422,
+    "detail": {
+      "detail": {
+        "tool": "refuse",
+        "rule": "unsupported_measurement",
+        "reason": "This measurement or diagnosis is not implemented. NDVI supports only threshold-selected pixel coverage.",
+        "version": "rules-v1"
+      }
+    }
+  },
+  {
+    "question": "How green is this?",
+    "status": 422,
+    "detail": {
+      "detail": {
+        "tool": "refuse",
+        "rule": "ambiguous_green",
+        "reason": "Green wording is ambiguous. Ask for a vegetation description, or explicitly request NDVI threshold coverage.",
+        "version": "rules-v1"
+      }
+    }
+  },
+  {
+    "question": "Describe vegetation and tell me its percentage",
+    "status": 422,
+    "detail": {
+      "detail": {
+        "tool": "refuse",
+        "rule": "unsupported_or_ambiguous",
+        "reason": "This intent is unsupported or ambiguous. Ask a single-image description/presence question, or explicitly request NDVI threshold coverage. No tool was run.",
+        "version": "rules-v1"
+      }
+    }
+  },
+  {
+    "question": "Calculate NDVI",
+    "status": 422,
+    "detail": {
+      "detail": {
+        "tool": "refuse",
+        "rule": "calibrated_bands_required",
+        "reason": "NDVI needs labelled, calibrated Red/NIR surface-reflectance bands. RGB alone cannot answer this request.",
+        "version": "rules-v1"
+      }
+    }
+  }
+]

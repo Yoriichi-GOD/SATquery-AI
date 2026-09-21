@@ -1,0 +1,36 @@
+{
+  "file": "test_000585.png",
+  "reference_changeflag": 1,
+  "raw_caption": "some houses are built on the bareland along the road",
+  "reference_captions": [
+    " a line of houses has been built by the road at the top .",
+    " villas are built along the road at the top of the scene .",
+    " several buildings have been constructed on the bareland beside the roads .",
+    " some villas are built near the crossroad .",
+    " many houses appear along the road ."
+  ],
+  "caption_changeflag_heuristic": 1,
+  "confusion_rows_reference_columns_prediction": [
+    [
+      60556,
+      0,
+      579
+    ],
+    [
+      0,
+      0,
+      0
+    ],
+    [
+      287,
+      0,
+      4114
+    ]
+  ],
+  "predicted_class_pixels": {
+    "0": 60843,
+    "1": 0,
+    "2": 4693
+  },
+  "gpu_caption": "some houses are built on the bareland along the road"
+}

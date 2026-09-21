@@ -1,0 +1,35 @@
+{
+  "file": "test_001595.png",
+  "reference_changeflag": 1,
+  "raw_caption": "many detached houses and roads are constructed on the bareland",
+  "reference_captions": [
+    " the grass is developed into roads and neat buildings .",
+    " massive houses along the roads appear in the desert .",
+    " a residential area with many houses and roads appears .",
+    " some roads with many houses around are built on the grassland .",
+    " two concrete roads and some houses are constructed in the clearing ."
+  ],
+  "caption_changeflag_heuristic": 1,
+  "confusion_rows_reference_columns_prediction": [
+    [
+      39681,
+      273,
+      546
+    ],
+    [
+      298,
+      8649,
+      0
+    ],
+    [
+      1360,
+      0,
+      14729
+    ]
+  ],
+  "predicted_class_pixels": {
+    "0": 41339,
+    "1": 8922,
+    "2": 15275
+  }
+}

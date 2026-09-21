@@ -1,0 +1,28 @@
+{
+  "id": "flood-Somalia_699062",
+  "kind": "water_map",
+  "name": "Somalia \u00b7 699062 (test)",
+  "source": "Sen1Floods11 v1.1 hand-labelled",
+  "benchmark": "Official test split; first chip per event, not selected by prediction quality",
+  "files": [
+    "optical.tif",
+    "sar.tif"
+  ],
+  "source_files": [
+    {
+      "source": "/root/satquery/paired-lab/sen1floods11/S2Hand/Somalia_699062_S2Hand.tif",
+      "source_sha256": "8bd50eb3cdd28c9e2d6f2672ee2fd0377480c4c6ab3f3e00227ef2f85c1f88d6",
+      "export_sha256": "5cbcc5ed6fdda634f64ea66b27edc93c286e68506dd590e0bf4b87f4006cca01"
+    },
+    {
+      "source": "/root/satquery/paired-lab/sen1floods11/S1Hand/Somalia_699062_S1Hand.tif",
+      "source_sha256": "c905fcba8efe764f1c91d9b1fb061da12b797c645ad33b80befb575dc00a5d38",
+      "export_sha256": "022732f1ad08624818725a8241b9ef4929cdf6e8fd36a959c19ddaeab9db86a4"
+    }
+  ],
+  "dates": {
+    "optical": "2018/05/05",
+    "sar": "2018/05/07"
+  },
+  "reference": "/root/satquery/paired-lab/sen1floods11/LabelHand/Somalia_699062_LabelHand.tif"
+}

@@ -1,0 +1,28 @@
+{
+  "id": "flood-Mekong_333434",
+  "kind": "water_map",
+  "name": "Mekong \u00b7 333434 (test)",
+  "source": "Sen1Floods11 v1.1 hand-labelled",
+  "benchmark": "Official test split; first chip per event, not selected by prediction quality",
+  "files": [
+    "optical.tif",
+    "sar.tif"
+  ],
+  "source_files": [
+    {
+      "source": "/root/satquery/paired-lab/sen1floods11/S2Hand/Mekong_333434_S2Hand.tif",
+      "source_sha256": "d55946471ba35b4877ae09b5d830a5b5440ec77031da6c3c1d11752a8d5f9047",
+      "export_sha256": "a2aebdc5883273362ef66830e4e190a65f324101d5d602db86cc68d9cb759f23"
+    },
+    {
+      "source": "/root/satquery/paired-lab/sen1floods11/S1Hand/Mekong_333434_S1Hand.tif",
+      "source_sha256": "abed88cdb40aa823a3255ea53fdee7afd8ccabdb3e2045734b89c4756bf3a325",
+      "export_sha256": "5ae082c30bb04f098d3baabf0d9ffc2c1b8558be0e0a4ebf90fd266272d6c398"
+    }
+  ],
+  "dates": {
+    "optical": "2018/08/04",
+    "sar": "2018/08/05"
+  },
+  "reference": "/root/satquery/paired-lab/sen1floods11/LabelHand/Mekong_333434_LabelHand.tif"
+}

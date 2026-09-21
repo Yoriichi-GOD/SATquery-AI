@@ -1,0 +1,55 @@
+<!doctype html><meta charset="utf-8"><title>training evidence</title><style>body{font:20px system-ui;margin:36px;background:#eee;color:#111}pre{font:17px monospace;white-space:pre-wrap}</style><h1>TRAINING — saved evidence</h1><p>Rendered actual records; not a historical training-terminal screenshot.</p><pre>{
+  &quot;purpose&quot;: &quot;One-pass pilot; development comparison only, not held-out test performance&quot;,
+  &quot;model&quot;: &quot;AdaptLLM/remote-sensing-Qwen2-VL-2B-Instruct&quot;,
+  &quot;revision&quot;: &quot;7f5dd71bf0f40c282193d50160e848a387a08ffe&quot;,
+  &quot;steps&quot;: 720,
+  &quot;baseline_dev&quot;: {
+    &quot;correct&quot;: 23,
+    &quot;total&quot;: 60,
+    &quot;invalid_format&quot;: 20,
+    &quot;per_category&quot;: {
+      &quot;rural_urban&quot;: {
+        &quot;correct&quot;: 0,
+        &quot;total&quot;: 20
+      },
+      &quot;presence&quot;: {
+        &quot;correct&quot;: 10,
+        &quot;total&quot;: 20
+      },
+      &quot;comp&quot;: {
+        &quot;correct&quot;: 13,
+        &quot;total&quot;: 20
+      }
+    }
+  },
+  &quot;adapted_dev&quot;: {
+    &quot;correct&quot;: 47,
+    &quot;total&quot;: 60,
+    &quot;invalid_format&quot;: 0,
+    &quot;per_category&quot;: {
+      &quot;rural_urban&quot;: {
+        &quot;correct&quot;: 15,
+        &quot;total&quot;: 20
+      },
+      &quot;presence&quot;: {
+        &quot;correct&quot;: 15,
+        &quot;total&quot;: 20
+      },
+      &quot;comp&quot;: {
+        &quot;correct&quot;: 17,
+        &quot;total&quot;: 20
+      }
+    }
+  },
+  &quot;trainable_parameters&quot;: 544768,
+  &quot;seconds&quot;: 190.024222655,
+  &quot;peak_allocated_GiB&quot;: 4.454071998596191,
+  &quot;train_manifest&quot;: &quot;fe5b5e985d3b46fe70a748638f947ec4f3fa636958017d840e092d4c3b89cf04&quot;,
+  &quot;visual_tokens&quot;: &quot;64-128&quot;,
+  &quot;rank&quot;: 4,
+  &quot;lr&quot;: 0.0001,
+  &quot;batch_size&quot;: 1,
+  &quot;gradient_checkpointing&quot;: true,
+  &quot;answer_only_loss&quot;: true,
+  &quot;adapter_reload_passed&quot;: true
+}</pre>

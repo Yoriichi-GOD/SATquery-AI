@@ -1,0 +1,179 @@
+[
+  {
+    "test": "temporal matching geospatial pair",
+    "passed": true,
+    "message": "accepted"
+  },
+  {
+    "test": "different CRS",
+    "passed": true,
+    "message": "Geographic grids do not match. This lab does not silently register images."
+  },
+  {
+    "test": "shifted grid",
+    "passed": true,
+    "message": "Geographic grids do not match. This lab does not silently register images."
+  },
+  {
+    "test": "missing CRS",
+    "passed": true,
+    "message": "Uploaded pairs need a CRS and matching geographic grid. Use the supplied benchmark samples for trusted non-geographic paired crops."
+  },
+  {
+    "test": "missing date",
+    "passed": true,
+    "message": "Provide the acquisition date for both images."
+  },
+  {
+    "test": "reversed dates",
+    "passed": true,
+    "message": "The before date must precede the after date."
+  },
+  {
+    "test": "equal dates",
+    "passed": true,
+    "message": "The before date must precede the after date."
+  },
+  {
+    "test": "unlabelled RGB",
+    "passed": true,
+    "message": "RGB TIFF bands must be explicitly labelled red, green, blue in that order."
+  },
+  {
+    "test": "different dimensions",
+    "passed": true,
+    "message": "Input grids differ in dimensions; align and crop them before analysis."
+  },
+  {
+    "test": "16-bit RGB",
+    "passed": true,
+    "message": "Use two corresponding 256 \u00d7 256, 8-bit RGB crops for this temporal checkpoint."
+  },
+  {
+    "test": "supported optical SAR pair",
+    "passed": true,
+    "message": "accepted"
+  },
+  {
+    "test": "SAR wrong units",
+    "passed": true,
+    "message": "This checkpoint needs Sentinel-1 data with units dB; no automatic sensor transfer or unit guessing."
+  },
+  {
+    "test": "RISAT unsupported",
+    "passed": true,
+    "message": "This checkpoint needs Sentinel-1 data with units dB; no automatic sensor transfer or unit guessing."
+  },
+  {
+    "test": "missing polarization",
+    "passed": true,
+    "message": "Required bands: VV/VH for SAR; B02,B03,B04,B05,B06,B07,B08,B8A,B11,B12 for optical."
+  },
+  {
+    "test": "far-apart acquisitions",
+    "passed": true,
+    "message": "This initial cross-modal lab requires acquisitions within 14 days; closer dates are preferable."
+  },
+  {
+    "test": "degree grid is not 10 metres",
+    "passed": true,
+    "message": "The 10 m grid must use a projected CRS in metres."
+  },
+  {
+    "test": "route What changed between these dates?",
+    "passed": true,
+    "message": "accepted"
+  },
+  {
+    "test": "route Has built-up area increased?",
+    "passed": true,
+    "message": "accepted"
+  },
+  {
+    "test": "route Use optical and SAR together for land cover",
+    "passed": true,
+    "message": "accepted"
+  },
+  {
+    "test": "route Describe the land cover",
+    "passed": true,
+    "message": "accepted"
+  },
+  {
+    "test": "reject What changed?",
+    "passed": true,
+    "message": "These are different sensors, not a supported before/after pair. Split the temporal and cross-modal questions."
+  },
+  {
+    "test": "reject What changed?",
+    "passed": true,
+    "message": "This isolated lab needs two images. Single-image VQA and NDVI remain in the main workspace."
+  },
+  {
+    "test": "reject Use SAR together",
+    "passed": true,
+    "message": "SAR analysis requires a SAR input. Both supplied images are optical."
+  },
+  {
+    "test": "reject How many buildings changed?",
+    "passed": true,
+    "message": "A change-pixel mask does not establish an object count or surveyed area."
+  },
+  {
+    "test": "reject Where are water-covered regions?",
+    "passed": true,
+    "message": "This paired specialist predicts scene-level land-cover classes. It cannot map regions, count objects or measure area."
+  },
+  {
+    "test": "reject What changed in the forest?",
+    "passed": true,
+    "message": "This initial temporal specialist detects building-related change only; this requested change category is not supported."
+  },
+  {
+    "test": "reject What is the car colour?",
+    "passed": true,
+    "message": "Ask about land-cover classes from this optical\u2013SAR pair."
+  },
+  {
+    "test": "reject ",
+    "passed": true,
+    "message": "Ask one question of up to 500 characters."
+  },
+  {
+    "test": "NaN pixels rejected",
+    "passed": true,
+    "message": "Crop to a fully valid common region first: nodata/NaN pixels are not silently filled."
+  },
+  {
+    "test": "nodata pixels rejected",
+    "passed": true,
+    "message": "Crop to a fully valid common region first: nodata/NaN pixels are not silently filled."
+  },
+  {
+    "test": "existing demo source unchanged",
+    "passed": true,
+    "changed": [],
+    "files": 35
+  },
+  {
+    "test": "HTTP status 8765",
+    "passed": true,
+    "response": {
+      "state": "idle",
+      "model": "AdaptLLM/remote-sensing-Qwen2-VL-2B-Instruct",
+      "revision": "7f5dd71bf0f40c282193d50160e848a387a08ffe",
+      "device": "Local GPU",
+      "adapter": "Baseline - no adapter"
+    }
+  },
+  {
+    "test": "HTTP status 8767",
+    "passed": true,
+    "response": {
+      "state": "ready",
+      "device": "CPU \u00b7 isolated from demo GPU",
+      "demo_port": 8765,
+      "lab_port": 8767
+    }
+  }
+]

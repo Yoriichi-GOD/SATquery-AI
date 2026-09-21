@@ -1,0 +1,35 @@
+{
+  "file": "test_000609.png",
+  "reference_changeflag": 1,
+  "raw_caption": "the scene is the same as before",
+  "reference_captions": [
+    " the grass disappears and some shrubs grow .",
+    " the woods have thinned out in the lower area of the scene .",
+    " some vegetation has disappeared .",
+    " many trees appear and the ground turns green .",
+    " almost all of the plants are removed ."
+  ],
+  "caption_changeflag_heuristic": 0,
+  "confusion_rows_reference_columns_prediction": [
+    [
+      65536,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0
+    ]
+  ],
+  "predicted_class_pixels": {
+    "0": 65536,
+    "1": 0,
+    "2": 0
+  }
+}

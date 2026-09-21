@@ -1,0 +1,28 @@
+{
+  "red": {
+    "difference_values": {
+      "1000.0": 262144
+    },
+    "legacy_range": [
+      111.0,
+      4632.0
+    ],
+    "reference_range": [
+      1111.0,
+      5632.0
+    ]
+  },
+  "nir": {
+    "difference_values": {
+      "1000.0": 262144
+    },
+    "legacy_range": [
+      329.0,
+      5557.0
+    ],
+    "reference_range": [
+      1329.0,
+      6557.0
+    ]
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "file": "test_001172.png",
+  "reference_changeflag": 1,
+  "raw_caption": "some detached houses and roads are constructed on the bareland",
+  "reference_captions": [
+    " a row of houses appears on the left side of the scene and a road is built .",
+    " a row of detached houses is constructed beside the road on the bareland .",
+    " a road was rebuilt and many houses are constructed .",
+    " a t-shaped road appears and several buildings are built near roads .",
+    " two intersecting roads and some houses are constructed ."
+  ],
+  "caption_changeflag_heuristic": 1,
+  "confusion_rows_reference_columns_prediction": [
+    [
+      52008,
+      116,
+      492
+    ],
+    [
+      779,
+      6370,
+      0
+    ],
+    [
+      325,
+      0,
+      5446
+    ]
+  ],
+  "predicted_class_pixels": {
+    "0": 53112,
+    "1": 6486,
+    "2": 5938
+  },
+  "gpu_caption": "some detached houses and roads are constructed on the bareland"
+}

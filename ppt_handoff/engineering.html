@@ -1,0 +1,177 @@
+<!doctype html><meta charset="utf-8"><title>SATquery evidence records</title><style>body{font:18px system-ui;background:#eee;color:#222;margin:40px;max-width:1300px}section{background:white;padding:25px;margin:25px 0;break-inside:avoid}pre{font:15px monospace;white-space:pre-wrap}img{max-width:100%}</style><h1>SATquery — recorded engineering evidence</h1><p>Rendered saved records. Not a historical training-running screenshot.</p><img src="diagrams/training_loss.png"><section><h2>Training record</h2><p>Saved record: raw/training_result.json</p><pre>{
+  &quot;purpose&quot;: &quot;One-pass pilot; development comparison only, not held-out test performance&quot;,
+  &quot;model&quot;: &quot;AdaptLLM/remote-sensing-Qwen2-VL-2B-Instruct&quot;,
+  &quot;revision&quot;: &quot;7f5dd71bf0f40c282193d50160e848a387a08ffe&quot;,
+  &quot;steps&quot;: 720,
+  &quot;baseline_dev&quot;: {
+    &quot;correct&quot;: 23,
+    &quot;total&quot;: 60,
+    &quot;invalid_format&quot;: 20,
+    &quot;per_category&quot;: {
+      &quot;rural_urban&quot;: {
+        &quot;correct&quot;: 0,
+        &quot;total&quot;: 20
+      },
+      &quot;presence&quot;: {
+        &quot;correct&quot;: 10,
+        &quot;total&quot;: 20
+      },
+      &quot;comp&quot;: {
+        &quot;correct&quot;: 13,
+        &quot;total&quot;: 20
+      }
+    }
+  },
+  &quot;adapted_dev&quot;: {
+    &quot;correct&quot;: 47,
+    &quot;total&quot;: 60,
+    &quot;invalid_format&quot;: 0,
+    &quot;per_category&quot;: {
+      &quot;rural_urban&quot;: {
+        &quot;correct&quot;: 15,
+        &quot;total&quot;: 20
+      },
+      &quot;presence&quot;: {
+        &quot;correct&quot;: 15,
+        &quot;total&quot;: 20
+      },
+      &quot;comp&quot;: {
+        &quot;correct&quot;: 17,
+        &quot;total&quot;: 20
+      }
+    }
+  },
+  &quot;trainable_parameters&quot;: 544768,
+  &quot;seconds&quot;: 190.024222655,
+  &quot;peak_allocated_GiB&quot;: 4.454071998596191,
+  &quot;train_manifest&quot;: &quot;fe5b5e985d3b46fe70a748638f947ec4f3fa636958017d840e092d4c3b89cf04&quot;,
+  &quot;visual_tokens&quot;: &quot;64-128&quot;,
+  &quot;rank&quot;: 4,
+  &quot;lr&quot;: 0.0001,
+  &quot;batch_size&quot;: 1,
+  &quot;gradient_checkpointing&quot;: true,
+  &quot;answer_only_loss&quot;: true,
+  &quot;adapter_reload_passed&quot;: true
+}</pre></section><section><h2>Adapter config</h2><p>Saved record: raw/adapter_config.json</p><pre>{
+  &quot;alpha_pattern&quot;: {},
+  &quot;auto_mapping&quot;: null,
+  &quot;base_model_name_or_path&quot;: &quot;/root/.cache/huggingface/hub/models--AdaptLLM--remote-sensing-Qwen2-VL-2B-Instruct/snapshots/7f5dd71bf0f40c282193d50160e848a387a08ffe&quot;,
+  &quot;bias&quot;: &quot;none&quot;,
+  &quot;corda_config&quot;: null,
+  &quot;eva_config&quot;: null,
+  &quot;exclude_modules&quot;: null,
+  &quot;fan_in_fan_out&quot;: false,
+  &quot;inference_mode&quot;: true,
+  &quot;init_lora_weights&quot;: true,
+  &quot;layer_replication&quot;: null,
+  &quot;layers_pattern&quot;: null,
+  &quot;layers_to_transform&quot;: null,
+  &quot;loftq_config&quot;: {},
+  &quot;lora_alpha&quot;: 8,
+  &quot;lora_bias&quot;: false,
+  &quot;lora_dropout&quot;: 0.05,
+  &quot;megatron_config&quot;: null,
+  &quot;megatron_core&quot;: &quot;megatron.core&quot;,
+  &quot;modules_to_save&quot;: null,
+  &quot;peft_type&quot;: &quot;LORA&quot;,
+  &quot;r&quot;: 4,
+  &quot;rank_pattern&quot;: {},
+  &quot;revision&quot;: null,
+  &quot;target_modules&quot;: [
+    &quot;v_proj&quot;,
+    &quot;q_proj&quot;
+  ],
+  &quot;task_type&quot;: &quot;CAUSAL_LM&quot;,
+  &quot;trainable_token_indices&quot;: null,
+  &quot;use_dora&quot;: false,
+  &quot;use_rslora&quot;: false
+}</pre></section><section><h2>Independent audit</h2><p>Saved record: raw/independent-ndvi-check.json</p><pre>{
+  &quot;method&quot;: &quot;tifffile decoder; scalar float64 Python arithmetic; TIFF pixel-scale/CRS tags; no application analytical imports&quot;,
+  &quot;source_sha256&quot;: &quot;55f3ca7b578e045594f8d54419b590c3ffeb99247ec5f74d7b1355d5bc4ec0f8&quot;,
+  &quot;valid_pixels&quot;: 262144,
+  &quot;selected_pixels&quot;: 38761,
+  &quot;percent&quot;: 14.786148071289062,
+  &quot;area_hectares&quot;: 387.61,
+  &quot;footprint_hectares&quot;: 2621.44,
+  &quot;mask_disagreement_pixels&quot;: 0,
+  &quot;max_ndvi_absolute_difference&quot;: 1.0469680333802245e-07
+}</pre></section><section><h2>Raster metadata</h2><p>Saved record: metrics/dehradun_metadata.json</p><pre>{
+  &quot;calibration_version&quot;: &quot;c1-header-verified-v2&quot;,
+  &quot;crs&quot;: &quot;EPSG:32643&quot;,
+  &quot;width&quot;: 512,
+  &quot;height&quot;: 512,
+  &quot;transform&quot;: [
+    10.0,
+    0.0,
+    788360.0,
+    0.0,
+    -10.0,
+    3359030.0
+  ],
+  &quot;bounds&quot;: [
+    788360.0,
+    3353910.0,
+    793480.0,
+    3359030.0
+  ],
+  &quot;bounds_wgs84&quot;: [
+    77.99766300376905,
+    30.281402875774386,
+    78.05225589782314,
+    30.328772451280432
+  ],
+  &quot;resolution&quot;: [
+    10.0,
+    10.0
+  ],
+  &quot;bands&quot;: {
+    &quot;red&quot;: 1,
+    &quot;green&quot;: 2,
+    &quot;blue&quot;: 3,
+    &quot;nir&quot;: 4,
+    &quot;scl&quot;: 5
+  },
+  &quot;band_descriptions&quot;: [
+    &quot;red&quot;,
+    &quot;green&quot;,
+    &quot;blue&quot;,
+    &quot;nir&quot;,
+    &quot;scl&quot;
+  ],
+  &quot;nodata&quot;: &quot;nan&quot;,
+  &quot;scales&quot;: [
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0
+  ],
+  &quot;offsets&quot;: [
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0
+  ],
+  &quot;acquired&quot;: &quot;2021-11-25T05:40:34.501000Z&quot;,
+  &quot;source_item&quot;: &quot;S2A_T43RGP_20211125T053958_L2A&quot;,
+  &quot;attribution&quot;: &quot;Contains modified Copernicus Sentinel data (2021), accessed through Element 84 Earth Search / AWS.&quot;,
+  &quot;ndvi_supported&quot;: true,
+  &quot;quality_mask_available&quot;: true,
+  &quot;preview_processing&quot;: &quot;Per-channel 2nd\u201398th percentile RGB display stretch; analytical values are preserved.&quot;
+}</pre></section><section><h2>Timing benchmark</h2><p>Saved record: metrics/ndvi_timing_summary.json</p><pre>{
+  &quot;server_reported_seconds&quot;: {
+    &quot;mean&quot;: 0.057099999999999984,
+    &quot;median&quot;: 0.049,
+    &quot;p95&quot;: 0.0665000000000001,
+    &quot;min&quot;: 0.043,
+    &quot;max&quot;: 0.209
+  },
+  &quot;client_submit_poll_seconds&quot;: {
+    &quot;mean&quot;: 0.06887162459952378,
+    &quot;median&quot;: 0.059296752500813454,
+    &quot;p95&quot;: 0.07767822119876666,
+    &quot;min&quot;: 0.055463905999204144,
+    &quot;max&quot;: 0.2239250440034084
+  }
+}</pre></section>

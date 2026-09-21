@@ -1,0 +1,4620 @@
+{
+  "selection": "50 changed and 50 unchanged official test pairs, random seed 42; no local tuning on test",
+  "dataset_manifest": {
+    "repo": "lcybuaa/LEVIR-MCI",
+    "revision": "dff09c709999b5b1f1f1806024811c65a6b14dfe",
+    "archive": "/root/satquery/paired-lab/levir-mci/LEVIR-MCI-dataset.zip",
+    "bytes": 2771943190,
+    "sha256": "8f7d52298fa3ca32aec983e84addef80f61ad7d981c0ff97a92c5880c4b83e9d",
+    "files": 40329
+  },
+  "results": [
+    {
+      "file": "test_001682.png",
+      "reference_changeflag": 0,
+      "raw_caption": "the scene is the same as before",
+      "reference_captions": [
+        " there is no difference .",
+        " the two scenes seem identical .",
+        " the scene is the same as before .",
+        " no change has occurred .",
+        " almost nothing has changed ."
+      ],
+      "caption_changeflag_heuristic": 0,
+      "confusion_rows_reference_columns_prediction": [
+        [
+          65536,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ]
+      ],
+      "predicted_class_pixels": {
+        "0": 65536,
+        "1": 0,
+        "2": 0
+      },
+      "gpu_caption": "the scene is the same as before"
+    },
+    {
+      "file": "test_000233.png",
+      "reference_changeflag": 0,
+      "raw_caption": "the scene is the same as before",
+      "reference_captions": [
+        " there is no difference .",
+        " the two scenes seem identical .",
+        " the scene is the same as before .",
+        " no change has occurred .",
+        " almost nothing has changed ."
+      ],
+      "caption_changeflag_heuristic": 0,
+      "confusion_rows_reference_columns_prediction": [
+        [
+          65536,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ]
+      ],
+      "predicted_class_pixels": {
+        "0": 65536,
+        "1": 0,
+        "2": 0
+      },
+      "gpu_caption": "the scene is the same as before"
+    },
+    {
+      "file": "test_000036.png",
+      "reference_changeflag": 0,
+      "raw_caption": "the scene is the same as before",
+      "reference_captions": [
+        " there is no difference .",
+        " the two scenes seem identical .",
+        " the scene is the same as before .",
+        " no change has occurred .",
+        " almost nothing has changed ."
+      ],
+      "caption_changeflag_heuristic": 0,
+      "confusion_rows_reference_columns_prediction": [
+        [
+          65536,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ]
+      ],
+      "predicted_class_pixels": {
+        "0": 65536,
+        "1": 0,
+        "2": 0
+      },
+      "gpu_caption": "the scene is the same as before"
+    },
+    {
+      "file": "test_001857.png",
+      "reference_changeflag": 0,
+      "raw_caption": "the scene is the same as before",
+      "reference_captions": [
+        " there is no difference .",
+        " the two scenes seem identical .",
+        " the scene is the same as before .",
+        " no change has occurred .",
+        " almost nothing has changed ."
+      ],
+      "caption_changeflag_heuristic": 0,
+      "confusion_rows_reference_columns_prediction": [
+        [
+          65536,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ]
+      ],
+      "predicted_class_pixels": {
+        "0": 65536,
+        "1": 0,
+        "2": 0
+      },
+      "gpu_caption": "the scene is the same as before"
+    },
+    {
+      "file": "test_000767.png",
+      "reference_changeflag": 0,
+      "raw_caption": "the scene is the same as before",
+      "reference_captions": [
+        " there is no difference .",
+        " the two scenes seem identical .",
+        " the scene is the same as before .",
+        " no change has occurred .",
+        " almost nothing has changed ."
+      ],
+      "caption_changeflag_heuristic": 0,
+      "confusion_rows_reference_columns_prediction": [
+        [
+          65536,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ]
+      ],
+      "predicted_class_pixels": {
+        "0": 65536,
+        "1": 0,
+        "2": 0
+      },
+      "gpu_caption": "the scene is the same as before"
+    },
+    {
+      "file": "test_000679.png",
+      "reference_changeflag": 0,
+      "raw_caption": "the scene is the same as before",
+      "reference_captions": [
+        " there is no difference .",
+        " the two scenes seem identical .",
+        " the scene is the same as before .",
+        " no change has occurred .",
+        " almost nothing has changed ."
+      ],
+      "caption_changeflag_heuristic": 0,
+      "confusion_rows_reference_columns_prediction": [
+        [
+          65536,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ]
+      ],
+      "predicted_class_pixels": {
+        "0": 65536,
+        "1": 0,
+        "2": 0
+      },
+      "gpu_caption": "the scene is the same as before"
+    },
+    {
+      "file": "test_000629.png",
+      "reference_changeflag": 0,
+      "raw_caption": "the scene is the same as before",
+      "reference_captions": [
+        " there is no difference .",
+        " the two scenes seem identical .",
+        " the scene is the same as before .",
+        " no change has occurred .",
+        " almost nothing has changed ."
+      ],
+      "caption_changeflag_heuristic": 0,
+      "confusion_rows_reference_columns_prediction": [
+        [
+          56349,
+          5242,
+          152
+        ],
+        [
+          1078,
+          2715,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ]
+      ],
+      "predicted_class_pixels": {
+        "0": 57427,
+        "1": 7957,
+        "2": 152
+      },
+      "gpu_caption": "the scene is the same as before"
+    },
+    {
+      "file": "test_000343.png",
+      "reference_changeflag": 0,
+      "raw_caption": "the scene is the same as before",
+      "reference_captions": [
+        " there is no difference .",
+        " the two scenes seem identical .",
+        " the scene is the same as before .",
+        " no change has occurred .",
+        " almost nothing has changed ."
+      ],
+      "caption_changeflag_heuristic": 0,
+      "confusion_rows_reference_columns_prediction": [
+        [
+          65536,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ]
+      ],
+      "predicted_class_pixels": {
+        "0": 65536,
+        "1": 0,
+        "2": 0
+      },
+      "gpu_caption": "the scene is the same as before"
+    },
+    {
+      "file": "test_001848.png",
+      "reference_changeflag": 0,
+      "raw_caption": "the scene is the same as before",
+      "reference_captions": [
+        " there is no difference .",
+        " the two scenes seem identical .",
+        " the scene is the same as before .",
+        " no change has occurred .",
+        " almost nothing has changed ."
+      ],
+      "caption_changeflag_heuristic": 0,
+      "confusion_rows_reference_columns_prediction": [
+        [
+          65536,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ]
+      ],
+      "predicted_class_pixels": {
+        "0": 65536,
+        "1": 0,
+        "2": 0
+      },
+      "gpu_caption": "the scene is the same as before"
+    },
+    {
+      "file": "test_000212.png",
+      "reference_changeflag": 0,
+      "raw_caption": "the scene is the same as before",
+      "reference_captions": [
+        " there is no difference .",
+        " the two scenes seem identical .",
+        " the scene is the same as before .",
+        " no change has occurred .",
+        " almost nothing has changed ."
+      ],
+      "caption_changeflag_heuristic": 0,
+      "confusion_rows_reference_columns_prediction": [
+        [
+          65536,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ]
+      ],
+      "predicted_class_pixels": {
+        "0": 65536,
+        "1": 0,
+        "2": 0
+      },
+      "gpu_caption": "the scene is the same as before"
+    },
+    {
+      "file": "test_001727.png",
+      "reference_changeflag": 0,
+      "raw_caption": "the scene is the same as before",
+      "reference_captions": [
+        " there is no difference .",
+        " the two scenes seem identical .",
+        " the scene is the same as before .",
+        " no change has occurred .",
+        " almost nothing has changed ."
+      ],
+      "caption_changeflag_heuristic": 0,
+      "confusion_rows_reference_columns_prediction": [
+        [
+          65536,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ]
+      ],
+      "predicted_class_pixels": {
+        "0": 65536,
+        "1": 0,
+        "2": 0
+      },
+      "gpu_caption": "the scene is the same as before"
+    },
+    {
+      "file": "test_001856.png",
+      "reference_changeflag": 0,
+      "raw_caption": "the scene is the same as before",
+      "reference_captions": [
+        " there is no difference .",
+        " the two scenes seem identical .",
+        " the scene is the same as before .",
+        " no change has occurred .",
+        " almost nothing has changed ."
+      ],
+      "caption_changeflag_heuristic": 0,
+      "confusion_rows_reference_columns_prediction": [
+        [
+          65518,
+          18,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ]
+      ],
+      "predicted_class_pixels": {
+        "0": 65518,
+        "1": 18,
+        "2": 0
+      },
+      "gpu_caption": "the scene is the same as before"
+    },
+    {
+      "file": "test_002084.png",
+      "reference_changeflag": 0,
+      "raw_caption": "the scene is the same as before",
+      "reference_captions": [
+        " there is no difference .",
+        " the two scenes seem identical .",
+        " the scene is the same as before .",
+        " no change has occurred .",
+        " almost nothing has changed ."
+      ],
+      "caption_changeflag_heuristic": 0,
+      "confusion_rows_reference_columns_prediction": [
+        [
+          65536,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ]
+      ],
+      "predicted_class_pixels": {
+        "0": 65536,
+        "1": 0,
+        "2": 0
+      },
+      "gpu_caption": "the scene is the same as before"
+    },
+    {
+      "file": "test_001344.png",
+      "reference_changeflag": 0,
+      "raw_caption": "the scene is the same as before",
+      "reference_captions": [
+        " there is no difference .",
+        " the two scenes seem identical .",
+        " the scene is the same as before .",
+        " no change has occurred .",
+        " almost nothing has changed ."
+      ],
+      "caption_changeflag_heuristic": 0,
+      "confusion_rows_reference_columns_prediction": [
+        [
+          65536,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ]
+      ],
+      "predicted_class_pixels": {
+        "0": 65536,
+        "1": 0,
+        "2": 0
+      },
+      "gpu_caption": "the scene is the same as before"
+    },
+    {
+      "file": "test_000166.png",
+      "reference_changeflag": 0,
+      "raw_caption": "the scene is the same as before",
+      "reference_captions": [
+        " there is no difference .",
+        " the two scenes seem identical .",
+        " the scene is the same as before .",
+        " no change has occurred .",
+        " almost nothing has changed ."
+      ],
+      "caption_changeflag_heuristic": 0,
+      "confusion_rows_reference_columns_prediction": [
+        [
+          65536,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ]
+      ],
+      "predicted_class_pixels": {
+        "0": 65536,
+        "1": 0,
+        "2": 0
+      },
+      "gpu_caption": "the scene is the same as before"
+    },
+    {
+      "file": "test_001512.png",
+      "reference_changeflag": 0,
+      "raw_caption": "the scene is the same as before",
+      "reference_captions": [
+        " there is no difference .",
+        " the two scenes seem identical .",
+        " the scene is the same as before .",
+        " no change has occurred .",
+        " almost nothing has changed ."
+      ],
+      "caption_changeflag_heuristic": 0,
+      "confusion_rows_reference_columns_prediction": [
+        [
+          65536,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ]
+      ],
+      "predicted_class_pixels": {
+        "0": 65536,
+        "1": 0,
+        "2": 0
+      },
+      "gpu_caption": "the scene is the same as before"
+    },
+    {
+      "file": "test_001020.png",
+      "reference_changeflag": 0,
+      "raw_caption": "the scene is the same as before",
+      "reference_captions": [
+        " there is no difference .",
+        " the two scenes seem identical .",
+        " the scene is the same as before .",
+        " no change has occurred .",
+        " almost nothing has changed ."
+      ],
+      "caption_changeflag_heuristic": 0,
+      "confusion_rows_reference_columns_prediction": [
+        [
+          65536,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ]
+      ],
+      "predicted_class_pixels": {
+        "0": 65536,
+        "1": 0,
+        "2": 0
+      },
+      "gpu_caption": "the scene is the same as before"
+    },
+    {
+      "file": "test_000055.png",
+      "reference_changeflag": 0,
+      "raw_caption": "the scene is the same as before",
+      "reference_captions": [
+        " there is no difference .",
+        " the two scenes seem identical .",
+        " the scene is the same as before .",
+        " no change has occurred .",
+        " almost nothing has changed ."
+      ],
+      "caption_changeflag_heuristic": 0,
+      "confusion_rows_reference_columns_prediction": [
+        [
+          65536,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ]
+      ],
+      "predicted_class_pixels": {
+        "0": 65536,
+        "1": 0,
+        "2": 0
+      },
+      "gpu_caption": "the scene is the same as before"
+    },
+    {
+      "file": "test_000053.png",
+      "reference_changeflag": 0,
+      "raw_caption": "the scene is the same as before",
+      "reference_captions": [
+        " there is no difference .",
+        " the two scenes seem identical .",
+        " the scene is the same as before .",
+        " no change has occurred .",
+        " almost nothing has changed ."
+      ],
+      "caption_changeflag_heuristic": 0,
+      "confusion_rows_reference_columns_prediction": [
+        [
+          65536,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ]
+      ],
+      "predicted_class_pixels": {
+        "0": 65536,
+        "1": 0,
+        "2": 0
+      },
+      "gpu_caption": "the scene is the same as before"
+    },
+    {
+      "file": "test_000177.png",
+      "reference_changeflag": 0,
+      "raw_caption": "the scene is the same as before",
+      "reference_captions": [
+        " there is no difference .",
+        " the two scenes seem identical .",
+        " the scene is the same as before .",
+        " no change has occurred .",
+        " almost nothing has changed ."
+      ],
+      "caption_changeflag_heuristic": 0,
+      "confusion_rows_reference_columns_prediction": [
+        [
+          65536,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ]
+      ],
+      "predicted_class_pixels": {
+        "0": 65536,
+        "1": 0,
+        "2": 0
+      },
+      "gpu_caption": "the scene is the same as before"
+    },
+    {
+      "file": "test_000615.png",
+      "reference_changeflag": 0,
+      "raw_caption": "the scene is the same as before",
+      "reference_captions": [
+        " there is no difference .",
+        " the two scenes seem identical .",
+        " the scene is the same as before .",
+        " no change has occurred .",
+        " almost nothing has changed ."
+      ],
+      "caption_changeflag_heuristic": 0,
+      "confusion_rows_reference_columns_prediction": [
+        [
+          65536,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ]
+      ],
+      "predicted_class_pixels": {
+        "0": 65536,
+        "1": 0,
+        "2": 0
+      },
+      "gpu_caption": "the scene is the same as before"
+    },
+    {
+      "file": "test_000639.png",
+      "reference_changeflag": 0,
+      "raw_caption": "the scene is the same as before",
+      "reference_captions": [
+        " there is no difference .",
+        " the two scenes seem identical .",
+        " the scene is the same as before .",
+        " no change has occurred .",
+        " almost nothing has changed ."
+      ],
+      "caption_changeflag_heuristic": 0,
+      "confusion_rows_reference_columns_prediction": [
+        [
+          65536,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ]
+      ],
+      "predicted_class_pixels": {
+        "0": 65536,
+        "1": 0,
+        "2": 0
+      },
+      "gpu_caption": "the scene is the same as before"
+    },
+    {
+      "file": "test_001224.png",
+      "reference_changeflag": 0,
+      "raw_caption": "the scene is the same as before",
+      "reference_captions": [
+        " there is no difference .",
+        " the two scenes seem identical .",
+        " the scene is the same as before .",
+        " no change has occurred .",
+        " almost nothing has changed ."
+      ],
+      "caption_changeflag_heuristic": 0,
+      "confusion_rows_reference_columns_prediction": [
+        [
+          64884,
+          652,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ]
+      ],
+      "predicted_class_pixels": {
+        "0": 64884,
+        "1": 652,
+        "2": 0
+      },
+      "gpu_caption": "the scene is the same as before"
+    },
+    {
+      "file": "test_001543.png",
+      "reference_changeflag": 0,
+      "raw_caption": "the scene is the same as before",
+      "reference_captions": [
+        " there is no difference .",
+        " the two scenes seem identical .",
+        " the scene is the same as before .",
+        " no change has occurred .",
+        " almost nothing has changed ."
+      ],
+      "caption_changeflag_heuristic": 0,
+      "confusion_rows_reference_columns_prediction": [
+        [
+          65536,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ]
+      ],
+      "predicted_class_pixels": {
+        "0": 65536,
+        "1": 0,
+        "2": 0
+      },
+      "gpu_caption": "the scene is the same as before"
+    },
+    {
+      "file": "test_000042.png",
+      "reference_changeflag": 0,
+      "raw_caption": "the scene is the same as before",
+      "reference_captions": [
+        " there is no difference .",
+        " the two scenes seem identical .",
+        " the scene is the same as before .",
+        " no change has occurred .",
+        " almost nothing has changed ."
+      ],
+      "caption_changeflag_heuristic": 0,
+      "confusion_rows_reference_columns_prediction": [
+        [
+          65536,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ]
+      ],
+      "predicted_class_pixels": {
+        "0": 65536,
+        "1": 0,
+        "2": 0
+      },
+      "gpu_caption": "the scene is the same as before"
+    },
+    {
+      "file": "test_001389.png",
+      "reference_changeflag": 0,
+      "raw_caption": "the scene is the same as before",
+      "reference_captions": [
+        " there is no difference .",
+        " the two scenes seem identical .",
+        " the scene is the same as before .",
+        " no change has occurred .",
+        " almost nothing has changed ."
+      ],
+      "caption_changeflag_heuristic": 0,
+      "confusion_rows_reference_columns_prediction": [
+        [
+          65536,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ]
+      ],
+      "predicted_class_pixels": {
+        "0": 65536,
+        "1": 0,
+        "2": 0
+      },
+      "gpu_caption": "the scene is the same as before"
+    },
+    {
+      "file": "test_000565.png",
+      "reference_changeflag": 0,
+      "raw_caption": "the scene is the same as before",
+      "reference_captions": [
+        " there is no difference .",
+        " the two scenes seem identical .",
+        " the scene is the same as before .",
+        " no change has occurred .",
+        " almost nothing has changed ."
+      ],
+      "caption_changeflag_heuristic": 0,
+      "confusion_rows_reference_columns_prediction": [
+        [
+          65536,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ]
+      ],
+      "predicted_class_pixels": {
+        "0": 65536,
+        "1": 0,
+        "2": 0
+      },
+      "gpu_caption": "the scene is the same as before"
+    },
+    {
+      "file": "test_001796.png",
+      "reference_changeflag": 0,
+      "raw_caption": "the scene is the same as before",
+      "reference_captions": [
+        " there is no difference .",
+        " the two scenes seem identical .",
+        " the scene is the same as before .",
+        " no change has occurred .",
+        " almost nothing has changed ."
+      ],
+      "caption_changeflag_heuristic": 0,
+      "confusion_rows_reference_columns_prediction": [
+        [
+          65536,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ]
+      ],
+      "predicted_class_pixels": {
+        "0": 65536,
+        "1": 0,
+        "2": 0
+      },
+      "gpu_caption": "the scene is the same as before"
+    },
+    {
+      "file": "test_001699.png",
+      "reference_changeflag": 0,
+      "raw_caption": "the scene is the same as before",
+      "reference_captions": [
+        " there is no difference .",
+        " the two scenes seem identical .",
+        " the scene is the same as before .",
+        " no change has occurred .",
+        " almost nothing has changed ."
+      ],
+      "caption_changeflag_heuristic": 0,
+      "confusion_rows_reference_columns_prediction": [
+        [
+          65536,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ]
+      ],
+      "predicted_class_pixels": {
+        "0": 65536,
+        "1": 0,
+        "2": 0
+      },
+      "gpu_caption": "the scene is the same as before"
+    },
+    {
+      "file": "test_001765.png",
+      "reference_changeflag": 0,
+      "raw_caption": "the scene is the same as before",
+      "reference_captions": [
+        " there is no difference .",
+        " the two scenes seem identical .",
+        " the scene is the same as before .",
+        " no change has occurred .",
+        " almost nothing has changed ."
+      ],
+      "caption_changeflag_heuristic": 0,
+      "confusion_rows_reference_columns_prediction": [
+        [
+          65536,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ]
+      ],
+      "predicted_class_pixels": {
+        "0": 65536,
+        "1": 0,
+        "2": 0
+      },
+      "gpu_caption": "the scene is the same as before"
+    },
+    {
+      "file": "test_001015.png",
+      "reference_changeflag": 0,
+      "raw_caption": "the scene is the same as before",
+      "reference_captions": [
+        " there is no difference .",
+        " the two scenes seem identical .",
+        " the scene is the same as before .",
+        " no change has occurred .",
+        " almost nothing has changed ."
+      ],
+      "caption_changeflag_heuristic": 0,
+      "confusion_rows_reference_columns_prediction": [
+        [
+          65536,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ]
+      ],
+      "predicted_class_pixels": {
+        "0": 65536,
+        "1": 0,
+        "2": 0
+      },
+      "gpu_caption": "the scene is the same as before"
+    },
+    {
+      "file": "test_000620.png",
+      "reference_changeflag": 0,
+      "raw_caption": "the scene is the same as before",
+      "reference_captions": [
+        " there is no difference .",
+        " the two scenes seem identical .",
+        " the scene is the same as before .",
+        " no change has occurred .",
+        " almost nothing has changed ."
+      ],
+      "caption_changeflag_heuristic": 0,
+      "confusion_rows_reference_columns_prediction": [
+        [
+          65536,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ]
+      ],
+      "predicted_class_pixels": {
+        "0": 65536,
+        "1": 0,
+        "2": 0
+      },
+      "gpu_caption": "the scene is the same as before"
+    },
+    {
+      "file": "test_001052.png",
+      "reference_changeflag": 0,
+      "raw_caption": "the scene is the same as before",
+      "reference_captions": [
+        " there is no difference .",
+        " the two scenes seem identical .",
+        " the scene is the same as before .",
+        " no change has occurred .",
+        " almost nothing has changed ."
+      ],
+      "caption_changeflag_heuristic": 0,
+      "confusion_rows_reference_columns_prediction": [
+        [
+          65536,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ]
+      ],
+      "predicted_class_pixels": {
+        "0": 65536,
+        "1": 0,
+        "2": 0
+      },
+      "gpu_caption": "the scene is the same as before"
+    },
+    {
+      "file": "test_001511.png",
+      "reference_changeflag": 0,
+      "raw_caption": "the scene is the same as before",
+      "reference_captions": [
+        " there is no difference .",
+        " the two scenes seem identical .",
+        " the scene is the same as before .",
+        " no change has occurred .",
+        " almost nothing has changed ."
+      ],
+      "caption_changeflag_heuristic": 0,
+      "confusion_rows_reference_columns_prediction": [
+        [
+          65536,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ]
+      ],
+      "predicted_class_pixels": {
+        "0": 65536,
+        "1": 0,
+        "2": 0
+      },
+      "gpu_caption": "the scene is the same as before"
+    },
+    {
+      "file": "test_000782.png",
+      "reference_changeflag": 0,
+      "raw_caption": "the scene is the same as before",
+      "reference_captions": [
+        " there is no difference .",
+        " the two scenes seem identical .",
+        " the scene is the same as before .",
+        " no change has occurred .",
+        " almost nothing has changed ."
+      ],
+      "caption_changeflag_heuristic": 0,
+      "confusion_rows_reference_columns_prediction": [
+        [
+          65536,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ]
+      ],
+      "predicted_class_pixels": {
+        "0": 65536,
+        "1": 0,
+        "2": 0
+      },
+      "gpu_caption": "the scene is the same as before"
+    },
+    {
+      "file": "test_001983.png",
+      "reference_changeflag": 0,
+      "raw_caption": "the scene is the same as before",
+      "reference_captions": [
+        " there is no difference .",
+        " the two scenes seem identical .",
+        " the scene is the same as before .",
+        " no change has occurred .",
+        " almost nothing has changed ."
+      ],
+      "caption_changeflag_heuristic": 0,
+      "confusion_rows_reference_columns_prediction": [
+        [
+          65536,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ]
+      ],
+      "predicted_class_pixels": {
+        "0": 65536,
+        "1": 0,
+        "2": 0
+      },
+      "gpu_caption": "the scene is the same as before"
+    },
+    {
+      "file": "test_002061.png",
+      "reference_changeflag": 0,
+      "raw_caption": "the scene is the same as before",
+      "reference_captions": [
+        " there is no difference .",
+        " the two scenes seem identical .",
+        " the scene is the same as before .",
+        " no change has occurred .",
+        " almost nothing has changed ."
+      ],
+      "caption_changeflag_heuristic": 0,
+      "confusion_rows_reference_columns_prediction": [
+        [
+          65520,
+          0,
+          16
+        ],
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ]
+      ],
+      "predicted_class_pixels": {
+        "0": 65520,
+        "1": 0,
+        "2": 16
+      },
+      "gpu_caption": "the scene is the same as before"
+    },
+    {
+      "file": "test_000008.png",
+      "reference_changeflag": 0,
+      "raw_caption": "the scene is the same as before",
+      "reference_captions": [
+        " there is no difference .",
+        " the two scenes seem identical .",
+        " the scene is the same as before .",
+        " no change has occurred .",
+        " almost nothing has changed ."
+      ],
+      "caption_changeflag_heuristic": 0,
+      "confusion_rows_reference_columns_prediction": [
+        [
+          65536,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ]
+      ],
+      "predicted_class_pixels": {
+        "0": 65536,
+        "1": 0,
+        "2": 0
+      },
+      "gpu_caption": "the scene is the same as before"
+    },
+    {
+      "file": "test_001909.png",
+      "reference_changeflag": 0,
+      "raw_caption": "the scene is the same as before",
+      "reference_captions": [
+        " there is no difference .",
+        " the two scenes seem identical .",
+        " the scene is the same as before .",
+        " no change has occurred .",
+        " almost nothing has changed ."
+      ],
+      "caption_changeflag_heuristic": 0,
+      "confusion_rows_reference_columns_prediction": [
+        [
+          65536,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ]
+      ],
+      "predicted_class_pixels": {
+        "0": 65536,
+        "1": 0,
+        "2": 0
+      },
+      "gpu_caption": "the scene is the same as before"
+    },
+    {
+      "file": "test_001979.png",
+      "reference_changeflag": 0,
+      "raw_caption": "the scene is the same as before",
+      "reference_captions": [
+        " there is no difference .",
+        " the two scenes seem identical .",
+        " the scene is the same as before .",
+        " no change has occurred .",
+        " almost nothing has changed ."
+      ],
+      "caption_changeflag_heuristic": 0,
+      "confusion_rows_reference_columns_prediction": [
+        [
+          65536,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ]
+      ],
+      "predicted_class_pixels": {
+        "0": 65536,
+        "1": 0,
+        "2": 0
+      },
+      "gpu_caption": "the scene is the same as before"
+    },
+    {
+      "file": "test_000431.png",
+      "reference_changeflag": 0,
+      "raw_caption": "the scene is the same as before",
+      "reference_captions": [
+        " there is no difference .",
+        " the two scenes seem identical .",
+        " the scene is the same as before .",
+        " no change has occurred .",
+        " almost nothing has changed ."
+      ],
+      "caption_changeflag_heuristic": 0,
+      "confusion_rows_reference_columns_prediction": [
+        [
+          65536,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ]
+      ],
+      "predicted_class_pixels": {
+        "0": 65536,
+        "1": 0,
+        "2": 0
+      },
+      "gpu_caption": "the scene is the same as before"
+    },
+    {
+      "file": "test_001758.png",
+      "reference_changeflag": 0,
+      "raw_caption": "the scene is the same as before",
+      "reference_captions": [
+        " there is no difference .",
+        " the two scenes seem identical .",
+        " the scene is the same as before .",
+        " no change has occurred .",
+        " almost nothing has changed ."
+      ],
+      "caption_changeflag_heuristic": 0,
+      "confusion_rows_reference_columns_prediction": [
+        [
+          65536,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ]
+      ],
+      "predicted_class_pixels": {
+        "0": 65536,
+        "1": 0,
+        "2": 0
+      },
+      "gpu_caption": "the scene is the same as before"
+    },
+    {
+      "file": "test_000915.png",
+      "reference_changeflag": 0,
+      "raw_caption": "the scene is the same as before",
+      "reference_captions": [
+        " there is no difference .",
+        " the two scenes seem identical .",
+        " the scene is the same as before .",
+        " no change has occurred .",
+        " almost nothing has changed ."
+      ],
+      "caption_changeflag_heuristic": 0,
+      "confusion_rows_reference_columns_prediction": [
+        [
+          65536,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ]
+      ],
+      "predicted_class_pixels": {
+        "0": 65536,
+        "1": 0,
+        "2": 0
+      },
+      "gpu_caption": "the scene is the same as before"
+    },
+    {
+      "file": "test_000414.png",
+      "reference_changeflag": 0,
+      "raw_caption": "the scene is the same as before",
+      "reference_captions": [
+        " there is no difference .",
+        " the two scenes seem identical .",
+        " the scene is the same as before .",
+        " no change has occurred .",
+        " almost nothing has changed ."
+      ],
+      "caption_changeflag_heuristic": 0,
+      "confusion_rows_reference_columns_prediction": [
+        [
+          65536,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ]
+      ],
+      "predicted_class_pixels": {
+        "0": 65536,
+        "1": 0,
+        "2": 0
+      },
+      "gpu_caption": "the scene is the same as before"
+    },
+    {
+      "file": "test_000610.png",
+      "reference_changeflag": 0,
+      "raw_caption": "the scene is the same as before",
+      "reference_captions": [
+        " there is no difference .",
+        " the two scenes seem identical .",
+        " the scene is the same as before .",
+        " no change has occurred .",
+        " almost nothing has changed ."
+      ],
+      "caption_changeflag_heuristic": 0,
+      "confusion_rows_reference_columns_prediction": [
+        [
+          65536,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ]
+      ],
+      "predicted_class_pixels": {
+        "0": 65536,
+        "1": 0,
+        "2": 0
+      },
+      "gpu_caption": "the scene is the same as before"
+    },
+    {
+      "file": "test_001922.png",
+      "reference_changeflag": 0,
+      "raw_caption": "the scene is the same as before",
+      "reference_captions": [
+        " there is no difference .",
+        " the two scenes seem identical .",
+        " the scene is the same as before .",
+        " no change has occurred .",
+        " almost nothing has changed ."
+      ],
+      "caption_changeflag_heuristic": 0,
+      "confusion_rows_reference_columns_prediction": [
+        [
+          65536,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ]
+      ],
+      "predicted_class_pixels": {
+        "0": 65536,
+        "1": 0,
+        "2": 0
+      },
+      "gpu_caption": "the scene is the same as before"
+    },
+    {
+      "file": "test_000907.png",
+      "reference_changeflag": 0,
+      "raw_caption": "the scene is the same as before",
+      "reference_captions": [
+        " there is no difference .",
+        " the two scenes seem identical .",
+        " the scene is the same as before .",
+        " no change has occurred .",
+        " almost nothing has changed ."
+      ],
+      "caption_changeflag_heuristic": 0,
+      "confusion_rows_reference_columns_prediction": [
+        [
+          65536,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ]
+      ],
+      "predicted_class_pixels": {
+        "0": 65536,
+        "1": 0,
+        "2": 0
+      },
+      "gpu_caption": "the scene is the same as before"
+    },
+    {
+      "file": "test_000173.png",
+      "reference_changeflag": 0,
+      "raw_caption": "the scene is the same as before",
+      "reference_captions": [
+        " there is no difference .",
+        " the two scenes seem identical .",
+        " the scene is the same as before .",
+        " no change has occurred .",
+        " almost nothing has changed ."
+      ],
+      "caption_changeflag_heuristic": 0,
+      "confusion_rows_reference_columns_prediction": [
+        [
+          65536,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ]
+      ],
+      "predicted_class_pixels": {
+        "0": 65536,
+        "1": 0,
+        "2": 0
+      },
+      "gpu_caption": "the scene is the same as before"
+    },
+    {
+      "file": "test_000963.png",
+      "reference_changeflag": 0,
+      "raw_caption": "the scene is the same as before",
+      "reference_captions": [
+        " there is no difference .",
+        " the two scenes seem identical .",
+        " the scene is the same as before .",
+        " no change has occurred .",
+        " almost nothing has changed ."
+      ],
+      "caption_changeflag_heuristic": 0,
+      "confusion_rows_reference_columns_prediction": [
+        [
+          65536,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ]
+      ],
+      "predicted_class_pixels": {
+        "0": 65536,
+        "1": 0,
+        "2": 0
+      },
+      "gpu_caption": "the scene is the same as before"
+    },
+    {
+      "file": "test_000183.png",
+      "reference_changeflag": 0,
+      "raw_caption": "the scene is the same as before",
+      "reference_captions": [
+        " there is no difference .",
+        " the two scenes seem identical .",
+        " the scene is the same as before .",
+        " no change has occurred .",
+        " almost nothing has changed ."
+      ],
+      "caption_changeflag_heuristic": 0,
+      "confusion_rows_reference_columns_prediction": [
+        [
+          65536,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ]
+      ],
+      "predicted_class_pixels": {
+        "0": 65536,
+        "1": 0,
+        "2": 0
+      },
+      "gpu_caption": "the scene is the same as before"
+    },
+    {
+      "file": "test_000609.png",
+      "reference_changeflag": 1,
+      "raw_caption": "the scene is the same as before",
+      "reference_captions": [
+        " the grass disappears and some shrubs grow .",
+        " the woods have thinned out in the lower area of the scene .",
+        " some vegetation has disappeared .",
+        " many trees appear and the ground turns green .",
+        " almost all of the plants are removed ."
+      ],
+      "caption_changeflag_heuristic": 0,
+      "confusion_rows_reference_columns_prediction": [
+        [
+          65536,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ]
+      ],
+      "predicted_class_pixels": {
+        "0": 65536,
+        "1": 0,
+        "2": 0
+      },
+      "gpu_caption": "the scene is the same as before"
+    },
+    {
+      "file": "test_001771.png",
+      "reference_changeflag": 1,
+      "raw_caption": "the scene is the same as before",
+      "reference_captions": [
+        " some staggered trails appear in the woodland and grassland .",
+        " some plants are removed and some roads appear .",
+        " some woods are removed and some roads in dirt appear .",
+        " some dirt roads run across the forest .",
+        " several roads have been built replacing some trees ."
+      ],
+      "caption_changeflag_heuristic": 0,
+      "confusion_rows_reference_columns_prediction": [
+        [
+          65536,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ]
+      ],
+      "predicted_class_pixels": {
+        "0": 65536,
+        "1": 0,
+        "2": 0
+      },
+      "gpu_caption": "the scene is the same as before"
+    },
+    {
+      "file": "test_000585.png",
+      "reference_changeflag": 1,
+      "raw_caption": "some houses are built on the bareland along the road",
+      "reference_captions": [
+        " a line of houses has been built by the road at the top .",
+        " villas are built along the road at the top of the scene .",
+        " several buildings have been constructed on the bareland beside the roads .",
+        " some villas are built near the crossroad .",
+        " many houses appear along the road ."
+      ],
+      "caption_changeflag_heuristic": 1,
+      "confusion_rows_reference_columns_prediction": [
+        [
+          60556,
+          0,
+          579
+        ],
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          287,
+          0,
+          4114
+        ]
+      ],
+      "predicted_class_pixels": {
+        "0": 60843,
+        "1": 0,
+        "2": 4693
+      },
+      "gpu_caption": "some houses are built on the bareland along the road"
+    },
+    {
+      "file": "test_001172.png",
+      "reference_changeflag": 1,
+      "raw_caption": "some detached houses and roads are constructed on the bareland",
+      "reference_captions": [
+        " a row of houses appears on the left side of the scene and a road is built .",
+        " a row of detached houses is constructed beside the road on the bareland .",
+        " a road was rebuilt and many houses are constructed .",
+        " a t-shaped road appears and several buildings are built near roads .",
+        " two intersecting roads and some houses are constructed ."
+      ],
+      "caption_changeflag_heuristic": 1,
+      "confusion_rows_reference_columns_prediction": [
+        [
+          52008,
+          116,
+          492
+        ],
+        [
+          779,
+          6370,
+          0
+        ],
+        [
+          325,
+          0,
+          5446
+        ]
+      ],
+      "predicted_class_pixels": {
+        "0": 53112,
+        "1": 6486,
+        "2": 5938
+      },
+      "gpu_caption": "some detached houses and roads are constructed on the bareland"
+    },
+    {
+      "file": "test_000462.png",
+      "reference_changeflag": 1,
+      "raw_caption": "a t-shaped road is built and many houses are built along the road",
+      "reference_captions": [
+        " many trees are replaced by a t-shaped road and many buildings are scattered .",
+        " a cross road with villas neatly built along replace the trees .",
+        " a road has been built to replace the original forest and many villas have been constructed beside the road .",
+        " most of the trees are removed and a new residential district has been built .",
+        " new roads surrounded by new houses replace the woods ."
+      ],
+      "caption_changeflag_heuristic": 1,
+      "confusion_rows_reference_columns_prediction": [
+        [
+          39643,
+          261,
+          1205
+        ],
+        [
+          524,
+          7869,
+          0
+        ],
+        [
+          1701,
+          0,
+          14333
+        ]
+      ],
+      "predicted_class_pixels": {
+        "0": 41868,
+        "1": 8130,
+        "2": 15538
+      },
+      "gpu_caption": "a t-shaped road is built and many houses are built along the road"
+    },
+    {
+      "file": "test_001638.png",
+      "reference_changeflag": 1,
+      "raw_caption": "the scene is the same as before",
+      "reference_captions": [
+        " a few rooms are missing in the building complex .",
+        " four more buildings and a road through the woods appear .",
+        " some houses are built in the trees along the road .",
+        " some houses are built among the other houses .",
+        " a house appears at the top and three are built on the left ."
+      ],
+      "caption_changeflag_heuristic": 0,
+      "confusion_rows_reference_columns_prediction": [
+        [
+          61711,
+          29,
+          501
+        ],
+        [
+          57,
+          2020,
+          0
+        ],
+        [
+          911,
+          0,
+          307
+        ]
+      ],
+      "predicted_class_pixels": {
+        "0": 62679,
+        "1": 2049,
+        "2": 808
+      },
+      "gpu_caption": "the scene is the same as before"
+    },
+    {
+      "file": "test_000121.png",
+      "reference_changeflag": 1,
+      "raw_caption": "the road has been removed and a road with villas built along appears",
+      "reference_captions": [
+        " many plants are replaced by some villas on the roadsides .",
+        " trees are removed and some villas with an arc road are built .",
+        " a road is built and several houses are constructed on both sides of it to replace some plants .",
+        " the cement road replaces the earth road and some houses are built along with it .",
+        " a road shows up with some buildings built beside ."
+      ],
+      "caption_changeflag_heuristic": 1,
+      "confusion_rows_reference_columns_prediction": [
+        [
+          56041,
+          284,
+          528
+        ],
+        [
+          51,
+          3454,
+          0
+        ],
+        [
+          284,
+          0,
+          4894
+        ]
+      ],
+      "predicted_class_pixels": {
+        "0": 56376,
+        "1": 3738,
+        "2": 5422
+      },
+      "gpu_caption": "the road has been removed and a road with villas built along appears"
+    },
+    {
+      "file": "test_001424.png",
+      "reference_changeflag": 1,
+      "raw_caption": "some houses are built in the clearing",
+      "reference_captions": [
+        " a road and two houses appear on the grass on the left .",
+        " a house shows up along the extended road .",
+        " a road has been extended and two houses are added to the road .",
+        " a building is built at the bottom .",
+        " two houses and some trees have appeared in the clearing by the side of the road ."
+      ],
+      "caption_changeflag_heuristic": 1,
+      "confusion_rows_reference_columns_prediction": [
+        [
+          60825,
+          44,
+          68
+        ],
+        [
+          48,
+          3194,
+          0
+        ],
+        [
+          192,
+          0,
+          1165
+        ]
+      ],
+      "predicted_class_pixels": {
+        "0": 61065,
+        "1": 3238,
+        "2": 1233
+      },
+      "gpu_caption": "some houses are built in the clearing"
+    },
+    {
+      "file": "test_000789.png",
+      "reference_changeflag": 1,
+      "raw_caption": "some roads appear on the bareland",
+      "reference_captions": [
+        " some roads appear on the sides of the scene .",
+        " some roads are built on bareland .",
+        " the main road has been constructed .",
+        " a crossroad appears .",
+        " two intersecting roads are built on bareland ."
+      ],
+      "caption_changeflag_heuristic": 1,
+      "confusion_rows_reference_columns_prediction": [
+        [
+          58203,
+          316,
+          0
+        ],
+        [
+          162,
+          6855,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ]
+      ],
+      "predicted_class_pixels": {
+        "0": 58365,
+        "1": 7171,
+        "2": 0
+      },
+      "gpu_caption": "some roads appear on the bareland"
+    },
+    {
+      "file": "test_001072.png",
+      "reference_changeflag": 1,
+      "raw_caption": "the scene is the same as before",
+      "reference_captions": [
+        " a corner of a house appears at the top right corner of the scene .",
+        " several houses have been built as a line at the top .",
+        " only a single building has been constructed .",
+        " a building appears on the upper right .",
+        " some houses are built in the clearing by the side of the road ."
+      ],
+      "caption_changeflag_heuristic": 0,
+      "confusion_rows_reference_columns_prediction": [
+        [
+          65300,
+          0,
+          22
+        ],
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          8,
+          0,
+          206
+        ]
+      ],
+      "predicted_class_pixels": {
+        "0": 65308,
+        "1": 0,
+        "2": 228
+      },
+      "gpu_caption": "the scene is the same as before"
+    },
+    {
+      "file": "test_000270.png",
+      "reference_changeflag": 1,
+      "raw_caption": "trees in the left are removed and a road with villas built along appears",
+      "reference_captions": [
+        " half of the trees are replaced by a road and some buildings alongside .",
+        " trees are removed and a road with some houses neatly arranged beside it are built .",
+        " a road and a row of villas have been built in the forest .",
+        " half of the forests are cut down and some houses are built along the road .",
+        " half of the plants are replaced by a road with houses along ."
+      ],
+      "caption_changeflag_heuristic": 1,
+      "confusion_rows_reference_columns_prediction": [
+        [
+          54961,
+          255,
+          303
+        ],
+        [
+          186,
+          4468,
+          0
+        ],
+        [
+          395,
+          0,
+          4968
+        ]
+      ],
+      "predicted_class_pixels": {
+        "0": 55542,
+        "1": 4723,
+        "2": 5271
+      },
+      "gpu_caption": "trees in the left are removed and a road with villas built along appears"
+    },
+    {
+      "file": "test_001960.png",
+      "reference_changeflag": 1,
+      "raw_caption": "a row of houses is built on the top right",
+      "reference_captions": [
+        " a row of houses appears on the wasteland on the right .",
+        " a row of houses appear in the desert .",
+        " a row of houses is built on the bareland on the right .",
+        " a row of houses is built in the open space on the right side of the scene .",
+        " a row of villas has been constructed on the right ."
+      ],
+      "caption_changeflag_heuristic": 1,
+      "confusion_rows_reference_columns_prediction": [
+        [
+          61136,
+          33,
+          259
+        ],
+        [
+          0,
+          276,
+          0
+        ],
+        [
+          263,
+          0,
+          3569
+        ]
+      ],
+      "predicted_class_pixels": {
+        "0": 61399,
+        "1": 309,
+        "2": 3828
+      },
+      "gpu_caption": "a row of houses is built on the top right"
+    },
+    {
+      "file": "test_000653.png",
+      "reference_changeflag": 1,
+      "raw_caption": "a road is built and some houses are built along the road",
+      "reference_captions": [
+        " some roads and houses are built on bareland .",
+        " some detached houses are constructed beside the road on the bareland .",
+        " a road has appeared and several buildings are built along with it .",
+        " several buildings and a t-shaped road appear .",
+        " two vertical roads and some scattered houses are built on the original bareland ."
+      ],
+      "caption_changeflag_heuristic": 1,
+      "confusion_rows_reference_columns_prediction": [
+        [
+          49715,
+          352,
+          581
+        ],
+        [
+          54,
+          6749,
+          0
+        ],
+        [
+          385,
+          0,
+          7700
+        ]
+      ],
+      "predicted_class_pixels": {
+        "0": 50154,
+        "1": 7101,
+        "2": 8281
+      },
+      "gpu_caption": "a road is built and some houses are built along the road"
+    },
+    {
+      "file": "test_000192.png",
+      "reference_changeflag": 1,
+      "raw_caption": "the road has been removed and many houses are built along the road",
+      "reference_captions": [
+        " a road parallel to the original one appears and many houses are built alongside .",
+        " a new road is built on the left side of the old road and some villas appear along the new road .",
+        " one more road has been built near the original one and many villas have been constructed beside the roads .",
+        " a new road is built near another one and houses are built along it .",
+        " a road with houses built along replaces most of the plants ."
+      ],
+      "caption_changeflag_heuristic": 1,
+      "confusion_rows_reference_columns_prediction": [
+        [
+          45974,
+          40,
+          1592
+        ],
+        [
+          656,
+          6755,
+          0
+        ],
+        [
+          1120,
+          0,
+          9399
+        ]
+      ],
+      "predicted_class_pixels": {
+        "0": 47750,
+        "1": 6795,
+        "2": 10991
+      },
+      "gpu_caption": "the road has been removed and many houses are built along the road"
+    },
+    {
+      "file": "test_001095.png",
+      "reference_changeflag": 1,
+      "raw_caption": "the scene is the same as before",
+      "reference_captions": [
+        " a corner of a house appears on the right side of the scene .",
+        " a row of trees in the center disappear and a house has been built in the right .",
+        " the area of green has been decreased .",
+        " a building is built on the right .",
+        " a building is erected and some young trees are removed ."
+      ],
+      "caption_changeflag_heuristic": 0,
+      "confusion_rows_reference_columns_prediction": [
+        [
+          65363,
+          99,
+          7
+        ],
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          11,
+          0,
+          56
+        ]
+      ],
+      "predicted_class_pixels": {
+        "0": 65374,
+        "1": 99,
+        "2": 63
+      },
+      "gpu_caption": "the scene is the same as before"
+    },
+    {
+      "file": "test_000500.png",
+      "reference_changeflag": 1,
+      "raw_caption": "two houses are built by the roadside",
+      "reference_captions": [
+        " a building has been constructed next to the original one .",
+        " a villa is built on the left beside the road .",
+        " a house has been built on the bareland beside the road .",
+        " a new house is built next to another one .",
+        " a house appears near the existing one on the bareland ."
+      ],
+      "caption_changeflag_heuristic": 1,
+      "confusion_rows_reference_columns_prediction": [
+        [
+          63306,
+          34,
+          78
+        ],
+        [
+          479,
+          214,
+          0
+        ],
+        [
+          122,
+          0,
+          1303
+        ]
+      ],
+      "predicted_class_pixels": {
+        "0": 63907,
+        "1": 248,
+        "2": 1381
+      },
+      "gpu_caption": "two houses are built by the roadside"
+    },
+    {
+      "file": "test_001680.png",
+      "reference_changeflag": 1,
+      "raw_caption": "some new houses are built at the bottom corner of the scene",
+      "reference_captions": [
+        " the crossroad continues to stretch and many houses appear on both sides of the road .",
+        " massive houses along the extended crossing roads appear in the desert .",
+        " the road is rebuilt into a cross road and villas are built along the road .",
+        " some houses are built at the crossroad .",
+        " a road is built vertical to the original one and many buildings appear by the roads ."
+      ],
+      "caption_changeflag_heuristic": 1,
+      "confusion_rows_reference_columns_prediction": [
+        [
+          46016,
+          459,
+          469
+        ],
+        [
+          4376,
+          7342,
+          0
+        ],
+        [
+          813,
+          0,
+          6061
+        ]
+      ],
+      "predicted_class_pixels": {
+        "0": 51205,
+        "1": 7801,
+        "2": 6530
+      },
+      "gpu_caption": "some new houses are built at the bottom corner of the scene"
+    },
+    {
+      "file": "test_001225.png",
+      "reference_changeflag": 1,
+      "raw_caption": "a large building appears on the bareland",
+      "reference_captions": [
+        " some large buildings and construction sites appear .",
+        " some buildings are constructed on bareland .",
+        " a road with some buildings on the right side appear on the bareland .",
+        " a road appears and several buildings are built .",
+        " a straight road and several buildings are built on bareland ."
+      ],
+      "caption_changeflag_heuristic": 1,
+      "confusion_rows_reference_columns_prediction": [
+        [
+          46082,
+          160,
+          518
+        ],
+        [
+          840,
+          6432,
+          97
+        ],
+        [
+          3019,
+          0,
+          8388
+        ]
+      ],
+      "predicted_class_pixels": {
+        "0": 49941,
+        "1": 6592,
+        "2": 9003
+      },
+      "gpu_caption": "a large building appears on the bareland"
+    },
+    {
+      "file": "test_001199.png",
+      "reference_changeflag": 1,
+      "raw_caption": "many houses and roads are constructed on the bareland",
+      "reference_captions": [
+        " a residential area with many houses and roads appears .",
+        " many detached houses and roads appear on the bareland .",
+        " many square buildings and roads have been built .",
+        " two roads appear and several buildings are built near two roads .",
+        " two roads and many neatly arranged houses have appeared ."
+      ],
+      "caption_changeflag_heuristic": 1,
+      "confusion_rows_reference_columns_prediction": [
+        [
+          36453,
+          275,
+          2029
+        ],
+        [
+          190,
+          7426,
+          0
+        ],
+        [
+          1634,
+          0,
+          17529
+        ]
+      ],
+      "predicted_class_pixels": {
+        "0": 38277,
+        "1": 7701,
+        "2": 19558
+      },
+      "gpu_caption": "many houses and roads are constructed on the bareland"
+    },
+    {
+      "file": "test_001877.png",
+      "reference_changeflag": 1,
+      "raw_caption": "massive houses along the roads appear in the desert",
+      "reference_captions": [
+        " crossroads and houses on both sides of the roads appear on the wasteland .",
+        " massive houses along the roads appear in the desert .",
+        " some roads are built with villas built along and the bareland and bushes disappear .",
+        " many houses are built at the corner of the road in the open space .",
+        " a t-shaped road is built at the bottom with some houses around and two rows of houses are arranged by a road at the top right ."
+      ],
+      "caption_changeflag_heuristic": 1,
+      "confusion_rows_reference_columns_prediction": [
+        [
+          45112,
+          253,
+          467
+        ],
+        [
+          297,
+          9834,
+          0
+        ],
+        [
+          656,
+          0,
+          8917
+        ]
+      ],
+      "predicted_class_pixels": {
+        "0": 46065,
+        "1": 10087,
+        "2": 9384
+      },
+      "gpu_caption": "massive houses along the roads appear in the desert"
+    },
+    {
+      "file": "test_001818.png",
+      "reference_changeflag": 1,
+      "raw_caption": "some buildings appear on the lower-left",
+      "reference_captions": [
+        " two fields and a house appear on the grass below .",
+        " a building appears near the existing one .",
+        " a house is built in the bottom left corner .",
+        " a white warehouse is built in the lower-left corner of the scene .",
+        " a building has been constructed at the bottom left corner and two parking lots appear ."
+      ],
+      "caption_changeflag_heuristic": 1,
+      "confusion_rows_reference_columns_prediction": [
+        [
+          62650,
+          1297,
+          106
+        ],
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          1483
+        ]
+      ],
+      "predicted_class_pixels": {
+        "0": 62650,
+        "1": 1297,
+        "2": 1589
+      },
+      "gpu_caption": "some buildings appear on the lower-left"
+    },
+    {
+      "file": "test_000617.png",
+      "reference_changeflag": 1,
+      "raw_caption": "the woods are removed and a road is built",
+      "reference_captions": [
+        " all the plants have been removed by a road at the top and a road at the bottom .",
+        " the forest is removed and two roads in the top and the bottom appear .",
+        " the vegetation has been removed and two paths have appeared on the bareland .",
+        " all the trees are removed in the scene .",
+        " the forest disappears and two roads appear ."
+      ],
+      "caption_changeflag_heuristic": 1,
+      "confusion_rows_reference_columns_prediction": [
+        [
+          60063,
+          76,
+          0
+        ],
+        [
+          779,
+          4618,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ]
+      ],
+      "predicted_class_pixels": {
+        "0": 60842,
+        "1": 4694,
+        "2": 0
+      },
+      "gpu_caption": "the woods are removed and a road is built"
+    },
+    {
+      "file": "test_001121.png",
+      "reference_changeflag": 1,
+      "raw_caption": "some houses are built at the top of the scene",
+      "reference_captions": [
+        " an end of a road with many houses appears on the top side of the scene .",
+        " some houses are constructed beside the road and the forest .",
+        " the area of grassland has decreased and many buildings have been constructed .",
+        " several buildings are built on the upper right .",
+        " a concrete road and several houses appear on bareland ."
+      ],
+      "caption_changeflag_heuristic": 1,
+      "confusion_rows_reference_columns_prediction": [
+        [
+          58168,
+          161,
+          150
+        ],
+        [
+          66,
+          1997,
+          0
+        ],
+        [
+          530,
+          0,
+          4464
+        ]
+      ],
+      "predicted_class_pixels": {
+        "0": 58764,
+        "1": 2158,
+        "2": 4614
+      },
+      "gpu_caption": "some houses are built at the top of the scene"
+    },
+    {
+      "file": "test_000362.png",
+      "reference_changeflag": 1,
+      "raw_caption": "some houses are built along the road",
+      "reference_captions": [
+        " three mansions appear on the left side of the road and a mansion on the right .",
+        " villas are built with a path to the road along the road .",
+        " several large buildings have been constructed on the bareland on both sides of the road .",
+        " three villas are built along the road and a house has been built in the upper right corner of the scene .",
+        " four houses show up between the woods and the roads ."
+      ],
+      "caption_changeflag_heuristic": 1,
+      "confusion_rows_reference_columns_prediction": [
+        [
+          51098,
+          0,
+          624
+        ],
+        [
+          3879,
+          0,
+          0
+        ],
+        [
+          1818,
+          0,
+          8117
+        ]
+      ],
+      "predicted_class_pixels": {
+        "0": 56795,
+        "1": 0,
+        "2": 8741
+      },
+      "gpu_caption": "some houses are built along the road"
+    },
+    {
+      "file": "test_001360.png",
+      "reference_changeflag": 1,
+      "raw_caption": "a road with some houses around appears on the bareland",
+      "reference_captions": [
+        " a ring road and some construction facilities appear on the wasteland on the lower-right .",
+        " some buildings around the roads appear in the desert .",
+        " some roads with houses appear on the right side of the scene .",
+        " some roads with many buildings around are built on the right side .",
+        " some scattered trees disappear and several roads and houses are built ."
+      ],
+      "caption_changeflag_heuristic": 1,
+      "confusion_rows_reference_columns_prediction": [
+        [
+          57807,
+          732,
+          251
+        ],
+        [
+          203,
+          5191,
+          0
+        ],
+        [
+          653,
+          0,
+          699
+        ]
+      ],
+      "predicted_class_pixels": {
+        "0": 58663,
+        "1": 5923,
+        "2": 950
+      },
+      "gpu_caption": "a road with some houses around appears on the bareland"
+    },
+    {
+      "file": "test_000181.png",
+      "reference_changeflag": 1,
+      "raw_caption": "a road with houses built along appears in the desert",
+      "reference_captions": [
+        " two lines of completed villas are built on both sides of a road replacing some trees .",
+        " villas are built along a new road on the ground .",
+        " a road has been built across the trees and many villas have been constructed on both sides of the road .",
+        " a new residential district is built on abandoned land .",
+        " a road with two rows of buildings appears in the desert ."
+      ],
+      "caption_changeflag_heuristic": 1,
+      "confusion_rows_reference_columns_prediction": [
+        [
+          47053,
+          703,
+          1485
+        ],
+        [
+          56,
+          6314,
+          0
+        ],
+        [
+          843,
+          0,
+          9082
+        ]
+      ],
+      "predicted_class_pixels": {
+        "0": 47952,
+        "1": 7017,
+        "2": 10567
+      },
+      "gpu_caption": "a road with houses built along appears in the desert"
+    },
+    {
+      "file": "test_000123.png",
+      "reference_changeflag": 1,
+      "raw_caption": "the road is removed and some houses are built along the road",
+      "reference_captions": [
+        " many trees disappear and some buildings appear .",
+        " trees are removed and villas are built on every side of the road .",
+        " several villas are constructed to replace some vegetation on both sides of the roads .",
+        " trees near the road are replaced by villas .",
+        " some of the plants are removed and a road as well as houses are built at that site ."
+      ],
+      "caption_changeflag_heuristic": 1,
+      "confusion_rows_reference_columns_prediction": [
+        [
+          49524,
+          97,
+          568
+        ],
+        [
+          294,
+          5387,
+          0
+        ],
+        [
+          776,
+          0,
+          8890
+        ]
+      ],
+      "predicted_class_pixels": {
+        "0": 50594,
+        "1": 5484,
+        "2": 9458
+      },
+      "gpu_caption": "the road is removed and some houses are built along the road"
+    },
+    {
+      "file": "test_001275.png",
+      "reference_changeflag": 1,
+      "raw_caption": "some houses are built on the bareland",
+      "reference_captions": [
+        " some houses are built along the roads .",
+        " some houses are constructed beside the road on the bareland .",
+        " a new road is built parallel to the original road and some buildings appear beside the roads .",
+        " several buildings are built near roads .",
+        " a cement road and some scattered houses appear in the clearing ."
+      ],
+      "caption_changeflag_heuristic": 1,
+      "confusion_rows_reference_columns_prediction": [
+        [
+          51934,
+          95,
+          300
+        ],
+        [
+          2265,
+          6539,
+          23
+        ],
+        [
+          1164,
+          101,
+          3115
+        ]
+      ],
+      "predicted_class_pixels": {
+        "0": 55363,
+        "1": 6735,
+        "2": 3438
+      },
+      "gpu_caption": "some houses are built on the bareland"
+    },
+    {
+      "file": "test_000409.png",
+      "reference_changeflag": 1,
+      "raw_caption": "the scene is the same as before",
+      "reference_captions": [
+        " a house has been built in the center of the woods .",
+        " a villa appears in the woods in the residential area .",
+        " a house has appeared among the trees .",
+        " a house has been built in the center of the other three buildings .",
+        " a building appears among the trees in this residential area ."
+      ],
+      "caption_changeflag_heuristic": 0,
+      "confusion_rows_reference_columns_prediction": [
+        [
+          64797,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          733,
+          0,
+          6
+        ]
+      ],
+      "predicted_class_pixels": {
+        "0": 65530,
+        "1": 0,
+        "2": 6
+      },
+      "gpu_caption": "the scene is the same as before"
+    },
+    {
+      "file": "test_001595.png",
+      "reference_changeflag": 1,
+      "raw_caption": "many detached houses and roads are constructed on the bareland",
+      "reference_captions": [
+        " the grass is developed into roads and neat buildings .",
+        " massive houses along the roads appear in the desert .",
+        " a residential area with many houses and roads appears .",
+        " some roads with many houses around are built on the grassland .",
+        " two concrete roads and some houses are constructed in the clearing ."
+      ],
+      "caption_changeflag_heuristic": 1,
+      "confusion_rows_reference_columns_prediction": [
+        [
+          39681,
+          273,
+          546
+        ],
+        [
+          298,
+          8649,
+          0
+        ],
+        [
+          1359,
+          0,
+          14730
+        ]
+      ],
+      "predicted_class_pixels": {
+        "0": 41338,
+        "1": 8922,
+        "2": 15276
+      },
+      "gpu_caption": "many detached houses and roads are constructed on the bareland"
+    },
+    {
+      "file": "test_000494.png",
+      "reference_changeflag": 1,
+      "raw_caption": "some houses are built along the road",
+      "reference_captions": [
+        " a road parallel to the original one appears and several villas are constructed .",
+        " two roads through the scene are constructed and buildings are built between them .",
+        " a road has been built in the corner of the scene and many villas have been built on the bareland between the roads .",
+        " some houses are built near the main road in the center .",
+        " new roads and more buildings appear in the desert ."
+      ],
+      "caption_changeflag_heuristic": 1,
+      "confusion_rows_reference_columns_prediction": [
+        [
+          55029,
+          606,
+          468
+        ],
+        [
+          1586,
+          3273,
+          0
+        ],
+        [
+          1713,
+          0,
+          2861
+        ]
+      ],
+      "predicted_class_pixels": {
+        "0": 58328,
+        "1": 3879,
+        "2": 3329
+      },
+      "gpu_caption": "some houses are built along the road"
+    },
+    {
+      "file": "test_000193.png",
+      "reference_changeflag": 1,
+      "raw_caption": "two houses appear in the top right corner of the scene",
+      "reference_captions": [
+        " two villas have been constructed at the top right corner .",
+        " some buildings appear in the top right corner .",
+        " two large houses have been constructed in the corner of the scene .",
+        " two villas are built in the upper right corner .",
+        " two buildings show up in the desert ."
+      ],
+      "caption_changeflag_heuristic": 1,
+      "confusion_rows_reference_columns_prediction": [
+        [
+          62242,
+          0,
+          274
+        ],
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          294,
+          0,
+          2726
+        ]
+      ],
+      "predicted_class_pixels": {
+        "0": 62536,
+        "1": 0,
+        "2": 3000
+      },
+      "gpu_caption": "two houses appear in the top right corner of the scene"
+    },
+    {
+      "file": "test_001799.png",
+      "reference_changeflag": 1,
+      "raw_caption": "the scene is the same as before",
+      "reference_captions": [
+        " a house is built on the wasteland in the middle .",
+        " a building appears between the existing ones .",
+        " a building with a parking lot is built on the bareland along the road .",
+        " a house is built between two buildings by the road .",
+        " a building appears in the center bareland ."
+      ],
+      "caption_changeflag_heuristic": 0,
+      "confusion_rows_reference_columns_prediction": [
+        [
+          61498,
+          94,
+          17
+        ],
+        [
+          1535,
+          1015,
+          4
+        ],
+        [
+          179,
+          0,
+          1194
+        ]
+      ],
+      "predicted_class_pixels": {
+        "0": 63212,
+        "1": 1109,
+        "2": 1215
+      },
+      "gpu_caption": "the scene is the same as before"
+    },
+    {
+      "file": "test_000416.png",
+      "reference_changeflag": 1,
+      "raw_caption": "some houses are built along the road",
+      "reference_captions": [
+        " many trees are removed and several buildings are arranged on both sides of the road .",
+        " most trees are removed and the road is rebuilt into a straight road with villas neatly built along .",
+        " a road has been built and several villas have been constructed on both sides of the road .",
+        " some houses are built on both sides of the road .",
+        " most of the plants are removed and a road with some houses along is constructed ."
+      ],
+      "caption_changeflag_heuristic": 1,
+      "confusion_rows_reference_columns_prediction": [
+        [
+          51229,
+          407,
+          831
+        ],
+        [
+          193,
+          4701,
+          0
+        ],
+        [
+          1237,
+          0,
+          6938
+        ]
+      ],
+      "predicted_class_pixels": {
+        "0": 52659,
+        "1": 5108,
+        "2": 7769
+      },
+      "gpu_caption": "some houses are built along the road"
+    },
+    {
+      "file": "test_001827.png",
+      "reference_changeflag": 1,
+      "raw_caption": "many houses are built along the roads",
+      "reference_captions": [
+        " several neat rows of buildings appear on the wasteland on both sides of the roads .",
+        " massive houses along the roads appear in the desert .",
+        " rows of houses are built on the bareland along the roads on both sides .",
+        " many houses are built in the street blocks .",
+        " the bareland has been filled with houses ."
+      ],
+      "caption_changeflag_heuristic": 1,
+      "confusion_rows_reference_columns_prediction": [
+        [
+          39317,
+          0,
+          932
+        ],
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          2287,
+          0,
+          23000
+        ]
+      ],
+      "predicted_class_pixels": {
+        "0": 41604,
+        "1": 0,
+        "2": 23932
+      },
+      "gpu_caption": "many houses are built along the roads"
+    },
+    {
+      "file": "test_000222.png",
+      "reference_changeflag": 1,
+      "raw_caption": "some houses are built along the road",
+      "reference_captions": [
+        " a ring of villas are constructed around the square .",
+        " some buildings appear in the wood on the left .",
+        " several buildings have been constructed beside the road .",
+        " four houses surround the road .",
+        " four houses appear around the road ."
+      ],
+      "caption_changeflag_heuristic": 1,
+      "confusion_rows_reference_columns_prediction": [
+        [
+          61508,
+          0,
+          200
+        ],
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          622,
+          0,
+          3206
+        ]
+      ],
+      "predicted_class_pixels": {
+        "0": 62130,
+        "1": 0,
+        "2": 3406
+      },
+      "gpu_caption": "some houses are built along the road"
+    },
+    {
+      "file": "test_000655.png",
+      "reference_changeflag": 1,
+      "raw_caption": "massive houses along the roads appear in the desert",
+      "reference_captions": [
+        " a residential area with many houses and roads appears .",
+        " many detached houses and roads appear on the bareland .",
+        " a road and many houses are built on bareland .",
+        " several buildings and a crossroad appear .",
+        " two vertical roads and some houses are constructed on the original bareland ."
+      ],
+      "caption_changeflag_heuristic": 1,
+      "confusion_rows_reference_columns_prediction": [
+        [
+          33922,
+          499,
+          1196
+        ],
+        [
+          140,
+          8302,
+          0
+        ],
+        [
+          1209,
+          0,
+          20268
+        ]
+      ],
+      "predicted_class_pixels": {
+        "0": 35271,
+        "1": 8801,
+        "2": 21464
+      },
+      "gpu_caption": "massive houses along the roads appear in the desert"
+    },
+    {
+      "file": "test_000481.png",
+      "reference_changeflag": 1,
+      "raw_caption": "some houses are built in the woods",
+      "reference_captions": [
+        " some mansions appear at the top and some at the bottom .",
+        " buildings appear at the top and bottom of the scene .",
+        " several houses have been built on both sides of the bareland .",
+        " some new villas are built in the woods at the corners of the scene .",
+        " some houses appear at the edge of the bareland ."
+      ],
+      "caption_changeflag_heuristic": 1,
+      "confusion_rows_reference_columns_prediction": [
+        [
+          56984,
+          69,
+          557
+        ],
+        [
+          30,
+          658,
+          0
+        ],
+        [
+          916,
+          0,
+          6322
+        ]
+      ],
+      "predicted_class_pixels": {
+        "0": 57930,
+        "1": 727,
+        "2": 6879
+      },
+      "gpu_caption": "some houses are built in the woods"
+    },
+    {
+      "file": "test_000778.png",
+      "reference_changeflag": 1,
+      "raw_caption": "some roads and houses are built on the bareland",
+      "reference_captions": [
+        " a road with many houses appears .",
+        " some detached houses are constructed beside the road on the bareland .",
+        " a road is built and a row of houses of been constructed .",
+        " a road appear and several buildings are built near a road .",
+        " a winding concrete road appears and some houses are built on one side of the road ."
+      ],
+      "caption_changeflag_heuristic": 1,
+      "confusion_rows_reference_columns_prediction": [
+        [
+          53016,
+          331,
+          419
+        ],
+        [
+          43,
+          5307,
+          0
+        ],
+        [
+          342,
+          0,
+          6078
+        ]
+      ],
+      "predicted_class_pixels": {
+        "0": 53401,
+        "1": 5638,
+        "2": 6497
+      },
+      "gpu_caption": "some roads and houses are built on the bareland"
+    },
+    {
+      "file": "test_001232.png",
+      "reference_changeflag": 1,
+      "raw_caption": "a large building with a parking lot is built on the bareland",
+      "reference_captions": [
+        " a large building with parking lots appears on the left side of the scene .",
+        " some buildings and a parking lot are constructed beside the road on the bareland .",
+        " a big building appears on the left side with some parking places around .",
+        " a parking lot appear and a building is built .",
+        " a large building and some parking lots have appeared ."
+      ],
+      "caption_changeflag_heuristic": 1,
+      "confusion_rows_reference_columns_prediction": [
+        [
+          34371,
+          1656,
+          239
+        ],
+        [
+          2588,
+          9550,
+          49
+        ],
+        [
+          1461,
+          0,
+          15622
+        ]
+      ],
+      "predicted_class_pixels": {
+        "0": 38420,
+        "1": 11206,
+        "2": 15910
+      },
+      "gpu_caption": "a large building with a parking lot is built on the bareland"
+    },
+    {
+      "file": "test_001696.png",
+      "reference_changeflag": 1,
+      "raw_caption": "the scene is the same as before",
+      "reference_captions": [
+        " a room appears above and the number of cars parked on the field greatly increases .",
+        " a building appears among the existing ones .",
+        " a building with a parking lot is built at the top .",
+        " a white building is built next to the other buildings .",
+        " a building has been constructed at the top ."
+      ],
+      "caption_changeflag_heuristic": 0,
+      "confusion_rows_reference_columns_prediction": [
+        [
+          63916,
+          10,
+          24
+        ],
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          1529,
+          0,
+          57
+        ]
+      ],
+      "predicted_class_pixels": {
+        "0": 65445,
+        "1": 10,
+        "2": 81
+      },
+      "gpu_caption": "the scene is the same as before"
+    },
+    {
+      "file": "test_000621.png",
+      "reference_changeflag": 1,
+      "raw_caption": "the vegetation has been removed and a residential area is built with villas built along",
+      "reference_captions": [
+        " two vertical roads are constructed and two lines of completed villas appear replacing the vegetation .",
+        " trees are removed and a turning is built in the top and a cross road is constructed with rows of villas built along .",
+        " several roads have been built to replace the vegetation and many neatly arranged villas have been constructed on both sides of the roads .",
+        " all the trees disappear and many houses are built alongside the road .",
+        " the woods turn into crossing roads with rows of buildings built along ."
+      ],
+      "caption_changeflag_heuristic": 1,
+      "confusion_rows_reference_columns_prediction": [
+        [
+          39274,
+          209,
+          1179
+        ],
+        [
+          501,
+          10802,
+          0
+        ],
+        [
+          1575,
+          0,
+          11996
+        ]
+      ],
+      "predicted_class_pixels": {
+        "0": 41350,
+        "1": 11011,
+        "2": 13175
+      },
+      "gpu_caption": "the vegetation has been removed and a residential area is built with villas built along"
+    },
+    {
+      "file": "test_000319.png",
+      "reference_changeflag": 1,
+      "raw_caption": "a road is built across the forest and some houses are built along the road",
+      "reference_captions": [
+        " a road is built at the bottom and a ring of villas appear on the left replacing some trees .",
+        " a cross road replaces the trees in the bottom and some buildings appear in the left .",
+        " a road with a bypass has been built across the trees and several buildings have been built near it .",
+        " a asphalt road extends to distance and some houses are built near the road .",
+        " half of the plants have been removed and groups of buildings as well as a road with branches appear ."
+      ],
+      "caption_changeflag_heuristic": 1,
+      "confusion_rows_reference_columns_prediction": [
+        [
+          53452,
+          544,
+          1563
+        ],
+        [
+          19,
+          5891,
+          0
+        ],
+        [
+          176,
+          0,
+          3891
+        ]
+      ],
+      "predicted_class_pixels": {
+        "0": 53647,
+        "1": 6435,
+        "2": 5454
+      },
+      "gpu_caption": "a road is built across the forest and some houses are built along the road"
+    },
+    {
+      "file": "test_000644.png",
+      "reference_changeflag": 1,
+      "raw_caption": "a t-shaped road is built with villas built along",
+      "reference_captions": [
+        " some roads and houses with a swimming pool appear .",
+        " many detached houses and are constructed beside the road on the bareland .",
+        " a villa is built on bareland .",
+        " several buildings and a path and a road appear .",
+        " two intersecting roads and some houses are constructed in the clearing ."
+      ],
+      "caption_changeflag_heuristic": 1,
+      "confusion_rows_reference_columns_prediction": [
+        [
+          50311,
+          316,
+          691
+        ],
+        [
+          355,
+          7963,
+          0
+        ],
+        [
+          288,
+          0,
+          5612
+        ]
+      ],
+      "predicted_class_pixels": {
+        "0": 50954,
+        "1": 8279,
+        "2": 6303
+      },
+      "gpu_caption": "a t-shaped road is built with villas built along"
+    },
+    {
+      "file": "test_000603.png",
+      "reference_changeflag": 1,
+      "raw_caption": "some houses are built along the road in the open space",
+      "reference_captions": [
+        " a u-shaped road appears on the bareland and many houses are scattered .",
+        " a turning road is built with many villas built along .",
+        " a road has been built on the bareland and many houses have been constructed beside the road .",
+        " on the bareland some houses appear alongside the cement road .",
+        " massive houses surrounding the new roads show up in the desert ."
+      ],
+      "caption_changeflag_heuristic": 1,
+      "confusion_rows_reference_columns_prediction": [
+        [
+          41853,
+          360,
+          1207
+        ],
+        [
+          399,
+          8991,
+          0
+        ],
+        [
+          560,
+          0,
+          12166
+        ]
+      ],
+      "predicted_class_pixels": {
+        "0": 42812,
+        "1": 9351,
+        "2": 13373
+      },
+      "gpu_caption": "some houses are built along the road in the open space"
+    },
+    {
+      "file": "test_000386.png",
+      "reference_changeflag": 1,
+      "raw_caption": "the scene is the same as before",
+      "reference_captions": [
+        " two houses are built in the clearing at the top .",
+        " some buildings appear in the woods in the higher left area of the scene .",
+        " a house has been built in the trees .",
+        " a small house is built in the forest .",
+        " two connected small buildings appear in the woods ."
+      ],
+      "caption_changeflag_heuristic": 0,
+      "confusion_rows_reference_columns_prediction": [
+        [
+          65059,
+          0,
+          7
+        ],
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          470,
+          0,
+          0
+        ]
+      ],
+      "predicted_class_pixels": {
+        "0": 65529,
+        "1": 0,
+        "2": 7
+      },
+      "gpu_caption": "the scene is the same as before"
+    },
+    {
+      "file": "test_001294.png",
+      "reference_changeflag": 1,
+      "raw_caption": "a parking lot is built on the bareland",
+      "reference_captions": [
+        " a field with three houses and some facilities appears on the grass on the right .",
+        " three small buildings surrounded by the enclosing wall appear on the bare ground on the bare ground .",
+        " an electric plant is built in the middle of the scene .",
+        " some buildings are built on the bareland in the middle and a road at the top corner disappears .",
+        " several small buildings have been built in the clearing ."
+      ],
+      "caption_changeflag_heuristic": 1,
+      "confusion_rows_reference_columns_prediction": [
+        [
+          62859,
+          117,
+          0
+        ],
+        [
+          1088,
+          830,
+          0
+        ],
+        [
+          642,
+          0,
+          0
+        ]
+      ],
+      "predicted_class_pixels": {
+        "0": 64589,
+        "1": 947,
+        "2": 0
+      },
+      "gpu_caption": "a parking lot is built on the bareland"
+    },
+    {
+      "file": "test_000466.png",
+      "reference_changeflag": 1,
+      "raw_caption": "the scene is the same as before",
+      "reference_captions": [
+        " a house appears next to the woods on the bareland .",
+        " a house appears on the edge of the forest .",
+        " a small house has appeared in the forest .",
+        " a small building has been situated in front of forests .",
+        " a small building appears at the edge of the forest ."
+      ],
+      "caption_changeflag_heuristic": 0,
+      "confusion_rows_reference_columns_prediction": [
+        [
+          65185,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          288,
+          0,
+          63
+        ]
+      ],
+      "predicted_class_pixels": {
+        "0": 65473,
+        "1": 0,
+        "2": 63
+      },
+      "gpu_caption": "the scene is the same as before"
+    },
+    {
+      "file": "test_001355.png",
+      "reference_changeflag": 1,
+      "raw_caption": "a road is built in the lower area",
+      "reference_captions": [
+        " a path appears in the woods on the lower-left .",
+        " a road in the woods appears .",
+        " a road appears .",
+        " a winding road appears .",
+        " a winding path connected with the original road appears ."
+      ],
+      "caption_changeflag_heuristic": 1,
+      "confusion_rows_reference_columns_prediction": [
+        [
+          65316,
+          220,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ]
+      ],
+      "predicted_class_pixels": {
+        "0": 65316,
+        "1": 220,
+        "2": 0
+      },
+      "gpu_caption": "a road is built in the lower area"
+    },
+    {
+      "file": "test_002020.png",
+      "reference_changeflag": 1,
+      "raw_caption": "some houses are built on both sides of the road",
+      "reference_captions": [
+        " a few more houses appear on the wasteland on both sides of the road .",
+        " more houses appear along the road in the desert .",
+        " houses are built on the meadow along the road next to the old houses .",
+        " many houses are built on both sides of the road .",
+        " many buildings are constructed by the original ones next to the road ."
+      ],
+      "caption_changeflag_heuristic": 1,
+      "confusion_rows_reference_columns_prediction": [
+        [
+          57444,
+          0,
+          279
+        ],
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          1162,
+          0,
+          6651
+        ]
+      ],
+      "predicted_class_pixels": {
+        "0": 58606,
+        "1": 0,
+        "2": 6930
+      },
+      "gpu_caption": "some houses are built on both sides of the road"
+    }
+  ],
+  "controls": [
+    {
+      "name": "identical",
+      "raw_caption": "the scene is the same as before",
+      "changed_pixels": 0
+    },
+    {
+      "name": "brightness_contrast",
+      "raw_caption": "the scene is the same as before",
+      "changed_pixels": 0
+    }
+  ],
+  "seconds": 47.357644647,
+  "peak_allocated_MiB": 582.9306640625,
+  "peak_reserved_MiB": 648.0,
+  "load_checks": {
+    "encoder": {
+      "all_required_tensors_loaded": true,
+      "unused_training_branch_tensors": []
+    },
+    "encoder_trans": {
+      "all_required_tensors_loaded": true,
+      "unused_training_branch_tensors": [
+        "BI_fus_cap.layers.0.linear1.bias",
+        "BI_fus_cap.layers.0.linear1.weight",
+        "BI_fus_cap.layers.0.linear2.bias",
+        "BI_fus_cap.layers.0.linear2.weight",
+        "BI_fus_cap.layers.0.norm1.bias",
+        "BI_fus_cap.layers.0.norm1.weight",
+        "BI_fus_cap.layers.0.norm2.bias",
+        "BI_fus_cap.layers.0.norm2.weight",
+        "BI_fus_cap.layers.0.self_attn.in_proj_bias",
+        "BI_fus_cap.layers.0.self_attn.in_proj_weight",
+        "BI_fus_cap.layers.0.self_attn.out_proj.bias",
+        "BI_fus_cap.layers.0.self_attn.out_proj.weight",
+        "Dynamic_DIF_aware_TR.0.0.att.LN.bias",
+        "Dynamic_DIF_aware_TR.0.0.att.LN.weight",
+        "Dynamic_DIF_aware_TR.0.0.att.cos_linear.0.bias",
+        "Dynamic_DIF_aware_TR.0.0.att.cos_linear.0.weight",
+        "Dynamic_DIF_aware_TR.0.0.att.cos_linear.2.bias",
+        "Dynamic_DIF_aware_TR.0.0.att.cos_linear.2.weight",
+        "Dynamic_DIF_aware_TR.0.0.att.pos_emb.rel_height",
+        "Dynamic_DIF_aware_TR.0.0.att.pos_emb.rel_width",
+        "Dynamic_DIF_aware_TR.0.0.att.to_dif.bias",
+        "Dynamic_DIF_aware_TR.0.0.att.to_dif.weight",
+        "Dynamic_DIF_aware_TR.0.0.att.to_dif_conv.0.bias",
+        "Dynamic_DIF_aware_TR.0.0.att.to_dif_conv.0.weight",
+        "Dynamic_DIF_aware_TR.0.0.att.to_q2.bias",
+        "Dynamic_DIF_aware_TR.0.0.att.to_q2.weight",
+        "Dynamic_DIF_aware_TR.0.1.att.LN.bias",
+        "Dynamic_DIF_aware_TR.0.1.att.LN.weight",
+        "Dynamic_DIF_aware_TR.0.1.att.cos_linear.0.bias",
+        "Dynamic_DIF_aware_TR.0.1.att.cos_linear.0.weight",
+        "Dynamic_DIF_aware_TR.0.1.att.cos_linear.2.bias",
+        "Dynamic_DIF_aware_TR.0.1.att.cos_linear.2.weight",
+        "Dynamic_DIF_aware_TR.0.1.att.pos_emb.rel_height",
+        "Dynamic_DIF_aware_TR.0.1.att.pos_emb.rel_width",
+        "Dynamic_DIF_aware_TR.0.1.att.to_dif.bias",
+        "Dynamic_DIF_aware_TR.0.1.att.to_dif.weight",
+        "Dynamic_DIF_aware_TR.0.1.att.to_dif_conv.0.bias",
+        "Dynamic_DIF_aware_TR.0.1.att.to_dif_conv.0.weight",
+        "Dynamic_DIF_aware_TR.0.1.att.to_q2.bias",
+        "Dynamic_DIF_aware_TR.0.1.att.to_q2.weight",
+        "Dynamic_DIF_aware_TR.0.3.se.0.weight",
+        "Dynamic_DIF_aware_TR.0.3.se.2.weight",
+        "Dynamic_DIF_aware_TR.1.0.att.LN.bias",
+        "Dynamic_DIF_aware_TR.1.0.att.LN.weight",
+        "Dynamic_DIF_aware_TR.1.0.att.cos_linear.0.bias",
+        "Dynamic_DIF_aware_TR.1.0.att.cos_linear.0.weight",
+        "Dynamic_DIF_aware_TR.1.0.att.cos_linear.2.bias",
+        "Dynamic_DIF_aware_TR.1.0.att.cos_linear.2.weight",
+        "Dynamic_DIF_aware_TR.1.0.att.pos_emb.rel_height",
+        "Dynamic_DIF_aware_TR.1.0.att.pos_emb.rel_width",
+        "Dynamic_DIF_aware_TR.1.0.att.to_dif.bias",
+        "Dynamic_DIF_aware_TR.1.0.att.to_dif.weight",
+        "Dynamic_DIF_aware_TR.1.0.att.to_dif_conv.0.bias",
+        "Dynamic_DIF_aware_TR.1.0.att.to_dif_conv.0.weight",
+        "Dynamic_DIF_aware_TR.1.0.att.to_q2.bias",
+        "Dynamic_DIF_aware_TR.1.0.att.to_q2.weight",
+        "Dynamic_DIF_aware_TR.1.1.att.LN.bias",
+        "Dynamic_DIF_aware_TR.1.1.att.LN.weight",
+        "Dynamic_DIF_aware_TR.1.1.att.cos_linear.0.bias",
+        "Dynamic_DIF_aware_TR.1.1.att.cos_linear.0.weight",
+        "Dynamic_DIF_aware_TR.1.1.att.cos_linear.2.bias",
+        "Dynamic_DIF_aware_TR.1.1.att.cos_linear.2.weight",
+        "Dynamic_DIF_aware_TR.1.1.att.pos_emb.rel_height",
+        "Dynamic_DIF_aware_TR.1.1.att.pos_emb.rel_width",
+        "Dynamic_DIF_aware_TR.1.1.att.to_dif.bias",
+        "Dynamic_DIF_aware_TR.1.1.att.to_dif.weight",
+        "Dynamic_DIF_aware_TR.1.1.att.to_dif_conv.0.bias",
+        "Dynamic_DIF_aware_TR.1.1.att.to_dif_conv.0.weight",
+        "Dynamic_DIF_aware_TR.1.1.att.to_q2.bias",
+        "Dynamic_DIF_aware_TR.1.1.att.to_q2.weight",
+        "Dynamic_DIF_aware_TR.1.3.se.0.weight",
+        "Dynamic_DIF_aware_TR.1.3.se.2.weight",
+        "Dynamic_DIF_aware_TR.2.0.att.LN.bias",
+        "Dynamic_DIF_aware_TR.2.0.att.LN.weight",
+        "Dynamic_DIF_aware_TR.2.0.att.cos_linear.0.bias",
+        "Dynamic_DIF_aware_TR.2.0.att.cos_linear.0.weight",
+        "Dynamic_DIF_aware_TR.2.0.att.cos_linear.2.bias",
+        "Dynamic_DIF_aware_TR.2.0.att.cos_linear.2.weight",
+        "Dynamic_DIF_aware_TR.2.0.att.pos_emb.rel_height",
+        "Dynamic_DIF_aware_TR.2.0.att.pos_emb.rel_width",
+        "Dynamic_DIF_aware_TR.2.0.att.to_dif.bias",
+        "Dynamic_DIF_aware_TR.2.0.att.to_dif.weight",
+        "Dynamic_DIF_aware_TR.2.0.att.to_dif_conv.0.bias",
+        "Dynamic_DIF_aware_TR.2.0.att.to_dif_conv.0.weight",
+        "Dynamic_DIF_aware_TR.2.0.att.to_q2.bias",
+        "Dynamic_DIF_aware_TR.2.0.att.to_q2.weight",
+        "Dynamic_DIF_aware_TR.2.1.att.LN.bias",
+        "Dynamic_DIF_aware_TR.2.1.att.LN.weight",
+        "Dynamic_DIF_aware_TR.2.1.att.cos_linear.0.bias",
+        "Dynamic_DIF_aware_TR.2.1.att.cos_linear.0.weight",
+        "Dynamic_DIF_aware_TR.2.1.att.cos_linear.2.bias",
+        "Dynamic_DIF_aware_TR.2.1.att.cos_linear.2.weight",
+        "Dynamic_DIF_aware_TR.2.1.att.pos_emb.rel_height",
+        "Dynamic_DIF_aware_TR.2.1.att.pos_emb.rel_width",
+        "Dynamic_DIF_aware_TR.2.1.att.to_dif.bias",
+        "Dynamic_DIF_aware_TR.2.1.att.to_dif.weight",
+        "Dynamic_DIF_aware_TR.2.1.att.to_dif_conv.0.bias",
+        "Dynamic_DIF_aware_TR.2.1.att.to_dif_conv.0.weight",
+        "Dynamic_DIF_aware_TR.2.1.att.to_q2.bias",
+        "Dynamic_DIF_aware_TR.2.1.att.to_q2.weight",
+        "Dynamic_DIF_aware_TR.2.3.se.0.weight",
+        "Dynamic_DIF_aware_TR.2.3.se.2.weight",
+        "Q_transformer_CC.0.att.K_LN.bias",
+        "Q_transformer_CC.0.att.K_LN.weight",
+        "Q_transformer_CC.0.att.LN.bias",
+        "Q_transformer_CC.0.att.LN.weight",
+        "Q_transformer_CC.0.att.Q_LN.bias",
+        "Q_transformer_CC.0.att.Q_LN.weight",
+        "Q_transformer_CC.0.att.V_LN.bias",
+        "Q_transformer_CC.0.att.V_LN.weight",
+        "Q_transformer_CC.0.att.cos_linear.0.bias",
+        "Q_transformer_CC.0.att.cos_linear.0.weight",
+        "Q_transformer_CC.0.att.cos_linear.2.bias",
+        "Q_transformer_CC.0.att.cos_linear.2.weight",
+        "Q_transformer_CC.0.att.fuse_conv.0.bias",
+        "Q_transformer_CC.0.att.fuse_conv.0.weight",
+        "Q_transformer_CC.0.att.fuse_conv.1.bias",
+        "Q_transformer_CC.0.att.fuse_conv.1.num_batches_tracked",
+        "Q_transformer_CC.0.att.fuse_conv.1.running_mean",
+        "Q_transformer_CC.0.att.fuse_conv.1.running_var",
+        "Q_transformer_CC.0.att.fuse_conv.1.weight",
+        "Q_transformer_CC.0.att.fuse_conv2.0.bias",
+        "Q_transformer_CC.0.att.fuse_conv2.0.weight",
+        "Q_transformer_CC.0.att.fuse_conv2.1.bias",
+        "Q_transformer_CC.0.att.fuse_conv2.1.num_batches_tracked",
+        "Q_transformer_CC.0.att.fuse_conv2.1.running_mean",
+        "Q_transformer_CC.0.att.fuse_conv2.1.running_var",
+        "Q_transformer_CC.0.att.fuse_conv2.1.weight",
+        "Q_transformer_CC.0.att.pos_emb.rel_height",
+        "Q_transformer_CC.0.att.pos_emb.rel_width",
+        "Q_transformer_CC.0.att.to_dif.bias",
+        "Q_transformer_CC.0.att.to_dif.weight",
+        "Q_transformer_CC.0.att.to_dif_conv.0.bias",
+        "Q_transformer_CC.0.att.to_dif_conv.0.weight",
+        "Q_transformer_CC.0.att.to_k.bias",
+        "Q_transformer_CC.0.att.to_k.weight",
+        "Q_transformer_CC.0.att.to_out.0.bias",
+        "Q_transformer_CC.0.att.to_out.0.weight",
+        "Q_transformer_CC.0.att.to_q.bias",
+        "Q_transformer_CC.0.att.to_q.weight",
+        "Q_transformer_CC.0.att.to_q2.bias",
+        "Q_transformer_CC.0.att.to_q2.weight",
+        "Q_transformer_CC.0.att.to_v.bias",
+        "Q_transformer_CC.0.att.to_v.weight",
+        "Q_transformer_CC.0.att2.K_LN.bias",
+        "Q_transformer_CC.0.att2.K_LN.weight",
+        "Q_transformer_CC.0.att2.LN.bias",
+        "Q_transformer_CC.0.att2.LN.weight",
+        "Q_transformer_CC.0.att2.Q_LN.bias",
+        "Q_transformer_CC.0.att2.Q_LN.weight",
+        "Q_transformer_CC.0.att2.V_LN.bias",
+        "Q_transformer_CC.0.att2.V_LN.weight",
+        "Q_transformer_CC.0.att2.cos_linear.0.bias",
+        "Q_transformer_CC.0.att2.cos_linear.0.weight",
+        "Q_transformer_CC.0.att2.cos_linear.2.bias",
+        "Q_transformer_CC.0.att2.cos_linear.2.weight",
+        "Q_transformer_CC.0.att2.fuse_conv.0.bias",
+        "Q_transformer_CC.0.att2.fuse_conv.0.weight",
+        "Q_transformer_CC.0.att2.fuse_conv.1.bias",
+        "Q_transformer_CC.0.att2.fuse_conv.1.num_batches_tracked",
+        "Q_transformer_CC.0.att2.fuse_conv.1.running_mean",
+        "Q_transformer_CC.0.att2.fuse_conv.1.running_var",
+        "Q_transformer_CC.0.att2.fuse_conv.1.weight",
+        "Q_transformer_CC.0.att2.fuse_conv2.0.bias",
+        "Q_transformer_CC.0.att2.fuse_conv2.0.weight",
+        "Q_transformer_CC.0.att2.fuse_conv2.1.bias",
+        "Q_transformer_CC.0.att2.fuse_conv2.1.num_batches_tracked",
+        "Q_transformer_CC.0.att2.fuse_conv2.1.running_mean",
+        "Q_transformer_CC.0.att2.fuse_conv2.1.running_var",
+        "Q_transformer_CC.0.att2.fuse_conv2.1.weight",
+        "Q_transformer_CC.0.att2.pos_emb.rel_height",
+        "Q_transformer_CC.0.att2.pos_emb.rel_width",
+        "Q_transformer_CC.0.att2.to_dif.bias",
+        "Q_transformer_CC.0.att2.to_dif.weight",
+        "Q_transformer_CC.0.att2.to_dif_conv.0.bias",
+        "Q_transformer_CC.0.att2.to_dif_conv.0.weight",
+        "Q_transformer_CC.0.att2.to_k.bias",
+        "Q_transformer_CC.0.att2.to_k.weight",
+        "Q_transformer_CC.0.att2.to_out.0.bias",
+        "Q_transformer_CC.0.att2.to_out.0.weight",
+        "Q_transformer_CC.0.att2.to_q.bias",
+        "Q_transformer_CC.0.att2.to_q.weight",
+        "Q_transformer_CC.0.att2.to_q2.bias",
+        "Q_transformer_CC.0.att2.to_q2.weight",
+        "Q_transformer_CC.0.att2.to_v.bias",
+        "Q_transformer_CC.0.att2.to_v.weight",
+        "Q_transformer_CC.0.feedforward.net.0.bias",
+        "Q_transformer_CC.0.feedforward.net.0.weight",
+        "Q_transformer_CC.0.feedforward.net.3.bias",
+        "Q_transformer_CC.0.feedforward.net.3.weight",
+        "Q_transformer_CC.0.norm0.bias",
+        "Q_transformer_CC.0.norm0.weight",
+        "Q_transformer_CC.0.norm1.bias",
+        "Q_transformer_CC.0.norm1.weight",
+        "Q_transformer_CC.0.norm2.bias",
+        "Q_transformer_CC.0.norm2.weight",
+        "Q_transformer_CC.1.att.K_LN.bias",
+        "Q_transformer_CC.1.att.K_LN.weight",
+        "Q_transformer_CC.1.att.LN.bias",
+        "Q_transformer_CC.1.att.LN.weight",
+        "Q_transformer_CC.1.att.Q_LN.bias",
+        "Q_transformer_CC.1.att.Q_LN.weight",
+        "Q_transformer_CC.1.att.V_LN.bias",
+        "Q_transformer_CC.1.att.V_LN.weight",
+        "Q_transformer_CC.1.att.cos_linear.0.bias",
+        "Q_transformer_CC.1.att.cos_linear.0.weight",
+        "Q_transformer_CC.1.att.cos_linear.2.bias",
+        "Q_transformer_CC.1.att.cos_linear.2.weight",
+        "Q_transformer_CC.1.att.fuse_conv.0.bias",
+        "Q_transformer_CC.1.att.fuse_conv.0.weight",
+        "Q_transformer_CC.1.att.fuse_conv.1.bias",
+        "Q_transformer_CC.1.att.fuse_conv.1.num_batches_tracked",
+        "Q_transformer_CC.1.att.fuse_conv.1.running_mean",
+        "Q_transformer_CC.1.att.fuse_conv.1.running_var",
+        "Q_transformer_CC.1.att.fuse_conv.1.weight",
+        "Q_transformer_CC.1.att.fuse_conv2.0.bias",
+        "Q_transformer_CC.1.att.fuse_conv2.0.weight",
+        "Q_transformer_CC.1.att.fuse_conv2.1.bias",
+        "Q_transformer_CC.1.att.fuse_conv2.1.num_batches_tracked",
+        "Q_transformer_CC.1.att.fuse_conv2.1.running_mean",
+        "Q_transformer_CC.1.att.fuse_conv2.1.running_var",
+        "Q_transformer_CC.1.att.fuse_conv2.1.weight",
+        "Q_transformer_CC.1.att.pos_emb.rel_height",
+        "Q_transformer_CC.1.att.pos_emb.rel_width",
+        "Q_transformer_CC.1.att.to_dif.bias",
+        "Q_transformer_CC.1.att.to_dif.weight",
+        "Q_transformer_CC.1.att.to_dif_conv.0.bias",
+        "Q_transformer_CC.1.att.to_dif_conv.0.weight",
+        "Q_transformer_CC.1.att.to_k.bias",
+        "Q_transformer_CC.1.att.to_k.weight",
+        "Q_transformer_CC.1.att.to_out.0.bias",
+        "Q_transformer_CC.1.att.to_out.0.weight",
+        "Q_transformer_CC.1.att.to_q.bias",
+        "Q_transformer_CC.1.att.to_q.weight",
+        "Q_transformer_CC.1.att.to_q2.bias",
+        "Q_transformer_CC.1.att.to_q2.weight",
+        "Q_transformer_CC.1.att.to_v.bias",
+        "Q_transformer_CC.1.att.to_v.weight",
+        "Q_transformer_CC.1.att2.K_LN.bias",
+        "Q_transformer_CC.1.att2.K_LN.weight",
+        "Q_transformer_CC.1.att2.LN.bias",
+        "Q_transformer_CC.1.att2.LN.weight",
+        "Q_transformer_CC.1.att2.Q_LN.bias",
+        "Q_transformer_CC.1.att2.Q_LN.weight",
+        "Q_transformer_CC.1.att2.V_LN.bias",
+        "Q_transformer_CC.1.att2.V_LN.weight",
+        "Q_transformer_CC.1.att2.cos_linear.0.bias",
+        "Q_transformer_CC.1.att2.cos_linear.0.weight",
+        "Q_transformer_CC.1.att2.cos_linear.2.bias",
+        "Q_transformer_CC.1.att2.cos_linear.2.weight",
+        "Q_transformer_CC.1.att2.fuse_conv.0.bias",
+        "Q_transformer_CC.1.att2.fuse_conv.0.weight",
+        "Q_transformer_CC.1.att2.fuse_conv.1.bias",
+        "Q_transformer_CC.1.att2.fuse_conv.1.num_batches_tracked",
+        "Q_transformer_CC.1.att2.fuse_conv.1.running_mean",
+        "Q_transformer_CC.1.att2.fuse_conv.1.running_var",
+        "Q_transformer_CC.1.att2.fuse_conv.1.weight",
+        "Q_transformer_CC.1.att2.fuse_conv2.0.bias",
+        "Q_transformer_CC.1.att2.fuse_conv2.0.weight",
+        "Q_transformer_CC.1.att2.fuse_conv2.1.bias",
+        "Q_transformer_CC.1.att2.fuse_conv2.1.num_batches_tracked",
+        "Q_transformer_CC.1.att2.fuse_conv2.1.running_mean",
+        "Q_transformer_CC.1.att2.fuse_conv2.1.running_var",
+        "Q_transformer_CC.1.att2.fuse_conv2.1.weight",
+        "Q_transformer_CC.1.att2.pos_emb.rel_height",
+        "Q_transformer_CC.1.att2.pos_emb.rel_width",
+        "Q_transformer_CC.1.att2.to_dif.bias",
+        "Q_transformer_CC.1.att2.to_dif.weight",
+        "Q_transformer_CC.1.att2.to_dif_conv.0.bias",
+        "Q_transformer_CC.1.att2.to_dif_conv.0.weight",
+        "Q_transformer_CC.1.att2.to_k.bias",
+        "Q_transformer_CC.1.att2.to_k.weight",
+        "Q_transformer_CC.1.att2.to_out.0.bias",
+        "Q_transformer_CC.1.att2.to_out.0.weight",
+        "Q_transformer_CC.1.att2.to_q.bias",
+        "Q_transformer_CC.1.att2.to_q.weight",
+        "Q_transformer_CC.1.att2.to_q2.bias",
+        "Q_transformer_CC.1.att2.to_q2.weight",
+        "Q_transformer_CC.1.att2.to_v.bias",
+        "Q_transformer_CC.1.att2.to_v.weight",
+        "Q_transformer_CC.1.feedforward.net.0.bias",
+        "Q_transformer_CC.1.feedforward.net.0.weight",
+        "Q_transformer_CC.1.feedforward.net.3.bias",
+        "Q_transformer_CC.1.feedforward.net.3.weight",
+        "Q_transformer_CC.1.norm0.bias",
+        "Q_transformer_CC.1.norm0.weight",
+        "Q_transformer_CC.1.norm1.bias",
+        "Q_transformer_CC.1.norm1.weight",
+        "Q_transformer_CC.1.norm2.bias",
+        "Q_transformer_CC.1.norm2.weight",
+        "Q_transformer_CD.0.att.K_LN.bias",
+        "Q_transformer_CD.0.att.K_LN.weight",
+        "Q_transformer_CD.0.att.LN.bias",
+        "Q_transformer_CD.0.att.LN.weight",
+        "Q_transformer_CD.0.att.Q_LN.bias",
+        "Q_transformer_CD.0.att.Q_LN.weight",
+        "Q_transformer_CD.0.att.V_LN.bias",
+        "Q_transformer_CD.0.att.V_LN.weight",
+        "Q_transformer_CD.0.att.cos_linear.0.bias",
+        "Q_transformer_CD.0.att.cos_linear.0.weight",
+        "Q_transformer_CD.0.att.cos_linear.2.bias",
+        "Q_transformer_CD.0.att.cos_linear.2.weight",
+        "Q_transformer_CD.0.att.fuse_conv.0.bias",
+        "Q_transformer_CD.0.att.fuse_conv.0.weight",
+        "Q_transformer_CD.0.att.fuse_conv.1.bias",
+        "Q_transformer_CD.0.att.fuse_conv.1.num_batches_tracked",
+        "Q_transformer_CD.0.att.fuse_conv.1.running_mean",
+        "Q_transformer_CD.0.att.fuse_conv.1.running_var",
+        "Q_transformer_CD.0.att.fuse_conv.1.weight",
+        "Q_transformer_CD.0.att.fuse_conv2.0.bias",
+        "Q_transformer_CD.0.att.fuse_conv2.0.weight",
+        "Q_transformer_CD.0.att.fuse_conv2.1.bias",
+        "Q_transformer_CD.0.att.fuse_conv2.1.num_batches_tracked",
+        "Q_transformer_CD.0.att.fuse_conv2.1.running_mean",
+        "Q_transformer_CD.0.att.fuse_conv2.1.running_var",
+        "Q_transformer_CD.0.att.fuse_conv2.1.weight",
+        "Q_transformer_CD.0.att.pos_emb.rel_height",
+        "Q_transformer_CD.0.att.pos_emb.rel_width",
+        "Q_transformer_CD.0.att.to_dif.bias",
+        "Q_transformer_CD.0.att.to_dif.weight",
+        "Q_transformer_CD.0.att.to_dif_conv.0.bias",
+        "Q_transformer_CD.0.att.to_dif_conv.0.weight",
+        "Q_transformer_CD.0.att.to_k.bias",
+        "Q_transformer_CD.0.att.to_k.weight",
+        "Q_transformer_CD.0.att.to_out.0.bias",
+        "Q_transformer_CD.0.att.to_out.0.weight",
+        "Q_transformer_CD.0.att.to_q.bias",
+        "Q_transformer_CD.0.att.to_q.weight",
+        "Q_transformer_CD.0.att.to_q2.bias",
+        "Q_transformer_CD.0.att.to_q2.weight",
+        "Q_transformer_CD.0.att.to_v.bias",
+        "Q_transformer_CD.0.att.to_v.weight",
+        "Q_transformer_CD.0.att2.K_LN.bias",
+        "Q_transformer_CD.0.att2.K_LN.weight",
+        "Q_transformer_CD.0.att2.LN.bias",
+        "Q_transformer_CD.0.att2.LN.weight",
+        "Q_transformer_CD.0.att2.Q_LN.bias",
+        "Q_transformer_CD.0.att2.Q_LN.weight",
+        "Q_transformer_CD.0.att2.V_LN.bias",
+        "Q_transformer_CD.0.att2.V_LN.weight",
+        "Q_transformer_CD.0.att2.cos_linear.0.bias",
+        "Q_transformer_CD.0.att2.cos_linear.0.weight",
+        "Q_transformer_CD.0.att2.cos_linear.2.bias",
+        "Q_transformer_CD.0.att2.cos_linear.2.weight",
+        "Q_transformer_CD.0.att2.fuse_conv.0.bias",
+        "Q_transformer_CD.0.att2.fuse_conv.0.weight",
+        "Q_transformer_CD.0.att2.fuse_conv.1.bias",
+        "Q_transformer_CD.0.att2.fuse_conv.1.num_batches_tracked",
+        "Q_transformer_CD.0.att2.fuse_conv.1.running_mean",
+        "Q_transformer_CD.0.att2.fuse_conv.1.running_var",
+        "Q_transformer_CD.0.att2.fuse_conv.1.weight",
+        "Q_transformer_CD.0.att2.fuse_conv2.0.bias",
+        "Q_transformer_CD.0.att2.fuse_conv2.0.weight",
+        "Q_transformer_CD.0.att2.fuse_conv2.1.bias",
+        "Q_transformer_CD.0.att2.fuse_conv2.1.num_batches_tracked",
+        "Q_transformer_CD.0.att2.fuse_conv2.1.running_mean",
+        "Q_transformer_CD.0.att2.fuse_conv2.1.running_var",
+        "Q_transformer_CD.0.att2.fuse_conv2.1.weight",
+        "Q_transformer_CD.0.att2.pos_emb.rel_height",
+        "Q_transformer_CD.0.att2.pos_emb.rel_width",
+        "Q_transformer_CD.0.att2.to_dif.bias",
+        "Q_transformer_CD.0.att2.to_dif.weight",
+        "Q_transformer_CD.0.att2.to_dif_conv.0.bias",
+        "Q_transformer_CD.0.att2.to_dif_conv.0.weight",
+        "Q_transformer_CD.0.att2.to_k.bias",
+        "Q_transformer_CD.0.att2.to_k.weight",
+        "Q_transformer_CD.0.att2.to_out.0.bias",
+        "Q_transformer_CD.0.att2.to_out.0.weight",
+        "Q_transformer_CD.0.att2.to_q.bias",
+        "Q_transformer_CD.0.att2.to_q.weight",
+        "Q_transformer_CD.0.att2.to_q2.bias",
+        "Q_transformer_CD.0.att2.to_q2.weight",
+        "Q_transformer_CD.0.att2.to_v.bias",
+        "Q_transformer_CD.0.att2.to_v.weight",
+        "Q_transformer_CD.0.feedforward.net.0.bias",
+        "Q_transformer_CD.0.feedforward.net.0.weight",
+        "Q_transformer_CD.0.feedforward.net.3.bias",
+        "Q_transformer_CD.0.feedforward.net.3.weight",
+        "Q_transformer_CD.0.norm0.bias",
+        "Q_transformer_CD.0.norm0.weight",
+        "Q_transformer_CD.0.norm1.bias",
+        "Q_transformer_CD.0.norm1.weight",
+        "Q_transformer_CD.0.norm2.bias",
+        "Q_transformer_CD.0.norm2.weight",
+        "Q_transformer_CD.1.att.K_LN.bias",
+        "Q_transformer_CD.1.att.K_LN.weight",
+        "Q_transformer_CD.1.att.LN.bias",
+        "Q_transformer_CD.1.att.LN.weight",
+        "Q_transformer_CD.1.att.Q_LN.bias",
+        "Q_transformer_CD.1.att.Q_LN.weight",
+        "Q_transformer_CD.1.att.V_LN.bias",
+        "Q_transformer_CD.1.att.V_LN.weight",
+        "Q_transformer_CD.1.att.cos_linear.0.bias",
+        "Q_transformer_CD.1.att.cos_linear.0.weight",
+        "Q_transformer_CD.1.att.cos_linear.2.bias",
+        "Q_transformer_CD.1.att.cos_linear.2.weight",
+        "Q_transformer_CD.1.att.fuse_conv.0.bias",
+        "Q_transformer_CD.1.att.fuse_conv.0.weight",
+        "Q_transformer_CD.1.att.fuse_conv.1.bias",
+        "Q_transformer_CD.1.att.fuse_conv.1.num_batches_tracked",
+        "Q_transformer_CD.1.att.fuse_conv.1.running_mean",
+        "Q_transformer_CD.1.att.fuse_conv.1.running_var",
+        "Q_transformer_CD.1.att.fuse_conv.1.weight",
+        "Q_transformer_CD.1.att.fuse_conv2.0.bias",
+        "Q_transformer_CD.1.att.fuse_conv2.0.weight",
+        "Q_transformer_CD.1.att.fuse_conv2.1.bias",
+        "Q_transformer_CD.1.att.fuse_conv2.1.num_batches_tracked",
+        "Q_transformer_CD.1.att.fuse_conv2.1.running_mean",
+        "Q_transformer_CD.1.att.fuse_conv2.1.running_var",
+        "Q_transformer_CD.1.att.fuse_conv2.1.weight",
+        "Q_transformer_CD.1.att.pos_emb.rel_height",
+        "Q_transformer_CD.1.att.pos_emb.rel_width",
+        "Q_transformer_CD.1.att.to_dif.bias",
+        "Q_transformer_CD.1.att.to_dif.weight",
+        "Q_transformer_CD.1.att.to_dif_conv.0.bias",
+        "Q_transformer_CD.1.att.to_dif_conv.0.weight",
+        "Q_transformer_CD.1.att.to_k.bias",
+        "Q_transformer_CD.1.att.to_k.weight",
+        "Q_transformer_CD.1.att.to_out.0.bias",
+        "Q_transformer_CD.1.att.to_out.0.weight",
+        "Q_transformer_CD.1.att.to_q.bias",
+        "Q_transformer_CD.1.att.to_q.weight",
+        "Q_transformer_CD.1.att.to_q2.bias",
+        "Q_transformer_CD.1.att.to_q2.weight",
+        "Q_transformer_CD.1.att.to_v.bias",
+        "Q_transformer_CD.1.att.to_v.weight",
+        "Q_transformer_CD.1.att2.K_LN.bias",
+        "Q_transformer_CD.1.att2.K_LN.weight",
+        "Q_transformer_CD.1.att2.LN.bias",
+        "Q_transformer_CD.1.att2.LN.weight",
+        "Q_transformer_CD.1.att2.Q_LN.bias",
+        "Q_transformer_CD.1.att2.Q_LN.weight",
+        "Q_transformer_CD.1.att2.V_LN.bias",
+        "Q_transformer_CD.1.att2.V_LN.weight",
+        "Q_transformer_CD.1.att2.cos_linear.0.bias",
+        "Q_transformer_CD.1.att2.cos_linear.0.weight",
+        "Q_transformer_CD.1.att2.cos_linear.2.bias",
+        "Q_transformer_CD.1.att2.cos_linear.2.weight",
+        "Q_transformer_CD.1.att2.fuse_conv.0.bias",
+        "Q_transformer_CD.1.att2.fuse_conv.0.weight",
+        "Q_transformer_CD.1.att2.fuse_conv.1.bias",
+        "Q_transformer_CD.1.att2.fuse_conv.1.num_batches_tracked",
+        "Q_transformer_CD.1.att2.fuse_conv.1.running_mean",
+        "Q_transformer_CD.1.att2.fuse_conv.1.running_var",
+        "Q_transformer_CD.1.att2.fuse_conv.1.weight",
+        "Q_transformer_CD.1.att2.fuse_conv2.0.bias",
+        "Q_transformer_CD.1.att2.fuse_conv2.0.weight",
+        "Q_transformer_CD.1.att2.fuse_conv2.1.bias",
+        "Q_transformer_CD.1.att2.fuse_conv2.1.num_batches_tracked",
+        "Q_transformer_CD.1.att2.fuse_conv2.1.running_mean",
+        "Q_transformer_CD.1.att2.fuse_conv2.1.running_var",
+        "Q_transformer_CD.1.att2.fuse_conv2.1.weight",
+        "Q_transformer_CD.1.att2.pos_emb.rel_height",
+        "Q_transformer_CD.1.att2.pos_emb.rel_width",
+        "Q_transformer_CD.1.att2.to_dif.bias",
+        "Q_transformer_CD.1.att2.to_dif.weight",
+        "Q_transformer_CD.1.att2.to_dif_conv.0.bias",
+        "Q_transformer_CD.1.att2.to_dif_conv.0.weight",
+        "Q_transformer_CD.1.att2.to_k.bias",
+        "Q_transformer_CD.1.att2.to_k.weight",
+        "Q_transformer_CD.1.att2.to_out.0.bias",
+        "Q_transformer_CD.1.att2.to_out.0.weight",
+        "Q_transformer_CD.1.att2.to_q.bias",
+        "Q_transformer_CD.1.att2.to_q.weight",
+        "Q_transformer_CD.1.att2.to_q2.bias",
+        "Q_transformer_CD.1.att2.to_q2.weight",
+        "Q_transformer_CD.1.att2.to_v.bias",
+        "Q_transformer_CD.1.att2.to_v.weight",
+        "Q_transformer_CD.1.feedforward.net.0.bias",
+        "Q_transformer_CD.1.feedforward.net.0.weight",
+        "Q_transformer_CD.1.feedforward.net.3.bias",
+        "Q_transformer_CD.1.feedforward.net.3.weight",
+        "Q_transformer_CD.1.norm0.bias",
+        "Q_transformer_CD.1.norm0.weight",
+        "Q_transformer_CD.1.norm1.bias",
+        "Q_transformer_CD.1.norm1.weight",
+        "Q_transformer_CD.1.norm2.bias",
+        "Q_transformer_CD.1.norm2.weight",
+        "Transformer_aug_CC.layers.0.linear1.bias",
+        "Transformer_aug_CC.layers.0.linear1.weight",
+        "Transformer_aug_CC.layers.0.linear2.bias",
+        "Transformer_aug_CC.layers.0.linear2.weight",
+        "Transformer_aug_CC.layers.0.norm1.bias",
+        "Transformer_aug_CC.layers.0.norm1.weight",
+        "Transformer_aug_CC.layers.0.norm2.bias",
+        "Transformer_aug_CC.layers.0.norm2.weight",
+        "Transformer_aug_CC.layers.0.self_attn.in_proj_bias",
+        "Transformer_aug_CC.layers.0.self_attn.in_proj_weight",
+        "Transformer_aug_CC.layers.0.self_attn.out_proj.bias",
+        "Transformer_aug_CC.layers.0.self_attn.out_proj.weight",
+        "Transformer_aug_CD.0.0.att.LN.bias",
+        "Transformer_aug_CD.0.0.att.LN.weight",
+        "Transformer_aug_CD.0.0.att.cos_linear.0.bias",
+        "Transformer_aug_CD.0.0.att.cos_linear.0.weight",
+        "Transformer_aug_CD.0.0.att.cos_linear.2.bias",
+        "Transformer_aug_CD.0.0.att.cos_linear.2.weight",
+        "Transformer_aug_CD.0.0.att.pos_emb.rel_height",
+        "Transformer_aug_CD.0.0.att.pos_emb.rel_width",
+        "Transformer_aug_CD.0.0.att.to_dif.bias",
+        "Transformer_aug_CD.0.0.att.to_dif.weight",
+        "Transformer_aug_CD.0.0.att.to_dif_conv.0.bias",
+        "Transformer_aug_CD.0.0.att.to_dif_conv.0.weight",
+        "Transformer_aug_CD.0.0.att.to_q2.bias",
+        "Transformer_aug_CD.0.0.att.to_q2.weight",
+        "Transformer_aug_CD.0.1.att.LN.bias",
+        "Transformer_aug_CD.0.1.att.LN.weight",
+        "Transformer_aug_CD.0.1.att.cos_linear.0.bias",
+        "Transformer_aug_CD.0.1.att.cos_linear.0.weight",
+        "Transformer_aug_CD.0.1.att.cos_linear.2.bias",
+        "Transformer_aug_CD.0.1.att.cos_linear.2.weight",
+        "Transformer_aug_CD.0.1.att.pos_emb.rel_height",
+        "Transformer_aug_CD.0.1.att.pos_emb.rel_width",
+        "Transformer_aug_CD.0.1.att.to_dif.bias",
+        "Transformer_aug_CD.0.1.att.to_dif.weight",
+        "Transformer_aug_CD.0.1.att.to_dif_conv.0.bias",
+        "Transformer_aug_CD.0.1.att.to_dif_conv.0.weight",
+        "Transformer_aug_CD.0.1.att.to_q2.bias",
+        "Transformer_aug_CD.0.1.att.to_q2.weight",
+        "Transformer_aug_CD.1.0.att.LN.bias",
+        "Transformer_aug_CD.1.0.att.LN.weight",
+        "Transformer_aug_CD.1.0.att.cos_linear.0.bias",
+        "Transformer_aug_CD.1.0.att.cos_linear.0.weight",
+        "Transformer_aug_CD.1.0.att.cos_linear.2.bias",
+        "Transformer_aug_CD.1.0.att.cos_linear.2.weight",
+        "Transformer_aug_CD.1.0.att.pos_emb.rel_height",
+        "Transformer_aug_CD.1.0.att.pos_emb.rel_width",
+        "Transformer_aug_CD.1.0.att.to_dif.bias",
+        "Transformer_aug_CD.1.0.att.to_dif.weight",
+        "Transformer_aug_CD.1.0.att.to_dif_conv.0.bias",
+        "Transformer_aug_CD.1.0.att.to_dif_conv.0.weight",
+        "Transformer_aug_CD.1.0.att.to_q2.bias",
+        "Transformer_aug_CD.1.0.att.to_q2.weight",
+        "Transformer_aug_CD.1.1.att.LN.bias",
+        "Transformer_aug_CD.1.1.att.LN.weight",
+        "Transformer_aug_CD.1.1.att.cos_linear.0.bias",
+        "Transformer_aug_CD.1.1.att.cos_linear.0.weight",
+        "Transformer_aug_CD.1.1.att.cos_linear.2.bias",
+        "Transformer_aug_CD.1.1.att.cos_linear.2.weight",
+        "Transformer_aug_CD.1.1.att.pos_emb.rel_height",
+        "Transformer_aug_CD.1.1.att.pos_emb.rel_width",
+        "Transformer_aug_CD.1.1.att.to_dif.bias",
+        "Transformer_aug_CD.1.1.att.to_dif.weight",
+        "Transformer_aug_CD.1.1.att.to_dif_conv.0.bias",
+        "Transformer_aug_CD.1.1.att.to_dif_conv.0.weight",
+        "Transformer_aug_CD.1.1.att.to_q2.bias",
+        "Transformer_aug_CD.1.1.att.to_q2.weight",
+        "Transformer_aug_CD.2.0.att.LN.bias",
+        "Transformer_aug_CD.2.0.att.LN.weight",
+        "Transformer_aug_CD.2.0.att.cos_linear.0.bias",
+        "Transformer_aug_CD.2.0.att.cos_linear.0.weight",
+        "Transformer_aug_CD.2.0.att.cos_linear.2.bias",
+        "Transformer_aug_CD.2.0.att.cos_linear.2.weight",
+        "Transformer_aug_CD.2.0.att.pos_emb.rel_height",
+        "Transformer_aug_CD.2.0.att.pos_emb.rel_width",
+        "Transformer_aug_CD.2.0.att.to_dif.bias",
+        "Transformer_aug_CD.2.0.att.to_dif.weight",
+        "Transformer_aug_CD.2.0.att.to_dif_conv.0.bias",
+        "Transformer_aug_CD.2.0.att.to_dif_conv.0.weight",
+        "Transformer_aug_CD.2.0.att.to_q2.bias",
+        "Transformer_aug_CD.2.0.att.to_q2.weight",
+        "Transformer_aug_CD.2.1.att.LN.bias",
+        "Transformer_aug_CD.2.1.att.LN.weight",
+        "Transformer_aug_CD.2.1.att.cos_linear.0.bias",
+        "Transformer_aug_CD.2.1.att.cos_linear.0.weight",
+        "Transformer_aug_CD.2.1.att.cos_linear.2.bias",
+        "Transformer_aug_CD.2.1.att.cos_linear.2.weight",
+        "Transformer_aug_CD.2.1.att.pos_emb.rel_height",
+        "Transformer_aug_CD.2.1.att.pos_emb.rel_width",
+        "Transformer_aug_CD.2.1.att.to_dif.bias",
+        "Transformer_aug_CD.2.1.att.to_dif.weight",
+        "Transformer_aug_CD.2.1.att.to_dif_conv.0.bias",
+        "Transformer_aug_CD.2.1.att.to_dif_conv.0.weight",
+        "Transformer_aug_CD.2.1.att.to_q2.bias",
+        "Transformer_aug_CD.2.1.att.to_q2.weight",
+        "Transformer_aug_CD2.layers.0.linear1.bias",
+        "Transformer_aug_CD2.layers.0.linear1.weight",
+        "Transformer_aug_CD2.layers.0.linear2.bias",
+        "Transformer_aug_CD2.layers.0.linear2.weight",
+        "Transformer_aug_CD2.layers.0.norm1.bias",
+        "Transformer_aug_CD2.layers.0.norm1.weight",
+        "Transformer_aug_CD2.layers.0.norm2.bias",
+        "Transformer_aug_CD2.layers.0.norm2.weight",
+        "Transformer_aug_CD2.layers.0.self_attn.in_proj_bias",
+        "Transformer_aug_CD2.layers.0.self_attn.in_proj_weight",
+        "Transformer_aug_CD2.layers.0.self_attn.out_proj.bias",
+        "Transformer_aug_CD2.layers.0.self_attn.out_proj.weight",
+        "Transformer_aug_CD2.layers.1.linear1.bias",
+        "Transformer_aug_CD2.layers.1.linear1.weight",
+        "Transformer_aug_CD2.layers.1.linear2.bias",
+        "Transformer_aug_CD2.layers.1.linear2.weight",
+        "Transformer_aug_CD2.layers.1.norm1.bias",
+        "Transformer_aug_CD2.layers.1.norm1.weight",
+        "Transformer_aug_CD2.layers.1.norm2.bias",
+        "Transformer_aug_CD2.layers.1.norm2.weight",
+        "Transformer_aug_CD2.layers.1.self_attn.in_proj_bias",
+        "Transformer_aug_CD2.layers.1.self_attn.in_proj_weight",
+        "Transformer_aug_CD2.layers.1.self_attn.out_proj.bias",
+        "Transformer_aug_CD2.layers.1.self_attn.out_proj.weight",
+        "Transformer_fused.0.K_d_conv.BN.bias",
+        "Transformer_fused.0.K_d_conv.BN.num_batches_tracked",
+        "Transformer_fused.0.K_d_conv.BN.running_mean",
+        "Transformer_fused.0.K_d_conv.BN.running_var",
+        "Transformer_fused.0.K_d_conv.BN.weight",
+        "Transformer_fused.0.K_d_conv.conv_1.bias",
+        "Transformer_fused.0.K_d_conv.conv_1.weight",
+        "Transformer_fused.0.K_d_conv.d_conv_1x5.bias",
+        "Transformer_fused.0.K_d_conv.d_conv_1x5.weight",
+        "Transformer_fused.0.K_d_conv.d_conv_3x3.bias",
+        "Transformer_fused.0.K_d_conv.d_conv_3x3.weight",
+        "Transformer_fused.0.K_d_conv.d_conv_5x1.bias",
+        "Transformer_fused.0.K_d_conv.d_conv_5x1.weight",
+        "Transformer_fused.0.PCM.0.bias",
+        "Transformer_fused.0.PCM.0.weight",
+        "Transformer_fused.0.PCM.1.bias",
+        "Transformer_fused.0.PCM.1.num_batches_tracked",
+        "Transformer_fused.0.PCM.1.running_mean",
+        "Transformer_fused.0.PCM.1.running_var",
+        "Transformer_fused.0.PCM.1.weight",
+        "Transformer_fused.0.PCM.3.bias",
+        "Transformer_fused.0.PCM.3.weight",
+        "Transformer_fused.0.Q_d_conv.BN.bias",
+        "Transformer_fused.0.Q_d_conv.BN.num_batches_tracked",
+        "Transformer_fused.0.Q_d_conv.BN.running_mean",
+        "Transformer_fused.0.Q_d_conv.BN.running_var",
+        "Transformer_fused.0.Q_d_conv.BN.weight",
+        "Transformer_fused.0.Q_d_conv.conv_1.bias",
+        "Transformer_fused.0.Q_d_conv.conv_1.weight",
+        "Transformer_fused.0.Q_d_conv.d_conv_1x5.bias",
+        "Transformer_fused.0.Q_d_conv.d_conv_1x5.weight",
+        "Transformer_fused.0.Q_d_conv.d_conv_3x3.bias",
+        "Transformer_fused.0.Q_d_conv.d_conv_3x3.weight",
+        "Transformer_fused.0.Q_d_conv.d_conv_5x1.bias",
+        "Transformer_fused.0.Q_d_conv.d_conv_5x1.weight",
+        "Transformer_fused.0.att.K_LN.bias",
+        "Transformer_fused.0.att.K_LN.weight",
+        "Transformer_fused.0.att.LN.bias",
+        "Transformer_fused.0.att.LN.weight",
+        "Transformer_fused.0.att.Q_LN.bias",
+        "Transformer_fused.0.att.Q_LN.weight",
+        "Transformer_fused.0.att.V_LN.bias",
+        "Transformer_fused.0.att.V_LN.weight",
+        "Transformer_fused.0.att.cos_linear.0.bias",
+        "Transformer_fused.0.att.cos_linear.0.weight",
+        "Transformer_fused.0.att.cos_linear.2.bias",
+        "Transformer_fused.0.att.cos_linear.2.weight",
+        "Transformer_fused.0.att.fuse_conv.0.bias",
+        "Transformer_fused.0.att.fuse_conv.0.weight",
+        "Transformer_fused.0.att.fuse_conv.1.bias",
+        "Transformer_fused.0.att.fuse_conv.1.num_batches_tracked",
+        "Transformer_fused.0.att.fuse_conv.1.running_mean",
+        "Transformer_fused.0.att.fuse_conv.1.running_var",
+        "Transformer_fused.0.att.fuse_conv.1.weight",
+        "Transformer_fused.0.att.fuse_conv2.0.bias",
+        "Transformer_fused.0.att.fuse_conv2.0.weight",
+        "Transformer_fused.0.att.fuse_conv2.1.bias",
+        "Transformer_fused.0.att.fuse_conv2.1.num_batches_tracked",
+        "Transformer_fused.0.att.fuse_conv2.1.running_mean",
+        "Transformer_fused.0.att.fuse_conv2.1.running_var",
+        "Transformer_fused.0.att.fuse_conv2.1.weight",
+        "Transformer_fused.0.att.pos_emb.rel_height",
+        "Transformer_fused.0.att.pos_emb.rel_width",
+        "Transformer_fused.0.att.to_dif.bias",
+        "Transformer_fused.0.att.to_dif.weight",
+        "Transformer_fused.0.att.to_dif_conv.0.bias",
+        "Transformer_fused.0.att.to_dif_conv.0.weight",
+        "Transformer_fused.0.att.to_k.bias",
+        "Transformer_fused.0.att.to_k.weight",
+        "Transformer_fused.0.att.to_out.0.bias",
+        "Transformer_fused.0.att.to_out.0.weight",
+        "Transformer_fused.0.att.to_q.bias",
+        "Transformer_fused.0.att.to_q.weight",
+        "Transformer_fused.0.att.to_q2.bias",
+        "Transformer_fused.0.att.to_q2.weight",
+        "Transformer_fused.0.att.to_v.bias",
+        "Transformer_fused.0.att.to_v.weight",
+        "Transformer_fused.0.feedforward.net.0.bias",
+        "Transformer_fused.0.feedforward.net.0.weight",
+        "Transformer_fused.0.feedforward.net.3.bias",
+        "Transformer_fused.0.feedforward.net.3.weight",
+        "Transformer_fused.0.norm1.bias",
+        "Transformer_fused.0.norm1.weight",
+        "Transformer_fused.0.norm2.bias",
+        "Transformer_fused.0.norm2.weight",
+        "Transformer_fused.1.K_d_conv.BN.bias",
+        "Transformer_fused.1.K_d_conv.BN.num_batches_tracked",
+        "Transformer_fused.1.K_d_conv.BN.running_mean",
+        "Transformer_fused.1.K_d_conv.BN.running_var",
+        "Transformer_fused.1.K_d_conv.BN.weight",
+        "Transformer_fused.1.K_d_conv.conv_1.bias",
+        "Transformer_fused.1.K_d_conv.conv_1.weight",
+        "Transformer_fused.1.K_d_conv.d_conv_1x5.bias",
+        "Transformer_fused.1.K_d_conv.d_conv_1x5.weight",
+        "Transformer_fused.1.K_d_conv.d_conv_3x3.bias",
+        "Transformer_fused.1.K_d_conv.d_conv_3x3.weight",
+        "Transformer_fused.1.K_d_conv.d_conv_5x1.bias",
+        "Transformer_fused.1.K_d_conv.d_conv_5x1.weight",
+        "Transformer_fused.1.PCM.0.bias",
+        "Transformer_fused.1.PCM.0.weight",
+        "Transformer_fused.1.PCM.1.bias",
+        "Transformer_fused.1.PCM.1.num_batches_tracked",
+        "Transformer_fused.1.PCM.1.running_mean",
+        "Transformer_fused.1.PCM.1.running_var",
+        "Transformer_fused.1.PCM.1.weight",
+        "Transformer_fused.1.PCM.3.bias",
+        "Transformer_fused.1.PCM.3.weight",
+        "Transformer_fused.1.Q_d_conv.BN.bias",
+        "Transformer_fused.1.Q_d_conv.BN.num_batches_tracked",
+        "Transformer_fused.1.Q_d_conv.BN.running_mean",
+        "Transformer_fused.1.Q_d_conv.BN.running_var",
+        "Transformer_fused.1.Q_d_conv.BN.weight",
+        "Transformer_fused.1.Q_d_conv.conv_1.bias",
+        "Transformer_fused.1.Q_d_conv.conv_1.weight",
+        "Transformer_fused.1.Q_d_conv.d_conv_1x5.bias",
+        "Transformer_fused.1.Q_d_conv.d_conv_1x5.weight",
+        "Transformer_fused.1.Q_d_conv.d_conv_3x3.bias",
+        "Transformer_fused.1.Q_d_conv.d_conv_3x3.weight",
+        "Transformer_fused.1.Q_d_conv.d_conv_5x1.bias",
+        "Transformer_fused.1.Q_d_conv.d_conv_5x1.weight",
+        "Transformer_fused.1.att.K_LN.bias",
+        "Transformer_fused.1.att.K_LN.weight",
+        "Transformer_fused.1.att.LN.bias",
+        "Transformer_fused.1.att.LN.weight",
+        "Transformer_fused.1.att.Q_LN.bias",
+        "Transformer_fused.1.att.Q_LN.weight",
+        "Transformer_fused.1.att.V_LN.bias",
+        "Transformer_fused.1.att.V_LN.weight",
+        "Transformer_fused.1.att.cos_linear.0.bias",
+        "Transformer_fused.1.att.cos_linear.0.weight",
+        "Transformer_fused.1.att.cos_linear.2.bias",
+        "Transformer_fused.1.att.cos_linear.2.weight",
+        "Transformer_fused.1.att.fuse_conv.0.bias",
+        "Transformer_fused.1.att.fuse_conv.0.weight",
+        "Transformer_fused.1.att.fuse_conv.1.bias",
+        "Transformer_fused.1.att.fuse_conv.1.num_batches_tracked",
+        "Transformer_fused.1.att.fuse_conv.1.running_mean",
+        "Transformer_fused.1.att.fuse_conv.1.running_var",
+        "Transformer_fused.1.att.fuse_conv.1.weight",
+        "Transformer_fused.1.att.fuse_conv2.0.bias",
+        "Transformer_fused.1.att.fuse_conv2.0.weight",
+        "Transformer_fused.1.att.fuse_conv2.1.bias",
+        "Transformer_fused.1.att.fuse_conv2.1.num_batches_tracked",
+        "Transformer_fused.1.att.fuse_conv2.1.running_mean",
+        "Transformer_fused.1.att.fuse_conv2.1.running_var",
+        "Transformer_fused.1.att.fuse_conv2.1.weight",
+        "Transformer_fused.1.att.pos_emb.rel_height",
+        "Transformer_fused.1.att.pos_emb.rel_width",
+        "Transformer_fused.1.att.to_dif.bias",
+        "Transformer_fused.1.att.to_dif.weight",
+        "Transformer_fused.1.att.to_dif_conv.0.bias",
+        "Transformer_fused.1.att.to_dif_conv.0.weight",
+        "Transformer_fused.1.att.to_k.bias",
+        "Transformer_fused.1.att.to_k.weight",
+        "Transformer_fused.1.att.to_out.0.bias",
+        "Transformer_fused.1.att.to_out.0.weight",
+        "Transformer_fused.1.att.to_q.bias",
+        "Transformer_fused.1.att.to_q.weight",
+        "Transformer_fused.1.att.to_q2.bias",
+        "Transformer_fused.1.att.to_q2.weight",
+        "Transformer_fused.1.att.to_v.bias",
+        "Transformer_fused.1.att.to_v.weight",
+        "Transformer_fused.1.feedforward.net.0.bias",
+        "Transformer_fused.1.feedforward.net.0.weight",
+        "Transformer_fused.1.feedforward.net.3.bias",
+        "Transformer_fused.1.feedforward.net.3.weight",
+        "Transformer_fused.1.norm1.bias",
+        "Transformer_fused.1.norm1.weight",
+        "Transformer_fused.1.norm2.bias",
+        "Transformer_fused.1.norm2.weight",
+        "Transformer_fused.2.K_d_conv.BN.bias",
+        "Transformer_fused.2.K_d_conv.BN.num_batches_tracked",
+        "Transformer_fused.2.K_d_conv.BN.running_mean",
+        "Transformer_fused.2.K_d_conv.BN.running_var",
+        "Transformer_fused.2.K_d_conv.BN.weight",
+        "Transformer_fused.2.K_d_conv.conv_1.bias",
+        "Transformer_fused.2.K_d_conv.conv_1.weight",
+        "Transformer_fused.2.K_d_conv.d_conv_1x5.bias",
+        "Transformer_fused.2.K_d_conv.d_conv_1x5.weight",
+        "Transformer_fused.2.K_d_conv.d_conv_3x3.bias",
+        "Transformer_fused.2.K_d_conv.d_conv_3x3.weight",
+        "Transformer_fused.2.K_d_conv.d_conv_5x1.bias",
+        "Transformer_fused.2.K_d_conv.d_conv_5x1.weight",
+        "Transformer_fused.2.PCM.0.bias",
+        "Transformer_fused.2.PCM.0.weight",
+        "Transformer_fused.2.PCM.1.bias",
+        "Transformer_fused.2.PCM.1.num_batches_tracked",
+        "Transformer_fused.2.PCM.1.running_mean",
+        "Transformer_fused.2.PCM.1.running_var",
+        "Transformer_fused.2.PCM.1.weight",
+        "Transformer_fused.2.PCM.3.bias",
+        "Transformer_fused.2.PCM.3.weight",
+        "Transformer_fused.2.Q_d_conv.BN.bias",
+        "Transformer_fused.2.Q_d_conv.BN.num_batches_tracked",
+        "Transformer_fused.2.Q_d_conv.BN.running_mean",
+        "Transformer_fused.2.Q_d_conv.BN.running_var",
+        "Transformer_fused.2.Q_d_conv.BN.weight",
+        "Transformer_fused.2.Q_d_conv.conv_1.bias",
+        "Transformer_fused.2.Q_d_conv.conv_1.weight",
+        "Transformer_fused.2.Q_d_conv.d_conv_1x5.bias",
+        "Transformer_fused.2.Q_d_conv.d_conv_1x5.weight",
+        "Transformer_fused.2.Q_d_conv.d_conv_3x3.bias",
+        "Transformer_fused.2.Q_d_conv.d_conv_3x3.weight",
+        "Transformer_fused.2.Q_d_conv.d_conv_5x1.bias",
+        "Transformer_fused.2.Q_d_conv.d_conv_5x1.weight",
+        "Transformer_fused.2.att.K_LN.bias",
+        "Transformer_fused.2.att.K_LN.weight",
+        "Transformer_fused.2.att.LN.bias",
+        "Transformer_fused.2.att.LN.weight",
+        "Transformer_fused.2.att.Q_LN.bias",
+        "Transformer_fused.2.att.Q_LN.weight",
+        "Transformer_fused.2.att.V_LN.bias",
+        "Transformer_fused.2.att.V_LN.weight",
+        "Transformer_fused.2.att.cos_linear.0.bias",
+        "Transformer_fused.2.att.cos_linear.0.weight",
+        "Transformer_fused.2.att.cos_linear.2.bias",
+        "Transformer_fused.2.att.cos_linear.2.weight",
+        "Transformer_fused.2.att.fuse_conv.0.bias",
+        "Transformer_fused.2.att.fuse_conv.0.weight",
+        "Transformer_fused.2.att.fuse_conv.1.bias",
+        "Transformer_fused.2.att.fuse_conv.1.num_batches_tracked",
+        "Transformer_fused.2.att.fuse_conv.1.running_mean",
+        "Transformer_fused.2.att.fuse_conv.1.running_var",
+        "Transformer_fused.2.att.fuse_conv.1.weight",
+        "Transformer_fused.2.att.fuse_conv2.0.bias",
+        "Transformer_fused.2.att.fuse_conv2.0.weight",
+        "Transformer_fused.2.att.fuse_conv2.1.bias",
+        "Transformer_fused.2.att.fuse_conv2.1.num_batches_tracked",
+        "Transformer_fused.2.att.fuse_conv2.1.running_mean",
+        "Transformer_fused.2.att.fuse_conv2.1.running_var",
+        "Transformer_fused.2.att.fuse_conv2.1.weight",
+        "Transformer_fused.2.att.pos_emb.rel_height",
+        "Transformer_fused.2.att.pos_emb.rel_width",
+        "Transformer_fused.2.att.to_dif.bias",
+        "Transformer_fused.2.att.to_dif.weight",
+        "Transformer_fused.2.att.to_dif_conv.0.bias",
+        "Transformer_fused.2.att.to_dif_conv.0.weight",
+        "Transformer_fused.2.att.to_k.bias",
+        "Transformer_fused.2.att.to_k.weight",
+        "Transformer_fused.2.att.to_out.0.bias",
+        "Transformer_fused.2.att.to_out.0.weight",
+        "Transformer_fused.2.att.to_q.bias",
+        "Transformer_fused.2.att.to_q.weight",
+        "Transformer_fused.2.att.to_q2.bias",
+        "Transformer_fused.2.att.to_q2.weight",
+        "Transformer_fused.2.att.to_v.bias",
+        "Transformer_fused.2.att.to_v.weight",
+        "Transformer_fused.2.feedforward.net.0.bias",
+        "Transformer_fused.2.feedforward.net.0.weight",
+        "Transformer_fused.2.feedforward.net.3.bias",
+        "Transformer_fused.2.feedforward.net.3.weight",
+        "Transformer_fused.2.norm1.bias",
+        "Transformer_fused.2.norm1.weight",
+        "Transformer_fused.2.norm2.bias",
+        "Transformer_fused.2.norm2.weight",
+        "Transformer_fused.3.K_d_conv.BN.bias",
+        "Transformer_fused.3.K_d_conv.BN.num_batches_tracked",
+        "Transformer_fused.3.K_d_conv.BN.running_mean",
+        "Transformer_fused.3.K_d_conv.BN.running_var",
+        "Transformer_fused.3.K_d_conv.BN.weight",
+        "Transformer_fused.3.K_d_conv.conv_1.bias",
+        "Transformer_fused.3.K_d_conv.conv_1.weight",
+        "Transformer_fused.3.K_d_conv.d_conv_1x5.bias",
+        "Transformer_fused.3.K_d_conv.d_conv_1x5.weight",
+        "Transformer_fused.3.K_d_conv.d_conv_3x3.bias",
+        "Transformer_fused.3.K_d_conv.d_conv_3x3.weight",
+        "Transformer_fused.3.K_d_conv.d_conv_5x1.bias",
+        "Transformer_fused.3.K_d_conv.d_conv_5x1.weight",
+        "Transformer_fused.3.PCM.0.bias",
+        "Transformer_fused.3.PCM.0.weight",
+        "Transformer_fused.3.PCM.1.bias",
+        "Transformer_fused.3.PCM.1.num_batches_tracked",
+        "Transformer_fused.3.PCM.1.running_mean",
+        "Transformer_fused.3.PCM.1.running_var",
+        "Transformer_fused.3.PCM.1.weight",
+        "Transformer_fused.3.PCM.3.bias",
+        "Transformer_fused.3.PCM.3.weight",
+        "Transformer_fused.3.Q_d_conv.BN.bias",
+        "Transformer_fused.3.Q_d_conv.BN.num_batches_tracked",
+        "Transformer_fused.3.Q_d_conv.BN.running_mean",
+        "Transformer_fused.3.Q_d_conv.BN.running_var",
+        "Transformer_fused.3.Q_d_conv.BN.weight",
+        "Transformer_fused.3.Q_d_conv.conv_1.bias",
+        "Transformer_fused.3.Q_d_conv.conv_1.weight",
+        "Transformer_fused.3.Q_d_conv.d_conv_1x5.bias",
+        "Transformer_fused.3.Q_d_conv.d_conv_1x5.weight",
+        "Transformer_fused.3.Q_d_conv.d_conv_3x3.bias",
+        "Transformer_fused.3.Q_d_conv.d_conv_3x3.weight",
+        "Transformer_fused.3.Q_d_conv.d_conv_5x1.bias",
+        "Transformer_fused.3.Q_d_conv.d_conv_5x1.weight",
+        "Transformer_fused.3.att.K_LN.bias",
+        "Transformer_fused.3.att.K_LN.weight",
+        "Transformer_fused.3.att.LN.bias",
+        "Transformer_fused.3.att.LN.weight",
+        "Transformer_fused.3.att.Q_LN.bias",
+        "Transformer_fused.3.att.Q_LN.weight",
+        "Transformer_fused.3.att.V_LN.bias",
+        "Transformer_fused.3.att.V_LN.weight",
+        "Transformer_fused.3.att.cos_linear.0.bias",
+        "Transformer_fused.3.att.cos_linear.0.weight",
+        "Transformer_fused.3.att.cos_linear.2.bias",
+        "Transformer_fused.3.att.cos_linear.2.weight",
+        "Transformer_fused.3.att.fuse_conv.0.bias",
+        "Transformer_fused.3.att.fuse_conv.0.weight",
+        "Transformer_fused.3.att.fuse_conv.1.bias",
+        "Transformer_fused.3.att.fuse_conv.1.num_batches_tracked",
+        "Transformer_fused.3.att.fuse_conv.1.running_mean",
+        "Transformer_fused.3.att.fuse_conv.1.running_var",
+        "Transformer_fused.3.att.fuse_conv.1.weight",
+        "Transformer_fused.3.att.fuse_conv2.0.bias",
+        "Transformer_fused.3.att.fuse_conv2.0.weight",
+        "Transformer_fused.3.att.fuse_conv2.1.bias",
+        "Transformer_fused.3.att.fuse_conv2.1.num_batches_tracked",
+        "Transformer_fused.3.att.fuse_conv2.1.running_mean",
+        "Transformer_fused.3.att.fuse_conv2.1.running_var",
+        "Transformer_fused.3.att.fuse_conv2.1.weight",
+        "Transformer_fused.3.att.pos_emb.rel_height",
+        "Transformer_fused.3.att.pos_emb.rel_width",
+        "Transformer_fused.3.att.to_dif.bias",
+        "Transformer_fused.3.att.to_dif.weight",
+        "Transformer_fused.3.att.to_dif_conv.0.bias",
+        "Transformer_fused.3.att.to_dif_conv.0.weight",
+        "Transformer_fused.3.att.to_k.bias",
+        "Transformer_fused.3.att.to_k.weight",
+        "Transformer_fused.3.att.to_out.0.bias",
+        "Transformer_fused.3.att.to_out.0.weight",
+        "Transformer_fused.3.att.to_q.bias",
+        "Transformer_fused.3.att.to_q.weight",
+        "Transformer_fused.3.att.to_q2.bias",
+        "Transformer_fused.3.att.to_q2.weight",
+        "Transformer_fused.3.att.to_v.bias",
+        "Transformer_fused.3.att.to_v.weight",
+        "Transformer_fused.3.feedforward.net.0.bias",
+        "Transformer_fused.3.feedforward.net.0.weight",
+        "Transformer_fused.3.feedforward.net.3.bias",
+        "Transformer_fused.3.feedforward.net.3.weight",
+        "Transformer_fused.3.norm1.bias",
+        "Transformer_fused.3.norm1.weight",
+        "Transformer_fused.3.norm2.bias",
+        "Transformer_fused.3.norm2.weight",
+        "linear_fus.0.0.bias",
+        "linear_fus.0.0.weight",
+        "linear_fus.1.0.bias",
+        "linear_fus.1.0.weight"
+      ]
+    },
+    "decoder": {
+      "all_required_tensors_loaded": true,
+      "unused_training_branch_tensors": []
+    }
+  },
+  "confusion": [
+    [
+      5982964,
+      17794,
+      23979
+    ],
+    [
+      26094,
+      187951,
+      173
+    ],
+    [
+      36952,
+      101,
+      277592
+    ]
+  ],
+  "class_iou": {
+    "0": 0.9827820735397435,
+    "1": 0.8097392218445326,
+    "2": 0.8193460981059455
+  },
+  "caption_changeflag_agreement": {
+    "correct": 90,
+    "total": 100,
+    "warning": "Lexical change/no-change agreement only, not caption factual accuracy."
+  },
+  "label_encoding": "Verified against publisher data/LEVIR_MCI.py: grayscale 0 unchanged, 128 road, 255 building. Initial incorrect RGB-palette scoring is superseded, preserved separately.",
+  "served_precision_verification": {
+    "device": "float32 CPU",
+    "seconds": 39.77345546799995,
+    "captions_different_from_GPU": 0,
+    "class_pixels_different_from_GPU": 52,
+    "pixels_total": 6553600
+  }
+}

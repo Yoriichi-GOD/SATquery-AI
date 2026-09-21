@@ -1,0 +1,156 @@
+{
+  "task": "optical_sar",
+  "answer": "The jointly trained optical\u2013SAR model suggests Arable land, Broad-leaved forest, Complex cultivation patterns, Mixed forest. These are scene-level land-cover labels, not mapped regions or measured area.",
+  "classes": [
+    "Arable land",
+    "Broad-leaved forest",
+    "Complex cultivation patterns",
+    "Mixed forest"
+  ],
+  "scores": {
+    "s1": {
+      "Agro-forestry areas": 0.00010985634435201064,
+      "Arable land": 0.6212348937988281,
+      "Beaches, dunes, sands": 0.00019710439664777368,
+      "Broad-leaved forest": 0.37139150500297546,
+      "Coastal wetlands": 0.0009530671522952616,
+      "Complex cultivation patterns": 0.2643676996231079,
+      "Coniferous forest": 0.5045738816261292,
+      "Industrial or commercial units": 0.005824629683047533,
+      "Inland waters": 0.002066398272290826,
+      "Inland wetlands": 0.05339027941226959,
+      "Land principally occupied by agriculture, with significant areas of natural vegetation": 0.4210401177406311,
+      "Marine waters": 0.0004317216225899756,
+      "Mixed forest": 0.6836534142494202,
+      "Moors, heathland and sclerophyllous vegetation": 0.030888671055436134,
+      "Natural grassland and sparsely vegetated areas": 0.002943772589787841,
+      "Pastures": 0.6467185020446777,
+      "Permanent crops": 0.0018174380529671907,
+      "Transitional woodland, shrub": 0.10154110193252563,
+      "Urban fabric": 0.2758769392967224
+    },
+    "s2": {
+      "Agro-forestry areas": 0.00011365215323166922,
+      "Arable land": 0.9937899708747864,
+      "Beaches, dunes, sands": 2.360001417400781e-05,
+      "Broad-leaved forest": 0.34804388880729675,
+      "Coastal wetlands": 1.2609219083969947e-05,
+      "Complex cultivation patterns": 0.42465680837631226,
+      "Coniferous forest": 0.36196139454841614,
+      "Industrial or commercial units": 0.0020634601823985577,
+      "Inland waters": 0.0032326627988368273,
+      "Inland wetlands": 0.00038940596277825534,
+      "Land principally occupied by agriculture, with significant areas of natural vegetation": 0.23395562171936035,
+      "Marine waters": 2.1415416995296255e-05,
+      "Mixed forest": 0.9065235257148743,
+      "Moors, heathland and sclerophyllous vegetation": 6.0127469623694196e-05,
+      "Natural grassland and sparsely vegetated areas": 0.00037755692028440535,
+      "Pastures": 0.09242439270019531,
+      "Permanent crops": 0.0009688059217296541,
+      "Transitional woodland, shrub": 0.004355513956397772,
+      "Urban fabric": 0.10993292927742004
+    },
+    "all": {
+      "Agro-forestry areas": 1.7307494999840856e-05,
+      "Arable land": 0.9872117638587952,
+      "Beaches, dunes, sands": 8.120743586914614e-06,
+      "Broad-leaved forest": 0.5056185722351074,
+      "Coastal wetlands": 5.206284185987897e-06,
+      "Complex cultivation patterns": 0.5407065749168396,
+      "Coniferous forest": 0.14496856927871704,
+      "Industrial or commercial units": 0.004931380040943623,
+      "Inland waters": 0.0013502209912985563,
+      "Inland wetlands": 0.00021565168572124094,
+      "Land principally occupied by agriculture, with significant areas of natural vegetation": 0.36168351769447327,
+      "Marine waters": 2.3964634237927385e-05,
+      "Mixed forest": 0.8735710978507996,
+      "Moors, heathland and sclerophyllous vegetation": 6.824146112194285e-05,
+      "Natural grassland and sparsely vegetated areas": 0.001124926726333797,
+      "Pastures": 0.11789417266845703,
+      "Permanent crops": 0.0014077009400352836,
+      "Transitional woodland, shrub": 0.0034022952895611525,
+      "Urban fabric": 0.2690165042877197
+    }
+  },
+  "seconds": 0.0773166259999698,
+  "trace": [
+    {
+      "tool": "BIFOLD-BigEarthNetv2-0/resnet50-s1-v0.2.0",
+      "revision": "d417b3c32f2172cbceb14e5b106dd9aa7b77c647",
+      "device": "cpu",
+      "bands": [
+        "VV",
+        "VH"
+      ],
+      "normalization": "reBEN 120_nearest training mean/std",
+      "input_shape": [
+        1,
+        2,
+        120,
+        120
+      ],
+      "threshold": 0.5
+    },
+    {
+      "tool": "BIFOLD-BigEarthNetv2-0/resnet50-s2-v0.2.0",
+      "revision": "f5a590cd5876845f62702260ff62ea5a325433bb",
+      "device": "cpu",
+      "bands": [
+        "B02",
+        "B03",
+        "B04",
+        "B05",
+        "B06",
+        "B07",
+        "B08",
+        "B8A",
+        "B11",
+        "B12"
+      ],
+      "normalization": "reBEN 120_nearest training mean/std",
+      "input_shape": [
+        1,
+        10,
+        120,
+        120
+      ],
+      "threshold": 0.5
+    },
+    {
+      "tool": "BIFOLD-BigEarthNetv2-0/resnet50-all-v0.2.0",
+      "revision": "762acdc186cce6b31ecbc896ddab1721847d4c5e",
+      "device": "cpu",
+      "bands": [
+        "VV",
+        "VH",
+        "B02",
+        "B03",
+        "B04",
+        "B05",
+        "B06",
+        "B07",
+        "B08",
+        "B8A",
+        "B11",
+        "B12"
+      ],
+      "normalization": "reBEN 120_nearest training mean/std",
+      "input_shape": [
+        1,
+        12,
+        120,
+        120
+      ],
+      "threshold": 0.5
+    }
+  ],
+  "confidence": {
+    "kind": "uncalibrated sigmoid scores; not accuracy",
+    "threshold": 0.5
+  },
+  "limitations": [
+    "Sentinel-1 VV/VH and Sentinel-2 multispectral only; no demonstrated Cartosat/RISAT transfer.",
+    "Scene classification cannot locate built-up/water regions.",
+    "Fusion superiority must be tested; more sensors do not guarantee a better answer."
+  ]
+}

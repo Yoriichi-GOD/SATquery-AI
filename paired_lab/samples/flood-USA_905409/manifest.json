@@ -1,0 +1,28 @@
+{
+  "id": "flood-USA_905409",
+  "kind": "water_map",
+  "name": "USA \u00b7 905409 (test)",
+  "source": "Sen1Floods11 v1.1 hand-labelled",
+  "benchmark": "Official test split; first chip per event, not selected by prediction quality",
+  "files": [
+    "optical.tif",
+    "sar.tif"
+  ],
+  "source_files": [
+    {
+      "source": "/root/satquery/paired-lab/sen1floods11/S2Hand/USA_905409_S2Hand.tif",
+      "source_sha256": "e44a749f3d8cbbaebdb56c1284354040d7b965899dcdbb40454f5c4ba46c60eb",
+      "export_sha256": "c7dbc72ee6e8f2abf63e3ed8f9ccd2efbb73b027558da4a98cc7f0f810a0f67e"
+    },
+    {
+      "source": "/root/satquery/paired-lab/sen1floods11/S1Hand/USA_905409_S1Hand.tif",
+      "source_sha256": "0ec326c52448475242517cfe160b63eceb5af4c549474d3b6fbfc718a3c03abf",
+      "export_sha256": "ffb23fddb50f5e2ba8bfcd0ba65e15bd5d1cdebafd7285f48a594e09f5418e6f"
+    }
+  ],
+  "dates": {
+    "optical": "2019/05/22",
+    "sar": "2019/05/22"
+  },
+  "reference": "/root/satquery/paired-lab/sen1floods11/LabelHand/USA_905409_LabelHand.tif"
+}

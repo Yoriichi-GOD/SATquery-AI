@@ -1,0 +1,34 @@
+workflow,split,samples,path_or_class,metric,value_0_to_1
+water,test,90,s1,iou,0.6364371711694264
+water,test,90,s1,f1,0.7778326994547763
+water,test,90,s1,precision,0.7713220567065157
+water,test,90,s1,recall,0.784454189055534
+water,test,90,s2,iou,0.8389691182803195
+water,test,90,s2,f1,0.9124341566593213
+water,test,90,s2,precision,0.9056729863597008
+water,test,90,s2,recall,0.9192970353201041
+water,test,90,all,iou,0.8264399791923128
+water,test,90,all,f1,0.9049735973889277
+water,test,90,all,precision,0.8943360998026837
+water,test,90,all,recall,0.9158671921436261
+water,bolivia,15,s1,iou,0.640478809034253
+water,bolivia,15,s1,f1,0.7808437457492081
+water,bolivia,15,s1,precision,0.8584529026434765
+water,bolivia,15,s1,recall,0.7161037809613127
+water,bolivia,15,s2,iou,0.8144418943263987
+water,bolivia,15,s2,f1,0.8977326822898957
+water,bolivia,15,s2,precision,0.913826323525679
+water,bolivia,15,s2,recall,0.882196089613216
+water,bolivia,15,all,iou,0.8157730245912878
+water,bolivia,15,all,f1,0.8985407466056062
+water,bolivia,15,all,precision,0.8958398837966264
+water,bolivia,15,all,recall,0.9012579442958119
+temporal,balanced 100-pair subset,100,unchanged,iou,0.9845200003530887
+temporal,balanced 100-pair subset,100,unchanged,f1,0.9921996252775699
+temporal,balanced 100-pair subset,100,road,iou,0.8099453355774687
+temporal,balanced 100-pair subset,100,road,f1,0.894994251656836
+temporal,balanced 100-pair subset,100,building,iou,0.8168671086486304
+temporal,balanced 100-pair subset,100,building,f1,0.8992040251707886
+land_cover,12 existing fixtures,12,s1,micro_f1,0.660377358490566
+land_cover,12 existing fixtures,12,s2,micro_f1,0.6274509803921569
+land_cover,12 existing fixtures,12,all,micro_f1,0.75

@@ -1,0 +1,35 @@
+{
+  "file": "test_000386.png",
+  "reference_changeflag": 1,
+  "raw_caption": "the scene is the same as before",
+  "reference_captions": [
+    " two houses are built in the clearing at the top .",
+    " some buildings appear in the woods in the higher left area of the scene .",
+    " a house has been built in the trees .",
+    " a small house is built in the forest .",
+    " two connected small buildings appear in the woods ."
+  ],
+  "caption_changeflag_heuristic": 0,
+  "confusion_rows_reference_columns_prediction": [
+    [
+      65059,
+      0,
+      7
+    ],
+    [
+      0,
+      0,
+      0
+    ],
+    [
+      470,
+      0,
+      0
+    ]
+  ],
+  "predicted_class_pixels": {
+    "0": 65529,
+    "1": 0,
+    "2": 7
+  }
+}

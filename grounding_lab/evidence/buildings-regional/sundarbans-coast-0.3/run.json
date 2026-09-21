@@ -1,0 +1,131 @@
+{
+  "id": "626e0a6c6f744320903e40f894c81849",
+  "state": "complete",
+  "stage": "Starting isolated worker",
+  "started": 1789213006.4093502,
+  "image": {
+    "id": "79d56d2fb18b47a7823387954e4ed67f",
+    "name": "sundarbans-coast.png",
+    "width": 512,
+    "height": 512,
+    "sha256": "fc5f37c6cbee7918785e6d8e69022887b4a115cb755a734577414f872edcdda5",
+    "preview": "api/images/79d56d2fb18b47a7823387954e4ed67f"
+  },
+  "selection": {
+    "image_id": "79d56d2fb18b47a7823387954e4ed67f",
+    "category": "building",
+    "threshold": 0.3,
+    "mode": "both"
+  },
+  "result": {
+    "version": "grounding-lab-v1",
+    "category": "building",
+    "prompt": "a building.",
+    "mode": "both",
+    "image": {
+      "width": 512,
+      "height": 512,
+      "sha256": "fc5f37c6cbee7918785e6d8e69022887b4a115cb755a734577414f872edcdda5"
+    },
+    "models": [
+      {
+        "model": "IDEA-Research/grounding-dino-tiny",
+        "revision": "a2bb814dd30d776dcf7e30523b00659f4f141c71",
+        "path": "/root/.cache/huggingface/hub/models--IDEA-Research--grounding-dino-tiny/snapshots/a2bb814dd30d776dcf7e30523b00659f4f141c71",
+        "license": "apache-2.0"
+      },
+      {
+        "model": "facebook/sam-vit-base",
+        "revision": "70c1a07f894ebb5b307fd9eaaee97b9dfc16068f",
+        "path": "/root/.cache/huggingface/hub/models--facebook--sam-vit-base/snapshots/70c1a07f894ebb5b307fd9eaaee97b9dfc16068f",
+        "license": "apache-2.0"
+      }
+    ],
+    "settings": {
+      "box_threshold": 0.3,
+      "text_threshold": 0.25,
+      "nms_iou": 0.5,
+      "max_objects": 24,
+      "reject_frame_area_fraction": 0.97,
+      "enclosing_area_fraction": 0.9,
+      "enclosed_smaller_ratio": 0.6
+    },
+    "raw_candidates": 2,
+    "raw_proposals": [
+      {
+        "box_xyxy": [
+          0.032562255859375,
+          0.04400634765625,
+          512.0,
+          512.0
+        ],
+        "score": 0.43055808544158936
+      },
+      {
+        "box_xyxy": [
+          0.0,
+          360.9246826171875,
+          174.56640625,
+          511.9796142578125
+        ],
+        "score": 0.33235305547714233
+      }
+    ],
+    "excluded_enclosing_proposals": [
+      0
+    ],
+    "detections": [
+      {
+        "id": 1,
+        "box_xyxy": [
+          0.0,
+          360.9246826171875,
+          174.56640625,
+          511.9796142578125
+        ],
+        "detector_score": 0.33235305547714233,
+        "mask_pixels": 15429,
+        "sam_predicted_iou": 1.0206371545791626
+      }
+    ],
+    "objects": 1,
+    "capped": false,
+    "segmented_objects": 1,
+    "union_mask_pixels": 15429,
+    "total_image_pixels": 262144,
+    "union_mask_percent": 5.8857,
+    "pixel_statistics_available": true,
+    "trace": [
+      {
+        "step": "Load pinned Grounding DINO",
+        "seconds": 0.63
+      },
+      {
+        "step": "Detect, threshold, remove enclosing frame proposals and suppress duplicates",
+        "seconds": 1.944
+      },
+      {
+        "step": "Load pinned SAM Base",
+        "seconds": 0.44
+      },
+      {
+        "step": "Box-prompted segmentation; choose highest SAM predicted IoU mask",
+        "seconds": 0.724
+      },
+      {
+        "step": "Render boxes, outlines and instance masks",
+        "seconds": 0.082
+      }
+    ],
+    "seconds": 4.639,
+    "peak_gpu_GiB": 2.678,
+    "limitations": [
+      "Experimental pretrained models; no remote-sensing fine-tuning or general accuracy claim.",
+      "Detector score and SAM predicted IoU are model scores, not measured correctness.",
+      "A mask follows a proposed box; it cannot prove the object identity.",
+      "Pixel coverage is the union of predicted masks, not NDVI, hectares or surveyed area.",
+      "Instance PNG assigns overlaps to the first score-ranked object; NPZ preserves overlapping masks.",
+      "Small, obscured or densely packed objects may be missed. Zero candidates means none passed the settings, not proof of absence."
+    ]
+  }
+}

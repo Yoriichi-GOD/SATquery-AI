@@ -1,0 +1,55 @@
+{
+  "purpose": "One-pass pilot; development comparison only, not held-out test performance",
+  "model": "AdaptLLM/remote-sensing-Qwen2-VL-2B-Instruct",
+  "revision": "7f5dd71bf0f40c282193d50160e848a387a08ffe",
+  "steps": 720,
+  "baseline_dev": {
+    "correct": 23,
+    "total": 60,
+    "invalid_format": 20,
+    "per_category": {
+      "rural_urban": {
+        "correct": 0,
+        "total": 20
+      },
+      "presence": {
+        "correct": 10,
+        "total": 20
+      },
+      "comp": {
+        "correct": 13,
+        "total": 20
+      }
+    }
+  },
+  "adapted_dev": {
+    "correct": 47,
+    "total": 60,
+    "invalid_format": 0,
+    "per_category": {
+      "rural_urban": {
+        "correct": 15,
+        "total": 20
+      },
+      "presence": {
+        "correct": 15,
+        "total": 20
+      },
+      "comp": {
+        "correct": 17,
+        "total": 20
+      }
+    }
+  },
+  "trainable_parameters": 544768,
+  "seconds": 190.024222655,
+  "peak_allocated_GiB": 4.454071998596191,
+  "train_manifest": "fe5b5e985d3b46fe70a748638f947ec4f3fa636958017d840e092d4c3b89cf04",
+  "visual_tokens": "64-128",
+  "rank": 4,
+  "lr": 0.0001,
+  "batch_size": 1,
+  "gradient_checkpointing": true,
+  "answer_only_loss": true,
+  "adapter_reload_passed": true
+}

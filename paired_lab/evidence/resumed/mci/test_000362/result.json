@@ -1,0 +1,35 @@
+{
+  "file": "test_000362.png",
+  "reference_changeflag": 1,
+  "raw_caption": "some houses are built along the road",
+  "reference_captions": [
+    " three mansions appear on the left side of the road and a mansion on the right .",
+    " villas are built with a path to the road along the road .",
+    " several large buildings have been constructed on the bareland on both sides of the road .",
+    " three villas are built along the road and a house has been built in the upper right corner of the scene .",
+    " four houses show up between the woods and the roads ."
+  ],
+  "caption_changeflag_heuristic": 1,
+  "confusion_rows_reference_columns_prediction": [
+    [
+      51097,
+      0,
+      625
+    ],
+    [
+      3879,
+      0,
+      0
+    ],
+    [
+      1818,
+      0,
+      8117
+    ]
+  ],
+  "predicted_class_pixels": {
+    "0": 56794,
+    "1": 0,
+    "2": 8742
+  }
+}

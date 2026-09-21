@@ -1,0 +1,2186 @@
+[
+  {
+    "kind": "temporal",
+    "sample": "levir-test_102_0512_0000",
+    "run": {
+      "state": "complete",
+      "stage": "Complete",
+      "plan": {
+        "task": "temporal",
+        "version": "unified-rules-v6",
+        "specialist": "MCI road/building change + caption",
+        "device": "CPU",
+        "maturity": "supported",
+        "reason": "Two optical dates and a supported change question.",
+        "threshold": 0.5,
+        "steps": [
+          "validate pair",
+          "registration diagnostic",
+          "road/building masks and caption",
+          "save evidence"
+        ]
+      },
+      "events": [
+        {
+          "stage": "Input checks passed; preparing specialist",
+          "at": "2026-09-21T02:15:40Z"
+        },
+        {
+          "stage": "Starting MCI road/building change + caption",
+          "at": "2026-09-21T02:15:40Z"
+        },
+        {
+          "stage": "Loading or reusing MCI on CPU",
+          "at": "2026-09-21T02:15:40Z"
+        },
+        {
+          "stage": "Predicting road/building changes and caption",
+          "at": "2026-09-21T02:15:46Z"
+        },
+        {
+          "stage": "Rendering temporal masks and calculating pixel counts",
+          "at": "2026-09-21T02:15:46Z"
+        },
+        {
+          "stage": "Saving result and original inputs",
+          "at": "2026-09-21T02:15:46Z"
+        },
+        {
+          "stage": "Packaging evidence",
+          "at": "2026-09-21T02:15:46Z"
+        }
+      ],
+      "result": {
+        "task": "temporal",
+        "answer": "a large building with a parking lot is built",
+        "raw_caption": "a large building with a parking lot is built",
+        "caption_status": "model interpretation; may be wrong",
+        "changed_pixels": 23442,
+        "denominator_pixels": 65536,
+        "coverage_percent": 35.7696533203125,
+        "class_pixels": {
+          "road": 9623,
+          "building": 13819
+        },
+        "direction": "caption interpretation only; masks do not encode gain/removal",
+        "seconds": 5.726880621004966,
+        "confidence": {
+          "kind": "uncalibrated class softmax",
+          "mask_rule": "argmax: unchanged / road change / building change"
+        },
+        "trace": [
+          {
+            "tool": "MCI change captioning + segmentation",
+            "checkpoint": {
+              "repo": "lcybuaa/Change-Agent",
+              "revision": "1e679060173434cd22fd22a52effbf3c785c97a0",
+              "path": "/root/satquery/paired-lab/mci-model/MCI_model.pth",
+              "sha256": "34c6926342c40fdd6d50b43d50257cb46cb6b61763448de9ee551828a64b3eb9",
+              "source_revision": "68cbaa7f388b36e4fc10872f7a2911482d26ae5b",
+              "license_note": "Checkpoint card Apache-2.0; source MIT with academic-use statement. Preserve both statements; review before commercial release."
+            },
+            "device": "cpu",
+            "load_checks": {
+              "encoder": {
+                "all_required_tensors_loaded": true,
+                "unused_training_branch_tensors": []
+              },
+              "encoder_trans": {
+                "all_required_tensors_loaded": true,
+                "unused_training_branch_tensors": [
+                  "BI_fus_cap.layers.0.linear1.bias",
+                  "BI_fus_cap.layers.0.linear1.weight",
+                  "BI_fus_cap.layers.0.linear2.bias",
+                  "BI_fus_cap.layers.0.linear2.weight",
+                  "BI_fus_cap.layers.0.norm1.bias",
+                  "BI_fus_cap.layers.0.norm1.weight",
+                  "BI_fus_cap.layers.0.norm2.bias",
+                  "BI_fus_cap.layers.0.norm2.weight",
+                  "BI_fus_cap.layers.0.self_attn.in_proj_bias",
+                  "BI_fus_cap.layers.0.self_attn.in_proj_weight",
+                  "BI_fus_cap.layers.0.self_attn.out_proj.bias",
+                  "BI_fus_cap.layers.0.self_attn.out_proj.weight",
+                  "Dynamic_DIF_aware_TR.0.0.att.LN.bias",
+                  "Dynamic_DIF_aware_TR.0.0.att.LN.weight",
+                  "Dynamic_DIF_aware_TR.0.0.att.cos_linear.0.bias",
+                  "Dynamic_DIF_aware_TR.0.0.att.cos_linear.0.weight",
+                  "Dynamic_DIF_aware_TR.0.0.att.cos_linear.2.bias",
+                  "Dynamic_DIF_aware_TR.0.0.att.cos_linear.2.weight",
+                  "Dynamic_DIF_aware_TR.0.0.att.pos_emb.rel_height",
+                  "Dynamic_DIF_aware_TR.0.0.att.pos_emb.rel_width",
+                  "Dynamic_DIF_aware_TR.0.0.att.to_dif.bias",
+                  "Dynamic_DIF_aware_TR.0.0.att.to_dif.weight",
+                  "Dynamic_DIF_aware_TR.0.0.att.to_dif_conv.0.bias",
+                  "Dynamic_DIF_aware_TR.0.0.att.to_dif_conv.0.weight",
+                  "Dynamic_DIF_aware_TR.0.0.att.to_q2.bias",
+                  "Dynamic_DIF_aware_TR.0.0.att.to_q2.weight",
+                  "Dynamic_DIF_aware_TR.0.1.att.LN.bias",
+                  "Dynamic_DIF_aware_TR.0.1.att.LN.weight",
+                  "Dynamic_DIF_aware_TR.0.1.att.cos_linear.0.bias",
+                  "Dynamic_DIF_aware_TR.0.1.att.cos_linear.0.weight",
+                  "Dynamic_DIF_aware_TR.0.1.att.cos_linear.2.bias",
+                  "Dynamic_DIF_aware_TR.0.1.att.cos_linear.2.weight",
+                  "Dynamic_DIF_aware_TR.0.1.att.pos_emb.rel_height",
+                  "Dynamic_DIF_aware_TR.0.1.att.pos_emb.rel_width",
+                  "Dynamic_DIF_aware_TR.0.1.att.to_dif.bias",
+                  "Dynamic_DIF_aware_TR.0.1.att.to_dif.weight",
+                  "Dynamic_DIF_aware_TR.0.1.att.to_dif_conv.0.bias",
+                  "Dynamic_DIF_aware_TR.0.1.att.to_dif_conv.0.weight",
+                  "Dynamic_DIF_aware_TR.0.1.att.to_q2.bias",
+                  "Dynamic_DIF_aware_TR.0.1.att.to_q2.weight",
+                  "Dynamic_DIF_aware_TR.0.3.se.0.weight",
+                  "Dynamic_DIF_aware_TR.0.3.se.2.weight",
+                  "Dynamic_DIF_aware_TR.1.0.att.LN.bias",
+                  "Dynamic_DIF_aware_TR.1.0.att.LN.weight",
+                  "Dynamic_DIF_aware_TR.1.0.att.cos_linear.0.bias",
+                  "Dynamic_DIF_aware_TR.1.0.att.cos_linear.0.weight",
+                  "Dynamic_DIF_aware_TR.1.0.att.cos_linear.2.bias",
+                  "Dynamic_DIF_aware_TR.1.0.att.cos_linear.2.weight",
+                  "Dynamic_DIF_aware_TR.1.0.att.pos_emb.rel_height",
+                  "Dynamic_DIF_aware_TR.1.0.att.pos_emb.rel_width",
+                  "Dynamic_DIF_aware_TR.1.0.att.to_dif.bias",
+                  "Dynamic_DIF_aware_TR.1.0.att.to_dif.weight",
+                  "Dynamic_DIF_aware_TR.1.0.att.to_dif_conv.0.bias",
+                  "Dynamic_DIF_aware_TR.1.0.att.to_dif_conv.0.weight",
+                  "Dynamic_DIF_aware_TR.1.0.att.to_q2.bias",
+                  "Dynamic_DIF_aware_TR.1.0.att.to_q2.weight",
+                  "Dynamic_DIF_aware_TR.1.1.att.LN.bias",
+                  "Dynamic_DIF_aware_TR.1.1.att.LN.weight",
+                  "Dynamic_DIF_aware_TR.1.1.att.cos_linear.0.bias",
+                  "Dynamic_DIF_aware_TR.1.1.att.cos_linear.0.weight",
+                  "Dynamic_DIF_aware_TR.1.1.att.cos_linear.2.bias",
+                  "Dynamic_DIF_aware_TR.1.1.att.cos_linear.2.weight",
+                  "Dynamic_DIF_aware_TR.1.1.att.pos_emb.rel_height",
+                  "Dynamic_DIF_aware_TR.1.1.att.pos_emb.rel_width",
+                  "Dynamic_DIF_aware_TR.1.1.att.to_dif.bias",
+                  "Dynamic_DIF_aware_TR.1.1.att.to_dif.weight",
+                  "Dynamic_DIF_aware_TR.1.1.att.to_dif_conv.0.bias",
+                  "Dynamic_DIF_aware_TR.1.1.att.to_dif_conv.0.weight",
+                  "Dynamic_DIF_aware_TR.1.1.att.to_q2.bias",
+                  "Dynamic_DIF_aware_TR.1.1.att.to_q2.weight",
+                  "Dynamic_DIF_aware_TR.1.3.se.0.weight",
+                  "Dynamic_DIF_aware_TR.1.3.se.2.weight",
+                  "Dynamic_DIF_aware_TR.2.0.att.LN.bias",
+                  "Dynamic_DIF_aware_TR.2.0.att.LN.weight",
+                  "Dynamic_DIF_aware_TR.2.0.att.cos_linear.0.bias",
+                  "Dynamic_DIF_aware_TR.2.0.att.cos_linear.0.weight",
+                  "Dynamic_DIF_aware_TR.2.0.att.cos_linear.2.bias",
+                  "Dynamic_DIF_aware_TR.2.0.att.cos_linear.2.weight",
+                  "Dynamic_DIF_aware_TR.2.0.att.pos_emb.rel_height",
+                  "Dynamic_DIF_aware_TR.2.0.att.pos_emb.rel_width",
+                  "Dynamic_DIF_aware_TR.2.0.att.to_dif.bias",
+                  "Dynamic_DIF_aware_TR.2.0.att.to_dif.weight",
+                  "Dynamic_DIF_aware_TR.2.0.att.to_dif_conv.0.bias",
+                  "Dynamic_DIF_aware_TR.2.0.att.to_dif_conv.0.weight",
+                  "Dynamic_DIF_aware_TR.2.0.att.to_q2.bias",
+                  "Dynamic_DIF_aware_TR.2.0.att.to_q2.weight",
+                  "Dynamic_DIF_aware_TR.2.1.att.LN.bias",
+                  "Dynamic_DIF_aware_TR.2.1.att.LN.weight",
+                  "Dynamic_DIF_aware_TR.2.1.att.cos_linear.0.bias",
+                  "Dynamic_DIF_aware_TR.2.1.att.cos_linear.0.weight",
+                  "Dynamic_DIF_aware_TR.2.1.att.cos_linear.2.bias",
+                  "Dynamic_DIF_aware_TR.2.1.att.cos_linear.2.weight",
+                  "Dynamic_DIF_aware_TR.2.1.att.pos_emb.rel_height",
+                  "Dynamic_DIF_aware_TR.2.1.att.pos_emb.rel_width",
+                  "Dynamic_DIF_aware_TR.2.1.att.to_dif.bias",
+                  "Dynamic_DIF_aware_TR.2.1.att.to_dif.weight",
+                  "Dynamic_DIF_aware_TR.2.1.att.to_dif_conv.0.bias",
+                  "Dynamic_DIF_aware_TR.2.1.att.to_dif_conv.0.weight",
+                  "Dynamic_DIF_aware_TR.2.1.att.to_q2.bias",
+                  "Dynamic_DIF_aware_TR.2.1.att.to_q2.weight",
+                  "Dynamic_DIF_aware_TR.2.3.se.0.weight",
+                  "Dynamic_DIF_aware_TR.2.3.se.2.weight",
+                  "Q_transformer_CC.0.att.K_LN.bias",
+                  "Q_transformer_CC.0.att.K_LN.weight",
+                  "Q_transformer_CC.0.att.LN.bias",
+                  "Q_transformer_CC.0.att.LN.weight",
+                  "Q_transformer_CC.0.att.Q_LN.bias",
+                  "Q_transformer_CC.0.att.Q_LN.weight",
+                  "Q_transformer_CC.0.att.V_LN.bias",
+                  "Q_transformer_CC.0.att.V_LN.weight",
+                  "Q_transformer_CC.0.att.cos_linear.0.bias",
+                  "Q_transformer_CC.0.att.cos_linear.0.weight",
+                  "Q_transformer_CC.0.att.cos_linear.2.bias",
+                  "Q_transformer_CC.0.att.cos_linear.2.weight",
+                  "Q_transformer_CC.0.att.fuse_conv.0.bias",
+                  "Q_transformer_CC.0.att.fuse_conv.0.weight",
+                  "Q_transformer_CC.0.att.fuse_conv.1.bias",
+                  "Q_transformer_CC.0.att.fuse_conv.1.num_batches_tracked",
+                  "Q_transformer_CC.0.att.fuse_conv.1.running_mean",
+                  "Q_transformer_CC.0.att.fuse_conv.1.running_var",
+                  "Q_transformer_CC.0.att.fuse_conv.1.weight",
+                  "Q_transformer_CC.0.att.fuse_conv2.0.bias",
+                  "Q_transformer_CC.0.att.fuse_conv2.0.weight",
+                  "Q_transformer_CC.0.att.fuse_conv2.1.bias",
+                  "Q_transformer_CC.0.att.fuse_conv2.1.num_batches_tracked",
+                  "Q_transformer_CC.0.att.fuse_conv2.1.running_mean",
+                  "Q_transformer_CC.0.att.fuse_conv2.1.running_var",
+                  "Q_transformer_CC.0.att.fuse_conv2.1.weight",
+                  "Q_transformer_CC.0.att.pos_emb.rel_height",
+                  "Q_transformer_CC.0.att.pos_emb.rel_width",
+                  "Q_transformer_CC.0.att.to_dif.bias",
+                  "Q_transformer_CC.0.att.to_dif.weight",
+                  "Q_transformer_CC.0.att.to_dif_conv.0.bias",
+                  "Q_transformer_CC.0.att.to_dif_conv.0.weight",
+                  "Q_transformer_CC.0.att.to_k.bias",
+                  "Q_transformer_CC.0.att.to_k.weight",
+                  "Q_transformer_CC.0.att.to_out.0.bias",
+                  "Q_transformer_CC.0.att.to_out.0.weight",
+                  "Q_transformer_CC.0.att.to_q.bias",
+                  "Q_transformer_CC.0.att.to_q.weight",
+                  "Q_transformer_CC.0.att.to_q2.bias",
+                  "Q_transformer_CC.0.att.to_q2.weight",
+                  "Q_transformer_CC.0.att.to_v.bias",
+                  "Q_transformer_CC.0.att.to_v.weight",
+                  "Q_transformer_CC.0.att2.K_LN.bias",
+                  "Q_transformer_CC.0.att2.K_LN.weight",
+                  "Q_transformer_CC.0.att2.LN.bias",
+                  "Q_transformer_CC.0.att2.LN.weight",
+                  "Q_transformer_CC.0.att2.Q_LN.bias",
+                  "Q_transformer_CC.0.att2.Q_LN.weight",
+                  "Q_transformer_CC.0.att2.V_LN.bias",
+                  "Q_transformer_CC.0.att2.V_LN.weight",
+                  "Q_transformer_CC.0.att2.cos_linear.0.bias",
+                  "Q_transformer_CC.0.att2.cos_linear.0.weight",
+                  "Q_transformer_CC.0.att2.cos_linear.2.bias",
+                  "Q_transformer_CC.0.att2.cos_linear.2.weight",
+                  "Q_transformer_CC.0.att2.fuse_conv.0.bias",
+                  "Q_transformer_CC.0.att2.fuse_conv.0.weight",
+                  "Q_transformer_CC.0.att2.fuse_conv.1.bias",
+                  "Q_transformer_CC.0.att2.fuse_conv.1.num_batches_tracked",
+                  "Q_transformer_CC.0.att2.fuse_conv.1.running_mean",
+                  "Q_transformer_CC.0.att2.fuse_conv.1.running_var",
+                  "Q_transformer_CC.0.att2.fuse_conv.1.weight",
+                  "Q_transformer_CC.0.att2.fuse_conv2.0.bias",
+                  "Q_transformer_CC.0.att2.fuse_conv2.0.weight",
+                  "Q_transformer_CC.0.att2.fuse_conv2.1.bias",
+                  "Q_transformer_CC.0.att2.fuse_conv2.1.num_batches_tracked",
+                  "Q_transformer_CC.0.att2.fuse_conv2.1.running_mean",
+                  "Q_transformer_CC.0.att2.fuse_conv2.1.running_var",
+                  "Q_transformer_CC.0.att2.fuse_conv2.1.weight",
+                  "Q_transformer_CC.0.att2.pos_emb.rel_height",
+                  "Q_transformer_CC.0.att2.pos_emb.rel_width",
+                  "Q_transformer_CC.0.att2.to_dif.bias",
+                  "Q_transformer_CC.0.att2.to_dif.weight",
+                  "Q_transformer_CC.0.att2.to_dif_conv.0.bias",
+                  "Q_transformer_CC.0.att2.to_dif_conv.0.weight",
+                  "Q_transformer_CC.0.att2.to_k.bias",
+                  "Q_transformer_CC.0.att2.to_k.weight",
+                  "Q_transformer_CC.0.att2.to_out.0.bias",
+                  "Q_transformer_CC.0.att2.to_out.0.weight",
+                  "Q_transformer_CC.0.att2.to_q.bias",
+                  "Q_transformer_CC.0.att2.to_q.weight",
+                  "Q_transformer_CC.0.att2.to_q2.bias",
+                  "Q_transformer_CC.0.att2.to_q2.weight",
+                  "Q_transformer_CC.0.att2.to_v.bias",
+                  "Q_transformer_CC.0.att2.to_v.weight",
+                  "Q_transformer_CC.0.feedforward.net.0.bias",
+                  "Q_transformer_CC.0.feedforward.net.0.weight",
+                  "Q_transformer_CC.0.feedforward.net.3.bias",
+                  "Q_transformer_CC.0.feedforward.net.3.weight",
+                  "Q_transformer_CC.0.norm0.bias",
+                  "Q_transformer_CC.0.norm0.weight",
+                  "Q_transformer_CC.0.norm1.bias",
+                  "Q_transformer_CC.0.norm1.weight",
+                  "Q_transformer_CC.0.norm2.bias",
+                  "Q_transformer_CC.0.norm2.weight",
+                  "Q_transformer_CC.1.att.K_LN.bias",
+                  "Q_transformer_CC.1.att.K_LN.weight",
+                  "Q_transformer_CC.1.att.LN.bias",
+                  "Q_transformer_CC.1.att.LN.weight",
+                  "Q_transformer_CC.1.att.Q_LN.bias",
+                  "Q_transformer_CC.1.att.Q_LN.weight",
+                  "Q_transformer_CC.1.att.V_LN.bias",
+                  "Q_transformer_CC.1.att.V_LN.weight",
+                  "Q_transformer_CC.1.att.cos_linear.0.bias",
+                  "Q_transformer_CC.1.att.cos_linear.0.weight",
+                  "Q_transformer_CC.1.att.cos_linear.2.bias",
+                  "Q_transformer_CC.1.att.cos_linear.2.weight",
+                  "Q_transformer_CC.1.att.fuse_conv.0.bias",
+                  "Q_transformer_CC.1.att.fuse_conv.0.weight",
+                  "Q_transformer_CC.1.att.fuse_conv.1.bias",
+                  "Q_transformer_CC.1.att.fuse_conv.1.num_batches_tracked",
+                  "Q_transformer_CC.1.att.fuse_conv.1.running_mean",
+                  "Q_transformer_CC.1.att.fuse_conv.1.running_var",
+                  "Q_transformer_CC.1.att.fuse_conv.1.weight",
+                  "Q_transformer_CC.1.att.fuse_conv2.0.bias",
+                  "Q_transformer_CC.1.att.fuse_conv2.0.weight",
+                  "Q_transformer_CC.1.att.fuse_conv2.1.bias",
+                  "Q_transformer_CC.1.att.fuse_conv2.1.num_batches_tracked",
+                  "Q_transformer_CC.1.att.fuse_conv2.1.running_mean",
+                  "Q_transformer_CC.1.att.fuse_conv2.1.running_var",
+                  "Q_transformer_CC.1.att.fuse_conv2.1.weight",
+                  "Q_transformer_CC.1.att.pos_emb.rel_height",
+                  "Q_transformer_CC.1.att.pos_emb.rel_width",
+                  "Q_transformer_CC.1.att.to_dif.bias",
+                  "Q_transformer_CC.1.att.to_dif.weight",
+                  "Q_transformer_CC.1.att.to_dif_conv.0.bias",
+                  "Q_transformer_CC.1.att.to_dif_conv.0.weight",
+                  "Q_transformer_CC.1.att.to_k.bias",
+                  "Q_transformer_CC.1.att.to_k.weight",
+                  "Q_transformer_CC.1.att.to_out.0.bias",
+                  "Q_transformer_CC.1.att.to_out.0.weight",
+                  "Q_transformer_CC.1.att.to_q.bias",
+                  "Q_transformer_CC.1.att.to_q.weight",
+                  "Q_transformer_CC.1.att.to_q2.bias",
+                  "Q_transformer_CC.1.att.to_q2.weight",
+                  "Q_transformer_CC.1.att.to_v.bias",
+                  "Q_transformer_CC.1.att.to_v.weight",
+                  "Q_transformer_CC.1.att2.K_LN.bias",
+                  "Q_transformer_CC.1.att2.K_LN.weight",
+                  "Q_transformer_CC.1.att2.LN.bias",
+                  "Q_transformer_CC.1.att2.LN.weight",
+                  "Q_transformer_CC.1.att2.Q_LN.bias",
+                  "Q_transformer_CC.1.att2.Q_LN.weight",
+                  "Q_transformer_CC.1.att2.V_LN.bias",
+                  "Q_transformer_CC.1.att2.V_LN.weight",
+                  "Q_transformer_CC.1.att2.cos_linear.0.bias",
+                  "Q_transformer_CC.1.att2.cos_linear.0.weight",
+                  "Q_transformer_CC.1.att2.cos_linear.2.bias",
+                  "Q_transformer_CC.1.att2.cos_linear.2.weight",
+                  "Q_transformer_CC.1.att2.fuse_conv.0.bias",
+                  "Q_transformer_CC.1.att2.fuse_conv.0.weight",
+                  "Q_transformer_CC.1.att2.fuse_conv.1.bias",
+                  "Q_transformer_CC.1.att2.fuse_conv.1.num_batches_tracked",
+                  "Q_transformer_CC.1.att2.fuse_conv.1.running_mean",
+                  "Q_transformer_CC.1.att2.fuse_conv.1.running_var",
+                  "Q_transformer_CC.1.att2.fuse_conv.1.weight",
+                  "Q_transformer_CC.1.att2.fuse_conv2.0.bias",
+                  "Q_transformer_CC.1.att2.fuse_conv2.0.weight",
+                  "Q_transformer_CC.1.att2.fuse_conv2.1.bias",
+                  "Q_transformer_CC.1.att2.fuse_conv2.1.num_batches_tracked",
+                  "Q_transformer_CC.1.att2.fuse_conv2.1.running_mean",
+                  "Q_transformer_CC.1.att2.fuse_conv2.1.running_var",
+                  "Q_transformer_CC.1.att2.fuse_conv2.1.weight",
+                  "Q_transformer_CC.1.att2.pos_emb.rel_height",
+                  "Q_transformer_CC.1.att2.pos_emb.rel_width",
+                  "Q_transformer_CC.1.att2.to_dif.bias",
+                  "Q_transformer_CC.1.att2.to_dif.weight",
+                  "Q_transformer_CC.1.att2.to_dif_conv.0.bias",
+                  "Q_transformer_CC.1.att2.to_dif_conv.0.weight",
+                  "Q_transformer_CC.1.att2.to_k.bias",
+                  "Q_transformer_CC.1.att2.to_k.weight",
+                  "Q_transformer_CC.1.att2.to_out.0.bias",
+                  "Q_transformer_CC.1.att2.to_out.0.weight",
+                  "Q_transformer_CC.1.att2.to_q.bias",
+                  "Q_transformer_CC.1.att2.to_q.weight",
+                  "Q_transformer_CC.1.att2.to_q2.bias",
+                  "Q_transformer_CC.1.att2.to_q2.weight",
+                  "Q_transformer_CC.1.att2.to_v.bias",
+                  "Q_transformer_CC.1.att2.to_v.weight",
+                  "Q_transformer_CC.1.feedforward.net.0.bias",
+                  "Q_transformer_CC.1.feedforward.net.0.weight",
+                  "Q_transformer_CC.1.feedforward.net.3.bias",
+                  "Q_transformer_CC.1.feedforward.net.3.weight",
+                  "Q_transformer_CC.1.norm0.bias",
+                  "Q_transformer_CC.1.norm0.weight",
+                  "Q_transformer_CC.1.norm1.bias",
+                  "Q_transformer_CC.1.norm1.weight",
+                  "Q_transformer_CC.1.norm2.bias",
+                  "Q_transformer_CC.1.norm2.weight",
+                  "Q_transformer_CD.0.att.K_LN.bias",
+                  "Q_transformer_CD.0.att.K_LN.weight",
+                  "Q_transformer_CD.0.att.LN.bias",
+                  "Q_transformer_CD.0.att.LN.weight",
+                  "Q_transformer_CD.0.att.Q_LN.bias",
+                  "Q_transformer_CD.0.att.Q_LN.weight",
+                  "Q_transformer_CD.0.att.V_LN.bias",
+                  "Q_transformer_CD.0.att.V_LN.weight",
+                  "Q_transformer_CD.0.att.cos_linear.0.bias",
+                  "Q_transformer_CD.0.att.cos_linear.0.weight",
+                  "Q_transformer_CD.0.att.cos_linear.2.bias",
+                  "Q_transformer_CD.0.att.cos_linear.2.weight",
+                  "Q_transformer_CD.0.att.fuse_conv.0.bias",
+                  "Q_transformer_CD.0.att.fuse_conv.0.weight",
+                  "Q_transformer_CD.0.att.fuse_conv.1.bias",
+                  "Q_transformer_CD.0.att.fuse_conv.1.num_batches_tracked",
+                  "Q_transformer_CD.0.att.fuse_conv.1.running_mean",
+                  "Q_transformer_CD.0.att.fuse_conv.1.running_var",
+                  "Q_transformer_CD.0.att.fuse_conv.1.weight",
+                  "Q_transformer_CD.0.att.fuse_conv2.0.bias",
+                  "Q_transformer_CD.0.att.fuse_conv2.0.weight",
+                  "Q_transformer_CD.0.att.fuse_conv2.1.bias",
+                  "Q_transformer_CD.0.att.fuse_conv2.1.num_batches_tracked",
+                  "Q_transformer_CD.0.att.fuse_conv2.1.running_mean",
+                  "Q_transformer_CD.0.att.fuse_conv2.1.running_var",
+                  "Q_transformer_CD.0.att.fuse_conv2.1.weight",
+                  "Q_transformer_CD.0.att.pos_emb.rel_height",
+                  "Q_transformer_CD.0.att.pos_emb.rel_width",
+                  "Q_transformer_CD.0.att.to_dif.bias",
+                  "Q_transformer_CD.0.att.to_dif.weight",
+                  "Q_transformer_CD.0.att.to_dif_conv.0.bias",
+                  "Q_transformer_CD.0.att.to_dif_conv.0.weight",
+                  "Q_transformer_CD.0.att.to_k.bias",
+                  "Q_transformer_CD.0.att.to_k.weight",
+                  "Q_transformer_CD.0.att.to_out.0.bias",
+                  "Q_transformer_CD.0.att.to_out.0.weight",
+                  "Q_transformer_CD.0.att.to_q.bias",
+                  "Q_transformer_CD.0.att.to_q.weight",
+                  "Q_transformer_CD.0.att.to_q2.bias",
+                  "Q_transformer_CD.0.att.to_q2.weight",
+                  "Q_transformer_CD.0.att.to_v.bias",
+                  "Q_transformer_CD.0.att.to_v.weight",
+                  "Q_transformer_CD.0.att2.K_LN.bias",
+                  "Q_transformer_CD.0.att2.K_LN.weight",
+                  "Q_transformer_CD.0.att2.LN.bias",
+                  "Q_transformer_CD.0.att2.LN.weight",
+                  "Q_transformer_CD.0.att2.Q_LN.bias",
+                  "Q_transformer_CD.0.att2.Q_LN.weight",
+                  "Q_transformer_CD.0.att2.V_LN.bias",
+                  "Q_transformer_CD.0.att2.V_LN.weight",
+                  "Q_transformer_CD.0.att2.cos_linear.0.bias",
+                  "Q_transformer_CD.0.att2.cos_linear.0.weight",
+                  "Q_transformer_CD.0.att2.cos_linear.2.bias",
+                  "Q_transformer_CD.0.att2.cos_linear.2.weight",
+                  "Q_transformer_CD.0.att2.fuse_conv.0.bias",
+                  "Q_transformer_CD.0.att2.fuse_conv.0.weight",
+                  "Q_transformer_CD.0.att2.fuse_conv.1.bias",
+                  "Q_transformer_CD.0.att2.fuse_conv.1.num_batches_tracked",
+                  "Q_transformer_CD.0.att2.fuse_conv.1.running_mean",
+                  "Q_transformer_CD.0.att2.fuse_conv.1.running_var",
+                  "Q_transformer_CD.0.att2.fuse_conv.1.weight",
+                  "Q_transformer_CD.0.att2.fuse_conv2.0.bias",
+                  "Q_transformer_CD.0.att2.fuse_conv2.0.weight",
+                  "Q_transformer_CD.0.att2.fuse_conv2.1.bias",
+                  "Q_transformer_CD.0.att2.fuse_conv2.1.num_batches_tracked",
+                  "Q_transformer_CD.0.att2.fuse_conv2.1.running_mean",
+                  "Q_transformer_CD.0.att2.fuse_conv2.1.running_var",
+                  "Q_transformer_CD.0.att2.fuse_conv2.1.weight",
+                  "Q_transformer_CD.0.att2.pos_emb.rel_height",
+                  "Q_transformer_CD.0.att2.pos_emb.rel_width",
+                  "Q_transformer_CD.0.att2.to_dif.bias",
+                  "Q_transformer_CD.0.att2.to_dif.weight",
+                  "Q_transformer_CD.0.att2.to_dif_conv.0.bias",
+                  "Q_transformer_CD.0.att2.to_dif_conv.0.weight",
+                  "Q_transformer_CD.0.att2.to_k.bias",
+                  "Q_transformer_CD.0.att2.to_k.weight",
+                  "Q_transformer_CD.0.att2.to_out.0.bias",
+                  "Q_transformer_CD.0.att2.to_out.0.weight",
+                  "Q_transformer_CD.0.att2.to_q.bias",
+                  "Q_transformer_CD.0.att2.to_q.weight",
+                  "Q_transformer_CD.0.att2.to_q2.bias",
+                  "Q_transformer_CD.0.att2.to_q2.weight",
+                  "Q_transformer_CD.0.att2.to_v.bias",
+                  "Q_transformer_CD.0.att2.to_v.weight",
+                  "Q_transformer_CD.0.feedforward.net.0.bias",
+                  "Q_transformer_CD.0.feedforward.net.0.weight",
+                  "Q_transformer_CD.0.feedforward.net.3.bias",
+                  "Q_transformer_CD.0.feedforward.net.3.weight",
+                  "Q_transformer_CD.0.norm0.bias",
+                  "Q_transformer_CD.0.norm0.weight",
+                  "Q_transformer_CD.0.norm1.bias",
+                  "Q_transformer_CD.0.norm1.weight",
+                  "Q_transformer_CD.0.norm2.bias",
+                  "Q_transformer_CD.0.norm2.weight",
+                  "Q_transformer_CD.1.att.K_LN.bias",
+                  "Q_transformer_CD.1.att.K_LN.weight",
+                  "Q_transformer_CD.1.att.LN.bias",
+                  "Q_transformer_CD.1.att.LN.weight",
+                  "Q_transformer_CD.1.att.Q_LN.bias",
+                  "Q_transformer_CD.1.att.Q_LN.weight",
+                  "Q_transformer_CD.1.att.V_LN.bias",
+                  "Q_transformer_CD.1.att.V_LN.weight",
+                  "Q_transformer_CD.1.att.cos_linear.0.bias",
+                  "Q_transformer_CD.1.att.cos_linear.0.weight",
+                  "Q_transformer_CD.1.att.cos_linear.2.bias",
+                  "Q_transformer_CD.1.att.cos_linear.2.weight",
+                  "Q_transformer_CD.1.att.fuse_conv.0.bias",
+                  "Q_transformer_CD.1.att.fuse_conv.0.weight",
+                  "Q_transformer_CD.1.att.fuse_conv.1.bias",
+                  "Q_transformer_CD.1.att.fuse_conv.1.num_batches_tracked",
+                  "Q_transformer_CD.1.att.fuse_conv.1.running_mean",
+                  "Q_transformer_CD.1.att.fuse_conv.1.running_var",
+                  "Q_transformer_CD.1.att.fuse_conv.1.weight",
+                  "Q_transformer_CD.1.att.fuse_conv2.0.bias",
+                  "Q_transformer_CD.1.att.fuse_conv2.0.weight",
+                  "Q_transformer_CD.1.att.fuse_conv2.1.bias",
+                  "Q_transformer_CD.1.att.fuse_conv2.1.num_batches_tracked",
+                  "Q_transformer_CD.1.att.fuse_conv2.1.running_mean",
+                  "Q_transformer_CD.1.att.fuse_conv2.1.running_var",
+                  "Q_transformer_CD.1.att.fuse_conv2.1.weight",
+                  "Q_transformer_CD.1.att.pos_emb.rel_height",
+                  "Q_transformer_CD.1.att.pos_emb.rel_width",
+                  "Q_transformer_CD.1.att.to_dif.bias",
+                  "Q_transformer_CD.1.att.to_dif.weight",
+                  "Q_transformer_CD.1.att.to_dif_conv.0.bias",
+                  "Q_transformer_CD.1.att.to_dif_conv.0.weight",
+                  "Q_transformer_CD.1.att.to_k.bias",
+                  "Q_transformer_CD.1.att.to_k.weight",
+                  "Q_transformer_CD.1.att.to_out.0.bias",
+                  "Q_transformer_CD.1.att.to_out.0.weight",
+                  "Q_transformer_CD.1.att.to_q.bias",
+                  "Q_transformer_CD.1.att.to_q.weight",
+                  "Q_transformer_CD.1.att.to_q2.bias",
+                  "Q_transformer_CD.1.att.to_q2.weight",
+                  "Q_transformer_CD.1.att.to_v.bias",
+                  "Q_transformer_CD.1.att.to_v.weight",
+                  "Q_transformer_CD.1.att2.K_LN.bias",
+                  "Q_transformer_CD.1.att2.K_LN.weight",
+                  "Q_transformer_CD.1.att2.LN.bias",
+                  "Q_transformer_CD.1.att2.LN.weight",
+                  "Q_transformer_CD.1.att2.Q_LN.bias",
+                  "Q_transformer_CD.1.att2.Q_LN.weight",
+                  "Q_transformer_CD.1.att2.V_LN.bias",
+                  "Q_transformer_CD.1.att2.V_LN.weight",
+                  "Q_transformer_CD.1.att2.cos_linear.0.bias",
+                  "Q_transformer_CD.1.att2.cos_linear.0.weight",
+                  "Q_transformer_CD.1.att2.cos_linear.2.bias",
+                  "Q_transformer_CD.1.att2.cos_linear.2.weight",
+                  "Q_transformer_CD.1.att2.fuse_conv.0.bias",
+                  "Q_transformer_CD.1.att2.fuse_conv.0.weight",
+                  "Q_transformer_CD.1.att2.fuse_conv.1.bias",
+                  "Q_transformer_CD.1.att2.fuse_conv.1.num_batches_tracked",
+                  "Q_transformer_CD.1.att2.fuse_conv.1.running_mean",
+                  "Q_transformer_CD.1.att2.fuse_conv.1.running_var",
+                  "Q_transformer_CD.1.att2.fuse_conv.1.weight",
+                  "Q_transformer_CD.1.att2.fuse_conv2.0.bias",
+                  "Q_transformer_CD.1.att2.fuse_conv2.0.weight",
+                  "Q_transformer_CD.1.att2.fuse_conv2.1.bias",
+                  "Q_transformer_CD.1.att2.fuse_conv2.1.num_batches_tracked",
+                  "Q_transformer_CD.1.att2.fuse_conv2.1.running_mean",
+                  "Q_transformer_CD.1.att2.fuse_conv2.1.running_var",
+                  "Q_transformer_CD.1.att2.fuse_conv2.1.weight",
+                  "Q_transformer_CD.1.att2.pos_emb.rel_height",
+                  "Q_transformer_CD.1.att2.pos_emb.rel_width",
+                  "Q_transformer_CD.1.att2.to_dif.bias",
+                  "Q_transformer_CD.1.att2.to_dif.weight",
+                  "Q_transformer_CD.1.att2.to_dif_conv.0.bias",
+                  "Q_transformer_CD.1.att2.to_dif_conv.0.weight",
+                  "Q_transformer_CD.1.att2.to_k.bias",
+                  "Q_transformer_CD.1.att2.to_k.weight",
+                  "Q_transformer_CD.1.att2.to_out.0.bias",
+                  "Q_transformer_CD.1.att2.to_out.0.weight",
+                  "Q_transformer_CD.1.att2.to_q.bias",
+                  "Q_transformer_CD.1.att2.to_q.weight",
+                  "Q_transformer_CD.1.att2.to_q2.bias",
+                  "Q_transformer_CD.1.att2.to_q2.weight",
+                  "Q_transformer_CD.1.att2.to_v.bias",
+                  "Q_transformer_CD.1.att2.to_v.weight",
+                  "Q_transformer_CD.1.feedforward.net.0.bias",
+                  "Q_transformer_CD.1.feedforward.net.0.weight",
+                  "Q_transformer_CD.1.feedforward.net.3.bias",
+                  "Q_transformer_CD.1.feedforward.net.3.weight",
+                  "Q_transformer_CD.1.norm0.bias",
+                  "Q_transformer_CD.1.norm0.weight",
+                  "Q_transformer_CD.1.norm1.bias",
+                  "Q_transformer_CD.1.norm1.weight",
+                  "Q_transformer_CD.1.norm2.bias",
+                  "Q_transformer_CD.1.norm2.weight",
+                  "Transformer_aug_CC.layers.0.linear1.bias",
+                  "Transformer_aug_CC.layers.0.linear1.weight",
+                  "Transformer_aug_CC.layers.0.linear2.bias",
+                  "Transformer_aug_CC.layers.0.linear2.weight",
+                  "Transformer_aug_CC.layers.0.norm1.bias",
+                  "Transformer_aug_CC.layers.0.norm1.weight",
+                  "Transformer_aug_CC.layers.0.norm2.bias",
+                  "Transformer_aug_CC.layers.0.norm2.weight",
+                  "Transformer_aug_CC.layers.0.self_attn.in_proj_bias",
+                  "Transformer_aug_CC.layers.0.self_attn.in_proj_weight",
+                  "Transformer_aug_CC.layers.0.self_attn.out_proj.bias",
+                  "Transformer_aug_CC.layers.0.self_attn.out_proj.weight",
+                  "Transformer_aug_CD.0.0.att.LN.bias",
+                  "Transformer_aug_CD.0.0.att.LN.weight",
+                  "Transformer_aug_CD.0.0.att.cos_linear.0.bias",
+                  "Transformer_aug_CD.0.0.att.cos_linear.0.weight",
+                  "Transformer_aug_CD.0.0.att.cos_linear.2.bias",
+                  "Transformer_aug_CD.0.0.att.cos_linear.2.weight",
+                  "Transformer_aug_CD.0.0.att.pos_emb.rel_height",
+                  "Transformer_aug_CD.0.0.att.pos_emb.rel_width",
+                  "Transformer_aug_CD.0.0.att.to_dif.bias",
+                  "Transformer_aug_CD.0.0.att.to_dif.weight",
+                  "Transformer_aug_CD.0.0.att.to_dif_conv.0.bias",
+                  "Transformer_aug_CD.0.0.att.to_dif_conv.0.weight",
+                  "Transformer_aug_CD.0.0.att.to_q2.bias",
+                  "Transformer_aug_CD.0.0.att.to_q2.weight",
+                  "Transformer_aug_CD.0.1.att.LN.bias",
+                  "Transformer_aug_CD.0.1.att.LN.weight",
+                  "Transformer_aug_CD.0.1.att.cos_linear.0.bias",
+                  "Transformer_aug_CD.0.1.att.cos_linear.0.weight",
+                  "Transformer_aug_CD.0.1.att.cos_linear.2.bias",
+                  "Transformer_aug_CD.0.1.att.cos_linear.2.weight",
+                  "Transformer_aug_CD.0.1.att.pos_emb.rel_height",
+                  "Transformer_aug_CD.0.1.att.pos_emb.rel_width",
+                  "Transformer_aug_CD.0.1.att.to_dif.bias",
+                  "Transformer_aug_CD.0.1.att.to_dif.weight",
+                  "Transformer_aug_CD.0.1.att.to_dif_conv.0.bias",
+                  "Transformer_aug_CD.0.1.att.to_dif_conv.0.weight",
+                  "Transformer_aug_CD.0.1.att.to_q2.bias",
+                  "Transformer_aug_CD.0.1.att.to_q2.weight",
+                  "Transformer_aug_CD.1.0.att.LN.bias",
+                  "Transformer_aug_CD.1.0.att.LN.weight",
+                  "Transformer_aug_CD.1.0.att.cos_linear.0.bias",
+                  "Transformer_aug_CD.1.0.att.cos_linear.0.weight",
+                  "Transformer_aug_CD.1.0.att.cos_linear.2.bias",
+                  "Transformer_aug_CD.1.0.att.cos_linear.2.weight",
+                  "Transformer_aug_CD.1.0.att.pos_emb.rel_height",
+                  "Transformer_aug_CD.1.0.att.pos_emb.rel_width",
+                  "Transformer_aug_CD.1.0.att.to_dif.bias",
+                  "Transformer_aug_CD.1.0.att.to_dif.weight",
+                  "Transformer_aug_CD.1.0.att.to_dif_conv.0.bias",
+                  "Transformer_aug_CD.1.0.att.to_dif_conv.0.weight",
+                  "Transformer_aug_CD.1.0.att.to_q2.bias",
+                  "Transformer_aug_CD.1.0.att.to_q2.weight",
+                  "Transformer_aug_CD.1.1.att.LN.bias",
+                  "Transformer_aug_CD.1.1.att.LN.weight",
+                  "Transformer_aug_CD.1.1.att.cos_linear.0.bias",
+                  "Transformer_aug_CD.1.1.att.cos_linear.0.weight",
+                  "Transformer_aug_CD.1.1.att.cos_linear.2.bias",
+                  "Transformer_aug_CD.1.1.att.cos_linear.2.weight",
+                  "Transformer_aug_CD.1.1.att.pos_emb.rel_height",
+                  "Transformer_aug_CD.1.1.att.pos_emb.rel_width",
+                  "Transformer_aug_CD.1.1.att.to_dif.bias",
+                  "Transformer_aug_CD.1.1.att.to_dif.weight",
+                  "Transformer_aug_CD.1.1.att.to_dif_conv.0.bias",
+                  "Transformer_aug_CD.1.1.att.to_dif_conv.0.weight",
+                  "Transformer_aug_CD.1.1.att.to_q2.bias",
+                  "Transformer_aug_CD.1.1.att.to_q2.weight",
+                  "Transformer_aug_CD.2.0.att.LN.bias",
+                  "Transformer_aug_CD.2.0.att.LN.weight",
+                  "Transformer_aug_CD.2.0.att.cos_linear.0.bias",
+                  "Transformer_aug_CD.2.0.att.cos_linear.0.weight",
+                  "Transformer_aug_CD.2.0.att.cos_linear.2.bias",
+                  "Transformer_aug_CD.2.0.att.cos_linear.2.weight",
+                  "Transformer_aug_CD.2.0.att.pos_emb.rel_height",
+                  "Transformer_aug_CD.2.0.att.pos_emb.rel_width",
+                  "Transformer_aug_CD.2.0.att.to_dif.bias",
+                  "Transformer_aug_CD.2.0.att.to_dif.weight",
+                  "Transformer_aug_CD.2.0.att.to_dif_conv.0.bias",
+                  "Transformer_aug_CD.2.0.att.to_dif_conv.0.weight",
+                  "Transformer_aug_CD.2.0.att.to_q2.bias",
+                  "Transformer_aug_CD.2.0.att.to_q2.weight",
+                  "Transformer_aug_CD.2.1.att.LN.bias",
+                  "Transformer_aug_CD.2.1.att.LN.weight",
+                  "Transformer_aug_CD.2.1.att.cos_linear.0.bias",
+                  "Transformer_aug_CD.2.1.att.cos_linear.0.weight",
+                  "Transformer_aug_CD.2.1.att.cos_linear.2.bias",
+                  "Transformer_aug_CD.2.1.att.cos_linear.2.weight",
+                  "Transformer_aug_CD.2.1.att.pos_emb.rel_height",
+                  "Transformer_aug_CD.2.1.att.pos_emb.rel_width",
+                  "Transformer_aug_CD.2.1.att.to_dif.bias",
+                  "Transformer_aug_CD.2.1.att.to_dif.weight",
+                  "Transformer_aug_CD.2.1.att.to_dif_conv.0.bias",
+                  "Transformer_aug_CD.2.1.att.to_dif_conv.0.weight",
+                  "Transformer_aug_CD.2.1.att.to_q2.bias",
+                  "Transformer_aug_CD.2.1.att.to_q2.weight",
+                  "Transformer_aug_CD2.layers.0.linear1.bias",
+                  "Transformer_aug_CD2.layers.0.linear1.weight",
+                  "Transformer_aug_CD2.layers.0.linear2.bias",
+                  "Transformer_aug_CD2.layers.0.linear2.weight",
+                  "Transformer_aug_CD2.layers.0.norm1.bias",
+                  "Transformer_aug_CD2.layers.0.norm1.weight",
+                  "Transformer_aug_CD2.layers.0.norm2.bias",
+                  "Transformer_aug_CD2.layers.0.norm2.weight",
+                  "Transformer_aug_CD2.layers.0.self_attn.in_proj_bias",
+                  "Transformer_aug_CD2.layers.0.self_attn.in_proj_weight",
+                  "Transformer_aug_CD2.layers.0.self_attn.out_proj.bias",
+                  "Transformer_aug_CD2.layers.0.self_attn.out_proj.weight",
+                  "Transformer_aug_CD2.layers.1.linear1.bias",
+                  "Transformer_aug_CD2.layers.1.linear1.weight",
+                  "Transformer_aug_CD2.layers.1.linear2.bias",
+                  "Transformer_aug_CD2.layers.1.linear2.weight",
+                  "Transformer_aug_CD2.layers.1.norm1.bias",
+                  "Transformer_aug_CD2.layers.1.norm1.weight",
+                  "Transformer_aug_CD2.layers.1.norm2.bias",
+                  "Transformer_aug_CD2.layers.1.norm2.weight",
+                  "Transformer_aug_CD2.layers.1.self_attn.in_proj_bias",
+                  "Transformer_aug_CD2.layers.1.self_attn.in_proj_weight",
+                  "Transformer_aug_CD2.layers.1.self_attn.out_proj.bias",
+                  "Transformer_aug_CD2.layers.1.self_attn.out_proj.weight",
+                  "Transformer_fused.0.K_d_conv.BN.bias",
+                  "Transformer_fused.0.K_d_conv.BN.num_batches_tracked",
+                  "Transformer_fused.0.K_d_conv.BN.running_mean",
+                  "Transformer_fused.0.K_d_conv.BN.running_var",
+                  "Transformer_fused.0.K_d_conv.BN.weight",
+                  "Transformer_fused.0.K_d_conv.conv_1.bias",
+                  "Transformer_fused.0.K_d_conv.conv_1.weight",
+                  "Transformer_fused.0.K_d_conv.d_conv_1x5.bias",
+                  "Transformer_fused.0.K_d_conv.d_conv_1x5.weight",
+                  "Transformer_fused.0.K_d_conv.d_conv_3x3.bias",
+                  "Transformer_fused.0.K_d_conv.d_conv_3x3.weight",
+                  "Transformer_fused.0.K_d_conv.d_conv_5x1.bias",
+                  "Transformer_fused.0.K_d_conv.d_conv_5x1.weight",
+                  "Transformer_fused.0.PCM.0.bias",
+                  "Transformer_fused.0.PCM.0.weight",
+                  "Transformer_fused.0.PCM.1.bias",
+                  "Transformer_fused.0.PCM.1.num_batches_tracked",
+                  "Transformer_fused.0.PCM.1.running_mean",
+                  "Transformer_fused.0.PCM.1.running_var",
+                  "Transformer_fused.0.PCM.1.weight",
+                  "Transformer_fused.0.PCM.3.bias",
+                  "Transformer_fused.0.PCM.3.weight",
+                  "Transformer_fused.0.Q_d_conv.BN.bias",
+                  "Transformer_fused.0.Q_d_conv.BN.num_batches_tracked",
+                  "Transformer_fused.0.Q_d_conv.BN.running_mean",
+                  "Transformer_fused.0.Q_d_conv.BN.running_var",
+                  "Transformer_fused.0.Q_d_conv.BN.weight",
+                  "Transformer_fused.0.Q_d_conv.conv_1.bias",
+                  "Transformer_fused.0.Q_d_conv.conv_1.weight",
+                  "Transformer_fused.0.Q_d_conv.d_conv_1x5.bias",
+                  "Transformer_fused.0.Q_d_conv.d_conv_1x5.weight",
+                  "Transformer_fused.0.Q_d_conv.d_conv_3x3.bias",
+                  "Transformer_fused.0.Q_d_conv.d_conv_3x3.weight",
+                  "Transformer_fused.0.Q_d_conv.d_conv_5x1.bias",
+                  "Transformer_fused.0.Q_d_conv.d_conv_5x1.weight",
+                  "Transformer_fused.0.att.K_LN.bias",
+                  "Transformer_fused.0.att.K_LN.weight",
+                  "Transformer_fused.0.att.LN.bias",
+                  "Transformer_fused.0.att.LN.weight",
+                  "Transformer_fused.0.att.Q_LN.bias",
+                  "Transformer_fused.0.att.Q_LN.weight",
+                  "Transformer_fused.0.att.V_LN.bias",
+                  "Transformer_fused.0.att.V_LN.weight",
+                  "Transformer_fused.0.att.cos_linear.0.bias",
+                  "Transformer_fused.0.att.cos_linear.0.weight",
+                  "Transformer_fused.0.att.cos_linear.2.bias",
+                  "Transformer_fused.0.att.cos_linear.2.weight",
+                  "Transformer_fused.0.att.fuse_conv.0.bias",
+                  "Transformer_fused.0.att.fuse_conv.0.weight",
+                  "Transformer_fused.0.att.fuse_conv.1.bias",
+                  "Transformer_fused.0.att.fuse_conv.1.num_batches_tracked",
+                  "Transformer_fused.0.att.fuse_conv.1.running_mean",
+                  "Transformer_fused.0.att.fuse_conv.1.running_var",
+                  "Transformer_fused.0.att.fuse_conv.1.weight",
+                  "Transformer_fused.0.att.fuse_conv2.0.bias",
+                  "Transformer_fused.0.att.fuse_conv2.0.weight",
+                  "Transformer_fused.0.att.fuse_conv2.1.bias",
+                  "Transformer_fused.0.att.fuse_conv2.1.num_batches_tracked",
+                  "Transformer_fused.0.att.fuse_conv2.1.running_mean",
+                  "Transformer_fused.0.att.fuse_conv2.1.running_var",
+                  "Transformer_fused.0.att.fuse_conv2.1.weight",
+                  "Transformer_fused.0.att.pos_emb.rel_height",
+                  "Transformer_fused.0.att.pos_emb.rel_width",
+                  "Transformer_fused.0.att.to_dif.bias",
+                  "Transformer_fused.0.att.to_dif.weight",
+                  "Transformer_fused.0.att.to_dif_conv.0.bias",
+                  "Transformer_fused.0.att.to_dif_conv.0.weight",
+                  "Transformer_fused.0.att.to_k.bias",
+                  "Transformer_fused.0.att.to_k.weight",
+                  "Transformer_fused.0.att.to_out.0.bias",
+                  "Transformer_fused.0.att.to_out.0.weight",
+                  "Transformer_fused.0.att.to_q.bias",
+                  "Transformer_fused.0.att.to_q.weight",
+                  "Transformer_fused.0.att.to_q2.bias",
+                  "Transformer_fused.0.att.to_q2.weight",
+                  "Transformer_fused.0.att.to_v.bias",
+                  "Transformer_fused.0.att.to_v.weight",
+                  "Transformer_fused.0.feedforward.net.0.bias",
+                  "Transformer_fused.0.feedforward.net.0.weight",
+                  "Transformer_fused.0.feedforward.net.3.bias",
+                  "Transformer_fused.0.feedforward.net.3.weight",
+                  "Transformer_fused.0.norm1.bias",
+                  "Transformer_fused.0.norm1.weight",
+                  "Transformer_fused.0.norm2.bias",
+                  "Transformer_fused.0.norm2.weight",
+                  "Transformer_fused.1.K_d_conv.BN.bias",
+                  "Transformer_fused.1.K_d_conv.BN.num_batches_tracked",
+                  "Transformer_fused.1.K_d_conv.BN.running_mean",
+                  "Transformer_fused.1.K_d_conv.BN.running_var",
+                  "Transformer_fused.1.K_d_conv.BN.weight",
+                  "Transformer_fused.1.K_d_conv.conv_1.bias",
+                  "Transformer_fused.1.K_d_conv.conv_1.weight",
+                  "Transformer_fused.1.K_d_conv.d_conv_1x5.bias",
+                  "Transformer_fused.1.K_d_conv.d_conv_1x5.weight",
+                  "Transformer_fused.1.K_d_conv.d_conv_3x3.bias",
+                  "Transformer_fused.1.K_d_conv.d_conv_3x3.weight",
+                  "Transformer_fused.1.K_d_conv.d_conv_5x1.bias",
+                  "Transformer_fused.1.K_d_conv.d_conv_5x1.weight",
+                  "Transformer_fused.1.PCM.0.bias",
+                  "Transformer_fused.1.PCM.0.weight",
+                  "Transformer_fused.1.PCM.1.bias",
+                  "Transformer_fused.1.PCM.1.num_batches_tracked",
+                  "Transformer_fused.1.PCM.1.running_mean",
+                  "Transformer_fused.1.PCM.1.running_var",
+                  "Transformer_fused.1.PCM.1.weight",
+                  "Transformer_fused.1.PCM.3.bias",
+                  "Transformer_fused.1.PCM.3.weight",
+                  "Transformer_fused.1.Q_d_conv.BN.bias",
+                  "Transformer_fused.1.Q_d_conv.BN.num_batches_tracked",
+                  "Transformer_fused.1.Q_d_conv.BN.running_mean",
+                  "Transformer_fused.1.Q_d_conv.BN.running_var",
+                  "Transformer_fused.1.Q_d_conv.BN.weight",
+                  "Transformer_fused.1.Q_d_conv.conv_1.bias",
+                  "Transformer_fused.1.Q_d_conv.conv_1.weight",
+                  "Transformer_fused.1.Q_d_conv.d_conv_1x5.bias",
+                  "Transformer_fused.1.Q_d_conv.d_conv_1x5.weight",
+                  "Transformer_fused.1.Q_d_conv.d_conv_3x3.bias",
+                  "Transformer_fused.1.Q_d_conv.d_conv_3x3.weight",
+                  "Transformer_fused.1.Q_d_conv.d_conv_5x1.bias",
+                  "Transformer_fused.1.Q_d_conv.d_conv_5x1.weight",
+                  "Transformer_fused.1.att.K_LN.bias",
+                  "Transformer_fused.1.att.K_LN.weight",
+                  "Transformer_fused.1.att.LN.bias",
+                  "Transformer_fused.1.att.LN.weight",
+                  "Transformer_fused.1.att.Q_LN.bias",
+                  "Transformer_fused.1.att.Q_LN.weight",
+                  "Transformer_fused.1.att.V_LN.bias",
+                  "Transformer_fused.1.att.V_LN.weight",
+                  "Transformer_fused.1.att.cos_linear.0.bias",
+                  "Transformer_fused.1.att.cos_linear.0.weight",
+                  "Transformer_fused.1.att.cos_linear.2.bias",
+                  "Transformer_fused.1.att.cos_linear.2.weight",
+                  "Transformer_fused.1.att.fuse_conv.0.bias",
+                  "Transformer_fused.1.att.fuse_conv.0.weight",
+                  "Transformer_fused.1.att.fuse_conv.1.bias",
+                  "Transformer_fused.1.att.fuse_conv.1.num_batches_tracked",
+                  "Transformer_fused.1.att.fuse_conv.1.running_mean",
+                  "Transformer_fused.1.att.fuse_conv.1.running_var",
+                  "Transformer_fused.1.att.fuse_conv.1.weight",
+                  "Transformer_fused.1.att.fuse_conv2.0.bias",
+                  "Transformer_fused.1.att.fuse_conv2.0.weight",
+                  "Transformer_fused.1.att.fuse_conv2.1.bias",
+                  "Transformer_fused.1.att.fuse_conv2.1.num_batches_tracked",
+                  "Transformer_fused.1.att.fuse_conv2.1.running_mean",
+                  "Transformer_fused.1.att.fuse_conv2.1.running_var",
+                  "Transformer_fused.1.att.fuse_conv2.1.weight",
+                  "Transformer_fused.1.att.pos_emb.rel_height",
+                  "Transformer_fused.1.att.pos_emb.rel_width",
+                  "Transformer_fused.1.att.to_dif.bias",
+                  "Transformer_fused.1.att.to_dif.weight",
+                  "Transformer_fused.1.att.to_dif_conv.0.bias",
+                  "Transformer_fused.1.att.to_dif_conv.0.weight",
+                  "Transformer_fused.1.att.to_k.bias",
+                  "Transformer_fused.1.att.to_k.weight",
+                  "Transformer_fused.1.att.to_out.0.bias",
+                  "Transformer_fused.1.att.to_out.0.weight",
+                  "Transformer_fused.1.att.to_q.bias",
+                  "Transformer_fused.1.att.to_q.weight",
+                  "Transformer_fused.1.att.to_q2.bias",
+                  "Transformer_fused.1.att.to_q2.weight",
+                  "Transformer_fused.1.att.to_v.bias",
+                  "Transformer_fused.1.att.to_v.weight",
+                  "Transformer_fused.1.feedforward.net.0.bias",
+                  "Transformer_fused.1.feedforward.net.0.weight",
+                  "Transformer_fused.1.feedforward.net.3.bias",
+                  "Transformer_fused.1.feedforward.net.3.weight",
+                  "Transformer_fused.1.norm1.bias",
+                  "Transformer_fused.1.norm1.weight",
+                  "Transformer_fused.1.norm2.bias",
+                  "Transformer_fused.1.norm2.weight",
+                  "Transformer_fused.2.K_d_conv.BN.bias",
+                  "Transformer_fused.2.K_d_conv.BN.num_batches_tracked",
+                  "Transformer_fused.2.K_d_conv.BN.running_mean",
+                  "Transformer_fused.2.K_d_conv.BN.running_var",
+                  "Transformer_fused.2.K_d_conv.BN.weight",
+                  "Transformer_fused.2.K_d_conv.conv_1.bias",
+                  "Transformer_fused.2.K_d_conv.conv_1.weight",
+                  "Transformer_fused.2.K_d_conv.d_conv_1x5.bias",
+                  "Transformer_fused.2.K_d_conv.d_conv_1x5.weight",
+                  "Transformer_fused.2.K_d_conv.d_conv_3x3.bias",
+                  "Transformer_fused.2.K_d_conv.d_conv_3x3.weight",
+                  "Transformer_fused.2.K_d_conv.d_conv_5x1.bias",
+                  "Transformer_fused.2.K_d_conv.d_conv_5x1.weight",
+                  "Transformer_fused.2.PCM.0.bias",
+                  "Transformer_fused.2.PCM.0.weight",
+                  "Transformer_fused.2.PCM.1.bias",
+                  "Transformer_fused.2.PCM.1.num_batches_tracked",
+                  "Transformer_fused.2.PCM.1.running_mean",
+                  "Transformer_fused.2.PCM.1.running_var",
+                  "Transformer_fused.2.PCM.1.weight",
+                  "Transformer_fused.2.PCM.3.bias",
+                  "Transformer_fused.2.PCM.3.weight",
+                  "Transformer_fused.2.Q_d_conv.BN.bias",
+                  "Transformer_fused.2.Q_d_conv.BN.num_batches_tracked",
+                  "Transformer_fused.2.Q_d_conv.BN.running_mean",
+                  "Transformer_fused.2.Q_d_conv.BN.running_var",
+                  "Transformer_fused.2.Q_d_conv.BN.weight",
+                  "Transformer_fused.2.Q_d_conv.conv_1.bias",
+                  "Transformer_fused.2.Q_d_conv.conv_1.weight",
+                  "Transformer_fused.2.Q_d_conv.d_conv_1x5.bias",
+                  "Transformer_fused.2.Q_d_conv.d_conv_1x5.weight",
+                  "Transformer_fused.2.Q_d_conv.d_conv_3x3.bias",
+                  "Transformer_fused.2.Q_d_conv.d_conv_3x3.weight",
+                  "Transformer_fused.2.Q_d_conv.d_conv_5x1.bias",
+                  "Transformer_fused.2.Q_d_conv.d_conv_5x1.weight",
+                  "Transformer_fused.2.att.K_LN.bias",
+                  "Transformer_fused.2.att.K_LN.weight",
+                  "Transformer_fused.2.att.LN.bias",
+                  "Transformer_fused.2.att.LN.weight",
+                  "Transformer_fused.2.att.Q_LN.bias",
+                  "Transformer_fused.2.att.Q_LN.weight",
+                  "Transformer_fused.2.att.V_LN.bias",
+                  "Transformer_fused.2.att.V_LN.weight",
+                  "Transformer_fused.2.att.cos_linear.0.bias",
+                  "Transformer_fused.2.att.cos_linear.0.weight",
+                  "Transformer_fused.2.att.cos_linear.2.bias",
+                  "Transformer_fused.2.att.cos_linear.2.weight",
+                  "Transformer_fused.2.att.fuse_conv.0.bias",
+                  "Transformer_fused.2.att.fuse_conv.0.weight",
+                  "Transformer_fused.2.att.fuse_conv.1.bias",
+                  "Transformer_fused.2.att.fuse_conv.1.num_batches_tracked",
+                  "Transformer_fused.2.att.fuse_conv.1.running_mean",
+                  "Transformer_fused.2.att.fuse_conv.1.running_var",
+                  "Transformer_fused.2.att.fuse_conv.1.weight",
+                  "Transformer_fused.2.att.fuse_conv2.0.bias",
+                  "Transformer_fused.2.att.fuse_conv2.0.weight",
+                  "Transformer_fused.2.att.fuse_conv2.1.bias",
+                  "Transformer_fused.2.att.fuse_conv2.1.num_batches_tracked",
+                  "Transformer_fused.2.att.fuse_conv2.1.running_mean",
+                  "Transformer_fused.2.att.fuse_conv2.1.running_var",
+                  "Transformer_fused.2.att.fuse_conv2.1.weight",
+                  "Transformer_fused.2.att.pos_emb.rel_height",
+                  "Transformer_fused.2.att.pos_emb.rel_width",
+                  "Transformer_fused.2.att.to_dif.bias",
+                  "Transformer_fused.2.att.to_dif.weight",
+                  "Transformer_fused.2.att.to_dif_conv.0.bias",
+                  "Transformer_fused.2.att.to_dif_conv.0.weight",
+                  "Transformer_fused.2.att.to_k.bias",
+                  "Transformer_fused.2.att.to_k.weight",
+                  "Transformer_fused.2.att.to_out.0.bias",
+                  "Transformer_fused.2.att.to_out.0.weight",
+                  "Transformer_fused.2.att.to_q.bias",
+                  "Transformer_fused.2.att.to_q.weight",
+                  "Transformer_fused.2.att.to_q2.bias",
+                  "Transformer_fused.2.att.to_q2.weight",
+                  "Transformer_fused.2.att.to_v.bias",
+                  "Transformer_fused.2.att.to_v.weight",
+                  "Transformer_fused.2.feedforward.net.0.bias",
+                  "Transformer_fused.2.feedforward.net.0.weight",
+                  "Transformer_fused.2.feedforward.net.3.bias",
+                  "Transformer_fused.2.feedforward.net.3.weight",
+                  "Transformer_fused.2.norm1.bias",
+                  "Transformer_fused.2.norm1.weight",
+                  "Transformer_fused.2.norm2.bias",
+                  "Transformer_fused.2.norm2.weight",
+                  "Transformer_fused.3.K_d_conv.BN.bias",
+                  "Transformer_fused.3.K_d_conv.BN.num_batches_tracked",
+                  "Transformer_fused.3.K_d_conv.BN.running_mean",
+                  "Transformer_fused.3.K_d_conv.BN.running_var",
+                  "Transformer_fused.3.K_d_conv.BN.weight",
+                  "Transformer_fused.3.K_d_conv.conv_1.bias",
+                  "Transformer_fused.3.K_d_conv.conv_1.weight",
+                  "Transformer_fused.3.K_d_conv.d_conv_1x5.bias",
+                  "Transformer_fused.3.K_d_conv.d_conv_1x5.weight",
+                  "Transformer_fused.3.K_d_conv.d_conv_3x3.bias",
+                  "Transformer_fused.3.K_d_conv.d_conv_3x3.weight",
+                  "Transformer_fused.3.K_d_conv.d_conv_5x1.bias",
+                  "Transformer_fused.3.K_d_conv.d_conv_5x1.weight",
+                  "Transformer_fused.3.PCM.0.bias",
+                  "Transformer_fused.3.PCM.0.weight",
+                  "Transformer_fused.3.PCM.1.bias",
+                  "Transformer_fused.3.PCM.1.num_batches_tracked",
+                  "Transformer_fused.3.PCM.1.running_mean",
+                  "Transformer_fused.3.PCM.1.running_var",
+                  "Transformer_fused.3.PCM.1.weight",
+                  "Transformer_fused.3.PCM.3.bias",
+                  "Transformer_fused.3.PCM.3.weight",
+                  "Transformer_fused.3.Q_d_conv.BN.bias",
+                  "Transformer_fused.3.Q_d_conv.BN.num_batches_tracked",
+                  "Transformer_fused.3.Q_d_conv.BN.running_mean",
+                  "Transformer_fused.3.Q_d_conv.BN.running_var",
+                  "Transformer_fused.3.Q_d_conv.BN.weight",
+                  "Transformer_fused.3.Q_d_conv.conv_1.bias",
+                  "Transformer_fused.3.Q_d_conv.conv_1.weight",
+                  "Transformer_fused.3.Q_d_conv.d_conv_1x5.bias",
+                  "Transformer_fused.3.Q_d_conv.d_conv_1x5.weight",
+                  "Transformer_fused.3.Q_d_conv.d_conv_3x3.bias",
+                  "Transformer_fused.3.Q_d_conv.d_conv_3x3.weight",
+                  "Transformer_fused.3.Q_d_conv.d_conv_5x1.bias",
+                  "Transformer_fused.3.Q_d_conv.d_conv_5x1.weight",
+                  "Transformer_fused.3.att.K_LN.bias",
+                  "Transformer_fused.3.att.K_LN.weight",
+                  "Transformer_fused.3.att.LN.bias",
+                  "Transformer_fused.3.att.LN.weight",
+                  "Transformer_fused.3.att.Q_LN.bias",
+                  "Transformer_fused.3.att.Q_LN.weight",
+                  "Transformer_fused.3.att.V_LN.bias",
+                  "Transformer_fused.3.att.V_LN.weight",
+                  "Transformer_fused.3.att.cos_linear.0.bias",
+                  "Transformer_fused.3.att.cos_linear.0.weight",
+                  "Transformer_fused.3.att.cos_linear.2.bias",
+                  "Transformer_fused.3.att.cos_linear.2.weight",
+                  "Transformer_fused.3.att.fuse_conv.0.bias",
+                  "Transformer_fused.3.att.fuse_conv.0.weight",
+                  "Transformer_fused.3.att.fuse_conv.1.bias",
+                  "Transformer_fused.3.att.fuse_conv.1.num_batches_tracked",
+                  "Transformer_fused.3.att.fuse_conv.1.running_mean",
+                  "Transformer_fused.3.att.fuse_conv.1.running_var",
+                  "Transformer_fused.3.att.fuse_conv.1.weight",
+                  "Transformer_fused.3.att.fuse_conv2.0.bias",
+                  "Transformer_fused.3.att.fuse_conv2.0.weight",
+                  "Transformer_fused.3.att.fuse_conv2.1.bias",
+                  "Transformer_fused.3.att.fuse_conv2.1.num_batches_tracked",
+                  "Transformer_fused.3.att.fuse_conv2.1.running_mean",
+                  "Transformer_fused.3.att.fuse_conv2.1.running_var",
+                  "Transformer_fused.3.att.fuse_conv2.1.weight",
+                  "Transformer_fused.3.att.pos_emb.rel_height",
+                  "Transformer_fused.3.att.pos_emb.rel_width",
+                  "Transformer_fused.3.att.to_dif.bias",
+                  "Transformer_fused.3.att.to_dif.weight",
+                  "Transformer_fused.3.att.to_dif_conv.0.bias",
+                  "Transformer_fused.3.att.to_dif_conv.0.weight",
+                  "Transformer_fused.3.att.to_k.bias",
+                  "Transformer_fused.3.att.to_k.weight",
+                  "Transformer_fused.3.att.to_out.0.bias",
+                  "Transformer_fused.3.att.to_out.0.weight",
+                  "Transformer_fused.3.att.to_q.bias",
+                  "Transformer_fused.3.att.to_q.weight",
+                  "Transformer_fused.3.att.to_q2.bias",
+                  "Transformer_fused.3.att.to_q2.weight",
+                  "Transformer_fused.3.att.to_v.bias",
+                  "Transformer_fused.3.att.to_v.weight",
+                  "Transformer_fused.3.feedforward.net.0.bias",
+                  "Transformer_fused.3.feedforward.net.0.weight",
+                  "Transformer_fused.3.feedforward.net.3.bias",
+                  "Transformer_fused.3.feedforward.net.3.weight",
+                  "Transformer_fused.3.norm1.bias",
+                  "Transformer_fused.3.norm1.weight",
+                  "Transformer_fused.3.norm2.bias",
+                  "Transformer_fused.3.norm2.weight",
+                  "linear_fus.0.0.bias",
+                  "linear_fus.0.0.weight",
+                  "linear_fus.1.0.bias",
+                  "linear_fus.1.0.weight"
+                ]
+              },
+              "decoder": {
+                "all_required_tensors_loaded": true,
+                "unused_training_branch_tensors": []
+              }
+            },
+            "normalization": "RGB channel mean/std from published inference code",
+            "decoding": "greedy; maximum 41 tokens",
+            "classes": {
+              "0": "unchanged",
+              "1": "road change",
+              "2": "building change"
+            }
+          }
+        ],
+        "limitations": [
+          "Captions can misinterpret objects, position or direction. Inspect the paired images and masks.",
+          "Masks detect changed road/building pixels; not building counts or surveyed area.",
+          "LEVIR-MCI domain; no CDVQA or Cartosat/RISAT benchmark claim.",
+          "Changes outside road/building classes can be missed."
+        ],
+        "execution": {
+          "task": "temporal",
+          "version": "unified-rules-v6",
+          "specialist": "MCI road/building change + caption",
+          "device": "CPU",
+          "maturity": "supported",
+          "reason": "Two optical dates and a supported change question.",
+          "threshold": 0.5,
+          "steps": [
+            "validate pair",
+            "registration diagnostic",
+            "road/building masks and caption",
+            "save evidence"
+          ]
+        },
+        "id": "665638422b4144af9e8cbaf51211a32e",
+        "query": "What changed between these dates?",
+        "input_checks": {
+          "task": "temporal",
+          "pairing_basis": "publisher benchmark manifest",
+          "warning": "Matching metadata is necessary but does not prove subpixel image registration.",
+          "inputs": [
+            {
+              "modality": "optical",
+              "date": "",
+              "units": "",
+              "sensor": "",
+              "reflectance_units": "",
+              "bands": [
+                null,
+                null,
+                null
+              ],
+              "shape": [
+                256,
+                256
+              ],
+              "count": 3,
+              "dtype": "uint8",
+              "crs": null,
+              "transform": [
+                1.0,
+                0.0,
+                0.0,
+                0.0,
+                1.0,
+                0.0
+              ],
+              "sha256": "29b6a845c0ca1b4fcbffe9c863cff6d24a2425166e3fd7086692be4555907357"
+            },
+            {
+              "modality": "optical",
+              "date": "",
+              "units": "",
+              "sensor": "",
+              "reflectance_units": "",
+              "bands": [
+                null,
+                null,
+                null
+              ],
+              "shape": [
+                256,
+                256
+              ],
+              "count": 3,
+              "dtype": "uint8",
+              "crs": null,
+              "transform": [
+                1.0,
+                0.0,
+                0.0,
+                0.0,
+                1.0,
+                0.0
+              ],
+              "sha256": "1d1dc8b4c4713f5899602139686c5793d80cbdd07be51435dffd6271f7ba1952"
+            }
+          ],
+          "registration": {
+            "status": "unverified",
+            "reason": "Fewer than ten reliable optical feature matches.",
+            "matches": 3
+          },
+          "plan": {
+            "task": "temporal",
+            "version": "unified-rules-v6",
+            "specialist": "MCI road/building change + caption",
+            "device": "CPU",
+            "maturity": "supported",
+            "reason": "Two optical dates and a supported change question.",
+            "threshold": 0.5,
+            "steps": [
+              "validate pair",
+              "registration diagnostic",
+              "road/building masks and caption",
+              "save evidence"
+            ]
+          },
+          "sample_manifest": {
+            "id": "levir-test_102_0512_0000",
+            "kind": "temporal",
+            "name": "test_102_0512_0000",
+            "source": "ChangeFormer official LEVIR samples",
+            "source_revision": "afd1b7ed640aa265a2c730de958416ae7356a2f9",
+            "benchmark": "LEVIR-CD development",
+            "registration": "publisher paired crop; no geographic metadata",
+            "dates": "ordered A/B; exact dates unavailable",
+            "files": [
+              "before.tif",
+              "after.tif"
+            ],
+            "shape": [
+              256,
+              256
+            ]
+          }
+        },
+        "controller": "unified-rules-v6",
+        "created_at": "2026-09-21T02:15:46Z",
+        "execution_events": [
+          {
+            "stage": "Input checks passed; preparing specialist",
+            "at": "2026-09-21T02:15:40Z"
+          },
+          {
+            "stage": "Starting MCI road/building change + caption",
+            "at": "2026-09-21T02:15:40Z"
+          },
+          {
+            "stage": "Loading or reusing MCI on CPU",
+            "at": "2026-09-21T02:15:40Z"
+          },
+          {
+            "stage": "Predicting road/building changes and caption",
+            "at": "2026-09-21T02:15:46Z"
+          },
+          {
+            "stage": "Rendering temporal masks and calculating pixel counts",
+            "at": "2026-09-21T02:15:46Z"
+          },
+          {
+            "stage": "Saving result and original inputs",
+            "at": "2026-09-21T02:15:46Z"
+          },
+          {
+            "stage": "Packaging evidence",
+            "at": "2026-09-21T02:15:46Z"
+          }
+        ],
+        "work_seconds_before_zip": 5.758346574002644
+      },
+      "request_seconds": 5.789467356997193,
+      "end_to_end_seconds": 6.21276983700227,
+      "zip_valid": true
+    }
+  },
+  {
+    "kind": "water_map",
+    "sample": "flood-Ghana_313799",
+    "run": {
+      "state": "complete",
+      "stage": "Complete",
+      "plan": {
+        "task": "water_map",
+        "version": "unified-rules-v6",
+        "specialist": "WaterUNet \u00b7 SAR / optical / joint",
+        "device": "CPU",
+        "maturity": "supported",
+        "reason": "Optical 13-band / SAR pair and a water-mapping question.",
+        "threshold": 0.5,
+        "steps": [
+          "validate sensor contract",
+          "three modality predictions",
+          "save evidence"
+        ]
+      },
+      "events": [
+        {
+          "stage": "Input checks passed; preparing specialist",
+          "at": "2026-09-21T02:15:46Z"
+        },
+        {
+          "stage": "Starting WaterUNet \u00b7 SAR / optical / joint",
+          "at": "2026-09-21T02:15:46Z"
+        },
+        {
+          "stage": "Normalizing optical and SAR channels",
+          "at": "2026-09-21T02:15:46Z"
+        },
+        {
+          "stage": "Loading WaterUNet on CPU",
+          "at": "2026-09-21T02:15:46Z"
+        },
+        {
+          "stage": "Predicting water: SAR only",
+          "at": "2026-09-21T02:15:46Z"
+        },
+        {
+          "stage": "Predicting water: optical only",
+          "at": "2026-09-21T02:15:47Z"
+        },
+        {
+          "stage": "Predicting water: joint",
+          "at": "2026-09-21T02:15:47Z"
+        },
+        {
+          "stage": "Rendering water evidence and counting predicted pixels",
+          "at": "2026-09-21T02:15:47Z"
+        },
+        {
+          "stage": "Saving result and original inputs",
+          "at": "2026-09-21T02:15:47Z"
+        },
+        {
+          "stage": "Packaging evidence",
+          "at": "2026-09-21T02:15:47Z"
+        }
+      ],
+      "result": {
+        "task": "water_map",
+        "answer": "The joint optical\u2013SAR model marks 9,285 of 262,144 valid pixels as water (3.54%). Blue regions show this prediction. Water includes permanent water and floodwater; this single-date pair cannot distinguish them.",
+        "water_pixels": {
+          "s1": 2055,
+          "s2": 9120,
+          "all": 9285
+        },
+        "denominator_pixels": 262144,
+        "full_image_pixels": 262144,
+        "seconds": 0.9718628499977058,
+        "confidence": {
+          "kind": "uncalibrated softmax; threshold 0.5",
+          "threshold": 0.5
+        },
+        "trace": [
+          {
+            "tool": "SatQuery WaterUNet v1",
+            "checkpoint_sha256": "7844387fffd6c7e606895328e61be936304f979fee74411021f7312b3215f7ce",
+            "training": "Sen1Floods11 official train split; selected on validation only",
+            "selected_epoch": 23,
+            "device": "cpu",
+            "normalization": "SAR clip((dB+20)/10,-3,3); S2 L1C clip(DN/3000,0,4)",
+            "sensor_availability": "Two explicit flags; modality dropout during training",
+            "bands": {
+              "sar": [
+                "VV",
+                "VH"
+              ],
+              "optical": [
+                "B01",
+                "B02",
+                "B03",
+                "B04",
+                "B05",
+                "B06",
+                "B07",
+                "B08",
+                "B8A",
+                "B09",
+                "B10",
+                "B11",
+                "B12"
+              ]
+            }
+          }
+        ],
+        "limitations": [
+          "Water segmentation only; no building boundaries or counts.",
+          "Single-date water is not automatically flood extent.",
+          "Fixed local research model; scores are not calibrated confidence.",
+          "Sentinel-1 GRD and Sentinel-2 L1C only; no Cartosat/RISAT validation.",
+          "Coverage denominator excludes non-finite input pixels; no surveyed area claim."
+        ],
+        "execution": {
+          "task": "water_map",
+          "version": "unified-rules-v6",
+          "specialist": "WaterUNet \u00b7 SAR / optical / joint",
+          "device": "CPU",
+          "maturity": "supported",
+          "reason": "Optical 13-band / SAR pair and a water-mapping question.",
+          "threshold": 0.5,
+          "steps": [
+            "validate sensor contract",
+            "three modality predictions",
+            "save evidence"
+          ]
+        },
+        "id": "6e326c70efcd4108a4734b5725815c8e",
+        "query": "Map water",
+        "input_checks": {
+          "task": "water_map",
+          "pairing_basis": "matching geographic grids and acquisition metadata",
+          "valid_pixels": 262144,
+          "full_pixels": 262144,
+          "warning": "Cross-sensor content registration is not independently certified. Time differences can move water boundaries.",
+          "inputs": [
+            {
+              "modality": "optical",
+              "date": "2018-09-19",
+              "units": "reflectance_x10000",
+              "sensor": "Sentinel-2 L1C",
+              "reflectance_units": "",
+              "bands": [
+                "B01",
+                "B02",
+                "B03",
+                "B04",
+                "B05",
+                "B06",
+                "B07",
+                "B08",
+                "B8A",
+                "B09",
+                "B10",
+                "B11",
+                "B12"
+              ],
+              "shape": [
+                512,
+                512
+              ],
+              "count": 13,
+              "dtype": "int16",
+              "crs": "EPSG:4326",
+              "transform": [
+                8.983152841195215e-05,
+                0.0,
+                -1.471799761501424,
+                0.0,
+                -8.983152841195215e-05,
+                9.336729737024658
+              ],
+              "sha256": "fee4bc6436158d1d7d60b5f82e1aabb0be35db15a3b0e1c58202bc3e0aa40b6c"
+            },
+            {
+              "modality": "sar",
+              "date": "2018-09-18",
+              "units": "dB",
+              "sensor": "Sentinel-1 GRD",
+              "reflectance_units": "",
+              "bands": [
+                "VV",
+                "VH"
+              ],
+              "shape": [
+                512,
+                512
+              ],
+              "count": 2,
+              "dtype": "float32",
+              "crs": "EPSG:4326",
+              "transform": [
+                8.983152841195215e-05,
+                0.0,
+                -1.471799761501424,
+                0.0,
+                -8.983152841195215e-05,
+                9.336729737024658
+              ],
+              "sha256": "00cf06b1c997da444148f3a7dec45f3f497171be858df5ccfa464b38aace2bf0"
+            }
+          ],
+          "plan": {
+            "task": "water_map",
+            "version": "unified-rules-v6",
+            "specialist": "WaterUNet \u00b7 SAR / optical / joint",
+            "device": "CPU",
+            "maturity": "supported",
+            "reason": "Optical 13-band / SAR pair and a water-mapping question.",
+            "threshold": 0.5,
+            "steps": [
+              "validate sensor contract",
+              "three modality predictions",
+              "save evidence"
+            ]
+          },
+          "sample_manifest": {
+            "id": "flood-Ghana_313799",
+            "kind": "water_map",
+            "name": "Ghana \u00b7 313799 (test)",
+            "source": "Sen1Floods11 v1.1 hand-labelled",
+            "benchmark": "Official test split; first chip per event, not selected by prediction quality",
+            "files": [
+              "optical.tif",
+              "sar.tif"
+            ],
+            "source_files": [
+              {
+                "source": "/root/satquery/paired-lab/sen1floods11/S2Hand/Ghana_313799_S2Hand.tif",
+                "source_sha256": "621f5c19765e6e6a28d3a3b8bb357188ecb4d65ab4f14dba38e30bd84b93ce40",
+                "export_sha256": "fee4bc6436158d1d7d60b5f82e1aabb0be35db15a3b0e1c58202bc3e0aa40b6c"
+              },
+              {
+                "source": "/root/satquery/paired-lab/sen1floods11/S1Hand/Ghana_313799_S1Hand.tif",
+                "source_sha256": "4555c98d54ea0ca81e681abc75af20d61774fbbcdc3d48992c3378ebdd5887bc",
+                "export_sha256": "00cf06b1c997da444148f3a7dec45f3f497171be858df5ccfa464b38aace2bf0"
+              }
+            ],
+            "dates": {
+              "optical": "2018/09/19",
+              "sar": "2018/09/18"
+            },
+            "reference": "/root/satquery/paired-lab/sen1floods11/LabelHand/Ghana_313799_LabelHand.tif"
+          }
+        },
+        "controller": "unified-rules-v6",
+        "created_at": "2026-09-21T02:15:47Z",
+        "execution_events": [
+          {
+            "stage": "Input checks passed; preparing specialist",
+            "at": "2026-09-21T02:15:46Z"
+          },
+          {
+            "stage": "Starting WaterUNet \u00b7 SAR / optical / joint",
+            "at": "2026-09-21T02:15:46Z"
+          },
+          {
+            "stage": "Normalizing optical and SAR channels",
+            "at": "2026-09-21T02:15:46Z"
+          },
+          {
+            "stage": "Loading WaterUNet on CPU",
+            "at": "2026-09-21T02:15:46Z"
+          },
+          {
+            "stage": "Predicting water: SAR only",
+            "at": "2026-09-21T02:15:46Z"
+          },
+          {
+            "stage": "Predicting water: optical only",
+            "at": "2026-09-21T02:15:47Z"
+          },
+          {
+            "stage": "Predicting water: joint",
+            "at": "2026-09-21T02:15:47Z"
+          },
+          {
+            "stage": "Rendering water evidence and counting predicted pixels",
+            "at": "2026-09-21T02:15:47Z"
+          },
+          {
+            "stage": "Saving result and original inputs",
+            "at": "2026-09-21T02:15:47Z"
+          },
+          {
+            "stage": "Packaging evidence",
+            "at": "2026-09-21T02:15:47Z"
+          }
+        ],
+        "work_seconds_before_zip": 1.0618942699948093
+      },
+      "request_seconds": 1.208150548991398,
+      "end_to_end_seconds": 1.3565707399975508,
+      "zip_valid": true
+    }
+  },
+  {
+    "kind": "optical_sar",
+    "sample": "ben-validation-33-69",
+    "run": {
+      "state": "complete",
+      "stage": "Complete",
+      "plan": {
+        "task": "optical_sar",
+        "version": "unified-rules-v6",
+        "specialist": "BIFOLD ResNet50 \u00b7 SAR / optical / joint",
+        "device": "CPU",
+        "maturity": "supported",
+        "reason": "Optical\u2013SAR patch and a scene-level land-cover question.",
+        "threshold": 0.5,
+        "steps": [
+          "validate sensor contract",
+          "three modality predictions",
+          "save evidence"
+        ]
+      },
+      "events": [
+        {
+          "stage": "Input checks passed; preparing specialist",
+          "at": "2026-09-21T02:15:48Z"
+        },
+        {
+          "stage": "Starting BIFOLD ResNet50 \u00b7 SAR / optical / joint",
+          "at": "2026-09-21T02:15:48Z"
+        },
+        {
+          "stage": "Loading or reusing s1 land-cover model on CPU",
+          "at": "2026-09-21T02:15:48Z"
+        },
+        {
+          "stage": "Predicting land-cover scores: s1",
+          "at": "2026-09-21T02:15:48Z"
+        },
+        {
+          "stage": "Loading or reusing s2 land-cover model on CPU",
+          "at": "2026-09-21T02:15:48Z"
+        },
+        {
+          "stage": "Predicting land-cover scores: s2",
+          "at": "2026-09-21T02:15:48Z"
+        },
+        {
+          "stage": "Loading or reusing all land-cover model on CPU",
+          "at": "2026-09-21T02:15:48Z"
+        },
+        {
+          "stage": "Predicting land-cover scores: all",
+          "at": "2026-09-21T02:15:48Z"
+        },
+        {
+          "stage": "Rendering land-cover evidence",
+          "at": "2026-09-21T02:15:48Z"
+        },
+        {
+          "stage": "Saving result and original inputs",
+          "at": "2026-09-21T02:15:48Z"
+        },
+        {
+          "stage": "Packaging evidence",
+          "at": "2026-09-21T02:15:48Z"
+        }
+      ],
+      "result": {
+        "task": "optical_sar",
+        "answer": "The jointly trained optical\u2013SAR model suggests Arable land, Broad-leaved forest, Inland waters, Land principally occupied by agriculture, with significant areas of natural vegetation. These are scene-level land-cover labels, not mapped regions or measured area.",
+        "classes": [
+          "Arable land",
+          "Broad-leaved forest",
+          "Inland waters",
+          "Land principally occupied by agriculture, with significant areas of natural vegetation"
+        ],
+        "scores": {
+          "s1": {
+            "Agro-forestry areas": 0.0006278280052356422,
+            "Arable land": 0.9377546310424805,
+            "Beaches, dunes, sands": 0.0006239524227567017,
+            "Broad-leaved forest": 0.8506443500518799,
+            "Coastal wetlands": 0.0016960098873823881,
+            "Complex cultivation patterns": 0.3493921458721161,
+            "Coniferous forest": 0.0811297670006752,
+            "Industrial or commercial units": 0.012265682220458984,
+            "Inland waters": 0.8778409957885742,
+            "Inland wetlands": 0.047660160809755325,
+            "Land principally occupied by agriculture, with significant areas of natural vegetation": 0.5030713677406311,
+            "Marine waters": 0.0023255234118551016,
+            "Mixed forest": 0.14888162910938263,
+            "Moors, heathland and sclerophyllous vegetation": 0.001565479440614581,
+            "Natural grassland and sparsely vegetated areas": 0.0003892703098244965,
+            "Pastures": 0.27541491389274597,
+            "Permanent crops": 0.008861884474754333,
+            "Transitional woodland, shrub": 0.2647920548915863,
+            "Urban fabric": 0.08245094865560532
+          },
+          "s2": {
+            "Agro-forestry areas": 1.4760137673874851e-05,
+            "Arable land": 0.9799021482467651,
+            "Beaches, dunes, sands": 0.00011036421346943825,
+            "Broad-leaved forest": 0.44339871406555176,
+            "Coastal wetlands": 9.813486940402072e-06,
+            "Complex cultivation patterns": 0.2349083423614502,
+            "Coniferous forest": 0.07316344231367111,
+            "Industrial or commercial units": 0.005778060294687748,
+            "Inland waters": 0.9127276539802551,
+            "Inland wetlands": 0.000961205514613539,
+            "Land principally occupied by agriculture, with significant areas of natural vegetation": 0.6851519346237183,
+            "Marine waters": 6.708117871312425e-05,
+            "Mixed forest": 0.42887815833091736,
+            "Moors, heathland and sclerophyllous vegetation": 0.0005563828744925559,
+            "Natural grassland and sparsely vegetated areas": 6.428036431316286e-05,
+            "Pastures": 0.18080119788646698,
+            "Permanent crops": 0.0047535463236272335,
+            "Transitional woodland, shrub": 0.001303222612477839,
+            "Urban fabric": 0.3166227638721466
+          },
+          "all": {
+            "Agro-forestry areas": 5.776958914793795e-06,
+            "Arable land": 0.9968761205673218,
+            "Beaches, dunes, sands": 0.00010745402687462047,
+            "Broad-leaved forest": 0.8771324753761292,
+            "Coastal wetlands": 9.32026614464121e-06,
+            "Complex cultivation patterns": 0.4643104672431946,
+            "Coniferous forest": 0.1069587767124176,
+            "Industrial or commercial units": 0.020035533234477043,
+            "Inland waters": 0.9928283095359802,
+            "Inland wetlands": 0.009865177795290947,
+            "Land principally occupied by agriculture, with significant areas of natural vegetation": 0.5170260667800903,
+            "Marine waters": 6.259763176785782e-05,
+            "Mixed forest": 0.4799323081970215,
+            "Moors, heathland and sclerophyllous vegetation": 0.0007586826686747372,
+            "Natural grassland and sparsely vegetated areas": 0.0005802324158139527,
+            "Pastures": 0.3834201395511627,
+            "Permanent crops": 0.0009109170641750097,
+            "Transitional woodland, shrub": 0.00626936461776495,
+            "Urban fabric": 0.4384154677391052
+          }
+        },
+        "seconds": 0.8422027630003868,
+        "trace": [
+          {
+            "tool": "BIFOLD-BigEarthNetv2-0/resnet50-s1-v0.2.0",
+            "revision": "d417b3c32f2172cbceb14e5b106dd9aa7b77c647",
+            "device": "cpu",
+            "bands": [
+              "VV",
+              "VH"
+            ],
+            "normalization": "reBEN 120_nearest training mean/std",
+            "input_shape": [
+              1,
+              2,
+              120,
+              120
+            ],
+            "threshold": 0.5
+          },
+          {
+            "tool": "BIFOLD-BigEarthNetv2-0/resnet50-s2-v0.2.0",
+            "revision": "f5a590cd5876845f62702260ff62ea5a325433bb",
+            "device": "cpu",
+            "bands": [
+              "B02",
+              "B03",
+              "B04",
+              "B05",
+              "B06",
+              "B07",
+              "B08",
+              "B8A",
+              "B11",
+              "B12"
+            ],
+            "normalization": "reBEN 120_nearest training mean/std",
+            "input_shape": [
+              1,
+              10,
+              120,
+              120
+            ],
+            "threshold": 0.5
+          },
+          {
+            "tool": "BIFOLD-BigEarthNetv2-0/resnet50-all-v0.2.0",
+            "revision": "762acdc186cce6b31ecbc896ddab1721847d4c5e",
+            "device": "cpu",
+            "bands": [
+              "VV",
+              "VH",
+              "B02",
+              "B03",
+              "B04",
+              "B05",
+              "B06",
+              "B07",
+              "B08",
+              "B8A",
+              "B11",
+              "B12"
+            ],
+            "normalization": "reBEN 120_nearest training mean/std",
+            "input_shape": [
+              1,
+              12,
+              120,
+              120
+            ],
+            "threshold": 0.5
+          }
+        ],
+        "confidence": {
+          "kind": "uncalibrated sigmoid scores; not accuracy",
+          "threshold": 0.5
+        },
+        "limitations": [
+          "Sentinel-1 VV/VH and Sentinel-2 multispectral only; no demonstrated Cartosat/RISAT transfer.",
+          "Scene classification cannot locate built-up/water regions.",
+          "Fusion superiority must be tested; more sensors do not guarantee a better answer."
+        ],
+        "execution": {
+          "task": "optical_sar",
+          "version": "unified-rules-v6",
+          "specialist": "BIFOLD ResNet50 \u00b7 SAR / optical / joint",
+          "device": "CPU",
+          "maturity": "supported",
+          "reason": "Optical\u2013SAR patch and a scene-level land-cover question.",
+          "threshold": 0.5,
+          "steps": [
+            "validate sensor contract",
+            "three modality predictions",
+            "save evidence"
+          ]
+        },
+        "id": "55a77b2e292a4136a4405f1d037d22ad",
+        "query": "Identify land-cover classes",
+        "input_checks": {
+          "task": "optical_sar",
+          "pairing_basis": "publisher benchmark manifest",
+          "warning": "Matching metadata is necessary but does not prove subpixel image registration.",
+          "inputs": [
+            {
+              "modality": "optical",
+              "date": "",
+              "units": "reflectance_x10000",
+              "sensor": "Sentinel-2",
+              "reflectance_units": "",
+              "bands": [
+                "B02",
+                "B03",
+                "B04",
+                "B05",
+                "B06",
+                "B07",
+                "B08",
+                "B8A",
+                "B11",
+                "B12"
+              ],
+              "shape": [
+                120,
+                120
+              ],
+              "count": 10,
+              "dtype": "float32",
+              "crs": null,
+              "transform": [
+                1.0,
+                0.0,
+                0.0,
+                0.0,
+                1.0,
+                0.0
+              ],
+              "sha256": "0704241b9c4c3e1fff05f53ac353537884a25ec617a03bfd963d1035c1a83d2c"
+            },
+            {
+              "modality": "sar",
+              "date": "",
+              "units": "dB",
+              "sensor": "Sentinel-1",
+              "reflectance_units": "",
+              "bands": [
+                "VV",
+                "VH"
+              ],
+              "shape": [
+                120,
+                120
+              ],
+              "count": 2,
+              "dtype": "float32",
+              "crs": null,
+              "transform": [
+                1.0,
+                0.0,
+                0.0,
+                0.0,
+                1.0,
+                0.0
+              ],
+              "sha256": "4ef6d8fa31d27a5e23718c84c1704063bd15e06748e9b6bb8fa3447615fb9bf1"
+            }
+          ],
+          "plan": {
+            "task": "optical_sar",
+            "version": "unified-rules-v6",
+            "specialist": "BIFOLD ResNet50 \u00b7 SAR / optical / joint",
+            "device": "CPU",
+            "maturity": "supported",
+            "reason": "Optical\u2013SAR patch and a scene-level land-cover question.",
+            "threshold": 0.5,
+            "steps": [
+              "validate sensor contract",
+              "three modality predictions",
+              "save evidence"
+            ]
+          },
+          "sample_manifest": {
+            "id": "ben-validation-33-69",
+            "kind": "optical_sar",
+            "name": "Austria validation 33-69",
+            "source": "ConfigILM official BigEarthNet v2 real-data fixture",
+            "source_revision": "d5a6c64bee268e71f12e130bd839ab9dfe53cc08",
+            "benchmark": "BigEarthNet v2 development",
+            "split": "validation",
+            "optical_patch": "S2A_MSIL2A_20170613T101031_N9999_R022_T33UUP_33_69",
+            "sar_patch": "S1B_IW_GRDH_1SDV_20170612T165809_33UUP_33_69",
+            "registration": "publisher paired sample; geographic transform unavailable in LMDB fixture",
+            "files": [
+              "optical.tif",
+              "sar.tif"
+            ],
+            "shape": [
+              120,
+              120
+            ]
+          }
+        },
+        "controller": "unified-rules-v6",
+        "created_at": "2026-09-21T02:15:48Z",
+        "execution_events": [
+          {
+            "stage": "Input checks passed; preparing specialist",
+            "at": "2026-09-21T02:15:48Z"
+          },
+          {
+            "stage": "Starting BIFOLD ResNet50 \u00b7 SAR / optical / joint",
+            "at": "2026-09-21T02:15:48Z"
+          },
+          {
+            "stage": "Loading or reusing s1 land-cover model on CPU",
+            "at": "2026-09-21T02:15:48Z"
+          },
+          {
+            "stage": "Predicting land-cover scores: s1",
+            "at": "2026-09-21T02:15:48Z"
+          },
+          {
+            "stage": "Loading or reusing s2 land-cover model on CPU",
+            "at": "2026-09-21T02:15:48Z"
+          },
+          {
+            "stage": "Predicting land-cover scores: s2",
+            "at": "2026-09-21T02:15:48Z"
+          },
+          {
+            "stage": "Loading or reusing all land-cover model on CPU",
+            "at": "2026-09-21T02:15:48Z"
+          },
+          {
+            "stage": "Predicting land-cover scores: all",
+            "at": "2026-09-21T02:15:48Z"
+          },
+          {
+            "stage": "Rendering land-cover evidence",
+            "at": "2026-09-21T02:15:48Z"
+          },
+          {
+            "stage": "Saving result and original inputs",
+            "at": "2026-09-21T02:15:48Z"
+          },
+          {
+            "stage": "Packaging evidence",
+            "at": "2026-09-21T02:15:48Z"
+          }
+        ],
+        "work_seconds_before_zip": 0.8686100899940357
+      },
+      "request_seconds": 0.9157531629898585,
+      "end_to_end_seconds": 1.28152714400494,
+      "zip_valid": true
+    }
+  },
+  {
+    "kind": "ndvi",
+    "run": {
+      "state": "complete",
+      "stage": "Complete",
+      "plan": {
+        "task": "ndvi",
+        "version": "unified-rules-v6",
+        "specialist": "Deterministic NDVI calculation",
+        "device": "CPU",
+        "maturity": "supported",
+        "reason": "Explicit NDVI or vegetation pixel-coverage request with calibrated Red/NIR available. Coverage means pixels meeting the selected NDVI threshold, not surveyed vegetation cover.",
+        "decision": {
+          "tool": "ndvi",
+          "rule": "ndvi_threshold_coverage",
+          "reason": "Explicit NDVI or vegetation pixel-coverage request with calibrated Red/NIR available. Coverage means pixels meeting the selected NDVI threshold, not surveyed vegetation cover.",
+          "version": "rules-v5"
+        },
+        "mode": "baseline",
+        "threshold": 0.5,
+        "steps": [
+          "validate image",
+          "ndvi",
+          "save evidence"
+        ]
+      },
+      "events": [
+        {
+          "stage": "Input checks passed; preparing specialist",
+          "at": "2026-09-21T02:15:49Z"
+        },
+        {
+          "stage": "Starting Deterministic NDVI calculation",
+          "at": "2026-09-21T02:15:49Z"
+        },
+        {
+          "stage": "Preparing single-image specialist input",
+          "at": "2026-09-21T02:15:49Z"
+        },
+        {
+          "stage": "Calculating NDVI",
+          "at": "2026-09-21T02:15:49Z"
+        },
+        {
+          "stage": "Specialist finished; collecting evidence",
+          "at": "2026-09-21T02:15:50Z"
+        },
+        {
+          "stage": "Collecting single-image evidence",
+          "at": "2026-09-21T02:15:50Z"
+        },
+        {
+          "stage": "Saving result and original inputs",
+          "at": "2026-09-21T02:15:50Z"
+        },
+        {
+          "stage": "Packaging evidence",
+          "at": "2026-09-21T02:15:50Z"
+        }
+      ],
+      "result": {
+        "task": "ndvi",
+        "answer": "NDVI \u2265 0.50: 14.79% of valid pixels. Selected pixels cover 14.79% of the whole crop. Projected grid area: 387.61 hectares. Valid pixels cover 100.00% of this crop. This is threshold-based coverage, not a vegetation-health diagnosis.",
+        "seconds": 0.195,
+        "statistics": {
+          "numerical_precision": "float64 reflectance arithmetic, threshold comparison and NDVI export",
+          "calibration_version": "c1-header-verified-v2",
+          "exclusion_counts": {
+            "nodata_or_nonfinite": 0,
+            "negative_reflectance": 0,
+            "zero_denominator": 0,
+            "quality_after_reflectance_checks": 0
+          },
+          "excluded_pixels": 0,
+          "selected_percent_of_crop": 14.786148071289062,
+          "threshold": 0.5,
+          "valid_pixels": 262144,
+          "total_pixels": 262144,
+          "selected_pixels": 38761,
+          "valid_coverage_percent": 100.0,
+          "selected_percent_of_valid": 14.786148071289062,
+          "selected_area_m2": 3876100.0,
+          "area_method": "Projected grid area from affine determinant; not terrain surface area.",
+          "ndvi_min": -0.11406418886026737,
+          "ndvi_max": 0.8720458399410769,
+          "ndvi_mean": 0.2718112970070255,
+          "quality_mask_available": true,
+          "quality_rule": "SCL 4,5,6,7 retained; other classes excluded.",
+          "interpretation": "Pixels meeting the stated NDVI threshold; not a vegetation health, density, or species diagnosis."
+        },
+        "trace": [
+          {
+            "tool": "Preserved main workspace",
+            "run_id": "14d11761cfbe41b48ff301eb5c6b4827",
+            "model": null,
+            "revision": null,
+            "mode": null,
+            "routing": {
+              "tool": "ndvi",
+              "rule": "ndvi_threshold_coverage",
+              "reason": "Explicit NDVI or vegetation pixel-coverage request with calibrated Red/NIR available. Coverage means pixels meeting the selected NDVI threshold, not surveyed vegetation cover.",
+              "version": "rules-v5"
+            }
+          }
+        ],
+        "limitations": [
+          "NDVI threshold coverage is not a plant-health diagnosis."
+        ],
+        "confidence": {
+          "kind": "See original run evidence; no invented confidence score."
+        },
+        "execution": {
+          "task": "ndvi",
+          "version": "unified-rules-v6",
+          "specialist": "Deterministic NDVI calculation",
+          "device": "CPU",
+          "maturity": "supported",
+          "reason": "Explicit NDVI or vegetation pixel-coverage request with calibrated Red/NIR available. Coverage means pixels meeting the selected NDVI threshold, not surveyed vegetation cover.",
+          "decision": {
+            "tool": "ndvi",
+            "rule": "ndvi_threshold_coverage",
+            "reason": "Explicit NDVI or vegetation pixel-coverage request with calibrated Red/NIR available. Coverage means pixels meeting the selected NDVI threshold, not surveyed vegetation cover.",
+            "version": "rules-v5"
+          },
+          "mode": "baseline",
+          "threshold": 0.5,
+          "steps": [
+            "validate image",
+            "ndvi",
+            "save evidence"
+          ]
+        },
+        "id": "7cdda8810d3e458ca3efcc56795e27e5",
+        "query": "Calculate NDVI",
+        "input_checks": {
+          "task": "ndvi",
+          "inputs": [
+            {
+              "id": "a80c51ff960b419eb2ee0eabb0258c0a",
+              "name": "ndvi-input.tif",
+              "width": 512,
+              "height": 512,
+              "bytes": 3235336,
+              "sha256": "55f3ca7b578e045594f8d54419b590c3ffeb99247ec5f74d7b1355d5bc4ec0f8",
+              "preview": "/api/images/cf88636962344b688d61eefd9a058652",
+              "geo": {
+                "calibration_version": "c1-header-verified-v2",
+                "crs": "EPSG:32643",
+                "width": 512,
+                "height": 512,
+                "transform": [
+                  10.0,
+                  0.0,
+                  788360.0,
+                  0.0,
+                  -10.0,
+                  3359030.0
+                ],
+                "bounds": [
+                  788360.0,
+                  3353910.0,
+                  793480.0,
+                  3359030.0
+                ],
+                "bounds_wgs84": [
+                  77.99766300376905,
+                  30.281402875774386,
+                  78.05225589782314,
+                  30.328772451280432
+                ],
+                "resolution": [
+                  10.0,
+                  10.0
+                ],
+                "bands": {
+                  "red": 1,
+                  "green": 2,
+                  "blue": 3,
+                  "nir": 4,
+                  "scl": 5
+                },
+                "band_descriptions": [
+                  "red",
+                  "green",
+                  "blue",
+                  "nir",
+                  "scl"
+                ],
+                "nodata": "nan",
+                "scales": [
+                  1.0,
+                  1.0,
+                  1.0,
+                  1.0,
+                  1.0
+                ],
+                "offsets": [
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                "acquired": "2021-11-25T05:40:34.501000Z",
+                "source_item": "S2A_T43RGP_20211125T053958_L2A",
+                "attribution": "Contains modified Copernicus Sentinel data (2021), accessed through Element 84 Earth Search / AWS.",
+                "ndvi_supported": true,
+                "quality_mask_available": true,
+                "preview_processing": "Per-channel 2nd\u201398th percentile RGB display stretch; analytical values are preserved."
+              },
+              "main_id": "cf88636962344b688d61eefd9a058652",
+              "modality": "optical",
+              "is_single": true
+            }
+          ],
+          "plan": {
+            "task": "ndvi",
+            "version": "unified-rules-v6",
+            "specialist": "Deterministic NDVI calculation",
+            "device": "CPU",
+            "maturity": "supported",
+            "reason": "Explicit NDVI or vegetation pixel-coverage request with calibrated Red/NIR available. Coverage means pixels meeting the selected NDVI threshold, not surveyed vegetation cover.",
+            "decision": {
+              "tool": "ndvi",
+              "rule": "ndvi_threshold_coverage",
+              "reason": "Explicit NDVI or vegetation pixel-coverage request with calibrated Red/NIR available. Coverage means pixels meeting the selected NDVI threshold, not surveyed vegetation cover.",
+              "version": "rules-v5"
+            },
+            "mode": "baseline",
+            "threshold": 0.5,
+            "steps": [
+              "validate image",
+              "ndvi",
+              "save evidence"
+            ]
+          }
+        },
+        "controller": "unified-rules-v6",
+        "created_at": "2026-09-21T02:15:50Z",
+        "execution_events": [
+          {
+            "stage": "Input checks passed; preparing specialist",
+            "at": "2026-09-21T02:15:49Z"
+          },
+          {
+            "stage": "Starting Deterministic NDVI calculation",
+            "at": "2026-09-21T02:15:49Z"
+          },
+          {
+            "stage": "Preparing single-image specialist input",
+            "at": "2026-09-21T02:15:49Z"
+          },
+          {
+            "stage": "Calculating NDVI",
+            "at": "2026-09-21T02:15:49Z"
+          },
+          {
+            "stage": "Specialist finished; collecting evidence",
+            "at": "2026-09-21T02:15:50Z"
+          },
+          {
+            "stage": "Collecting single-image evidence",
+            "at": "2026-09-21T02:15:50Z"
+          },
+          {
+            "stage": "Saving result and original inputs",
+            "at": "2026-09-21T02:15:50Z"
+          },
+          {
+            "stage": "Packaging evidence",
+            "at": "2026-09-21T02:15:50Z"
+          }
+        ],
+        "work_seconds_before_zip": 0.5265137779933866
+      },
+      "request_seconds": 0.6679094580031233,
+      "end_to_end_seconds": 1.1144628009933513,
+      "archive_verified": true
+    }
+  }
+]

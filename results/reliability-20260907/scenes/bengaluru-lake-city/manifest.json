@@ -1,0 +1,169 @@
+{
+  "name": "bengaluru-lake-city",
+  "file": "/mnt/c/Users/nrgen/.codex/scratch/SATquery AI/results/reliability-20260907/scenes/bengaluru-lake-city/bengaluru-lake-city.tif",
+  "source_item": "S2B_T43PGQ_20240313T052012_L2A",
+  "acquired": "2024-03-13T05:25:16.952000Z",
+  "scene_cloud_percent": 0.000111,
+  "selection": {
+    "collections": [
+      "sentinel-2-c1-l2a"
+    ],
+    "intersects": {
+      "type": "Point",
+      "coordinates": [
+        77.67,
+        12.94
+      ]
+    },
+    "datetime": "2024-01-01T00:00:00Z/2024-03-31T23:59:59Z",
+    "query": {
+      "eo:cloud_cover": {
+        "lt": 10
+      }
+    },
+    "limit": 10,
+    "sortby": [
+      {
+        "field": "properties.eo:cloud_cover",
+        "direction": "asc"
+      }
+    ]
+  },
+  "centre_lon_lat": [
+    77.67,
+    12.94
+  ],
+  "crs": "EPSG:32643",
+  "transform": [
+    10.0,
+    0.0,
+    787140.0,
+    0.0,
+    -10.0,
+    1434580.0
+  ],
+  "sha256": "f11697a2dcf9b3758dff7319b614ee7dded505cd78258468c39815c2073e44d7",
+  "bands": {
+    "red": {
+      "source": "https://e84-earth-search-sentinel-data.s3.us-west-2.amazonaws.com/sentinel-2-c1-l2a/43/P/GQ/2024/3/S2B_T43PGQ_20240313T052012_L2A/B04.tif",
+      "scale": 0.0001,
+      "offset": -0.1,
+      "source_resolution": [
+        10.0,
+        10.0
+      ],
+      "source_nodata": 0.0,
+      "resampling": "nearest to red-band 10 m grid"
+    },
+    "green": {
+      "source": "https://e84-earth-search-sentinel-data.s3.us-west-2.amazonaws.com/sentinel-2-c1-l2a/43/P/GQ/2024/3/S2B_T43PGQ_20240313T052012_L2A/B03.tif",
+      "scale": 0.0001,
+      "offset": -0.1,
+      "source_resolution": [
+        10.0,
+        10.0
+      ],
+      "source_nodata": 0.0,
+      "resampling": "nearest to red-band 10 m grid"
+    },
+    "blue": {
+      "source": "https://e84-earth-search-sentinel-data.s3.us-west-2.amazonaws.com/sentinel-2-c1-l2a/43/P/GQ/2024/3/S2B_T43PGQ_20240313T052012_L2A/B02.tif",
+      "scale": 0.0001,
+      "offset": -0.1,
+      "source_resolution": [
+        10.0,
+        10.0
+      ],
+      "source_nodata": 0.0,
+      "resampling": "nearest to red-band 10 m grid"
+    },
+    "nir": {
+      "source": "https://e84-earth-search-sentinel-data.s3.us-west-2.amazonaws.com/sentinel-2-c1-l2a/43/P/GQ/2024/3/S2B_T43PGQ_20240313T052012_L2A/B08.tif",
+      "scale": 0.0001,
+      "offset": -0.1,
+      "source_resolution": [
+        10.0,
+        10.0
+      ],
+      "source_nodata": 0.0,
+      "resampling": "nearest to red-band 10 m grid"
+    },
+    "scl": {
+      "source": "https://e84-earth-search-sentinel-data.s3.us-west-2.amazonaws.com/sentinel-2-c1-l2a/43/P/GQ/2024/3/S2B_T43PGQ_20240313T052012_L2A/SCL.tif",
+      "scale": 1,
+      "offset": 0,
+      "source_resolution": [
+        20.0,
+        20.0
+      ],
+      "source_nodata": 0.0,
+      "resampling": "nearest to red-band 10 m grid"
+    }
+  },
+  "attribution": "Contains modified Copernicus Sentinel data (2024), accessed through Element 84 Earth Search / AWS.",
+  "metadata": {
+    "calibration_version": "c1-header-verified-v2",
+    "crs": "EPSG:32643",
+    "width": 512,
+    "height": 512,
+    "transform": [
+      10.0,
+      0.0,
+      787140.0,
+      0.0,
+      -10.0,
+      1434580.0
+    ],
+    "bounds": [
+      787140.0,
+      1429460.0,
+      792260.0,
+      1434580.0
+    ],
+    "bounds_wgs84": [
+      77.64615488232272,
+      12.916697859777582,
+      77.69379888426566,
+      12.963429178178792
+    ],
+    "resolution": [
+      10.0,
+      10.0
+    ],
+    "bands": {
+      "red": 1,
+      "green": 2,
+      "blue": 3,
+      "nir": 4,
+      "scl": 5
+    },
+    "band_descriptions": [
+      "red",
+      "green",
+      "blue",
+      "nir",
+      "scl"
+    ],
+    "nodata": "nan",
+    "scales": [
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0
+    ],
+    "offsets": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "acquired": "2024-03-13T05:25:16.952000Z",
+    "source_item": "S2B_T43PGQ_20240313T052012_L2A",
+    "attribution": "Contains modified Copernicus Sentinel data (2024), accessed through Element 84 Earth Search / AWS.",
+    "ndvi_supported": true,
+    "quality_mask_available": true,
+    "preview_processing": "Per-channel 2nd\u201398th percentile RGB display stretch; analytical values are preserved."
+  }
+}

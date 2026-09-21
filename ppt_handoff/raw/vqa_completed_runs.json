@@ -1,0 +1,351 @@
+[
+  {
+    "id": "224dce96199c49cdb65956d8c6ecc043",
+    "state": "complete",
+    "stage": "Complete",
+    "question": "Is there a water body visible in this image?",
+    "image": {
+      "id": "a6a2a679ef7d4a83957ee980e0f73718",
+      "name": "sample.png",
+      "width": 800,
+      "height": 800,
+      "bytes": 1058832,
+      "sha256": "d554202729a40d67eb39fc38759e196ca628cf6f7f3c2679b075fcb9a9f52e80",
+      "preview": "/api/images/a6a2a679ef7d4a83957ee980e0f73718"
+    },
+    "started": 1788676252.9390848,
+    "model": "AdaptLLM/remote-sensing-Qwen2-VL-2B-Instruct",
+    "revision": "7f5dd71bf0f40c282193d50160e848a387a08ffe",
+    "adapter": "lora-pilot-v1",
+    "mode": "pilot_binary",
+    "route": "Single-image optical VQA",
+    "trace": [
+      {
+        "step": "Load pinned checkpoint",
+        "seconds": 4.947
+      },
+      {
+        "step": "Generate model answer",
+        "seconds": 2.024
+      }
+    ],
+    "effective_question": "Is there a water body visible in this image? Answer with only yes or no.",
+    "visual_token_bounds": [
+      64,
+      128
+    ],
+    "answer": "no",
+    "seconds": 13.744,
+    "generation_seconds": 2.024,
+    "peak_allocated_GiB": 4.178,
+    "generated_tokens": 2,
+    "max_new_tokens": 16
+  },
+  {
+    "id": "cc3d05a640b3440994246d62303b32bc",
+    "state": "complete",
+    "stage": "Complete",
+    "question": "how many baseball fields are there?",
+    "image": {
+      "id": "164edbb7d5b74fdab635f30bc8a85975",
+      "name": "sample-baseball-fields.png",
+      "width": 800,
+      "height": 800,
+      "bytes": 1058832,
+      "sha256": "d554202729a40d67eb39fc38759e196ca628cf6f7f3c2679b075fcb9a9f52e80",
+      "preview": "/api/images/164edbb7d5b74fdab635f30bc8a85975"
+    },
+    "started": 1788679421.0494084,
+    "model": "AdaptLLM/remote-sensing-Qwen2-VL-2B-Instruct",
+    "revision": "7f5dd71bf0f40c282193d50160e848a387a08ffe",
+    "adapter": null,
+    "mode": "baseline",
+    "route": "Single-image optical VQA",
+    "trace": [
+      {
+        "step": "Generate model answer",
+        "seconds": 4.397
+      }
+    ],
+    "effective_question": "how many baseball fields are there?",
+    "visual_token_bounds": [
+      256,
+      512
+    ],
+    "answer": "There are four baseball fields in the image. This can be determined by counting the distinct areas that are characteristic of a baseball field, such as the infield dirt, the outfield grass, and the bases. Each of these areas is clearly visible and separate from the others, which confirms the presence of four baseball fields. Therefore, the answer is 4",
+    "seconds": 4.843,
+    "generation_seconds": 4.397,
+    "peak_allocated_GiB": 4.301,
+    "generated_tokens": 70,
+    "max_new_tokens": 128
+  },
+  {
+    "id": "133e5c3059dd4ccca49d9ce3c023802d",
+    "state": "complete",
+    "stage": "Complete",
+    "question": "how many houses are there in the image?",
+    "image": {
+      "id": "164edbb7d5b74fdab635f30bc8a85975",
+      "name": "sample-baseball-fields.png",
+      "width": 800,
+      "height": 800,
+      "bytes": 1058832,
+      "sha256": "d554202729a40d67eb39fc38759e196ca628cf6f7f3c2679b075fcb9a9f52e80",
+      "preview": "/api/images/164edbb7d5b74fdab635f30bc8a85975"
+    },
+    "started": 1788679475.1304777,
+    "model": "AdaptLLM/remote-sensing-Qwen2-VL-2B-Instruct",
+    "revision": "7f5dd71bf0f40c282193d50160e848a387a08ffe",
+    "adapter": null,
+    "mode": "baseline",
+    "route": "Single-image optical VQA",
+    "trace": [
+      {
+        "step": "Generate model answer",
+        "seconds": 3.809
+      }
+    ],
+    "effective_question": "how many houses are there in the image?",
+    "visual_token_bounds": [
+      256,
+      512
+    ],
+    "answer": "There are two houses visible in the image. They are located on the left side of the image, adjacent to the baseball fields. The houses are small and appear to be single-family dwellings. The positioning of the houses suggests they are likely residential and not commercial or recreational facilities. Therefore, the answer is 2",
+    "seconds": 4.028,
+    "generation_seconds": 3.809,
+    "peak_allocated_GiB": 4.301,
+    "generated_tokens": 64,
+    "max_new_tokens": 128
+  },
+  {
+    "id": "6d8185f929724f5f993d801b2b703dd2",
+    "state": "complete",
+    "stage": "Complete",
+    "question": "Is there a water body visible in this image?",
+    "image": {
+      "id": "1d9e8e308fdb45ceb65b0a375f3c38bf",
+      "name": "sample-baseball-fields.png",
+      "width": 800,
+      "height": 800,
+      "bytes": 1058832,
+      "sha256": "d554202729a40d67eb39fc38759e196ca628cf6f7f3c2679b075fcb9a9f52e80",
+      "preview": "/api/images/1d9e8e308fdb45ceb65b0a375f3c38bf"
+    },
+    "started": 1788676316.7590373,
+    "model": "AdaptLLM/remote-sensing-Qwen2-VL-2B-Instruct",
+    "revision": "7f5dd71bf0f40c282193d50160e848a387a08ffe",
+    "adapter": "lora-pilot-v1",
+    "mode": "pilot_binary",
+    "route": "Single-image optical VQA",
+    "trace": [
+      {
+        "step": "Generate model answer",
+        "seconds": 0.472
+      }
+    ],
+    "effective_question": "Is there a water body visible in this image? Answer with only yes or no.",
+    "visual_token_bounds": [
+      64,
+      128
+    ],
+    "answer": "no",
+    "seconds": 1.117,
+    "generation_seconds": 0.472,
+    "peak_allocated_GiB": 4.178,
+    "generated_tokens": 2,
+    "max_new_tokens": 16
+  },
+  {
+    "id": "56811549350a4e88984fe8553fef518b",
+    "state": "complete",
+    "stage": "Complete",
+    "question": "how many baseball fields in the image?",
+    "image": {
+      "id": "582db8b6f1604fd5b10932247ddea929",
+      "name": "sample-baseball-fields.png",
+      "width": 800,
+      "height": 800,
+      "bytes": 1058832,
+      "sha256": "d554202729a40d67eb39fc38759e196ca628cf6f7f3c2679b075fcb9a9f52e80",
+      "preview": "/api/images/582db8b6f1604fd5b10932247ddea929",
+      "geo": null
+    },
+    "started": 1788696210.4353516,
+    "model": "AdaptLLM/remote-sensing-Qwen2-VL-2B-Instruct",
+    "revision": "7f5dd71bf0f40c282193d50160e848a387a08ffe",
+    "adapter": null,
+    "mode": "baseline",
+    "route": "Single-image optical VQA",
+    "trace": [
+      {
+        "step": "Load pinned checkpoint",
+        "seconds": 8.099
+      },
+      {
+        "step": "Generate model answer",
+        "seconds": 7.138
+      }
+    ],
+    "effective_question": "how many baseball fields in the image?",
+    "visual_token_bounds": [
+      256,
+      512
+    ],
+    "answer": "There are four baseball fields in the image. They are arranged in a square pattern, with each field having a distinct diamond shape. The arrangement is symmetrical and suggests a well-maintained and possibly a community or school sports complex. The presence of the road and the parking lot indicates that this facility is likely used for organized sports events, with the potential for spectators and players. Therefore, the answer is 4",
+    "seconds": 23.114,
+    "generation_seconds": 7.138,
+    "peak_allocated_GiB": 4.298,
+    "generated_tokens": 84,
+    "max_new_tokens": 128
+  },
+  {
+    "id": "c1c7c67e28cc4efda9b4adb1e81c3bc5",
+    "state": "complete",
+    "stage": "Complete",
+    "question": "how many cars are there",
+    "image": {
+      "id": "e24ae20b59074ee597862a828213a3ee",
+      "name": "Screenshot 2026-07-09 032644.png",
+      "width": 2081,
+      "height": 1299,
+      "bytes": 1989495,
+      "sha256": "87c51a601b098a909604d71acbfad414c5bb349bd44f811f962078e444520376",
+      "preview": "/api/images/e24ae20b59074ee597862a828213a3ee"
+    },
+    "started": 1788679559.3183317,
+    "model": "AdaptLLM/remote-sensing-Qwen2-VL-2B-Instruct",
+    "revision": "7f5dd71bf0f40c282193d50160e848a387a08ffe",
+    "adapter": null,
+    "mode": "baseline",
+    "route": "Single-image optical VQA",
+    "trace": [
+      {
+        "step": "Generate model answer",
+        "seconds": 6.16
+      }
+    ],
+    "effective_question": "how many cars are there",
+    "visual_token_bounds": [
+      256,
+      512
+    ],
+    "answer": "There are two cars in the image. They are positioned back-to-back on a snow-covered road, with their headlights on, indicating that they are likely in a situation where visibility is low, possibly due to the night time or the presence of snow. The cars are the main subjects of the image, and their positioning and the lighting from their headlights suggest that they are stationary, possibly waiting for someone or simply parked. There are no other vehicles or people in the image, which further emphasizes the isolation of the two cars. Therefore, the answer is 2",
+    "seconds": 6.383,
+    "generation_seconds": 6.16,
+    "peak_allocated_GiB": 4.298,
+    "generated_tokens": 112,
+    "max_new_tokens": 128
+  },
+  {
+    "id": "9d6ba92d81f34162a65019fe304f5b17",
+    "state": "complete",
+    "stage": "Complete",
+    "question": "how many viewing stands are there in the image?",
+    "image": {
+      "id": "164edbb7d5b74fdab635f30bc8a85975",
+      "name": "sample-baseball-fields.png",
+      "width": 800,
+      "height": 800,
+      "bytes": 1058832,
+      "sha256": "d554202729a40d67eb39fc38759e196ca628cf6f7f3c2679b075fcb9a9f52e80",
+      "preview": "/api/images/164edbb7d5b74fdab635f30bc8a85975"
+    },
+    "started": 1788679507.6006632,
+    "model": "AdaptLLM/remote-sensing-Qwen2-VL-2B-Instruct",
+    "revision": "7f5dd71bf0f40c282193d50160e848a387a08ffe",
+    "adapter": null,
+    "mode": "baseline",
+    "route": "Single-image optical VQA",
+    "trace": [
+      {
+        "step": "Generate model answer",
+        "seconds": 2.626
+      }
+    ],
+    "effective_question": "how many viewing stands are there in the image?",
+    "visual_token_bounds": [
+      256,
+      512
+    ],
+    "answer": "There are no visible seating arrangements in the image. The image shows four baseball fields arranged in a square pattern, with no seating visible from this perspective. Therefore, the answer is 0",
+    "seconds": 2.707,
+    "generation_seconds": 2.626,
+    "peak_allocated_GiB": 4.302,
+    "generated_tokens": 38,
+    "max_new_tokens": 128
+  },
+  {
+    "id": "1299645fa48e480dbc468a1fbfc02ca3",
+    "state": "complete",
+    "stage": "Complete",
+    "question": "How many baseball fields are visible? Answer briefly.",
+    "image": {
+      "id": "6df62ed1afbc450cab26ee8037dbbaae",
+      "name": "sample-baseball-fields.png",
+      "width": 800,
+      "height": 800,
+      "bytes": 1058832,
+      "sha256": "d554202729a40d67eb39fc38759e196ca628cf6f7f3c2679b075fcb9a9f52e80",
+      "preview": "/api/images/6df62ed1afbc450cab26ee8037dbbaae"
+    },
+    "started": 1788675268.9745228,
+    "model": "AdaptLLM/remote-sensing-Qwen2-VL-2B-Instruct",
+    "revision": "7f5dd71bf0f40c282193d50160e848a387a08ffe",
+    "adapter": null,
+    "route": "Single-image optical VQA",
+    "trace": [
+      {
+        "step": "Load pinned checkpoint",
+        "seconds": 6.107
+      },
+      {
+        "step": "Generate model answer",
+        "seconds": 4.601
+      }
+    ],
+    "answer": "4",
+    "seconds": 17.093,
+    "generation_seconds": 4.601,
+    "peak_allocated_GiB": 4.299,
+    "generated_tokens": 2,
+    "max_new_tokens": 128
+  },
+  {
+    "id": "c50a59ea983a438aa0c27e2f57597124",
+    "state": "complete",
+    "stage": "Complete",
+    "question": "How many baseball fields are visible? Answer briefly.",
+    "image": {
+      "id": "a6a2a679ef7d4a83957ee980e0f73718",
+      "name": "sample.png",
+      "width": 800,
+      "height": 800,
+      "bytes": 1058832,
+      "sha256": "d554202729a40d67eb39fc38759e196ca628cf6f7f3c2679b075fcb9a9f52e80",
+      "preview": "/api/images/a6a2a679ef7d4a83957ee980e0f73718"
+    },
+    "started": 1788676267.007242,
+    "model": "AdaptLLM/remote-sensing-Qwen2-VL-2B-Instruct",
+    "revision": "7f5dd71bf0f40c282193d50160e848a387a08ffe",
+    "adapter": null,
+    "mode": "baseline",
+    "route": "Single-image optical VQA",
+    "trace": [
+      {
+        "step": "Generate model answer",
+        "seconds": 0.329
+      }
+    ],
+    "effective_question": "How many baseball fields are visible? Answer briefly.",
+    "visual_token_bounds": [
+      256,
+      512
+    ],
+    "answer": "4",
+    "seconds": 0.368,
+    "generation_seconds": 0.329,
+    "peak_allocated_GiB": 4.302,
+    "generated_tokens": 2,
+    "max_new_tokens": 128
+  }
+]

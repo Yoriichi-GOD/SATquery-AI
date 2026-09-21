@@ -1,0 +1,19 @@
+{
+  "id": "mci-test_000585",
+  "kind": "temporal",
+  "name": "MCI test_000585",
+  "source": "LEVIR-MCI official test",
+  "benchmark": "Change caption + road/building masks",
+  "files": [
+    "before.tif",
+    "after.tif"
+  ],
+  "registration": "Publisher paired crops; exact geographic metadata unavailable",
+  "reference_captions": [
+    " a line of houses has been built by the road at the top .",
+    " villas are built along the road at the top of the scene .",
+    " several buildings have been constructed on the bareland beside the roads .",
+    " some villas are built near the crossroad .",
+    " many houses appear along the road ."
+  ]
+}

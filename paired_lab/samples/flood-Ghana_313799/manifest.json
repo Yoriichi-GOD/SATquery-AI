@@ -1,0 +1,28 @@
+{
+  "id": "flood-Ghana_313799",
+  "kind": "water_map",
+  "name": "Ghana \u00b7 313799 (test)",
+  "source": "Sen1Floods11 v1.1 hand-labelled",
+  "benchmark": "Official test split; first chip per event, not selected by prediction quality",
+  "files": [
+    "optical.tif",
+    "sar.tif"
+  ],
+  "source_files": [
+    {
+      "source": "/root/satquery/paired-lab/sen1floods11/S2Hand/Ghana_313799_S2Hand.tif",
+      "source_sha256": "621f5c19765e6e6a28d3a3b8bb357188ecb4d65ab4f14dba38e30bd84b93ce40",
+      "export_sha256": "fee4bc6436158d1d7d60b5f82e1aabb0be35db15a3b0e1c58202bc3e0aa40b6c"
+    },
+    {
+      "source": "/root/satquery/paired-lab/sen1floods11/S1Hand/Ghana_313799_S1Hand.tif",
+      "source_sha256": "4555c98d54ea0ca81e681abc75af20d61774fbbcdc3d48992c3378ebdd5887bc",
+      "export_sha256": "00cf06b1c997da444148f3a7dec45f3f497171be858df5ccfa464b38aace2bf0"
+    }
+  ],
+  "dates": {
+    "optical": "2018/09/19",
+    "sar": "2018/09/18"
+  },
+  "reference": "/root/satquery/paired-lab/sen1floods11/LabelHand/Ghana_313799_LabelHand.tif"
+}

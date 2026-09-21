@@ -1,0 +1,36 @@
+{
+  "file": "test_000494.png",
+  "reference_changeflag": 1,
+  "raw_caption": "some houses are built along the road",
+  "reference_captions": [
+    " a road parallel to the original one appears and several villas are constructed .",
+    " two roads through the scene are constructed and buildings are built between them .",
+    " a road has been built in the corner of the scene and many villas have been built on the bareland between the roads .",
+    " some houses are built near the main road in the center .",
+    " new roads and more buildings appear in the desert ."
+  ],
+  "caption_changeflag_heuristic": 1,
+  "confusion_rows_reference_columns_prediction": [
+    [
+      55029,
+      606,
+      468
+    ],
+    [
+      1586,
+      3273,
+      0
+    ],
+    [
+      1713,
+      0,
+      2861
+    ]
+  ],
+  "predicted_class_pixels": {
+    "0": 58328,
+    "1": 3879,
+    "2": 3329
+  },
+  "gpu_caption": "some houses are built along the road"
+}

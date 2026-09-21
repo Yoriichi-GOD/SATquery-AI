@@ -1,0 +1,254 @@
+[
+  {
+    "image": "car",
+    "run": {
+      "id": "975263ca961f41f58936336dc5b12aa8",
+      "state": "complete",
+      "stage": "Complete",
+      "question": "Describe the visible foreground and background.",
+      "image": {
+        "id": "0f24abf69afe4becb1439cab75551a70",
+        "name": "car.png",
+        "width": 2557,
+        "height": 1597,
+        "bytes": 4923179,
+        "sha256": "c021e00a3cc0c0d4b822036fdb35fc97ab92aa10e2ae16d127116ce8b44fa886",
+        "preview": "/api/images/0f24abf69afe4becb1439cab75551a70",
+        "geo": null
+      },
+      "started": 1789887052.3563886,
+      "model": "AdaptLLM/remote-sensing-Qwen2-VL-2B-Instruct",
+      "revision": "7f5dd71bf0f40c282193d50160e848a387a08ffe",
+      "adapter": null,
+      "mode": "baseline",
+      "route": "Single-image optical VQA",
+      "trace": [
+        {
+          "step": "Generate model answer",
+          "seconds": 3.936
+        }
+      ],
+      "routing": {
+        "tool": "vqa",
+        "rule": "general_visual_question",
+        "reason": "Open visual question answered by the original model; interpretation may be incorrect.",
+        "version": "rules-v5"
+      },
+      "requested_mode": "baseline",
+      "effective_question": "Describe the visible foreground and background.",
+      "visual_token_bounds": [
+        256,
+        512
+      ],
+      "raw_answer": "The visible foreground is the car, which is positioned on a grassy hill. The car is the central focus of the image and is the only object in the immediate view. The background consists of a mountainous landscape, with the car's position suggesting it is either parked or moving away from the viewer. The image captures the car's design and color, highlighting its sleek lines and the contrast between the car and the natural surroundings. The image does not provide any direct information about the location or the context of the car's presence, but it does convey a sense of isolation and the vastness of the natural environment. Therefore, the answer is",
+      "answer_validation": {
+        "policy": "open-visual-v1",
+        "answer": "The visible foreground is the car, which is positioned on a grassy hill. The car is the central focus of the image and is the only object in the immediate view. The background consists of a mountainous landscape, with the car's position suggesting it is either parked or moving away from the viewer. The image captures the car's design and color, highlighting its sleek lines and the contrast between the car and the natural surroundings. The image does not provide any direct information about the location or the context of the car's presence, but it does convey a sense of isolation and the vastness of the natural environment. Therefore, the answer is\n\nModel interpretation; may be inaccurate. Response reached the length limit.",
+        "limitation": "Model interpretation; may be inaccurate. Response reached the length limit.",
+        "raw_truncated": true,
+        "changed": true,
+        "withheld": false,
+        "reasons": [
+          "model_output_preserved",
+          "estimate_label_added"
+        ]
+      },
+      "answer_policy": "open-visual-v1",
+      "answer": "The visible foreground is the car, which is positioned on a grassy hill. The car is the central focus of the image and is the only object in the immediate view. The background consists of a mountainous landscape, with the car's position suggesting it is either parked or moving away from the viewer. The image captures the car's design and color, highlighting its sleek lines and the contrast between the car and the natural surroundings. The image does not provide any direct information about the location or the context of the car's presence, but it does convey a sense of isolation and the vastness of the natural environment. Therefore, the answer is\n\nModel interpretation; may be inaccurate. Response reached the length limit.",
+      "seconds": 4.084,
+      "generation_seconds": 3.936,
+      "peak_allocated_GiB": 4.295,
+      "generated_tokens": 128,
+      "max_new_tokens": 128
+    }
+  },
+  {
+    "image": "car",
+    "run": {
+      "id": "5043f7bbb81847729b545df3a0a4c528",
+      "state": "complete",
+      "stage": "Complete",
+      "question": "What objects and landscape features are visible in this image?",
+      "image": {
+        "id": "0f24abf69afe4becb1439cab75551a70",
+        "name": "car.png",
+        "width": 2557,
+        "height": 1597,
+        "bytes": 4923179,
+        "sha256": "c021e00a3cc0c0d4b822036fdb35fc97ab92aa10e2ae16d127116ce8b44fa886",
+        "preview": "/api/images/0f24abf69afe4becb1439cab75551a70",
+        "geo": null
+      },
+      "started": 1789887056.794003,
+      "model": "AdaptLLM/remote-sensing-Qwen2-VL-2B-Instruct",
+      "revision": "7f5dd71bf0f40c282193d50160e848a387a08ffe",
+      "adapter": null,
+      "mode": "baseline",
+      "route": "Single-image optical VQA",
+      "trace": [
+        {
+          "step": "Generate model answer",
+          "seconds": 4.047
+        }
+      ],
+      "routing": {
+        "tool": "vqa",
+        "rule": "general_visual_question",
+        "reason": "Open visual question answered by the original model; interpretation may be incorrect.",
+        "version": "rules-v5"
+      },
+      "requested_mode": "baseline",
+      "effective_question": "What objects and landscape features are visible in this image?",
+      "visual_token_bounds": [
+        256,
+        512
+      ],
+      "raw_answer": "The objects visible in this image are a sports car and a mountainous landscape. The car is positioned on a grassy hill, facing away from the viewer, with its back towards the camera. The mountain in the background is partially covered with snow, indicating it might be a high-altitude peak, possibly part of a mountain range. The surrounding terrain is a mix of green and brown, suggesting a transition between seasons or different types of vegetation. The image does not provide any direct information about the location or the specific type of car, but the presence of the car in such a scenic setting could suggest a sense of luxury and leisure. Therefore",
+      "answer_validation": {
+        "policy": "open-visual-v1",
+        "answer": "The objects visible in this image are a sports car and a mountainous landscape. The car is positioned on a grassy hill, facing away from the viewer, with its back towards the camera. The mountain in the background is partially covered with snow, indicating it might be a high-altitude peak, possibly part of a mountain range. The surrounding terrain is a mix of green and brown, suggesting a transition between seasons or different types of vegetation. The image does not provide any direct information about the location or the specific type of car, but the presence of the car in such a scenic setting could suggest a sense of luxury and leisure. Therefore\n\nModel interpretation; may be inaccurate. Response reached the length limit.",
+        "limitation": "Model interpretation; may be inaccurate. Response reached the length limit.",
+        "raw_truncated": true,
+        "changed": true,
+        "withheld": false,
+        "reasons": [
+          "model_output_preserved",
+          "estimate_label_added"
+        ]
+      },
+      "answer_policy": "open-visual-v1",
+      "answer": "The objects visible in this image are a sports car and a mountainous landscape. The car is positioned on a grassy hill, facing away from the viewer, with its back towards the camera. The mountain in the background is partially covered with snow, indicating it might be a high-altitude peak, possibly part of a mountain range. The surrounding terrain is a mix of green and brown, suggesting a transition between seasons or different types of vegetation. The image does not provide any direct information about the location or the specific type of car, but the presence of the car in such a scenic setting could suggest a sense of luxury and leisure. Therefore\n\nModel interpretation; may be inaccurate. Response reached the length limit.",
+      "seconds": 4.193,
+      "generation_seconds": 4.047,
+      "peak_allocated_GiB": 4.297,
+      "generated_tokens": 128,
+      "max_new_tokens": 128
+    }
+  },
+  {
+    "image": "baseball",
+    "run": {
+      "id": "c1d999f1249140d791922a43fa0b86b2",
+      "state": "complete",
+      "stage": "Complete",
+      "question": "Describe the visible foreground and background.",
+      "image": {
+        "id": "caa570a444e3432fbdba3c0d6b6b1cdc",
+        "name": "baseball.png",
+        "width": 800,
+        "height": 800,
+        "bytes": 1058832,
+        "sha256": "d554202729a40d67eb39fc38759e196ca628cf6f7f3c2679b075fcb9a9f52e80",
+        "preview": "/api/images/caa570a444e3432fbdba3c0d6b6b1cdc",
+        "geo": null
+      },
+      "started": 1789887061.4397607,
+      "model": "AdaptLLM/remote-sensing-Qwen2-VL-2B-Instruct",
+      "revision": "7f5dd71bf0f40c282193d50160e848a387a08ffe",
+      "adapter": null,
+      "mode": "baseline",
+      "route": "Single-image optical VQA",
+      "trace": [
+        {
+          "step": "Generate model answer",
+          "seconds": 3.913
+        }
+      ],
+      "routing": {
+        "tool": "vqa",
+        "rule": "general_visual_question",
+        "reason": "Open visual question answered by the original model; interpretation may be incorrect.",
+        "version": "rules-v5"
+      },
+      "requested_mode": "baseline",
+      "effective_question": "Describe the visible foreground and background.",
+      "visual_token_bounds": [
+        256,
+        512
+      ],
+      "raw_answer": "The visible foreground is the area immediately in front of the baseball fields, which includes the dirt infield and the grassy areas surrounding the bases. The background is the area beyond the immediate foreground, where the baseball fields are situated. The image does not provide any specific details that would allow for the identification of the location or the teams playing the games. The lack of shadows suggests that the image was taken either on a cloudy day or when the sun was directly overhead. Therefore, the answer is The aerial foreground is Baseball Field and The aerial background is Baseball Field",
+      "answer_validation": {
+        "policy": "open-visual-v1",
+        "answer": "The visible foreground is the area immediately in front of the baseball fields, which includes the dirt infield and the grassy areas surrounding the bases. The background is the area beyond the immediate foreground, where the baseball fields are situated. The image does not provide any specific details that would allow for the identification of the location or the teams playing the games. The lack of shadows suggests that the image was taken either on a cloudy day or when the sun was directly overhead. Therefore, the answer is The aerial foreground is Baseball Field and The aerial background is Baseball Field\n\nModel interpretation; may be inaccurate.",
+        "limitation": "Model interpretation; may be inaccurate.",
+        "raw_truncated": false,
+        "changed": true,
+        "withheld": false,
+        "reasons": [
+          "model_output_preserved",
+          "estimate_label_added"
+        ]
+      },
+      "answer_policy": "open-visual-v1",
+      "answer": "The visible foreground is the area immediately in front of the baseball fields, which includes the dirt infield and the grassy areas surrounding the bases. The background is the area beyond the immediate foreground, where the baseball fields are situated. The image does not provide any specific details that would allow for the identification of the location or the teams playing the games. The lack of shadows suggests that the image was taken either on a cloudy day or when the sun was directly overhead. Therefore, the answer is The aerial foreground is Baseball Field and The aerial background is Baseball Field\n\nModel interpretation; may be inaccurate.",
+      "seconds": 3.951,
+      "generation_seconds": 3.913,
+      "peak_allocated_GiB": 4.298,
+      "generated_tokens": 111,
+      "max_new_tokens": 128
+    }
+  },
+  {
+    "image": "baseball",
+    "run": {
+      "id": "bdde9d282cc44651a680497df8360f88",
+      "state": "complete",
+      "stage": "Complete",
+      "question": "What objects and landscape features are visible in this image?",
+      "image": {
+        "id": "caa570a444e3432fbdba3c0d6b6b1cdc",
+        "name": "baseball.png",
+        "width": 800,
+        "height": 800,
+        "bytes": 1058832,
+        "sha256": "d554202729a40d67eb39fc38759e196ca628cf6f7f3c2679b075fcb9a9f52e80",
+        "preview": "/api/images/caa570a444e3432fbdba3c0d6b6b1cdc",
+        "geo": null
+      },
+      "started": 1789887065.478083,
+      "model": "AdaptLLM/remote-sensing-Qwen2-VL-2B-Instruct",
+      "revision": "7f5dd71bf0f40c282193d50160e848a387a08ffe",
+      "adapter": null,
+      "mode": "baseline",
+      "route": "Single-image optical VQA",
+      "trace": [
+        {
+          "step": "Generate model answer",
+          "seconds": 4.024
+        }
+      ],
+      "routing": {
+        "tool": "vqa",
+        "rule": "general_visual_question",
+        "reason": "Open visual question answered by the original model; interpretation may be incorrect.",
+        "version": "rules-v5"
+      },
+      "requested_mode": "baseline",
+      "effective_question": "What objects and landscape features are visible in this image?",
+      "visual_token_bounds": [
+        256,
+        512
+      ],
+      "raw_answer": "The objects and landscape features visible in this image are four baseball fields arranged in a square pattern. These fields are likely part of a larger sports complex or park. The central area is a dirt infield, which is common in baseball fields, and the surrounding grass is typical of a baseball diamond. The orientation of the fields suggests they are designed for simultaneous play, allowing multiple games to be conducted simultaneously. The presence of trees and a road bordering the complex indicates that this facility is located within a larger park or recreational area. The image does not provide any direct information about the location or the specific use of the complex beyond its recreational and sports functions",
+      "answer_validation": {
+        "policy": "open-visual-v1",
+        "answer": "The objects and landscape features visible in this image are four baseball fields arranged in a square pattern. These fields are likely part of a larger sports complex or park. The central area is a dirt infield, which is common in baseball fields, and the surrounding grass is typical of a baseball diamond. The orientation of the fields suggests they are designed for simultaneous play, allowing multiple games to be conducted simultaneously. The presence of trees and a road bordering the complex indicates that this facility is located within a larger park or recreational area. The image does not provide any direct information about the location or the specific use of the complex beyond its recreational and sports functions\n\nModel interpretation; may be inaccurate. Response reached the length limit.",
+        "limitation": "Model interpretation; may be inaccurate. Response reached the length limit.",
+        "raw_truncated": true,
+        "changed": true,
+        "withheld": false,
+        "reasons": [
+          "model_output_preserved",
+          "estimate_label_added"
+        ]
+      },
+      "answer_policy": "open-visual-v1",
+      "answer": "The objects and landscape features visible in this image are four baseball fields arranged in a square pattern. These fields are likely part of a larger sports complex or park. The central area is a dirt infield, which is common in baseball fields, and the surrounding grass is typical of a baseball diamond. The orientation of the fields suggests they are designed for simultaneous play, allowing multiple games to be conducted simultaneously. The presence of trees and a road bordering the complex indicates that this facility is located within a larger park or recreational area. The image does not provide any direct information about the location or the specific use of the complex beyond its recreational and sports functions\n\nModel interpretation; may be inaccurate. Response reached the length limit.",
+      "seconds": 4.065,
+      "generation_seconds": 4.024,
+      "peak_allocated_GiB": 4.299,
+      "generated_tokens": 128,
+      "max_new_tokens": 128
+    }
+  }
+]

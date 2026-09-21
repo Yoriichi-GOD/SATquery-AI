@@ -1,0 +1,35 @@
+{
+  "file": "test_000644.png",
+  "reference_changeflag": 1,
+  "raw_caption": "a t-shaped road is built with villas built along",
+  "reference_captions": [
+    " some roads and houses with a swimming pool appear .",
+    " many detached houses and are constructed beside the road on the bareland .",
+    " a villa is built on bareland .",
+    " several buildings and a path and a road appear .",
+    " two intersecting roads and some houses are constructed in the clearing ."
+  ],
+  "caption_changeflag_heuristic": 1,
+  "confusion_rows_reference_columns_prediction": [
+    [
+      50309,
+      316,
+      693
+    ],
+    [
+      356,
+      7962,
+      0
+    ],
+    [
+      288,
+      0,
+      5612
+    ]
+  ],
+  "predicted_class_pixels": {
+    "0": 50953,
+    "1": 8278,
+    "2": 6305
+  }
+}

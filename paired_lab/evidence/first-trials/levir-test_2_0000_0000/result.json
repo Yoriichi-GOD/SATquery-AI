@@ -1,0 +1,40 @@
+{
+  "task": "temporal",
+  "answer": "The model marks possible building-related changes across 25.26% of the full crop, with the most marked pixels in the lower left. This binary map does not distinguish construction from removal.",
+  "changed_pixels": 16552,
+  "denominator_pixels": 65536,
+  "coverage_percent": 25.25634765625,
+  "quadrant_pixels": {
+    "upper left": 2683,
+    "upper right": 3567,
+    "lower left": 5231,
+    "lower right": 5071
+  },
+  "direction": "not determined",
+  "seconds": 1.1435356200000086,
+  "confidence": {
+    "kind": "uncalibrated model scores",
+    "mean_marked_score": 0.9482842087745667
+  },
+  "trace": [
+    {
+      "tool": "ChangeFormerV6 LEVIR",
+      "revision": "afd1b7ed640aa265a2c730de958416ae7356a2f9",
+      "device": "cpu",
+      "input_shape": [
+        256,
+        256,
+        3
+      ],
+      "normalization": "RGB / 127.5 - 1",
+      "threshold": 0.5,
+      "output": "last decoder head; two-class softmax",
+      "checkpoint_sha256": "db0dd783c3c3f27d02f55f24fa8199d2b2b47c422c7f7bd2e4d96e2fa65d69f2"
+    }
+  ],
+  "limitations": [
+    "Building-change specialist; not general change VQA.",
+    "No increase/decrease or surveyed-area claim.",
+    "LEVIR development evidence does not establish CDVQA or ISRO/SAC performance."
+  ]
+}

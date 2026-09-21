@@ -1,0 +1,166 @@
+{
+  "seed": 20260921,
+  "cases": [
+    {
+      "image_id": 327,
+      "question_id": 32711,
+      "question": "Is this image rural or urban?",
+      "reference": "rural",
+      "category": "rural_urban",
+      "source_scene": "S2A_MSIL1C_20160720T105032_N0204_R051_T31UFU_20160720T105547",
+      "image": "/mnt/c/Users/nrgen/.codex/visualizations/2026/09/19/01a0b9f9-b20e-71a2-b139-ca9ab926b94e/benchmark-20260921/vqa-inputs/327.png",
+      "sha256": "5acd22b508a379b2d1e417e9e38d1f4ac3ab1c0aef6b9e813c90c7c945a6ce3e"
+    },
+    {
+      "image_id": 245,
+      "question_id": 24508,
+      "question": "Is this image rural or urban?",
+      "reference": "rural",
+      "category": "rural_urban",
+      "source_scene": "S2A_MSIL1C_20160720T105032_N0204_R051_T31UFU_20160720T105547",
+      "image": "/mnt/c/Users/nrgen/.codex/visualizations/2026/09/19/01a0b9f9-b20e-71a2-b139-ca9ab926b94e/benchmark-20260921/vqa-inputs/245.png",
+      "sha256": "d9f9ced261109bcd24d9d411bd82a10a1e11e0db8cf93e7c43156ea1a111fce0"
+    },
+    {
+      "image_id": 252,
+      "question_id": 25208,
+      "question": "Is this image rural or urban?",
+      "reference": "rural",
+      "category": "rural_urban",
+      "source_scene": "S2A_MSIL1C_20160720T105032_N0204_R051_T31UFU_20160720T105547",
+      "image": "/mnt/c/Users/nrgen/.codex/visualizations/2026/09/19/01a0b9f9-b20e-71a2-b139-ca9ab926b94e/benchmark-20260921/vqa-inputs/252.png",
+      "sha256": "4f82e475890a9d92a223919ec10bb20097f926041c53e65ccede4e818c23fc01"
+    },
+    {
+      "image_id": 263,
+      "question_id": 26308,
+      "question": "Is this image rural or urban?",
+      "reference": "rural",
+      "category": "rural_urban",
+      "source_scene": "S2A_MSIL1C_20160720T105032_N0204_R051_T31UFU_20160720T105547",
+      "image": "/mnt/c/Users/nrgen/.codex/visualizations/2026/09/19/01a0b9f9-b20e-71a2-b139-ca9ab926b94e/benchmark-20260921/vqa-inputs/263.png",
+      "sha256": "734eef83e9cabf16b4e3a90c9bffafebdd1e61134075370fb376f5d5f2e84edf"
+    },
+    {
+      "image_id": 301,
+      "question_id": 30111,
+      "question": "Is this image rural or urban?",
+      "reference": "rural",
+      "category": "rural_urban",
+      "source_scene": "S2A_MSIL1C_20160720T105032_N0204_R051_T31UFU_20160720T105547",
+      "image": "/mnt/c/Users/nrgen/.codex/visualizations/2026/09/19/01a0b9f9-b20e-71a2-b139-ca9ab926b94e/benchmark-20260921/vqa-inputs/301.png",
+      "sha256": "42d6e128c2481fd076560e034bcb1326d5ec5489d915c74bc2759a2c0fdf0385"
+    },
+    {
+      "image_id": 261,
+      "question_id": 26108,
+      "question": "Is this image rural or urban?",
+      "reference": "rural",
+      "category": "rural_urban",
+      "source_scene": "S2A_MSIL1C_20160720T105032_N0204_R051_T31UFU_20160720T105547",
+      "image": "/mnt/c/Users/nrgen/.codex/visualizations/2026/09/19/01a0b9f9-b20e-71a2-b139-ca9ab926b94e/benchmark-20260921/vqa-inputs/261.png",
+      "sha256": "aa57caf48121dc3a41b6d73f0770e9ea9bc6b0a922ddef912c2ad0714c2605e8"
+    },
+    {
+      "image_id": 302,
+      "question_id": 30211,
+      "question": "Is this image rural or urban?",
+      "reference": "rural",
+      "category": "rural_urban",
+      "source_scene": "S2A_MSIL1C_20160720T105032_N0204_R051_T31UFU_20160720T105547",
+      "image": "/mnt/c/Users/nrgen/.codex/visualizations/2026/09/19/01a0b9f9-b20e-71a2-b139-ca9ab926b94e/benchmark-20260921/vqa-inputs/302.png",
+      "sha256": "827cb3ccec11b932c76cd84261e5caf1b80779e3a232cfb9999df314082eb200"
+    },
+    {
+      "image_id": 276,
+      "question_id": 27608,
+      "question": "Is this image rural or urban?",
+      "reference": "rural",
+      "category": "rural_urban",
+      "source_scene": "S2A_MSIL1C_20160720T105032_N0204_R051_T31UFU_20160720T105547",
+      "image": "/mnt/c/Users/nrgen/.codex/visualizations/2026/09/19/01a0b9f9-b20e-71a2-b139-ca9ab926b94e/benchmark-20260921/vqa-inputs/276.png",
+      "sha256": "3f22c916556c4153f91db20f5d22ca3eccbebef6cc97b8bf14394525b8586d8f"
+    },
+    {
+      "image_id": 234,
+      "question_id": 23408,
+      "question": "Is this image rural or urban?",
+      "reference": "rural",
+      "category": "rural_urban",
+      "source_scene": "S2A_MSIL1C_20160720T105032_N0204_R051_T31UFU_20160720T105547",
+      "image": "/mnt/c/Users/nrgen/.codex/visualizations/2026/09/19/01a0b9f9-b20e-71a2-b139-ca9ab926b94e/benchmark-20260921/vqa-inputs/234.png",
+      "sha256": "7b46c151f43cf48e75f73008c62801b23970b1baef4cad4fbf280f8d65100b9c"
+    },
+    {
+      "image_id": 308,
+      "question_id": 30811,
+      "question": "Is this image rural or urban?",
+      "reference": "urban",
+      "category": "rural_urban",
+      "source_scene": "S2A_MSIL1C_20160720T105032_N0204_R051_T31UFU_20160720T105547",
+      "image": "/mnt/c/Users/nrgen/.codex/visualizations/2026/09/19/01a0b9f9-b20e-71a2-b139-ca9ab926b94e/benchmark-20260921/vqa-inputs/308.png",
+      "sha256": "19829386a288ff29f957e14249a6a7b4b8587d303f20c0ebf73db214fa196cf8"
+    },
+    {
+      "image_id": 275,
+      "question_id": 27508,
+      "question": "Is this image rural or urban?",
+      "reference": "urban",
+      "category": "rural_urban",
+      "source_scene": "S2A_MSIL1C_20160720T105032_N0204_R051_T31UFU_20160720T105547",
+      "image": "/mnt/c/Users/nrgen/.codex/visualizations/2026/09/19/01a0b9f9-b20e-71a2-b139-ca9ab926b94e/benchmark-20260921/vqa-inputs/275.png",
+      "sha256": "de40126dcc963f9a9831f0d3345b13d520c7d865e0b61775cb2465ebf1ac5fec"
+    },
+    {
+      "image_id": 317,
+      "question_id": 31711,
+      "question": "Is this image rural or urban?",
+      "reference": "urban",
+      "category": "rural_urban",
+      "source_scene": "S2A_MSIL1C_20160720T105032_N0204_R051_T31UFU_20160720T105547",
+      "image": "/mnt/c/Users/nrgen/.codex/visualizations/2026/09/19/01a0b9f9-b20e-71a2-b139-ca9ab926b94e/benchmark-20260921/vqa-inputs/317.png",
+      "sha256": "aaf2e16585489835a79a86db57809794e2c768fdc75790da161466c8c9190380"
+    },
+    {
+      "image_id": 326,
+      "question_id": 32611,
+      "question": "Is this image rural or urban?",
+      "reference": "urban",
+      "category": "rural_urban",
+      "source_scene": "S2A_MSIL1C_20160720T105032_N0204_R051_T31UFU_20160720T105547",
+      "image": "/mnt/c/Users/nrgen/.codex/visualizations/2026/09/19/01a0b9f9-b20e-71a2-b139-ca9ab926b94e/benchmark-20260921/vqa-inputs/326.png",
+      "sha256": "7874d389eb65307d932fad6b1f0a599400cc26f475915e14f3fd03679b322082"
+    },
+    {
+      "image_id": 287,
+      "question_id": 28709,
+      "question": "Is this image rural or urban?",
+      "reference": "urban",
+      "category": "rural_urban",
+      "source_scene": "S2A_MSIL1C_20160720T105032_N0204_R051_T31UFU_20160720T105547",
+      "image": "/mnt/c/Users/nrgen/.codex/visualizations/2026/09/19/01a0b9f9-b20e-71a2-b139-ca9ab926b94e/benchmark-20260921/vqa-inputs/287.png",
+      "sha256": "36407578c3d09bfc599721df8c529992cb2ccd04bdd8791df5b96847d20dc9c6"
+    },
+    {
+      "image_id": 305,
+      "question_id": 30511,
+      "question": "Is this image rural or urban?",
+      "reference": "urban",
+      "category": "rural_urban",
+      "source_scene": "S2A_MSIL1C_20160720T105032_N0204_R051_T31UFU_20160720T105547",
+      "image": "/mnt/c/Users/nrgen/.codex/visualizations/2026/09/19/01a0b9f9-b20e-71a2-b139-ca9ab926b94e/benchmark-20260921/vqa-inputs/305.png",
+      "sha256": "dc2d3fab4bf4f1136b4c607a71409d396154a161b218b03da61367974797377c"
+    },
+    {
+      "image_id": 300,
+      "question_id": 30011,
+      "question": "Is this image rural or urban?",
+      "reference": "urban",
+      "category": "rural_urban",
+      "source_scene": "S2A_MSIL1C_20160720T105032_N0204_R051_T31UFU_20160720T105547",
+      "image": "/mnt/c/Users/nrgen/.codex/visualizations/2026/09/19/01a0b9f9-b20e-71a2-b139-ca9ab926b94e/benchmark-20260921/vqa-inputs/300.png",
+      "sha256": "a8805e11c0db28cd12007fc249a21d7026b608a585bc79a79c92a9fe7f58e138"
+    }
+  ],
+  "scope": "Up to 12 per answer/category RSVQA-LR official test questions; availability-limited, not necessarily balanced; local prior image IDs and local training source scenes excluded. Upstream model pretraining exposure unknown. Not full benchmark; published labels may be noisy. Original presence wording retained; refusals count separately."
+}

@@ -1,0 +1,108 @@
+{
+  "version": "grounding-lab-v1",
+  "category": "stadium",
+  "prompt": "a stadium.",
+  "mode": "both",
+  "image": {
+    "width": 500,
+    "height": 264,
+    "sha256": "da733a52a60a5c61655fc1f496de20114595110b45fe81e656d1b25851b7c2d2"
+  },
+  "models": [
+    {
+      "model": "IDEA-Research/grounding-dino-tiny",
+      "revision": "a2bb814dd30d776dcf7e30523b00659f4f141c71",
+      "path": "/root/.cache/huggingface/hub/models--IDEA-Research--grounding-dino-tiny/snapshots/a2bb814dd30d776dcf7e30523b00659f4f141c71",
+      "license": "apache-2.0"
+    },
+    {
+      "model": "facebook/sam-vit-base",
+      "revision": "70c1a07f894ebb5b307fd9eaaee97b9dfc16068f",
+      "path": "/root/.cache/huggingface/hub/models--facebook--sam-vit-base/snapshots/70c1a07f894ebb5b307fd9eaaee97b9dfc16068f",
+      "license": "apache-2.0"
+    }
+  ],
+  "settings": {
+    "box_threshold": 0.3,
+    "text_threshold": 0.25,
+    "nms_iou": 0.5,
+    "max_objects": 24
+  },
+  "raw_candidates": 2,
+  "raw_proposals": [
+    {
+      "box_xyxy": [
+        2.122804641723633,
+        0.8974342346191406,
+        486.2271423339844,
+        262.7644348144531
+      ],
+      "score": 0.4587371051311493
+    },
+    {
+      "box_xyxy": [
+        140.92266845703125,
+        17.792068481445312,
+        347.0362548828125,
+        236.98776245117188
+      ],
+      "score": 0.370440810918808
+    }
+  ],
+  "excluded_enclosing_proposals": [
+    0
+  ],
+  "detections": [
+    {
+      "id": 1,
+      "box_xyxy": [
+        140.92266845703125,
+        17.792068481445312,
+        347.0362548828125,
+        236.98776245117188
+      ],
+      "detector_score": 0.370440810918808,
+      "mask_pixels": 34793,
+      "sam_predicted_iou": 0.9908875226974487
+    }
+  ],
+  "objects": 1,
+  "capped": false,
+  "segmented_objects": 1,
+  "union_mask_pixels": 34793,
+  "total_image_pixels": 132000,
+  "union_mask_percent": 26.3583,
+  "pixel_statistics_available": true,
+  "trace": [
+    {
+      "step": "Load pinned Grounding DINO",
+      "seconds": 1.196
+    },
+    {
+      "step": "Detect, threshold, remove enclosing frame proposals and suppress duplicates",
+      "seconds": 16.959
+    },
+    {
+      "step": "Load pinned SAM Base",
+      "seconds": 0.563
+    },
+    {
+      "step": "Box-prompted segmentation; choose highest SAM predicted IoU mask",
+      "seconds": 1.103
+    },
+    {
+      "step": "Render boxes, outlines and instance masks",
+      "seconds": 0.093
+    }
+  ],
+  "seconds": 20.71,
+  "peak_gpu_GiB": 2.678,
+  "limitations": [
+    "Experimental pretrained models; no remote-sensing fine-tuning or general accuracy claim.",
+    "Detector score and SAM predicted IoU are model scores, not measured correctness.",
+    "A mask follows a proposed box; it cannot prove the object identity.",
+    "Pixel coverage is the union of predicted masks, not NDVI, hectares or surveyed area.",
+    "Instance PNG assigns overlaps to the first score-ranked object; NPZ preserves overlapping masks.",
+    "Small, obscured or densely packed objects may be missed. Zero candidates means none passed the settings, not proof of absence."
+  ]
+}

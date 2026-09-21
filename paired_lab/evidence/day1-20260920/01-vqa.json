@@ -1,0 +1,214 @@
+{
+  "state": "complete",
+  "stage": "Complete",
+  "plan": {
+    "task": "vqa",
+    "version": "unified-rules-v3",
+    "specialist": "Remote-sensing Qwen2-VL-2B",
+    "device": "CUDA GPU",
+    "maturity": "supported",
+    "reason": "Baseball/softball field count estimated by VQA; an original and mirrored image must agree. No object boxes or verified detection are produced.",
+    "decision": {
+      "tool": "vqa",
+      "rule": "baseball_count",
+      "reason": "Baseball/softball field count estimated by VQA; an original and mirrored image must agree. No object boxes or verified detection are produced.",
+      "version": "rules-v5"
+    },
+    "mode": "baseline",
+    "threshold": 0.5,
+    "steps": [
+      "validate image",
+      "vqa",
+      "save evidence"
+    ]
+  },
+  "events": [
+    {
+      "stage": "Starting Remote-sensing Qwen2-VL-2B",
+      "at": "2026-09-19T21:55:55Z"
+    },
+    {
+      "stage": "Preparing single-image specialist input",
+      "at": "2026-09-19T21:55:55Z"
+    },
+    {
+      "stage": "Preparing image",
+      "at": "2026-09-19T21:55:56Z"
+    },
+    {
+      "stage": "Loading local model",
+      "at": "2026-09-19T21:56:02Z"
+    },
+    {
+      "stage": "Analyzing image",
+      "at": "2026-09-19T21:56:13Z"
+    },
+    {
+      "stage": "Describing scene",
+      "at": "2026-09-19T21:56:21Z"
+    },
+    {
+      "stage": "Complete",
+      "at": "2026-09-19T21:56:23Z"
+    },
+    {
+      "stage": "Collecting single-image evidence",
+      "at": "2026-09-19T21:56:23Z"
+    },
+    {
+      "stage": "Saving result and original inputs",
+      "at": "2026-09-19T21:56:23Z"
+    },
+    {
+      "stage": "Packaging evidence",
+      "at": "2026-09-19T21:56:23Z"
+    }
+  ],
+  "result": {
+    "task": "vqa",
+    "answer": "4 identifiable baseball/softball diamonds visible.\n\nVQA estimate; partial or obscured fields can affect the count.\n\nScene description (model interpretation):\nThere are four baseball fields arranged in a square. The fields are surrounded by grass and a road is on one side of the square. There are trees and buildings around the square.",
+    "seconds": 27.204,
+    "statistics": null,
+    "trace": [
+      {
+        "step": "Load pinned checkpoint",
+        "seconds": 11.211
+      },
+      {
+        "step": "Compare original and mirrored image counts",
+        "seconds": 7.704
+      },
+      {
+        "step": "Generate separate scene description",
+        "seconds": 1.777
+      },
+      {
+        "tool": "Preserved main workspace",
+        "run_id": "443c2271e0e74ecdad7de5c9f6a57205",
+        "model": "AdaptLLM/remote-sensing-Qwen2-VL-2B-Instruct",
+        "revision": "7f5dd71bf0f40c282193d50160e848a387a08ffe",
+        "mode": "baseline",
+        "routing": {
+          "tool": "vqa",
+          "rule": "baseball_count",
+          "reason": "Baseball/softball field count estimated by VQA; an original and mirrored image must agree. No object boxes or verified detection are produced.",
+          "version": "rules-v5"
+        }
+      }
+    ],
+    "limitations": [
+      "Model descriptions and visual counts remain interpretations, not verified measurements."
+    ],
+    "confidence": {
+      "kind": "See original run evidence; no invented confidence score."
+    },
+    "execution": {
+      "task": "vqa",
+      "version": "unified-rules-v3",
+      "specialist": "Remote-sensing Qwen2-VL-2B",
+      "device": "CUDA GPU",
+      "maturity": "supported",
+      "reason": "Baseball/softball field count estimated by VQA; an original and mirrored image must agree. No object boxes or verified detection are produced.",
+      "decision": {
+        "tool": "vqa",
+        "rule": "baseball_count",
+        "reason": "Baseball/softball field count estimated by VQA; an original and mirrored image must agree. No object boxes or verified detection are produced.",
+        "version": "rules-v5"
+      },
+      "mode": "baseline",
+      "threshold": 0.5,
+      "steps": [
+        "validate image",
+        "vqa",
+        "save evidence"
+      ]
+    },
+    "id": "265980c55b714414a3f87f9a893acbdf",
+    "query": "How many baseball fields are visible?",
+    "input_checks": {
+      "task": "vqa",
+      "inputs": [
+        {
+          "id": "bff1791c698e4f508bc172dc4a88778a",
+          "name": "user-optical.png",
+          "width": 800,
+          "height": 800,
+          "bytes": 1058832,
+          "sha256": "d554202729a40d67eb39fc38759e196ca628cf6f7f3c2679b075fcb9a9f52e80",
+          "preview": "/api/images/dec51b99860f40caacf0d1a6860f6543",
+          "geo": null,
+          "main_id": "dec51b99860f40caacf0d1a6860f6543",
+          "modality": "optical",
+          "is_single": true
+        }
+      ],
+      "plan": {
+        "task": "vqa",
+        "version": "unified-rules-v3",
+        "specialist": "Remote-sensing Qwen2-VL-2B",
+        "device": "CUDA GPU",
+        "maturity": "supported",
+        "reason": "Baseball/softball field count estimated by VQA; an original and mirrored image must agree. No object boxes or verified detection are produced.",
+        "decision": {
+          "tool": "vqa",
+          "rule": "baseball_count",
+          "reason": "Baseball/softball field count estimated by VQA; an original and mirrored image must agree. No object boxes or verified detection are produced.",
+          "version": "rules-v5"
+        },
+        "mode": "baseline",
+        "threshold": 0.5,
+        "steps": [
+          "validate image",
+          "vqa",
+          "save evidence"
+        ]
+      }
+    },
+    "controller": "unified-rules-v3",
+    "created_at": "2026-09-19T21:56:23Z",
+    "execution_events": [
+      {
+        "stage": "Starting Remote-sensing Qwen2-VL-2B",
+        "at": "2026-09-19T21:55:55Z"
+      },
+      {
+        "stage": "Preparing single-image specialist input",
+        "at": "2026-09-19T21:55:55Z"
+      },
+      {
+        "stage": "Preparing image",
+        "at": "2026-09-19T21:55:56Z"
+      },
+      {
+        "stage": "Loading local model",
+        "at": "2026-09-19T21:56:02Z"
+      },
+      {
+        "stage": "Analyzing image",
+        "at": "2026-09-19T21:56:13Z"
+      },
+      {
+        "stage": "Describing scene",
+        "at": "2026-09-19T21:56:21Z"
+      },
+      {
+        "stage": "Complete",
+        "at": "2026-09-19T21:56:23Z"
+      },
+      {
+        "stage": "Collecting single-image evidence",
+        "at": "2026-09-19T21:56:23Z"
+      },
+      {
+        "stage": "Saving result and original inputs",
+        "at": "2026-09-19T21:56:23Z"
+      },
+      {
+        "stage": "Packaging evidence",
+        "at": "2026-09-19T21:56:23Z"
+      }
+    ],
+    "work_seconds_before_zip": 27.67563404500106
+  },
+  "request_seconds": 27.7497320399998
+}

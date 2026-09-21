@@ -1,0 +1,97 @@
+{
+  "version": "grounding-lab-v1",
+  "category": "sports field",
+  "prompt": "a sports field.",
+  "mode": "both",
+  "image": {
+    "width": 800,
+    "height": 800,
+    "sha256": "d554202729a40d67eb39fc38759e196ca628cf6f7f3c2679b075fcb9a9f52e80"
+  },
+  "models": [
+    {
+      "model": "IDEA-Research/grounding-dino-tiny",
+      "revision": "a2bb814dd30d776dcf7e30523b00659f4f141c71",
+      "path": "/root/.cache/huggingface/hub/models--IDEA-Research--grounding-dino-tiny/snapshots/a2bb814dd30d776dcf7e30523b00659f4f141c71",
+      "license": "apache-2.0"
+    },
+    {
+      "model": "facebook/sam-vit-base",
+      "revision": "70c1a07f894ebb5b307fd9eaaee97b9dfc16068f",
+      "path": "/root/.cache/huggingface/hub/models--facebook--sam-vit-base/snapshots/70c1a07f894ebb5b307fd9eaaee97b9dfc16068f",
+      "license": "apache-2.0"
+    }
+  ],
+  "settings": {
+    "box_threshold": 0.3,
+    "text_threshold": 0.25,
+    "nms_iou": 0.5,
+    "max_objects": 24
+  },
+  "raw_candidates": 1,
+  "raw_proposals": [
+    {
+      "box_xyxy": [
+        55.57756423950195,
+        5.897092819213867,
+        791.22998046875,
+        786.7628173828125
+      ],
+      "score": 0.3472515940666199
+    }
+  ],
+  "excluded_enclosing_proposals": [],
+  "detections": [
+    {
+      "id": 1,
+      "box_xyxy": [
+        55.57756423950195,
+        5.897092819213867,
+        791.22998046875,
+        786.7628173828125
+      ],
+      "detector_score": 0.3472515940666199,
+      "mask_pixels": 521096,
+      "sam_predicted_iou": 0.9666414856910706
+    }
+  ],
+  "objects": 1,
+  "capped": false,
+  "segmented_objects": 1,
+  "union_mask_pixels": 521096,
+  "total_image_pixels": 640000,
+  "union_mask_percent": 81.4213,
+  "pixel_statistics_available": true,
+  "trace": [
+    {
+      "step": "Load pinned Grounding DINO",
+      "seconds": 0.48
+    },
+    {
+      "step": "Detect, threshold, remove enclosing frame proposals and suppress duplicates",
+      "seconds": 2.185
+    },
+    {
+      "step": "Load pinned SAM Base",
+      "seconds": 0.146
+    },
+    {
+      "step": "Box-prompted segmentation; choose highest SAM predicted IoU mask",
+      "seconds": 0.631
+    },
+    {
+      "step": "Render boxes, outlines and instance masks",
+      "seconds": 0.527
+    }
+  ],
+  "seconds": 4.801,
+  "peak_gpu_GiB": 2.678,
+  "limitations": [
+    "Experimental pretrained models; no remote-sensing fine-tuning or general accuracy claim.",
+    "Detector score and SAM predicted IoU are model scores, not measured correctness.",
+    "A mask follows a proposed box; it cannot prove the object identity.",
+    "Pixel coverage is the union of predicted masks, not NDVI, hectares or surveyed area.",
+    "Instance PNG assigns overlaps to the first score-ranked object; NPZ preserves overlapping masks.",
+    "Small, obscured or densely packed objects may be missed. Zero candidates means none passed the settings, not proof of absence."
+  ]
+}

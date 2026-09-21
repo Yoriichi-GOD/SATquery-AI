@@ -1,0 +1,92 @@
+[
+  {
+    "scene": "assam-monsoon",
+    "threshold": 0.3,
+    "objects": 0,
+    "raw": 1,
+    "coverage": 0.0,
+    "capped": false,
+    "seconds": 3.78
+  },
+  {
+    "scene": "assam-monsoon",
+    "threshold": 0.2,
+    "objects": 0,
+    "raw": 1,
+    "coverage": 0.0,
+    "capped": false,
+    "seconds": 2.901
+  },
+  {
+    "scene": "bengaluru-lake-city",
+    "threshold": 0.3,
+    "objects": 0,
+    "raw": 1,
+    "coverage": 0.0,
+    "capped": false,
+    "seconds": 3.562
+  },
+  {
+    "scene": "bengaluru-lake-city",
+    "threshold": 0.2,
+    "objects": 3,
+    "raw": 4,
+    "coverage": 75.9949,
+    "capped": false,
+    "seconds": 5.124
+  },
+  {
+    "scene": "jaisalmer-arid",
+    "threshold": 0.3,
+    "objects": 0,
+    "raw": 1,
+    "coverage": 0.0,
+    "capped": false,
+    "seconds": 2.861
+  },
+  {
+    "scene": "jaisalmer-arid",
+    "threshold": 0.2,
+    "objects": 1,
+    "raw": 2,
+    "coverage": 3.4416,
+    "capped": false,
+    "seconds": 4.221
+  },
+  {
+    "scene": "punjab-farmland",
+    "threshold": 0.3,
+    "objects": 0,
+    "raw": 1,
+    "coverage": 0.0,
+    "capped": false,
+    "seconds": 3.627
+  },
+  {
+    "scene": "punjab-farmland",
+    "threshold": 0.2,
+    "objects": 0,
+    "raw": 1,
+    "coverage": 0.0,
+    "capped": false,
+    "seconds": 5.54
+  },
+  {
+    "scene": "sundarbans-coast",
+    "threshold": 0.3,
+    "objects": 1,
+    "raw": 2,
+    "coverage": 5.8857,
+    "capped": false,
+    "seconds": 4.639
+  },
+  {
+    "scene": "sundarbans-coast",
+    "threshold": 0.2,
+    "objects": 2,
+    "raw": 3,
+    "coverage": 73.7976,
+    "capped": false,
+    "seconds": 4.672
+  }
+]

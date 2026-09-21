@@ -1,0 +1,35 @@
+{
+  "file": "test_001638.png",
+  "reference_changeflag": 1,
+  "raw_caption": "the scene is the same as before",
+  "reference_captions": [
+    " a few rooms are missing in the building complex .",
+    " four more buildings and a road through the woods appear .",
+    " some houses are built in the trees along the road .",
+    " some houses are built among the other houses .",
+    " a house appears at the top and three are built on the left ."
+  ],
+  "caption_changeflag_heuristic": 0,
+  "confusion_rows_reference_columns_prediction": [
+    [
+      61713,
+      29,
+      499
+    ],
+    [
+      57,
+      2020,
+      0
+    ],
+    [
+      911,
+      0,
+      307
+    ]
+  ],
+  "predicted_class_pixels": {
+    "0": 62681,
+    "1": 2049,
+    "2": 806
+  }
+}

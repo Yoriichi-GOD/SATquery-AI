@@ -1,0 +1,125 @@
+[
+  {
+    "kind": "temporal",
+    "numerical_and_archive_check": true
+  },
+  {
+    "kind": "water_map",
+    "numerical_and_archive_check": true
+  },
+  {
+    "kind": "optical_sar",
+    "numerical_and_archive_check": true
+  },
+  {
+    "kind": "ndvi",
+    "numerical_and_archive_check": true
+  },
+  {
+    "missing_water_checkpoint_refused": true
+  },
+  {
+    "registration_identical": {
+      "status": "identical",
+      "method": "exact decoded pixels",
+      "max_displacement_pixels": 0.0
+    },
+    "registration_shift_8_pixels": {
+      "status": "misaligned",
+      "method": "SIFT ratio test + RANSAC similarity transform",
+      "matches": 1225,
+      "inliers": 1223,
+      "max_displacement_pixels": 7.999588890163458,
+      "estimated_affine": [
+        [
+          0.9999915093109479,
+          -3.0880213365131828e-06,
+          7.9995887995302075
+        ],
+        [
+          3.0880213365131828e-06,
+          0.9999915093109479,
+          -0.0012041833203666615
+        ]
+      ],
+      "limit_pixels": 1.5,
+      "warning": "A diagnostic of shared visible features; not surveyed geolocation or a subpixel registration certificate."
+    },
+    "registration_blank": {
+      "status": "unverified",
+      "reason": "Too few distinct optical features."
+    }
+  },
+  {
+    "holdout_query": "What is the water depth?",
+    "expected": "refuse",
+    "actual": "refuse",
+    "pass": true
+  },
+  {
+    "holdout_query": "Does this image contain a water area?",
+    "expected": "vqa",
+    "actual": "vqa",
+    "pass": true
+  },
+  {
+    "holdout_query": "Is a grass area visible?",
+    "expected": "vqa",
+    "actual": "vqa",
+    "pass": true
+  },
+  {
+    "holdout_query": "Estimate soil moisture",
+    "expected": "refuse",
+    "actual": "refuse",
+    "pass": true
+  },
+  {
+    "holdout_query": "Compare water and rainfall",
+    "expected": "refuse",
+    "actual": "refuse",
+    "pass": true
+  },
+  {
+    "holdout_query": "Compare vegetation and population",
+    "expected": "refuse",
+    "actual": "refuse",
+    "pass": true
+  },
+  {
+    "holdout_query": "Map water and crops",
+    "expected": "refuse",
+    "actual": "refuse",
+    "pass": true
+  },
+  {
+    "holdout_query": "Identify building positions",
+    "expected": "refuse",
+    "actual": "refuse",
+    "pass": true
+  },
+  {
+    "holdout_query": "Compare buildings between these images",
+    "expected": "temporal",
+    "actual": "temporal",
+    "pass": true
+  },
+  {
+    "holdout_query": "Measure water volume",
+    "expected": "refuse",
+    "actual": "refuse",
+    "pass": true
+  },
+  {
+    "holdout_query": "Identify land-cover classes",
+    "expected": "optical_sar",
+    "actual": "optical_sar",
+    "pass": true
+  },
+  {
+    "holdout_query": "Compare NDWI",
+    "expected": "spectral_pair",
+    "actual": "spectral_pair",
+    "pass": true
+  }
+]

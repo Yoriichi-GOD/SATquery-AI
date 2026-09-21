@@ -1,0 +1,35 @@
+{
+  "file": "test_000121.png",
+  "reference_changeflag": 1,
+  "raw_caption": "the road has been removed and a road with villas built along appears",
+  "reference_captions": [
+    " many plants are replaced by some villas on the roadsides .",
+    " trees are removed and some villas with an arc road are built .",
+    " a road is built and several houses are constructed on both sides of it to replace some plants .",
+    " the cement road replaces the earth road and some houses are built along with it .",
+    " a road shows up with some buildings built beside ."
+  ],
+  "caption_changeflag_heuristic": 1,
+  "confusion_rows_reference_columns_prediction": [
+    [
+      56040,
+      285,
+      528
+    ],
+    [
+      51,
+      3454,
+      0
+    ],
+    [
+      284,
+      0,
+      4894
+    ]
+  ],
+  "predicted_class_pixels": {
+    "0": 56375,
+    "1": 3739,
+    "2": 5422
+  }
+}

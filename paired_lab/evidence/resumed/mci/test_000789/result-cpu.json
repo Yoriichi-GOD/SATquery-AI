@@ -1,0 +1,36 @@
+{
+  "file": "test_000789.png",
+  "reference_changeflag": 1,
+  "raw_caption": "some roads appear on the bareland",
+  "reference_captions": [
+    " some roads appear on the sides of the scene .",
+    " some roads are built on bareland .",
+    " the main road has been constructed .",
+    " a crossroad appears .",
+    " two intersecting roads are built on bareland ."
+  ],
+  "caption_changeflag_heuristic": 1,
+  "confusion_rows_reference_columns_prediction": [
+    [
+      58203,
+      316,
+      0
+    ],
+    [
+      162,
+      6855,
+      0
+    ],
+    [
+      0,
+      0,
+      0
+    ]
+  ],
+  "predicted_class_pixels": {
+    "0": 58365,
+    "1": 7171,
+    "2": 0
+  },
+  "gpu_caption": "some roads appear on the bareland"
+}

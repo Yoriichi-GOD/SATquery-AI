@@ -1,0 +1,482 @@
+[
+  {
+    "image_id": "P0110_0015.png",
+    "question": "The harbor that crosses from the bank on the bottom left to the upper right side of the image.",
+    "ground_truth": "{<58><26><71><100>}",
+    "dataset": "RSBench",
+    "question_id": 247,
+    "type": "ref",
+    "unique": true,
+    "obj_corner": [
+      0.681640625,
+      0.26953125,
+      0.716796875,
+      0.26953125,
+      0.619140625,
+      1.005859375,
+      0.583984375,
+      1.0
+    ],
+    "obj_cls": "harbor",
+    "obj_ids": [
+      0
+    ],
+    "size_group": "small"
+  },
+  {
+    "image_id": "P0217_0000.png",
+    "question": "The plane is partially extending off the middle-right edge of the image.",
+    "ground_truth": "{<60><30><100><80>}",
+    "dataset": "RSBench",
+    "question_id": 511,
+    "type": "ref",
+    "unique": false,
+    "obj_corner": [
+      1.08984375,
+      0.404296875,
+      0.9765625,
+      0.802734375,
+      0.603515625,
+      0.6796875,
+      0.71875,
+      0.302734375
+    ],
+    "obj_cls": "airplane",
+    "obj_ids": [
+      0
+    ],
+    "size_group": "small"
+  },
+  {
+    "image_id": "P0217_0000.png",
+    "question": "The plane is located towards the bottom-right edge of the image.",
+    "ground_truth": "{<90><83><100><100>}",
+    "dataset": "RSBench",
+    "question_id": 512,
+    "type": "ref",
+    "unique": false,
+    "obj_corner": [
+      1.05078125,
+      0.875,
+      0.990234375,
+      1.005859375,
+      0.900390625,
+      0.9609375,
+      0.95703125,
+      0.8359375
+    ],
+    "obj_cls": "airplane",
+    "obj_ids": [
+      0
+    ],
+    "size_group": "small"
+  },
+  {
+    "image_id": "P1323_0020.png",
+    "question": "The bridge spanned vertically across the water body at the bottom of the image.",
+    "ground_truth": "{<39><56><48><86>}",
+    "dataset": "RSBench",
+    "question_id": 3275,
+    "type": "ref",
+    "unique": false,
+    "obj_corner": [
+      0.396484375,
+      0.568359375,
+      0.423828125,
+      0.5625,
+      0.48828125,
+      0.861328125,
+      0.466796875,
+      0.8671875
+    ],
+    "obj_cls": "bridge",
+    "obj_ids": [
+      0
+    ],
+    "size_group": "small"
+  },
+  {
+    "image_id": "P1323_0020.png",
+    "question": "The angular bridge crossing a small water body at the top-right of the image.",
+    "ground_truth": "{<67><5><78><16>}",
+    "dataset": "RSBench",
+    "question_id": 3276,
+    "type": "ref",
+    "unique": false,
+    "obj_corner": [
+      0.701171875,
+      0.1640625,
+      0.673828125,
+      0.09375,
+      0.763671875,
+      0.05078125,
+      0.7890625,
+      0.119140625
+    ],
+    "obj_cls": "bridge",
+    "obj_ids": [
+      0
+    ],
+    "size_group": "small"
+  },
+  {
+    "image_id": "P1377_0054.png",
+    "question": "The swimming pool located towards the middle-left of the image.",
+    "ground_truth": "{<5><33><19><51>}",
+    "dataset": "RSBench",
+    "question_id": 3598,
+    "type": "ref",
+    "unique": false,
+    "obj_corner": [
+      0.05078125,
+      0.38671875,
+      0.125,
+      0.33984375,
+      0.19921875,
+      0.4765625,
+      0.13671875,
+      0.515625
+    ],
+    "obj_cls": "swimming-pool",
+    "obj_ids": [
+      0
+    ],
+    "size_group": "small"
+  },
+  {
+    "image_id": "P1377_0054.png",
+    "question": "The unique large vehicle can be found at the top-center of the image.",
+    "ground_truth": "{<63><18><70><26>}",
+    "dataset": "RSBench",
+    "question_id": 3599,
+    "type": "ref",
+    "unique": true,
+    "obj_corner": [
+      0.705078125,
+      0.24609375,
+      0.673828125,
+      0.26171875,
+      0.63671875,
+      0.20703125,
+      0.666015625,
+      0.189453125
+    ],
+    "obj_cls": "vehicle",
+    "obj_ids": [
+      0
+    ],
+    "size_group": ""
+  },
+  {
+    "image_id": "P1377_0054.png",
+    "question": "A small vehicle is located at the top-left corner of the image.",
+    "ground_truth": "{<4><16><9><19>}",
+    "dataset": "RSBench",
+    "question_id": 3600,
+    "type": "ref",
+    "unique": false,
+    "obj_corner": [
+      0.0625,
+      0.197265625,
+      0.048828125,
+      0.185546875,
+      0.080078125,
+      0.16015625,
+      0.091796875,
+      0.17578125
+    ],
+    "obj_cls": "vehicle",
+    "obj_ids": [
+      0
+    ],
+    "size_group": ""
+  },
+  {
+    "image_id": "P1390_0090.png",
+    "question": "The airplane located at the bottom-left of the image.",
+    "ground_truth": "{<0><69><19><96>}",
+    "dataset": "RSBench",
+    "question_id": 3962,
+    "type": "ref",
+    "unique": true,
+    "obj_corner": [
+      0.171875,
+      0.9609375,
+      -0.1328125,
+      0.93359375,
+      -0.123046875,
+      0.697265625,
+      0.1953125,
+      0.73046875
+    ],
+    "obj_cls": "airplane",
+    "obj_ids": [
+      0
+    ],
+    "size_group": "small"
+  },
+  {
+    "image_id": "P1598_0050.png",
+    "question": "The roundabout is situated at the top part of the image.",
+    "ground_truth": "{<59><17><68><26>}",
+    "dataset": "RSBench",
+    "question_id": 4854,
+    "type": "ref",
+    "unique": true,
+    "obj_corner": [
+      0.599609375,
+      0.173828125,
+      0.68359375,
+      0.173828125,
+      0.68359375,
+      0.265625,
+      0.599609375,
+      0.265625
+    ],
+    "obj_cls": "roundabout",
+    "obj_ids": [
+      0
+    ],
+    "size_group": "small"
+  },
+  {
+    "image_id": "P1598_0050.png",
+    "question": "The plane positioned closer to the middle-left of the image.",
+    "ground_truth": "{<18><56><24><63>}",
+    "dataset": "RSBench",
+    "question_id": 4855,
+    "type": "ref",
+    "unique": false,
+    "obj_corner": [
+      0.18359375,
+      0.5703125,
+      0.2421875,
+      0.56640625,
+      0.248046875,
+      0.630859375,
+      0.1875,
+      0.63671875
+    ],
+    "obj_cls": "airplane",
+    "obj_ids": [
+      0
+    ],
+    "size_group": "small"
+  },
+  {
+    "image_id": "P1598_0050.png",
+    "question": "The plane located towards the central lower part of the image.",
+    "ground_truth": "{<29><65><38><75>}",
+    "dataset": "RSBench",
+    "question_id": 4856,
+    "type": "ref",
+    "unique": false,
+    "obj_corner": [
+      0.29296875,
+      0.6640625,
+      0.375,
+      0.65234375,
+      0.388671875,
+      0.740234375,
+      0.310546875,
+      0.75390625
+    ],
+    "obj_cls": "airplane",
+    "obj_ids": [
+      0
+    ],
+    "size_group": "small"
+  },
+  {
+    "image_id": "P2645_0012.png",
+    "question": "The large vehicle located towards the middle-left of the image.",
+    "ground_truth": "{<0><33><2><37>}",
+    "dataset": "RSBench",
+    "question_id": 6783,
+    "type": "ref",
+    "unique": false,
+    "obj_corner": [
+      0.025390625,
+      0.359375,
+      0.015625,
+      0.37109375,
+      -0.017578125,
+      0.3515625,
+      -0.01171875,
+      0.337890625
+    ],
+    "obj_cls": "vehicle",
+    "obj_ids": [
+      0
+    ],
+    "size_group": ""
+  },
+  {
+    "image_id": "P2645_0012.png",
+    "question": "The small ship is positioned in the bottom-left corner of the image.",
+    "ground_truth": "{<4><67><8><71>}",
+    "dataset": "RSBench",
+    "question_id": 6784,
+    "type": "ref",
+    "unique": true,
+    "obj_corner": [
+      0.06640625,
+      0.71875,
+      0.046875,
+      0.708984375,
+      0.06640625,
+      0.677734375,
+      0.0859375,
+      0.689453125
+    ],
+    "obj_cls": "ship",
+    "obj_ids": [
+      0
+    ],
+    "size_group": "small"
+  },
+  {
+    "image_id": "P8656_0106.png",
+    "question": "The small vehicle positioned furthest to the right at the bottom corner of the building.",
+    "ground_truth": "{<83><92><93><100>}",
+    "dataset": "RSBench",
+    "question_id": 8688,
+    "type": "ref",
+    "unique": false,
+    "obj_corner": [
+      0.87109375,
+      1.03515625,
+      0.8359375,
+      1.005859375,
+      0.90625,
+      0.927734375,
+      0.9375,
+      0.9609375
+    ],
+    "obj_cls": "vehicle",
+    "obj_ids": [
+      0
+    ],
+    "size_group": ""
+  },
+  {
+    "image_id": "P8656_0106.png",
+    "question": "The small vehicle positioned to the left of the furthest bottom right car.",
+    "ground_truth": "{<75><90><85><100>}",
+    "dataset": "RSBench",
+    "question_id": 8689,
+    "type": "ref",
+    "unique": false,
+    "obj_corner": [
+      0.787109375,
+      1.013671875,
+      0.755859375,
+      0.986328125,
+      0.828125,
+      0.90625,
+      0.859375,
+      0.935546875
+    ],
+    "obj_cls": "vehicle",
+    "obj_ids": [
+      0
+    ],
+    "size_group": ""
+  },
+  {
+    "image_id": "06739_0000.png",
+    "question": "The airplane, visible as a large structure with wings, is centrally located in the image and has boarding bridges connected to it.",
+    "ground_truth": "{<29><48><78><100>}",
+    "dataset": "RSBench",
+    "question_id": 9828,
+    "type": "ref",
+    "unique": true,
+    "obj_corner": [
+      0.294921875,
+      0.48046875,
+      0.7890625,
+      0.48046875,
+      0.7890625,
+      1.017578125,
+      0.294921875,
+      1.017578125
+    ],
+    "obj_cls": "airplane",
+    "obj_ids": [
+      0
+    ],
+    "size_group": "small"
+  },
+  {
+    "image_id": "08078_0000.png",
+    "question": "The object at the bottom of the image is a small dam.",
+    "ground_truth": "{<56><78><100><100>}",
+    "dataset": "RSBench",
+    "question_id": 11509,
+    "type": "ref",
+    "unique": true,
+    "obj_corner": [
+      0.5625,
+      0.78515625,
+      1.005859375,
+      0.78515625,
+      1.005859375,
+      1.189453125,
+      0.5625,
+      1.189453125
+    ],
+    "obj_cls": "dam",
+    "obj_ids": [
+      0
+    ],
+    "size_group": "small"
+  },
+  {
+    "image_id": "08284_0000.png",
+    "question": "The chimney in the image is toward the upper section of the image.",
+    "ground_truth": "{<26><68><85><100>}",
+    "dataset": "RSBench",
+    "question_id": 11784,
+    "type": "ref",
+    "unique": true,
+    "obj_corner": [
+      0.26953125,
+      0.681640625,
+      0.857421875,
+      0.681640625,
+      0.857421875,
+      1.15625,
+      0.26953125,
+      1.15625
+    ],
+    "obj_cls": "chimney",
+    "obj_ids": [
+      0
+    ],
+    "size_group": "small"
+  },
+  {
+    "image_id": "10086_0000.png",
+    "question": "The baseball field in the image is characterized by its diamond-shaped infield with brown dirt and encircled by green grass.",
+    "ground_truth": "{<14><33><53><72>}",
+    "dataset": "RSBench",
+    "question_id": 14059,
+    "type": "ref",
+    "unique": true,
+    "obj_corner": [
+      0.1484375,
+      0.333984375,
+      0.5390625,
+      0.333984375,
+      0.5390625,
+      0.72265625,
+      0.1484375,
+      0.72265625
+    ],
+    "obj_cls": "baseball-diamond",
+    "obj_ids": [
+      0
+    ],
+    "size_group": ""
+  }
+]

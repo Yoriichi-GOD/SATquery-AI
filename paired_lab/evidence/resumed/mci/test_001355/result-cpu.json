@@ -1,0 +1,36 @@
+{
+  "file": "test_001355.png",
+  "reference_changeflag": 1,
+  "raw_caption": "a road is built in the lower area",
+  "reference_captions": [
+    " a path appears in the woods on the lower-left .",
+    " a road in the woods appears .",
+    " a road appears .",
+    " a winding road appears .",
+    " a winding path connected with the original road appears ."
+  ],
+  "caption_changeflag_heuristic": 1,
+  "confusion_rows_reference_columns_prediction": [
+    [
+      65316,
+      220,
+      0
+    ],
+    [
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0
+    ]
+  ],
+  "predicted_class_pixels": {
+    "0": 65316,
+    "1": 220,
+    "2": 0
+  },
+  "gpu_caption": "a road is built in the lower area"
+}

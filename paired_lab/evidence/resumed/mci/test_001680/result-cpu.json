@@ -1,0 +1,36 @@
+{
+  "file": "test_001680.png",
+  "reference_changeflag": 1,
+  "raw_caption": "some new houses are built at the bottom corner of the scene",
+  "reference_captions": [
+    " the crossroad continues to stretch and many houses appear on both sides of the road .",
+    " massive houses along the extended crossing roads appear in the desert .",
+    " the road is rebuilt into a cross road and villas are built along the road .",
+    " some houses are built at the crossroad .",
+    " a road is built vertical to the original one and many buildings appear by the roads ."
+  ],
+  "caption_changeflag_heuristic": 1,
+  "confusion_rows_reference_columns_prediction": [
+    [
+      46016,
+      459,
+      469
+    ],
+    [
+      4376,
+      7342,
+      0
+    ],
+    [
+      813,
+      0,
+      6061
+    ]
+  ],
+  "predicted_class_pixels": {
+    "0": 51205,
+    "1": 7801,
+    "2": 6530
+  },
+  "gpu_caption": "some new houses are built at the bottom corner of the scene"
+}

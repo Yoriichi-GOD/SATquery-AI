@@ -1,0 +1,169 @@
+{
+  "name": "varanasi-2025",
+  "file": "/mnt/c/Users/nrgen/.codex/visualizations/2026/09/19/01a0b9f9-b20e-71a2-b139-ca9ab926b94e/day1/varanasi-pair/scenes/varanasi-2025/varanasi-2025.tif",
+  "source_item": "S2A_T44RPP_20251107T050234_L2A",
+  "acquired": "2025-11-07T05:11:58.773000Z",
+  "scene_cloud_percent": 0.001229,
+  "selection": {
+    "collections": [
+      "sentinel-2-c1-l2a"
+    ],
+    "intersects": {
+      "type": "Point",
+      "coordinates": [
+        83.01,
+        25.3
+      ]
+    },
+    "datetime": "2025-11-01T00:00:00Z/2025-11-30T23:59:59Z",
+    "query": {
+      "eo:cloud_cover": {
+        "lt": 30
+      }
+    },
+    "limit": 10,
+    "sortby": [
+      {
+        "field": "properties.eo:cloud_cover",
+        "direction": "asc"
+      }
+    ]
+  },
+  "centre_lon_lat": [
+    83.01,
+    25.3
+  ],
+  "crs": "EPSG:32644",
+  "transform": [
+    10.0,
+    0.0,
+    699790.0,
+    0.0,
+    -10.0,
+    2802250.0
+  ],
+  "sha256": "804f00386cf016e2a84804470968f9e32c6cb678bc19f9be7ed4e5ff190166af",
+  "bands": {
+    "red": {
+      "source": "https://e84-earth-search-sentinel-data.s3.us-west-2.amazonaws.com/sentinel-2-c1-l2a/44/R/PP/2025/11/S2A_T44RPP_20251107T050234_L2A/B04.tif",
+      "scale": 0.0001,
+      "offset": -0.1,
+      "source_resolution": [
+        10.0,
+        10.0
+      ],
+      "source_nodata": 0.0,
+      "resampling": "nearest to red-band 10 m grid"
+    },
+    "green": {
+      "source": "https://e84-earth-search-sentinel-data.s3.us-west-2.amazonaws.com/sentinel-2-c1-l2a/44/R/PP/2025/11/S2A_T44RPP_20251107T050234_L2A/B03.tif",
+      "scale": 0.0001,
+      "offset": -0.1,
+      "source_resolution": [
+        10.0,
+        10.0
+      ],
+      "source_nodata": 0.0,
+      "resampling": "nearest to red-band 10 m grid"
+    },
+    "blue": {
+      "source": "https://e84-earth-search-sentinel-data.s3.us-west-2.amazonaws.com/sentinel-2-c1-l2a/44/R/PP/2025/11/S2A_T44RPP_20251107T050234_L2A/B02.tif",
+      "scale": 0.0001,
+      "offset": -0.1,
+      "source_resolution": [
+        10.0,
+        10.0
+      ],
+      "source_nodata": 0.0,
+      "resampling": "nearest to red-band 10 m grid"
+    },
+    "nir": {
+      "source": "https://e84-earth-search-sentinel-data.s3.us-west-2.amazonaws.com/sentinel-2-c1-l2a/44/R/PP/2025/11/S2A_T44RPP_20251107T050234_L2A/B08.tif",
+      "scale": 0.0001,
+      "offset": -0.1,
+      "source_resolution": [
+        10.0,
+        10.0
+      ],
+      "source_nodata": 0.0,
+      "resampling": "nearest to red-band 10 m grid"
+    },
+    "scl": {
+      "source": "https://e84-earth-search-sentinel-data.s3.us-west-2.amazonaws.com/sentinel-2-c1-l2a/44/R/PP/2025/11/S2A_T44RPP_20251107T050234_L2A/SCL.tif",
+      "scale": 1,
+      "offset": 0,
+      "source_resolution": [
+        20.0,
+        20.0
+      ],
+      "source_nodata": 0.0,
+      "resampling": "nearest to red-band 10 m grid"
+    }
+  },
+  "attribution": "Contains modified Copernicus Sentinel data (2024/2025), accessed through Element 84 Earth Search / AWS.",
+  "metadata": {
+    "calibration_version": "c1-header-verified-v2",
+    "crs": "EPSG:32644",
+    "width": 512,
+    "height": 512,
+    "transform": [
+      10.0,
+      0.0,
+      699790.0,
+      0.0,
+      -10.0,
+      2802250.0
+    ],
+    "bounds": [
+      699790.0,
+      2797130.0,
+      704910.0,
+      2802250.0
+    ],
+    "bounds_wgs84": [
+      82.98411178085682,
+      25.276599876615997,
+      83.03570535132816,
+      25.323501644099125
+    ],
+    "resolution": [
+      10.0,
+      10.0
+    ],
+    "bands": {
+      "red": 1,
+      "green": 2,
+      "blue": 3,
+      "nir": 4,
+      "scl": 5
+    },
+    "band_descriptions": [
+      "red",
+      "green",
+      "blue",
+      "nir",
+      "scl"
+    ],
+    "nodata": "nan",
+    "scales": [
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0
+    ],
+    "offsets": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "acquired": "2025-11-07T05:11:58.773000Z",
+    "source_item": "S2A_T44RPP_20251107T050234_L2A",
+    "attribution": "Contains modified Copernicus Sentinel data (2024/2025), accessed through Element 84 Earth Search / AWS.",
+    "ndvi_supported": true,
+    "quality_mask_available": true,
+    "preview_processing": "Per-channel 2nd\u201398th percentile RGB display stretch; analytical values are preserved."
+  }
+}

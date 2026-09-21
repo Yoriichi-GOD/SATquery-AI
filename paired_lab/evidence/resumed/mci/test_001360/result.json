@@ -1,0 +1,35 @@
+{
+  "file": "test_001360.png",
+  "reference_changeflag": 1,
+  "raw_caption": "a road with some houses around appears on the bareland",
+  "reference_captions": [
+    " a ring road and some construction facilities appear on the wasteland on the lower-right .",
+    " some buildings around the roads appear in the desert .",
+    " some roads with houses appear on the right side of the scene .",
+    " some roads with many buildings around are built on the right side .",
+    " some scattered trees disappear and several roads and houses are built ."
+  ],
+  "caption_changeflag_heuristic": 1,
+  "confusion_rows_reference_columns_prediction": [
+    [
+      57808,
+      732,
+      250
+    ],
+    [
+      203,
+      5191,
+      0
+    ],
+    [
+      653,
+      0,
+      699
+    ]
+  ],
+  "predicted_class_pixels": {
+    "0": 58664,
+    "1": 5923,
+    "2": 949
+  }
+}

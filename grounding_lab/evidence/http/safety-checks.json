@@ -1,0 +1,37 @@
+{
+  "invalid_selections": [
+    {
+      "payload": {
+        "image_id": "e2e17fb034474e449df5dd2c27c1714a",
+        "category": "unknown"
+      },
+      "status": 422
+    },
+    {
+      "payload": {
+        "image_id": "e2e17fb034474e449df5dd2c27c1714a",
+        "category": "stadium",
+        "threshold": 0.99
+      },
+      "status": 422
+    },
+    {
+      "payload": {
+        "image_id": "../",
+        "category": "stadium"
+      },
+      "status": 404
+    },
+    {
+      "payload": {
+        "image_id": "e2e17fb034474e449df5dd2c27c1714a",
+        "category": "stadium",
+        "mode": "fake"
+      },
+      "status": 422
+    }
+  ],
+  "invalid_image": 400,
+  "cross_origin": 403,
+  "main_files_unchanged": true
+}

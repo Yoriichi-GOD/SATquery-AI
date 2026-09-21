@@ -1,0 +1,36 @@
+{
+  "file": "test_001696.png",
+  "reference_changeflag": 1,
+  "raw_caption": "the scene is the same as before",
+  "reference_captions": [
+    " a room appears above and the number of cars parked on the field greatly increases .",
+    " a building appears among the existing ones .",
+    " a building with a parking lot is built at the top .",
+    " a white building is built next to the other buildings .",
+    " a building has been constructed at the top ."
+  ],
+  "caption_changeflag_heuristic": 0,
+  "confusion_rows_reference_columns_prediction": [
+    [
+      63916,
+      10,
+      24
+    ],
+    [
+      0,
+      0,
+      0
+    ],
+    [
+      1529,
+      0,
+      57
+    ]
+  ],
+  "predicted_class_pixels": {
+    "0": 65445,
+    "1": 10,
+    "2": 81
+  },
+  "gpu_caption": "the scene is the same as before"
+}

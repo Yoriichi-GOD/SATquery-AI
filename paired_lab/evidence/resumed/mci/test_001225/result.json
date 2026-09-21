@@ -1,0 +1,35 @@
+{
+  "file": "test_001225.png",
+  "reference_changeflag": 1,
+  "raw_caption": "a large building appears on the bareland",
+  "reference_captions": [
+    " some large buildings and construction sites appear .",
+    " some buildings are constructed on bareland .",
+    " a road with some buildings on the right side appear on the bareland .",
+    " a road appears and several buildings are built .",
+    " a straight road and several buildings are built on bareland ."
+  ],
+  "caption_changeflag_heuristic": 1,
+  "confusion_rows_reference_columns_prediction": [
+    [
+      46081,
+      160,
+      519
+    ],
+    [
+      839,
+      6433,
+      97
+    ],
+    [
+      3019,
+      0,
+      8388
+    ]
+  ],
+  "predicted_class_pixels": {
+    "0": 49939,
+    "1": 6593,
+    "2": 9004
+  }
+}

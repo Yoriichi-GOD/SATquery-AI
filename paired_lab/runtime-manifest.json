@@ -1,0 +1,56 @@
+{
+  "models": {
+    "all": {
+      "repo": "BIFOLD-BigEarthNetv2-0/resnet50-all-v0.2.0",
+      "revision": "762acdc186cce6b31ecbc896ddab1721847d4c5e",
+      "path": "/root/.cache/huggingface/hub/models--BIFOLD-BigEarthNetv2-0--resnet50-all-v0.2.0/snapshots/762acdc186cce6b31ecbc896ddab1721847d4c5e"
+    },
+    "s1": {
+      "repo": "BIFOLD-BigEarthNetv2-0/resnet50-s1-v0.2.0",
+      "revision": "d417b3c32f2172cbceb14e5b106dd9aa7b77c647",
+      "path": "/root/.cache/huggingface/hub/models--BIFOLD-BigEarthNetv2-0--resnet50-s1-v0.2.0/snapshots/d417b3c32f2172cbceb14e5b106dd9aa7b77c647"
+    },
+    "s2": {
+      "repo": "BIFOLD-BigEarthNetv2-0/resnet50-s2-v0.2.0",
+      "revision": "f5a590cd5876845f62702260ff62ea5a325433bb",
+      "path": "/root/.cache/huggingface/hub/models--BIFOLD-BigEarthNetv2-0--resnet50-s2-v0.2.0/snapshots/f5a590cd5876845f62702260ff62ea5a325433bb"
+    },
+    "temporal": {
+      "repo": "https://github.com/wgcban/ChangeFormer",
+      "revision": "afd1b7ed640aa265a2c730de958416ae7356a2f9",
+      "path": "/root/satquery/paired-lab/changeformer-levir.pt",
+      "sha256": "db0dd783c3c3f27d02f55f24fa8199d2b2b47c422c7f7bd2e4d96e2fa65d69f2",
+      "license_note": "README restricts code to non-commercial research; review before commercial distribution."
+    }
+  },
+  "configilm_revision": "d5a6c64bee268e71f12e130bd839ab9dfe53cc08",
+  "temporal_revision": "afd1b7ed640aa265a2c730de958416ae7356a2f9",
+  "dependency_versions": {
+    "timm": "1.0.19",
+    "einops": "0.8.1",
+    "lmdb": "1.7.3",
+    "pandas": "2.3.2",
+    "pyarrow": "21.0.0",
+    "python-dateutil": "2.9.0.post0",
+    "pytz": "2025.2",
+    "tzdata": "2025.2",
+    "scipy": "1.16.1",
+    "opencv-python-headless": "4.11.0.86"
+  },
+  "mci": {
+    "repo": "lcybuaa/Change-Agent",
+    "revision": "1e679060173434cd22fd22a52effbf3c785c97a0",
+    "path": "/root/satquery/paired-lab/mci-model/MCI_model.pth",
+    "sha256": "34c6926342c40fdd6d50b43d50257cb46cb6b61763448de9ee551828a64b3eb9",
+    "source_revision": "68cbaa7f388b36e4fc10872f7a2911482d26ae5b",
+    "license_note": "Checkpoint card Apache-2.0; source MIT with academic-use statement. Preserve both statements; review before commercial release."
+  },
+  "water_model": {
+    "path": "/mnt/c/Users/nrgen/.codex/scratch/SATquery AI/paired_lab/checkpoints/water-v1.pt",
+    "sha256": "7844387fffd6c7e606895328e61be936304f979fee74411021f7312b3215f7ce",
+    "training": "train_water.py; Sen1Floods11 official train split; seed 42; 35 fixed epochs; validation-only checkpoint selection",
+    "evaluation": "evidence/resumed/water-evaluation.json",
+    "architecture": "WaterUNet17-16-32-64-128-256",
+    "note": "Local research checkpoint; not an ISRO validated model."
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "id": "mci-test_000462",
+  "kind": "temporal",
+  "name": "MCI test_000462",
+  "source": "LEVIR-MCI official test",
+  "benchmark": "Change caption + road/building masks",
+  "files": [
+    "before.tif",
+    "after.tif"
+  ],
+  "registration": "Publisher paired crops; exact geographic metadata unavailable",
+  "reference_captions": [
+    " many trees are replaced by a t-shaped road and many buildings are scattered .",
+    " a cross road with villas neatly built along replace the trees .",
+    " a road has been built to replace the original forest and many villas have been constructed beside the road .",
+    " most of the trees are removed and a new residential district has been built .",
+    " new roads surrounded by new houses replace the woods ."
+  ]
+}

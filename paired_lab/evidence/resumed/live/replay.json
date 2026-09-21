@@ -1,0 +1,138 @@
+[
+  {
+    "name": "01-vqa-before",
+    "id": "87d19aeed2754afeaaeb8dfa72a7d154",
+    "task": "vqa",
+    "elapsed_seconds": 2.0508571149999852,
+    "answer": "Estimated count: 1.\n\nVisual estimate; counts may be inaccurate.\n\nScene description (model interpretation):\nThere is a stadium in the middle of the city.",
+    "bundle_files": [
+      "main-raw-result.json",
+      "input-1.original",
+      "result.json",
+      "input-preview.png"
+    ],
+    "passed": true
+  },
+  {
+    "name": "02-temporal",
+    "id": "76962dace0d7402885d91ff1efe3c5b2",
+    "task": "temporal",
+    "elapsed_seconds": 11.87690880699995,
+    "answer": "some houses are built on the bareland along the road",
+    "bundle_files": [
+      "before.png",
+      "input-2.tif",
+      "overlay.png",
+      "after.png",
+      "input-1.tif",
+      "change-mask.png",
+      "result.json",
+      "scores.npz"
+    ],
+    "passed": true
+  },
+  {
+    "name": "03-water-india",
+    "id": "4e99304de67c43d9b8a9516b168965c7",
+    "task": "water_map",
+    "elapsed_seconds": 1.701675350999949,
+    "answer": "The joint optical\u2013SAR model marks 129,908 of 262,144 valid pixels as water (49.56%). Blue regions show this prediction. Water includes permanent water and floodwater; this single-date pair cannot distinguish them.",
+    "bundle_files": [
+      "input-2.tif",
+      "water-overlay.png",
+      "water-mask.tif",
+      "s2-water.png",
+      "optical.png",
+      "water-scores.npz",
+      "input-1.tif",
+      "all-water.png",
+      "sar.png",
+      "result.json",
+      "s1-water.png"
+    ],
+    "passed": true
+  },
+  {
+    "name": "04-water-bolivia",
+    "id": "72112706a06e480396c8411f45e75287",
+    "task": "water_map",
+    "elapsed_seconds": 1.1288065070000357,
+    "answer": "The joint optical\u2013SAR model marks 34,361 of 87,195 valid pixels as water (39.41%). Blue regions show this prediction. Water includes permanent water and floodwater; this single-date pair cannot distinguish them.",
+    "bundle_files": [
+      "input-2.tif",
+      "water-overlay.png",
+      "water-mask.tif",
+      "s2-water.png",
+      "optical.png",
+      "water-scores.npz",
+      "input-1.tif",
+      "all-water.png",
+      "sar.png",
+      "result.json",
+      "s1-water.png"
+    ],
+    "passed": true
+  },
+  {
+    "name": "05-scene-fusion",
+    "id": "ec895399913b4ee6922f1c3e1cd6aa60",
+    "task": "optical_sar",
+    "elapsed_seconds": 1.6058060880000085,
+    "answer": "The jointly trained optical\u2013SAR model suggests Arable land, Broad-leaved forest, Inland waters, Land principally occupied by agriculture, with significant areas of natural vegetation. These are scene-level land-cover labels, not mapped regions or measured area.",
+    "bundle_files": [
+      "input-2.tif",
+      "optical.png",
+      "input-1.tif",
+      "sar.png",
+      "result.json"
+    ],
+    "passed": true
+  },
+  {
+    "name": "06-ndvi",
+    "id": "658c87016adc4a3e8d27b5734791c36b",
+    "task": "ndvi",
+    "elapsed_seconds": 1.0607396799999833,
+    "answer": "NDVI \u2265 0.50: 14.79% of valid pixels. Selected pixels cover 14.79% of the whole crop. Projected grid area: 387.61 hectares. Valid pixels cover 100.00% of this crop. This is threshold-based coverage, not a vegetation-health diagnosis.",
+    "bundle_files": [
+      "evidence.png",
+      "ndvi.tif",
+      "main-raw-result.json",
+      "false-colour.png",
+      "rgb.png",
+      "input-1.original",
+      "result.json",
+      "input-preview.png",
+      "mask.png"
+    ],
+    "passed": true
+  },
+  {
+    "name": "07-vqa-after",
+    "id": "4608a105e47f42b3834ef605b28e4ad5",
+    "task": "vqa",
+    "elapsed_seconds": 1.5237213970000312,
+    "answer": "Estimated count: 1.\n\nVisual estimate; counts may be inaccurate.\n\nScene description (model interpretation):\nThere is a stadium in the middle of the city.",
+    "bundle_files": [
+      "main-raw-result.json",
+      "input-1.original",
+      "result.json",
+      "input-preview.png"
+    ],
+    "passed": true
+  },
+  {
+    "name": "08-rural-urban",
+    "id": "81403d66add14c5bb885e139c776a88c",
+    "task": "vqa",
+    "elapsed_seconds": 2.530724276000001,
+    "answer": "Urban",
+    "bundle_files": [
+      "main-raw-result.json",
+      "input-1.original",
+      "result.json",
+      "input-preview.png"
+    ],
+    "passed": true
+  }
+]

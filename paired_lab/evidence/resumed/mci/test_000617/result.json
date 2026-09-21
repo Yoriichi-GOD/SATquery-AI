@@ -1,0 +1,35 @@
+{
+  "file": "test_000617.png",
+  "reference_changeflag": 1,
+  "raw_caption": "the woods are removed and a road is built",
+  "reference_captions": [
+    " all the plants have been removed by a road at the top and a road at the bottom .",
+    " the forest is removed and two roads in the top and the bottom appear .",
+    " the vegetation has been removed and two paths have appeared on the bareland .",
+    " all the trees are removed in the scene .",
+    " the forest disappears and two roads appear ."
+  ],
+  "caption_changeflag_heuristic": 1,
+  "confusion_rows_reference_columns_prediction": [
+    [
+      60063,
+      76,
+      0
+    ],
+    [
+      780,
+      4617,
+      0
+    ],
+    [
+      0,
+      0,
+      0
+    ]
+  ],
+  "predicted_class_pixels": {
+    "0": 60843,
+    "1": 4693,
+    "2": 0
+  }
+}

@@ -1,0 +1,398 @@
+[
+  {
+    "case": "stadium",
+    "reference": 1,
+    "source": "/root/satquery/app-data/images/f01008d4ee8f47ebb9db13f7f597bd17.png",
+    "suffix": " Answer with only a single integer. Do not describe the image.",
+    "run": {
+      "id": "65a7101e3adc40ea9feaf6bef723e75e",
+      "state": "complete",
+      "stage": "Complete",
+      "question": "how many stadiums in this image. Answer with only a single integer. Do not describe the image.",
+      "image": {
+        "id": "33d8a062ffc4452ab8c2fcbbeb27cf3c",
+        "name": "f01008d4ee8f47ebb9db13f7f597bd17.png",
+        "width": 500,
+        "height": 264,
+        "bytes": 173635,
+        "sha256": "da733a52a60a5c61655fc1f496de20114595110b45fe81e656d1b25851b7c2d2",
+        "preview": "/api/images/33d8a062ffc4452ab8c2fcbbeb27cf3c",
+        "geo": null
+      },
+      "started": 1788919955.6297183,
+      "model": "AdaptLLM/remote-sensing-Qwen2-VL-2B-Instruct",
+      "revision": "7f5dd71bf0f40c282193d50160e848a387a08ffe",
+      "adapter": null,
+      "mode": "baseline",
+      "route": "Single-image optical VQA",
+      "trace": [
+        {
+          "step": "Generate model answer",
+          "seconds": 0.393
+        }
+      ],
+      "routing": {
+        "tool": "vqa",
+        "rule": "visual_count",
+        "reason": "General visual count from the original model; an estimate, not validated object detection.",
+        "version": "rules-v4"
+      },
+      "requested_mode": "baseline",
+      "effective_question": "how many stadiums in this image. Answer with only a single integer. Do not describe the image.",
+      "visual_token_bounds": [
+        256,
+        512
+      ],
+      "raw_answer": "1",
+      "answer_validation": {
+        "policy": "open-visual-v1",
+        "answer": "1\n\nVisual estimate; counts may be inaccurate.",
+        "limitation": "Visual estimate; counts may be inaccurate.",
+        "raw_truncated": false,
+        "changed": true,
+        "withheld": false,
+        "reasons": [
+          "model_output_preserved",
+          "estimate_label_added"
+        ]
+      },
+      "answer_policy": "open-visual-v1",
+      "answer": "1\n\nVisual estimate; counts may be inaccurate.",
+      "seconds": 0.436,
+      "generation_seconds": 0.393,
+      "peak_allocated_GiB": 4.231,
+      "generated_tokens": 2,
+      "max_new_tokens": 128
+    }
+  },
+  {
+    "case": "stadium",
+    "reference": 1,
+    "source": "/root/satquery/app-data/images/f01008d4ee8f47ebb9db13f7f597bd17.png",
+    "suffix": " Count distinct visible objects, counting each object once. Answer with one integer only; if uncertain, say uncertain.",
+    "run": {
+      "id": "392d78dff68f488c8915494d7338eec5",
+      "state": "complete",
+      "stage": "Complete",
+      "question": "how many stadiums in this image. Count distinct visible objects, counting each object once. Answer with one integer only; if uncertain, say uncertain.",
+      "image": {
+        "id": "33d8a062ffc4452ab8c2fcbbeb27cf3c",
+        "name": "f01008d4ee8f47ebb9db13f7f597bd17.png",
+        "width": 500,
+        "height": 264,
+        "bytes": 173635,
+        "sha256": "da733a52a60a5c61655fc1f496de20114595110b45fe81e656d1b25851b7c2d2",
+        "preview": "/api/images/33d8a062ffc4452ab8c2fcbbeb27cf3c",
+        "geo": null
+      },
+      "started": 1788919956.4625542,
+      "model": "AdaptLLM/remote-sensing-Qwen2-VL-2B-Instruct",
+      "revision": "7f5dd71bf0f40c282193d50160e848a387a08ffe",
+      "adapter": null,
+      "mode": "baseline",
+      "route": "Single-image optical VQA",
+      "trace": [
+        {
+          "step": "Generate model answer",
+          "seconds": 0.213
+        }
+      ],
+      "routing": {
+        "tool": "vqa",
+        "rule": "visual_count",
+        "reason": "General visual count from the original model; an estimate, not validated object detection.",
+        "version": "rules-v4"
+      },
+      "requested_mode": "baseline",
+      "effective_question": "how many stadiums in this image. Count distinct visible objects, counting each object once. Answer with one integer only; if uncertain, say uncertain.",
+      "visual_token_bounds": [
+        256,
+        512
+      ],
+      "raw_answer": "1",
+      "answer_validation": {
+        "policy": "open-visual-v1",
+        "answer": "1\n\nVisual estimate; counts may be inaccurate.",
+        "limitation": "Visual estimate; counts may be inaccurate.",
+        "raw_truncated": false,
+        "changed": true,
+        "withheld": false,
+        "reasons": [
+          "model_output_preserved",
+          "estimate_label_added"
+        ]
+      },
+      "answer_policy": "open-visual-v1",
+      "answer": "1\n\nVisual estimate; counts may be inaccurate.",
+      "seconds": 0.238,
+      "generation_seconds": 0.213,
+      "peak_allocated_GiB": 4.233,
+      "generated_tokens": 2,
+      "max_new_tokens": 128
+    }
+  },
+  {
+    "case": "car",
+    "reference": 1,
+    "source": "/root/satquery/app-data/images/4dfea163809b43288da4b6ae44996316.png",
+    "suffix": " Answer with only a single integer. Do not describe the image.",
+    "run": {
+      "id": "c32ef90b2bff464abce186c3fc7d8063",
+      "state": "complete",
+      "stage": "Complete",
+      "question": "how many cars are there in this image. Answer with only a single integer. Do not describe the image.",
+      "image": {
+        "id": "a240a28941b34673ac57cfa6027f78a6",
+        "name": "4dfea163809b43288da4b6ae44996316.png",
+        "width": 2559,
+        "height": 1599,
+        "bytes": 7034632,
+        "sha256": "0ba3743e3ea6d64e65f400ed7097c66f2d8e4c2bd374094c9945814f92b9b1ef",
+        "preview": "/api/images/a240a28941b34673ac57cfa6027f78a6",
+        "geo": null
+      },
+      "started": 1788919958.0068393,
+      "model": "AdaptLLM/remote-sensing-Qwen2-VL-2B-Instruct",
+      "revision": "7f5dd71bf0f40c282193d50160e848a387a08ffe",
+      "adapter": null,
+      "mode": "baseline",
+      "route": "Single-image optical VQA",
+      "trace": [
+        {
+          "step": "Generate model answer",
+          "seconds": 0.371
+        }
+      ],
+      "routing": {
+        "tool": "vqa",
+        "rule": "visual_count",
+        "reason": "General visual count from the original model; an estimate, not validated object detection.",
+        "version": "rules-v4"
+      },
+      "requested_mode": "baseline",
+      "effective_question": "how many cars are there in this image. Answer with only a single integer. Do not describe the image.",
+      "visual_token_bounds": [
+        256,
+        512
+      ],
+      "raw_answer": "1",
+      "answer_validation": {
+        "policy": "open-visual-v1",
+        "answer": "1\n\nVisual estimate; counts may be inaccurate.",
+        "limitation": "Visual estimate; counts may be inaccurate.",
+        "raw_truncated": false,
+        "changed": true,
+        "withheld": false,
+        "reasons": [
+          "model_output_preserved",
+          "estimate_label_added"
+        ]
+      },
+      "answer_policy": "open-visual-v1",
+      "answer": "1\n\nVisual estimate; counts may be inaccurate.",
+      "seconds": 0.555,
+      "generation_seconds": 0.371,
+      "peak_allocated_GiB": 4.3,
+      "generated_tokens": 2,
+      "max_new_tokens": 128
+    }
+  },
+  {
+    "case": "car",
+    "reference": 1,
+    "source": "/root/satquery/app-data/images/4dfea163809b43288da4b6ae44996316.png",
+    "suffix": " Count distinct visible objects, counting each object once. Answer with one integer only; if uncertain, say uncertain.",
+    "run": {
+      "id": "b33e091a39fc4072b4cd35ff3c45bbac",
+      "state": "complete",
+      "stage": "Complete",
+      "question": "how many cars are there in this image. Count distinct visible objects, counting each object once. Answer with one integer only; if uncertain, say uncertain.",
+      "image": {
+        "id": "a240a28941b34673ac57cfa6027f78a6",
+        "name": "4dfea163809b43288da4b6ae44996316.png",
+        "width": 2559,
+        "height": 1599,
+        "bytes": 7034632,
+        "sha256": "0ba3743e3ea6d64e65f400ed7097c66f2d8e4c2bd374094c9945814f92b9b1ef",
+        "preview": "/api/images/a240a28941b34673ac57cfa6027f78a6",
+        "geo": null
+      },
+      "started": 1788919958.8395033,
+      "model": "AdaptLLM/remote-sensing-Qwen2-VL-2B-Instruct",
+      "revision": "7f5dd71bf0f40c282193d50160e848a387a08ffe",
+      "adapter": null,
+      "mode": "baseline",
+      "route": "Single-image optical VQA",
+      "trace": [
+        {
+          "step": "Generate model answer",
+          "seconds": 0.326
+        }
+      ],
+      "routing": {
+        "tool": "vqa",
+        "rule": "visual_count",
+        "reason": "General visual count from the original model; an estimate, not validated object detection.",
+        "version": "rules-v4"
+      },
+      "requested_mode": "baseline",
+      "effective_question": "how many cars are there in this image. Count distinct visible objects, counting each object once. Answer with one integer only; if uncertain, say uncertain.",
+      "visual_token_bounds": [
+        256,
+        512
+      ],
+      "raw_answer": "1",
+      "answer_validation": {
+        "policy": "open-visual-v1",
+        "answer": "1\n\nVisual estimate; counts may be inaccurate.",
+        "limitation": "Visual estimate; counts may be inaccurate.",
+        "raw_truncated": false,
+        "changed": true,
+        "withheld": false,
+        "reasons": [
+          "model_output_preserved",
+          "estimate_label_added"
+        ]
+      },
+      "answer_policy": "open-visual-v1",
+      "answer": "1\n\nVisual estimate; counts may be inaccurate.",
+      "seconds": 0.531,
+      "generation_seconds": 0.326,
+      "peak_allocated_GiB": 4.303,
+      "generated_tokens": 2,
+      "max_new_tokens": 128
+    }
+  },
+  {
+    "case": "negative",
+    "reference": 0,
+    "source": "/mnt/c/Users/nrgen/.codex/scratch/SATquery AI/results/reliability-20260907/counting/farmland.png",
+    "suffix": " Answer with only a single integer. Do not describe the image.",
+    "run": {
+      "id": "570fc57a62bf42609c0ffc5ec20df891",
+      "state": "complete",
+      "stage": "Complete",
+      "question": "How many stadiums are visible in this image. Answer with only a single integer. Do not describe the image.",
+      "image": {
+        "id": "cd0078a8434242d697458b03f3416426",
+        "name": "farmland.png",
+        "width": 256,
+        "height": 256,
+        "bytes": 86339,
+        "sha256": "d9f9ced261109bcd24d9d411bd82a10a1e11e0db8cf93e7c43156ea1a111fce0",
+        "preview": "/api/images/cd0078a8434242d697458b03f3416426",
+        "geo": null
+      },
+      "started": 1788919959.7097986,
+      "model": "AdaptLLM/remote-sensing-Qwen2-VL-2B-Instruct",
+      "revision": "7f5dd71bf0f40c282193d50160e848a387a08ffe",
+      "adapter": null,
+      "mode": "baseline",
+      "route": "Single-image optical VQA",
+      "trace": [
+        {
+          "step": "Generate model answer",
+          "seconds": 0.263
+        }
+      ],
+      "routing": {
+        "tool": "vqa",
+        "rule": "visual_count",
+        "reason": "General visual count from the original model; an estimate, not validated object detection.",
+        "version": "rules-v4"
+      },
+      "requested_mode": "baseline",
+      "effective_question": "How many stadiums are visible in this image. Answer with only a single integer. Do not describe the image.",
+      "visual_token_bounds": [
+        256,
+        512
+      ],
+      "raw_answer": "0",
+      "answer_validation": {
+        "policy": "open-visual-v1",
+        "answer": "0\n\nVisual estimate; counts may be inaccurate.",
+        "limitation": "Visual estimate; counts may be inaccurate.",
+        "raw_truncated": false,
+        "changed": true,
+        "withheld": false,
+        "reasons": [
+          "model_output_preserved",
+          "estimate_label_added"
+        ]
+      },
+      "answer_policy": "open-visual-v1",
+      "answer": "0\n\nVisual estimate; counts may be inaccurate.",
+      "seconds": 0.284,
+      "generation_seconds": 0.263,
+      "peak_allocated_GiB": 4.224,
+      "generated_tokens": 2,
+      "max_new_tokens": 128
+    }
+  },
+  {
+    "case": "negative",
+    "reference": 0,
+    "source": "/mnt/c/Users/nrgen/.codex/scratch/SATquery AI/results/reliability-20260907/counting/farmland.png",
+    "suffix": " Count distinct visible objects, counting each object once. Answer with one integer only; if uncertain, say uncertain.",
+    "run": {
+      "id": "8d2f62501a0842468d2168a3c4e7ad4e",
+      "state": "complete",
+      "stage": "Complete",
+      "question": "How many stadiums are visible in this image. Count distinct visible objects, counting each object once. Answer with one integer only; if uncertain, say uncertain.",
+      "image": {
+        "id": "cd0078a8434242d697458b03f3416426",
+        "name": "farmland.png",
+        "width": 256,
+        "height": 256,
+        "bytes": 86339,
+        "sha256": "d9f9ced261109bcd24d9d411bd82a10a1e11e0db8cf93e7c43156ea1a111fce0",
+        "preview": "/api/images/cd0078a8434242d697458b03f3416426",
+        "geo": null
+      },
+      "started": 1788919960.131226,
+      "model": "AdaptLLM/remote-sensing-Qwen2-VL-2B-Instruct",
+      "revision": "7f5dd71bf0f40c282193d50160e848a387a08ffe",
+      "adapter": null,
+      "mode": "baseline",
+      "route": "Single-image optical VQA",
+      "trace": [
+        {
+          "step": "Generate model answer",
+          "seconds": 3.982
+        }
+      ],
+      "routing": {
+        "tool": "vqa",
+        "rule": "visual_count",
+        "reason": "General visual count from the original model; an estimate, not validated object detection.",
+        "version": "rules-v4"
+      },
+      "requested_mode": "baseline",
+      "effective_question": "How many stadiums are visible in this image. Count distinct visible objects, counting each object once. Answer with one integer only; if uncertain, say uncertain.",
+      "visual_token_bounds": [
+        256,
+        512
+      ],
+      "raw_answer": "There are no stadiums visible in this image. The image is a patchwork of agricultural fields, which are the main subjects of the photograph. The fields are arranged in a pattern that suggests a methodical approach to land division and use, likely for crop farming. There are no discernible structures or features that would indicate the presence of stadiums. Therefore, the answer is 0",
+      "answer_validation": {
+        "policy": "open-visual-v1",
+        "answer": "There are no stadiums visible in this image. The image is a patchwork of agricultural fields, which are the main subjects of the photograph. The fields are arranged in a pattern that suggests a methodical approach to land division and use, likely for crop farming. There are no discernible structures or features that would indicate the presence of stadiums. Therefore, the answer is 0\n\nVisual estimate; counts may be inaccurate.",
+        "limitation": "Visual estimate; counts may be inaccurate.",
+        "raw_truncated": false,
+        "changed": true,
+        "withheld": false,
+        "reasons": [
+          "model_output_preserved",
+          "estimate_label_added"
+        ]
+      },
+      "answer_policy": "open-visual-v1",
+      "answer": "There are no stadiums visible in this image. The image is a patchwork of agricultural fields, which are the main subjects of the photograph. The fields are arranged in a pattern that suggests a methodical approach to land division and use, likely for crop farming. There are no discernible structures or features that would indicate the presence of stadiums. Therefore, the answer is 0\n\nVisual estimate; counts may be inaccurate.",
+      "seconds": 4.002,
+      "generation_seconds": 3.982,
+      "peak_allocated_GiB": 4.227,
+      "generated_tokens": 76,
+      "max_new_tokens": 128
+    }
+  }
+]

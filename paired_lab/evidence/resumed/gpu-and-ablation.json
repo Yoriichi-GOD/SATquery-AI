@@ -1,0 +1,181 @@
+{
+  "gpu": "NVIDIA GeForce RTX 5060 Laptop GPU",
+  "measurements": [
+    {
+      "kind": "temporal",
+      "checkpoint": {
+        "repo": "https://github.com/wgcban/ChangeFormer",
+        "revision": "afd1b7ed640aa265a2c730de958416ae7356a2f9",
+        "path": "/root/satquery/paired-lab/changeformer-levir.pt",
+        "sha256": "db0dd783c3c3f27d02f55f24fa8199d2b2b47c422c7f7bd2e4d96e2fa65d69f2",
+        "license_note": "README restricts code to non-commercial research; review before commercial distribution."
+      },
+      "input_shapes": [
+        [
+          1,
+          3,
+          256,
+          256
+        ],
+        [
+          1,
+          3,
+          256,
+          256
+        ]
+      ],
+      "load_and_infer_seconds": 6.67206161,
+      "allocated_MiB": 167.59326171875,
+      "peak_allocated_MiB": 461.15625,
+      "peak_reserved_MiB": 624.0,
+      "device_before_used_total_MiB": "621, 8151",
+      "device_after_used_total_MiB": "1395, 8151"
+    },
+    {
+      "kind": "s1",
+      "checkpoint": {
+        "repo": "BIFOLD-BigEarthNetv2-0/resnet50-s1-v0.2.0",
+        "revision": "d417b3c32f2172cbceb14e5b106dd9aa7b77c647",
+        "path": "/root/.cache/huggingface/hub/models--BIFOLD-BigEarthNetv2-0--resnet50-s1-v0.2.0/snapshots/d417b3c32f2172cbceb14e5b106dd9aa7b77c647"
+      },
+      "input_shapes": [
+        [
+          1,
+          2,
+          120,
+          120
+        ]
+      ],
+      "load_and_infer_seconds": 0.7311601389999982,
+      "allocated_MiB": 98.28369140625,
+      "peak_allocated_MiB": 113.09765625,
+      "peak_reserved_MiB": 148.0,
+      "device_before_used_total_MiB": "776, 8151",
+      "device_after_used_total_MiB": "904, 8151"
+    },
+    {
+      "kind": "s2",
+      "checkpoint": {
+        "repo": "BIFOLD-BigEarthNetv2-0/resnet50-s2-v0.2.0",
+        "revision": "f5a590cd5876845f62702260ff62ea5a325433bb",
+        "path": "/root/.cache/huggingface/hub/models--BIFOLD-BigEarthNetv2-0--resnet50-s2-v0.2.0/snapshots/f5a590cd5876845f62702260ff62ea5a325433bb"
+      },
+      "input_shapes": [
+        [
+          1,
+          10,
+          120,
+          120
+        ]
+      ],
+      "load_and_infer_seconds": 0.4198196850000002,
+      "allocated_MiB": 98.81884765625,
+      "peak_allocated_MiB": 113.6328125,
+      "peak_reserved_MiB": 148.0,
+      "device_before_used_total_MiB": "776, 8151",
+      "device_after_used_total_MiB": "904, 8151"
+    },
+    {
+      "kind": "all",
+      "checkpoint": {
+        "repo": "BIFOLD-BigEarthNetv2-0/resnet50-all-v0.2.0",
+        "revision": "762acdc186cce6b31ecbc896ddab1721847d4c5e",
+        "path": "/root/.cache/huggingface/hub/models--BIFOLD-BigEarthNetv2-0--resnet50-all-v0.2.0/snapshots/762acdc186cce6b31ecbc896ddab1721847d4c5e"
+      },
+      "input_shapes": [
+        [
+          1,
+          12,
+          120,
+          120
+        ]
+      ],
+      "load_and_infer_seconds": 0.43339120299999934,
+      "allocated_MiB": 98.95263671875,
+      "peak_allocated_MiB": 113.7666015625,
+      "peak_reserved_MiB": 148.0,
+      "device_before_used_total_MiB": "776, 8151",
+      "device_after_used_total_MiB": "904, 8151"
+    }
+  ],
+  "note": "Actual isolated GPU loads and batch-one inference, float32. Demo defaults remain CPU for paired models. Device total includes display/driver.",
+  "within_joint_checkpoint_SAR_ablation": {
+    "sample": "ben-validation-33-69",
+    "baseline_scores": {
+      "Agro-forestry areas": 5.7767765611060895e-06,
+      "Arable land": 0.9968758821487427,
+      "Beaches, dunes, sands": 0.0001076028129318729,
+      "Broad-leaved forest": 0.8771032094955444,
+      "Coastal wetlands": 9.334355127066374e-06,
+      "Complex cultivation patterns": 0.46416524052619934,
+      "Coniferous forest": 0.10716495662927628,
+      "Industrial or commercial units": 0.020033562555909157,
+      "Inland waters": 0.9928076267242432,
+      "Inland wetlands": 0.009883989579975605,
+      "Land principally occupied by agriculture, with significant areas of natural vegetation": 0.5170154571533203,
+      "Marine waters": 6.275692430790514e-05,
+      "Mixed forest": 0.48008403182029724,
+      "Moors, heathland and sclerophyllous vegetation": 0.0007600583485327661,
+      "Natural grassland and sparsely vegetated areas": 0.0005809969734400511,
+      "Pastures": 0.383776992559433,
+      "Permanent crops": 0.0009111298131756485,
+      "Transitional woodland, shrub": 0.0062727550975978374,
+      "Urban fabric": 0.4376383423805237
+    },
+    "interventions": [
+      {
+        "intervention": "zero_normalized_SAR",
+        "max_absolute_score_change": 0.6790750622749329,
+        "mean_absolute_score_change": 0.10907804220914841,
+        "scores": {
+          "Agro-forestry areas": 4.902234286419116e-05,
+          "Arable land": 0.9764938950538635,
+          "Beaches, dunes, sands": 0.00023187027545645833,
+          "Broad-leaved forest": 0.19802814722061157,
+          "Coastal wetlands": 0.0015021675499156117,
+          "Complex cultivation patterns": 0.5731551647186279,
+          "Coniferous forest": 0.06499457359313965,
+          "Industrial or commercial units": 0.005752465687692165,
+          "Inland waters": 0.8215062618255615,
+          "Inland wetlands": 0.10612040013074875,
+          "Land principally occupied by agriculture, with significant areas of natural vegetation": 0.5734639167785645,
+          "Marine waters": 0.004107960499823093,
+          "Mixed forest": 0.6404038667678833,
+          "Moors, heathland and sclerophyllous vegetation": 0.000376752985175699,
+          "Natural grassland and sparsely vegetated areas": 0.00017827963165473193,
+          "Pastures": 0.07806296646595001,
+          "Permanent crops": 0.006556734908372164,
+          "Transitional woodland, shrub": 0.018662387505173683,
+          "Urban fabric": 0.04460100084543228
+        }
+      },
+      {
+        "intervention": "spatially_reversed_SAR",
+        "max_absolute_score_change": 0.33158621191978455,
+        "mean_absolute_score_change": 0.06404762715101242,
+        "scores": {
+          "Agro-forestry areas": 1.0294148751199828e-06,
+          "Arable land": 0.9819791316986084,
+          "Beaches, dunes, sands": 5.1107224862789735e-05,
+          "Broad-leaved forest": 0.6352652907371521,
+          "Coastal wetlands": 8.162711537806899e-07,
+          "Complex cultivation patterns": 0.3768230974674225,
+          "Coniferous forest": 0.14854393899440765,
+          "Industrial or commercial units": 0.009019511751830578,
+          "Inland waters": 0.9990529417991638,
+          "Inland wetlands": 0.0017771213315427303,
+          "Land principally occupied by agriculture, with significant areas of natural vegetation": 0.6509559750556946,
+          "Marine waters": 7.508813837375783e-07,
+          "Mixed forest": 0.7454885244369507,
+          "Moors, heathland and sclerophyllous vegetation": 4.82346149510704e-05,
+          "Natural grassland and sparsely vegetated areas": 0.0011073489440605044,
+          "Pastures": 0.05219076946377754,
+          "Permanent crops": 0.00013380745076574385,
+          "Transitional woodland, shrub": 0.003250862704589963,
+          "Urban fabric": 0.3676559031009674
+        }
+      }
+    ],
+    "interpretation": "Nonzero changes show this joint checkpoint uses SAR values. Ablated inputs are interventions, not realistic sensor observations or proof that SAR improves accuracy."
+  }
+}

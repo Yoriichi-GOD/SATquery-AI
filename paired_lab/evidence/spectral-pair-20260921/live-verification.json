@@ -1,0 +1,765 @@
+{
+  "runs": [
+    {
+      "state": "complete",
+      "stage": "Complete",
+      "plan": {
+        "task": "spectral_pair",
+        "version": "unified-rules-v5",
+        "specialist": "NDVI + NDWI observed-date comparison",
+        "device": "CPU",
+        "maturity": "experimental",
+        "reason": "Two optical surface-reflectance dates; compare only requested spectral parameters.",
+        "parameters": [
+          "vegetation",
+          "water"
+        ],
+        "include_built_up": true,
+        "threshold": 0.5,
+        "steps": [
+          "validate dates and shared grid",
+          "exclude invalid pixels at both dates",
+          "compare requested indices",
+          "export per-parameter evidence"
+        ],
+        "water_threshold": 0
+      },
+      "events": [
+        {
+          "stage": "Input checks passed; preparing specialist",
+          "at": "2026-09-20T20:24:33Z"
+        },
+        {
+          "stage": "Starting NDVI + NDWI observed-date comparison",
+          "at": "2026-09-20T20:24:33Z"
+        },
+        {
+          "stage": "Comparing NDVI vegetation",
+          "at": "2026-09-20T20:24:33Z"
+        },
+        {
+          "stage": "Comparing NDWI water candidates",
+          "at": "2026-09-20T20:24:33Z"
+        },
+        {
+          "stage": "Saving result and original inputs",
+          "at": "2026-09-20T20:24:34Z"
+        },
+        {
+          "stage": "Packaging evidence",
+          "at": "2026-09-20T20:24:34Z"
+        }
+      ],
+      "result": {
+        "task": "spectral_pair",
+        "answer": "Observed-date spectral comparison. Green marks newly threshold-selected pixels; pink marks lost selection. Each parameter uses its own common valid area across the two dates.",
+        "seconds": 0.5239125600055559,
+        "parameters": {
+          "vegetation": {
+            "status": "complete",
+            "formula": "(NIR-Red)/(NIR+Red)",
+            "threshold": 0.5,
+            "comparison": ">=",
+            "valid_pixels": 261312,
+            "full_pixels": 262144,
+            "before_pixels": 11128,
+            "after_pixels": 49093,
+            "gain_pixels": 39746,
+            "loss_pixels": 1781,
+            "net_pixels": 37965,
+            "net_percentage_points": 14.52860947832476,
+            "mean_index_change": 0.029482081583392234,
+            "net_grid_area_m2": 3796500.0,
+            "quality_rule": "SCL 4,5,6,7 retained at both dates; finite nonnegative calibrated bands and nonzero denominator",
+            "interpretation": "Threshold-based spectral candidates, not verified land-cover conversion."
+          },
+          "water": {
+            "status": "complete",
+            "formula": "(Green-NIR)/(Green+NIR)",
+            "threshold": 0,
+            "comparison": ">=",
+            "valid_pixels": 261312,
+            "full_pixels": 262144,
+            "before_pixels": 26865,
+            "after_pixels": 47776,
+            "gain_pixels": 21615,
+            "loss_pixels": 704,
+            "net_pixels": 20911,
+            "net_percentage_points": 8.002311413176585,
+            "mean_index_change": -0.01953148645811265,
+            "net_grid_area_m2": 2091100.0,
+            "quality_rule": "SCL 4,5,6,7 retained at both dates; finite nonnegative calibrated bands and nonzero denominator",
+            "interpretation": "Threshold-based spectral candidates, not verified land-cover conversion."
+          },
+          "built_up": {
+            "status": "unavailable",
+            "reason": "No validated built-up expansion measurement in this workflow. NDVI loss is not urban growth."
+          }
+        },
+        "dates": [
+          "2024-11-30",
+          "2025-11-07"
+        ],
+        "trace": [
+          {
+            "tool": "spectral-pair-v1",
+            "device": "cpu",
+            "source_sha256": [
+              "75e896f4f01f2047dbe857c8ec5469235dba85b48c8c177263e0787c99265573",
+              "804f00386cf016e2a84804470968f9e32c6cb678bc19f9be7ed4e5ff190166af"
+            ],
+            "dates": [
+              "2024-11-30",
+              "2025-11-07"
+            ],
+            "thresholds": {
+              "vegetation": 0.5,
+              "water": 0
+            }
+          }
+        ],
+        "confidence": {
+          "kind": "Deterministic arithmetic, not classification accuracy"
+        },
+        "limitations": [
+          "NDWI candidates can include built-up surfaces; not confirmed water or flood extent.",
+          "NDVI change is not vegetation health or urban expansion.",
+          "Matching metadata does not prove physical co-registration.",
+          "Season, sun angle and source processing can change index values.",
+          "SCL exclusions are only as reliable as supplied quality labels; no new cloud model is run.",
+          "No forecasting or built-up measurement is performed."
+        ],
+        "execution": {
+          "task": "spectral_pair",
+          "version": "unified-rules-v5",
+          "specialist": "NDVI + NDWI observed-date comparison",
+          "device": "CPU",
+          "maturity": "experimental",
+          "reason": "Two optical surface-reflectance dates; compare only requested spectral parameters.",
+          "parameters": [
+            "vegetation",
+            "water"
+          ],
+          "include_built_up": true,
+          "threshold": 0.5,
+          "steps": [
+            "validate dates and shared grid",
+            "exclude invalid pixels at both dates",
+            "compare requested indices",
+            "export per-parameter evidence"
+          ],
+          "water_threshold": 0
+        },
+        "id": "28c7cbee475c4007a83028d5d61d481c",
+        "query": "Analyze these images",
+        "input_checks": {
+          "task": "spectral_pair",
+          "inputs": [
+            {
+              "modality": "optical",
+              "date": "2024-11-30",
+              "units": "",
+              "sensor": "Sentinel-2",
+              "reflectance_units": "surface_reflectance",
+              "bands": [
+                "red",
+                "green",
+                "blue",
+                "nir",
+                "scl"
+              ],
+              "shape": [
+                512,
+                512
+              ],
+              "count": 5,
+              "dtype": "float32",
+              "crs": "EPSG:32644",
+              "transform": [
+                10.0,
+                0.0,
+                699790.0,
+                0.0,
+                -10.0,
+                2802250.0
+              ],
+              "sha256": "75e896f4f01f2047dbe857c8ec5469235dba85b48c8c177263e0787c99265573",
+              "id": "6067f6f9d59444aab936c1651fd011ca",
+              "name": "varanasi-2024.tif"
+            },
+            {
+              "modality": "optical",
+              "date": "2025-11-07",
+              "units": "",
+              "sensor": "Sentinel-2",
+              "reflectance_units": "surface_reflectance",
+              "bands": [
+                "red",
+                "green",
+                "blue",
+                "nir",
+                "scl"
+              ],
+              "shape": [
+                512,
+                512
+              ],
+              "count": 5,
+              "dtype": "float32",
+              "crs": "EPSG:32644",
+              "transform": [
+                10.0,
+                0.0,
+                699790.0,
+                0.0,
+                -10.0,
+                2802250.0
+              ],
+              "sha256": "804f00386cf016e2a84804470968f9e32c6cb678bc19f9be7ed4e5ff190166af",
+              "id": "d798899a8d144c06beee7a8719d2ff59",
+              "name": "varanasi-2025.tif"
+            }
+          ],
+          "warning": "Grid metadata matches; physical registration and temporal comparability require review.",
+          "plan": {
+            "task": "spectral_pair",
+            "version": "unified-rules-v5",
+            "specialist": "NDVI + NDWI observed-date comparison",
+            "device": "CPU",
+            "maturity": "experimental",
+            "reason": "Two optical surface-reflectance dates; compare only requested spectral parameters.",
+            "parameters": [
+              "vegetation",
+              "water"
+            ],
+            "include_built_up": true,
+            "threshold": 0.5,
+            "steps": [
+              "validate dates and shared grid",
+              "exclude invalid pixels at both dates",
+              "compare requested indices",
+              "export per-parameter evidence"
+            ],
+            "water_threshold": 0
+          }
+        },
+        "controller": "unified-rules-v5",
+        "created_at": "2026-09-20T20:24:34Z",
+        "execution_events": [
+          {
+            "stage": "Input checks passed; preparing specialist",
+            "at": "2026-09-20T20:24:33Z"
+          },
+          {
+            "stage": "Starting NDVI + NDWI observed-date comparison",
+            "at": "2026-09-20T20:24:33Z"
+          },
+          {
+            "stage": "Comparing NDVI vegetation",
+            "at": "2026-09-20T20:24:33Z"
+          },
+          {
+            "stage": "Comparing NDWI water candidates",
+            "at": "2026-09-20T20:24:33Z"
+          },
+          {
+            "stage": "Saving result and original inputs",
+            "at": "2026-09-20T20:24:34Z"
+          },
+          {
+            "stage": "Packaging evidence",
+            "at": "2026-09-20T20:24:34Z"
+          }
+        ],
+        "work_seconds_before_zip": 0.5325928060046863
+      },
+      "request_seconds": 1.0499433039949508
+    },
+    {
+      "state": "complete",
+      "stage": "Complete",
+      "plan": {
+        "task": "spectral_pair",
+        "version": "unified-rules-v5",
+        "specialist": "NDVI + NDWI observed-date comparison",
+        "device": "CPU",
+        "maturity": "experimental",
+        "reason": "Two optical surface-reflectance dates; compare only requested spectral parameters.",
+        "parameters": [
+          "vegetation"
+        ],
+        "include_built_up": false,
+        "threshold": 0.5,
+        "steps": [
+          "validate dates and shared grid",
+          "exclude invalid pixels at both dates",
+          "compare requested indices",
+          "export per-parameter evidence"
+        ],
+        "water_threshold": 0
+      },
+      "events": [
+        {
+          "stage": "Input checks passed; preparing specialist",
+          "at": "2026-09-20T20:24:35Z"
+        },
+        {
+          "stage": "Starting NDVI + NDWI observed-date comparison",
+          "at": "2026-09-20T20:24:35Z"
+        },
+        {
+          "stage": "Comparing NDVI vegetation",
+          "at": "2026-09-20T20:24:35Z"
+        },
+        {
+          "stage": "Saving result and original inputs",
+          "at": "2026-09-20T20:24:35Z"
+        },
+        {
+          "stage": "Packaging evidence",
+          "at": "2026-09-20T20:24:35Z"
+        }
+      ],
+      "result": {
+        "task": "spectral_pair",
+        "answer": "Observed-date spectral comparison. Green marks newly threshold-selected pixels; pink marks lost selection. Each parameter uses its own common valid area across the two dates.",
+        "seconds": 0.25989006299641915,
+        "parameters": {
+          "vegetation": {
+            "status": "complete",
+            "formula": "(NIR-Red)/(NIR+Red)",
+            "threshold": 0.5,
+            "comparison": ">=",
+            "valid_pixels": 261312,
+            "full_pixels": 262144,
+            "before_pixels": 11128,
+            "after_pixels": 49093,
+            "gain_pixels": 39746,
+            "loss_pixels": 1781,
+            "net_pixels": 37965,
+            "net_percentage_points": 14.52860947832476,
+            "mean_index_change": 0.029482081583392234,
+            "net_grid_area_m2": 3796500.0,
+            "quality_rule": "SCL 4,5,6,7 retained at both dates; finite nonnegative calibrated bands and nonzero denominator",
+            "interpretation": "Threshold-based spectral candidates, not verified land-cover conversion."
+          }
+        },
+        "dates": [
+          "2024-11-30",
+          "2025-11-07"
+        ],
+        "trace": [
+          {
+            "tool": "spectral-pair-v1",
+            "device": "cpu",
+            "source_sha256": [
+              "75e896f4f01f2047dbe857c8ec5469235dba85b48c8c177263e0787c99265573",
+              "804f00386cf016e2a84804470968f9e32c6cb678bc19f9be7ed4e5ff190166af"
+            ],
+            "dates": [
+              "2024-11-30",
+              "2025-11-07"
+            ],
+            "thresholds": {
+              "vegetation": 0.5,
+              "water": 0
+            }
+          }
+        ],
+        "confidence": {
+          "kind": "Deterministic arithmetic, not classification accuracy"
+        },
+        "limitations": [
+          "NDWI candidates can include built-up surfaces; not confirmed water or flood extent.",
+          "NDVI change is not vegetation health or urban expansion.",
+          "Matching metadata does not prove physical co-registration.",
+          "Season, sun angle and source processing can change index values.",
+          "SCL exclusions are only as reliable as supplied quality labels; no new cloud model is run.",
+          "No forecasting or built-up measurement is performed."
+        ],
+        "execution": {
+          "task": "spectral_pair",
+          "version": "unified-rules-v5",
+          "specialist": "NDVI + NDWI observed-date comparison",
+          "device": "CPU",
+          "maturity": "experimental",
+          "reason": "Two optical surface-reflectance dates; compare only requested spectral parameters.",
+          "parameters": [
+            "vegetation"
+          ],
+          "include_built_up": false,
+          "threshold": 0.5,
+          "steps": [
+            "validate dates and shared grid",
+            "exclude invalid pixels at both dates",
+            "compare requested indices",
+            "export per-parameter evidence"
+          ],
+          "water_threshold": 0
+        },
+        "id": "62ab979d6a2244be82d7390e9c14c2ed",
+        "query": "Compare vegetation",
+        "input_checks": {
+          "task": "spectral_pair",
+          "inputs": [
+            {
+              "modality": "optical",
+              "date": "2024-11-30",
+              "units": "",
+              "sensor": "Sentinel-2",
+              "reflectance_units": "surface_reflectance",
+              "bands": [
+                "red",
+                "green",
+                "blue",
+                "nir",
+                "scl"
+              ],
+              "shape": [
+                512,
+                512
+              ],
+              "count": 5,
+              "dtype": "float32",
+              "crs": "EPSG:32644",
+              "transform": [
+                10.0,
+                0.0,
+                699790.0,
+                0.0,
+                -10.0,
+                2802250.0
+              ],
+              "sha256": "75e896f4f01f2047dbe857c8ec5469235dba85b48c8c177263e0787c99265573",
+              "id": "6067f6f9d59444aab936c1651fd011ca",
+              "name": "varanasi-2024.tif"
+            },
+            {
+              "modality": "optical",
+              "date": "2025-11-07",
+              "units": "",
+              "sensor": "Sentinel-2",
+              "reflectance_units": "surface_reflectance",
+              "bands": [
+                "red",
+                "green",
+                "blue",
+                "nir",
+                "scl"
+              ],
+              "shape": [
+                512,
+                512
+              ],
+              "count": 5,
+              "dtype": "float32",
+              "crs": "EPSG:32644",
+              "transform": [
+                10.0,
+                0.0,
+                699790.0,
+                0.0,
+                -10.0,
+                2802250.0
+              ],
+              "sha256": "804f00386cf016e2a84804470968f9e32c6cb678bc19f9be7ed4e5ff190166af",
+              "id": "d798899a8d144c06beee7a8719d2ff59",
+              "name": "varanasi-2025.tif"
+            }
+          ],
+          "warning": "Grid metadata matches; physical registration and temporal comparability require review.",
+          "plan": {
+            "task": "spectral_pair",
+            "version": "unified-rules-v5",
+            "specialist": "NDVI + NDWI observed-date comparison",
+            "device": "CPU",
+            "maturity": "experimental",
+            "reason": "Two optical surface-reflectance dates; compare only requested spectral parameters.",
+            "parameters": [
+              "vegetation"
+            ],
+            "include_built_up": false,
+            "threshold": 0.5,
+            "steps": [
+              "validate dates and shared grid",
+              "exclude invalid pixels at both dates",
+              "compare requested indices",
+              "export per-parameter evidence"
+            ],
+            "water_threshold": 0
+          }
+        },
+        "controller": "unified-rules-v5",
+        "created_at": "2026-09-20T20:24:35Z",
+        "execution_events": [
+          {
+            "stage": "Input checks passed; preparing specialist",
+            "at": "2026-09-20T20:24:35Z"
+          },
+          {
+            "stage": "Starting NDVI + NDWI observed-date comparison",
+            "at": "2026-09-20T20:24:35Z"
+          },
+          {
+            "stage": "Comparing NDVI vegetation",
+            "at": "2026-09-20T20:24:35Z"
+          },
+          {
+            "stage": "Saving result and original inputs",
+            "at": "2026-09-20T20:24:35Z"
+          },
+          {
+            "stage": "Packaging evidence",
+            "at": "2026-09-20T20:24:35Z"
+          }
+        ],
+        "work_seconds_before_zip": 0.2701571369980229
+      },
+      "request_seconds": 0.5962000669969711
+    },
+    {
+      "state": "complete",
+      "stage": "Complete",
+      "plan": {
+        "task": "spectral_pair",
+        "version": "unified-rules-v5",
+        "specialist": "NDVI + NDWI observed-date comparison",
+        "device": "CPU",
+        "maturity": "experimental",
+        "reason": "Two optical surface-reflectance dates; compare only requested spectral parameters.",
+        "parameters": [
+          "water"
+        ],
+        "include_built_up": false,
+        "threshold": 0.5,
+        "steps": [
+          "validate dates and shared grid",
+          "exclude invalid pixels at both dates",
+          "compare requested indices",
+          "export per-parameter evidence"
+        ],
+        "water_threshold": 0
+      },
+      "events": [
+        {
+          "stage": "Input checks passed; preparing specialist",
+          "at": "2026-09-20T20:24:36Z"
+        },
+        {
+          "stage": "Starting NDVI + NDWI observed-date comparison",
+          "at": "2026-09-20T20:24:36Z"
+        },
+        {
+          "stage": "Comparing NDWI water candidates",
+          "at": "2026-09-20T20:24:36Z"
+        },
+        {
+          "stage": "Saving result and original inputs",
+          "at": "2026-09-20T20:24:36Z"
+        },
+        {
+          "stage": "Packaging evidence",
+          "at": "2026-09-20T20:24:36Z"
+        }
+      ],
+      "result": {
+        "task": "spectral_pair",
+        "answer": "Observed-date spectral comparison. Green marks newly threshold-selected pixels; pink marks lost selection. Each parameter uses its own common valid area across the two dates.",
+        "seconds": 0.24412049500097055,
+        "parameters": {
+          "water": {
+            "status": "complete",
+            "formula": "(Green-NIR)/(Green+NIR)",
+            "threshold": 0,
+            "comparison": ">=",
+            "valid_pixels": 261312,
+            "full_pixels": 262144,
+            "before_pixels": 26865,
+            "after_pixels": 47776,
+            "gain_pixels": 21615,
+            "loss_pixels": 704,
+            "net_pixels": 20911,
+            "net_percentage_points": 8.002311413176585,
+            "mean_index_change": -0.01953148645811265,
+            "net_grid_area_m2": 2091100.0,
+            "quality_rule": "SCL 4,5,6,7 retained at both dates; finite nonnegative calibrated bands and nonzero denominator",
+            "interpretation": "Threshold-based spectral candidates, not verified land-cover conversion."
+          }
+        },
+        "dates": [
+          "2024-11-30",
+          "2025-11-07"
+        ],
+        "trace": [
+          {
+            "tool": "spectral-pair-v1",
+            "device": "cpu",
+            "source_sha256": [
+              "75e896f4f01f2047dbe857c8ec5469235dba85b48c8c177263e0787c99265573",
+              "804f00386cf016e2a84804470968f9e32c6cb678bc19f9be7ed4e5ff190166af"
+            ],
+            "dates": [
+              "2024-11-30",
+              "2025-11-07"
+            ],
+            "thresholds": {
+              "vegetation": 0.5,
+              "water": 0
+            }
+          }
+        ],
+        "confidence": {
+          "kind": "Deterministic arithmetic, not classification accuracy"
+        },
+        "limitations": [
+          "NDWI candidates can include built-up surfaces; not confirmed water or flood extent.",
+          "NDVI change is not vegetation health or urban expansion.",
+          "Matching metadata does not prove physical co-registration.",
+          "Season, sun angle and source processing can change index values.",
+          "SCL exclusions are only as reliable as supplied quality labels; no new cloud model is run.",
+          "No forecasting or built-up measurement is performed."
+        ],
+        "execution": {
+          "task": "spectral_pair",
+          "version": "unified-rules-v5",
+          "specialist": "NDVI + NDWI observed-date comparison",
+          "device": "CPU",
+          "maturity": "experimental",
+          "reason": "Two optical surface-reflectance dates; compare only requested spectral parameters.",
+          "parameters": [
+            "water"
+          ],
+          "include_built_up": false,
+          "threshold": 0.5,
+          "steps": [
+            "validate dates and shared grid",
+            "exclude invalid pixels at both dates",
+            "compare requested indices",
+            "export per-parameter evidence"
+          ],
+          "water_threshold": 0
+        },
+        "id": "d8069357759e49218cb7fbefaec530c5",
+        "query": "Compare water",
+        "input_checks": {
+          "task": "spectral_pair",
+          "inputs": [
+            {
+              "modality": "optical",
+              "date": "2024-11-30",
+              "units": "",
+              "sensor": "Sentinel-2",
+              "reflectance_units": "surface_reflectance",
+              "bands": [
+                "red",
+                "green",
+                "blue",
+                "nir",
+                "scl"
+              ],
+              "shape": [
+                512,
+                512
+              ],
+              "count": 5,
+              "dtype": "float32",
+              "crs": "EPSG:32644",
+              "transform": [
+                10.0,
+                0.0,
+                699790.0,
+                0.0,
+                -10.0,
+                2802250.0
+              ],
+              "sha256": "75e896f4f01f2047dbe857c8ec5469235dba85b48c8c177263e0787c99265573",
+              "id": "6067f6f9d59444aab936c1651fd011ca",
+              "name": "varanasi-2024.tif"
+            },
+            {
+              "modality": "optical",
+              "date": "2025-11-07",
+              "units": "",
+              "sensor": "Sentinel-2",
+              "reflectance_units": "surface_reflectance",
+              "bands": [
+                "red",
+                "green",
+                "blue",
+                "nir",
+                "scl"
+              ],
+              "shape": [
+                512,
+                512
+              ],
+              "count": 5,
+              "dtype": "float32",
+              "crs": "EPSG:32644",
+              "transform": [
+                10.0,
+                0.0,
+                699790.0,
+                0.0,
+                -10.0,
+                2802250.0
+              ],
+              "sha256": "804f00386cf016e2a84804470968f9e32c6cb678bc19f9be7ed4e5ff190166af",
+              "id": "d798899a8d144c06beee7a8719d2ff59",
+              "name": "varanasi-2025.tif"
+            }
+          ],
+          "warning": "Grid metadata matches; physical registration and temporal comparability require review.",
+          "plan": {
+            "task": "spectral_pair",
+            "version": "unified-rules-v5",
+            "specialist": "NDVI + NDWI observed-date comparison",
+            "device": "CPU",
+            "maturity": "experimental",
+            "reason": "Two optical surface-reflectance dates; compare only requested spectral parameters.",
+            "parameters": [
+              "water"
+            ],
+            "include_built_up": false,
+            "threshold": 0.5,
+            "steps": [
+              "validate dates and shared grid",
+              "exclude invalid pixels at both dates",
+              "compare requested indices",
+              "export per-parameter evidence"
+            ],
+            "water_threshold": 0
+          }
+        },
+        "controller": "unified-rules-v5",
+        "created_at": "2026-09-20T20:24:36Z",
+        "execution_events": [
+          {
+            "stage": "Input checks passed; preparing specialist",
+            "at": "2026-09-20T20:24:36Z"
+          },
+          {
+            "stage": "Starting NDVI + NDWI observed-date comparison",
+            "at": "2026-09-20T20:24:36Z"
+          },
+          {
+            "stage": "Comparing NDWI water candidates",
+            "at": "2026-09-20T20:24:36Z"
+          },
+          {
+            "stage": "Saving result and original inputs",
+            "at": "2026-09-20T20:24:36Z"
+          },
+          {
+            "stage": "Packaging evidence",
+            "at": "2026-09-20T20:24:36Z"
+          }
+        ],
+        "work_seconds_before_zip": 0.2508924970024964
+      },
+      "request_seconds": 0.5676633969997056
+    }
+  ],
+  "refusals": 3,
+  "scope": "Two actual observed crops; arithmetic and integration verification, not field validation or city-wide change estimates."
+}

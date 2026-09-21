@@ -1,0 +1,28 @@
+{
+  "id": "flood-Nigeria_417184",
+  "kind": "water_map",
+  "name": "Nigeria \u00b7 417184 (test)",
+  "source": "Sen1Floods11 v1.1 hand-labelled",
+  "benchmark": "Official test split; first chip per event, not selected by prediction quality",
+  "files": [
+    "optical.tif",
+    "sar.tif"
+  ],
+  "source_files": [
+    {
+      "source": "/root/satquery/paired-lab/sen1floods11/S2Hand/Nigeria_417184_S2Hand.tif",
+      "source_sha256": "4c0772d6fb10a0c1288e649fc9ee9d354de3fe33c937e5df56cf3f8f2fc4e74b",
+      "export_sha256": "f0288ac5c9330376cbaa219522161ec76e455a3db999712a1c116931eee013b5"
+    },
+    {
+      "source": "/root/satquery/paired-lab/sen1floods11/S1Hand/Nigeria_417184_S1Hand.tif",
+      "source_sha256": "99b58fdcad3b27e09a0bb672246cf59f58e1c7e211d290e45485c5321995d7dc",
+      "export_sha256": "6c399aedbfd5deb1b39b2f975b3db221ca84fde5cc1bcba308a2e53e80f4118b"
+    }
+  ],
+  "dates": {
+    "optical": "2018/09/20",
+    "sar": "2018/09/21"
+  },
+  "reference": "/root/satquery/paired-lab/sen1floods11/LabelHand/Nigeria_417184_LabelHand.tif"
+}

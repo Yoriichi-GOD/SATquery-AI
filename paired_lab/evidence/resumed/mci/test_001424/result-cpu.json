@@ -1,0 +1,36 @@
+{
+  "file": "test_001424.png",
+  "reference_changeflag": 1,
+  "raw_caption": "some houses are built in the clearing",
+  "reference_captions": [
+    " a road and two houses appear on the grass on the left .",
+    " a house shows up along the extended road .",
+    " a road has been extended and two houses are added to the road .",
+    " a building is built at the bottom .",
+    " two houses and some trees have appeared in the clearing by the side of the road ."
+  ],
+  "caption_changeflag_heuristic": 1,
+  "confusion_rows_reference_columns_prediction": [
+    [
+      60825,
+      44,
+      68
+    ],
+    [
+      48,
+      3194,
+      0
+    ],
+    [
+      192,
+      0,
+      1165
+    ]
+  ],
+  "predicted_class_pixels": {
+    "0": 61065,
+    "1": 3238,
+    "2": 1233
+  },
+  "gpu_caption": "some houses are built in the clearing"
+}

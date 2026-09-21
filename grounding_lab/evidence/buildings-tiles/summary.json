@@ -1,0 +1,74 @@
+[
+  {
+    "scene": "assam-monsoon-tile-0-0",
+    "threshold": 0.2,
+    "objects": 1,
+    "raw": 3,
+    "coverage": 48.6282,
+    "capped": false,
+    "seconds": 16.297
+  },
+  {
+    "scene": "assam-monsoon-tile-256-0",
+    "threshold": 0.2,
+    "objects": 0,
+    "raw": 1,
+    "coverage": 0.0,
+    "capped": false,
+    "seconds": 3.551
+  },
+  {
+    "scene": "assam-monsoon-tile-0-256",
+    "threshold": 0.2,
+    "objects": 0,
+    "raw": 1,
+    "coverage": 0.0,
+    "capped": false,
+    "seconds": 3.342
+  },
+  {
+    "scene": "assam-monsoon-tile-256-256",
+    "threshold": 0.2,
+    "objects": 0,
+    "raw": 1,
+    "coverage": 0.0,
+    "capped": false,
+    "seconds": 3.046
+  },
+  {
+    "scene": "bengaluru-lake-city-tile-0-0",
+    "threshold": 0.2,
+    "objects": 2,
+    "raw": 3,
+    "coverage": 70.3186,
+    "capped": false,
+    "seconds": 4.168
+  },
+  {
+    "scene": "bengaluru-lake-city-tile-256-0",
+    "threshold": 0.2,
+    "objects": 3,
+    "raw": 4,
+    "coverage": 64.325,
+    "capped": false,
+    "seconds": 3.753
+  },
+  {
+    "scene": "bengaluru-lake-city-tile-0-256",
+    "threshold": 0.2,
+    "objects": 1,
+    "raw": 2,
+    "coverage": 12.4084,
+    "capped": false,
+    "seconds": 4.088
+  },
+  {
+    "scene": "bengaluru-lake-city-tile-256-256",
+    "threshold": 0.2,
+    "objects": 0,
+    "raw": 1,
+    "coverage": 0.0,
+    "capped": false,
+    "seconds": 2.508
+  }
+]

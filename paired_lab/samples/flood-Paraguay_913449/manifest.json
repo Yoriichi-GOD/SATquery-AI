@@ -1,0 +1,28 @@
+{
+  "id": "flood-Paraguay_913449",
+  "kind": "water_map",
+  "name": "Paraguay \u00b7 913449 (test)",
+  "source": "Sen1Floods11 v1.1 hand-labelled",
+  "benchmark": "Official test split; first chip per event, not selected by prediction quality",
+  "files": [
+    "optical.tif",
+    "sar.tif"
+  ],
+  "source_files": [
+    {
+      "source": "/root/satquery/paired-lab/sen1floods11/S2Hand/Paraguay_913449_S2Hand.tif",
+      "source_sha256": "c38dfcf7b2ef60e39d57cfe88494ac5e3b73a5ccff69fc4d2e068233d164348a",
+      "export_sha256": "b23cff54be4fc1e835513b5a8546dcb4f3ea51c5551701ca74f9c5ce6cf7264e"
+    },
+    {
+      "source": "/root/satquery/paired-lab/sen1floods11/S1Hand/Paraguay_913449_S1Hand.tif",
+      "source_sha256": "d574270d0876e440adfac65762f76a32e67ddcb2508b381480e806e81df3833b",
+      "export_sha256": "3caf737ff62fc3029d5446312be484b8bb58b9602c13696b3f4c2f08a277d867"
+    }
+  ],
+  "dates": {
+    "optical": "2018/10/31",
+    "sar": "2018/10/31"
+  },
+  "reference": "/root/satquery/paired-lab/sen1floods11/LabelHand/Paraguay_913449_LabelHand.tif"
+}

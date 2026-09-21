@@ -1,0 +1,658 @@
+{
+  "scope": "Integration and evidence verification; not independent scientific accuracy or generalization. Synthetic metadata fixtures are not official geolocation evidence.",
+  "runs": [
+    {
+      "name": "01-vqa",
+      "id": "265980c55b714414a3f87f9a893acbdf",
+      "task": "vqa",
+      "plan": {
+        "task": "vqa",
+        "version": "unified-rules-v3",
+        "specialist": "Remote-sensing Qwen2-VL-2B",
+        "device": "CUDA GPU",
+        "maturity": "supported",
+        "reason": "Baseball/softball field count estimated by VQA; an original and mirrored image must agree. No object boxes or verified detection are produced.",
+        "decision": {
+          "tool": "vqa",
+          "rule": "baseball_count",
+          "reason": "Baseball/softball field count estimated by VQA; an original and mirrored image must agree. No object boxes or verified detection are produced.",
+          "version": "rules-v5"
+        },
+        "mode": "baseline",
+        "threshold": 0.5,
+        "steps": [
+          "validate image",
+          "vqa",
+          "save evidence"
+        ]
+      },
+      "caller_seconds": 27.940113731994643,
+      "specialist_seconds": 27.204,
+      "observed_stages": [
+        "Preparing single-image specialist input",
+        "Preparing image",
+        "Loading local model",
+        "Analyzing image",
+        "Describing scene",
+        "Collecting single-image evidence",
+        "Complete"
+      ],
+      "events": [
+        {
+          "stage": "Starting Remote-sensing Qwen2-VL-2B",
+          "at": "2026-09-19T21:55:55Z"
+        },
+        {
+          "stage": "Preparing single-image specialist input",
+          "at": "2026-09-19T21:55:55Z"
+        },
+        {
+          "stage": "Preparing image",
+          "at": "2026-09-19T21:55:56Z"
+        },
+        {
+          "stage": "Loading local model",
+          "at": "2026-09-19T21:56:02Z"
+        },
+        {
+          "stage": "Analyzing image",
+          "at": "2026-09-19T21:56:13Z"
+        },
+        {
+          "stage": "Describing scene",
+          "at": "2026-09-19T21:56:21Z"
+        },
+        {
+          "stage": "Complete",
+          "at": "2026-09-19T21:56:23Z"
+        },
+        {
+          "stage": "Collecting single-image evidence",
+          "at": "2026-09-19T21:56:23Z"
+        },
+        {
+          "stage": "Saving result and original inputs",
+          "at": "2026-09-19T21:56:23Z"
+        },
+        {
+          "stage": "Packaging evidence",
+          "at": "2026-09-19T21:56:23Z"
+        }
+      ],
+      "artifacts": [
+        "main-raw-result.json",
+        "input-1.original",
+        "result.json",
+        "input-preview.png"
+      ],
+      "zip_sha256": "703c1a89875f815930239e4b8127b12c935d12db7283110d1915132656c2b121",
+      "zip_integrity": true
+    },
+    {
+      "name": "02-temporal",
+      "id": "5bd3b0a14d404542adc1e797412cd72a",
+      "task": "temporal",
+      "plan": {
+        "task": "temporal",
+        "version": "unified-rules-v3",
+        "specialist": "MCI road/building change + caption",
+        "device": "CPU",
+        "maturity": "supported",
+        "reason": "Two optical dates and a supported change question.",
+        "threshold": 0.5,
+        "steps": [
+          "validate pair",
+          "registration diagnostic",
+          "road/building masks and caption",
+          "save evidence"
+        ]
+      },
+      "caller_seconds": 15.112403291001101,
+      "specialist_seconds": 13.815267088000837,
+      "observed_stages": [
+        "Input checks passed; preparing specialist",
+        "Loading or reusing MCI on CPU",
+        "Predicting road/building changes and caption",
+        "Saving result and original inputs",
+        "Complete"
+      ],
+      "events": [
+        {
+          "stage": "Starting MCI road/building change + caption",
+          "at": "2026-09-19T21:56:24Z"
+        },
+        {
+          "stage": "Loading or reusing MCI on CPU",
+          "at": "2026-09-19T21:56:24Z"
+        },
+        {
+          "stage": "Predicting road/building changes and caption",
+          "at": "2026-09-19T21:56:38Z"
+        },
+        {
+          "stage": "Rendering temporal masks and calculating pixel counts",
+          "at": "2026-09-19T21:56:38Z"
+        },
+        {
+          "stage": "Saving result and original inputs",
+          "at": "2026-09-19T21:56:38Z"
+        },
+        {
+          "stage": "Packaging evidence",
+          "at": "2026-09-19T21:56:38Z"
+        }
+      ],
+      "artifacts": [
+        "before.png",
+        "input-2.tif",
+        "overlay.png",
+        "after.png",
+        "input-1.tif",
+        "change-mask.png",
+        "result.json",
+        "scores.npz"
+      ],
+      "zip_sha256": "c07f73a2dfe409a21331c955d45f80e4cd55e68ee5d8c103472fe699226369d8",
+      "zip_integrity": true,
+      "recomputed_class_pixels": {
+        "road": 0,
+        "building": 0
+      }
+    },
+    {
+      "name": "03-water-user-upload",
+      "id": "37669eaadc42442b848b767d1d576a29",
+      "task": "water_map",
+      "plan": {
+        "task": "water_map",
+        "version": "unified-rules-v3",
+        "specialist": "WaterUNet \u00b7 SAR / optical / joint",
+        "device": "CPU",
+        "maturity": "supported",
+        "reason": "Optical 13-band / SAR pair and a water-mapping question.",
+        "threshold": 0.5,
+        "steps": [
+          "validate sensor contract",
+          "three modality predictions",
+          "save evidence"
+        ]
+      },
+      "caller_seconds": 1.2829418550027185,
+      "specialist_seconds": 1.0043411209990154,
+      "observed_stages": [
+        "Normalizing optical and SAR channels",
+        "Predicting water: SAR only",
+        "Predicting water: optical only",
+        "Predicting water: joint",
+        "Rendering water evidence and counting predicted pixels",
+        "Complete"
+      ],
+      "events": [
+        {
+          "stage": "Starting WaterUNet \u00b7 SAR / optical / joint",
+          "at": "2026-09-19T21:56:39Z"
+        },
+        {
+          "stage": "Normalizing optical and SAR channels",
+          "at": "2026-09-19T21:56:39Z"
+        },
+        {
+          "stage": "Loading WaterUNet on CPU",
+          "at": "2026-09-19T21:56:39Z"
+        },
+        {
+          "stage": "Predicting water: SAR only",
+          "at": "2026-09-19T21:56:39Z"
+        },
+        {
+          "stage": "Predicting water: optical only",
+          "at": "2026-09-19T21:56:39Z"
+        },
+        {
+          "stage": "Predicting water: joint",
+          "at": "2026-09-19T21:56:39Z"
+        },
+        {
+          "stage": "Rendering water evidence and counting predicted pixels",
+          "at": "2026-09-19T21:56:39Z"
+        },
+        {
+          "stage": "Saving result and original inputs",
+          "at": "2026-09-19T21:56:40Z"
+        },
+        {
+          "stage": "Packaging evidence",
+          "at": "2026-09-19T21:56:40Z"
+        }
+      ],
+      "artifacts": [
+        "input-2.tif",
+        "water-overlay.png",
+        "water-mask.tif",
+        "s2-water.png",
+        "optical.png",
+        "water-scores.npz",
+        "input-1.tif",
+        "all-water.png",
+        "sar.png",
+        "result.json",
+        "s1-water.png"
+      ],
+      "zip_sha256": "eab9e128af733d9780bb737f05e5bae22e12fc1b47c3e27ee4729e837739e11b",
+      "zip_integrity": true,
+      "recomputed_water_pixels": {
+        "s1": 134387,
+        "s2": 130106,
+        "all": 129908
+      }
+    },
+    {
+      "name": "04-land-cover",
+      "id": "24cb1ebea60547cdbdb328e17d257b4a",
+      "task": "optical_sar",
+      "plan": {
+        "task": "optical_sar",
+        "version": "unified-rules-v3",
+        "specialist": "BIFOLD ResNet50 \u00b7 SAR / optical / joint",
+        "device": "CPU",
+        "maturity": "supported",
+        "reason": "Optical\u2013SAR patch and a scene-level land-cover question.",
+        "threshold": 0.5,
+        "steps": [
+          "validate sensor contract",
+          "three modality predictions",
+          "save evidence"
+        ]
+      },
+      "caller_seconds": 1.4316497849940788,
+      "specialist_seconds": 1.0969371250030235,
+      "observed_stages": [
+        "Loading or reusing s1 land-cover model on CPU",
+        "Loading or reusing s2 land-cover model on CPU",
+        "Loading or reusing all land-cover model on CPU",
+        "Saving result and original inputs",
+        "Complete"
+      ],
+      "events": [
+        {
+          "stage": "Starting BIFOLD ResNet50 \u00b7 SAR / optical / joint",
+          "at": "2026-09-19T21:56:40Z"
+        },
+        {
+          "stage": "Loading or reusing s1 land-cover model on CPU",
+          "at": "2026-09-19T21:56:40Z"
+        },
+        {
+          "stage": "Predicting land-cover scores: s1",
+          "at": "2026-09-19T21:56:40Z"
+        },
+        {
+          "stage": "Loading or reusing s2 land-cover model on CPU",
+          "at": "2026-09-19T21:56:40Z"
+        },
+        {
+          "stage": "Predicting land-cover scores: s2",
+          "at": "2026-09-19T21:56:41Z"
+        },
+        {
+          "stage": "Loading or reusing all land-cover model on CPU",
+          "at": "2026-09-19T21:56:41Z"
+        },
+        {
+          "stage": "Predicting land-cover scores: all",
+          "at": "2026-09-19T21:56:41Z"
+        },
+        {
+          "stage": "Rendering land-cover evidence",
+          "at": "2026-09-19T21:56:41Z"
+        },
+        {
+          "stage": "Saving result and original inputs",
+          "at": "2026-09-19T21:56:41Z"
+        },
+        {
+          "stage": "Packaging evidence",
+          "at": "2026-09-19T21:56:41Z"
+        }
+      ],
+      "artifacts": [
+        "input-2.tif",
+        "optical.png",
+        "input-1.tif",
+        "sar.png",
+        "result.json"
+      ],
+      "zip_sha256": "b0ce0614a9f671accf6b5c95469ed76a01f2f88deae0ded0d6e65e25910050b9",
+      "zip_integrity": true
+    },
+    {
+      "name": "05-ndvi",
+      "id": "e2cdc1c42bd542279a017c649561e6c3",
+      "task": "ndvi",
+      "plan": {
+        "task": "ndvi",
+        "version": "unified-rules-v3",
+        "specialist": "Deterministic NDVI calculation",
+        "device": "CPU",
+        "maturity": "supported",
+        "reason": "Explicit NDVI or vegetation pixel-coverage request with calibrated Red/NIR available. Coverage means pixels meeting the selected NDVI threshold, not surveyed vegetation cover.",
+        "decision": {
+          "tool": "ndvi",
+          "rule": "ndvi_threshold_coverage",
+          "reason": "Explicit NDVI or vegetation pixel-coverage request with calibrated Red/NIR available. Coverage means pixels meeting the selected NDVI threshold, not surveyed vegetation cover.",
+          "version": "rules-v5"
+        },
+        "mode": "baseline",
+        "threshold": 0.5,
+        "steps": [
+          "validate image",
+          "ndvi",
+          "save evidence"
+        ]
+      },
+      "caller_seconds": 0.8751939720023074,
+      "specialist_seconds": 0.221,
+      "observed_stages": [
+        "Preparing single-image specialist input",
+        "Calculating NDVI",
+        "Packaging evidence",
+        "Complete"
+      ],
+      "events": [
+        {
+          "stage": "Starting Deterministic NDVI calculation",
+          "at": "2026-09-19T21:56:42Z"
+        },
+        {
+          "stage": "Preparing single-image specialist input",
+          "at": "2026-09-19T21:56:42Z"
+        },
+        {
+          "stage": "Calculating NDVI",
+          "at": "2026-09-19T21:56:42Z"
+        },
+        {
+          "stage": "Complete",
+          "at": "2026-09-19T21:56:42Z"
+        },
+        {
+          "stage": "Collecting single-image evidence",
+          "at": "2026-09-19T21:56:42Z"
+        },
+        {
+          "stage": "Saving result and original inputs",
+          "at": "2026-09-19T21:56:42Z"
+        },
+        {
+          "stage": "Packaging evidence",
+          "at": "2026-09-19T21:56:42Z"
+        }
+      ],
+      "artifacts": [
+        "evidence.png",
+        "ndvi.tif",
+        "main-raw-result.json",
+        "false-colour.png",
+        "rgb.png",
+        "input-1.original",
+        "result.json",
+        "input-preview.png",
+        "mask.png"
+      ],
+      "zip_sha256": "66610a4bc9c5d28e347566dd40283498cd942ce3c560690bb8e70ae8ea35500c",
+      "zip_integrity": true,
+      "recomputed_pixels": 38761
+    },
+    {
+      "name": "06-external-synthetic-ndvi",
+      "id": "3d5044d50fe444709f845096340eca62",
+      "task": "ndvi",
+      "plan": {
+        "task": "ndvi",
+        "version": "unified-rules-v3",
+        "specialist": "Deterministic NDVI calculation",
+        "device": "CPU",
+        "maturity": "supported",
+        "reason": "Explicit NDVI or vegetation pixel-coverage request with calibrated Red/NIR available. Coverage means pixels meeting the selected NDVI threshold, not surveyed vegetation cover.",
+        "decision": {
+          "tool": "ndvi",
+          "rule": "ndvi_threshold_coverage",
+          "reason": "Explicit NDVI or vegetation pixel-coverage request with calibrated Red/NIR available. Coverage means pixels meeting the selected NDVI threshold, not surveyed vegetation cover.",
+          "version": "rules-v5"
+        },
+        "mode": "baseline",
+        "threshold": 0.5,
+        "steps": [
+          "validate image",
+          "ndvi",
+          "save evidence"
+        ]
+      },
+      "caller_seconds": 0.6153827140005887,
+      "specialist_seconds": 0.016,
+      "observed_stages": [
+        "Preparing single-image specialist input",
+        "Calculating NDVI",
+        "Complete"
+      ],
+      "events": [
+        {
+          "stage": "Starting Deterministic NDVI calculation",
+          "at": "2026-09-19T21:56:43Z"
+        },
+        {
+          "stage": "Preparing single-image specialist input",
+          "at": "2026-09-19T21:56:43Z"
+        },
+        {
+          "stage": "Calculating NDVI",
+          "at": "2026-09-19T21:56:43Z"
+        },
+        {
+          "stage": "Complete",
+          "at": "2026-09-19T21:56:43Z"
+        },
+        {
+          "stage": "Collecting single-image evidence",
+          "at": "2026-09-19T21:56:43Z"
+        },
+        {
+          "stage": "Saving result and original inputs",
+          "at": "2026-09-19T21:56:43Z"
+        },
+        {
+          "stage": "Packaging evidence",
+          "at": "2026-09-19T21:56:43Z"
+        }
+      ],
+      "artifacts": [
+        "evidence.png",
+        "ndvi.tif",
+        "main-raw-result.json",
+        "false-colour.png",
+        "rgb.png",
+        "input-1.original",
+        "result.json",
+        "input-preview.png",
+        "mask.png"
+      ],
+      "zip_sha256": "b8972ae57300b7d531d49a52d8c525b56f59ca317f084d4760f1e611603eb1dc",
+      "zip_integrity": true,
+      "recomputed_pixels": 4096
+    },
+    {
+      "name": "07-grounding",
+      "id": "00ffbdebe7234109af08d022a5eeffac",
+      "task": "grounding",
+      "plan": {
+        "task": "grounding",
+        "version": "unified-rules-v3",
+        "specialist": "Grounding DINO tiny \u2192 SAM base",
+        "device": "CUDA GPU \u00b7 sequential models",
+        "maturity": "experimental",
+        "reason": "Explicit spatial request for a supported object category on one optical image.",
+        "category": "stadium",
+        "mode": "both",
+        "score_threshold": 0.3,
+        "steps": [
+          "validate optical image",
+          "detect objects",
+          "segment boxes",
+          "save evidence"
+        ]
+      },
+      "caller_seconds": 45.99875708900072,
+      "specialist_seconds": 30.741,
+      "observed_stages": [
+        "Preparing RGB preview for experimental grounding",
+        "Starting isolated worker",
+        "Loading grounding specialist",
+        "Finding candidate objects",
+        "Loading segmentation specialist",
+        "Tracing object outlines",
+        "Preparing evidence views",
+        "Complete"
+      ],
+      "events": [
+        {
+          "stage": "Starting Grounding DINO tiny \u2192 SAM base",
+          "at": "2026-09-19T21:56:43Z"
+        },
+        {
+          "stage": "Preparing RGB preview for experimental grounding",
+          "at": "2026-09-19T21:56:43Z"
+        },
+        {
+          "stage": "Starting isolated worker",
+          "at": "2026-09-19T21:56:43Z"
+        },
+        {
+          "stage": "Loading grounding specialist",
+          "at": "2026-09-19T21:56:55Z"
+        },
+        {
+          "stage": "Finding candidate objects",
+          "at": "2026-09-19T21:57:00Z"
+        },
+        {
+          "stage": "Loading segmentation specialist",
+          "at": "2026-09-19T21:57:19Z"
+        },
+        {
+          "stage": "Tracing object outlines",
+          "at": "2026-09-19T21:57:21Z"
+        },
+        {
+          "stage": "Preparing evidence views",
+          "at": "2026-09-19T21:57:24Z"
+        },
+        {
+          "stage": "Starting isolated worker",
+          "at": "2026-09-19T21:57:29Z"
+        },
+        {
+          "stage": "Collecting grounding evidence",
+          "at": "2026-09-19T21:57:29Z"
+        },
+        {
+          "stage": "Saving result and original inputs",
+          "at": "2026-09-19T21:57:29Z"
+        },
+        {
+          "stage": "Packaging evidence",
+          "at": "2026-09-19T21:57:29Z"
+        }
+      ],
+      "artifacts": [
+        "source.png",
+        "masks.npz",
+        "masks.png",
+        "outlines.png",
+        "instances.png",
+        "boxes.png",
+        "grounding-raw-result.json",
+        "input-1.original",
+        "result.json"
+      ],
+      "zip_sha256": "be987ac17b54f360aa19d7d00108a89e6c50cd93736a5dc62e334b5f011cef46",
+      "zip_integrity": true,
+      "recomputed_union_pixels": 34793
+    },
+    {
+      "name": "08-vqa-after-grounding",
+      "id": "0f5770ef65ac4a97bf4c2d64d659567a",
+      "task": "vqa",
+      "plan": {
+        "task": "vqa",
+        "version": "unified-rules-v3",
+        "specialist": "Remote-sensing Qwen2-VL-2B",
+        "device": "CUDA GPU",
+        "maturity": "supported",
+        "reason": "Supported descriptive or presence question about one optical image; no quantitative or spatial output requested.",
+        "decision": {
+          "tool": "vqa",
+          "rule": "single_image_description",
+          "reason": "Supported descriptive or presence question about one optical image; no quantitative or spatial output requested.",
+          "version": "rules-v5"
+        },
+        "mode": "baseline",
+        "threshold": 0.5,
+        "steps": [
+          "validate image",
+          "vqa",
+          "save evidence"
+        ]
+      },
+      "caller_seconds": 27.83888816900435,
+      "specialist_seconds": 27.26,
+      "observed_stages": [
+        "Preparing single-image specialist input",
+        "Loading local model",
+        "Analyzing image",
+        "Complete"
+      ],
+      "events": [
+        {
+          "stage": "Starting Remote-sensing Qwen2-VL-2B",
+          "at": "2026-09-19T21:57:29Z"
+        },
+        {
+          "stage": "Preparing single-image specialist input",
+          "at": "2026-09-19T21:57:29Z"
+        },
+        {
+          "stage": "Loading local model",
+          "at": "2026-09-19T21:57:30Z"
+        },
+        {
+          "stage": "Analyzing image",
+          "at": "2026-09-19T21:57:56Z"
+        },
+        {
+          "stage": "Complete",
+          "at": "2026-09-19T21:57:57Z"
+        },
+        {
+          "stage": "Collecting single-image evidence",
+          "at": "2026-09-19T21:57:57Z"
+        },
+        {
+          "stage": "Saving result and original inputs",
+          "at": "2026-09-19T21:57:57Z"
+        },
+        {
+          "stage": "Packaging evidence",
+          "at": "2026-09-19T21:57:57Z"
+        }
+      ],
+      "artifacts": [
+        "main-raw-result.json",
+        "input-1.original",
+        "result.json",
+        "input-preview.png"
+      ],
+      "zip_sha256": "c9bf756720e30a70f5e18ce05e8ff06173751bf78f4f2f613e161feafc6bf2b2",
+      "zip_integrity": true
+    }
+  ]
+}

@@ -1,0 +1,170 @@
+{
+  "task": "water_map",
+  "answer": "The joint optical\u2013SAR model marks 34,361 of 87,195 valid pixels as water (39.41%). Blue regions show this prediction. Water includes permanent water and floodwater; this single-date pair cannot distinguish them.",
+  "water_pixels": {
+    "s1": 24146,
+    "s2": 36963,
+    "all": 34361
+  },
+  "denominator_pixels": 87195,
+  "full_image_pixels": 262144,
+  "seconds": 0.8446748089999119,
+  "confidence": {
+    "kind": "uncalibrated softmax; threshold 0.5",
+    "threshold": 0.5
+  },
+  "trace": [
+    {
+      "tool": "SatQuery WaterUNet v1",
+      "checkpoint_sha256": "7844387fffd6c7e606895328e61be936304f979fee74411021f7312b3215f7ce",
+      "training": "Sen1Floods11 official train split; selected on validation only",
+      "selected_epoch": 23,
+      "device": "cpu",
+      "normalization": "SAR clip((dB+20)/10,-3,3); S2 L1C clip(DN/3000,0,4)",
+      "sensor_availability": "Two explicit flags; modality dropout during training",
+      "bands": {
+        "sar": [
+          "VV",
+          "VH"
+        ],
+        "optical": [
+          "B01",
+          "B02",
+          "B03",
+          "B04",
+          "B05",
+          "B06",
+          "B07",
+          "B08",
+          "B8A",
+          "B09",
+          "B10",
+          "B11",
+          "B12"
+        ]
+      }
+    }
+  ],
+  "limitations": [
+    "Water segmentation only; no building boundaries or counts.",
+    "Single-date water is not automatically flood extent.",
+    "Fixed local research model; scores are not calibrated confidence.",
+    "Sentinel-1 GRD and Sentinel-2 L1C only; no Cartosat/RISAT validation.",
+    "Coverage denominator excludes non-finite input pixels; no surveyed area claim."
+  ],
+  "id": "72112706a06e480396c8411f45e75287",
+  "query": "Map water using the optical and SAR images together.",
+  "input_checks": {
+    "task": "water_map",
+    "pairing_basis": "matching geographic grids and acquisition metadata",
+    "valid_pixels": 87195,
+    "full_pixels": 262144,
+    "warning": "Cross-sensor content registration is not independently certified. Time differences can move water boundaries.",
+    "inputs": [
+      {
+        "modality": "optical",
+        "date": "2018-02-15",
+        "units": "reflectance_x10000",
+        "sensor": "Sentinel-2 L1C",
+        "bands": [
+          "B01",
+          "B02",
+          "B03",
+          "B04",
+          "B05",
+          "B06",
+          "B07",
+          "B08",
+          "B8A",
+          "B09",
+          "B10",
+          "B11",
+          "B12"
+        ],
+        "shape": [
+          512,
+          512
+        ],
+        "count": 13,
+        "dtype": "float32",
+        "crs": "EPSG:4326",
+        "transform": [
+          8.983152841195215e-05,
+          0.0,
+          -65.26512067407877,
+          0.0,
+          -8.983152841195215e-05,
+          -14.212066446998126
+        ],
+        "sha256": "bc4233f5fee8203051c897a6e2678088ebff50802351822508b009397b5bda2a"
+      },
+      {
+        "modality": "sar",
+        "date": "2018-02-15",
+        "units": "dB",
+        "sensor": "Sentinel-1 GRD",
+        "bands": [
+          "VV",
+          "VH"
+        ],
+        "shape": [
+          512,
+          512
+        ],
+        "count": 2,
+        "dtype": "float32",
+        "crs": "EPSG:4326",
+        "transform": [
+          8.983152841195215e-05,
+          0.0,
+          -65.26512067407877,
+          0.0,
+          -8.983152841195215e-05,
+          -14.212066446998126
+        ],
+        "sha256": "b12d110db18d68f51bc5f83e1540a895f1cc6248383a975ecddd908be3922a98"
+      }
+    ],
+    "plan": {
+      "task": "water_map",
+      "version": "unified-lab-rules-v2",
+      "steps": [
+        "validate pair",
+        "check sensor contract",
+        "WaterUNet optical / SAR / joint",
+        "save evidence"
+      ],
+      "threshold": 0.5
+    },
+    "sample_manifest": {
+      "id": "flood-Bolivia_103757",
+      "kind": "water_map",
+      "name": "Bolivia \u00b7 103757 (bolivia)",
+      "source": "Sen1Floods11 v1.1 hand-labelled",
+      "benchmark": "Official bolivia split; first chip per event, not selected by prediction quality",
+      "files": [
+        "optical.tif",
+        "sar.tif"
+      ],
+      "source_files": [
+        {
+          "source": "/root/satquery/paired-lab/sen1floods11/S2Hand/Bolivia_103757_S2Hand.tif",
+          "source_sha256": "d16f68d9fffa6235b44cc31b186ec4ab5179420892fc59589d597717afeb19ad",
+          "export_sha256": "bc4233f5fee8203051c897a6e2678088ebff50802351822508b009397b5bda2a"
+        },
+        {
+          "source": "/root/satquery/paired-lab/sen1floods11/S1Hand/Bolivia_103757_S1Hand.tif",
+          "source_sha256": "d7c7630e6540b3d32b063ed079d73e55c95b1c0347f5d94257b2b7300befb4c8",
+          "export_sha256": "b12d110db18d68f51bc5f83e1540a895f1cc6248383a975ecddd908be3922a98"
+        }
+      ],
+      "dates": {
+        "optical": "2018/02/15",
+        "sar": "2018/02/15"
+      },
+      "reference": "/root/satquery/paired-lab/sen1floods11/LabelHand/Bolivia_103757_LabelHand.tif"
+    }
+  },
+  "controller": "unified-lab-rules-v2",
+  "created_at": "2026-09-13T09:37:40Z"
+}

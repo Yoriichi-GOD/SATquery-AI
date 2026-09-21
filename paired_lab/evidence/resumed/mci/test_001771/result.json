@@ -1,0 +1,35 @@
+{
+  "file": "test_001771.png",
+  "reference_changeflag": 1,
+  "raw_caption": "the scene is the same as before",
+  "reference_captions": [
+    " some staggered trails appear in the woodland and grassland .",
+    " some plants are removed and some roads appear .",
+    " some woods are removed and some roads in dirt appear .",
+    " some dirt roads run across the forest .",
+    " several roads have been built replacing some trees ."
+  ],
+  "caption_changeflag_heuristic": 0,
+  "confusion_rows_reference_columns_prediction": [
+    [
+      65536,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0
+    ]
+  ],
+  "predicted_class_pixels": {
+    "0": 65536,
+    "1": 0,
+    "2": 0
+  }
+}

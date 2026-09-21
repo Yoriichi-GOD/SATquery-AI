@@ -1,0 +1,44 @@
+[
+  {
+    "id": "fresh-245",
+    "image": "/mnt/c/Users/nrgen/.codex/scratch/SATquery AI/results/reliability-20260907/vqa/fresh-245.png",
+    "source_image": "S2A_MSIL1C_20160720T105032_N0204_R051_T31UFU_20160720T105547_8704-7936.tif",
+    "sha256": "d9f9ced261109bcd24d9d411bd82a10a1e11e0db8cf93e7c43156ea1a111fce0",
+    "question": "Describe the major visible features briefly."
+  },
+  {
+    "id": "fresh-308",
+    "image": "/mnt/c/Users/nrgen/.codex/scratch/SATquery AI/results/reliability-20260907/vqa/fresh-308.png",
+    "source_image": "S2A_MSIL1C_20160720T105032_N0204_R051_T31UFU_20160720T105547_5376-10752.tif",
+    "sha256": "19829386a288ff29f957e14249a6a7b4b8587d303f20c0ebf73db214fa196cf8",
+    "question": "Describe the major visible features briefly."
+  },
+  {
+    "id": "fresh-234",
+    "image": "/mnt/c/Users/nrgen/.codex/scratch/SATquery AI/results/reliability-20260907/vqa/fresh-234.png",
+    "source_image": "S2A_MSIL1C_20160720T105032_N0204_R051_T31UFU_20160720T105547_8704-3328.tif",
+    "sha256": "7b46c151f43cf48e75f73008c62801b23970b1baef4cad4fbf280f8d65100b9c",
+    "question": "Describe the major visible features briefly."
+  },
+  {
+    "id": "fresh-300",
+    "image": "/mnt/c/Users/nrgen/.codex/scratch/SATquery AI/results/reliability-20260907/vqa/fresh-300.png",
+    "source_image": "S2A_MSIL1C_20160720T105032_N0204_R051_T31UFU_20160720T105547_10496-3840.tif",
+    "sha256": "a8805e11c0db28cd12007fc249a21d7026b608a585bc79a79c92a9fe7f58e138",
+    "question": "Describe the major visible features briefly."
+  },
+  {
+    "id": "fresh-287",
+    "image": "/mnt/c/Users/nrgen/.codex/scratch/SATquery AI/results/reliability-20260907/vqa/fresh-287.png",
+    "source_image": "S2A_MSIL1C_20160720T105032_N0204_R051_T31UFU_20160720T105547_8704-9472.tif",
+    "sha256": "36407578c3d09bfc599721df8c529992cb2ccd04bdd8791df5b96847d20dc9c6",
+    "question": "Describe the major visible features briefly."
+  },
+  {
+    "id": "fresh-275",
+    "image": "/mnt/c/Users/nrgen/.codex/scratch/SATquery AI/results/reliability-20260907/vqa/fresh-275.png",
+    "source_image": "S2A_MSIL1C_20160720T105032_N0204_R051_T31UFU_20160720T105547_3072-5888.tif",
+    "sha256": "de40126dcc963f9a9831f0d3345b13d520c7d865e0b61775cb2465ebf1ac5fec",
+    "question": "Describe the major visible features briefly."
+  }
+]

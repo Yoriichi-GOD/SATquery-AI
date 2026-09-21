@@ -1,0 +1,35 @@
+{
+  "file": "test_000222.png",
+  "reference_changeflag": 1,
+  "raw_caption": "some houses are built along the road",
+  "reference_captions": [
+    " a ring of villas are constructed around the square .",
+    " some buildings appear in the wood on the left .",
+    " several buildings have been constructed beside the road .",
+    " four houses surround the road .",
+    " four houses appear around the road ."
+  ],
+  "caption_changeflag_heuristic": 1,
+  "confusion_rows_reference_columns_prediction": [
+    [
+      61508,
+      0,
+      200
+    ],
+    [
+      0,
+      0,
+      0
+    ],
+    [
+      622,
+      0,
+      3206
+    ]
+  ],
+  "predicted_class_pixels": {
+    "0": 62130,
+    "1": 0,
+    "2": 3406
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "id": "levir-test_55_0256_0000",
+  "kind": "temporal",
+  "name": "test_55_0256_0000",
+  "source": "ChangeFormer official LEVIR samples",
+  "source_revision": "afd1b7ed640aa265a2c730de958416ae7356a2f9",
+  "benchmark": "LEVIR-CD development",
+  "registration": "publisher paired crop; no geographic metadata",
+  "dates": "ordered A/B; exact dates unavailable",
+  "files": [
+    "before.tif",
+    "after.tif"
+  ],
+  "shape": [
+    256,
+    256
+  ]
+}

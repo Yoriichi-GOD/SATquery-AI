@@ -1,0 +1,583 @@
+{
+  "selection_rule": "Compare pooled F1 at fixed 0.5 on six validation fixtures only; no threshold fitting. Evaluate test-named fixtures after selection. Tiny one-scene trial does not establish generalisation.",
+  "models": {
+    "all": {
+      "repo": "BIFOLD-BigEarthNetv2-0/resnet50-all-v0.2.0",
+      "revision": "762acdc186cce6b31ecbc896ddab1721847d4c5e",
+      "path": "/root/.cache/huggingface/hub/models--BIFOLD-BigEarthNetv2-0--resnet50-all-v0.2.0/snapshots/762acdc186cce6b31ecbc896ddab1721847d4c5e"
+    },
+    "s1": {
+      "repo": "BIFOLD-BigEarthNetv2-0/resnet50-s1-v0.2.0",
+      "revision": "d417b3c32f2172cbceb14e5b106dd9aa7b77c647",
+      "path": "/root/.cache/huggingface/hub/models--BIFOLD-BigEarthNetv2-0--resnet50-s1-v0.2.0/snapshots/d417b3c32f2172cbceb14e5b106dd9aa7b77c647"
+    },
+    "s2": {
+      "repo": "BIFOLD-BigEarthNetv2-0/resnet50-s2-v0.2.0",
+      "revision": "f5a590cd5876845f62702260ff62ea5a325433bb",
+      "path": "/root/.cache/huggingface/hub/models--BIFOLD-BigEarthNetv2-0--resnet50-s2-v0.2.0/snapshots/f5a590cd5876845f62702260ff62ea5a325433bb"
+    }
+  },
+  "rows": [
+    {
+      "sample": "ben-validation-33-69",
+      "kind": "all",
+      "scores": {
+        "Agro-forestry areas": 5.776958914793795e-06,
+        "Arable land": 0.9968761205673218,
+        "Beaches, dunes, sands": 0.00010745402687462047,
+        "Broad-leaved forest": 0.8771324753761292,
+        "Coastal wetlands": 9.32026614464121e-06,
+        "Complex cultivation patterns": 0.4643104672431946,
+        "Coniferous forest": 0.1069587767124176,
+        "Industrial or commercial units": 0.020035533234477043,
+        "Inland waters": 0.9928283095359802,
+        "Inland wetlands": 0.009865177795290947,
+        "Land principally occupied by agriculture, with significant areas of natural vegetation": 0.5170260667800903,
+        "Marine waters": 6.259763176785782e-05,
+        "Mixed forest": 0.4799323081970215,
+        "Moors, heathland and sclerophyllous vegetation": 0.0007586826686747372,
+        "Natural grassland and sparsely vegetated areas": 0.0005802324158139527,
+        "Pastures": 0.3834201395511627,
+        "Permanent crops": 0.0009109170641750097,
+        "Transitional woodland, shrub": 0.00626936461776495,
+        "Urban fabric": 0.4384154677391052
+      },
+      "metrics": {
+        "tp": 4,
+        "fp": 0,
+        "fn": 2
+      },
+      "seconds": 0.028072871999938798
+    },
+    {
+      "sample": "ben-validation-33-70",
+      "kind": "all",
+      "scores": {
+        "Agro-forestry areas": 2.7873869839822873e-05,
+        "Arable land": 0.9611268043518066,
+        "Beaches, dunes, sands": 0.0007443189970217645,
+        "Broad-leaved forest": 0.27336937189102173,
+        "Coastal wetlands": 0.00010580563684925437,
+        "Complex cultivation patterns": 0.14816667139530182,
+        "Coniferous forest": 0.17699110507965088,
+        "Industrial or commercial units": 0.007798376958817244,
+        "Inland waters": 0.2797352075576782,
+        "Inland wetlands": 0.00718690175563097,
+        "Land principally occupied by agriculture, with significant areas of natural vegetation": 0.33242011070251465,
+        "Marine waters": 0.01477899681776762,
+        "Mixed forest": 0.5716434717178345,
+        "Moors, heathland and sclerophyllous vegetation": 0.010581191629171371,
+        "Natural grassland and sparsely vegetated areas": 0.00046514146379195154,
+        "Pastures": 0.9231570363044739,
+        "Permanent crops": 0.0001700500288279727,
+        "Transitional woodland, shrub": 0.0006973369745537639,
+        "Urban fabric": 0.12865030765533447
+      },
+      "metrics": {
+        "tp": 3,
+        "fp": 0,
+        "fn": 2
+      },
+      "seconds": 0.018822729000021354
+    },
+    {
+      "sample": "ben-validation-34-69",
+      "kind": "all",
+      "scores": {
+        "Agro-forestry areas": 1.310124480369268e-05,
+        "Arable land": 0.5717396140098572,
+        "Beaches, dunes, sands": 0.0006718913209624588,
+        "Broad-leaved forest": 0.7292304635047913,
+        "Coastal wetlands": 0.0003685933188535273,
+        "Complex cultivation patterns": 0.13835065066814423,
+        "Coniferous forest": 0.12296339124441147,
+        "Industrial or commercial units": 0.02751057967543602,
+        "Inland waters": 0.8760477304458618,
+        "Inland wetlands": 0.08528068661689758,
+        "Land principally occupied by agriculture, with significant areas of natural vegetation": 0.13977304100990295,
+        "Marine waters": 0.0005816072807647288,
+        "Mixed forest": 0.4687393307685852,
+        "Moors, heathland and sclerophyllous vegetation": 0.0018858882831409574,
+        "Natural grassland and sparsely vegetated areas": 0.0010312632657587528,
+        "Pastures": 0.9917362332344055,
+        "Permanent crops": 0.00017544018919579685,
+        "Transitional woodland, shrub": 0.014155673794448376,
+        "Urban fabric": 0.992470383644104
+      },
+      "metrics": {
+        "tp": 4,
+        "fp": 1,
+        "fn": 2
+      },
+      "seconds": 0.017282658999988598
+    },
+    {
+      "sample": "ben-validation-34-70",
+      "kind": "all",
+      "scores": {
+        "Agro-forestry areas": 4.522804738371633e-05,
+        "Arable land": 0.760759711265564,
+        "Beaches, dunes, sands": 0.0003645311517175287,
+        "Broad-leaved forest": 0.7271538972854614,
+        "Coastal wetlands": 5.8178367908112705e-05,
+        "Complex cultivation patterns": 0.3508455157279968,
+        "Coniferous forest": 0.03741982579231262,
+        "Industrial or commercial units": 0.027077574282884598,
+        "Inland waters": 0.9998347759246826,
+        "Inland wetlands": 0.06082988157868385,
+        "Land principally occupied by agriculture, with significant areas of natural vegetation": 0.33219751715660095,
+        "Marine waters": 5.6265715102199465e-05,
+        "Mixed forest": 0.2688034772872925,
+        "Moors, heathland and sclerophyllous vegetation": 0.00033363961847499013,
+        "Natural grassland and sparsely vegetated areas": 0.0020056378562003374,
+        "Pastures": 0.9264270663261414,
+        "Permanent crops": 0.0006141563644632697,
+        "Transitional woodland, shrub": 0.03168795630335808,
+        "Urban fabric": 0.9516903758049011
+      },
+      "metrics": {
+        "tp": 4,
+        "fp": 1,
+        "fn": 1
+      },
+      "seconds": 0.01778114400008235
+    },
+    {
+      "sample": "ben-validation-34-71",
+      "kind": "all",
+      "scores": {
+        "Agro-forestry areas": 1.3179263760321192e-06,
+        "Arable land": 0.8850408792495728,
+        "Beaches, dunes, sands": 0.00011979421833530068,
+        "Broad-leaved forest": 0.8678949475288391,
+        "Coastal wetlands": 2.0567309547914192e-05,
+        "Complex cultivation patterns": 0.19741445779800415,
+        "Coniferous forest": 0.21086817979812622,
+        "Industrial or commercial units": 0.04584597423672676,
+        "Inland waters": 0.9736418724060059,
+        "Inland wetlands": 0.027249105274677277,
+        "Land principally occupied by agriculture, with significant areas of natural vegetation": 0.5992066860198975,
+        "Marine waters": 0.0001535679621156305,
+        "Mixed forest": 0.7215508818626404,
+        "Moors, heathland and sclerophyllous vegetation": 0.0033686866518110037,
+        "Natural grassland and sparsely vegetated areas": 0.00013901897182222456,
+        "Pastures": 0.9703083634376526,
+        "Permanent crops": 7.305490726139396e-05,
+        "Transitional woodland, shrub": 0.0017928443849086761,
+        "Urban fabric": 0.1658729612827301
+      },
+      "metrics": {
+        "tp": 4,
+        "fp": 2,
+        "fn": 2
+      },
+      "seconds": 0.017209289999982502
+    },
+    {
+      "sample": "ben-validation-35-69",
+      "kind": "all",
+      "scores": {
+        "Agro-forestry areas": 3.687847492983565e-05,
+        "Arable land": 0.797867476940155,
+        "Beaches, dunes, sands": 6.0847152781207114e-05,
+        "Broad-leaved forest": 0.1964239627122879,
+        "Coastal wetlands": 4.6603232476627454e-05,
+        "Complex cultivation patterns": 0.3385162055492401,
+        "Coniferous forest": 0.3543355166912079,
+        "Industrial or commercial units": 0.01771458052098751,
+        "Inland waters": 0.0026135959196835756,
+        "Inland wetlands": 0.0009699160000309348,
+        "Land principally occupied by agriculture, with significant areas of natural vegetation": 0.11606832593679428,
+        "Marine waters": 4.474763773032464e-05,
+        "Mixed forest": 0.7484106421470642,
+        "Moors, heathland and sclerophyllous vegetation": 0.0005589150241576135,
+        "Natural grassland and sparsely vegetated areas": 0.0014656409621238708,
+        "Pastures": 0.9261009693145752,
+        "Permanent crops": 0.0007239883416332304,
+        "Transitional woodland, shrub": 0.010694025084376335,
+        "Urban fabric": 0.9675026535987854
+      },
+      "metrics": {
+        "tp": 3,
+        "fp": 1,
+        "fn": 1
+      },
+      "seconds": 0.018204867999997987
+    },
+    {
+      "sample": "ben-validation-33-69",
+      "kind": "s1",
+      "scores": {
+        "Agro-forestry areas": 0.0006278280052356422,
+        "Arable land": 0.9377546310424805,
+        "Beaches, dunes, sands": 0.0006239524227567017,
+        "Broad-leaved forest": 0.8506443500518799,
+        "Coastal wetlands": 0.0016960098873823881,
+        "Complex cultivation patterns": 0.3493921458721161,
+        "Coniferous forest": 0.0811297670006752,
+        "Industrial or commercial units": 0.012265682220458984,
+        "Inland waters": 0.8778409957885742,
+        "Inland wetlands": 0.047660160809755325,
+        "Land principally occupied by agriculture, with significant areas of natural vegetation": 0.5030713677406311,
+        "Marine waters": 0.0023255234118551016,
+        "Mixed forest": 0.14888162910938263,
+        "Moors, heathland and sclerophyllous vegetation": 0.001565479440614581,
+        "Natural grassland and sparsely vegetated areas": 0.0003892703098244965,
+        "Pastures": 0.27541491389274597,
+        "Permanent crops": 0.008861884474754333,
+        "Transitional woodland, shrub": 0.2647920548915863,
+        "Urban fabric": 0.08245094865560532
+      },
+      "metrics": {
+        "tp": 4,
+        "fp": 0,
+        "fn": 2
+      },
+      "seconds": 0.018023814000002858
+    },
+    {
+      "sample": "ben-validation-33-70",
+      "kind": "s1",
+      "scores": {
+        "Agro-forestry areas": 0.0003289588203188032,
+        "Arable land": 0.7013605833053589,
+        "Beaches, dunes, sands": 0.0008983364095911384,
+        "Broad-leaved forest": 0.18650850653648376,
+        "Coastal wetlands": 0.0017293122364208102,
+        "Complex cultivation patterns": 0.3897816240787506,
+        "Coniferous forest": 0.29292401671409607,
+        "Industrial or commercial units": 0.005949086509644985,
+        "Inland waters": 0.34163838624954224,
+        "Inland wetlands": 0.05623053386807442,
+        "Land principally occupied by agriculture, with significant areas of natural vegetation": 0.6401662826538086,
+        "Marine waters": 0.006340072024613619,
+        "Mixed forest": 0.5012288093566895,
+        "Moors, heathland and sclerophyllous vegetation": 0.020033182576298714,
+        "Natural grassland and sparsely vegetated areas": 0.0011245131026953459,
+        "Pastures": 0.8881222605705261,
+        "Permanent crops": 0.00215167086571455,
+        "Transitional woodland, shrub": 0.06030248478055,
+        "Urban fabric": 0.16683754324913025
+      },
+      "metrics": {
+        "tp": 3,
+        "fp": 1,
+        "fn": 2
+      },
+      "seconds": 0.017083158999980697
+    },
+    {
+      "sample": "ben-validation-34-69",
+      "kind": "s1",
+      "scores": {
+        "Agro-forestry areas": 6.597868195967749e-05,
+        "Arable land": 0.8815990686416626,
+        "Beaches, dunes, sands": 0.00014167210611049086,
+        "Broad-leaved forest": 0.443569540977478,
+        "Coastal wetlands": 0.00018996649305336177,
+        "Complex cultivation patterns": 0.6725136041641235,
+        "Coniferous forest": 0.40749111771583557,
+        "Industrial or commercial units": 0.025573430582880974,
+        "Inland waters": 0.00675963656976819,
+        "Inland wetlands": 0.005173858255147934,
+        "Land principally occupied by agriculture, with significant areas of natural vegetation": 0.24191579222679138,
+        "Marine waters": 0.00014797358016949147,
+        "Mixed forest": 0.24821768701076508,
+        "Moors, heathland and sclerophyllous vegetation": 0.002297268947586417,
+        "Natural grassland and sparsely vegetated areas": 0.0005374402971938252,
+        "Pastures": 0.5768803358078003,
+        "Permanent crops": 0.004085013177245855,
+        "Transitional woodland, shrub": 0.021518295630812645,
+        "Urban fabric": 0.9904354810714722
+      },
+      "metrics": {
+        "tp": 3,
+        "fp": 1,
+        "fn": 3
+      },
+      "seconds": 0.016779375000055552
+    },
+    {
+      "sample": "ben-validation-34-70",
+      "kind": "s1",
+      "scores": {
+        "Agro-forestry areas": 0.00018606566300150007,
+        "Arable land": 0.8013677000999451,
+        "Beaches, dunes, sands": 0.0010944282403215766,
+        "Broad-leaved forest": 0.5761285424232483,
+        "Coastal wetlands": 0.0013084450038149953,
+        "Complex cultivation patterns": 0.6173720359802246,
+        "Coniferous forest": 0.11640413105487823,
+        "Industrial or commercial units": 0.10228370875120163,
+        "Inland waters": 0.9787816405296326,
+        "Inland wetlands": 0.04606194049119949,
+        "Land principally occupied by agriculture, with significant areas of natural vegetation": 0.31583932042121887,
+        "Marine waters": 0.0032867437694221735,
+        "Mixed forest": 0.18531621992588043,
+        "Moors, heathland and sclerophyllous vegetation": 0.004292873200029135,
+        "Natural grassland and sparsely vegetated areas": 0.0002793786989059299,
+        "Pastures": 0.30995306372642517,
+        "Permanent crops": 0.0034445517230778933,
+        "Transitional woodland, shrub": 0.21882428228855133,
+        "Urban fabric": 0.8580437302589417
+      },
+      "metrics": {
+        "tp": 4,
+        "fp": 1,
+        "fn": 1
+      },
+      "seconds": 0.02209749600001487
+    },
+    {
+      "sample": "ben-validation-34-71",
+      "kind": "s1",
+      "scores": {
+        "Agro-forestry areas": 4.2135077819693834e-05,
+        "Arable land": 0.9517969489097595,
+        "Beaches, dunes, sands": 0.00014277301670517772,
+        "Broad-leaved forest": 0.9076987504959106,
+        "Coastal wetlands": 0.00031375253456644714,
+        "Complex cultivation patterns": 0.7378917932510376,
+        "Coniferous forest": 0.050695933401584625,
+        "Industrial or commercial units": 0.018574364483356476,
+        "Inland waters": 0.5855522751808167,
+        "Inland wetlands": 0.005552596878260374,
+        "Land principally occupied by agriculture, with significant areas of natural vegetation": 0.3112338185310364,
+        "Marine waters": 0.0002443525299895555,
+        "Mixed forest": 0.12614531815052032,
+        "Moors, heathland and sclerophyllous vegetation": 0.10715590417385101,
+        "Natural grassland and sparsely vegetated areas": 2.868000046873931e-05,
+        "Pastures": 0.6151090264320374,
+        "Permanent crops": 0.0003244902763981372,
+        "Transitional woodland, shrub": 0.022754022851586342,
+        "Urban fabric": 0.5198032259941101
+      },
+      "metrics": {
+        "tp": 4,
+        "fp": 2,
+        "fn": 2
+      },
+      "seconds": 0.019312587000058556
+    },
+    {
+      "sample": "ben-validation-35-69",
+      "kind": "s1",
+      "scores": {
+        "Agro-forestry areas": 4.6412395022343844e-05,
+        "Arable land": 0.4542089104652405,
+        "Beaches, dunes, sands": 3.088829907937907e-05,
+        "Broad-leaved forest": 0.04240924119949341,
+        "Coastal wetlands": 0.00012399624392855912,
+        "Complex cultivation patterns": 0.4573269188404083,
+        "Coniferous forest": 0.5435904264450073,
+        "Industrial or commercial units": 0.007898004725575447,
+        "Inland waters": 0.001761675113812089,
+        "Inland wetlands": 0.004208435770124197,
+        "Land principally occupied by agriculture, with significant areas of natural vegetation": 0.07058385014533997,
+        "Marine waters": 2.6185722163063474e-05,
+        "Mixed forest": 0.4675751030445099,
+        "Moors, heathland and sclerophyllous vegetation": 0.0007654126384295523,
+        "Natural grassland and sparsely vegetated areas": 0.0009786189766600728,
+        "Pastures": 0.9327549934387207,
+        "Permanent crops": 0.0004275085520930588,
+        "Transitional woodland, shrub": 0.03403148800134659,
+        "Urban fabric": 0.43794944882392883
+      },
+      "metrics": {
+        "tp": 1,
+        "fp": 1,
+        "fn": 3
+      },
+      "seconds": 0.01674944899991715
+    },
+    {
+      "sample": "ben-validation-33-69",
+      "kind": "s2",
+      "scores": {
+        "Agro-forestry areas": 1.4760137673874851e-05,
+        "Arable land": 0.9799021482467651,
+        "Beaches, dunes, sands": 0.00011036421346943825,
+        "Broad-leaved forest": 0.44339871406555176,
+        "Coastal wetlands": 9.813486940402072e-06,
+        "Complex cultivation patterns": 0.2349083423614502,
+        "Coniferous forest": 0.07316344231367111,
+        "Industrial or commercial units": 0.005778060294687748,
+        "Inland waters": 0.9127276539802551,
+        "Inland wetlands": 0.000961205514613539,
+        "Land principally occupied by agriculture, with significant areas of natural vegetation": 0.6851519346237183,
+        "Marine waters": 6.708117871312425e-05,
+        "Mixed forest": 0.42887815833091736,
+        "Moors, heathland and sclerophyllous vegetation": 0.0005563828744925559,
+        "Natural grassland and sparsely vegetated areas": 6.428036431316286e-05,
+        "Pastures": 0.18080119788646698,
+        "Permanent crops": 0.0047535463236272335,
+        "Transitional woodland, shrub": 0.001303222612477839,
+        "Urban fabric": 0.3166227638721466
+      },
+      "metrics": {
+        "tp": 3,
+        "fp": 0,
+        "fn": 3
+      },
+      "seconds": 0.02246805899994797
+    },
+    {
+      "sample": "ben-validation-33-70",
+      "kind": "s2",
+      "scores": {
+        "Agro-forestry areas": 9.673673048382625e-05,
+        "Arable land": 0.9615418314933777,
+        "Beaches, dunes, sands": 7.69157413742505e-05,
+        "Broad-leaved forest": 0.24224871397018433,
+        "Coastal wetlands": 1.8169055692851543e-05,
+        "Complex cultivation patterns": 0.38746902346611023,
+        "Coniferous forest": 0.15803644061088562,
+        "Industrial or commercial units": 0.0033738743513822556,
+        "Inland waters": 0.0626906231045723,
+        "Inland wetlands": 0.0002854586055036634,
+        "Land principally occupied by agriculture, with significant areas of natural vegetation": 0.616578221321106,
+        "Marine waters": 0.00012110966054024175,
+        "Mixed forest": 0.665460467338562,
+        "Moors, heathland and sclerophyllous vegetation": 0.000863878580275923,
+        "Natural grassland and sparsely vegetated areas": 7.343025208683684e-05,
+        "Pastures": 0.6083859801292419,
+        "Permanent crops": 0.00039489264599978924,
+        "Transitional woodland, shrub": 0.0013200859539210796,
+        "Urban fabric": 0.1344192773103714
+      },
+      "metrics": {
+        "tp": 3,
+        "fp": 1,
+        "fn": 2
+      },
+      "seconds": 0.019166500999972413
+    },
+    {
+      "sample": "ben-validation-34-69",
+      "kind": "s2",
+      "scores": {
+        "Agro-forestry areas": 1.759032420522999e-05,
+        "Arable land": 0.7120130062103271,
+        "Beaches, dunes, sands": 0.0001247301697731018,
+        "Broad-leaved forest": 0.9160538911819458,
+        "Coastal wetlands": 4.3071675463579595e-05,
+        "Complex cultivation patterns": 0.3020952343940735,
+        "Coniferous forest": 0.020642083138227463,
+        "Industrial or commercial units": 0.04808926209807396,
+        "Inland waters": 0.0826704353094101,
+        "Inland wetlands": 0.0010354581754654646,
+        "Land principally occupied by agriculture, with significant areas of natural vegetation": 0.3378872573375702,
+        "Marine waters": 4.041068677906878e-05,
+        "Mixed forest": 0.2971254587173462,
+        "Moors, heathland and sclerophyllous vegetation": 0.0023467421997338533,
+        "Natural grassland and sparsely vegetated areas": 0.0005934428190812469,
+        "Pastures": 0.91693514585495,
+        "Permanent crops": 0.00456404872238636,
+        "Transitional woodland, shrub": 0.00426603015512228,
+        "Urban fabric": 0.9968863129615784
+      },
+      "metrics": {
+        "tp": 3,
+        "fp": 1,
+        "fn": 3
+      },
+      "seconds": 0.019058466000046792
+    },
+    {
+      "sample": "ben-validation-34-70",
+      "kind": "s2",
+      "scores": {
+        "Agro-forestry areas": 5.064573269919492e-05,
+        "Arable land": 0.7309737801551819,
+        "Beaches, dunes, sands": 0.0005864998092874885,
+        "Broad-leaved forest": 0.7172090411186218,
+        "Coastal wetlands": 0.00015062355669215322,
+        "Complex cultivation patterns": 0.3503451943397522,
+        "Coniferous forest": 0.024677546694874763,
+        "Industrial or commercial units": 0.04393269866704941,
+        "Inland waters": 0.45555564761161804,
+        "Inland wetlands": 0.007528477814048529,
+        "Land principally occupied by agriculture, with significant areas of natural vegetation": 0.5168200135231018,
+        "Marine waters": 0.0001460189960198477,
+        "Mixed forest": 0.14818452298641205,
+        "Moors, heathland and sclerophyllous vegetation": 0.022505804896354675,
+        "Natural grassland and sparsely vegetated areas": 0.00038362154737114906,
+        "Pastures": 0.885089635848999,
+        "Permanent crops": 0.0006288544391281903,
+        "Transitional woodland, shrub": 0.017739837989211082,
+        "Urban fabric": 0.9834134578704834
+      },
+      "metrics": {
+        "tp": 3,
+        "fp": 2,
+        "fn": 2
+      },
+      "seconds": 0.019578321000039978
+    },
+    {
+      "sample": "ben-validation-34-71",
+      "kind": "s2",
+      "scores": {
+        "Agro-forestry areas": 3.6101682781009004e-06,
+        "Arable land": 0.9262930154800415,
+        "Beaches, dunes, sands": 7.024576188996434e-05,
+        "Broad-leaved forest": 0.8145477771759033,
+        "Coastal wetlands": 1.2268011232663412e-05,
+        "Complex cultivation patterns": 0.4920855462551117,
+        "Coniferous forest": 0.17423488199710846,
+        "Industrial or commercial units": 0.012218775227665901,
+        "Inland waters": 0.3400321900844574,
+        "Inland wetlands": 0.0004633509961422533,
+        "Land principally occupied by agriculture, with significant areas of natural vegetation": 0.4780133366584778,
+        "Marine waters": 6.756807852070779e-05,
+        "Mixed forest": 0.7572071552276611,
+        "Moors, heathland and sclerophyllous vegetation": 0.0034445698838680983,
+        "Natural grassland and sparsely vegetated areas": 3.051319799851626e-05,
+        "Pastures": 0.5075467824935913,
+        "Permanent crops": 0.00016358117864001542,
+        "Transitional woodland, shrub": 0.0005474307690747082,
+        "Urban fabric": 0.32579541206359863
+      },
+      "metrics": {
+        "tp": 3,
+        "fp": 1,
+        "fn": 3
+      },
+      "seconds": 0.0198342070000308
+    },
+    {
+      "sample": "ben-validation-35-69",
+      "kind": "s2",
+      "scores": {
+        "Agro-forestry areas": 1.88482067642326e-06,
+        "Arable land": 0.6191346049308777,
+        "Beaches, dunes, sands": 3.685238698380999e-05,
+        "Broad-leaved forest": 0.15264388918876648,
+        "Coastal wetlands": 7.195636044343701e-06,
+        "Complex cultivation patterns": 0.3162124454975128,
+        "Coniferous forest": 0.1682896614074707,
+        "Industrial or commercial units": 0.018581952899694443,
+        "Inland waters": 0.008860774338245392,
+        "Inland wetlands": 0.00042352950549684465,
+        "Land principally occupied by agriculture, with significant areas of natural vegetation": 0.24979518353939056,
+        "Marine waters": 2.5065690351766534e-05,
+        "Mixed forest": 0.8071582317352295,
+        "Moors, heathland and sclerophyllous vegetation": 0.0001447105169063434,
+        "Natural grassland and sparsely vegetated areas": 0.000689881038852036,
+        "Pastures": 0.9370497465133667,
+        "Permanent crops": 0.0005524181178770959,
+        "Transitional woodland, shrub": 0.00764441629871726,
+        "Urban fabric": 0.9604043960571289
+      },
+      "metrics": {
+        "tp": 3,
+        "fp": 1,
+        "fn": 1
+      },
+      "seconds": 0.019516875000022083
+    }
+  ],
+  "baseline_joint_f1": 0.711864406779661,
+  "candidate_joint_f1": 0.7457627118644068,
+  "promote": true
+}

@@ -1,0 +1,74 @@
+[
+  {
+    "id": "full",
+    "image": "/mnt/c/Users/nrgen/.codex/scratch/SATquery AI/results/reliability-20260907/counting/full.png",
+    "reference": 4,
+    "question": "How many baseball fields are visible in this image? Count each distinct baseball or softball diamond once. Include a partial field only if its diamond is clearly identifiable. Do not count an infield and its outfield separately. Answer with one integer, or uncertain if you cannot distinguish the fields.",
+    "answer": "4",
+    "seconds": 1.7351271619991167
+  },
+  {
+    "id": "mirror",
+    "image": "/mnt/c/Users/nrgen/.codex/scratch/SATquery AI/results/reliability-20260907/counting/mirror.png",
+    "reference": 4,
+    "question": "How many baseball fields are visible in this image? Count each distinct baseball or softball diamond once. Include a partial field only if its diamond is clearly identifiable. Do not count an infield and its outfield separately. Answer with one integer, or uncertain if you cannot distinguish the fields.",
+    "answer": "4",
+    "seconds": 0.34516268400147965
+  },
+  {
+    "id": "rotate",
+    "image": "/mnt/c/Users/nrgen/.codex/scratch/SATquery AI/results/reliability-20260907/counting/rotate.png",
+    "reference": 4,
+    "question": "How many baseball fields are visible in this image? Count each distinct baseball or softball diamond once. Include a partial field only if its diamond is clearly identifiable. Do not count an infield and its outfield separately. Answer with one integer, or uncertain if you cannot distinguish the fields.",
+    "answer": "4",
+    "seconds": 0.30938785699981963
+  },
+  {
+    "id": "top-single",
+    "image": "/mnt/c/Users/nrgen/.codex/scratch/SATquery AI/results/reliability-20260907/counting/top-single.png",
+    "reference": 1,
+    "question": "How many baseball fields are visible in this image? Count each distinct baseball or softball diamond once. Include a partial field only if its diamond is clearly identifiable. Do not count an infield and its outfield separately. Answer with one integer, or uncertain if you cannot distinguish the fields.",
+    "answer": "1",
+    "seconds": 0.19126890699953947
+  },
+  {
+    "id": "right-single",
+    "image": "/mnt/c/Users/nrgen/.codex/scratch/SATquery AI/results/reliability-20260907/counting/right-single.png",
+    "reference": 1,
+    "question": "How many baseball fields are visible in this image? Count each distinct baseball or softball diamond once. Include a partial field only if its diamond is clearly identifiable. Do not count an infield and its outfield separately. Answer with one integer, or uncertain if you cannot distinguish the fields.",
+    "answer": "1",
+    "seconds": 0.21313354399899254
+  },
+  {
+    "id": "top-and-right",
+    "image": "/mnt/c/Users/nrgen/.codex/scratch/SATquery AI/results/reliability-20260907/counting/top-and-right.png",
+    "reference": null,
+    "question": "How many baseball fields are visible in this image? Count each distinct baseball or softball diamond once. Include a partial field only if its diamond is clearly identifiable. Do not count an infield and its outfield separately. Answer with one integer, or uncertain if you cannot distinguish the fields.",
+    "answer": "4",
+    "seconds": 0.19668937800088315
+  },
+  {
+    "id": "blank",
+    "image": "/mnt/c/Users/nrgen/.codex/scratch/SATquery AI/results/reliability-20260907/counting/blank.png",
+    "reference": 0,
+    "question": "How many baseball fields are visible in this image? Count each distinct baseball or softball diamond once. Include a partial field only if its diamond is clearly identifiable. Do not count an infield and its outfield separately. Answer with one integer, or uncertain if you cannot distinguish the fields.",
+    "answer": "There are three distinct baseball fields visible in the image. Each field is identifiable by its diamond shape and the presence of a pitcher's mound. The fields are arranged in a way that suggests they are part of a larger sports complex or park. Therefore, the answer is 3",
+    "seconds": 1.5706083889999718
+  },
+  {
+    "id": "farmland",
+    "image": "/mnt/c/Users/nrgen/.codex/scratch/SATquery AI/results/reliability-20260907/counting/farmland.png",
+    "reference": 0,
+    "question": "How many baseball fields are visible in this image? Count each distinct baseball or softball diamond once. Include a partial field only if its diamond is clearly identifiable. Do not count an infield and its outfield separately. Answer with one integer, or uncertain if you cannot distinguish the fields.",
+    "answer": "0",
+    "seconds": 0.1982377889999043
+  },
+  {
+    "id": "river",
+    "image": "/mnt/c/Users/nrgen/.codex/scratch/SATquery AI/results/reliability-20260907/counting/river.png",
+    "reference": 0,
+    "question": "How many baseball fields are visible in this image? Count each distinct baseball or softball diamond once. Include a partial field only if its diamond is clearly identifiable. Do not count an infield and its outfield separately. Answer with one integer, or uncertain if you cannot distinguish the fields.",
+    "answer": "0",
+    "seconds": 0.22477862699997786
+  }
+]

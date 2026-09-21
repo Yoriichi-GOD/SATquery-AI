@@ -1,0 +1,391 @@
+[
+  {
+    "case": "zero denominator NDVI result",
+    "result": {
+      "id": "f7fa7584b30149d8ba290142788f70ab",
+      "state": "error",
+      "stage": "Unable to calculate NDVI",
+      "image": {
+        "id": "73c20cff6de24213b1a045a3472b07ae",
+        "name": "test.tif",
+        "width": 4,
+        "height": 4,
+        "bytes": 1439,
+        "sha256": "cc650436869997d18456e9ad2aabc2c1f9763e5811610de6f34b515fac1caf84",
+        "preview": "/api/images/73c20cff6de24213b1a045a3472b07ae",
+        "geo": {
+          "calibration_version": "user-supplied",
+          "crs": "EPSG:32643",
+          "width": 4,
+          "height": 4,
+          "transform": [
+            10.0,
+            0.0,
+            788360.0,
+            0.0,
+            -10.0,
+            3359030.0
+          ],
+          "bounds": [
+            788360.0,
+            3358990.0,
+            788400.0,
+            3359030.0
+          ],
+          "bounds_wgs84": [
+            77.99905754777147,
+            30.32840244407544,
+            77.99948408006341,
+            30.328772451280432
+          ],
+          "resolution": [
+            10.0,
+            10.0
+          ],
+          "bands": {
+            "red": 1,
+            "green": 2,
+            "blue": 3,
+            "nir": 4
+          },
+          "band_descriptions": [
+            "red",
+            "green",
+            "blue",
+            "nir"
+          ],
+          "nodata": "nan",
+          "scales": [
+            1.0,
+            1.0,
+            1.0,
+            1.0
+          ],
+          "offsets": [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "acquired": null,
+          "source_item": null,
+          "attribution": null,
+          "ndvi_supported": true,
+          "quality_mask_available": false,
+          "preview_processing": "Per-channel 2nd\u201398th percentile RGB display stretch; analytical values are preserved."
+        }
+      },
+      "started": 1788700031.6318765,
+      "route": "NDVI from calibrated red/NIR",
+      "threshold": 0.5,
+      "error": "No valid pixels remain after quality and reflectance checks."
+    }
+  },
+  {
+    "case": "nodata-heavy NDVI result",
+    "result": {
+      "id": "b8661c1eed704fe4ab3d63cc2f9f586c",
+      "state": "complete",
+      "stage": "Complete",
+      "image": {
+        "id": "9bdce5f504184e669b61caf1ddaccadb",
+        "name": "test.tif",
+        "width": 4,
+        "height": 4,
+        "bytes": 1439,
+        "sha256": "544cdd831a40998eb907d1531765e51170f2a1bc63e30e2a7a72d34f51660ac6",
+        "preview": "/api/images/9bdce5f504184e669b61caf1ddaccadb",
+        "geo": {
+          "calibration_version": "user-supplied",
+          "crs": "EPSG:32643",
+          "width": 4,
+          "height": 4,
+          "transform": [
+            10.0,
+            0.0,
+            788360.0,
+            0.0,
+            -10.0,
+            3359030.0
+          ],
+          "bounds": [
+            788360.0,
+            3358990.0,
+            788400.0,
+            3359030.0
+          ],
+          "bounds_wgs84": [
+            77.99905754777147,
+            30.32840244407544,
+            77.99948408006341,
+            30.328772451280432
+          ],
+          "resolution": [
+            10.0,
+            10.0
+          ],
+          "bands": {
+            "red": 1,
+            "green": 2,
+            "blue": 3,
+            "nir": 4
+          },
+          "band_descriptions": [
+            "red",
+            "green",
+            "blue",
+            "nir"
+          ],
+          "nodata": "nan",
+          "scales": [
+            1.0,
+            1.0,
+            1.0,
+            1.0
+          ],
+          "offsets": [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "acquired": null,
+          "source_item": null,
+          "attribution": null,
+          "ndvi_supported": true,
+          "quality_mask_available": false,
+          "preview_processing": "Per-channel 2nd\u201398th percentile RGB display stretch; analytical values are preserved."
+        }
+      },
+      "started": 1788700031.67142,
+      "route": "NDVI from calibrated red/NIR",
+      "threshold": 0.5,
+      "answer": "NDVI \u2265 0.50: 0.00% of valid pixels. Projected grid area: 0.00 hectares. Valid pixels cover 6.25% of this crop. This is threshold-based coverage, not a vegetation-health diagnosis.",
+      "statistics": {
+        "calibration_version": "user-supplied",
+        "exclusion_counts": {
+          "nodata_or_nonfinite": 15,
+          "negative_reflectance": 0,
+          "zero_denominator": 0,
+          "quality_after_reflectance_checks": 0
+        },
+        "excluded_pixels": 15,
+        "selected_percent_of_crop": 0.0,
+        "threshold": 0.5,
+        "valid_pixels": 1,
+        "total_pixels": 16,
+        "selected_pixels": 0,
+        "valid_coverage_percent": 6.25,
+        "selected_percent_of_valid": 0.0,
+        "selected_area_m2": 0.0,
+        "area_method": "Projected grid area from affine determinant; not terrain surface area.",
+        "ndvi_min": 0.0,
+        "ndvi_max": 0.0,
+        "ndvi_mean": 0.0,
+        "quality_mask_available": false,
+        "quality_rule": "No cloud classification supplied; clouds may affect results.",
+        "interpretation": "Pixels meeting the stated NDVI threshold; not a vegetation health, density, or species diagnosis."
+      },
+      "overlay": "/api/runs/b8661c1eed704fe4ab3d63cc2f9f586c/overlay",
+      "raster": "/api/runs/b8661c1eed704fe4ab3d63cc2f9f586c/ndvi",
+      "seconds": 0.009
+    }
+  },
+  {
+    "case": "missing CRS NDVI result",
+    "result": {
+      "id": "93aa6fba21e2453689fb65df504214ac",
+      "state": "complete",
+      "stage": "Complete",
+      "image": {
+        "id": "956181fda8ae4bf2bff6d3652ebe412e",
+        "name": "test.tif",
+        "width": 4,
+        "height": 4,
+        "bytes": 1203,
+        "sha256": "bdd6304fd13b08b8d4422b5fb7a94a589961aed531b3f521e489f35e8a595443",
+        "preview": "/api/images/956181fda8ae4bf2bff6d3652ebe412e",
+        "geo": {
+          "calibration_version": "user-supplied",
+          "crs": null,
+          "width": 4,
+          "height": 4,
+          "transform": [
+            10.0,
+            0.0,
+            788360.0,
+            0.0,
+            -10.0,
+            3359030.0
+          ],
+          "bounds": [
+            788360.0,
+            3358990.0,
+            788400.0,
+            3359030.0
+          ],
+          "bounds_wgs84": null,
+          "resolution": [
+            10.0,
+            10.0
+          ],
+          "bands": {
+            "red": 1,
+            "green": 2,
+            "blue": 3,
+            "nir": 4
+          },
+          "band_descriptions": [
+            "red",
+            "green",
+            "blue",
+            "nir"
+          ],
+          "nodata": "nan",
+          "scales": [
+            1.0,
+            1.0,
+            1.0,
+            1.0
+          ],
+          "offsets": [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "acquired": null,
+          "source_item": null,
+          "attribution": null,
+          "ndvi_supported": true,
+          "quality_mask_available": false,
+          "preview_processing": "Per-channel 2nd\u201398th percentile RGB display stretch; analytical values are preserved."
+        }
+      },
+      "started": 1788700031.7109609,
+      "route": "NDVI from calibrated red/NIR",
+      "threshold": 0.5,
+      "answer": "NDVI \u2265 0.50: 100.00% of valid pixels. Valid pixels cover 100.00% of this crop. This is threshold-based coverage, not a vegetation-health diagnosis.",
+      "statistics": {
+        "calibration_version": "user-supplied",
+        "exclusion_counts": {
+          "nodata_or_nonfinite": 0,
+          "negative_reflectance": 0,
+          "zero_denominator": 0,
+          "quality_after_reflectance_checks": 0
+        },
+        "excluded_pixels": 0,
+        "selected_percent_of_crop": 100.0,
+        "threshold": 0.5,
+        "valid_pixels": 16,
+        "total_pixels": 16,
+        "selected_pixels": 16,
+        "valid_coverage_percent": 100.0,
+        "selected_percent_of_valid": 100.0,
+        "selected_area_m2": null,
+        "area_method": "Unavailable: a supported projected CRS in metres is required.",
+        "ndvi_min": 0.6000000238418579,
+        "ndvi_max": 0.6000000238418579,
+        "ndvi_mean": 0.6000000238418579,
+        "quality_mask_available": false,
+        "quality_rule": "No cloud classification supplied; clouds may affect results.",
+        "interpretation": "Pixels meeting the stated NDVI threshold; not a vegetation health, density, or species diagnosis."
+      },
+      "overlay": "/api/runs/93aa6fba21e2453689fb65df504214ac/overlay",
+      "raster": "/api/runs/93aa6fba21e2453689fb65df504214ac/ndvi",
+      "seconds": 0.005
+    }
+  },
+  {
+    "case": "question: Compare this to last year",
+    "result": {
+      "id": "f81068838ce545e2bfd5eaa4f23fe4e5",
+      "state": "error",
+      "stage": "Unable to complete",
+      "question": "Compare this to last year",
+      "image": {
+        "id": "0fabfda1d60c4d449ae8cf735a9d37b6",
+        "name": "test.tif",
+        "width": 4,
+        "height": 4,
+        "bytes": 1439,
+        "sha256": "02a574bd3c6e3a195da70db91c507eed915edb6e0ce2c2cfe4cd5dc0de728c11",
+        "preview": "/api/images/0fabfda1d60c4d449ae8cf735a9d37b6",
+        "geo": {
+          "calibration_version": "user-supplied",
+          "crs": "EPSG:32643",
+          "width": 4,
+          "height": 4,
+          "transform": [
+            10.0,
+            0.0,
+            788360.0,
+            0.0,
+            -10.0,
+            3359030.0
+          ],
+          "bounds": [
+            788360.0,
+            3358990.0,
+            788400.0,
+            3359030.0
+          ],
+          "bounds_wgs84": [
+            77.99905754777147,
+            30.32840244407544,
+            77.99948408006341,
+            30.328772451280432
+          ],
+          "resolution": [
+            10.0,
+            10.0
+          ],
+          "bands": {
+            "red": 1,
+            "green": 2,
+            "blue": 3,
+            "nir": 4
+          },
+          "band_descriptions": [
+            "red",
+            "green",
+            "blue",
+            "nir"
+          ],
+          "nodata": "nan",
+          "scales": [
+            1.0,
+            1.0,
+            1.0,
+            1.0
+          ],
+          "offsets": [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "acquired": null,
+          "source_item": null,
+          "attribution": null,
+          "ndvi_supported": true,
+          "quality_mask_available": false,
+          "preview_processing": "Per-channel 2nd\u201398th percentile RGB display stretch; analytical values are preserved."
+        }
+      },
+      "started": 1788700031.7512777,
+      "model": "AdaptLLM/remote-sensing-Qwen2-VL-2B-Instruct",
+      "revision": "7f5dd71bf0f40c282193d50160e848a387a08ffe",
+      "adapter": null,
+      "mode": "baseline",
+      "route": "Single-image optical VQA",
+      "trace": [],
+      "effective_question": "Compare this to last year",
+      "visual_token_bounds": [
+        256,
+        512
+      ],
+      "error": "The model could not complete this request. Check the server log; a smaller image or restarting the server may help."
+    }
+  }
+]

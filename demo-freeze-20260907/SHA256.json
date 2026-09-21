@@ -1,0 +1,126 @@
+[
+  {
+    "path": "DEMO-GUIDE.md",
+    "sha256": "7a5ed8351f5a8c4c0dc280fa6c1d2c8c9a3adfb5e3b910bb1762ffde6eb76d75"
+  },
+  {
+    "path": "live-verification.json",
+    "sha256": "014254a1df99fe6e7b33fdc1af564cc73bb0a28217c14b37cb6d122dee6c4e35"
+  },
+  {
+    "path": "recorded-walkthrough.html",
+    "sha256": "99b9a12e62ec17280a8565abb296dba8dfa1a78eb647f9323fb8d362ae6db8ad"
+  },
+  {
+    "path": "screenshots/01-calculation.png",
+    "sha256": "0438c32df0a16a7acaef7341832e3956de56fb07639389eeef183126f0fb9f3b"
+  },
+  {
+    "path": "screenshots/02-stages.png",
+    "sha256": "31ff0b97e5f9bfaa78745385c19c699ef6dd03aa6c2c9d2e8a10fdccae67ff9c"
+  },
+  {
+    "path": "screenshots/03-evaluation.png",
+    "sha256": "c884ddfbb12ecc2d07b0b87e4290a75149004dfc7bd79f4cc07c15932c1e9eed"
+  },
+  {
+    "path": "screenshots/04-refusal.png",
+    "sha256": "916159eaa448efaa0d23eb10c5e0835044a7857a63a56399f24f8ebf24b39b29"
+  },
+  {
+    "path": "source/evaluation.py",
+    "sha256": "f8f2e21d60b478a10b3cd68f63dd24295b2d270acf3febc1d07bb19a12320cb3"
+  },
+  {
+    "path": "source/geo.py",
+    "sha256": "8972536cc3f5a930f002243bfec7c1d6aa9d19c324c282ebe2dd4dc0fadc9a20"
+  },
+  {
+    "path": "source/README.md",
+    "sha256": "bccc7d25d70f80449842d987683d9ed3874cfacf4049badfdb9a4c40e4aa3ad7"
+  },
+  {
+    "path": "source/requirements-app.txt",
+    "sha256": "200445b098f06b2cf7d42a408902715dfe162047ce59e426f9c1538a074f2c7f"
+  },
+  {
+    "path": "source/routing.py",
+    "sha256": "055a92e22a0c2bf0647614ae4477abb3f0a2c7219f7302afbf4a92515430a88b"
+  },
+  {
+    "path": "source/server.py",
+    "sha256": "49a9d74bea31e59869c9465e15d871eb00298ac9086d1543b516e500f811522e"
+  },
+  {
+    "path": "source/stages.py",
+    "sha256": "58a2d821fc07e67f1fe4e9c21e63ab461db18f0ce790a71a648bc19d791bee2b"
+  },
+  {
+    "path": "source/start.ps1",
+    "sha256": "554425941e3432f9f4aa155e818ddd4503d8edee4faf66f72b768d01969ad3d0"
+  },
+  {
+    "path": "source/tests/test_dispatch.py",
+    "sha256": "5e82e03806dbcec94f332bb03bdfd5e184a00efb4896c16fa8c75ed505445809"
+  },
+  {
+    "path": "source/tests/test_evaluation.py",
+    "sha256": "89df6b7b49975fb9ba2d19938d56aee7cfd7d13891e5a27470dac3fa133b9260"
+  },
+  {
+    "path": "source/tests/test_geo.py",
+    "sha256": "8a4ef2307073b92346bb4f2525489e8c7af05786855287c1a0ff4effbe8c4695"
+  },
+  {
+    "path": "source/tests/test_routing.py",
+    "sha256": "e977815b1fac11e3461c52ccf2319974a79ed87b79a58772ceceed05075a7ca1"
+  },
+  {
+    "path": "source/tests/test_stages.py",
+    "sha256": "14d164f8df88a88da86840adf3b2c84055555000fdfa13562b7411993316e42a"
+  },
+  {
+    "path": "source/tests/test_ui.cjs",
+    "sha256": "4f522083505938d9a004f1125cc326216286254f45e966213b4e75f23bfd0099"
+  },
+  {
+    "path": "source/web/app.js",
+    "sha256": "aeffad41318ee92c586ee07901a816ce8688f272d3c3d6d9df643b14ee15fc8d"
+  },
+  {
+    "path": "source/web/art/empty-planet.png",
+    "sha256": "f785a7cee045c94342cae7ff100934a526ddaa4a1179c23edb7441d34b6226a5"
+  },
+  {
+    "path": "source/web/art/footer-dark.png",
+    "sha256": "87c4639edccbf5c72db10d12a66a72f3fd465c3dcab8f6d7621c9f533171baa1"
+  },
+  {
+    "path": "source/web/art/footer-light.png",
+    "sha256": "44b0efba46e5fb8675666dd8b5ce4c21c3cd2cde4966c8775f5cb71f1bcb2787"
+  },
+  {
+    "path": "source/web/art/header-dark.png",
+    "sha256": "26045f986a6401cb9c0ed0f057d9c5637bfe2fc76ad6843a1c35cd22532ba6c1"
+  },
+  {
+    "path": "source/web/art/header-light.png",
+    "sha256": "6c4c53f3abc19fbdd3a8a02032fded4a98b98ba2660124c83ffa99504b1baf3f"
+  },
+  {
+    "path": "source/web/art/loading.png",
+    "sha256": "d83e2fa92bbc8862a1fa01248322a4dbae14818a8662c70c851d11ec408cfbed"
+  },
+  {
+    "path": "source/web/art/logo.png",
+    "sha256": "7eeb3b76c87cd4f6b01c9a9f3890084ea0318aa12ba2986b04ac26cd73dabf70"
+  },
+  {
+    "path": "source/web/index.html",
+    "sha256": "4ce86997bf03ac0a8b6510457524241637d348d735637a7828f38a679435ef5a"
+  },
+  {
+    "path": "source/web/style.css",
+    "sha256": "221d3a1902ba8f7ac3769aa32d131c8e7d3763e4c4e05ddabc2059309bde8035"
+  }
+]

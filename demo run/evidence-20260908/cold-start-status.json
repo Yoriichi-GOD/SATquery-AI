@@ -1,0 +1,7 @@
+{
+  "state": "idle",
+  "model": "AdaptLLM/remote-sensing-Qwen2-VL-2B-Instruct",
+  "revision": "7f5dd71bf0f40c282193d50160e848a387a08ffe",
+  "device": "Local GPU",
+  "adapter": "Baseline - no adapter"
+}

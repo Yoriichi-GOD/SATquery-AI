@@ -1,0 +1,828 @@
+[
+  {
+    "id": "levir-test_102_0512_0000",
+    "kind": "temporal",
+    "name": "test_102_0512_0000",
+    "source": "ChangeFormer official LEVIR samples",
+    "source_revision": "afd1b7ed640aa265a2c730de958416ae7356a2f9",
+    "benchmark": "LEVIR-CD development",
+    "registration": "publisher paired crop; no geographic metadata",
+    "dates": "ordered A/B; exact dates unavailable",
+    "files": [
+      "before.tif",
+      "after.tif"
+    ],
+    "shape": [
+      256,
+      256
+    ]
+  },
+  {
+    "id": "levir-test_121_0768_0256",
+    "kind": "temporal",
+    "name": "test_121_0768_0256",
+    "source": "ChangeFormer official LEVIR samples",
+    "source_revision": "afd1b7ed640aa265a2c730de958416ae7356a2f9",
+    "benchmark": "LEVIR-CD development",
+    "registration": "publisher paired crop; no geographic metadata",
+    "dates": "ordered A/B; exact dates unavailable",
+    "files": [
+      "before.tif",
+      "after.tif"
+    ],
+    "shape": [
+      256,
+      256
+    ]
+  },
+  {
+    "id": "levir-test_2_0000_0000",
+    "kind": "temporal",
+    "name": "test_2_0000_0000",
+    "source": "ChangeFormer official LEVIR samples",
+    "source_revision": "afd1b7ed640aa265a2c730de958416ae7356a2f9",
+    "benchmark": "LEVIR-CD development",
+    "registration": "publisher paired crop; no geographic metadata",
+    "dates": "ordered A/B; exact dates unavailable",
+    "files": [
+      "before.tif",
+      "after.tif"
+    ],
+    "shape": [
+      256,
+      256
+    ]
+  },
+  {
+    "id": "levir-test_2_0000_0512",
+    "kind": "temporal",
+    "name": "test_2_0000_0512",
+    "source": "ChangeFormer official LEVIR samples",
+    "source_revision": "afd1b7ed640aa265a2c730de958416ae7356a2f9",
+    "benchmark": "LEVIR-CD development",
+    "registration": "publisher paired crop; no geographic metadata",
+    "dates": "ordered A/B; exact dates unavailable",
+    "files": [
+      "before.tif",
+      "after.tif"
+    ],
+    "shape": [
+      256,
+      256
+    ]
+  },
+  {
+    "id": "levir-test_55_0256_0000",
+    "kind": "temporal",
+    "name": "test_55_0256_0000",
+    "source": "ChangeFormer official LEVIR samples",
+    "source_revision": "afd1b7ed640aa265a2c730de958416ae7356a2f9",
+    "benchmark": "LEVIR-CD development",
+    "registration": "publisher paired crop; no geographic metadata",
+    "dates": "ordered A/B; exact dates unavailable",
+    "files": [
+      "before.tif",
+      "after.tif"
+    ],
+    "shape": [
+      256,
+      256
+    ]
+  },
+  {
+    "id": "levir-test_77_0512_0256",
+    "kind": "temporal",
+    "name": "test_77_0512_0256",
+    "source": "ChangeFormer official LEVIR samples",
+    "source_revision": "afd1b7ed640aa265a2c730de958416ae7356a2f9",
+    "benchmark": "LEVIR-CD development",
+    "registration": "publisher paired crop; no geographic metadata",
+    "dates": "ordered A/B; exact dates unavailable",
+    "files": [
+      "before.tif",
+      "after.tif"
+    ],
+    "shape": [
+      256,
+      256
+    ]
+  },
+  {
+    "id": "levir-test_7_0256_0512",
+    "kind": "temporal",
+    "name": "test_7_0256_0512",
+    "source": "ChangeFormer official LEVIR samples",
+    "source_revision": "afd1b7ed640aa265a2c730de958416ae7356a2f9",
+    "benchmark": "LEVIR-CD development",
+    "registration": "publisher paired crop; no geographic metadata",
+    "dates": "ordered A/B; exact dates unavailable",
+    "files": [
+      "before.tif",
+      "after.tif"
+    ],
+    "shape": [
+      256,
+      256
+    ]
+  },
+  {
+    "id": "ben-validation-33-69",
+    "kind": "optical_sar",
+    "name": "Austria validation 33-69",
+    "source": "ConfigILM official BigEarthNet v2 real-data fixture",
+    "source_revision": "d5a6c64bee268e71f12e130bd839ab9dfe53cc08",
+    "benchmark": "BigEarthNet v2 development",
+    "split": "validation",
+    "optical_patch": "S2A_MSIL2A_20170613T101031_N9999_R022_T33UUP_33_69",
+    "sar_patch": "S1B_IW_GRDH_1SDV_20170612T165809_33UUP_33_69",
+    "registration": "publisher paired sample; geographic transform unavailable in LMDB fixture",
+    "files": [
+      "optical.tif",
+      "sar.tif"
+    ],
+    "shape": [
+      120,
+      120
+    ]
+  },
+  {
+    "id": "ben-validation-33-70",
+    "kind": "optical_sar",
+    "name": "Austria validation 33-70",
+    "source": "ConfigILM official BigEarthNet v2 real-data fixture",
+    "source_revision": "d5a6c64bee268e71f12e130bd839ab9dfe53cc08",
+    "benchmark": "BigEarthNet v2 development",
+    "split": "validation",
+    "optical_patch": "S2A_MSIL2A_20170613T101031_N9999_R022_T33UUP_33_70",
+    "sar_patch": "S1B_IW_GRDH_1SDV_20170612T165809_33UUP_33_70",
+    "registration": "publisher paired sample; geographic transform unavailable in LMDB fixture",
+    "files": [
+      "optical.tif",
+      "sar.tif"
+    ],
+    "shape": [
+      120,
+      120
+    ]
+  },
+  {
+    "id": "ben-validation-34-69",
+    "kind": "optical_sar",
+    "name": "Austria validation 34-69",
+    "source": "ConfigILM official BigEarthNet v2 real-data fixture",
+    "source_revision": "d5a6c64bee268e71f12e130bd839ab9dfe53cc08",
+    "benchmark": "BigEarthNet v2 development",
+    "split": "validation",
+    "optical_patch": "S2A_MSIL2A_20170613T101031_N9999_R022_T33UUP_34_69",
+    "sar_patch": "S1B_IW_GRDH_1SDV_20170612T165809_33UUP_34_69",
+    "registration": "publisher paired sample; geographic transform unavailable in LMDB fixture",
+    "files": [
+      "optical.tif",
+      "sar.tif"
+    ],
+    "shape": [
+      120,
+      120
+    ]
+  },
+  {
+    "id": "ben-validation-34-70",
+    "kind": "optical_sar",
+    "name": "Austria validation 34-70",
+    "source": "ConfigILM official BigEarthNet v2 real-data fixture",
+    "source_revision": "d5a6c64bee268e71f12e130bd839ab9dfe53cc08",
+    "benchmark": "BigEarthNet v2 development",
+    "split": "validation",
+    "optical_patch": "S2A_MSIL2A_20170613T101031_N9999_R022_T33UUP_34_70",
+    "sar_patch": "S1B_IW_GRDH_1SDV_20170612T165809_33UUP_34_70",
+    "registration": "publisher paired sample; geographic transform unavailable in LMDB fixture",
+    "files": [
+      "optical.tif",
+      "sar.tif"
+    ],
+    "shape": [
+      120,
+      120
+    ]
+  },
+  {
+    "id": "ben-validation-34-71",
+    "kind": "optical_sar",
+    "name": "Austria validation 34-71",
+    "source": "ConfigILM official BigEarthNet v2 real-data fixture",
+    "source_revision": "d5a6c64bee268e71f12e130bd839ab9dfe53cc08",
+    "benchmark": "BigEarthNet v2 development",
+    "split": "validation",
+    "optical_patch": "S2A_MSIL2A_20170613T101031_N9999_R022_T33UUP_34_71",
+    "sar_patch": "S1B_IW_GRDH_1SDV_20170612T165809_33UUP_34_71",
+    "registration": "publisher paired sample; geographic transform unavailable in LMDB fixture",
+    "files": [
+      "optical.tif",
+      "sar.tif"
+    ],
+    "shape": [
+      120,
+      120
+    ]
+  },
+  {
+    "id": "ben-validation-35-69",
+    "kind": "optical_sar",
+    "name": "Austria validation 35-69",
+    "source": "ConfigILM official BigEarthNet v2 real-data fixture",
+    "source_revision": "d5a6c64bee268e71f12e130bd839ab9dfe53cc08",
+    "benchmark": "BigEarthNet v2 development",
+    "split": "validation",
+    "optical_patch": "S2A_MSIL2A_20170613T101031_N9999_R022_T33UUP_35_69",
+    "sar_patch": "S1B_IW_GRDH_1SDV_20170612T165809_33UUP_35_69",
+    "registration": "publisher paired sample; geographic transform unavailable in LMDB fixture",
+    "files": [
+      "optical.tif",
+      "sar.tif"
+    ],
+    "shape": [
+      120,
+      120
+    ]
+  },
+  {
+    "id": "ben-test-26-57",
+    "kind": "optical_sar",
+    "name": "Austria test 26-57",
+    "source": "ConfigILM official BigEarthNet v2 real-data fixture",
+    "source_revision": "d5a6c64bee268e71f12e130bd839ab9dfe53cc08",
+    "benchmark": "BigEarthNet v2 development",
+    "split": "test",
+    "optical_patch": "S2A_MSIL2A_20170613T101031_N9999_R022_T33UUP_26_57",
+    "sar_patch": "S1B_IW_GRDH_1SDV_20170612T165809_33UUP_26_57",
+    "registration": "publisher paired sample; geographic transform unavailable in LMDB fixture",
+    "files": [
+      "optical.tif",
+      "sar.tif"
+    ],
+    "shape": [
+      120,
+      120
+    ]
+  },
+  {
+    "id": "ben-test-27-55",
+    "kind": "optical_sar",
+    "name": "Austria test 27-55",
+    "source": "ConfigILM official BigEarthNet v2 real-data fixture",
+    "source_revision": "d5a6c64bee268e71f12e130bd839ab9dfe53cc08",
+    "benchmark": "BigEarthNet v2 development",
+    "split": "test",
+    "optical_patch": "S2A_MSIL2A_20170613T101031_N9999_R022_T33UUP_27_55",
+    "sar_patch": "S1B_IW_GRDH_1SDV_20170612T165809_33UUP_27_55",
+    "registration": "publisher paired sample; geographic transform unavailable in LMDB fixture",
+    "files": [
+      "optical.tif",
+      "sar.tif"
+    ],
+    "shape": [
+      120,
+      120
+    ]
+  },
+  {
+    "id": "ben-test-27-56",
+    "kind": "optical_sar",
+    "name": "Austria test 27-56",
+    "source": "ConfigILM official BigEarthNet v2 real-data fixture",
+    "source_revision": "d5a6c64bee268e71f12e130bd839ab9dfe53cc08",
+    "benchmark": "BigEarthNet v2 development",
+    "split": "test",
+    "optical_patch": "S2A_MSIL2A_20170613T101031_N9999_R022_T33UUP_27_56",
+    "sar_patch": "S1B_IW_GRDH_1SDV_20170612T165809_33UUP_27_56",
+    "registration": "publisher paired sample; geographic transform unavailable in LMDB fixture",
+    "files": [
+      "optical.tif",
+      "sar.tif"
+    ],
+    "shape": [
+      120,
+      120
+    ]
+  },
+  {
+    "id": "ben-test-27-57",
+    "kind": "optical_sar",
+    "name": "Austria test 27-57",
+    "source": "ConfigILM official BigEarthNet v2 real-data fixture",
+    "source_revision": "d5a6c64bee268e71f12e130bd839ab9dfe53cc08",
+    "benchmark": "BigEarthNet v2 development",
+    "split": "test",
+    "optical_patch": "S2A_MSIL2A_20170613T101031_N9999_R022_T33UUP_27_57",
+    "sar_patch": "S1B_IW_GRDH_1SDV_20170612T165809_33UUP_27_57",
+    "registration": "publisher paired sample; geographic transform unavailable in LMDB fixture",
+    "files": [
+      "optical.tif",
+      "sar.tif"
+    ],
+    "shape": [
+      120,
+      120
+    ]
+  },
+  {
+    "id": "ben-test-27-58",
+    "kind": "optical_sar",
+    "name": "Austria test 27-58",
+    "source": "ConfigILM official BigEarthNet v2 real-data fixture",
+    "source_revision": "d5a6c64bee268e71f12e130bd839ab9dfe53cc08",
+    "benchmark": "BigEarthNet v2 development",
+    "split": "test",
+    "optical_patch": "S2A_MSIL2A_20170613T101031_N9999_R022_T33UUP_27_58",
+    "sar_patch": "S1B_IW_GRDH_1SDV_20170612T165809_33UUP_27_58",
+    "registration": "publisher paired sample; geographic transform unavailable in LMDB fixture",
+    "files": [
+      "optical.tif",
+      "sar.tif"
+    ],
+    "shape": [
+      120,
+      120
+    ]
+  },
+  {
+    "id": "ben-test-27-59",
+    "kind": "optical_sar",
+    "name": "Austria test 27-59",
+    "source": "ConfigILM official BigEarthNet v2 real-data fixture",
+    "source_revision": "d5a6c64bee268e71f12e130bd839ab9dfe53cc08",
+    "benchmark": "BigEarthNet v2 development",
+    "split": "test",
+    "optical_patch": "S2A_MSIL2A_20170613T101031_N9999_R022_T33UUP_27_59",
+    "sar_patch": "S1B_IW_GRDH_1SDV_20170612T165809_33UUP_27_59",
+    "registration": "publisher paired sample; geographic transform unavailable in LMDB fixture",
+    "files": [
+      "optical.tif",
+      "sar.tif"
+    ],
+    "shape": [
+      120,
+      120
+    ]
+  },
+  {
+    "id": "flood-Ghana_313799",
+    "kind": "water_map",
+    "name": "Ghana \u00b7 313799 (test)",
+    "source": "Sen1Floods11 v1.1 hand-labelled",
+    "benchmark": "Official test split; first chip per event, not selected by prediction quality",
+    "files": [
+      "optical.tif",
+      "sar.tif"
+    ],
+    "source_files": [
+      {
+        "source": "/root/satquery/paired-lab/sen1floods11/S2Hand/Ghana_313799_S2Hand.tif",
+        "source_sha256": "621f5c19765e6e6a28d3a3b8bb357188ecb4d65ab4f14dba38e30bd84b93ce40",
+        "export_sha256": "fee4bc6436158d1d7d60b5f82e1aabb0be35db15a3b0e1c58202bc3e0aa40b6c"
+      },
+      {
+        "source": "/root/satquery/paired-lab/sen1floods11/S1Hand/Ghana_313799_S1Hand.tif",
+        "source_sha256": "4555c98d54ea0ca81e681abc75af20d61774fbbcdc3d48992c3378ebdd5887bc",
+        "export_sha256": "00cf06b1c997da444148f3a7dec45f3f497171be858df5ccfa464b38aace2bf0"
+      }
+    ],
+    "dates": {
+      "optical": "2018/09/19",
+      "sar": "2018/09/18"
+    },
+    "reference": "/root/satquery/paired-lab/sen1floods11/LabelHand/Ghana_313799_LabelHand.tif"
+  },
+  {
+    "id": "flood-India_900498",
+    "kind": "water_map",
+    "name": "India \u00b7 900498 (test)",
+    "source": "Sen1Floods11 v1.1 hand-labelled",
+    "benchmark": "Official test split; first chip per event, not selected by prediction quality",
+    "files": [
+      "optical.tif",
+      "sar.tif"
+    ],
+    "source_files": [
+      {
+        "source": "/root/satquery/paired-lab/sen1floods11/S2Hand/India_900498_S2Hand.tif",
+        "source_sha256": "ee898621b387a731503a01960397599f209b45c268d4e088689928c704dbe968",
+        "export_sha256": "d4425d3a158a2f8f06165ccc43fd685330302b2a51cfa6fd86796fea87ea06ac"
+      },
+      {
+        "source": "/root/satquery/paired-lab/sen1floods11/S1Hand/India_900498_S1Hand.tif",
+        "source_sha256": "83bc6bca280cb51264028515c944928ea2201386bee411d8bb5cabbcb51cc4a6",
+        "export_sha256": "27b3735fc750c61b45d756f9d163a005a21fc82e54cf64f04dc293bb975a6f0a"
+      }
+    ],
+    "dates": {
+      "optical": "2016/08/12",
+      "sar": "2016/08/12"
+    },
+    "reference": "/root/satquery/paired-lab/sen1floods11/LabelHand/India_900498_LabelHand.tif"
+  },
+  {
+    "id": "flood-Mekong_333434",
+    "kind": "water_map",
+    "name": "Mekong \u00b7 333434 (test)",
+    "source": "Sen1Floods11 v1.1 hand-labelled",
+    "benchmark": "Official test split; first chip per event, not selected by prediction quality",
+    "files": [
+      "optical.tif",
+      "sar.tif"
+    ],
+    "source_files": [
+      {
+        "source": "/root/satquery/paired-lab/sen1floods11/S2Hand/Mekong_333434_S2Hand.tif",
+        "source_sha256": "d55946471ba35b4877ae09b5d830a5b5440ec77031da6c3c1d11752a8d5f9047",
+        "export_sha256": "a2aebdc5883273362ef66830e4e190a65f324101d5d602db86cc68d9cb759f23"
+      },
+      {
+        "source": "/root/satquery/paired-lab/sen1floods11/S1Hand/Mekong_333434_S1Hand.tif",
+        "source_sha256": "abed88cdb40aa823a3255ea53fdee7afd8ccabdb3e2045734b89c4756bf3a325",
+        "export_sha256": "5ae082c30bb04f098d3baabf0d9ffc2c1b8558be0e0a4ebf90fd266272d6c398"
+      }
+    ],
+    "dates": {
+      "optical": "2018/08/04",
+      "sar": "2018/08/05"
+    },
+    "reference": "/root/satquery/paired-lab/sen1floods11/LabelHand/Mekong_333434_LabelHand.tif"
+  },
+  {
+    "id": "flood-Nigeria_417184",
+    "kind": "water_map",
+    "name": "Nigeria \u00b7 417184 (test)",
+    "source": "Sen1Floods11 v1.1 hand-labelled",
+    "benchmark": "Official test split; first chip per event, not selected by prediction quality",
+    "files": [
+      "optical.tif",
+      "sar.tif"
+    ],
+    "source_files": [
+      {
+        "source": "/root/satquery/paired-lab/sen1floods11/S2Hand/Nigeria_417184_S2Hand.tif",
+        "source_sha256": "4c0772d6fb10a0c1288e649fc9ee9d354de3fe33c937e5df56cf3f8f2fc4e74b",
+        "export_sha256": "f0288ac5c9330376cbaa219522161ec76e455a3db999712a1c116931eee013b5"
+      },
+      {
+        "source": "/root/satquery/paired-lab/sen1floods11/S1Hand/Nigeria_417184_S1Hand.tif",
+        "source_sha256": "99b58fdcad3b27e09a0bb672246cf59f58e1c7e211d290e45485c5321995d7dc",
+        "export_sha256": "6c399aedbfd5deb1b39b2f975b3db221ca84fde5cc1bcba308a2e53e80f4118b"
+      }
+    ],
+    "dates": {
+      "optical": "2018/09/20",
+      "sar": "2018/09/21"
+    },
+    "reference": "/root/satquery/paired-lab/sen1floods11/LabelHand/Nigeria_417184_LabelHand.tif"
+  },
+  {
+    "id": "flood-Pakistan_849790",
+    "kind": "water_map",
+    "name": "Pakistan \u00b7 849790 (test)",
+    "source": "Sen1Floods11 v1.1 hand-labelled",
+    "benchmark": "Official test split; first chip per event, not selected by prediction quality",
+    "files": [
+      "optical.tif",
+      "sar.tif"
+    ],
+    "source_files": [
+      {
+        "source": "/root/satquery/paired-lab/sen1floods11/S2Hand/Pakistan_849790_S2Hand.tif",
+        "source_sha256": "facb36e9d7ad50bce80d8af8be7a95af3ad20c696b77896120db86d460cc8dce",
+        "export_sha256": "7237b8586203aab061fca27fbad18eb3f80ba18132a98e9efc7543720571b8a6"
+      },
+      {
+        "source": "/root/satquery/paired-lab/sen1floods11/S1Hand/Pakistan_849790_S1Hand.tif",
+        "source_sha256": "ff1f7b9afce78918808ced5d648d4df28a2047a05f934f649e728bad38533007",
+        "export_sha256": "114b7aaccf82359f1a3eb6f0fd8eed0875f0986d2abae920ebf036eaefe12e68"
+      }
+    ],
+    "dates": {
+      "optical": "2017/06/28",
+      "sar": "2017/06/28"
+    },
+    "reference": "/root/satquery/paired-lab/sen1floods11/LabelHand/Pakistan_849790_LabelHand.tif"
+  },
+  {
+    "id": "flood-Paraguay_913449",
+    "kind": "water_map",
+    "name": "Paraguay \u00b7 913449 (test)",
+    "source": "Sen1Floods11 v1.1 hand-labelled",
+    "benchmark": "Official test split; first chip per event, not selected by prediction quality",
+    "files": [
+      "optical.tif",
+      "sar.tif"
+    ],
+    "source_files": [
+      {
+        "source": "/root/satquery/paired-lab/sen1floods11/S2Hand/Paraguay_913449_S2Hand.tif",
+        "source_sha256": "c38dfcf7b2ef60e39d57cfe88494ac5e3b73a5ccff69fc4d2e068233d164348a",
+        "export_sha256": "b23cff54be4fc1e835513b5a8546dcb4f3ea51c5551701ca74f9c5ce6cf7264e"
+      },
+      {
+        "source": "/root/satquery/paired-lab/sen1floods11/S1Hand/Paraguay_913449_S1Hand.tif",
+        "source_sha256": "d574270d0876e440adfac65762f76a32e67ddcb2508b381480e806e81df3833b",
+        "export_sha256": "3caf737ff62fc3029d5446312be484b8bb58b9602c13696b3f4c2f08a277d867"
+      }
+    ],
+    "dates": {
+      "optical": "2018/10/31",
+      "sar": "2018/10/31"
+    },
+    "reference": "/root/satquery/paired-lab/sen1floods11/LabelHand/Paraguay_913449_LabelHand.tif"
+  },
+  {
+    "id": "flood-Somalia_699062",
+    "kind": "water_map",
+    "name": "Somalia \u00b7 699062 (test)",
+    "source": "Sen1Floods11 v1.1 hand-labelled",
+    "benchmark": "Official test split; first chip per event, not selected by prediction quality",
+    "files": [
+      "optical.tif",
+      "sar.tif"
+    ],
+    "source_files": [
+      {
+        "source": "/root/satquery/paired-lab/sen1floods11/S2Hand/Somalia_699062_S2Hand.tif",
+        "source_sha256": "8bd50eb3cdd28c9e2d6f2672ee2fd0377480c4c6ab3f3e00227ef2f85c1f88d6",
+        "export_sha256": "5cbcc5ed6fdda634f64ea66b27edc93c286e68506dd590e0bf4b87f4006cca01"
+      },
+      {
+        "source": "/root/satquery/paired-lab/sen1floods11/S1Hand/Somalia_699062_S1Hand.tif",
+        "source_sha256": "c905fcba8efe764f1c91d9b1fb061da12b797c645ad33b80befb575dc00a5d38",
+        "export_sha256": "022732f1ad08624818725a8241b9ef4929cdf6e8fd36a959c19ddaeab9db86a4"
+      }
+    ],
+    "dates": {
+      "optical": "2018/05/05",
+      "sar": "2018/05/07"
+    },
+    "reference": "/root/satquery/paired-lab/sen1floods11/LabelHand/Somalia_699062_LabelHand.tif"
+  },
+  {
+    "id": "flood-Spain_6860600",
+    "kind": "water_map",
+    "name": "Spain \u00b7 6860600 (test)",
+    "source": "Sen1Floods11 v1.1 hand-labelled",
+    "benchmark": "Official test split; first chip per event, not selected by prediction quality",
+    "files": [
+      "optical.tif",
+      "sar.tif"
+    ],
+    "source_files": [
+      {
+        "source": "/root/satquery/paired-lab/sen1floods11/S2Hand/Spain_6860600_S2Hand.tif",
+        "source_sha256": "9d9068dc0db5959536fe54f588f7a2d58091e8f52ee4d81e919ecd5f34791611",
+        "export_sha256": "95159b5746f0e8350c709a2faf0c8d77781a4c87e5b42cece11c8ba939ccfc2e"
+      },
+      {
+        "source": "/root/satquery/paired-lab/sen1floods11/S1Hand/Spain_6860600_S1Hand.tif",
+        "source_sha256": "5ffd422a0375aa9113e078d7481643355aa9109dbaa459e03b659c0bde503787",
+        "export_sha256": "dcf4349e7bef88ffd9feacb011e5e23e67945cb0d7e248334d34320771fcac65"
+      }
+    ],
+    "dates": {
+      "optical": "2019/09/18",
+      "sar": "2019/09/17"
+    },
+    "reference": "/root/satquery/paired-lab/sen1floods11/LabelHand/Spain_6860600_LabelHand.tif"
+  },
+  {
+    "id": "flood-Sri-Lanka_117737",
+    "kind": "water_map",
+    "name": "Sri-Lanka \u00b7 117737 (test)",
+    "source": "Sen1Floods11 v1.1 hand-labelled",
+    "benchmark": "Official test split; first chip per event, not selected by prediction quality",
+    "files": [
+      "optical.tif",
+      "sar.tif"
+    ],
+    "source_files": [
+      {
+        "source": "/root/satquery/paired-lab/sen1floods11/S2Hand/Sri-Lanka_117737_S2Hand.tif",
+        "source_sha256": "dfcc52cac34589699c084359464e3c94bcbcdac0eaf3388fe5a2e2de0c67f101",
+        "export_sha256": "1c9650c7f023b81c118e9a61b1fe3251ffaf91b7c68116f8e05890563e5c07fc"
+      },
+      {
+        "source": "/root/satquery/paired-lab/sen1floods11/S1Hand/Sri-Lanka_117737_S1Hand.tif",
+        "source_sha256": "0483b94b9582bb8773aa6a2d13b207e02bc09c59fd75f713b845bc729a93e916",
+        "export_sha256": "caa138d0d6652180ec85a5c1d3eedbc131d9f2c1c1863a316bed517ae96d4e90"
+      }
+    ],
+    "dates": {
+      "optical": "2017/05/28",
+      "sar": "2017/05/30"
+    },
+    "reference": "/root/satquery/paired-lab/sen1floods11/LabelHand/Sri-Lanka_117737_LabelHand.tif"
+  },
+  {
+    "id": "flood-USA_905409",
+    "kind": "water_map",
+    "name": "USA \u00b7 905409 (test)",
+    "source": "Sen1Floods11 v1.1 hand-labelled",
+    "benchmark": "Official test split; first chip per event, not selected by prediction quality",
+    "files": [
+      "optical.tif",
+      "sar.tif"
+    ],
+    "source_files": [
+      {
+        "source": "/root/satquery/paired-lab/sen1floods11/S2Hand/USA_905409_S2Hand.tif",
+        "source_sha256": "e44a749f3d8cbbaebdb56c1284354040d7b965899dcdbb40454f5c4ba46c60eb",
+        "export_sha256": "c7dbc72ee6e8f2abf63e3ed8f9ccd2efbb73b027558da4a98cc7f0f810a0f67e"
+      },
+      {
+        "source": "/root/satquery/paired-lab/sen1floods11/S1Hand/USA_905409_S1Hand.tif",
+        "source_sha256": "0ec326c52448475242517cfe160b63eceb5af4c549474d3b6fbfc718a3c03abf",
+        "export_sha256": "ffb23fddb50f5e2ba8bfcd0ba65e15bd5d1cdebafd7285f48a594e09f5418e6f"
+      }
+    ],
+    "dates": {
+      "optical": "2019/05/22",
+      "sar": "2019/05/22"
+    },
+    "reference": "/root/satquery/paired-lab/sen1floods11/LabelHand/USA_905409_LabelHand.tif"
+  },
+  {
+    "id": "flood-Bolivia_103757",
+    "kind": "water_map",
+    "name": "Bolivia \u00b7 103757 (bolivia)",
+    "source": "Sen1Floods11 v1.1 hand-labelled",
+    "benchmark": "Official bolivia split; first chip per event, not selected by prediction quality",
+    "files": [
+      "optical.tif",
+      "sar.tif"
+    ],
+    "source_files": [
+      {
+        "source": "/root/satquery/paired-lab/sen1floods11/S2Hand/Bolivia_103757_S2Hand.tif",
+        "source_sha256": "d16f68d9fffa6235b44cc31b186ec4ab5179420892fc59589d597717afeb19ad",
+        "export_sha256": "bc4233f5fee8203051c897a6e2678088ebff50802351822508b009397b5bda2a"
+      },
+      {
+        "source": "/root/satquery/paired-lab/sen1floods11/S1Hand/Bolivia_103757_S1Hand.tif",
+        "source_sha256": "d7c7630e6540b3d32b063ed079d73e55c95b1c0347f5d94257b2b7300befb4c8",
+        "export_sha256": "b12d110db18d68f51bc5f83e1540a895f1cc6248383a975ecddd908be3922a98"
+      }
+    ],
+    "dates": {
+      "optical": "2018/02/15",
+      "sar": "2018/02/15"
+    },
+    "reference": "/root/satquery/paired-lab/sen1floods11/LabelHand/Bolivia_103757_LabelHand.tif"
+  },
+  {
+    "id": "mci-test_001682",
+    "kind": "temporal",
+    "name": "MCI test_001682",
+    "source": "LEVIR-MCI official test",
+    "benchmark": "Change caption + road/building masks",
+    "files": [
+      "before.tif",
+      "after.tif"
+    ],
+    "registration": "Publisher paired crops; exact geographic metadata unavailable",
+    "reference_captions": [
+      " there is no difference .",
+      " the two scenes seem identical .",
+      " the scene is the same as before .",
+      " no change has occurred .",
+      " almost nothing has changed ."
+    ]
+  },
+  {
+    "id": "mci-test_000233",
+    "kind": "temporal",
+    "name": "MCI test_000233",
+    "source": "LEVIR-MCI official test",
+    "benchmark": "Change caption + road/building masks",
+    "files": [
+      "before.tif",
+      "after.tif"
+    ],
+    "registration": "Publisher paired crops; exact geographic metadata unavailable",
+    "reference_captions": [
+      " there is no difference .",
+      " the two scenes seem identical .",
+      " the scene is the same as before .",
+      " no change has occurred .",
+      " almost nothing has changed ."
+    ]
+  },
+  {
+    "id": "mci-test_000036",
+    "kind": "temporal",
+    "name": "MCI test_000036",
+    "source": "LEVIR-MCI official test",
+    "benchmark": "Change caption + road/building masks",
+    "files": [
+      "before.tif",
+      "after.tif"
+    ],
+    "registration": "Publisher paired crops; exact geographic metadata unavailable",
+    "reference_captions": [
+      " there is no difference .",
+      " the two scenes seem identical .",
+      " the scene is the same as before .",
+      " no change has occurred .",
+      " almost nothing has changed ."
+    ]
+  },
+  {
+    "id": "mci-test_001857",
+    "kind": "temporal",
+    "name": "MCI test_001857",
+    "source": "LEVIR-MCI official test",
+    "benchmark": "Change caption + road/building masks",
+    "files": [
+      "before.tif",
+      "after.tif"
+    ],
+    "registration": "Publisher paired crops; exact geographic metadata unavailable",
+    "reference_captions": [
+      " there is no difference .",
+      " the two scenes seem identical .",
+      " the scene is the same as before .",
+      " no change has occurred .",
+      " almost nothing has changed ."
+    ]
+  },
+  {
+    "id": "mci-test_000585",
+    "kind": "temporal",
+    "name": "MCI test_000585",
+    "source": "LEVIR-MCI official test",
+    "benchmark": "Change caption + road/building masks",
+    "files": [
+      "before.tif",
+      "after.tif"
+    ],
+    "registration": "Publisher paired crops; exact geographic metadata unavailable",
+    "reference_captions": [
+      " a line of houses has been built by the road at the top .",
+      " villas are built along the road at the top of the scene .",
+      " several buildings have been constructed on the bareland beside the roads .",
+      " some villas are built near the crossroad .",
+      " many houses appear along the road ."
+    ]
+  },
+  {
+    "id": "mci-test_001172",
+    "kind": "temporal",
+    "name": "MCI test_001172",
+    "source": "LEVIR-MCI official test",
+    "benchmark": "Change caption + road/building masks",
+    "files": [
+      "before.tif",
+      "after.tif"
+    ],
+    "registration": "Publisher paired crops; exact geographic metadata unavailable",
+    "reference_captions": [
+      " a row of houses appears on the left side of the scene and a road is built .",
+      " a row of detached houses is constructed beside the road on the bareland .",
+      " a road was rebuilt and many houses are constructed .",
+      " a t-shaped road appears and several buildings are built near roads .",
+      " two intersecting roads and some houses are constructed ."
+    ]
+  },
+  {
+    "id": "mci-test_000462",
+    "kind": "temporal",
+    "name": "MCI test_000462",
+    "source": "LEVIR-MCI official test",
+    "benchmark": "Change caption + road/building masks",
+    "files": [
+      "before.tif",
+      "after.tif"
+    ],
+    "registration": "Publisher paired crops; exact geographic metadata unavailable",
+    "reference_captions": [
+      " many trees are replaced by a t-shaped road and many buildings are scattered .",
+      " a cross road with villas neatly built along replace the trees .",
+      " a road has been built to replace the original forest and many villas have been constructed beside the road .",
+      " most of the trees are removed and a new residential district has been built .",
+      " new roads surrounded by new houses replace the woods ."
+    ]
+  },
+  {
+    "id": "mci-test_001638",
+    "kind": "temporal",
+    "name": "MCI test_001638",
+    "source": "LEVIR-MCI official test",
+    "benchmark": "Change caption + road/building masks",
+    "files": [
+      "before.tif",
+      "after.tif"
+    ],
+    "registration": "Publisher paired crops; exact geographic metadata unavailable",
+    "reference_captions": [
+      " a few rooms are missing in the building complex .",
+      " four more buildings and a road through the woods appear .",
+      " some houses are built in the trees along the road .",
+      " some houses are built among the other houses .",
+      " a house appears at the top and three are built on the left ."
+    ]
+  }
+]

@@ -1,0 +1,19 @@
+{
+  "id": "mci-test_001857",
+  "kind": "temporal",
+  "name": "MCI test_001857",
+  "source": "LEVIR-MCI official test",
+  "benchmark": "Change caption + road/building masks",
+  "files": [
+    "before.tif",
+    "after.tif"
+  ],
+  "registration": "Publisher paired crops; exact geographic metadata unavailable",
+  "reference_captions": [
+    " there is no difference .",
+    " the two scenes seem identical .",
+    " the scene is the same as before .",
+    " no change has occurred .",
+    " almost nothing has changed ."
+  ]
+}

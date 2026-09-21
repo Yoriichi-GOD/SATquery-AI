@@ -1,0 +1,468 @@
+{
+  "scope": "Live integration checks, not accuracy benchmark",
+  "cases": [
+    {
+      "kind": "vqa",
+      "transport_passed": true,
+      "run": {
+        "id": "8aea0edc37cd4cc5b8bcb6651193139c",
+        "state": "complete",
+        "stage": "Complete",
+        "question": "Describe the major visible features briefly.",
+        "image": {
+          "id": "b6f6c8ed39a74995b1236af9d2020dbf",
+          "name": "dehradun.tif",
+          "width": 512,
+          "height": 512,
+          "bytes": 3235336,
+          "sha256": "55f3ca7b578e045594f8d54419b590c3ffeb99247ec5f74d7b1355d5bc4ec0f8",
+          "preview": "/api/images/b6f6c8ed39a74995b1236af9d2020dbf",
+          "geo": {
+            "calibration_version": "c1-header-verified-v2",
+            "crs": "EPSG:32643",
+            "width": 512,
+            "height": 512,
+            "transform": [
+              10.0,
+              0.0,
+              788360.0,
+              0.0,
+              -10.0,
+              3359030.0
+            ],
+            "bounds": [
+              788360.0,
+              3353910.0,
+              793480.0,
+              3359030.0
+            ],
+            "bounds_wgs84": [
+              77.99766300376905,
+              30.281402875774386,
+              78.05225589782314,
+              30.328772451280432
+            ],
+            "resolution": [
+              10.0,
+              10.0
+            ],
+            "bands": {
+              "red": 1,
+              "green": 2,
+              "blue": 3,
+              "nir": 4,
+              "scl": 5
+            },
+            "band_descriptions": [
+              "red",
+              "green",
+              "blue",
+              "nir",
+              "scl"
+            ],
+            "nodata": "nan",
+            "scales": [
+              1.0,
+              1.0,
+              1.0,
+              1.0,
+              1.0
+            ],
+            "offsets": [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "acquired": "2021-11-25T05:40:34.501000Z",
+            "source_item": "S2A_T43RGP_20211125T053958_L2A",
+            "attribution": "Contains modified Copernicus Sentinel data (2021), accessed through Element 84 Earth Search / AWS.",
+            "ndvi_supported": true,
+            "quality_mask_available": true,
+            "preview_processing": "Per-channel 2nd\u201398th percentile RGB display stretch; analytical values are preserved."
+          }
+        },
+        "started": 1788739170.6249466,
+        "model": "AdaptLLM/remote-sensing-Qwen2-VL-2B-Instruct",
+        "revision": "7f5dd71bf0f40c282193d50160e848a387a08ffe",
+        "adapter": null,
+        "mode": "baseline",
+        "route": "Single-image optical VQA",
+        "trace": [
+          {
+            "step": "Load pinned checkpoint",
+            "seconds": 8.147
+          },
+          {
+            "step": "Generate model answer",
+            "seconds": 6.75
+          }
+        ],
+        "routing": {
+          "tool": "vqa",
+          "rule": "single_image_description",
+          "reason": "Supported descriptive or presence question about one optical image; no quantitative or spatial output requested.",
+          "version": "rules-v1"
+        },
+        "effective_question": "Describe the major visible features briefly.",
+        "visual_token_bounds": [
+          256,
+          512
+        ],
+        "answer": "The major visible features in the image are the densely packed residential areas, the green spaces, and the roads that intersect the residential areas. The roads appear to be in good condition, with no visible signs of congestion or accidents. The green spaces are likely parks or gardens, providing a contrast to the urban environment and offering a recreational or aesthetic value to the residents. The image does not provide any direct information about the specific location or the time at which the photograph was taken. Therefore, the answer is The aerial scene is Dense Residential.",
+        "seconds": 22.047,
+        "generation_seconds": 6.75,
+        "peak_allocated_GiB": 4.243,
+        "generated_tokens": 107,
+        "max_new_tokens": 128
+      },
+      "quality_issue": "Unsupported claims about road condition, congestion and accidents; do not use these as verified observations."
+    },
+    {
+      "kind": "ndvi",
+      "passed": true,
+      "run": {
+        "id": "29cfd95930ee499ba506b322a9b00191",
+        "state": "complete",
+        "stage": "Complete",
+        "image": {
+          "id": "b6f6c8ed39a74995b1236af9d2020dbf",
+          "name": "dehradun.tif",
+          "width": 512,
+          "height": 512,
+          "bytes": 3235336,
+          "sha256": "55f3ca7b578e045594f8d54419b590c3ffeb99247ec5f74d7b1355d5bc4ec0f8",
+          "preview": "/api/images/b6f6c8ed39a74995b1236af9d2020dbf",
+          "geo": {
+            "calibration_version": "c1-header-verified-v2",
+            "crs": "EPSG:32643",
+            "width": 512,
+            "height": 512,
+            "transform": [
+              10.0,
+              0.0,
+              788360.0,
+              0.0,
+              -10.0,
+              3359030.0
+            ],
+            "bounds": [
+              788360.0,
+              3353910.0,
+              793480.0,
+              3359030.0
+            ],
+            "bounds_wgs84": [
+              77.99766300376905,
+              30.281402875774386,
+              78.05225589782314,
+              30.328772451280432
+            ],
+            "resolution": [
+              10.0,
+              10.0
+            ],
+            "bands": {
+              "red": 1,
+              "green": 2,
+              "blue": 3,
+              "nir": 4,
+              "scl": 5
+            },
+            "band_descriptions": [
+              "red",
+              "green",
+              "blue",
+              "nir",
+              "scl"
+            ],
+            "nodata": "nan",
+            "scales": [
+              1.0,
+              1.0,
+              1.0,
+              1.0,
+              1.0
+            ],
+            "offsets": [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "acquired": "2021-11-25T05:40:34.501000Z",
+            "source_item": "S2A_T43RGP_20211125T053958_L2A",
+            "attribution": "Contains modified Copernicus Sentinel data (2021), accessed through Element 84 Earth Search / AWS.",
+            "ndvi_supported": true,
+            "quality_mask_available": true,
+            "preview_processing": "Per-channel 2nd\u201398th percentile RGB display stretch; analytical values are preserved."
+          }
+        },
+        "started": 1788739255.5361314,
+        "route": "NDVI from calibrated red/NIR",
+        "threshold": 0.5,
+        "question": "Calculate NDVI coverage at the selected threshold.",
+        "routing": {
+          "tool": "ndvi",
+          "rule": "ndvi_threshold_coverage",
+          "reason": "Explicit NDVI or vegetation pixel-coverage request with calibrated Red/NIR available. Coverage means pixels meeting the selected NDVI threshold, not surveyed vegetation cover.",
+          "version": "rules-v1"
+        },
+        "answer": "NDVI \u2265 0.50: 14.79% of valid pixels. Selected pixels cover 14.79% of the whole crop. Projected grid area: 387.61 hectares. Valid pixels cover 100.00% of this crop. This is threshold-based coverage, not a vegetation-health diagnosis.",
+        "statistics": {
+          "calibration_version": "c1-header-verified-v2",
+          "exclusion_counts": {
+            "nodata_or_nonfinite": 0,
+            "negative_reflectance": 0,
+            "zero_denominator": 0,
+            "quality_after_reflectance_checks": 0
+          },
+          "excluded_pixels": 0,
+          "selected_percent_of_crop": 14.786148071289062,
+          "threshold": 0.5,
+          "valid_pixels": 262144,
+          "total_pixels": 262144,
+          "selected_pixels": 38761,
+          "valid_coverage_percent": 100.0,
+          "selected_percent_of_valid": 14.786148071289062,
+          "selected_area_m2": 3876100.0,
+          "area_method": "Projected grid area from affine determinant; not terrain surface area.",
+          "ndvi_min": -0.11406418681144714,
+          "ndvi_max": 0.8720458149909973,
+          "ndvi_mean": 0.271811306476593,
+          "quality_mask_available": true,
+          "quality_rule": "SCL 4,5,6,7 retained; other classes excluded.",
+          "interpretation": "Pixels meeting the stated NDVI threshold; not a vegetation health, density, or species diagnosis."
+        },
+        "overlay": "/api/runs/29cfd95930ee499ba506b322a9b00191/overlay",
+        "raster": "/api/runs/29cfd95930ee499ba506b322a9b00191/ndvi",
+        "seconds": 0.196,
+        "processing_stages": {
+          "rgb": "/api/runs/29cfd95930ee499ba506b322a9b00191/rgb",
+          "false-colour": "/api/runs/29cfd95930ee499ba506b322a9b00191/false-colour",
+          "evidence": "/api/runs/29cfd95930ee499ba506b322a9b00191/evidence",
+          "mask": "/api/runs/29cfd95930ee499ba506b322a9b00191/mask"
+        }
+      }
+    },
+    {
+      "question": "Compare this to last year",
+      "passed": true,
+      "response": {
+        "detail": {
+          "tool": "refuse",
+          "rule": "temporal_unavailable",
+          "reason": "Temporal/change analysis requires dated image pairs and is not implemented.",
+          "version": "rules-v1"
+        }
+      }
+    },
+    {
+      "question": "Count the buildings",
+      "passed": true,
+      "response": {
+        "detail": {
+          "tool": "refuse",
+          "rule": "counting_unavailable",
+          "reason": "Object counting has no validated specialist and is not supported.",
+          "version": "rules-v1"
+        }
+      }
+    },
+    {
+      "question": "Locate the buildings",
+      "passed": true,
+      "response": {
+        "detail": {
+          "tool": "refuse",
+          "rule": "grounding_unavailable",
+          "reason": "Text-guided grounding is planned. No validated object boxes, masks or locations are available.",
+          "version": "rules-v1"
+        }
+      }
+    },
+    {
+      "question": "Analyze SAR backscatter",
+      "passed": true,
+      "response": {
+        "detail": {
+          "tool": "refuse",
+          "rule": "sar_unavailable",
+          "reason": "SAR analysis and optical/SAR fusion are planned, not implemented.",
+          "version": "rules-v1"
+        }
+      }
+    },
+    {
+      "question": "What is vegetation health?",
+      "passed": true,
+      "response": {
+        "detail": {
+          "tool": "refuse",
+          "rule": "unsupported_measurement",
+          "reason": "This measurement or diagnosis is not implemented. NDVI supports only threshold-selected pixel coverage.",
+          "version": "rules-v1"
+        }
+      }
+    },
+    {
+      "question": "How green is this?",
+      "passed": true,
+      "response": {
+        "detail": {
+          "tool": "refuse",
+          "rule": "ambiguous_green",
+          "reason": "Green wording is ambiguous. Ask for a vegetation description, or explicitly request NDVI threshold coverage.",
+          "version": "rules-v1"
+        }
+      }
+    },
+    {
+      "question": "Describe vegetation and tell me its percentage",
+      "passed": true,
+      "response": {
+        "detail": {
+          "tool": "refuse",
+          "rule": "unsupported_or_ambiguous",
+          "reason": "This intent is unsupported or ambiguous. Ask a single-image description/presence question, or explicitly request NDVI threshold coverage. No tool was run.",
+          "version": "rules-v1"
+        }
+      }
+    },
+    {
+      "question": "NDVI >= 0.7",
+      "passed": true,
+      "response": {
+        "detail": {
+          "tool": "refuse",
+          "rule": "threshold_mismatch",
+          "reason": "The question threshold differs from the NDVI control. Set the control to match the question before analyzing.",
+          "version": "rules-v1"
+        }
+      }
+    },
+    {
+      "question": "NDVI on RGB",
+      "passed": true,
+      "response": {
+        "detail": {
+          "tool": "refuse",
+          "rule": "calibrated_bands_required",
+          "reason": "NDVI needs labelled, calibrated Red/NIR surface-reflectance bands. RGB alone cannot answer this request.",
+          "version": "rules-v1"
+        }
+      }
+    }
+  ],
+  "evaluation": {
+    "label": "DEVELOPMENT ONLY",
+    "run": "lora-pilot-v1",
+    "baseline_dev": {
+      "correct": 23,
+      "total": 60,
+      "invalid_format": 20,
+      "per_category": {
+        "rural_urban": {
+          "correct": 0,
+          "total": 20
+        },
+        "presence": {
+          "correct": 10,
+          "total": 20
+        },
+        "comp": {
+          "correct": 13,
+          "total": 20
+        }
+      }
+    },
+    "adapted_dev": {
+      "correct": 47,
+      "total": 60,
+      "invalid_format": 0,
+      "per_category": {
+        "rural_urban": {
+          "correct": 15,
+          "total": 20
+        },
+        "presence": {
+          "correct": 15,
+          "total": 20
+        },
+        "comp": {
+          "correct": 17,
+          "total": 20
+        }
+      }
+    },
+    "questions": 60,
+    "images": 20,
+    "source_scenes": 1,
+    "regressions": [
+      {
+        "question_id": 5440,
+        "question": "Is there a circular road?",
+        "reference": "no",
+        "original": "No",
+        "adapter": "yes",
+        "category": "presence"
+      },
+      {
+        "question_id": 1936,
+        "question": "Is there a rectangular grass area?",
+        "reference": "no",
+        "original": "No",
+        "adapter": "yes",
+        "category": "presence"
+      }
+    ],
+    "gains": 26,
+    "evidence": {
+      "baseline": {
+        "url": "/api/evidence/baseline",
+        "sha256": "f3c96d9bfe841bb11c35825b0c3751607bc5c09e3c4d8cd233394972cf01367c"
+      },
+      "adapter": {
+        "url": "/api/evidence/adapter",
+        "sha256": "75e4f287bd092bff33e0f9821b2c8c43c05927b5c3873cbf87e77ba83d262e37"
+      },
+      "development-inputs": {
+        "url": "/api/evidence/development-inputs",
+        "sha256": "c4ce050ea7fb352804e78032512a70dd5856ef7bcd695f9b56a1ef8861d87f77"
+      },
+      "manifest": {
+        "url": "/api/evidence/manifest",
+        "sha256": "a85dfafcc5f8824a97c56e76b356a416964bbbfca9d1e15a63d89ffd28a081d4"
+      },
+      "experiment": {
+        "url": "/api/evidence/experiment",
+        "sha256": "bd8b262b0d51fee4bc843446be0a3f112d670611e178dd6606a8e93900d75d8d"
+      },
+      "scoring": {
+        "url": "/api/evidence/scoring",
+        "sha256": "f8f2e21d60b478a10b3cd68f63dd24295b2d270acf3febc1d07bb19a12320cb3"
+      },
+      "protocol": {
+        "url": "/api/evidence/protocol",
+        "sha256": "878e505315ad627c479b7fd231c10cbf6e5dbbfdf8a709a120cc9674942ab778"
+      },
+      "diagnostic": {
+        "url": "/api/evidence/diagnostic",
+        "sha256": "efdcab30b2a46c25c4997513d89d3ba050e10f0d70d2d43c2bd2d57b8ae5c7e8"
+      },
+      "diagnostic-manifest": {
+        "url": "/api/evidence/diagnostic-manifest",
+        "sha256": "1efb6e1e4fae5f6f1a2a6fffbf8d6a35116a64a378a0898a5f88ba3c0d264c63"
+      }
+    },
+    "protocol": {
+      "visual_tokens": "64-128",
+      "max_new_tokens": 16,
+      "do_sample": false,
+      "scoring": "Lowercase, collapse whitespace, strip trailing space/dot/exclamation/question mark; exact label match. Invalid formats count as incorrect."
+    },
+    "majority_correct": 37
+  }
+}

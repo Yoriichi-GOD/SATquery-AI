@@ -1,0 +1,36 @@
+{
+  "file": "test_001275.png",
+  "reference_changeflag": 1,
+  "raw_caption": "some houses are built on the bareland",
+  "reference_captions": [
+    " some houses are built along the roads .",
+    " some houses are constructed beside the road on the bareland .",
+    " a new road is built parallel to the original road and some buildings appear beside the roads .",
+    " several buildings are built near roads .",
+    " a cement road and some scattered houses appear in the clearing ."
+  ],
+  "caption_changeflag_heuristic": 1,
+  "confusion_rows_reference_columns_prediction": [
+    [
+      51934,
+      95,
+      300
+    ],
+    [
+      2265,
+      6539,
+      23
+    ],
+    [
+      1164,
+      101,
+      3115
+    ]
+  ],
+  "predicted_class_pixels": {
+    "0": 55363,
+    "1": 6735,
+    "2": 3438
+  },
+  "gpu_caption": "some houses are built on the bareland"
+}

@@ -1,0 +1,6 @@
+{
+  "job_status": 404,
+  "json_status": 200,
+  "zip_status": 200,
+  "interpretation": "Job index is in memory; saved artifacts are addressable after restart by known run ID."
+}

@@ -1,0 +1,28 @@
+{
+  "id": "flood-Sri-Lanka_117737",
+  "kind": "water_map",
+  "name": "Sri-Lanka \u00b7 117737 (test)",
+  "source": "Sen1Floods11 v1.1 hand-labelled",
+  "benchmark": "Official test split; first chip per event, not selected by prediction quality",
+  "files": [
+    "optical.tif",
+    "sar.tif"
+  ],
+  "source_files": [
+    {
+      "source": "/root/satquery/paired-lab/sen1floods11/S2Hand/Sri-Lanka_117737_S2Hand.tif",
+      "source_sha256": "dfcc52cac34589699c084359464e3c94bcbcdac0eaf3388fe5a2e2de0c67f101",
+      "export_sha256": "1c9650c7f023b81c118e9a61b1fe3251ffaf91b7c68116f8e05890563e5c07fc"
+    },
+    {
+      "source": "/root/satquery/paired-lab/sen1floods11/S1Hand/Sri-Lanka_117737_S1Hand.tif",
+      "source_sha256": "0483b94b9582bb8773aa6a2d13b207e02bc09c59fd75f713b845bc729a93e916",
+      "export_sha256": "caa138d0d6652180ec85a5c1d3eedbc131d9f2c1c1863a316bed517ae96d4e90"
+    }
+  ],
+  "dates": {
+    "optical": "2017/05/28",
+    "sar": "2017/05/30"
+  },
+  "reference": "/root/satquery/paired-lab/sen1floods11/LabelHand/Sri-Lanka_117737_LabelHand.tif"
+}

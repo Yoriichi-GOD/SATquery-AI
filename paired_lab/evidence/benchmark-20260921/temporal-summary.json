@@ -1,0 +1,120 @@
+{
+  "n": 100,
+  "classes": {
+    "unchanged": {
+      "tp": 6022744,
+      "fp": 54391,
+      "fn": 40307,
+      "tn": 436158,
+      "iou": 0.9845200003530887,
+      "f1": 0.9921996252775699,
+      "precision": 0.9910498943992523,
+      "recall": 0.9933520268920714
+    },
+    "road": {
+      "tp": 166984,
+      "fp": 17113,
+      "fn": 22070,
+      "tn": 6347433,
+      "iou": 0.8099453355774687,
+      "f1": 0.894994251656836,
+      "precision": 0.9070435694226413,
+      "recall": 0.8832608672654374
+    },
+    "building": {
+      "tp": 267002,
+      "fp": 25366,
+      "fn": 34493,
+      "tn": 6226739,
+      "iou": 0.8168671086486304,
+      "f1": 0.8992040251707886,
+      "precision": 0.913239479012751,
+      "recall": 0.8855934592613476
+    }
+  },
+  "confusion": [
+    [
+      6022744,
+      15124,
+      25183
+    ],
+    [
+      21887,
+      166984,
+      183
+    ],
+    [
+      32504,
+      1989,
+      267002
+    ]
+  ],
+  "controls": [
+    {
+      "file": "test_002112.png",
+      "control": "identical",
+      "changed_pixels": 0,
+      "caption": "the scene is the same as before"
+    },
+    {
+      "file": "test_002112.png",
+      "control": "brightness",
+      "changed_pixels": 0,
+      "caption": "the scene is the same as before"
+    },
+    {
+      "file": "test_000735.png",
+      "control": "identical",
+      "changed_pixels": 0,
+      "caption": "the scene is the same as before"
+    },
+    {
+      "file": "test_000735.png",
+      "control": "brightness",
+      "changed_pixels": 0,
+      "caption": "the scene is the same as before"
+    },
+    {
+      "file": "test_000069.png",
+      "control": "identical",
+      "changed_pixels": 0,
+      "caption": "the scene is the same as before"
+    },
+    {
+      "file": "test_000069.png",
+      "control": "brightness",
+      "changed_pixels": 0,
+      "caption": "the scene is the same as before"
+    },
+    {
+      "file": "test_000584.png",
+      "control": "identical",
+      "changed_pixels": 0,
+      "caption": "the scene is the same as before"
+    },
+    {
+      "file": "test_000584.png",
+      "control": "brightness",
+      "changed_pixels": 0,
+      "caption": "the scene is the same as before"
+    },
+    {
+      "file": "test_000161.png",
+      "control": "identical",
+      "changed_pixels": 0,
+      "caption": "the scene is the same as before"
+    },
+    {
+      "file": "test_000161.png",
+      "control": "brightness",
+      "changed_pixels": 0,
+      "caption": "the scene is the same as before"
+    }
+  ],
+  "unchanged_false_positive_pixels": 1213,
+  "unchanged_total_pixels": 3276800,
+  "load_seconds": 12.257572729009553,
+  "elapsed_seconds": 41.13067914200656,
+  "peak_process_rss_MiB": 2144.984375,
+  "caption_scoring": "Raw captions and references preserved; no automatic factuality score assigned."
+}

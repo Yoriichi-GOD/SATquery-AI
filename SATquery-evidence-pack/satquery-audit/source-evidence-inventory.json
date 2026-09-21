@@ -1,0 +1,2937 @@
+[
+  {
+    "path": "C:\\Users\\nrgen\\.codex\\scratch\\SATquery AI\\counting.py",
+    "bytes": 3692,
+    "sha256": "b8ed0d1c4bb9e0668a9cdb7a791782c09ae903dc7c7c7d3876d1a4f19226a3b8"
+  },
+  {
+    "path": "C:\\Users\\nrgen\\.codex\\scratch\\SATquery AI\\count_description.py",
+    "bytes": 2244,
+    "sha256": "90a3818d7792c73032c446926fb4b8d5be660dcf6bd425aac16cbe1ddf737058"
+  },
+  {
+    "path": "C:\\Users\\nrgen\\.codex\\scratch\\SATquery AI\\evaluation.py",
+    "bytes": 4432,
+    "sha256": "f8f2e21d60b478a10b3cd68f63dd24295b2d270acf3febc1d07bb19a12320cb3"
+  },
+  {
+    "path": "C:\\Users\\nrgen\\.codex\\scratch\\SATquery AI\\geo.py",
+    "bytes": 7789,
+    "sha256": "203f12f7e21b9380b8337a5ed15785b033c14ecfffaf82963e6efde3a8ce91ca"
+  },
+  {
+    "path": "C:\\Users\\nrgen\\.codex\\scratch\\SATquery AI\\requirements-app.txt",
+    "bytes": 72,
+    "sha256": "200445b098f06b2cf7d42a408902715dfe162047ce59e426f9c1538a074f2c7f"
+  },
+  {
+    "path": "C:\\Users\\nrgen\\.codex\\scratch\\SATquery AI\\routing.py",
+    "bytes": 9976,
+    "sha256": "552a8fbebeb6d6b5d2c3366eb11c6a0d3cc9b99cbd1a47ed826eb7ad398a407c"
+  },
+  {
+    "path": "C:\\Users\\nrgen\\.codex\\scratch\\SATquery AI\\server.py",
+    "bytes": 18042,
+    "sha256": "175915b41e89e772cfaf394ff65fabdb84f1b65550882e313b18ecf3eb7177c1"
+  },
+  {
+    "path": "C:\\Users\\nrgen\\.codex\\scratch\\SATquery AI\\stages.py",
+    "bytes": 1699,
+    "sha256": "58a2d821fc07e67f1fe4e9c21e63ab461db18f0ce790a71a648bc19d791bee2b"
+  },
+  {
+    "path": "C:\\Users\\nrgen\\.codex\\scratch\\SATquery AI\\start.ps1",
+    "bytes": 162,
+    "sha256": "554425941e3432f9f4aa155e818ddd4503d8edee4faf66f72b768d01969ad3d0"
+  },
+  {
+    "path": "C:\\Users\\nrgen\\.codex\\scratch\\SATquery AI\\vqa_answers.py",
+    "bytes": 7820,
+    "sha256": "8c10916c0cb272fc8f34dab6f6aa7f9e4c398f47c9f02a110dca863187f28328"
+  },
+  {
+    "path": "C:\\Users\\nrgen\\.codex\\scratch\\SATquery AI\\vqa_policy.py",
+    "bytes": 1200,
+    "sha256": "284b7d841f0e1e900b4d444b4024388d29a07d587486e7f2022fb38de6d5056a"
+  },
+  {
+    "path": "C:\\Users\\nrgen\\.codex\\scratch\\SATquery AI\\grounding_lab\\app.py",
+    "bytes": 7648,
+    "sha256": "cddb1c4a801fc2b7f0717ded8fc64d5936de72c05bf8a1a640307107f5ae028d"
+  },
+  {
+    "path": "C:\\Users\\nrgen\\.codex\\scratch\\SATquery AI\\grounding_lab\\engine.py",
+    "bytes": 9412,
+    "sha256": "fcd647176395ee63b9c4d57e253b02cb8814935b605039bdceb8762871ed0845"
+  },
+  {
+    "path": "C:\\Users\\nrgen\\.codex\\scratch\\SATquery AI\\grounding_lab\\MANIFEST.json",
+    "bytes": 10817,
+    "sha256": "ac1cf318752efd5c8077975b41128cb9a9aa0f24a58cfca3b131d435474cad79"
+  },
+  {
+    "path": "C:\\Users\\nrgen\\.codex\\scratch\\SATquery AI\\grounding_lab\\preserved-main-sha256.json",
+    "bytes": 775,
+    "sha256": "7b9f44f4275db463583806a621ca3d576289721e448826d65c4cf49c1ea2f728"
+  },
+  {
+    "path": "C:\\Users\\nrgen\\.codex\\scratch\\SATquery AI\\grounding_lab\\start-lab.ps1",
+    "bytes": 162,
+    "sha256": "554425941e3432f9f4aa155e818ddd4503d8edee4faf66f72b768d01969ad3d0"
+  },
+  {
+    "path": "C:\\Users\\nrgen\\.codex\\scratch\\SATquery AI\\grounding_lab\\test_lab.py",
+    "bytes": 580,
+    "sha256": "bc00703bbe41726e65e42ca261b4704bef517574eecf78cb7ac21084726d0c8d"
+  },
+  {
+    "path": "C:\\Users\\nrgen\\.codex\\scratch\\SATquery AI\\grounding_lab\\__init__.py",
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "path": "C:\\Users\\nrgen\\.codex\\scratch\\SATquery AI\\paired_lab\\bootstrap.py",
+    "bytes": 3143,
+    "sha256": "f5396bc1f3eb86c390a9aeb9f372a34f630d3c72901e8a54e809583768e4f683"
+  },
+  {
+    "path": "C:\\Users\\nrgen\\.codex\\scratch\\SATquery AI\\paired_lab\\compare_candidate.py",
+    "bytes": 2722,
+    "sha256": "3453e42cc24d5a0c765845c7506604337160d347f781735e52e8d0636ae37ab1"
+  },
+  {
+    "path": "C:\\Users\\nrgen\\.codex\\scratch\\SATquery AI\\paired_lab\\controller.py",
+    "bytes": 3010,
+    "sha256": "3ba07902d8545a01b1cd9cd76a4e44cd926175d57d34285ad71901ab9b02abd7"
+  },
+  {
+    "path": "C:\\Users\\nrgen\\.codex\\scratch\\SATquery AI\\paired_lab\\engine.py",
+    "bytes": 7733,
+    "sha256": "4203068bdee1b9096c7c1f07a5a0a0e18bb5eba24a4d015b1ab03584143ba57d"
+  },
+  {
+    "path": "C:\\Users\\nrgen\\.codex\\scratch\\SATquery AI\\paired_lab\\evaluate.py",
+    "bytes": 5659,
+    "sha256": "3a873f21a232112e27700004f8a7fcaed0af24a8b92873525588b5f9d0d73d17"
+  },
+  {
+    "path": "C:\\Users\\nrgen\\.codex\\scratch\\SATquery AI\\paired_lab\\flood.py",
+    "bytes": 5609,
+    "sha256": "a95a543c555dd0bbfd8ba02033a680c7750945c80d32c29793da7a7331b884df"
+  },
+  {
+    "path": "C:\\Users\\nrgen\\.codex\\scratch\\SATquery AI\\paired_lab\\inputs.py",
+    "bytes": 10080,
+    "sha256": "b4263e58db699d8ddae498a45b7b1a44e473e032210fc09b987daf07b8cfc4d4"
+  },
+  {
+    "path": "C:\\Users\\nrgen\\.codex\\scratch\\SATquery AI\\paired_lab\\launch.py",
+    "bytes": 2016,
+    "sha256": "c03535290baa0b84f2a0ee3750de6d28a195da947092532701c8d1d59725c87b"
+  },
+  {
+    "path": "C:\\Users\\nrgen\\.codex\\scratch\\SATquery AI\\paired_lab\\mci.py",
+    "bytes": 4469,
+    "sha256": "ad1e559a90e5f621032c0ed56c0d462ef8bb14c595a87328da7b058061729e29"
+  },
+  {
+    "path": "C:\\Users\\nrgen\\.codex\\scratch\\SATquery AI\\paired_lab\\ORIGINAL_PROBLEM_STATEMENT.txt",
+    "bytes": 7975,
+    "sha256": "81ca5f8b36d18fb0ee9a712d1559d1a4273c50ed69a450987f6faa3fc20c9cdd"
+  },
+  {
+    "path": "C:\\Users\\nrgen\\.codex\\scratch\\SATquery AI\\paired_lab\\registration.py",
+    "bytes": 1936,
+    "sha256": "cd75252bd54f635142e7081fd005d3c7f3ecce7a3e9ec1716d45d50bc4a30f4e"
+  },
+  {
+    "path": "C:\\Users\\nrgen\\.codex\\scratch\\SATquery AI\\paired_lab\\runtime-manifest.json",
+    "bytes": 2712,
+    "sha256": "e44953d9b9c0ecb08b48eec89da165d774e9e86833f04832c118343a0ce6ec6d"
+  },
+  {
+    "path": "C:\\Users\\nrgen\\.codex\\scratch\\SATquery AI\\paired_lab\\server.py",
+    "bytes": 10368,
+    "sha256": "cfd941eb6d2a7f4140a19a6563be043fa30bd8e1ba59d92632fa49e989b64d17"
+  },
+  {
+    "path": "C:\\Users\\nrgen\\.codex\\scratch\\SATquery AI\\paired_lab\\setup_models.py",
+    "bytes": 4048,
+    "sha256": "ad10deb293ba65db871f36d51e8a0ae68ae009174cf59fc0ac2e2340c13cb9fd"
+  },
+  {
+    "path": "C:\\Users\\nrgen\\.codex\\scratch\\SATquery AI\\paired_lab\\setup_sources.py",
+    "bytes": 1185,
+    "sha256": "821175a3636563cbd9b16d09f9608aae64d75a2f6d3e47ed224dbae919aaa68b"
+  },
+  {
+    "path": "C:\\Users\\nrgen\\.codex\\scratch\\SATquery AI\\paired_lab\\single_bridge.py",
+    "bytes": 2387,
+    "sha256": "d61d2109cc6a3e023c1451c046e88a4e0b5a7550755d35cac5b02c1c326f1786"
+  },
+  {
+    "path": "C:\\Users\\nrgen\\.codex\\scratch\\SATquery AI\\paired_lab\\start.ps1",
+    "bytes": 317,
+    "sha256": "f58a4e09c5a5e5ae5f9241ec193850359e1bf6d0296f7fff40837d85a3fa4595"
+  },
+  {
+    "path": "C:\\Users\\nrgen\\.codex\\scratch\\SATquery AI\\paired_lab\\test_controls.py",
+    "bytes": 2007,
+    "sha256": "0f1049ebaf67f96a6feb19b6bc325f18ed89c56feff2e9e0cabca457d33e8e41"
+  },
+  {
+    "path": "C:\\Users\\nrgen\\.codex\\scratch\\SATquery AI\\paired_lab\\test_inputs.py",
+    "bytes": 4099,
+    "sha256": "2c2ece65c40ec47230c656a39c9ba8f12a5983bb08a377d4f33be2d2a8e02d73"
+  },
+  {
+    "path": "C:\\Users\\nrgen\\.codex\\scratch\\SATquery AI\\paired_lab\\test_live.py",
+    "bytes": 2418,
+    "sha256": "6f7c276ef9d6b12cdb7651166bb213939cdd13d9257808bae16438f3945200e4"
+  },
+  {
+    "path": "C:\\Users\\nrgen\\.codex\\scratch\\SATquery AI\\paired_lab\\train_water.py",
+    "bytes": 5474,
+    "sha256": "502fa5fbabccf4f5136057a2e58db97d0cc6401fd767a92cb2060f1373ef4bd3"
+  },
+  {
+    "path": "C:\\Users\\nrgen\\.codex\\scratch\\SATquery AI\\ppt_handoff\\adapter-record.html",
+    "bytes": 1563,
+    "sha256": "8d8884fe73f01e7c40e99cc11a4d0ba907c0a63b17ac418e15e06d3de7158960"
+  },
+  {
+    "path": "C:\\Users\\nrgen\\.codex\\scratch\\SATquery AI\\ppt_handoff\\audit-record.html",
+    "bytes": 877,
+    "sha256": "2ec847cef330031863488e5f9f4515e8c72bd88b4d17ddb60ef7006c0b682f1f"
+  },
+  {
+    "path": "C:\\Users\\nrgen\\.codex\\scratch\\SATquery AI\\ppt_handoff\\engineering.html",
+    "bytes": 6519,
+    "sha256": "39ed0cae7541017ece9187d3e5e3f24c40d25190a69daae3f99211e140050f6e"
+  },
+  {
+    "path": "C:\\Users\\nrgen\\.codex\\scratch\\SATquery AI\\ppt_handoff\\MANIFEST.json",
+    "bytes": 17817,
+    "sha256": "6eea3962fb89575817a97d7a83ff8c800f1b1cab2c281a6fe51e804ff655a7f6"
+  },
+  {
+    "path": "C:\\Users\\nrgen\\.codex\\scratch\\SATquery AI\\ppt_handoff\\metadata-record.html",
+    "bytes": 1827,
+    "sha256": "48b6cb4081db5c2e3afffdf2a4f1b3df8b44ba40715d646ff7c523380abd0632"
+  },
+  {
+    "path": "C:\\Users\\nrgen\\.codex\\scratch\\SATquery AI\\ppt_handoff\\speed-record.html",
+    "bytes": 794,
+    "sha256": "f8e052795ed84569f53f5dbccc3ab912e0af93c8e4f7729894b53fb8bd82aa6d"
+  },
+  {
+    "path": "C:\\Users\\nrgen\\.codex\\scratch\\SATquery AI\\ppt_handoff\\tests-record.html",
+    "bytes": 831,
+    "sha256": "c3a1ca4dc748317e6a91f931e81908775b5ecd21303884e848395e6757228f4b"
+  },
+  {
+    "path": "C:\\Users\\nrgen\\.codex\\scratch\\SATquery AI\\ppt_handoff\\training-record.html",
+    "bytes": 2044,
+    "sha256": "cd4642bcf71c0bfc82d63b88b099587135fbd24b629608aee928d3217f8b47cf"
+  },
+  {
+    "path": "C:\\Users\\nrgen\\.codex\\scratch\\SATquery AI\\results\\calibration-comparison.json",
+    "bytes": 374,
+    "sha256": "74e954841861da1f98d68ceacc471b8e3ddb1fd3d498c79ba500202905cdf3c6"
+  },
+  {
+    "path": "C:\\Users\\nrgen\\.codex\\scratch\\SATquery AI\\results\\final-live-verification.json",
+    "bytes": 15446,
+    "sha256": "014254a1df99fe6e7b33fdc1af564cc73bb0a28217c14b37cb6d122dee6c4e35"
+  },
+  {
+    "path": "C:\\Users\\nrgen\\.codex\\scratch\\SATquery AI\\results\\independent-ndvi-check.json",
+    "bytes": 455,
+    "sha256": "4fdca511d44766d78e9d24ef4e88af0b54a4ed24bb4d0cddc813d5a73618df81"
+  },
+  {
+    "path": "C:\\Users\\nrgen\\.codex\\scratch\\SATquery AI\\results\\integration-check.json",
+    "bytes": 412,
+    "sha256": "458c0412537f08ff174a0208a4b9974ed1aedeaf6997aa6fa16ada6cee712643"
+  },
+  {
+    "path": "C:\\Users\\nrgen\\.codex\\scratch\\SATquery AI\\results\\learning_manifest.json",
+    "bytes": 1532,
+    "sha256": "a85dfafcc5f8824a97c56e76b356a416964bbbfca9d1e15a63d89ffd28a081d4"
+  },
+  {
+    "path": "C:\\Users\\nrgen\\.codex\\scratch\\SATquery AI\\results\\ndvi-integration.json",
+    "bytes": 3244,
+    "sha256": "1f5a915007cec56f6b83b4e1c87eca70a900438694f4b294c9ebda492d651751"
+  },
+  {
+    "path": "C:\\Users\\nrgen\\.codex\\scratch\\SATquery AI\\results\\ndvi-invalid-v1.json",
+    "bytes": 2993,
+    "sha256": "f51f80848d867edebf383ccc14a6f57f60db6c735e631da80832a40813bc70f7"
+  },
+  {
+    "path": "C:\\Users\\nrgen\\.codex\\scratch\\SATquery AI\\results\\overnight-development-rescore.json",
+    "bytes": 2979,
+    "sha256": "a74f7cbca7a5942bcbfce5e4319a5f3cd4a97bba009c5d71e08302471611f6e1"
+  },
+  {
+    "path": "C:\\Users\\nrgen\\.codex\\scratch\\SATquery AI\\results\\overnight-verification.json",
+    "bytes": 34440,
+    "sha256": "b15c5b6cc97efe5c79abc04f3ddc1a5ee4f5d244047b3e62a7aadbb886627ad6"
+  },
+  {
+    "path": "C:\\Users\\nrgen\\.codex\\scratch\\SATquery AI\\results\\pilot-v1.json",
+    "bytes": 1246,
+    "sha256": "bd8b262b0d51fee4bc843446be0a3f112d670611e178dd6606a8e93900d75d8d"
+  },
+  {
+    "path": "C:\\Users\\nrgen\\.codex\\scratch\\SATquery AI\\scripts\\build_combined_report.py",
+    "bytes": 11107,
+    "sha256": "050ff55064dfdb0beeb29e97031d654bd507b47711b6e24b0b08f8a2d166e148"
+  },
+  {
+    "path": "C:\\Users\\nrgen\\.codex\\scratch\\SATquery AI\\scripts\\evaluate_existing_adapter.py",
+    "bytes": 3427,
+    "sha256": "95f386f6b5b174bc08ebd4b1c733b43447d3911729a5b3228ce4a40be9abfe10"
+  },
+  {
+    "path": "C:\\Users\\nrgen\\.codex\\scratch\\SATquery AI\\scripts\\evaluate_vqa_reliability.py",
+    "bytes": 9722,
+    "sha256": "b702b934a9be95559e1b49534e3c93ad9e214e7ed9336a680a895b97e702cd98"
+  },
+  {
+    "path": "C:\\Users\\nrgen\\.codex\\scratch\\SATquery AI\\scripts\\fetch_ndvi_trials.py",
+    "bytes": 5387,
+    "sha256": "1f46b5161f53d10f0f829ead00f69bc816110a180f94c87a15c324e51c0b413a"
+  },
+  {
+    "path": "C:\\Users\\nrgen\\.codex\\scratch\\SATquery AI\\scripts\\fetch_scene.py",
+    "bytes": 2752,
+    "sha256": "68e6a65d8186f3ebcfe7f180c19a3c35031e73debcb923962e4b0142dc6e69c9"
+  },
+  {
+    "path": "C:\\Users\\nrgen\\.codex\\scratch\\SATquery AI\\scripts\\independent_ndvi_check.py",
+    "bytes": 3002,
+    "sha256": "7abc1fd33a3d85565deb43f38192e159566a316b1ce72e420fe982ee2350a97b"
+  },
+  {
+    "path": "C:\\Users\\nrgen\\.codex\\scratch\\SATquery AI\\scripts\\lora_trial.py",
+    "bytes": 3710,
+    "sha256": "593b02723c504a00035e59545567bee64d044f6fb24614c0827fea45af2d1d43"
+  },
+  {
+    "path": "C:\\Users\\nrgen\\.codex\\scratch\\SATquery AI\\scripts\\prepare_fresh_review.py",
+    "bytes": 1653,
+    "sha256": "8304e39edb776eee065d704d217854dee0c8df6a48891edda73a08f6b9ac901e"
+  },
+  {
+    "path": "C:\\Users\\nrgen\\.codex\\scratch\\SATquery AI\\scripts\\prepare_learning.py",
+    "bytes": 3094,
+    "sha256": "efc94d6b5afc6207534eafd1b180a541e60799934f8aa8af7345ee647c19c6c6"
+  },
+  {
+    "path": "C:\\Users\\nrgen\\.codex\\scratch\\SATquery AI\\scripts\\probe_baseball_counting.py",
+    "bytes": 2983,
+    "sha256": "6e877092751d1d52cc61c3fd091a8d0c41b2b3c88aeca0b873c7158f2ddf8d85"
+  },
+  {
+    "path": "C:\\Users\\nrgen\\.codex\\scratch\\SATquery AI\\scripts\\probe_direct_answers.py",
+    "bytes": 2535,
+    "sha256": "5ee398d34accf5363d2a1ad5523105bb7a7a53ed1868ae866754e35f998ece6f"
+  },
+  {
+    "path": "C:\\Users\\nrgen\\.codex\\scratch\\SATquery AI\\scripts\\train_pilot.py",
+    "bytes": 5520,
+    "sha256": "878e505315ad627c479b7fd231c10cbf6e5dbbfdf8a709a120cc9674942ab778"
+  },
+  {
+    "path": "C:\\Users\\nrgen\\.codex\\scratch\\SATquery AI\\scripts\\verify_final_vqa.py",
+    "bytes": 3416,
+    "sha256": "1197cbf7c984a7b828437638dc89cfbf153dba6a3963d227d59a5b6990c8a7c7"
+  },
+  {
+    "path": "C:\\Users\\nrgen\\.codex\\scratch\\SATquery AI\\scripts\\verify_live_counting.py",
+    "bytes": 2544,
+    "sha256": "dbccb56366315c6c703055ad4b20fa2a3beb03ee88d158621cc9fe7bc47bf58d"
+  },
+  {
+    "path": "C:\\Users\\nrgen\\.codex\\scratch\\SATquery AI\\scripts\\verify_live_vqa_reliability.py",
+    "bytes": 3410,
+    "sha256": "e76375f838f59331967b4dd9c71d9b0ede38f720f8e2947baa9e96738540f547"
+  },
+  {
+    "path": "C:\\Users\\nrgen\\.codex\\scratch\\SATquery AI\\scripts\\verify_ndvi_trials.py",
+    "bytes": 7368,
+    "sha256": "1dc3786cabddfec23dce15bbf9b72ebc3bba8b682a648bd4ecef83f0d4f81355"
+  },
+  {
+    "path": "C:\\Users\\nrgen\\.codex\\scratch\\SATquery AI\\scripts\\verify_overnight.py",
+    "bytes": 3073,
+    "sha256": "9f41f07dff5d00d312a268a9d0f89fa770e3573d756b19b19d4622487dd0af14"
+  },
+  {
+    "path": "C:\\Users\\nrgen\\.codex\\scratch\\SATquery AI\\tests\\test_baseball_counting.py",
+    "bytes": 2169,
+    "sha256": "ae739dbf18c8289bf313e6fea39472325c8d44d0150fdd5a99c65712fb08f2c8"
+  },
+  {
+    "path": "C:\\Users\\nrgen\\.codex\\scratch\\SATquery AI\\tests\\test_dispatch.py",
+    "bytes": 5541,
+    "sha256": "5e82e03806dbcec94f332bb03bdfd5e184a00efb4896c16fa8c75ed505445809"
+  },
+  {
+    "path": "C:\\Users\\nrgen\\.codex\\scratch\\SATquery AI\\tests\\test_evaluation.py",
+    "bytes": 1404,
+    "sha256": "89df6b7b49975fb9ba2d19938d56aee7cfd7d13891e5a27470dac3fa133b9260"
+  },
+  {
+    "path": "C:\\Users\\nrgen\\.codex\\scratch\\SATquery AI\\tests\\test_focused_count.py",
+    "bytes": 573,
+    "sha256": "c22f9b0e8a5bb7dbafb2fd515a538d1ae7474a15097dc28f56b68ec56c94c86d"
+  },
+  {
+    "path": "C:\\Users\\nrgen\\.codex\\scratch\\SATquery AI\\tests\\test_geo.py",
+    "bytes": 1013,
+    "sha256": "8a4ef2307073b92346bb4f2525489e8c7af05786855287c1a0ff4effbe8c4695"
+  },
+  {
+    "path": "C:\\Users\\nrgen\\.codex\\scratch\\SATquery AI\\tests\\test_ndvi_precision.py",
+    "bytes": 2210,
+    "sha256": "7a18e4a3acf09150e5b7422c09fd1ad1c4854ba4c1ea5b98265acf5a1c345d6c"
+  },
+  {
+    "path": "C:\\Users\\nrgen\\.codex\\scratch\\SATquery AI\\tests\\test_open_vqa.py",
+    "bytes": 1116,
+    "sha256": "6060d6d6b6a42190aaa5b0b7866ba1aabee04399c2c16c8c4406ac2adb5ce754"
+  },
+  {
+    "path": "C:\\Users\\nrgen\\.codex\\scratch\\SATquery AI\\tests\\test_presence_routing.py",
+    "bytes": 873,
+    "sha256": "efe6a5c4079201847e11e454e21889f6dcaeb1381309dee7c9e46ea7deac26cf"
+  },
+  {
+    "path": "C:\\Users\\nrgen\\.codex\\scratch\\SATquery AI\\tests\\test_routing.py",
+    "bytes": 3211,
+    "sha256": "68a44a887e0da4696d8d7e11a1127bd672eaa598fc68a053d4323f82b364350d"
+  },
+  {
+    "path": "C:\\Users\\nrgen\\.codex\\scratch\\SATquery AI\\tests\\test_rural_phrasing.py",
+    "bytes": 736,
+    "sha256": "f51546390f924a80da6b7e28230a785f4aa305cb81cac1b044759d67352f020c"
+  },
+  {
+    "path": "C:\\Users\\nrgen\\.codex\\scratch\\SATquery AI\\tests\\test_stages.py",
+    "bytes": 2527,
+    "sha256": "14d164f8df88a88da86840adf3b2c84055555000fdfa13562b7411993316e42a"
+  },
+  {
+    "path": "C:\\Users\\nrgen\\.codex\\scratch\\SATquery AI\\tests\\test_vqa_answers.py",
+    "bytes": 2582,
+    "sha256": "bd74fd046dc63e3e236c85e1ba90ea4ef797d20015e48f4021402834527eb359"
+  },
+  {
+    "path": "C:\\Users\\nrgen\\.codex\\scratch\\SATquery AI\\web\\app.js",
+    "bytes": 19963,
+    "sha256": "22b1514e63ec7f5ff07be7beafdae01a453c334f399406e827c68f730d952bc8"
+  },
+  {
+    "path": "C:\\Users\\nrgen\\.codex\\scratch\\SATquery AI\\web\\index.html",
+    "bytes": 9356,
+    "sha256": "43adecad211b318441fa63048e6a4797502beb9cfabeebc340fb6af3ef4b311c"
+  },
+  {
+    "path": "C:\\Users\\nrgen\\.codex\\scratch\\SATquery AI\\demo run\\evidence-20260908\\cold-start-status.json",
+    "bytes": 201,
+    "sha256": "29b7083c76344876a92d788fdd20db8cc81414e68d344479d43879dbc87742bb"
+  },
+  {
+    "path": "C:\\Users\\nrgen\\.codex\\scratch\\SATquery AI\\demo run\\evidence-20260908\\development.json",
+    "bytes": 2869,
+    "sha256": "a488f0bbb9a4ef27682dc1b608911bf2e8ac9db895d67f4a70a9299ca10b4070"
+  },
+  {
+    "path": "C:\\Users\\nrgen\\.codex\\scratch\\SATquery AI\\demo run\\evidence-20260908\\image-manifest.json",
+    "bytes": 1180,
+    "sha256": "4274250dbe52a64b7ed9b27e3497a7ee179d65e546b197911cd6a0ce8f4cc63f"
+  },
+  {
+    "path": "C:\\Users\\nrgen\\.codex\\scratch\\SATquery AI\\demo run\\evidence-20260908\\refusals.json",
+    "bytes": 672,
+    "sha256": "d2e2a2eda53386e84e0282ac6bc45441fb7c63877981dc700fad7d59339cca22"
+  },
+  {
+    "path": "C:\\Users\\nrgen\\.codex\\scratch\\SATquery AI\\demo run\\evidence-20260908\\rehearsal.json",
+    "bytes": 27380,
+    "sha256": "8f730e5d391f4e0523fab4213c9ae39073b22fba964ba7ec6a7d1cd1ace0a22c"
+  },
+  {
+    "path": "C:\\Users\\nrgen\\.codex\\scratch\\SATquery AI\\demo run\\evidence-20260908\\reliability-evidence.json",
+    "bytes": 6750,
+    "sha256": "7e0a1da92c3d294f11b4437d6fa16291c88ea2bb750c672b7f87e64106f26546"
+  },
+  {
+    "path": "C:\\Users\\nrgen\\.codex\\scratch\\SATquery AI\\demo run\\evidence-20260908\\reliability.json",
+    "bytes": 6750,
+    "sha256": "7e0a1da92c3d294f11b4437d6fa16291c88ea2bb750c672b7f87e64106f26546"
+  },
+  {
+    "path": "C:\\Users\\nrgen\\.codex\\scratch\\SATquery AI\\grounding_lab\\samples\\provenance.json",
+    "bytes": 503,
+    "sha256": "8a23d20e31f2f2a5fb7f481bcbc027784d8780917797342996ca31a4326fd1d3"
+  },
+  {
+    "path": "C:\\Users\\nrgen\\.codex\\scratch\\SATquery AI\\grounding_lab\\scripts\\regional_buildings.py",
+    "bytes": 1458,
+    "sha256": "a7ac200772f4cf128262341fa56f2cc2c76dd4ce4ada36dc7ce4f886cc6f0322"
+  },
+  {
+    "path": "C:\\Users\\nrgen\\.codex\\scratch\\SATquery AI\\grounding_lab\\scripts\\regional_tiles.py",
+    "bytes": 1717,
+    "sha256": "7cea3f029ad535fc6abd512f696d17b4fe3aa4cccd82f018d894de9626cd10d1"
+  },
+  {
+    "path": "C:\\Users\\nrgen\\.codex\\scratch\\SATquery AI\\grounding_lab\\scripts\\verify_additional.py",
+    "bytes": 1426,
+    "sha256": "cb25cc103c0189f7a8d045ba97861bd5209a7360b1548ff4d37af8ea172c7aea"
+  },
+  {
+    "path": "C:\\Users\\nrgen\\.codex\\scratch\\SATquery AI\\grounding_lab\\scripts\\verify_coordination.py",
+    "bytes": 1665,
+    "sha256": "6ea7a65546fdf568003abc71b184bba08c356a49db1a41ccc6f9a83c183e0540"
+  },
+  {
+    "path": "C:\\Users\\nrgen\\.codex\\scratch\\SATquery AI\\grounding_lab\\scripts\\verify_cycle.py",
+    "bytes": 2124,
+    "sha256": "e66267fad0249ca2ffb7ce48d1fadcdf09b26c3df85a859fdf56441ed56e4dff"
+  },
+  {
+    "path": "C:\\Users\\nrgen\\.codex\\scratch\\SATquery AI\\grounding_lab\\scripts\\verify_http.py",
+    "bytes": 3383,
+    "sha256": "fe50e054838ac161792ad1710f7d4703a98842bf9019b055f1ff2d3af10a9307"
+  },
+  {
+    "path": "C:\\Users\\nrgen\\.codex\\scratch\\SATquery AI\\grounding_lab\\scripts\\verify_same_port.py",
+    "bytes": 3475,
+    "sha256": "9e323a3a1a2f1b656bc382a11583a6479107a8b2738de3f57da9d1142e92e4a1"
+  },
+  {
+    "path": "C:\\Users\\nrgen\\.codex\\scratch\\SATquery AI\\grounding_lab\\web\\index.html",
+    "bytes": 5393,
+    "sha256": "dd500d35d2f80442c807f05b4f6cac854c1cbd8eb6aac21bd0f1cfa3e3e7c780"
+  },
+  {
+    "path": "C:\\Users\\nrgen\\.codex\\scratch\\SATquery AI\\grounding_lab\\web\\lab.js",
+    "bytes": 8069,
+    "sha256": "4bb6c50f1ed7583594bcc185cda09bf896f25e0e6358a9fa4285f2e6e002a762"
+  },
+  {
+    "path": "C:\\Users\\nrgen\\.codex\\scratch\\SATquery AI\\grounding_lab\\evidence\\additional\\cases-before-predictions.json",
+    "bytes": 551,
+    "sha256": "74b6aeccc64057aa31f8467adf899ba620f7b413d15dd320cd985cc43527645f"
+  },
+  {
+    "path": "C:\\Users\\nrgen\\.codex\\scratch\\SATquery AI\\grounding_lab\\evidence\\additional\\predictions.json",
+    "bytes": 12230,
+    "sha256": "1865c029c8b728dbc7d20ba7536d6f370599444db486cee2bbae216eab93960a"
+  },
+  {
+    "path": "C:\\Users\\nrgen\\.codex\\scratch\\SATquery AI\\grounding_lab\\evidence\\baseball-sports-field-v2\\progress.json",
+    "bytes": 37,
+    "sha256": "021e742af80640cf867d06651074bdb0e8982c1a9334b50ff4d5e1dbb7a08587"
+  },
+  {
+    "path": "C:\\Users\\nrgen\\.codex\\scratch\\SATquery AI\\grounding_lab\\evidence\\baseball-sports-field-v2\\request.json",
+    "bytes": 260,
+    "sha256": "038d1c61e43cca32c9f607b620a440a76454814e84a6736d382d8c9558729c55"
+  },
+  {
+    "path": "C:\\Users\\nrgen\\.codex\\scratch\\SATquery AI\\grounding_lab\\evidence\\baseball-sports-field-v2\\result.json",
+    "bytes": 2889,
+    "sha256": "2be8c383c2bba5cce613e6f39469218c074dce2201bc3c6c7bc42ce98f3ae6ab"
+  },
+  {
+    "path": "C:\\Users\\nrgen\\.codex\\scratch\\SATquery AI\\grounding_lab\\evidence\\browser\\verification.json",
+    "bytes": 236,
+    "sha256": "431dbc2e8ed98324b24a8bf7dea68d7fbc4aa934bec4ede6354b35f710daffc5"
+  },
+  {
+    "path": "C:\\Users\\nrgen\\.codex\\scratch\\SATquery AI\\grounding_lab\\evidence\\browser-car\\verification.json",
+    "bytes": 235,
+    "sha256": "872dd514c6003fe6fa5f3b48700597d01c5aeaa316194da51b7c03e99f82414b"
+  },
+  {
+    "path": "C:\\Users\\nrgen\\.codex\\scratch\\SATquery AI\\grounding_lab\\evidence\\buildings-regional\\comparison.html",
+    "bytes": 11298,
+    "sha256": "0bd0e3a3eb7f1299172415bf73d6ec0b862efac4be8d5b8e29431860dd649740"
+  },
+  {
+    "path": "C:\\Users\\nrgen\\.codex\\scratch\\SATquery AI\\grounding_lab\\evidence\\buildings-regional\\summary.json",
+    "bytes": 1598,
+    "sha256": "e158bbf9417d3c286fbf3d20d596d910f4c18d08eb33ed1ba6fb98e3a2788bbe"
+  },
+  {
+    "path": "C:\\Users\\nrgen\\.codex\\scratch\\SATquery AI\\grounding_lab\\evidence\\buildings-tiles\\summary.json",
+    "bytes": 1378,
+    "sha256": "16be3942f2240e429707743097f0fe9deec731bd91053685be4f049df4640378"
+  },
+  {
+    "path": "C:\\Users\\nrgen\\.codex\\scratch\\SATquery AI\\grounding_lab\\evidence\\car-car-v2\\progress.json",
+    "bytes": 37,
+    "sha256": "021e742af80640cf867d06651074bdb0e8982c1a9334b50ff4d5e1dbb7a08587"
+  },
+  {
+    "path": "C:\\Users\\nrgen\\.codex\\scratch\\SATquery AI\\grounding_lab\\evidence\\car-car-v2\\request.json",
+    "bytes": 232,
+    "sha256": "b8b59fd988839676859e8a490821a7f0dc7d10281f295f68bfe2faf84659f583"
+  },
+  {
+    "path": "C:\\Users\\nrgen\\.codex\\scratch\\SATquery AI\\grounding_lab\\evidence\\car-car-v2\\result.json",
+    "bytes": 2865,
+    "sha256": "1d15805a477f9325dd9f3d33067cff24d414c572fc77aa51095c7db42c83e1ef"
+  },
+  {
+    "path": "C:\\Users\\nrgen\\.codex\\scratch\\SATquery AI\\grounding_lab\\evidence\\farmland-stadium-v2\\progress.json",
+    "bytes": 37,
+    "sha256": "021e742af80640cf867d06651074bdb0e8982c1a9334b50ff4d5e1dbb7a08587"
+  },
+  {
+    "path": "C:\\Users\\nrgen\\.codex\\scratch\\SATquery AI\\grounding_lab\\evidence\\farmland-stadium-v2\\request.json",
+    "bytes": 250,
+    "sha256": "512572bcf8bc7dcb9b2d6ed6ec482fc36ac7bf4449bfcabf385c8ea19a54568d"
+  },
+  {
+    "path": "C:\\Users\\nrgen\\.codex\\scratch\\SATquery AI\\grounding_lab\\evidence\\farmland-stadium-v2\\result.json",
+    "bytes": 2837,
+    "sha256": "f7415033c2e4b2723e1fc1f79f59c89335314bed83f965c639c7355d93852480"
+  },
+  {
+    "path": "C:\\Users\\nrgen\\.codex\\scratch\\SATquery AI\\grounding_lab\\evidence\\http\\safety-checks.json",
+    "bytes": 721,
+    "sha256": "4ecbe84938756a6c4ff6c8038ec8f928dc2e066d92a9d3dfa24a01c0cab266f0"
+  },
+  {
+    "path": "C:\\Users\\nrgen\\.codex\\scratch\\SATquery AI\\grounding_lab\\evidence\\http\\summary.json",
+    "bytes": 871,
+    "sha256": "4021c622782650263061c800f5bbed8f42daba1521f4593e80ac33e84291b647"
+  },
+  {
+    "path": "C:\\Users\\nrgen\\.codex\\scratch\\SATquery AI\\grounding_lab\\evidence\\same-port-browser\\verification.json",
+    "bytes": 236,
+    "sha256": "431dbc2e8ed98324b24a8bf7dea68d7fbc4aa934bec4ede6354b35f710daffc5"
+  },
+  {
+    "path": "C:\\Users\\nrgen\\.codex\\scratch\\SATquery AI\\grounding_lab\\evidence\\same-port-cycle\\lab.json",
+    "bytes": 3977,
+    "sha256": "f9427b455187c0db52db6a121a0b964e4e22b64ebfcb416186217ce0165a1236"
+  },
+  {
+    "path": "C:\\Users\\nrgen\\.codex\\scratch\\SATquery AI\\grounding_lab\\evidence\\same-port-cycle\\summary.json",
+    "bytes": 1687,
+    "sha256": "53a934dd8b2e1aefbb4d4c083c32fdc6ddd960989a3dd85bfdcfa8c84af4d9e9"
+  },
+  {
+    "path": "C:\\Users\\nrgen\\.codex\\scratch\\SATquery AI\\grounding_lab\\evidence\\same-port-cycle\\vqa-after.json",
+    "bytes": 3448,
+    "sha256": "8831570da270a9474f5ef088cd3cd719f3c87031f0d7b353b6b40383431d4016"
+  },
+  {
+    "path": "C:\\Users\\nrgen\\.codex\\scratch\\SATquery AI\\grounding_lab\\evidence\\same-port-cycle\\vqa-before.json",
+    "bytes": 3448,
+    "sha256": "35b3e37a1392649656173d7f34253aa7ba7083cf2c7e49849fc0c37f3587c354"
+  },
+  {
+    "path": "C:\\Users\\nrgen\\.codex\\scratch\\SATquery AI\\grounding_lab\\evidence\\same-port-http\\safety-checks.json",
+    "bytes": 727,
+    "sha256": "87e6c7a2f16adebe144466f1afc6b3df2687697fbe6a980e6ee1121fe4b9e18b"
+  },
+  {
+    "path": "C:\\Users\\nrgen\\.codex\\scratch\\SATquery AI\\grounding_lab\\evidence\\same-port-http\\summary.json",
+    "bytes": 872,
+    "sha256": "36656e18a16ac36c7e1335c597ae04df2750a58502ae96b084abdc2dc11fee75"
+  },
+  {
+    "path": "C:\\Users\\nrgen\\.codex\\scratch\\SATquery AI\\grounding_lab\\evidence\\stadium-building-v2\\progress.json",
+    "bytes": 37,
+    "sha256": "021e742af80640cf867d06651074bdb0e8982c1a9334b50ff4d5e1dbb7a08587"
+  },
+  {
+    "path": "C:\\Users\\nrgen\\.codex\\scratch\\SATquery AI\\grounding_lab\\evidence\\stadium-building-v2\\request.json",
+    "bytes": 250,
+    "sha256": "e7393937d0c39633d73678eceea67be93a8b49dbcdd08835906416cd744ad614"
+  },
+  {
+    "path": "C:\\Users\\nrgen\\.codex\\scratch\\SATquery AI\\grounding_lab\\evidence\\stadium-building-v2\\result.json",
+    "bytes": 3070,
+    "sha256": "644a7f5a849d3818644de8bbedd078d4ce1f3ad1754fc0fbae5f19da73f1d53b"
+  },
+  {
+    "path": "C:\\Users\\nrgen\\.codex\\scratch\\SATquery AI\\grounding_lab\\evidence\\stadium-first\\progress.json",
+    "bytes": 37,
+    "sha256": "021e742af80640cf867d06651074bdb0e8982c1a9334b50ff4d5e1dbb7a08587"
+  },
+  {
+    "path": "C:\\Users\\nrgen\\.codex\\scratch\\SATquery AI\\grounding_lab\\evidence\\stadium-first\\request.json",
+    "bytes": 243,
+    "sha256": "cb7cf0af4aac18e05cbc9eb4554162a4cdda691acf84672c980cefa10458f08d"
+  },
+  {
+    "path": "C:\\Users\\nrgen\\.codex\\scratch\\SATquery AI\\grounding_lab\\evidence\\stadium-first\\result.json",
+    "bytes": 2900,
+    "sha256": "179965d06a8e51202bac91967e39cf4756328afb82f12526a810baea6335cbea"
+  },
+  {
+    "path": "C:\\Users\\nrgen\\.codex\\scratch\\SATquery AI\\grounding_lab\\evidence\\stadium-stadium-v2\\progress.json",
+    "bytes": 37,
+    "sha256": "021e742af80640cf867d06651074bdb0e8982c1a9334b50ff4d5e1dbb7a08587"
+  },
+  {
+    "path": "C:\\Users\\nrgen\\.codex\\scratch\\SATquery AI\\grounding_lab\\evidence\\stadium-stadium-v2\\request.json",
+    "bytes": 248,
+    "sha256": "775924fdf1ead9b84741eb516aef9cb78837685a1205ab8e10ae5a3af76557ea"
+  },
+  {
+    "path": "C:\\Users\\nrgen\\.codex\\scratch\\SATquery AI\\grounding_lab\\evidence\\stadium-stadium-v2\\result.json",
+    "bytes": 3080,
+    "sha256": "3879df3dee5208bc038ddaf90f4ed32e6dc07880b872d1ac923ebeef06984b55"
+  },
+  {
+    "path": "C:\\Users\\nrgen\\.codex\\scratch\\SATquery AI\\grounding_lab\\evidence\\buildings-regional\\assam-monsoon-0.2\\run.json",
+    "bytes": 3253,
+    "sha256": "6d97cb19f0d00c4bfbb3e20ada51611d76fc3f9a2645e4b94aad2155f6c34cac"
+  },
+  {
+    "path": "C:\\Users\\nrgen\\.codex\\scratch\\SATquery AI\\grounding_lab\\evidence\\buildings-regional\\assam-monsoon-0.3\\run.json",
+    "bytes": 3252,
+    "sha256": "71d9ce2dea3eadf4177361e3e50e757610bf5996c41c91d42dc0ceeb81a4a8d6"
+  },
+  {
+    "path": "C:\\Users\\nrgen\\.codex\\scratch\\SATquery AI\\grounding_lab\\evidence\\buildings-regional\\bengaluru-lake-city-0.2\\run.json",
+    "bytes": 4985,
+    "sha256": "4b172336d0b73dd0567f284201632dd51d7c7ce3349a40265d41b79ddcba3e85"
+  },
+  {
+    "path": "C:\\Users\\nrgen\\.codex\\scratch\\SATquery AI\\grounding_lab\\evidence\\buildings-regional\\bengaluru-lake-city-0.3\\run.json",
+    "bytes": 3229,
+    "sha256": "3ea56641f5ab410bb85111bdab1f69a8c68b7fe0d7ca7c222379800aadada862"
+  },
+  {
+    "path": "C:\\Users\\nrgen\\.codex\\scratch\\SATquery AI\\grounding_lab\\evidence\\buildings-regional\\jaisalmer-arid-0.2\\run.json",
+    "bytes": 3986,
+    "sha256": "9ad030b7e7cbb6ed80b72a701e889a71b6d10e157637f6829f907c91c43e47b5"
+  },
+  {
+    "path": "C:\\Users\\nrgen\\.codex\\scratch\\SATquery AI\\grounding_lab\\evidence\\buildings-regional\\jaisalmer-arid-0.3\\run.json",
+    "bytes": 3259,
+    "sha256": "0d7151f7a4dc1199c4067f18945769e4413221562baaaa869960f6e815389a7a"
+  },
+  {
+    "path": "C:\\Users\\nrgen\\.codex\\scratch\\SATquery AI\\grounding_lab\\evidence\\buildings-regional\\punjab-farmland-0.2\\run.json",
+    "bytes": 3245,
+    "sha256": "d5d151b96ec32b5b7f5917dae19adff39df59628ec23018d60e535c15eb4eb4a"
+  },
+  {
+    "path": "C:\\Users\\nrgen\\.codex\\scratch\\SATquery AI\\grounding_lab\\evidence\\buildings-regional\\punjab-farmland-0.3\\run.json",
+    "bytes": 3246,
+    "sha256": "381610c2553248456513ad40672f7bbbc7c5726968b84d4739148f8562883fcc"
+  },
+  {
+    "path": "C:\\Users\\nrgen\\.codex\\scratch\\SATquery AI\\grounding_lab\\evidence\\buildings-regional\\sundarbans-coast-0.2\\run.json",
+    "bytes": 4418,
+    "sha256": "7ff6a90fe93556f8b45b996a13af9f33765c9f90a0dac6517e0e5806d45111dc"
+  },
+  {
+    "path": "C:\\Users\\nrgen\\.codex\\scratch\\SATquery AI\\grounding_lab\\evidence\\buildings-regional\\sundarbans-coast-0.3\\run.json",
+    "bytes": 3922,
+    "sha256": "978317aba53a8f8aa312358a5a5704b41d2965bbe39a1cccfe285c6f7cc1fddc"
+  },
+  {
+    "path": "C:\\Users\\nrgen\\.codex\\scratch\\SATquery AI\\grounding_lab\\evidence\\buildings-tiles\\assam-monsoon-tile-0-0-0.2\\run.json",
+    "bytes": 4092,
+    "sha256": "a4546e888432537e60559c51db4848ea4901c47ef88e67b256fef9f9f3eaaa04"
+  },
+  {
+    "path": "C:\\Users\\nrgen\\.codex\\scratch\\SATquery AI\\grounding_lab\\evidence\\buildings-tiles\\assam-monsoon-tile-0-256-0.2\\run.json",
+    "bytes": 3241,
+    "sha256": "f8046078310a189127865a63cb658840e683d340fa5836d471ad6d1a3b229cbb"
+  },
+  {
+    "path": "C:\\Users\\nrgen\\.codex\\scratch\\SATquery AI\\grounding_lab\\evidence\\buildings-tiles\\assam-monsoon-tile-256-0-0.2\\run.json",
+    "bytes": 3239,
+    "sha256": "655b45ed11091841afb78f20fe243fd46b4595127586d5de23cd073ef551a68b"
+  },
+  {
+    "path": "C:\\Users\\nrgen\\.codex\\scratch\\SATquery AI\\grounding_lab\\evidence\\buildings-tiles\\assam-monsoon-tile-256-256-0.2\\run.json",
+    "bytes": 3242,
+    "sha256": "ba2d3dcbcfd5b68c7c9efa7cc2c344da1adc42e62a81470957cfbea6c39bca83"
+  },
+  {
+    "path": "C:\\Users\\nrgen\\.codex\\scratch\\SATquery AI\\grounding_lab\\evidence\\buildings-tiles\\bengaluru-lake-city-tile-0-0-0.2\\run.json",
+    "bytes": 4440,
+    "sha256": "ac18b3adeb43d420799e02e1d5964d62b5ea804984b8bad16b11e6c77805f368"
+  },
+  {
+    "path": "C:\\Users\\nrgen\\.codex\\scratch\\SATquery AI\\grounding_lab\\evidence\\buildings-tiles\\bengaluru-lake-city-tile-0-256-0.2\\run.json",
+    "bytes": 3947,
+    "sha256": "95cb51db7d779f2f322d25494f6636a2a8c34df3b17df4bd018fad1c1db8ac67"
+  },
+  {
+    "path": "C:\\Users\\nrgen\\.codex\\scratch\\SATquery AI\\grounding_lab\\evidence\\buildings-tiles\\bengaluru-lake-city-tile-256-0-0.2\\run.json",
+    "bytes": 4978,
+    "sha256": "c379992122e9a4d6fa5902b4f8c5800161fe4f88db52cfee7478d8cb06483826"
+  },
+  {
+    "path": "C:\\Users\\nrgen\\.codex\\scratch\\SATquery AI\\grounding_lab\\evidence\\buildings-tiles\\bengaluru-lake-city-tile-256-256-0.2\\run.json",
+    "bytes": 3249,
+    "sha256": "682081cfac802bc1a18afff30eaa417a1d6159b7be727ccade9d962508052682"
+  },
+  {
+    "path": "C:\\Users\\nrgen\\.codex\\scratch\\SATquery AI\\grounding_lab\\evidence\\http\\car-both\\run.json",
+    "bytes": 3734,
+    "sha256": "1d119ada189da8d9708b317006804e82fdc2e2ab85e337ebccdc9e5907cbdc95"
+  },
+  {
+    "path": "C:\\Users\\nrgen\\.codex\\scratch\\SATquery AI\\grounding_lab\\evidence\\http\\farmland-both\\run.json",
+    "bytes": 3224,
+    "sha256": "12c99c8a5bc904be0b04ad507a1f7d4945437b89c0c8fbc0ca9dd0cc5ef8645e"
+  },
+  {
+    "path": "C:\\Users\\nrgen\\.codex\\scratch\\SATquery AI\\grounding_lab\\evidence\\http\\stadium-both\\run.json",
+    "bytes": 3979,
+    "sha256": "ec6a3bbf4cb073317dea0aa87b78215cdc2529271ab866c0fd6ba14abcb4ecca"
+  },
+  {
+    "path": "C:\\Users\\nrgen\\.codex\\scratch\\SATquery AI\\grounding_lab\\evidence\\http\\stadium-boxes\\run.json",
+    "bytes": 3687,
+    "sha256": "2fbfbe54189737b4027e9a721b952590da494405cf4020e8837b30f74c2f28ec"
+  },
+  {
+    "path": "C:\\Users\\nrgen\\.codex\\scratch\\SATquery AI\\grounding_lab\\evidence\\same-port-http\\car-both\\run.json",
+    "bytes": 3734,
+    "sha256": "94bf39d7a6515cab6b5507d3d933facf97ca6b0a9d447998b37c2a39c41088f7"
+  },
+  {
+    "path": "C:\\Users\\nrgen\\.codex\\scratch\\SATquery AI\\grounding_lab\\evidence\\same-port-http\\farmland-both\\run.json",
+    "bytes": 3224,
+    "sha256": "c201fff5e67fcef1a0c4c2e858ff336486be9d69ce5680afc7576befbabf81f6"
+  },
+  {
+    "path": "C:\\Users\\nrgen\\.codex\\scratch\\SATquery AI\\grounding_lab\\evidence\\same-port-http\\stadium-both\\run.json",
+    "bytes": 3978,
+    "sha256": "d13ae25abc9f0173e686ff1a92b9b31ff7abda9c4ffd2df4fba81820ecbd5e05"
+  },
+  {
+    "path": "C:\\Users\\nrgen\\.codex\\scratch\\SATquery AI\\grounding_lab\\evidence\\same-port-http\\stadium-boxes\\run.json",
+    "bytes": 3686,
+    "sha256": "6e3d4530d1fcea89ca76634dad0978b76854d855092d9d72e1df5db4b201d343"
+  },
+  {
+    "path": "C:\\Users\\nrgen\\.codex\\scratch\\SATquery AI\\paired_lab\\checkpoints\\water-v1.pt",
+    "bytes": 7879873,
+    "sha256": "7844387fffd6c7e606895328e61be936304f979fee74411021f7312b3215f7ce"
+  },
+  {
+    "path": "C:\\Users\\nrgen\\.codex\\scratch\\SATquery AI\\paired_lab\\evidence\\demo-before.json",
+    "bytes": 3404,
+    "sha256": "d6089a7d6c383fa63448b59434aeb5b7a1cf43d0e4d9bba3e6d915a89fb26876"
+  },
+  {
+    "path": "C:\\Users\\nrgen\\.codex\\scratch\\SATquery AI\\paired_lab\\evidence\\demo-regression.json",
+    "bytes": 51,
+    "sha256": "6c0235903db94601af9201295d47f54d3a3eceefc1d8d5db922b6712ba318c79"
+  },
+  {
+    "path": "C:\\Users\\nrgen\\.codex\\scratch\\SATquery AI\\paired_lab\\evidence\\live-checks.json",
+    "bytes": 15489,
+    "sha256": "9c6d3c30a37a8742a1ef4257514eabad23adbeced32707c1d4743695c7e14e13"
+  },
+  {
+    "path": "C:\\Users\\nrgen\\.codex\\scratch\\SATquery AI\\paired_lab\\evidence\\models-resnet18.json",
+    "bytes": 1227,
+    "sha256": "f8f68f9b71d886b749d31f333309484f92b6e244c3605510886a8b844db41d3b"
+  },
+  {
+    "path": "C:\\Users\\nrgen\\.codex\\scratch\\SATquery AI\\paired_lab\\evidence\\models.json",
+    "bytes": 1227,
+    "sha256": "19f8d4b772d691a340a2d3dd5fa72771a12749bd356818f2acb197d43db9784b"
+  },
+  {
+    "path": "C:\\Users\\nrgen\\.codex\\scratch\\SATquery AI\\paired_lab\\evidence\\refinement.json",
+    "bytes": 24757,
+    "sha256": "3e9909b0eb9341f6a30c8fa18010eff049e225b1ec893550edb1e5f2cee1b2e2"
+  },
+  {
+    "path": "C:\\Users\\nrgen\\.codex\\scratch\\SATquery AI\\paired_lab\\evidence\\validation-tests.json",
+    "bytes": 5152,
+    "sha256": "31441125220421f683b3f0b1f7ac99c3de144d43a6b0057bba712bea335fbdae"
+  },
+  {
+    "path": "C:\\Users\\nrgen\\.codex\\scratch\\SATquery AI\\paired_lab\\mci_vendor\\LICENSE.txt",
+    "bytes": 1070,
+    "sha256": "4fd94a7e09a25d603fb5115806a851bd44a221286871781136829b9ae3b6f419"
+  },
+  {
+    "path": "C:\\Users\\nrgen\\.codex\\scratch\\SATquery AI\\paired_lab\\mci_vendor\\model_decoder.py",
+    "bytes": 17168,
+    "sha256": "91acac053838b80f37aae56904bb34118d1a5599738665dbae626a43c5528d7f"
+  },
+  {
+    "path": "C:\\Users\\nrgen\\.codex\\scratch\\SATquery AI\\paired_lab\\mci_vendor\\model_encoder_att.py",
+    "bytes": 24068,
+    "sha256": "a486048f7e044e8ddf7f2e69754c1a428ad8e909fff2db763e0c39b0491d6db7"
+  },
+  {
+    "path": "C:\\Users\\nrgen\\.codex\\scratch\\SATquery AI\\paired_lab\\mci_vendor\\segformer.py",
+    "bytes": 16783,
+    "sha256": "cb0cf73c523538ce8082ccd96c63d783f4657d2e787ac3d2920daad771f9e082"
+  },
+  {
+    "path": "C:\\Users\\nrgen\\.codex\\scratch\\SATquery AI\\paired_lab\\mci_vendor\\vocab.json",
+    "bytes": 6980,
+    "sha256": "c9323565663797aac437e1ad4cd5f0f0a7da8b08d8d438bcfa70708ddcca8fc5"
+  },
+  {
+    "path": "C:\\Users\\nrgen\\.codex\\scratch\\SATquery AI\\paired_lab\\mci_vendor\\__init__.py",
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "path": "C:\\Users\\nrgen\\.codex\\scratch\\SATquery AI\\paired_lab\\samples\\catalog.json",
+    "bytes": 28594,
+    "sha256": "67fafa593ae0b993b01a0192e49a997add46460c5256b74cf074ba3da5cecbfb"
+  },
+  {
+    "path": "C:\\Users\\nrgen\\.codex\\scratch\\SATquery AI\\paired_lab\\verification\\check_resumed.py",
+    "bytes": 3641,
+    "sha256": "2503910c8d158bf046cb7b1b815c2d526783b4123b199018e826b85adebde0ee"
+  },
+  {
+    "path": "C:\\Users\\nrgen\\.codex\\scratch\\SATquery AI\\paired_lab\\verification\\eval_water_cpu.py",
+    "bytes": 2003,
+    "sha256": "06067b39626ae0e8bf680557412b26a708a299f533aaf8a86e8af775a1198fdb"
+  },
+  {
+    "path": "C:\\Users\\nrgen\\.codex\\scratch\\SATquery AI\\paired_lab\\verification\\fetch_flood.py",
+    "bytes": 2725,
+    "sha256": "8c950be80fbfa1d70ae44ac17fe9ef9760d925c2bf896fea8e7daf961c4d4870"
+  },
+  {
+    "path": "C:\\Users\\nrgen\\.codex\\scratch\\SATquery AI\\paired_lab\\verification\\fetch_temporal.py",
+    "bytes": 955,
+    "sha256": "c1b0003ab6fea71d549b87bb5e8e74418569c18e1f1f9f4976da4e5c0d7e7547"
+  },
+  {
+    "path": "C:\\Users\\nrgen\\.codex\\scratch\\SATquery AI\\paired_lab\\verification\\live_resumed.py",
+    "bytes": 3422,
+    "sha256": "7a59975d2600737828fbb8335f3da762264cd862084891ed2cdc783d866ab7e9"
+  },
+  {
+    "path": "C:\\Users\\nrgen\\.codex\\scratch\\SATquery AI\\paired_lab\\verification\\measure_paired.py",
+    "bytes": 3012,
+    "sha256": "d9886a4d6e41b0d64839bef96889e522c44911d6c977ab7b1f33e3afdd8daf22"
+  },
+  {
+    "path": "C:\\Users\\nrgen\\.codex\\scratch\\SATquery AI\\paired_lab\\verification\\rescore_mci.py",
+    "bytes": 1251,
+    "sha256": "d26aefd50b13b45f326057aaffeb42cfbb2d0319b7ba3ac845015c47d2a4d6ba"
+  },
+  {
+    "path": "C:\\Users\\nrgen\\.codex\\scratch\\SATquery AI\\paired_lab\\verification\\test_mci.py",
+    "bytes": 3540,
+    "sha256": "9e28aea96959397447bb392761ed2e9b8f15775aa056948f81c3c734823af3ab"
+  },
+  {
+    "path": "C:\\Users\\nrgen\\.codex\\scratch\\SATquery AI\\paired_lab\\verification\\verify_mci_cpu.py",
+    "bytes": 2151,
+    "sha256": "1ceb86482970727fc6f50feff7c8697776144b6a200459826db661eb5c92dd03"
+  },
+  {
+    "path": "C:\\Users\\nrgen\\.codex\\scratch\\SATquery AI\\paired_lab\\web\\app.js",
+    "bytes": 10603,
+    "sha256": "d0cd29c443b28e3123e216ee63b5ac197c06d41e70bc63d005b4b161561f80b7"
+  },
+  {
+    "path": "C:\\Users\\nrgen\\.codex\\scratch\\SATquery AI\\paired_lab\\web\\index.html",
+    "bytes": 5183,
+    "sha256": "5c29464c4109ca118e1786714526ae2cd1f96c64a94d04c93dce51d921024d9d"
+  },
+  {
+    "path": "C:\\Users\\nrgen\\.codex\\scratch\\SATquery AI\\paired_lab\\evidence\\browser\\report.json",
+    "bytes": 862,
+    "sha256": "5d6e2d1b19bd9df5f5a529b5ecf4370cb7442be421ec1fcfa4613dd731f0b265"
+  },
+  {
+    "path": "C:\\Users\\nrgen\\.codex\\scratch\\SATquery AI\\paired_lab\\evidence\\controls\\summary.json",
+    "bytes": 741,
+    "sha256": "2094becb6197253e932b03adcabe8d3817a7917c4e57e4b9f0368fb474b1f830"
+  },
+  {
+    "path": "C:\\Users\\nrgen\\.codex\\scratch\\SATquery AI\\paired_lab\\evidence\\first-trials\\summary.json",
+    "bytes": 57353,
+    "sha256": "389503d3a40d5beb0e853f1a88ef1c7f9461f101e500af087935440ba7d7c75f"
+  },
+  {
+    "path": "C:\\Users\\nrgen\\.codex\\scratch\\SATquery AI\\paired_lab\\evidence\\resumed\\flood-data-manifest.json",
+    "bytes": 452496,
+    "sha256": "a26d663a2ebf77e0b24efd9aed8f1bbeaeec208dcfcd0d2655f0920232496634"
+  },
+  {
+    "path": "C:\\Users\\nrgen\\.codex\\scratch\\SATquery AI\\paired_lab\\evidence\\resumed\\gpu-and-ablation.json",
+    "bytes": 7353,
+    "sha256": "5ad62951e5da08ab2b162b29b453b767c8775a985360004d7fb00800191d2cfa"
+  },
+  {
+    "path": "C:\\Users\\nrgen\\.codex\\scratch\\SATquery AI\\paired_lab\\evidence\\resumed\\input-controller-tests.json",
+    "bytes": 18902,
+    "sha256": "7cf8fb00ec6731105d2665e2b4b26ad9cac889ec693125b1c124d0692915b767"
+  },
+  {
+    "path": "C:\\Users\\nrgen\\.codex\\scratch\\SATquery AI\\paired_lab\\evidence\\resumed\\recovery-snapshot.json",
+    "bytes": 594,
+    "sha256": "f796827f8f62eb37adbaec1cbef990618e1699013d0245ec2576968b4ba8b9ee"
+  },
+  {
+    "path": "C:\\Users\\nrgen\\.codex\\scratch\\SATquery AI\\paired_lab\\evidence\\resumed\\restore-test.json",
+    "bytes": 404,
+    "sha256": "6a219ee6fcc647ed708b23bd1fdb6f398295164500d7859341eeaf94d7d62f0c"
+  },
+  {
+    "path": "C:\\Users\\nrgen\\.codex\\scratch\\SATquery AI\\paired_lab\\evidence\\resumed\\water-evaluation.json",
+    "bytes": 137666,
+    "sha256": "a8671d00aa9f9c35537d693e400745553168e097e4b4c11d595549584ee94707"
+  },
+  {
+    "path": "C:\\Users\\nrgen\\.codex\\scratch\\SATquery AI\\paired_lab\\evidence\\resumed\\water-gpu-memory.json",
+    "bytes": 647,
+    "sha256": "cdac9fea561bcfb80b391fe78774ef3847dd35d275ea02a99d1403065caa4f36"
+  },
+  {
+    "path": "C:\\Users\\nrgen\\.codex\\scratch\\SATquery AI\\paired_lab\\evidence\\selected-trials\\summary.json",
+    "bytes": 55245,
+    "sha256": "507b3357dc0dd87e27606a4ba7a0033732334bd063eb889277234a9e47266720"
+  },
+  {
+    "path": "C:\\Users\\nrgen\\.codex\\scratch\\SATquery AI\\paired_lab\\evidence\\controls\\brightness-only\\result.json",
+    "bytes": 1159,
+    "sha256": "cc985076a321282f59f7bce2b8fd04d930edae755504e5316cf9004c488e1011"
+  },
+  {
+    "path": "C:\\Users\\nrgen\\.codex\\scratch\\SATquery AI\\paired_lab\\evidence\\controls\\identical-second-scene\\result.json",
+    "bytes": 1159,
+    "sha256": "4622b94501452c774e786602409996d14687b775195a3b1589d0e72f58e82b5f"
+  },
+  {
+    "path": "C:\\Users\\nrgen\\.codex\\scratch\\SATquery AI\\paired_lab\\evidence\\controls\\real-pair-negative-crop\\result.json",
+    "bytes": 1160,
+    "sha256": "ab998c27a340651ab886f0df14f37673b162320774f9a45e013799e833819b96"
+  },
+  {
+    "path": "C:\\Users\\nrgen\\.codex\\scratch\\SATquery AI\\paired_lab\\evidence\\first-trials\\ben-test-26-57\\result.json",
+    "bytes": 5375,
+    "sha256": "70dd984ed703e89dd35ac81c6c53a41dfd00d806e1460e767f46d6d644675687"
+  },
+  {
+    "path": "C:\\Users\\nrgen\\.codex\\scratch\\SATquery AI\\paired_lab\\evidence\\first-trials\\ben-test-27-55\\result.json",
+    "bytes": 5582,
+    "sha256": "9a545c51e26ba2e2359de9a3f1bcd874d456a2bf8781691d3cab5344caf223bd"
+  },
+  {
+    "path": "C:\\Users\\nrgen\\.codex\\scratch\\SATquery AI\\paired_lab\\evidence\\first-trials\\ben-test-27-56\\result.json",
+    "bytes": 5405,
+    "sha256": "c3d315be239c0ccdc5de6298f216c64faa9558ca7da929dff92ff4cbd1baac4e"
+  },
+  {
+    "path": "C:\\Users\\nrgen\\.codex\\scratch\\SATquery AI\\paired_lab\\evidence\\first-trials\\ben-test-27-57\\result.json",
+    "bytes": 5400,
+    "sha256": "42e7d832ff1d64fdd9098e421a6827854d2c3d1b59aabbd8760be8e2559c185c"
+  },
+  {
+    "path": "C:\\Users\\nrgen\\.codex\\scratch\\SATquery AI\\paired_lab\\evidence\\first-trials\\ben-test-27-58\\result.json",
+    "bytes": 5365,
+    "sha256": "f48fe3ec0153c1727da15fa17800d735fa391c46f44e59e4d288770bab1bf9c8"
+  },
+  {
+    "path": "C:\\Users\\nrgen\\.codex\\scratch\\SATquery AI\\paired_lab\\evidence\\first-trials\\ben-test-27-59\\result.json",
+    "bytes": 5391,
+    "sha256": "7e8639a7f9f0286bc9d51d0f8fe2e958dc2113699330592e08ed06515ba004d1"
+  },
+  {
+    "path": "C:\\Users\\nrgen\\.codex\\scratch\\SATquery AI\\paired_lab\\evidence\\first-trials\\ben-validation-33-69\\result.json",
+    "bytes": 5555,
+    "sha256": "9f710b9618b8a24e6cd1b7aadcedd80c49d3e36692dc6efffef6cf57c3976bc4"
+  },
+  {
+    "path": "C:\\Users\\nrgen\\.codex\\scratch\\SATquery AI\\paired_lab\\evidence\\first-trials\\ben-validation-33-70\\result.json",
+    "bytes": 5526,
+    "sha256": "09c91413b6e60659df3c827d6d707ae26b7faa323358f7bd4150e69656639c55"
+  },
+  {
+    "path": "C:\\Users\\nrgen\\.codex\\scratch\\SATquery AI\\paired_lab\\evidence\\first-trials\\ben-validation-34-69\\result.json",
+    "bytes": 5429,
+    "sha256": "ce687f933ea359378e045061475c3f2eab4f0aae2a74cc70caedcce8a27b5e48"
+  },
+  {
+    "path": "C:\\Users\\nrgen\\.codex\\scratch\\SATquery AI\\paired_lab\\evidence\\first-trials\\ben-validation-34-70\\result.json",
+    "bytes": 5414,
+    "sha256": "ed3908397c4b0c24d4cc177732cb04137e5ce544e5637569b5d5714f33493100"
+  },
+  {
+    "path": "C:\\Users\\nrgen\\.codex\\scratch\\SATquery AI\\paired_lab\\evidence\\first-trials\\ben-validation-34-71\\result.json",
+    "bytes": 5610,
+    "sha256": "a19ad42ab3c43c9e34463c5b597deeca6283acad4fc2a26e1b40aab55a0880c1"
+  },
+  {
+    "path": "C:\\Users\\nrgen\\.codex\\scratch\\SATquery AI\\paired_lab\\evidence\\first-trials\\ben-validation-35-69\\result.json",
+    "bytes": 5365,
+    "sha256": "7ab8241d830879596e8833b455c643dd6e56bf19db4b251218dd68158cfae5ab"
+  },
+  {
+    "path": "C:\\Users\\nrgen\\.codex\\scratch\\SATquery AI\\paired_lab\\evidence\\first-trials\\levir-test_102_0512_0000\\result.json",
+    "bytes": 1283,
+    "sha256": "e58570324bd5c4c97687033aa152bc17c1d72e0bab0a16145c84b9de573e2c8f"
+  },
+  {
+    "path": "C:\\Users\\nrgen\\.codex\\scratch\\SATquery AI\\paired_lab\\evidence\\first-trials\\levir-test_102_0512_0000-identical\\result.json",
+    "bytes": 1160,
+    "sha256": "97464a0c64bb460bed1c001632530a37fa78902f79f0ba2e47325f495063539c"
+  },
+  {
+    "path": "C:\\Users\\nrgen\\.codex\\scratch\\SATquery AI\\paired_lab\\evidence\\first-trials\\levir-test_121_0768_0256\\result.json",
+    "bytes": 1281,
+    "sha256": "05a4378198a9135f10b8d5641934915001024337b8f6c62a20276f01cbe624bf"
+  },
+  {
+    "path": "C:\\Users\\nrgen\\.codex\\scratch\\SATquery AI\\paired_lab\\evidence\\first-trials\\levir-test_2_0000_0000\\result.json",
+    "bytes": 1282,
+    "sha256": "5ebd16e1e666a21259d32a6fbdd626e6e3866c5027b86b5a0167f27fdd2f72eb"
+  },
+  {
+    "path": "C:\\Users\\nrgen\\.codex\\scratch\\SATquery AI\\paired_lab\\evidence\\first-trials\\levir-test_2_0000_0512\\result.json",
+    "bytes": 1284,
+    "sha256": "da65bf1c4a63cc2e7bb0ed32c0e0bbcba9b75b601f972d293cc9bdb3ba8dca66"
+  },
+  {
+    "path": "C:\\Users\\nrgen\\.codex\\scratch\\SATquery AI\\paired_lab\\evidence\\first-trials\\levir-test_55_0256_0000\\result.json",
+    "bytes": 1281,
+    "sha256": "95280cc82744739441ad4b1d70d545fe931451245c233c0e4bd52629e0f952fb"
+  },
+  {
+    "path": "C:\\Users\\nrgen\\.codex\\scratch\\SATquery AI\\paired_lab\\evidence\\first-trials\\levir-test_77_0512_0256\\result.json",
+    "bytes": 1284,
+    "sha256": "622ccce10bc4516ec66d550dda346cb548a96f3d3eb04a496eded12278b6bb37"
+  },
+  {
+    "path": "C:\\Users\\nrgen\\.codex\\scratch\\SATquery AI\\paired_lab\\evidence\\first-trials\\levir-test_7_0256_0512\\result.json",
+    "bytes": 1285,
+    "sha256": "705b2a71af234b62fdea795757a6064aa4d6b2ca62422b73fa78bf558144c9b5"
+  },
+  {
+    "path": "C:\\Users\\nrgen\\.codex\\scratch\\SATquery AI\\paired_lab\\evidence\\resumed\\browser\\report.json",
+    "bytes": 859,
+    "sha256": "56f077910902a5a70df77a91b69deeed459c9d0a32c3fbe479675b6d4d6dd154"
+  },
+  {
+    "path": "C:\\Users\\nrgen\\.codex\\scratch\\SATquery AI\\paired_lab\\evidence\\resumed\\live\\01-vqa-before.json",
+    "bytes": 2262,
+    "sha256": "04b16c4ad91d22eba9f36a96d58dbc87819b1c9aa062382033d49f039d73b833"
+  },
+  {
+    "path": "C:\\Users\\nrgen\\.codex\\scratch\\SATquery AI\\paired_lab\\evidence\\resumed\\live\\02-temporal.json",
+    "bytes": 57531,
+    "sha256": "3bfb42c1fb16cd0e7d97c06cf6a4ff062dda754570a4642f2dee3b3ab6a1fc88"
+  },
+  {
+    "path": "C:\\Users\\nrgen\\.codex\\scratch\\SATquery AI\\paired_lab\\evidence\\resumed\\live\\03-water-india.json",
+    "bytes": 5083,
+    "sha256": "ad24e2fd09cceab9519fc15abf3be7f187aea2b1f2cbc9dcfba0ca221f26e59f"
+  },
+  {
+    "path": "C:\\Users\\nrgen\\.codex\\scratch\\SATquery AI\\paired_lab\\evidence\\resumed\\live\\04-water-bolivia.json",
+    "bytes": 5100,
+    "sha256": "1fe6889f9d9ac71ca25bcb0c787979e5d3ddda07658c9d66df833850e628d38a"
+  },
+  {
+    "path": "C:\\Users\\nrgen\\.codex\\scratch\\SATquery AI\\paired_lab\\evidence\\resumed\\live\\05-scene-fusion.json",
+    "bytes": 8134,
+    "sha256": "fc57b6232b83560b70b1d928d852e0583e8fa6cc3e236fbc82540f7b90da35b9"
+  },
+  {
+    "path": "C:\\Users\\nrgen\\.codex\\scratch\\SATquery AI\\paired_lab\\evidence\\resumed\\live\\06-ndvi.json",
+    "bytes": 4990,
+    "sha256": "db5f1fba3c0a94da06656c5ad56cf3317b35890bd634af9a17bd62c3b2993f0b"
+  },
+  {
+    "path": "C:\\Users\\nrgen\\.codex\\scratch\\SATquery AI\\paired_lab\\evidence\\resumed\\live\\07-vqa-after.json",
+    "bytes": 2262,
+    "sha256": "9ba0d490fd290d496105f3d14e52b0499b5198603d1e3f8022803e68f7fcee9e"
+  },
+  {
+    "path": "C:\\Users\\nrgen\\.codex\\scratch\\SATquery AI\\paired_lab\\evidence\\resumed\\live\\08-rural-urban.json",
+    "bytes": 2122,
+    "sha256": "606809a923d89d18f13d3573e2289f95b552186a2ad748d203aa9736b925696f"
+  },
+  {
+    "path": "C:\\Users\\nrgen\\.codex\\scratch\\SATquery AI\\paired_lab\\evidence\\resumed\\live\\checks.json",
+    "bytes": 121,
+    "sha256": "cd5fd6b1bbb728797e7317e7b27c4953f7049e4e95c80a94e1e02e28d901c097"
+  },
+  {
+    "path": "C:\\Users\\nrgen\\.codex\\scratch\\SATquery AI\\paired_lab\\evidence\\resumed\\live\\replay.json",
+    "bytes": 4295,
+    "sha256": "4d9a8230c580205b037e60c599a0b949dce1e1d4238623619684fde69d16a553"
+  },
+  {
+    "path": "C:\\Users\\nrgen\\.codex\\scratch\\SATquery AI\\paired_lab\\evidence\\resumed\\mci\\evaluation-gpu.json",
+    "bytes": 136250,
+    "sha256": "d455a649b494a6f18c692f19ebc839620643f865d0718b8cc643949796f1ccc6"
+  },
+  {
+    "path": "C:\\Users\\nrgen\\.codex\\scratch\\SATquery AI\\paired_lab\\evidence\\resumed\\mci\\evaluation-incorrect-palette-superseded.json",
+    "bytes": 135694,
+    "sha256": "2e27d354c16191e58433d264ea131e90b4f63f590f2de871f86b1dadfa40a72a"
+  },
+  {
+    "path": "C:\\Users\\nrgen\\.codex\\scratch\\SATquery AI\\paired_lab\\evidence\\resumed\\mci\\evaluation.json",
+    "bytes": 142813,
+    "sha256": "689ef3644c434d4df678cc2dba3084c892965fc8352e5cb6e2078660786f3b76"
+  },
+  {
+    "path": "C:\\Users\\nrgen\\.codex\\scratch\\SATquery AI\\paired_lab\\evidence\\resumed\\research\\access.json",
+    "bytes": 5548,
+    "sha256": "990e61b495e9e93b06705120f8b131d64b44880a1b1cc14faa25f584549747c0"
+  },
+  {
+    "path": "C:\\Users\\nrgen\\.codex\\scratch\\SATquery AI\\paired_lab\\evidence\\resumed\\research\\cdvqa_tree.txt",
+    "bytes": 3357,
+    "sha256": "cef4c6490b20c2e8196a7e426847ca2dcfd8afa03ff1dfbe02a2e9d03ce92744"
+  },
+  {
+    "path": "C:\\Users\\nrgen\\.codex\\scratch\\SATquery AI\\paired_lab\\evidence\\resumed\\research\\dfc_hf.txt",
+    "bytes": 2,
+    "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+  },
+  {
+    "path": "C:\\Users\\nrgen\\.codex\\scratch\\SATquery AI\\paired_lab\\evidence\\resumed\\research\\dfc_joint.txt",
+    "bytes": 4604,
+    "sha256": "4789efae644ac4989850ff8a4245621b442f8e68cd27315e3c96991134c9b6ab"
+  },
+  {
+    "path": "C:\\Users\\nrgen\\.codex\\scratch\\SATquery AI\\paired_lab\\evidence\\resumed\\research\\dfc_optical.txt",
+    "bytes": 4604,
+    "sha256": "378456bb1359afad8f0f70230be96664e924ce4ee68ec3f8c9b39b078de83980"
+  },
+  {
+    "path": "C:\\Users\\nrgen\\.codex\\scratch\\SATquery AI\\paired_lab\\evidence\\resumed\\research\\levir_mci.txt",
+    "bytes": 795,
+    "sha256": "251fc2bd9842835b8e8058f52d4f23628129c71fe23dde0abeded23e05b0859a"
+  },
+  {
+    "path": "C:\\Users\\nrgen\\.codex\\scratch\\SATquery AI\\paired_lab\\evidence\\resumed\\research\\terramind_flood_hf.txt",
+    "bytes": 18636,
+    "sha256": "6e21a56ef26269a3a513ad87610baa405c45ad67e73089ea656decb15279983a"
+  },
+  {
+    "path": "C:\\Users\\nrgen\\.codex\\scratch\\SATquery AI\\paired_lab\\evidence\\resumed\\research\\terramind_notebook.txt",
+    "bytes": 21637,
+    "sha256": "2ea3606e82f4508646c3394c785551743e408fbc6c84d39e5f266f891eb12d09"
+  },
+  {
+    "path": "C:\\Users\\nrgen\\.codex\\scratch\\SATquery AI\\paired_lab\\evidence\\resumed\\mci\\test_000008\\result-cpu.json",
+    "bytes": 666,
+    "sha256": "2f9a2858c0d79aaef87d938d745eac6da077e1c642d91b5b275c4ad470328c11"
+  },
+  {
+    "path": "C:\\Users\\nrgen\\.codex\\scratch\\SATquery AI\\paired_lab\\evidence\\resumed\\mci\\test_000008\\result.json",
+    "bytes": 614,
+    "sha256": "138e28474f6518fdb516a1fb6f83517fab93a2f2b78c499396d93b5fbe27e1e4"
+  },
+  {
+    "path": "C:\\Users\\nrgen\\.codex\\scratch\\SATquery AI\\paired_lab\\evidence\\resumed\\mci\\test_000036\\result-cpu.json",
+    "bytes": 666,
+    "sha256": "70b5d6a9af055e37c99f33ae5bf71678a1f29363f24fb12ce59bc40e0cc81eea"
+  },
+  {
+    "path": "C:\\Users\\nrgen\\.codex\\scratch\\SATquery AI\\paired_lab\\evidence\\resumed\\mci\\test_000036\\result.json",
+    "bytes": 614,
+    "sha256": "7cf2544d8cfa219ef9fe6ed92238b1c1f9c98c111b731dc8b3ad3f3099f64f50"
+  },
+  {
+    "path": "C:\\Users\\nrgen\\.codex\\scratch\\SATquery AI\\paired_lab\\evidence\\resumed\\mci\\test_000042\\result-cpu.json",
+    "bytes": 666,
+    "sha256": "3c4bba738294b09fe0693d2c23710fccdf88d342fd33ee60f1d9c13b50629ce3"
+  },
+  {
+    "path": "C:\\Users\\nrgen\\.codex\\scratch\\SATquery AI\\paired_lab\\evidence\\resumed\\mci\\test_000042\\result.json",
+    "bytes": 614,
+    "sha256": "e7e93e1ac7ff89fd3a45eb3cbfd4bc89afa583c45cb1e5cee06ab2378f895f3d"
+  },
+  {
+    "path": "C:\\Users\\nrgen\\.codex\\scratch\\SATquery AI\\paired_lab\\evidence\\resumed\\mci\\test_000053\\result-cpu.json",
+    "bytes": 666,
+    "sha256": "9934335ea302e3e157e73a70cafbf07c2364324312b69818d49e8166431aa26a"
+  },
+  {
+    "path": "C:\\Users\\nrgen\\.codex\\scratch\\SATquery AI\\paired_lab\\evidence\\resumed\\mci\\test_000053\\result.json",
+    "bytes": 614,
+    "sha256": "2128d5479aed840935ce88295fc22488aa47607f71d8e36b7699fcb69682a5d0"
+  },
+  {
+    "path": "C:\\Users\\nrgen\\.codex\\scratch\\SATquery AI\\paired_lab\\evidence\\resumed\\mci\\test_000055\\result-cpu.json",
+    "bytes": 666,
+    "sha256": "59cbb0a39525dd42839e16c2751f359da3651b090b8bb4f17c7e8fd2014897de"
+  },
+  {
+    "path": "C:\\Users\\nrgen\\.codex\\scratch\\SATquery AI\\paired_lab\\evidence\\resumed\\mci\\test_000055\\result.json",
+    "bytes": 614,
+    "sha256": "f758eef2e1b61ab6b28f36c1db14d6ed6c87dbb2c20084a8fb112eb210a959c5"
+  },
+  {
+    "path": "C:\\Users\\nrgen\\.codex\\scratch\\SATquery AI\\paired_lab\\evidence\\resumed\\mci\\test_000121\\result-cpu.json",
+    "bytes": 965,
+    "sha256": "f2115b00f5e7d605f0313673080d0f35396bab328b3dfd30a005848f4c9a5e0f"
+  },
+  {
+    "path": "C:\\Users\\nrgen\\.codex\\scratch\\SATquery AI\\paired_lab\\evidence\\resumed\\mci\\test_000121\\result.json",
+    "bytes": 876,
+    "sha256": "d8fee281a7ee0579413f41e307eb48137451e34b735360acc1cbb34a41914e1f"
+  },
+  {
+    "path": "C:\\Users\\nrgen\\.codex\\scratch\\SATquery AI\\paired_lab\\evidence\\resumed\\mci\\test_000123\\result-cpu.json",
+    "bytes": 931,
+    "sha256": "401b3e1b7254591e0919be2bf9003a0d4645dd1e9716a117364e4a12620088e1"
+  },
+  {
+    "path": "C:\\Users\\nrgen\\.codex\\scratch\\SATquery AI\\paired_lab\\evidence\\resumed\\mci\\test_000123\\result.json",
+    "bytes": 850,
+    "sha256": "c9daf5068d35591cb62a5e93795cdf0b11434ce2e6487fcb579004612df42a6c"
+  },
+  {
+    "path": "C:\\Users\\nrgen\\.codex\\scratch\\SATquery AI\\paired_lab\\evidence\\resumed\\mci\\test_000166\\result-cpu.json",
+    "bytes": 666,
+    "sha256": "db0242ce1517115c100c58856f3904c07b37737a1b235b88feb5092ee71a3ae2"
+  },
+  {
+    "path": "C:\\Users\\nrgen\\.codex\\scratch\\SATquery AI\\paired_lab\\evidence\\resumed\\mci\\test_000166\\result.json",
+    "bytes": 614,
+    "sha256": "4e47e7b1cd9ea2128fede5350e4260ae6178a9dd86e2b9c8ce6d0fe544b7ec91"
+  },
+  {
+    "path": "C:\\Users\\nrgen\\.codex\\scratch\\SATquery AI\\paired_lab\\evidence\\resumed\\mci\\test_000173\\result-cpu.json",
+    "bytes": 666,
+    "sha256": "11c8514e64505bda3f623f07d2aee7ab9a8f31f741250766cc76d0cf1fc375e0"
+  },
+  {
+    "path": "C:\\Users\\nrgen\\.codex\\scratch\\SATquery AI\\paired_lab\\evidence\\resumed\\mci\\test_000173\\result.json",
+    "bytes": 614,
+    "sha256": "febff62b94c9dd5b83bed0385d5fe6f87c6498e380c06d60e4c8bce3077ef1b8"
+  },
+  {
+    "path": "C:\\Users\\nrgen\\.codex\\scratch\\SATquery AI\\paired_lab\\evidence\\resumed\\mci\\test_000177\\result-cpu.json",
+    "bytes": 666,
+    "sha256": "74a65473e21ce76b422963a70884472970ebd5cc19c1c3fca94fa586e2f04d94"
+  },
+  {
+    "path": "C:\\Users\\nrgen\\.codex\\scratch\\SATquery AI\\paired_lab\\evidence\\resumed\\mci\\test_000177\\result.json",
+    "bytes": 614,
+    "sha256": "17847403553fdc2745df86d9c4ff6733cab50d07e2e2ce34ae364a38cb82a08e"
+  },
+  {
+    "path": "C:\\Users\\nrgen\\.codex\\scratch\\SATquery AI\\paired_lab\\evidence\\resumed\\mci\\test_000181\\result-cpu.json",
+    "bytes": 940,
+    "sha256": "873ec9fa2b0dd31ef019ef226885c763d65b4dfaff41254533ee37c11125cfe6"
+  },
+  {
+    "path": "C:\\Users\\nrgen\\.codex\\scratch\\SATquery AI\\paired_lab\\evidence\\resumed\\mci\\test_000181\\result.json",
+    "bytes": 867,
+    "sha256": "60e5a1800280d2ce2d80d21612c634a92fb7fcf03a764050bd20b7d1736831bb"
+  },
+  {
+    "path": "C:\\Users\\nrgen\\.codex\\scratch\\SATquery AI\\paired_lab\\evidence\\resumed\\mci\\test_000183\\result-cpu.json",
+    "bytes": 666,
+    "sha256": "45fd0ee85f04de5eacb498291f1b0564036eb40acc1083249155eb537b6fae8c"
+  },
+  {
+    "path": "C:\\Users\\nrgen\\.codex\\scratch\\SATquery AI\\paired_lab\\evidence\\resumed\\mci\\test_000183\\result.json",
+    "bytes": 614,
+    "sha256": "8647a914b9cfed05c8f16c66fc01acaaec7351bf81c3ddf4e8ebe645e13aff3b"
+  },
+  {
+    "path": "C:\\Users\\nrgen\\.codex\\scratch\\SATquery AI\\paired_lab\\evidence\\resumed\\mci\\test_000192\\result-cpu.json",
+    "bytes": 1030,
+    "sha256": "efaa1eab6d96ece983b49b5e70fab2f03c656a8a7c0cc111ad2223fc3f91409b"
+  },
+  {
+    "path": "C:\\Users\\nrgen\\.codex\\scratch\\SATquery AI\\paired_lab\\evidence\\resumed\\mci\\test_000192\\result.json",
+    "bytes": 943,
+    "sha256": "a9ada361ece54677cbaf3b7c402bf506d723e98e376974bf84563b4d26641738"
+  },
+  {
+    "path": "C:\\Users\\nrgen\\.codex\\scratch\\SATquery AI\\paired_lab\\evidence\\resumed\\mci\\test_000193\\result-cpu.json",
+    "bytes": 839,
+    "sha256": "c9e572c7254fc070b0d38ae82cec0adc64eeb69140ed05652f39cd196d2a94da"
+  },
+  {
+    "path": "C:\\Users\\nrgen\\.codex\\scratch\\SATquery AI\\paired_lab\\evidence\\resumed\\mci\\test_000193\\result.json",
+    "bytes": 764,
+    "sha256": "3a0948178ec70a5c7d3063c9e01c4d16056e7ef26847647ea82842148d6420d3"
+  },
+  {
+    "path": "C:\\Users\\nrgen\\.codex\\scratch\\SATquery AI\\paired_lab\\evidence\\resumed\\mci\\test_000212\\result-cpu.json",
+    "bytes": 666,
+    "sha256": "ca0433f83bce38743a301d424077183c01eb3573e38c29c257554a782af7467e"
+  },
+  {
+    "path": "C:\\Users\\nrgen\\.codex\\scratch\\SATquery AI\\paired_lab\\evidence\\resumed\\mci\\test_000212\\result.json",
+    "bytes": 614,
+    "sha256": "324bc9c16cd849c2800e0e845674e65e8da8a6bb6b54ca4546f82bff6f864974"
+  },
+  {
+    "path": "C:\\Users\\nrgen\\.codex\\scratch\\SATquery AI\\paired_lab\\evidence\\resumed\\mci\\test_000222\\result-cpu.json",
+    "bytes": 769,
+    "sha256": "526e90e81d8c7f513258d6deb35639f4c39622d390bbeedb91f715863f4b3499"
+  },
+  {
+    "path": "C:\\Users\\nrgen\\.codex\\scratch\\SATquery AI\\paired_lab\\evidence\\resumed\\mci\\test_000222\\result.json",
+    "bytes": 712,
+    "sha256": "c9c9ff2d7c95761bbf3f7e2c9384864e123ed914be729a393877dabed58dd63e"
+  },
+  {
+    "path": "C:\\Users\\nrgen\\.codex\\scratch\\SATquery AI\\paired_lab\\evidence\\resumed\\mci\\test_000233\\result-cpu.json",
+    "bytes": 666,
+    "sha256": "9909283669a2175882d77b9bdad06c9355db4daea2f572db43b7be7effbaf066"
+  },
+  {
+    "path": "C:\\Users\\nrgen\\.codex\\scratch\\SATquery AI\\paired_lab\\evidence\\resumed\\mci\\test_000233\\result.json",
+    "bytes": 614,
+    "sha256": "edc3798f931eee8d9bc216739b824ee93ef819c058dcd7161259402b977243a9"
+  },
+  {
+    "path": "C:\\Users\\nrgen\\.codex\\scratch\\SATquery AI\\paired_lab\\evidence\\resumed\\mci\\test_000270\\result-cpu.json",
+    "bytes": 976,
+    "sha256": "35a30b423eeffe475be4ac7f4a11ae16f7977806b86d59ef2743c7bb5f2d9dbd"
+  },
+  {
+    "path": "C:\\Users\\nrgen\\.codex\\scratch\\SATquery AI\\paired_lab\\evidence\\resumed\\mci\\test_000270\\result.json",
+    "bytes": 883,
+    "sha256": "a8dc9d93de15bcafc2a21f01ca2a0e273e13d9bef03283e5dfeab1ecf384f226"
+  },
+  {
+    "path": "C:\\Users\\nrgen\\.codex\\scratch\\SATquery AI\\paired_lab\\evidence\\resumed\\mci\\test_000319\\result-cpu.json",
+    "bytes": 1086,
+    "sha256": "0e3475f9890422112a086ebc50f864c0ca5f4e92aab70614e5999c5202f9e413"
+  },
+  {
+    "path": "C:\\Users\\nrgen\\.codex\\scratch\\SATquery AI\\paired_lab\\evidence\\resumed\\mci\\test_000319\\result.json",
+    "bytes": 991,
+    "sha256": "b3e50ff2f52b8f1cba3b946141c6c30cc4f4c3237799596c3568e29d882e743f"
+  },
+  {
+    "path": "C:\\Users\\nrgen\\.codex\\scratch\\SATquery AI\\paired_lab\\evidence\\resumed\\mci\\test_000343\\result-cpu.json",
+    "bytes": 666,
+    "sha256": "5103ec6a6213f2cb1c8001013d43d8c0bae294291a861d452213c511bcf9d46f"
+  },
+  {
+    "path": "C:\\Users\\nrgen\\.codex\\scratch\\SATquery AI\\paired_lab\\evidence\\resumed\\mci\\test_000343\\result.json",
+    "bytes": 614,
+    "sha256": "155f6d6d9a3672a1a0155d9c44e76e0f477461840fb39f73f8e76d00bf2e905d"
+  },
+  {
+    "path": "C:\\Users\\nrgen\\.codex\\scratch\\SATquery AI\\paired_lab\\evidence\\resumed\\mci\\test_000362\\result-cpu.json",
+    "bytes": 933,
+    "sha256": "50f94e76cc3e0907a3f7d7ccb5ac1f60b98c33920712aab7c9242981603b6350"
+  },
+  {
+    "path": "C:\\Users\\nrgen\\.codex\\scratch\\SATquery AI\\paired_lab\\evidence\\resumed\\mci\\test_000362\\result.json",
+    "bytes": 876,
+    "sha256": "a35caf33df81b06641dee3e73035b0a34722ec072b4521fb604ae346ed50b945"
+  },
+  {
+    "path": "C:\\Users\\nrgen\\.codex\\scratch\\SATquery AI\\paired_lab\\evidence\\resumed\\mci\\test_000386\\result-cpu.json",
+    "bytes": 776,
+    "sha256": "4aab0e6625cfef12e590695a7857cb730c012c7f0ac75ea99efde0f07edd1107"
+  },
+  {
+    "path": "C:\\Users\\nrgen\\.codex\\scratch\\SATquery AI\\paired_lab\\evidence\\resumed\\mci\\test_000386\\result.json",
+    "bytes": 724,
+    "sha256": "241cd202abb090862bdd260e65101e8f3fc628f40bb853a5ff6f6b30b9cc3379"
+  },
+  {
+    "path": "C:\\Users\\nrgen\\.codex\\scratch\\SATquery AI\\paired_lab\\evidence\\resumed\\mci\\test_000409\\result-cpu.json",
+    "bytes": 799,
+    "sha256": "9d127d24662d483fbd197efa90e8eca2f1e66f9e4602b97fbbe25ec2f60b0b80"
+  },
+  {
+    "path": "C:\\Users\\nrgen\\.codex\\scratch\\SATquery AI\\paired_lab\\evidence\\resumed\\mci\\test_000409\\result.json",
+    "bytes": 747,
+    "sha256": "3bf300c697a00fb09e90afe4dc849b7c7bf05e1731da1ccd4c4293b48139b534"
+  },
+  {
+    "path": "C:\\Users\\nrgen\\.codex\\scratch\\SATquery AI\\paired_lab\\evidence\\resumed\\mci\\test_000414\\result-cpu.json",
+    "bytes": 666,
+    "sha256": "5e9d6c1ff06a999dba57a378fffdc088cde91655f2834cdf168516cc3b72b8ae"
+  },
+  {
+    "path": "C:\\Users\\nrgen\\.codex\\scratch\\SATquery AI\\paired_lab\\evidence\\resumed\\mci\\test_000414\\result.json",
+    "bytes": 614,
+    "sha256": "f4abbf1c623935b96f7e9525a1e996f8558a01fa97086a3cf5fe04f00be41616"
+  },
+  {
+    "path": "C:\\Users\\nrgen\\.codex\\scratch\\SATquery AI\\paired_lab\\evidence\\resumed\\mci\\test_000416\\result-cpu.json",
+    "bytes": 962,
+    "sha256": "38388afd844e692ff809f95d59e0a7fb01d73112bb60195c31aeb50f0bba98f2"
+  },
+  {
+    "path": "C:\\Users\\nrgen\\.codex\\scratch\\SATquery AI\\paired_lab\\evidence\\resumed\\mci\\test_000416\\result.json",
+    "bytes": 905,
+    "sha256": "5d3fa0e7c0b1755188c89a2ee33d644f868009186228d024f92f557cc3edd546"
+  },
+  {
+    "path": "C:\\Users\\nrgen\\.codex\\scratch\\SATquery AI\\paired_lab\\evidence\\resumed\\mci\\test_000431\\result-cpu.json",
+    "bytes": 666,
+    "sha256": "ade8bd8ff761c06658be12823b6b0af1c1fbf44162017e4bdb704f51405a8cc8"
+  },
+  {
+    "path": "C:\\Users\\nrgen\\.codex\\scratch\\SATquery AI\\paired_lab\\evidence\\resumed\\mci\\test_000431\\result.json",
+    "bytes": 614,
+    "sha256": "3ae7c744f77d2b9ca1d9859fc7fa164b1e04ca6c4d4a04c8f28172a3f5b794ff"
+  },
+  {
+    "path": "C:\\Users\\nrgen\\.codex\\scratch\\SATquery AI\\paired_lab\\evidence\\resumed\\mci\\test_000462\\result-cpu.json",
+    "bytes": 997,
+    "sha256": "c460b1560253c9c4f101b68578e1cd5ed541310170ce38581cdfd80b7c46d299"
+  },
+  {
+    "path": "C:\\Users\\nrgen\\.codex\\scratch\\SATquery AI\\paired_lab\\evidence\\resumed\\mci\\test_000462\\result.json",
+    "bytes": 911,
+    "sha256": "036aecbd45d62f56a8cda09154f73215e6f6544794dd426944018ed848071144"
+  },
+  {
+    "path": "C:\\Users\\nrgen\\.codex\\scratch\\SATquery AI\\paired_lab\\evidence\\resumed\\mci\\test_000466\\result-cpu.json",
+    "bytes": 774,
+    "sha256": "789904989f802456d6200faf8c651a60fe28100b0800108bac68e187730f6bd6"
+  },
+  {
+    "path": "C:\\Users\\nrgen\\.codex\\scratch\\SATquery AI\\paired_lab\\evidence\\resumed\\mci\\test_000466\\result.json",
+    "bytes": 722,
+    "sha256": "a288fe71e63ece9e440d9724eb040e7392f03042a1491815ef4112b5f12d57c2"
+  },
+  {
+    "path": "C:\\Users\\nrgen\\.codex\\scratch\\SATquery AI\\paired_lab\\evidence\\resumed\\mci\\test_000481\\result-cpu.json",
+    "bytes": 835,
+    "sha256": "7f3c18a6f40d12a068fe67d08ab64aeaa52c9138a6e93c3d74ce619128d5110b"
+  },
+  {
+    "path": "C:\\Users\\nrgen\\.codex\\scratch\\SATquery AI\\paired_lab\\evidence\\resumed\\mci\\test_000481\\result.json",
+    "bytes": 780,
+    "sha256": "73f35b44e10b008e7270c4806b2a9092bce03dbec29e7046f052d2715664985f"
+  },
+  {
+    "path": "C:\\Users\\nrgen\\.codex\\scratch\\SATquery AI\\paired_lab\\evidence\\resumed\\mci\\test_000494\\result-cpu.json",
+    "bytes": 943,
+    "sha256": "49cb39d58513b0e20e1dbfcdc04d15ca207bac9c8cac4d4e0dd6fd1d3eddf48d"
+  },
+  {
+    "path": "C:\\Users\\nrgen\\.codex\\scratch\\SATquery AI\\paired_lab\\evidence\\resumed\\mci\\test_000494\\result.json",
+    "bytes": 886,
+    "sha256": "f52871610cb96f0452efa3c28787e2a0a48a4f528083444b818bd649a8200ed1"
+  },
+  {
+    "path": "C:\\Users\\nrgen\\.codex\\scratch\\SATquery AI\\paired_lab\\evidence\\resumed\\mci\\test_000500\\result-cpu.json",
+    "bytes": 809,
+    "sha256": "086db9e4f5e71e34a748c47fceeb9157b02f69be819b7b898ee730fe26d3c81f"
+  },
+  {
+    "path": "C:\\Users\\nrgen\\.codex\\scratch\\SATquery AI\\paired_lab\\evidence\\resumed\\mci\\test_000500\\result.json",
+    "bytes": 752,
+    "sha256": "662b57e95b13c2e5dc51c1b343f3d38539b6b02b9f948e25e8bb220072236208"
+  },
+  {
+    "path": "C:\\Users\\nrgen\\.codex\\scratch\\SATquery AI\\paired_lab\\evidence\\resumed\\mci\\test_000565\\result-cpu.json",
+    "bytes": 666,
+    "sha256": "4e8f705a7217782e2d5e4d913b7eb6f27f072ff4717caf04e30ebee640411582"
+  },
+  {
+    "path": "C:\\Users\\nrgen\\.codex\\scratch\\SATquery AI\\paired_lab\\evidence\\resumed\\mci\\test_000565\\result.json",
+    "bytes": 614,
+    "sha256": "a983d8f5ed0d3ef7be2df3b72b3353a77395b314043ebf96b798f93189567400"
+  },
+  {
+    "path": "C:\\Users\\nrgen\\.codex\\scratch\\SATquery AI\\paired_lab\\evidence\\resumed\\mci\\test_000585\\result-cpu.json",
+    "bytes": 842,
+    "sha256": "4286085119a092366906030d803533e9fe697899bf3e9794be85f0fbde802c34"
+  },
+  {
+    "path": "C:\\Users\\nrgen\\.codex\\scratch\\SATquery AI\\paired_lab\\evidence\\resumed\\mci\\test_000585\\result.json",
+    "bytes": 769,
+    "sha256": "c2423999d50c1dfa6c8e4d3199fcea751fe59b08fe0686665335c728b1ba0063"
+  },
+  {
+    "path": "C:\\Users\\nrgen\\.codex\\scratch\\SATquery AI\\paired_lab\\evidence\\resumed\\mci\\test_000603\\result-cpu.json",
+    "bytes": 939,
+    "sha256": "643267972ddcd41782a65979cccf6be5fabe0ccbc8f9450b7bc669b091f7fa77"
+  },
+  {
+    "path": "C:\\Users\\nrgen\\.codex\\scratch\\SATquery AI\\paired_lab\\evidence\\resumed\\mci\\test_000603\\result.json",
+    "bytes": 864,
+    "sha256": "631b4098d0b983d2f52fe49c758dba576ea4271f40d060100b56fd156877814c"
+  },
+  {
+    "path": "C:\\Users\\nrgen\\.codex\\scratch\\SATquery AI\\paired_lab\\evidence\\resumed\\mci\\test_000609\\result-cpu.json",
+    "bytes": 745,
+    "sha256": "d00278d5872ed848b2aa5f057bf0b904793af3997a6e7058b865f6effad5a2c1"
+  },
+  {
+    "path": "C:\\Users\\nrgen\\.codex\\scratch\\SATquery AI\\paired_lab\\evidence\\resumed\\mci\\test_000609\\result.json",
+    "bytes": 693,
+    "sha256": "ffbd1c8adfea31f49edcfc98e3d2320161892a735a51055adfab393b6dc88a72"
+  },
+  {
+    "path": "C:\\Users\\nrgen\\.codex\\scratch\\SATquery AI\\paired_lab\\evidence\\resumed\\mci\\test_000610\\result-cpu.json",
+    "bytes": 666,
+    "sha256": "1cba65c2e366864af887429dca80fd4d084f81a2cf64f2372e1b7b8dd9dbad4b"
+  },
+  {
+    "path": "C:\\Users\\nrgen\\.codex\\scratch\\SATquery AI\\paired_lab\\evidence\\resumed\\mci\\test_000610\\result.json",
+    "bytes": 614,
+    "sha256": "3f5088325364f9358a2a3a6d86e4fac699b2e6207d39e987e995bd123cab78fd"
+  },
+  {
+    "path": "C:\\Users\\nrgen\\.codex\\scratch\\SATquery AI\\paired_lab\\evidence\\resumed\\mci\\test_000615\\result-cpu.json",
+    "bytes": 666,
+    "sha256": "76c520aef04dba6533951ba40092e20c29f7f591d3997e87b0047aba9f5978f6"
+  },
+  {
+    "path": "C:\\Users\\nrgen\\.codex\\scratch\\SATquery AI\\paired_lab\\evidence\\resumed\\mci\\test_000615\\result.json",
+    "bytes": 614,
+    "sha256": "de8de0375b506dc519c7e52926669681569f45e24a1d2ae55a973a2003e5a8fc"
+  },
+  {
+    "path": "C:\\Users\\nrgen\\.codex\\scratch\\SATquery AI\\paired_lab\\evidence\\resumed\\mci\\test_000617\\result-cpu.json",
+    "bytes": 866,
+    "sha256": "dd67db7dfdb6f3124e03022ca64ca985f57b21fe99f67fefadcae109c3c2a3c5"
+  },
+  {
+    "path": "C:\\Users\\nrgen\\.codex\\scratch\\SATquery AI\\paired_lab\\evidence\\resumed\\mci\\test_000617\\result.json",
+    "bytes": 804,
+    "sha256": "e16d6878d54834e3ebb5cee64f2c305016abeadeefc5417b263b5463e3c2cfe8"
+  },
+  {
+    "path": "C:\\Users\\nrgen\\.codex\\scratch\\SATquery AI\\paired_lab\\evidence\\resumed\\mci\\test_000620\\result-cpu.json",
+    "bytes": 666,
+    "sha256": "2a685a77878657ac831045d268a04af41c2356f4753a7de2e6128a948fe3a515"
+  },
+  {
+    "path": "C:\\Users\\nrgen\\.codex\\scratch\\SATquery AI\\paired_lab\\evidence\\resumed\\mci\\test_000620\\result.json",
+    "bytes": 614,
+    "sha256": "89edd300004ea2f10be0c9d10e9cb53cf7c835318018c7832b6d840cf1f86712"
+  },
+  {
+    "path": "C:\\Users\\nrgen\\.codex\\scratch\\SATquery AI\\paired_lab\\evidence\\resumed\\mci\\test_000621\\result-cpu.json",
+    "bytes": 1162,
+    "sha256": "8602552bbd8a6800712d2f0e7f297eb0d467c4cdf1ddfcbf784430e97bba5bf0"
+  },
+  {
+    "path": "C:\\Users\\nrgen\\.codex\\scratch\\SATquery AI\\paired_lab\\evidence\\resumed\\mci\\test_000621\\result.json",
+    "bytes": 1054,
+    "sha256": "6aa686fb2ad99be53a4f788e6c6a4eeec763f4fdcbb75b970c4f6ab2c94eae82"
+  },
+  {
+    "path": "C:\\Users\\nrgen\\.codex\\scratch\\SATquery AI\\paired_lab\\evidence\\resumed\\mci\\test_000629\\result-cpu.json",
+    "bytes": 682,
+    "sha256": "19e541eb51588109babfebc1b7e18ef210646c36df316ce4302b16ed3ec05755"
+  },
+  {
+    "path": "C:\\Users\\nrgen\\.codex\\scratch\\SATquery AI\\paired_lab\\evidence\\resumed\\mci\\test_000629\\result.json",
+    "bytes": 630,
+    "sha256": "3b6324345c89cf75eef362a6e76f29dd3a39f1818486a8d58765bbf6e913b209"
+  },
+  {
+    "path": "C:\\Users\\nrgen\\.codex\\scratch\\SATquery AI\\paired_lab\\evidence\\resumed\\mci\\test_000639\\result-cpu.json",
+    "bytes": 666,
+    "sha256": "29b6c264c469ce3ed2848517425d8adcdb82adeb0b083f3e0e5c52f3dc36f7df"
+  },
+  {
+    "path": "C:\\Users\\nrgen\\.codex\\scratch\\SATquery AI\\paired_lab\\evidence\\resumed\\mci\\test_000639\\result.json",
+    "bytes": 614,
+    "sha256": "2e29d470958951e4d5e8df79f433219b834826f4f35892bc0e4ec23bbda73653"
+  },
+  {
+    "path": "C:\\Users\\nrgen\\.codex\\scratch\\SATquery AI\\paired_lab\\evidence\\resumed\\mci\\test_000644\\result-cpu.json",
+    "bytes": 855,
+    "sha256": "7467f912e7218aa99ae8ce1de5405483971ce21f65c017cfc4a1518040976414"
+  },
+  {
+    "path": "C:\\Users\\nrgen\\.codex\\scratch\\SATquery AI\\paired_lab\\evidence\\resumed\\mci\\test_000644\\result.json",
+    "bytes": 786,
+    "sha256": "e96edfa2f640de5fec57306345f50904d4ec00b39bd78e8fd6a0df75b6ff187e"
+  },
+  {
+    "path": "C:\\Users\\nrgen\\.codex\\scratch\\SATquery AI\\paired_lab\\evidence\\resumed\\mci\\test_000653\\result-cpu.json",
+    "bytes": 904,
+    "sha256": "2b80e2d66dc07180da69150feec148ff0f7d305ffe395d80de6e3e9b7821fcd7"
+  },
+  {
+    "path": "C:\\Users\\nrgen\\.codex\\scratch\\SATquery AI\\paired_lab\\evidence\\resumed\\mci\\test_000653\\result.json",
+    "bytes": 827,
+    "sha256": "f6eb8710f6fd52f83a7decfd8022151a94a13cf6bb6ed6abada140db2107b631"
+  },
+  {
+    "path": "C:\\Users\\nrgen\\.codex\\scratch\\SATquery AI\\paired_lab\\evidence\\resumed\\mci\\test_000655\\result-cpu.json",
+    "bytes": 865,
+    "sha256": "4ec885fcf9fb7af8b432981830268b5ef0400f1bba7eeb58dd62d0feef7edd49"
+  },
+  {
+    "path": "C:\\Users\\nrgen\\.codex\\scratch\\SATquery AI\\paired_lab\\evidence\\resumed\\mci\\test_000655\\result.json",
+    "bytes": 793,
+    "sha256": "c1b756285261773b28817040ca0aca4e7c5cc4c452f93d552da7f6bf74979864"
+  },
+  {
+    "path": "C:\\Users\\nrgen\\.codex\\scratch\\SATquery AI\\paired_lab\\evidence\\resumed\\mci\\test_000679\\result-cpu.json",
+    "bytes": 666,
+    "sha256": "b06fef11a438def5f95b3b01141eeee029f7ce18492450cfd175e1c67f8be6b0"
+  },
+  {
+    "path": "C:\\Users\\nrgen\\.codex\\scratch\\SATquery AI\\paired_lab\\evidence\\resumed\\mci\\test_000679\\result.json",
+    "bytes": 614,
+    "sha256": "8105a8fc4a1c80502b0429302cc503e955de1f16416f2e44711876fba81d40cc"
+  },
+  {
+    "path": "C:\\Users\\nrgen\\.codex\\scratch\\SATquery AI\\paired_lab\\evidence\\resumed\\mci\\test_000767\\result-cpu.json",
+    "bytes": 666,
+    "sha256": "245a5e8a2358348a900697d2b6e3ffe2ee8d6f99156b0168489ff5ab10b6cec8"
+  },
+  {
+    "path": "C:\\Users\\nrgen\\.codex\\scratch\\SATquery AI\\paired_lab\\evidence\\resumed\\mci\\test_000767\\result.json",
+    "bytes": 614,
+    "sha256": "bae237866a8bb2fb10663dbdeb68e8b635594ddab39dba2c378f3eb52fb60b78"
+  },
+  {
+    "path": "C:\\Users\\nrgen\\.codex\\scratch\\SATquery AI\\paired_lab\\evidence\\resumed\\mci\\test_000778\\result-cpu.json",
+    "bytes": 879,
+    "sha256": "82aceb5acfb1d188004a74881b09170b59e87585d61a2a2c3e0f6fe9cde5f8c5"
+  },
+  {
+    "path": "C:\\Users\\nrgen\\.codex\\scratch\\SATquery AI\\paired_lab\\evidence\\resumed\\mci\\test_000778\\result.json",
+    "bytes": 811,
+    "sha256": "74f5f8ce5ef1cc40a7035651dc15a9f32321baec7509262476e2f6bd2c2dc168"
+  },
+  {
+    "path": "C:\\Users\\nrgen\\.codex\\scratch\\SATquery AI\\paired_lab\\evidence\\resumed\\mci\\test_000782\\result-cpu.json",
+    "bytes": 666,
+    "sha256": "625990ee48ced24c6b1976e3c342bc3c9cd4cf2c5d4e8cb27107b3fe03ef9677"
+  },
+  {
+    "path": "C:\\Users\\nrgen\\.codex\\scratch\\SATquery AI\\paired_lab\\evidence\\resumed\\mci\\test_000782\\result.json",
+    "bytes": 614,
+    "sha256": "65b921a140b3857b01d4e36bede30814eda0e9cc3349c283d92a75a3666f85fe"
+  },
+  {
+    "path": "C:\\Users\\nrgen\\.codex\\scratch\\SATquery AI\\paired_lab\\evidence\\resumed\\mci\\test_000789\\result-cpu.json",
+    "bytes": 722,
+    "sha256": "d3a45df8fa5611aa60f6b03696dd4da7369128a677203edf70cb4d555f51c128"
+  },
+  {
+    "path": "C:\\Users\\nrgen\\.codex\\scratch\\SATquery AI\\paired_lab\\evidence\\resumed\\mci\\test_000789\\result.json",
+    "bytes": 668,
+    "sha256": "36a8ecc7bce4931a24024f4454eb59c2ea16cc722413ab1d17afc3e575e9f6e7"
+  },
+  {
+    "path": "C:\\Users\\nrgen\\.codex\\scratch\\SATquery AI\\paired_lab\\evidence\\resumed\\mci\\test_000907\\result-cpu.json",
+    "bytes": 666,
+    "sha256": "8d5197ae68457939d1829d7378f679ec6fb4cd7c4cc7f992d88e2bb2a727cac7"
+  },
+  {
+    "path": "C:\\Users\\nrgen\\.codex\\scratch\\SATquery AI\\paired_lab\\evidence\\resumed\\mci\\test_000907\\result.json",
+    "bytes": 614,
+    "sha256": "aa4e0841c3fc03823e1d32c1e77c28b6c5a7b6d7b5e0779d0898f7f03f7a7592"
+  },
+  {
+    "path": "C:\\Users\\nrgen\\.codex\\scratch\\SATquery AI\\paired_lab\\evidence\\resumed\\mci\\test_000915\\result-cpu.json",
+    "bytes": 666,
+    "sha256": "5ba226c60dea125b3db1e0e8ab6d78968501299aec85d3895bfa73d326cd0ba3"
+  },
+  {
+    "path": "C:\\Users\\nrgen\\.codex\\scratch\\SATquery AI\\paired_lab\\evidence\\resumed\\mci\\test_000915\\result.json",
+    "bytes": 614,
+    "sha256": "d1d289d82482475a02d099671354750bde9eb8f6b6fea093c82f76c6dc2cd68a"
+  },
+  {
+    "path": "C:\\Users\\nrgen\\.codex\\scratch\\SATquery AI\\paired_lab\\evidence\\resumed\\mci\\test_000963\\result-cpu.json",
+    "bytes": 666,
+    "sha256": "27036b1ca38835a95ddfb676c09d5aad90c546537374403a972ff0fba347e421"
+  },
+  {
+    "path": "C:\\Users\\nrgen\\.codex\\scratch\\SATquery AI\\paired_lab\\evidence\\resumed\\mci\\test_000963\\result.json",
+    "bytes": 614,
+    "sha256": "863e05e9fffa1a5fb60d7fb64f58b022f0bb66ed26dee80416ebfe28f49c4e86"
+  },
+  {
+    "path": "C:\\Users\\nrgen\\.codex\\scratch\\SATquery AI\\paired_lab\\evidence\\resumed\\mci\\test_001015\\result-cpu.json",
+    "bytes": 666,
+    "sha256": "c7c0fe3a41cc7e2cb28f712ff90944bc3206ea28333475987aa79972d7722d8f"
+  },
+  {
+    "path": "C:\\Users\\nrgen\\.codex\\scratch\\SATquery AI\\paired_lab\\evidence\\resumed\\mci\\test_001015\\result.json",
+    "bytes": 614,
+    "sha256": "9e8dc1eff6b2d443894b6c57991608128613fea04294ee44aebf5096ae154fe4"
+  },
+  {
+    "path": "C:\\Users\\nrgen\\.codex\\scratch\\SATquery AI\\paired_lab\\evidence\\resumed\\mci\\test_001020\\result-cpu.json",
+    "bytes": 666,
+    "sha256": "6f34d0dfb909be7869385b5857fec0524f2a929f04933759945612eebfd3c345"
+  },
+  {
+    "path": "C:\\Users\\nrgen\\.codex\\scratch\\SATquery AI\\paired_lab\\evidence\\resumed\\mci\\test_001020\\result.json",
+    "bytes": 614,
+    "sha256": "cc53ae6c429a9e6c3753ca7c7ba53423cdfc7acd0591e699f47ae53dfb05f042"
+  },
+  {
+    "path": "C:\\Users\\nrgen\\.codex\\scratch\\SATquery AI\\paired_lab\\evidence\\resumed\\mci\\test_001052\\result-cpu.json",
+    "bytes": 666,
+    "sha256": "dda81ead80d31a3357dbe02e7b1b5603a386d4bf1dcec3cbd47add343bae5655"
+  },
+  {
+    "path": "C:\\Users\\nrgen\\.codex\\scratch\\SATquery AI\\paired_lab\\evidence\\resumed\\mci\\test_001052\\result.json",
+    "bytes": 614,
+    "sha256": "de050dec13e5a0b567ebc29ac41d23663342caadb41d361696756c0cbaa1a433"
+  },
+  {
+    "path": "C:\\Users\\nrgen\\.codex\\scratch\\SATquery AI\\paired_lab\\evidence\\resumed\\mci\\test_001072\\result-cpu.json",
+    "bytes": 797,
+    "sha256": "468c9a9178b94c918322497b9edb7d8611a90e8ebb124c25bbce2ce9a2391e22"
+  },
+  {
+    "path": "C:\\Users\\nrgen\\.codex\\scratch\\SATquery AI\\paired_lab\\evidence\\resumed\\mci\\test_001072\\result.json",
+    "bytes": 745,
+    "sha256": "4c800e664c8535f29b2874bfa544e37fd365259eb44eb293efc59b2ddf621463"
+  },
+  {
+    "path": "C:\\Users\\nrgen\\.codex\\scratch\\SATquery AI\\paired_lab\\evidence\\resumed\\mci\\test_001095\\result-cpu.json",
+    "bytes": 799,
+    "sha256": "e7f8b449022533fa20c62a3678d9808cdcbdec3ce19f63ed97945beb3f5e12b3"
+  },
+  {
+    "path": "C:\\Users\\nrgen\\.codex\\scratch\\SATquery AI\\paired_lab\\evidence\\resumed\\mci\\test_001095\\result.json",
+    "bytes": 747,
+    "sha256": "5e89f351534eb98f8c531e663b68913a7e9c9fb7501cfbe9f7dbc8ef1524ed5e"
+  },
+  {
+    "path": "C:\\Users\\nrgen\\.codex\\scratch\\SATquery AI\\paired_lab\\evidence\\resumed\\mci\\test_001121\\result-cpu.json",
+    "bytes": 886,
+    "sha256": "32f2c279aea32a8df27bc0f3989a9676cfa09e3b2d183dc2d18bffb5b5524e39"
+  },
+  {
+    "path": "C:\\Users\\nrgen\\.codex\\scratch\\SATquery AI\\paired_lab\\evidence\\resumed\\mci\\test_001121\\result.json",
+    "bytes": 820,
+    "sha256": "a9b6ebcb5dc323f79db5156c7d5b73acc51c573f7f39567055a7a2ddc28754ec"
+  },
+  {
+    "path": "C:\\Users\\nrgen\\.codex\\scratch\\SATquery AI\\paired_lab\\evidence\\resumed\\mci\\test_001172\\result-cpu.json",
+    "bytes": 932,
+    "sha256": "cf6a3c28e95f8f2022bfdd0a098af5386432fd28b28af2c2905b1e35eb87196a"
+  },
+  {
+    "path": "C:\\Users\\nrgen\\.codex\\scratch\\SATquery AI\\paired_lab\\evidence\\resumed\\mci\\test_001172\\result.json",
+    "bytes": 849,
+    "sha256": "59f8ac418bd8588856dfc593e06e54b4fbb8e8b5fcacb6eddde708fc179deb33"
+  },
+  {
+    "path": "C:\\Users\\nrgen\\.codex\\scratch\\SATquery AI\\paired_lab\\evidence\\resumed\\mci\\test_001199\\result-cpu.json",
+    "bytes": 875,
+    "sha256": "a6607b8781433f849f0b11d70c5be4f3b4d7f4430ba3b0dfbbaa116da32b12a2"
+  },
+  {
+    "path": "C:\\Users\\nrgen\\.codex\\scratch\\SATquery AI\\paired_lab\\evidence\\resumed\\mci\\test_001199\\result.json",
+    "bytes": 801,
+    "sha256": "323e43cd6a0328cc7ba8a43c7a1eb8dfe20f4b7315019dc2794396e6a82c3989"
+  },
+  {
+    "path": "C:\\Users\\nrgen\\.codex\\scratch\\SATquery AI\\paired_lab\\evidence\\resumed\\mci\\test_001224\\result-cpu.json",
+    "bytes": 670,
+    "sha256": "22c322c13eac573da612a56044eb7c8e4b9fc4e8f2eb52d48654b704f0555dc8"
+  },
+  {
+    "path": "C:\\Users\\nrgen\\.codex\\scratch\\SATquery AI\\paired_lab\\evidence\\resumed\\mci\\test_001224\\result.json",
+    "bytes": 618,
+    "sha256": "c00c2e55b19e9a862ecbef40988ea8a5730a820d8b2fc76f5442c5fa4dd68ac1"
+  },
+  {
+    "path": "C:\\Users\\nrgen\\.codex\\scratch\\SATquery AI\\paired_lab\\evidence\\resumed\\mci\\test_001225\\result-cpu.json",
+    "bytes": 840,
+    "sha256": "a8dbb0f487a179e00b54156e2df24acb36806b472d4e73ea26f0e203c2d1be48"
+  },
+  {
+    "path": "C:\\Users\\nrgen\\.codex\\scratch\\SATquery AI\\paired_lab\\evidence\\resumed\\mci\\test_001225\\result.json",
+    "bytes": 779,
+    "sha256": "0f76b904e38b6555bef56b5e8f7f84bb5b1c9e0790b459b440507bd415e49f03"
+  },
+  {
+    "path": "C:\\Users\\nrgen\\.codex\\scratch\\SATquery AI\\paired_lab\\evidence\\resumed\\mci\\test_001232\\result-cpu.json",
+    "bytes": 940,
+    "sha256": "c93a0f4efb25fc0a4d7ccdfa7007bb7b307a2a3f154755eeb45bfd6b9af8e3ac"
+  },
+  {
+    "path": "C:\\Users\\nrgen\\.codex\\scratch\\SATquery AI\\paired_lab\\evidence\\resumed\\mci\\test_001232\\result.json",
+    "bytes": 859,
+    "sha256": "a8e4685b0559fcbf76aea0496fb19b9583d94fe455b3b19c823500ac558c2e42"
+  },
+  {
+    "path": "C:\\Users\\nrgen\\.codex\\scratch\\SATquery AI\\paired_lab\\evidence\\resumed\\mci\\test_001275\\result-cpu.json",
+    "bytes": 860,
+    "sha256": "b56fb38965a81a651a06a7522794c89d331ff7d7efdbb26d33c76bc1c3f0867f"
+  },
+  {
+    "path": "C:\\Users\\nrgen\\.codex\\scratch\\SATquery AI\\paired_lab\\evidence\\resumed\\mci\\test_001275\\result.json",
+    "bytes": 802,
+    "sha256": "1ba41db8414b526f3fdd85a950cf91babfa14f2b2ad11de87c28032aa07ac4b5"
+  },
+  {
+    "path": "C:\\Users\\nrgen\\.codex\\scratch\\SATquery AI\\paired_lab\\evidence\\resumed\\mci\\test_001294\\result-cpu.json",
+    "bytes": 941,
+    "sha256": "9bfcae6ad301775927f12956f8810c9d6d80c579a25e441195453c1349b06d7b"
+  },
+  {
+    "path": "C:\\Users\\nrgen\\.codex\\scratch\\SATquery AI\\paired_lab\\evidence\\resumed\\mci\\test_001294\\result.json",
+    "bytes": 882,
+    "sha256": "77d28e1dac7a85a171c42358b66b32116319ef39ebd5100a0593acd01489a292"
+  },
+  {
+    "path": "C:\\Users\\nrgen\\.codex\\scratch\\SATquery AI\\paired_lab\\evidence\\resumed\\mci\\test_001344\\result-cpu.json",
+    "bytes": 666,
+    "sha256": "cd615c8493a040a9b50ed506bec4eb5a74f7a7643804285d1f1b1874e22cddf4"
+  },
+  {
+    "path": "C:\\Users\\nrgen\\.codex\\scratch\\SATquery AI\\paired_lab\\evidence\\resumed\\mci\\test_001344\\result.json",
+    "bytes": 614,
+    "sha256": "82b4d8b0ca5a52f8b4c72d9e40508636c58d6e0ae82d1de54e84fc98cd584579"
+  },
+  {
+    "path": "C:\\Users\\nrgen\\.codex\\scratch\\SATquery AI\\paired_lab\\evidence\\resumed\\mci\\test_001355\\result-cpu.json",
+    "bytes": 707,
+    "sha256": "91256ba9775ba084fab8162ba16b294aa3f7c3327f36a02f36a5156e29f2ec93"
+  },
+  {
+    "path": "C:\\Users\\nrgen\\.codex\\scratch\\SATquery AI\\paired_lab\\evidence\\resumed\\mci\\test_001355\\result.json",
+    "bytes": 653,
+    "sha256": "3663e58bd5fbeb77b50ef3db033192a06f37d6904aa649bbb818107169510e37"
+  },
+  {
+    "path": "C:\\Users\\nrgen\\.codex\\scratch\\SATquery AI\\paired_lab\\evidence\\resumed\\mci\\test_001360\\result-cpu.json",
+    "bytes": 933,
+    "sha256": "a14abd9b104d7ae24472d01b4dc830b22f373855faade3355644ab7c2fa034ff"
+  },
+  {
+    "path": "C:\\Users\\nrgen\\.codex\\scratch\\SATquery AI\\paired_lab\\evidence\\resumed\\mci\\test_001360\\result.json",
+    "bytes": 858,
+    "sha256": "84b1d3ba5afef8b1ef14d3fe1834d920342094d6453c08b07923f077202f5da8"
+  },
+  {
+    "path": "C:\\Users\\nrgen\\.codex\\scratch\\SATquery AI\\paired_lab\\evidence\\resumed\\mci\\test_001389\\result-cpu.json",
+    "bytes": 666,
+    "sha256": "4dd88b0fa2331c1afc2083741f8d0729b50e4f57c3f38ed985f1387d6314843a"
+  },
+  {
+    "path": "C:\\Users\\nrgen\\.codex\\scratch\\SATquery AI\\paired_lab\\evidence\\resumed\\mci\\test_001389\\result.json",
+    "bytes": 614,
+    "sha256": "9f1c959f254e68c5a79bd377a8d70dd08b0f8b01c1a14b8069d1f319dec33be8"
+  },
+  {
+    "path": "C:\\Users\\nrgen\\.codex\\scratch\\SATquery AI\\paired_lab\\evidence\\resumed\\mci\\test_001424\\result-cpu.json",
+    "bytes": 831,
+    "sha256": "c4291ca80b9564969e5844db96bd10afa2ea7df12ed81ec729f2370cce3165e5"
+  },
+  {
+    "path": "C:\\Users\\nrgen\\.codex\\scratch\\SATquery AI\\paired_lab\\evidence\\resumed\\mci\\test_001424\\result.json",
+    "bytes": 773,
+    "sha256": "5a07c5cf2584839831ccff3e130a1f2ed85ca979469ec9cd9fabc9fc3b9f889a"
+  },
+  {
+    "path": "C:\\Users\\nrgen\\.codex\\scratch\\SATquery AI\\paired_lab\\evidence\\resumed\\mci\\test_001511\\result-cpu.json",
+    "bytes": 666,
+    "sha256": "55fbff96a809f50c565ec85badabb23cfe62186a7009a38358541f1f297b2203"
+  },
+  {
+    "path": "C:\\Users\\nrgen\\.codex\\scratch\\SATquery AI\\paired_lab\\evidence\\resumed\\mci\\test_001511\\result.json",
+    "bytes": 614,
+    "sha256": "b5d0364b2d299f62df15846f99fe74d4866c591934227466dced8501da422c82"
+  },
+  {
+    "path": "C:\\Users\\nrgen\\.codex\\scratch\\SATquery AI\\paired_lab\\evidence\\resumed\\mci\\test_001512\\result-cpu.json",
+    "bytes": 666,
+    "sha256": "6492fe0f9898524d5af334451575e1f63065c279adb15c633ad668a1de44c020"
+  },
+  {
+    "path": "C:\\Users\\nrgen\\.codex\\scratch\\SATquery AI\\paired_lab\\evidence\\resumed\\mci\\test_001512\\result.json",
+    "bytes": 614,
+    "sha256": "3e33e3dce33536717d88dc67c19f9bd34e41fdacdaa82b252b6c5e2536b00234"
+  },
+  {
+    "path": "C:\\Users\\nrgen\\.codex\\scratch\\SATquery AI\\paired_lab\\evidence\\resumed\\mci\\test_001543\\result-cpu.json",
+    "bytes": 666,
+    "sha256": "c56cf839190cbd1004fa32472fe7e0c285517771eb2e5a9bff9bdb56c3dc9240"
+  },
+  {
+    "path": "C:\\Users\\nrgen\\.codex\\scratch\\SATquery AI\\paired_lab\\evidence\\resumed\\mci\\test_001543\\result.json",
+    "bytes": 614,
+    "sha256": "8db315dfe1d3368b6d59e2176ba4ee962a48c601801926b8f50962a1c348f70e"
+  },
+  {
+    "path": "C:\\Users\\nrgen\\.codex\\scratch\\SATquery AI\\paired_lab\\evidence\\resumed\\mci\\test_001595\\result-cpu.json",
+    "bytes": 904,
+    "sha256": "68169929fbcd0a3a7e0288ef63592158e94ed329f5d8644676d5cf98b523e6df"
+  },
+  {
+    "path": "C:\\Users\\nrgen\\.codex\\scratch\\SATquery AI\\paired_lab\\evidence\\resumed\\mci\\test_001595\\result.json",
+    "bytes": 821,
+    "sha256": "675cbff5cb99de69dac8915c1e234c9af16d26a815ff3df76e5cdb276e9141f2"
+  },
+  {
+    "path": "C:\\Users\\nrgen\\.codex\\scratch\\SATquery AI\\paired_lab\\evidence\\resumed\\mci\\test_001638\\result-cpu.json",
+    "bytes": 805,
+    "sha256": "aee494f3a91106a33cf22509385cbc487ae574a62d10c4418913ef2cd23a8db8"
+  },
+  {
+    "path": "C:\\Users\\nrgen\\.codex\\scratch\\SATquery AI\\paired_lab\\evidence\\resumed\\mci\\test_001638\\result.json",
+    "bytes": 753,
+    "sha256": "8cbd0669904884f9ddd81a677d0d891e7b2b1ea72be1074f7fbe71f1757b7593"
+  },
+  {
+    "path": "C:\\Users\\nrgen\\.codex\\scratch\\SATquery AI\\paired_lab\\evidence\\resumed\\mci\\test_001680\\result-cpu.json",
+    "bytes": 959,
+    "sha256": "93b5ebefe623d98d7083438e73740e8e1ec3be4871bb1125cc46ee8c8ccd108f"
+  },
+  {
+    "path": "C:\\Users\\nrgen\\.codex\\scratch\\SATquery AI\\paired_lab\\evidence\\resumed\\mci\\test_001680\\result.json",
+    "bytes": 879,
+    "sha256": "9785bad4518f49ed51c23aeb7503b01a5a8a9ea03c97d8f752925bf59501dcb8"
+  },
+  {
+    "path": "C:\\Users\\nrgen\\.codex\\scratch\\SATquery AI\\paired_lab\\evidence\\resumed\\mci\\test_001682\\result-cpu.json",
+    "bytes": 666,
+    "sha256": "60e70c59a918c6456e1ec394173b4ee2b0542c160b52f4422421127ff20ff39c"
+  },
+  {
+    "path": "C:\\Users\\nrgen\\.codex\\scratch\\SATquery AI\\paired_lab\\evidence\\resumed\\mci\\test_001682\\result.json",
+    "bytes": 614,
+    "sha256": "e218304266ac28dc7684d025e2e65624cd44866ccb8c72fbc7a933886889dea8"
+  },
+  {
+    "path": "C:\\Users\\nrgen\\.codex\\scratch\\SATquery AI\\paired_lab\\evidence\\resumed\\mci\\test_001696\\result-cpu.json",
+    "bytes": 811,
+    "sha256": "fc85cf8fc5babcf3d7dfc83f1383d24be83ce0ef8dd44f3686c148ebb7476c1a"
+  },
+  {
+    "path": "C:\\Users\\nrgen\\.codex\\scratch\\SATquery AI\\paired_lab\\evidence\\resumed\\mci\\test_001696\\result.json",
+    "bytes": 759,
+    "sha256": "188f91217b480476b4d8a175d47af671198ab1c7cb9d40ef60c888c32189ea6e"
+  },
+  {
+    "path": "C:\\Users\\nrgen\\.codex\\scratch\\SATquery AI\\paired_lab\\evidence\\resumed\\mci\\test_001699\\result-cpu.json",
+    "bytes": 666,
+    "sha256": "a0be715acdec17beb0adfa4d6f3fe1ada66bf8fb2ead8a0cf5137bdb7b1aa30a"
+  },
+  {
+    "path": "C:\\Users\\nrgen\\.codex\\scratch\\SATquery AI\\paired_lab\\evidence\\resumed\\mci\\test_001699\\result.json",
+    "bytes": 614,
+    "sha256": "0cc94aa844279a0e6d068d3e93b61505dd6b572e134b6a9ccd885e29cb471f67"
+  },
+  {
+    "path": "C:\\Users\\nrgen\\.codex\\scratch\\SATquery AI\\paired_lab\\evidence\\resumed\\mci\\test_001727\\result-cpu.json",
+    "bytes": 666,
+    "sha256": "9069f6851bfc076966d89fa10dad062f2109435c60f0633e1b816b3c1f04125b"
+  },
+  {
+    "path": "C:\\Users\\nrgen\\.codex\\scratch\\SATquery AI\\paired_lab\\evidence\\resumed\\mci\\test_001727\\result.json",
+    "bytes": 614,
+    "sha256": "07003e23845833e28cdde9abebb9dbd6d18865b67ee23e8a6f7fc5051a7d7f0b"
+  },
+  {
+    "path": "C:\\Users\\nrgen\\.codex\\scratch\\SATquery AI\\paired_lab\\evidence\\resumed\\mci\\test_001758\\result-cpu.json",
+    "bytes": 666,
+    "sha256": "c956149e983ee9327d172bc6cf69199233d347f9cf366278adf7891f58e73158"
+  },
+  {
+    "path": "C:\\Users\\nrgen\\.codex\\scratch\\SATquery AI\\paired_lab\\evidence\\resumed\\mci\\test_001758\\result.json",
+    "bytes": 614,
+    "sha256": "401306a6c2f27fe260fe61067dd97458ca6a698d1e531c7c3614d9122101b469"
+  },
+  {
+    "path": "C:\\Users\\nrgen\\.codex\\scratch\\SATquery AI\\paired_lab\\evidence\\resumed\\mci\\test_001765\\result-cpu.json",
+    "bytes": 666,
+    "sha256": "86b012bad1b33373cf0cbe7c5ee8e44fe782011f61c3d3d2956fcecd7e865f55"
+  },
+  {
+    "path": "C:\\Users\\nrgen\\.codex\\scratch\\SATquery AI\\paired_lab\\evidence\\resumed\\mci\\test_001765\\result.json",
+    "bytes": 614,
+    "sha256": "b4b762c49fd531d297ce03430f6ed0daff981785856a09ac0730ab189a0f599f"
+  },
+  {
+    "path": "C:\\Users\\nrgen\\.codex\\scratch\\SATquery AI\\paired_lab\\evidence\\resumed\\mci\\test_001771\\result-cpu.json",
+    "bytes": 778,
+    "sha256": "375b534f693abb408582146d72de60f4609f8c0cf3aa3df9a7bef314d1265916"
+  },
+  {
+    "path": "C:\\Users\\nrgen\\.codex\\scratch\\SATquery AI\\paired_lab\\evidence\\resumed\\mci\\test_001771\\result.json",
+    "bytes": 726,
+    "sha256": "379a6a3eaccc4aca6d0e85b9dcce6dabe4c23391f26ea562d586c6267701bf9d"
+  },
+  {
+    "path": "C:\\Users\\nrgen\\.codex\\scratch\\SATquery AI\\paired_lab\\evidence\\resumed\\mci\\test_001796\\result-cpu.json",
+    "bytes": 666,
+    "sha256": "6975c1c7ef25662caf0b2fb35b1611baee15705df41ffc3e0485aed1707a945e"
+  },
+  {
+    "path": "C:\\Users\\nrgen\\.codex\\scratch\\SATquery AI\\paired_lab\\evidence\\resumed\\mci\\test_001796\\result.json",
+    "bytes": 614,
+    "sha256": "cc6166fbd1e61dde284f9a3eee22f4d32f5a00dffb5712ef927daa49f5dba991"
+  },
+  {
+    "path": "C:\\Users\\nrgen\\.codex\\scratch\\SATquery AI\\paired_lab\\evidence\\resumed\\mci\\test_001799\\result-cpu.json",
+    "bytes": 806,
+    "sha256": "6c828f541b88410ad750598562827e0288e175b6e3d4ebedb2dc9f0009db065d"
+  },
+  {
+    "path": "C:\\Users\\nrgen\\.codex\\scratch\\SATquery AI\\paired_lab\\evidence\\resumed\\mci\\test_001799\\result.json",
+    "bytes": 754,
+    "sha256": "b8f1e5bc383c761ec726d3f292e936f6eb0f7c3bd88faad6e520a6e8bcc1ec9e"
+  },
+  {
+    "path": "C:\\Users\\nrgen\\.codex\\scratch\\SATquery AI\\paired_lab\\evidence\\resumed\\mci\\test_001818\\result-cpu.json",
+    "bytes": 845,
+    "sha256": "8294795fd8d3a68606535be6f60f334abb249ffcbfee344448cf4e1bbc1faf64"
+  },
+  {
+    "path": "C:\\Users\\nrgen\\.codex\\scratch\\SATquery AI\\paired_lab\\evidence\\resumed\\mci\\test_001818\\result.json",
+    "bytes": 785,
+    "sha256": "83029b91ab276437c8f147ae681b333b55c3590145a347df1e8aa092c5d19984"
+  },
+  {
+    "path": "C:\\Users\\nrgen\\.codex\\scratch\\SATquery AI\\paired_lab\\evidence\\resumed\\mci\\test_001827\\result-cpu.json",
+    "bytes": 845,
+    "sha256": "cde3bceee5233c62b7c8d80a29c72319cb3af942f4e2725cc4b8966b5bcd831d"
+  },
+  {
+    "path": "C:\\Users\\nrgen\\.codex\\scratch\\SATquery AI\\paired_lab\\evidence\\resumed\\mci\\test_001827\\result.json",
+    "bytes": 787,
+    "sha256": "9b8be45219bff9d073a0fcdc80af57383b8c73a2812b852d6e77fc7f6bb1ac87"
+  },
+  {
+    "path": "C:\\Users\\nrgen\\.codex\\scratch\\SATquery AI\\paired_lab\\evidence\\resumed\\mci\\test_001848\\result-cpu.json",
+    "bytes": 666,
+    "sha256": "74b08c784ed84ca6901945feb3e08c81b27ef362c30d46886840f642234b233a"
+  },
+  {
+    "path": "C:\\Users\\nrgen\\.codex\\scratch\\SATquery AI\\paired_lab\\evidence\\resumed\\mci\\test_001848\\result.json",
+    "bytes": 614,
+    "sha256": "0d3287c7c9f657cd7c2126645eecb5e3dbfe6ea633e92af6a24c8f7ecc94c0b2"
+  },
+  {
+    "path": "C:\\Users\\nrgen\\.codex\\scratch\\SATquery AI\\paired_lab\\evidence\\resumed\\mci\\test_001856\\result-cpu.json",
+    "bytes": 668,
+    "sha256": "a712d6615077d8f1a6c508c7b0fa5f4784f994fe02681ebd27a72b1850cc691b"
+  },
+  {
+    "path": "C:\\Users\\nrgen\\.codex\\scratch\\SATquery AI\\paired_lab\\evidence\\resumed\\mci\\test_001856\\result.json",
+    "bytes": 616,
+    "sha256": "a54be56db26400efe1595468605e5dbaa1085de290914a700525f01c06893ba9"
+  },
+  {
+    "path": "C:\\Users\\nrgen\\.codex\\scratch\\SATquery AI\\paired_lab\\evidence\\resumed\\mci\\test_001857\\result-cpu.json",
+    "bytes": 666,
+    "sha256": "863b70664402abe9f91e5899e3d418b3b8368b42a420e11c53f5a33db8d475ed"
+  },
+  {
+    "path": "C:\\Users\\nrgen\\.codex\\scratch\\SATquery AI\\paired_lab\\evidence\\resumed\\mci\\test_001857\\result.json",
+    "bytes": 614,
+    "sha256": "321550043a9dd35b43306f7ce2daa0a9e8fc1a863e7a164a312ea331765488a3"
+  },
+  {
+    "path": "C:\\Users\\nrgen\\.codex\\scratch\\SATquery AI\\paired_lab\\evidence\\resumed\\mci\\test_001877\\result-cpu.json",
+    "bytes": 992,
+    "sha256": "d1120664c39c6aeb0f362376260a12856ba33c75cbbbfcef7f0842a650087bc8"
+  },
+  {
+    "path": "C:\\Users\\nrgen\\.codex\\scratch\\SATquery AI\\paired_lab\\evidence\\resumed\\mci\\test_001877\\result.json",
+    "bytes": 920,
+    "sha256": "a24fc713c22ffa4578b6dec6c6b69b1de0fcb9ad83f6d381c59b39ec6c430e5d"
+  },
+  {
+    "path": "C:\\Users\\nrgen\\.codex\\scratch\\SATquery AI\\paired_lab\\evidence\\resumed\\mci\\test_001909\\result-cpu.json",
+    "bytes": 666,
+    "sha256": "745156ec1b2f23975da76676252dd47fa797f4fa0e54c65e14d3841222935a39"
+  },
+  {
+    "path": "C:\\Users\\nrgen\\.codex\\scratch\\SATquery AI\\paired_lab\\evidence\\resumed\\mci\\test_001909\\result.json",
+    "bytes": 614,
+    "sha256": "5c7c2ae4cc2064404e523519dfe7558071d21520eb332e37c0c230b3b357b858"
+  },
+  {
+    "path": "C:\\Users\\nrgen\\.codex\\scratch\\SATquery AI\\paired_lab\\evidence\\resumed\\mci\\test_001922\\result-cpu.json",
+    "bytes": 666,
+    "sha256": "56c0eb6f3c2f57b8f332709c64cb9f2f7b8e2082dd942c6a9781de9527052461"
+  },
+  {
+    "path": "C:\\Users\\nrgen\\.codex\\scratch\\SATquery AI\\paired_lab\\evidence\\resumed\\mci\\test_001922\\result.json",
+    "bytes": 614,
+    "sha256": "3a52eecf5004700a26aafe1686945a2adeed7f11206518444b1e061035b33529"
+  },
+  {
+    "path": "C:\\Users\\nrgen\\.codex\\scratch\\SATquery AI\\paired_lab\\evidence\\resumed\\mci\\test_001960\\result-cpu.json",
+    "bytes": 835,
+    "sha256": "ad66ace5f7437ef89e42e72db96cd79ee0f8514873f6648f2b32fc771ed87e32"
+  },
+  {
+    "path": "C:\\Users\\nrgen\\.codex\\scratch\\SATquery AI\\paired_lab\\evidence\\resumed\\mci\\test_001960\\result.json",
+    "bytes": 773,
+    "sha256": "5e2f14ae224fd108d89dd4c5ecda2ce3205050b032f253d6a47e8893290e84d7"
+  },
+  {
+    "path": "C:\\Users\\nrgen\\.codex\\scratch\\SATquery AI\\paired_lab\\evidence\\resumed\\mci\\test_001979\\result-cpu.json",
+    "bytes": 666,
+    "sha256": "3c30c4acd1c5cb73d2a08583a6146615ce24517d7fc88d316ef1f32f008ed0f2"
+  },
+  {
+    "path": "C:\\Users\\nrgen\\.codex\\scratch\\SATquery AI\\paired_lab\\evidence\\resumed\\mci\\test_001979\\result.json",
+    "bytes": 614,
+    "sha256": "cb0a95e82a6f5a03269291a4ec2fcb80996a71b1f0fe4fc93693cd0fdf490001"
+  },
+  {
+    "path": "C:\\Users\\nrgen\\.codex\\scratch\\SATquery AI\\paired_lab\\evidence\\resumed\\mci\\test_001983\\result-cpu.json",
+    "bytes": 666,
+    "sha256": "a0472f069b83c698a687d6a3414ed202d8b0ddbad06d4c978977afbdb4e294fa"
+  },
+  {
+    "path": "C:\\Users\\nrgen\\.codex\\scratch\\SATquery AI\\paired_lab\\evidence\\resumed\\mci\\test_001983\\result.json",
+    "bytes": 614,
+    "sha256": "2f3e57aa1ecba1fe98fb2df1b013c465aa3e4b7116507615c2edeab0d5080e36"
+  },
+  {
+    "path": "C:\\Users\\nrgen\\.codex\\scratch\\SATquery AI\\paired_lab\\evidence\\resumed\\mci\\test_002020\\result-cpu.json",
+    "bytes": 876,
+    "sha256": "af81688a61e5c45c1fa536f8e56c3b20ee1195cbed798665493b094f1474815c"
+  },
+  {
+    "path": "C:\\Users\\nrgen\\.codex\\scratch\\SATquery AI\\paired_lab\\evidence\\resumed\\mci\\test_002020\\result.json",
+    "bytes": 808,
+    "sha256": "596ff1ef2a55455f37ff93f9ce9fa9b6008e858373bd07ba9f5c76000f327594"
+  },
+  {
+    "path": "C:\\Users\\nrgen\\.codex\\scratch\\SATquery AI\\paired_lab\\evidence\\resumed\\mci\\test_002061\\result-cpu.json",
+    "bytes": 668,
+    "sha256": "8456fd9ef4e872fe0935d2f73216cb4dfc29b89d376f723fd4fcfafe0cdc0c07"
+  },
+  {
+    "path": "C:\\Users\\nrgen\\.codex\\scratch\\SATquery AI\\paired_lab\\evidence\\resumed\\mci\\test_002061\\result.json",
+    "bytes": 616,
+    "sha256": "e7e28ac6c217484359ca3eeb263816de6427f98c15e44f435fa658bd5355c454"
+  },
+  {
+    "path": "C:\\Users\\nrgen\\.codex\\scratch\\SATquery AI\\paired_lab\\evidence\\resumed\\mci\\test_002084\\result-cpu.json",
+    "bytes": 666,
+    "sha256": "ffd3b94abf72b50ae4439b439bed6d45d11073a3cda0dc76f21004b87633fe20"
+  },
+  {
+    "path": "C:\\Users\\nrgen\\.codex\\scratch\\SATquery AI\\paired_lab\\evidence\\resumed\\mci\\test_002084\\result.json",
+    "bytes": 614,
+    "sha256": "87e2f4f1a325d76d3a03ce38463d8153d10fef0f4a3a18915b90f9eb3537384f"
+  },
+  {
+    "path": "C:\\Users\\nrgen\\.codex\\scratch\\SATquery AI\\paired_lab\\evidence\\selected-trials\\ben-test-26-57\\result.json",
+    "bytes": 5454,
+    "sha256": "b8eac9311b7e0bf1eac5df6c0450c9166896aa04eaf201044c18f997cb13903e"
+  },
+  {
+    "path": "C:\\Users\\nrgen\\.codex\\scratch\\SATquery AI\\paired_lab\\evidence\\selected-trials\\ben-test-27-55\\result.json",
+    "bytes": 5558,
+    "sha256": "f21acfa5dc3645f81c2121d63cb502ae4dba1a66529ad588c3c252b7839767b7"
+  },
+  {
+    "path": "C:\\Users\\nrgen\\.codex\\scratch\\SATquery AI\\paired_lab\\evidence\\selected-trials\\ben-test-27-56\\result.json",
+    "bytes": 5374,
+    "sha256": "f1cbc34697fe6727831b72347aaddd707bc4f4b674f9ce6e77a2347db7c7fb64"
+  },
+  {
+    "path": "C:\\Users\\nrgen\\.codex\\scratch\\SATquery AI\\paired_lab\\evidence\\selected-trials\\ben-test-27-57\\result.json",
+    "bytes": 5433,
+    "sha256": "47abc22ebed29ed5423003c2377d8dc75a385ef214ffcf9920710c293018de8b"
+  },
+  {
+    "path": "C:\\Users\\nrgen\\.codex\\scratch\\SATquery AI\\paired_lab\\evidence\\selected-trials\\ben-test-27-58\\result.json",
+    "bytes": 5607,
+    "sha256": "506be271feeadad16e51d9790b5670af17bc51a1682ea16dc0d71cdf5e1bc7aa"
+  },
+  {
+    "path": "C:\\Users\\nrgen\\.codex\\scratch\\SATquery AI\\paired_lab\\evidence\\selected-trials\\ben-test-27-59\\result.json",
+    "bytes": 5613,
+    "sha256": "f780aa9a7778c112d14bc6e71e2e04716c641bbead9ca1a243d2039525f41b9e"
+  },
+  {
+    "path": "C:\\Users\\nrgen\\.codex\\scratch\\SATquery AI\\paired_lab\\evidence\\selected-trials\\ben-validation-33-69\\result.json",
+    "bytes": 5547,
+    "sha256": "17efda494f3c90fb36f38ac13a01298140da5fad06e7ff7d0e8d778486bf154f"
+  },
+  {
+    "path": "C:\\Users\\nrgen\\.codex\\scratch\\SATquery AI\\paired_lab\\evidence\\selected-trials\\ben-validation-33-70\\result.json",
+    "bytes": 5344,
+    "sha256": "3eca1e168d6928da53694e5b48914be5403f4d987f91a237385f534768e3a8b7"
+  },
+  {
+    "path": "C:\\Users\\nrgen\\.codex\\scratch\\SATquery AI\\paired_lab\\evidence\\selected-trials\\ben-validation-34-69\\result.json",
+    "bytes": 5426,
+    "sha256": "a9cd8f0143683fe0f25e8a9b14ca9391836d36fda8da7009cd020f1a159d6ab0"
+  },
+  {
+    "path": "C:\\Users\\nrgen\\.codex\\scratch\\SATquery AI\\paired_lab\\evidence\\selected-trials\\ben-validation-34-70\\result.json",
+    "bytes": 5429,
+    "sha256": "4f4a66f89b7452b319d247b8bad27bfa10d74fc207a10059e1237319140e97e9"
+  },
+  {
+    "path": "C:\\Users\\nrgen\\.codex\\scratch\\SATquery AI\\paired_lab\\evidence\\selected-trials\\ben-validation-34-71\\result.json",
+    "bytes": 5622,
+    "sha256": "f8c77ef7267c3f4d2c3882ede10875b707ea9c890cddfcba8ccfa30cef8ee9c8"
+  },
+  {
+    "path": "C:\\Users\\nrgen\\.codex\\scratch\\SATquery AI\\paired_lab\\evidence\\selected-trials\\ben-validation-35-69\\result.json",
+    "bytes": 5388,
+    "sha256": "40b11a3b506d565fa91a9f3380ae08234a68316588b1d75cf5f3936ceab26618"
+  },
+  {
+    "path": "C:\\Users\\nrgen\\.codex\\scratch\\SATquery AI\\paired_lab\\samples\\ben-test-26-57\\manifest.json",
+    "bytes": 598,
+    "sha256": "02823fa607c8593c6b6b270635271f751b1a4300f5c2ca8c6f423b63caf4313a"
+  },
+  {
+    "path": "C:\\Users\\nrgen\\.codex\\scratch\\SATquery AI\\paired_lab\\samples\\ben-test-27-55\\manifest.json",
+    "bytes": 598,
+    "sha256": "92a6c0c166d50cf894c76a9e25868ce16e5ffe67f5c445b5a362bd9f882ba59e"
+  },
+  {
+    "path": "C:\\Users\\nrgen\\.codex\\scratch\\SATquery AI\\paired_lab\\samples\\ben-test-27-56\\manifest.json",
+    "bytes": 598,
+    "sha256": "78ed0fe73c8c5b64961ebf398a9b3a52ea80cf911fae4322dbead8b94c02fbf9"
+  },
+  {
+    "path": "C:\\Users\\nrgen\\.codex\\scratch\\SATquery AI\\paired_lab\\samples\\ben-test-27-57\\manifest.json",
+    "bytes": 598,
+    "sha256": "9b2a3eb0f6e737da2237084b46cd9b84b5f388e62c73b65bde24a14d5f9e7fe5"
+  },
+  {
+    "path": "C:\\Users\\nrgen\\.codex\\scratch\\SATquery AI\\paired_lab\\samples\\ben-test-27-58\\manifest.json",
+    "bytes": 598,
+    "sha256": "7d288cbdec1c27b6569f843ad2c71753441700e165f81f675696efcbe7544a71"
+  },
+  {
+    "path": "C:\\Users\\nrgen\\.codex\\scratch\\SATquery AI\\paired_lab\\samples\\ben-test-27-59\\manifest.json",
+    "bytes": 598,
+    "sha256": "2fd560258d1f52e7d703298c4c76d86b35873f3c55c49b0655bdb5266bc48990"
+  },
+  {
+    "path": "C:\\Users\\nrgen\\.codex\\scratch\\SATquery AI\\paired_lab\\samples\\ben-validation-33-69\\manifest.json",
+    "bytes": 616,
+    "sha256": "a6a4ba90e5508db42fb0159acf511eb900adf6726a7729ccdc64f2e1de74a2fa"
+  },
+  {
+    "path": "C:\\Users\\nrgen\\.codex\\scratch\\SATquery AI\\paired_lab\\samples\\ben-validation-33-70\\manifest.json",
+    "bytes": 616,
+    "sha256": "912da59647fcb43275c39da092c5e02ba9aaefdc319e3f3564b0e6781a1b937c"
+  },
+  {
+    "path": "C:\\Users\\nrgen\\.codex\\scratch\\SATquery AI\\paired_lab\\samples\\ben-validation-34-69\\manifest.json",
+    "bytes": 616,
+    "sha256": "a085de4a825293cc8622cff2cb1f8424a8a385a8c9e68caf02bb9ca9c4653bce"
+  },
+  {
+    "path": "C:\\Users\\nrgen\\.codex\\scratch\\SATquery AI\\paired_lab\\samples\\ben-validation-34-70\\manifest.json",
+    "bytes": 616,
+    "sha256": "fa912fa2b8dea60b79fe94d22de413949b1ac5ca16ec3ccc8a0f74fdbb4c6f9e"
+  },
+  {
+    "path": "C:\\Users\\nrgen\\.codex\\scratch\\SATquery AI\\paired_lab\\samples\\ben-validation-34-71\\manifest.json",
+    "bytes": 616,
+    "sha256": "545b1f295c7201d0b2150c5c846c224aade6f14f34f848520d21a0f00434fa4a"
+  },
+  {
+    "path": "C:\\Users\\nrgen\\.codex\\scratch\\SATquery AI\\paired_lab\\samples\\ben-validation-35-69\\manifest.json",
+    "bytes": 616,
+    "sha256": "bb7f1d6fece7e219af0615ac09eeaf1f75149609b5ff821a949bf02f93e29bd3"
+  },
+  {
+    "path": "C:\\Users\\nrgen\\.codex\\scratch\\SATquery AI\\paired_lab\\samples\\flood-Bolivia_103757\\manifest.json",
+    "bytes": 1060,
+    "sha256": "8caae75cef107785e3f2b77c745ef637f41af09e208c44ba8c86cc2e4863823e"
+  },
+  {
+    "path": "C:\\Users\\nrgen\\.codex\\scratch\\SATquery AI\\paired_lab\\samples\\flood-Ghana_313799\\manifest.json",
+    "bytes": 1044,
+    "sha256": "a39f095322f4661e3731d4a8cc278340c4087fc201996636bc67ff2adefabf20"
+  },
+  {
+    "path": "C:\\Users\\nrgen\\.codex\\scratch\\SATquery AI\\paired_lab\\samples\\flood-India_900498\\manifest.json",
+    "bytes": 1044,
+    "sha256": "373fcacdd827697d83cc20959ef10381a2474a6a17131bea944f2a8bf8109407"
+  },
+  {
+    "path": "C:\\Users\\nrgen\\.codex\\scratch\\SATquery AI\\paired_lab\\samples\\flood-Mekong_333434\\manifest.json",
+    "bytes": 1049,
+    "sha256": "24617b9005ac5c6e656a1f8c9ec3c60f13f1c9d7a490774dd147f54f46296b62"
+  },
+  {
+    "path": "C:\\Users\\nrgen\\.codex\\scratch\\SATquery AI\\paired_lab\\samples\\flood-Nigeria_417184\\manifest.json",
+    "bytes": 1054,
+    "sha256": "ac5b94ecc352f8715d4d0d3cbedfaba82060577174a27d1dbb3d96e61d6a02fe"
+  },
+  {
+    "path": "C:\\Users\\nrgen\\.codex\\scratch\\SATquery AI\\paired_lab\\samples\\flood-Pakistan_849790\\manifest.json",
+    "bytes": 1059,
+    "sha256": "d2371c56c0a9359f8a372018f05ce5abb95ef4e8d3f61c7cea1113f6dc79ea82"
+  },
+  {
+    "path": "C:\\Users\\nrgen\\.codex\\scratch\\SATquery AI\\paired_lab\\samples\\flood-Paraguay_913449\\manifest.json",
+    "bytes": 1059,
+    "sha256": "40e3898bf7178c102c86d20782043c5e5be8dec3643c83dfe493f33c5c0f3a25"
+  },
+  {
+    "path": "C:\\Users\\nrgen\\.codex\\scratch\\SATquery AI\\paired_lab\\samples\\flood-Somalia_699062\\manifest.json",
+    "bytes": 1054,
+    "sha256": "22c0b69e1577513c75ccb9cfe22fc8a9a1f97227b818d993b4e485801c839fe1"
+  },
+  {
+    "path": "C:\\Users\\nrgen\\.codex\\scratch\\SATquery AI\\paired_lab\\samples\\flood-Spain_6860600\\manifest.json",
+    "bytes": 1049,
+    "sha256": "cea438247c9196f0bc555c02b08c1fba67103c617ba775a13ae5a897a018efaf"
+  },
+  {
+    "path": "C:\\Users\\nrgen\\.codex\\scratch\\SATquery AI\\paired_lab\\samples\\flood-Sri-Lanka_117737\\manifest.json",
+    "bytes": 1064,
+    "sha256": "3c4c706abda04e8bab758410ed259040a503ab1252f4aad91232856d62d06a41"
+  },
+  {
+    "path": "C:\\Users\\nrgen\\.codex\\scratch\\SATquery AI\\paired_lab\\samples\\flood-USA_905409\\manifest.json",
+    "bytes": 1034,
+    "sha256": "f3c85850a35a48bef2af6b03837d585c1378d5b1507e129cc309af90c17c6ef7"
+  },
+  {
+    "path": "C:\\Users\\nrgen\\.codex\\scratch\\SATquery AI\\paired_lab\\samples\\levir-test_102_0512_0000\\manifest.json",
+    "bytes": 452,
+    "sha256": "e45944f298bd15e493b0dffdbbc26bb1d382ea7bb3da4deebe89249d110b5b9d"
+  },
+  {
+    "path": "C:\\Users\\nrgen\\.codex\\scratch\\SATquery AI\\paired_lab\\samples\\levir-test_121_0768_0256\\manifest.json",
+    "bytes": 452,
+    "sha256": "55a1fd39afadec227e185ffbaafc4484ad323435f85658fc684ff57a9b36f904"
+  },
+  {
+    "path": "C:\\Users\\nrgen\\.codex\\scratch\\SATquery AI\\paired_lab\\samples\\levir-test_2_0000_0000\\manifest.json",
+    "bytes": 448,
+    "sha256": "4b9935d4d14e112c1bd0abefcb8ae3b33f980b7b208e6c28dd025bd3e23ab337"
+  },
+  {
+    "path": "C:\\Users\\nrgen\\.codex\\scratch\\SATquery AI\\paired_lab\\samples\\levir-test_2_0000_0512\\manifest.json",
+    "bytes": 448,
+    "sha256": "b647a96b55786d347628f1ff58b227189ec85440b9d513e6ec4f15d202bbe60e"
+  },
+  {
+    "path": "C:\\Users\\nrgen\\.codex\\scratch\\SATquery AI\\paired_lab\\samples\\levir-test_55_0256_0000\\manifest.json",
+    "bytes": 450,
+    "sha256": "9adb5dbbcc290c6c7c5dcc387dac8df6d3a0e689c3da0c3a057895efca3b93e8"
+  },
+  {
+    "path": "C:\\Users\\nrgen\\.codex\\scratch\\SATquery AI\\paired_lab\\samples\\levir-test_77_0512_0256\\manifest.json",
+    "bytes": 450,
+    "sha256": "3d4a9a740823bfdb934e4338c637cf24a67ce5047e58aeeec8ecca9f4f22f697"
+  },
+  {
+    "path": "C:\\Users\\nrgen\\.codex\\scratch\\SATquery AI\\paired_lab\\samples\\levir-test_7_0256_0512\\manifest.json",
+    "bytes": 448,
+    "sha256": "aa931824d43ad41b9fb13bf2d8333701ae33776b3ae11ba2d7cec2eb7f3570a0"
+  },
+  {
+    "path": "C:\\Users\\nrgen\\.codex\\scratch\\SATquery AI\\paired_lab\\samples\\mci-test_000036\\manifest.json",
+    "bytes": 524,
+    "sha256": "72e3ca337d637e723d0c3a4fa83f19992a962288335b6f42c2d937b7e69ee5bd"
+  },
+  {
+    "path": "C:\\Users\\nrgen\\.codex\\scratch\\SATquery AI\\paired_lab\\samples\\mci-test_000233\\manifest.json",
+    "bytes": 524,
+    "sha256": "6b5fe67b302dd3117f77138acb50c292efad16ddb8523ded84d86a8a185eb9b8"
+  },
+  {
+    "path": "C:\\Users\\nrgen\\.codex\\scratch\\SATquery AI\\paired_lab\\samples\\mci-test_000462\\manifest.json",
+    "bytes": 763,
+    "sha256": "82840172054bba9b099aa9f7bf99d66c69efafd98d02f65318e2da0bc33136fb"
+  },
+  {
+    "path": "C:\\Users\\nrgen\\.codex\\scratch\\SATquery AI\\paired_lab\\samples\\mci-test_000585\\manifest.json",
+    "bytes": 648,
+    "sha256": "6765ecaa2f71048dc05395d31479151ff86e1b4f64d6a4983e04efee8fdd364b"
+  },
+  {
+    "path": "C:\\Users\\nrgen\\.codex\\scratch\\SATquery AI\\paired_lab\\samples\\mci-test_001172\\manifest.json",
+    "bytes": 708,
+    "sha256": "6e688aa704e4bcb482f5f681d34db08a61ecb529a9070c432b9edece1c3fa4c1"
+  },
+  {
+    "path": "C:\\Users\\nrgen\\.codex\\scratch\\SATquery AI\\paired_lab\\samples\\mci-test_001638\\manifest.json",
+    "bytes": 647,
+    "sha256": "45e3e0859896050c6b10a545299cffe48d70edb4a05b272f42169c60f98c1b47"
+  },
+  {
+    "path": "C:\\Users\\nrgen\\.codex\\scratch\\SATquery AI\\paired_lab\\samples\\mci-test_001682\\manifest.json",
+    "bytes": 524,
+    "sha256": "8aed3345a64acca0d565beb15245063398b51f164af018d6538dee51933a9184"
+  },
+  {
+    "path": "C:\\Users\\nrgen\\.codex\\scratch\\SATquery AI\\paired_lab\\samples\\mci-test_001857\\manifest.json",
+    "bytes": 524,
+    "sha256": "d3a4180c76709f35afd671f57e13f8eba843cdee7bfabbed8de3e241c8e0ad52"
+  },
+  {
+    "path": "C:\\Users\\nrgen\\.codex\\scratch\\SATquery AI\\ppt_handoff\\examples\\selected.json",
+    "bytes": 3344,
+    "sha256": "a3b2898bd608c7ce85556f89e4b331c9ab0ec3ec76cf9522beb860229c5ef2ee"
+  },
+  {
+    "path": "C:\\Users\\nrgen\\.codex\\scratch\\SATquery AI\\ppt_handoff\\metrics\\dehradun_metadata.json",
+    "bytes": 1149,
+    "sha256": "1499cf2780a14b2374ad6dd0189a92de704161ce4de74175096c2fec3e6aa5f6"
+  },
+  {
+    "path": "C:\\Users\\nrgen\\.codex\\scratch\\SATquery AI\\ppt_handoff\\metrics\\failure_checks.json",
+    "bytes": 7375,
+    "sha256": "559cd803162fae25b62aa679f102030962bed76b9603fd397663529250fd15f6"
+  },
+  {
+    "path": "C:\\Users\\nrgen\\.codex\\scratch\\SATquery AI\\ppt_handoff\\metrics\\ndvi_timing_summary.json",
+    "bytes": 362,
+    "sha256": "a3fcb8c2441dc84a00c57ceda45fd55856220c9a0961f940f71663c18e83001b"
+  },
+  {
+    "path": "C:\\Users\\nrgen\\.codex\\scratch\\SATquery AI\\ppt_handoff\\metrics\\system.json",
+    "bytes": 7520,
+    "sha256": "8f498a7b2dc99d690621630fbf4bffac6f3a06b511823607dc725a17d3a8ec64"
+  },
+  {
+    "path": "C:\\Users\\nrgen\\.codex\\scratch\\SATquery AI\\ppt_handoff\\raw\\adapted_dev_predictions.jsonl",
+    "bytes": 25000,
+    "sha256": "75e4f287bd092bff33e0f9821b2c8c43c05927b5c3873cbf87e77ba83d262e37"
+  },
+  {
+    "path": "C:\\Users\\nrgen\\.codex\\scratch\\SATquery AI\\ppt_handoff\\raw\\adapter_config.json",
+    "bytes": 887,
+    "sha256": "f5f70c0dec3e0ac25cb2ca008636edf283911d7daccad4622e7b08edca2b2e63"
+  },
+  {
+    "path": "C:\\Users\\nrgen\\.codex\\scratch\\SATquery AI\\ppt_handoff\\raw\\baseline_dev_predictions.jsonl",
+    "bytes": 26543,
+    "sha256": "f3c96d9bfe841bb11c35825b0c3751607bc5c09e3c4d8cd233394972cf01367c"
+  },
+  {
+    "path": "C:\\Users\\nrgen\\.codex\\scratch\\SATquery AI\\ppt_handoff\\raw\\calibration-comparison.json",
+    "bytes": 374,
+    "sha256": "74e954841861da1f98d68ceacc471b8e3ddb1fd3d498c79ba500202905cdf3c6"
+  },
+  {
+    "path": "C:\\Users\\nrgen\\.codex\\scratch\\SATquery AI\\ppt_handoff\\raw\\dev.jsonl",
+    "bytes": 21359,
+    "sha256": "c4ce050ea7fb352804e78032512a70dd5856ef7bcd695f9b56a1ef8861d87f77"
+  },
+  {
+    "path": "C:\\Users\\nrgen\\.codex\\scratch\\SATquery AI\\ppt_handoff\\raw\\diagnostic-baseline_summary.json",
+    "bytes": 1029,
+    "sha256": "efdcab30b2a46c25c4997513d89d3ba050e10f0d70d2d43c2bd2d57b8ae5c7e8"
+  },
+  {
+    "path": "C:\\Users\\nrgen\\.codex\\scratch\\SATquery AI\\ppt_handoff\\raw\\diagnostic-manifest_metadata.json",
+    "bytes": 991,
+    "sha256": "1efb6e1e4fae5f6f1a2a6fffbf8d6a35116a64a378a0898a5f88ba3c0d264c63"
+  },
+  {
+    "path": "C:\\Users\\nrgen\\.codex\\scratch\\SATquery AI\\ppt_handoff\\raw\\failure-full-runs.json",
+    "bytes": 11352,
+    "sha256": "b71d547c2604ccb5fa132983d5152288dc986752e829437fe070c65bd1ca9dd4"
+  },
+  {
+    "path": "C:\\Users\\nrgen\\.codex\\scratch\\SATquery AI\\ppt_handoff\\raw\\independent-ndvi-check.json",
+    "bytes": 455,
+    "sha256": "4fdca511d44766d78e9d24ef4e88af0b54a4ed24bb4d0cddc813d5a73618df81"
+  },
+  {
+    "path": "C:\\Users\\nrgen\\.codex\\scratch\\SATquery AI\\ppt_handoff\\raw\\learning_manifest.json",
+    "bytes": 1532,
+    "sha256": "a85dfafcc5f8824a97c56e76b356a416964bbbfca9d1e15a63d89ffd28a081d4"
+  },
+  {
+    "path": "C:\\Users\\nrgen\\.codex\\scratch\\SATquery AI\\ppt_handoff\\raw\\ndvi-integration.json",
+    "bytes": 3244,
+    "sha256": "1f5a915007cec56f6b83b4e1c87eca70a900438694f4b294c9ebda492d651751"
+  },
+  {
+    "path": "C:\\Users\\nrgen\\.codex\\scratch\\SATquery AI\\ppt_handoff\\raw\\ndvi-invalid-v1.json",
+    "bytes": 2993,
+    "sha256": "f51f80848d867edebf383ccc14a6f57f60db6c735e631da80832a40813bc70f7"
+  },
+  {
+    "path": "C:\\Users\\nrgen\\.codex\\scratch\\SATquery AI\\ppt_handoff\\raw\\reference-item.json",
+    "bytes": 25107,
+    "sha256": "913518d585157397b91bb3d41a8c41685db8eba81fabc1679b3be39874b3283a"
+  },
+  {
+    "path": "C:\\Users\\nrgen\\.codex\\scratch\\SATquery AI\\ppt_handoff\\raw\\scene-manifest.json",
+    "bytes": 2125,
+    "sha256": "ab82a8bf02d7bd91b3933963e9f0cea7a879fe4909402e9caabf704bc0080020"
+  },
+  {
+    "path": "C:\\Users\\nrgen\\.codex\\scratch\\SATquery AI\\ppt_handoff\\raw\\server-memory-snapshot.txt",
+    "bytes": 1427,
+    "sha256": "82bac2ff61961dfea073ea5ed957ad2b0e7d8919cf300c6480488dab017f4aa8"
+  },
+  {
+    "path": "C:\\Users\\nrgen\\.codex\\scratch\\SATquery AI\\ppt_handoff\\raw\\test-output.txt",
+    "bytes": 509,
+    "sha256": "d89c676c22d4b6628fad22435e8d6107d9d1579b9c998cc3b4024477eac08c02"
+  },
+  {
+    "path": "C:\\Users\\nrgen\\.codex\\scratch\\SATquery AI\\ppt_handoff\\raw\\train.jsonl",
+    "bytes": 264260,
+    "sha256": "fe5b5e985d3b46fe70a748638f947ec4f3fa636958017d840e092d4c3b89cf04"
+  },
+  {
+    "path": "C:\\Users\\nrgen\\.codex\\scratch\\SATquery AI\\ppt_handoff\\raw\\training_result.json",
+    "bytes": 98003,
+    "sha256": "d506dddfa51b46963b3f331f9a9905de7456418ac6112388d8b46f0cff33811f"
+  },
+  {
+    "path": "C:\\Users\\nrgen\\.codex\\scratch\\SATquery AI\\ppt_handoff\\raw\\vqa_completed_runs.json",
+    "bytes": 12205,
+    "sha256": "3566811010e032f3ebc7c8ca48b58a69be0a6bdfc0711e1e08c0a2b2a77cf099"
+  },
+  {
+    "path": "C:\\Users\\nrgen\\.codex\\scratch\\SATquery AI\\ppt_handoff\\screenshots\\manifest.json",
+    "bytes": 2121,
+    "sha256": "5abfc96a2c51cb9deae4041575ab3782a03f84864eaeb7d59743906e8e1c0852"
+  },
+  {
+    "path": "C:\\Users\\nrgen\\.codex\\scratch\\SATquery AI\\ppt_handoff\\scripts\\collect.py",
+    "bytes": 7293,
+    "sha256": "7148016fc0aaa536b7fa0ff36bf74f90f9d1a7d5ea8cb4364c3809ff6e09a2e9"
+  },
+  {
+    "path": "C:\\Users\\nrgen\\.codex\\scratch\\SATquery AI\\ppt_handoff\\scripts\\failure_checks.py",
+    "bytes": 2155,
+    "sha256": "538c2267d867d94d84d05630c85bf4187e93ea04f472fda06acaf8b96f6903f4"
+  },
+  {
+    "path": "C:\\Users\\nrgen\\.codex\\scratch\\SATquery AI\\ppt_handoff\\scripts\\plots.py",
+    "bytes": 4784,
+    "sha256": "29dd2ec26b2ab63dd677be352a56fa4b42af3570dce61882041d7e6515c52e2e"
+  },
+  {
+    "path": "C:\\Users\\nrgen\\.codex\\scratch\\SATquery AI\\ppt_handoff\\scripts\\reports.py",
+    "bytes": 10830,
+    "sha256": "57715955a523fb2f20bfe935cf3e6bfb201593629d68ee876ade11c9fe866838"
+  },
+  {
+    "path": "C:\\Users\\nrgen\\.codex\\scratch\\SATquery AI\\ppt_handoff\\raw\\source\\fetch_scene.py",
+    "bytes": 2752,
+    "sha256": "68e6a65d8186f3ebcfe7f180c19a3c35031e73debcb923962e4b0142dc6e69c9"
+  },
+  {
+    "path": "C:\\Users\\nrgen\\.codex\\scratch\\SATquery AI\\ppt_handoff\\raw\\source\\geo.py",
+    "bytes": 7467,
+    "sha256": "8972536cc3f5a930f002243bfec7c1d6aa9d19c324c282ebe2dd4dc0fadc9a20"
+  },
+  {
+    "path": "C:\\Users\\nrgen\\.codex\\scratch\\SATquery AI\\ppt_handoff\\raw\\source\\independent_ndvi_check.py",
+    "bytes": 3002,
+    "sha256": "7abc1fd33a3d85565deb43f38192e159566a316b1ce72e420fe982ee2350a97b"
+  },
+  {
+    "path": "C:\\Users\\nrgen\\.codex\\scratch\\SATquery AI\\ppt_handoff\\raw\\source\\prepare_learning.py",
+    "bytes": 3094,
+    "sha256": "efc94d6b5afc6207534eafd1b180a541e60799934f8aa8af7345ee647c19c6c6"
+  },
+  {
+    "path": "C:\\Users\\nrgen\\.codex\\scratch\\SATquery AI\\ppt_handoff\\raw\\source\\requirements-app.txt",
+    "bytes": 72,
+    "sha256": "200445b098f06b2cf7d42a408902715dfe162047ce59e426f9c1538a074f2c7f"
+  },
+  {
+    "path": "C:\\Users\\nrgen\\.codex\\scratch\\SATquery AI\\ppt_handoff\\raw\\source\\server.py",
+    "bytes": 12249,
+    "sha256": "71690c63a20971729f92faedb14120f1ba4a7223a27e4bed7aad89c89e4fb442"
+  },
+  {
+    "path": "C:\\Users\\nrgen\\.codex\\scratch\\SATquery AI\\ppt_handoff\\raw\\source\\test_geo.py",
+    "bytes": 1013,
+    "sha256": "8a4ef2307073b92346bb4f2525489e8c7af05786855287c1a0ff4effbe8c4695"
+  },
+  {
+    "path": "C:\\Users\\nrgen\\.codex\\scratch\\SATquery AI\\ppt_handoff\\raw\\source\\train_pilot.py",
+    "bytes": 5520,
+    "sha256": "878e505315ad627c479b7fd231c10cbf6e5dbbfdf8a709a120cc9674942ab778"
+  },
+  {
+    "path": "C:\\Users\\nrgen\\.codex\\scratch\\SATquery AI\\results\\count-fix-20260909\\deployed-live.json",
+    "bytes": 10705,
+    "sha256": "770126a4ac5e645acddc25cefb177e6df1fea1f96a923ec09b7666d003f63c36"
+  },
+  {
+    "path": "C:\\Users\\nrgen\\.codex\\scratch\\SATquery AI\\results\\count-fix-20260909\\description-live.json",
+    "bytes": 17858,
+    "sha256": "ae52036e7c4b46264c6f5f6ec452ab456eb6e950dad4d5d5cb95592ecbfcc419"
+  },
+  {
+    "path": "C:\\Users\\nrgen\\.codex\\scratch\\SATquery AI\\results\\count-fix-20260909\\prompt-probe.json",
+    "bytes": 15716,
+    "sha256": "0faa0a9d670a4f44aa933988b2b2b71b53d05caa9d0a494a41350f28f651f33c"
+  },
+  {
+    "path": "C:\\Users\\nrgen\\.codex\\scratch\\SATquery AI\\results\\open-vqa-20260909\\live-forza.json",
+    "bytes": 5139,
+    "sha256": "5feeb53f58a0276483b1d658e665f704fc8f600d7844c43835aa2a4a5c0f6d99"
+  },
+  {
+    "path": "C:\\Users\\nrgen\\.codex\\scratch\\SATquery AI\\results\\reliability-20260907\\assam-monsoon-0.3-live.json",
+    "bytes": 4082,
+    "sha256": "f49809d1854d8c74781151493d1ef86252cda04aa5f51fb8bed0ec75d0272870"
+  },
+  {
+    "path": "C:\\Users\\nrgen\\.codex\\scratch\\SATquery AI\\results\\reliability-20260907\\assam-monsoon-0.5-live.json",
+    "bytes": 4084,
+    "sha256": "908649b647369ccbeda0544057d181fc61ce68bdf5ce5f89401e34d9bb79b874"
+  },
+  {
+    "path": "C:\\Users\\nrgen\\.codex\\scratch\\SATquery AI\\results\\reliability-20260907\\assam-monsoon-0.7-live.json",
+    "bytes": 4082,
+    "sha256": "5a339c5ede02d41211e916090d57b755327e8da5aacbd53d59ec230c549195b1"
+  },
+  {
+    "path": "C:\\Users\\nrgen\\.codex\\scratch\\SATquery AI\\results\\reliability-20260907\\before-fix-ndvi-independent-summary.json",
+    "bytes": 47478,
+    "sha256": "ad3076d35517007c589f3ab2912eaffd1347be42acf8d818538111a20e9ce867"
+  },
+  {
+    "path": "C:\\Users\\nrgen\\.codex\\scratch\\SATquery AI\\results\\reliability-20260907\\bengaluru-lake-city-0.3-live.json",
+    "bytes": 4082,
+    "sha256": "c7b30e54de99a0d78694595c6fdc825ae6b3c8e6fb1b9ef34c199692706d229c"
+  },
+  {
+    "path": "C:\\Users\\nrgen\\.codex\\scratch\\SATquery AI\\results\\reliability-20260907\\bengaluru-lake-city-0.5-live.json",
+    "bytes": 4081,
+    "sha256": "35f57eb3c0551cbbd7b8c1d2dc386f5cf68af082e84d446aec675c7bb2660be3"
+  },
+  {
+    "path": "C:\\Users\\nrgen\\.codex\\scratch\\SATquery AI\\results\\reliability-20260907\\bengaluru-lake-city-0.7-live.json",
+    "bytes": 4078,
+    "sha256": "5109ebacd57251b3aeacc376797f521559d0d590a1b396f62f81bbeda0b3de6b"
+  },
+  {
+    "path": "C:\\Users\\nrgen\\.codex\\scratch\\SATquery AI\\results\\reliability-20260907\\dehradun-0.3-live.json",
+    "bytes": 4077,
+    "sha256": "fb55d6111fd931edc3e1527ae25f055e272222aa581c5e21e3547c6951db445d"
+  },
+  {
+    "path": "C:\\Users\\nrgen\\.codex\\scratch\\SATquery AI\\results\\reliability-20260907\\dehradun-0.5-live.json",
+    "bytes": 4078,
+    "sha256": "317ede6e95ae456c8b41f00b93a34d00d1ebced5870c6160d6c5c29b6d4edd44"
+  },
+  {
+    "path": "C:\\Users\\nrgen\\.codex\\scratch\\SATquery AI\\results\\reliability-20260907\\dehradun-0.7-live.json",
+    "bytes": 4073,
+    "sha256": "e135727d1839f1cb4f4f9195bbb790f439339be8b19718a9668e933e821bd4b9"
+  },
+  {
+    "path": "C:\\Users\\nrgen\\.codex\\scratch\\SATquery AI\\results\\reliability-20260907\\jaisalmer-arid-0.3-live.json",
+    "bytes": 4063,
+    "sha256": "0985f87db7ad8924a2e036ccc41f911ba3158d75d8813347964e66f89ada11d8"
+  },
+  {
+    "path": "C:\\Users\\nrgen\\.codex\\scratch\\SATquery AI\\results\\reliability-20260907\\jaisalmer-arid-0.5-live.json",
+    "bytes": 4065,
+    "sha256": "8b49dca110d4e8c032d9aa7f0c4a6d4a70bc04c48e2b57a7fe314db38856710a"
+  },
+  {
+    "path": "C:\\Users\\nrgen\\.codex\\scratch\\SATquery AI\\results\\reliability-20260907\\jaisalmer-arid-0.7-live.json",
+    "bytes": 4056,
+    "sha256": "aab3236befa6adb67024b3a3ce390d9c05c9a40d6fe482339437543247c03484"
+  },
+  {
+    "path": "C:\\Users\\nrgen\\.codex\\scratch\\SATquery AI\\results\\reliability-20260907\\ndvi-independent-summary.json",
+    "bytes": 48909,
+    "sha256": "52f445d9ea4b2af406991ca4f6fe99b9a99f22690edc8778fcf24c4a1795adfd"
+  },
+  {
+    "path": "C:\\Users\\nrgen\\.codex\\scratch\\SATquery AI\\results\\reliability-20260907\\public-summary.json",
+    "bytes": 6750,
+    "sha256": "7e0a1da92c3d294f11b4437d6fa16291c88ea2bb750c672b7f87e64106f26546"
+  },
+  {
+    "path": "C:\\Users\\nrgen\\.codex\\scratch\\SATquery AI\\results\\reliability-20260907\\punjab-farmland-0.3-live.json",
+    "bytes": 4067,
+    "sha256": "ebffdb5d605a43fe498e8ab495bb9a86b1c6f8d9ce3cf7dbdbd5db6e94264d56"
+  },
+  {
+    "path": "C:\\Users\\nrgen\\.codex\\scratch\\SATquery AI\\results\\reliability-20260907\\punjab-farmland-0.5-live.json",
+    "bytes": 4065,
+    "sha256": "63811f3dc81027cea414126df1ecee72bcee34ef7e1123104a7659a16eff84c0"
+  },
+  {
+    "path": "C:\\Users\\nrgen\\.codex\\scratch\\SATquery AI\\results\\reliability-20260907\\punjab-farmland-0.7-live.json",
+    "bytes": 4066,
+    "sha256": "be28807d63a07c5582c3d5ee686f85232af8ac70c4b90466bf9d11a472b43846"
+  },
+  {
+    "path": "C:\\Users\\nrgen\\.codex\\scratch\\SATquery AI\\results\\reliability-20260907\\routing-regression.json",
+    "bytes": 7282,
+    "sha256": "c3dc28f114c3e6546c830dcf7c0c8e550d3f49cce0a96224ba5c40d819d86fed"
+  },
+  {
+    "path": "C:\\Users\\nrgen\\.codex\\scratch\\SATquery AI\\results\\reliability-20260907\\sundarbans-coast-0.3-live.json",
+    "bytes": 4080,
+    "sha256": "cf874221a54bb979167a01255b46d15565824ec494adada49e6422c1ad272789"
+  },
+  {
+    "path": "C:\\Users\\nrgen\\.codex\\scratch\\SATquery AI\\results\\reliability-20260907\\sundarbans-coast-0.5-live.json",
+    "bytes": 4080,
+    "sha256": "5c3aae77b296ae4241b8733b995b632c5d27e4e6e7fd384e54df91d0856e2251"
+  },
+  {
+    "path": "C:\\Users\\nrgen\\.codex\\scratch\\SATquery AI\\results\\reliability-20260907\\sundarbans-coast-0.7-live.json",
+    "bytes": 4078,
+    "sha256": "56609f4a300d82acc4a1af89fe7c7e67f0bc3fa1da1bf4d792e83cd2912898c3"
+  },
+  {
+    "path": "C:\\Users\\nrgen\\.codex\\scratch\\SATquery AI\\results\\reliability-20260907\\counting\\development-cases.json",
+    "bytes": 1466,
+    "sha256": "6a64c624bd695b267b32274226f3541f40f1832d2c414c9a41192f5619d94107"
+  },
+  {
+    "path": "C:\\Users\\nrgen\\.codex\\scratch\\SATquery AI\\results\\reliability-20260907\\counting\\development-predictions.json",
+    "bytes": 5146,
+    "sha256": "503d8726fdd7423c175988eb78d6924a4c8944f188c7e85f8c4714510f1974ed"
+  },
+  {
+    "path": "C:\\Users\\nrgen\\.codex\\scratch\\SATquery AI\\results\\reliability-20260907\\counting\\live-predictions.json",
+    "bytes": 34547,
+    "sha256": "6acc3af0fd1d7f8e53bb52eab3e8e7ff05277e5934f862b4f00a18005b0f43ca"
+  },
+  {
+    "path": "C:\\Users\\nrgen\\.codex\\scratch\\SATquery AI\\results\\reliability-20260907\\counting\\live-summary.json",
+    "bytes": 472,
+    "sha256": "d1d48280a5562b211c2a4d921f93709fb3252096e18b68b3a0c2ec2aba615454"
+  },
+  {
+    "path": "C:\\Users\\nrgen\\.codex\\scratch\\SATquery AI\\results\\reliability-20260907\\vqa\\bounded-answer-development-review.json",
+    "bytes": 34688,
+    "sha256": "b4bfb511ac5a53ea063576ee74fed01b8c8d93c0c30a2d9e883b1f58b3f5b58e"
+  },
+  {
+    "path": "C:\\Users\\nrgen\\.codex\\scratch\\SATquery AI\\results\\reliability-20260907\\vqa\\direct-answer-development-probe.jsonl",
+    "bytes": 11530,
+    "sha256": "0bf6e7d83644fa53fb01d5019dec26db565d208acdc4bd7c46a64e0086b88b8c"
+  },
+  {
+    "path": "C:\\Users\\nrgen\\.codex\\scratch\\SATquery AI\\results\\reliability-20260907\\vqa\\existing-adapter-fresh-predictions.jsonl",
+    "bytes": 24021,
+    "sha256": "7c7e35c9ad2379d505f34f891830c86c5dd684f3efd95de69e6fd0ba1f23105a"
+  },
+  {
+    "path": "C:\\Users\\nrgen\\.codex\\scratch\\SATquery AI\\results\\reliability-20260907\\vqa\\existing-adapter-fresh-summary.json",
+    "bytes": 640,
+    "sha256": "d971f8532283002ae352798fee7d4ec517ce999bfb4392aadc7c75aaa3202663"
+  },
+  {
+    "path": "C:\\Users\\nrgen\\.codex\\scratch\\SATquery AI\\results\\reliability-20260907\\vqa\\fresh-review-cases.json",
+    "bytes": 2308,
+    "sha256": "f6a52423061e1703eb789bb2fb27316a3224dbad7907e163ea05eb94d9018621"
+  },
+  {
+    "path": "C:\\Users\\nrgen\\.codex\\scratch\\SATquery AI\\results\\reliability-20260907\\vqa\\fresh-review-observations.json",
+    "bytes": 1242,
+    "sha256": "4f963a9b4de197a5796d6dcbd791d70d3a06e97a01e61466df9288b69dda8466"
+  },
+  {
+    "path": "C:\\Users\\nrgen\\.codex\\scratch\\SATquery AI\\results\\reliability-20260907\\vqa\\frozen-cases.json",
+    "bytes": 18707,
+    "sha256": "873da74bf37b7acba64b6677930c81064bef50be89796878d01c3ee18143f4ac"
+  },
+  {
+    "path": "C:\\Users\\nrgen\\.codex\\scratch\\SATquery AI\\results\\reliability-20260907\\vqa\\live-refusals-v2.json",
+    "bytes": 2721,
+    "sha256": "078e9d11795245020785ac00378a585fded989a2b50e3170636344f15b913668"
+  },
+  {
+    "path": "C:\\Users\\nrgen\\.codex\\scratch\\SATquery AI\\results\\reliability-20260907\\vqa\\live-refusals.json",
+    "bytes": 2676,
+    "sha256": "07668a64563fa9fbd753972df06a6589bc5bbe71a2bbdbce67464a917215e217"
+  },
+  {
+    "path": "C:\\Users\\nrgen\\.codex\\scratch\\SATquery AI\\results\\reliability-20260907\\vqa\\live-validation-v2.jsonl",
+    "bytes": 30548,
+    "sha256": "e874b82177d6e9033b0cceb9faa14db8d7d1b22ae1bbf0a5db3b87d294d46aa4"
+  },
+  {
+    "path": "C:\\Users\\nrgen\\.codex\\scratch\\SATquery AI\\results\\reliability-20260907\\vqa\\live-validation.jsonl",
+    "bytes": 29196,
+    "sha256": "e7201a750309d5bca13d968551a92a5777235c4bbdf7cd7800f0fd00aede3559"
+  },
+  {
+    "path": "C:\\Users\\nrgen\\.codex\\scratch\\SATquery AI\\results\\reliability-20260907\\vqa\\paired-predictions.jsonl",
+    "bytes": 102465,
+    "sha256": "10ee26a74fbcc4c27550070c9a49399795407db2166d724744c4e41d8fc435f0"
+  },
+  {
+    "path": "C:\\Users\\nrgen\\.codex\\scratch\\SATquery AI\\results\\reliability-20260907\\vqa\\paired-summary.json",
+    "bytes": 1332,
+    "sha256": "e2b65e7d4ba5a1bc0c9b7bf6707d65618f8f58b6d140c117754a6ccf016fc50c"
+  },
+  {
+    "path": "C:\\Users\\nrgen\\.codex\\scratch\\SATquery AI\\results\\reliability-20260907\\scenes\\assam-monsoon\\manifest.json",
+    "bytes": 4234,
+    "sha256": "48ca9d26cd51ac78b54239df8a961aeb8280c0c69643d45f6ae9a5e8bf055104"
+  },
+  {
+    "path": "C:\\Users\\nrgen\\.codex\\scratch\\SATquery AI\\results\\reliability-20260907\\scenes\\assam-monsoon\\source-item.json",
+    "bytes": 25410,
+    "sha256": "18bf65d4b48732eff14d779e863a2f881a75b9d91dab23dd4968eda2f52eff02"
+  },
+  {
+    "path": "C:\\Users\\nrgen\\.codex\\scratch\\SATquery AI\\results\\reliability-20260907\\scenes\\bengaluru-lake-city\\manifest.json",
+    "bytes": 4252,
+    "sha256": "1d5ffc434c917b25536fa899a3f1ad27630eca5fe3da4256ab7daae0cdb29cbe"
+  },
+  {
+    "path": "C:\\Users\\nrgen\\.codex\\scratch\\SATquery AI\\results\\reliability-20260907\\scenes\\bengaluru-lake-city\\source-item.json",
+    "bytes": 25158,
+    "sha256": "533591283dfa3af903897297dd7247c61fb6a39ff089b779126e0745319bc0c1"
+  },
+  {
+    "path": "C:\\Users\\nrgen\\.codex\\scratch\\SATquery AI\\results\\reliability-20260907\\scenes\\jaisalmer-arid\\manifest.json",
+    "bytes": 4240,
+    "sha256": "7a0b189900a8067d5c6ce89c7d42893a1d3382a53c95952b962e1e0e7c4014b3"
+  },
+  {
+    "path": "C:\\Users\\nrgen\\.codex\\scratch\\SATquery AI\\results\\reliability-20260907\\scenes\\jaisalmer-arid\\source-item.json",
+    "bytes": 25395,
+    "sha256": "aff5cbe4e8651926ca600e8db5c0aca6a57aa69da5d562334101303f5a35d4d5"
+  },
+  {
+    "path": "C:\\Users\\nrgen\\.codex\\scratch\\SATquery AI\\results\\reliability-20260907\\scenes\\punjab-farmland\\manifest.json",
+    "bytes": 4242,
+    "sha256": "758da7ceeccc0bd37df655ee28f288ae5eb0e300ff9baf476e5a839987c8c0d0"
+  },
+  {
+    "path": "C:\\Users\\nrgen\\.codex\\scratch\\SATquery AI\\results\\reliability-20260907\\scenes\\punjab-farmland\\source-item.json",
+    "bytes": 25401,
+    "sha256": "331aa7b215873d4cadf015a4ff5040f2f81519514aff5e28f5aa70c080ecd7db"
+  },
+  {
+    "path": "C:\\Users\\nrgen\\.codex\\scratch\\SATquery AI\\results\\reliability-20260907\\scenes\\sundarbans-coast\\manifest.json",
+    "bytes": 4241,
+    "sha256": "b1c7c226a550d8f7cee9cb632a17d717978604f6329cd74ea12794ab26939242"
+  },
+  {
+    "path": "C:\\Users\\nrgen\\.codex\\scratch\\SATquery AI\\results\\reliability-20260907\\scenes\\sundarbans-coast\\source-item.json",
+    "bytes": 25066,
+    "sha256": "f6b973440809839305a13f1b5f9f5c9fab16d8a1847c0d1b673dd39ffe7b01aa"
+  }
+]

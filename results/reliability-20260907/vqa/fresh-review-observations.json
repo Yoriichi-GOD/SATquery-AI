@@ -1,0 +1,12 @@
+{
+  "method": "Assistant visual review of RGB contact sheet before viewing new model answers. Qualitative review, not independent expert annotation or a scored benchmark.",
+  "shared_limits": "Do not infer crop species, crop health, building use, road condition, traffic, activity, season, exact geographic location or object counts.",
+  "cases": {
+    "fresh-245": "Rectangular fields dominate; thin straight roads/tracks and a narrow band of buildings toward the right. Crop type and health not established.",
+    "fresh-308": "Rectangular and strip-shaped fields; a diagonal road lined by small building clusters. No large water body apparent.",
+    "fresh-234": "Long fields and roads with a band of buildings toward the top. No large water body apparent.",
+    "fresh-300": "Fields interspersed with a sizeable cluster of buildings and roads. Mixed farmland and built-up land; no basis for commercial/residential classification.",
+    "fresh-287": "A dense built-up cluster dominates the centre/lower image, surrounded by fields and crossed by roads. Building functions not identifiable.",
+    "fresh-275": "A built-up cluster, roads and surrounding rectangular fields. Field colours vary but species or growth stage are unknown."
+  }
+}

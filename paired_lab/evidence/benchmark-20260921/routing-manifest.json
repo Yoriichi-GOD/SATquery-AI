@@ -1,0 +1,312 @@
+[
+  {
+    "context": "single",
+    "expected": "vqa",
+    "query": "Describe this image."
+  },
+  {
+    "context": "single",
+    "expected": "vqa",
+    "query": "Describe the entire scene."
+  },
+  {
+    "context": "single",
+    "expected": "vqa",
+    "query": "What can you see in this image?"
+  },
+  {
+    "context": "single",
+    "expected": "vqa",
+    "query": "Is there water in this image?"
+  },
+  {
+    "context": "single",
+    "expected": "vqa",
+    "query": "Does this image contain buildings?"
+  },
+  {
+    "context": "single",
+    "expected": "vqa",
+    "query": "Is this image rural or urban?"
+  },
+  {
+    "context": "single",
+    "expected": "vqa",
+    "query": "How many baseball fields are there?"
+  },
+  {
+    "context": "single",
+    "expected": "grounding",
+    "query": "Outline buildings"
+  },
+  {
+    "context": "single",
+    "expected": "grounding",
+    "query": "Highlight ships"
+  },
+  {
+    "context": "single",
+    "expected": "grounding",
+    "query": "Locate aircraft"
+  },
+  {
+    "context": "single",
+    "expected": "grounding",
+    "query": "Draw bounding boxes around cars"
+  },
+  {
+    "context": "ndvi",
+    "expected": "ndvi",
+    "query": "Calculate NDVI"
+  },
+  {
+    "context": "ndvi",
+    "expected": "ndvi",
+    "query": "Compute NDVI"
+  },
+  {
+    "context": "ndvi",
+    "expected": "ndvi",
+    "query": "What percentage of the image is vegetation?"
+  },
+  {
+    "context": "temporal",
+    "expected": "temporal",
+    "query": "What changed between these dates?"
+  },
+  {
+    "context": "temporal",
+    "expected": "temporal",
+    "query": "Describe road changes"
+  },
+  {
+    "context": "temporal",
+    "expected": "temporal",
+    "query": "Show building changes"
+  },
+  {
+    "context": "temporal",
+    "expected": "temporal",
+    "query": "Compare the roads between these images"
+  },
+  {
+    "context": "temporal",
+    "expected": "temporal",
+    "query": "Identify construction and demolition"
+  },
+  {
+    "context": "water",
+    "expected": "water_map",
+    "query": "Map water"
+  },
+  {
+    "context": "water",
+    "expected": "water_map",
+    "query": "Show inundation"
+  },
+  {
+    "context": "water",
+    "expected": "water_map",
+    "query": "Identify water pixels"
+  },
+  {
+    "context": "water",
+    "expected": "water_map",
+    "query": "Map water using optical and SAR together"
+  },
+  {
+    "context": "land",
+    "expected": "optical_sar",
+    "query": "Identify land-cover classes"
+  },
+  {
+    "context": "land",
+    "expected": "optical_sar",
+    "query": "Classify land cover"
+  },
+  {
+    "context": "land",
+    "expected": "optical_sar",
+    "query": "Use optical and SAR to identify land-cover classes"
+  },
+  {
+    "context": "spectral",
+    "expected": "spectral_pair",
+    "query": "Analyze these images"
+  },
+  {
+    "context": "spectral",
+    "expected": "spectral_pair",
+    "query": "Compare vegetation"
+  },
+  {
+    "context": "spectral",
+    "expected": "spectral_pair",
+    "query": "Compare water"
+  },
+  {
+    "context": "spectral",
+    "expected": "spectral_pair",
+    "query": "Compare NDVI and NDWI"
+  },
+  {
+    "context": "spectral",
+    "expected": "spectral_pair",
+    "query": "Please analyze these images in detail"
+  },
+  {
+    "context": "single",
+    "expected": "refuse",
+    "query": "What changed between these dates?"
+  },
+  {
+    "context": "single",
+    "expected": "refuse",
+    "query": "Calculate NDVI"
+  },
+  {
+    "context": "single",
+    "expected": "refuse",
+    "query": "Predict water tomorrow"
+  },
+  {
+    "context": "single",
+    "expected": "refuse",
+    "query": "How many cars are there?"
+  },
+  {
+    "context": "single",
+    "expected": "refuse",
+    "query": "Outline red buildings"
+  },
+  {
+    "context": "single",
+    "expected": "refuse",
+    "query": "Outline buildings and ships"
+  },
+  {
+    "context": "single",
+    "expected": "refuse",
+    "query": "Estimate water depth"
+  },
+  {
+    "context": "single",
+    "expected": "refuse",
+    "query": "Diagnose crop disease"
+  },
+  {
+    "context": "temporal",
+    "expected": "refuse",
+    "query": "Compare water"
+  },
+  {
+    "context": "temporal",
+    "expected": "refuse",
+    "query": "How many buildings were constructed?"
+  },
+  {
+    "context": "temporal",
+    "expected": "refuse",
+    "query": "Measure road length change"
+  },
+  {
+    "context": "temporal",
+    "expected": "refuse",
+    "query": "Which red car was added?"
+  },
+  {
+    "context": "temporal",
+    "expected": "refuse",
+    "query": "Describe vegetation health"
+  },
+  {
+    "context": "temporal",
+    "expected": "refuse",
+    "query": "Compare these images and count all cars"
+  },
+  {
+    "context": "water",
+    "expected": "refuse",
+    "query": "Map roads and water"
+  },
+  {
+    "context": "water",
+    "expected": "refuse",
+    "query": "Calculate water depth"
+  },
+  {
+    "context": "water",
+    "expected": "refuse",
+    "query": "What changed since last year?"
+  },
+  {
+    "context": "water",
+    "expected": "refuse",
+    "query": "Predict inundation tomorrow"
+  },
+  {
+    "context": "water",
+    "expected": "refuse",
+    "query": "Measure water volume"
+  },
+  {
+    "context": "water",
+    "expected": "refuse",
+    "query": "Map water and vegetation"
+  },
+  {
+    "context": "water",
+    "expected": "refuse",
+    "query": "Identify water and soil moisture"
+  },
+  {
+    "context": "land",
+    "expected": "refuse",
+    "query": "Map buildings"
+  },
+  {
+    "context": "land",
+    "expected": "refuse",
+    "query": "Calculate water coverage"
+  },
+  {
+    "context": "land",
+    "expected": "refuse",
+    "query": "Segment water"
+  },
+  {
+    "context": "land",
+    "expected": "refuse",
+    "query": "Identify building locations"
+  },
+  {
+    "context": "spectral",
+    "expected": "refuse",
+    "query": "Predict water next week"
+  },
+  {
+    "context": "spectral",
+    "expected": "refuse",
+    "query": "Compare vegetation health"
+  },
+  {
+    "context": "spectral",
+    "expected": "refuse",
+    "query": "Compare water above 0.5"
+  },
+  {
+    "context": "spectral",
+    "expected": "refuse",
+    "query": "Compare vegetation and count buildings"
+  },
+  {
+    "context": "spectral",
+    "expected": "refuse",
+    "query": "Compare water and temperature"
+  },
+  {
+    "context": "spectral",
+    "expected": "refuse",
+    "query": "Analyze these images and estimate population"
+  }
+]

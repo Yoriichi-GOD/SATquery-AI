@@ -1,0 +1,36 @@
+{
+  "file": "test_002020.png",
+  "reference_changeflag": 1,
+  "raw_caption": "some houses are built on both sides of the road",
+  "reference_captions": [
+    " a few more houses appear on the wasteland on both sides of the road .",
+    " more houses appear along the road in the desert .",
+    " houses are built on the meadow along the road next to the old houses .",
+    " many houses are built on both sides of the road .",
+    " many buildings are constructed by the original ones next to the road ."
+  ],
+  "caption_changeflag_heuristic": 1,
+  "confusion_rows_reference_columns_prediction": [
+    [
+      57444,
+      0,
+      279
+    ],
+    [
+      0,
+      0,
+      0
+    ],
+    [
+      1162,
+      0,
+      6651
+    ]
+  ],
+  "predicted_class_pixels": {
+    "0": 58606,
+    "1": 0,
+    "2": 6930
+  },
+  "gpu_caption": "some houses are built on both sides of the road"
+}

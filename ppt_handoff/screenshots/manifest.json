@@ -1,0 +1,104 @@
+[
+  {
+    "file": "adapter.png",
+    "width": 1265,
+    "height": 712,
+    "type": "browser capture of rendered saved records"
+  },
+  {
+    "file": "audit.png",
+    "width": 1280,
+    "height": 720,
+    "type": "browser capture of rendered saved records"
+  },
+  {
+    "file": "empty_dark.png",
+    "width": 1340,
+    "height": 888,
+    "type": "real product browser viewport"
+  },
+  {
+    "file": "empty_light.png",
+    "width": 1340,
+    "height": 888,
+    "type": "real product browser viewport"
+  },
+  {
+    "file": "evaluation.png",
+    "width": 1340,
+    "height": 888,
+    "type": "real product browser viewport"
+  },
+  {
+    "file": "hero.png",
+    "width": 1340,
+    "height": 888,
+    "type": "real product browser viewport"
+  },
+  {
+    "file": "metadata.png",
+    "width": 1265,
+    "height": 712,
+    "type": "browser capture of rendered saved records"
+  },
+  {
+    "file": "ndvi_no_overlay.png",
+    "width": 1340,
+    "height": 888,
+    "type": "real product browser viewport"
+  },
+  {
+    "file": "ndvi_overlay.png",
+    "width": 1340,
+    "height": 888,
+    "type": "real product browser viewport"
+  },
+  {
+    "file": "original_adapter.png",
+    "width": 1340,
+    "height": 888,
+    "type": "real product browser viewport"
+  },
+  {
+    "file": "run_details.png",
+    "width": 1340,
+    "height": 888,
+    "type": "real product browser viewport"
+  },
+  {
+    "file": "speed.png",
+    "width": 1280,
+    "height": 720,
+    "type": "browser capture of rendered saved records"
+  },
+  {
+    "file": "tests.png",
+    "width": 1280,
+    "height": 720,
+    "type": "browser capture of rendered saved records"
+  },
+  {
+    "file": "threshold_070.png",
+    "width": 1340,
+    "height": 888,
+    "type": "real product browser viewport"
+  },
+  {
+    "file": "training.png",
+    "width": 1265,
+    "height": 712,
+    "type": "browser capture of rendered saved records"
+  },
+  {
+    "file": "vqa_loaded.png",
+    "width": 1340,
+    "height": 888,
+    "type": "real product browser viewport"
+  },
+  {
+    "file": "vqa_result.png",
+    "width": 1693,
+    "height": 890,
+    "type": "real product browser viewport"
+  }
+]

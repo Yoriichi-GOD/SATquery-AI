@@ -1,0 +1,131 @@
+{
+  "id": "368b4bda55b242fa9f7d812c74522573",
+  "state": "complete",
+  "stage": "Starting isolated worker",
+  "started": 1789213132.5598044,
+  "image": {
+    "id": "2cd7a96dc7d54f3c8941a1199f54d894",
+    "name": "bengaluru-lake-city-tile-0-256.png",
+    "width": 256,
+    "height": 256,
+    "sha256": "4e3e0b91e4a73ff49b156d6fc83b810c4735120000f218e1b67a3c0cefb52f57",
+    "preview": "api/images/2cd7a96dc7d54f3c8941a1199f54d894"
+  },
+  "selection": {
+    "image_id": "2cd7a96dc7d54f3c8941a1199f54d894",
+    "category": "building",
+    "threshold": 0.2,
+    "mode": "both"
+  },
+  "result": {
+    "version": "grounding-lab-v1",
+    "category": "building",
+    "prompt": "a building.",
+    "mode": "both",
+    "image": {
+      "width": 256,
+      "height": 256,
+      "sha256": "4e3e0b91e4a73ff49b156d6fc83b810c4735120000f218e1b67a3c0cefb52f57"
+    },
+    "models": [
+      {
+        "model": "IDEA-Research/grounding-dino-tiny",
+        "revision": "a2bb814dd30d776dcf7e30523b00659f4f141c71",
+        "path": "/root/.cache/huggingface/hub/models--IDEA-Research--grounding-dino-tiny/snapshots/a2bb814dd30d776dcf7e30523b00659f4f141c71",
+        "license": "apache-2.0"
+      },
+      {
+        "model": "facebook/sam-vit-base",
+        "revision": "70c1a07f894ebb5b307fd9eaaee97b9dfc16068f",
+        "path": "/root/.cache/huggingface/hub/models--facebook--sam-vit-base/snapshots/70c1a07f894ebb5b307fd9eaaee97b9dfc16068f",
+        "license": "apache-2.0"
+      }
+    ],
+    "settings": {
+      "box_threshold": 0.2,
+      "text_threshold": 0.25,
+      "nms_iou": 0.5,
+      "max_objects": 24,
+      "reject_frame_area_fraction": 0.97,
+      "enclosing_area_fraction": 0.9,
+      "enclosed_smaller_ratio": 0.6
+    },
+    "raw_candidates": 2,
+    "raw_proposals": [
+      {
+        "box_xyxy": [
+          0.0242156982421875,
+          0.110107421875,
+          256.0,
+          256.0
+        ],
+        "score": 0.4509541690349579
+      },
+      {
+        "box_xyxy": [
+          194.46676635742188,
+          97.38716888427734,
+          255.95126342773438,
+          256.0
+        ],
+        "score": 0.22119149565696716
+      }
+    ],
+    "excluded_enclosing_proposals": [
+      0
+    ],
+    "detections": [
+      {
+        "id": 1,
+        "box_xyxy": [
+          194.46676635742188,
+          97.38716888427734,
+          255.95126342773438,
+          256.0
+        ],
+        "detector_score": 0.22119149565696716,
+        "mask_pixels": 8132,
+        "sam_predicted_iou": 0.964599609375
+      }
+    ],
+    "objects": 1,
+    "capped": false,
+    "segmented_objects": 1,
+    "union_mask_pixels": 8132,
+    "total_image_pixels": 65536,
+    "union_mask_percent": 12.4084,
+    "pixel_statistics_available": true,
+    "trace": [
+      {
+        "step": "Load pinned Grounding DINO",
+        "seconds": 0.517
+      },
+      {
+        "step": "Detect, threshold, remove enclosing frame proposals and suppress duplicates",
+        "seconds": 2.127
+      },
+      {
+        "step": "Load pinned SAM Base",
+        "seconds": 0.141
+      },
+      {
+        "step": "Box-prompted segmentation; choose highest SAM predicted IoU mask",
+        "seconds": 0.697
+      },
+      {
+        "step": "Render boxes, outlines and instance masks",
+        "seconds": 0.02
+      }
+    ],
+    "seconds": 4.088,
+    "peak_gpu_GiB": 2.678,
+    "limitations": [
+      "Experimental pretrained models; no remote-sensing fine-tuning or general accuracy claim.",
+      "Detector score and SAM predicted IoU are model scores, not measured correctness.",
+      "A mask follows a proposed box; it cannot prove the object identity.",
+      "Pixel coverage is the union of predicted masks, not NDVI, hectares or surveyed area.",
+      "Instance PNG assigns overlaps to the first score-ranked object; NPZ preserves overlapping masks.",
+      "Small, obscured or densely packed objects may be missed. Zero candidates means none passed the settings, not proof of absence."
+    ]
+  }
+}

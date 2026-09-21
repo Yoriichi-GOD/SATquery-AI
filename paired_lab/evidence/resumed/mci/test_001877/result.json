@@ -1,0 +1,35 @@
+{
+  "file": "test_001877.png",
+  "reference_changeflag": 1,
+  "raw_caption": "massive houses along the roads appear in the desert",
+  "reference_captions": [
+    " crossroads and houses on both sides of the roads appear on the wasteland .",
+    " massive houses along the roads appear in the desert .",
+    " some roads are built with villas built along and the bareland and bushes disappear .",
+    " many houses are built at the corner of the road in the open space .",
+    " a t-shaped road is built at the bottom with some houses around and two rows of houses are arranged by a road at the top right ."
+  ],
+  "caption_changeflag_heuristic": 1,
+  "confusion_rows_reference_columns_prediction": [
+    [
+      45110,
+      253,
+      469
+    ],
+    [
+      297,
+      9834,
+      0
+    ],
+    [
+      656,
+      0,
+      8917
+    ]
+  ],
+  "predicted_class_pixels": {
+    "0": 46063,
+    "1": 10087,
+    "2": 9386
+  }
+}

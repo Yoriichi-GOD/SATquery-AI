@@ -1,0 +1,42 @@
+[
+  {
+    "case": "stadium",
+    "mode": "both",
+    "run_id": "70cb8494d4974dd7aba4b0e38b46e173",
+    "objects": 1,
+    "segmented": 1,
+    "artifacts": 8,
+    "mask_consistency_passed": true,
+    "seconds": 6.453
+  },
+  {
+    "case": "car",
+    "mode": "both",
+    "run_id": "c20f1df2515a4be694ab894d48b8552d",
+    "objects": 1,
+    "segmented": 1,
+    "artifacts": 8,
+    "mask_consistency_passed": true,
+    "seconds": 7.163
+  },
+  {
+    "case": "farmland",
+    "mode": "both",
+    "run_id": "39f47f759ed340ad8b5777242667a87c",
+    "objects": 0,
+    "segmented": 0,
+    "artifacts": 8,
+    "mask_consistency_passed": true,
+    "seconds": 3.04
+  },
+  {
+    "case": "stadium",
+    "mode": "boxes",
+    "run_id": "1937f230dd65447bba2102488079c779",
+    "objects": 1,
+    "segmented": 0,
+    "artifacts": 8,
+    "mask_consistency_passed": true,
+    "seconds": 3.969
+  }
+]

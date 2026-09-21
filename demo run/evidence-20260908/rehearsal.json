@@ -1,0 +1,723 @@
+[
+  {
+    "test": "cold-description",
+    "image": "01-baseball-four.png",
+    "elapsed_seconds": 23.279,
+    "run": {
+      "id": "78612317c0fc481fb08c15b9570df531",
+      "state": "complete",
+      "stage": "Complete",
+      "question": "Describe the major visible features briefly.",
+      "image": {
+        "id": "a058c00e1d8c4e2d97157391dbf296ed",
+        "name": "01-baseball-four.png",
+        "width": 800,
+        "height": 800,
+        "bytes": 1058832,
+        "sha256": "d554202729a40d67eb39fc38759e196ca628cf6f7f3c2679b075fcb9a9f52e80",
+        "preview": "/api/images/a058c00e1d8c4e2d97157391dbf296ed",
+        "geo": null
+      },
+      "started": 1788823625.3854663,
+      "model": "AdaptLLM/remote-sensing-Qwen2-VL-2B-Instruct",
+      "revision": "7f5dd71bf0f40c282193d50160e848a387a08ffe",
+      "adapter": null,
+      "mode": "baseline",
+      "route": "Single-image optical VQA",
+      "trace": [
+        {
+          "step": "Load pinned checkpoint",
+          "seconds": 8.705
+        },
+        {
+          "step": "Generate model answer",
+          "seconds": 8.009
+        }
+      ],
+      "routing": {
+        "tool": "vqa",
+        "rule": "single_image_description",
+        "reason": "Supported descriptive or presence question about one optical image; no quantitative or spatial output requested.",
+        "version": "rules-v2"
+      },
+      "requested_mode": "baseline",
+      "effective_question": "Describe the major visible features briefly.",
+      "visual_token_bounds": [
+        256,
+        512
+      ],
+      "raw_answer": "The major visible features of the image are the four baseball fields arranged in a square pattern. Each field has a distinct diamond shape, with the home plate area appearing darker, possibly due to the dirt composition. The surrounding grass is well-maintained, indicating a well-cared-for sports facility. The presence of trees and buildings around the fields suggests that this is a community or school sports complex, providing multiple fields for recreational and possibly competitive baseball games. The image does not provide any direct information about the location or the specific use of the fields, but the layout is typical of community sports complexes. Therefore, the answer is The aerial view is",
+      "answer_validation": {
+        "policy": "bounded-answer-v2",
+        "category": "description",
+        "limitation": "Model interpretation; object identities and locations are not independently verified.",
+        "raw_truncated": true,
+        "changed": true,
+        "withheld": false,
+        "reasons": [
+          "unsupported_or_nonobservational_sentence_withheld"
+        ],
+        "answer": "The major visible features of the image are the four baseball fields arranged in a square pattern.\n\nModel interpretation; object identities and locations are not independently verified."
+      },
+      "answer_policy": "bounded-answer-v2",
+      "answer": "The major visible features of the image are the four baseball fields arranged in a square pattern.\n\nModel interpretation; object identities and locations are not independently verified.",
+      "seconds": 23.081,
+      "generation_seconds": 8.009,
+      "peak_allocated_GiB": 4.298,
+      "generated_tokens": 128,
+      "max_new_tokens": 128
+    }
+  },
+  {
+    "test": "warm-description",
+    "image": "01-baseball-four.png",
+    "elapsed_seconds": 4.906,
+    "run": {
+      "id": "788071522b094c50b9d6464e9ac0e0a0",
+      "state": "complete",
+      "stage": "Complete",
+      "question": "Describe the major visible features briefly.",
+      "image": {
+        "id": "a058c00e1d8c4e2d97157391dbf296ed",
+        "name": "01-baseball-four.png",
+        "width": 800,
+        "height": 800,
+        "bytes": 1058832,
+        "sha256": "d554202729a40d67eb39fc38759e196ca628cf6f7f3c2679b075fcb9a9f52e80",
+        "preview": "/api/images/a058c00e1d8c4e2d97157391dbf296ed",
+        "geo": null
+      },
+      "started": 1788823648.6717796,
+      "model": "AdaptLLM/remote-sensing-Qwen2-VL-2B-Instruct",
+      "revision": "7f5dd71bf0f40c282193d50160e848a387a08ffe",
+      "adapter": null,
+      "mode": "baseline",
+      "route": "Single-image optical VQA",
+      "trace": [
+        {
+          "step": "Generate model answer",
+          "seconds": 4.624
+        }
+      ],
+      "routing": {
+        "tool": "vqa",
+        "rule": "single_image_description",
+        "reason": "Supported descriptive or presence question about one optical image; no quantitative or spatial output requested.",
+        "version": "rules-v2"
+      },
+      "requested_mode": "baseline",
+      "effective_question": "Describe the major visible features briefly.",
+      "visual_token_bounds": [
+        256,
+        512
+      ],
+      "raw_answer": "The major visible features of the image are the four baseball fields arranged in a square pattern. Each field has a distinct diamond shape, with the home plate area appearing darker, possibly due to the dirt composition. The surrounding grass is well-maintained, indicating a well-cared-for sports facility. The presence of trees and buildings around the fields suggests that this is a community or school sports complex, providing multiple fields for recreational and possibly competitive baseball games. The image does not provide any direct information about the location or the specific use of the fields, but the layout is typical of community sports complexes. Therefore, the answer is The aerial view is",
+      "answer_validation": {
+        "policy": "bounded-answer-v2",
+        "category": "description",
+        "limitation": "Model interpretation; object identities and locations are not independently verified.",
+        "raw_truncated": true,
+        "changed": true,
+        "withheld": false,
+        "reasons": [
+          "unsupported_or_nonobservational_sentence_withheld"
+        ],
+        "answer": "The major visible features of the image are the four baseball fields arranged in a square pattern.\n\nModel interpretation; object identities and locations are not independently verified."
+      },
+      "answer_policy": "bounded-answer-v2",
+      "answer": "The major visible features of the image are the four baseball fields arranged in a square pattern.\n\nModel interpretation; object identities and locations are not independently verified.",
+      "seconds": 4.723,
+      "generation_seconds": 4.624,
+      "peak_allocated_GiB": 4.298,
+      "generated_tokens": 128,
+      "max_new_tokens": 128
+    }
+  },
+  {
+    "test": "baseball-count",
+    "image": "01-baseball-four.png",
+    "elapsed_seconds": 0.931,
+    "run": {
+      "id": "28bfd4a4d8b241dd9d31678d78f2f006",
+      "state": "complete",
+      "stage": "Complete",
+      "question": "How many baseball fields are there in this image?",
+      "image": {
+        "id": "a058c00e1d8c4e2d97157391dbf296ed",
+        "name": "01-baseball-four.png",
+        "width": 800,
+        "height": 800,
+        "bytes": 1058832,
+        "sha256": "d554202729a40d67eb39fc38759e196ca628cf6f7f3c2679b075fcb9a9f52e80",
+        "preview": "/api/images/a058c00e1d8c4e2d97157391dbf296ed",
+        "geo": null
+      },
+      "started": 1788823653.58496,
+      "model": "AdaptLLM/remote-sensing-Qwen2-VL-2B-Instruct",
+      "revision": "7f5dd71bf0f40c282193d50160e848a387a08ffe",
+      "adapter": null,
+      "mode": "baseline",
+      "route": "Single-image optical VQA",
+      "trace": [
+        {
+          "step": "Compare original and mirrored image counts",
+          "seconds": 0.683
+        }
+      ],
+      "routing": {
+        "tool": "vqa",
+        "rule": "baseball_count",
+        "reason": "Baseball/softball field count estimated by VQA; an original and mirrored image must agree. No object boxes or verified detection are produced.",
+        "version": "rules-v2"
+      },
+      "requested_mode": "pilot_binary",
+      "answer": "4 identifiable baseball/softball diamonds visible.\n\nVQA estimate; partial or obscured fields can affect the count.",
+      "raw_answer": "4\n4",
+      "counting": {
+        "policy": "baseball-two-view-v1",
+        "kind": "VQA estimate",
+        "views": [
+          {
+            "view": "original",
+            "raw_answer": "4",
+            "count": 4,
+            "generated_tokens": 2,
+            "seconds": 0.35184218200015493
+          },
+          {
+            "view": "mirrored",
+            "raw_answer": "4",
+            "count": 4,
+            "generated_tokens": 2,
+            "seconds": 0.33095806500000435
+          }
+        ],
+        "count": 4,
+        "withheld": false,
+        "limitation": "Agreement between transformed views is not independent validation. Small, obscured or edge-cropped fields may be missed.",
+        "generated_tokens": 4,
+        "generation_seconds": 0.683,
+        "max_new_tokens": 32,
+        "peak_allocated_GiB": 4.313,
+        "reason": "two_view_agreement",
+        "answer": "4 identifiable baseball/softball diamonds visible.\n\nVQA estimate; partial or obscured fields can affect the count."
+      },
+      "answer_policy": "baseball-two-view-v1",
+      "answer_validation": {
+        "policy": "baseball-two-view-v1",
+        "kind": "VQA estimate",
+        "views": [
+          {
+            "view": "original",
+            "raw_answer": "4",
+            "count": 4,
+            "generated_tokens": 2,
+            "seconds": 0.35184218200015493
+          },
+          {
+            "view": "mirrored",
+            "raw_answer": "4",
+            "count": 4,
+            "generated_tokens": 2,
+            "seconds": 0.33095806500000435
+          }
+        ],
+        "count": 4,
+        "withheld": false,
+        "limitation": "Agreement between transformed views is not independent validation. Small, obscured or edge-cropped fields may be missed.",
+        "generated_tokens": 4,
+        "generation_seconds": 0.683,
+        "max_new_tokens": 32,
+        "peak_allocated_GiB": 4.313,
+        "reason": "two_view_agreement",
+        "answer": "4 identifiable baseball/softball diamonds visible.\n\nVQA estimate; partial or obscured fields can affect the count."
+      },
+      "seconds": 0.791,
+      "generation_seconds": 0.683,
+      "peak_allocated_GiB": 4.313,
+      "generated_tokens": 4,
+      "max_new_tokens": 32,
+      "visual_token_bounds": [
+        256,
+        512
+      ]
+    }
+  },
+  {
+    "test": "02-dehradun.tif",
+    "image": "02-dehradun.tif",
+    "elapsed_seconds": 0.312,
+    "run": {
+      "id": "e6530885cd1943cb84d428278cbbd766",
+      "state": "complete",
+      "stage": "Complete",
+      "image": {
+        "id": "42a493e2ca54442da741d9510f3571e8",
+        "name": "02-dehradun.tif",
+        "width": 512,
+        "height": 512,
+        "bytes": 3235336,
+        "sha256": "55f3ca7b578e045594f8d54419b590c3ffeb99247ec5f74d7b1355d5bc4ec0f8",
+        "preview": "/api/images/42a493e2ca54442da741d9510f3571e8",
+        "geo": {
+          "calibration_version": "c1-header-verified-v2",
+          "crs": "EPSG:32643",
+          "width": 512,
+          "height": 512,
+          "transform": [
+            10.0,
+            0.0,
+            788360.0,
+            0.0,
+            -10.0,
+            3359030.0
+          ],
+          "bounds": [
+            788360.0,
+            3353910.0,
+            793480.0,
+            3359030.0
+          ],
+          "bounds_wgs84": [
+            77.99766300376905,
+            30.281402875774386,
+            78.05225589782314,
+            30.328772451280432
+          ],
+          "resolution": [
+            10.0,
+            10.0
+          ],
+          "bands": {
+            "red": 1,
+            "green": 2,
+            "blue": 3,
+            "nir": 4,
+            "scl": 5
+          },
+          "band_descriptions": [
+            "red",
+            "green",
+            "blue",
+            "nir",
+            "scl"
+          ],
+          "nodata": "nan",
+          "scales": [
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0
+          ],
+          "offsets": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "acquired": "2021-11-25T05:40:34.501000Z",
+          "source_item": "S2A_T43RGP_20211125T053958_L2A",
+          "attribution": "Contains modified Copernicus Sentinel data (2021), accessed through Element 84 Earth Search / AWS.",
+          "ndvi_supported": true,
+          "quality_mask_available": true,
+          "preview_processing": "Per-channel 2nd\u201398th percentile RGB display stretch; analytical values are preserved."
+        }
+      },
+      "started": 1788823654.806797,
+      "route": "NDVI from calibrated red/NIR",
+      "threshold": 0.5,
+      "question": "Calculate NDVI coverage at the selected threshold.",
+      "routing": {
+        "tool": "ndvi",
+        "rule": "ndvi_threshold_coverage",
+        "reason": "Explicit NDVI or vegetation pixel-coverage request with calibrated Red/NIR available. Coverage means pixels meeting the selected NDVI threshold, not surveyed vegetation cover.",
+        "version": "rules-v2"
+      },
+      "answer": "NDVI \u2265 0.50: 14.79% of valid pixels. Selected pixels cover 14.79% of the whole crop. Projected grid area: 387.61 hectares. Valid pixels cover 100.00% of this crop. This is threshold-based coverage, not a vegetation-health diagnosis.",
+      "statistics": {
+        "numerical_precision": "float64 reflectance arithmetic, threshold comparison and NDVI export",
+        "calibration_version": "c1-header-verified-v2",
+        "exclusion_counts": {
+          "nodata_or_nonfinite": 0,
+          "negative_reflectance": 0,
+          "zero_denominator": 0,
+          "quality_after_reflectance_checks": 0
+        },
+        "excluded_pixels": 0,
+        "selected_percent_of_crop": 14.786148071289062,
+        "threshold": 0.5,
+        "valid_pixels": 262144,
+        "total_pixels": 262144,
+        "selected_pixels": 38761,
+        "valid_coverage_percent": 100.0,
+        "selected_percent_of_valid": 14.786148071289062,
+        "selected_area_m2": 3876100.0,
+        "area_method": "Projected grid area from affine determinant; not terrain surface area.",
+        "ndvi_min": -0.11406418886026737,
+        "ndvi_max": 0.8720458399410769,
+        "ndvi_mean": 0.2718112970070255,
+        "quality_mask_available": true,
+        "quality_rule": "SCL 4,5,6,7 retained; other classes excluded.",
+        "interpretation": "Pixels meeting the stated NDVI threshold; not a vegetation health, density, or species diagnosis."
+      },
+      "overlay": "/api/runs/e6530885cd1943cb84d428278cbbd766/overlay",
+      "raster": "/api/runs/e6530885cd1943cb84d428278cbbd766/ndvi",
+      "seconds": 0.217,
+      "processing_stages": {
+        "rgb": "/api/runs/e6530885cd1943cb84d428278cbbd766/rgb",
+        "false-colour": "/api/runs/e6530885cd1943cb84d428278cbbd766/false-colour",
+        "evidence": "/api/runs/e6530885cd1943cb84d428278cbbd766/evidence",
+        "mask": "/api/runs/e6530885cd1943cb84d428278cbbd766/mask"
+      }
+    },
+    "downloads": {
+      "overlay": "02-dehradun.tif-overlay.png",
+      "ndvi": "02-dehradun.tif-ndvi.tif",
+      "rgb": "02-dehradun.tif-rgb.png",
+      "false-colour": "02-dehradun.tif-false-colour.png",
+      "evidence": "02-dehradun.tif-evidence.png",
+      "mask": "02-dehradun.tif-mask.png"
+    },
+    "independent_pixels_and_artifacts_passed": true
+  },
+  {
+    "test": "03-punjab-farmland.tif",
+    "image": "03-punjab-farmland.tif",
+    "elapsed_seconds": 0.31,
+    "run": {
+      "id": "73e731b2207c46a78e09dbca6c73f351",
+      "state": "complete",
+      "stage": "Complete",
+      "image": {
+        "id": "7ccf3460871543c9929f799b88abcdff",
+        "name": "03-punjab-farmland.tif",
+        "width": 512,
+        "height": 512,
+        "bytes": 3197702,
+        "sha256": "abc0611600f3ef2af2710507285af798fa906aa9965cc094350cbc8fa5a11539",
+        "preview": "/api/images/7ccf3460871543c9929f799b88abcdff",
+        "geo": {
+          "calibration_version": "c1-header-verified-v2",
+          "crs": "EPSG:32643",
+          "width": 512,
+          "height": 512,
+          "transform": [
+            10.0,
+            0.0,
+            559550.0,
+            0.0,
+            -10.0,
+            3421270.0
+          ],
+          "bounds": [
+            559550.0,
+            3416150.0,
+            564670.0,
+            3421270.0
+          ],
+          "bounds_wgs84": [
+            75.62297862276665,
+            30.87685092762402,
+            75.67686309820884,
+            30.923316684070073
+          ],
+          "resolution": [
+            10.0,
+            10.0
+          ],
+          "bands": {
+            "red": 1,
+            "green": 2,
+            "blue": 3,
+            "nir": 4,
+            "scl": 5
+          },
+          "band_descriptions": [
+            "red",
+            "green",
+            "blue",
+            "nir",
+            "scl"
+          ],
+          "nodata": "nan",
+          "scales": [
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0
+          ],
+          "offsets": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "acquired": "2024-10-13T05:50:20.888000Z",
+          "source_item": "S2A_T43REQ_20241013T054552_L2A",
+          "attribution": "Contains modified Copernicus Sentinel data (2024), accessed through Element 84 Earth Search / AWS.",
+          "ndvi_supported": true,
+          "quality_mask_available": true,
+          "preview_processing": "Per-channel 2nd\u201398th percentile RGB display stretch; analytical values are preserved."
+        }
+      },
+      "started": 1788823655.5531604,
+      "route": "NDVI from calibrated red/NIR",
+      "threshold": 0.5,
+      "question": "Calculate NDVI coverage at the selected threshold.",
+      "routing": {
+        "tool": "ndvi",
+        "rule": "ndvi_threshold_coverage",
+        "reason": "Explicit NDVI or vegetation pixel-coverage request with calibrated Red/NIR available. Coverage means pixels meeting the selected NDVI threshold, not surveyed vegetation cover.",
+        "version": "rules-v2"
+      },
+      "answer": "NDVI \u2265 0.50: 66.40% of valid pixels. Selected pixels cover 66.40% of the whole crop. Projected grid area: 1740.61 hectares. Valid pixels cover 100.00% of this crop. This is threshold-based coverage, not a vegetation-health diagnosis.",
+      "statistics": {
+        "numerical_precision": "float64 reflectance arithmetic, threshold comparison and NDVI export",
+        "calibration_version": "c1-header-verified-v2",
+        "exclusion_counts": {
+          "nodata_or_nonfinite": 0,
+          "negative_reflectance": 0,
+          "zero_denominator": 0,
+          "quality_after_reflectance_checks": 0
+        },
+        "excluded_pixels": 0,
+        "selected_percent_of_crop": 66.39900207519531,
+        "threshold": 0.5,
+        "valid_pixels": 262144,
+        "total_pixels": 262144,
+        "selected_pixels": 174061,
+        "valid_coverage_percent": 100.0,
+        "selected_percent_of_valid": 66.39900207519531,
+        "selected_area_m2": 17406100.0,
+        "area_method": "Projected grid area from affine determinant; not terrain surface area.",
+        "ndvi_min": -0.17092657023678448,
+        "ndvi_max": 0.8664650180179932,
+        "ndvi_mean": 0.5339753336661225,
+        "quality_mask_available": true,
+        "quality_rule": "SCL 4,5,6,7 retained; other classes excluded.",
+        "interpretation": "Pixels meeting the stated NDVI threshold; not a vegetation health, density, or species diagnosis."
+      },
+      "overlay": "/api/runs/73e731b2207c46a78e09dbca6c73f351/overlay",
+      "raster": "/api/runs/73e731b2207c46a78e09dbca6c73f351/ndvi",
+      "seconds": 0.252,
+      "processing_stages": {
+        "rgb": "/api/runs/73e731b2207c46a78e09dbca6c73f351/rgb",
+        "false-colour": "/api/runs/73e731b2207c46a78e09dbca6c73f351/false-colour",
+        "evidence": "/api/runs/73e731b2207c46a78e09dbca6c73f351/evidence",
+        "mask": "/api/runs/73e731b2207c46a78e09dbca6c73f351/mask"
+      }
+    },
+    "downloads": {
+      "overlay": "03-punjab-farmland.tif-overlay.png",
+      "ndvi": "03-punjab-farmland.tif-ndvi.tif",
+      "rgb": "03-punjab-farmland.tif-rgb.png",
+      "false-colour": "03-punjab-farmland.tif-false-colour.png",
+      "evidence": "03-punjab-farmland.tif-evidence.png",
+      "mask": "03-punjab-farmland.tif-mask.png"
+    },
+    "independent_pixels_and_artifacts_passed": true
+  },
+  {
+    "test": "adapter-rural",
+    "image": "04-rural-urban-adapter.png",
+    "elapsed_seconds": 1.339,
+    "run": {
+      "id": "8f8ba668c6994608bbaa60d697d7e068",
+      "state": "complete",
+      "stage": "Complete",
+      "question": "Is this image rural or urban?",
+      "image": {
+        "id": "eecc0efcc8174579ab5f18f4878438d4",
+        "name": "04-rural-urban-adapter.png",
+        "width": 256,
+        "height": 256,
+        "bytes": 100422,
+        "sha256": "0d02285eff493fbdb48872d442ee03d108cf5a4c6117e7299dc762183d5d77c1",
+        "preview": "/api/images/eecc0efcc8174579ab5f18f4878438d4",
+        "geo": null
+      },
+      "started": 1788823656.221281,
+      "model": "AdaptLLM/remote-sensing-Qwen2-VL-2B-Instruct",
+      "revision": "7f5dd71bf0f40c282193d50160e848a387a08ffe",
+      "adapter": "lora-pilot-v1",
+      "mode": "pilot_rural",
+      "route": "Single-image optical VQA",
+      "trace": [
+        {
+          "step": "Generate model answer",
+          "seconds": 0.235
+        }
+      ],
+      "routing": {
+        "tool": "vqa",
+        "rule": "single_image_description",
+        "reason": "Supported descriptive or presence question about one optical image; no quantitative or spatial output requested.",
+        "version": "rules-v2"
+      },
+      "requested_mode": "pilot_rural",
+      "effective_question": "Is this image rural or urban? Answer with only rural or urban.",
+      "visual_token_bounds": [
+        64,
+        128
+      ],
+      "raw_answer": "urban",
+      "answer_validation": {
+        "policy": "bounded-answer-v2",
+        "category": "rural_urban",
+        "limitation": "Model interpretation; object identities and locations are not independently verified.",
+        "raw_truncated": false,
+        "changed": true,
+        "withheld": false,
+        "reasons": [
+          "explanation_omitted_final_label_only"
+        ],
+        "answer": "Urban"
+      },
+      "answer_policy": "bounded-answer-v2",
+      "answer": "Urban",
+      "seconds": 1.243,
+      "generation_seconds": 0.235,
+      "peak_allocated_GiB": 4.163,
+      "generated_tokens": 2,
+      "max_new_tokens": 16
+    }
+  },
+  {
+    "test": "original-after-adapter",
+    "image": "05-river-negative-control.png",
+    "elapsed_seconds": 3.061,
+    "run": {
+      "id": "291477119e7642ceb6c6cf92349d83ea",
+      "state": "complete",
+      "stage": "Complete",
+      "question": "Is there a river visible in this image?",
+      "image": {
+        "id": "4d45ae12cc8b4c929223662f2d2bc6a2",
+        "name": "05-river-negative-control.png",
+        "width": 256,
+        "height": 256,
+        "bytes": 86339,
+        "sha256": "d9f9ced261109bcd24d9d411bd82a10a1e11e0db8cf93e7c43156ea1a111fce0",
+        "preview": "/api/images/4d45ae12cc8b4c929223662f2d2bc6a2",
+        "geo": null
+      },
+      "started": 1788823657.5960908,
+      "model": "AdaptLLM/remote-sensing-Qwen2-VL-2B-Instruct",
+      "revision": "7f5dd71bf0f40c282193d50160e848a387a08ffe",
+      "adapter": null,
+      "mode": "baseline",
+      "route": "Single-image optical VQA",
+      "trace": [
+        {
+          "step": "Generate model answer",
+          "seconds": 2.938
+        }
+      ],
+      "routing": {
+        "tool": "vqa",
+        "rule": "single_image_description",
+        "reason": "Supported descriptive or presence question about one optical image; no quantitative or spatial output requested.",
+        "version": "rules-v2"
+      },
+      "requested_mode": "baseline",
+      "effective_question": "Is there a river visible in this image?",
+      "visual_token_bounds": [
+        256,
+        512
+      ],
+      "raw_answer": "No, there is no river visible in this image. The image is a patchwork of agricultural fields, primarily in shades of green and brown, with no discernible water bodies or riverbanks. The focus of the image is on the fields themselves, and the absence of a river suggests that the image does not capture a river in the context of the fields. Therefore, the answer is no",
+      "answer_validation": {
+        "policy": "bounded-answer-v2",
+        "category": "binary",
+        "limitation": "Model interpretation; object identities and locations are not independently verified.",
+        "raw_truncated": false,
+        "changed": true,
+        "withheld": false,
+        "reasons": [
+          "explanation_omitted_final_label_only"
+        ],
+        "answer": "No"
+      },
+      "answer_policy": "bounded-answer-v2",
+      "answer": "No",
+      "seconds": 2.959,
+      "generation_seconds": 2.938,
+      "peak_allocated_GiB": 4.222,
+      "generated_tokens": 79,
+      "max_new_tokens": 128
+    },
+    "reference": "No",
+    "reference_match": true
+  },
+  {
+    "test": "known-binary-limitation",
+    "image": "05-river-negative-control.png",
+    "elapsed_seconds": 1.34,
+    "run": {
+      "id": "c63dce0ef0264702b336a41b5a13b57e",
+      "state": "complete",
+      "stage": "Complete",
+      "question": "Is there a river visible in this image?",
+      "image": {
+        "id": "4d45ae12cc8b4c929223662f2d2bc6a2",
+        "name": "05-river-negative-control.png",
+        "width": 256,
+        "height": 256,
+        "bytes": 86339,
+        "sha256": "d9f9ced261109bcd24d9d411bd82a10a1e11e0db8cf93e7c43156ea1a111fce0",
+        "preview": "/api/images/4d45ae12cc8b4c929223662f2d2bc6a2",
+        "geo": null
+      },
+      "started": 1788823660.6632345,
+      "model": "AdaptLLM/remote-sensing-Qwen2-VL-2B-Instruct",
+      "revision": "7f5dd71bf0f40c282193d50160e848a387a08ffe",
+      "adapter": "lora-pilot-v1",
+      "mode": "pilot_binary",
+      "route": "Single-image optical VQA",
+      "trace": [
+        {
+          "step": "Generate model answer",
+          "seconds": 0.287
+        }
+      ],
+      "routing": {
+        "tool": "vqa",
+        "rule": "single_image_description",
+        "reason": "Supported descriptive or presence question about one optical image; no quantitative or spatial output requested.",
+        "version": "rules-v2"
+      },
+      "requested_mode": "pilot_binary",
+      "effective_question": "Is there a river visible in this image? Answer with only yes or no.",
+      "visual_token_bounds": [
+        64,
+        128
+      ],
+      "raw_answer": "yes",
+      "answer_validation": {
+        "policy": "bounded-answer-v2",
+        "category": "binary",
+        "limitation": "Model interpretation; object identities and locations are not independently verified.",
+        "raw_truncated": false,
+        "changed": true,
+        "withheld": false,
+        "reasons": [
+          "explanation_omitted_final_label_only"
+        ],
+        "answer": "Yes"
+      },
+      "answer_policy": "bounded-answer-v2",
+      "answer": "Yes",
+      "seconds": 1.104,
+      "generation_seconds": 0.287,
+      "peak_allocated_GiB": 4.164,
+      "generated_tokens": 2,
+      "max_new_tokens": 16
+    },
+    "reference": "No",
+    "reference_match": false
+  }
+]

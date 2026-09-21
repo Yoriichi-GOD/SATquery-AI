@@ -1,0 +1,126 @@
+[
+  {
+    "id": "81accf2f4723460db7a7b427cb1194dd",
+    "state": "complete",
+    "stage": "Complete",
+    "question": "how many cars are there in this image?",
+    "image": {
+      "id": "19f02e44ff694b44a968639d8ed19a4c",
+      "name": "forza-car.png",
+      "width": 2559,
+      "height": 1599,
+      "bytes": 7034632,
+      "sha256": "0ba3743e3ea6d64e65f400ed7097c66f2d8e4c2bd374094c9945814f92b9b1ef",
+      "preview": "/api/images/19f02e44ff694b44a968639d8ed19a4c",
+      "geo": null
+    },
+    "started": 1788919792.0846133,
+    "model": "AdaptLLM/remote-sensing-Qwen2-VL-2B-Instruct",
+    "revision": "7f5dd71bf0f40c282193d50160e848a387a08ffe",
+    "adapter": null,
+    "mode": "baseline",
+    "route": "Single-image optical VQA",
+    "trace": [
+      {
+        "step": "Load pinned checkpoint",
+        "seconds": 8.569
+      },
+      {
+        "step": "Generate model answer",
+        "seconds": 6.35
+      }
+    ],
+    "routing": {
+      "tool": "vqa",
+      "rule": "visual_count",
+      "reason": "General visual count from the original model; an estimate, not validated object detection.",
+      "version": "rules-v4"
+    },
+    "requested_mode": "baseline",
+    "effective_question": "how many cars are there in this image?",
+    "visual_token_bounds": [
+      256,
+      512
+    ],
+    "raw_answer": "There is one car in the image. It is a red sports car with a distinctive design, positioned on the road with a clear view of its features. The car is the main subject of the image and is the only vehicle visible. The surrounding environment, including the trees and the mountain in the background, adds to the scenic beauty of the scene. Therefore, the answer is 1",
+    "answer_validation": {
+      "policy": "open-visual-v1",
+      "answer": "There is one car in the image. It is a red sports car with a distinctive design, positioned on the road with a clear view of its features. The car is the main subject of the image and is the only vehicle visible. The surrounding environment, including the trees and the mountain in the background, adds to the scenic beauty of the scene. Therefore, the answer is 1\n\nVisual estimate; counts may be inaccurate.",
+      "limitation": "Visual estimate; counts may be inaccurate.",
+      "raw_truncated": false,
+      "changed": true,
+      "withheld": false,
+      "reasons": [
+        "model_output_preserved",
+        "estimate_label_added"
+      ]
+    },
+    "answer_policy": "open-visual-v1",
+    "answer": "There is one car in the image. It is a red sports car with a distinctive design, positioned on the road with a clear view of its features. The car is the main subject of the image and is the only vehicle visible. The surrounding environment, including the trees and the mountain in the background, adds to the scenic beauty of the scene. Therefore, the answer is 1\n\nVisual estimate; counts may be inaccurate.",
+    "seconds": 22.986,
+    "generation_seconds": 6.35,
+    "peak_allocated_GiB": 4.296,
+    "generated_tokens": 78,
+    "max_new_tokens": 128
+  },
+  {
+    "id": "5f55ea929c694dc5b4194744adf754f8",
+    "state": "complete",
+    "stage": "Complete",
+    "question": "Describe this image.",
+    "image": {
+      "id": "19f02e44ff694b44a968639d8ed19a4c",
+      "name": "forza-car.png",
+      "width": 2559,
+      "height": 1599,
+      "bytes": 7034632,
+      "sha256": "0ba3743e3ea6d64e65f400ed7097c66f2d8e4c2bd374094c9945814f92b9b1ef",
+      "preview": "/api/images/19f02e44ff694b44a968639d8ed19a4c",
+      "geo": null
+    },
+    "started": 1788919815.3666832,
+    "model": "AdaptLLM/remote-sensing-Qwen2-VL-2B-Instruct",
+    "revision": "7f5dd71bf0f40c282193d50160e848a387a08ffe",
+    "adapter": null,
+    "mode": "baseline",
+    "route": "Single-image optical VQA",
+    "trace": [
+      {
+        "step": "Generate model answer",
+        "seconds": 1.415
+      }
+    ],
+    "routing": {
+      "tool": "vqa",
+      "rule": "single_image_description",
+      "reason": "Supported descriptive or presence question about one optical image; no quantitative or spatial output requested.",
+      "version": "rules-v4"
+    },
+    "requested_mode": "baseline",
+    "effective_question": "Describe this image.",
+    "visual_token_bounds": [
+      256,
+      512
+    ],
+    "raw_answer": "A red sports car is driving on the road with some trees and mountains in the background.",
+    "answer_validation": {
+      "policy": "open-visual-v1",
+      "answer": "A red sports car is driving on the road with some trees and mountains in the background.\n\nModel interpretation; may be inaccurate.",
+      "limitation": "Model interpretation; may be inaccurate.",
+      "raw_truncated": false,
+      "changed": true,
+      "withheld": false,
+      "reasons": [
+        "model_output_preserved",
+        "estimate_label_added"
+      ]
+    },
+    "answer_policy": "open-visual-v1",
+    "answer": "A red sports car is driving on the road with some trees and mountains in the background.\n\nModel interpretation; may be inaccurate.",
+    "seconds": 1.665,
+    "generation_seconds": 1.415,
+    "peak_allocated_GiB": 4.294,
+    "generated_tokens": 19,
+    "max_new_tokens": 128
+  }
+]

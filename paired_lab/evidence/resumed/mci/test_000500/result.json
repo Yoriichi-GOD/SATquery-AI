@@ -1,0 +1,35 @@
+{
+  "file": "test_000500.png",
+  "reference_changeflag": 1,
+  "raw_caption": "two houses are built by the roadside",
+  "reference_captions": [
+    " a building has been constructed next to the original one .",
+    " a villa is built on the left beside the road .",
+    " a house has been built on the bareland beside the road .",
+    " a new house is built next to another one .",
+    " a house appears near the existing one on the bareland ."
+  ],
+  "caption_changeflag_heuristic": 1,
+  "confusion_rows_reference_columns_prediction": [
+    [
+      63305,
+      35,
+      78
+    ],
+    [
+      479,
+      214,
+      0
+    ],
+    [
+      122,
+      0,
+      1303
+    ]
+  ],
+  "predicted_class_pixels": {
+    "0": 63906,
+    "1": 249,
+    "2": 1381
+  }
+}

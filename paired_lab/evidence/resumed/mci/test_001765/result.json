@@ -1,0 +1,35 @@
+{
+  "file": "test_001765.png",
+  "reference_changeflag": 0,
+  "raw_caption": "the scene is the same as before",
+  "reference_captions": [
+    " there is no difference .",
+    " the two scenes seem identical .",
+    " the scene is the same as before .",
+    " no change has occurred .",
+    " almost nothing has changed ."
+  ],
+  "caption_changeflag_heuristic": 0,
+  "confusion_rows_reference_columns_prediction": [
+    [
+      65536,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0
+    ]
+  ],
+  "predicted_class_pixels": {
+    "0": 65536,
+    "1": 0,
+    "2": 0
+  }
+}

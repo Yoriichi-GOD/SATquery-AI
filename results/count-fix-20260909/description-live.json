@@ -1,0 +1,499 @@
+[
+  {
+    "case": "stadium",
+    "reference": 1,
+    "source": "/root/satquery/app-data/images/f01008d4ee8f47ebb9db13f7f597bd17.png",
+    "suffix": "",
+    "run": {
+      "id": "34956dea4074486eafebd2c35cad8699",
+      "state": "complete",
+      "stage": "Complete",
+      "question": "how many stadiums in this image.",
+      "image": {
+        "id": "68c8ca70b65c40e0a35593ce809c4b17",
+        "name": "f01008d4ee8f47ebb9db13f7f597bd17.png",
+        "width": 500,
+        "height": 264,
+        "bytes": 173635,
+        "sha256": "da733a52a60a5c61655fc1f496de20114595110b45fe81e656d1b25851b7c2d2",
+        "preview": "/api/images/68c8ca70b65c40e0a35593ce809c4b17",
+        "geo": null
+      },
+      "started": 1788920534.494088,
+      "model": "AdaptLLM/remote-sensing-Qwen2-VL-2B-Instruct",
+      "revision": "7f5dd71bf0f40c282193d50160e848a387a08ffe",
+      "adapter": null,
+      "mode": "baseline",
+      "route": "Single-image optical VQA",
+      "trace": [
+        {
+          "step": "Load pinned checkpoint",
+          "seconds": 7.638
+        },
+        {
+          "step": "Generate model answer",
+          "seconds": 2.336
+        },
+        {
+          "step": "Generate separate scene description",
+          "seconds": 0.522
+        }
+      ],
+      "routing": {
+        "tool": "vqa",
+        "rule": "visual_count",
+        "reason": "General visual count from the original model; an estimate, not validated object detection.",
+        "version": "rules-v5"
+      },
+      "requested_mode": "baseline",
+      "effective_question": "how many stadiums in this image. Answer with only a single integer. Do not describe the image.",
+      "visual_token_bounds": [
+        256,
+        512
+      ],
+      "raw_answer": "1",
+      "answer_validation": {
+        "policy": "focused-count-v1",
+        "count": 1,
+        "withheld": false,
+        "changed": true,
+        "raw_truncated": false,
+        "limitation": "Visual estimate; counts may be inaccurate.",
+        "reasons": [
+          "unambiguous_count"
+        ],
+        "answer": "Estimated count: 1.\n\nVisual estimate; counts may be inaccurate."
+      },
+      "answer_policy": "focused-count-v1",
+      "answer": "Estimated count: 1.\n\nVisual estimate; counts may be inaccurate.\n\nScene description (model interpretation):\nA stadium is surrounded by buildings and roads.",
+      "seconds": 16.839,
+      "generation_seconds": 2.858,
+      "peak_allocated_GiB": 4.235,
+      "generated_tokens": 12,
+      "max_new_tokens": 128,
+      "count_answer": "Estimated count: 1.\n\nVisual estimate; counts may be inaccurate.",
+      "description": {
+        "raw_answer": "A stadium is surrounded by buildings and roads.",
+        "prompt": "Describe the main visible objects and their surroundings in one short sentence. Do not give counts or quantities.",
+        "generated_tokens": 10,
+        "max_new_tokens": 64,
+        "truncated": false,
+        "seconds": 0.522,
+        "policy": "separate-description-v1"
+      }
+    }
+  },
+  {
+    "case": "car",
+    "reference": 1,
+    "source": "/root/satquery/app-data/images/4dfea163809b43288da4b6ae44996316.png",
+    "suffix": "",
+    "run": {
+      "id": "e52f381901e04fc4bdd0a57bd89a9346",
+      "state": "complete",
+      "stage": "Complete",
+      "question": "how many cars are there in this image.",
+      "image": {
+        "id": "8319e6ae33314b89ba52af07008eb47c",
+        "name": "4dfea163809b43288da4b6ae44996316.png",
+        "width": 2559,
+        "height": 1599,
+        "bytes": 7034632,
+        "sha256": "0ba3743e3ea6d64e65f400ed7097c66f2d8e4c2bd374094c9945814f92b9b1ef",
+        "preview": "/api/images/8319e6ae33314b89ba52af07008eb47c",
+        "geo": null
+      },
+      "started": 1788920552.8201065,
+      "model": "AdaptLLM/remote-sensing-Qwen2-VL-2B-Instruct",
+      "revision": "7f5dd71bf0f40c282193d50160e848a387a08ffe",
+      "adapter": null,
+      "mode": "baseline",
+      "route": "Single-image optical VQA",
+      "trace": [
+        {
+          "step": "Generate model answer",
+          "seconds": 0.398
+        },
+        {
+          "step": "Generate separate scene description",
+          "seconds": 1.141
+        }
+      ],
+      "routing": {
+        "tool": "vqa",
+        "rule": "visual_count",
+        "reason": "General visual count from the original model; an estimate, not validated object detection.",
+        "version": "rules-v5"
+      },
+      "requested_mode": "baseline",
+      "effective_question": "how many cars are there in this image. Answer with only a single integer. Do not describe the image.",
+      "visual_token_bounds": [
+        256,
+        512
+      ],
+      "raw_answer": "1",
+      "answer_validation": {
+        "policy": "focused-count-v1",
+        "count": 1,
+        "withheld": false,
+        "changed": true,
+        "raw_truncated": false,
+        "limitation": "Visual estimate; counts may be inaccurate.",
+        "reasons": [
+          "unambiguous_count"
+        ],
+        "answer": "Estimated count: 1.\n\nVisual estimate; counts may be inaccurate."
+      },
+      "answer_policy": "focused-count-v1",
+      "answer": "Estimated count: 1.\n\nVisual estimate; counts may be inaccurate.\n\nScene description (model interpretation):\nA red sports car is driving on a road with green trees and a snow-capped mountain in the background.",
+      "seconds": 1.773,
+      "generation_seconds": 1.539,
+      "peak_allocated_GiB": 4.308,
+      "generated_tokens": 25,
+      "max_new_tokens": 128,
+      "count_answer": "Estimated count: 1.\n\nVisual estimate; counts may be inaccurate.",
+      "description": {
+        "raw_answer": "A red sports car is driving on a road with green trees and a snow-capped mountain in the background.",
+        "prompt": "Describe the main visible objects and their surroundings in one short sentence. Do not give counts or quantities.",
+        "generated_tokens": 23,
+        "max_new_tokens": 64,
+        "truncated": false,
+        "seconds": 1.141,
+        "policy": "separate-description-v1"
+      }
+    }
+  },
+  {
+    "case": "negative",
+    "reference": 0,
+    "source": "/mnt/c/Users/nrgen/.codex/scratch/SATquery AI/results/reliability-20260907/counting/farmland.png",
+    "suffix": "",
+    "run": {
+      "id": "f98d49e5cf93451791b1a2974f4e01ec",
+      "state": "complete",
+      "stage": "Complete",
+      "question": "How many stadiums are visible in this image.",
+      "image": {
+        "id": "a5d9a7db30f4417f96ce84dabb256f80",
+        "name": "farmland.png",
+        "width": 256,
+        "height": 256,
+        "bytes": 86339,
+        "sha256": "d9f9ced261109bcd24d9d411bd82a10a1e11e0db8cf93e7c43156ea1a111fce0",
+        "preview": "/api/images/a5d9a7db30f4417f96ce84dabb256f80",
+        "geo": null
+      },
+      "started": 1788920554.9063542,
+      "model": "AdaptLLM/remote-sensing-Qwen2-VL-2B-Instruct",
+      "revision": "7f5dd71bf0f40c282193d50160e848a387a08ffe",
+      "adapter": null,
+      "mode": "baseline",
+      "route": "Single-image optical VQA",
+      "trace": [
+        {
+          "step": "Generate model answer",
+          "seconds": 0.215
+        },
+        {
+          "step": "Generate separate scene description",
+          "seconds": 0.515
+        }
+      ],
+      "routing": {
+        "tool": "vqa",
+        "rule": "visual_count",
+        "reason": "General visual count from the original model; an estimate, not validated object detection.",
+        "version": "rules-v5"
+      },
+      "requested_mode": "baseline",
+      "effective_question": "How many stadiums are visible in this image. Answer with only a single integer. Do not describe the image.",
+      "visual_token_bounds": [
+        256,
+        512
+      ],
+      "raw_answer": "0",
+      "answer_validation": {
+        "policy": "focused-count-v1",
+        "count": 0,
+        "withheld": false,
+        "changed": true,
+        "raw_truncated": false,
+        "limitation": "Visual estimate; counts may be inaccurate.",
+        "reasons": [
+          "unambiguous_count"
+        ],
+        "answer": "Estimated count: 0.\n\nVisual estimate; counts may be inaccurate."
+      },
+      "answer_policy": "focused-count-v1",
+      "answer": "Estimated count: 0.\n\nVisual estimate; counts may be inaccurate.\n\nScene description (model interpretation):\nThere are many green and tan rectangular farmlands.",
+      "seconds": 0.749,
+      "generation_seconds": 0.73,
+      "peak_allocated_GiB": 4.228,
+      "generated_tokens": 14,
+      "max_new_tokens": 128,
+      "count_answer": "Estimated count: 0.\n\nVisual estimate; counts may be inaccurate.",
+      "description": {
+        "raw_answer": "There are many green and tan rectangular farmlands.",
+        "prompt": "Describe the main visible objects and their surroundings in one short sentence. Do not give counts or quantities.",
+        "generated_tokens": 12,
+        "max_new_tokens": 64,
+        "truncated": false,
+        "seconds": 0.515,
+        "policy": "separate-description-v1"
+      }
+    }
+  },
+  {
+    "case": "baseball",
+    "reference": 4,
+    "source": "/mnt/c/Users/nrgen/.codex/scratch/SATquery AI/results/reliability-20260907/counting/full.png",
+    "suffix": "",
+    "run": {
+      "id": "455ab0fe28fa4aa39875282a70c0f469",
+      "state": "complete",
+      "stage": "Complete",
+      "question": "How many baseball fields are there in this image.",
+      "image": {
+        "id": "bf11befd2d32481f833252130995e532",
+        "name": "full.png",
+        "width": 800,
+        "height": 800,
+        "bytes": 1058832,
+        "sha256": "d554202729a40d67eb39fc38759e196ca628cf6f7f3c2679b075fcb9a9f52e80",
+        "preview": "/api/images/bf11befd2d32481f833252130995e532",
+        "geo": null
+      },
+      "started": 1788920555.9404078,
+      "model": "AdaptLLM/remote-sensing-Qwen2-VL-2B-Instruct",
+      "revision": "7f5dd71bf0f40c282193d50160e848a387a08ffe",
+      "adapter": null,
+      "mode": "baseline",
+      "route": "Single-image optical VQA",
+      "trace": [
+        {
+          "step": "Compare original and mirrored image counts",
+          "seconds": 0.644
+        },
+        {
+          "step": "Generate separate scene description",
+          "seconds": 0.625
+        }
+      ],
+      "routing": {
+        "tool": "vqa",
+        "rule": "baseball_count",
+        "reason": "Baseball/softball field count estimated by VQA; an original and mirrored image must agree. No object boxes or verified detection are produced.",
+        "version": "rules-v5"
+      },
+      "requested_mode": "baseline",
+      "answer": "4 identifiable baseball/softball diamonds visible.\n\nVQA estimate; partial or obscured fields can affect the count.\n\nScene description (model interpretation):\nFour baseball fields are surrounded by green meadows.",
+      "raw_answer": "4\n4",
+      "counting": {
+        "policy": "baseball-two-view-v1",
+        "kind": "VQA estimate",
+        "views": [
+          {
+            "view": "original",
+            "raw_answer": "4",
+            "count": 4,
+            "generated_tokens": 2,
+            "seconds": 0.3285033070001191
+          },
+          {
+            "view": "mirrored",
+            "raw_answer": "4",
+            "count": 4,
+            "generated_tokens": 2,
+            "seconds": 0.31572456999992937
+          }
+        ],
+        "count": 4,
+        "withheld": false,
+        "limitation": "Agreement between transformed views is not independent validation. Small, obscured or edge-cropped fields may be missed.",
+        "generated_tokens": 4,
+        "generation_seconds": 0.644,
+        "max_new_tokens": 32,
+        "peak_allocated_GiB": 4.314,
+        "reason": "two_view_agreement",
+        "answer": "4 identifiable baseball/softball diamonds visible.\n\nVQA estimate; partial or obscured fields can affect the count."
+      },
+      "answer_policy": "baseball-two-view-v1",
+      "answer_validation": {
+        "policy": "baseball-two-view-v1",
+        "kind": "VQA estimate",
+        "views": [
+          {
+            "view": "original",
+            "raw_answer": "4",
+            "count": 4,
+            "generated_tokens": 2,
+            "seconds": 0.3285033070001191
+          },
+          {
+            "view": "mirrored",
+            "raw_answer": "4",
+            "count": 4,
+            "generated_tokens": 2,
+            "seconds": 0.31572456999992937
+          }
+        ],
+        "count": 4,
+        "withheld": false,
+        "limitation": "Agreement between transformed views is not independent validation. Small, obscured or edge-cropped fields may be missed.",
+        "generated_tokens": 4,
+        "generation_seconds": 0.644,
+        "max_new_tokens": 32,
+        "peak_allocated_GiB": 4.314,
+        "reason": "two_view_agreement",
+        "answer": "4 identifiable baseball/softball diamonds visible.\n\nVQA estimate; partial or obscured fields can affect the count."
+      },
+      "seconds": 1.403,
+      "generation_seconds": 1.269,
+      "peak_allocated_GiB": 4.314,
+      "generated_tokens": 15,
+      "max_new_tokens": 32,
+      "visual_token_bounds": [
+        256,
+        512
+      ],
+      "count_answer": "4 identifiable baseball/softball diamonds visible.\n\nVQA estimate; partial or obscured fields can affect the count.",
+      "description": {
+        "raw_answer": "Four baseball fields are surrounded by green meadows.",
+        "prompt": "Describe the main visible objects and their surroundings in one short sentence. Do not give counts or quantities.",
+        "generated_tokens": 11,
+        "max_new_tokens": 64,
+        "truncated": false,
+        "seconds": 0.625,
+        "policy": "separate-description-v1"
+      }
+    }
+  },
+  {
+    "case": "rural-phrasing",
+    "run": {
+      "id": "efe9eae7c8b54e6dbe2c38b24ca59eb1",
+      "state": "complete",
+      "stage": "Complete",
+      "question": "is this a rural/urban area ?",
+      "image": {
+        "id": "bc712fb7920c48e5ac946e98b4548d42",
+        "name": "f01008d4ee8f47ebb9db13f7f597bd17.png",
+        "width": 500,
+        "height": 264,
+        "bytes": 173635,
+        "sha256": "da733a52a60a5c61655fc1f496de20114595110b45fe81e656d1b25851b7c2d2",
+        "preview": "/api/images/bc712fb7920c48e5ac946e98b4548d42",
+        "geo": null
+      },
+      "started": 1788920557.608984,
+      "model": "AdaptLLM/remote-sensing-Qwen2-VL-2B-Instruct",
+      "revision": "7f5dd71bf0f40c282193d50160e848a387a08ffe",
+      "adapter": "lora-pilot-v1",
+      "mode": "pilot_rural",
+      "route": "Single-image optical VQA",
+      "trace": [
+        {
+          "step": "Generate model answer",
+          "seconds": 0.299
+        }
+      ],
+      "routing": {
+        "tool": "vqa",
+        "rule": "rural_urban_classification",
+        "reason": "Single-image rural/urban classification; not an area measurement.",
+        "version": "rules-v5",
+        "canonical_question": "Is this image rural or urban?"
+      },
+      "requested_mode": "pilot_rural",
+      "effective_question": "Is this image rural or urban? Answer with only rural or urban.",
+      "visual_token_bounds": [
+        64,
+        128
+      ],
+      "raw_answer": "urban",
+      "answer_validation": {
+        "policy": "bounded-answer-v2",
+        "category": "rural_urban",
+        "limitation": "Model interpretation; object identities and locations are not independently verified.",
+        "raw_truncated": false,
+        "changed": true,
+        "withheld": false,
+        "reasons": [
+          "explanation_omitted_final_label_only"
+        ],
+        "answer": "Urban"
+      },
+      "answer_policy": "bounded-answer-v2",
+      "answer": "Urban",
+      "seconds": 1.477,
+      "generation_seconds": 0.299,
+      "peak_allocated_GiB": 4.177,
+      "generated_tokens": 2,
+      "max_new_tokens": 16
+    }
+  },
+  {
+    "case": "rural-phrasing",
+    "run": {
+      "id": "e7a4a3312ec64203b43d4640a73eccf4",
+      "state": "complete",
+      "stage": "Complete",
+      "question": "Is this image rural or urban?",
+      "image": {
+        "id": "eed3a4dbd56049a097f2fb9a6a574f95",
+        "name": "f01008d4ee8f47ebb9db13f7f597bd17.png",
+        "width": 500,
+        "height": 264,
+        "bytes": 173635,
+        "sha256": "da733a52a60a5c61655fc1f496de20114595110b45fe81e656d1b25851b7c2d2",
+        "preview": "/api/images/eed3a4dbd56049a097f2fb9a6a574f95",
+        "geo": null
+      },
+      "started": 1788920559.388687,
+      "model": "AdaptLLM/remote-sensing-Qwen2-VL-2B-Instruct",
+      "revision": "7f5dd71bf0f40c282193d50160e848a387a08ffe",
+      "adapter": "lora-pilot-v1",
+      "mode": "pilot_rural",
+      "route": "Single-image optical VQA",
+      "trace": [
+        {
+          "step": "Generate model answer",
+          "seconds": 0.167
+        }
+      ],
+      "routing": {
+        "tool": "vqa",
+        "rule": "rural_urban_classification",
+        "reason": "Single-image rural/urban classification; not an area measurement.",
+        "version": "rules-v5",
+        "canonical_question": "Is this image rural or urban?"
+      },
+      "requested_mode": "pilot_rural",
+      "effective_question": "Is this image rural or urban? Answer with only rural or urban.",
+      "visual_token_bounds": [
+        64,
+        128
+      ],
+      "raw_answer": "urban",
+      "answer_validation": {
+        "policy": "bounded-answer-v2",
+        "category": "rural_urban",
+        "limitation": "Model interpretation; object identities and locations are not independently verified.",
+        "raw_truncated": false,
+        "changed": true,
+        "withheld": false,
+        "reasons": [
+          "explanation_omitted_final_label_only"
+        ],
+        "answer": "Urban"
+      },
+      "answer_policy": "bounded-answer-v2",
+      "answer": "Urban",
+      "seconds": 0.975,
+      "generation_seconds": 0.167,
+      "peak_allocated_GiB": 4.177,
+      "generated_tokens": 2,
+      "max_new_tokens": 16
+    }
+  }
+]

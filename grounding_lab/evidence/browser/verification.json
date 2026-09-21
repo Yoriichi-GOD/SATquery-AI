@@ -1,0 +1,14 @@
+{
+  "errors": [],
+  "objectCount": "1\nobjects proposed\n26.36%\npredicted mask coverage",
+  "imagePanelFixed": true,
+  "mobileOverflow": false,
+  "viewportDesktop": [
+    1440,
+    1000
+  ],
+  "viewportMobile": [
+    390,
+    844
+  ]
+}

@@ -1,0 +1,35 @@
+{
+  "file": "test_000181.png",
+  "reference_changeflag": 1,
+  "raw_caption": "a road with houses built along appears in the desert",
+  "reference_captions": [
+    " two lines of completed villas are built on both sides of a road replacing some trees .",
+    " villas are built along a new road on the ground .",
+    " a road has been built across the trees and many villas have been constructed on both sides of the road .",
+    " a new residential district is built on abandoned land .",
+    " a road with two rows of buildings appears in the desert ."
+  ],
+  "caption_changeflag_heuristic": 1,
+  "confusion_rows_reference_columns_prediction": [
+    [
+      47051,
+      704,
+      1486
+    ],
+    [
+      56,
+      6314,
+      0
+    ],
+    [
+      843,
+      0,
+      9082
+    ]
+  ],
+  "predicted_class_pixels": {
+    "0": 47950,
+    "1": 7018,
+    "2": 10568
+  }
+}

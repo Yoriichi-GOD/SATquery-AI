@@ -1,0 +1,505 @@
+{
+  "n": 62,
+  "correct": 61,
+  "unsafe_dispatches": 1,
+  "false_refusals": 0,
+  "scope": "Predeclared hand-written challenge set; not natural-query population accuracy. Eligibility metadata fixtures only.",
+  "rows": [
+    {
+      "context": "single",
+      "expected": "vqa",
+      "query": "Describe this image.",
+      "actual": "vqa",
+      "correct": true,
+      "reason": "Supported descriptive or presence question about one optical image; no quantitative or spatial output requested."
+    },
+    {
+      "context": "single",
+      "expected": "vqa",
+      "query": "Describe the entire scene.",
+      "actual": "vqa",
+      "correct": true,
+      "reason": "Open visual question answered by the original model; interpretation may be incorrect."
+    },
+    {
+      "context": "single",
+      "expected": "vqa",
+      "query": "What can you see in this image?",
+      "actual": "vqa",
+      "correct": true,
+      "reason": "Open visual question answered by the original model; interpretation may be incorrect."
+    },
+    {
+      "context": "single",
+      "expected": "vqa",
+      "query": "Is there water in this image?",
+      "actual": "vqa",
+      "correct": true,
+      "reason": "Visual presence question; model interpretation, not independently verified detection or a measurement."
+    },
+    {
+      "context": "single",
+      "expected": "vqa",
+      "query": "Does this image contain buildings?",
+      "actual": "vqa",
+      "correct": true,
+      "reason": "Visual presence question; model interpretation, not independently verified detection or a measurement."
+    },
+    {
+      "context": "single",
+      "expected": "vqa",
+      "query": "Is this image rural or urban?",
+      "actual": "vqa",
+      "correct": true,
+      "reason": "Single-image rural/urban classification; not an area measurement."
+    },
+    {
+      "context": "single",
+      "expected": "vqa",
+      "query": "How many baseball fields are there?",
+      "actual": "vqa",
+      "correct": true,
+      "reason": "Baseball/softball field count estimated by VQA; an original and mirrored image must agree. No object boxes or verified detection are produced."
+    },
+    {
+      "context": "single",
+      "expected": "grounding",
+      "query": "Outline buildings",
+      "actual": "grounding",
+      "correct": true,
+      "reason": "Explicit spatial request for a supported object category on one optical image."
+    },
+    {
+      "context": "single",
+      "expected": "grounding",
+      "query": "Highlight ships",
+      "actual": "grounding",
+      "correct": true,
+      "reason": "Explicit spatial request for a supported object category on one optical image."
+    },
+    {
+      "context": "single",
+      "expected": "grounding",
+      "query": "Locate aircraft",
+      "actual": "grounding",
+      "correct": true,
+      "reason": "Explicit spatial request for a supported object category on one optical image."
+    },
+    {
+      "context": "single",
+      "expected": "grounding",
+      "query": "Draw bounding boxes around cars",
+      "actual": "grounding",
+      "correct": true,
+      "reason": "Explicit spatial request for a supported object category on one optical image."
+    },
+    {
+      "context": "ndvi",
+      "expected": "ndvi",
+      "query": "Calculate NDVI",
+      "actual": "ndvi",
+      "correct": true,
+      "reason": "Explicit NDVI or vegetation pixel-coverage request with calibrated Red/NIR available. Coverage means pixels meeting the selected NDVI threshold, not surveyed vegetation cover."
+    },
+    {
+      "context": "ndvi",
+      "expected": "ndvi",
+      "query": "Compute NDVI",
+      "actual": "ndvi",
+      "correct": true,
+      "reason": "Explicit NDVI or vegetation pixel-coverage request with calibrated Red/NIR available. Coverage means pixels meeting the selected NDVI threshold, not surveyed vegetation cover."
+    },
+    {
+      "context": "ndvi",
+      "expected": "ndvi",
+      "query": "What percentage of the image is vegetation?",
+      "actual": "ndvi",
+      "correct": true,
+      "reason": "Explicit NDVI or vegetation pixel-coverage request with calibrated Red/NIR available. Coverage means pixels meeting the selected NDVI threshold, not surveyed vegetation cover."
+    },
+    {
+      "context": "temporal",
+      "expected": "temporal",
+      "query": "What changed between these dates?",
+      "actual": "temporal",
+      "correct": true,
+      "reason": "Two optical dates and a supported change question."
+    },
+    {
+      "context": "temporal",
+      "expected": "temporal",
+      "query": "Describe road changes",
+      "actual": "temporal",
+      "correct": true,
+      "reason": "Two optical dates and a supported change question."
+    },
+    {
+      "context": "temporal",
+      "expected": "temporal",
+      "query": "Show building changes",
+      "actual": "temporal",
+      "correct": true,
+      "reason": "Two optical dates and a supported change question."
+    },
+    {
+      "context": "temporal",
+      "expected": "temporal",
+      "query": "Compare the roads between these images",
+      "actual": "temporal",
+      "correct": true,
+      "reason": "Two optical dates and a supported change question."
+    },
+    {
+      "context": "temporal",
+      "expected": "temporal",
+      "query": "Identify construction and demolition",
+      "actual": "temporal",
+      "correct": true,
+      "reason": "Two optical dates and a supported change question."
+    },
+    {
+      "context": "water",
+      "expected": "water_map",
+      "query": "Map water",
+      "actual": "water_map",
+      "correct": true,
+      "reason": "Optical 13-band / SAR pair and a water-mapping question."
+    },
+    {
+      "context": "water",
+      "expected": "water_map",
+      "query": "Show inundation",
+      "actual": "water_map",
+      "correct": true,
+      "reason": "Optical 13-band / SAR pair and a water-mapping question."
+    },
+    {
+      "context": "water",
+      "expected": "water_map",
+      "query": "Identify water pixels",
+      "actual": "water_map",
+      "correct": true,
+      "reason": "Optical 13-band / SAR pair and a water-mapping question."
+    },
+    {
+      "context": "water",
+      "expected": "water_map",
+      "query": "Map water using optical and SAR together",
+      "actual": "water_map",
+      "correct": true,
+      "reason": "Optical 13-band / SAR pair and a water-mapping question."
+    },
+    {
+      "context": "land",
+      "expected": "optical_sar",
+      "query": "Identify land-cover classes",
+      "actual": "optical_sar",
+      "correct": true,
+      "reason": "Optical\u2013SAR patch and a scene-level land-cover question."
+    },
+    {
+      "context": "land",
+      "expected": "optical_sar",
+      "query": "Classify land cover",
+      "actual": "optical_sar",
+      "correct": true,
+      "reason": "Optical\u2013SAR patch and a scene-level land-cover question."
+    },
+    {
+      "context": "land",
+      "expected": "optical_sar",
+      "query": "Use optical and SAR to identify land-cover classes",
+      "actual": "optical_sar",
+      "correct": true,
+      "reason": "Optical\u2013SAR patch and a scene-level land-cover question."
+    },
+    {
+      "context": "spectral",
+      "expected": "spectral_pair",
+      "query": "Analyze these images",
+      "actual": "spectral_pair",
+      "correct": true,
+      "reason": "Two optical surface-reflectance dates; compare only requested spectral parameters."
+    },
+    {
+      "context": "spectral",
+      "expected": "spectral_pair",
+      "query": "Compare vegetation",
+      "actual": "spectral_pair",
+      "correct": true,
+      "reason": "Two optical surface-reflectance dates; compare only requested spectral parameters."
+    },
+    {
+      "context": "spectral",
+      "expected": "spectral_pair",
+      "query": "Compare water",
+      "actual": "spectral_pair",
+      "correct": true,
+      "reason": "Two optical surface-reflectance dates; compare only requested spectral parameters."
+    },
+    {
+      "context": "spectral",
+      "expected": "spectral_pair",
+      "query": "Compare NDVI and NDWI",
+      "actual": "spectral_pair",
+      "correct": true,
+      "reason": "Two optical surface-reflectance dates; compare only requested spectral parameters."
+    },
+    {
+      "context": "spectral",
+      "expected": "spectral_pair",
+      "query": "Please analyze these images in detail",
+      "actual": "spectral_pair",
+      "correct": true,
+      "reason": "Two optical surface-reflectance dates; compare only requested spectral parameters."
+    },
+    {
+      "context": "single",
+      "expected": "refuse",
+      "query": "What changed between these dates?",
+      "actual": "refuse",
+      "correct": true,
+      "reason": "Temporal analysis needs two dated optical images; only one was supplied."
+    },
+    {
+      "context": "single",
+      "expected": "refuse",
+      "query": "Calculate NDVI",
+      "actual": "refuse",
+      "correct": true,
+      "reason": "NDVI needs labelled, calibrated Red/NIR surface-reflectance bands. RGB alone cannot answer this request."
+    },
+    {
+      "context": "single",
+      "expected": "refuse",
+      "query": "Predict water tomorrow",
+      "actual": "refuse",
+      "correct": true,
+      "reason": "Forecasting and evacuation advice are not implemented. Ask about water visible now, or supported road/building changes between observed dates. Future rainfall scenarios cannot be analysed by the current specialists."
+    },
+    {
+      "context": "single",
+      "expected": "refuse",
+      "query": "How many cars are there?",
+      "actual": "vqa",
+      "correct": false,
+      "reason": "General visual count from the original model; an estimate, not validated object detection."
+    },
+    {
+      "context": "single",
+      "expected": "refuse",
+      "query": "Outline red buildings",
+      "actual": "refuse",
+      "correct": true,
+      "reason": "Grounding supports one object category without relationships, colour filters or multiple tasks. Please simplify the request."
+    },
+    {
+      "context": "single",
+      "expected": "refuse",
+      "query": "Outline buildings and ships",
+      "actual": "refuse",
+      "correct": true,
+      "reason": "For experimental grounding, ask for one category: stadium, car, aircraft, building, ship or sports field."
+    },
+    {
+      "context": "single",
+      "expected": "refuse",
+      "query": "Estimate water depth",
+      "actual": "refuse",
+      "correct": true,
+      "reason": "This measurement is outside the available specialists. Ask about visible features, supported index changes, water mapping or road/building change."
+    },
+    {
+      "context": "single",
+      "expected": "refuse",
+      "query": "Diagnose crop disease",
+      "actual": "refuse",
+      "correct": true,
+      "reason": "This measurement or diagnosis is not implemented. NDVI supports only threshold-selected pixel coverage."
+    },
+    {
+      "context": "temporal",
+      "expected": "refuse",
+      "query": "Compare water",
+      "actual": "refuse",
+      "correct": true,
+      "reason": "Ask about road/building change between the two optical dates, or supply one image."
+    },
+    {
+      "context": "temporal",
+      "expected": "refuse",
+      "query": "How many buildings were constructed?",
+      "actual": "refuse",
+      "correct": true,
+      "reason": "Ask about road/building change between the two optical dates, or supply one image."
+    },
+    {
+      "context": "temporal",
+      "expected": "refuse",
+      "query": "Measure road length change",
+      "actual": "refuse",
+      "correct": true,
+      "reason": "Temporal masks report predicted change pixels, not object counts or physical area."
+    },
+    {
+      "context": "temporal",
+      "expected": "refuse",
+      "query": "Which red car was added?",
+      "actual": "refuse",
+      "correct": true,
+      "reason": "Ask about road/building change between the two optical dates, or supply one image."
+    },
+    {
+      "context": "temporal",
+      "expected": "refuse",
+      "query": "Describe vegetation health",
+      "actual": "refuse",
+      "correct": true,
+      "reason": "Ask about road/building change between the two optical dates, or supply one image."
+    },
+    {
+      "context": "temporal",
+      "expected": "refuse",
+      "query": "Compare these images and count all cars",
+      "actual": "refuse",
+      "correct": true,
+      "reason": "Ask about road/building change between the two optical dates, or supply one image."
+    },
+    {
+      "context": "water",
+      "expected": "refuse",
+      "query": "Map roads and water",
+      "actual": "refuse",
+      "correct": true,
+      "reason": "This specialist maps water pixels only; it cannot map buildings, count objects or measure physical area."
+    },
+    {
+      "context": "water",
+      "expected": "refuse",
+      "query": "Calculate water depth",
+      "actual": "refuse",
+      "correct": true,
+      "reason": "This measurement is outside the available specialists. Ask about visible features, supported index changes, water mapping or road/building change."
+    },
+    {
+      "context": "water",
+      "expected": "refuse",
+      "query": "What changed since last year?",
+      "actual": "refuse",
+      "correct": true,
+      "reason": "This optical\u2013SAR pair supports single-date water mapping, not change over time."
+    },
+    {
+      "context": "water",
+      "expected": "refuse",
+      "query": "Predict inundation tomorrow",
+      "actual": "refuse",
+      "correct": true,
+      "reason": "Forecasting and evacuation advice are not implemented. Ask about water visible now, or supported road/building changes between observed dates. Future rainfall scenarios cannot be analysed by the current specialists."
+    },
+    {
+      "context": "water",
+      "expected": "refuse",
+      "query": "Measure water volume",
+      "actual": "refuse",
+      "correct": true,
+      "reason": "This measurement is outside the available specialists. Ask about visible features, supported index changes, water mapping or road/building change."
+    },
+    {
+      "context": "water",
+      "expected": "refuse",
+      "query": "Map water and vegetation",
+      "actual": "refuse",
+      "correct": true,
+      "reason": "This specialist maps water pixels only; it cannot map buildings, count objects or measure physical area."
+    },
+    {
+      "context": "water",
+      "expected": "refuse",
+      "query": "Identify water and soil moisture",
+      "actual": "refuse",
+      "correct": true,
+      "reason": "This measurement is outside the available specialists. Ask about visible features, supported index changes, water mapping or road/building change."
+    },
+    {
+      "context": "land",
+      "expected": "refuse",
+      "query": "Map buildings",
+      "actual": "refuse",
+      "correct": true,
+      "reason": "This optical\u2013SAR scene classifier returns land-cover labels, not pixel maps or coverage measurements. Ask \"Identify land-cover classes\". Water masks require the supported 13-band Sentinel-2 L1C / Sentinel-1 GRD pair; do not resize or relabel incompatible data to bypass this requirement."
+    },
+    {
+      "context": "land",
+      "expected": "refuse",
+      "query": "Calculate water coverage",
+      "actual": "refuse",
+      "correct": true,
+      "reason": "This optical\u2013SAR scene classifier returns land-cover labels, not pixel maps or coverage measurements. Ask \"Identify land-cover classes\". Water masks require the supported 13-band Sentinel-2 L1C / Sentinel-1 GRD pair; do not resize or relabel incompatible data to bypass this requirement."
+    },
+    {
+      "context": "land",
+      "expected": "refuse",
+      "query": "Segment water",
+      "actual": "refuse",
+      "correct": true,
+      "reason": "This optical\u2013SAR scene classifier returns land-cover labels, not pixel maps or coverage measurements. Ask \"Identify land-cover classes\". Water masks require the supported 13-band Sentinel-2 L1C / Sentinel-1 GRD pair; do not resize or relabel incompatible data to bypass this requirement."
+    },
+    {
+      "context": "land",
+      "expected": "refuse",
+      "query": "Identify building locations",
+      "actual": "refuse",
+      "correct": true,
+      "reason": "This optical\u2013SAR scene classifier returns land-cover labels, not pixel maps or coverage measurements. Ask \"Identify land-cover classes\". Water masks require the supported 13-band Sentinel-2 L1C / Sentinel-1 GRD pair; do not resize or relabel incompatible data to bypass this requirement."
+    },
+    {
+      "context": "spectral",
+      "expected": "refuse",
+      "query": "Predict water next week",
+      "actual": "refuse",
+      "correct": true,
+      "reason": "Forecasting and evacuation advice are not implemented. Ask about water visible now, or supported road/building changes between observed dates. Future rainfall scenarios cannot be analysed by the current specialists."
+    },
+    {
+      "context": "spectral",
+      "expected": "refuse",
+      "query": "Compare vegetation health",
+      "actual": "refuse",
+      "correct": true,
+      "reason": "This spectral comparison reports index threshold changes, not object counts, depth, health or species."
+    },
+    {
+      "context": "spectral",
+      "expected": "refuse",
+      "query": "Compare water above 0.5",
+      "actual": "refuse",
+      "correct": true,
+      "reason": "Set index thresholds in Spectral comparison thresholds rather than embedding a different threshold in the question."
+    },
+    {
+      "context": "spectral",
+      "expected": "refuse",
+      "query": "Compare vegetation and count buildings",
+      "actual": "refuse",
+      "correct": true,
+      "reason": "This spectral comparison reports index threshold changes, not object counts, depth, health or species."
+    },
+    {
+      "context": "spectral",
+      "expected": "refuse",
+      "query": "Compare water and temperature",
+      "actual": "refuse",
+      "correct": true,
+      "reason": "This measurement is outside the available specialists. Ask about visible features, supported index changes, water mapping or road/building change."
+    },
+    {
+      "context": "spectral",
+      "expected": "refuse",
+      "query": "Analyze these images and estimate population",
+      "actual": "refuse",
+      "correct": true,
+      "reason": "This measurement is outside the available specialists. Ask about visible features, supported index changes, water mapping or road/building change."
+    }
+  ]
+}

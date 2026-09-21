@@ -1,0 +1,27 @@
+[
+  {
+    "file": "01-baseball-four.png",
+    "source": "/mnt/c/Users/nrgen/.codex/scratch/SATquery AI/results/reliability-20260907/counting/full.png",
+    "sha256": "d554202729a40d67eb39fc38759e196ca628cf6f7f3c2679b075fcb9a9f52e80"
+  },
+  {
+    "file": "02-dehradun.tif",
+    "source": "/root/satquery/scenes/dehradun-sentinel2-20211125.tif",
+    "sha256": "55f3ca7b578e045594f8d54419b590c3ffeb99247ec5f74d7b1355d5bc4ec0f8"
+  },
+  {
+    "file": "03-punjab-farmland.tif",
+    "source": "/mnt/c/Users/nrgen/.codex/scratch/SATquery AI/results/reliability-20260907/scenes/punjab-farmland/punjab-farmland.tif",
+    "sha256": "abc0611600f3ef2af2710507285af798fa906aa9965cc094350cbc8fa5a11539"
+  },
+  {
+    "file": "04-rural-urban-adapter.png",
+    "source": "/mnt/c/Users/nrgen/.codex/scratch/SATquery AI/results/reliability-20260907/vqa/image-265.png",
+    "sha256": "0d02285eff493fbdb48872d442ee03d108cf5a4c6117e7299dc762183d5d77c1"
+  },
+  {
+    "file": "05-river-negative-control.png",
+    "source": "/mnt/c/Users/nrgen/.codex/scratch/SATquery AI/results/reliability-20260907/vqa/fresh-245.png",
+    "sha256": "d9f9ced261109bcd24d9d411bd82a10a1e11e0db8cf93e7c43156ea1a111fce0"
+  }
+]

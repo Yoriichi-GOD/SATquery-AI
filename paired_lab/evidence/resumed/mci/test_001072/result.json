@@ -1,0 +1,35 @@
+{
+  "file": "test_001072.png",
+  "reference_changeflag": 1,
+  "raw_caption": "the scene is the same as before",
+  "reference_captions": [
+    " a corner of a house appears at the top right corner of the scene .",
+    " several houses have been built as a line at the top .",
+    " only a single building has been constructed .",
+    " a building appears on the upper right .",
+    " some houses are built in the clearing by the side of the road ."
+  ],
+  "caption_changeflag_heuristic": 0,
+  "confusion_rows_reference_columns_prediction": [
+    [
+      65300,
+      0,
+      22
+    ],
+    [
+      0,
+      0,
+      0
+    ],
+    [
+      8,
+      0,
+      206
+    ]
+  ],
+  "predicted_class_pixels": {
+    "0": 65308,
+    "1": 0,
+    "2": 228
+  }
+}

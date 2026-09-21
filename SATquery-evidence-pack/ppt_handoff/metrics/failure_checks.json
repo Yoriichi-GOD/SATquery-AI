@@ -1,0 +1,102 @@
+[
+  {
+    "case": "malformed image",
+    "http": 400,
+    "response": "{\"detail\":\"cannot identify image file <_io.BytesIO object at 0x7c01e414c450>\"}"
+  },
+  {
+    "case": "malformed TIFF header",
+    "http": 400,
+    "response": "{\"detail\":\"bc335319-afd1-4233-817c-acdbe4f8f7fc.tif: TIFFReadDirectory:Failed to read directory at offset 1651663207\"}"
+  },
+  {
+    "case": "unsupported/unlabelled TIFF",
+    "http": 400,
+    "response": "{\"detail\":\"Band identities are missing. Label RGB bands red/green/blue or B04/B03/B02 before uploading; band order is never guessed.\"}"
+  },
+  {
+    "case": "oversized upload",
+    "http": 413,
+    "response": "{\"detail\":\"Image must be smaller than 20 MB.\"}"
+  },
+  {
+    "case": "missing NIR upload",
+    "http": 200,
+    "response": "{\"id\":\"0b0bb07dbc1a46c9a83b7f8d89f6fb19\",\"name\":\"test.tif\",\"width\":4,\"height\":4,\"bytes\":1287,\"sha256\":\"d53132a8ad12627285b4d2c70ddf6094b645b669fc6d03976e0d56af570b8811\",\"preview\":\"/api/images/0b0bb07dbc1a46c9a83b7f8d89f6fb19\",\"geo\":{\"calibration_version\":\"user-supplied\",\"crs\":\"EPSG:32643\",\"width\":4,\"height\":4,\"transform\":[10.0,0.0,788360.0,0.0,-10.0,3359030.0],\"bounds\":[788360.0,3358990.0,788400.0,3359030.0],\"bounds_wgs84\":[77.99905754777147,30.32840244407544,77.99948408006341,30.328772451280432],\"resolution\":[10.0,10.0],\"bands\":{\"red\":1,\"green\":2,\"blue\":3},\"band_descriptions\":[\"red\",\"green\",\""
+  },
+  {
+    "case": "missing NIR NDVI submit",
+    "http": 422,
+    "response": "{\"detail\":\"NDVI needs labelled, calibrated red and near-infrared bands. Load the multispectral sample or a supported GeoTIFF.\"}"
+  },
+  {
+    "case": "zero denominator upload",
+    "http": 200,
+    "response": "{\"id\":\"73c20cff6de24213b1a045a3472b07ae\",\"name\":\"test.tif\",\"width\":4,\"height\":4,\"bytes\":1439,\"sha256\":\"cc650436869997d18456e9ad2aabc2c1f9763e5811610de6f34b515fac1caf84\",\"preview\":\"/api/images/73c20cff6de24213b1a045a3472b07ae\",\"geo\":{\"calibration_version\":\"user-supplied\",\"crs\":\"EPSG:32643\",\"width\":4,\"height\":4,\"transform\":[10.0,0.0,788360.0,0.0,-10.0,3359030.0],\"bounds\":[788360.0,3358990.0,788400.0,3359030.0],\"bounds_wgs84\":[77.99905754777147,30.32840244407544,77.99948408006341,30.328772451280432],\"resolution\":[10.0,10.0],\"bands\":{\"red\":1,\"green\":2,\"blue\":3,\"nir\":4},\"band_descriptions\":[\"red\",\""
+  },
+  {
+    "case": "zero denominator NDVI submit",
+    "http": 200,
+    "response": "{\"id\":\"f7fa7584b30149d8ba290142788f70ab\"}"
+  },
+  {
+    "case": "zero denominator NDVI result",
+    "http": 200,
+    "response": "{\"id\":\"f7fa7584b30149d8ba290142788f70ab\",\"state\":\"error\",\"stage\":\"Unable to calculate NDVI\",\"image\":{\"id\":\"73c20cff6de24213b1a045a3472b07ae\",\"name\":\"test.tif\",\"width\":4,\"height\":4,\"bytes\":1439,\"sha256\":\"cc650436869997d18456e9ad2aabc2c1f9763e5811610de6f34b515fac1caf84\",\"preview\":\"/api/images/73c20cff6de24213b1a045a3472b07ae\",\"geo\":{\"calibration_version\":\"user-supplied\",\"crs\":\"EPSG:32643\",\"width\":4,\"height\":4,\"transform\":[10.0,0.0,788360.0,0.0,-10.0,3359030.0],\"bounds\":[788360.0,3358990.0,788400.0,3359030.0],\"bounds_wgs84\":[77.99905754777147,30.32840244407544,77.99948408006341,30.328772451280432"
+  },
+  {
+    "case": "nodata-heavy upload",
+    "http": 200,
+    "response": "{\"id\":\"9bdce5f504184e669b61caf1ddaccadb\",\"name\":\"test.tif\",\"width\":4,\"height\":4,\"bytes\":1439,\"sha256\":\"544cdd831a40998eb907d1531765e51170f2a1bc63e30e2a7a72d34f51660ac6\",\"preview\":\"/api/images/9bdce5f504184e669b61caf1ddaccadb\",\"geo\":{\"calibration_version\":\"user-supplied\",\"crs\":\"EPSG:32643\",\"width\":4,\"height\":4,\"transform\":[10.0,0.0,788360.0,0.0,-10.0,3359030.0],\"bounds\":[788360.0,3358990.0,788400.0,3359030.0],\"bounds_wgs84\":[77.99905754777147,30.32840244407544,77.99948408006341,30.328772451280432],\"resolution\":[10.0,10.0],\"bands\":{\"red\":1,\"green\":2,\"blue\":3,\"nir\":4},\"band_descriptions\":[\"red\",\""
+  },
+  {
+    "case": "nodata-heavy NDVI submit",
+    "http": 200,
+    "response": "{\"id\":\"b8661c1eed704fe4ab3d63cc2f9f586c\"}"
+  },
+  {
+    "case": "nodata-heavy NDVI result",
+    "http": 200,
+    "response": "{\"id\":\"b8661c1eed704fe4ab3d63cc2f9f586c\",\"state\":\"complete\",\"stage\":\"Complete\",\"image\":{\"id\":\"9bdce5f504184e669b61caf1ddaccadb\",\"name\":\"test.tif\",\"width\":4,\"height\":4,\"bytes\":1439,\"sha256\":\"544cdd831a40998eb907d1531765e51170f2a1bc63e30e2a7a72d34f51660ac6\",\"preview\":\"/api/images/9bdce5f504184e669b61caf1ddaccadb\",\"geo\":{\"calibration_version\":\"user-supplied\",\"crs\":\"EPSG:32643\",\"width\":4,\"height\":4,\"transform\":[10.0,0.0,788360.0,0.0,-10.0,3359030.0],\"bounds\":[788360.0,3358990.0,788400.0,3359030.0],\"bounds_wgs84\":[77.99905754777147,30.32840244407544,77.99948408006341,30.328772451280432],\"resolution"
+  },
+  {
+    "case": "missing CRS upload",
+    "http": 200,
+    "response": "{\"id\":\"956181fda8ae4bf2bff6d3652ebe412e\",\"name\":\"test.tif\",\"width\":4,\"height\":4,\"bytes\":1203,\"sha256\":\"bdd6304fd13b08b8d4422b5fb7a94a589961aed531b3f521e489f35e8a595443\",\"preview\":\"/api/images/956181fda8ae4bf2bff6d3652ebe412e\",\"geo\":{\"calibration_version\":\"user-supplied\",\"crs\":null,\"width\":4,\"height\":4,\"transform\":[10.0,0.0,788360.0,0.0,-10.0,3359030.0],\"bounds\":[788360.0,3358990.0,788400.0,3359030.0],\"bounds_wgs84\":null,\"resolution\":[10.0,10.0],\"bands\":{\"red\":1,\"green\":2,\"blue\":3,\"nir\":4},\"band_descriptions\":[\"red\",\"green\",\"blue\",\"nir\"],\"nodata\":\"nan\",\"scales\":[1.0,1.0,1.0,1.0],\"offsets\":[0.0,"
+  },
+  {
+    "case": "missing CRS NDVI submit",
+    "http": 200,
+    "response": "{\"id\":\"93aa6fba21e2453689fb65df504214ac\"}"
+  },
+  {
+    "case": "missing CRS NDVI result",
+    "http": 200,
+    "response": "{\"id\":\"93aa6fba21e2453689fb65df504214ac\",\"state\":\"complete\",\"stage\":\"Complete\",\"image\":{\"id\":\"956181fda8ae4bf2bff6d3652ebe412e\",\"name\":\"test.tif\",\"width\":4,\"height\":4,\"bytes\":1203,\"sha256\":\"bdd6304fd13b08b8d4422b5fb7a94a589961aed531b3f521e489f35e8a595443\",\"preview\":\"/api/images/956181fda8ae4bf2bff6d3652ebe412e\",\"geo\":{\"calibration_version\":\"user-supplied\",\"crs\":null,\"width\":4,\"height\":4,\"transform\":[10.0,0.0,788360.0,0.0,-10.0,3359030.0],\"bounds\":[788360.0,3358990.0,788400.0,3359030.0],\"bounds_wgs84\":null,\"resolution\":[10.0,10.0],\"bands\":{\"red\":1,\"green\":2,\"blue\":3,\"nir\":4},\"band_descriptions\""
+  },
+  {
+    "case": "question: ",
+    "http": 400,
+    "response": "{\"detail\":\"Enter a question between 1 and 500 characters.\"}"
+  },
+  {
+    "case": "question: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+    "http": 400,
+    "response": "{\"detail\":\"Enter a question between 1 and 500 characters.\"}"
+  },
+  {
+    "case": "question: Compare this to last year",
+    "http": 200,
+    "response": "{\"id\":\"f81068838ce545e2bfd5eaa4f23fe4e5\"}"
+  },
+  {
+    "case": "question: Analyze SAR backscatter",
+    "http": 422,
+    "response": "{\"detail\":\"SAR analysis is not implemented. Ask about visible features in an optical image.\"}"
+  },
+  {
+    "case": "question: What are the latitude coordinates?",
+    "http": 422,
+    "response": "{\"detail\":\"Validated coordinates, bounding boxes and ground measurements are not supported.\"}"
+  }
+]

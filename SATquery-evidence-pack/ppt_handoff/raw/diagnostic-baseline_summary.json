@@ -1,0 +1,32 @@
+{
+  "model": "AdaptLLM/remote-sensing-Qwen2-VL-2B-Instruct",
+  "revision": "7f5dd71bf0f40c282193d50160e848a387a08ffe",
+  "manifest_sha256": "69d15b5ed92c15e33f5e0a5ded5e2b18a6df2ed96567c159fdcaba3ead3a1699",
+  "correct": 24,
+  "total": 60,
+  "accuracy": 0.4,
+  "per_category": {
+    "comp": {
+      "correct": 14,
+      "total": 20
+    },
+    "presence": {
+      "correct": 10,
+      "total": 20
+    },
+    "rural_urban": {
+      "correct": 0,
+      "total": 20
+    }
+  },
+  "median_seconds": 0.1894441525000019,
+  "max_peak_allocated_GiB": 4.224302291870117,
+  "decoding": {
+    "do_sample": false,
+    "max_new_tokens": 16
+  },
+  "precision": "bfloat16",
+  "scope": "Custom balanced subset, not official full benchmark score. Published labels are not independently hand-verified. Exclude all test images and source scenes from adaptation. Upstream model exposure unknown.",
+  "scoring": "Lowercase, whitespace collapse, strip terminal punctuation; exact match only. No substring or model judge.",
+  "invalid_format_count": 20
+}

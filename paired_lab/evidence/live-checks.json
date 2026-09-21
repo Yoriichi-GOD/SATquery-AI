@@ -1,0 +1,473 @@
+[
+  {
+    "test": "temporal busy exclusion",
+    "passed": true,
+    "detail": 409
+  },
+  {
+    "test": "temporal real HTTP inference",
+    "passed": true,
+    "detail": {
+      "state": "complete",
+      "result": {
+        "task": "temporal",
+        "answer": "The model marks possible building-related changes across 20.63% of the full crop, with the most marked pixels in the upper right. This binary map does not distinguish construction from removal.",
+        "changed_pixels": 13521,
+        "denominator_pixels": 65536,
+        "coverage_percent": 20.63140869140625,
+        "quadrant_pixels": {
+          "upper left": 968,
+          "upper right": 9940,
+          "lower left": 1229,
+          "lower right": 1384
+        },
+        "direction": "not determined",
+        "seconds": 0.9167040950001137,
+        "confidence": {
+          "kind": "uncalibrated model scores",
+          "mean_marked_score": 0.986036479473114
+        },
+        "trace": [
+          {
+            "tool": "ChangeFormerV6 LEVIR",
+            "revision": "afd1b7ed640aa265a2c730de958416ae7356a2f9",
+            "device": "cpu",
+            "input_shape": [
+              256,
+              256,
+              3
+            ],
+            "normalization": "RGB / 127.5 - 1",
+            "threshold": 0.5,
+            "output": "last decoder head; two-class softmax",
+            "checkpoint_sha256": "db0dd783c3c3f27d02f55f24fa8199d2b2b47c422c7f7bd2e4d96e2fa65d69f2"
+          }
+        ],
+        "limitations": [
+          "Building-change specialist; not general change VQA.",
+          "No increase/decrease or surveyed-area claim.",
+          "LEVIR development evidence does not establish CDVQA or ISRO/SAC performance."
+        ],
+        "id": "1436232b2d7a4bd5b66c4f62fad1ea0f",
+        "query": "What changed between the dates?",
+        "input_checks": {
+          "task": "temporal",
+          "pairing_basis": "publisher benchmark manifest",
+          "warning": "Matching metadata is necessary but does not prove subpixel image registration.",
+          "inputs": [
+            {
+              "modality": "optical",
+              "date": "",
+              "units": "",
+              "sensor": "",
+              "bands": [
+                null,
+                null,
+                null
+              ],
+              "shape": [
+                256,
+                256
+              ],
+              "count": 3,
+              "dtype": "uint8",
+              "crs": null,
+              "transform": [
+                1.0,
+                0.0,
+                0.0,
+                0.0,
+                1.0,
+                0.0
+              ],
+              "sha256": "29b6a845c0ca1b4fcbffe9c863cff6d24a2425166e3fd7086692be4555907357"
+            },
+            {
+              "modality": "optical",
+              "date": "",
+              "units": "",
+              "sensor": "",
+              "bands": [
+                null,
+                null,
+                null
+              ],
+              "shape": [
+                256,
+                256
+              ],
+              "count": 3,
+              "dtype": "uint8",
+              "crs": null,
+              "transform": [
+                1.0,
+                0.0,
+                0.0,
+                0.0,
+                1.0,
+                0.0
+              ],
+              "sha256": "1d1dc8b4c4713f5899602139686c5793d80cbdd07be51435dffd6271f7ba1952"
+            }
+          ],
+          "sample_manifest": {
+            "id": "levir-test_102_0512_0000",
+            "kind": "temporal",
+            "name": "test_102_0512_0000",
+            "source": "ChangeFormer official LEVIR samples",
+            "source_revision": "afd1b7ed640aa265a2c730de958416ae7356a2f9",
+            "benchmark": "LEVIR-CD development",
+            "registration": "publisher paired crop; no geographic metadata",
+            "dates": "ordered A/B; exact dates unavailable",
+            "files": [
+              "before.tif",
+              "after.tif"
+            ],
+            "shape": [
+              256,
+              256
+            ]
+          }
+        },
+        "controller": "paired-rules-v1",
+        "created_at": "2026-09-12T18:23:11Z"
+      }
+    }
+  },
+  {
+    "test": "temporal evidence ZIP verifies input hashes",
+    "passed": true,
+    "detail": [
+      "before.png",
+      "input-2.tif",
+      "overlay.png",
+      "after.png",
+      "input-1.tif",
+      "change-mask.png",
+      "result.json",
+      "scores.npz"
+    ]
+  },
+  {
+    "test": "optical_sar busy exclusion",
+    "passed": true,
+    "detail": 409
+  },
+  {
+    "test": "optical_sar real HTTP inference",
+    "passed": true,
+    "detail": {
+      "state": "complete",
+      "result": {
+        "task": "optical_sar",
+        "answer": "The jointly trained optical\u2013SAR model suggests Arable land, Broad-leaved forest, Inland waters, Land principally occupied by agriculture, with significant areas of natural vegetation. These are scene-level land-cover labels, not mapped regions or measured area.",
+        "classes": [
+          "Arable land",
+          "Broad-leaved forest",
+          "Inland waters",
+          "Land principally occupied by agriculture, with significant areas of natural vegetation"
+        ],
+        "scores": {
+          "s1": {
+            "Agro-forestry areas": 0.0006278280052356422,
+            "Arable land": 0.9377546310424805,
+            "Beaches, dunes, sands": 0.0006239524227567017,
+            "Broad-leaved forest": 0.8506443500518799,
+            "Coastal wetlands": 0.0016960098873823881,
+            "Complex cultivation patterns": 0.3493921458721161,
+            "Coniferous forest": 0.0811297670006752,
+            "Industrial or commercial units": 0.012265682220458984,
+            "Inland waters": 0.8778409957885742,
+            "Inland wetlands": 0.047660160809755325,
+            "Land principally occupied by agriculture, with significant areas of natural vegetation": 0.5030713677406311,
+            "Marine waters": 0.0023255234118551016,
+            "Mixed forest": 0.14888162910938263,
+            "Moors, heathland and sclerophyllous vegetation": 0.001565479440614581,
+            "Natural grassland and sparsely vegetated areas": 0.0003892703098244965,
+            "Pastures": 0.27541491389274597,
+            "Permanent crops": 0.008861884474754333,
+            "Transitional woodland, shrub": 0.2647920548915863,
+            "Urban fabric": 0.08245094865560532
+          },
+          "s2": {
+            "Agro-forestry areas": 1.4760137673874851e-05,
+            "Arable land": 0.9799021482467651,
+            "Beaches, dunes, sands": 0.00011036421346943825,
+            "Broad-leaved forest": 0.44339871406555176,
+            "Coastal wetlands": 9.813486940402072e-06,
+            "Complex cultivation patterns": 0.2349083423614502,
+            "Coniferous forest": 0.07316344231367111,
+            "Industrial or commercial units": 0.005778060294687748,
+            "Inland waters": 0.9127276539802551,
+            "Inland wetlands": 0.000961205514613539,
+            "Land principally occupied by agriculture, with significant areas of natural vegetation": 0.6851519346237183,
+            "Marine waters": 6.708117871312425e-05,
+            "Mixed forest": 0.42887815833091736,
+            "Moors, heathland and sclerophyllous vegetation": 0.0005563828744925559,
+            "Natural grassland and sparsely vegetated areas": 6.428036431316286e-05,
+            "Pastures": 0.18080119788646698,
+            "Permanent crops": 0.0047535463236272335,
+            "Transitional woodland, shrub": 0.001303222612477839,
+            "Urban fabric": 0.3166227638721466
+          },
+          "all": {
+            "Agro-forestry areas": 5.776958914793795e-06,
+            "Arable land": 0.9968761205673218,
+            "Beaches, dunes, sands": 0.00010745402687462047,
+            "Broad-leaved forest": 0.8771324753761292,
+            "Coastal wetlands": 9.32026614464121e-06,
+            "Complex cultivation patterns": 0.4643104672431946,
+            "Coniferous forest": 0.1069587767124176,
+            "Industrial or commercial units": 0.020035533234477043,
+            "Inland waters": 0.9928283095359802,
+            "Inland wetlands": 0.009865177795290947,
+            "Land principally occupied by agriculture, with significant areas of natural vegetation": 0.5170260667800903,
+            "Marine waters": 6.259763176785782e-05,
+            "Mixed forest": 0.4799323081970215,
+            "Moors, heathland and sclerophyllous vegetation": 0.0007586826686747372,
+            "Natural grassland and sparsely vegetated areas": 0.0005802324158139527,
+            "Pastures": 0.3834201395511627,
+            "Permanent crops": 0.0009109170641750097,
+            "Transitional woodland, shrub": 0.00626936461776495,
+            "Urban fabric": 0.4384154677391052
+          }
+        },
+        "seconds": 0.07909596099989358,
+        "trace": [
+          {
+            "tool": "BIFOLD-BigEarthNetv2-0/resnet50-s1-v0.2.0",
+            "revision": "d417b3c32f2172cbceb14e5b106dd9aa7b77c647",
+            "device": "cpu",
+            "bands": [
+              "VV",
+              "VH"
+            ],
+            "normalization": "reBEN 120_nearest training mean/std",
+            "input_shape": [
+              1,
+              2,
+              120,
+              120
+            ],
+            "threshold": 0.5
+          },
+          {
+            "tool": "BIFOLD-BigEarthNetv2-0/resnet50-s2-v0.2.0",
+            "revision": "f5a590cd5876845f62702260ff62ea5a325433bb",
+            "device": "cpu",
+            "bands": [
+              "B02",
+              "B03",
+              "B04",
+              "B05",
+              "B06",
+              "B07",
+              "B08",
+              "B8A",
+              "B11",
+              "B12"
+            ],
+            "normalization": "reBEN 120_nearest training mean/std",
+            "input_shape": [
+              1,
+              10,
+              120,
+              120
+            ],
+            "threshold": 0.5
+          },
+          {
+            "tool": "BIFOLD-BigEarthNetv2-0/resnet50-all-v0.2.0",
+            "revision": "762acdc186cce6b31ecbc896ddab1721847d4c5e",
+            "device": "cpu",
+            "bands": [
+              "VV",
+              "VH",
+              "B02",
+              "B03",
+              "B04",
+              "B05",
+              "B06",
+              "B07",
+              "B08",
+              "B8A",
+              "B11",
+              "B12"
+            ],
+            "normalization": "reBEN 120_nearest training mean/std",
+            "input_shape": [
+              1,
+              12,
+              120,
+              120
+            ],
+            "threshold": 0.5
+          }
+        ],
+        "confidence": {
+          "kind": "uncalibrated sigmoid scores; not accuracy",
+          "threshold": 0.5
+        },
+        "limitations": [
+          "Sentinel-1 VV/VH and Sentinel-2 multispectral only; no demonstrated Cartosat/RISAT transfer.",
+          "Scene classification cannot locate built-up/water regions.",
+          "Fusion superiority must be tested; more sensors do not guarantee a better answer."
+        ],
+        "id": "bca2394b5ba547628271b9536869b8ab",
+        "query": "Describe land cover using optical and SAR together",
+        "input_checks": {
+          "task": "optical_sar",
+          "pairing_basis": "publisher benchmark manifest",
+          "warning": "Matching metadata is necessary but does not prove subpixel image registration.",
+          "inputs": [
+            {
+              "modality": "optical",
+              "date": "",
+              "units": "reflectance_x10000",
+              "sensor": "Sentinel-2",
+              "bands": [
+                "B02",
+                "B03",
+                "B04",
+                "B05",
+                "B06",
+                "B07",
+                "B08",
+                "B8A",
+                "B11",
+                "B12"
+              ],
+              "shape": [
+                120,
+                120
+              ],
+              "count": 10,
+              "dtype": "float32",
+              "crs": null,
+              "transform": [
+                1.0,
+                0.0,
+                0.0,
+                0.0,
+                1.0,
+                0.0
+              ],
+              "sha256": "0704241b9c4c3e1fff05f53ac353537884a25ec617a03bfd963d1035c1a83d2c"
+            },
+            {
+              "modality": "sar",
+              "date": "",
+              "units": "dB",
+              "sensor": "Sentinel-1",
+              "bands": [
+                "VV",
+                "VH"
+              ],
+              "shape": [
+                120,
+                120
+              ],
+              "count": 2,
+              "dtype": "float32",
+              "crs": null,
+              "transform": [
+                1.0,
+                0.0,
+                0.0,
+                0.0,
+                1.0,
+                0.0
+              ],
+              "sha256": "4ef6d8fa31d27a5e23718c84c1704063bd15e06748e9b6bb8fa3447615fb9bf1"
+            }
+          ],
+          "sample_manifest": {
+            "id": "ben-validation-33-69",
+            "kind": "optical_sar",
+            "name": "Austria validation 33-69",
+            "source": "ConfigILM official BigEarthNet v2 real-data fixture",
+            "source_revision": "d5a6c64bee268e71f12e130bd839ab9dfe53cc08",
+            "benchmark": "BigEarthNet v2 development",
+            "split": "validation",
+            "optical_patch": "S2A_MSIL2A_20170613T101031_N9999_R022_T33UUP_33_69",
+            "sar_patch": "S1B_IW_GRDH_1SDV_20170612T165809_33UUP_33_69",
+            "registration": "publisher paired sample; geographic transform unavailable in LMDB fixture",
+            "files": [
+              "optical.tif",
+              "sar.tif"
+            ],
+            "shape": [
+              120,
+              120
+            ]
+          }
+        },
+        "controller": "paired-rules-v1",
+        "created_at": "2026-09-12T18:23:11Z"
+      }
+    }
+  },
+  {
+    "test": "optical_sar evidence ZIP verifies input hashes",
+    "passed": true,
+    "detail": [
+      "input-2.tif",
+      "optical.png",
+      "input-1.tif",
+      "sar.png",
+      "result.json"
+    ]
+  },
+  {
+    "test": "cross-modal cannot masquerade as temporal",
+    "passed": true,
+    "detail": {
+      "detail": "These are different sensors, not a supported before/after pair. Split the temporal and cross-modal questions."
+    }
+  },
+  {
+    "test": "foreign-origin write rejected",
+    "passed": true,
+    "detail": 403
+  },
+  {
+    "test": "TIFF upload supported",
+    "passed": true,
+    "detail": {
+      "modality": "optical",
+      "date": "2020-01-01",
+      "units": "",
+      "sensor": "",
+      "bands": [
+        null,
+        null,
+        null
+      ],
+      "shape": [
+        256,
+        256
+      ],
+      "count": 3,
+      "dtype": "uint8",
+      "crs": null,
+      "transform": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0
+      ],
+      "sha256": "29b6a845c0ca1b4fcbffe9c863cff6d24a2425166e3fd7086692be4555907357",
+      "id": "737fc996e5da42b1814f752c17ef9fba",
+      "name": "input.tif"
+    }
+  },
+  {
+    "test": "client cannot bypass geographic checks",
+    "passed": true,
+    "detail": {
+      "detail": "Uploaded pairs need a CRS and matching geographic grid. Use the supplied benchmark samples for trusted non-geographic paired crops."
+    }
+  }
+]

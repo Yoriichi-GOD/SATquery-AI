@@ -1,0 +1,10 @@
+test_ndvi_and_mask (test_geo.GeoTests.test_ndvi_and_mask) ... ok
+test_offset_applied_once (test_geo.GeoTests.test_offset_applied_once) ... ok
+test_pixel_centre (test_geo.GeoTests.test_pixel_centre) ... /mnt/c/Users/nrgen/.codex/scratch/SATquery AI/geo.py:88: PendingDeprecationWarning: Use `@` matmul instead of `*` mul operator for matrix multiplication
+  x,y=Affine(*metadata['transform'])*(col+.5,row+.5)
+ok
+
+----------------------------------------------------------------------
+Ran 3 tests in 0.071s
+
+OK

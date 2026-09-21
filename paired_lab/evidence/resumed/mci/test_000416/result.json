@@ -1,0 +1,35 @@
+{
+  "file": "test_000416.png",
+  "reference_changeflag": 1,
+  "raw_caption": "some houses are built along the road",
+  "reference_captions": [
+    " many trees are removed and several buildings are arranged on both sides of the road .",
+    " most trees are removed and the road is rebuilt into a straight road with villas neatly built along .",
+    " a road has been built and several villas have been constructed on both sides of the road .",
+    " some houses are built on both sides of the road .",
+    " most of the plants are removed and a road with some houses along is constructed ."
+  ],
+  "caption_changeflag_heuristic": 1,
+  "confusion_rows_reference_columns_prediction": [
+    [
+      51229,
+      407,
+      831
+    ],
+    [
+      193,
+      4701,
+      0
+    ],
+    [
+      1238,
+      0,
+      6937
+    ]
+  ],
+  "predicted_class_pixels": {
+    "0": 52660,
+    "1": 5108,
+    "2": 7768
+  }
+}

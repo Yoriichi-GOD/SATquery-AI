@@ -1,0 +1,136 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <meta name="title" content=" Error - LRZ Sync+Share "/>
+    <meta name="description" content="Share, sync and backup your files online"/>
+
+    <title>
+    Error - LRZ Sync+Share
+    </title>
+
+    
+    
+    <script type="application/javascript" nonce="AKapKRKKDA9TnvWryqaA">
+        window.PF_SUPPORTED_LANGUAGES = [];
+        window.PF_LANG_PATHS = {};
+    </script>
+
+    
+            <script src="/js/picasso/lang.ce60d379a77e116c.js"></script>
+    
+            <link rel="stylesheet" href="/css/glyphicons/glyphicons-filetypes.621acc11dee3d9a6.css"/>
+                <link rel="stylesheet" href="/css/glyphicons/glyphicons.257fe7b3f5d048b5.css"/>
+    
+            <link rel="stylesheet" href="/css/bootstrap/bootstrap.min.b0a21045f42b8884.css"/>
+                <link rel="stylesheet" href="/css/picasso.c175a3d0018c2b4a.css"/>
+                <link rel="stylesheet" href="/css/ck.3dd7ee84ea73bf54.css"/>
+        <link rel="stylesheet" href="/branding/web.css"/>
+
+
+    
+    <noscript>
+        <div class="pica-content pica-boxes">
+            <div class="pica-box alert alert-danger">
+                <h5>
+                    <span class="pica-glyph glyphicons glyphicons-exclamation-sign"></span>
+                    JavaScript is not enabled
+                </h5>
+
+                <a href="http://enable-javascript.com/" class="alert-link">
+                    Please enable JavaScript for best experience on this site.
+                </a>
+            </div>
+        </div>
+    </noscript>
+
+    
+    </head>
+
+<body class="wallpaper">
+    <div class="container">
+        <div class="row">
+            <div class="d-none d-sm-block col-sm-2 col-md-3 col-lg-3"></div>
+            <div class="col-12 col-sm-8 col-md-6 col-lg-6 pica-relative">
+                <div class="pica-dialog">
+                    <div>
+
+<div>
+    <div id="pica_logo_big" class="pica-space"></div>
+
+    <h4>
+        <lang name="label_http_error"></lang>
+        404
+    </h4>
+
+    <div>
+                    <p>
+
+                <span class="pica-bold">
+                    Not Found
+                </span>
+            </p>
+        
+        <p class="text-justify">
+                            The page or file you are requesting is not available in case you followed a file link the file might become available shortly when the upload is completed.
+                    </p>
+
+        <a class="pica-space-top" href="javascript:history.back()">
+            <lang name="label_back"></lang>
+        </a>
+    </div>
+
+    
+    <div class="pica-pipe-group pica-space-top text-center">
+        <a href="https://www.lrz.de/impressum" target="_blank">
+            <lang name="label_imprint"></lang>
+        </a>
+
+        <a href="https://www.lrz.de/datenschutz" target="_blank">
+            <lang name="label_privacy_policy"></lang>
+        </a>
+
+                    <a href="http://www.powerfolder.com" target="_blank">
+                <lang name="label_powered_by"></lang>
+            </a>
+            </div>
+</div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="col-1 col-sm-2 col-md-3 col-lg-3"></div>
+        </div>
+    </div>
+
+            <script src="/js/jquery-3.7.1.min.7aa6b0e08f48a0f9.js"></script>
+                <script src="/js/bootstrap/bootstrap.bundle.min.eb37e4d8bf11df00.js"></script>
+    
+            <script src="/js/picasso/helper.a1b900ac0da5737d.js"></script>
+                <script src="/js/picasso/notification.96956d5a19f4f8bf.js"></script>
+                <script src="/js/picasso/picasso.0a9855acd4efa289.js"></script>
+    
+            <script src="/js/picasso/css-polyfill.878f6c178bceb154.js"></script>
+    
+    <script type="application/javascript" nonce="AKapKRKKDA9TnvWryqaA">
+        Picasso.set("baseUrl", "https://syncandshare.lrz.de");
+        Picasso.set("CSRF", "");
+
+        /* Finally update language stuff */
+        Picasso.Lang.update();
+
+        /* Check browser after page load */
+        $(document).ready(function () {
+            if (Picasso.Helper.isInternetExplorer()) {
+                Picasso.Notification.show(
+                        Picasso.Lang.get("notification_error_internet_explorer"),
+                        "warning", true);
+            }
+        });
+    </script>
+
+</body>
+</html>

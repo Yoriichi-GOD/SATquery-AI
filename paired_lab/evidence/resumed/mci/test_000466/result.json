@@ -1,0 +1,35 @@
+{
+  "file": "test_000466.png",
+  "reference_changeflag": 1,
+  "raw_caption": "the scene is the same as before",
+  "reference_captions": [
+    " a house appears next to the woods on the bareland .",
+    " a house appears on the edge of the forest .",
+    " a small house has appeared in the forest .",
+    " a small building has been situated in front of forests .",
+    " a small building appears at the edge of the forest ."
+  ],
+  "caption_changeflag_heuristic": 0,
+  "confusion_rows_reference_columns_prediction": [
+    [
+      65185,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0
+    ],
+    [
+      288,
+      0,
+      63
+    ]
+  ],
+  "predicted_class_pixels": {
+    "0": 65473,
+    "1": 0,
+    "2": 63
+  }
+}

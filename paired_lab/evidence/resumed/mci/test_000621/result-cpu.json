@@ -1,0 +1,36 @@
+{
+  "file": "test_000621.png",
+  "reference_changeflag": 1,
+  "raw_caption": "the vegetation has been removed and a residential area is built with villas built along",
+  "reference_captions": [
+    " two vertical roads are constructed and two lines of completed villas appear replacing the vegetation .",
+    " trees are removed and a turning is built in the top and a cross road is constructed with rows of villas built along .",
+    " several roads have been built to replace the vegetation and many neatly arranged villas have been constructed on both sides of the roads .",
+    " all the trees disappear and many houses are built alongside the road .",
+    " the woods turn into crossing roads with rows of buildings built along ."
+  ],
+  "caption_changeflag_heuristic": 1,
+  "confusion_rows_reference_columns_prediction": [
+    [
+      39274,
+      209,
+      1179
+    ],
+    [
+      501,
+      10802,
+      0
+    ],
+    [
+      1575,
+      0,
+      11996
+    ]
+  ],
+  "predicted_class_pixels": {
+    "0": 41350,
+    "1": 11011,
+    "2": 13175
+  },
+  "gpu_caption": "the vegetation has been removed and a residential area is built with villas built along"
+}

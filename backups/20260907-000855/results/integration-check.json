@@ -1,0 +1,24 @@
+[
+  {
+    "id": "224dce96199c49cdb65956d8c6ecc043",
+    "mode": "pilot_binary",
+    "adapter": "lora-pilot-v1",
+    "answer": "no",
+    "seconds": 13.744,
+    "visual_token_bounds": [
+      64,
+      128
+    ]
+  },
+  {
+    "id": "c50a59ea983a438aa0c27e2f57597124",
+    "mode": "baseline",
+    "adapter": null,
+    "answer": "4",
+    "seconds": 0.368,
+    "visual_token_bounds": [
+      256,
+      512
+    ]
+  }
+]

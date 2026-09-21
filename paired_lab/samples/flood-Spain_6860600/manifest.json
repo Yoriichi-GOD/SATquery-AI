@@ -1,0 +1,28 @@
+{
+  "id": "flood-Spain_6860600",
+  "kind": "water_map",
+  "name": "Spain \u00b7 6860600 (test)",
+  "source": "Sen1Floods11 v1.1 hand-labelled",
+  "benchmark": "Official test split; first chip per event, not selected by prediction quality",
+  "files": [
+    "optical.tif",
+    "sar.tif"
+  ],
+  "source_files": [
+    {
+      "source": "/root/satquery/paired-lab/sen1floods11/S2Hand/Spain_6860600_S2Hand.tif",
+      "source_sha256": "9d9068dc0db5959536fe54f588f7a2d58091e8f52ee4d81e919ecd5f34791611",
+      "export_sha256": "95159b5746f0e8350c709a2faf0c8d77781a4c87e5b42cece11c8ba939ccfc2e"
+    },
+    {
+      "source": "/root/satquery/paired-lab/sen1floods11/S1Hand/Spain_6860600_S1Hand.tif",
+      "source_sha256": "5ffd422a0375aa9113e078d7481643355aa9109dbaa459e03b659c0bde503787",
+      "export_sha256": "dcf4349e7bef88ffd9feacb011e5e23e67945cb0d7e248334d34320771fcac65"
+    }
+  ],
+  "dates": {
+    "optical": "2019/09/18",
+    "sar": "2019/09/17"
+  },
+  "reference": "/root/satquery/paired-lab/sen1floods11/LabelHand/Spain_6860600_LabelHand.tif"
+}

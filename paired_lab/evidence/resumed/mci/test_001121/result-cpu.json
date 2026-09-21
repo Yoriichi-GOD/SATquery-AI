@@ -1,0 +1,36 @@
+{
+  "file": "test_001121.png",
+  "reference_changeflag": 1,
+  "raw_caption": "some houses are built at the top of the scene",
+  "reference_captions": [
+    " an end of a road with many houses appears on the top side of the scene .",
+    " some houses are constructed beside the road and the forest .",
+    " the area of grassland has decreased and many buildings have been constructed .",
+    " several buildings are built on the upper right .",
+    " a concrete road and several houses appear on bareland ."
+  ],
+  "caption_changeflag_heuristic": 1,
+  "confusion_rows_reference_columns_prediction": [
+    [
+      58168,
+      161,
+      150
+    ],
+    [
+      66,
+      1997,
+      0
+    ],
+    [
+      530,
+      0,
+      4464
+    ]
+  ],
+  "predicted_class_pixels": {
+    "0": 58764,
+    "1": 2158,
+    "2": 4614
+  },
+  "gpu_caption": "some houses are built at the top of the scene"
+}

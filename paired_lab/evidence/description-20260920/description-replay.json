@@ -1,0 +1,254 @@
+[
+  {
+    "image": "car",
+    "run": {
+      "id": "b670e0878d5b42c2ae23b4945245880a",
+      "state": "complete",
+      "stage": "Complete",
+      "question": "Describe this image.",
+      "image": {
+        "id": "88e3d8a60c2b4c5884dd42876692d155",
+        "name": "car.png",
+        "width": 2557,
+        "height": 1597,
+        "bytes": 4923179,
+        "sha256": "c021e00a3cc0c0d4b822036fdb35fc97ab92aa10e2ae16d127116ce8b44fa886",
+        "preview": "/api/images/88e3d8a60c2b4c5884dd42876692d155",
+        "geo": null
+      },
+      "started": 1789887005.7654755,
+      "model": "AdaptLLM/remote-sensing-Qwen2-VL-2B-Instruct",
+      "revision": "7f5dd71bf0f40c282193d50160e848a387a08ffe",
+      "adapter": null,
+      "mode": "baseline",
+      "route": "Single-image optical VQA",
+      "trace": [
+        {
+          "step": "Generate model answer",
+          "seconds": 0.666
+        }
+      ],
+      "routing": {
+        "tool": "vqa",
+        "rule": "single_image_description",
+        "reason": "Supported descriptive or presence question about one optical image; no quantitative or spatial output requested.",
+        "version": "rules-v5"
+      },
+      "requested_mode": "baseline",
+      "effective_question": "Describe this image.",
+      "visual_token_bounds": [
+        256,
+        512
+      ],
+      "raw_answer": "There is a car on the grass.",
+      "answer_validation": {
+        "policy": "open-visual-v1",
+        "answer": "There is a car on the grass.\n\nModel interpretation; may be inaccurate.",
+        "limitation": "Model interpretation; may be inaccurate.",
+        "raw_truncated": false,
+        "changed": true,
+        "withheld": false,
+        "reasons": [
+          "model_output_preserved",
+          "estimate_label_added"
+        ]
+      },
+      "answer_policy": "open-visual-v1",
+      "answer": "There is a car on the grass.\n\nModel interpretation; may be inaccurate.",
+      "seconds": 0.891,
+      "generation_seconds": 0.666,
+      "peak_allocated_GiB": 4.294,
+      "generated_tokens": 9,
+      "max_new_tokens": 128
+    }
+  },
+  {
+    "image": "car",
+    "run": {
+      "id": "c5b2332dcd45445a923bd21d1a0d34e4",
+      "state": "complete",
+      "stage": "Complete",
+      "question": "describe the image",
+      "image": {
+        "id": "88e3d8a60c2b4c5884dd42876692d155",
+        "name": "car.png",
+        "width": 2557,
+        "height": 1597,
+        "bytes": 4923179,
+        "sha256": "c021e00a3cc0c0d4b822036fdb35fc97ab92aa10e2ae16d127116ce8b44fa886",
+        "preview": "/api/images/88e3d8a60c2b4c5884dd42876692d155",
+        "geo": null
+      },
+      "started": 1789887007.0117583,
+      "model": "AdaptLLM/remote-sensing-Qwen2-VL-2B-Instruct",
+      "revision": "7f5dd71bf0f40c282193d50160e848a387a08ffe",
+      "adapter": null,
+      "mode": "baseline",
+      "route": "Single-image optical VQA",
+      "trace": [
+        {
+          "step": "Generate model answer",
+          "seconds": 4.992
+        }
+      ],
+      "routing": {
+        "tool": "vqa",
+        "rule": "single_image_description",
+        "reason": "Supported descriptive or presence question about one optical image; no quantitative or spatial output requested.",
+        "version": "rules-v5"
+      },
+      "requested_mode": "baseline",
+      "effective_question": "describe the image",
+      "visual_token_bounds": [
+        256,
+        512
+      ],
+      "raw_answer": "The image depicts a solitary green sports car parked on a grassy hilltop. The car is positioned with its back towards the viewer, facing a mountainous landscape. The surrounding terrain is lush with greenery, indicating a possibly tropical or subtropical climate. The presence of snow-capped peaks suggests that the image was taken in a region with a mix of tropical and alpine climates. The sky is clear with a few wisps of clouds, and the lighting suggests either early morning or late afternoon, as the shadows are soft and the light is not harsh. There are no visible people or animals, and the overall scene is serene and picturesque",
+      "answer_validation": {
+        "policy": "open-visual-v1",
+        "answer": "The image depicts a solitary green sports car parked on a grassy hilltop. The car is positioned with its back towards the viewer, facing a mountainous landscape. The surrounding terrain is lush with greenery, indicating a possibly tropical or subtropical climate. The presence of snow-capped peaks suggests that the image was taken in a region with a mix of tropical and alpine climates. The sky is clear with a few wisps of clouds, and the lighting suggests either early morning or late afternoon, as the shadows are soft and the light is not harsh. There are no visible people or animals, and the overall scene is serene and picturesque\n\nModel interpretation; may be inaccurate. Response reached the length limit.",
+        "limitation": "Model interpretation; may be inaccurate. Response reached the length limit.",
+        "raw_truncated": true,
+        "changed": true,
+        "withheld": false,
+        "reasons": [
+          "model_output_preserved",
+          "estimate_label_added"
+        ]
+      },
+      "answer_policy": "open-visual-v1",
+      "answer": "The image depicts a solitary green sports car parked on a grassy hilltop. The car is positioned with its back towards the viewer, facing a mountainous landscape. The surrounding terrain is lush with greenery, indicating a possibly tropical or subtropical climate. The presence of snow-capped peaks suggests that the image was taken in a region with a mix of tropical and alpine climates. The sky is clear with a few wisps of clouds, and the lighting suggests either early morning or late afternoon, as the shadows are soft and the light is not harsh. There are no visible people or animals, and the overall scene is serene and picturesque\n\nModel interpretation; may be inaccurate. Response reached the length limit.",
+      "seconds": 5.131,
+      "generation_seconds": 4.992,
+      "peak_allocated_GiB": 4.294,
+      "generated_tokens": 128,
+      "max_new_tokens": 128
+    }
+  },
+  {
+    "image": "baseball",
+    "run": {
+      "id": "e2112c1d4a9a4b03a15f46d522819e31",
+      "state": "complete",
+      "stage": "Complete",
+      "question": "Describe this image.",
+      "image": {
+        "id": "014ca943c0bc45babf3de23fe51d9b1a",
+        "name": "baseball.png",
+        "width": 800,
+        "height": 800,
+        "bytes": 1058832,
+        "sha256": "d554202729a40d67eb39fc38759e196ca628cf6f7f3c2679b075fcb9a9f52e80",
+        "preview": "/api/images/014ca943c0bc45babf3de23fe51d9b1a",
+        "geo": null
+      },
+      "started": 1789887012.487648,
+      "model": "AdaptLLM/remote-sensing-Qwen2-VL-2B-Instruct",
+      "revision": "7f5dd71bf0f40c282193d50160e848a387a08ffe",
+      "adapter": null,
+      "mode": "baseline",
+      "route": "Single-image optical VQA",
+      "trace": [
+        {
+          "step": "Generate model answer",
+          "seconds": 0.785
+        }
+      ],
+      "routing": {
+        "tool": "vqa",
+        "rule": "single_image_description",
+        "reason": "Supported descriptive or presence question about one optical image; no quantitative or spatial output requested.",
+        "version": "rules-v5"
+      },
+      "requested_mode": "baseline",
+      "effective_question": "Describe this image.",
+      "visual_token_bounds": [
+        256,
+        512
+      ],
+      "raw_answer": "There are four baseball fields arranged in a square.",
+      "answer_validation": {
+        "policy": "open-visual-v1",
+        "answer": "There are four baseball fields arranged in a square.\n\nModel interpretation; may be inaccurate.",
+        "limitation": "Model interpretation; may be inaccurate.",
+        "raw_truncated": false,
+        "changed": true,
+        "withheld": false,
+        "reasons": [
+          "model_output_preserved",
+          "estimate_label_added"
+        ]
+      },
+      "answer_policy": "open-visual-v1",
+      "answer": "There are four baseball fields arranged in a square.\n\nModel interpretation; may be inaccurate.",
+      "seconds": 0.831,
+      "generation_seconds": 0.785,
+      "peak_allocated_GiB": 4.297,
+      "generated_tokens": 11,
+      "max_new_tokens": 128
+    }
+  },
+  {
+    "image": "baseball",
+    "run": {
+      "id": "f9a4ea12df0049309f84418697d984b4",
+      "state": "complete",
+      "stage": "Complete",
+      "question": "describe the image",
+      "image": {
+        "id": "014ca943c0bc45babf3de23fe51d9b1a",
+        "name": "baseball.png",
+        "width": 800,
+        "height": 800,
+        "bytes": 1058832,
+        "sha256": "d554202729a40d67eb39fc38759e196ca628cf6f7f3c2679b075fcb9a9f52e80",
+        "preview": "/api/images/014ca943c0bc45babf3de23fe51d9b1a",
+        "geo": null
+      },
+      "started": 1789887013.7011368,
+      "model": "AdaptLLM/remote-sensing-Qwen2-VL-2B-Instruct",
+      "revision": "7f5dd71bf0f40c282193d50160e848a387a08ffe",
+      "adapter": null,
+      "mode": "baseline",
+      "route": "Single-image optical VQA",
+      "trace": [
+        {
+          "step": "Generate model answer",
+          "seconds": 5.027
+        }
+      ],
+      "routing": {
+        "tool": "vqa",
+        "rule": "single_image_description",
+        "reason": "Supported descriptive or presence question about one optical image; no quantitative or spatial output requested.",
+        "version": "rules-v5"
+      },
+      "requested_mode": "baseline",
+      "effective_question": "describe the image",
+      "visual_token_bounds": [
+        256,
+        512
+      ],
+      "raw_answer": "There are four baseball fields arranged in a square pattern. The orientation of the fields is such that they are all facing the same direction, which is common in sports complexes to facilitate the movement of players and spectators. The central area is likely a gathering space or a place for players to rest and socialize. The surrounding greenery provides a natural boundary and may also serve as a windbreak. The presence of trees and buildings suggests that this complex is part of a larger park or recreational facility. The image does not provide any direct information about the location or the specific use of the complex beyond its recreational and sports functions. Therefore, the answer is",
+      "answer_validation": {
+        "policy": "open-visual-v1",
+        "answer": "There are four baseball fields arranged in a square pattern. The orientation of the fields is such that they are all facing the same direction, which is common in sports complexes to facilitate the movement of players and spectators. The central area is likely a gathering space or a place for players to rest and socialize. The surrounding greenery provides a natural boundary and may also serve as a windbreak. The presence of trees and buildings suggests that this complex is part of a larger park or recreational facility. The image does not provide any direct information about the location or the specific use of the complex beyond its recreational and sports functions. Therefore, the answer is\n\nModel interpretation; may be inaccurate. Response reached the length limit.",
+        "limitation": "Model interpretation; may be inaccurate. Response reached the length limit.",
+        "raw_truncated": true,
+        "changed": true,
+        "withheld": false,
+        "reasons": [
+          "model_output_preserved",
+          "estimate_label_added"
+        ]
+      },
+      "answer_policy": "open-visual-v1",
+      "answer": "There are four baseball fields arranged in a square pattern. The orientation of the fields is such that they are all facing the same direction, which is common in sports complexes to facilitate the movement of players and spectators. The central area is likely a gathering space or a place for players to rest and socialize. The surrounding greenery provides a natural boundary and may also serve as a windbreak. The presence of trees and buildings suggests that this complex is part of a larger park or recreational facility. The image does not provide any direct information about the location or the specific use of the complex beyond its recreational and sports functions. Therefore, the answer is\n\nModel interpretation; may be inaccurate. Response reached the length limit.",
+      "seconds": 5.084,
+      "generation_seconds": 5.027,
+      "peak_allocated_GiB": 4.297,
+      "generated_tokens": 128,
+      "max_new_tokens": 128
+    }
+  }
+]

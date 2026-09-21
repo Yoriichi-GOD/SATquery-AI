@@ -1,0 +1,35 @@
+{
+  "file": "test_001827.png",
+  "reference_changeflag": 1,
+  "raw_caption": "many houses are built along the roads",
+  "reference_captions": [
+    " several neat rows of buildings appear on the wasteland on both sides of the roads .",
+    " massive houses along the roads appear in the desert .",
+    " rows of houses are built on the bareland along the roads on both sides .",
+    " many houses are built in the street blocks .",
+    " the bareland has been filled with houses ."
+  ],
+  "caption_changeflag_heuristic": 1,
+  "confusion_rows_reference_columns_prediction": [
+    [
+      39315,
+      0,
+      934
+    ],
+    [
+      0,
+      0,
+      0
+    ],
+    [
+      2287,
+      0,
+      23000
+    ]
+  ],
+  "predicted_class_pixels": {
+    "0": 41602,
+    "1": 0,
+    "2": 23934
+  }
+}

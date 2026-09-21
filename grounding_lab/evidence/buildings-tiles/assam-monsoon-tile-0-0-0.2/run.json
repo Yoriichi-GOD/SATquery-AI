@@ -1,0 +1,140 @@
+{
+  "id": "844dd2ae7e2c4c3297afa2e53b000494",
+  "state": "complete",
+  "stage": "Starting isolated worker",
+  "started": 1789213067.3521967,
+  "image": {
+    "id": "6c26d99a21af46e6a0061e699503ba96",
+    "name": "assam-monsoon-tile-0-0.png",
+    "width": 256,
+    "height": 256,
+    "sha256": "3bc575fd0d6b4f123c921cb0f887d5ec11af34fa3fb05c9c636f1c3e7c1bdfa6",
+    "preview": "api/images/6c26d99a21af46e6a0061e699503ba96"
+  },
+  "selection": {
+    "image_id": "6c26d99a21af46e6a0061e699503ba96",
+    "category": "building",
+    "threshold": 0.2,
+    "mode": "both"
+  },
+  "result": {
+    "version": "grounding-lab-v1",
+    "category": "building",
+    "prompt": "a building.",
+    "mode": "both",
+    "image": {
+      "width": 256,
+      "height": 256,
+      "sha256": "3bc575fd0d6b4f123c921cb0f887d5ec11af34fa3fb05c9c636f1c3e7c1bdfa6"
+    },
+    "models": [
+      {
+        "model": "IDEA-Research/grounding-dino-tiny",
+        "revision": "a2bb814dd30d776dcf7e30523b00659f4f141c71",
+        "path": "/root/.cache/huggingface/hub/models--IDEA-Research--grounding-dino-tiny/snapshots/a2bb814dd30d776dcf7e30523b00659f4f141c71",
+        "license": "apache-2.0"
+      },
+      {
+        "model": "facebook/sam-vit-base",
+        "revision": "70c1a07f894ebb5b307fd9eaaee97b9dfc16068f",
+        "path": "/root/.cache/huggingface/hub/models--facebook--sam-vit-base/snapshots/70c1a07f894ebb5b307fd9eaaee97b9dfc16068f",
+        "license": "apache-2.0"
+      }
+    ],
+    "settings": {
+      "box_threshold": 0.2,
+      "text_threshold": 0.25,
+      "nms_iou": 0.5,
+      "max_objects": 24,
+      "reject_frame_area_fraction": 0.97,
+      "enclosing_area_fraction": 0.9,
+      "enclosed_smaller_ratio": 0.6
+    },
+    "raw_candidates": 3,
+    "raw_proposals": [
+      {
+        "box_xyxy": [
+          0.040069580078125,
+          0.055938720703125,
+          256.0,
+          256.0
+        ],
+        "score": 0.4617161154747009
+      },
+      {
+        "box_xyxy": [
+          0.0,
+          58.11266326904297,
+          255.97955322265625,
+          256.0
+        ],
+        "score": 0.20025093853473663
+      },
+      {
+        "box_xyxy": [
+          0.0,
+          37.02449035644531,
+          255.93853759765625,
+          256.0
+        ],
+        "score": 0.202504500746727
+      }
+    ],
+    "excluded_enclosing_proposals": [
+      0
+    ],
+    "detections": [
+      {
+        "id": 1,
+        "box_xyxy": [
+          0.0,
+          37.02449035644531,
+          255.93853759765625,
+          256.0
+        ],
+        "detector_score": 0.202504500746727,
+        "mask_pixels": 31869,
+        "sam_predicted_iou": 0.9886810183525085
+      }
+    ],
+    "objects": 1,
+    "capped": false,
+    "segmented_objects": 1,
+    "union_mask_pixels": 31869,
+    "total_image_pixels": 65536,
+    "union_mask_percent": 48.6282,
+    "pixel_statistics_available": true,
+    "trace": [
+      {
+        "step": "Load pinned Grounding DINO",
+        "seconds": 3.266
+      },
+      {
+        "step": "Detect, threshold, remove enclosing frame proposals and suppress duplicates",
+        "seconds": 7.257
+      },
+      {
+        "step": "Load pinned SAM Base",
+        "seconds": 1.627
+      },
+      {
+        "step": "Box-prompted segmentation; choose highest SAM predicted IoU mask",
+        "seconds": 2.912
+      },
+      {
+        "step": "Render boxes, outlines and instance masks",
+        "seconds": 0.034
+      }
+    ],
+    "seconds": 16.297,
+    "peak_gpu_GiB": 2.678,
+    "limitations": [
+      "Experimental pretrained models; no remote-sensing fine-tuning or general accuracy claim.",
+      "Detector score and SAM predicted IoU are model scores, not measured correctness.",
+      "A mask follows a proposed box; it cannot prove the object identity.",
+      "Pixel coverage is the union of predicted masks, not NDVI, hectares or surveyed area.",
+      "Instance PNG assigns overlaps to the first score-ranked object; NPZ preserves overlapping masks.",
+      "Small, obscured or densely packed objects may be missed. Zero candidates means none passed the settings, not proof of absence."
+    ]
+  }
+}

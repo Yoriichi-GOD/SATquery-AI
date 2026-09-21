@@ -1,0 +1,31 @@
+[
+  {
+    "name": "brightness-only",
+    "kind": "synthetic-no-change-control",
+    "changed_pixels": 0,
+    "denominator": 65536,
+    "seconds": 4.335012775999985
+  },
+  {
+    "name": "identical-second-scene",
+    "kind": "synthetic-no-change-control",
+    "changed_pixels": 0,
+    "denominator": 65536,
+    "seconds": 0.891491751999979
+  },
+  {
+    "name": "real-pair-negative-crop",
+    "kind": "derived real pair; reference has zero building change",
+    "source": "test_77_0512_0256.png",
+    "source_window": [
+      0,
+      0,
+      128,
+      128
+    ],
+    "resize": "128 to 256 bilinear; changed physical scale; not independent benchmark",
+    "changed_pixels": 0,
+    "denominator": 65536,
+    "seconds": 0.9640275540000403
+  }
+]

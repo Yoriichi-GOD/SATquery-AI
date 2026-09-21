@@ -1,0 +1,23 @@
+{
+  "model": "SatQuery WaterUNet v1",
+  "checkpoint_sha256": "7844387fffd6c7e606895328e61be936304f979fee74411021f7312b3215f7ce",
+  "parameters": 1966130,
+  "input_shape": [
+    1,
+    17,
+    512,
+    512
+  ],
+  "output_shape": [
+    1,
+    2,
+    512,
+    512
+  ],
+  "inference_seconds": 1.7801765859999996,
+  "peak_allocated_MiB": 191.51904296875,
+  "peak_reserved_MiB": 264.0,
+  "device_before_used_total_MiB": "458, 8151",
+  "device_after_used_total_MiB": "847, 8151",
+  "context": "Standalone real GPU inference. Other model residency was not verified; this is not a concurrent VQA-and-water memory test. Served water pipeline remains CPU."
+}

@@ -1,0 +1,601 @@
+{
+  "scope": "Read-only status, asset and preserved output inspection. No new inference, uploads, startup, restart or training.",
+  "python": "3.11.16 (main, Sep  1 2026, 14:18:37) [Clang 22.1.3 ]",
+  "platform": "Linux-6.18.33.2-microsoft-standard-WSL2-x86_64-with-glibc2.43",
+  "packages": {
+    "torch": "2.8.0+cu128",
+    "transformers": "4.51.3",
+    "peft": "0.15.2",
+    "numpy": "2.4.6",
+    "rasterio": "1.4.4",
+    "pyproj": "3.7.2",
+    "pillow": "12.3.0",
+    "fastapi": "0.115.12",
+    "uvicorn": "0.34.2",
+    "huggingface-hub": "0.36.2",
+    "safetensors": "0.8.0",
+    "requests": "2.34.2",
+    "timm": "not in base environment metadata",
+    "opencv-python-headless": "not in base environment metadata"
+  },
+  "http": {
+    "8765/api/status": {
+      "state": "ready",
+      "model": "AdaptLLM/remote-sensing-Qwen2-VL-2B-Instruct",
+      "revision": "7f5dd71bf0f40c282193d50160e848a387a08ffe",
+      "device": "Local GPU",
+      "adapter": "Baseline - no adapter"
+    },
+    "8765/grounding/api/status": {
+      "busy": false,
+      "models_available": true,
+      "isolated": true
+    },
+    "8767/api/status": {
+      "state": "ready",
+      "device": "Paired CPU \u00b7 single-image demo GPU",
+      "demo_port": 8765,
+      "lab_port": 8767,
+      "controller": "unified-lab-rules-v2"
+    },
+    "8765/api/development": {
+      "available": true,
+      "label": "DEVELOPMENT ONLY",
+      "keys": [
+        "label",
+        "run",
+        "baseline_dev",
+        "adapted_dev",
+        "questions",
+        "images",
+        "source_scenes",
+        "regressions",
+        "gains",
+        "evidence",
+        "protocol",
+        "majority_correct"
+      ]
+    },
+    "8765/api/reliability": {
+      "available": true,
+      "label": null,
+      "keys": [
+        "updated",
+        "metrics",
+        "notes",
+        "ndvi_scenes",
+        "counting",
+        "adapter",
+        "final_vqa",
+        "regression_tests",
+        "evidence"
+      ]
+    }
+  },
+  "assets": [
+    {
+      "path": "/root/satquery/experiments/lora-pilot-v1/adapter/adapter_model.safetensors",
+      "exists": true,
+      "bytes": 2193720,
+      "sha256": "9ce1b94f5130b4ddeacd232b33f5cf05808c7574a93b176510d5f64c5c33f546"
+    },
+    {
+      "path": "/mnt/c/Users/nrgen/.codex/scratch/SATquery AI/paired_lab/checkpoints/water-v1.pt",
+      "exists": true,
+      "bytes": 7879873,
+      "sha256": "7844387fffd6c7e606895328e61be936304f979fee74411021f7312b3215f7ce"
+    },
+    {
+      "path": "/root/satquery/paired-lab/mci-model/MCI_model.pth",
+      "exists": true,
+      "bytes": 913762855,
+      "sha256": "34c6926342c40fdd6d50b43d50257cb46cb6b61763448de9ee551828a64b3eb9"
+    },
+    {
+      "path": "/root/.cache/huggingface/hub/models--BIFOLD-BigEarthNetv2-0--resnet50-all-v0.2.0/snapshots/762acdc186cce6b31ecbc896ddab1721847d4c5e/model.safetensors",
+      "exists": true,
+      "bytes": 94548948,
+      "sha256": "b7e5e58d2cf1e384ba9362ac6ce75c117dee159198eac5675927cba3c3960332"
+    },
+    {
+      "path": "/root/.cache/huggingface/hub/models--BIFOLD-BigEarthNetv2-0--resnet50-s1-v0.2.0/snapshots/d417b3c32f2172cbceb14e5b106dd9aa7b77c647/model.safetensors",
+      "exists": true,
+      "bytes": 94423500,
+      "sha256": "87990ba9058bc5413b90d7dc955ed1077cf8c54530db393801336209252b3739"
+    },
+    {
+      "path": "/root/.cache/huggingface/hub/models--BIFOLD-BigEarthNetv2-0--resnet50-s2-v0.2.0/snapshots/f5a590cd5876845f62702260ff62ea5a325433bb/model.safetensors",
+      "exists": true,
+      "bytes": 94523860,
+      "sha256": "f55f8a5416d326c7e3139a97c6866e606dfc2e5cde30d52e2ccc47ce5f8b9be5"
+    },
+    {
+      "path": "/root/satquery/paired-lab/changeformer-levir.pt",
+      "exists": true,
+      "bytes": 492671152,
+      "sha256": "db0dd783c3c3f27d02f55f24fa8199d2b2b47c422c7f7bd2e4d96e2fa65d69f2"
+    },
+    {
+      "path": "/root/.cache/huggingface/hub/models--IDEA-Research--grounding-dino-tiny/snapshots/a2bb814dd30d776dcf7e30523b00659f4f141c71/model.safetensors",
+      "exists": true,
+      "bytes": 689359096,
+      "sha256": "1a2412ef99bd74bcd3c2a246fa1e48581f8889a1300c9051974741314fc042f3"
+    },
+    {
+      "path": "/root/.cache/huggingface/hub/models--facebook--sam-vit-base/snapshots/70c1a07f894ebb5b307fd9eaaee97b9dfc16068f/model.safetensors",
+      "exists": true,
+      "bytes": 374979480,
+      "sha256": "892c410e496344e527255ccdcb2cb7244a609acb5389c7c4fdba1288f861c579"
+    }
+  ],
+  "/root/satquery/paired-lab/models.json": {
+    "all": {
+      "repo": "BIFOLD-BigEarthNetv2-0/resnet50-all-v0.2.0",
+      "revision": "762acdc186cce6b31ecbc896ddab1721847d4c5e",
+      "path": "/root/.cache/huggingface/hub/models--BIFOLD-BigEarthNetv2-0--resnet50-all-v0.2.0/snapshots/762acdc186cce6b31ecbc896ddab1721847d4c5e"
+    },
+    "s1": {
+      "repo": "BIFOLD-BigEarthNetv2-0/resnet50-s1-v0.2.0",
+      "revision": "d417b3c32f2172cbceb14e5b106dd9aa7b77c647",
+      "path": "/root/.cache/huggingface/hub/models--BIFOLD-BigEarthNetv2-0--resnet50-s1-v0.2.0/snapshots/d417b3c32f2172cbceb14e5b106dd9aa7b77c647"
+    },
+    "s2": {
+      "repo": "BIFOLD-BigEarthNetv2-0/resnet50-s2-v0.2.0",
+      "revision": "f5a590cd5876845f62702260ff62ea5a325433bb",
+      "path": "/root/.cache/huggingface/hub/models--BIFOLD-BigEarthNetv2-0--resnet50-s2-v0.2.0/snapshots/f5a590cd5876845f62702260ff62ea5a325433bb"
+    },
+    "temporal": {
+      "repo": "https://github.com/wgcban/ChangeFormer",
+      "revision": "afd1b7ed640aa265a2c730de958416ae7356a2f9",
+      "path": "/root/satquery/paired-lab/changeformer-levir.pt",
+      "sha256": "db0dd783c3c3f27d02f55f24fa8199d2b2b47c422c7f7bd2e4d96e2fa65d69f2",
+      "license_note": "README restricts code to non-commercial research; review before commercial distribution."
+    }
+  },
+  "/root/satquery/grounding-lab/models.json": [
+    {
+      "model": "IDEA-Research/grounding-dino-tiny",
+      "revision": "a2bb814dd30d776dcf7e30523b00659f4f141c71",
+      "path": "/root/.cache/huggingface/hub/models--IDEA-Research--grounding-dino-tiny/snapshots/a2bb814dd30d776dcf7e30523b00659f4f141c71",
+      "license": "apache-2.0"
+    },
+    {
+      "model": "facebook/sam-vit-base",
+      "revision": "70c1a07f894ebb5b307fd9eaaee97b9dfc16068f",
+      "path": "/root/.cache/huggingface/hub/models--facebook--sam-vit-base/snapshots/70c1a07f894ebb5b307fd9eaaee97b9dfc16068f",
+      "license": "apache-2.0"
+    }
+  ],
+  "/root/satquery/paired-lab/mci-model/manifest.json": {
+    "repo": "lcybuaa/Change-Agent",
+    "revision": "1e679060173434cd22fd22a52effbf3c785c97a0",
+    "path": "/root/satquery/paired-lab/mci-model/MCI_model.pth",
+    "sha256": "34c6926342c40fdd6d50b43d50257cb46cb6b61763448de9ee551828a64b3eb9",
+    "source_revision": "68cbaa7f388b36e4fc10872f7a2911482d26ae5b",
+    "license_note": "Checkpoint card Apache-2.0; source MIT with academic-use statement. Preserve both statements; review before commercial release."
+  },
+  "preserved_run_checks": [
+    {
+      "record": "/mnt/c/Users/nrgen/.codex/scratch/SATquery AI/paired_lab/evidence/resumed/live/01-vqa-before.json",
+      "runtime_folder": "/root/satquery/paired-lab/app/runs/87d19aeed2754afeaaeb8dfa72a7d154",
+      "exists": true,
+      "files": [
+        "evidence.zip",
+        "main-raw-result.json",
+        "input-1.original",
+        "result.json",
+        "input-preview.png"
+      ],
+      "zip_crc_error": null,
+      "zip_files": [
+        "main-raw-result.json",
+        "input-1.original",
+        "result.json",
+        "input-preview.png"
+      ],
+      "main_metrics": {
+        "seconds": 1.259,
+        "generation_seconds": 1.128,
+        "peak_allocated_GiB": 4.244,
+        "trace": [
+          {
+            "step": "Generate model answer",
+            "seconds": 0.422
+          },
+          {
+            "step": "Generate separate scene description",
+            "seconds": 0.706
+          }
+        ],
+        "mode": "baseline",
+        "raw_answer": "1",
+        "answer_policy": "focused-count-v1"
+      },
+      "current_job_status": "HTTP Error 404: Not Found"
+    },
+    {
+      "record": "/mnt/c/Users/nrgen/.codex/scratch/SATquery AI/paired_lab/evidence/resumed/live/02-temporal.json",
+      "runtime_folder": "/root/satquery/paired-lab/app/runs/76962dace0d7402885d91ff1efe3c5b2",
+      "exists": true,
+      "files": [
+        "before.png",
+        "input-2.tif",
+        "overlay.png",
+        "evidence.zip",
+        "after.png",
+        "input-1.tif",
+        "change-mask.png",
+        "result.json",
+        "scores.npz"
+      ],
+      "zip_crc_error": null,
+      "zip_files": [
+        "before.png",
+        "input-2.tif",
+        "overlay.png",
+        "after.png",
+        "input-1.tif",
+        "change-mask.png",
+        "result.json",
+        "scores.npz"
+      ],
+      "recomputed_counts": {
+        "road": 0,
+        "building": 4693
+      },
+      "counts_match": true,
+      "argmax_matches": true,
+      "current_job_status": "HTTP Error 404: Not Found"
+    },
+    {
+      "record": "/mnt/c/Users/nrgen/.codex/scratch/SATquery AI/paired_lab/evidence/resumed/live/03-water-india.json",
+      "runtime_folder": "/root/satquery/paired-lab/app/runs/4e99304de67c43d9b8a9516b168965c7",
+      "exists": true,
+      "files": [
+        "input-2.tif",
+        "water-overlay.png",
+        "water-mask.tif",
+        "s2-water.png",
+        "optical.png",
+        "evidence.zip",
+        "water-scores.npz",
+        "input-1.tif",
+        "all-water.png",
+        "sar.png",
+        "result.json",
+        "s1-water.png"
+      ],
+      "zip_crc_error": null,
+      "zip_files": [
+        "input-2.tif",
+        "water-overlay.png",
+        "water-mask.tif",
+        "s2-water.png",
+        "optical.png",
+        "water-scores.npz",
+        "input-1.tif",
+        "all-water.png",
+        "sar.png",
+        "result.json",
+        "s1-water.png"
+      ],
+      "recomputed_counts": {
+        "s1": 134387,
+        "s2": 130106,
+        "all": 129908
+      },
+      "counts_match": true,
+      "valid_match": true,
+      "current_job_status": "HTTP Error 404: Not Found"
+    },
+    {
+      "record": "/mnt/c/Users/nrgen/.codex/scratch/SATquery AI/paired_lab/evidence/resumed/live/04-water-bolivia.json",
+      "runtime_folder": "/root/satquery/paired-lab/app/runs/72112706a06e480396c8411f45e75287",
+      "exists": true,
+      "files": [
+        "input-2.tif",
+        "water-overlay.png",
+        "water-mask.tif",
+        "s2-water.png",
+        "optical.png",
+        "evidence.zip",
+        "water-scores.npz",
+        "input-1.tif",
+        "all-water.png",
+        "sar.png",
+        "result.json",
+        "s1-water.png"
+      ],
+      "zip_crc_error": null,
+      "zip_files": [
+        "input-2.tif",
+        "water-overlay.png",
+        "water-mask.tif",
+        "s2-water.png",
+        "optical.png",
+        "water-scores.npz",
+        "input-1.tif",
+        "all-water.png",
+        "sar.png",
+        "result.json",
+        "s1-water.png"
+      ],
+      "recomputed_counts": {
+        "s1": 24146,
+        "s2": 36963,
+        "all": 34361
+      },
+      "counts_match": true,
+      "valid_match": true,
+      "current_job_status": "HTTP Error 404: Not Found"
+    },
+    {
+      "record": "/mnt/c/Users/nrgen/.codex/scratch/SATquery AI/paired_lab/evidence/resumed/live/05-scene-fusion.json",
+      "runtime_folder": "/root/satquery/paired-lab/app/runs/ec895399913b4ee6922f1c3e1cd6aa60",
+      "exists": true,
+      "files": [
+        "input-2.tif",
+        "optical.png",
+        "evidence.zip",
+        "input-1.tif",
+        "sar.png",
+        "result.json"
+      ],
+      "zip_crc_error": null,
+      "zip_files": [
+        "input-2.tif",
+        "optical.png",
+        "input-1.tif",
+        "sar.png",
+        "result.json"
+      ],
+      "current_job_status": "HTTP Error 404: Not Found"
+    },
+    {
+      "record": "/mnt/c/Users/nrgen/.codex/scratch/SATquery AI/paired_lab/evidence/resumed/live/06-ndvi.json",
+      "runtime_folder": "/root/satquery/paired-lab/app/runs/658c87016adc4a3e8d27b5734791c36b",
+      "exists": true,
+      "files": [
+        "evidence.png",
+        "ndvi.tif",
+        "evidence.zip",
+        "main-raw-result.json",
+        "false-colour.png",
+        "rgb.png",
+        "input-1.original",
+        "result.json",
+        "input-preview.png",
+        "mask.png"
+      ],
+      "zip_crc_error": null,
+      "zip_files": [
+        "evidence.png",
+        "ndvi.tif",
+        "main-raw-result.json",
+        "false-colour.png",
+        "rgb.png",
+        "input-1.original",
+        "result.json",
+        "input-preview.png",
+        "mask.png"
+      ],
+      "selected_from_export": 38761,
+      "counts_match": true,
+      "main_metrics": {
+        "seconds": 0.219,
+        "generation_seconds": null,
+        "peak_allocated_GiB": null,
+        "trace": null,
+        "mode": null,
+        "raw_answer": null,
+        "answer_policy": null
+      },
+      "current_job_status": "HTTP Error 404: Not Found"
+    },
+    {
+      "record": "/mnt/c/Users/nrgen/.codex/scratch/SATquery AI/paired_lab/evidence/resumed/live/07-vqa-after.json",
+      "runtime_folder": "/root/satquery/paired-lab/app/runs/4608a105e47f42b3834ef605b28e4ad5",
+      "exists": true,
+      "files": [
+        "evidence.zip",
+        "main-raw-result.json",
+        "input-1.original",
+        "result.json",
+        "input-preview.png"
+      ],
+      "zip_crc_error": null,
+      "zip_files": [
+        "main-raw-result.json",
+        "input-1.original",
+        "result.json",
+        "input-preview.png"
+      ],
+      "main_metrics": {
+        "seconds": 0.995,
+        "generation_seconds": 0.968,
+        "peak_allocated_GiB": 4.244,
+        "trace": [
+          {
+            "step": "Generate model answer",
+            "seconds": 0.356
+          },
+          {
+            "step": "Generate separate scene description",
+            "seconds": 0.612
+          }
+        ],
+        "mode": "baseline",
+        "raw_answer": "1",
+        "answer_policy": "focused-count-v1"
+      },
+      "current_job_status": "HTTP Error 404: Not Found"
+    },
+    {
+      "record": "/mnt/c/Users/nrgen/.codex/scratch/SATquery AI/paired_lab/evidence/resumed/live/08-rural-urban.json",
+      "runtime_folder": "/root/satquery/paired-lab/app/runs/81403d66add14c5bb885e139c776a88c",
+      "exists": true,
+      "files": [
+        "evidence.zip",
+        "main-raw-result.json",
+        "input-1.original",
+        "result.json",
+        "input-preview.png"
+      ],
+      "zip_crc_error": null,
+      "zip_files": [
+        "main-raw-result.json",
+        "input-1.original",
+        "result.json",
+        "input-preview.png"
+      ],
+      "main_metrics": {
+        "seconds": 1.824,
+        "generation_seconds": 0.731,
+        "peak_allocated_GiB": 4.177,
+        "trace": [
+          {
+            "step": "Generate model answer",
+            "seconds": 0.731
+          }
+        ],
+        "mode": "pilot_rural",
+        "raw_answer": "urban",
+        "answer_policy": "bounded-answer-v2"
+      },
+      "current_job_status": "HTTP Error 404: Not Found"
+    }
+  ],
+  "licenses": [
+    {
+      "path": "/root/.cache/huggingface/hub/models--BIFOLD-BigEarthNetv2-0--resnet50-all-v0.2.0/snapshots/762acdc186cce6b31ecbc896ddab1721847d4c5e/README.md",
+      "matches": [
+        {
+          "line": 11,
+          "text": "license: mit"
+        }
+      ]
+    },
+    {
+      "path": "/root/.cache/huggingface/hub/models--BIFOLD-BigEarthNetv2-0--resnet18-all-v0.2.0/snapshots/ef959b5f06e98860945e3b7fe4749b1d609b123a/README.md",
+      "matches": [
+        {
+          "line": 11,
+          "text": "license: mit"
+        }
+      ]
+    },
+    {
+      "path": "/root/.cache/huggingface/hub/models--facebook--sam-vit-base/snapshots/70c1a07f894ebb5b307fd9eaaee97b9dfc16068f/README.md",
+      "matches": [
+        {
+          "line": 2,
+          "text": "license: apache-2.0"
+        },
+        {
+          "line": 34,
+          "text": ">  We introduce the Segment Anything (SA) project: a new task, model, and dataset for image segmentation. Using our efficient model in a data collection loop, we built the largest segmentation dataset to date (by far), with over 1 billion masks on 11M licensed and privacy respecting images. The model is designed and trained to be promptable, so it can transfer zero-shot to new image distributions and tasks. We evaluate its capabilities on numerous tasks and find that its zero-shot performance is impressive -- often competitive with or even superior to prior fully supervised results. We are releasing the Segment Anything Model (SAM) and corresponding dataset (SA-1B) of 1B masks and 11M images at [https://segment-anything.com](https://segment-anything.com) to foster research into foundation models for computer vision."
+        }
+      ]
+    },
+    {
+      "path": "/root/.cache/huggingface/hub/models--BIFOLD-BigEarthNetv2-0--resnet18-s2-v0.2.0/snapshots/511825fd73a3c7b3c5353a2ba2f8d8c8c79bc806/README.md",
+      "matches": [
+        {
+          "line": 11,
+          "text": "license: mit"
+        }
+      ]
+    },
+    {
+      "path": "/root/.cache/huggingface/hub/models--IDEA-Research--grounding-dino-tiny/snapshots/a2bb814dd30d776dcf7e30523b00659f4f141c71/README.md",
+      "matches": [
+        {
+          "line": 2,
+          "text": "license: apache-2.0"
+        }
+      ]
+    },
+    {
+      "path": "/root/.cache/huggingface/hub/models--BIFOLD-BigEarthNetv2-0--resnet18-s1-v0.2.0/snapshots/20e3c3ba8143ae600d7cf8e70d01a4278e6b0279/README.md",
+      "matches": [
+        {
+          "line": 11,
+          "text": "license: mit"
+        }
+      ]
+    },
+    {
+      "path": "/root/.cache/huggingface/hub/models--BIFOLD-BigEarthNetv2-0--resnet50-s1-v0.2.0/snapshots/d417b3c32f2172cbceb14e5b106dd9aa7b77c647/README.md",
+      "matches": [
+        {
+          "line": 11,
+          "text": "license: mit"
+        }
+      ]
+    },
+    {
+      "path": "/root/.cache/huggingface/hub/models--BIFOLD-BigEarthNetv2-0--resnet50-s2-v0.2.0/snapshots/f5a590cd5876845f62702260ff62ea5a325433bb/README.md",
+      "matches": [
+        {
+          "line": 11,
+          "text": "license: mit"
+        }
+      ]
+    },
+    {
+      "path": "/root/satquery/paired-lab/Change-Agent/LICENSE.txt",
+      "matches": [
+        {
+          "line": 1,
+          "text": "MIT License"
+        },
+        {
+          "line": 3,
+          "text": "Copyright (c) 2023 Chen-Yang-Liu"
+        },
+        {
+          "line": 5,
+          "text": "Permission is hereby granted, free of charge, to any person obtaining a copy"
+        },
+        {
+          "line": 8,
+          "text": "to use, copy, modify, merge, publish, distribute, sublicense, and/or sell"
+        },
+        {
+          "line": 12,
+          "text": "The above copyright notice and this permission notice shall be included in all"
+        },
+        {
+          "line": 18,
+          "text": "AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER"
+        }
+      ]
+    },
+    {
+      "path": "/root/satquery/paired-lab/ChangeFormer/README.md",
+      "matches": [
+        {
+          "line": 222,
+          "text": "### License"
+        },
+        {
+          "line": 224,
+          "text": "Code is released for non-commercial and research purposes **only**. For commercial purposes, please contact the authors."
+        }
+      ]
+    },
+    {
+      "path": "/root/satquery/grounding-lab/models.json",
+      "matches": [
+        {
+          "line": 6,
+          "text": "    \"license\": \"apache-2.0\""
+        },
+        {
+          "line": 12,
+          "text": "    \"license\": \"apache-2.0\""
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "total": 24,
+  "raw_exact_correct": 19,
+  "display_exact_correct": 19,
+  "by_category": {
+    "presence": {
+      "total": 12,
+      "correct": 7
+    },
+    "rural_urban": {
+      "total": 12,
+      "correct": 12
+    }
+  },
+  "scope": "Existing adapter, 24 fresh images from official test scene, not adapter train/dev. Same frozen cases as prompt diagnostic; not an additional independent test. 64-128 visual tokens, 16 output tokens: deployment pilot settings. Baseline diagnostic used different prompts/token limits, so this is not a controlled adapter-only ablation. Published labels may be noisy; upstream model exposure unknown."
+}

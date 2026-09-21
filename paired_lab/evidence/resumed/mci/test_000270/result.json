@@ -1,0 +1,35 @@
+{
+  "file": "test_000270.png",
+  "reference_changeflag": 1,
+  "raw_caption": "trees in the left are removed and a road with villas built along appears",
+  "reference_captions": [
+    " half of the trees are replaced by a road and some buildings alongside .",
+    " trees are removed and a road with some houses neatly arranged beside it are built .",
+    " a road and a row of villas have been built in the forest .",
+    " half of the forests are cut down and some houses are built along the road .",
+    " half of the plants are replaced by a road with houses along ."
+  ],
+  "caption_changeflag_heuristic": 1,
+  "confusion_rows_reference_columns_prediction": [
+    [
+      54961,
+      255,
+      303
+    ],
+    [
+      186,
+      4468,
+      0
+    ],
+    [
+      395,
+      0,
+      4968
+    ]
+  ],
+  "predicted_class_pixels": {
+    "0": 55542,
+    "1": 4723,
+    "2": 5271
+  }
+}

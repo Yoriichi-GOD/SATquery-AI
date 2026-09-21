@@ -1,0 +1,131 @@
+{
+  "id": "48b1704afe5349169acafda81547df92",
+  "state": "complete",
+  "stage": "Starting isolated worker",
+  "started": 1789212977.6969194,
+  "image": {
+    "id": "58a7e089188d468aacb7cd82849f250e",
+    "name": "jaisalmer-arid.png",
+    "width": 512,
+    "height": 512,
+    "sha256": "6c4830b4c5033bc0e6f3b810b317ba062bc349b0b2738845819c2cdd67268cf6",
+    "preview": "api/images/58a7e089188d468aacb7cd82849f250e"
+  },
+  "selection": {
+    "image_id": "58a7e089188d468aacb7cd82849f250e",
+    "category": "building",
+    "threshold": 0.2,
+    "mode": "both"
+  },
+  "result": {
+    "version": "grounding-lab-v1",
+    "category": "building",
+    "prompt": "a building.",
+    "mode": "both",
+    "image": {
+      "width": 512,
+      "height": 512,
+      "sha256": "6c4830b4c5033bc0e6f3b810b317ba062bc349b0b2738845819c2cdd67268cf6"
+    },
+    "models": [
+      {
+        "model": "IDEA-Research/grounding-dino-tiny",
+        "revision": "a2bb814dd30d776dcf7e30523b00659f4f141c71",
+        "path": "/root/.cache/huggingface/hub/models--IDEA-Research--grounding-dino-tiny/snapshots/a2bb814dd30d776dcf7e30523b00659f4f141c71",
+        "license": "apache-2.0"
+      },
+      {
+        "model": "facebook/sam-vit-base",
+        "revision": "70c1a07f894ebb5b307fd9eaaee97b9dfc16068f",
+        "path": "/root/.cache/huggingface/hub/models--facebook--sam-vit-base/snapshots/70c1a07f894ebb5b307fd9eaaee97b9dfc16068f",
+        "license": "apache-2.0"
+      }
+    ],
+    "settings": {
+      "box_threshold": 0.2,
+      "text_threshold": 0.25,
+      "nms_iou": 0.5,
+      "max_objects": 24,
+      "reject_frame_area_fraction": 0.97,
+      "enclosing_area_fraction": 0.9,
+      "enclosed_smaller_ratio": 0.6
+    },
+    "raw_candidates": 2,
+    "raw_proposals": [
+      {
+        "box_xyxy": [
+          1.6522979736328125,
+          1.5719146728515625,
+          510.10113525390625,
+          509.2830810546875
+        ],
+        "score": 0.47960183024406433
+      },
+      {
+        "box_xyxy": [
+          190.68798828125,
+          415.31365966796875,
+          333.5980224609375,
+          509.89593505859375
+        ],
+        "score": 0.20091795921325684
+      }
+    ],
+    "excluded_enclosing_proposals": [
+      0
+    ],
+    "detections": [
+      {
+        "id": 1,
+        "box_xyxy": [
+          190.68798828125,
+          415.31365966796875,
+          333.5980224609375,
+          509.89593505859375
+        ],
+        "detector_score": 0.20091795921325684,
+        "mask_pixels": 9022,
+        "sam_predicted_iou": 0.9600707292556763
+      }
+    ],
+    "objects": 1,
+    "capped": false,
+    "segmented_objects": 1,
+    "union_mask_pixels": 9022,
+    "total_image_pixels": 262144,
+    "union_mask_percent": 3.4416,
+    "pixel_statistics_available": true,
+    "trace": [
+      {
+        "step": "Load pinned Grounding DINO",
+        "seconds": 0.535
+      },
+      {
+        "step": "Detect, threshold, remove enclosing frame proposals and suppress duplicates",
+        "seconds": 1.826
+      },
+      {
+        "step": "Load pinned SAM Base",
+        "seconds": 0.484
+      },
+      {
+        "step": "Box-prompted segmentation; choose highest SAM predicted IoU mask",
+        "seconds": 0.665
+      },
+      {
+        "step": "Render boxes, outlines and instance masks",
+        "seconds": 0.066
+      }
+    ],
+    "seconds": 4.221,
+    "peak_gpu_GiB": 2.678,
+    "limitations": [
+      "Experimental pretrained models; no remote-sensing fine-tuning or general accuracy claim.",
+      "Detector score and SAM predicted IoU are model scores, not measured correctness.",
+      "A mask follows a proposed box; it cannot prove the object identity.",
+      "Pixel coverage is the union of predicted masks, not NDVI, hectares or surveyed area.",
+      "Instance PNG assigns overlaps to the first score-ranked object; NPZ preserves overlapping masks.",
+      "Small, obscured or densely packed objects may be missed. Zero candidates means none passed the settings, not proof of absence."
+    ]
+  }
+}

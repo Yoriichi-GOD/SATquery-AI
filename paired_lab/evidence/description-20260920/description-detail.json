@@ -1,0 +1,128 @@
+[
+  {
+    "image": "car",
+    "run": {
+      "id": "2790cadc6f3b49b291bb989184506347",
+      "state": "complete",
+      "stage": "Complete",
+      "question": "Describe this image in detail.",
+      "image": {
+        "id": "cc35db2c1ad14141b018730cf0fc8645",
+        "name": "car.png",
+        "width": 2557,
+        "height": 1597,
+        "bytes": 4923179,
+        "sha256": "c021e00a3cc0c0d4b822036fdb35fc97ab92aa10e2ae16d127116ce8b44fa886",
+        "preview": "/api/images/cc35db2c1ad14141b018730cf0fc8645",
+        "geo": null
+      },
+      "started": 1789887098.5070367,
+      "model": "AdaptLLM/remote-sensing-Qwen2-VL-2B-Instruct",
+      "revision": "7f5dd71bf0f40c282193d50160e848a387a08ffe",
+      "adapter": null,
+      "mode": "baseline",
+      "route": "Single-image optical VQA",
+      "trace": [
+        {
+          "step": "Generate model answer",
+          "seconds": 4.004
+        }
+      ],
+      "routing": {
+        "tool": "vqa",
+        "rule": "general_visual_question",
+        "reason": "Open visual question answered by the original model; interpretation may be incorrect.",
+        "version": "rules-v5"
+      },
+      "requested_mode": "baseline",
+      "effective_question": "Describe this image in detail.",
+      "visual_token_bounds": [
+        256,
+        512
+      ],
+      "raw_answer": "In the image, there is a single car parked on a grassy hill. The car is a sports car, identifiable by its sleek design and the presence of a rear spoiler, which is a common feature in high-performance vehicles. The color of the car is a deep green, which contrasts with the surrounding greenery and the blue of the sky. The background features a mountainous landscape with snow-capped peaks, suggesting a high-altitude environment, possibly a part of a mountain range. The image captures the car from a side angle, allowing for a clear view of its design and the surrounding natural landscape. There are no other vehicles or",
+      "answer_validation": {
+        "policy": "open-visual-v1",
+        "answer": "In the image, there is a single car parked on a grassy hill. The car is a sports car, identifiable by its sleek design and the presence of a rear spoiler, which is a common feature in high-performance vehicles. The color of the car is a deep green, which contrasts with the surrounding greenery and the blue of the sky. The background features a mountainous landscape with snow-capped peaks, suggesting a high-altitude environment, possibly a part of a mountain range. The image captures the car from a side angle, allowing for a clear view of its design and the surrounding natural landscape. There are no other vehicles or\n\nModel interpretation; may be inaccurate. Response reached the length limit.",
+        "limitation": "Model interpretation; may be inaccurate. Response reached the length limit.",
+        "raw_truncated": true,
+        "changed": true,
+        "withheld": false,
+        "reasons": [
+          "model_output_preserved",
+          "estimate_label_added"
+        ]
+      },
+      "answer_policy": "open-visual-v1",
+      "answer": "In the image, there is a single car parked on a grassy hill. The car is a sports car, identifiable by its sleek design and the presence of a rear spoiler, which is a common feature in high-performance vehicles. The color of the car is a deep green, which contrasts with the surrounding greenery and the blue of the sky. The background features a mountainous landscape with snow-capped peaks, suggesting a high-altitude environment, possibly a part of a mountain range. The image captures the car from a side angle, allowing for a clear view of its design and the surrounding natural landscape. There are no other vehicles or\n\nModel interpretation; may be inaccurate. Response reached the length limit.",
+      "seconds": 4.143,
+      "generation_seconds": 4.004,
+      "peak_allocated_GiB": 4.295,
+      "generated_tokens": 128,
+      "max_new_tokens": 128
+    }
+  },
+  {
+    "image": "baseball",
+    "run": {
+      "id": "37af4c72326744f6a57a00060f6e61a2",
+      "state": "complete",
+      "stage": "Complete",
+      "question": "Describe this image in detail.",
+      "image": {
+        "id": "6c251f4ca819445bbb53a07428aa122a",
+        "name": "baseball.png",
+        "width": 800,
+        "height": 800,
+        "bytes": 1058832,
+        "sha256": "d554202729a40d67eb39fc38759e196ca628cf6f7f3c2679b075fcb9a9f52e80",
+        "preview": "/api/images/6c251f4ca819445bbb53a07428aa122a",
+        "geo": null
+      },
+      "started": 1789887103.1485872,
+      "model": "AdaptLLM/remote-sensing-Qwen2-VL-2B-Instruct",
+      "revision": "7f5dd71bf0f40c282193d50160e848a387a08ffe",
+      "adapter": null,
+      "mode": "baseline",
+      "route": "Single-image optical VQA",
+      "trace": [
+        {
+          "step": "Generate model answer",
+          "seconds": 3.008
+        }
+      ],
+      "routing": {
+        "tool": "vqa",
+        "rule": "general_visual_question",
+        "reason": "Open visual question answered by the original model; interpretation may be incorrect.",
+        "version": "rules-v5"
+      },
+      "requested_mode": "baseline",
+      "effective_question": "Describe this image in detail.",
+      "visual_token_bounds": [
+        256,
+        512
+      ],
+      "raw_answer": "There are four baseball fields arranged in a square pattern. The fields are surrounded by a grassy area, and there are buildings and trees around the perimeter. The orientation of the fields suggests they are likely used for baseball games, with the central area possibly serving as a common area for spectators or players. The layout is typical of a community or school sports complex, designed to accommodate multiple games or practices simultaneously. Therefore, the answer is There are four baseball fields in the picture.",
+      "answer_validation": {
+        "policy": "open-visual-v1",
+        "answer": "There are four baseball fields arranged in a square pattern. The fields are surrounded by a grassy area, and there are buildings and trees around the perimeter. The orientation of the fields suggests they are likely used for baseball games, with the central area possibly serving as a common area for spectators or players. The layout is typical of a community or school sports complex, designed to accommodate multiple games or practices simultaneously. Therefore, the answer is There are four baseball fields in the picture.\n\nModel interpretation; may be inaccurate.",
+        "limitation": "Model interpretation; may be inaccurate.",
+        "raw_truncated": false,
+        "changed": true,
+        "withheld": false,
+        "reasons": [
+          "model_output_preserved",
+          "estimate_label_added"
+        ]
+      },
+      "answer_policy": "open-visual-v1",
+      "answer": "There are four baseball fields arranged in a square pattern. The fields are surrounded by a grassy area, and there are buildings and trees around the perimeter. The orientation of the fields suggests they are likely used for baseball games, with the central area possibly serving as a common area for spectators or players. The layout is typical of a community or school sports complex, designed to accommodate multiple games or practices simultaneously. Therefore, the answer is There are four baseball fields in the picture.\n\nModel interpretation; may be inaccurate.",
+      "seconds": 3.046,
+      "generation_seconds": 3.008,
+      "peak_allocated_GiB": 4.298,
+      "generated_tokens": 96,
+      "max_new_tokens": 128
+    }
+  }
+]

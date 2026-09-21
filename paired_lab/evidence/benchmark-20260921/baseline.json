@@ -1,0 +1,110 @@
+{
+  "created_utc": "2026-09-20T21:10:24Z",
+  "source": {
+    "count_description.py": "90a3818d7792c73032c446926fb4b8d5be660dcf6bd425aac16cbe1ddf737058",
+    "counting.py": "b8ed0d1c4bb9e0668a9cdb7a791782c09ae903dc7c7c7d3876d1a4f19226a3b8",
+    "evaluation.py": "f8f2e21d60b478a10b3cd68f63dd24295b2d270acf3febc1d07bb19a12320cb3",
+    "geo.py": "203f12f7e21b9380b8337a5ed15785b033c14ecfffaf82963e6efde3a8ce91ca",
+    "routing.py": "552a8fbebeb6d6b5d2c3366eb11c6a0d3cc9b99cbd1a47ed826eb7ad398a407c",
+    "scene_description.py": "13f0624a876322dbcdc77ed68bf4790bc6cbbd5db24eb5b23f6ca96f7793328f",
+    "server.py": "43cf4a241e822dd094719658a6940543ebca52dbc9235464435ff74c412533f6",
+    "stages.py": "58a2d821fc07e67f1fe4e9c21e63ab461db18f0ce790a71a648bc19d791bee2b",
+    "vqa_answers.py": "8c10916c0cb272fc8f34dab6f6aa7f9e4c398f47c9f02a110dca863187f28328",
+    "vqa_policy.py": "284b7d841f0e1e900b4d444b4024388d29a07d587486e7f2022fb38de6d5056a",
+    "paired_lab/bootstrap.py": "f5396bc1f3eb86c390a9aeb9f372a34f630d3c72901e8a54e809583768e4f683",
+    "paired_lab/compare_candidate.py": "3453e42cc24d5a0c765845c7506604337160d347f781735e52e8d0636ae37ab1",
+    "paired_lab/controller.py": "64c8f32d3cfd3f1bb3ae6d09c58922793b1d4f1e446e704f5cd9c3cfa3eba845",
+    "paired_lab/engine.py": "0441318c2d007c1daac6a34fa46e7630767650f8b6868d11f0a520725ed26ee3",
+    "paired_lab/evaluate.py": "3a873f21a232112e27700004f8a7fcaed0af24a8b92873525588b5f9d0d73d17",
+    "paired_lab/flood.py": "f3e0c77d47da114e1b3716b373356d81b3fc1451e7077754e066aa3da5f1536d",
+    "paired_lab/grounding_bridge.py": "53e327e72250ed5bfa13c45ac68bf044540cda4f7e398b6ec4d010fe0681313e",
+    "paired_lab/inputs.py": "44cdc6a6326a5ea9c0b157fb074613faebc503507fc5bfef00b571af6ad6234f",
+    "paired_lab/launch.py": "c03535290baa0b84f2a0ee3750de6d28a195da947092532701c8d1d59725c87b",
+    "paired_lab/mci.py": "c4e94359c90508c11fd947f7591e4da1028a73fb0082e8ae07c3821d8bb32320",
+    "paired_lab/recovery.py": "12d9ef8dde61462034c0254004521e419420bcfe0461011e6ca991c23427016e",
+    "paired_lab/registration.py": "cd75252bd54f635142e7081fd005d3c7f3ecce7a3e9ec1716d45d50bc4a30f4e",
+    "paired_lab/runtime-manifest.json": "e44953d9b9c0ecb08b48eec89da165d774e9e86833f04832c118343a0ce6ec6d",
+    "paired_lab/server.py": "9031205767d46aa0fe6c410172fc05c1160eec2be3d7e03cc164c1222a176824",
+    "paired_lab/setup_models.py": "ad10deb293ba65db871f36d51e8a0ae68ae009174cf59fc0ac2e2340c13cb9fd",
+    "paired_lab/setup_sources.py": "821175a3636563cbd9b16d09f9608aae64d75a2f6d3e47ed224dbae919aaa68b",
+    "paired_lab/single_bridge.py": "69d1325d734caa42e983f04f4c26b4e8433fc215ec0c67165ecff93c2beb2914",
+    "paired_lab/spectral_pair.py": "9f034d5c886d2c70585831f5ca02387f119ba60cf8a531d0889c1dfbcbc81f2a",
+    "paired_lab/test_controls.py": "0f1049ebaf67f96a6feb19b6bc325f18ed89c56feff2e9e0cabca457d33e8e41",
+    "paired_lab/test_inputs.py": "2c2ece65c40ec47230c656a39c9ba8f12a5983bb08a377d4f33be2d2a8e02d73",
+    "paired_lab/test_live.py": "6f7c276ef9d6b12cdb7651166bb213939cdd13d9257808bae16438f3945200e4",
+    "paired_lab/train_water.py": "502fa5fbabccf4f5136057a2e58db97d0cc6401fd767a92cb2060f1373ef4bd3",
+    "tests/test_baseball_counting.py": "ae739dbf18c8289bf313e6fea39472325c8d44d0150fdd5a99c65712fb08f2c8",
+    "tests/test_dispatch.py": "5e82e03806dbcec94f332bb03bdfd5e184a00efb4896c16fa8c75ed505445809",
+    "tests/test_evaluation.py": "89df6b7b49975fb9ba2d19938d56aee7cfd7d13891e5a27470dac3fa133b9260",
+    "tests/test_focused_count.py": "c22f9b0e8a5bb7dbafb2fd515a538d1ae7474a15097dc28f56b68ec56c94c86d",
+    "tests/test_geo.py": "8a4ef2307073b92346bb4f2525489e8c7af05786855287c1a0ff4effbe8c4695",
+    "tests/test_ndvi_precision.py": "7a18e4a3acf09150e5b7422c09fd1ad1c4854ba4c1ea5b98265acf5a1c345d6c",
+    "tests/test_open_vqa.py": "6060d6d6b6a42190aaa5b0b7866ba1aabee04399c2c16c8c4406ac2adb5ce754",
+    "tests/test_presence_routing.py": "efe6a5c4079201847e11e454e21889f6dcaeb1381309dee7c9e46ea7deac26cf",
+    "tests/test_request_boundaries.py": "48a72b4c3d56fe769cd1739e80bd3079f5e4d53cf53d433d04c07c01f66078bd",
+    "tests/test_routing.py": "68a44a887e0da4696d8d7e11a1127bd672eaa598fc68a053d4323f82b364350d",
+    "tests/test_rural_phrasing.py": "f51546390f924a80da6b7e28230a785f4aa305cb81cac1b044759d67352f020c",
+    "tests/test_scene_description.py": "e49027253d8b4b5b432ee155f28c09ab43f9a62898e86cc7031e73477e54829e",
+    "tests/test_spectral_pair.py": "40337680d5c624795b1900c47a9727a9c3294ee3ff7ca87c220c8bb09b3e66c3",
+    "tests/test_stages.py": "14d164f8df88a88da86840adf3b2c84055555000fdfa13562b7411993316e42a",
+    "tests/test_unified.py": "9d249e9b085193c3a6edce493f73de260b692e0d8c57d1e8c96163b593c347fa",
+    "tests/test_vqa_answers.py": "bd74fd046dc63e3e236c85e1ba90ea4ef797d20015e48f4021402834527eb359",
+    "paired_lab/web/app.js": "3a39a8b3254b8dcbcafa9d553fc4ee04a024af131347fbbd0ceef2f9788bfec5",
+    "paired_lab/web/index.html": "eff81357f37207a478508e85b80a8324e170af611ccc063f763affeb5571ae75",
+    "paired_lab/web/style.css": "7abea025de7805516dc13ec9bba30d2312865e9c2ac48b525d2e9eba964fadc9"
+  },
+  "models": {
+    "all": {
+      "repo": "BIFOLD-BigEarthNetv2-0/resnet50-all-v0.2.0",
+      "revision": "762acdc186cce6b31ecbc896ddab1721847d4c5e",
+      "path": "/root/.cache/huggingface/hub/models--BIFOLD-BigEarthNetv2-0--resnet50-all-v0.2.0/snapshots/762acdc186cce6b31ecbc896ddab1721847d4c5e",
+      "observed_sha256": "b7e5e58d2cf1e384ba9362ac6ce75c117dee159198eac5675927cba3c3960332"
+    },
+    "s1": {
+      "repo": "BIFOLD-BigEarthNetv2-0/resnet50-s1-v0.2.0",
+      "revision": "d417b3c32f2172cbceb14e5b106dd9aa7b77c647",
+      "path": "/root/.cache/huggingface/hub/models--BIFOLD-BigEarthNetv2-0--resnet50-s1-v0.2.0/snapshots/d417b3c32f2172cbceb14e5b106dd9aa7b77c647",
+      "observed_sha256": "87990ba9058bc5413b90d7dc955ed1077cf8c54530db393801336209252b3739"
+    },
+    "s2": {
+      "repo": "BIFOLD-BigEarthNetv2-0/resnet50-s2-v0.2.0",
+      "revision": "f5a590cd5876845f62702260ff62ea5a325433bb",
+      "path": "/root/.cache/huggingface/hub/models--BIFOLD-BigEarthNetv2-0--resnet50-s2-v0.2.0/snapshots/f5a590cd5876845f62702260ff62ea5a325433bb",
+      "observed_sha256": "f55f8a5416d326c7e3139a97c6866e606dfc2e5cde30d52e2ccc47ce5f8b9be5"
+    },
+    "temporal": {
+      "repo": "https://github.com/wgcban/ChangeFormer",
+      "revision": "afd1b7ed640aa265a2c730de958416ae7356a2f9",
+      "path": "/root/satquery/paired-lab/changeformer-levir.pt",
+      "sha256": "db0dd783c3c3f27d02f55f24fa8199d2b2b47c422c7f7bd2e4d96e2fa65d69f2",
+      "license_note": "README restricts code to non-commercial research; review before commercial distribution.",
+      "observed_sha256": "db0dd783c3c3f27d02f55f24fa8199d2b2b47c422c7f7bd2e4d96e2fa65d69f2"
+    },
+    "mci": {
+      "repo": "lcybuaa/Change-Agent",
+      "revision": "1e679060173434cd22fd22a52effbf3c785c97a0",
+      "path": "/root/satquery/paired-lab/mci-model/MCI_model.pth",
+      "sha256": "34c6926342c40fdd6d50b43d50257cb46cb6b61763448de9ee551828a64b3eb9",
+      "source_revision": "68cbaa7f388b36e4fc10872f7a2911482d26ae5b",
+      "license_note": "Checkpoint card Apache-2.0; source MIT with academic-use statement. Preserve both statements; review before commercial release.",
+      "observed_sha256": "34c6926342c40fdd6d50b43d50257cb46cb6b61763448de9ee551828a64b3eb9"
+    },
+    "water": {
+      "path": "/mnt/c/Users/nrgen/.codex/scratch/SATquery AI/paired_lab/checkpoints/water-v1.pt",
+      "sha256": "7844387fffd6c7e606895328e61be936304f979fee74411021f7312b3215f7ce",
+      "observed_sha256": "7844387fffd6c7e606895328e61be936304f979fee74411021f7312b3215f7ce"
+    }
+  },
+  "python": "3.11.16 (main, Sep  1 2026, 14:18:37) [Clang 22.1.3 ]",
+  "platform": "Linux-6.18.33.2-microsoft-standard-WSL2-x86_64-with-glibc2.43",
+  "cpu": "Architecture:                            x86_64\nCPU op-mode(s):                          32-bit, 64-bit\nAddress sizes:                           48 bits physical, 48 bits virtual\nByte Order:                              Little Endian\nCPU(s):                                  32\nOn-line CPU(s) list:                     0-31\nVendor ID:                               AuthenticAMD\nModel name:                              AMD Ryzen 9 8940HX with Radeon Graphics\nCPU family:                              25\nModel:                                   97\nThread(s) per core:                      2\nCore(s) per socket:                      16\nSocket(s):                               1\nStepping:                                2\nBogoMIPS:                                4790.90\nFlags:                                   fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush mmx fxsr sse sse2 ht syscall nx mmxext fxsr_opt pdpe1gb rdtscp lm constant_tsc rep_good nopl xtopology tsc_reliable nonstop_tsc cpuid extd_apicid tsc_known_freq pni pclmulqdq ssse3 fma cx16 sse4_1 sse4_2 movbe popcnt aes xsave avx f16c rdrand hypervisor lahf_lm cmp_legacy svm cr8_legacy abm sse4a misalignsse 3dnowprefetch osvw topoext perfctr_core ssbd ibrs ibpb stibp vmmcall fsgsbase bmi1 avx2 smep bmi2 erms invpcid avx512f avx512dq rdseed adx smap avx512ifma clflushopt clwb avx512cd sha_ni avx512bw avx512vl xsaveopt xsavec xgetbv1 xsaves avx512_bf16 clzero xsaveerptr arat npt nrip_save tsc_scale vmcb_clean flushbyasid decodeassists pausefilter pfthreshold avx512vbmi umip avx512_vbmi2 gfni vaes vpclmulqdq avx512_vnni avx512_bitalg avx512_vpopcntdq rdpid fsrm\nVirtualization:                          AMD-V\nHypervisor vendor:                       Microsoft\nVirtualization type:                     full\nL1d cache:                               512 KiB (16 instances)\nL1i cache:                               512 KiB (16 instances)\nL2 cache:                                16 MiB (16 instances)\nL3 cache:                                32 MiB (1 instance)\nNUMA node(s):                            1\nNUMA node0 CPU(s):                       0-31\nVulnerability Gather data sampling:      Not affected\nVulnerability Ghostwrite:                Not affected\nVulnerability Indirect target selection: Not affected\nVulnerability Itlb multihit:             Not affected\nVulnerability L1tf:                      Not affected\nVulnerability Mds:                       Not affected\nVulnerability Meltdown:                  Not affected\nVulnerability Mmio stale data:           Not affected\nVulnerability Old microcode:             Not affected\nVulnerability Reg file data sampling:    Not affected\nVulnerability Retbleed:                  Not affected\nVulnerability Spec rstack overflow:      Vulnerable: Safe RET, no microcode\nVulnerability Spec store bypass:         Mitigation; Speculative Store Bypass disabled via prctl\nVulnerability Spectre v1:                Mitigation; usercopy/swapgs barriers and __user pointer sanitization\nVulnerability Spectre v2:                Mitigation; Retpolines; IBPB conditional; IBRS_FW; STIBP always-on; RSB filling; PBRSB-eIBRS Not affected; BHI Not affected\nVulnerability Srbds:                     Not affected\nVulnerability Tsa:                       Mitigation; Clear CPU buffers\nVulnerability Tsx async abort:           Not affected\nVulnerability Vmscape:                   Not affected",
+  "gpu": "name, memory.total [MiB], driver_version\nNVIDIA GeForce RTX 5060 Laptop GPU, 8151 MiB, 616.92",
+  "packages": "accelerate==1.6.0\naffine==3.0.1\nannotated-types==0.8.0\nanyio==4.15.1\nattrs==26.1.0\nav==18.1.0\ncertifi==2026.7.22\ncharset-normalizer==3.5.1\nclick==8.5.0\nclick-plugins==1.1.1.2\ncligj==0.7.2\ncontourpy==1.3.3\ncycler==0.12.1\nfastapi==0.115.12\nfilelock==3.32.3\nfonttools==4.64.0\nfsspec==2026.7.0\nh11==0.16.0\nhf-xet==1.6.0\nhuggingface_hub==0.36.2\nidna==3.19\nJinja2==3.1.6\nkiwisolver==1.5.1\nMarkupSafe==3.0.3\nmatplotlib==3.11.1\nmpmath==1.3.0\nnetworkx==3.6.1\nnumpy==2.4.6\nnvidia-cublas-cu12==12.8.4.1\nnvidia-cuda-cupti-cu12==12.8.90\nnvidia-cuda-nvrtc-cu12==12.8.93\nnvidia-cuda-runtime-cu12==12.8.90\nnvidia-cudnn-cu12==9.10.2.21\nnvidia-cufft-cu12==11.3.3.83\nnvidia-cufile-cu12==1.13.1.3\nnvidia-curand-cu12==10.3.9.90\nnvidia-cusolver-cu12==11.7.3.90\nnvidia-cusparse-cu12==12.5.8.93\nnvidia-cusparselt-cu12==0.7.1\nnvidia-nccl-cu12==2.27.3\nnvidia-nvjitlink-cu12==12.8.93\nnvidia-nvtx-cu12==12.8.90\npackaging==26.3\npeft==0.15.2\npillow==12.3.0\npsutil==7.2.2\npydantic==2.13.5\npydantic_core==2.46.5\npyparsing==3.3.2\npyproj==3.7.2\npython-dateutil==2.9.0.post0\npython-multipart==0.0.20\nPyYAML==6.0.3\nqwen-vl-utils==0.0.8\nrasterio==1.4.4\nregex==2026.9.3\nrequests==2.34.2\nsafetensors==0.8.0\nsix==1.17.0\nstarlette==0.46.2\nsympy==1.14.0\ntifffile==2026.3.3\ntokenizers==0.21.4\ntorch==2.8.0+cu128\ntorchvision==0.23.0+cu128\ntqdm==4.70.0\ntransformers==4.51.3\ntriton==3.4.0\ntyping-inspection==0.4.4\ntyping_extensions==4.16.0\nurllib3==2.7.0\nuvicorn==0.34.2",
+  "protocol": {
+    "seed": 20260921,
+    "water": "All 90 test +15 Bolivia cases; already evaluated historically; regression, not untouched test. CPU float32; all three modalities; threshold >=0.5.",
+    "temporal": "100 official test pairs, balanced changed/unchanged; exclude prior 100-case trial filenames. Public checkpoint upstream test-selection exposure not established. Not CDVQA.",
+    "land_cover": "All locally available nontraining BENv2 fixtures; narrow geographic scope.",
+    "changes": "No model or prompt tuning during benchmark. Forecasting removed from scope; refusal tests retained."
+  }
+}

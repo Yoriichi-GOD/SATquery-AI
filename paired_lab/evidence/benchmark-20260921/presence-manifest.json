@@ -1,0 +1,101 @@
+{
+  "cases": [
+    {
+      "image": "/mnt/c/Users/nrgen/.codex/visualizations/2026/09/19/01a0b9f9-b20e-71a2-b139-ca9ab926b94e/benchmark-20260921/vqa-inputs/327.png",
+      "image_id": 327,
+      "question": "Is a building present?",
+      "reference": "yes"
+    },
+    {
+      "image": "/mnt/c/Users/nrgen/.codex/visualizations/2026/09/19/01a0b9f9-b20e-71a2-b139-ca9ab926b94e/benchmark-20260921/vqa-inputs/245.png",
+      "image_id": 245,
+      "question": "Is there a building?",
+      "reference": "yes"
+    },
+    {
+      "image": "/mnt/c/Users/nrgen/.codex/visualizations/2026/09/19/01a0b9f9-b20e-71a2-b139-ca9ab926b94e/benchmark-20260921/vqa-inputs/252.png",
+      "image_id": 252,
+      "question": "Is there a grass area?",
+      "reference": "yes"
+    },
+    {
+      "image": "/mnt/c/Users/nrgen/.codex/visualizations/2026/09/19/01a0b9f9-b20e-71a2-b139-ca9ab926b94e/benchmark-20260921/vqa-inputs/263.png",
+      "image_id": 263,
+      "question": "Is there a grass area?",
+      "reference": "yes"
+    },
+    {
+      "image": "/mnt/c/Users/nrgen/.codex/visualizations/2026/09/19/01a0b9f9-b20e-71a2-b139-ca9ab926b94e/benchmark-20260921/vqa-inputs/301.png",
+      "image_id": 301,
+      "question": "Is a forest present?",
+      "reference": "yes"
+    },
+    {
+      "image": "/mnt/c/Users/nrgen/.codex/visualizations/2026/09/19/01a0b9f9-b20e-71a2-b139-ca9ab926b94e/benchmark-20260921/vqa-inputs/261.png",
+      "image_id": 261,
+      "question": "Is there a forest?",
+      "reference": "yes"
+    },
+    {
+      "image": "/mnt/c/Users/nrgen/.codex/visualizations/2026/09/19/01a0b9f9-b20e-71a2-b139-ca9ab926b94e/benchmark-20260921/vqa-inputs/302.png",
+      "image_id": 302,
+      "question": "Is a farmland present in the image?",
+      "reference": "yes"
+    },
+    {
+      "image": "/mnt/c/Users/nrgen/.codex/visualizations/2026/09/19/01a0b9f9-b20e-71a2-b139-ca9ab926b94e/benchmark-20260921/vqa-inputs/276.png",
+      "image_id": 276,
+      "question": "Is there a circular water area?",
+      "reference": "no"
+    },
+    {
+      "image": "/mnt/c/Users/nrgen/.codex/visualizations/2026/09/19/01a0b9f9-b20e-71a2-b139-ca9ab926b94e/benchmark-20260921/vqa-inputs/234.png",
+      "image_id": 234,
+      "question": "Is a grass area present?",
+      "reference": "yes"
+    },
+    {
+      "image": "/mnt/c/Users/nrgen/.codex/visualizations/2026/09/19/01a0b9f9-b20e-71a2-b139-ca9ab926b94e/benchmark-20260921/vqa-inputs/308.png",
+      "image_id": 308,
+      "question": "Is there a circular building?",
+      "reference": "yes"
+    },
+    {
+      "image": "/mnt/c/Users/nrgen/.codex/visualizations/2026/09/19/01a0b9f9-b20e-71a2-b139-ca9ab926b94e/benchmark-20260921/vqa-inputs/275.png",
+      "image_id": 275,
+      "question": "Is there a square water area?",
+      "reference": "yes"
+    },
+    {
+      "image": "/mnt/c/Users/nrgen/.codex/visualizations/2026/09/19/01a0b9f9-b20e-71a2-b139-ca9ab926b94e/benchmark-20260921/vqa-inputs/317.png",
+      "image_id": 317,
+      "question": "Is a square building present?",
+      "reference": "yes"
+    },
+    {
+      "image": "/mnt/c/Users/nrgen/.codex/visualizations/2026/09/19/01a0b9f9-b20e-71a2-b139-ca9ab926b94e/benchmark-20260921/vqa-inputs/326.png",
+      "image_id": 326,
+      "question": "Is a square road present?",
+      "reference": "no"
+    },
+    {
+      "image": "/mnt/c/Users/nrgen/.codex/visualizations/2026/09/19/01a0b9f9-b20e-71a2-b139-ca9ab926b94e/benchmark-20260921/vqa-inputs/287.png",
+      "image_id": 287,
+      "question": "Is there a grass area?",
+      "reference": "yes"
+    },
+    {
+      "image": "/mnt/c/Users/nrgen/.codex/visualizations/2026/09/19/01a0b9f9-b20e-71a2-b139-ca9ab926b94e/benchmark-20260921/vqa-inputs/305.png",
+      "image_id": 305,
+      "question": "Is a square grass area present?",
+      "reference": "yes"
+    },
+    {
+      "image": "/mnt/c/Users/nrgen/.codex/visualizations/2026/09/19/01a0b9f9-b20e-71a2-b139-ca9ab926b94e/benchmark-20260921/vqa-inputs/300.png",
+      "image_id": 300,
+      "question": "Is there a rectangular road in the image?",
+      "reference": "no"
+    }
+  ],
+  "scope": "One fixed presence question per available newly selected RSVQA image. Images shared with classification subset, not additional independent scenes."
+}

@@ -1,0 +1,394 @@
+{
+  "sample": "Bolivia_129334",
+  "selection": {
+    "sample": "Bolivia_129334",
+    "selection": "Lexicographically first Bolivia holdout chip absent from current app catalogue, chosen before inference."
+  },
+  "source": "https://github.com/cloudtostreet/Sen1Floods11",
+  "scope": "External uploaded chip, not in app catalogue; from previously evaluated Bolivia holdout, NOT a new independent benchmark. Manual metadata preparation remains necessary.",
+  "files": {
+    "S2Hand": {
+      "source_sha256": "49eb5631caafcec4759494d0fc7a5e9a7d48329d878c0b4d81d5e97dfbdb783c",
+      "upload_sha256": "4fbafe5e3a1387a60cf09d0eaad3122c15622f09b926833ea7cbb4eb6f342ebd",
+      "pixel_and_grid_unchanged": true,
+      "annotation_basis": "Publisher band order, units, sensor product and event acquisition dates; no radiometric/spatial processing."
+    },
+    "S1Hand": {
+      "source_sha256": "9d09909c8067a8e0bbe1e2d6199a4656d3cf059c6c599f060d8f08ece3392646",
+      "upload_sha256": "223a1ed89af10924360e95fde47e236dc9c0439dbba64153a6f1871d6b67a65a",
+      "pixel_and_grid_unchanged": true,
+      "annotation_basis": "Publisher band order, units, sensor product and event acquisition dates; no radiometric/spatial processing."
+    }
+  },
+  "refusals": [
+    {
+      "case": "Unannotated publisher TIFFs need documented metadata",
+      "detail": {
+        "code": "input_or_request_not_supported",
+        "message": "Water mapping requires ordered VV/VH and all 13 Sentinel-2 L1C bands.",
+        "next_steps": [
+          "Check Input requirements against the original product metadata. Supply the required sensor, processing level, ordered bands and units; do not rename incompatible bands or change units tags without valid preprocessing."
+        ],
+        "analysis_started": false
+      }
+    },
+    {
+      "case": "Where will flooding spread next?",
+      "detail": {
+        "code": "unsupported_task",
+        "message": "Forecasting and evacuation advice are not implemented. Ask about water visible now, or supported road/building changes between observed dates. Future rainfall scenarios cannot be analysed by the current specialists.",
+        "next_steps": [
+          "Ask about an observed state, for example \"Map water\", using a supported input pair. Forecasting remains a future research task."
+        ],
+        "analysis_started": false
+      }
+    },
+    {
+      "case": "Map water and roads",
+      "detail": {
+        "code": "input_or_request_not_supported",
+        "message": "This specialist maps water pixels only; it cannot map buildings, count objects or measure physical area.",
+        "next_steps": [
+          "Revise the question to one supported task or check the input requirements. No specialist was started for this refused request."
+        ],
+        "analysis_started": false
+      }
+    },
+    {
+      "case": "What is the water depth?",
+      "detail": {
+        "code": "input_or_request_not_supported",
+        "message": "This specialist maps water pixels only; it cannot map buildings, count objects or measure physical area.",
+        "next_steps": [
+          "Revise the question to one supported task or check the input requirements. No specialist was started for this refused request."
+        ],
+        "analysis_started": false
+      }
+    },
+    {
+      "case": "Compare NDVI before and after",
+      "detail": {
+        "code": "unsupported_task",
+        "message": "Paired NDVI comparison is not implemented. Use Single image with calibrated Red/NIR surface-reflectance bands and calculate NDVI separately for each date; compare only compatible observations.",
+        "next_steps": [
+          "Switch to Single image and run NDVI separately on each compatible calibrated image."
+        ],
+        "analysis_started": false
+      }
+    },
+    {
+      "case": "Mismatched grid",
+      "detail": {
+        "code": "input_or_request_not_supported",
+        "message": "Water mapping requires matching georeferenced grids.",
+        "next_steps": [
+          "Check that both images cover the same location and share the required CRS, pixel grid and alignment. Reproject or align them outside SatQuery; matching headers alone do not prove alignment."
+        ],
+        "analysis_started": false
+      }
+    }
+  ],
+  "run": {
+    "state": "complete",
+    "stage": "Complete",
+    "plan": {
+      "task": "water_map",
+      "version": "unified-rules-v4",
+      "specialist": "WaterUNet \u00b7 SAR / optical / joint",
+      "device": "CPU",
+      "maturity": "supported",
+      "reason": "Optical 13-band / SAR pair and a water-mapping question.",
+      "threshold": 0.5,
+      "steps": [
+        "validate sensor contract",
+        "three modality predictions",
+        "save evidence"
+      ]
+    },
+    "events": [
+      {
+        "stage": "Input checks passed; preparing specialist",
+        "at": "2026-09-20T16:41:17Z"
+      },
+      {
+        "stage": "Starting WaterUNet \u00b7 SAR / optical / joint",
+        "at": "2026-09-20T16:41:17Z"
+      },
+      {
+        "stage": "Normalizing optical and SAR channels",
+        "at": "2026-09-20T16:41:17Z"
+      },
+      {
+        "stage": "Loading WaterUNet on CPU",
+        "at": "2026-09-20T16:41:17Z"
+      },
+      {
+        "stage": "Predicting water: SAR only",
+        "at": "2026-09-20T16:41:17Z"
+      },
+      {
+        "stage": "Predicting water: optical only",
+        "at": "2026-09-20T16:41:18Z"
+      },
+      {
+        "stage": "Predicting water: joint",
+        "at": "2026-09-20T16:41:18Z"
+      },
+      {
+        "stage": "Rendering water evidence and counting predicted pixels",
+        "at": "2026-09-20T16:41:18Z"
+      },
+      {
+        "stage": "Saving result and original inputs",
+        "at": "2026-09-20T16:41:18Z"
+      },
+      {
+        "stage": "Packaging evidence",
+        "at": "2026-09-20T16:41:18Z"
+      }
+    ],
+    "result": {
+      "task": "water_map",
+      "answer": "The joint optical\u2013SAR model marks 172,002 of 261,395 valid pixels as water (65.80%). Blue regions show this prediction. Water includes permanent water and floodwater; this single-date pair cannot distinguish them.",
+      "water_pixels": {
+        "s1": 162383,
+        "s2": 171077,
+        "all": 172002
+      },
+      "denominator_pixels": 261395,
+      "full_image_pixels": 262144,
+      "seconds": 1.2743774490081705,
+      "confidence": {
+        "kind": "uncalibrated softmax; threshold 0.5",
+        "threshold": 0.5
+      },
+      "trace": [
+        {
+          "tool": "SatQuery WaterUNet v1",
+          "checkpoint_sha256": "7844387fffd6c7e606895328e61be936304f979fee74411021f7312b3215f7ce",
+          "training": "Sen1Floods11 official train split; selected on validation only",
+          "selected_epoch": 23,
+          "device": "cpu",
+          "normalization": "SAR clip((dB+20)/10,-3,3); S2 L1C clip(DN/3000,0,4)",
+          "sensor_availability": "Two explicit flags; modality dropout during training",
+          "bands": {
+            "sar": [
+              "VV",
+              "VH"
+            ],
+            "optical": [
+              "B01",
+              "B02",
+              "B03",
+              "B04",
+              "B05",
+              "B06",
+              "B07",
+              "B08",
+              "B8A",
+              "B09",
+              "B10",
+              "B11",
+              "B12"
+            ]
+          }
+        }
+      ],
+      "limitations": [
+        "Water segmentation only; no building boundaries or counts.",
+        "Single-date water is not automatically flood extent.",
+        "Fixed local research model; scores are not calibrated confidence.",
+        "Sentinel-1 GRD and Sentinel-2 L1C only; no Cartosat/RISAT validation.",
+        "Coverage denominator excludes non-finite input pixels; no surveyed area claim."
+      ],
+      "execution": {
+        "task": "water_map",
+        "version": "unified-rules-v4",
+        "specialist": "WaterUNet \u00b7 SAR / optical / joint",
+        "device": "CPU",
+        "maturity": "supported",
+        "reason": "Optical 13-band / SAR pair and a water-mapping question.",
+        "threshold": 0.5,
+        "steps": [
+          "validate sensor contract",
+          "three modality predictions",
+          "save evidence"
+        ]
+      },
+      "id": "bf4c85dfbeab4f5ea1089b5815b7d956",
+      "query": "Map water using the optical and SAR images together.",
+      "input_checks": {
+        "task": "water_map",
+        "pairing_basis": "matching geographic grids and acquisition metadata",
+        "valid_pixels": 261395,
+        "full_pixels": 262144,
+        "warning": "Cross-sensor content registration is not independently certified. Time differences can move water boundaries.",
+        "inputs": [
+          {
+            "modality": "optical",
+            "date": "2018-02-15",
+            "units": "reflectance_x10000",
+            "sensor": "Sentinel-2 L1C",
+            "bands": [
+              "B01",
+              "B02",
+              "B03",
+              "B04",
+              "B05",
+              "B06",
+              "B07",
+              "B08",
+              "B8A",
+              "B09",
+              "B10",
+              "B11",
+              "B12"
+            ],
+            "shape": [
+              512,
+              512
+            ],
+            "count": 13,
+            "dtype": "int16",
+            "crs": "EPSG:4326",
+            "transform": [
+              8.983152841195215e-05,
+              0.0,
+              -65.21912693153185,
+              0.0,
+              -8.983152841195215e-05,
+              -14.396041417185803
+            ],
+            "sha256": "4fbafe5e3a1387a60cf09d0eaad3122c15622f09b926833ea7cbb4eb6f342ebd",
+            "id": "4dad9a5ccaf5495db2cb7957e50bc6f3",
+            "name": "S2Hand-annotated.tif"
+          },
+          {
+            "modality": "sar",
+            "date": "2018-02-15",
+            "units": "dB",
+            "sensor": "Sentinel-1 GRD",
+            "bands": [
+              "VV",
+              "VH"
+            ],
+            "shape": [
+              512,
+              512
+            ],
+            "count": 2,
+            "dtype": "float32",
+            "crs": "EPSG:4326",
+            "transform": [
+              8.983152841195215e-05,
+              0.0,
+              -65.21912693153185,
+              0.0,
+              -8.983152841195215e-05,
+              -14.396041417185803
+            ],
+            "sha256": "223a1ed89af10924360e95fde47e236dc9c0439dbba64153a6f1871d6b67a65a",
+            "id": "e6c50e059f404812ac6211a86a6306e7",
+            "name": "S1Hand-annotated.tif"
+          }
+        ],
+        "plan": {
+          "task": "water_map",
+          "version": "unified-rules-v4",
+          "specialist": "WaterUNet \u00b7 SAR / optical / joint",
+          "device": "CPU",
+          "maturity": "supported",
+          "reason": "Optical 13-band / SAR pair and a water-mapping question.",
+          "threshold": 0.5,
+          "steps": [
+            "validate sensor contract",
+            "three modality predictions",
+            "save evidence"
+          ]
+        }
+      },
+      "controller": "unified-rules-v4",
+      "created_at": "2026-09-20T16:41:18Z",
+      "execution_events": [
+        {
+          "stage": "Input checks passed; preparing specialist",
+          "at": "2026-09-20T16:41:17Z"
+        },
+        {
+          "stage": "Starting WaterUNet \u00b7 SAR / optical / joint",
+          "at": "2026-09-20T16:41:17Z"
+        },
+        {
+          "stage": "Normalizing optical and SAR channels",
+          "at": "2026-09-20T16:41:17Z"
+        },
+        {
+          "stage": "Loading WaterUNet on CPU",
+          "at": "2026-09-20T16:41:17Z"
+        },
+        {
+          "stage": "Predicting water: SAR only",
+          "at": "2026-09-20T16:41:17Z"
+        },
+        {
+          "stage": "Predicting water: optical only",
+          "at": "2026-09-20T16:41:18Z"
+        },
+        {
+          "stage": "Predicting water: joint",
+          "at": "2026-09-20T16:41:18Z"
+        },
+        {
+          "stage": "Rendering water evidence and counting predicted pixels",
+          "at": "2026-09-20T16:41:18Z"
+        },
+        {
+          "stage": "Saving result and original inputs",
+          "at": "2026-09-20T16:41:18Z"
+        },
+        {
+          "stage": "Packaging evidence",
+          "at": "2026-09-20T16:41:18Z"
+        }
+      ],
+      "work_seconds_before_zip": 1.3198639320035
+    },
+    "request_seconds": 1.466676958007156
+  },
+  "label_sha256": "8dc1ea3c75551a72dfe64ebf03286fdaa1c1c83e200f13a75c8c6b5c75a6bedf",
+  "evaluated_pixels": 237065,
+  "metrics": {
+    "s1": {
+      "tp": 136701,
+      "fp": 5011,
+      "fn": 19366,
+      "tn": 75987,
+      "iou": 0.8486633804740561,
+      "precision": 0.9646395506379135,
+      "recall": 0.8759122684488072,
+      "f1": 0.9181372763022241
+    },
+    "s2": {
+      "tp": 151935,
+      "fp": 6166,
+      "fn": 4132,
+      "tn": 74832,
+      "iou": 0.9365233953634587,
+      "precision": 0.9609996141706884,
+      "recall": 0.9735241915331236,
+      "f1": 0.9672213592727458
+    },
+    "all": {
+      "tp": 151528,
+      "fp": 6267,
+      "fn": 4539,
+      "tn": 74731,
+      "iou": 0.9334335382606231,
+      "precision": 0.9602839126715041,
+      "recall": 0.9709163372141452,
+      "f1": 0.9655708559812911
+    }
+  },
+  "exports_verified": true,
+  "split_check": "Bolivia holdout; absent from training and validation lists. Already part of earlier aggregate evaluation."
+}

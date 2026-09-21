@@ -1,0 +1,35 @@
+{
+  "file": "test_001232.png",
+  "reference_changeflag": 1,
+  "raw_caption": "a large building with a parking lot is built on the bareland",
+  "reference_captions": [
+    " a large building with parking lots appears on the left side of the scene .",
+    " some buildings and a parking lot are constructed beside the road on the bareland .",
+    " a big building appears on the left side with some parking places around .",
+    " a parking lot appear and a building is built .",
+    " a large building and some parking lots have appeared ."
+  ],
+  "caption_changeflag_heuristic": 1,
+  "confusion_rows_reference_columns_prediction": [
+    [
+      34371,
+      1656,
+      239
+    ],
+    [
+      2589,
+      9549,
+      49
+    ],
+    [
+      1462,
+      0,
+      15621
+    ]
+  ],
+  "predicted_class_pixels": {
+    "0": 38422,
+    "1": 11205,
+    "2": 15909
+  }
+}

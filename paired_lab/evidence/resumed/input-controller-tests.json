@@ -1,0 +1,133 @@
+[
+  {
+    "name": "single VQA route",
+    "passed": true,
+    "output": "{'task': 'vqa', 'version': 'unified-lab-rules-v2', 'steps': ['validate image', 'preserved vqa', 'save evidence'], 'decision': {'tool': 'vqa', 'rule': 'single_image_description', 'reason': 'Supported descriptive or presence question about one optical image; no quantitative or spatial output requested.', 'version': 'rules-v5'}, 'mode': 'baseline', 'threshold': 0.5}"
+  },
+  {
+    "name": "single NDVI route",
+    "passed": true,
+    "output": "{'task': 'ndvi', 'version': 'unified-lab-rules-v2', 'steps': ['validate image', 'preserved ndvi', 'save evidence'], 'decision': {'tool': 'ndvi', 'rule': 'ndvi_threshold_coverage', 'reason': 'Explicit NDVI or vegetation pixel-coverage request with calibrated Red/NIR available. Coverage means pixels meeting the selected NDVI threshold, not surveyed vegetation cover.', 'version': 'rules-v5'}, 'mode': 'baseline', 'threshold': 0.5}"
+  },
+  {
+    "name": "RGB cannot measure NDVI",
+    "passed": true,
+    "output": "NDVI needs labelled, calibrated Red/NIR surface-reflectance bands. RGB alone cannot answer this request."
+  },
+  {
+    "name": "one image cannot answer temporal",
+    "passed": true,
+    "output": "Temporal/change analysis requires dated image pairs and is not implemented."
+  },
+  {
+    "name": "two optical dates route",
+    "passed": true,
+    "output": "{'task': 'temporal', 'version': 'unified-lab-rules-v2', 'steps': ['validate pair', 'registration diagnostics', 'MCI caption + road/building masks', 'save evidence'], 'threshold': 0.5}"
+  },
+  {
+    "name": "road caption route",
+    "passed": true,
+    "output": "{'task': 'temporal', 'version': 'unified-lab-rules-v2', 'steps': ['validate pair', 'registration diagnostics', 'MCI caption + road/building masks', 'save evidence'], 'threshold': 0.5}"
+  },
+  {
+    "name": "identical optical geometry",
+    "passed": true,
+    "output": "{'task': 'temporal', 'pairing_basis': 'matching declared geographic grids and dates', 'warning': 'Matching metadata is necessary but does not prove subpixel image registration.', 'inputs': [{'modality': 'optical', 'date': '2020-01-01', 'units': '', 'sensor': 'test optical', 'bands': ['red', 'green', 'blue'], 'shape': [256, 256], 'count': 3, 'dtype': 'uint8', 'crs': 'EPSG:32643', 'transform': [0.5, 0, 300000, 0, -0.5, 2000000], 'sha256': '29b6a845c0ca1b4fcbffe9c863cff6d24a2425166e3fd7086692be4555907357'}, {'modality': 'optical', 'date': '2021-01-01', 'units': '', 'sensor': 'test optical', 'bands': ['red', 'green', 'blue'], 'shape': [256, 256], 'count': 3, 'dtype': 'uint8', 'crs': 'EPSG:32643', 'transform': [0.5, 0, 300000, 0, -0.5, 2000000], 'sha256': '29b6a845c0ca1b4fcbffe9c863cff6d24a2425166e3fd7086692be4555907357'}], 'registration': {'status': 'identical', 'method': 'exact decoded pixels', 'max_displacement_pixels': 0.0}}"
+  },
+  {
+    "name": "forged matching metadata shifted pixels rejected",
+    "passed": true,
+    "output": "Visible features are misaligned: estimated displacement exceeds 1.5 pixels. Align the pair explicitly."
+  },
+  {
+    "name": "brightness-only remains registered",
+    "passed": true,
+    "output": "{'task': 'temporal', 'pairing_basis': 'matching declared geographic grids and dates', 'warning': 'Matching metadata is necessary but does not prove subpixel image registration.', 'inputs': [{'modality': 'optical', 'date': '2020-01-01', 'units': '', 'sensor': 'test optical', 'bands': ['red', 'green', 'blue'], 'shape': [256, 256], 'count': 3, 'dtype': 'uint8', 'crs': 'EPSG:32643', 'transform': [0.5, 0, 300000, 0, -0.5, 2000000], 'sha256': '29b6a845c0ca1b4fcbffe9c863cff6d24a2425166e3fd7086692be4555907357'}, {'modality': 'optical', 'date': '2021-01-01', 'units': '', 'sensor': 'test optical', 'bands': ['red', 'green', 'blue'], 'shape': [256, 256], 'count': 3, 'dtype': 'uint8', 'crs': 'EPSG:32643', 'transform': [0.5, 0, 300000, 0, -0.5, 2000000], 'sha256': '29b6a845c0ca1b4fcbffe9c863cff6d24a2425166e3fd7086692be4555907357'}], 'registration': {'status': 'consistent', 'method': 'SIFT ratio test + RANSAC similarity transform', 'matches': 151, 'inliers': 151, 'max_displacement_pixels': 0.005392936069119216, 'estimated_affine': [[0.9999955464107958, -2.271745883471027e-05, 0.0026814276483016373], [2.271745883471027e-05, 0.9999955464107958, -0.0013338638315140774]], 'limit_pixels': 1.5, 'warning': 'A diagnostic of shared visible features; not surveyed geolocation or a subpixel registration certificate.'}}"
+  },
+  {
+    "name": "shifted geographic grid rejected",
+    "passed": true,
+    "output": "Geographic grids do not match. This lab does not silently register images."
+  },
+  {
+    "name": "shared shear rejected",
+    "passed": true,
+    "output": "Rotated or sheared grids are not supported; reproject both inputs explicitly."
+  },
+  {
+    "name": "cross-sensor temporal rejected",
+    "passed": true,
+    "output": "This temporal checkpoint has not been validated across different sensors."
+  },
+  {
+    "name": "water contract flood-Ghana_313799",
+    "passed": true,
+    "output": "{'task': 'water_map', 'pairing_basis': 'matching geographic grids and acquisition metadata', 'valid_pixels': 262144, 'full_pixels': 262144, 'warning': 'Cross-sensor content registration is not independently certified. Time differences can move water boundaries.', 'inputs': [{'modality': 'optical', 'date': '2018-09-19', 'units': 'reflectance_x10000', 'sensor': 'Sentinel-2 L1C', 'bands': ['B01', 'B02', 'B03', 'B04', 'B05', 'B06', 'B07', 'B08', 'B8A', 'B09', 'B10', 'B11', 'B12'], 'shape': [512, 512], 'count': 13, 'dtype': 'int16', 'crs': 'EPSG:4326', 'transform': [8.983152841195215e-05, 0.0, -1.471799761501424, 0.0, -8.983152841195215e-05, 9.336729737024658], 'sha256': 'fee4bc6436158d1d7d60b5f82e1aabb0be35db15a3b0e1c58202bc3e0aa40b6c'}, {'modality': 'sar', 'date': '2018-09-18', 'units': 'dB', 'sensor': 'Sentinel-1 GRD', 'bands': ['VV', 'VH'], 'shape': [512, 512], 'count': 2, 'dtype': 'float32', 'crs': 'EPSG:4326', 'transform': [8.983152841195215e-05, 0.0, -1.471799761501424, 0.0, -8.983152841195215e-05, 9.336729737024658], 'sha256': '00cf06b1c997da444148f3a7dec45f3f497171be858df5ccfa464b38aace2bf0'}]}"
+  },
+  {
+    "name": "water contract flood-India_900498",
+    "passed": true,
+    "output": "{'task': 'water_map', 'pairing_basis': 'matching geographic grids and acquisition metadata', 'valid_pixels': 262144, 'full_pixels': 262144, 'warning': 'Cross-sensor content registration is not independently certified. Time differences can move water boundaries.', 'inputs': [{'modality': 'optical', 'date': '2016-08-12', 'units': 'reflectance_x10000', 'sensor': 'Sentinel-2 L1C', 'bands': ['B01', 'B02', 'B03', 'B04', 'B05', 'B06', 'B07', 'B08', 'B8A', 'B09', 'B10', 'B11', 'B12'], 'shape': [512, 512], 'count': 13, 'dtype': 'int16', 'crs': 'EPSG:4326', 'transform': [8.983152841195215e-05, 0.0, 93.73524731062194, 0.0, -8.983152841195215e-05, 26.76835816230715], 'sha256': 'd4425d3a158a2f8f06165ccc43fd685330302b2a51cfa6fd86796fea87ea06ac'}, {'modality': 'sar', 'date': '2016-08-12', 'units': 'dB', 'sensor': 'Sentinel-1 GRD', 'bands': ['VV', 'VH'], 'shape': [512, 512], 'count': 2, 'dtype': 'float32', 'crs': 'EPSG:4326', 'transform': [8.983152841195215e-05, 0.0, 93.73524731062194, 0.0, -8.983152841195215e-05, 26.76835816230715], 'sha256': '27b3735fc750c61b45d756f9d163a005a21fc82e54cf64f04dc293bb975a6f0a'}]}"
+  },
+  {
+    "name": "water contract flood-Mekong_333434",
+    "passed": true,
+    "output": "{'task': 'water_map', 'pairing_basis': 'matching geographic grids and acquisition metadata', 'valid_pixels': 262144, 'full_pixels': 262144, 'warning': 'Cross-sensor content registration is not independently certified. Time differences can move water boundaries.', 'inputs': [{'modality': 'optical', 'date': '2018-08-04', 'units': 'reflectance_x10000', 'sensor': 'Sentinel-2 L1C', 'bands': ['B01', 'B02', 'B03', 'B04', 'B05', 'B06', 'B07', 'B08', 'B8A', 'B09', 'B10', 'B11', 'B12'], 'shape': [512, 512], 'count': 13, 'dtype': 'int16', 'crs': 'EPSG:4326', 'transform': [8.983152841195215e-05, 0.0, 105.8775953430087, 0.0, -8.983152841195215e-05, 13.292191596059736], 'sha256': 'a2aebdc5883273362ef66830e4e190a65f324101d5d602db86cc68d9cb759f23'}, {'modality': 'sar', 'date': '2018-08-05', 'units': 'dB', 'sensor': 'Sentinel-1 GRD', 'bands': ['VV', 'VH'], 'shape': [512, 512], 'count': 2, 'dtype': 'float32', 'crs': 'EPSG:4326', 'transform': [8.983152841195215e-05, 0.0, 105.8775953430087, 0.0, -8.983152841195215e-05, 13.292191596059736], 'sha256': '5ae082c30bb04f098d3baabf0d9ffc2c1b8558be0e0a4ebf90fd266272d6c398'}]}"
+  },
+  {
+    "name": "water contract flood-Nigeria_417184",
+    "passed": true,
+    "output": "{'task': 'water_map', 'pairing_basis': 'matching geographic grids and acquisition metadata', 'valid_pixels': 156380, 'full_pixels': 262144, 'warning': 'Cross-sensor content registration is not independently certified. Time differences can move water boundaries.', 'inputs': [{'modality': 'optical', 'date': '2018-09-20', 'units': 'reflectance_x10000', 'sensor': 'Sentinel-2 L1C', 'bands': ['B01', 'B02', 'B03', 'B04', 'B05', 'B06', 'B07', 'B08', 'B8A', 'B09', 'B10', 'B11', 'B12'], 'shape': [512, 512], 'count': 13, 'dtype': 'float32', 'crs': 'EPSG:4326', 'transform': [8.983152841195215e-05, 0.0, 5.887199046005696, 0.0, -8.983152841195215e-05, 9.704679677400014], 'sha256': 'f0288ac5c9330376cbaa219522161ec76e455a3db999712a1c116931eee013b5'}, {'modality': 'sar', 'date': '2018-09-21', 'units': 'dB', 'sensor': 'Sentinel-1 GRD', 'bands': ['VV', 'VH'], 'shape': [512, 512], 'count': 2, 'dtype': 'float32', 'crs': 'EPSG:4326', 'transform': [8.983152841195215e-05, 0.0, 5.887199046005696, 0.0, -8.983152841195215e-05, 9.704679677400014], 'sha256': '6c399aedbfd5deb1b39b2f975b3db221ca84fde5cc1bcba308a2e53e80f4118b'}]}"
+  },
+  {
+    "name": "water contract flood-Pakistan_849790",
+    "passed": true,
+    "output": "{'task': 'water_map', 'pairing_basis': 'matching geographic grids and acquisition metadata', 'valid_pixels': 262144, 'full_pixels': 262144, 'warning': 'Cross-sensor content registration is not independently certified. Time differences can move water boundaries.', 'inputs': [{'modality': 'optical', 'date': '2017-06-28', 'units': 'reflectance_x10000', 'sensor': 'Sentinel-2 L1C', 'bands': ['B01', 'B02', 'B03', 'B04', 'B05', 'B06', 'B07', 'B08', 'B8A', 'B09', 'B10', 'B11', 'B12'], 'shape': [512, 512], 'count': 13, 'dtype': 'int16', 'crs': 'EPSG:4326', 'transform': [8.983152841195215e-05, 0.0, 71.42828217536598, 0.0, -8.983152841195215e-05, 32.563569723219004], 'sha256': '7237b8586203aab061fca27fbad18eb3f80ba18132a98e9efc7543720571b8a6'}, {'modality': 'sar', 'date': '2017-06-28', 'units': 'dB', 'sensor': 'Sentinel-1 GRD', 'bands': ['VV', 'VH'], 'shape': [512, 512], 'count': 2, 'dtype': 'float32', 'crs': 'EPSG:4326', 'transform': [8.983152841195215e-05, 0.0, 71.42828217536598, 0.0, -8.983152841195215e-05, 32.563569723219004], 'sha256': '114b7aaccf82359f1a3eb6f0fd8eed0875f0986d2abae920ebf036eaefe12e68'}]}"
+  },
+  {
+    "name": "water contract flood-Paraguay_913449",
+    "passed": true,
+    "output": "{'task': 'water_map', 'pairing_basis': 'matching geographic grids and acquisition metadata', 'valid_pixels': 262144, 'full_pixels': 262144, 'warning': 'Cross-sensor content registration is not independently certified. Time differences can move water boundaries.', 'inputs': [{'modality': 'optical', 'date': '2018-10-31', 'units': 'reflectance_x10000', 'sensor': 'Sentinel-2 L1C', 'bands': ['B01', 'B02', 'B03', 'B04', 'B05', 'B06', 'B07', 'B08', 'B8A', 'B09', 'B10', 'B11', 'B12'], 'shape': [512, 512], 'count': 13, 'dtype': 'int16', 'crs': 'EPSG:4326', 'transform': [8.983152841195215e-05, 0.0, -56.61829707525791, 0.0, -8.983152841195215e-05, -23.870752381851222], 'sha256': 'b23cff54be4fc1e835513b5a8546dcb4f3ea51c5551701ca74f9c5ce6cf7264e'}, {'modality': 'sar', 'date': '2018-10-31', 'units': 'dB', 'sensor': 'Sentinel-1 GRD', 'bands': ['VV', 'VH'], 'shape': [512, 512], 'count': 2, 'dtype': 'float32', 'crs': 'EPSG:4326', 'transform': [8.983152841195215e-05, 0.0, -56.61829707525791, 0.0, -8.983152841195215e-05, -23.870752381851222], 'sha256': '3caf737ff62fc3029d5446312be484b8bb58b9602c13696b3f4c2f08a277d867'}]}"
+  },
+  {
+    "name": "water contract flood-Somalia_699062",
+    "passed": true,
+    "output": "{'task': 'water_map', 'pairing_basis': 'matching geographic grids and acquisition metadata', 'valid_pixels': 262144, 'full_pixels': 262144, 'warning': 'Cross-sensor content registration is not independently certified. Time differences can move water boundaries.', 'inputs': [{'modality': 'optical', 'date': '2018-05-05', 'units': 'reflectance_x10000', 'sensor': 'Sentinel-2 L1C', 'bands': ['B01', 'B02', 'B03', 'B04', 'B05', 'B06', 'B07', 'B08', 'B8A', 'B09', 'B10', 'B11', 'B12'], 'shape': [512, 512], 'count': 13, 'dtype': 'int16', 'crs': 'EPSG:4326', 'transform': [8.983152841195215e-05, 0.0, 45.39582389380955, 0.0, -8.983152841195215e-05, 3.219561978284365], 'sha256': '5cbcc5ed6fdda634f64ea66b27edc93c286e68506dd590e0bf4b87f4006cca01'}, {'modality': 'sar', 'date': '2018-05-07', 'units': 'dB', 'sensor': 'Sentinel-1 GRD', 'bands': ['VV', 'VH'], 'shape': [512, 512], 'count': 2, 'dtype': 'float32', 'crs': 'EPSG:4326', 'transform': [8.983152841195215e-05, 0.0, 45.39582389380955, 0.0, -8.983152841195215e-05, 3.219561978284365], 'sha256': '022732f1ad08624818725a8241b9ef4929cdf6e8fd36a959c19ddaeab9db86a4'}]}"
+  },
+  {
+    "name": "water contract flood-Spain_6860600",
+    "passed": true,
+    "output": "{'task': 'water_map', 'pairing_basis': 'matching geographic grids and acquisition metadata', 'valid_pixels': 262144, 'full_pixels': 262144, 'warning': 'Cross-sensor content registration is not independently certified. Time differences can move water boundaries.', 'inputs': [{'modality': 'optical', 'date': '2019-09-18', 'units': 'reflectance_x10000', 'sensor': 'Sentinel-2 L1C', 'bands': ['B01', 'B02', 'B03', 'B04', 'B05', 'B06', 'B07', 'B08', 'B8A', 'B09', 'B10', 'B11', 'B12'], 'shape': [512, 512], 'count': 13, 'dtype': 'int16', 'crs': 'EPSG:4326', 'transform': [8.983152841195215e-05, 0.0, -0.6899061382037925, 0.0, -8.983152841195215e-05, 38.266793799037025], 'sha256': '95159b5746f0e8350c709a2faf0c8d77781a4c87e5b42cece11c8ba939ccfc2e'}, {'modality': 'sar', 'date': '2019-09-17', 'units': 'dB', 'sensor': 'Sentinel-1 GRD', 'bands': ['VV', 'VH'], 'shape': [512, 512], 'count': 2, 'dtype': 'float32', 'crs': 'EPSG:4326', 'transform': [8.983152841195215e-05, 0.0, -0.6899061382037925, 0.0, -8.983152841195215e-05, 38.266793799037025], 'sha256': 'dcf4349e7bef88ffd9feacb011e5e23e67945cb0d7e248334d34320771fcac65'}]}"
+  },
+  {
+    "name": "water contract flood-Sri-Lanka_117737",
+    "passed": true,
+    "output": "{'task': 'water_map', 'pairing_basis': 'matching geographic grids and acquisition metadata', 'valid_pixels': 262144, 'full_pixels': 262144, 'warning': 'Cross-sensor content registration is not independently certified. Time differences can move water boundaries.', 'inputs': [{'modality': 'optical', 'date': '2017-05-28', 'units': 'reflectance_x10000', 'sensor': 'Sentinel-2 L1C', 'bands': ['B01', 'B02', 'B03', 'B04', 'B05', 'B06', 'B07', 'B08', 'B8A', 'B09', 'B10', 'B11', 'B12'], 'shape': [512, 512], 'count': 13, 'dtype': 'int16', 'crs': 'EPSG:4326', 'transform': [8.983152841195215e-05, 0.0, 81.132961852766, 0.0, -8.983152841195215e-05, 7.864929975523235], 'sha256': '1c9650c7f023b81c118e9a61b1fe3251ffaf91b7c68116f8e05890563e5c07fc'}, {'modality': 'sar', 'date': '2017-05-30', 'units': 'dB', 'sensor': 'Sentinel-1 GRD', 'bands': ['VV', 'VH'], 'shape': [512, 512], 'count': 2, 'dtype': 'float32', 'crs': 'EPSG:4326', 'transform': [8.983152841195215e-05, 0.0, 81.132961852766, 0.0, -8.983152841195215e-05, 7.864929975523235], 'sha256': 'caa138d0d6652180ec85a5c1d3eedbc131d9f2c1c1863a316bed517ae96d4e90'}]}"
+  },
+  {
+    "name": "water contract flood-USA_905409",
+    "passed": true,
+    "output": "{'task': 'water_map', 'pairing_basis': 'matching geographic grids and acquisition metadata', 'valid_pixels': 262144, 'full_pixels': 262144, 'warning': 'Cross-sensor content registration is not independently certified. Time differences can move water boundaries.', 'inputs': [{'modality': 'optical', 'date': '2019-05-22', 'units': 'reflectance_x10000', 'sensor': 'Sentinel-2 L1C', 'bands': ['B01', 'B02', 'B03', 'B04', 'B05', 'B06', 'B07', 'B08', 'B8A', 'B09', 'B10', 'B11', 'B12'], 'shape': [512, 512], 'count': 13, 'dtype': 'int16', 'crs': 'EPSG:4326', 'transform': [8.983152841195215e-05, 0.0, -94.93108461684184, 0.0, -8.983152841195215e-05, 38.72673122450622], 'sha256': 'c7dbc72ee6e8f2abf63e3ed8f9ccd2efbb73b027558da4a98cc7f0f810a0f67e'}, {'modality': 'sar', 'date': '2019-05-22', 'units': 'dB', 'sensor': 'Sentinel-1 GRD', 'bands': ['VV', 'VH'], 'shape': [512, 512], 'count': 2, 'dtype': 'float32', 'crs': 'EPSG:4326', 'transform': [8.983152841195215e-05, 0.0, -94.93108461684184, 0.0, -8.983152841195215e-05, 38.72673122450622], 'sha256': 'ffb23fddb50f5e2ba8bfcd0ba65e15bd5d1cdebafd7285f48a594e09f5418e6f'}]}"
+  },
+  {
+    "name": "water contract flood-Bolivia_103757",
+    "passed": true,
+    "output": "{'task': 'water_map', 'pairing_basis': 'matching geographic grids and acquisition metadata', 'valid_pixels': 87195, 'full_pixels': 262144, 'warning': 'Cross-sensor content registration is not independently certified. Time differences can move water boundaries.', 'inputs': [{'modality': 'optical', 'date': '2018-02-15', 'units': 'reflectance_x10000', 'sensor': 'Sentinel-2 L1C', 'bands': ['B01', 'B02', 'B03', 'B04', 'B05', 'B06', 'B07', 'B08', 'B8A', 'B09', 'B10', 'B11', 'B12'], 'shape': [512, 512], 'count': 13, 'dtype': 'float32', 'crs': 'EPSG:4326', 'transform': [8.983152841195215e-05, 0.0, -65.26512067407877, 0.0, -8.983152841195215e-05, -14.212066446998126], 'sha256': 'bc4233f5fee8203051c897a6e2678088ebff50802351822508b009397b5bda2a'}, {'modality': 'sar', 'date': '2018-02-15', 'units': 'dB', 'sensor': 'Sentinel-1 GRD', 'bands': ['VV', 'VH'], 'shape': [512, 512], 'count': 2, 'dtype': 'float32', 'crs': 'EPSG:4326', 'transform': [8.983152841195215e-05, 0.0, -65.26512067407877, 0.0, -8.983152841195215e-05, -14.212066446998126], 'sha256': 'b12d110db18d68f51bc5f83e1540a895f1cc6248383a975ecddd908be3922a98'}]}"
+  },
+  {
+    "name": "scene fusion route preserved",
+    "passed": true,
+    "output": "{'task': 'optical_sar', 'version': 'unified-lab-rules-v2', 'steps': ['validate pair', 'check sensor contract', 'BigEarthNet modality comparison', 'save evidence'], 'threshold': 0.5}"
+  },
+  {
+    "name": "sensor pair temporal ambiguity rejected",
+    "passed": true,
+    "output": "These are different sensors, not a supported before/after pair. Split the temporal and cross-modal questions."
+  },
+  {
+    "name": "preserved demo files unchanged",
+    "passed": true,
+    "changed": [],
+    "files": 35
+  }
+]

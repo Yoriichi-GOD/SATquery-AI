@@ -1,0 +1,351 @@
+[
+  {
+    "case": {
+      "name": "mountain-car",
+      "source": "/root/satquery/app-data/images/037f45c84eb34a89aec4cd5e9e355032.png",
+      "category": "car",
+      "expected": 1
+    },
+    "run": {
+      "id": "053d63fd316f44afa39d13708bab14a2",
+      "state": "complete",
+      "stage": "Starting isolated worker",
+      "started": 1789191721.7956657,
+      "image": {
+        "id": "ccd24053715946ea8d016a04e0c88262",
+        "name": "037f45c84eb34a89aec4cd5e9e355032.png",
+        "width": 2557,
+        "height": 1597,
+        "sha256": "c021e00a3cc0c0d4b822036fdb35fc97ab92aa10e2ae16d127116ce8b44fa886",
+        "preview": "/api/images/ccd24053715946ea8d016a04e0c88262"
+      },
+      "selection": {
+        "image_id": "ccd24053715946ea8d016a04e0c88262",
+        "category": "car",
+        "threshold": 0.3,
+        "mode": "both"
+      },
+      "result": {
+        "version": "grounding-lab-v1",
+        "category": "car",
+        "prompt": "a car.",
+        "mode": "both",
+        "image": {
+          "width": 2557,
+          "height": 1597,
+          "sha256": "c021e00a3cc0c0d4b822036fdb35fc97ab92aa10e2ae16d127116ce8b44fa886"
+        },
+        "models": [
+          {
+            "model": "IDEA-Research/grounding-dino-tiny",
+            "revision": "a2bb814dd30d776dcf7e30523b00659f4f141c71",
+            "path": "/root/.cache/huggingface/hub/models--IDEA-Research--grounding-dino-tiny/snapshots/a2bb814dd30d776dcf7e30523b00659f4f141c71",
+            "license": "apache-2.0"
+          },
+          {
+            "model": "facebook/sam-vit-base",
+            "revision": "70c1a07f894ebb5b307fd9eaaee97b9dfc16068f",
+            "path": "/root/.cache/huggingface/hub/models--facebook--sam-vit-base/snapshots/70c1a07f894ebb5b307fd9eaaee97b9dfc16068f",
+            "license": "apache-2.0"
+          }
+        ],
+        "settings": {
+          "box_threshold": 0.3,
+          "text_threshold": 0.25,
+          "nms_iou": 0.5,
+          "max_objects": 24,
+          "reject_frame_area_fraction": 0.97,
+          "enclosing_area_fraction": 0.9,
+          "enclosed_smaller_ratio": 0.6
+        },
+        "raw_candidates": 1,
+        "raw_proposals": [
+          {
+            "box_xyxy": [
+              778.27587890625,
+              705.6897583007812,
+              1631.63916015625,
+              1167.3546142578125
+            ],
+            "score": 0.9566519260406494
+          }
+        ],
+        "excluded_enclosing_proposals": [],
+        "detections": [
+          {
+            "id": 1,
+            "box_xyxy": [
+              778.27587890625,
+              705.6897583007812,
+              1631.63916015625,
+              1167.3546142578125
+            ],
+            "detector_score": 0.9566519260406494,
+            "mask_pixels": 272664,
+            "sam_predicted_iou": 0.9723753333091736
+          }
+        ],
+        "objects": 1,
+        "capped": false,
+        "segmented_objects": 1,
+        "union_mask_pixels": 272664,
+        "total_image_pixels": 4083529,
+        "union_mask_percent": 6.6772,
+        "pixel_statistics_available": true,
+        "trace": [
+          {
+            "step": "Load pinned Grounding DINO",
+            "seconds": 0.524
+          },
+          {
+            "step": "Detect, threshold, remove enclosing frame proposals and suppress duplicates",
+            "seconds": 2.293
+          },
+          {
+            "step": "Load pinned SAM Base",
+            "seconds": 0.281
+          },
+          {
+            "step": "Box-prompted segmentation; choose highest SAM predicted IoU mask",
+            "seconds": 0.601
+          },
+          {
+            "step": "Render boxes, outlines and instance masks",
+            "seconds": 2.065
+          }
+        ],
+        "seconds": 7.318,
+        "peak_gpu_GiB": 2.678,
+        "limitations": [
+          "Experimental pretrained models; no remote-sensing fine-tuning or general accuracy claim.",
+          "Detector score and SAM predicted IoU are model scores, not measured correctness.",
+          "A mask follows a proposed box; it cannot prove the object identity.",
+          "Pixel coverage is the union of predicted masks, not NDVI, hectares or surveyed area.",
+          "Instance PNG assigns overlaps to the first score-ranked object; NPZ preserves overlapping masks.",
+          "Small, obscured or densely packed objects may be missed. Zero candidates means none passed the settings, not proof of absence."
+        ]
+      }
+    },
+    "count_matches": true
+  },
+  {
+    "case": {
+      "name": "river-negative",
+      "source": "/mnt/c/Users/nrgen/.codex/scratch/SATquery AI/results/reliability-20260907/counting/river.png",
+      "category": "stadium",
+      "expected": 0
+    },
+    "run": {
+      "id": "7dbc3422eb8f4ef098ee21de49fc6340",
+      "state": "complete",
+      "stage": "Starting isolated worker",
+      "started": 1789191733.0987494,
+      "image": {
+        "id": "3a77dcf883d843adbd11e1d247e84479",
+        "name": "river.png",
+        "width": 512,
+        "height": 512,
+        "sha256": "fc5f37c6cbee7918785e6d8e69022887b4a115cb755a734577414f872edcdda5",
+        "preview": "/api/images/3a77dcf883d843adbd11e1d247e84479"
+      },
+      "selection": {
+        "image_id": "3a77dcf883d843adbd11e1d247e84479",
+        "category": "stadium",
+        "threshold": 0.3,
+        "mode": "both"
+      },
+      "result": {
+        "version": "grounding-lab-v1",
+        "category": "stadium",
+        "prompt": "a stadium.",
+        "mode": "both",
+        "image": {
+          "width": 512,
+          "height": 512,
+          "sha256": "fc5f37c6cbee7918785e6d8e69022887b4a115cb755a734577414f872edcdda5"
+        },
+        "models": [
+          {
+            "model": "IDEA-Research/grounding-dino-tiny",
+            "revision": "a2bb814dd30d776dcf7e30523b00659f4f141c71",
+            "path": "/root/.cache/huggingface/hub/models--IDEA-Research--grounding-dino-tiny/snapshots/a2bb814dd30d776dcf7e30523b00659f4f141c71",
+            "license": "apache-2.0"
+          },
+          {
+            "model": "facebook/sam-vit-base",
+            "revision": "70c1a07f894ebb5b307fd9eaaee97b9dfc16068f",
+            "path": "/root/.cache/huggingface/hub/models--facebook--sam-vit-base/snapshots/70c1a07f894ebb5b307fd9eaaee97b9dfc16068f",
+            "license": "apache-2.0"
+          }
+        ],
+        "settings": {
+          "box_threshold": 0.3,
+          "text_threshold": 0.25,
+          "nms_iou": 0.5,
+          "max_objects": 24,
+          "reject_frame_area_fraction": 0.97,
+          "enclosing_area_fraction": 0.9,
+          "enclosed_smaller_ratio": 0.6
+        },
+        "raw_candidates": 1,
+        "raw_proposals": [
+          {
+            "box_xyxy": [
+              0.03656005859375,
+              0.05303955078125,
+              512.0,
+              512.0
+            ],
+            "score": 0.668948233127594
+          }
+        ],
+        "excluded_enclosing_proposals": [
+          0
+        ],
+        "detections": [],
+        "objects": 0,
+        "capped": false,
+        "segmented_objects": 0,
+        "union_mask_pixels": 0,
+        "total_image_pixels": 262144,
+        "union_mask_percent": 0.0,
+        "pixel_statistics_available": true,
+        "trace": [
+          {
+            "step": "Load pinned Grounding DINO",
+            "seconds": 0.505
+          },
+          {
+            "step": "Detect, threshold, remove enclosing frame proposals and suppress duplicates",
+            "seconds": 1.855
+          },
+          {
+            "step": "Render boxes, outlines and instance masks",
+            "seconds": 0.065
+          }
+        ],
+        "seconds": 2.908,
+        "peak_gpu_GiB": 1.444,
+        "limitations": [
+          "Experimental pretrained models; no remote-sensing fine-tuning or general accuracy claim.",
+          "Detector score and SAM predicted IoU are model scores, not measured correctness.",
+          "A mask follows a proposed box; it cannot prove the object identity.",
+          "Pixel coverage is the union of predicted masks, not NDVI, hectares or surveyed area.",
+          "Instance PNG assigns overlaps to the first score-ranked object; NPZ preserves overlapping masks.",
+          "Small, obscured or densely packed objects may be missed. Zero candidates means none passed the settings, not proof of absence."
+        ]
+      }
+    },
+    "count_matches": true
+  },
+  {
+    "case": {
+      "name": "blank-negative",
+      "source": "/mnt/c/Users/nrgen/.codex/scratch/SATquery AI/results/reliability-20260907/counting/blank.png",
+      "category": "car",
+      "expected": 0
+    },
+    "run": {
+      "id": "93dd899101574ffca3e3b9bd26d8ce5a",
+      "state": "complete",
+      "stage": "Starting isolated worker",
+      "started": 1789191739.811025,
+      "image": {
+        "id": "b6a15b505cf34fc8a033432d50d5923e",
+        "name": "blank.png",
+        "width": 512,
+        "height": 512,
+        "sha256": "8accbc208a2e7cc9088733c1dfb5f9e36d43a93f7418032dbfd93ff0f3f69297",
+        "preview": "/api/images/b6a15b505cf34fc8a033432d50d5923e"
+      },
+      "selection": {
+        "image_id": "b6a15b505cf34fc8a033432d50d5923e",
+        "category": "car",
+        "threshold": 0.3,
+        "mode": "both"
+      },
+      "result": {
+        "version": "grounding-lab-v1",
+        "category": "car",
+        "prompt": "a car.",
+        "mode": "both",
+        "image": {
+          "width": 512,
+          "height": 512,
+          "sha256": "8accbc208a2e7cc9088733c1dfb5f9e36d43a93f7418032dbfd93ff0f3f69297"
+        },
+        "models": [
+          {
+            "model": "IDEA-Research/grounding-dino-tiny",
+            "revision": "a2bb814dd30d776dcf7e30523b00659f4f141c71",
+            "path": "/root/.cache/huggingface/hub/models--IDEA-Research--grounding-dino-tiny/snapshots/a2bb814dd30d776dcf7e30523b00659f4f141c71",
+            "license": "apache-2.0"
+          },
+          {
+            "model": "facebook/sam-vit-base",
+            "revision": "70c1a07f894ebb5b307fd9eaaee97b9dfc16068f",
+            "path": "/root/.cache/huggingface/hub/models--facebook--sam-vit-base/snapshots/70c1a07f894ebb5b307fd9eaaee97b9dfc16068f",
+            "license": "apache-2.0"
+          }
+        ],
+        "settings": {
+          "box_threshold": 0.3,
+          "text_threshold": 0.25,
+          "nms_iou": 0.5,
+          "max_objects": 24,
+          "reject_frame_area_fraction": 0.97,
+          "enclosing_area_fraction": 0.9,
+          "enclosed_smaller_ratio": 0.6
+        },
+        "raw_candidates": 1,
+        "raw_proposals": [
+          {
+            "box_xyxy": [
+              0.069854736328125,
+              0.0,
+              512.0,
+              511.98907470703125
+            ],
+            "score": 0.4318312406539917
+          }
+        ],
+        "excluded_enclosing_proposals": [
+          0
+        ],
+        "detections": [],
+        "objects": 0,
+        "capped": false,
+        "segmented_objects": 0,
+        "union_mask_pixels": 0,
+        "total_image_pixels": 262144,
+        "union_mask_percent": 0.0,
+        "pixel_statistics_available": true,
+        "trace": [
+          {
+            "step": "Load pinned Grounding DINO",
+            "seconds": 0.474
+          },
+          {
+            "step": "Detect, threshold, remove enclosing frame proposals and suppress duplicates",
+            "seconds": 2.037
+          },
+          {
+            "step": "Render boxes, outlines and instance masks",
+            "seconds": 0.01
+          }
+        ],
+        "seconds": 2.958,
+        "peak_gpu_GiB": 1.444,
+        "limitations": [
+          "Experimental pretrained models; no remote-sensing fine-tuning or general accuracy claim.",
+          "Detector score and SAM predicted IoU are model scores, not measured correctness.",
+          "A mask follows a proposed box; it cannot prove the object identity.",
+          "Pixel coverage is the union of predicted masks, not NDVI, hectares or surveyed area.",
+          "Instance PNG assigns overlaps to the first score-ranked object; NPZ preserves overlapping masks.",
+          "Small, obscured or densely packed objects may be missed. Zero candidates means none passed the settings, not proof of absence."
+        ]
+      }
+    },
+    "count_matches": true
+  }
+]

@@ -1,0 +1,315 @@
+[
+  {
+    "case": "stadium",
+    "reference": 1,
+    "source": "/root/satquery/app-data/images/f01008d4ee8f47ebb9db13f7f597bd17.png",
+    "suffix": "",
+    "run": {
+      "id": "ba3be28c5d4345d4962291f2e0d5f9c8",
+      "state": "complete",
+      "stage": "Complete",
+      "question": "how many stadiums in this image.",
+      "image": {
+        "id": "e4470f238d1240c59f4d61ddb14259f2",
+        "name": "f01008d4ee8f47ebb9db13f7f597bd17.png",
+        "width": 500,
+        "height": 264,
+        "bytes": 173635,
+        "sha256": "da733a52a60a5c61655fc1f496de20114595110b45fe81e656d1b25851b7c2d2",
+        "preview": "/api/images/e4470f238d1240c59f4d61ddb14259f2",
+        "geo": null
+      },
+      "started": 1788920107.8588002,
+      "model": "AdaptLLM/remote-sensing-Qwen2-VL-2B-Instruct",
+      "revision": "7f5dd71bf0f40c282193d50160e848a387a08ffe",
+      "adapter": null,
+      "mode": "baseline",
+      "route": "Single-image optical VQA",
+      "trace": [
+        {
+          "step": "Load pinned checkpoint",
+          "seconds": 7.574
+        },
+        {
+          "step": "Generate model answer",
+          "seconds": 3.716
+        }
+      ],
+      "routing": {
+        "tool": "vqa",
+        "rule": "visual_count",
+        "reason": "General visual count from the original model; an estimate, not validated object detection.",
+        "version": "rules-v4"
+      },
+      "requested_mode": "baseline",
+      "effective_question": "how many stadiums in this image. Answer with only a single integer. Do not describe the image.",
+      "visual_token_bounds": [
+        256,
+        512
+      ],
+      "raw_answer": "1",
+      "answer_validation": {
+        "policy": "focused-count-v1",
+        "count": 1,
+        "withheld": false,
+        "changed": true,
+        "raw_truncated": false,
+        "limitation": "Visual estimate; counts may be inaccurate.",
+        "reasons": [
+          "unambiguous_count"
+        ],
+        "answer": "Estimated count: 1.\n\nVisual estimate; counts may be inaccurate."
+      },
+      "answer_policy": "focused-count-v1",
+      "answer": "Estimated count: 1.\n\nVisual estimate; counts may be inaccurate.",
+      "seconds": 20.388,
+      "generation_seconds": 3.716,
+      "peak_allocated_GiB": 4.231,
+      "generated_tokens": 2,
+      "max_new_tokens": 128
+    }
+  },
+  {
+    "case": "car",
+    "reference": 1,
+    "source": "/root/satquery/app-data/images/4dfea163809b43288da4b6ae44996316.png",
+    "suffix": "",
+    "run": {
+      "id": "fc86ffaed61f4e9c843b2185c8460d0e",
+      "state": "complete",
+      "stage": "Complete",
+      "question": "how many cars are there in this image.",
+      "image": {
+        "id": "f318cfc624f942fc83be79da21aebbf2",
+        "name": "4dfea163809b43288da4b6ae44996316.png",
+        "width": 2559,
+        "height": 1599,
+        "bytes": 7034632,
+        "sha256": "0ba3743e3ea6d64e65f400ed7097c66f2d8e4c2bd374094c9945814f92b9b1ef",
+        "preview": "/api/images/f318cfc624f942fc83be79da21aebbf2",
+        "geo": null
+      },
+      "started": 1788920129.6954818,
+      "model": "AdaptLLM/remote-sensing-Qwen2-VL-2B-Instruct",
+      "revision": "7f5dd71bf0f40c282193d50160e848a387a08ffe",
+      "adapter": null,
+      "mode": "baseline",
+      "route": "Single-image optical VQA",
+      "trace": [
+        {
+          "step": "Generate model answer",
+          "seconds": 0.395
+        }
+      ],
+      "routing": {
+        "tool": "vqa",
+        "rule": "visual_count",
+        "reason": "General visual count from the original model; an estimate, not validated object detection.",
+        "version": "rules-v4"
+      },
+      "requested_mode": "baseline",
+      "effective_question": "how many cars are there in this image. Answer with only a single integer. Do not describe the image.",
+      "visual_token_bounds": [
+        256,
+        512
+      ],
+      "raw_answer": "1",
+      "answer_validation": {
+        "policy": "focused-count-v1",
+        "count": 1,
+        "withheld": false,
+        "changed": true,
+        "raw_truncated": false,
+        "limitation": "Visual estimate; counts may be inaccurate.",
+        "reasons": [
+          "unambiguous_count"
+        ],
+        "answer": "Estimated count: 1.\n\nVisual estimate; counts may be inaccurate."
+      },
+      "answer_policy": "focused-count-v1",
+      "answer": "Estimated count: 1.\n\nVisual estimate; counts may be inaccurate.",
+      "seconds": 0.756,
+      "generation_seconds": 0.395,
+      "peak_allocated_GiB": 4.3,
+      "generated_tokens": 2,
+      "max_new_tokens": 128
+    }
+  },
+  {
+    "case": "negative",
+    "reference": 0,
+    "source": "/mnt/c/Users/nrgen/.codex/scratch/SATquery AI/results/reliability-20260907/counting/farmland.png",
+    "suffix": "",
+    "run": {
+      "id": "971deddc6ccd43a3b919b3ba441fa36e",
+      "state": "complete",
+      "stage": "Complete",
+      "question": "How many stadiums are visible in this image.",
+      "image": {
+        "id": "3593e7e40d0a410f86ccefa3461d294b",
+        "name": "farmland.png",
+        "width": 256,
+        "height": 256,
+        "bytes": 86339,
+        "sha256": "d9f9ced261109bcd24d9d411bd82a10a1e11e0db8cf93e7c43156ea1a111fce0",
+        "preview": "/api/images/3593e7e40d0a410f86ccefa3461d294b",
+        "geo": null
+      },
+      "started": 1788920130.6208987,
+      "model": "AdaptLLM/remote-sensing-Qwen2-VL-2B-Instruct",
+      "revision": "7f5dd71bf0f40c282193d50160e848a387a08ffe",
+      "adapter": null,
+      "mode": "baseline",
+      "route": "Single-image optical VQA",
+      "trace": [
+        {
+          "step": "Generate model answer",
+          "seconds": 0.233
+        }
+      ],
+      "routing": {
+        "tool": "vqa",
+        "rule": "visual_count",
+        "reason": "General visual count from the original model; an estimate, not validated object detection.",
+        "version": "rules-v4"
+      },
+      "requested_mode": "baseline",
+      "effective_question": "How many stadiums are visible in this image. Answer with only a single integer. Do not describe the image.",
+      "visual_token_bounds": [
+        256,
+        512
+      ],
+      "raw_answer": "0",
+      "answer_validation": {
+        "policy": "focused-count-v1",
+        "count": 0,
+        "withheld": false,
+        "changed": true,
+        "raw_truncated": false,
+        "limitation": "Visual estimate; counts may be inaccurate.",
+        "reasons": [
+          "unambiguous_count"
+        ],
+        "answer": "Estimated count: 0.\n\nVisual estimate; counts may be inaccurate."
+      },
+      "answer_policy": "focused-count-v1",
+      "answer": "Estimated count: 0.\n\nVisual estimate; counts may be inaccurate.",
+      "seconds": 0.267,
+      "generation_seconds": 0.233,
+      "peak_allocated_GiB": 4.224,
+      "generated_tokens": 2,
+      "max_new_tokens": 128
+    }
+  },
+  {
+    "case": "baseball",
+    "reference": 4,
+    "source": "/mnt/c/Users/nrgen/.codex/scratch/SATquery AI/results/reliability-20260907/counting/full.png",
+    "suffix": "",
+    "run": {
+      "id": "730ba6d0865d44458b493161eb0b9f6d",
+      "state": "complete",
+      "stage": "Complete",
+      "question": "How many baseball fields are there in this image.",
+      "image": {
+        "id": "83468a97ba3f47b8a080752970c6c102",
+        "name": "full.png",
+        "width": 800,
+        "height": 800,
+        "bytes": 1058832,
+        "sha256": "d554202729a40d67eb39fc38759e196ca628cf6f7f3c2679b075fcb9a9f52e80",
+        "preview": "/api/images/83468a97ba3f47b8a080752970c6c102",
+        "geo": null
+      },
+      "started": 1788920131.328017,
+      "model": "AdaptLLM/remote-sensing-Qwen2-VL-2B-Instruct",
+      "revision": "7f5dd71bf0f40c282193d50160e848a387a08ffe",
+      "adapter": null,
+      "mode": "baseline",
+      "route": "Single-image optical VQA",
+      "trace": [
+        {
+          "step": "Compare original and mirrored image counts",
+          "seconds": 0.745
+        }
+      ],
+      "routing": {
+        "tool": "vqa",
+        "rule": "baseball_count",
+        "reason": "Baseball/softball field count estimated by VQA; an original and mirrored image must agree. No object boxes or verified detection are produced.",
+        "version": "rules-v4"
+      },
+      "requested_mode": "baseline",
+      "answer": "4 identifiable baseball/softball diamonds visible.\n\nVQA estimate; partial or obscured fields can affect the count.",
+      "raw_answer": "4\n4",
+      "counting": {
+        "policy": "baseball-two-view-v1",
+        "kind": "VQA estimate",
+        "views": [
+          {
+            "view": "original",
+            "raw_answer": "4",
+            "count": 4,
+            "generated_tokens": 2,
+            "seconds": 0.3837989749999906
+          },
+          {
+            "view": "mirrored",
+            "raw_answer": "4",
+            "count": 4,
+            "generated_tokens": 2,
+            "seconds": 0.3616138909999336
+          }
+        ],
+        "count": 4,
+        "withheld": false,
+        "limitation": "Agreement between transformed views is not independent validation. Small, obscured or edge-cropped fields may be missed.",
+        "generated_tokens": 4,
+        "generation_seconds": 0.745,
+        "max_new_tokens": 32,
+        "peak_allocated_GiB": 4.314,
+        "reason": "two_view_agreement",
+        "answer": "4 identifiable baseball/softball diamonds visible.\n\nVQA estimate; partial or obscured fields can affect the count."
+      },
+      "answer_policy": "baseball-two-view-v1",
+      "answer_validation": {
+        "policy": "baseball-two-view-v1",
+        "kind": "VQA estimate",
+        "views": [
+          {
+            "view": "original",
+            "raw_answer": "4",
+            "count": 4,
+            "generated_tokens": 2,
+            "seconds": 0.3837989749999906
+          },
+          {
+            "view": "mirrored",
+            "raw_answer": "4",
+            "count": 4,
+            "generated_tokens": 2,
+            "seconds": 0.3616138909999336
+          }
+        ],
+        "count": 4,
+        "withheld": false,
+        "limitation": "Agreement between transformed views is not independent validation. Small, obscured or edge-cropped fields may be missed.",
+        "generated_tokens": 4,
+        "generation_seconds": 0.745,
+        "max_new_tokens": 32,
+        "peak_allocated_GiB": 4.314,
+        "reason": "two_view_agreement",
+        "answer": "4 identifiable baseball/softball diamonds visible.\n\nVQA estimate; partial or obscured fields can affect the count."
+      },
+      "seconds": 0.906,
+      "generation_seconds": 0.745,
+      "peak_allocated_GiB": 4.314,
+      "generated_tokens": 4,
+      "max_new_tokens": 32,
+      "visual_token_bounds": [
+        256,
+        512
+      ]
+    }
+  }
+]

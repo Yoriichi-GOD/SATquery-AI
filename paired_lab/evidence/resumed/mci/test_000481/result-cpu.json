@@ -1,0 +1,36 @@
+{
+  "file": "test_000481.png",
+  "reference_changeflag": 1,
+  "raw_caption": "some houses are built in the woods",
+  "reference_captions": [
+    " some mansions appear at the top and some at the bottom .",
+    " buildings appear at the top and bottom of the scene .",
+    " several houses have been built on both sides of the bareland .",
+    " some new villas are built in the woods at the corners of the scene .",
+    " some houses appear at the edge of the bareland ."
+  ],
+  "caption_changeflag_heuristic": 1,
+  "confusion_rows_reference_columns_prediction": [
+    [
+      56984,
+      69,
+      557
+    ],
+    [
+      30,
+      658,
+      0
+    ],
+    [
+      916,
+      0,
+      6322
+    ]
+  ],
+  "predicted_class_pixels": {
+    "0": 57930,
+    "1": 727,
+    "2": 6879
+  },
+  "gpu_caption": "some houses are built in the woods"
+}

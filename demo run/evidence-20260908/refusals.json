@@ -1,0 +1,26 @@
+[
+  {
+    "question": "Calculate NDVI",
+    "status": 422,
+    "response": {
+      "detail": {
+        "tool": "refuse",
+        "rule": "calibrated_bands_required",
+        "reason": "NDVI needs labelled, calibrated Red/NIR surface-reflectance bands. RGB alone cannot answer this request.",
+        "version": "rules-v2"
+      }
+    }
+  },
+  {
+    "question": "Locate the buildings",
+    "status": 422,
+    "response": {
+      "detail": {
+        "tool": "refuse",
+        "rule": "grounding_unavailable",
+        "reason": "Text-guided grounding is planned. No validated object boxes, masks or locations are available.",
+        "version": "rules-v2"
+      }
+    }
+  }
+]

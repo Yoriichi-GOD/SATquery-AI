@@ -1,0 +1,110 @@
+[
+  {
+    "image_id": "P1598_0050.png",
+    "ground_truth": "The image provided by JL shows a section of an airport in high resolution. The main features visible are a roundabout at the top and two small planes positioned on the tarmac. The planes are located towards the middle left areas of the image with one being closer to the left and the other slightly more central.",
+    "question": "Describe the image in detail",
+    "dataset": "RSBench",
+    "question_id": 2538,
+    "type": "caption",
+    "sha256": "05f296842ac9965ffbba08390dc07a5c7dbb78dffc5e366e0b5efec4abb46cf5"
+  },
+  {
+    "image_id": "P1390_0090.png",
+    "ground_truth": "The image, sourced from GoogleEarth, captures a small airplane at the bottom-left position on a runway with a high-resolution quality. The runway is surrounded by dirt and grass areas, with various tracks and dirt roads visible across the landscape.",
+    "question": "Describe the image in detail",
+    "dataset": "RSBench",
+    "question_id": 2029,
+    "type": "caption",
+    "sha256": "f9d7a5f9a23ac31c9f63322296179349de8868b88da1f66a675c5305c056c809"
+  },
+  {
+    "image_id": "P0110_0015.png",
+    "ground_truth": "The medium-resolution image provided by GoogleEarth shows a sprawling, forested area flanked by a body of water. There is a narrow harbor that extends across the water from one side to the other.",
+    "question": "Describe the image in detail",
+    "dataset": "RSBench",
+    "question_id": 112,
+    "type": "caption",
+    "sha256": "5e81a619d0e3d7b6a983f77f4ef8c749dd79e18ed65f87e0a1666318e4d68512"
+  },
+  {
+    "image_id": "P1377_0054.png",
+    "ground_truth": "The high-resolution image from GoogleEarth shows a residential area with houses, gardens, and automobiles. There are two visible swimming pools; one is located towards the middle-left of the image, and the other is at the bottom-middle part of the image. Additionally, several small vehicles are scattered across the image, positioned along the streets between the houses.",
+    "question": "Describe the image in detail",
+    "dataset": "RSBench",
+    "question_id": 1856,
+    "type": "caption",
+    "sha256": "8b1a395501bcbc2c192b388e0800d99c086a9c4d17cddb4d2054e37861f27ae6"
+  },
+  {
+    "image_id": "10086_0000.png",
+    "ground_truth": "The image, sourced from GoogleEarth, features a baseball field, distinguishable by its diamond shape with a brown infield and surrounding green areas. A path runs along the left side of the field, leading to a small parking area with visible cars. Trees are scattered around the perimeter of the baseball field, contributing to a sense of the field being located in a recreational or park area.",
+    "question": "Describe the image in detail",
+    "dataset": "RSBench",
+    "question_id": 8025,
+    "type": "caption",
+    "sha256": "7ff7c7b8848c451894eb73d9143516431ced3eefaa20446a8693d79802b8905b"
+  },
+  {
+    "image_id": "08078_0000.png",
+    "ground_truth": "Aerial view of a dam featured in a GoogleEarth image. The dam is positioned at the bottom of the image, with a body of water to its north and surrounded by dense greenery on both sides.",
+    "question": "Describe the image in detail",
+    "dataset": "RSBench",
+    "question_id": 6420,
+    "type": "caption",
+    "sha256": "8f90415f3db15dcf37a8430d69327ea85af76605d2c9ccc59e09c36d1c11a0d5"
+  },
+  {
+    "image_id": "P8656_0106.png",
+    "ground_truth": "A high-resolution aerial image captures a section of a large rectangular building with a geometric dark roof pattern. The are small vehicles are parked at the bottom right corner within its surrounding space.",
+    "question": "Describe the image in detail",
+    "dataset": "RSBench",
+    "question_id": 4613,
+    "type": "caption",
+    "sha256": "ee8d94cdaeec81c7923b2e5a83b08ec8fa4053847f569656a66d6a1065753faa"
+  },
+  {
+    "image_id": "P2645_0012.png",
+    "ground_truth": "The high-resolution GoogleEarth image predominantly features a section of an airport's parking area and the edge of a runway. There are vehicles parked in designated areas, with a concentration of large vehicles visible on the left side of the image. A ship can be seen docked in a nearby body of water on the bottom left.",
+    "question": "Describe the image in detail",
+    "dataset": "RSBench",
+    "question_id": 3584,
+    "type": "caption",
+    "sha256": "b398c113a17796366b03fab1d9c6e8038f3469bb9a9c08ed9a3e65ae7ed1862f"
+  },
+  {
+    "image_id": "06739_0000.png",
+    "ground_truth": "This satellite image from GoogleEarth shows a section of an airport where an airplane is parked surrounded by airport infrastructure and service vehicles. The aircraft is positioned with multiple boarding bridges connected to its doors, indicating it is at a gate being serviced or boarded.",
+    "question": "Describe the image in detail",
+    "dataset": "RSBench",
+    "question_id": 5346,
+    "type": "caption",
+    "sha256": "4b70b24b57089fed66f45b6136c241d4fcb4e52be03e8b4c8494a462ae6640d7"
+  },
+  {
+    "image_id": "P0217_0000.png",
+    "ground_truth": "High-resolution image from Google Earth capturing part of an airport, showcasing two small planes on the tarmac. One plane occupies the upper middle-right section. Another plane is in the bottom-right quarter situated towards the bottom-most part of the image.",
+    "question": "Describe the image in detail",
+    "dataset": "RSBench",
+    "question_id": 228,
+    "type": "caption",
+    "sha256": "74cddc3e2fc23b9e8c7c5d914ec61dd491ad6bd03c8ca6680e7cdc682f2def1f"
+  },
+  {
+    "image_id": "P1323_0020.png",
+    "ground_truth": "This high-resolution grayscale image sourced from GF features an urban landscape with two notable bridges. The bottom-most bridge spans vertically across a water body with a slightly curved design. Another bridge is located in the top-right portion of the image.",
+    "question": "Describe the image in detail",
+    "dataset": "RSBench",
+    "question_id": 1660,
+    "type": "caption",
+    "sha256": "175dc121c01c2b4629795f2c8d8be41f93cc6a5b974a67458b4ebf8e3b5f4ca1"
+  },
+  {
+    "image_id": "08284_0000.png",
+    "ground_truth": "The image provided is from GoogleEarth, capturing a facility with apparent industrial activity. Unfortunately, the resolution details are not included. A prominent feature in the image is a chimney emitting large plumes of smoke. The surrounding area seems to encompass vegetation.",
+    "question": "Describe the image in detail",
+    "dataset": "RSBench",
+    "question_id": 6594,
+    "type": "caption",
+    "sha256": "4f6be5d9c14fcffc1eecd174235b655e19e5bc67e1536dbbe58fcb4831bc2ad6"
+  }
+]

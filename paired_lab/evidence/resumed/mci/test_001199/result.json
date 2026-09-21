@@ -1,0 +1,35 @@
+{
+  "file": "test_001199.png",
+  "reference_changeflag": 1,
+  "raw_caption": "many houses and roads are constructed on the bareland",
+  "reference_captions": [
+    " a residential area with many houses and roads appears .",
+    " many detached houses and roads appear on the bareland .",
+    " many square buildings and roads have been built .",
+    " two roads appear and several buildings are built near two roads .",
+    " two roads and many neatly arranged houses have appeared ."
+  ],
+  "caption_changeflag_heuristic": 1,
+  "confusion_rows_reference_columns_prediction": [
+    [
+      36450,
+      275,
+      2032
+    ],
+    [
+      190,
+      7426,
+      0
+    ],
+    [
+      1634,
+      0,
+      17529
+    ]
+  ],
+  "predicted_class_pixels": {
+    "0": 38274,
+    "1": 7701,
+    "2": 19561
+  }
+}

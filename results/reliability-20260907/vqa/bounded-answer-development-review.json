@@ -1,0 +1,510 @@
+[
+  {
+    "id": "qa-24608",
+    "reference": "rural",
+    "raw_answer": "The image depicts a rural scene. The lack of any visible infrastructure such as roads, buildings, or vehicles suggests that this is a natural, undeveloped area. The presence of a beach and the absence of any human activity or structures indicate that this is a remote or less populated region. The image does not provide any direct indicators of urban development, such as high-rise buildings or commercial signage, which further supports the classification of this scene as rural. Therefore, the answer is rural",
+    "policy": "bounded-answer-v1",
+    "category": "rural_urban",
+    "limitation": "Model interpretation; object identities and locations are not independently verified.",
+    "raw_truncated": false,
+    "changed": true,
+    "withheld": false,
+    "reasons": [
+      "explanation_omitted_final_label_only"
+    ],
+    "answer": "Rural"
+  },
+  {
+    "id": "qa-27008",
+    "reference": "rural",
+    "raw_answer": "The image depicts a rural landscape. The presence of large, rectangular fields with uniform coloration suggests that these are agricultural plots, likely used for farming. The absence of any visible infrastructure such as roads, buildings, or vehicles, and the lack of any urban features like tall buildings or commercial signs, further indicate that this is a rural area. The image does not provide any direct indicators of the time of year or the specific location, but the healthy green color of the fields suggests that it is likely taken during a growing season, possibly spring or summer. Therefore, the answer is rural",
+    "policy": "bounded-answer-v1",
+    "category": "rural_urban",
+    "limitation": "Model interpretation; object identities and locations are not independently verified.",
+    "raw_truncated": false,
+    "changed": true,
+    "withheld": false,
+    "reasons": [
+      "explanation_omitted_final_label_only"
+    ],
+    "answer": "Rural"
+  },
+  {
+    "id": "qa-31211",
+    "reference": "rural",
+    "raw_answer": "The image depicts a rural landscape. The presence of large, open fields with no visible buildings or infrastructure suggests that this is a countryside area, likely used for agriculture. The varying shades of green indicate different types of crops or different stages of the agricultural cycle. The absence of any human activity or structures implies that this is a remote or sparsely populated region. The image does not provide any direct indicators of urban development, such as roads, buildings, or vehicles, which further supports the rural classification. Therefore, the answer is rural",
+    "policy": "bounded-answer-v1",
+    "category": "rural_urban",
+    "limitation": "Model interpretation; object identities and locations are not independently verified.",
+    "raw_truncated": false,
+    "changed": true,
+    "withheld": false,
+    "reasons": [
+      "explanation_omitted_final_label_only"
+    ],
+    "answer": "Rural"
+  },
+  {
+    "id": "qa-26408",
+    "reference": "rural",
+    "raw_answer": "The image depicts a rural landscape. The presence of large, open fields with varying shades of green and brown indicates agricultural use, which is typical of rural areas. The absence of any urban infrastructure such as buildings, roads, or vehicles suggests that this is a dedicated agricultural area, not a city or town. The image does not provide any direct indicators of the specific location or the type of crops being grown, but the overall pattern is consistent with rural farming regions. Therefore, the answer is rural",
+    "policy": "bounded-answer-v1",
+    "category": "rural_urban",
+    "limitation": "Model interpretation; object identities and locations are not independently verified.",
+    "raw_truncated": false,
+    "changed": true,
+    "withheld": false,
+    "reasons": [
+      "explanation_omitted_final_label_only"
+    ],
+    "answer": "Rural"
+  },
+  {
+    "id": "qa-32211",
+    "reference": "rural",
+    "raw_answer": "The image depicts a rural landscape. The presence of large, rectangular fields with straight boundaries is characteristic of agricultural land, which is typically found in rural areas. The absence of any significant infrastructure such as roads, buildings, or vehicles suggests that this is a less developed or more remote area. The small village or settlement indicates that there is some level of human habitation and activity, but it is not the central focus of the image. The image does not provide any direct indicators of urban development, such as high-rise buildings or commercial activity. Therefore, the answer is rural",
+    "policy": "bounded-answer-v1",
+    "category": "rural_urban",
+    "limitation": "Model interpretation; object identities and locations are not independently verified.",
+    "raw_truncated": false,
+    "changed": true,
+    "withheld": false,
+    "reasons": [
+      "explanation_omitted_final_label_only"
+    ],
+    "answer": "Rural"
+  },
+  {
+    "id": "qa-26608",
+    "reference": "rural",
+    "raw_answer": "The image depicts a rural landscape. The presence of farmland, the absence of urban infrastructure such as buildings or roads, and the natural water body are all indicative of a rural setting. The farmland is likely used for agriculture, which is a common feature in rural areas. The image does not provide any direct indicators of urban development, such as high-rise buildings or commercial structures. Therefore, the answer is rural",
+    "policy": "bounded-answer-v1",
+    "category": "rural_urban",
+    "limitation": "Model interpretation; object identities and locations are not independently verified.",
+    "raw_truncated": false,
+    "changed": true,
+    "withheld": false,
+    "reasons": [
+      "explanation_omitted_final_label_only"
+    ],
+    "answer": "Rural"
+  },
+  {
+    "id": "qa-26508",
+    "reference": "urban",
+    "raw_answer": "The image is a clear representation of a rural-urban interface. The patchwork of fields suggests agricultural activity, which is typical of rural areas. The presence of residential buildings indicates that this is a region where agriculture is not the primary use of the land, and the buildings are likely to be residential or farm-related. The greenery interspersed with the fields could be indicative of either a natural landscape or a managed landscape, possibly for aesthetic purposes or to support agricultural activities. The image does not provide explicit information about the specific location or the scale of the urban and rural areas, but it is clear that the two are coexisting in a",
+    "policy": "bounded-answer-v1",
+    "category": "rural_urban",
+    "limitation": "Model interpretation; object identities and locations are not independently verified.",
+    "raw_truncated": true,
+    "changed": true,
+    "withheld": true,
+    "reasons": [
+      "missing_unambiguous_final_label"
+    ],
+    "answer": "Cannot determine reliably from this image. Try a simpler visible-feature question or a clearer image."
+  },
+  {
+    "id": "qa-24308",
+    "reference": "urban",
+    "raw_answer": "The image is rural. The presence of a large, open water body, the absence of any urban infrastructure such as roads, buildings, or vehicles, and the vastness of the surrounding land use for agriculture and natural areas, all indicate that this is a rural landscape. The image does not show any signs of urban development, such as high-rise buildings, commercial areas, or industrial facilities. Therefore, the answer is rural",
+    "policy": "bounded-answer-v1",
+    "category": "rural_urban",
+    "limitation": "Model interpretation; object identities and locations are not independently verified.",
+    "raw_truncated": false,
+    "changed": true,
+    "withheld": false,
+    "reasons": [
+      "explanation_omitted_final_label_only"
+    ],
+    "answer": "Rural"
+  },
+  {
+    "id": "qa-29411",
+    "reference": "urban",
+    "raw_answer": "The image is rural. The presence of farmland, the absence of urban infrastructure such as buildings and roads, and the lack of any visible commercial or industrial buildings all indicate that this is a rural area. The image does not show any signs of urban development, such as high-rise buildings, commercial signs, or industrial facilities. The layout of the land, with its clear demarcations and the presence of agricultural fields, further supports the rural classification of the area. Therefore, the answer is rural",
+    "policy": "bounded-answer-v1",
+    "category": "rural_urban",
+    "limitation": "Model interpretation; object identities and locations are not independently verified.",
+    "raw_truncated": false,
+    "changed": true,
+    "withheld": false,
+    "reasons": [
+      "explanation_omitted_final_label_only"
+    ],
+    "answer": "Rural"
+  },
+  {
+    "id": "qa-31811",
+    "reference": "urban",
+    "raw_answer": "The image depicts a rural landscape. The presence of farmland and the absence of urban infrastructure such as buildings, roads, and vehicles suggest that this is a less developed area, likely on the outskirts of a town or in a rural region. The greenery indicates that the area is not heavily urbanized and may be used for agriculture or as a natural buffer zone. The image does not provide any direct indicators of the specific location or the scale of the area, but the overall impression is of a tranquil, natural setting. Therefore, the answer is rural",
+    "policy": "bounded-answer-v1",
+    "category": "rural_urban",
+    "limitation": "Model interpretation; object identities and locations are not independently verified.",
+    "raw_truncated": false,
+    "changed": true,
+    "withheld": false,
+    "reasons": [
+      "explanation_omitted_final_label_only"
+    ],
+    "answer": "Rural"
+  },
+  {
+    "id": "qa-29611",
+    "reference": "urban",
+    "raw_answer": "The image is rural. This is indicated by the presence of large tracts of land that are not being used for urban development, as evidenced by the lack of buildings and the presence of natural vegetation. The roads that intersect the area are likely to be used for transportation of goods and people, which is typical for rural areas. The absence of any significant infrastructure such as power lines or water treatment plants, and the lack of visible agricultural activity, further support the classification of this area as rural. Therefore, the answer is rural",
+    "policy": "bounded-answer-v1",
+    "category": "rural_urban",
+    "limitation": "Model interpretation; object identities and locations are not independently verified.",
+    "raw_truncated": false,
+    "changed": true,
+    "withheld": false,
+    "reasons": [
+      "explanation_omitted_final_label_only"
+    ],
+    "answer": "Rural"
+  },
+  {
+    "id": "qa-33012",
+    "reference": "urban",
+    "raw_answer": "The image is rural. This is evident from the presence of large, open fields that are typical of agricultural areas. The absence of any urban infrastructure such as buildings, roads, or other signs of developed land suggests that this is a rural landscape primarily used for farming. The varying shades of green indicate different types of crops or different stages of the agricultural cycle. The layout of the fields, with straight lines and right angles, is characteristic of modern, large-scale farming practices. Therefore, the answer is rural",
+    "policy": "bounded-answer-v1",
+    "category": "rural_urban",
+    "limitation": "Model interpretation; object identities and locations are not independently verified.",
+    "raw_truncated": false,
+    "changed": true,
+    "withheld": false,
+    "reasons": [
+      "explanation_omitted_final_label_only"
+    ],
+    "answer": "Rural"
+  },
+  {
+    "id": "qa-29182",
+    "reference": "no",
+    "raw_answer": "Yes, there is a square road present in the image. It is a straight road that runs parallel to the coastline, dividing the agricultural fields into smaller plots. The road appears to be a significant feature of the landscape, likely used for transporting goods or farm equipment between different parts of the farmland. The presence of the road suggests that this area is used for agriculture and is accessible for transportation purposes. Therefore, the answer is yes",
+    "policy": "bounded-answer-v1",
+    "category": "binary",
+    "limitation": "Model interpretation; object identities and locations are not independently verified.",
+    "raw_truncated": false,
+    "changed": true,
+    "withheld": false,
+    "reasons": [
+      "explanation_omitted_final_label_only"
+    ],
+    "answer": "Yes"
+  },
+  {
+    "id": "qa-29402",
+    "reference": "no",
+    "raw_answer": "There is no circular orchard present in the image. The area shown is a mix of urban and natural landscapes, with a significant amount of green space, which could include a circular orchard, but it is not clearly visible in the image provided. The circular shape is not discernible in the image, and the surrounding greenery does not suggest the presence of a circular feature. Therefore, the answer is no",
+    "policy": "bounded-answer-v1",
+    "category": "binary",
+    "limitation": "Model interpretation; object identities and locations are not independently verified.",
+    "raw_truncated": false,
+    "changed": true,
+    "withheld": false,
+    "reasons": [
+      "explanation_omitted_final_label_only"
+    ],
+    "answer": "No"
+  },
+  {
+    "id": "qa-26074",
+    "reference": "no",
+    "raw_answer": "Yes, there is a circular water area in the image. It is located in the upper right quadrant of the image, adjacent to the green fields. The water body appears to be a natural feature, possibly a pond or a small lake, given its size and the way it is surrounded by the fields. The absence of any visible boats or people suggests that it is not a frequently used or frequented area. The surrounding fields are likely to be used for agriculture, as indicated by the uniformity and the presence of crops. Therefore, the answer is yes",
+    "policy": "bounded-answer-v1",
+    "category": "binary",
+    "limitation": "Model interpretation; object identities and locations are not independently verified.",
+    "raw_truncated": false,
+    "changed": true,
+    "withheld": false,
+    "reasons": [
+      "explanation_omitted_final_label_only"
+    ],
+    "answer": "Yes"
+  },
+  {
+    "id": "qa-28270",
+    "reference": "no",
+    "raw_answer": "No, there is no square building in the image. The buildings are rectangular and aligned with the roads, which are the main features of the image. The square building would be a circular or square structure, which is not present in the image. Therefore, the answer is no",
+    "policy": "bounded-answer-v1",
+    "category": "binary",
+    "limitation": "Model interpretation; object identities and locations are not independently verified.",
+    "raw_truncated": false,
+    "changed": true,
+    "withheld": false,
+    "reasons": [
+      "explanation_omitted_final_label_only"
+    ],
+    "answer": "No"
+  },
+  {
+    "id": "qa-31993",
+    "reference": "no",
+    "raw_answer": "There is no square grass area present in the image. The fields are rectangular and vary in color, which suggests different types of crops or different stages of cultivation. The absence of a square grass area is due to the nature of the image, which is a satellite view of a rural landscape, focusing on the agricultural patterns rather than the immediate environment. Therefore, the answer is no",
+    "policy": "bounded-answer-v1",
+    "category": "binary",
+    "limitation": "Model interpretation; object identities and locations are not independently verified.",
+    "raw_truncated": false,
+    "changed": true,
+    "withheld": false,
+    "reasons": [
+      "explanation_omitted_final_label_only"
+    ],
+    "answer": "No"
+  },
+  {
+    "id": "qa-25443",
+    "reference": "no",
+    "raw_answer": "There is no square road visible in the image. The road appears to be a straight, possibly winding path, which is not a square shape. The surrounding land is divided into rectangular plots, which is characteristic of farmland. The absence of any square shapes in the image suggests that the road is not a square road. Therefore, the answer is no",
+    "policy": "bounded-answer-v1",
+    "category": "binary",
+    "limitation": "Model interpretation; object identities and locations are not independently verified.",
+    "raw_truncated": false,
+    "changed": true,
+    "withheld": false,
+    "reasons": [
+      "explanation_omitted_final_label_only"
+    ],
+    "answer": "No"
+  },
+  {
+    "id": "qa-23320",
+    "reference": "yes",
+    "raw_answer": "Yes, there is a water area present in the image. It is a large, dark green body of water that is adjacent to the green fields. The water body is likely a lake or a large pond, given its size and the way it is surrounded by the fields. The presence of the water body suggests that the area may be used for agriculture or as a natural habitat for wildlife. The image does not provide any direct indications of the specific type of water or its location, but the overall impression is that of a rural, agricultural landscape with a significant water feature. Therefore, the answer is yes",
+    "policy": "bounded-answer-v1",
+    "category": "binary",
+    "limitation": "Model interpretation; object identities and locations are not independently verified.",
+    "raw_truncated": false,
+    "changed": true,
+    "withheld": false,
+    "reasons": [
+      "explanation_omitted_final_label_only"
+    ],
+    "answer": "Yes"
+  },
+  {
+    "id": "qa-28335",
+    "reference": "yes",
+    "raw_answer": "Yes, there are farmlands present in the image. The presence of green fields suggests that the area is used for agriculture, likely involving crops that are currently growing. The varying shades of green indicate different types of crops or different stages of the agricultural cycle. The absence of any visible infrastructure or buildings suggests that the image captures a rural or agricultural area, focused on crop production. Therefore, the answer is yes",
+    "policy": "bounded-answer-v1",
+    "category": "binary",
+    "limitation": "Model interpretation; object identities and locations are not independently verified.",
+    "raw_truncated": false,
+    "changed": true,
+    "withheld": false,
+    "reasons": [
+      "explanation_omitted_final_label_only"
+    ],
+    "answer": "Yes"
+  },
+  {
+    "id": "qa-28681",
+    "reference": "yes",
+    "raw_answer": "The image provided does not show any square grass areas next to buildings. The areas that resemble grass are likely to be agricultural fields or open spaces within the urban environment. The presence of buildings and roads suggests a mix of residential and commercial areas. Without more specific details, it is not possible to determine the exact nature of the grassy areas or the buildings they are adjacent to. Therefore, the answer is no",
+    "policy": "bounded-answer-v1",
+    "category": "binary",
+    "limitation": "Model interpretation; object identities and locations are not independently verified.",
+    "raw_truncated": false,
+    "changed": true,
+    "withheld": false,
+    "reasons": [
+      "explanation_omitted_final_label_only"
+    ],
+    "answer": "No"
+  },
+  {
+    "id": "qa-29293",
+    "reference": "yes",
+    "raw_answer": "There is no square building visible in the image. The buildings are rectangular and aligned with the road, which is the main feature in the image. Therefore, the answer is no",
+    "policy": "bounded-answer-v1",
+    "category": "binary",
+    "limitation": "Model interpretation; object identities and locations are not independently verified.",
+    "raw_truncated": false,
+    "changed": true,
+    "withheld": false,
+    "reasons": [
+      "explanation_omitted_final_label_only"
+    ],
+    "answer": "No"
+  },
+  {
+    "id": "qa-25934",
+    "reference": "yes",
+    "raw_answer": "Yes, there is a farmland in the image. The farmland is characterized by its large, rectangular plots of land, which are typical of agricultural practices. The presence of buildings and roads indicates that this is a managed agricultural area, likely with a focus on crop production. The varying shades of green suggest different types of crops or different stages of the agricultural cycle. The absence of visible water sources or forested areas within the farmland itself suggests that the image captures a segment of the countryside that is primarily used for farming. Therefore, the answer is yes",
+    "policy": "bounded-answer-v1",
+    "category": "binary",
+    "limitation": "Model interpretation; object identities and locations are not independently verified.",
+    "raw_truncated": false,
+    "changed": true,
+    "withheld": false,
+    "reasons": [
+      "explanation_omitted_final_label_only"
+    ],
+    "answer": "Yes"
+  },
+  {
+    "id": "qa-29012",
+    "reference": "yes",
+    "raw_answer": "Yes, there is a grass area in the image. The grass is visible as a lighter green color, contrasting with the surrounding darker green fields. This suggests that the grass is likely to be a type of crop that is grown in the fields, possibly for its aesthetic value or as a cover crop to prevent soil erosion. The presence of the grass area indicates that the fields are not entirely bare or fallow, which is typical for agricultural land that is used for a variety of crops. Therefore, the answer is yes",
+    "policy": "bounded-answer-v1",
+    "category": "binary",
+    "limitation": "Model interpretation; object identities and locations are not independently verified.",
+    "raw_truncated": false,
+    "changed": true,
+    "withheld": false,
+    "reasons": [
+      "explanation_omitted_final_label_only"
+    ],
+    "answer": "Yes"
+  },
+  {
+    "id": "description-246",
+    "reference": null,
+    "raw_answer": "The major visible features in the image are the ocean and the beach. The ocean is the vast expanse of water, while the beach is the sandy shore that meets the ocean. The image does not provide any specific details that would allow for the identification of the location or the time of day. The lack of any human activity or structures suggests that this might be a remote or protected area. The color contrast between the blue of the ocean and the beige of the beach is quite stark, which is typical for aerial photographs of coastal regions. Therefore, the answer is ocean and beach",
+    "policy": "bounded-answer-v1",
+    "category": "description",
+    "limitation": "Model interpretation; object identities and locations are not independently verified.",
+    "raw_truncated": false,
+    "changed": true,
+    "withheld": false,
+    "reasons": [],
+    "answer": "The major visible features in the image are the ocean and the beach. The ocean is the vast expanse of water, while the beach is the sandy shore that meets the ocean.\n\nModel interpretation; object identities and locations are not independently verified."
+  },
+  {
+    "id": "description-270",
+    "reference": null,
+    "raw_answer": "The major visible features in the image are the agricultural fields, which are arranged in a pattern that suggests a methodical approach to land use, likely following the principles of crop rotation or multi-cropping. The different colors of the fields indicate various types of crops or different stages of the agricultural cycle. The presence of buildings within the fields suggests that these are farm complexes, where the fields are used for growing crops and the buildings serve as residences for farmers or as storage facilities for the crops. The absence of visible water sources or forested areas within the image suggests that the area is primarily used for agriculture and that the water used for irrigation is likely",
+    "policy": "bounded-answer-v1",
+    "category": "description",
+    "limitation": "Model interpretation; object identities and locations are not independently verified.",
+    "raw_truncated": true,
+    "changed": true,
+    "withheld": true,
+    "reasons": [
+      "no_complete_bounded_observation"
+    ],
+    "answer": "Cannot determine reliably from this image. Try a simpler visible-feature question or a clearer image."
+  },
+  {
+    "id": "description-265",
+    "reference": null,
+    "raw_answer": "The major visible features in the image are the agricultural fields, which are rectangular and vary in color, indicating different types of crops or different stages of cultivation. The presence of buildings and roads suggests a rural community adjacent to the agricultural land. The greenery interspersed with the fields could be indicative of either a natural landscape or a managed landscape with vegetation that is not currently being cultivated. The image does not provide explicit information about the specific location or the types of crops, but the overall pattern of land use is typical of a rural, agricultural area. Therefore, the answer is The aerial scene is Farmland.",
+    "policy": "bounded-answer-v1",
+    "category": "description",
+    "limitation": "Model interpretation; object identities and locations are not independently verified.",
+    "raw_truncated": false,
+    "changed": true,
+    "withheld": false,
+    "reasons": [
+      "unsupported_or_nonobservational_sentence_withheld",
+      "short_final_scene_label_only"
+    ],
+    "answer": "Farmland.\n\nModel interpretation; object identities and locations are not independently verified."
+  },
+  {
+    "id": "description-243",
+    "reference": null,
+    "raw_answer": "The major visible features in the image are a large, dark blue lake, a winding river, and a densely populated area on the opposite bank. The lake is the central focus, with its deep blue color contrasting with the surrounding greenery. The river appears to be a significant waterway, likely a natural boundary between the two land masses. The densely populated area on the opposite bank suggests a developed urban area, with buildings and possibly residential or commercial structures. The image does not provide any direct information about the specific location or the scale of the features, but the layout suggests a well-established and possibly affluent area. Therefore, the answer is The",
+    "policy": "bounded-answer-v1",
+    "category": "description",
+    "limitation": "Model interpretation; object identities and locations are not independently verified.",
+    "raw_truncated": true,
+    "changed": true,
+    "withheld": false,
+    "reasons": [
+      "use_or_population_claim_generalized"
+    ],
+    "answer": "The major visible features in the image are a large, dark blue lake, a winding river, and a dense built-up areas on the opposite bank. The lake is the central focus, with its deep blue color contrasting with the surrounding greenery.\n\nModel interpretation; object identities and locations are not independently verified."
+  },
+  {
+    "id": "description-dehradun",
+    "reference": null,
+    "raw_answer": "The major visible features in the image are the densely packed residential areas, the green spaces, and the roads that intersect the residential areas. The roads appear to be in good condition, with no visible signs of congestion or accidents. The green spaces are likely parks or gardens, providing a contrast to the urban environment and offering a recreational or aesthetic value to the residents. The image does not provide any direct information about the specific location or the time at which the photograph was taken. Therefore, the answer is The aerial scene is Dense Residential.",
+    "policy": "bounded-answer-v1",
+    "category": "description",
+    "limitation": "Model interpretation; object identities and locations are not independently verified.",
+    "raw_truncated": false,
+    "changed": true,
+    "withheld": false,
+    "reasons": [
+      "use_or_population_claim_generalized",
+      "unsupported_or_nonobservational_sentence_withheld"
+    ],
+    "answer": "The major visible features in the image are the densely packed built-up areas, the green spaces, and the roads that intersect the built-up areas.\n\nModel interpretation; object identities and locations are not independently verified."
+  },
+  {
+    "id": "description-punjab-farmland",
+    "reference": null,
+    "raw_answer": "The major visible features in the image are the agricultural fields, which are rectangular and vary in color, indicating different types of crops or different stages of cultivation. The presence of a road suggests accessibility to these fields, which could be used for transporting goods or farm equipment. The absence of any visible buildings or machinery could imply that the image captures a rural area where such infrastructure is not immediately apparent from this altitude. The image does not provide any direct information about the location or the specific types of crops being grown, but the uniformity of the fields suggests a methodical approach to land use, likely optimized for crop production. Therefore, the answer is",
+    "policy": "bounded-answer-v1",
+    "category": "description",
+    "limitation": "Model interpretation; object identities and locations are not independently verified.",
+    "raw_truncated": true,
+    "changed": true,
+    "withheld": true,
+    "reasons": [
+      "no_complete_bounded_observation"
+    ],
+    "answer": "Cannot determine reliably from this image. Try a simpler visible-feature question or a clearer image."
+  },
+  {
+    "id": "description-bengaluru-lake-city",
+    "reference": null,
+    "raw_answer": "The major visible features in the image are the airport, the lake, and the surrounding urban area. The airport is the central focus, with its runways and taxiways clearly visible. The lake is a significant water body, likely a natural feature given its size and the absence of man-made structures around it. The urban area surrounding the airport is densely packed with buildings, indicating a highly developed cityscape. The presence of green spaces suggests some attention to urban planning and the provision of recreational or aesthetic areas. The image does not provide any direct information about the specific location or the activities taking place at the airport. Therefore, the answer is The",
+    "policy": "bounded-answer-v1",
+    "category": "description",
+    "limitation": "Model interpretation; object identities and locations are not independently verified.",
+    "raw_truncated": true,
+    "changed": true,
+    "withheld": false,
+    "reasons": [],
+    "answer": "The major visible features in the image are the airport, the lake, and the surrounding urban area. The airport is the central focus, with its runways and taxiways clearly visible.\n\nModel interpretation; object identities and locations are not independently verified."
+  },
+  {
+    "id": "description-jaisalmer-arid",
+    "reference": null,
+    "raw_answer": "The major visible features in the image are the urban area, which is densely packed with buildings and roads. The area is characterized by a mix of residential and commercial structures, with the latter appearing as larger, more organized buildings. The presence of a river suggests that the area may have been developed with the river in mind, possibly for water management or as a natural boundary. The lack of green spaces could indicate either a lack of urban planning or the presence of industrial or commercial areas that do not include large parks or gardens. The image does not provide enough detail to determine the specific activities or the socio-economic status of the area. Therefore, the",
+    "policy": "bounded-answer-v1",
+    "category": "description",
+    "limitation": "Model interpretation; object identities and locations are not independently verified.",
+    "raw_truncated": true,
+    "changed": true,
+    "withheld": false,
+    "reasons": [
+      "unsupported_or_nonobservational_sentence_withheld"
+    ],
+    "answer": "The major visible features in the image are the urban area, which is densely packed with buildings and roads.\n\nModel interpretation; object identities and locations are not independently verified."
+  },
+  {
+    "id": "description-sundarbans-coast",
+    "reference": null,
+    "raw_answer": "The major visible features in the image are the winding rivers and the surrounding greenery. The rivers are the most prominent features, with their meandering paths indicating a natural, possibly slow-moving flow. The greenery suggests a healthy, possibly undisturbed ecosystem. The absence of any human-made structures or clearings implies that this area is either remote, protected, or not easily accessible. The image does not provide any direct information about the scale, the exact location, or the time of year, but the presence of snow on the riverbanks suggests that the image could have been taken in a colder season or in a region where snow persists year",
+    "policy": "bounded-answer-v1",
+    "category": "description",
+    "limitation": "Model interpretation; object identities and locations are not independently verified.",
+    "raw_truncated": true,
+    "changed": true,
+    "withheld": false,
+    "reasons": [
+      "unsupported_or_nonobservational_sentence_withheld"
+    ],
+    "answer": "The major visible features in the image are the winding rivers and the surrounding greenery.\n\nModel interpretation; object identities and locations are not independently verified."
+  },
+  {
+    "id": "description-assam-monsoon",
+    "reference": null,
+    "raw_answer": "The major visible features in the image are the densely packed urban area, the river, and the surrounding greenery. The urban area is characterized by a mix of residential and commercial buildings, with roads providing access between different parts of the city. The river appears to be a significant geographical feature, likely a natural boundary or a man-made waterway, given its width and the presence of docks or piers. The greenery suggests that the area may have parks or natural reserves, providing a contrast to the urban environment and offering recreational spaces for the city's inhabitants. The image does not provide any direct information about the specific location or the time at",
+    "policy": "bounded-answer-v1",
+    "category": "description",
+    "limitation": "Model interpretation; object identities and locations are not independently verified.",
+    "raw_truncated": true,
+    "changed": true,
+    "withheld": false,
+    "reasons": [
+      "unsupported_or_nonobservational_sentence_withheld"
+    ],
+    "answer": "The major visible features in the image are the densely packed urban area, the river, and the surrounding greenery.\n\nModel interpretation; object identities and locations are not independently verified."
+  }
+]

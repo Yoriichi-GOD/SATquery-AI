@@ -1,0 +1,11 @@
+{
+  "method": "tifffile decoder; scalar float64 Python arithmetic; TIFF pixel-scale/CRS tags; no application analytical imports",
+  "source_sha256": "55f3ca7b578e045594f8d54419b590c3ffeb99247ec5f74d7b1355d5bc4ec0f8",
+  "valid_pixels": 262144,
+  "selected_pixels": 38761,
+  "percent": 14.786148071289062,
+  "area_hectares": 387.61,
+  "footprint_hectares": 2621.44,
+  "mask_disagreement_pixels": 0,
+  "max_ndvi_absolute_difference": 1.0469680333802245e-07
+}

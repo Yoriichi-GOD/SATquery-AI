@@ -1,0 +1,42 @@
+{
+  "train": {
+    "questions": 720,
+    "images": 120,
+    "source_scenes": [
+      "S2A_MSIL1C_20160720T105032_N0204_R051_T31UFV_20160720T105547",
+      "S2A_MSIL1C_20160720T105032_N0204_R051_T32ULE_20160720T105547",
+      "S2A_MSIL2A_20180630T105031_N0208_R051_T31UET_20180630T144133",
+      "S2B_MSIL1C_20181010T104019_N0206_R008_T31UFT_20181010T161145",
+      "S2B_MSIL1C_20181010T104019_N0206_R008_T31UGT_20181010T161145",
+      "S2B_MSIL1C_20181115T110319_N0207_R094_T31UET_20181115T131313"
+    ],
+    "sha256": "fe5b5e985d3b46fe70a748638f947ec4f3fa636958017d840e092d4c3b89cf04",
+    "answers": {
+      "presence:no": 63,
+      "rural_urban:rural": 67,
+      "comp:yes": 111,
+      "rural_urban:urban": 53,
+      "comp:no": 249,
+      "presence:yes": 177
+    }
+  },
+  "dev": {
+    "questions": 60,
+    "images": 20,
+    "source_scenes": [
+      "S2B_MSIL1C_20181010T104019_N0206_R008_T31UGS_20181010T161145"
+    ],
+    "sha256": "c4ce050ea7fb352804e78032512a70dd5856ef7bcd695f9b56a1ef8861d87f77",
+    "answers": {
+      "comp:yes": 10,
+      "comp:no": 10,
+      "rural_urban:rural": 9,
+      "presence:yes": 16,
+      "rural_urban:urban": 11,
+      "presence:no": 4
+    }
+  },
+  "source": "https://zenodo.org/records/6344334",
+  "seed": 26167,
+  "notes": "Train/dev sampled only from official training split; development source scene wholly excluded from training. Official test scene excluded. Scene disjointness is not proof of zero spatial adjacency. Published labels may be noisy. No test answers used for adaptation."
+}

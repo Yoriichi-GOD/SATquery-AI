@@ -1,0 +1,41 @@
+{
+  "scope": "24 QA on images excluded from prior 60-image diagnostic and adapter train/dev. Official test source scene overlaps prior diagnostic; upstream pretraining exposure unknown. Balanced custom subset, noisy published labels; not full benchmark or 90% quality claim. 10 descriptions require visual review and have no reference accuracy score. Some presence questions are offline diagnostics outside the app allowlist.",
+  "manifest_sha256": "873da74bf37b7acba64b6677930c81064bef50be89796878d01c3ee18143f4ac",
+  "predictions_sha256": "10ee26a74fbcc4c27550070c9a49399795407db2166d724744c4e41d8fc435f0",
+  "policies": {
+    "original": {
+      "total": 24,
+      "correct": 0,
+      "abstentions": 0,
+      "by_category": {
+        "rural_urban": {
+          "total": 12,
+          "correct": 0
+        },
+        "presence": {
+          "total": 12,
+          "correct": 0
+        }
+      },
+      "app_supported_total": 12,
+      "app_supported_correct": 0
+    },
+    "visible-evidence-v1": {
+      "total": 24,
+      "correct": 0,
+      "abstentions": 0,
+      "by_category": {
+        "rural_urban": {
+          "total": 12,
+          "correct": 0
+        },
+        "presence": {
+          "total": 12,
+          "correct": 0
+        }
+      },
+      "app_supported_total": 12,
+      "app_supported_correct": 0
+    }
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "images": [
+    "06739_0000.png",
+    "P0217_0000.png",
+    "P1390_0090.png",
+    "P1598_0050.png"
+  ],
+  "query": "Outline aircraft",
+  "metric": "Best proposal overlap with each airplane reference (oracle proposal recall, NOT referring-expression accuracy). No mask ground truth; no mask IoU. Repeated referring annotations deduplicated by image and reference box.",
+  "threshold": 0.5,
+  "settings": "Unmodified production defaults; no tuning."
+}

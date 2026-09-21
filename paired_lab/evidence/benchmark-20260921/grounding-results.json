@@ -1,0 +1,1141 @@
+[
+  {
+    "image": "06739_0000.png",
+    "run": {
+      "state": "complete",
+      "stage": "Complete",
+      "plan": {
+        "task": "grounding",
+        "version": "unified-rules-v6",
+        "specialist": "Grounding DINO tiny \u2192 SAM base",
+        "device": "CUDA GPU \u00b7 sequential models",
+        "maturity": "experimental",
+        "reason": "Explicit spatial request for a supported object category on one optical image.",
+        "category": "aircraft",
+        "mode": "both",
+        "score_threshold": 0.3,
+        "steps": [
+          "validate optical image",
+          "detect objects",
+          "segment boxes",
+          "save evidence"
+        ]
+      },
+      "events": [
+        {
+          "stage": "Input checks passed; preparing specialist",
+          "at": "2026-09-21T02:15:50Z"
+        },
+        {
+          "stage": "Starting Grounding DINO tiny \u2192 SAM base",
+          "at": "2026-09-21T02:15:50Z"
+        },
+        {
+          "stage": "Preparing RGB preview for experimental grounding",
+          "at": "2026-09-21T02:15:50Z"
+        },
+        {
+          "stage": "Starting isolated worker",
+          "at": "2026-09-21T02:15:50Z"
+        },
+        {
+          "stage": "Loading grounding specialist",
+          "at": "2026-09-21T02:15:55Z"
+        },
+        {
+          "stage": "Finding candidate objects",
+          "at": "2026-09-21T02:15:56Z"
+        },
+        {
+          "stage": "Loading segmentation specialist",
+          "at": "2026-09-21T02:16:01Z"
+        },
+        {
+          "stage": "Tracing object outlines",
+          "at": "2026-09-21T02:16:02Z"
+        },
+        {
+          "stage": "Preparing evidence views",
+          "at": "2026-09-21T02:16:02Z"
+        },
+        {
+          "stage": "Starting isolated worker",
+          "at": "2026-09-21T02:16:05Z"
+        },
+        {
+          "stage": "Collecting grounding evidence",
+          "at": "2026-09-21T02:16:05Z"
+        },
+        {
+          "stage": "Saving result and original inputs",
+          "at": "2026-09-21T02:16:05Z"
+        },
+        {
+          "stage": "Packaging evidence",
+          "at": "2026-09-21T02:16:05Z"
+        }
+      ],
+      "result": {
+        "task": "grounding",
+        "answer": "2 aircraft proposals retained. Inspect predicted masks; object identity is not verified.",
+        "seconds": 8.262,
+        "objects": 2,
+        "detections": [
+          {
+            "id": 1,
+            "box_xyxy": [
+              135.2720489501953,
+              202.64199829101562,
+              408.8382568359375,
+              510.2207336425781
+            ],
+            "detector_score": 0.4371602237224579,
+            "mask_pixels": 26328,
+            "sam_predicted_iou": 0.9249345660209656
+          },
+          {
+            "id": 2,
+            "box_xyxy": [
+              424.9662780761719,
+              335.3929748535156,
+              511.2350769042969,
+              454.2514343261719
+            ],
+            "detector_score": 0.33117595314979553,
+            "mask_pixels": 3432,
+            "sam_predicted_iou": 0.9607012271881104
+          }
+        ],
+        "union_mask_pixels": 29752,
+        "union_mask_percent": 11.3495,
+        "total_image_pixels": 262144,
+        "mode": "both",
+        "confidence": {
+          "kind": "Detector score and SAM predicted IoU are not measured accuracy."
+        },
+        "trace": [
+          {
+            "step": "Load pinned Grounding DINO",
+            "seconds": 1.316
+          },
+          {
+            "step": "Detect, threshold, remove enclosing frame proposals and suppress duplicates",
+            "seconds": 4.627
+          },
+          {
+            "step": "Load pinned SAM Base",
+            "seconds": 0.612
+          },
+          {
+            "step": "Box-prompted segmentation; choose highest SAM predicted IoU mask",
+            "seconds": 0.748
+          },
+          {
+            "step": "Render boxes, outlines and instance masks",
+            "seconds": 0.121
+          },
+          {
+            "tool": "Grounding worker",
+            "run_id": "b2e37c10bcde4e35ae92fc4eefd838da",
+            "models": [
+              {
+                "model": "IDEA-Research/grounding-dino-tiny",
+                "revision": "a2bb814dd30d776dcf7e30523b00659f4f141c71",
+                "path": "/root/.cache/huggingface/hub/models--IDEA-Research--grounding-dino-tiny/snapshots/a2bb814dd30d776dcf7e30523b00659f4f141c71",
+                "license": "apache-2.0"
+              },
+              {
+                "model": "facebook/sam-vit-base",
+                "revision": "70c1a07f894ebb5b307fd9eaaee97b9dfc16068f",
+                "path": "/root/.cache/huggingface/hub/models--facebook--sam-vit-base/snapshots/70c1a07f894ebb5b307fd9eaaee97b9dfc16068f",
+                "license": "apache-2.0"
+              }
+            ],
+            "settings": {
+              "box_threshold": 0.3,
+              "text_threshold": 0.25,
+              "nms_iou": 0.5,
+              "max_objects": 24,
+              "reject_frame_area_fraction": 0.97,
+              "enclosing_area_fraction": 0.9,
+              "enclosed_smaller_ratio": 0.6
+            },
+            "peak_gpu_GiB": 2.678
+          }
+        ],
+        "limitations": [
+          "Experimental pretrained models; no remote-sensing fine-tuning or general accuracy claim.",
+          "Detector score and SAM predicted IoU are model scores, not measured correctness.",
+          "A mask follows a proposed box; it cannot prove the object identity.",
+          "Pixel coverage is the union of predicted masks, not NDVI, hectares or surveyed area.",
+          "Instance PNG assigns overlaps to the first score-ranked object; NPZ preserves overlapping masks.",
+          "Small, obscured or densely packed objects may be missed. Zero candidates means none passed the settings, not proof of absence.",
+          "Analysis uses the normalized RGB preview; original upload is retained separately. GeoTIFF preview stretching is display-only, not spectral analysis."
+        ],
+        "execution": {
+          "task": "grounding",
+          "version": "unified-rules-v6",
+          "specialist": "Grounding DINO tiny \u2192 SAM base",
+          "device": "CUDA GPU \u00b7 sequential models",
+          "maturity": "experimental",
+          "reason": "Explicit spatial request for a supported object category on one optical image.",
+          "category": "aircraft",
+          "mode": "both",
+          "score_threshold": 0.3,
+          "steps": [
+            "validate optical image",
+            "detect objects",
+            "segment boxes",
+            "save evidence"
+          ]
+        },
+        "id": "ca19af573c8449aca3dfdc473fd31364",
+        "query": "Outline aircraft",
+        "input_checks": {
+          "task": "grounding",
+          "inputs": [
+            {
+              "id": "f3ee99dacb5e4a1ab1a9905ea155eda6",
+              "name": "06739_0000.png",
+              "width": 512,
+              "height": 512,
+              "bytes": 460537,
+              "sha256": "4b70b24b57089fed66f45b6136c241d4fcb4e52be03e8b4c8494a462ae6640d7",
+              "preview": "/api/images/a84f6b869e3847a3844164b4a75cf724",
+              "geo": null,
+              "main_id": "a84f6b869e3847a3844164b4a75cf724",
+              "modality": "optical",
+              "is_single": true
+            }
+          ],
+          "plan": {
+            "task": "grounding",
+            "version": "unified-rules-v6",
+            "specialist": "Grounding DINO tiny \u2192 SAM base",
+            "device": "CUDA GPU \u00b7 sequential models",
+            "maturity": "experimental",
+            "reason": "Explicit spatial request for a supported object category on one optical image.",
+            "category": "aircraft",
+            "mode": "both",
+            "score_threshold": 0.3,
+            "steps": [
+              "validate optical image",
+              "detect objects",
+              "segment boxes",
+              "save evidence"
+            ]
+          }
+        },
+        "controller": "unified-rules-v6",
+        "created_at": "2026-09-21T02:16:05Z",
+        "execution_events": [
+          {
+            "stage": "Input checks passed; preparing specialist",
+            "at": "2026-09-21T02:15:50Z"
+          },
+          {
+            "stage": "Starting Grounding DINO tiny \u2192 SAM base",
+            "at": "2026-09-21T02:15:50Z"
+          },
+          {
+            "stage": "Preparing RGB preview for experimental grounding",
+            "at": "2026-09-21T02:15:50Z"
+          },
+          {
+            "stage": "Starting isolated worker",
+            "at": "2026-09-21T02:15:50Z"
+          },
+          {
+            "stage": "Loading grounding specialist",
+            "at": "2026-09-21T02:15:55Z"
+          },
+          {
+            "stage": "Finding candidate objects",
+            "at": "2026-09-21T02:15:56Z"
+          },
+          {
+            "stage": "Loading segmentation specialist",
+            "at": "2026-09-21T02:16:01Z"
+          },
+          {
+            "stage": "Tracing object outlines",
+            "at": "2026-09-21T02:16:02Z"
+          },
+          {
+            "stage": "Preparing evidence views",
+            "at": "2026-09-21T02:16:02Z"
+          },
+          {
+            "stage": "Starting isolated worker",
+            "at": "2026-09-21T02:16:05Z"
+          },
+          {
+            "stage": "Collecting grounding evidence",
+            "at": "2026-09-21T02:16:05Z"
+          },
+          {
+            "stage": "Saving result and original inputs",
+            "at": "2026-09-21T02:16:05Z"
+          },
+          {
+            "stage": "Packaging evidence",
+            "at": "2026-09-21T02:16:05Z"
+          }
+        ],
+        "work_seconds_before_zip": 14.596079398994334
+      },
+      "request_seconds": 14.628809902002104,
+      "end_to_end_seconds": 14.90666015300667,
+      "archive_verified": true
+    },
+    "references": [
+      {
+        "reference": [
+          0.29,
+          0.48,
+          0.78,
+          1.0
+        ],
+        "best_proposal_iou": 0.7843513066629699,
+        "hit_at_0_5": true
+      }
+    ]
+  },
+  {
+    "image": "P0217_0000.png",
+    "run": {
+      "state": "complete",
+      "stage": "Complete",
+      "plan": {
+        "task": "grounding",
+        "version": "unified-rules-v6",
+        "specialist": "Grounding DINO tiny \u2192 SAM base",
+        "device": "CUDA GPU \u00b7 sequential models",
+        "maturity": "experimental",
+        "reason": "Explicit spatial request for a supported object category on one optical image.",
+        "category": "aircraft",
+        "mode": "both",
+        "score_threshold": 0.3,
+        "steps": [
+          "validate optical image",
+          "detect objects",
+          "segment boxes",
+          "save evidence"
+        ]
+      },
+      "events": [
+        {
+          "stage": "Input checks passed; preparing specialist",
+          "at": "2026-09-21T02:16:05Z"
+        },
+        {
+          "stage": "Starting Grounding DINO tiny \u2192 SAM base",
+          "at": "2026-09-21T02:16:05Z"
+        },
+        {
+          "stage": "Preparing RGB preview for experimental grounding",
+          "at": "2026-09-21T02:16:05Z"
+        },
+        {
+          "stage": "Starting isolated worker",
+          "at": "2026-09-21T02:16:05Z"
+        },
+        {
+          "stage": "Loading grounding specialist",
+          "at": "2026-09-21T02:16:08Z"
+        },
+        {
+          "stage": "Finding candidate objects",
+          "at": "2026-09-21T02:16:09Z"
+        },
+        {
+          "stage": "Tracing object outlines",
+          "at": "2026-09-21T02:16:11Z"
+        },
+        {
+          "stage": "Preparing evidence views",
+          "at": "2026-09-21T02:16:12Z"
+        },
+        {
+          "stage": "Starting isolated worker",
+          "at": "2026-09-21T02:16:13Z"
+        },
+        {
+          "stage": "Collecting grounding evidence",
+          "at": "2026-09-21T02:16:13Z"
+        },
+        {
+          "stage": "Saving result and original inputs",
+          "at": "2026-09-21T02:16:13Z"
+        },
+        {
+          "stage": "Packaging evidence",
+          "at": "2026-09-21T02:16:13Z"
+        }
+      ],
+      "result": {
+        "task": "grounding",
+        "answer": "1 aircraft proposals retained. Inspect predicted masks; object identity is not verified.",
+        "seconds": 4.528,
+        "objects": 1,
+        "detections": [
+          {
+            "id": 1,
+            "box_xyxy": [
+              326.2608337402344,
+              175.11859130859375,
+              511.9359436035156,
+              368.99530029296875
+            ],
+            "detector_score": 0.5724024176597595,
+            "mask_pixels": 8844,
+            "sam_predicted_iou": 0.8563786149024963
+          }
+        ],
+        "union_mask_pixels": 8844,
+        "union_mask_percent": 3.3737,
+        "total_image_pixels": 262144,
+        "mode": "both",
+        "confidence": {
+          "kind": "Detector score and SAM predicted IoU are not measured accuracy."
+        },
+        "trace": [
+          {
+            "step": "Load pinned Grounding DINO",
+            "seconds": 0.521
+          },
+          {
+            "step": "Detect, threshold, remove enclosing frame proposals and suppress duplicates",
+            "seconds": 2.326
+          },
+          {
+            "step": "Load pinned SAM Base",
+            "seconds": 0.15
+          },
+          {
+            "step": "Box-prompted segmentation; choose highest SAM predicted IoU mask",
+            "seconds": 0.727
+          },
+          {
+            "step": "Render boxes, outlines and instance masks",
+            "seconds": 0.129
+          },
+          {
+            "tool": "Grounding worker",
+            "run_id": "67d9eb0d5bf645109a21cadd5ebcebf9",
+            "models": [
+              {
+                "model": "IDEA-Research/grounding-dino-tiny",
+                "revision": "a2bb814dd30d776dcf7e30523b00659f4f141c71",
+                "path": "/root/.cache/huggingface/hub/models--IDEA-Research--grounding-dino-tiny/snapshots/a2bb814dd30d776dcf7e30523b00659f4f141c71",
+                "license": "apache-2.0"
+              },
+              {
+                "model": "facebook/sam-vit-base",
+                "revision": "70c1a07f894ebb5b307fd9eaaee97b9dfc16068f",
+                "path": "/root/.cache/huggingface/hub/models--facebook--sam-vit-base/snapshots/70c1a07f894ebb5b307fd9eaaee97b9dfc16068f",
+                "license": "apache-2.0"
+              }
+            ],
+            "settings": {
+              "box_threshold": 0.3,
+              "text_threshold": 0.25,
+              "nms_iou": 0.5,
+              "max_objects": 24,
+              "reject_frame_area_fraction": 0.97,
+              "enclosing_area_fraction": 0.9,
+              "enclosed_smaller_ratio": 0.6
+            },
+            "peak_gpu_GiB": 2.678
+          }
+        ],
+        "limitations": [
+          "Experimental pretrained models; no remote-sensing fine-tuning or general accuracy claim.",
+          "Detector score and SAM predicted IoU are model scores, not measured correctness.",
+          "A mask follows a proposed box; it cannot prove the object identity.",
+          "Pixel coverage is the union of predicted masks, not NDVI, hectares or surveyed area.",
+          "Instance PNG assigns overlaps to the first score-ranked object; NPZ preserves overlapping masks.",
+          "Small, obscured or densely packed objects may be missed. Zero candidates means none passed the settings, not proof of absence.",
+          "Analysis uses the normalized RGB preview; original upload is retained separately. GeoTIFF preview stretching is display-only, not spectral analysis."
+        ],
+        "execution": {
+          "task": "grounding",
+          "version": "unified-rules-v6",
+          "specialist": "Grounding DINO tiny \u2192 SAM base",
+          "device": "CUDA GPU \u00b7 sequential models",
+          "maturity": "experimental",
+          "reason": "Explicit spatial request for a supported object category on one optical image.",
+          "category": "aircraft",
+          "mode": "both",
+          "score_threshold": 0.3,
+          "steps": [
+            "validate optical image",
+            "detect objects",
+            "segment boxes",
+            "save evidence"
+          ]
+        },
+        "id": "52ef5ea3800e42a68553b362d726edc7",
+        "query": "Outline aircraft",
+        "input_checks": {
+          "task": "grounding",
+          "inputs": [
+            {
+              "id": "307e2ea41d9e4e58a95e0dda717255d3",
+              "name": "P0217_0000.png",
+              "width": 512,
+              "height": 512,
+              "bytes": 499586,
+              "sha256": "74cddc3e2fc23b9e8c7c5d914ec61dd491ad6bd03c8ca6680e7cdc682f2def1f",
+              "preview": "/api/images/88b4441337f04b76b2301cfe69a180b3",
+              "geo": null,
+              "main_id": "88b4441337f04b76b2301cfe69a180b3",
+              "modality": "optical",
+              "is_single": true
+            }
+          ],
+          "plan": {
+            "task": "grounding",
+            "version": "unified-rules-v6",
+            "specialist": "Grounding DINO tiny \u2192 SAM base",
+            "device": "CUDA GPU \u00b7 sequential models",
+            "maturity": "experimental",
+            "reason": "Explicit spatial request for a supported object category on one optical image.",
+            "category": "aircraft",
+            "mode": "both",
+            "score_threshold": 0.3,
+            "steps": [
+              "validate optical image",
+              "detect objects",
+              "segment boxes",
+              "save evidence"
+            ]
+          }
+        },
+        "controller": "unified-rules-v6",
+        "created_at": "2026-09-21T02:16:13Z",
+        "execution_events": [
+          {
+            "stage": "Input checks passed; preparing specialist",
+            "at": "2026-09-21T02:16:05Z"
+          },
+          {
+            "stage": "Starting Grounding DINO tiny \u2192 SAM base",
+            "at": "2026-09-21T02:16:05Z"
+          },
+          {
+            "stage": "Preparing RGB preview for experimental grounding",
+            "at": "2026-09-21T02:16:05Z"
+          },
+          {
+            "stage": "Starting isolated worker",
+            "at": "2026-09-21T02:16:05Z"
+          },
+          {
+            "stage": "Loading grounding specialist",
+            "at": "2026-09-21T02:16:08Z"
+          },
+          {
+            "stage": "Finding candidate objects",
+            "at": "2026-09-21T02:16:09Z"
+          },
+          {
+            "stage": "Tracing object outlines",
+            "at": "2026-09-21T02:16:11Z"
+          },
+          {
+            "stage": "Preparing evidence views",
+            "at": "2026-09-21T02:16:12Z"
+          },
+          {
+            "stage": "Starting isolated worker",
+            "at": "2026-09-21T02:16:13Z"
+          },
+          {
+            "stage": "Collecting grounding evidence",
+            "at": "2026-09-21T02:16:13Z"
+          },
+          {
+            "stage": "Saving result and original inputs",
+            "at": "2026-09-21T02:16:13Z"
+          },
+          {
+            "stage": "Packaging evidence",
+            "at": "2026-09-21T02:16:13Z"
+          }
+        ],
+        "work_seconds_before_zip": 7.74821351999708
+      },
+      "request_seconds": 7.788005536000128,
+      "end_to_end_seconds": 7.955425526000909,
+      "archive_verified": true
+    },
+    "references": [
+      {
+        "reference": [
+          0.6,
+          0.3,
+          1.0,
+          0.8
+        ],
+        "best_proposal_iou": 0.6866088722344443,
+        "hit_at_0_5": true
+      },
+      {
+        "reference": [
+          0.9,
+          0.83,
+          1.0,
+          1.0
+        ],
+        "best_proposal_iou": 0.0,
+        "hit_at_0_5": false
+      }
+    ]
+  },
+  {
+    "image": "P1390_0090.png",
+    "run": {
+      "state": "complete",
+      "stage": "Complete",
+      "plan": {
+        "task": "grounding",
+        "version": "unified-rules-v6",
+        "specialist": "Grounding DINO tiny \u2192 SAM base",
+        "device": "CUDA GPU \u00b7 sequential models",
+        "maturity": "experimental",
+        "reason": "Explicit spatial request for a supported object category on one optical image.",
+        "category": "aircraft",
+        "mode": "both",
+        "score_threshold": 0.3,
+        "steps": [
+          "validate optical image",
+          "detect objects",
+          "segment boxes",
+          "save evidence"
+        ]
+      },
+      "events": [
+        {
+          "stage": "Input checks passed; preparing specialist",
+          "at": "2026-09-21T02:16:13Z"
+        },
+        {
+          "stage": "Starting Grounding DINO tiny \u2192 SAM base",
+          "at": "2026-09-21T02:16:13Z"
+        },
+        {
+          "stage": "Preparing RGB preview for experimental grounding",
+          "at": "2026-09-21T02:16:13Z"
+        },
+        {
+          "stage": "Starting isolated worker",
+          "at": "2026-09-21T02:16:13Z"
+        },
+        {
+          "stage": "Loading grounding specialist",
+          "at": "2026-09-21T02:16:16Z"
+        },
+        {
+          "stage": "Finding candidate objects",
+          "at": "2026-09-21T02:16:17Z"
+        },
+        {
+          "stage": "Tracing object outlines",
+          "at": "2026-09-21T02:16:19Z"
+        },
+        {
+          "stage": "Preparing evidence views",
+          "at": "2026-09-21T02:16:20Z"
+        },
+        {
+          "stage": "Starting isolated worker",
+          "at": "2026-09-21T02:16:21Z"
+        },
+        {
+          "stage": "Collecting grounding evidence",
+          "at": "2026-09-21T02:16:21Z"
+        },
+        {
+          "stage": "Saving result and original inputs",
+          "at": "2026-09-21T02:16:21Z"
+        },
+        {
+          "stage": "Packaging evidence",
+          "at": "2026-09-21T02:16:21Z"
+        }
+      ],
+      "result": {
+        "task": "grounding",
+        "answer": "1 aircraft proposals retained. Inspect predicted masks; object identity is not verified.",
+        "seconds": 4.463,
+        "objects": 1,
+        "detections": [
+          {
+            "id": 1,
+            "box_xyxy": [
+              0.0212860107421875,
+              333.36322021484375,
+              93.73350524902344,
+              484.280517578125
+            ],
+            "detector_score": 0.7502538561820984,
+            "mask_pixels": 5348,
+            "sam_predicted_iou": 0.9664770364761353
+          }
+        ],
+        "union_mask_pixels": 5348,
+        "union_mask_percent": 2.0401,
+        "total_image_pixels": 262144,
+        "mode": "both",
+        "confidence": {
+          "kind": "Detector score and SAM predicted IoU are not measured accuracy."
+        },
+        "trace": [
+          {
+            "step": "Load pinned Grounding DINO",
+            "seconds": 0.464
+          },
+          {
+            "step": "Detect, threshold, remove enclosing frame proposals and suppress duplicates",
+            "seconds": 2.285
+          },
+          {
+            "step": "Load pinned SAM Base",
+            "seconds": 0.284
+          },
+          {
+            "step": "Box-prompted segmentation; choose highest SAM predicted IoU mask",
+            "seconds": 0.627
+          },
+          {
+            "step": "Render boxes, outlines and instance masks",
+            "seconds": 0.111
+          },
+          {
+            "tool": "Grounding worker",
+            "run_id": "fc5f2b65efbc4ffabdea7980951ea1d9",
+            "models": [
+              {
+                "model": "IDEA-Research/grounding-dino-tiny",
+                "revision": "a2bb814dd30d776dcf7e30523b00659f4f141c71",
+                "path": "/root/.cache/huggingface/hub/models--IDEA-Research--grounding-dino-tiny/snapshots/a2bb814dd30d776dcf7e30523b00659f4f141c71",
+                "license": "apache-2.0"
+              },
+              {
+                "model": "facebook/sam-vit-base",
+                "revision": "70c1a07f894ebb5b307fd9eaaee97b9dfc16068f",
+                "path": "/root/.cache/huggingface/hub/models--facebook--sam-vit-base/snapshots/70c1a07f894ebb5b307fd9eaaee97b9dfc16068f",
+                "license": "apache-2.0"
+              }
+            ],
+            "settings": {
+              "box_threshold": 0.3,
+              "text_threshold": 0.25,
+              "nms_iou": 0.5,
+              "max_objects": 24,
+              "reject_frame_area_fraction": 0.97,
+              "enclosing_area_fraction": 0.9,
+              "enclosed_smaller_ratio": 0.6
+            },
+            "peak_gpu_GiB": 2.678
+          }
+        ],
+        "limitations": [
+          "Experimental pretrained models; no remote-sensing fine-tuning or general accuracy claim.",
+          "Detector score and SAM predicted IoU are model scores, not measured correctness.",
+          "A mask follows a proposed box; it cannot prove the object identity.",
+          "Pixel coverage is the union of predicted masks, not NDVI, hectares or surveyed area.",
+          "Instance PNG assigns overlaps to the first score-ranked object; NPZ preserves overlapping masks.",
+          "Small, obscured or densely packed objects may be missed. Zero candidates means none passed the settings, not proof of absence.",
+          "Analysis uses the normalized RGB preview; original upload is retained separately. GeoTIFF preview stretching is display-only, not spectral analysis."
+        ],
+        "execution": {
+          "task": "grounding",
+          "version": "unified-rules-v6",
+          "specialist": "Grounding DINO tiny \u2192 SAM base",
+          "device": "CUDA GPU \u00b7 sequential models",
+          "maturity": "experimental",
+          "reason": "Explicit spatial request for a supported object category on one optical image.",
+          "category": "aircraft",
+          "mode": "both",
+          "score_threshold": 0.3,
+          "steps": [
+            "validate optical image",
+            "detect objects",
+            "segment boxes",
+            "save evidence"
+          ]
+        },
+        "id": "10649900099c4de8829248e3ef7e51a4",
+        "query": "Outline aircraft",
+        "input_checks": {
+          "task": "grounding",
+          "inputs": [
+            {
+              "id": "cf2141469b5740568aefb6594f1a8130",
+              "name": "P1390_0090.png",
+              "width": 512,
+              "height": 512,
+              "bytes": 408998,
+              "sha256": "f9d7a5f9a23ac31c9f63322296179349de8868b88da1f66a675c5305c056c809",
+              "preview": "/api/images/6f17e8c340cb47f7b7372dce4541603b",
+              "geo": null,
+              "main_id": "6f17e8c340cb47f7b7372dce4541603b",
+              "modality": "optical",
+              "is_single": true
+            }
+          ],
+          "plan": {
+            "task": "grounding",
+            "version": "unified-rules-v6",
+            "specialist": "Grounding DINO tiny \u2192 SAM base",
+            "device": "CUDA GPU \u00b7 sequential models",
+            "maturity": "experimental",
+            "reason": "Explicit spatial request for a supported object category on one optical image.",
+            "category": "aircraft",
+            "mode": "both",
+            "score_threshold": 0.3,
+            "steps": [
+              "validate optical image",
+              "detect objects",
+              "segment boxes",
+              "save evidence"
+            ]
+          }
+        },
+        "controller": "unified-rules-v6",
+        "created_at": "2026-09-21T02:16:21Z",
+        "execution_events": [
+          {
+            "stage": "Input checks passed; preparing specialist",
+            "at": "2026-09-21T02:16:13Z"
+          },
+          {
+            "stage": "Starting Grounding DINO tiny \u2192 SAM base",
+            "at": "2026-09-21T02:16:13Z"
+          },
+          {
+            "stage": "Preparing RGB preview for experimental grounding",
+            "at": "2026-09-21T02:16:13Z"
+          },
+          {
+            "stage": "Starting isolated worker",
+            "at": "2026-09-21T02:16:13Z"
+          },
+          {
+            "stage": "Loading grounding specialist",
+            "at": "2026-09-21T02:16:16Z"
+          },
+          {
+            "stage": "Finding candidate objects",
+            "at": "2026-09-21T02:16:17Z"
+          },
+          {
+            "stage": "Tracing object outlines",
+            "at": "2026-09-21T02:16:19Z"
+          },
+          {
+            "stage": "Preparing evidence views",
+            "at": "2026-09-21T02:16:20Z"
+          },
+          {
+            "stage": "Starting isolated worker",
+            "at": "2026-09-21T02:16:21Z"
+          },
+          {
+            "stage": "Collecting grounding evidence",
+            "at": "2026-09-21T02:16:21Z"
+          },
+          {
+            "stage": "Saving result and original inputs",
+            "at": "2026-09-21T02:16:21Z"
+          },
+          {
+            "stage": "Packaging evidence",
+            "at": "2026-09-21T02:16:21Z"
+          }
+        ],
+        "work_seconds_before_zip": 7.750303962995531
+      },
+      "request_seconds": 7.777244918004726,
+      "end_to_end_seconds": 7.953696657001274,
+      "archive_verified": true
+    },
+    "references": [
+      {
+        "reference": [
+          0.0,
+          0.69,
+          0.19,
+          0.96
+        ],
+        "best_proposal_iou": 0.801619580488623,
+        "hit_at_0_5": true
+      }
+    ]
+  },
+  {
+    "image": "P1598_0050.png",
+    "run": {
+      "state": "complete",
+      "stage": "Complete",
+      "plan": {
+        "task": "grounding",
+        "version": "unified-rules-v6",
+        "specialist": "Grounding DINO tiny \u2192 SAM base",
+        "device": "CUDA GPU \u00b7 sequential models",
+        "maturity": "experimental",
+        "reason": "Explicit spatial request for a supported object category on one optical image.",
+        "category": "aircraft",
+        "mode": "both",
+        "score_threshold": 0.3,
+        "steps": [
+          "validate optical image",
+          "detect objects",
+          "segment boxes",
+          "save evidence"
+        ]
+      },
+      "events": [
+        {
+          "stage": "Input checks passed; preparing specialist",
+          "at": "2026-09-21T02:16:21Z"
+        },
+        {
+          "stage": "Starting Grounding DINO tiny \u2192 SAM base",
+          "at": "2026-09-21T02:16:21Z"
+        },
+        {
+          "stage": "Preparing RGB preview for experimental grounding",
+          "at": "2026-09-21T02:16:21Z"
+        },
+        {
+          "stage": "Starting isolated worker",
+          "at": "2026-09-21T02:16:21Z"
+        },
+        {
+          "stage": "Loading grounding specialist",
+          "at": "2026-09-21T02:16:24Z"
+        },
+        {
+          "stage": "Finding candidate objects",
+          "at": "2026-09-21T02:16:25Z"
+        },
+        {
+          "stage": "Preparing evidence views",
+          "at": "2026-09-21T02:16:27Z"
+        },
+        {
+          "stage": "Starting isolated worker",
+          "at": "2026-09-21T02:16:28Z"
+        },
+        {
+          "stage": "Collecting grounding evidence",
+          "at": "2026-09-21T02:16:28Z"
+        },
+        {
+          "stage": "Saving result and original inputs",
+          "at": "2026-09-21T02:16:28Z"
+        },
+        {
+          "stage": "Packaging evidence",
+          "at": "2026-09-21T02:16:28Z"
+        }
+      ],
+      "result": {
+        "task": "grounding",
+        "answer": "0 aircraft proposals retained. No proposals passed the settings; this does not establish absence.",
+        "seconds": 3.138,
+        "objects": 0,
+        "detections": [],
+        "union_mask_pixels": 0,
+        "union_mask_percent": 0.0,
+        "total_image_pixels": 262144,
+        "mode": "both",
+        "confidence": {
+          "kind": "Detector score and SAM predicted IoU are not measured accuracy."
+        },
+        "trace": [
+          {
+            "step": "Load pinned Grounding DINO",
+            "seconds": 0.555
+          },
+          {
+            "step": "Detect, threshold, remove enclosing frame proposals and suppress duplicates",
+            "seconds": 2.016
+          },
+          {
+            "step": "Render boxes, outlines and instance masks",
+            "seconds": 0.067
+          },
+          {
+            "tool": "Grounding worker",
+            "run_id": "f31e83d50c524d0aa9497ed61a5ec419",
+            "models": [
+              {
+                "model": "IDEA-Research/grounding-dino-tiny",
+                "revision": "a2bb814dd30d776dcf7e30523b00659f4f141c71",
+                "path": "/root/.cache/huggingface/hub/models--IDEA-Research--grounding-dino-tiny/snapshots/a2bb814dd30d776dcf7e30523b00659f4f141c71",
+                "license": "apache-2.0"
+              },
+              {
+                "model": "facebook/sam-vit-base",
+                "revision": "70c1a07f894ebb5b307fd9eaaee97b9dfc16068f",
+                "path": "/root/.cache/huggingface/hub/models--facebook--sam-vit-base/snapshots/70c1a07f894ebb5b307fd9eaaee97b9dfc16068f",
+                "license": "apache-2.0"
+              }
+            ],
+            "settings": {
+              "box_threshold": 0.3,
+              "text_threshold": 0.25,
+              "nms_iou": 0.5,
+              "max_objects": 24,
+              "reject_frame_area_fraction": 0.97,
+              "enclosing_area_fraction": 0.9,
+              "enclosed_smaller_ratio": 0.6
+            },
+            "peak_gpu_GiB": 1.444
+          }
+        ],
+        "limitations": [
+          "Experimental pretrained models; no remote-sensing fine-tuning or general accuracy claim.",
+          "Detector score and SAM predicted IoU are model scores, not measured correctness.",
+          "A mask follows a proposed box; it cannot prove the object identity.",
+          "Pixel coverage is the union of predicted masks, not NDVI, hectares or surveyed area.",
+          "Instance PNG assigns overlaps to the first score-ranked object; NPZ preserves overlapping masks.",
+          "Small, obscured or densely packed objects may be missed. Zero candidates means none passed the settings, not proof of absence.",
+          "Analysis uses the normalized RGB preview; original upload is retained separately. GeoTIFF preview stretching is display-only, not spectral analysis."
+        ],
+        "execution": {
+          "task": "grounding",
+          "version": "unified-rules-v6",
+          "specialist": "Grounding DINO tiny \u2192 SAM base",
+          "device": "CUDA GPU \u00b7 sequential models",
+          "maturity": "experimental",
+          "reason": "Explicit spatial request for a supported object category on one optical image.",
+          "category": "aircraft",
+          "mode": "both",
+          "score_threshold": 0.3,
+          "steps": [
+            "validate optical image",
+            "detect objects",
+            "segment boxes",
+            "save evidence"
+          ]
+        },
+        "id": "8d668b1139e946d7a0ac1d9a819e99a7",
+        "query": "Outline aircraft",
+        "input_checks": {
+          "task": "grounding",
+          "inputs": [
+            {
+              "id": "fe3443ea9ecd40a6b25bf9d95d973e76",
+              "name": "P1598_0050.png",
+              "width": 512,
+              "height": 512,
+              "bytes": 257107,
+              "sha256": "05f296842ac9965ffbba08390dc07a5c7dbb78dffc5e366e0b5efec4abb46cf5",
+              "preview": "/api/images/acc9d638b7994099b9694313b801f545",
+              "geo": null,
+              "main_id": "acc9d638b7994099b9694313b801f545",
+              "modality": "optical",
+              "is_single": true
+            }
+          ],
+          "plan": {
+            "task": "grounding",
+            "version": "unified-rules-v6",
+            "specialist": "Grounding DINO tiny \u2192 SAM base",
+            "device": "CUDA GPU \u00b7 sequential models",
+            "maturity": "experimental",
+            "reason": "Explicit spatial request for a supported object category on one optical image.",
+            "category": "aircraft",
+            "mode": "both",
+            "score_threshold": 0.3,
+            "steps": [
+              "validate optical image",
+              "detect objects",
+              "segment boxes",
+              "save evidence"
+            ]
+          }
+        },
+        "controller": "unified-rules-v6",
+        "created_at": "2026-09-21T02:16:28Z",
+        "execution_events": [
+          {
+            "stage": "Input checks passed; preparing specialist",
+            "at": "2026-09-21T02:16:21Z"
+          },
+          {
+            "stage": "Starting Grounding DINO tiny \u2192 SAM base",
+            "at": "2026-09-21T02:16:21Z"
+          },
+          {
+            "stage": "Preparing RGB preview for experimental grounding",
+            "at": "2026-09-21T02:16:21Z"
+          },
+          {
+            "stage": "Starting isolated worker",
+            "at": "2026-09-21T02:16:21Z"
+          },
+          {
+            "stage": "Loading grounding specialist",
+            "at": "2026-09-21T02:16:24Z"
+          },
+          {
+            "stage": "Finding candidate objects",
+            "at": "2026-09-21T02:16:25Z"
+          },
+          {
+            "stage": "Preparing evidence views",
+            "at": "2026-09-21T02:16:27Z"
+          },
+          {
+            "stage": "Starting isolated worker",
+            "at": "2026-09-21T02:16:28Z"
+          },
+          {
+            "stage": "Collecting grounding evidence",
+            "at": "2026-09-21T02:16:28Z"
+          },
+          {
+            "stage": "Saving result and original inputs",
+            "at": "2026-09-21T02:16:28Z"
+          },
+          {
+            "stage": "Packaging evidence",
+            "at": "2026-09-21T02:16:28Z"
+          }
+        ],
+        "work_seconds_before_zip": 6.505625242003589
+      },
+      "request_seconds": 6.520333990993095,
+      "end_to_end_seconds": 6.715657926004496,
+      "archive_verified": true
+    },
+    "references": [
+      {
+        "reference": [
+          0.18,
+          0.56,
+          0.24,
+          0.63
+        ],
+        "best_proposal_iou": 0,
+        "hit_at_0_5": false
+      },
+      {
+        "reference": [
+          0.29,
+          0.65,
+          0.38,
+          0.75
+        ],
+        "best_proposal_iou": 0,
+        "hit_at_0_5": false
+      }
+    ]
+  }
+]

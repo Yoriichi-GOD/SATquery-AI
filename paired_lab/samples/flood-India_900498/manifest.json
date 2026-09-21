@@ -1,0 +1,28 @@
+{
+  "id": "flood-India_900498",
+  "kind": "water_map",
+  "name": "India \u00b7 900498 (test)",
+  "source": "Sen1Floods11 v1.1 hand-labelled",
+  "benchmark": "Official test split; first chip per event, not selected by prediction quality",
+  "files": [
+    "optical.tif",
+    "sar.tif"
+  ],
+  "source_files": [
+    {
+      "source": "/root/satquery/paired-lab/sen1floods11/S2Hand/India_900498_S2Hand.tif",
+      "source_sha256": "ee898621b387a731503a01960397599f209b45c268d4e088689928c704dbe968",
+      "export_sha256": "d4425d3a158a2f8f06165ccc43fd685330302b2a51cfa6fd86796fea87ea06ac"
+    },
+    {
+      "source": "/root/satquery/paired-lab/sen1floods11/S1Hand/India_900498_S1Hand.tif",
+      "source_sha256": "83bc6bca280cb51264028515c944928ea2201386bee411d8bb5cabbcb51cc4a6",
+      "export_sha256": "27b3735fc750c61b45d756f9d163a005a21fc82e54cf64f04dc293bb975a6f0a"
+    }
+  ],
+  "dates": {
+    "optical": "2016/08/12",
+    "sar": "2016/08/12"
+  },
+  "reference": "/root/satquery/paired-lab/sen1floods11/LabelHand/India_900498_LabelHand.tif"
+}

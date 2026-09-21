@@ -1,0 +1,330 @@
+{
+  "source": "https://raw.githubusercontent.com/rasterio/rasterio/main/tests/data/RGB.byte.tif",
+  "sha256": "d7cbe932c7ed74a627706a9e9df99f706df3e5abc7d45a49e9d00677a6b09eb4",
+  "upload": {
+    "id": "548bcd88a8da422894d042e5ef63716a",
+    "name": "RGB.byte.tif",
+    "width": 791,
+    "height": 718,
+    "bytes": 1745956,
+    "sha256": "d7cbe932c7ed74a627706a9e9df99f706df3e5abc7d45a49e9d00677a6b09eb4",
+    "preview": "/api/images/5beb2cf4392f4af088ca5c89f32911cb",
+    "geo": {
+      "calibration_version": "user-supplied",
+      "crs": "EPSG:32618",
+      "width": 791,
+      "height": 718,
+      "transform": [
+        300.0379266750948,
+        0.0,
+        101985.0,
+        0.0,
+        -300.041782729805,
+        2826915.0
+      ],
+      "bounds": [
+        101985.0,
+        2611485.0,
+        339315.0,
+        2826915.0
+      ],
+      "bounds_wgs84": [
+        -78.95864996539397,
+        23.564991210892646,
+        -76.57492370013779,
+        25.550873767434343
+      ],
+      "resolution": [
+        300.0379266750948,
+        300.041782729805
+      ],
+      "bands": {
+        "red": 1,
+        "green": 2,
+        "blue": 3
+      },
+      "band_descriptions": [
+        null,
+        null,
+        null
+      ],
+      "nodata": "0.0",
+      "scales": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "offsets": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "acquired": null,
+      "source_item": null,
+      "attribution": null,
+      "ndvi_supported": false,
+      "quality_mask_available": false,
+      "preview_processing": "Per-channel 2nd\u201398th percentile RGB display stretch; analytical values are preserved."
+    },
+    "main_id": "5beb2cf4392f4af088ca5c89f32911cb",
+    "modality": "optical",
+    "is_single": true
+  },
+  "scope": "External GeoTIFF interoperability and refusal checks, not caption accuracy or a new sensor benchmark.",
+  "ndvi_refusal": {
+    "detail": "NDVI needs labelled, calibrated Red/NIR surface-reflectance bands. RGB alone cannot answer this request."
+  },
+  "run": {
+    "state": "complete",
+    "stage": "Complete",
+    "plan": {
+      "task": "vqa",
+      "version": "unified-rules-v3",
+      "specialist": "Remote-sensing Qwen2-VL-2B",
+      "device": "CUDA GPU",
+      "maturity": "supported",
+      "reason": "Supported descriptive or presence question about one optical image; no quantitative or spatial output requested.",
+      "decision": {
+        "tool": "vqa",
+        "rule": "single_image_description",
+        "reason": "Supported descriptive or presence question about one optical image; no quantitative or spatial output requested.",
+        "version": "rules-v5"
+      },
+      "mode": "baseline",
+      "threshold": 0.5,
+      "steps": [
+        "validate image",
+        "vqa",
+        "save evidence"
+      ]
+    },
+    "events": [
+      {
+        "stage": "Input checks passed; preparing specialist",
+        "at": "2026-09-20T15:17:49Z"
+      },
+      {
+        "stage": "Starting Remote-sensing Qwen2-VL-2B",
+        "at": "2026-09-20T15:17:49Z"
+      },
+      {
+        "stage": "Preparing single-image specialist input",
+        "at": "2026-09-20T15:17:49Z"
+      },
+      {
+        "stage": "Analyzing image",
+        "at": "2026-09-20T15:17:49Z"
+      },
+      {
+        "stage": "Specialist finished; collecting evidence",
+        "at": "2026-09-20T15:17:59Z"
+      },
+      {
+        "stage": "Collecting single-image evidence",
+        "at": "2026-09-20T15:17:59Z"
+      },
+      {
+        "stage": "Saving result and original inputs",
+        "at": "2026-09-20T15:17:59Z"
+      },
+      {
+        "stage": "Packaging evidence",
+        "at": "2026-09-20T15:17:59Z"
+      }
+    ],
+    "result": {
+      "task": "vqa",
+      "answer": "The image is a satellite view of a coastal region. The dense greenery indicates a tropical or subtropical climate, with the dense vegetation suggesting a healthy, possibly undisturbed ecosystem. The white clouds are indicative of a weather system that is not currently affecting the area, or it could be a natural cloud formation. The absence of any visible infrastructure or human activity suggests that this could be a remote or protected area, possibly a national park or a reserve. The image does not provide any direct information about the specific location or the scale of the area, but the features are consistent with a tropical or subtropical environment. Therefore, the answer is There are many green plants and white clouds in the picture.\n\nModel interpretation; may be inaccurate.",
+      "seconds": 9.826,
+      "statistics": null,
+      "trace": [
+        {
+          "step": "Generate model answer",
+          "seconds": 9.621
+        },
+        {
+          "tool": "Preserved main workspace",
+          "run_id": "fe74cede2b034215a8de3bb9b401bb90",
+          "model": "AdaptLLM/remote-sensing-Qwen2-VL-2B-Instruct",
+          "revision": "7f5dd71bf0f40c282193d50160e848a387a08ffe",
+          "mode": "baseline",
+          "routing": {
+            "tool": "vqa",
+            "rule": "single_image_description",
+            "reason": "Supported descriptive or presence question about one optical image; no quantitative or spatial output requested.",
+            "version": "rules-v5"
+          }
+        }
+      ],
+      "limitations": [
+        "Model descriptions and visual counts remain interpretations, not verified measurements."
+      ],
+      "confidence": {
+        "kind": "See original run evidence; no invented confidence score."
+      },
+      "execution": {
+        "task": "vqa",
+        "version": "unified-rules-v3",
+        "specialist": "Remote-sensing Qwen2-VL-2B",
+        "device": "CUDA GPU",
+        "maturity": "supported",
+        "reason": "Supported descriptive or presence question about one optical image; no quantitative or spatial output requested.",
+        "decision": {
+          "tool": "vqa",
+          "rule": "single_image_description",
+          "reason": "Supported descriptive or presence question about one optical image; no quantitative or spatial output requested.",
+          "version": "rules-v5"
+        },
+        "mode": "baseline",
+        "threshold": 0.5,
+        "steps": [
+          "validate image",
+          "vqa",
+          "save evidence"
+        ]
+      },
+      "id": "1e630d577c424403ade4c2dfdb924696",
+      "query": "Describe this image.",
+      "input_checks": {
+        "task": "vqa",
+        "inputs": [
+          {
+            "id": "548bcd88a8da422894d042e5ef63716a",
+            "name": "RGB.byte.tif",
+            "width": 791,
+            "height": 718,
+            "bytes": 1745956,
+            "sha256": "d7cbe932c7ed74a627706a9e9df99f706df3e5abc7d45a49e9d00677a6b09eb4",
+            "preview": "/api/images/5beb2cf4392f4af088ca5c89f32911cb",
+            "geo": {
+              "calibration_version": "user-supplied",
+              "crs": "EPSG:32618",
+              "width": 791,
+              "height": 718,
+              "transform": [
+                300.0379266750948,
+                0.0,
+                101985.0,
+                0.0,
+                -300.041782729805,
+                2826915.0
+              ],
+              "bounds": [
+                101985.0,
+                2611485.0,
+                339315.0,
+                2826915.0
+              ],
+              "bounds_wgs84": [
+                -78.95864996539397,
+                23.564991210892646,
+                -76.57492370013779,
+                25.550873767434343
+              ],
+              "resolution": [
+                300.0379266750948,
+                300.041782729805
+              ],
+              "bands": {
+                "red": 1,
+                "green": 2,
+                "blue": 3
+              },
+              "band_descriptions": [
+                null,
+                null,
+                null
+              ],
+              "nodata": "0.0",
+              "scales": [
+                1.0,
+                1.0,
+                1.0
+              ],
+              "offsets": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "acquired": null,
+              "source_item": null,
+              "attribution": null,
+              "ndvi_supported": false,
+              "quality_mask_available": false,
+              "preview_processing": "Per-channel 2nd\u201398th percentile RGB display stretch; analytical values are preserved."
+            },
+            "main_id": "5beb2cf4392f4af088ca5c89f32911cb",
+            "modality": "optical",
+            "is_single": true
+          }
+        ],
+        "plan": {
+          "task": "vqa",
+          "version": "unified-rules-v3",
+          "specialist": "Remote-sensing Qwen2-VL-2B",
+          "device": "CUDA GPU",
+          "maturity": "supported",
+          "reason": "Supported descriptive or presence question about one optical image; no quantitative or spatial output requested.",
+          "decision": {
+            "tool": "vqa",
+            "rule": "single_image_description",
+            "reason": "Supported descriptive or presence question about one optical image; no quantitative or spatial output requested.",
+            "version": "rules-v5"
+          },
+          "mode": "baseline",
+          "threshold": 0.5,
+          "steps": [
+            "validate image",
+            "vqa",
+            "save evidence"
+          ]
+        }
+      },
+      "controller": "unified-rules-v3",
+      "created_at": "2026-09-20T15:17:59Z",
+      "execution_events": [
+        {
+          "stage": "Input checks passed; preparing specialist",
+          "at": "2026-09-20T15:17:49Z"
+        },
+        {
+          "stage": "Starting Remote-sensing Qwen2-VL-2B",
+          "at": "2026-09-20T15:17:49Z"
+        },
+        {
+          "stage": "Preparing single-image specialist input",
+          "at": "2026-09-20T15:17:49Z"
+        },
+        {
+          "stage": "Analyzing image",
+          "at": "2026-09-20T15:17:49Z"
+        },
+        {
+          "stage": "Specialist finished; collecting evidence",
+          "at": "2026-09-20T15:17:59Z"
+        },
+        {
+          "stage": "Collecting single-image evidence",
+          "at": "2026-09-20T15:17:59Z"
+        },
+        {
+          "stage": "Saving result and original inputs",
+          "at": "2026-09-20T15:17:59Z"
+        },
+        {
+          "stage": "Packaging evidence",
+          "at": "2026-09-20T15:17:59Z"
+        }
+      ],
+      "work_seconds_before_zip": 10.050144214998
+    },
+    "request_seconds": 10.139945060000173
+  },
+  "artifacts": [
+    "main-raw-result.json",
+    "input-1.original",
+    "result.json",
+    "input-preview.png"
+  ],
+  "original_bytes_preserved": true
+}

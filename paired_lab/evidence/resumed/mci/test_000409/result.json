@@ -1,0 +1,35 @@
+{
+  "file": "test_000409.png",
+  "reference_changeflag": 1,
+  "raw_caption": "the scene is the same as before",
+  "reference_captions": [
+    " a house has been built in the center of the woods .",
+    " a villa appears in the woods in the residential area .",
+    " a house has appeared among the trees .",
+    " a house has been built in the center of the other three buildings .",
+    " a building appears among the trees in this residential area ."
+  ],
+  "caption_changeflag_heuristic": 0,
+  "confusion_rows_reference_columns_prediction": [
+    [
+      64797,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0
+    ],
+    [
+      733,
+      0,
+      6
+    ]
+  ],
+  "predicted_class_pixels": {
+    "0": 65530,
+    "1": 0,
+    "2": 6
+  }
+}

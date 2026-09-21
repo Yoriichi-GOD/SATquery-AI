@@ -1,0 +1,19 @@
+{
+  "id": "mci-test_001638",
+  "kind": "temporal",
+  "name": "MCI test_001638",
+  "source": "LEVIR-MCI official test",
+  "benchmark": "Change caption + road/building masks",
+  "files": [
+    "before.tif",
+    "after.tif"
+  ],
+  "registration": "Publisher paired crops; exact geographic metadata unavailable",
+  "reference_captions": [
+    " a few rooms are missing in the building complex .",
+    " four more buildings and a road through the woods appear .",
+    " some houses are built in the trees along the road .",
+    " some houses are built among the other houses .",
+    " a house appears at the top and three are built on the left ."
+  ]
+}

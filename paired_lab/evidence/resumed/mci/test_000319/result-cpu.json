@@ -1,0 +1,36 @@
+{
+  "file": "test_000319.png",
+  "reference_changeflag": 1,
+  "raw_caption": "a road is built across the forest and some houses are built along the road",
+  "reference_captions": [
+    " a road is built at the bottom and a ring of villas appear on the left replacing some trees .",
+    " a cross road replaces the trees in the bottom and some buildings appear in the left .",
+    " a road with a bypass has been built across the trees and several buildings have been built near it .",
+    " a asphalt road extends to distance and some houses are built near the road .",
+    " half of the plants have been removed and groups of buildings as well as a road with branches appear ."
+  ],
+  "caption_changeflag_heuristic": 1,
+  "confusion_rows_reference_columns_prediction": [
+    [
+      53452,
+      544,
+      1563
+    ],
+    [
+      19,
+      5891,
+      0
+    ],
+    [
+      176,
+      0,
+      3891
+    ]
+  ],
+  "predicted_class_pixels": {
+    "0": 53647,
+    "1": 6435,
+    "2": 5454
+  },
+  "gpu_caption": "a road is built across the forest and some houses are built along the road"
+}

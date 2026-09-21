@@ -1,0 +1,22 @@
+[
+  [
+    "stadium",
+    "/root/satquery/app-data/images/f01008d4ee8f47ebb9db13f7f597bd17.png",
+    "stadium"
+  ],
+  [
+    "car",
+    "/root/satquery/app-data/images/4dfea163809b43288da4b6ae44996316.png",
+    "car"
+  ],
+  [
+    "baseball",
+    "/mnt/c/Users/nrgen/.codex/scratch/SATquery AI/results/reliability-20260907/counting/full.png",
+    "sports field"
+  ],
+  [
+    "farmland",
+    "/mnt/c/Users/nrgen/.codex/scratch/SATquery AI/results/reliability-20260907/vqa/fresh-245.png",
+    "stadium"
+  ]
+]

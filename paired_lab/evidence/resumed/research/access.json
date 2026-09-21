@@ -1,0 +1,124 @@
+{
+  "cdvqa_tree": {
+    "url": "https://api.github.com/repos/YZHJessica/CDVQA/git/trees/main?recursive=1",
+    "final_url": "https://api.github.com/repos/YZHJessica/CDVQA/git/trees/main?recursive=1",
+    "status": 200,
+    "bytes": 3357,
+    "saved": "/mnt/c/Users/nrgen/.codex/scratch/SATquery AI/paired_lab/evidence/resumed/research/cdvqa_tree.txt",
+    "files": [
+      "LICENSE",
+      "README.md",
+      "Test2_answers.json",
+      "Test2_images.json",
+      "Test2_questions.json",
+      "Test_answers.json",
+      "Test_images.json",
+      "Test_questions.json",
+      "Train_answers.json",
+      "Train_images.json",
+      "Train_questions.json",
+      "Val_answers.json",
+      "Val_images.json",
+      "Val_questions.json"
+    ]
+  },
+  "terramind_notebook": {
+    "url": "https://raw.githubusercontent.com/IBM/terramind/main/notebooks/terramind_v1_small_sen1floods11.ipynb",
+    "final_url": "https://raw.githubusercontent.com/IBM/terramind/main/notebooks/terramind_v1_small_sen1floods11.ipynb",
+    "status": 200,
+    "bytes": 21637,
+    "saved": "/mnt/c/Users/nrgen/.codex/scratch/SATquery AI/paired_lab/evidence/resumed/research/terramind_notebook.txt"
+  },
+  "levir_mci": {
+    "url": "https://huggingface.co/api/datasets/lcybuaa/LEVIR-MCI/tree/main?recursive=true&limit=1000",
+    "final_url": "https://huggingface.co/api/datasets/lcybuaa/LEVIR-MCI/tree/main?recursive=true&limit=1000",
+    "status": 200,
+    "bytes": 795,
+    "saved": "/mnt/c/Users/nrgen/.codex/scratch/SATquery AI/paired_lab/evidence/resumed/research/levir_mci.txt",
+    "files": [
+      ".gitattributes",
+      "LEVIR-MCI-dataset.zip",
+      "README.md",
+      "dataset.png"
+    ]
+  },
+  "dfc_hf": {
+    "url": "https://huggingface.co/api/models?search=dfc2020&limit=15",
+    "final_url": "https://huggingface.co/api/models?search=dfc2020&limit=15",
+    "status": 200,
+    "bytes": 2,
+    "saved": "/mnt/c/Users/nrgen/.codex/scratch/SATquery AI/paired_lab/evidence/resumed/research/dfc_hf.txt",
+    "models": []
+  },
+  "terramind_flood_hf": {
+    "url": "https://huggingface.co/api/models?search=TerraMind&limit=100",
+    "final_url": "https://huggingface.co/api/models?search=TerraMind&limit=100",
+    "status": 200,
+    "bytes": 18636,
+    "saved": "/mnt/c/Users/nrgen/.codex/scratch/SATquery AI/paired_lab/evidence/resumed/research/terramind_flood_hf.txt",
+    "models": [
+      "ibm-esa-geospatial/TerraMind-1.0-base",
+      "ibm-esa-geospatial/TerraMind-1.0-Tokenizer-S2L2A",
+      "ibm-esa-geospatial/TerraMind-1.0-Tokenizer-S1GRD",
+      "ibm-esa-geospatial/TerraMind-1.0-Tokenizer-S1RTC",
+      "ibm-esa-geospatial/TerraMind-1.0-Tokenizer-DEM",
+      "ibm-esa-geospatial/TerraMind-1.0-Tokenizer-NDVI",
+      "ibm-esa-geospatial/TerraMind-1.0-Tokenizer-LULC",
+      "ibm-esa-geospatial/TerraMind-1.0-large",
+      "ibm-esa-geospatial/TerraMind-1.0-tiny",
+      "ibm-esa-geospatial/TerraMind-1.0-small",
+      "ibm-esa-geospatial/TerraMind-1.0-Tokenizer-Coords",
+      "donia-metaplanet/TerraMind-Blue-Sky-Challenge",
+      "ibm-esa-geospatial/TerraMind-base-Fire",
+      "ibm-esa-geospatial/TerraMind-base-Flood",
+      "sam-stockman/terramind-coast-poly-v0.1",
+      "donia-metaplanet/TerraMind-late-fusion-sen1floods11",
+      "francoisfaure/Geomorphological_Mapping_TerraMind",
+      "BiliSakura/TerraMind-1.0-Tokenizer-LULC",
+      "BiliSakura/TerraMind-1.0-Tokenizer-NDVI",
+      "BiliSakura/TerraMind-1.0-Tokenizer-DEM",
+      "BiliSakura/TerraMind-1.0-Tokenizer-SI1GRD",
+      "BiliSakura/TerraMind-1.0-Tokenizer-S1RTC",
+      "BiliSakura/TerraMind-1.0-Tokenizer-S2L2A",
+      "KPLabs/TerraMind-Methane-Classification",
+      "KPLabs/TerraMind-HYPERVIEW",
+      "BiliSakura/TerraMind-1.0-Tokenizer-S1GRD",
+      "khyeongkyun/zeroflood-gfm-terramind",
+      "khyeongkyun/zeroflood-gfm-terramind-tim-optical-sar",
+      "khyeongkyun/zeroflood-gfm-terramind-tim-optical-1",
+      "khyeongkyun/zeroflood-gfm-terramind-tim-optical-2",
+      "khyeongkyun/zeroflood-gfm-terramind-tim-optical-3",
+      "khyeongkyun/zeroflood-gfm-terramind-tim-sar-1",
+      "khyeongkyun/zeroflood-gfm-terramind-tim-sar-2",
+      "khyeongkyun/zeroflood-gfm-terramind-tim-sar-3",
+      "msradam/TerraMind-base-Flood-AMD-reproduction",
+      "msradam/TerraMind-base-Flood-NYC",
+      "msradam/TerraMind-NYC-Adapters",
+      "abzal-glw/cryosentinel-terramind-v3",
+      "kaopanboonyuen/GISTDA-OpenAI-TerraMind-Tiny-0.1b",
+      "skoneru/qwen-2.5omni-terramindbase",
+      "skoneru/qwen-2.5omni-terramindbase-lora",
+      "skoneru/qwen-2.5omni-terramindlarge",
+      "skoneru/qwen-2.5omni-terramindlarge-lora",
+      "OneScience-Group/TerraMind"
+    ]
+  },
+  "dfc_joint": {
+    "url": "https://syncandshare.lrz.de/getlink/fiXdkwYKUHCQnpuC2U3dS6Pc/deeplab_s1s2_5000.zip",
+    "final_url": "https://syncandshare.lrz.de/getlink/fiXdkwYKUHCQnpuC2U3dS6Pc/deeplab_s1s2_5000.zip",
+    "status": 404,
+    "bytes": 4604,
+    "saved": "/mnt/c/Users/nrgen/.codex/scratch/SATquery AI/paired_lab/evidence/resumed/research/dfc_joint.txt"
+  },
+  "dfc_optical": {
+    "url": "https://syncandshare.lrz.de/getlink/fiKc34bViotg4XYyY87SRNmN/deeplab_s2_5000.zip",
+    "final_url": "https://syncandshare.lrz.de/getlink/fiKc34bViotg4XYyY87SRNmN/deeplab_s2_5000.zip",
+    "status": 404,
+    "bytes": 4604,
+    "saved": "/mnt/c/Users/nrgen/.codex/scratch/SATquery AI/paired_lab/evidence/resumed/research/dfc_optical.txt"
+  },
+  "sen12ms": {
+    "url": "https://mediatum.ub.tum.de/1474000",
+    "error": "HTTPSConnectionPool(host='mediatum.ub.tum.de', port=443): Read timed out. (read timeout=30)"
+  }
+}

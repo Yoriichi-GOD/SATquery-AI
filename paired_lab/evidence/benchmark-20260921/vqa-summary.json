@@ -1,0 +1,15 @@
+{
+  "n": 16,
+  "complete": 16,
+  "exact_correct": 12,
+  "categories": {
+    "presence": {
+      "n": 0,
+      "correct": 0
+    },
+    "rural_urban": {
+      "n": 16,
+      "correct": 12
+    }
+  }
+}

@@ -1,0 +1,55 @@
+{
+  "item_id": "S2A_T43RGP_20211125T053958_L2A",
+  "acquired": "2021-11-25T05:40:34.501000Z",
+  "source_catalog": "https://earth-search.aws.element84.com/v1",
+  "collection": "sentinel-2-c1-l2a",
+  "calibration_version": "c1-header-verified-v2",
+  "attribution": "Contains modified Copernicus Sentinel data (2021), accessed through Element 84 Earth Search / AWS.",
+  "bands": {
+    "red": {
+      "source": "https://e84-earth-search-sentinel-data.s3.us-west-2.amazonaws.com/sentinel-2-c1-l2a/43/R/GP/2021/11/S2A_T43RGP_20211125T053958_L2A/B04.tif",
+      "scale_applied": 0.0001,
+      "offset_applied": -0.1,
+      "resampling": "nearest to red-band 10 m grid"
+    },
+    "green": {
+      "source": "https://e84-earth-search-sentinel-data.s3.us-west-2.amazonaws.com/sentinel-2-c1-l2a/43/R/GP/2021/11/S2A_T43RGP_20211125T053958_L2A/B03.tif",
+      "scale_applied": 0.0001,
+      "offset_applied": -0.1,
+      "resampling": "nearest to red-band 10 m grid"
+    },
+    "blue": {
+      "source": "https://e84-earth-search-sentinel-data.s3.us-west-2.amazonaws.com/sentinel-2-c1-l2a/43/R/GP/2021/11/S2A_T43RGP_20211125T053958_L2A/B02.tif",
+      "scale_applied": 0.0001,
+      "offset_applied": -0.1,
+      "resampling": "nearest to red-band 10 m grid"
+    },
+    "nir": {
+      "source": "https://e84-earth-search-sentinel-data.s3.us-west-2.amazonaws.com/sentinel-2-c1-l2a/43/R/GP/2021/11/S2A_T43RGP_20211125T053958_L2A/B08.tif",
+      "scale_applied": 0.0001,
+      "offset_applied": -0.1,
+      "resampling": "nearest to red-band 10 m grid"
+    },
+    "scl": {
+      "source": "https://e84-earth-search-sentinel-data.s3.us-west-2.amazonaws.com/sentinel-2-c1-l2a/43/R/GP/2021/11/S2A_T43RGP_20211125T053958_L2A/SCL.tif",
+      "scale_applied": 1,
+      "offset_applied": 0,
+      "resampling": "nearest to red-band 10 m grid"
+    }
+  },
+  "sha256": "55f3ca7b578e045594f8d54419b590c3ffeb99247ec5f74d7b1355d5bc4ec0f8",
+  "file": "/root/satquery/scenes/dehradun-sentinel2-20211125.tif",
+  "crs": "EPSG:32643",
+  "transform": [
+    10.0,
+    0.0,
+    788360.0,
+    0.0,
+    -10.0,
+    3359030.0
+  ],
+  "size": [
+    512,
+    512
+  ]
+}

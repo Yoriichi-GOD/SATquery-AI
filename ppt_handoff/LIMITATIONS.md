@@ -1,0 +1,11 @@
+# Real limitations
+- 60dev questions/20 correlated images/one scene; no final held-out adapter result, unknown upstream exposure and noisy labels.
+- Format compliance contributes; presence below majority; two regressions.
+- VQA prose/counts are not validated measurements.
+- No natural-language analytical router; temporal phrasing can bypass regex. Explicit NDVI mode ignores semantics.
+- No text grounding, temporal VQA, SAR fusion, calibrated confidence, source retrieval or general tool registry.
+- NDVI trusts user band/unit declarations; threshold not universal health/density criterion; one audited crop not cross-sensor validation.
+- SCL20m resampling and mixed pixels limit masks. Projected grid area is not surveyed/terrain acreage.
+- Process-local indexes, no durable job recovery, cancellation or bounded inference timeout, no multiuser authentication.
+- Metadata/trace UI partial; four-stage viewer and comparison redesign deferred.
+- No minimum hardware guarantee, isolated training time, cold-start benchmark or historical running-training screenshot.

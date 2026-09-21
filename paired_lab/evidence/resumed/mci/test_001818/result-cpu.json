@@ -1,0 +1,36 @@
+{
+  "file": "test_001818.png",
+  "reference_changeflag": 1,
+  "raw_caption": "some buildings appear on the lower-left",
+  "reference_captions": [
+    " two fields and a house appear on the grass below .",
+    " a building appears near the existing one .",
+    " a house is built in the bottom left corner .",
+    " a white warehouse is built in the lower-left corner of the scene .",
+    " a building has been constructed at the bottom left corner and two parking lots appear ."
+  ],
+  "caption_changeflag_heuristic": 1,
+  "confusion_rows_reference_columns_prediction": [
+    [
+      62650,
+      1297,
+      106
+    ],
+    [
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      1483
+    ]
+  ],
+  "predicted_class_pixels": {
+    "0": 62650,
+    "1": 1297,
+    "2": 1589
+  },
+  "gpu_caption": "some buildings appear on the lower-left"
+}

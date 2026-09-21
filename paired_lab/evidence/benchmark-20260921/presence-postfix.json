@@ -1,0 +1,1401 @@
+[
+  {
+    "image_id": 252,
+    "question": "Is there a grass area?",
+    "reference": "yes",
+    "run": {
+      "state": "complete",
+      "stage": "Complete",
+      "plan": {
+        "task": "vqa",
+        "version": "unified-rules-v6",
+        "specialist": "Remote-sensing Qwen2-VL-2B",
+        "device": "CUDA GPU",
+        "maturity": "supported",
+        "reason": "Visual presence question; model interpretation, not independently verified detection or a measurement.",
+        "decision": {
+          "tool": "vqa",
+          "rule": "single_image_presence",
+          "reason": "Visual presence question; model interpretation, not independently verified detection or a measurement.",
+          "version": "rules-v6"
+        },
+        "mode": "baseline",
+        "threshold": 0.5,
+        "steps": [
+          "validate image",
+          "vqa",
+          "save evidence"
+        ]
+      },
+      "events": [
+        {
+          "stage": "Input checks passed; preparing specialist",
+          "at": "2026-09-21T02:21:08Z"
+        },
+        {
+          "stage": "Starting Remote-sensing Qwen2-VL-2B",
+          "at": "2026-09-21T02:21:08Z"
+        },
+        {
+          "stage": "Preparing single-image specialist input",
+          "at": "2026-09-21T02:21:08Z"
+        },
+        {
+          "stage": "Preparing image",
+          "at": "2026-09-21T02:21:08Z"
+        },
+        {
+          "stage": "Loading local model",
+          "at": "2026-09-21T02:21:11Z"
+        },
+        {
+          "stage": "Analyzing image",
+          "at": "2026-09-21T02:21:19Z"
+        },
+        {
+          "stage": "Specialist finished; collecting evidence",
+          "at": "2026-09-21T02:21:31Z"
+        },
+        {
+          "stage": "Collecting single-image evidence",
+          "at": "2026-09-21T02:21:31Z"
+        },
+        {
+          "stage": "Saving result and original inputs",
+          "at": "2026-09-21T02:21:31Z"
+        },
+        {
+          "stage": "Packaging evidence",
+          "at": "2026-09-21T02:21:31Z"
+        }
+      ],
+      "result": {
+        "task": "vqa",
+        "answer": "Yes, there is a grass area in the image. The grass is visible as a lighter green color, contrasting with the surrounding darker green fields. This suggests that the grass is likely to be a type of crop that is not as dense or as lush as the surrounding fields, or it could be a type of grass that is more common in open, less cultivated areas. The presence of the grass area indicates that the land is not entirely covered by crops, which could be indicative of a rural or agricultural setting where land is used for both crops and grass. Therefore, the answer is yes\n\nModel interpretation; may be inaccurate.",
+        "seconds": 22.983,
+        "statistics": null,
+        "trace": [
+          {
+            "step": "Load pinned checkpoint",
+            "seconds": 8.74
+          },
+          {
+            "step": "Generate model answer",
+            "seconds": 11.966
+          },
+          {
+            "tool": "Preserved main workspace",
+            "run_id": "5048ec6eb75c410d8258c4cad11413fc",
+            "model": "AdaptLLM/remote-sensing-Qwen2-VL-2B-Instruct",
+            "revision": "7f5dd71bf0f40c282193d50160e848a387a08ffe",
+            "mode": "baseline",
+            "routing": {
+              "tool": "vqa",
+              "rule": "single_image_presence",
+              "reason": "Visual presence question; model interpretation, not independently verified detection or a measurement.",
+              "version": "rules-v6"
+            }
+          }
+        ],
+        "limitations": [
+          "Model descriptions and visual counts remain interpretations, not verified measurements."
+        ],
+        "confidence": {
+          "kind": "See original run evidence; no invented confidence score."
+        },
+        "execution": {
+          "task": "vqa",
+          "version": "unified-rules-v6",
+          "specialist": "Remote-sensing Qwen2-VL-2B",
+          "device": "CUDA GPU",
+          "maturity": "supported",
+          "reason": "Visual presence question; model interpretation, not independently verified detection or a measurement.",
+          "decision": {
+            "tool": "vqa",
+            "rule": "single_image_presence",
+            "reason": "Visual presence question; model interpretation, not independently verified detection or a measurement.",
+            "version": "rules-v6"
+          },
+          "mode": "baseline",
+          "threshold": 0.5,
+          "steps": [
+            "validate image",
+            "vqa",
+            "save evidence"
+          ]
+        },
+        "id": "8b8e61271f364b94930ec8e507cece4e",
+        "query": "Is there a grass area?",
+        "input_checks": {
+          "task": "vqa",
+          "inputs": [
+            {
+              "id": "f92321e18f0e4ceeb09ce976a07003d2",
+              "name": "252.png",
+              "width": 256,
+              "height": 256,
+              "bytes": 86554,
+              "sha256": "4f82e475890a9d92a223919ec10bb20097f926041c53e65ccede4e818c23fc01",
+              "preview": "/api/images/f779f2ff69e54869997cfee37ec4eb0a",
+              "geo": null,
+              "main_id": "f779f2ff69e54869997cfee37ec4eb0a",
+              "modality": "optical",
+              "is_single": true
+            }
+          ],
+          "plan": {
+            "task": "vqa",
+            "version": "unified-rules-v6",
+            "specialist": "Remote-sensing Qwen2-VL-2B",
+            "device": "CUDA GPU",
+            "maturity": "supported",
+            "reason": "Visual presence question; model interpretation, not independently verified detection or a measurement.",
+            "decision": {
+              "tool": "vqa",
+              "rule": "single_image_presence",
+              "reason": "Visual presence question; model interpretation, not independently verified detection or a measurement.",
+              "version": "rules-v6"
+            },
+            "mode": "baseline",
+            "threshold": 0.5,
+            "steps": [
+              "validate image",
+              "vqa",
+              "save evidence"
+            ]
+          }
+        },
+        "controller": "unified-rules-v6",
+        "created_at": "2026-09-21T02:21:31Z",
+        "execution_events": [
+          {
+            "stage": "Input checks passed; preparing specialist",
+            "at": "2026-09-21T02:21:08Z"
+          },
+          {
+            "stage": "Starting Remote-sensing Qwen2-VL-2B",
+            "at": "2026-09-21T02:21:08Z"
+          },
+          {
+            "stage": "Preparing single-image specialist input",
+            "at": "2026-09-21T02:21:08Z"
+          },
+          {
+            "stage": "Preparing image",
+            "at": "2026-09-21T02:21:08Z"
+          },
+          {
+            "stage": "Loading local model",
+            "at": "2026-09-21T02:21:11Z"
+          },
+          {
+            "stage": "Analyzing image",
+            "at": "2026-09-21T02:21:19Z"
+          },
+          {
+            "stage": "Specialist finished; collecting evidence",
+            "at": "2026-09-21T02:21:31Z"
+          },
+          {
+            "stage": "Collecting single-image evidence",
+            "at": "2026-09-21T02:21:31Z"
+          },
+          {
+            "stage": "Saving result and original inputs",
+            "at": "2026-09-21T02:21:31Z"
+          },
+          {
+            "stage": "Packaging evidence",
+            "at": "2026-09-21T02:21:31Z"
+          }
+        ],
+        "work_seconds_before_zip": 23.108310436989996
+      },
+      "request_seconds": 23.11268280199147,
+      "end_to_end_seconds": 23.382078245995217,
+      "archive_verified": true
+    }
+  },
+  {
+    "image_id": 263,
+    "question": "Is there a grass area?",
+    "reference": "yes",
+    "run": {
+      "state": "complete",
+      "stage": "Complete",
+      "plan": {
+        "task": "vqa",
+        "version": "unified-rules-v6",
+        "specialist": "Remote-sensing Qwen2-VL-2B",
+        "device": "CUDA GPU",
+        "maturity": "supported",
+        "reason": "Visual presence question; model interpretation, not independently verified detection or a measurement.",
+        "decision": {
+          "tool": "vqa",
+          "rule": "single_image_presence",
+          "reason": "Visual presence question; model interpretation, not independently verified detection or a measurement.",
+          "version": "rules-v6"
+        },
+        "mode": "baseline",
+        "threshold": 0.5,
+        "steps": [
+          "validate image",
+          "vqa",
+          "save evidence"
+        ]
+      },
+      "events": [
+        {
+          "stage": "Input checks passed; preparing specialist",
+          "at": "2026-09-21T02:21:32Z"
+        },
+        {
+          "stage": "Starting Remote-sensing Qwen2-VL-2B",
+          "at": "2026-09-21T02:21:32Z"
+        },
+        {
+          "stage": "Preparing single-image specialist input",
+          "at": "2026-09-21T02:21:32Z"
+        },
+        {
+          "stage": "Analyzing image",
+          "at": "2026-09-21T02:21:32Z"
+        },
+        {
+          "stage": "Specialist finished; collecting evidence",
+          "at": "2026-09-21T02:21:35Z"
+        },
+        {
+          "stage": "Collecting single-image evidence",
+          "at": "2026-09-21T02:21:35Z"
+        },
+        {
+          "stage": "Saving result and original inputs",
+          "at": "2026-09-21T02:21:35Z"
+        },
+        {
+          "stage": "Packaging evidence",
+          "at": "2026-09-21T02:21:35Z"
+        }
+      ],
+      "result": {
+        "task": "vqa",
+        "answer": "Yes, there is a grass area in the image. The grass is likely to be part of a larger ecosystem, possibly a wetland or a meadow, which is common in coastal areas where the water level fluctuates. The presence of the grass indicates that the area is not entirely bare or barren, but rather has some vegetation that can survive in wet conditions. The image does not provide enough detail to determine the specific type of grass or the exact location, but it is clear that there is a significant amount of greenery in the vicinity of the water. Therefore, the answer is yes\n\nModel interpretation; may be inaccurate.",
+        "seconds": 3.62,
+        "statistics": null,
+        "trace": [
+          {
+            "step": "Generate model answer",
+            "seconds": 3.558
+          },
+          {
+            "tool": "Preserved main workspace",
+            "run_id": "3a1b3305689e414b84353bf39e6fc09e",
+            "model": "AdaptLLM/remote-sensing-Qwen2-VL-2B-Instruct",
+            "revision": "7f5dd71bf0f40c282193d50160e848a387a08ffe",
+            "mode": "baseline",
+            "routing": {
+              "tool": "vqa",
+              "rule": "single_image_presence",
+              "reason": "Visual presence question; model interpretation, not independently verified detection or a measurement.",
+              "version": "rules-v6"
+            }
+          }
+        ],
+        "limitations": [
+          "Model descriptions and visual counts remain interpretations, not verified measurements."
+        ],
+        "confidence": {
+          "kind": "See original run evidence; no invented confidence score."
+        },
+        "execution": {
+          "task": "vqa",
+          "version": "unified-rules-v6",
+          "specialist": "Remote-sensing Qwen2-VL-2B",
+          "device": "CUDA GPU",
+          "maturity": "supported",
+          "reason": "Visual presence question; model interpretation, not independently verified detection or a measurement.",
+          "decision": {
+            "tool": "vqa",
+            "rule": "single_image_presence",
+            "reason": "Visual presence question; model interpretation, not independently verified detection or a measurement.",
+            "version": "rules-v6"
+          },
+          "mode": "baseline",
+          "threshold": 0.5,
+          "steps": [
+            "validate image",
+            "vqa",
+            "save evidence"
+          ]
+        },
+        "id": "17114367d8964a959b39b920062be121",
+        "query": "Is there a grass area?",
+        "input_checks": {
+          "task": "vqa",
+          "inputs": [
+            {
+              "id": "d3f09e4fa56041c1a14837249de3cad8",
+              "name": "263.png",
+              "width": 256,
+              "height": 256,
+              "bytes": 80576,
+              "sha256": "734eef83e9cabf16b4e3a90c9bffafebdd1e61134075370fb376f5d5f2e84edf",
+              "preview": "/api/images/544afb066670442aab6c3b5218034a3e",
+              "geo": null,
+              "main_id": "544afb066670442aab6c3b5218034a3e",
+              "modality": "optical",
+              "is_single": true
+            }
+          ],
+          "plan": {
+            "task": "vqa",
+            "version": "unified-rules-v6",
+            "specialist": "Remote-sensing Qwen2-VL-2B",
+            "device": "CUDA GPU",
+            "maturity": "supported",
+            "reason": "Visual presence question; model interpretation, not independently verified detection or a measurement.",
+            "decision": {
+              "tool": "vqa",
+              "rule": "single_image_presence",
+              "reason": "Visual presence question; model interpretation, not independently verified detection or a measurement.",
+              "version": "rules-v6"
+            },
+            "mode": "baseline",
+            "threshold": 0.5,
+            "steps": [
+              "validate image",
+              "vqa",
+              "save evidence"
+            ]
+          }
+        },
+        "controller": "unified-rules-v6",
+        "created_at": "2026-09-21T02:21:35Z",
+        "execution_events": [
+          {
+            "stage": "Input checks passed; preparing specialist",
+            "at": "2026-09-21T02:21:32Z"
+          },
+          {
+            "stage": "Starting Remote-sensing Qwen2-VL-2B",
+            "at": "2026-09-21T02:21:32Z"
+          },
+          {
+            "stage": "Preparing single-image specialist input",
+            "at": "2026-09-21T02:21:32Z"
+          },
+          {
+            "stage": "Analyzing image",
+            "at": "2026-09-21T02:21:32Z"
+          },
+          {
+            "stage": "Specialist finished; collecting evidence",
+            "at": "2026-09-21T02:21:35Z"
+          },
+          {
+            "stage": "Collecting single-image evidence",
+            "at": "2026-09-21T02:21:35Z"
+          },
+          {
+            "stage": "Saving result and original inputs",
+            "at": "2026-09-21T02:21:35Z"
+          },
+          {
+            "stage": "Packaging evidence",
+            "at": "2026-09-21T02:21:35Z"
+          }
+        ],
+        "work_seconds_before_zip": 3.663976700991043
+      },
+      "request_seconds": 3.676444876997266,
+      "end_to_end_seconds": 3.9764895489934133,
+      "archive_verified": true
+    }
+  },
+  {
+    "image_id": 276,
+    "question": "Is there a circular water area?",
+    "reference": "no",
+    "run": {
+      "state": "complete",
+      "stage": "Complete",
+      "plan": {
+        "task": "vqa",
+        "version": "unified-rules-v6",
+        "specialist": "Remote-sensing Qwen2-VL-2B",
+        "device": "CUDA GPU",
+        "maturity": "supported",
+        "reason": "Visual presence question; model interpretation, not independently verified detection or a measurement.",
+        "decision": {
+          "tool": "vqa",
+          "rule": "single_image_presence",
+          "reason": "Visual presence question; model interpretation, not independently verified detection or a measurement.",
+          "version": "rules-v6"
+        },
+        "mode": "baseline",
+        "threshold": 0.5,
+        "steps": [
+          "validate image",
+          "vqa",
+          "save evidence"
+        ]
+      },
+      "events": [
+        {
+          "stage": "Input checks passed; preparing specialist",
+          "at": "2026-09-21T02:21:36Z"
+        },
+        {
+          "stage": "Starting Remote-sensing Qwen2-VL-2B",
+          "at": "2026-09-21T02:21:36Z"
+        },
+        {
+          "stage": "Preparing single-image specialist input",
+          "at": "2026-09-21T02:21:36Z"
+        },
+        {
+          "stage": "Analyzing image",
+          "at": "2026-09-21T02:21:36Z"
+        },
+        {
+          "stage": "Specialist finished; collecting evidence",
+          "at": "2026-09-21T02:21:40Z"
+        },
+        {
+          "stage": "Collecting single-image evidence",
+          "at": "2026-09-21T02:21:40Z"
+        },
+        {
+          "stage": "Saving result and original inputs",
+          "at": "2026-09-21T02:21:40Z"
+        },
+        {
+          "stage": "Packaging evidence",
+          "at": "2026-09-21T02:21:40Z"
+        }
+      ],
+      "result": {
+        "task": "vqa",
+        "answer": "Yes, there is a circular water area in the image. It is located in the upper right quadrant of the field, surrounded by the green and brown fields. The water body appears to be a natural feature, possibly a pond or a small lake, given its size and the way it is surrounded by the fields. The absence of any visible boats or people suggests that the area is not heavily trafficked or used for recreational purposes. The image does not provide any direct information about the location or the scale of the water body, but it is clear that it is a significant feature within the agricultural landscape. Therefore, the answer is yes\n\nModel interpretation; may be inaccurate.",
+        "seconds": 3.893,
+        "statistics": null,
+        "trace": [
+          {
+            "step": "Generate model answer",
+            "seconds": 3.882
+          },
+          {
+            "tool": "Preserved main workspace",
+            "run_id": "750eb1be2fc2409eacb5396cb2ea578e",
+            "model": "AdaptLLM/remote-sensing-Qwen2-VL-2B-Instruct",
+            "revision": "7f5dd71bf0f40c282193d50160e848a387a08ffe",
+            "mode": "baseline",
+            "routing": {
+              "tool": "vqa",
+              "rule": "single_image_presence",
+              "reason": "Visual presence question; model interpretation, not independently verified detection or a measurement.",
+              "version": "rules-v6"
+            }
+          }
+        ],
+        "limitations": [
+          "Model descriptions and visual counts remain interpretations, not verified measurements."
+        ],
+        "confidence": {
+          "kind": "See original run evidence; no invented confidence score."
+        },
+        "execution": {
+          "task": "vqa",
+          "version": "unified-rules-v6",
+          "specialist": "Remote-sensing Qwen2-VL-2B",
+          "device": "CUDA GPU",
+          "maturity": "supported",
+          "reason": "Visual presence question; model interpretation, not independently verified detection or a measurement.",
+          "decision": {
+            "tool": "vqa",
+            "rule": "single_image_presence",
+            "reason": "Visual presence question; model interpretation, not independently verified detection or a measurement.",
+            "version": "rules-v6"
+          },
+          "mode": "baseline",
+          "threshold": 0.5,
+          "steps": [
+            "validate image",
+            "vqa",
+            "save evidence"
+          ]
+        },
+        "id": "ce18f2b6b22d4ce7801ea2c0e5551dc1",
+        "query": "Is there a circular water area?",
+        "input_checks": {
+          "task": "vqa",
+          "inputs": [
+            {
+              "id": "a3e02a6e741d49c089433ba3d5608524",
+              "name": "276.png",
+              "width": 256,
+              "height": 256,
+              "bytes": 85726,
+              "sha256": "3f22c916556c4153f91db20f5d22ca3eccbebef6cc97b8bf14394525b8586d8f",
+              "preview": "/api/images/8fe0de0d8b294fddaeaa10fce5768997",
+              "geo": null,
+              "main_id": "8fe0de0d8b294fddaeaa10fce5768997",
+              "modality": "optical",
+              "is_single": true
+            }
+          ],
+          "plan": {
+            "task": "vqa",
+            "version": "unified-rules-v6",
+            "specialist": "Remote-sensing Qwen2-VL-2B",
+            "device": "CUDA GPU",
+            "maturity": "supported",
+            "reason": "Visual presence question; model interpretation, not independently verified detection or a measurement.",
+            "decision": {
+              "tool": "vqa",
+              "rule": "single_image_presence",
+              "reason": "Visual presence question; model interpretation, not independently verified detection or a measurement.",
+              "version": "rules-v6"
+            },
+            "mode": "baseline",
+            "threshold": 0.5,
+            "steps": [
+              "validate image",
+              "vqa",
+              "save evidence"
+            ]
+          }
+        },
+        "controller": "unified-rules-v6",
+        "created_at": "2026-09-21T02:21:40Z",
+        "execution_events": [
+          {
+            "stage": "Input checks passed; preparing specialist",
+            "at": "2026-09-21T02:21:36Z"
+          },
+          {
+            "stage": "Starting Remote-sensing Qwen2-VL-2B",
+            "at": "2026-09-21T02:21:36Z"
+          },
+          {
+            "stage": "Preparing single-image specialist input",
+            "at": "2026-09-21T02:21:36Z"
+          },
+          {
+            "stage": "Analyzing image",
+            "at": "2026-09-21T02:21:36Z"
+          },
+          {
+            "stage": "Specialist finished; collecting evidence",
+            "at": "2026-09-21T02:21:40Z"
+          },
+          {
+            "stage": "Collecting single-image evidence",
+            "at": "2026-09-21T02:21:40Z"
+          },
+          {
+            "stage": "Saving result and original inputs",
+            "at": "2026-09-21T02:21:40Z"
+          },
+          {
+            "stage": "Packaging evidence",
+            "at": "2026-09-21T02:21:40Z"
+          }
+        ],
+        "work_seconds_before_zip": 4.057675832998939
+      },
+      "request_seconds": 4.066188220996992,
+      "end_to_end_seconds": 4.281252069005859,
+      "archive_verified": true
+    }
+  },
+  {
+    "image_id": 234,
+    "question": "Is a grass area present?",
+    "reference": "yes",
+    "run": {
+      "state": "complete",
+      "stage": "Complete",
+      "plan": {
+        "task": "vqa",
+        "version": "unified-rules-v6",
+        "specialist": "Remote-sensing Qwen2-VL-2B",
+        "device": "CUDA GPU",
+        "maturity": "supported",
+        "reason": "Visual presence question; model interpretation, not independently verified detection or a measurement.",
+        "decision": {
+          "tool": "vqa",
+          "rule": "single_image_presence",
+          "reason": "Visual presence question; model interpretation, not independently verified detection or a measurement.",
+          "version": "rules-v6"
+        },
+        "mode": "baseline",
+        "threshold": 0.5,
+        "steps": [
+          "validate image",
+          "vqa",
+          "save evidence"
+        ]
+      },
+      "events": [
+        {
+          "stage": "Input checks passed; preparing specialist",
+          "at": "2026-09-21T02:21:40Z"
+        },
+        {
+          "stage": "Starting Remote-sensing Qwen2-VL-2B",
+          "at": "2026-09-21T02:21:40Z"
+        },
+        {
+          "stage": "Preparing single-image specialist input",
+          "at": "2026-09-21T02:21:40Z"
+        },
+        {
+          "stage": "Analyzing image",
+          "at": "2026-09-21T02:21:40Z"
+        },
+        {
+          "stage": "Specialist finished; collecting evidence",
+          "at": "2026-09-21T02:21:44Z"
+        },
+        {
+          "stage": "Collecting single-image evidence",
+          "at": "2026-09-21T02:21:44Z"
+        },
+        {
+          "stage": "Saving result and original inputs",
+          "at": "2026-09-21T02:21:44Z"
+        },
+        {
+          "stage": "Packaging evidence",
+          "at": "2026-09-21T02:21:44Z"
+        }
+      ],
+      "result": {
+        "task": "vqa",
+        "answer": "Yes, there is a grass area present in the image. The green areas that are not dark green or brown are likely to be grassy fields or meadows. The presence of these green areas indicates that the area is used for agriculture, and the different colors of green suggest a variety of crops or different stages of growth. The absence of any visible water bodies or trees suggests that the image is focused on the agricultural land, and the road provides access to this area. Therefore, the answer is yes\n\nModel interpretation; may be inaccurate.",
+        "seconds": 3.605,
+        "statistics": null,
+        "trace": [
+          {
+            "step": "Generate model answer",
+            "seconds": 3.594
+          },
+          {
+            "tool": "Preserved main workspace",
+            "run_id": "ea527aa5a260425b89389314fcd8523d",
+            "model": "AdaptLLM/remote-sensing-Qwen2-VL-2B-Instruct",
+            "revision": "7f5dd71bf0f40c282193d50160e848a387a08ffe",
+            "mode": "baseline",
+            "routing": {
+              "tool": "vqa",
+              "rule": "single_image_presence",
+              "reason": "Visual presence question; model interpretation, not independently verified detection or a measurement.",
+              "version": "rules-v6"
+            }
+          }
+        ],
+        "limitations": [
+          "Model descriptions and visual counts remain interpretations, not verified measurements."
+        ],
+        "confidence": {
+          "kind": "See original run evidence; no invented confidence score."
+        },
+        "execution": {
+          "task": "vqa",
+          "version": "unified-rules-v6",
+          "specialist": "Remote-sensing Qwen2-VL-2B",
+          "device": "CUDA GPU",
+          "maturity": "supported",
+          "reason": "Visual presence question; model interpretation, not independently verified detection or a measurement.",
+          "decision": {
+            "tool": "vqa",
+            "rule": "single_image_presence",
+            "reason": "Visual presence question; model interpretation, not independently verified detection or a measurement.",
+            "version": "rules-v6"
+          },
+          "mode": "baseline",
+          "threshold": 0.5,
+          "steps": [
+            "validate image",
+            "vqa",
+            "save evidence"
+          ]
+        },
+        "id": "5a9c6eeb761c4859860efae8f161dc2b",
+        "query": "Is a grass area present?",
+        "input_checks": {
+          "task": "vqa",
+          "inputs": [
+            {
+              "id": "4039484fad914ecda4b49f1968d06166",
+              "name": "234.png",
+              "width": 256,
+              "height": 256,
+              "bytes": 90503,
+              "sha256": "7b46c151f43cf48e75f73008c62801b23970b1baef4cad4fbf280f8d65100b9c",
+              "preview": "/api/images/001a1eeecc0443bba8b8d3b93de1cb4f",
+              "geo": null,
+              "main_id": "001a1eeecc0443bba8b8d3b93de1cb4f",
+              "modality": "optical",
+              "is_single": true
+            }
+          ],
+          "plan": {
+            "task": "vqa",
+            "version": "unified-rules-v6",
+            "specialist": "Remote-sensing Qwen2-VL-2B",
+            "device": "CUDA GPU",
+            "maturity": "supported",
+            "reason": "Visual presence question; model interpretation, not independently verified detection or a measurement.",
+            "decision": {
+              "tool": "vqa",
+              "rule": "single_image_presence",
+              "reason": "Visual presence question; model interpretation, not independently verified detection or a measurement.",
+              "version": "rules-v6"
+            },
+            "mode": "baseline",
+            "threshold": 0.5,
+            "steps": [
+              "validate image",
+              "vqa",
+              "save evidence"
+            ]
+          }
+        },
+        "controller": "unified-rules-v6",
+        "created_at": "2026-09-21T02:21:44Z",
+        "execution_events": [
+          {
+            "stage": "Input checks passed; preparing specialist",
+            "at": "2026-09-21T02:21:40Z"
+          },
+          {
+            "stage": "Starting Remote-sensing Qwen2-VL-2B",
+            "at": "2026-09-21T02:21:40Z"
+          },
+          {
+            "stage": "Preparing single-image specialist input",
+            "at": "2026-09-21T02:21:40Z"
+          },
+          {
+            "stage": "Analyzing image",
+            "at": "2026-09-21T02:21:40Z"
+          },
+          {
+            "stage": "Specialist finished; collecting evidence",
+            "at": "2026-09-21T02:21:44Z"
+          },
+          {
+            "stage": "Collecting single-image evidence",
+            "at": "2026-09-21T02:21:44Z"
+          },
+          {
+            "stage": "Saving result and original inputs",
+            "at": "2026-09-21T02:21:44Z"
+          },
+          {
+            "stage": "Packaging evidence",
+            "at": "2026-09-21T02:21:44Z"
+          }
+        ],
+        "work_seconds_before_zip": 3.6599401089915773
+      },
+      "request_seconds": 3.6640976079943357,
+      "end_to_end_seconds": 3.9716153379995376,
+      "archive_verified": true
+    }
+  },
+  {
+    "image_id": 275,
+    "question": "Is there a square water area?",
+    "reference": "yes",
+    "run": {
+      "state": "complete",
+      "stage": "Complete",
+      "plan": {
+        "task": "vqa",
+        "version": "unified-rules-v6",
+        "specialist": "Remote-sensing Qwen2-VL-2B",
+        "device": "CUDA GPU",
+        "maturity": "supported",
+        "reason": "Visual presence question; model interpretation, not independently verified detection or a measurement.",
+        "decision": {
+          "tool": "vqa",
+          "rule": "single_image_presence",
+          "reason": "Visual presence question; model interpretation, not independently verified detection or a measurement.",
+          "version": "rules-v6"
+        },
+        "mode": "baseline",
+        "threshold": 0.5,
+        "steps": [
+          "validate image",
+          "vqa",
+          "save evidence"
+        ]
+      },
+      "events": [
+        {
+          "stage": "Input checks passed; preparing specialist",
+          "at": "2026-09-21T02:21:44Z"
+        },
+        {
+          "stage": "Starting Remote-sensing Qwen2-VL-2B",
+          "at": "2026-09-21T02:21:44Z"
+        },
+        {
+          "stage": "Preparing single-image specialist input",
+          "at": "2026-09-21T02:21:44Z"
+        },
+        {
+          "stage": "Analyzing image",
+          "at": "2026-09-21T02:21:44Z"
+        },
+        {
+          "stage": "Specialist finished; collecting evidence",
+          "at": "2026-09-21T02:21:46Z"
+        },
+        {
+          "stage": "Collecting single-image evidence",
+          "at": "2026-09-21T02:21:46Z"
+        },
+        {
+          "stage": "Saving result and original inputs",
+          "at": "2026-09-21T02:21:46Z"
+        },
+        {
+          "stage": "Packaging evidence",
+          "at": "2026-09-21T02:21:46Z"
+        }
+      ],
+      "result": {
+        "task": "vqa",
+        "answer": "There is no square water area visible in the image. The water bodies are either too small to be discerned or they are not present in the image. The focus of the image is on the agricultural fields and the layout of the town, with no attention given to the waterways. Therefore, the answer is no\n\nModel interpretation; may be inaccurate.",
+        "seconds": 2.145,
+        "statistics": null,
+        "trace": [
+          {
+            "step": "Generate model answer",
+            "seconds": 2.135
+          },
+          {
+            "tool": "Preserved main workspace",
+            "run_id": "f11e2386e66f48b5ad80b8462e443245",
+            "model": "AdaptLLM/remote-sensing-Qwen2-VL-2B-Instruct",
+            "revision": "7f5dd71bf0f40c282193d50160e848a387a08ffe",
+            "mode": "baseline",
+            "routing": {
+              "tool": "vqa",
+              "rule": "single_image_presence",
+              "reason": "Visual presence question; model interpretation, not independently verified detection or a measurement.",
+              "version": "rules-v6"
+            }
+          }
+        ],
+        "limitations": [
+          "Model descriptions and visual counts remain interpretations, not verified measurements."
+        ],
+        "confidence": {
+          "kind": "See original run evidence; no invented confidence score."
+        },
+        "execution": {
+          "task": "vqa",
+          "version": "unified-rules-v6",
+          "specialist": "Remote-sensing Qwen2-VL-2B",
+          "device": "CUDA GPU",
+          "maturity": "supported",
+          "reason": "Visual presence question; model interpretation, not independently verified detection or a measurement.",
+          "decision": {
+            "tool": "vqa",
+            "rule": "single_image_presence",
+            "reason": "Visual presence question; model interpretation, not independently verified detection or a measurement.",
+            "version": "rules-v6"
+          },
+          "mode": "baseline",
+          "threshold": 0.5,
+          "steps": [
+            "validate image",
+            "vqa",
+            "save evidence"
+          ]
+        },
+        "id": "f5bb50ec0c7d44b28bc6115a8ba352ec",
+        "query": "Is there a square water area?",
+        "input_checks": {
+          "task": "vqa",
+          "inputs": [
+            {
+              "id": "4fc9a35f70934ec8bb022f85ff7e3655",
+              "name": "275.png",
+              "width": 256,
+              "height": 256,
+              "bytes": 109332,
+              "sha256": "de40126dcc963f9a9831f0d3345b13d520c7d865e0b61775cb2465ebf1ac5fec",
+              "preview": "/api/images/af54f639dea24ac7a5b477a16b30094b",
+              "geo": null,
+              "main_id": "af54f639dea24ac7a5b477a16b30094b",
+              "modality": "optical",
+              "is_single": true
+            }
+          ],
+          "plan": {
+            "task": "vqa",
+            "version": "unified-rules-v6",
+            "specialist": "Remote-sensing Qwen2-VL-2B",
+            "device": "CUDA GPU",
+            "maturity": "supported",
+            "reason": "Visual presence question; model interpretation, not independently verified detection or a measurement.",
+            "decision": {
+              "tool": "vqa",
+              "rule": "single_image_presence",
+              "reason": "Visual presence question; model interpretation, not independently verified detection or a measurement.",
+              "version": "rules-v6"
+            },
+            "mode": "baseline",
+            "threshold": 0.5,
+            "steps": [
+              "validate image",
+              "vqa",
+              "save evidence"
+            ]
+          }
+        },
+        "controller": "unified-rules-v6",
+        "created_at": "2026-09-21T02:21:46Z",
+        "execution_events": [
+          {
+            "stage": "Input checks passed; preparing specialist",
+            "at": "2026-09-21T02:21:44Z"
+          },
+          {
+            "stage": "Starting Remote-sensing Qwen2-VL-2B",
+            "at": "2026-09-21T02:21:44Z"
+          },
+          {
+            "stage": "Preparing single-image specialist input",
+            "at": "2026-09-21T02:21:44Z"
+          },
+          {
+            "stage": "Analyzing image",
+            "at": "2026-09-21T02:21:44Z"
+          },
+          {
+            "stage": "Specialist finished; collecting evidence",
+            "at": "2026-09-21T02:21:46Z"
+          },
+          {
+            "stage": "Collecting single-image evidence",
+            "at": "2026-09-21T02:21:46Z"
+          },
+          {
+            "stage": "Saving result and original inputs",
+            "at": "2026-09-21T02:21:46Z"
+          },
+          {
+            "stage": "Packaging evidence",
+            "at": "2026-09-21T02:21:46Z"
+          }
+        ],
+        "work_seconds_before_zip": 2.446165431989357
+      },
+      "request_seconds": 2.453256959997816,
+      "end_to_end_seconds": 2.759959015005734,
+      "archive_verified": true
+    }
+  },
+  {
+    "image_id": 287,
+    "question": "Is there a grass area?",
+    "reference": "yes",
+    "run": {
+      "state": "complete",
+      "stage": "Complete",
+      "plan": {
+        "task": "vqa",
+        "version": "unified-rules-v6",
+        "specialist": "Remote-sensing Qwen2-VL-2B",
+        "device": "CUDA GPU",
+        "maturity": "supported",
+        "reason": "Visual presence question; model interpretation, not independently verified detection or a measurement.",
+        "decision": {
+          "tool": "vqa",
+          "rule": "single_image_presence",
+          "reason": "Visual presence question; model interpretation, not independently verified detection or a measurement.",
+          "version": "rules-v6"
+        },
+        "mode": "baseline",
+        "threshold": 0.5,
+        "steps": [
+          "validate image",
+          "vqa",
+          "save evidence"
+        ]
+      },
+      "events": [
+        {
+          "stage": "Input checks passed; preparing specialist",
+          "at": "2026-09-21T02:21:47Z"
+        },
+        {
+          "stage": "Starting Remote-sensing Qwen2-VL-2B",
+          "at": "2026-09-21T02:21:47Z"
+        },
+        {
+          "stage": "Preparing single-image specialist input",
+          "at": "2026-09-21T02:21:47Z"
+        },
+        {
+          "stage": "Analyzing image",
+          "at": "2026-09-21T02:21:47Z"
+        },
+        {
+          "stage": "Specialist finished; collecting evidence",
+          "at": "2026-09-21T02:21:51Z"
+        },
+        {
+          "stage": "Collecting single-image evidence",
+          "at": "2026-09-21T02:21:51Z"
+        },
+        {
+          "stage": "Saving result and original inputs",
+          "at": "2026-09-21T02:21:51Z"
+        },
+        {
+          "stage": "Packaging evidence",
+          "at": "2026-09-21T02:21:51Z"
+        }
+      ],
+      "result": {
+        "task": "vqa",
+        "answer": "Yes, there is a grass area in the image. The grassy field is located in the upper left quadrant of the image, adjacent to the urban area. The presence of grass indicates that the area may be used for agriculture or as a natural buffer zone between the urban development and the surrounding fields. The image does not provide any direct information about the specific type of grass or the exact location of the field, but the presence of grass is a clear indicator of a grassy area. Therefore, the answer is yes\n\nModel interpretation; may be inaccurate.",
+        "seconds": 3.813,
+        "statistics": null,
+        "trace": [
+          {
+            "step": "Generate model answer",
+            "seconds": 3.798
+          },
+          {
+            "tool": "Preserved main workspace",
+            "run_id": "243b1e4ecd7f45a7a4233d20673c5ddd",
+            "model": "AdaptLLM/remote-sensing-Qwen2-VL-2B-Instruct",
+            "revision": "7f5dd71bf0f40c282193d50160e848a387a08ffe",
+            "mode": "baseline",
+            "routing": {
+              "tool": "vqa",
+              "rule": "single_image_presence",
+              "reason": "Visual presence question; model interpretation, not independently verified detection or a measurement.",
+              "version": "rules-v6"
+            }
+          }
+        ],
+        "limitations": [
+          "Model descriptions and visual counts remain interpretations, not verified measurements."
+        ],
+        "confidence": {
+          "kind": "See original run evidence; no invented confidence score."
+        },
+        "execution": {
+          "task": "vqa",
+          "version": "unified-rules-v6",
+          "specialist": "Remote-sensing Qwen2-VL-2B",
+          "device": "CUDA GPU",
+          "maturity": "supported",
+          "reason": "Visual presence question; model interpretation, not independently verified detection or a measurement.",
+          "decision": {
+            "tool": "vqa",
+            "rule": "single_image_presence",
+            "reason": "Visual presence question; model interpretation, not independently verified detection or a measurement.",
+            "version": "rules-v6"
+          },
+          "mode": "baseline",
+          "threshold": 0.5,
+          "steps": [
+            "validate image",
+            "vqa",
+            "save evidence"
+          ]
+        },
+        "id": "b9cc59e1b3374a8dabb37c16105410d7",
+        "query": "Is there a grass area?",
+        "input_checks": {
+          "task": "vqa",
+          "inputs": [
+            {
+              "id": "42aa6734bec248428b60f10abe915be9",
+              "name": "287.png",
+              "width": 256,
+              "height": 256,
+              "bytes": 118098,
+              "sha256": "36407578c3d09bfc599721df8c529992cb2ccd04bdd8791df5b96847d20dc9c6",
+              "preview": "/api/images/0baa350c007f4784802175781b3efe40",
+              "geo": null,
+              "main_id": "0baa350c007f4784802175781b3efe40",
+              "modality": "optical",
+              "is_single": true
+            }
+          ],
+          "plan": {
+            "task": "vqa",
+            "version": "unified-rules-v6",
+            "specialist": "Remote-sensing Qwen2-VL-2B",
+            "device": "CUDA GPU",
+            "maturity": "supported",
+            "reason": "Visual presence question; model interpretation, not independently verified detection or a measurement.",
+            "decision": {
+              "tool": "vqa",
+              "rule": "single_image_presence",
+              "reason": "Visual presence question; model interpretation, not independently verified detection or a measurement.",
+              "version": "rules-v6"
+            },
+            "mode": "baseline",
+            "threshold": 0.5,
+            "steps": [
+              "validate image",
+              "vqa",
+              "save evidence"
+            ]
+          }
+        },
+        "controller": "unified-rules-v6",
+        "created_at": "2026-09-21T02:21:51Z",
+        "execution_events": [
+          {
+            "stage": "Input checks passed; preparing specialist",
+            "at": "2026-09-21T02:21:47Z"
+          },
+          {
+            "stage": "Starting Remote-sensing Qwen2-VL-2B",
+            "at": "2026-09-21T02:21:47Z"
+          },
+          {
+            "stage": "Preparing single-image specialist input",
+            "at": "2026-09-21T02:21:47Z"
+          },
+          {
+            "stage": "Analyzing image",
+            "at": "2026-09-21T02:21:47Z"
+          },
+          {
+            "stage": "Specialist finished; collecting evidence",
+            "at": "2026-09-21T02:21:51Z"
+          },
+          {
+            "stage": "Collecting single-image evidence",
+            "at": "2026-09-21T02:21:51Z"
+          },
+          {
+            "stage": "Saving result and original inputs",
+            "at": "2026-09-21T02:21:51Z"
+          },
+          {
+            "stage": "Packaging evidence",
+            "at": "2026-09-21T02:21:51Z"
+          }
+        ],
+        "work_seconds_before_zip": 4.067055805004202
+      },
+      "request_seconds": 4.071843964004074,
+      "end_to_end_seconds": 4.277954963006778,
+      "archive_verified": true
+    }
+  },
+  {
+    "image_id": 305,
+    "question": "Is a square grass area present?",
+    "reference": "yes",
+    "run": {
+      "state": "complete",
+      "stage": "Complete",
+      "plan": {
+        "task": "vqa",
+        "version": "unified-rules-v6",
+        "specialist": "Remote-sensing Qwen2-VL-2B",
+        "device": "CUDA GPU",
+        "maturity": "supported",
+        "reason": "Visual presence question; model interpretation, not independently verified detection or a measurement.",
+        "decision": {
+          "tool": "vqa",
+          "rule": "single_image_presence",
+          "reason": "Visual presence question; model interpretation, not independently verified detection or a measurement.",
+          "version": "rules-v6"
+        },
+        "mode": "baseline",
+        "threshold": 0.5,
+        "steps": [
+          "validate image",
+          "vqa",
+          "save evidence"
+        ]
+      },
+      "events": [
+        {
+          "stage": "Input checks passed; preparing specialist",
+          "at": "2026-09-21T02:21:51Z"
+        },
+        {
+          "stage": "Starting Remote-sensing Qwen2-VL-2B",
+          "at": "2026-09-21T02:21:51Z"
+        },
+        {
+          "stage": "Preparing single-image specialist input",
+          "at": "2026-09-21T02:21:51Z"
+        },
+        {
+          "stage": "Analyzing image",
+          "at": "2026-09-21T02:21:51Z"
+        },
+        {
+          "stage": "Specialist finished; collecting evidence",
+          "at": "2026-09-21T02:21:53Z"
+        },
+        {
+          "stage": "Collecting single-image evidence",
+          "at": "2026-09-21T02:21:53Z"
+        },
+        {
+          "stage": "Saving result and original inputs",
+          "at": "2026-09-21T02:21:53Z"
+        },
+        {
+          "stage": "Packaging evidence",
+          "at": "2026-09-21T02:21:53Z"
+        }
+      ],
+      "result": {
+        "task": "vqa",
+        "answer": "There is no square grass area present in the image. The fields are irregular in shape and do not follow the pattern of a square. The image depicts a rural landscape with various agricultural plots, but no single square area is discernible. Therefore, the answer is no\n\nModel interpretation; may be inaccurate.",
+        "seconds": 1.872,
+        "statistics": null,
+        "trace": [
+          {
+            "step": "Generate model answer",
+            "seconds": 1.857
+          },
+          {
+            "tool": "Preserved main workspace",
+            "run_id": "0bc6eee7a6054d24a282123847d1374d",
+            "model": "AdaptLLM/remote-sensing-Qwen2-VL-2B-Instruct",
+            "revision": "7f5dd71bf0f40c282193d50160e848a387a08ffe",
+            "mode": "baseline",
+            "routing": {
+              "tool": "vqa",
+              "rule": "single_image_presence",
+              "reason": "Visual presence question; model interpretation, not independently verified detection or a measurement.",
+              "version": "rules-v6"
+            }
+          }
+        ],
+        "limitations": [
+          "Model descriptions and visual counts remain interpretations, not verified measurements."
+        ],
+        "confidence": {
+          "kind": "See original run evidence; no invented confidence score."
+        },
+        "execution": {
+          "task": "vqa",
+          "version": "unified-rules-v6",
+          "specialist": "Remote-sensing Qwen2-VL-2B",
+          "device": "CUDA GPU",
+          "maturity": "supported",
+          "reason": "Visual presence question; model interpretation, not independently verified detection or a measurement.",
+          "decision": {
+            "tool": "vqa",
+            "rule": "single_image_presence",
+            "reason": "Visual presence question; model interpretation, not independently verified detection or a measurement.",
+            "version": "rules-v6"
+          },
+          "mode": "baseline",
+          "threshold": 0.5,
+          "steps": [
+            "validate image",
+            "vqa",
+            "save evidence"
+          ]
+        },
+        "id": "7edd2ce743a14c4b8cb20a2fd2e00559",
+        "query": "Is a square grass area present?",
+        "input_checks": {
+          "task": "vqa",
+          "inputs": [
+            {
+              "id": "bd5f9a9dd0934898a1763f125653b47c",
+              "name": "305.png",
+              "width": 256,
+              "height": 256,
+              "bytes": 99774,
+              "sha256": "dc2d3fab4bf4f1136b4c607a71409d396154a161b218b03da61367974797377c",
+              "preview": "/api/images/ab94bec2df734b428307327b6d8bdc8b",
+              "geo": null,
+              "main_id": "ab94bec2df734b428307327b6d8bdc8b",
+              "modality": "optical",
+              "is_single": true
+            }
+          ],
+          "plan": {
+            "task": "vqa",
+            "version": "unified-rules-v6",
+            "specialist": "Remote-sensing Qwen2-VL-2B",
+            "device": "CUDA GPU",
+            "maturity": "supported",
+            "reason": "Visual presence question; model interpretation, not independently verified detection or a measurement.",
+            "decision": {
+              "tool": "vqa",
+              "rule": "single_image_presence",
+              "reason": "Visual presence question; model interpretation, not independently verified detection or a measurement.",
+              "version": "rules-v6"
+            },
+            "mode": "baseline",
+            "threshold": 0.5,
+            "steps": [
+              "validate image",
+              "vqa",
+              "save evidence"
+            ]
+          }
+        },
+        "controller": "unified-rules-v6",
+        "created_at": "2026-09-21T02:21:53Z",
+        "execution_events": [
+          {
+            "stage": "Input checks passed; preparing specialist",
+            "at": "2026-09-21T02:21:51Z"
+          },
+          {
+            "stage": "Starting Remote-sensing Qwen2-VL-2B",
+            "at": "2026-09-21T02:21:51Z"
+          },
+          {
+            "stage": "Preparing single-image specialist input",
+            "at": "2026-09-21T02:21:51Z"
+          },
+          {
+            "stage": "Analyzing image",
+            "at": "2026-09-21T02:21:51Z"
+          },
+          {
+            "stage": "Specialist finished; collecting evidence",
+            "at": "2026-09-21T02:21:53Z"
+          },
+          {
+            "stage": "Collecting single-image evidence",
+            "at": "2026-09-21T02:21:53Z"
+          },
+          {
+            "stage": "Saving result and original inputs",
+            "at": "2026-09-21T02:21:53Z"
+          },
+          {
+            "stage": "Packaging evidence",
+            "at": "2026-09-21T02:21:53Z"
+          }
+        ],
+        "work_seconds_before_zip": 2.066169836005429
+      },
+      "request_seconds": 2.0706684100005077,
+      "end_to_end_seconds": 2.153142987997853,
+      "archive_verified": true
+    }
+  }
+]

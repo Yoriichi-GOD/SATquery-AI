@@ -1,0 +1,28 @@
+{
+  "id": "flood-Bolivia_103757",
+  "kind": "water_map",
+  "name": "Bolivia \u00b7 103757 (bolivia)",
+  "source": "Sen1Floods11 v1.1 hand-labelled",
+  "benchmark": "Official bolivia split; first chip per event, not selected by prediction quality",
+  "files": [
+    "optical.tif",
+    "sar.tif"
+  ],
+  "source_files": [
+    {
+      "source": "/root/satquery/paired-lab/sen1floods11/S2Hand/Bolivia_103757_S2Hand.tif",
+      "source_sha256": "d16f68d9fffa6235b44cc31b186ec4ab5179420892fc59589d597717afeb19ad",
+      "export_sha256": "bc4233f5fee8203051c897a6e2678088ebff50802351822508b009397b5bda2a"
+    },
+    {
+      "source": "/root/satquery/paired-lab/sen1floods11/S1Hand/Bolivia_103757_S1Hand.tif",
+      "source_sha256": "d7c7630e6540b3d32b063ed079d73e55c95b1c0347f5d94257b2b7300befb4c8",
+      "export_sha256": "b12d110db18d68f51bc5f83e1540a895f1cc6248383a975ecddd908be3922a98"
+    }
+  ],
+  "dates": {
+    "optical": "2018/02/15",
+    "sar": "2018/02/15"
+  },
+  "reference": "/root/satquery/paired-lab/sen1floods11/LabelHand/Bolivia_103757_LabelHand.tif"
+}

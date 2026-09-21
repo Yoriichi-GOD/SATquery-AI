@@ -1,0 +1,4 @@
+category,n,base_correct,adapter_correct,dev_majority_correct,labels
+rural_urban,20,0,15,11,"{""rural"": 9, ""urban"": 11}"
+presence,20,10,15,16,"{""yes"": 16, ""no"": 4}"
+comp,20,13,17,10,"{""yes"": 10, ""no"": 10}"

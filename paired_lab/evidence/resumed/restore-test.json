@@ -1,0 +1,9 @@
+{
+  "archive": "/root/satquery-snapshots/20260913-035521/recovery.tar",
+  "restored_project": "/root/satquery-snapshots/20260913-035521/restore-check/project",
+  "source_hash_mismatches": [],
+  "tests_run": 39,
+  "failures": [],
+  "errors": [],
+  "scope": "Restored project unit regression; full runtime/cache archives were read back during snapshot verification, not replaced in the live environment."
+}

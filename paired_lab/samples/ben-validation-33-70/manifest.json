@@ -1,0 +1,20 @@
+{
+  "id": "ben-validation-33-70",
+  "kind": "optical_sar",
+  "name": "Austria validation 33-70",
+  "source": "ConfigILM official BigEarthNet v2 real-data fixture",
+  "source_revision": "d5a6c64bee268e71f12e130bd839ab9dfe53cc08",
+  "benchmark": "BigEarthNet v2 development",
+  "split": "validation",
+  "optical_patch": "S2A_MSIL2A_20170613T101031_N9999_R022_T33UUP_33_70",
+  "sar_patch": "S1B_IW_GRDH_1SDV_20170612T165809_33UUP_33_70",
+  "registration": "publisher paired sample; geographic transform unavailable in LMDB fixture",
+  "files": [
+    "optical.tif",
+    "sar.tif"
+  ],
+  "shape": [
+    120,
+    120
+  ]
+}

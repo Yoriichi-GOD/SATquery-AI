@@ -1,0 +1,25 @@
+{
+  "temporal": "The model marks possible building-related changes across 20.63% of the full crop, with the most marked pixels in the upper right. This binary map does not distinguish construction from removal.",
+  "fusion": "The jointly trained optical–SAR model suggests Arable land, Broad-leaved forest, Inland waters, Land principally occupied by agriculture, with significant areas of natural vegetation. These are scene-level land-cover labels, not mapped regions or measured area.",
+  "bundleStatus": 200,
+  "bundleBytes": 365528,
+  "errors": [],
+  "desktop": {
+    "width": 1600,
+    "scroll": 1600,
+    "footer": {
+      "x": 0,
+      "y": 911.734375,
+      "width": 1600,
+      "height": 130,
+      "top": 911.734375,
+      "right": 1600,
+      "bottom": 1041.734375,
+      "left": 0
+    }
+  },
+  "mobile": {
+    "width": 390,
+    "scroll": 390
+  }
+}

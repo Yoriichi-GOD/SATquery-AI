@@ -1,0 +1,124 @@
+{
+  "id": "bf0884bcc53644f0915f420b77260f68",
+  "state": "complete",
+  "stage": "Complete",
+  "image": {
+    "id": "2d1e2070801240aea8c6a8181131399e",
+    "name": "punjab-farmland.tif",
+    "width": 512,
+    "height": 512,
+    "bytes": 3197702,
+    "sha256": "abc0611600f3ef2af2710507285af798fa906aa9965cc094350cbc8fa5a11539",
+    "preview": "/api/images/2d1e2070801240aea8c6a8181131399e",
+    "geo": {
+      "calibration_version": "c1-header-verified-v2",
+      "crs": "EPSG:32643",
+      "width": 512,
+      "height": 512,
+      "transform": [
+        10.0,
+        0.0,
+        559550.0,
+        0.0,
+        -10.0,
+        3421270.0
+      ],
+      "bounds": [
+        559550.0,
+        3416150.0,
+        564670.0,
+        3421270.0
+      ],
+      "bounds_wgs84": [
+        75.62297862276665,
+        30.87685092762402,
+        75.67686309820884,
+        30.923316684070073
+      ],
+      "resolution": [
+        10.0,
+        10.0
+      ],
+      "bands": {
+        "red": 1,
+        "green": 2,
+        "blue": 3,
+        "nir": 4,
+        "scl": 5
+      },
+      "band_descriptions": [
+        "red",
+        "green",
+        "blue",
+        "nir",
+        "scl"
+      ],
+      "nodata": "nan",
+      "scales": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "offsets": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "acquired": "2024-10-13T05:50:20.888000Z",
+      "source_item": "S2A_T43REQ_20241013T054552_L2A",
+      "attribution": "Contains modified Copernicus Sentinel data (2024), accessed through Element 84 Earth Search / AWS.",
+      "ndvi_supported": true,
+      "quality_mask_available": true,
+      "preview_processing": "Per-channel 2nd\u201398th percentile RGB display stretch; analytical values are preserved."
+    }
+  },
+  "started": 1788783407.7581623,
+  "route": "NDVI from calibrated red/NIR",
+  "threshold": 0.3,
+  "question": "Calculate NDVI coverage at the selected threshold.",
+  "routing": {
+    "tool": "ndvi",
+    "rule": "ndvi_threshold_coverage",
+    "reason": "Explicit NDVI or vegetation pixel-coverage request with calibrated Red/NIR available. Coverage means pixels meeting the selected NDVI threshold, not surveyed vegetation cover.",
+    "version": "rules-v1"
+  },
+  "answer": "NDVI \u2265 0.30: 87.68% of valid pixels. Selected pixels cover 87.68% of the whole crop. Projected grid area: 2298.38 hectares. Valid pixels cover 100.00% of this crop. This is threshold-based coverage, not a vegetation-health diagnosis.",
+  "statistics": {
+    "calibration_version": "c1-header-verified-v2",
+    "exclusion_counts": {
+      "nodata_or_nonfinite": 0,
+      "negative_reflectance": 0,
+      "zero_denominator": 0,
+      "quality_after_reflectance_checks": 0
+    },
+    "excluded_pixels": 0,
+    "selected_percent_of_crop": 87.67623901367188,
+    "threshold": 0.3,
+    "valid_pixels": 262144,
+    "total_pixels": 262144,
+    "selected_pixels": 229838,
+    "valid_coverage_percent": 100.0,
+    "selected_percent_of_valid": 87.67623901367188,
+    "selected_area_m2": 22983800.0,
+    "area_method": "Projected grid area from affine determinant; not terrain surface area.",
+    "ndvi_min": -0.17092657089233398,
+    "ndvi_max": 0.8664649724960327,
+    "ndvi_mean": 0.53397536277771,
+    "quality_mask_available": true,
+    "quality_rule": "SCL 4,5,6,7 retained; other classes excluded.",
+    "interpretation": "Pixels meeting the stated NDVI threshold; not a vegetation health, density, or species diagnosis."
+  },
+  "overlay": "/api/runs/bf0884bcc53644f0915f420b77260f68/overlay",
+  "raster": "/api/runs/bf0884bcc53644f0915f420b77260f68/ndvi",
+  "seconds": 0.255,
+  "processing_stages": {
+    "rgb": "/api/runs/bf0884bcc53644f0915f420b77260f68/rgb",
+    "false-colour": "/api/runs/bf0884bcc53644f0915f420b77260f68/false-colour",
+    "evidence": "/api/runs/bf0884bcc53644f0915f420b77260f68/evidence",
+    "mask": "/api/runs/bf0884bcc53644f0915f420b77260f68/mask"
+  }
+}

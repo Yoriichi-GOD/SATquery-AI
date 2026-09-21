@@ -1,0 +1,126 @@
+[
+    {
+        "path":  "geo.py",
+        "sha256":  "8972536CC3F5A930F002243BFEC7C1D6AA9D19C324C282EBE2DD4DC0FADC9A20"
+    },
+    {
+        "path":  "README.md",
+        "sha256":  "3B147C4CE089BB5A1EFD7F1BCD013A71F9C720DDE11B507BC606FA36D28C7102"
+    },
+    {
+        "path":  "server.py",
+        "sha256":  "71690C63A20971729F92FAEDB14120F1BA4A7223A27E4BED7AAD89C89E4FB442"
+    },
+    {
+        "path":  "start.ps1",
+        "sha256":  "554425941E3432F9F4AA155E818DDD4503D8EDEE4FAF66F72B768D01969AD3D0"
+    },
+    {
+        "path":  "results\\calibration-audit.md",
+        "sha256":  "BA8AC8221DF33C12F9279C007143B19A00C622D4A6DD0389CBD883CA207329B9"
+    },
+    {
+        "path":  "results\\calibration-comparison.json",
+        "sha256":  "74E954841861DA1F98D68CEACC471B8E3DDB1FD3D498C79BA500202905CDF3C6"
+    },
+    {
+        "path":  "results\\independent-ndvi-check.json",
+        "sha256":  "4FDCA511D44766D78E9D24EF4E88AF0B54A4ED24BB4D0CDDC813D5A73618DF81"
+    },
+    {
+        "path":  "results\\independent-validation.md",
+        "sha256":  "4A30342CA523FF7FE3D91716C12460A655E329297C79CA491FAD37CB6816B18C"
+    },
+    {
+        "path":  "results\\integration-check.json",
+        "sha256":  "458C0412537F08FF174A0208A4B9974ED1AEDEAF6997AA6FA16ADA6CEE712643"
+    },
+    {
+        "path":  "results\\learning_manifest.json",
+        "sha256":  "A85DFAFCC5F8824A97C56E76B356A416964BBBFCA9D1E15A63D89FFD28A081D4"
+    },
+    {
+        "path":  "results\\ndvi-integration.json",
+        "sha256":  "1F5A915007CEC56F6B83B4E1C87ECA70A900438694F4B294C9EBDA492D651751"
+    },
+    {
+        "path":  "results\\ndvi-invalid-v1.json",
+        "sha256":  "F51F80848D867EDEBF383CCC14A6F57F60DB6C735E631DA80832A40813BC70F7"
+    },
+    {
+        "path":  "results\\ndvi-visual-validation.png",
+        "sha256":  "0F7C5FFF71D2AFE64B1C5664365505F3B7E7E7EFCA7B8753418E2C23E5CD14E2"
+    },
+    {
+        "path":  "results\\pilot-v1.json",
+        "sha256":  "BD8B262B0D51FEE4BC843446BE0A3F112D670611E178DD6606A8E93900D75D8D"
+    },
+    {
+        "path":  "scripts\\fetch_scene.py",
+        "sha256":  "68E6A65D8186F3EBCFE7F180C19A3C35031E73DEBCB923962E4B0142DC6E69C9"
+    },
+    {
+        "path":  "scripts\\independent_ndvi_check.py",
+        "sha256":  "7ABC1FD33A3D85565DEB43F38192E159566A316B1CE72E420FE982EE2350A97B"
+    },
+    {
+        "path":  "scripts\\lora_trial.py",
+        "sha256":  "593B02723C504A00035E59545567BEE64D044F6FB24614C0827FEA45AF2D1D43"
+    },
+    {
+        "path":  "scripts\\prepare_learning.py",
+        "sha256":  "EFC94D6B5AFC6207534EAFD1B180A541E60799934F8AA8AF7345EE647C19C6C6"
+    },
+    {
+        "path":  "scripts\\train_pilot.py",
+        "sha256":  "878E505315AD627C479B7FD231C10CBF6E5DBBFDF8A709A120CC9674942AB778"
+    },
+    {
+        "path":  "tests\\test_geo.py",
+        "sha256":  "8A4EF2307073B92346BB4F2525489E8C7AF05786855287C1A0FF4EFFBE8C4695"
+    },
+    {
+        "path":  "tests\\__pycache__\\test_geo.cpython-311.pyc",
+        "sha256":  "89E28FCC97D408E4C962EB480C2FD8B7345781414B6B33C8BECADEBAAF5E0E4C"
+    },
+    {
+        "path":  "web\\app.js",
+        "sha256":  "5558693A2321EDC63F59D19ED35B54BBA956245DCF069AB50441A8EDC59CC602"
+    },
+    {
+        "path":  "web\\index.html",
+        "sha256":  "59F097CD1D7A13E570F5E6FE58EE78DEFD2498EF3E0C1611E4A3BC09208764EF"
+    },
+    {
+        "path":  "web\\style.css",
+        "sha256":  "B0E40B3D61D4743593F1456D5E81C7B757084016FE9DD117BF8E4B732D3C4C4E"
+    },
+    {
+        "path":  "web\\art\\empty-planet.png",
+        "sha256":  "F785A7CEE045C94342CAE7FF100934A526DDAA4A1179C23EDB7441D34B6226A5"
+    },
+    {
+        "path":  "web\\art\\footer-dark.png",
+        "sha256":  "87C4639EDCCBF5C72DB10D12A66A72F3FD465C3DCAB8F6D7621C9F533171BAA1"
+    },
+    {
+        "path":  "web\\art\\footer-light.png",
+        "sha256":  "44B0EFBA46E5FB8675666DD8B5CE4C21C3CD2CDE4966C8775F5CB71F1BCB2787"
+    },
+    {
+        "path":  "web\\art\\header-dark.png",
+        "sha256":  "26045F986A6401CB9C0ED0F057D9C5637BFE2FC76AD6843A1C35CD22532BA6C1"
+    },
+    {
+        "path":  "web\\art\\header-light.png",
+        "sha256":  "6C4C53F3ABC19FBDD3A8A02032FDED4A98B98BA2660124C83FFA99504B1BAF3F"
+    },
+    {
+        "path":  "web\\art\\loading.png",
+        "sha256":  "D83E2FA92BBC8862A1FA01248322A4DBAE14818A8662C70C851D11EC408CFBED"
+    },
+    {
+        "path":  "web\\art\\logo.png",
+        "sha256":  "7EEB3B76C87CD4F6B01C9A9F3890084EA0318AA12BA2986B04AC26CD73DABF70"
+    }
+]

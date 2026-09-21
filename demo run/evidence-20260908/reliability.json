@@ -1,0 +1,172 @@
+{
+  "updated": "2026-09-07",
+  "metrics": [
+    {
+      "label": "NDVI numerical checks",
+      "value": "18/18",
+      "note": "Six scenes \u00d7 three thresholds; independent decoder and scalar calculation."
+    },
+    {
+      "label": "Fresh adapter diagnostic",
+      "value": "19/24",
+      "note": "12/12 rural/urban; 7/12 presence. Small custom subset, not broad VQA accuracy."
+    },
+    {
+      "label": "Routing regression",
+      "value": "58/58",
+      "note": "Defined routing cases, including baseball counting and compound-request refusals."
+    }
+  ],
+  "notes": [
+    "Baseball/softball counting: full sample = 4. Seven answered reference cases were correct; a blank image and an ambiguous partial crop were withheld. Related crops/transforms share one baseball scene: this is a development smoke test, not independent-scene accuracy.",
+    "Final VQA: all 11 live requests completed. Six fresh descriptions returned bounded observations; the two known overclaim regressions were suppressed. Qualitative review does not establish complete description accuracy.",
+    "Known limitation retained: in a negative river-presence check, Original answered No while the yes/no adapter answered Yes. The adapter still makes false-positive presence errors.",
+    "The prompt-only candidate and direct-answer decoding probe did not resolve speculative descriptions and were not deployed. Current safeguards preserve raw output and omit unsupported claims; they are not a visual verifier.",
+    "NDVI agreement verifies arithmetic, masks, counts, denominators and projected area. It is not field validation of vegetation cover or cloud classification."
+  ],
+  "ndvi_scenes": [
+    {
+      "name": "Dehradun",
+      "valid_pixels": 262144,
+      "percent": 14.786148071289062,
+      "hectares": 387.61
+    },
+    {
+      "name": "Assam monsoon",
+      "valid_pixels": 235252,
+      "percent": 43.69272099705847,
+      "hectares": 1027.88
+    },
+    {
+      "name": "Bengaluru",
+      "valid_pixels": 262076,
+      "percent": 13.783787908850867,
+      "hectares": 361.24
+    },
+    {
+      "name": "Jaisalmer",
+      "valid_pixels": 262144,
+      "percent": 10.660552978515625,
+      "hectares": 279.46
+    },
+    {
+      "name": "Punjab",
+      "valid_pixels": 262144,
+      "percent": 66.39900207519531,
+      "hectares": 1740.61
+    },
+    {
+      "name": "Sundarbans",
+      "valid_pixels": 261833,
+      "percent": 78.95337868030386,
+      "hectares": 2067.26
+    }
+  ],
+  "counting": {
+    "cases": 9,
+    "known_reference_cases": 8,
+    "answered": 7,
+    "correct": 7,
+    "withheld": 1,
+    "partial_unscored": [
+      {
+        "id": "top-and-right",
+        "count": null
+      }
+    ],
+    "scope": "Development smoke tests: one baseball scene with related transformations/crops, a uniform image and two negative scenes. Not independent-scene counting accuracy. Ambiguous partial crop is unscored. Agreement between mirrored views is correlated, not proof of correctness."
+  },
+  "adapter": {
+    "total": 24,
+    "raw_exact_correct": 19,
+    "display_exact_correct": 19,
+    "by_category": {
+      "presence": {
+        "total": 12,
+        "correct": 7
+      },
+      "rural_urban": {
+        "total": 12,
+        "correct": 12
+      }
+    },
+    "scope": "Existing adapter, 24 fresh images from official test scene, not adapter train/dev. Same frozen cases as prompt diagnostic; not an additional independent test. 64-128 visual tokens, 16 output tokens: deployment pilot settings. Baseline diagnostic used different prompts/token limits, so this is not a controlled adapter-only ablation. Published labels may be noisy; upstream model exposure unknown."
+  },
+  "final_vqa": {
+    "total": 11,
+    "completed": 11,
+    "fresh_descriptions": 6,
+    "known_regression_cases": 2
+  },
+  "regression_tests": {
+    "passed": 30,
+    "total": 30,
+    "scope": "Python scientific, routing, dispatch, answer and counting-parser tests"
+  },
+  "evidence": [
+    {
+      "path": "results/reliability-20260907/ndvi-independent-summary.json",
+      "sha256": "52f445d9ea4b2af406991ca4f6fe99b9a99f22690edc8778fcf24c4a1795adfd"
+    },
+    {
+      "path": "results/reliability-20260907/before-fix-ndvi-independent-summary.json",
+      "sha256": "ad3076d35517007c589f3ab2912eaffd1347be42acf8d818538111a20e9ce867"
+    },
+    {
+      "path": "results/reliability-20260907/routing-regression.json",
+      "sha256": "c3dc28f114c3e6546c830dcf7c0c8e550d3f49cce0a96224ba5c40d819d86fed"
+    },
+    {
+      "path": "results/reliability-20260907/vqa/paired-summary.json",
+      "sha256": "e2b65e7d4ba5a1bc0c9b7bf6707d65618f8f58b6d140c117754a6ccf016fc50c"
+    },
+    {
+      "path": "results/reliability-20260907/vqa/paired-predictions.jsonl",
+      "sha256": "10ee26a74fbcc4c27550070c9a49399795407db2166d724744c4e41d8fc435f0"
+    },
+    {
+      "path": "results/reliability-20260907/vqa/frozen-cases.json",
+      "sha256": "873da74bf37b7acba64b6677930c81064bef50be89796878d01c3ee18143f4ac"
+    },
+    {
+      "path": "results/reliability-20260907/vqa/direct-answer-development-probe.jsonl",
+      "sha256": "0bf6e7d83644fa53fb01d5019dec26db565d208acdc4bd7c46a64e0086b88b8c"
+    },
+    {
+      "path": "results/reliability-20260907/vqa/existing-adapter-fresh-summary.json",
+      "sha256": "d971f8532283002ae352798fee7d4ec517ce999bfb4392aadc7c75aaa3202663"
+    },
+    {
+      "path": "results/reliability-20260907/vqa/existing-adapter-fresh-predictions.jsonl",
+      "sha256": "7c7e35c9ad2379d505f34f891830c86c5dd684f3efd95de69e6fd0ba1f23105a"
+    },
+    {
+      "path": "results/reliability-20260907/vqa/live-validation.jsonl",
+      "sha256": "e7201a750309d5bca13d968551a92a5777235c4bbdf7cd7800f0fd00aede3559"
+    },
+    {
+      "path": "results/reliability-20260907/vqa/live-validation-v2.jsonl",
+      "sha256": "e874b82177d6e9033b0cceb9faa14db8d7d1b22ae1bbf0a5db3b87d294d46aa4"
+    },
+    {
+      "path": "results/reliability-20260907/vqa/fresh-review-observations.json",
+      "sha256": "4f963a9b4de197a5796d6dcbd791d70d3a06e97a01e61466df9288b69dda8466"
+    },
+    {
+      "path": "results/reliability-20260907/vqa/live-refusals-v2.json",
+      "sha256": "078e9d11795245020785ac00378a585fded989a2b50e3170636344f15b913668"
+    },
+    {
+      "path": "results/reliability-20260907/counting/development-predictions.json",
+      "sha256": "503d8726fdd7423c175988eb78d6924a4c8944f188c7e85f8c4714510f1974ed"
+    },
+    {
+      "path": "results/reliability-20260907/counting/live-predictions.json",
+      "sha256": "6acc3af0fd1d7f8e53bb52eab3e8e7ff05277e5934f862b4f00a18005b0f43ca"
+    },
+    {
+      "path": "results/reliability-20260907/counting/live-summary.json",
+      "sha256": "d1d48280a5562b211c2a4d921f93709fb3252096e18b68b3a0c2ec2aba615454"
+    }
+  ]
+}

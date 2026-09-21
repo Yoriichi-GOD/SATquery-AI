@@ -1,0 +1,125 @@
+{
+  "id": "65da381afb90423aaaa8c47399f6aaee",
+  "state": "complete",
+  "stage": "Complete",
+  "image": {
+    "id": "c65337f1d7a445eb805a7ee291e305a6",
+    "name": "assam-monsoon.tif",
+    "width": 512,
+    "height": 512,
+    "bytes": 3169130,
+    "sha256": "fed55c99e4aade94d6c4f5aab4b4c2a738c4b41374b5b7c74b8adec89bff4e30",
+    "preview": "/api/images/c65337f1d7a445eb805a7ee291e305a6",
+    "geo": {
+      "calibration_version": "c1-header-verified-v2",
+      "crs": "EPSG:32646",
+      "width": 512,
+      "height": 512,
+      "transform": [
+        10.0,
+        0.0,
+        370500.0,
+        0.0,
+        -10.0,
+        2896590.0
+      ],
+      "bounds": [
+        370500.0,
+        2891470.0,
+        375620.0,
+        2896590.0
+      ],
+      "bounds_wgs84": [
+        91.70405903725678,
+        26.13672154427188,
+        91.75577691754091,
+        26.183393781656612
+      ],
+      "resolution": [
+        10.0,
+        10.0
+      ],
+      "bands": {
+        "red": 1,
+        "green": 2,
+        "blue": 3,
+        "nir": 4,
+        "scl": 5
+      },
+      "band_descriptions": [
+        "red",
+        "green",
+        "blue",
+        "nir",
+        "scl"
+      ],
+      "nodata": "nan",
+      "scales": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "offsets": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "acquired": "2024-08-08T04:41:18.742000Z",
+      "source_item": "S2B_T46RCQ_20240808T044110_L2A",
+      "attribution": "Contains modified Copernicus Sentinel data (2024), accessed through Element 84 Earth Search / AWS.",
+      "ndvi_supported": true,
+      "quality_mask_available": true,
+      "preview_processing": "Per-channel 2nd\u201398th percentile RGB display stretch; analytical values are preserved."
+    }
+  },
+  "started": 1788783790.1976767,
+  "route": "NDVI from calibrated red/NIR",
+  "threshold": 0.7,
+  "question": "Calculate NDVI coverage at the selected threshold.",
+  "routing": {
+    "tool": "ndvi",
+    "rule": "ndvi_threshold_coverage",
+    "reason": "Explicit NDVI or vegetation pixel-coverage request with calibrated Red/NIR available. Coverage means pixels meeting the selected NDVI threshold, not surveyed vegetation cover.",
+    "version": "rules-v1"
+  },
+  "answer": "NDVI \u2265 0.70: 29.77% of valid pixels. Selected pixels cover 26.72% of the whole crop. Projected grid area: 700.43 hectares. Valid pixels cover 89.74% of this crop. This is threshold-based coverage, not a vegetation-health diagnosis.",
+  "statistics": {
+    "numerical_precision": "float64 reflectance arithmetic, threshold comparison and NDVI export",
+    "calibration_version": "c1-header-verified-v2",
+    "exclusion_counts": {
+      "nodata_or_nonfinite": 0,
+      "negative_reflectance": 0,
+      "zero_denominator": 0,
+      "quality_after_reflectance_checks": 26892
+    },
+    "excluded_pixels": 26892,
+    "selected_percent_of_crop": 26.719284057617188,
+    "threshold": 0.7,
+    "valid_pixels": 235252,
+    "total_pixels": 262144,
+    "selected_pixels": 70043,
+    "valid_coverage_percent": 89.74151611328125,
+    "selected_percent_of_valid": 29.77360447520106,
+    "selected_area_m2": 7004300.0,
+    "area_method": "Projected grid area from affine determinant; not terrain surface area.",
+    "ndvi_min": -0.4216867578031377,
+    "ndvi_max": 0.9261663505736539,
+    "ndvi_mean": 0.40891905958837255,
+    "quality_mask_available": true,
+    "quality_rule": "SCL 4,5,6,7 retained; other classes excluded.",
+    "interpretation": "Pixels meeting the stated NDVI threshold; not a vegetation health, density, or species diagnosis."
+  },
+  "overlay": "/api/runs/65da381afb90423aaaa8c47399f6aaee/overlay",
+  "raster": "/api/runs/65da381afb90423aaaa8c47399f6aaee/ndvi",
+  "seconds": 0.184,
+  "processing_stages": {
+    "rgb": "/api/runs/65da381afb90423aaaa8c47399f6aaee/rgb",
+    "false-colour": "/api/runs/65da381afb90423aaaa8c47399f6aaee/false-colour",
+    "evidence": "/api/runs/65da381afb90423aaaa8c47399f6aaee/evidence",
+    "mask": "/api/runs/65da381afb90423aaaa8c47399f6aaee/mask"
+  }
+}

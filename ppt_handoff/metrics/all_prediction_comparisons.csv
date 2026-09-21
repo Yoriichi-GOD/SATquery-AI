@@ -1,0 +1,61 @@
+question_id,image_id,category,question,reference,base,adapter,base_correct,adapter_correct,base_valid_format,kind,image
+4889,48,comp,Are there less roads than residential buildings?,yes,No,yes,False,True,True,semantic-label gain,/root/satquery/data/dev/48.png
+3058,30,comp,Are there less buildings than farmlands?,no,Yes,yes,False,False,True,unchanged,/root/satquery/data/dev/30.png
+5377,53,comp,Are there less buildings than square wetlands?,no,No,no,True,True,True,unchanged,/root/satquery/data/dev/53.png
+1400,14,rural_urban,Is it a rural or an urban area,rural,"The image depicts a rural area. This is evident from the presence of large,",rural,False,True,False,format-confounded gain,/root/satquery/data/dev/14.png
+1210,12,presence,Is a commercial building present?,yes,No,yes,False,True,True,semantic-label gain,/root/satquery/data/dev/12.png
+1200,12,rural_urban,Is it a rural or an urban area,urban,The area depicted in the image is a rural setting. This is indicated by the,urban,False,True,False,format-confounded gain,/root/satquery/data/dev/12.png
+4440,44,comp,Are there less farmlands than buildings?,yes,No,yes,False,True,True,semantic-label gain,/root/satquery/data/dev/44.png
+3503,35,presence,Is there a commercial building?,yes,No,no,False,False,True,unchanged,/root/satquery/data/dev/35.png
+800,8,rural_urban,Is it a rural or an urban area,urban,The area depicted in the image is a mix of rural and urban elements. The,urban,False,True,False,format-confounded gain,/root/satquery/data/dev/8.png
+4350,43,comp,Is the number of water areas equal to the number of commercial buildings?,no,No,no,True,True,True,unchanged,/root/satquery/data/dev/43.png
+5401,54,rural_urban,Is it a rural or an urban area,rural,The area depicted in the image is primarily rural. This is indicated by the presence,rural,False,True,False,format-confounded gain,/root/satquery/data/dev/54.png
+5440,54,presence,Is there a circular road?,no,No,yes,True,False,True,regression,/root/satquery/data/dev/54.png
+2522,25,presence,Is there a forest?,yes,No,yes,False,True,True,semantic-label gain,/root/satquery/data/dev/25.png
+1267,12,comp,Are there less commercial buildings than forests?,yes,Yes,yes,True,True,True,unchanged,/root/satquery/data/dev/12.png
+5491,54,comp,Are there less water areas than residential buildings?,yes,Yes.,yes,True,True,True,unchanged,/root/satquery/data/dev/54.png
+3900,39,rural_urban,Is it a rural or an urban area,urban,The area depicted in the image is primarily rural. This is indicated by the presence,urban,False,True,False,format-confounded gain,/root/satquery/data/dev/39.png
+4600,46,rural_urban,Is it a rural or an urban area,urban,The area depicted in the image is primarily rural. This is indicated by the large,rural,False,False,False,unchanged,/root/satquery/data/dev/46.png
+5209,52,presence,Is a grass area present?,yes,Yes,yes,True,True,True,unchanged,/root/satquery/data/dev/52.png
+4300,43,rural_urban,Is it a rural or an urban area,urban,The area depicted in the image is primarily rural. This is indicated by the presence,rural,False,False,False,unchanged,/root/satquery/data/dev/43.png
+1936,19,presence,Is there a rectangular grass area?,no,No,yes,True,False,True,regression,/root/satquery/data/dev/19.png
+1495,14,presence,Is there a wetland?,yes,No,yes,False,True,True,semantic-label gain,/root/satquery/data/dev/14.png
+4801,48,rural_urban,Is it a rural or an urban area,rural,The area depicted in the image is rural. This is indicated by the presence of,rural,False,True,False,format-confounded gain,/root/satquery/data/dev/48.png
+3565,35,comp,Are there more buildings than grass areas?,yes,No,yes,False,True,True,semantic-label gain,/root/satquery/data/dev/35.png
+3969,39,comp,Are there more commercial buildings than roads?,no,No,no,True,True,True,unchanged,/root/satquery/data/dev/39.png
+1914,19,comp,Is the number of commercial buildings equal to the number of commercial buildings?,yes,No,no,False,False,True,unchanged,/root/satquery/data/dev/19.png
+5247,52,comp,Are there more forests than buildings?,no,No,no,True,True,True,unchanged,/root/satquery/data/dev/52.png
+3987,39,presence,Is there a small building in the image?,yes,Yes.,yes,True,True,True,unchanged,/root/satquery/data/dev/39.png
+327,3,comp,Is the number of residential buildings equal to the number of roads?,no,No,no,True,True,True,unchanged,/root/satquery/data/dev/3.png
+3000,30,rural_urban,Is it a rural or an urban area,rural,The area depicted in the image is primarily rural. This is indicated by the large,rural,False,True,False,format-confounded gain,/root/satquery/data/dev/30.png
+2554,25,comp,Are there less commercial buildings than square water areas in the image?,no,No,no,True,True,True,unchanged,/root/satquery/data/dev/25.png
+4957,49,presence,Is there a farmland?,yes,Yes,yes,True,True,True,unchanged,/root/satquery/data/dev/49.png
+3500,35,rural_urban,Is it a rural or an urban area,urban,The area depicted in the image is rural. This is indicated by the presence of,rural,False,False,False,unchanged,/root/satquery/data/dev/35.png
+4635,46,presence,Is there a rectangular grass area?,yes,No,yes,False,True,True,semantic-label gain,/root/satquery/data/dev/46.png
+4806,48,presence,Is a water area present?,yes,No,yes,False,True,True,semantic-label gain,/root/satquery/data/dev/48.png
+2500,25,rural_urban,Is it a rural or an urban area,urban,The area depicted in the image is primarily rural. This is indicated by the large,urban,False,True,False,format-confounded gain,/root/satquery/data/dev/25.png
+2200,22,rural_urban,Is it a rural or an urban area,urban,The area depicted in the image is primarily rural. This is indicated by the large,rural,False,False,False,unchanged,/root/satquery/data/dev/22.png
+1331,13,presence,Is a large road present?,no,Yes,yes,False,False,True,unchanged,/root/satquery/data/dev/13.png
+2166,21,presence,Is there a small road?,yes,Yes,yes,True,True,True,unchanged,/root/satquery/data/dev/21.png
+314,3,presence,Is there a circular orchard?,yes,No,yes,False,True,True,semantic-label gain,/root/satquery/data/dev/3.png
+4318,43,presence,Is a farmland present?,yes,Yes,yes,True,True,True,unchanged,/root/satquery/data/dev/43.png
+1393,13,comp,Are there more roads than commercial buildings on the right of a  road?,yes,Yes.,yes,True,True,True,unchanged,/root/satquery/data/dev/13.png
+3060,30,presence,Is there a medium road?,no,Yes,yes,False,False,True,unchanged,/root/satquery/data/dev/30.png
+4901,49,rural_urban,Is it a rural or an urban area,rural,The area depicted in the image is indicative of a rural landscape. This is characterized,rural,False,True,False,format-confounded gain,/root/satquery/data/dev/49.png
+2132,21,comp,Are there more forests on the right of a  water area than commercial buildings?,yes,Yes.,yes,True,True,True,unchanged,/root/satquery/data/dev/21.png
+891,8,comp,Is the number of circular water areas equal to the number of commercial buildings?,no,No,no,True,True,True,unchanged,/root/satquery/data/dev/8.png
+300,3,rural_urban,Is it a rural or an urban area,rural,The area depicted in the image is primarily rural. This is indicated by the presence,rural,False,True,False,format-confounded gain,/root/satquery/data/dev/3.png
+5201,52,rural_urban,Is it a rural or an urban area,urban,The area depicted in the image is primarily rural. This is indicated by the presence,urban,False,True,False,format-confounded gain,/root/satquery/data/dev/52.png
+1421,14,comp,Are there more residential buildings than forests?,no,No,no,True,True,True,unchanged,/root/satquery/data/dev/14.png
+5344,53,presence,Is a small building present?,yes,Yes.,yes,True,True,True,unchanged,/root/satquery/data/dev/53.png
+2285,22,comp,Is the number of roads equal to the number of residential buildings?,no,No,no,True,True,True,unchanged,/root/satquery/data/dev/22.png
+4420,44,presence,Is a forest present?,yes,Yes,yes,True,True,True,unchanged,/root/satquery/data/dev/44.png
+1900,19,rural_urban,Is it a rural or an urban area,rural,The area depicted in the image is primarily rural. This is indicated by the presence,rural,False,True,False,format-confounded gain,/root/satquery/data/dev/19.png
+811,8,presence,Is a circular road present?,yes,Yes.,yes,True,True,True,unchanged,/root/satquery/data/dev/8.png
+4996,49,comp,Are there more water areas than medium residential buildings?,yes,No,no,False,False,True,unchanged,/root/satquery/data/dev/49.png
+2231,22,presence,Is a medium residential building present?,yes,No,yes,False,True,True,semantic-label gain,/root/satquery/data/dev/22.png
+5301,53,rural_urban,Is it a rural or an urban area,rural,The area depicted in the image is primarily rural. This is indicated by the large,urban,False,False,False,unchanged,/root/satquery/data/dev/53.png
+2100,21,rural_urban,Is it a rural or an urban area,urban,The area depicted in the image is a mix of rural and urban elements. The,urban,False,True,False,format-confounded gain,/root/satquery/data/dev/21.png
+4400,44,rural_urban,Is it a rural or an urban area,urban,The area depicted in the image is primarily rural. This is indicated by the presence,urban,False,True,False,format-confounded gain,/root/satquery/data/dev/44.png
+1300,13,rural_urban,Is it a rural or an urban area,rural,The image depicts a rural area. This is indicated by the presence of large tr,rural,False,True,False,format-confounded gain,/root/satquery/data/dev/13.png
+4667,46,comp,Are there more small buildings than forests?,yes,No,yes,False,True,True,semantic-label gain,/root/satquery/data/dev/46.png

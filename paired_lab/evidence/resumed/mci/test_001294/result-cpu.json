@@ -1,0 +1,36 @@
+{
+  "file": "test_001294.png",
+  "reference_changeflag": 1,
+  "raw_caption": "a parking lot is built on the bareland",
+  "reference_captions": [
+    " a field with three houses and some facilities appears on the grass on the right .",
+    " three small buildings surrounded by the enclosing wall appear on the bare ground on the bare ground .",
+    " an electric plant is built in the middle of the scene .",
+    " some buildings are built on the bareland in the middle and a road at the top corner disappears .",
+    " several small buildings have been built in the clearing ."
+  ],
+  "caption_changeflag_heuristic": 1,
+  "confusion_rows_reference_columns_prediction": [
+    [
+      62859,
+      117,
+      0
+    ],
+    [
+      1088,
+      830,
+      0
+    ],
+    [
+      642,
+      0,
+      0
+    ]
+  ],
+  "predicted_class_pixels": {
+    "0": 64589,
+    "1": 947,
+    "2": 0
+  },
+  "gpu_caption": "a parking lot is built on the bareland"
+}

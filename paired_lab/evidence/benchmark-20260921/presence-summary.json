@@ -1,0 +1,124 @@
+{
+  "n": 16,
+  "completed": 16,
+  "correct": 9,
+  "abstain_or_unparsed": 0,
+  "tp": 9,
+  "fp": 3,
+  "fn": 4,
+  "rows": [
+    {
+      "image_id": 327,
+      "reference": "yes",
+      "prediction": "yes",
+      "correct": true,
+      "state": "complete"
+    },
+    {
+      "image_id": 245,
+      "reference": "yes",
+      "prediction": "yes",
+      "correct": true,
+      "state": "complete"
+    },
+    {
+      "image_id": 252,
+      "reference": "yes",
+      "prediction": "yes",
+      "correct": true,
+      "state": "complete"
+    },
+    {
+      "image_id": 263,
+      "reference": "yes",
+      "prediction": "yes",
+      "correct": true,
+      "state": "complete"
+    },
+    {
+      "image_id": 301,
+      "reference": "yes",
+      "prediction": "yes",
+      "correct": true,
+      "state": "complete"
+    },
+    {
+      "image_id": 261,
+      "reference": "yes",
+      "prediction": "yes",
+      "correct": true,
+      "state": "complete"
+    },
+    {
+      "image_id": 302,
+      "reference": "yes",
+      "prediction": "yes",
+      "correct": true,
+      "state": "complete"
+    },
+    {
+      "image_id": 276,
+      "reference": "no",
+      "prediction": "yes",
+      "correct": false,
+      "state": "complete"
+    },
+    {
+      "image_id": 234,
+      "reference": "yes",
+      "prediction": "yes",
+      "correct": true,
+      "state": "complete"
+    },
+    {
+      "image_id": 308,
+      "reference": "yes",
+      "prediction": "no",
+      "correct": false,
+      "state": "complete"
+    },
+    {
+      "image_id": 275,
+      "reference": "yes",
+      "prediction": "no",
+      "correct": false,
+      "state": "complete"
+    },
+    {
+      "image_id": 317,
+      "reference": "yes",
+      "prediction": "no",
+      "correct": false,
+      "state": "complete"
+    },
+    {
+      "image_id": 326,
+      "reference": "no",
+      "prediction": "yes",
+      "correct": false,
+      "state": "complete"
+    },
+    {
+      "image_id": 287,
+      "reference": "yes",
+      "prediction": "yes",
+      "correct": true,
+      "state": "complete"
+    },
+    {
+      "image_id": 305,
+      "reference": "yes",
+      "prediction": "no",
+      "correct": false,
+      "state": "complete"
+    },
+    {
+      "image_id": 300,
+      "reference": "no",
+      "prediction": "yes",
+      "correct": false,
+      "state": "complete"
+    }
+  ],
+  "scoring": "Decision extracted only from leading yes/no or explicit answer-is yes/no; inconsistent or absent decision unscored/incorrect. Exploratory scoring protocol; not published RSVQA exact-match protocol."
+}

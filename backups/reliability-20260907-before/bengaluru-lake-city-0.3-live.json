@@ -1,0 +1,124 @@
+{
+  "id": "5946b906c8384835ab47a130ff0212f2",
+  "state": "complete",
+  "stage": "Complete",
+  "image": {
+    "id": "69cc044dd59c4cceb81e4edcfc1269b5",
+    "name": "bengaluru-lake-city.tif",
+    "width": 512,
+    "height": 512,
+    "bytes": 3245198,
+    "sha256": "f11697a2dcf9b3758dff7319b614ee7dded505cd78258468c39815c2073e44d7",
+    "preview": "/api/images/69cc044dd59c4cceb81e4edcfc1269b5",
+    "geo": {
+      "calibration_version": "c1-header-verified-v2",
+      "crs": "EPSG:32643",
+      "width": 512,
+      "height": 512,
+      "transform": [
+        10.0,
+        0.0,
+        787140.0,
+        0.0,
+        -10.0,
+        1434580.0
+      ],
+      "bounds": [
+        787140.0,
+        1429460.0,
+        792260.0,
+        1434580.0
+      ],
+      "bounds_wgs84": [
+        77.64615488232272,
+        12.916697859777582,
+        77.69379888426566,
+        12.963429178178792
+      ],
+      "resolution": [
+        10.0,
+        10.0
+      ],
+      "bands": {
+        "red": 1,
+        "green": 2,
+        "blue": 3,
+        "nir": 4,
+        "scl": 5
+      },
+      "band_descriptions": [
+        "red",
+        "green",
+        "blue",
+        "nir",
+        "scl"
+      ],
+      "nodata": "nan",
+      "scales": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "offsets": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "acquired": "2024-03-13T05:25:16.952000Z",
+      "source_item": "S2B_T43PGQ_20240313T052012_L2A",
+      "attribution": "Contains modified Copernicus Sentinel data (2024), accessed through Element 84 Earth Search / AWS.",
+      "ndvi_supported": true,
+      "quality_mask_available": true,
+      "preview_processing": "Per-channel 2nd\u201398th percentile RGB display stretch; analytical values are preserved."
+    }
+  },
+  "started": 1788783404.5339959,
+  "route": "NDVI from calibrated red/NIR",
+  "threshold": 0.3,
+  "question": "Calculate NDVI coverage at the selected threshold.",
+  "routing": {
+    "tool": "ndvi",
+    "rule": "ndvi_threshold_coverage",
+    "reason": "Explicit NDVI or vegetation pixel-coverage request with calibrated Red/NIR available. Coverage means pixels meeting the selected NDVI threshold, not surveyed vegetation cover.",
+    "version": "rules-v1"
+  },
+  "answer": "NDVI \u2265 0.30: 37.43% of valid pixels. Selected pixels cover 37.42% of the whole crop. Projected grid area: 981.00 hectares. Valid pixels cover 99.97% of this crop. This is threshold-based coverage, not a vegetation-health diagnosis.",
+  "statistics": {
+    "calibration_version": "c1-header-verified-v2",
+    "exclusion_counts": {
+      "nodata_or_nonfinite": 0,
+      "negative_reflectance": 0,
+      "zero_denominator": 0,
+      "quality_after_reflectance_checks": 68
+    },
+    "excluded_pixels": 68,
+    "selected_percent_of_crop": 37.42218017578125,
+    "threshold": 0.3,
+    "valid_pixels": 262076,
+    "total_pixels": 262144,
+    "selected_pixels": 98100,
+    "valid_coverage_percent": 99.97406005859375,
+    "selected_percent_of_valid": 37.431889986110896,
+    "selected_area_m2": 9810000.0,
+    "area_method": "Projected grid area from affine determinant; not terrain surface area.",
+    "ndvi_min": -0.33116036653518677,
+    "ndvi_max": 0.8349649906158447,
+    "ndvi_mean": 0.2719056308269501,
+    "quality_mask_available": true,
+    "quality_rule": "SCL 4,5,6,7 retained; other classes excluded.",
+    "interpretation": "Pixels meeting the stated NDVI threshold; not a vegetation health, density, or species diagnosis."
+  },
+  "overlay": "/api/runs/5946b906c8384835ab47a130ff0212f2/overlay",
+  "raster": "/api/runs/5946b906c8384835ab47a130ff0212f2/ndvi",
+  "seconds": 0.215,
+  "processing_stages": {
+    "rgb": "/api/runs/5946b906c8384835ab47a130ff0212f2/rgb",
+    "false-colour": "/api/runs/5946b906c8384835ab47a130ff0212f2/false-colour",
+    "evidence": "/api/runs/5946b906c8384835ab47a130ff0212f2/evidence",
+    "mask": "/api/runs/5946b906c8384835ab47a130ff0212f2/mask"
+  }
+}

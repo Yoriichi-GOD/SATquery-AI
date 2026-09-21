@@ -1,0 +1,989 @@
+[
+  {
+    "case": {
+      "id": "full",
+      "image": "/mnt/c/Users/nrgen/.codex/scratch/SATquery AI/results/reliability-20260907/counting/full.png",
+      "reference": 4
+    },
+    "run": {
+      "id": "baf924b41a76451e9b5f824c6d885e1f",
+      "state": "complete",
+      "stage": "Complete",
+      "question": "How many baseball fields are there in this image?",
+      "image": {
+        "id": "9a48860b97e1446982bff64c34f3eea1",
+        "name": "full.png",
+        "width": 800,
+        "height": 800,
+        "bytes": 1058832,
+        "sha256": "d554202729a40d67eb39fc38759e196ca628cf6f7f3c2679b075fcb9a9f52e80",
+        "preview": "/api/images/9a48860b97e1446982bff64c34f3eea1",
+        "geo": null
+      },
+      "started": 1788800243.4613142,
+      "model": "AdaptLLM/remote-sensing-Qwen2-VL-2B-Instruct",
+      "revision": "7f5dd71bf0f40c282193d50160e848a387a08ffe",
+      "adapter": null,
+      "mode": "baseline",
+      "route": "Single-image optical VQA",
+      "trace": [
+        {
+          "step": "Compare original and mirrored image counts",
+          "seconds": 0.767
+        }
+      ],
+      "routing": {
+        "tool": "vqa",
+        "rule": "baseball_count",
+        "reason": "Baseball/softball field count estimated by VQA; an original and mirrored image must agree. No object boxes or verified detection are produced.",
+        "version": "rules-v2"
+      },
+      "requested_mode": "pilot_binary",
+      "answer": "4 identifiable baseball/softball diamonds visible.\n\nVQA estimate; partial or obscured fields can affect the count.",
+      "raw_answer": "4\n4",
+      "counting": {
+        "policy": "baseball-two-view-v1",
+        "kind": "VQA estimate",
+        "views": [
+          {
+            "view": "original",
+            "raw_answer": "4",
+            "count": 4,
+            "generated_tokens": 2,
+            "seconds": 0.4514000739999915
+          },
+          {
+            "view": "mirrored",
+            "raw_answer": "4",
+            "count": 4,
+            "generated_tokens": 2,
+            "seconds": 0.3159516360000225
+          }
+        ],
+        "count": 4,
+        "withheld": false,
+        "limitation": "Agreement between transformed views is not independent validation. Small, obscured or edge-cropped fields may be missed.",
+        "generated_tokens": 4,
+        "generation_seconds": 0.767,
+        "max_new_tokens": 32,
+        "peak_allocated_GiB": 4.315,
+        "reason": "two_view_agreement",
+        "answer": "4 identifiable baseball/softball diamonds visible.\n\nVQA estimate; partial or obscured fields can affect the count."
+      },
+      "answer_policy": "baseball-two-view-v1",
+      "answer_validation": {
+        "policy": "baseball-two-view-v1",
+        "kind": "VQA estimate",
+        "views": [
+          {
+            "view": "original",
+            "raw_answer": "4",
+            "count": 4,
+            "generated_tokens": 2,
+            "seconds": 0.4514000739999915
+          },
+          {
+            "view": "mirrored",
+            "raw_answer": "4",
+            "count": 4,
+            "generated_tokens": 2,
+            "seconds": 0.3159516360000225
+          }
+        ],
+        "count": 4,
+        "withheld": false,
+        "limitation": "Agreement between transformed views is not independent validation. Small, obscured or edge-cropped fields may be missed.",
+        "generated_tokens": 4,
+        "generation_seconds": 0.767,
+        "max_new_tokens": 32,
+        "peak_allocated_GiB": 4.315,
+        "reason": "two_view_agreement",
+        "answer": "4 identifiable baseball/softball diamonds visible.\n\nVQA estimate; partial or obscured fields can affect the count."
+      },
+      "seconds": 0.88,
+      "generation_seconds": 0.767,
+      "peak_allocated_GiB": 4.315,
+      "generated_tokens": 4,
+      "max_new_tokens": 32,
+      "visual_token_bounds": [
+        256,
+        512
+      ]
+    },
+    "correct": true
+  },
+  {
+    "case": {
+      "id": "mirror",
+      "image": "/mnt/c/Users/nrgen/.codex/scratch/SATquery AI/results/reliability-20260907/counting/mirror.png",
+      "reference": 4
+    },
+    "run": {
+      "id": "f035885f083149ff98c8f05bd5738416",
+      "state": "complete",
+      "stage": "Complete",
+      "question": "How many baseball fields are there in this image?",
+      "image": {
+        "id": "e029d3611795496183385f9c0b72c4c8",
+        "name": "mirror.png",
+        "width": 800,
+        "height": 800,
+        "bytes": 1056124,
+        "sha256": "7eb9183fd68a2fc13671a34b55bc0be45a69a3ebc7fe1ca0120b912d6a7a4b6d",
+        "preview": "/api/images/e029d3611795496183385f9c0b72c4c8",
+        "geo": null
+      },
+      "started": 1788800244.5916636,
+      "model": "AdaptLLM/remote-sensing-Qwen2-VL-2B-Instruct",
+      "revision": "7f5dd71bf0f40c282193d50160e848a387a08ffe",
+      "adapter": null,
+      "mode": "baseline",
+      "route": "Single-image optical VQA",
+      "trace": [
+        {
+          "step": "Compare original and mirrored image counts",
+          "seconds": 0.65
+        }
+      ],
+      "routing": {
+        "tool": "vqa",
+        "rule": "baseball_count",
+        "reason": "Baseball/softball field count estimated by VQA; an original and mirrored image must agree. No object boxes or verified detection are produced.",
+        "version": "rules-v2"
+      },
+      "requested_mode": "pilot_binary",
+      "answer": "4 identifiable baseball/softball diamonds visible.\n\nVQA estimate; partial or obscured fields can affect the count.",
+      "raw_answer": "4\n4",
+      "counting": {
+        "policy": "baseball-two-view-v1",
+        "kind": "VQA estimate",
+        "views": [
+          {
+            "view": "original",
+            "raw_answer": "4",
+            "count": 4,
+            "generated_tokens": 2,
+            "seconds": 0.3302118150000126
+          },
+          {
+            "view": "mirrored",
+            "raw_answer": "4",
+            "count": 4,
+            "generated_tokens": 2,
+            "seconds": 0.32001910400001066
+          }
+        ],
+        "count": 4,
+        "withheld": false,
+        "limitation": "Agreement between transformed views is not independent validation. Small, obscured or edge-cropped fields may be missed.",
+        "generated_tokens": 4,
+        "generation_seconds": 0.65,
+        "max_new_tokens": 32,
+        "peak_allocated_GiB": 4.315,
+        "reason": "two_view_agreement",
+        "answer": "4 identifiable baseball/softball diamonds visible.\n\nVQA estimate; partial or obscured fields can affect the count."
+      },
+      "answer_policy": "baseball-two-view-v1",
+      "answer_validation": {
+        "policy": "baseball-two-view-v1",
+        "kind": "VQA estimate",
+        "views": [
+          {
+            "view": "original",
+            "raw_answer": "4",
+            "count": 4,
+            "generated_tokens": 2,
+            "seconds": 0.3302118150000126
+          },
+          {
+            "view": "mirrored",
+            "raw_answer": "4",
+            "count": 4,
+            "generated_tokens": 2,
+            "seconds": 0.32001910400001066
+          }
+        ],
+        "count": 4,
+        "withheld": false,
+        "limitation": "Agreement between transformed views is not independent validation. Small, obscured or edge-cropped fields may be missed.",
+        "generated_tokens": 4,
+        "generation_seconds": 0.65,
+        "max_new_tokens": 32,
+        "peak_allocated_GiB": 4.315,
+        "reason": "two_view_agreement",
+        "answer": "4 identifiable baseball/softball diamonds visible.\n\nVQA estimate; partial or obscured fields can affect the count."
+      },
+      "seconds": 0.729,
+      "generation_seconds": 0.65,
+      "peak_allocated_GiB": 4.315,
+      "generated_tokens": 4,
+      "max_new_tokens": 32,
+      "visual_token_bounds": [
+        256,
+        512
+      ]
+    },
+    "correct": true
+  },
+  {
+    "case": {
+      "id": "rotate",
+      "image": "/mnt/c/Users/nrgen/.codex/scratch/SATquery AI/results/reliability-20260907/counting/rotate.png",
+      "reference": 4
+    },
+    "run": {
+      "id": "6e07f436cf024c5e903e2cdc76432327",
+      "state": "complete",
+      "stage": "Complete",
+      "question": "How many baseball fields are there in this image?",
+      "image": {
+        "id": "a7a67736608242c3a5a2569d0ac02d40",
+        "name": "rotate.png",
+        "width": 800,
+        "height": 800,
+        "bytes": 1054460,
+        "sha256": "4a2128bc7b5636c1866a3d593a43372ee6d4321cf8946d4d9f7f7edc13b89543",
+        "preview": "/api/images/a7a67736608242c3a5a2569d0ac02d40",
+        "geo": null
+      },
+      "started": 1788800245.7230852,
+      "model": "AdaptLLM/remote-sensing-Qwen2-VL-2B-Instruct",
+      "revision": "7f5dd71bf0f40c282193d50160e848a387a08ffe",
+      "adapter": null,
+      "mode": "baseline",
+      "route": "Single-image optical VQA",
+      "trace": [
+        {
+          "step": "Compare original and mirrored image counts",
+          "seconds": 0.651
+        }
+      ],
+      "routing": {
+        "tool": "vqa",
+        "rule": "baseball_count",
+        "reason": "Baseball/softball field count estimated by VQA; an original and mirrored image must agree. No object boxes or verified detection are produced.",
+        "version": "rules-v2"
+      },
+      "requested_mode": "pilot_binary",
+      "answer": "4 identifiable baseball/softball diamonds visible.\n\nVQA estimate; partial or obscured fields can affect the count.",
+      "raw_answer": "4\n4",
+      "counting": {
+        "policy": "baseball-two-view-v1",
+        "kind": "VQA estimate",
+        "views": [
+          {
+            "view": "original",
+            "raw_answer": "4",
+            "count": 4,
+            "generated_tokens": 2,
+            "seconds": 0.32742764599998964
+          },
+          {
+            "view": "mirrored",
+            "raw_answer": "4",
+            "count": 4,
+            "generated_tokens": 2,
+            "seconds": 0.323625920000012
+          }
+        ],
+        "count": 4,
+        "withheld": false,
+        "limitation": "Agreement between transformed views is not independent validation. Small, obscured or edge-cropped fields may be missed.",
+        "generated_tokens": 4,
+        "generation_seconds": 0.651,
+        "max_new_tokens": 32,
+        "peak_allocated_GiB": 4.315,
+        "reason": "two_view_agreement",
+        "answer": "4 identifiable baseball/softball diamonds visible.\n\nVQA estimate; partial or obscured fields can affect the count."
+      },
+      "answer_policy": "baseball-two-view-v1",
+      "answer_validation": {
+        "policy": "baseball-two-view-v1",
+        "kind": "VQA estimate",
+        "views": [
+          {
+            "view": "original",
+            "raw_answer": "4",
+            "count": 4,
+            "generated_tokens": 2,
+            "seconds": 0.32742764599998964
+          },
+          {
+            "view": "mirrored",
+            "raw_answer": "4",
+            "count": 4,
+            "generated_tokens": 2,
+            "seconds": 0.323625920000012
+          }
+        ],
+        "count": 4,
+        "withheld": false,
+        "limitation": "Agreement between transformed views is not independent validation. Small, obscured or edge-cropped fields may be missed.",
+        "generated_tokens": 4,
+        "generation_seconds": 0.651,
+        "max_new_tokens": 32,
+        "peak_allocated_GiB": 4.315,
+        "reason": "two_view_agreement",
+        "answer": "4 identifiable baseball/softball diamonds visible.\n\nVQA estimate; partial or obscured fields can affect the count."
+      },
+      "seconds": 0.726,
+      "generation_seconds": 0.651,
+      "peak_allocated_GiB": 4.315,
+      "generated_tokens": 4,
+      "max_new_tokens": 32,
+      "visual_token_bounds": [
+        256,
+        512
+      ]
+    },
+    "correct": true
+  },
+  {
+    "case": {
+      "id": "top-single",
+      "image": "/mnt/c/Users/nrgen/.codex/scratch/SATquery AI/results/reliability-20260907/counting/top-single.png",
+      "reference": 1
+    },
+    "run": {
+      "id": "54d7ebe489b542b98999f9d2a2dbd879",
+      "state": "complete",
+      "stage": "Complete",
+      "question": "How many baseball fields are there in this image?",
+      "image": {
+        "id": "91cd3add743f449999164b2d1c717c53",
+        "name": "top-single.png",
+        "width": 260,
+        "height": 230,
+        "bytes": 102877,
+        "sha256": "5361731af09691df75d98c5bc5d22eecbb9ab4d0aaf83e9ba612ce4121ac952e",
+        "preview": "/api/images/91cd3add743f449999164b2d1c717c53",
+        "geo": null
+      },
+      "started": 1788800246.6693885,
+      "model": "AdaptLLM/remote-sensing-Qwen2-VL-2B-Instruct",
+      "revision": "7f5dd71bf0f40c282193d50160e848a387a08ffe",
+      "adapter": null,
+      "mode": "baseline",
+      "route": "Single-image optical VQA",
+      "trace": [
+        {
+          "step": "Compare original and mirrored image counts",
+          "seconds": 0.405
+        }
+      ],
+      "routing": {
+        "tool": "vqa",
+        "rule": "baseball_count",
+        "reason": "Baseball/softball field count estimated by VQA; an original and mirrored image must agree. No object boxes or verified detection are produced.",
+        "version": "rules-v2"
+      },
+      "requested_mode": "pilot_binary",
+      "answer": "1 identifiable baseball/softball diamond visible.\n\nVQA estimate; partial or obscured fields can affect the count.",
+      "raw_answer": "1\n1",
+      "counting": {
+        "policy": "baseball-two-view-v1",
+        "kind": "VQA estimate",
+        "views": [
+          {
+            "view": "original",
+            "raw_answer": "1",
+            "count": 1,
+            "generated_tokens": 2,
+            "seconds": 0.2049809560000142
+          },
+          {
+            "view": "mirrored",
+            "raw_answer": "1",
+            "count": 1,
+            "generated_tokens": 2,
+            "seconds": 0.19953843300001495
+          }
+        ],
+        "count": 1,
+        "withheld": false,
+        "limitation": "Agreement between transformed views is not independent validation. Small, obscured or edge-cropped fields may be missed.",
+        "generated_tokens": 4,
+        "generation_seconds": 0.405,
+        "max_new_tokens": 32,
+        "peak_allocated_GiB": 4.248,
+        "reason": "two_view_agreement",
+        "answer": "1 identifiable baseball/softball diamond visible.\n\nVQA estimate; partial or obscured fields can affect the count."
+      },
+      "answer_policy": "baseball-two-view-v1",
+      "answer_validation": {
+        "policy": "baseball-two-view-v1",
+        "kind": "VQA estimate",
+        "views": [
+          {
+            "view": "original",
+            "raw_answer": "1",
+            "count": 1,
+            "generated_tokens": 2,
+            "seconds": 0.2049809560000142
+          },
+          {
+            "view": "mirrored",
+            "raw_answer": "1",
+            "count": 1,
+            "generated_tokens": 2,
+            "seconds": 0.19953843300001495
+          }
+        ],
+        "count": 1,
+        "withheld": false,
+        "limitation": "Agreement between transformed views is not independent validation. Small, obscured or edge-cropped fields may be missed.",
+        "generated_tokens": 4,
+        "generation_seconds": 0.405,
+        "max_new_tokens": 32,
+        "peak_allocated_GiB": 4.248,
+        "reason": "two_view_agreement",
+        "answer": "1 identifiable baseball/softball diamond visible.\n\nVQA estimate; partial or obscured fields can affect the count."
+      },
+      "seconds": 0.438,
+      "generation_seconds": 0.405,
+      "peak_allocated_GiB": 4.248,
+      "generated_tokens": 4,
+      "max_new_tokens": 32,
+      "visual_token_bounds": [
+        256,
+        512
+      ]
+    },
+    "correct": true
+  },
+  {
+    "case": {
+      "id": "right-single",
+      "image": "/mnt/c/Users/nrgen/.codex/scratch/SATquery AI/results/reliability-20260907/counting/right-single.png",
+      "reference": 1
+    },
+    "run": {
+      "id": "d3b584117f644eb1a5783cfcac9dbdda",
+      "state": "complete",
+      "stage": "Complete",
+      "question": "How many baseball fields are there in this image?",
+      "image": {
+        "id": "e2880bd7158f476fbe65871a1bf4bdc1",
+        "name": "right-single.png",
+        "width": 330,
+        "height": 300,
+        "bytes": 164420,
+        "sha256": "e91b30cf13d759da796b765302db3f24d03094436af75270f330102964178e09",
+        "preview": "/api/images/e2880bd7158f476fbe65871a1bf4bdc1",
+        "geo": null
+      },
+      "started": 1788800247.331146,
+      "model": "AdaptLLM/remote-sensing-Qwen2-VL-2B-Instruct",
+      "revision": "7f5dd71bf0f40c282193d50160e848a387a08ffe",
+      "adapter": null,
+      "mode": "baseline",
+      "route": "Single-image optical VQA",
+      "trace": [
+        {
+          "step": "Compare original and mirrored image counts",
+          "seconds": 0.397
+        }
+      ],
+      "routing": {
+        "tool": "vqa",
+        "rule": "baseball_count",
+        "reason": "Baseball/softball field count estimated by VQA; an original and mirrored image must agree. No object boxes or verified detection are produced.",
+        "version": "rules-v2"
+      },
+      "requested_mode": "pilot_binary",
+      "answer": "1 identifiable baseball/softball diamond visible.\n\nVQA estimate; partial or obscured fields can affect the count.",
+      "raw_answer": "1\n1",
+      "counting": {
+        "policy": "baseball-two-view-v1",
+        "kind": "VQA estimate",
+        "views": [
+          {
+            "view": "original",
+            "raw_answer": "1",
+            "count": 1,
+            "generated_tokens": 2,
+            "seconds": 0.20108838999999534
+          },
+          {
+            "view": "mirrored",
+            "raw_answer": "1",
+            "count": 1,
+            "generated_tokens": 2,
+            "seconds": 0.1960351360000061
+          }
+        ],
+        "count": 1,
+        "withheld": false,
+        "limitation": "Agreement between transformed views is not independent validation. Small, obscured or edge-cropped fields may be missed.",
+        "generated_tokens": 4,
+        "generation_seconds": 0.397,
+        "max_new_tokens": 32,
+        "peak_allocated_GiB": 4.243,
+        "reason": "two_view_agreement",
+        "answer": "1 identifiable baseball/softball diamond visible.\n\nVQA estimate; partial or obscured fields can affect the count."
+      },
+      "answer_policy": "baseball-two-view-v1",
+      "answer_validation": {
+        "policy": "baseball-two-view-v1",
+        "kind": "VQA estimate",
+        "views": [
+          {
+            "view": "original",
+            "raw_answer": "1",
+            "count": 1,
+            "generated_tokens": 2,
+            "seconds": 0.20108838999999534
+          },
+          {
+            "view": "mirrored",
+            "raw_answer": "1",
+            "count": 1,
+            "generated_tokens": 2,
+            "seconds": 0.1960351360000061
+          }
+        ],
+        "count": 1,
+        "withheld": false,
+        "limitation": "Agreement between transformed views is not independent validation. Small, obscured or edge-cropped fields may be missed.",
+        "generated_tokens": 4,
+        "generation_seconds": 0.397,
+        "max_new_tokens": 32,
+        "peak_allocated_GiB": 4.243,
+        "reason": "two_view_agreement",
+        "answer": "1 identifiable baseball/softball diamond visible.\n\nVQA estimate; partial or obscured fields can affect the count."
+      },
+      "seconds": 0.429,
+      "generation_seconds": 0.397,
+      "peak_allocated_GiB": 4.243,
+      "generated_tokens": 4,
+      "max_new_tokens": 32,
+      "visual_token_bounds": [
+        256,
+        512
+      ]
+    },
+    "correct": true
+  },
+  {
+    "case": {
+      "id": "top-and-right",
+      "image": "/mnt/c/Users/nrgen/.codex/scratch/SATquery AI/results/reliability-20260907/counting/top-and-right.png",
+      "reference": null
+    },
+    "run": {
+      "id": "5a7c4336dcf94bca952c3752689add5f",
+      "state": "complete",
+      "stage": "Complete",
+      "question": "How many baseball fields are there in this image?",
+      "image": {
+        "id": "3a43df59de5245b98f7a1be5fd11ceea",
+        "name": "top-and-right.png",
+        "width": 490,
+        "height": 385,
+        "bytes": 314870,
+        "sha256": "db538f22afccf9c5cdde2bac3fc73828c285c4964aefdfc99a5f0093986e1acd",
+        "preview": "/api/images/3a43df59de5245b98f7a1be5fd11ceea",
+        "geo": null
+      },
+      "started": 1788800248.015035,
+      "model": "AdaptLLM/remote-sensing-Qwen2-VL-2B-Instruct",
+      "revision": "7f5dd71bf0f40c282193d50160e848a387a08ffe",
+      "adapter": null,
+      "mode": "baseline",
+      "route": "Single-image optical VQA",
+      "trace": [
+        {
+          "step": "Compare original and mirrored image counts",
+          "seconds": 0.404
+        }
+      ],
+      "routing": {
+        "tool": "vqa",
+        "rule": "baseball_count",
+        "reason": "Baseball/softball field count estimated by VQA; an original and mirrored image must agree. No object boxes or verified detection are produced.",
+        "version": "rules-v2"
+      },
+      "requested_mode": "pilot_binary",
+      "answer": "Cannot determine a reliable field count: the image checks were inconclusive. Try a clearer view with distinct ball diamonds.",
+      "raw_answer": "4\n3",
+      "counting": {
+        "policy": "baseball-two-view-v1",
+        "kind": "VQA estimate",
+        "views": [
+          {
+            "view": "original",
+            "raw_answer": "4",
+            "count": 4,
+            "generated_tokens": 2,
+            "seconds": 0.20479910500000642
+          },
+          {
+            "view": "mirrored",
+            "raw_answer": "3",
+            "count": 3,
+            "generated_tokens": 2,
+            "seconds": 0.1995547369999997
+          }
+        ],
+        "count": null,
+        "withheld": true,
+        "limitation": "Agreement between transformed views is not independent validation. Small, obscured or edge-cropped fields may be missed.",
+        "generated_tokens": 4,
+        "generation_seconds": 0.404,
+        "max_new_tokens": 32,
+        "peak_allocated_GiB": 4.247,
+        "answer": "Cannot determine a reliable field count: the image checks were inconclusive. Try a clearer view with distinct ball diamonds.",
+        "reason": "inconclusive_or_disagreeing_views"
+      },
+      "answer_policy": "baseball-two-view-v1",
+      "answer_validation": {
+        "policy": "baseball-two-view-v1",
+        "kind": "VQA estimate",
+        "views": [
+          {
+            "view": "original",
+            "raw_answer": "4",
+            "count": 4,
+            "generated_tokens": 2,
+            "seconds": 0.20479910500000642
+          },
+          {
+            "view": "mirrored",
+            "raw_answer": "3",
+            "count": 3,
+            "generated_tokens": 2,
+            "seconds": 0.1995547369999997
+          }
+        ],
+        "count": null,
+        "withheld": true,
+        "limitation": "Agreement between transformed views is not independent validation. Small, obscured or edge-cropped fields may be missed.",
+        "generated_tokens": 4,
+        "generation_seconds": 0.404,
+        "max_new_tokens": 32,
+        "peak_allocated_GiB": 4.247,
+        "answer": "Cannot determine a reliable field count: the image checks were inconclusive. Try a clearer view with distinct ball diamonds.",
+        "reason": "inconclusive_or_disagreeing_views"
+      },
+      "seconds": 0.444,
+      "generation_seconds": 0.404,
+      "peak_allocated_GiB": 4.247,
+      "generated_tokens": 4,
+      "max_new_tokens": 32,
+      "visual_token_bounds": [
+        256,
+        512
+      ]
+    },
+    "correct": null
+  },
+  {
+    "case": {
+      "id": "blank",
+      "image": "/mnt/c/Users/nrgen/.codex/scratch/SATquery AI/results/reliability-20260907/counting/blank.png",
+      "reference": 0
+    },
+    "run": {
+      "id": "a19ec54bd28b47e48ddc4ceb9608c7af",
+      "state": "complete",
+      "stage": "Complete",
+      "question": "How many baseball fields are there in this image?",
+      "image": {
+        "id": "08685bfeca4040a997c9d7045dcc60d3",
+        "name": "blank.png",
+        "width": 512,
+        "height": 512,
+        "bytes": 1881,
+        "sha256": "8accbc208a2e7cc9088733c1dfb5f9e36d43a93f7418032dbfd93ff0f3f69297",
+        "preview": "/api/images/08685bfeca4040a997c9d7045dcc60d3",
+        "geo": null
+      },
+      "started": 1788800248.6444752,
+      "model": "AdaptLLM/remote-sensing-Qwen2-VL-2B-Instruct",
+      "revision": "7f5dd71bf0f40c282193d50160e848a387a08ffe",
+      "adapter": null,
+      "mode": "baseline",
+      "route": "Single-image optical VQA",
+      "trace": [
+        {
+          "step": "Compare original and mirrored image counts",
+          "seconds": 0.0
+        }
+      ],
+      "routing": {
+        "tool": "vqa",
+        "rule": "baseball_count",
+        "reason": "Baseball/softball field count estimated by VQA; an original and mirrored image must agree. No object boxes or verified detection are produced.",
+        "version": "rules-v2"
+      },
+      "requested_mode": "pilot_binary",
+      "answer": "Cannot determine a field count from this image: there is too little visible detail.",
+      "raw_answer": "",
+      "counting": {
+        "policy": "baseball-two-view-v1",
+        "kind": "VQA estimate",
+        "views": [],
+        "count": null,
+        "withheld": true,
+        "limitation": "Agreement between transformed views is not independent validation. Small, obscured or edge-cropped fields may be missed.",
+        "generated_tokens": 0,
+        "generation_seconds": 0.0,
+        "max_new_tokens": 32,
+        "peak_allocated_GiB": 0.0,
+        "answer": "Cannot determine a field count from this image: there is too little visible detail.",
+        "reason": "insufficient_image_detail"
+      },
+      "answer_policy": "baseball-two-view-v1",
+      "answer_validation": {
+        "policy": "baseball-two-view-v1",
+        "kind": "VQA estimate",
+        "views": [],
+        "count": null,
+        "withheld": true,
+        "limitation": "Agreement between transformed views is not independent validation. Small, obscured or edge-cropped fields may be missed.",
+        "generated_tokens": 0,
+        "generation_seconds": 0.0,
+        "max_new_tokens": 32,
+        "peak_allocated_GiB": 0.0,
+        "answer": "Cannot determine a field count from this image: there is too little visible detail.",
+        "reason": "insufficient_image_detail"
+      },
+      "seconds": 0.003,
+      "generation_seconds": 0.0,
+      "peak_allocated_GiB": 0.0,
+      "generated_tokens": 0,
+      "max_new_tokens": 32,
+      "visual_token_bounds": [
+        256,
+        512
+      ]
+    },
+    "correct": false
+  },
+  {
+    "case": {
+      "id": "farmland",
+      "image": "/mnt/c/Users/nrgen/.codex/scratch/SATquery AI/results/reliability-20260907/counting/farmland.png",
+      "reference": 0
+    },
+    "run": {
+      "id": "cdb8ce5990664d2399a375aa06b242dd",
+      "state": "complete",
+      "stage": "Complete",
+      "question": "How many baseball fields are there in this image?",
+      "image": {
+        "id": "0f7a32df0be041e881bdabe3ba82ffdd",
+        "name": "farmland.png",
+        "width": 256,
+        "height": 256,
+        "bytes": 86339,
+        "sha256": "d9f9ced261109bcd24d9d411bd82a10a1e11e0db8cf93e7c43156ea1a111fce0",
+        "preview": "/api/images/0f7a32df0be041e881bdabe3ba82ffdd",
+        "geo": null
+      },
+      "started": 1788800248.9894872,
+      "model": "AdaptLLM/remote-sensing-Qwen2-VL-2B-Instruct",
+      "revision": "7f5dd71bf0f40c282193d50160e848a387a08ffe",
+      "adapter": null,
+      "mode": "baseline",
+      "route": "Single-image optical VQA",
+      "trace": [
+        {
+          "step": "Compare original and mirrored image counts",
+          "seconds": 0.366
+        }
+      ],
+      "routing": {
+        "tool": "vqa",
+        "rule": "baseball_count",
+        "reason": "Baseball/softball field count estimated by VQA; an original and mirrored image must agree. No object boxes or verified detection are produced.",
+        "version": "rules-v2"
+      },
+      "requested_mode": "pilot_binary",
+      "answer": "0 identifiable baseball/softball diamonds visible.\n\nVQA estimate; partial or obscured fields can affect the count.",
+      "raw_answer": "0\n0",
+      "counting": {
+        "policy": "baseball-two-view-v1",
+        "kind": "VQA estimate",
+        "views": [
+          {
+            "view": "original",
+            "raw_answer": "0",
+            "count": 0,
+            "generated_tokens": 2,
+            "seconds": 0.18752762399998346
+          },
+          {
+            "view": "mirrored",
+            "raw_answer": "0",
+            "count": 0,
+            "generated_tokens": 2,
+            "seconds": 0.17863795899998536
+          }
+        ],
+        "count": 0,
+        "withheld": false,
+        "limitation": "Agreement between transformed views is not independent validation. Small, obscured or edge-cropped fields may be missed.",
+        "generated_tokens": 4,
+        "generation_seconds": 0.366,
+        "max_new_tokens": 32,
+        "peak_allocated_GiB": 4.237,
+        "reason": "two_view_agreement",
+        "answer": "0 identifiable baseball/softball diamonds visible.\n\nVQA estimate; partial or obscured fields can affect the count."
+      },
+      "answer_policy": "baseball-two-view-v1",
+      "answer_validation": {
+        "policy": "baseball-two-view-v1",
+        "kind": "VQA estimate",
+        "views": [
+          {
+            "view": "original",
+            "raw_answer": "0",
+            "count": 0,
+            "generated_tokens": 2,
+            "seconds": 0.18752762399998346
+          },
+          {
+            "view": "mirrored",
+            "raw_answer": "0",
+            "count": 0,
+            "generated_tokens": 2,
+            "seconds": 0.17863795899998536
+          }
+        ],
+        "count": 0,
+        "withheld": false,
+        "limitation": "Agreement between transformed views is not independent validation. Small, obscured or edge-cropped fields may be missed.",
+        "generated_tokens": 4,
+        "generation_seconds": 0.366,
+        "max_new_tokens": 32,
+        "peak_allocated_GiB": 4.237,
+        "reason": "two_view_agreement",
+        "answer": "0 identifiable baseball/softball diamonds visible.\n\nVQA estimate; partial or obscured fields can affect the count."
+      },
+      "seconds": 0.401,
+      "generation_seconds": 0.366,
+      "peak_allocated_GiB": 4.237,
+      "generated_tokens": 4,
+      "max_new_tokens": 32,
+      "visual_token_bounds": [
+        256,
+        512
+      ]
+    },
+    "correct": true
+  },
+  {
+    "case": {
+      "id": "river",
+      "image": "/mnt/c/Users/nrgen/.codex/scratch/SATquery AI/results/reliability-20260907/counting/river.png",
+      "reference": 0
+    },
+    "run": {
+      "id": "08f06730d8234d32ab16d511ea71af2b",
+      "state": "complete",
+      "stage": "Complete",
+      "question": "How many baseball fields are there in this image?",
+      "image": {
+        "id": "7e9e67d8476549fc8e0c305aff185240",
+        "name": "river.png",
+        "width": 512,
+        "height": 512,
+        "bytes": 558715,
+        "sha256": "fc5f37c6cbee7918785e6d8e69022887b4a115cb755a734577414f872edcdda5",
+        "preview": "/api/images/7e9e67d8476549fc8e0c305aff185240",
+        "geo": null
+      },
+      "started": 1788800249.6586332,
+      "model": "AdaptLLM/remote-sensing-Qwen2-VL-2B-Instruct",
+      "revision": "7f5dd71bf0f40c282193d50160e848a387a08ffe",
+      "adapter": null,
+      "mode": "baseline",
+      "route": "Single-image optical VQA",
+      "trace": [
+        {
+          "step": "Compare original and mirrored image counts",
+          "seconds": 0.436
+        }
+      ],
+      "routing": {
+        "tool": "vqa",
+        "rule": "baseball_count",
+        "reason": "Baseball/softball field count estimated by VQA; an original and mirrored image must agree. No object boxes or verified detection are produced.",
+        "version": "rules-v2"
+      },
+      "requested_mode": "pilot_binary",
+      "answer": "0 identifiable baseball/softball diamonds visible.\n\nVQA estimate; partial or obscured fields can affect the count.",
+      "raw_answer": "0\n0",
+      "counting": {
+        "policy": "baseball-two-view-v1",
+        "kind": "VQA estimate",
+        "views": [
+          {
+            "view": "original",
+            "raw_answer": "0",
+            "count": 0,
+            "generated_tokens": 2,
+            "seconds": 0.22246937099998831
+          },
+          {
+            "view": "mirrored",
+            "raw_answer": "0",
+            "count": 0,
+            "generated_tokens": 2,
+            "seconds": 0.21337165400001368
+          }
+        ],
+        "count": 0,
+        "withheld": false,
+        "limitation": "Agreement between transformed views is not independent validation. Small, obscured or edge-cropped fields may be missed.",
+        "generated_tokens": 4,
+        "generation_seconds": 0.436,
+        "max_new_tokens": 32,
+        "peak_allocated_GiB": 4.261,
+        "reason": "two_view_agreement",
+        "answer": "0 identifiable baseball/softball diamonds visible.\n\nVQA estimate; partial or obscured fields can affect the count."
+      },
+      "answer_policy": "baseball-two-view-v1",
+      "answer_validation": {
+        "policy": "baseball-two-view-v1",
+        "kind": "VQA estimate",
+        "views": [
+          {
+            "view": "original",
+            "raw_answer": "0",
+            "count": 0,
+            "generated_tokens": 2,
+            "seconds": 0.22246937099998831
+          },
+          {
+            "view": "mirrored",
+            "raw_answer": "0",
+            "count": 0,
+            "generated_tokens": 2,
+            "seconds": 0.21337165400001368
+          }
+        ],
+        "count": 0,
+        "withheld": false,
+        "limitation": "Agreement between transformed views is not independent validation. Small, obscured or edge-cropped fields may be missed.",
+        "generated_tokens": 4,
+        "generation_seconds": 0.436,
+        "max_new_tokens": 32,
+        "peak_allocated_GiB": 4.261,
+        "reason": "two_view_agreement",
+        "answer": "0 identifiable baseball/softball diamonds visible.\n\nVQA estimate; partial or obscured fields can affect the count."
+      },
+      "seconds": 0.48,
+      "generation_seconds": 0.436,
+      "peak_allocated_GiB": 4.261,
+      "generated_tokens": 4,
+      "max_new_tokens": 32,
+      "visual_token_bounds": [
+        256,
+        512
+      ]
+    },
+    "correct": true
+  }
+]

@@ -1,0 +1,14 @@
+{
+  "created_utc": "20260913-035521",
+  "archive": "/root/satquery-snapshots/20260913-035521/recovery.tar",
+  "sha256": "18e1e15339e005ec9a713a802883823f8def21525440d405cf95feaf037609de",
+  "bytes": 17169254400,
+  "regular_files_read_back": 42565,
+  "roots": {
+    "project": "/mnt/c/Users/nrgen/.codex/scratch/SATquery AI",
+    "runtime": "/root/satquery",
+    "hf-cache": "/root/.cache/huggingface/hub",
+    "python-runtime": "/root/.local/share/uv/python"
+  },
+  "scope": "Recovery snapshot at start of resumed work; not a fabricated historical snapshot. Services were stopped at capture."
+}

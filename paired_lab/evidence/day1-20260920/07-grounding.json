@@ -1,0 +1,265 @@
+{
+  "state": "complete",
+  "stage": "Complete",
+  "plan": {
+    "task": "grounding",
+    "version": "unified-rules-v3",
+    "specialist": "Grounding DINO tiny \u2192 SAM base",
+    "device": "CUDA GPU \u00b7 sequential models",
+    "maturity": "experimental",
+    "reason": "Explicit spatial request for a supported object category on one optical image.",
+    "category": "stadium",
+    "mode": "both",
+    "score_threshold": 0.3,
+    "steps": [
+      "validate optical image",
+      "detect objects",
+      "segment boxes",
+      "save evidence"
+    ]
+  },
+  "events": [
+    {
+      "stage": "Starting Grounding DINO tiny \u2192 SAM base",
+      "at": "2026-09-19T21:56:43Z"
+    },
+    {
+      "stage": "Preparing RGB preview for experimental grounding",
+      "at": "2026-09-19T21:56:43Z"
+    },
+    {
+      "stage": "Starting isolated worker",
+      "at": "2026-09-19T21:56:43Z"
+    },
+    {
+      "stage": "Loading grounding specialist",
+      "at": "2026-09-19T21:56:55Z"
+    },
+    {
+      "stage": "Finding candidate objects",
+      "at": "2026-09-19T21:57:00Z"
+    },
+    {
+      "stage": "Loading segmentation specialist",
+      "at": "2026-09-19T21:57:19Z"
+    },
+    {
+      "stage": "Tracing object outlines",
+      "at": "2026-09-19T21:57:21Z"
+    },
+    {
+      "stage": "Preparing evidence views",
+      "at": "2026-09-19T21:57:24Z"
+    },
+    {
+      "stage": "Starting isolated worker",
+      "at": "2026-09-19T21:57:29Z"
+    },
+    {
+      "stage": "Collecting grounding evidence",
+      "at": "2026-09-19T21:57:29Z"
+    },
+    {
+      "stage": "Saving result and original inputs",
+      "at": "2026-09-19T21:57:29Z"
+    },
+    {
+      "stage": "Packaging evidence",
+      "at": "2026-09-19T21:57:29Z"
+    }
+  ],
+  "result": {
+    "task": "grounding",
+    "answer": "1 stadium proposals retained. Inspect predicted masks; object identity is not verified.",
+    "seconds": 30.741,
+    "objects": 1,
+    "detections": [
+      {
+        "id": 1,
+        "box_xyxy": [
+          140.92266845703125,
+          17.792068481445312,
+          347.0362548828125,
+          236.98776245117188
+        ],
+        "detector_score": 0.370440810918808,
+        "mask_pixels": 34793,
+        "sam_predicted_iou": 0.9908875226974487
+      }
+    ],
+    "union_mask_pixels": 34793,
+    "union_mask_percent": 26.3583,
+    "total_image_pixels": 132000,
+    "mode": "both",
+    "confidence": {
+      "kind": "Detector score and SAM predicted IoU are not measured accuracy."
+    },
+    "trace": [
+      {
+        "step": "Load pinned Grounding DINO",
+        "seconds": 4.795
+      },
+      {
+        "step": "Detect, threshold, remove enclosing frame proposals and suppress duplicates",
+        "seconds": 17.842
+      },
+      {
+        "step": "Load pinned SAM Base",
+        "seconds": 1.969
+      },
+      {
+        "step": "Box-prompted segmentation; choose highest SAM predicted IoU mask",
+        "seconds": 3.286
+      },
+      {
+        "step": "Render boxes, outlines and instance masks",
+        "seconds": 0.079
+      },
+      {
+        "tool": "Grounding worker",
+        "run_id": "fec2b8a271af4cf38af341a6cb186b65",
+        "models": [
+          {
+            "model": "IDEA-Research/grounding-dino-tiny",
+            "revision": "a2bb814dd30d776dcf7e30523b00659f4f141c71",
+            "path": "/root/.cache/huggingface/hub/models--IDEA-Research--grounding-dino-tiny/snapshots/a2bb814dd30d776dcf7e30523b00659f4f141c71",
+            "license": "apache-2.0"
+          },
+          {
+            "model": "facebook/sam-vit-base",
+            "revision": "70c1a07f894ebb5b307fd9eaaee97b9dfc16068f",
+            "path": "/root/.cache/huggingface/hub/models--facebook--sam-vit-base/snapshots/70c1a07f894ebb5b307fd9eaaee97b9dfc16068f",
+            "license": "apache-2.0"
+          }
+        ],
+        "settings": {
+          "box_threshold": 0.3,
+          "text_threshold": 0.25,
+          "nms_iou": 0.5,
+          "max_objects": 24,
+          "reject_frame_area_fraction": 0.97,
+          "enclosing_area_fraction": 0.9,
+          "enclosed_smaller_ratio": 0.6
+        },
+        "peak_gpu_GiB": 2.678
+      }
+    ],
+    "limitations": [
+      "Experimental pretrained models; no remote-sensing fine-tuning or general accuracy claim.",
+      "Detector score and SAM predicted IoU are model scores, not measured correctness.",
+      "A mask follows a proposed box; it cannot prove the object identity.",
+      "Pixel coverage is the union of predicted masks, not NDVI, hectares or surveyed area.",
+      "Instance PNG assigns overlaps to the first score-ranked object; NPZ preserves overlapping masks.",
+      "Small, obscured or densely packed objects may be missed. Zero candidates means none passed the settings, not proof of absence.",
+      "Analysis uses the normalized RGB preview; original upload is retained separately. GeoTIFF preview stretching is display-only, not spectral analysis."
+    ],
+    "execution": {
+      "task": "grounding",
+      "version": "unified-rules-v3",
+      "specialist": "Grounding DINO tiny \u2192 SAM base",
+      "device": "CUDA GPU \u00b7 sequential models",
+      "maturity": "experimental",
+      "reason": "Explicit spatial request for a supported object category on one optical image.",
+      "category": "stadium",
+      "mode": "both",
+      "score_threshold": 0.3,
+      "steps": [
+        "validate optical image",
+        "detect objects",
+        "segment boxes",
+        "save evidence"
+      ]
+    },
+    "id": "00ffbdebe7234109af08d022a5eeffac",
+    "query": "Outline the stadium",
+    "input_checks": {
+      "task": "grounding",
+      "inputs": [
+        {
+          "id": "7f36d9f2a8f24b7bbc426d2318fc44eb",
+          "name": "user-grounding.png",
+          "width": 500,
+          "height": 264,
+          "bytes": 173635,
+          "sha256": "da733a52a60a5c61655fc1f496de20114595110b45fe81e656d1b25851b7c2d2",
+          "preview": "/api/images/72a00def676a48498e18b76b46c40529",
+          "geo": null,
+          "main_id": "72a00def676a48498e18b76b46c40529",
+          "modality": "optical",
+          "is_single": true
+        }
+      ],
+      "plan": {
+        "task": "grounding",
+        "version": "unified-rules-v3",
+        "specialist": "Grounding DINO tiny \u2192 SAM base",
+        "device": "CUDA GPU \u00b7 sequential models",
+        "maturity": "experimental",
+        "reason": "Explicit spatial request for a supported object category on one optical image.",
+        "category": "stadium",
+        "mode": "both",
+        "score_threshold": 0.3,
+        "steps": [
+          "validate optical image",
+          "detect objects",
+          "segment boxes",
+          "save evidence"
+        ]
+      }
+    },
+    "controller": "unified-rules-v3",
+    "created_at": "2026-09-19T21:57:29Z",
+    "execution_events": [
+      {
+        "stage": "Starting Grounding DINO tiny \u2192 SAM base",
+        "at": "2026-09-19T21:56:43Z"
+      },
+      {
+        "stage": "Preparing RGB preview for experimental grounding",
+        "at": "2026-09-19T21:56:43Z"
+      },
+      {
+        "stage": "Starting isolated worker",
+        "at": "2026-09-19T21:56:43Z"
+      },
+      {
+        "stage": "Loading grounding specialist",
+        "at": "2026-09-19T21:56:55Z"
+      },
+      {
+        "stage": "Finding candidate objects",
+        "at": "2026-09-19T21:57:00Z"
+      },
+      {
+        "stage": "Loading segmentation specialist",
+        "at": "2026-09-19T21:57:19Z"
+      },
+      {
+        "stage": "Tracing object outlines",
+        "at": "2026-09-19T21:57:21Z"
+      },
+      {
+        "stage": "Preparing evidence views",
+        "at": "2026-09-19T21:57:24Z"
+      },
+      {
+        "stage": "Starting isolated worker",
+        "at": "2026-09-19T21:57:29Z"
+      },
+      {
+        "stage": "Collecting grounding evidence",
+        "at": "2026-09-19T21:57:29Z"
+      },
+      {
+        "stage": "Saving result and original inputs",
+        "at": "2026-09-19T21:57:29Z"
+      },
+      {
+        "stage": "Packaging evidence",
+        "at": "2026-09-19T21:57:29Z"
+      }
+    ],
+    "work_seconds_before_zip": 45.90390540900262
+  },
+  "request_seconds": 45.92586349500198
+}
