@@ -1,0 +1,11 @@
+# Isolated paired dependencies recorded in runtime-manifest.json
+timm==1.0.19
+einops==0.8.1
+lmdb==1.7.3
+pandas==2.3.2
+pyarrow==21.0.0
+python-dateutil==2.9.0.post0
+pytz==2025.2
+tzdata==2025.2
+scipy==1.16.1
+opencv-python-headless==4.11.0.86

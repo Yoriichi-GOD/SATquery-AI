@@ -1,4 +1,9 @@
-"""Isolated CPU specialists. No imports or changes to the existing demo."""
+"""BIFOLD land-cover engine plus retained LEGACY ChangeFormer functions.
+
+load_temporal()/temporal() are NOT the current served temporal path.
+The unified controller dispatches temporal analysis to paired_lab/mci.py.
+Land-cover functions in this module remain active; do not archive the module wholesale.
+"""
 import sys,ast,json,time,hashlib
 from pathlib import Path
 DATA=Path('/root/satquery/paired-lab')

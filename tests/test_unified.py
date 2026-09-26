@@ -53,7 +53,17 @@ class WorkerTests(unittest.TestCase):
     @classmethod
     def setUpClass(cls):
         spec=importlib.util.spec_from_file_location('unified_server_test',ROOT/'paired_lab/server.py')
-        cls.server=importlib.util.module_from_spec(spec);spec.loader.exec_module(cls.server)
+        # Worker orchestration tests deliberately exclude checkpoint loading.
+        # Real model quality is evaluated separately by the benchmark scripts.
+        from types import ModuleType
+        cls.assets=tempfile.TemporaryDirectory()
+        cls.addClassCleanup(cls.assets.cleanup)
+        engine_stub=ModuleType('engine');engine_stub.DATA=Path(cls.assets.name)
+        with patch.dict(sys.modules, {'engine':engine_stub,
+                                      'mci':ModuleType('mci'),
+                                      'flood':ModuleType('flood')}):
+            cls.server=importlib.util.module_from_spec(spec);spec.loader.exec_module(cls.server)
+        cls.addClassCleanup(cls.server.executor.shutdown, wait=True)
     def setUp(self):
         self.temp=tempfile.TemporaryDirectory();self.addCleanup(self.temp.cleanup)
         self.out=Path(self.temp.name);self.patcher=patch.object(self.server,'RUNS',self.out);self.patcher.start();self.addCleanup(self.patcher.stop)

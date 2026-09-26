@@ -1,0 +1,7 @@
+numpy==2.4.6
+Pillow==12.3.0
+rasterio==1.4.4
+pyproj==3.7.2
+fastapi==0.115.12
+python-multipart==0.0.20
+requests==2.34.2

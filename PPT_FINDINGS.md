@@ -6,7 +6,7 @@
 
 - Road change: **80.99% IoU**
 - Building change: **81.69% IoU**
-- Water mapping: **82.64% joint IoU**
+- Water mapping: **SAR 63.64% | Optical 83.90% | Joint 82.64% IoU**
 - Exported NDVI, water and temporal measurements independently recomputed.
 
 Footnote: Temporal: fixed 100-pair LEVIR-MCI subset, 50 changed/50 unchanged. Water: 90-chip Sen1Floods11 test replay. Inherited temporal checkpoint; locally trained water model. No ISRO/SAC sensor validation claim.
@@ -24,4 +24,4 @@ Footnote: Software tests include mocks; controls and routing challenges are boun
 
 No overall SatQuery accuracy, “beats competitors”, “ISRO-ready”, flood prediction, guaranteed cost/time savings, validated caption accuracy or general urban-expansion claim. Keep detailed failure analysis in the technical report/backup slides; retain material metric footnotes on the main slide.
 
-Source tables: metrics.csv. Full methodology and unresolved gates: BENCHMARK_REPORT.md.
+Source tables: [metrics.csv](paired_lab/evidence/benchmark-20260921/metrics.csv). Full methodology and unresolved gates: [BENCHMARK_REPORT.md](BENCHMARK_REPORT.md). Caption evidence: [DESCRIPTION_REVIEW.md](paired_lab/evidence/benchmark-20260921/DESCRIPTION_REVIEW.md).

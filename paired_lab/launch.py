@@ -1,5 +1,5 @@
 """Start the connected lab plus the preserved main service when needed."""
-import sys,time,subprocess,requests
+import os,sys,time,subprocess,requests
 from pathlib import Path
 ROOT=Path(__file__).resolve().parent
 def healthy(port):
@@ -13,7 +13,7 @@ def main():
     try:
         for port,folder in [(8765,ROOT.parent),(8767,ROOT)]:
             if healthy(port):continue
-            log_dir=Path('/root/satquery/paired-lab/logs');log_dir.mkdir(exist_ok=True)
+            log_dir=Path(os.environ.get('SATQUERY_LOG_DIR', str(ROOT.parent / '.runtime' / 'logs')));log_dir.mkdir(parents=True,exist_ok=True)
             log=(log_dir/f'{port}.log').open('a');logs.append(log)
             child=subprocess.Popen([sys.executable,'-m','uvicorn','server:app','--app-dir',str(folder),'--host','127.0.0.1','--port',str(port),'--no-access-log'],stdout=log,stderr=subprocess.STDOUT);children.append(child)
             for _ in range(60):
