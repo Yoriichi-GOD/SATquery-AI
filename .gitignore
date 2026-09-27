@@ -18,3 +18,17 @@ __pycache__/
 *.pth
 **/uploads/
 # Existing tracked scientific evidence is intentionally retained.
+
+# Acquisition products and intermediate arrays stay outside source control.
+*.rar
+*.7z
+paired_lab/evidence/**/*.tif
+paired_lab/evidence/**/*.tiff
+paired_lab/evidence/**/*.npz
+paired_lab/evidence/**/*.png
+paired_lab/evidence/**/*.pdf
+paired_lab/evidence/cdvqa-20260927/Test_*.json
+paired_lab/evidence/cdvqa-20260927/routing*-rows.json
+paired_lab/evidence/public-benchmarks-20260927/VRSBench_EVAL_vqa.json
+paired_lab/evidence/official-20260927/*-prefix.json
+paired_lab/evidence/submission-20260926/eos04-frs2-inventory.json
