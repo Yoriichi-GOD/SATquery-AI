@@ -38,6 +38,7 @@ function showResult(r){
   views([...(r.mode==='both'?[['Predicted outlines','outlines.png'],['Predicted instances','masks.png']]:[]),['Proposed boxes','boxes.png'],['RGB source','source.png']].map(([n,f])=>[n,url(f)]));
   metric($('#metrics'),'Object proposals',String(r.detections.length));$('#scores').append(element('p','Experimental grounding: proposals are not verified objects.'),table(['Object','Detector score','SAM predicted IoU'],r.detections.map(d=>[d.id,d.detector_score.toFixed(3),d.sam_predicted_iou?.toFixed(3)||'Not requested'])));
   if(r.mode==='both')$('#scores').append(element('p',`${r.union_mask_pixels.toLocaleString()} predicted union-mask pixels (${r.union_mask_percent.toFixed(2)}%); not ground area.`));
+ }else if(r.task==='sar_scene'){views([['SAR display (not true colour)',url('sar.png')]]);$('#scores').append(table(['Land cover','Uncalibrated model score'],Object.entries(r.scores).sort((a,b)=>b[1]-a[1]).map(([k,v])=>[k,(100*v).toFixed(1)+'%'])));
  }else if(r.task==='vqa'){views([['Uploaded image',url('input-preview.png')]])}
  else if(r.task==='ndvi'){
   views([['NDVI overlay','evidence.png'],['Threshold mask','mask.png'],['RGB','rgb.png'],['False colour','false-colour.png']].map(([n,f])=>[n,url(f)]));
@@ -65,7 +66,7 @@ $('#form').onsubmit=async ev=>{
    let file=$('#single-file').files[0];
    if(choice.startsWith('demo-')){const response=await fetch('/api/single-sample/'+choice.slice(5));if(!response.ok)throw Error('Example unavailable');file=new File([await response.blob()],choice==='demo-ndvi'?'calibrated-scene.tif':'optical-example.png');}
    if(!file)throw Error('Choose an optical image.');
-   const body=new FormData();body.append('file',file);feedback('Checking the image…');
+   const body=new FormData();body.append('file',file);body.append('modality',choice.startsWith('demo-')?'optical':$('#single-modality').value);feedback('Checking the image…');
    const image=await api('/api/single-images',{method:'POST',body});payload.images=[image.id];payload.threshold=Number($('#threshold').value);
    views([['Input preview',image.preview='/api/single-images/'+image.id]]);
   }else if(choice)payload.sample=choice;

@@ -1,0 +1,14 @@
+{
+  "source": "/mnt/c/Users/nrgen/.codex/scratch/SATquery AI/paired_lab/evidence/external-water-20260920/S1Hand-annotated.tif",
+  "projected_source": "/mnt/c/Users/nrgen/.codex/scratch/SATquery AI/paired_lab/evidence/compliance-20260926/sar-projected.tif",
+  "target_crs": "EPSG:32720",
+  "resolution_m": 10,
+  "window": [
+    16,
+    16,
+    120,
+    120
+  ],
+  "processing": "Explicit nearest-neighbour reprojection to 10 m EPSG:32720, then first completely valid crop in row-major 16-pixel steps. dB samples retained; grid changed explicitly. No EOS-04 relabelling.",
+  "scope": "Functional integration on prior Bolivia data; classifier quality/domain transfer not measured."
+}

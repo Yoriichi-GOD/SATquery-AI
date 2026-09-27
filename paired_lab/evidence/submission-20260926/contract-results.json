@@ -1,0 +1,58 @@
+[
+  {
+    "check": "cartosat-mx.zip archive integrity",
+    "outcome": "passed",
+    "all_members_crc_valid": true,
+    "crop_member": "5132611/BAND1.tif",
+    "crop_window": [
+      3587,
+      3564,
+      512,
+      512
+    ],
+    "crop_sha256": "32636b202a02dc55bf41145c9ebfbbbe553c7962a0e9e0939c5a7102323acc83",
+    "preparation": "Native central crop only; no resampling, calibration, band naming or sensor relabelling."
+  },
+  {
+    "check": "cartosat-mx.zip single image native crop ingestion",
+    "outcome": "refused",
+    "reason": "Band identities are missing. Label RGB bands red/green/blue or B04/B03/B02 before uploading; band order is never guessed."
+  },
+  {
+    "check": "cartosat-mx.zip native crop NDVI",
+    "outcome": "refused",
+    "reason": "NDVI requires labelled red/NIR bands and confirmed surface-reflectance units. An RGB image is not sufficient."
+  },
+  {
+    "check": "cartosat-mx.zip native crop paired metadata inspection",
+    "outcome": "accepted"
+  },
+  {
+    "check": "eos04-frs2.zip archive integrity",
+    "outcome": "passed",
+    "all_members_crc_valid": true,
+    "crop_member": "BH_E04_SAR_FR2_13SEP2023_8717_10742_6_SAN_STUC00ETD_F_HV_A_F/scene_HH/imagery_HH.tif",
+    "crop_window": [
+      2744,
+      2544,
+      512,
+      512
+    ],
+    "crop_sha256": "ecda73049368815e8a5ad7aa0b3dad0939e60203e3986f574cbfbc5416756442",
+    "preparation": "Native central crop only; no resampling, calibration, band naming or sensor relabelling."
+  },
+  {
+    "check": "eos04-frs2.zip single image native crop ingestion",
+    "outcome": "refused",
+    "reason": "Band identities are missing. Label RGB bands red/green/blue or B04/B03/B02 before uploading; band order is never guessed."
+  },
+  {
+    "check": "eos04-frs2.zip native crop NDVI",
+    "outcome": "refused",
+    "reason": "NDVI requires labelled red/NIR bands and confirmed surface-reflectance units. An RGB image is not sufficient."
+  },
+  {
+    "check": "eos04-frs2.zip native crop paired metadata inspection",
+    "outcome": "accepted"
+  }
+]

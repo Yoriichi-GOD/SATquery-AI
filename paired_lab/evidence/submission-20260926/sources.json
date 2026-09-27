@@ -1,0 +1,9 @@
+{
+  "official_sample_page": "https://bhoonidhi.nrsc.gov.in/bhoonidhi/help/sampleProducts.html",
+  "downloads": {
+    "cartosat-mx.zip": "https://bhoonidhi.nrsc.gov.in/bhoonidhi_resources/help/sampleprods/Cartosat-2S/C2S-MX/5132611.zip",
+    "eos04-frs2.zip": "https://bhoonidhi.nrsc.gov.in/bhoonidhi_resources/help/sampleprods/EOS-04/FRS2/E04_SAR_FR2_13SEP2023_8717_10742_6_SAN_STUC00ETD_F_HV_A_F.zip"
+  },
+  "local_download_directory": "C:\\Users\\nrgen\\.codex\\visualizations\\2026\\09\\19\\01a0b9f9-b20e-71a2-b139-ca9ab926b94e\\official-products-20260921",
+  "note": "Complete archives retained locally; not copied into repository. FRS1 downloads incomplete and excluded."
+}

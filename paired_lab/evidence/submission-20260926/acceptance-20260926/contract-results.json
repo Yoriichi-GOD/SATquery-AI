@@ -1,0 +1,149 @@
+{
+  "routing": [
+    {
+      "query": "Describe the visible scene in this image.",
+      "expected": "vqa",
+      "actual": "vqa",
+      "passed": true,
+      "reason": null
+    },
+    {
+      "query": "Is there a road in this scene?",
+      "expected": "vqa",
+      "actual": "vqa",
+      "passed": true,
+      "reason": null
+    },
+    {
+      "query": "Compute NDVI for this raster.",
+      "expected": "ndvi",
+      "actual": "refuse",
+      "passed": false,
+      "reason": "For measured coverage, request NDVI with calibrated bands and a selected threshold."
+    },
+    {
+      "query": "Compute NDVI for this raster.",
+      "expected": "refuse",
+      "actual": "refuse",
+      "passed": true,
+      "reason": "For measured coverage, request NDVI with calibrated bands and a selected threshold."
+    },
+    {
+      "query": "Compare buildings across these dates.",
+      "expected": "temporal",
+      "actual": "temporal",
+      "passed": true,
+      "reason": null
+    },
+    {
+      "query": "Show road changes between these dates.",
+      "expected": "temporal",
+      "actual": "temporal",
+      "passed": true,
+      "reason": null
+    },
+    {
+      "query": "Map water pixels in the supplied pair.",
+      "expected": "water_map",
+      "actual": "water_map",
+      "passed": true,
+      "reason": null
+    },
+    {
+      "query": "Identify land-cover classes for this pair.",
+      "expected": "optical_sar",
+      "actual": "optical_sar",
+      "passed": true,
+      "reason": null
+    },
+    {
+      "query": "Draw bounding boxes around aircraft.",
+      "expected": "grounding",
+      "actual": "grounding",
+      "passed": true,
+      "reason": null
+    },
+    {
+      "query": "Outline ships.",
+      "expected": "grounding",
+      "actual": "grounding",
+      "passed": true,
+      "reason": null
+    },
+    {
+      "query": "Predict inundation tomorrow.",
+      "expected": "refuse",
+      "actual": "refuse",
+      "passed": true,
+      "reason": "Forecasting and evacuation advice are not implemented. Ask about water visible now, or supported road/building changes between observed dates. Future rainfall scenarios cannot be analysed by the current specialists."
+    },
+    {
+      "query": "Estimate water depth in this pair.",
+      "expected": "refuse",
+      "actual": "refuse",
+      "passed": true,
+      "reason": "This measurement is outside the available specialists. Ask about visible features, supported index changes, water mapping or road/building change."
+    },
+    {
+      "query": "Map roads and water.",
+      "expected": "refuse",
+      "actual": "refuse",
+      "passed": true,
+      "reason": "This specialist maps water pixels only; it cannot map buildings, count objects or measure physical area."
+    },
+    {
+      "query": "Compare the colours of cars between dates.",
+      "expected": "refuse",
+      "actual": "refuse",
+      "passed": true,
+      "reason": "The temporal specialist supports road/building change only."
+    },
+    {
+      "query": "Report hectares of new buildings.",
+      "expected": "refuse",
+      "actual": "refuse",
+      "passed": true,
+      "reason": "Ask about road/building change between the two optical dates, or supply one image."
+    },
+    {
+      "query": "Locate buildings in this optical SAR pair.",
+      "expected": "refuse",
+      "actual": "refuse",
+      "passed": true,
+      "reason": "This optical\u2013SAR scene classifier returns land-cover labels, not pixel maps or coverage measurements. Ask \"Identify land-cover classes\". Water masks require the supported 13-band Sentinel-2 L1C / Sentinel-1 GRD pair; do not resize or relabel incompatible data to bypass this requirement."
+    },
+    {
+      "query": "Describe the visible scene.",
+      "expected": "refuse",
+      "actual": "refuse",
+      "passed": true,
+      "reason": "Single-image analysis needs an optical image. Supply a supported optical\u2013SAR pair for SAR."
+    },
+    {
+      "query": "Describe these images.",
+      "expected": "refuse",
+      "actual": "refuse",
+      "passed": true,
+      "reason": "Supply one optical image, two optical dates, or one optical and one SAR image."
+    },
+    {
+      "query": "Outline the car nearest the building.",
+      "expected": "refuse",
+      "actual": "refuse",
+      "passed": true,
+      "reason": "For experimental grounding, ask for one category: stadium, car, aircraft, building, ship or sports field."
+    },
+    {
+      "query": "Show NDVI changes between dates.",
+      "expected": "refuse",
+      "actual": "refuse",
+      "passed": true,
+      "reason": "Paired spectral comparison requires two Sentinel-2 surface-reflectance TIFFs with labelled Red/Green/NIR, genuine SCL quality bands and dates. These inputs do not establish that contract. Use Single image for a compatible individual NDVI calculation."
+    }
+  ],
+  "routing_passed": 19,
+  "routing_total": 20,
+  "ndvi_cases": 100,
+  "ndvi_max_absolute_error": 0.0,
+  "passed": false
+}

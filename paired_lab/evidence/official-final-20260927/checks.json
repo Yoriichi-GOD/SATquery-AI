@@ -1,0 +1,92 @@
+{
+  "checks": [
+    {
+      "check": "cartosat-mx.zip integrity",
+      "status": "PASS",
+      "sha256": "2614599a9a22d56fa12da238e40040f8d57f3526c03e19e9596e49c2c228ddb1",
+      "bytes": 176452118
+    },
+    {
+      "check": "eos04-frs2.zip integrity",
+      "status": "PASS",
+      "sha256": "f3bc18aa114030325803fb60778821b7835d0cd4773ed77c4fd3964ea5e08752",
+      "bytes": 216411474
+    },
+    {
+      "check": "Cartosat native values and grid preserved",
+      "status": "PASS",
+      "samples_compared": 1048576
+    },
+    {
+      "check": "Cartosat RGB ingestion",
+      "status": "PASS",
+      "bands": {
+        "blue": 1,
+        "green": 2,
+        "red": 3,
+        "nir": 4
+      },
+      "width": 512,
+      "height": 512
+    },
+    {
+      "check": "Cartosat DN refused for NDVI",
+      "status": "PASS",
+      "refusal": "NDVI requires labelled red/NIR bands and confirmed surface-reflectance units. An RGB image is not sufficient."
+    },
+    {
+      "check": "EOS-04 saved calibration independently recomputed",
+      "status": "PASS",
+      "bands": [
+        {
+          "polarization": "HH",
+          "samples": 262144,
+          "max_linear_absolute_error": 2.3509195479221034e-07,
+          "max_db_absolute_error": 1.0802181193980687e-06,
+          "nonpositive": 720
+        },
+        {
+          "polarization": "HV",
+          "samples": 262144,
+          "max_linear_absolute_error": 2.748646676931088e-08,
+          "max_db_absolute_error": 9.460525092208627e-07,
+          "nonpositive": 33078
+        },
+        {
+          "polarization": "VH",
+          "samples": 262144,
+          "max_linear_absolute_error": 2.9215771468749097e-08,
+          "max_db_absolute_error": 1.7612241762776648e-06,
+          "nonpositive": 26120
+        },
+        {
+          "polarization": "VV",
+          "samples": 262144,
+          "max_linear_absolute_error": 1.9082742142018105e-07,
+          "max_db_absolute_error": 9.461290453316451e-07,
+          "nonpositive": 458
+        }
+      ],
+      "total_samples": 1048576,
+      "linear_tolerance": "rtol 1e-6, atol 1e-8",
+      "db_tolerance": "rtol 1e-6, atol 1e-5"
+    },
+    {
+      "check": "EOS-04 four-band invalid dB raster refused by model ingestion",
+      "status": "PASS",
+      "refusal": "Crop to a fully valid common region first: nodata/NaN pixels are not silently filled."
+    },
+    {
+      "check": "EOS-04 explicitly refused by Sentinel SAR specialist",
+      "status": "PASS",
+      "refusal": "Single SAR classification requires Sentinel-1 VV/VH in dB; EOS-04/RISAT transfer is not validated."
+    },
+    {
+      "check": "Unrelated official pair refused for water mapping",
+      "status": "PASS",
+      "refusal": "Water mapping requires matching georeferenced grids."
+    }
+  ],
+  "passed": 9,
+  "scope": "Official sample functional/numerical regression; not held-out accuracy evaluation"
+}

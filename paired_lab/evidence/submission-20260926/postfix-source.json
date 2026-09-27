@@ -1,0 +1,15 @@
+{
+  "baseline_commit": "f24e9706f66093790912253c1326451b602e0cc2",
+  "changes": {
+    "routing.py": {
+      "frozen": "c9cac3fb8e7ef54cef7b6d986c72b2c798217fbac693ed275283daeeeb9b6b7f",
+      "current": "34b671c2ca889c45ba724b2ac7077f93b6ceb15f2fc28e8d32ff14e136f295f7"
+    }
+  },
+  "note": "Only single-image NDVI context grammar changed after frozen acceptance. Original 19/20 result retained; subsequent 20/20 is regression. Temporal model code unchanged.",
+  "software_tests": {
+    "passed": 72,
+    "seconds": 1.954,
+    "environment": "isolated Python 3.11 software-only environment"
+  }
+}

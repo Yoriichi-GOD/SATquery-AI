@@ -2,10 +2,11 @@
 import importlib.util, math, re
 from pathlib import Path
 from inputs import route as paired_route
-VERSION = 'unified-rules-v6'
+VERSION = 'unified-rules-v8'
 spec = importlib.util.spec_from_file_location('preserved_single_router', Path(__file__).resolve().parent.parent / 'routing.py')
 single = importlib.util.module_from_spec(spec); spec.loader.exec_module(single)
 SPECIALISTS = {
+    'sar_scene': ('BIFOLD SAR-only scene classifier','CPU','experimental'),
     'spectral_pair': ('NDVI + NDWI observed-date comparison','CPU','experimental'),
     'vqa': ('Remote-sensing Qwen2-VL-2B', 'CUDA GPU', 'supported'),
     'ndvi': ('Deterministic NDVI calculation', 'CPU', 'supported'),
@@ -58,7 +59,12 @@ def plan(query, records, threshold=.5):
         raise ValueError('Paired spectral comparison requires two Sentinel-2 surface-reflectance TIFFs with labelled Red/Green/NIR, genuine SCL quality bands and dates. These inputs do not establish that contract. Use Single image for a compatible individual NDVI calculation.')
     if len(records) == 1:
         r = records[0]
-        if r.get('modality') != 'optical': raise ValueError('Single-image analysis needs an optical image. Supply a supported optical–SAR pair for SAR.')
+        if r.get('modality') == 'sar':
+            import sar_single
+            sar_single.validate(r)
+            if not sar_single.eligible(query):raise ValueError('Single SAR supports scene-level land-cover description. Ask "Describe this SAR image" or "Identify land-cover classes"; object grounding and unrestricted SAR VQA are not supported.')
+            return selection('sar_scene','One compatible Sentinel-1 VV/VH image and a scene-level question.',steps=['validate SAR calibration and grid','SAR scene classification','export scores and evidence'])
+        if r.get('modality') != 'optical':raise ValueError('Declare optical or SAR input.')
         grounding = grounding_request(query)
         if grounding:
             w, h = r.get('width', 0), r.get('height', 0)
@@ -82,6 +88,15 @@ def plan(query, records, threshold=.5):
     if len(records) != 2: raise ValueError('Supply one optical image, two optical dates, or one optical and one SAR image.')
     modes = sorted(r['modality'] for r in records)
     if modes == ['optical', 'optical']:
+        # MCI has two change classes, not a general land-cover transition model.
+        if re.search(r'\b(percentage|percent|ratio|fraction|proportion|how much)\b', q):
+            raise ValueError('General land-cover change ratios and per-date class areas are not supported. Road/building predicted-mask pixel counts are available with the descriptive change result.')
+        if re.search(r'\b(non[- ]vegetated|bare ground|bare land|playgrounds?)\b', q):
+            raise ValueError('The temporal specialist supports road/building change only; it cannot measure non-vegetated ground or playground change.')
+        if re.search(r'\b(largest|smallest|most|least)\b', q):
+            raise ValueError('Ranking land-cover changes is not supported. Ask about road/building change and inspect the separate predicted pixel counts.')
+        if re.search(r'\b(chang\w* (?:to|into)|convert\w*|replac\w*|transition\w*)\b', q):
+            raise ValueError('Land-cover conversion and transition classes are not predicted. This model provides road/building change masks and a descriptive caption.')
         if re.search(r'\b(sar|radar|fusion|modalities)\b', q): raise ValueError('Both supplied images are optical; SAR analysis requires a SAR input.')
         if not (re.search(r'\b(chang\w*|before|after|dates?|increas\w*|decreas\w*|built|removed|construction|demolition|gain|loss)\b', q) or (re.search(r'\bcompare\b', q) and re.search(r'\b(roads?|buildings?)\b', q))):
             raise ValueError('Ask about road/building change between the two optical dates, or supply one image.')

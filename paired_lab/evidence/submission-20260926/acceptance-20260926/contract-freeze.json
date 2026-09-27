@@ -1,0 +1,352 @@
+{
+  "criteria": "All 20 expected dispatch/refusal outcomes and 100 exact-rational NDVI comparisons within 1e-12; all failures retained. Synthetic engineering gate, not scientific accuracy.",
+  "seed": 20260926,
+  "cases": [
+    [
+      "Describe the visible scene in this image.",
+      [
+        {
+          "modality": "optical",
+          "width": 256,
+          "height": 256,
+          "count": 3,
+          "geo": null
+        }
+      ],
+      "vqa"
+    ],
+    [
+      "Is there a road in this scene?",
+      [
+        {
+          "modality": "optical",
+          "width": 256,
+          "height": 256,
+          "count": 3,
+          "geo": null
+        }
+      ],
+      "vqa"
+    ],
+    [
+      "Compute NDVI for this raster.",
+      [
+        {
+          "modality": "optical",
+          "width": 256,
+          "height": 256,
+          "count": 3,
+          "geo": {
+            "ndvi_supported": true
+          }
+        }
+      ],
+      "ndvi"
+    ],
+    [
+      "Compute NDVI for this raster.",
+      [
+        {
+          "modality": "optical",
+          "width": 256,
+          "height": 256,
+          "count": 3,
+          "geo": null
+        }
+      ],
+      "refuse"
+    ],
+    [
+      "Compare buildings across these dates.",
+      [
+        {
+          "modality": "optical",
+          "width": 256,
+          "height": 256,
+          "count": 3,
+          "geo": null
+        },
+        {
+          "modality": "optical",
+          "width": 256,
+          "height": 256,
+          "count": 3,
+          "geo": null
+        }
+      ],
+      "temporal"
+    ],
+    [
+      "Show road changes between these dates.",
+      [
+        {
+          "modality": "optical",
+          "width": 256,
+          "height": 256,
+          "count": 3,
+          "geo": null
+        },
+        {
+          "modality": "optical",
+          "width": 256,
+          "height": 256,
+          "count": 3,
+          "geo": null
+        }
+      ],
+      "temporal"
+    ],
+    [
+      "Map water pixels in the supplied pair.",
+      [
+        {
+          "modality": "optical",
+          "width": 256,
+          "height": 256,
+          "count": 13,
+          "geo": null
+        },
+        {
+          "modality": "sar",
+          "width": 512,
+          "height": 512,
+          "count": 2
+        }
+      ],
+      "water_map"
+    ],
+    [
+      "Identify land-cover classes for this pair.",
+      [
+        {
+          "modality": "optical",
+          "width": 256,
+          "height": 256,
+          "count": 10,
+          "geo": null
+        },
+        {
+          "modality": "sar",
+          "width": 512,
+          "height": 512,
+          "count": 2
+        }
+      ],
+      "optical_sar"
+    ],
+    [
+      "Draw bounding boxes around aircraft.",
+      [
+        {
+          "modality": "optical",
+          "width": 256,
+          "height": 256,
+          "count": 3,
+          "geo": null
+        }
+      ],
+      "grounding"
+    ],
+    [
+      "Outline ships.",
+      [
+        {
+          "modality": "optical",
+          "width": 256,
+          "height": 256,
+          "count": 3,
+          "geo": null
+        }
+      ],
+      "grounding"
+    ],
+    [
+      "Predict inundation tomorrow.",
+      [
+        {
+          "modality": "optical",
+          "width": 256,
+          "height": 256,
+          "count": 13,
+          "geo": null
+        },
+        {
+          "modality": "sar",
+          "width": 512,
+          "height": 512,
+          "count": 2
+        }
+      ],
+      "refuse"
+    ],
+    [
+      "Estimate water depth in this pair.",
+      [
+        {
+          "modality": "optical",
+          "width": 256,
+          "height": 256,
+          "count": 13,
+          "geo": null
+        },
+        {
+          "modality": "sar",
+          "width": 512,
+          "height": 512,
+          "count": 2
+        }
+      ],
+      "refuse"
+    ],
+    [
+      "Map roads and water.",
+      [
+        {
+          "modality": "optical",
+          "width": 256,
+          "height": 256,
+          "count": 13,
+          "geo": null
+        },
+        {
+          "modality": "sar",
+          "width": 512,
+          "height": 512,
+          "count": 2
+        }
+      ],
+      "refuse"
+    ],
+    [
+      "Compare the colours of cars between dates.",
+      [
+        {
+          "modality": "optical",
+          "width": 256,
+          "height": 256,
+          "count": 3,
+          "geo": null
+        },
+        {
+          "modality": "optical",
+          "width": 256,
+          "height": 256,
+          "count": 3,
+          "geo": null
+        }
+      ],
+      "refuse"
+    ],
+    [
+      "Report hectares of new buildings.",
+      [
+        {
+          "modality": "optical",
+          "width": 256,
+          "height": 256,
+          "count": 3,
+          "geo": null
+        },
+        {
+          "modality": "optical",
+          "width": 256,
+          "height": 256,
+          "count": 3,
+          "geo": null
+        }
+      ],
+      "refuse"
+    ],
+    [
+      "Locate buildings in this optical SAR pair.",
+      [
+        {
+          "modality": "optical",
+          "width": 256,
+          "height": 256,
+          "count": 10,
+          "geo": null
+        },
+        {
+          "modality": "sar",
+          "width": 512,
+          "height": 512,
+          "count": 2
+        }
+      ],
+      "refuse"
+    ],
+    [
+      "Describe the visible scene.",
+      [
+        {
+          "modality": "sar",
+          "width": 512,
+          "height": 512,
+          "count": 2
+        }
+      ],
+      "refuse"
+    ],
+    [
+      "Describe these images.",
+      [
+        {
+          "modality": "optical",
+          "width": 256,
+          "height": 256,
+          "count": 3,
+          "geo": null
+        },
+        {
+          "modality": "optical",
+          "width": 256,
+          "height": 256,
+          "count": 3,
+          "geo": null
+        },
+        {
+          "modality": "optical",
+          "width": 256,
+          "height": 256,
+          "count": 3,
+          "geo": null
+        }
+      ],
+      "refuse"
+    ],
+    [
+      "Outline the car nearest the building.",
+      [
+        {
+          "modality": "optical",
+          "width": 256,
+          "height": 256,
+          "count": 3,
+          "geo": null
+        }
+      ],
+      "refuse"
+    ],
+    [
+      "Show NDVI changes between dates.",
+      [
+        {
+          "modality": "optical",
+          "width": 256,
+          "height": 256,
+          "count": 3,
+          "geo": null
+        },
+        {
+          "modality": "optical",
+          "width": 256,
+          "height": 256,
+          "count": 3,
+          "geo": null
+        }
+      ],
+      "refuse"
+    ]
+  ]
+}

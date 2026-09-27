@@ -1,0 +1,183 @@
+{
+  "state": "complete",
+  "stage": "Complete",
+  "plan": {
+    "task": "sar_scene",
+    "version": "unified-rules-v7",
+    "specialist": "BIFOLD SAR-only scene classifier",
+    "device": "CPU",
+    "maturity": "experimental",
+    "reason": "One compatible Sentinel-1 VV/VH image and a scene-level question.",
+    "steps": [
+      "validate SAR calibration and grid",
+      "SAR scene classification",
+      "export scores and evidence"
+    ]
+  },
+  "events": [
+    {
+      "stage": "Input checks passed; preparing specialist",
+      "at": "2026-09-26T15:10:17Z"
+    },
+    {
+      "stage": "Starting BIFOLD SAR-only scene classifier",
+      "at": "2026-09-26T15:10:17Z"
+    },
+    {
+      "stage": "Running Sentinel-1 scene classifier on CPU",
+      "at": "2026-09-26T15:10:17Z"
+    },
+    {
+      "stage": "Saving result and original inputs",
+      "at": "2026-09-26T15:10:20Z"
+    },
+    {
+      "stage": "Packaging evidence",
+      "at": "2026-09-26T15:10:20Z"
+    }
+  ],
+  "result": {
+    "task": "sar_scene",
+    "answer": "The SAR-only model suggests Inland waters, Inland wetlands. Scene-level interpretation; no object locations or measured area. A low score does not establish absence.",
+    "scores": {
+      "Agro-forestry areas": 0.0004275772371329367,
+      "Arable land": 0.3713224530220032,
+      "Beaches, dunes, sands": 0.000430712680099532,
+      "Broad-leaved forest": 0.07394443452358246,
+      "Coastal wetlands": 0.001113843871280551,
+      "Complex cultivation patterns": 0.11334236711263657,
+      "Coniferous forest": 0.35075604915618896,
+      "Industrial or commercial units": 0.00647708447650075,
+      "Inland waters": 0.9475996494293213,
+      "Inland wetlands": 0.8527683615684509,
+      "Land principally occupied by agriculture, with significant areas of natural vegetation": 0.4798687696456909,
+      "Marine waters": 0.0025977606419473886,
+      "Mixed forest": 0.3824864625930786,
+      "Moors, heathland and sclerophyllous vegetation": 9.376529487781227e-05,
+      "Natural grassland and sparsely vegetated areas": 0.0025589580181986094,
+      "Pastures": 0.02069239690899849,
+      "Permanent crops": 0.013651973567903042,
+      "Transitional woodland, shrub": 0.20493625104427338,
+      "Urban fabric": 0.030063211917877197
+    },
+    "classes": [
+      "Inland waters",
+      "Inland wetlands"
+    ],
+    "seconds": 2.391651998000043,
+    "confidence": {
+      "kind": "uncalibrated sigmoid; not accuracy",
+      "threshold": 0.5
+    },
+    "trace": [
+      {
+        "tool": "BIFOLD-BigEarthNetv2-0/resnet50-s1-v0.2.0",
+        "revision": "d417b3c32f2172cbceb14e5b106dd9aa7b77c647",
+        "bands": [
+          "VV",
+          "VH"
+        ],
+        "units": "dB",
+        "normalization": "reBEN 120_nearest mean/std",
+        "device": "cpu",
+        "preview": "fixed VV/VH/difference display stretch; not true colour"
+      }
+    ],
+    "limitations": [
+      "Sentinel-1 only; no EOS-04/RISAT transfer claim.",
+      "Scene-level land-cover description, not unrestricted SAR VQA or grounding.",
+      "Class scores are uncalibrated; expert review remains necessary."
+    ],
+    "execution": {
+      "task": "sar_scene",
+      "version": "unified-rules-v7",
+      "specialist": "BIFOLD SAR-only scene classifier",
+      "device": "CPU",
+      "maturity": "experimental",
+      "reason": "One compatible Sentinel-1 VV/VH image and a scene-level question.",
+      "steps": [
+        "validate SAR calibration and grid",
+        "SAR scene classification",
+        "export scores and evidence"
+      ]
+    },
+    "id": "a049b4e27ee1475f8cd49209354853fc",
+    "query": "Describe this SAR image",
+    "input_checks": {
+      "task": "sar_scene",
+      "inputs": [
+        {
+          "modality": "sar",
+          "date": "2018-02-15",
+          "units": "dB",
+          "sensor": "Sentinel-1 GRD",
+          "reflectance_units": "",
+          "bands": [
+            "VV",
+            "VH"
+          ],
+          "shape": [
+            120,
+            120
+          ],
+          "count": 2,
+          "dtype": "float32",
+          "crs": "EPSG:32720",
+          "transform": [
+            10.0,
+            0.0,
+            260878.06432498584,
+            0.0,
+            -10.0,
+            8407207.568011671
+          ],
+          "sha256": "ae91826be6c6111ca1012c4e10c191c7af8295c9b72bc2160e2536ca8e0d7e9e",
+          "id": "0fed9de68ed3467797a028ccc6d6a2bf",
+          "name": "sar.tif",
+          "is_single": true,
+          "width": 120,
+          "height": 120
+        }
+      ],
+      "plan": {
+        "task": "sar_scene",
+        "version": "unified-rules-v7",
+        "specialist": "BIFOLD SAR-only scene classifier",
+        "device": "CPU",
+        "maturity": "experimental",
+        "reason": "One compatible Sentinel-1 VV/VH image and a scene-level question.",
+        "steps": [
+          "validate SAR calibration and grid",
+          "SAR scene classification",
+          "export scores and evidence"
+        ]
+      }
+    },
+    "controller": "unified-rules-v7",
+    "created_at": "2026-09-26T15:10:20Z",
+    "execution_events": [
+      {
+        "stage": "Input checks passed; preparing specialist",
+        "at": "2026-09-26T15:10:17Z"
+      },
+      {
+        "stage": "Starting BIFOLD SAR-only scene classifier",
+        "at": "2026-09-26T15:10:17Z"
+      },
+      {
+        "stage": "Running Sentinel-1 scene classifier on CPU",
+        "at": "2026-09-26T15:10:17Z"
+      },
+      {
+        "stage": "Saving result and original inputs",
+        "at": "2026-09-26T15:10:20Z"
+      },
+      {
+        "stage": "Packaging evidence",
+        "at": "2026-09-26T15:10:20Z"
+      }
+    ],
+    "work_seconds_before_zip": 2.3935874379999973
+  },
+  "request_seconds": 2.3966561299999967
+}

@@ -1,0 +1,66 @@
+{
+  "ingestion": "passed",
+  "metadata": {
+    "calibration_version": "native DN; no radiometric conversion",
+    "crs": "EPSG:32645",
+    "width": 512,
+    "height": 512,
+    "transform": [
+      1.6,
+      0.0,
+      377838.4,
+      0.0,
+      -1.6,
+      2248284.8000000003
+    ],
+    "bounds": [
+      377838.4,
+      2247465.6,
+      378657.60000000003,
+      2248284.8000000003
+    ],
+    "bounds_wgs84": [
+      85.82977955561134,
+      20.321257695890033,
+      85.83768098171828,
+      20.328711071262045
+    ],
+    "resolution": [
+      1.6,
+      1.6
+    ],
+    "bands": {
+      "blue": 1,
+      "green": 2,
+      "red": 3,
+      "nir": 4
+    },
+    "band_descriptions": [
+      "blue",
+      "green",
+      "red",
+      "nir"
+    ],
+    "nodata": "0.0",
+    "scales": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+    ],
+    "offsets": [
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "acquired": "2020-05-16",
+    "source_item": "205132611",
+    "attribution": "NRSC Bhoonidhi public sample",
+    "ndvi_supported": false,
+    "quality_mask_available": false,
+    "preview_processing": "Per-channel 2nd\u201398th percentile RGB display stretch; analytical values are preserved."
+  },
+  "ndvi_refusal": "NDVI requires labelled red/NIR bands and confirmed surface-reflectance units. An RGB image is not sufficient.",
+  "scope": "Input preparation/preview only; VQA inference not tested by this script."
+}

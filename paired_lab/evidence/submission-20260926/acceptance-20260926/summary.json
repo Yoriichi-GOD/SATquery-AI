@@ -1,0 +1,24 @@
+{
+  "passed_internal_gate": true,
+  "n": 40,
+  "failures": 0,
+  "metrics": {
+    "road": {
+      "tp": 71782,
+      "fp": 11983,
+      "fn": 15939,
+      "iou": 0.7199510551231646,
+      "f1": 0.8371762126354338
+    },
+    "building": {
+      "tp": 97361,
+      "fp": 14800,
+      "fn": 23826,
+      "iou": 0.7159581430577923,
+      "f1": 0.8344704047174177
+    }
+  },
+  "unchanged_false_positive_fraction": 0.0,
+  "seconds": 15.405230955,
+  "limits": "Local file-ID and exact compressed image-byte exclusions only. Geographic/source-scene independence and upstream model test exposure unknown. Does not establish full-system untouched acceptance or CDVQA performance."
+}

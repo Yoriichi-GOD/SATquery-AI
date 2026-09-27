@@ -8,7 +8,7 @@ from starlette.middleware.trustedhost import TrustedHostMiddleware
 ROOT=Path(__file__).resolve().parent
 sys.path.insert(0,str(ROOT))
 import engine
-import controller,single_bridge,grounding_bridge,mci,flood,spectral_pair
+import controller,single_bridge,grounding_bridge,mci,flood,spectral_pair,sar_single
 from recovery import detail as recovery_detail
 import rasterio
 from inputs import inspect,route,validate
@@ -75,10 +75,21 @@ async def upload(file:UploadFile=File(...),modality:str=Form(...),date:str=Form(
     return {k:v for k,v in r.items() if k not in ['data','path']}
 
 @app.post('/api/single-images')
-async def upload_single(file:UploadFile=File(...)):
+async def upload_single(file:UploadFile=File(...),modality:str=Form("optical")):
     raw=await file.read(20*1024*1024+1)
     if len(raw)>20*1024*1024:raise HTTPException(413,'Upload limit is 20 MB.')
     iid=uuid.uuid4().hex;path=UPLOADS/(iid+'.upload');path.write_bytes(raw)
+    if modality not in ['optical','sar']:
+        path.unlink(missing_ok=True);raise HTTPException(400,'Declare optical or SAR.')
+    if modality=='sar':
+        try:
+            r=inspect(path,'sar');sar_single.validate(r)
+            sar_single.preview(r,UPLOADS/(iid+'.png'))
+        except ValueError as e:
+            path.unlink(missing_ok=True);raise HTTPException(400,recovery_detail(e))
+        r.update(id=iid,name=Path(file.filename or 'sar.tif').name,is_single=True,width=r['shape'][1],height=r['shape'][0])
+        images[iid]=r
+        return {k:v for k,v in r.items() if k not in ['path','data']}
     try:r=single_bridge.upload(path,Path(file.filename or 'image').name)
     except ValueError as e:path.unlink(missing_ok=True);raise HTTPException(400,recovery_detail(e))
     record={**r,'main_id':r['id'],'id':iid,'path':str(path),'modality':'optical','is_single':True};images[iid]=record
@@ -106,6 +117,7 @@ def prepare(payload):
     query=payload.get('query','');selected=controller.plan(query,records,payload.get('threshold',.5));task=selected['task']
     if len(records)==1:
         if not records[0].get('is_single'):raise ValueError('Use the single-image uploader for VQA, NDVI or experimental grounding.')
+        if task=='sar_scene':sar_single.validate(records[0])
         checks={'task':task,'inputs':[{k:v for k,v in records[0].items() if k not in ['path','data']}]}
     else:
         if any(r.get('is_single') for r in records):raise ValueError('Use paired TIFF uploads for two-image analysis.')
@@ -135,6 +147,7 @@ def work(jid,records,query,task,checks):
         progress=lambda stage:progress_update(jid,stage)
         progress('Starting '+checks['plan']['specialist'])
         if task in ['vqa','ndvi']:result=single_bridge.run(records[0],query,checks['plan'],out,progress=progress)
+        elif task=='sar_scene':result=sar_single.run(records[0],out,progress=progress)
         elif task=='spectral_pair':result=spectral_pair.analyse(records,checks['plan']['parameters'],checks['plan']['threshold'],checks['plan']['water_threshold'],out,progress,include_built_up=checks['plan']['include_built_up'])
         elif task=='grounding':result=grounding_bridge.run(records[0],query,checks['plan'],out,progress=progress)
         elif task=='temporal':result=mci.temporal(records[0]['data'].transpose(1,2,0),records[1]['data'].transpose(1,2,0),out,progress=progress)

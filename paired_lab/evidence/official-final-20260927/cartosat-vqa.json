@@ -1,0 +1,125 @@
+{
+  "id": "f8352f6fec2a49aa8a483ef61d7ed61e",
+  "state": "complete",
+  "stage": "Complete",
+  "question": "Describe this image",
+  "image": {
+    "id": "568900c911084132bac546b867700323",
+    "name": "cartosat-labelled.tif",
+    "width": 512,
+    "height": 512,
+    "bytes": 1459146,
+    "sha256": "f5cfa52b74f6dc849ba96d96f67273984bce8fcb57efff3d33f60473a7e3382f",
+    "preview": "/api/images/568900c911084132bac546b867700323",
+    "geo": {
+      "calibration_version": "native DN; no radiometric conversion",
+      "crs": "EPSG:32645",
+      "width": 512,
+      "height": 512,
+      "transform": [
+        1.6,
+        0.0,
+        377838.4,
+        0.0,
+        -1.6,
+        2248284.8000000003
+      ],
+      "bounds": [
+        377838.4,
+        2247465.6,
+        378657.60000000003,
+        2248284.8000000003
+      ],
+      "bounds_wgs84": [
+        85.82977955561134,
+        20.321257695890033,
+        85.83768098171828,
+        20.328711071262045
+      ],
+      "resolution": [
+        1.6,
+        1.6
+      ],
+      "bands": {
+        "blue": 1,
+        "green": 2,
+        "red": 3,
+        "nir": 4
+      },
+      "band_descriptions": [
+        "blue",
+        "green",
+        "red",
+        "nir"
+      ],
+      "nodata": "0.0",
+      "scales": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "offsets": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "acquired": "2020-05-16",
+      "source_item": "205132611",
+      "attribution": "NRSC Bhoonidhi public sample",
+      "ndvi_supported": false,
+      "quality_mask_available": false,
+      "preview_processing": "Per-channel 2nd\u201398th percentile RGB display stretch; analytical values are preserved."
+    }
+  },
+  "started": 1790501810.259896,
+  "model": "AdaptLLM/remote-sensing-Qwen2-VL-2B-Instruct",
+  "revision": "7f5dd71bf0f40c282193d50160e848a387a08ffe",
+  "adapter": null,
+  "mode": "baseline",
+  "route": "Single-image optical VQA",
+  "trace": [
+    {
+      "step": "Load pinned checkpoint",
+      "seconds": 9.925
+    },
+    {
+      "step": "Generate model answer",
+      "seconds": 8.526
+    }
+  ],
+  "routing": {
+    "tool": "vqa",
+    "rule": "single_image_description",
+    "reason": "Supported descriptive or presence question about one optical image; no quantitative or spatial output requested.",
+    "version": "rules-v7"
+  },
+  "requested_mode": "baseline",
+  "effective_question": "Describe this image in detail.",
+  "description_policy": "scene-description-v1",
+  "visual_token_bounds": [
+    256,
+    512
+  ],
+  "raw_answer": "Many buildings and green trees are in a dense residential area.",
+  "answer_validation": {
+    "policy": "open-visual-v1",
+    "answer": "Many buildings and green trees are in a dense residential area.\n\nModel interpretation; may be inaccurate.",
+    "limitation": "Model interpretation; may be inaccurate.",
+    "raw_truncated": false,
+    "changed": true,
+    "withheld": false,
+    "reasons": [
+      "model_output_preserved",
+      "estimate_label_added"
+    ]
+  },
+  "answer_policy": "open-visual-v1",
+  "answer": "Many buildings and green trees are in a dense residential area.\n\nModel interpretation; may be inaccurate.",
+  "seconds": 23.831,
+  "generation_seconds": 8.526,
+  "peak_allocated_GiB": 4.243,
+  "generated_tokens": 13,
+  "max_new_tokens": 192
+}

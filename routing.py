@@ -6,7 +6,7 @@ unrecognized and compound requests fail closed. Version saved with each run.
 import math
 import re
 
-VERSION = 'rules-v6'
+VERSION = 'rules-v7'
 
 
 def route(question, *, ndvi_supported=False, threshold=0.5):
@@ -89,7 +89,7 @@ def route(question, *, ndvi_supported=False, threshold=0.5):
 
     # An explicit numerical threshold is accepted only if it matches the control.
     suffix = r'(?: at (?:the )?selected threshold| at (?:a )?threshold(?: of)? (-?\d+(?:\.\d+)?)|\s*(?:>=|≥)\s*(-?\d+(?:\.\d+)?))?'
-    ndvi = re.fullmatch(r'(?:calculate |compute |what is (?:the )?|give (?:me )?(?:the )?)?ndvi(?: (?:coverage|threshold coverage))?' + suffix, q)
+    ndvi = re.fullmatch(r'(?:calculate |compute |what is (?:the )?|give (?:me )?(?:the )?)?ndvi(?: (?:coverage|threshold coverage))?(?: (?:for|on|in) (?:this|the) (?:image|raster|crop))?' + suffix, q)
     coverage = re.fullmatch(r'(?:calculate (?:the )?(?:vegetation coverage|percentage of vegetation)|what (?:percentage|percent|fraction) of (?:this |the )?(?:image|crop|valid pixels) (?:is|are) (?:vegetation|covered (?:by|with) vegetation)|what is (?:the )?vegetation coverage)(?: using ndvi)?' + suffix, q)
     if ndvi or coverage:
         match = ndvi or coverage

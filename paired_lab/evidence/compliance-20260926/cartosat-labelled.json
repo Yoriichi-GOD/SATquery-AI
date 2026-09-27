@@ -1,0 +1,26 @@
+{
+  "source_archive_sha256": "2614599a9a22d56fa12da238e40040f8d57f3526c03e19e9596e49c2c228ddb1",
+  "source_members": [
+    "5132611/BAND1.tif",
+    "5132611/BAND2.tif",
+    "5132611/BAND3.tif",
+    "5132611/BAND4.tif"
+  ],
+  "window": [
+    3587,
+    3564,
+    512,
+    512
+  ],
+  "band_reference": "https://bhuvan-app3.nrsc.gov.in/nhai_gci/files/NRSC_NH-GCI_FinalReport_09Dec2025.pdf",
+  "reference_table": "Table 4, printed page 6 / PDF page 30",
+  "bands": [
+    "blue",
+    "green",
+    "red",
+    "nir"
+  ],
+  "preparation": "Native central 512 pixel window; stack and label only. No resampling or calibration.",
+  "output_sha256": "f5cfa52b74f6dc849ba96d96f67273984bce8fcb57efff3d33f60473a7e3382f",
+  "scope": "Optical display/VQA input preparation only. No sensor accuracy or calibrated NDVI claim."
+}

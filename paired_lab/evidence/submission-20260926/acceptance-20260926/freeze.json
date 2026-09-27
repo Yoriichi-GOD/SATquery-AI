@@ -1,0 +1,1853 @@
+{
+  "created_utc": "2026-09-26T14:48:32Z",
+  "seed": 20260926,
+  "cases": [
+    {
+      "filename": "test_000164.png",
+      "changeflag": 0,
+      "hashes": {
+        "A": "c3c643df0b9432fca1487ffc3752792d26a5f5fe2d58a4b7c418cf516f3ff89f",
+        "B": "cfa4fa59a919617de5cd22013eb296192fa82bc45bdcf78041a8fe7fe8bc2ed2",
+        "label": "3f4d71b63cd17da7aeda885c59160ea2e69ed17cfc27915ffaffe7f874e1b95c"
+      }
+    },
+    {
+      "filename": "test_000090.png",
+      "changeflag": 0,
+      "hashes": {
+        "A": "cb54cb4f178290041d6114b92ac82c59556ee026cba27df14b89ed9b229c99ec",
+        "B": "a27e631559f0c438283a00c4bb35356e39e60c64bee0937d31431cfd39a52c0b",
+        "label": "3f4d71b63cd17da7aeda885c59160ea2e69ed17cfc27915ffaffe7f874e1b95c"
+      }
+    },
+    {
+      "filename": "test_000023.png",
+      "changeflag": 0,
+      "hashes": {
+        "A": "7a7235c3794899db32872f68e2fb24ff48cbf07d208bad7598bc93528f030be1",
+        "B": "6e503f0925c5e34d1f95824acb4d34c55835707ab9c9342700c53d8a3430781e",
+        "label": "3f4d71b63cd17da7aeda885c59160ea2e69ed17cfc27915ffaffe7f874e1b95c"
+      }
+    },
+    {
+      "filename": "test_001706.png",
+      "changeflag": 0,
+      "hashes": {
+        "A": "68f4bdad5a73fc41c23ffeaaba73c1b11f5ef2c157be55e01fc28eb08570ff51",
+        "B": "1f6a726f9bd303eba4dd36638d89199f89c283eb4f53d0d7c673fd80340822f8",
+        "label": "3f4d71b63cd17da7aeda885c59160ea2e69ed17cfc27915ffaffe7f874e1b95c"
+      }
+    },
+    {
+      "filename": "test_000746.png",
+      "changeflag": 0,
+      "hashes": {
+        "A": "72bc8290df4257e666f54253844d905344ac9f647c73ce6b714cb544a0e00e32",
+        "B": "b34ec416ae52ee3e66870a3ab7c1c0afcee5eb8f359eda74f16136660e782296",
+        "label": "3f4d71b63cd17da7aeda885c59160ea2e69ed17cfc27915ffaffe7f874e1b95c"
+      }
+    },
+    {
+      "filename": "test_001402.png",
+      "changeflag": 0,
+      "hashes": {
+        "A": "78603138971779b0b925321976399d0c89a026fa4894659aa5804b0cafee2052",
+        "B": "3651c9f7bf6b5ff9acefb74c2a5deab2b35534f808c6ea3a4039022dfe6aa3d2",
+        "label": "3f4d71b63cd17da7aeda885c59160ea2e69ed17cfc27915ffaffe7f874e1b95c"
+      }
+    },
+    {
+      "filename": "test_002134.png",
+      "changeflag": 0,
+      "hashes": {
+        "A": "5ebbe5257b6fc161453a91123486d3fb66c28213f46d79d1dfda815e85e442be",
+        "B": "fbc15095b151220bd408ae01e0e468fe49571a425e99badf9e82d2522a45a81e",
+        "label": "3f4d71b63cd17da7aeda885c59160ea2e69ed17cfc27915ffaffe7f874e1b95c"
+      }
+    },
+    {
+      "filename": "test_000591.png",
+      "changeflag": 0,
+      "hashes": {
+        "A": "e833aec2e4ac0c986bfdc682e30791444441eae7ae6a38f9d05bb7fc9a1ac6ef",
+        "B": "3fc80492dee5bcfde5cc1d33d27456d40e546878020d797b713af6aa5d330538",
+        "label": "3f4d71b63cd17da7aeda885c59160ea2e69ed17cfc27915ffaffe7f874e1b95c"
+      }
+    },
+    {
+      "filename": "test_001777.png",
+      "changeflag": 0,
+      "hashes": {
+        "A": "d22b5fa34d26f849236bb477855832188fb6e5ac25db8b137d5e2020d1f4c425",
+        "B": "1ede3f4c1e35ff15684711374600f8113ea73ca381b46b81b2e1c14b4f9202fb",
+        "label": "3f4d71b63cd17da7aeda885c59160ea2e69ed17cfc27915ffaffe7f874e1b95c"
+      }
+    },
+    {
+      "filename": "test_000071.png",
+      "changeflag": 0,
+      "hashes": {
+        "A": "be145f5cb1ea3a55e373e5a9527c137e741541fefdb6c074eae240058217aa99",
+        "B": "db1157d852fc3b80613e604bbb6865d42afc414a8f141ef8404aadd7acaf918f",
+        "label": "3f4d71b63cd17da7aeda885c59160ea2e69ed17cfc27915ffaffe7f874e1b95c"
+      }
+    },
+    {
+      "filename": "test_000337.png",
+      "changeflag": 0,
+      "hashes": {
+        "A": "8c8e0e898e7cd9ce880d08bef4dbb9dc42875cef538d6abd2d0bdb8e6698ec74",
+        "B": "e3a3991f3667e027590a0d18b0d40d3d07abe2398ac9cc039ad285c4f31acab3",
+        "label": "3f4d71b63cd17da7aeda885c59160ea2e69ed17cfc27915ffaffe7f874e1b95c"
+      }
+    },
+    {
+      "filename": "test_001016.png",
+      "changeflag": 0,
+      "hashes": {
+        "A": "be68d8463371afb7e65fdabff132bdc386e3b6beef6ac97c012a88ea73ba0c65",
+        "B": "dfcfd21b887def463f1cae77aeba2cfbdd371018027a1c4b528c187e86aba75b",
+        "label": "3f4d71b63cd17da7aeda885c59160ea2e69ed17cfc27915ffaffe7f874e1b95c"
+      }
+    },
+    {
+      "filename": "test_001367.png",
+      "changeflag": 0,
+      "hashes": {
+        "A": "894bbaef56653b3caf2936028d631acf5fca936cbe167fd2b56e0fe4c8c458c8",
+        "B": "85365cd96b06cc8f13038573d35f125b3cd6cc5d46bd36401726cd15ccfd97f2",
+        "label": "3f4d71b63cd17da7aeda885c59160ea2e69ed17cfc27915ffaffe7f874e1b95c"
+      }
+    },
+    {
+      "filename": "test_002048.png",
+      "changeflag": 0,
+      "hashes": {
+        "A": "5744849e734757e76f8c2381d048c5b19c19cc2b993db3fe006e0ea2e89389a6",
+        "B": "ae845a6a07e858b8f65cfe8eabea4d138bfad76a3526dbfa61e6c0c5b2f93d58",
+        "label": "3f4d71b63cd17da7aeda885c59160ea2e69ed17cfc27915ffaffe7f874e1b95c"
+      }
+    },
+    {
+      "filename": "test_000803.png",
+      "changeflag": 0,
+      "hashes": {
+        "A": "8484d4a7be061515983bf43f1d5724fd5a055707bdb01f23d32c0cb85edaeceb",
+        "B": "3d3095f141d92bea28d3c536f4960c72e1d6c3514456ce1d5d0c67d1eb01fb01",
+        "label": "3f4d71b63cd17da7aeda885c59160ea2e69ed17cfc27915ffaffe7f874e1b95c"
+      }
+    },
+    {
+      "filename": "test_000724.png",
+      "changeflag": 0,
+      "hashes": {
+        "A": "f28e307417e475d0128766f9c0c595e994a49cc1ba0e07c29b96db6089a9d539",
+        "B": "6c902e2b944a26ebddcba7d4587e7941eb40b0a257fa3ff640c36637f432e375",
+        "label": "3f4d71b63cd17da7aeda885c59160ea2e69ed17cfc27915ffaffe7f874e1b95c"
+      }
+    },
+    {
+      "filename": "test_000370.png",
+      "changeflag": 0,
+      "hashes": {
+        "A": "2c63b58617afb6b0775cc2af5c5ab72892954617395346528111504ed27d5bb1",
+        "B": "7d6934975f203574b1cdd4e0aff5c1d9c22e31cfa56b213dae5b30ca9e185d5f",
+        "label": "3f4d71b63cd17da7aeda885c59160ea2e69ed17cfc27915ffaffe7f874e1b95c"
+      }
+    },
+    {
+      "filename": "test_001938.png",
+      "changeflag": 0,
+      "hashes": {
+        "A": "ccc3d234a4ce1e2a6525da0a76743b93903bfba0274a6f7ce6f07ef09a796738",
+        "B": "b49342d9106a4bb96f941503386607de7442b0ce8a522416053a6f7967f46446",
+        "label": "3f4d71b63cd17da7aeda885c59160ea2e69ed17cfc27915ffaffe7f874e1b95c"
+      }
+    },
+    {
+      "filename": "test_002025.png",
+      "changeflag": 0,
+      "hashes": {
+        "A": "9c4f0eb564b431f529edaa1a57c82fb2482fb5b29ed4fadc6d46512c95da8874",
+        "B": "d36205f686f4116c753ccc5e33a3514134cf5c817378375069e7257bccac2fdb",
+        "label": "3f4d71b63cd17da7aeda885c59160ea2e69ed17cfc27915ffaffe7f874e1b95c"
+      }
+    },
+    {
+      "filename": "test_001125.png",
+      "changeflag": 0,
+      "hashes": {
+        "A": "738478e4c31670c03db13278235d87936ddc0f7a76031fadf787657b5e58f07d",
+        "B": "5ab8977e0a147f6a7f5c218f76b8c7039dcd094ac5b36c261ab000b4e4a72d61",
+        "label": "3f4d71b63cd17da7aeda885c59160ea2e69ed17cfc27915ffaffe7f874e1b95c"
+      }
+    },
+    {
+      "filename": "test_001612.png",
+      "changeflag": 1,
+      "hashes": {
+        "A": "f30314d7c6980267ce233e36cc22bec7678a0012f5952ed5b08bb9b9f0eb6cd8",
+        "B": "3501c9039686bfca7991da42f750d1fbd83ee780589e7b50b5d1b176951965d9",
+        "label": "29f3326f2203f640eee2877391fc41aa0ac0810a2918ac7e0221ce963be6d9ca"
+      }
+    },
+    {
+      "filename": "test_000155.png",
+      "changeflag": 1,
+      "hashes": {
+        "A": "64e94be8b68d16107c47023dcded2ecdfe76c80b7e7c855fbf685224ed888bd2",
+        "B": "d23bf8d537bb3d255b948aab6a803e90b15982ad179858c419c1a84eddce782a",
+        "label": "5c9c5a75cc849f25b47799a7d00f797d8b6cbca8fc32d9dec2fba0cc8dc8528d"
+      }
+    },
+    {
+      "filename": "test_001634.png",
+      "changeflag": 1,
+      "hashes": {
+        "A": "d7e524362aab6f5a6114bd690b51170ec8cf6e6808720573f4e26035edf1521b",
+        "B": "f16f44e1b3bc8d3083cb612148b91c6f1e19e0c3e58c978fe05a5777ede38481",
+        "label": "9100cd632b5a6b06e62f5dbd6fbe3b50ecbf9c393997b81a84ac12e343291a89"
+      }
+    },
+    {
+      "filename": "test_000595.png",
+      "changeflag": 1,
+      "hashes": {
+        "A": "c93820d4f5d5bb2e5ea133677bdaad9edb367883cbc59f8b63c540262dea1039",
+        "B": "ebf6e2c38a69625b0bf65675df50c756a094ababb7da98eac6878f47bc38ac2a",
+        "label": "fdc607ebd881c20e70ea8a34cb4a6cb98b5653e7da47deda7f898fc1e88d7d47"
+      }
+    },
+    {
+      "filename": "test_001629.png",
+      "changeflag": 1,
+      "hashes": {
+        "A": "660ee5b271bb4cea6f811f57866ae3e6324db3c0aac5e2c2d99890306b4dc195",
+        "B": "78a35453c7df4dfa4e0bf9dd7c9d844478b1545e684fef105fd3f63d5db5ce4c",
+        "label": "0df83877a4d04a79316868ed4060afb2f2ba5f34d1fb2b602d27f81a79ec0e02"
+      }
+    },
+    {
+      "filename": "test_001174.png",
+      "changeflag": 1,
+      "hashes": {
+        "A": "bdbc57511da9474a49762564dd11e567d542c8087b4d60e746480961f2e7dbe4",
+        "B": "bcc52f9acd194869856adc366a55b0b21cd7f7ae24d3ed744e8c48ec1e60dd2d",
+        "label": "7157787ec491a353273ee1f87925fe25c896526e53d23435cec8aa456e413d42"
+      }
+    },
+    {
+      "filename": "test_001325.png",
+      "changeflag": 1,
+      "hashes": {
+        "A": "7017c8f57433e8d9774c3a7ee3860177c61b37257039ed19679a1fe56b7d4f28",
+        "B": "9dfa64a39133101b32110630263624be32d37e468f8d10f19bee95e0b26bb9b4",
+        "label": "e67aeaeafa5f09fb9ccfbd3a19d053f21eb1581b1650cd136c920925bcd7c0a2"
+      }
+    },
+    {
+      "filename": "test_000408.png",
+      "changeflag": 1,
+      "hashes": {
+        "A": "8e869b97846c77b0632c0cdb664a7844a000d9a199eb71724eecacdf7382cac5",
+        "B": "0b1f9216409ae6a75072301952a1a300b10156e22ce6858a02f99f08c52a582f",
+        "label": "a11c0491565fbe744fedf832cf64d184785c06c7abd2eb4f6fc7dd6ac1fd6639"
+      }
+    },
+    {
+      "filename": "test_001258.png",
+      "changeflag": 1,
+      "hashes": {
+        "A": "61a88aa429559bf38e487272feb54cf460ac9e76ae150114c630a84e1f8b5c06",
+        "B": "71b164314978fed965e8b8ead5d3b696ecc15ef3ec83f395e233f71ab83ea09f",
+        "label": "bb3bb4e01999a1f6554fbf1032e0e110dbd62efd94fadd6939070af075bd0457"
+      }
+    },
+    {
+      "filename": "test_001302.png",
+      "changeflag": 1,
+      "hashes": {
+        "A": "1da5dc9e939029d515fdf84fb886feb2fcfa54da7ed6a2600507aab1534e77d4",
+        "B": "f89dd15487badb90b7fa45880476e92145bf91895b0bd846630d553f39011b04",
+        "label": "bd41ee6599c273ce5b75a82404f6b90fe9151ad62293cd7c5efc6b8172759a73"
+      }
+    },
+    {
+      "filename": "test_001804.png",
+      "changeflag": 1,
+      "hashes": {
+        "A": "616366b42f1144ca2cb09982acb96efc9420f685e1c3872981367d35d7610203",
+        "B": "8cdbdb83feb99cd1564f49d501f2328fc6bc45f3271968bf84eed17ee6148a1a",
+        "label": "387953ca2624411d663bbdcd9f6e9fed33eb279ef6efb0d8a931ec73df18c380"
+      }
+    },
+    {
+      "filename": "test_000890.png",
+      "changeflag": 1,
+      "hashes": {
+        "A": "66f7f28a3debaee26a1d22f4f4827ff2550db469c13e31834beb9fff5c29894c",
+        "B": "c551029da1a527bd9d585ed107abf8b8c02719aa08b88d3a673d3a29d6cff5fd",
+        "label": "a9632698d47dde86b809c9f8d011300ee720db52dd5889ec1b65d8a6c37d84ba"
+      }
+    },
+    {
+      "filename": "test_001603.png",
+      "changeflag": 1,
+      "hashes": {
+        "A": "a4615fb06ae7316c29d76e49ccc140613207c25197c523c54357b0d9a8e93226",
+        "B": "0b81ab6ff2cddcf5351ff14c711ad48ba572de6cdd20fcd42ab7c431b2632049",
+        "label": "e779ededd82cdd7f522b687e292c6ce5e2561e7432142eb4d205a605c300513d"
+      }
+    },
+    {
+      "filename": "test_000348.png",
+      "changeflag": 1,
+      "hashes": {
+        "A": "7e3861986590d264959546af7bc6527266c60ed01cf1a03a13cf6e112184572d",
+        "B": "081f4dec0c94126ca7388b6f6d6730dc0c274232a9880df49505d3906b9fcfec",
+        "label": "f0c35060ceba0a7c3c51af2dcb571e1ad76f5914cc2f1a25650900670846f364"
+      }
+    },
+    {
+      "filename": "test_000397.png",
+      "changeflag": 1,
+      "hashes": {
+        "A": "346568e4b0e581ba553ceed39da8e56bf59393b1468998969461033b2fa84c1a",
+        "B": "af23bb42cb0fb8acf896f59519b6ddde0fd94bfdb379bddf5ae5f420222e2345",
+        "label": "0eec1bb983327ea14ba34b973914918e5c21a8a38bab386809eb7b01875a9739"
+      }
+    },
+    {
+      "filename": "test_001879.png",
+      "changeflag": 1,
+      "hashes": {
+        "A": "9cd5b463f9f9d237919dca651498ac3591d430f65c5c1b4b0e81f843d599c9ef",
+        "B": "c1fd7b9589a4ecc167e88af385354e9998231ab6922a3f3df1dd141a5e4370a8",
+        "label": "64bfab7cee907ced3b1ab3afcdec2e3365e1e35b576cb84e0084ca8e616fb52b"
+      }
+    },
+    {
+      "filename": "test_000289.png",
+      "changeflag": 1,
+      "hashes": {
+        "A": "efe676f9afedd48c646e154c3048b14c5d4bb1a40f4fc8f19966fac67a898b6f",
+        "B": "fb0174e6b2f0d0569402201f68d8900a0037f0fc650f74caac037fb4d4505610",
+        "label": "378e2ca3b19c4a17342bab2c3e34a4ac6cd63a70f72e367000cabdc8f7483d6e"
+      }
+    },
+    {
+      "filename": "test_001132.png",
+      "changeflag": 1,
+      "hashes": {
+        "A": "cd49dced01a77c9f92fbb0bd7332f0a82d7714db3a411c8141c8bfb70672e48f",
+        "B": "6fd043cba75400e3e3d507e9a716fccec7790413c7a5d7179c4d3d0ea95fdabb",
+        "label": "c3aa163171b51f02c42f6dfad99566349242889dd237f88e8c73ab0a35ccf573"
+      }
+    },
+    {
+      "filename": "test_000618.png",
+      "changeflag": 1,
+      "hashes": {
+        "A": "c4de6a4a275de6fa7eb98fea2b0e59ce9312156ba9d17c2a10c595918ad52ac6",
+        "B": "fbb1d8046a9c6727dc58e2f12b6944664e2d6b433ffef0b2598664b530a4949a",
+        "label": "086e33c1104d06f19d82a3d2d2746bbb9e78a19fcc8b164d156d8c0d2fca2180"
+      }
+    },
+    {
+      "filename": "test_000668.png",
+      "changeflag": 1,
+      "hashes": {
+        "A": "ac591586552d9e8e3330d605d6cf12e5e4e2293347456d26c2685ab8b4cc763d",
+        "B": "660bff99e2b2fb532716b14bcf1358305e4dec5af57a959fd92199d0b15ff0ea",
+        "label": "fd132aaec1c9ecef7792b3e56a271b54f4e7743b8047061388f513a86265855e"
+      }
+    }
+  ],
+  "excluded_ids": [
+    "test_000008.png",
+    "test_000019.png",
+    "test_000036.png",
+    "test_000042.png",
+    "test_000045.png",
+    "test_000053.png",
+    "test_000055.png",
+    "test_000056.png",
+    "test_000066.png",
+    "test_000069.png",
+    "test_000083.png",
+    "test_000111.png",
+    "test_000113.png",
+    "test_000117.png",
+    "test_000121.png",
+    "test_000123.png",
+    "test_000125.png",
+    "test_000143.png",
+    "test_000144.png",
+    "test_000160.png",
+    "test_000161.png",
+    "test_000166.png",
+    "test_000173.png",
+    "test_000177.png",
+    "test_000181.png",
+    "test_000183.png",
+    "test_000192.png",
+    "test_000193.png",
+    "test_000212.png",
+    "test_000222.png",
+    "test_000233.png",
+    "test_000270.png",
+    "test_000278.png",
+    "test_000282.png",
+    "test_000293.png",
+    "test_000301.png",
+    "test_000319.png",
+    "test_000335.png",
+    "test_000340.png",
+    "test_000343.png",
+    "test_000361.png",
+    "test_000362.png",
+    "test_000365.png",
+    "test_000372.png",
+    "test_000377.png",
+    "test_000378.png",
+    "test_000386.png",
+    "test_000391.png",
+    "test_000409.png",
+    "test_000414.png",
+    "test_000416.png",
+    "test_000431.png",
+    "test_000462.png",
+    "test_000466.png",
+    "test_000467.png",
+    "test_000481.png",
+    "test_000494.png",
+    "test_000500.png",
+    "test_000522.png",
+    "test_000565.png",
+    "test_000570.png",
+    "test_000573.png",
+    "test_000583.png",
+    "test_000584.png",
+    "test_000585.png",
+    "test_000592.png",
+    "test_000603.png",
+    "test_000605.png",
+    "test_000609.png",
+    "test_000610.png",
+    "test_000615.png",
+    "test_000617.png",
+    "test_000620.png",
+    "test_000621.png",
+    "test_000629.png",
+    "test_000639.png",
+    "test_000644.png",
+    "test_000653.png",
+    "test_000655.png",
+    "test_000679.png",
+    "test_000706.png",
+    "test_000720.png",
+    "test_000735.png",
+    "test_000741.png",
+    "test_000767.png",
+    "test_000773.png",
+    "test_000778.png",
+    "test_000782.png",
+    "test_000789.png",
+    "test_000808.png",
+    "test_000809.png",
+    "test_000840.png",
+    "test_000843.png",
+    "test_000844.png",
+    "test_000877.png",
+    "test_000907.png",
+    "test_000915.png",
+    "test_000927.png",
+    "test_000931.png",
+    "test_000956.png",
+    "test_000963.png",
+    "test_000966.png",
+    "test_000968.png",
+    "test_000992.png",
+    "test_000999.png",
+    "test_001015.png",
+    "test_001020.png",
+    "test_001035.png",
+    "test_001052.png",
+    "test_001066.png",
+    "test_001072.png",
+    "test_001095.png",
+    "test_001102.png",
+    "test_001108.png",
+    "test_001121.png",
+    "test_001128.png",
+    "test_001139.png",
+    "test_001161.png",
+    "test_001172.png",
+    "test_001197.png",
+    "test_001199.png",
+    "test_001202.png",
+    "test_001224.png",
+    "test_001225.png",
+    "test_001232.png",
+    "test_001261.png",
+    "test_001269.png",
+    "test_001275.png",
+    "test_001280.png",
+    "test_001294.png",
+    "test_001305.png",
+    "test_001318.png",
+    "test_001344.png",
+    "test_001355.png",
+    "test_001360.png",
+    "test_001373.png",
+    "test_001374.png",
+    "test_001389.png",
+    "test_001407.png",
+    "test_001424.png",
+    "test_001425.png",
+    "test_001488.png",
+    "test_001495.png",
+    "test_001511.png",
+    "test_001512.png",
+    "test_001521.png",
+    "test_001533.png",
+    "test_001543.png",
+    "test_001562.png",
+    "test_001577.png",
+    "test_001589.png",
+    "test_001595.png",
+    "test_001598.png",
+    "test_001608.png",
+    "test_001625.png",
+    "test_001638.png",
+    "test_001646.png",
+    "test_001673.png",
+    "test_001680.png",
+    "test_001682.png",
+    "test_001696.png",
+    "test_001699.png",
+    "test_001727.png",
+    "test_001731.png",
+    "test_001746.png",
+    "test_001747.png",
+    "test_001758.png",
+    "test_001765.png",
+    "test_001771.png",
+    "test_001774.png",
+    "test_001796.png",
+    "test_001799.png",
+    "test_001818.png",
+    "test_001827.png",
+    "test_001848.png",
+    "test_001856.png",
+    "test_001857.png",
+    "test_001860.png",
+    "test_001877.png",
+    "test_001883.png",
+    "test_001909.png",
+    "test_001913.png",
+    "test_001916.png",
+    "test_001917.png",
+    "test_001922.png",
+    "test_001924.png",
+    "test_001960.png",
+    "test_001968.png",
+    "test_001979.png",
+    "test_001983.png",
+    "test_002020.png",
+    "test_002055.png",
+    "test_002061.png",
+    "test_002067.png",
+    "test_002084.png",
+    "test_002086.png",
+    "test_002102.png",
+    "test_002109.png",
+    "test_002110.png",
+    "test_002112.png"
+  ],
+  "exclusion_sources": {
+    "paired_lab/evidence/benchmark-20260921/artifact-hashes.json": [
+      "test_000069.png",
+      "test_000584.png",
+      "test_000735.png",
+      "test_002112.png"
+    ],
+    "paired_lab/evidence/benchmark-20260921/temporal-manifest.json": [
+      "test_000008.png",
+      "test_000019.png",
+      "test_000036.png",
+      "test_000042.png",
+      "test_000045.png",
+      "test_000053.png",
+      "test_000055.png",
+      "test_000056.png",
+      "test_000066.png",
+      "test_000069.png",
+      "test_000083.png",
+      "test_000111.png",
+      "test_000113.png",
+      "test_000117.png",
+      "test_000121.png",
+      "test_000123.png",
+      "test_000125.png",
+      "test_000143.png",
+      "test_000144.png",
+      "test_000160.png",
+      "test_000161.png",
+      "test_000166.png",
+      "test_000173.png",
+      "test_000177.png",
+      "test_000181.png",
+      "test_000183.png",
+      "test_000192.png",
+      "test_000193.png",
+      "test_000212.png",
+      "test_000222.png",
+      "test_000233.png",
+      "test_000270.png",
+      "test_000278.png",
+      "test_000282.png",
+      "test_000293.png",
+      "test_000301.png",
+      "test_000319.png",
+      "test_000335.png",
+      "test_000340.png",
+      "test_000343.png",
+      "test_000361.png",
+      "test_000362.png",
+      "test_000365.png",
+      "test_000372.png",
+      "test_000377.png",
+      "test_000378.png",
+      "test_000386.png",
+      "test_000391.png",
+      "test_000409.png",
+      "test_000414.png",
+      "test_000416.png",
+      "test_000431.png",
+      "test_000462.png",
+      "test_000466.png",
+      "test_000467.png",
+      "test_000481.png",
+      "test_000494.png",
+      "test_000500.png",
+      "test_000522.png",
+      "test_000565.png",
+      "test_000570.png",
+      "test_000573.png",
+      "test_000583.png",
+      "test_000584.png",
+      "test_000585.png",
+      "test_000592.png",
+      "test_000603.png",
+      "test_000605.png",
+      "test_000609.png",
+      "test_000610.png",
+      "test_000615.png",
+      "test_000617.png",
+      "test_000620.png",
+      "test_000621.png",
+      "test_000629.png",
+      "test_000639.png",
+      "test_000644.png",
+      "test_000653.png",
+      "test_000655.png",
+      "test_000679.png",
+      "test_000706.png",
+      "test_000720.png",
+      "test_000735.png",
+      "test_000741.png",
+      "test_000767.png",
+      "test_000773.png",
+      "test_000778.png",
+      "test_000782.png",
+      "test_000789.png",
+      "test_000808.png",
+      "test_000809.png",
+      "test_000840.png",
+      "test_000843.png",
+      "test_000844.png",
+      "test_000877.png",
+      "test_000907.png",
+      "test_000915.png",
+      "test_000927.png",
+      "test_000931.png",
+      "test_000956.png",
+      "test_000963.png",
+      "test_000966.png",
+      "test_000968.png",
+      "test_000992.png",
+      "test_000999.png",
+      "test_001015.png",
+      "test_001020.png",
+      "test_001035.png",
+      "test_001052.png",
+      "test_001066.png",
+      "test_001072.png",
+      "test_001095.png",
+      "test_001102.png",
+      "test_001108.png",
+      "test_001121.png",
+      "test_001128.png",
+      "test_001139.png",
+      "test_001161.png",
+      "test_001172.png",
+      "test_001197.png",
+      "test_001199.png",
+      "test_001202.png",
+      "test_001224.png",
+      "test_001225.png",
+      "test_001232.png",
+      "test_001261.png",
+      "test_001269.png",
+      "test_001275.png",
+      "test_001280.png",
+      "test_001294.png",
+      "test_001305.png",
+      "test_001318.png",
+      "test_001344.png",
+      "test_001355.png",
+      "test_001360.png",
+      "test_001373.png",
+      "test_001374.png",
+      "test_001389.png",
+      "test_001407.png",
+      "test_001424.png",
+      "test_001425.png",
+      "test_001488.png",
+      "test_001495.png",
+      "test_001511.png",
+      "test_001512.png",
+      "test_001521.png",
+      "test_001533.png",
+      "test_001543.png",
+      "test_001562.png",
+      "test_001577.png",
+      "test_001589.png",
+      "test_001595.png",
+      "test_001598.png",
+      "test_001608.png",
+      "test_001625.png",
+      "test_001638.png",
+      "test_001646.png",
+      "test_001673.png",
+      "test_001680.png",
+      "test_001682.png",
+      "test_001696.png",
+      "test_001699.png",
+      "test_001727.png",
+      "test_001731.png",
+      "test_001746.png",
+      "test_001747.png",
+      "test_001758.png",
+      "test_001765.png",
+      "test_001771.png",
+      "test_001774.png",
+      "test_001796.png",
+      "test_001799.png",
+      "test_001818.png",
+      "test_001827.png",
+      "test_001848.png",
+      "test_001856.png",
+      "test_001857.png",
+      "test_001860.png",
+      "test_001877.png",
+      "test_001883.png",
+      "test_001909.png",
+      "test_001913.png",
+      "test_001916.png",
+      "test_001917.png",
+      "test_001922.png",
+      "test_001924.png",
+      "test_001960.png",
+      "test_001968.png",
+      "test_001979.png",
+      "test_001983.png",
+      "test_002020.png",
+      "test_002055.png",
+      "test_002061.png",
+      "test_002067.png",
+      "test_002084.png",
+      "test_002086.png",
+      "test_002102.png",
+      "test_002109.png",
+      "test_002110.png",
+      "test_002112.png"
+    ],
+    "paired_lab/evidence/benchmark-20260921/temporal-rows.jsonl": [
+      "test_000019.png",
+      "test_000045.png",
+      "test_000056.png",
+      "test_000066.png",
+      "test_000069.png",
+      "test_000083.png",
+      "test_000111.png",
+      "test_000113.png",
+      "test_000117.png",
+      "test_000125.png",
+      "test_000143.png",
+      "test_000144.png",
+      "test_000160.png",
+      "test_000161.png",
+      "test_000278.png",
+      "test_000282.png",
+      "test_000293.png",
+      "test_000301.png",
+      "test_000335.png",
+      "test_000340.png",
+      "test_000361.png",
+      "test_000365.png",
+      "test_000372.png",
+      "test_000377.png",
+      "test_000378.png",
+      "test_000391.png",
+      "test_000467.png",
+      "test_000522.png",
+      "test_000570.png",
+      "test_000573.png",
+      "test_000583.png",
+      "test_000584.png",
+      "test_000592.png",
+      "test_000605.png",
+      "test_000706.png",
+      "test_000720.png",
+      "test_000735.png",
+      "test_000741.png",
+      "test_000773.png",
+      "test_000808.png",
+      "test_000809.png",
+      "test_000840.png",
+      "test_000843.png",
+      "test_000844.png",
+      "test_000877.png",
+      "test_000927.png",
+      "test_000931.png",
+      "test_000956.png",
+      "test_000966.png",
+      "test_000968.png",
+      "test_000992.png",
+      "test_000999.png",
+      "test_001035.png",
+      "test_001066.png",
+      "test_001102.png",
+      "test_001108.png",
+      "test_001128.png",
+      "test_001139.png",
+      "test_001161.png",
+      "test_001197.png",
+      "test_001202.png",
+      "test_001261.png",
+      "test_001269.png",
+      "test_001280.png",
+      "test_001305.png",
+      "test_001318.png",
+      "test_001373.png",
+      "test_001374.png",
+      "test_001407.png",
+      "test_001425.png",
+      "test_001488.png",
+      "test_001495.png",
+      "test_001521.png",
+      "test_001533.png",
+      "test_001562.png",
+      "test_001577.png",
+      "test_001589.png",
+      "test_001598.png",
+      "test_001608.png",
+      "test_001625.png",
+      "test_001646.png",
+      "test_001673.png",
+      "test_001731.png",
+      "test_001746.png",
+      "test_001747.png",
+      "test_001774.png",
+      "test_001860.png",
+      "test_001883.png",
+      "test_001913.png",
+      "test_001916.png",
+      "test_001917.png",
+      "test_001924.png",
+      "test_001968.png",
+      "test_002055.png",
+      "test_002067.png",
+      "test_002086.png",
+      "test_002102.png",
+      "test_002109.png",
+      "test_002110.png",
+      "test_002112.png"
+    ],
+    "paired_lab/evidence/benchmark-20260921/temporal-summary.json": [
+      "test_000069.png",
+      "test_000161.png",
+      "test_000584.png",
+      "test_000735.png",
+      "test_002112.png"
+    ],
+    "paired_lab/evidence/resumed/mci/evaluation-gpu.json": [
+      "test_000008.png",
+      "test_000036.png",
+      "test_000042.png",
+      "test_000053.png",
+      "test_000055.png",
+      "test_000121.png",
+      "test_000123.png",
+      "test_000166.png",
+      "test_000173.png",
+      "test_000177.png",
+      "test_000181.png",
+      "test_000183.png",
+      "test_000192.png",
+      "test_000193.png",
+      "test_000212.png",
+      "test_000222.png",
+      "test_000233.png",
+      "test_000270.png",
+      "test_000319.png",
+      "test_000343.png",
+      "test_000362.png",
+      "test_000386.png",
+      "test_000409.png",
+      "test_000414.png",
+      "test_000416.png",
+      "test_000431.png",
+      "test_000462.png",
+      "test_000466.png",
+      "test_000481.png",
+      "test_000494.png",
+      "test_000500.png",
+      "test_000565.png",
+      "test_000585.png",
+      "test_000603.png",
+      "test_000609.png",
+      "test_000610.png",
+      "test_000615.png",
+      "test_000617.png",
+      "test_000620.png",
+      "test_000621.png",
+      "test_000629.png",
+      "test_000639.png",
+      "test_000644.png",
+      "test_000653.png",
+      "test_000655.png",
+      "test_000679.png",
+      "test_000767.png",
+      "test_000778.png",
+      "test_000782.png",
+      "test_000789.png",
+      "test_000907.png",
+      "test_000915.png",
+      "test_000963.png",
+      "test_001015.png",
+      "test_001020.png",
+      "test_001052.png",
+      "test_001072.png",
+      "test_001095.png",
+      "test_001121.png",
+      "test_001172.png",
+      "test_001199.png",
+      "test_001224.png",
+      "test_001225.png",
+      "test_001232.png",
+      "test_001275.png",
+      "test_001294.png",
+      "test_001344.png",
+      "test_001355.png",
+      "test_001360.png",
+      "test_001389.png",
+      "test_001424.png",
+      "test_001511.png",
+      "test_001512.png",
+      "test_001543.png",
+      "test_001595.png",
+      "test_001638.png",
+      "test_001680.png",
+      "test_001682.png",
+      "test_001696.png",
+      "test_001699.png",
+      "test_001727.png",
+      "test_001758.png",
+      "test_001765.png",
+      "test_001771.png",
+      "test_001796.png",
+      "test_001799.png",
+      "test_001818.png",
+      "test_001827.png",
+      "test_001848.png",
+      "test_001856.png",
+      "test_001857.png",
+      "test_001877.png",
+      "test_001909.png",
+      "test_001922.png",
+      "test_001960.png",
+      "test_001979.png",
+      "test_001983.png",
+      "test_002020.png",
+      "test_002061.png",
+      "test_002084.png"
+    ],
+    "paired_lab/evidence/resumed/mci/evaluation-incorrect-palette-superseded.json": [
+      "test_000008.png",
+      "test_000036.png",
+      "test_000042.png",
+      "test_000053.png",
+      "test_000055.png",
+      "test_000121.png",
+      "test_000123.png",
+      "test_000166.png",
+      "test_000173.png",
+      "test_000177.png",
+      "test_000181.png",
+      "test_000183.png",
+      "test_000192.png",
+      "test_000193.png",
+      "test_000212.png",
+      "test_000222.png",
+      "test_000233.png",
+      "test_000270.png",
+      "test_000319.png",
+      "test_000343.png",
+      "test_000362.png",
+      "test_000386.png",
+      "test_000409.png",
+      "test_000414.png",
+      "test_000416.png",
+      "test_000431.png",
+      "test_000462.png",
+      "test_000466.png",
+      "test_000481.png",
+      "test_000494.png",
+      "test_000500.png",
+      "test_000565.png",
+      "test_000585.png",
+      "test_000603.png",
+      "test_000609.png",
+      "test_000610.png",
+      "test_000615.png",
+      "test_000617.png",
+      "test_000620.png",
+      "test_000621.png",
+      "test_000629.png",
+      "test_000639.png",
+      "test_000644.png",
+      "test_000653.png",
+      "test_000655.png",
+      "test_000679.png",
+      "test_000767.png",
+      "test_000778.png",
+      "test_000782.png",
+      "test_000789.png",
+      "test_000907.png",
+      "test_000915.png",
+      "test_000963.png",
+      "test_001015.png",
+      "test_001020.png",
+      "test_001052.png",
+      "test_001072.png",
+      "test_001095.png",
+      "test_001121.png",
+      "test_001172.png",
+      "test_001199.png",
+      "test_001224.png",
+      "test_001225.png",
+      "test_001232.png",
+      "test_001275.png",
+      "test_001294.png",
+      "test_001344.png",
+      "test_001355.png",
+      "test_001360.png",
+      "test_001389.png",
+      "test_001424.png",
+      "test_001511.png",
+      "test_001512.png",
+      "test_001543.png",
+      "test_001595.png",
+      "test_001638.png",
+      "test_001680.png",
+      "test_001682.png",
+      "test_001696.png",
+      "test_001699.png",
+      "test_001727.png",
+      "test_001758.png",
+      "test_001765.png",
+      "test_001771.png",
+      "test_001796.png",
+      "test_001799.png",
+      "test_001818.png",
+      "test_001827.png",
+      "test_001848.png",
+      "test_001856.png",
+      "test_001857.png",
+      "test_001877.png",
+      "test_001909.png",
+      "test_001922.png",
+      "test_001960.png",
+      "test_001979.png",
+      "test_001983.png",
+      "test_002020.png",
+      "test_002061.png",
+      "test_002084.png"
+    ],
+    "paired_lab/evidence/resumed/mci/evaluation.json": [
+      "test_000008.png",
+      "test_000036.png",
+      "test_000042.png",
+      "test_000053.png",
+      "test_000055.png",
+      "test_000121.png",
+      "test_000123.png",
+      "test_000166.png",
+      "test_000173.png",
+      "test_000177.png",
+      "test_000181.png",
+      "test_000183.png",
+      "test_000192.png",
+      "test_000193.png",
+      "test_000212.png",
+      "test_000222.png",
+      "test_000233.png",
+      "test_000270.png",
+      "test_000319.png",
+      "test_000343.png",
+      "test_000362.png",
+      "test_000386.png",
+      "test_000409.png",
+      "test_000414.png",
+      "test_000416.png",
+      "test_000431.png",
+      "test_000462.png",
+      "test_000466.png",
+      "test_000481.png",
+      "test_000494.png",
+      "test_000500.png",
+      "test_000565.png",
+      "test_000585.png",
+      "test_000603.png",
+      "test_000609.png",
+      "test_000610.png",
+      "test_000615.png",
+      "test_000617.png",
+      "test_000620.png",
+      "test_000621.png",
+      "test_000629.png",
+      "test_000639.png",
+      "test_000644.png",
+      "test_000653.png",
+      "test_000655.png",
+      "test_000679.png",
+      "test_000767.png",
+      "test_000778.png",
+      "test_000782.png",
+      "test_000789.png",
+      "test_000907.png",
+      "test_000915.png",
+      "test_000963.png",
+      "test_001015.png",
+      "test_001020.png",
+      "test_001052.png",
+      "test_001072.png",
+      "test_001095.png",
+      "test_001121.png",
+      "test_001172.png",
+      "test_001199.png",
+      "test_001224.png",
+      "test_001225.png",
+      "test_001232.png",
+      "test_001275.png",
+      "test_001294.png",
+      "test_001344.png",
+      "test_001355.png",
+      "test_001360.png",
+      "test_001389.png",
+      "test_001424.png",
+      "test_001511.png",
+      "test_001512.png",
+      "test_001543.png",
+      "test_001595.png",
+      "test_001638.png",
+      "test_001680.png",
+      "test_001682.png",
+      "test_001696.png",
+      "test_001699.png",
+      "test_001727.png",
+      "test_001758.png",
+      "test_001765.png",
+      "test_001771.png",
+      "test_001796.png",
+      "test_001799.png",
+      "test_001818.png",
+      "test_001827.png",
+      "test_001848.png",
+      "test_001856.png",
+      "test_001857.png",
+      "test_001877.png",
+      "test_001909.png",
+      "test_001922.png",
+      "test_001960.png",
+      "test_001979.png",
+      "test_001983.png",
+      "test_002020.png",
+      "test_002061.png",
+      "test_002084.png"
+    ],
+    "paired_lab/evidence/resumed/mci/test_000008/result-cpu.json": [
+      "test_000008.png"
+    ],
+    "paired_lab/evidence/resumed/mci/test_000008/result.json": [
+      "test_000008.png"
+    ],
+    "paired_lab/evidence/resumed/mci/test_000036/result-cpu.json": [
+      "test_000036.png"
+    ],
+    "paired_lab/evidence/resumed/mci/test_000036/result.json": [
+      "test_000036.png"
+    ],
+    "paired_lab/evidence/resumed/mci/test_000042/result-cpu.json": [
+      "test_000042.png"
+    ],
+    "paired_lab/evidence/resumed/mci/test_000042/result.json": [
+      "test_000042.png"
+    ],
+    "paired_lab/evidence/resumed/mci/test_000053/result-cpu.json": [
+      "test_000053.png"
+    ],
+    "paired_lab/evidence/resumed/mci/test_000053/result.json": [
+      "test_000053.png"
+    ],
+    "paired_lab/evidence/resumed/mci/test_000055/result-cpu.json": [
+      "test_000055.png"
+    ],
+    "paired_lab/evidence/resumed/mci/test_000055/result.json": [
+      "test_000055.png"
+    ],
+    "paired_lab/evidence/resumed/mci/test_000121/result-cpu.json": [
+      "test_000121.png"
+    ],
+    "paired_lab/evidence/resumed/mci/test_000121/result.json": [
+      "test_000121.png"
+    ],
+    "paired_lab/evidence/resumed/mci/test_000123/result-cpu.json": [
+      "test_000123.png"
+    ],
+    "paired_lab/evidence/resumed/mci/test_000123/result.json": [
+      "test_000123.png"
+    ],
+    "paired_lab/evidence/resumed/mci/test_000166/result-cpu.json": [
+      "test_000166.png"
+    ],
+    "paired_lab/evidence/resumed/mci/test_000166/result.json": [
+      "test_000166.png"
+    ],
+    "paired_lab/evidence/resumed/mci/test_000173/result-cpu.json": [
+      "test_000173.png"
+    ],
+    "paired_lab/evidence/resumed/mci/test_000173/result.json": [
+      "test_000173.png"
+    ],
+    "paired_lab/evidence/resumed/mci/test_000177/result-cpu.json": [
+      "test_000177.png"
+    ],
+    "paired_lab/evidence/resumed/mci/test_000177/result.json": [
+      "test_000177.png"
+    ],
+    "paired_lab/evidence/resumed/mci/test_000181/result-cpu.json": [
+      "test_000181.png"
+    ],
+    "paired_lab/evidence/resumed/mci/test_000181/result.json": [
+      "test_000181.png"
+    ],
+    "paired_lab/evidence/resumed/mci/test_000183/result-cpu.json": [
+      "test_000183.png"
+    ],
+    "paired_lab/evidence/resumed/mci/test_000183/result.json": [
+      "test_000183.png"
+    ],
+    "paired_lab/evidence/resumed/mci/test_000192/result-cpu.json": [
+      "test_000192.png"
+    ],
+    "paired_lab/evidence/resumed/mci/test_000192/result.json": [
+      "test_000192.png"
+    ],
+    "paired_lab/evidence/resumed/mci/test_000193/result-cpu.json": [
+      "test_000193.png"
+    ],
+    "paired_lab/evidence/resumed/mci/test_000193/result.json": [
+      "test_000193.png"
+    ],
+    "paired_lab/evidence/resumed/mci/test_000212/result-cpu.json": [
+      "test_000212.png"
+    ],
+    "paired_lab/evidence/resumed/mci/test_000212/result.json": [
+      "test_000212.png"
+    ],
+    "paired_lab/evidence/resumed/mci/test_000222/result-cpu.json": [
+      "test_000222.png"
+    ],
+    "paired_lab/evidence/resumed/mci/test_000222/result.json": [
+      "test_000222.png"
+    ],
+    "paired_lab/evidence/resumed/mci/test_000233/result-cpu.json": [
+      "test_000233.png"
+    ],
+    "paired_lab/evidence/resumed/mci/test_000233/result.json": [
+      "test_000233.png"
+    ],
+    "paired_lab/evidence/resumed/mci/test_000270/result-cpu.json": [
+      "test_000270.png"
+    ],
+    "paired_lab/evidence/resumed/mci/test_000270/result.json": [
+      "test_000270.png"
+    ],
+    "paired_lab/evidence/resumed/mci/test_000319/result-cpu.json": [
+      "test_000319.png"
+    ],
+    "paired_lab/evidence/resumed/mci/test_000319/result.json": [
+      "test_000319.png"
+    ],
+    "paired_lab/evidence/resumed/mci/test_000343/result-cpu.json": [
+      "test_000343.png"
+    ],
+    "paired_lab/evidence/resumed/mci/test_000343/result.json": [
+      "test_000343.png"
+    ],
+    "paired_lab/evidence/resumed/mci/test_000362/result-cpu.json": [
+      "test_000362.png"
+    ],
+    "paired_lab/evidence/resumed/mci/test_000362/result.json": [
+      "test_000362.png"
+    ],
+    "paired_lab/evidence/resumed/mci/test_000386/result-cpu.json": [
+      "test_000386.png"
+    ],
+    "paired_lab/evidence/resumed/mci/test_000386/result.json": [
+      "test_000386.png"
+    ],
+    "paired_lab/evidence/resumed/mci/test_000409/result-cpu.json": [
+      "test_000409.png"
+    ],
+    "paired_lab/evidence/resumed/mci/test_000409/result.json": [
+      "test_000409.png"
+    ],
+    "paired_lab/evidence/resumed/mci/test_000414/result-cpu.json": [
+      "test_000414.png"
+    ],
+    "paired_lab/evidence/resumed/mci/test_000414/result.json": [
+      "test_000414.png"
+    ],
+    "paired_lab/evidence/resumed/mci/test_000416/result-cpu.json": [
+      "test_000416.png"
+    ],
+    "paired_lab/evidence/resumed/mci/test_000416/result.json": [
+      "test_000416.png"
+    ],
+    "paired_lab/evidence/resumed/mci/test_000431/result-cpu.json": [
+      "test_000431.png"
+    ],
+    "paired_lab/evidence/resumed/mci/test_000431/result.json": [
+      "test_000431.png"
+    ],
+    "paired_lab/evidence/resumed/mci/test_000462/result-cpu.json": [
+      "test_000462.png"
+    ],
+    "paired_lab/evidence/resumed/mci/test_000462/result.json": [
+      "test_000462.png"
+    ],
+    "paired_lab/evidence/resumed/mci/test_000466/result-cpu.json": [
+      "test_000466.png"
+    ],
+    "paired_lab/evidence/resumed/mci/test_000466/result.json": [
+      "test_000466.png"
+    ],
+    "paired_lab/evidence/resumed/mci/test_000481/result-cpu.json": [
+      "test_000481.png"
+    ],
+    "paired_lab/evidence/resumed/mci/test_000481/result.json": [
+      "test_000481.png"
+    ],
+    "paired_lab/evidence/resumed/mci/test_000494/result-cpu.json": [
+      "test_000494.png"
+    ],
+    "paired_lab/evidence/resumed/mci/test_000494/result.json": [
+      "test_000494.png"
+    ],
+    "paired_lab/evidence/resumed/mci/test_000500/result-cpu.json": [
+      "test_000500.png"
+    ],
+    "paired_lab/evidence/resumed/mci/test_000500/result.json": [
+      "test_000500.png"
+    ],
+    "paired_lab/evidence/resumed/mci/test_000565/result-cpu.json": [
+      "test_000565.png"
+    ],
+    "paired_lab/evidence/resumed/mci/test_000565/result.json": [
+      "test_000565.png"
+    ],
+    "paired_lab/evidence/resumed/mci/test_000585/result-cpu.json": [
+      "test_000585.png"
+    ],
+    "paired_lab/evidence/resumed/mci/test_000585/result.json": [
+      "test_000585.png"
+    ],
+    "paired_lab/evidence/resumed/mci/test_000603/result-cpu.json": [
+      "test_000603.png"
+    ],
+    "paired_lab/evidence/resumed/mci/test_000603/result.json": [
+      "test_000603.png"
+    ],
+    "paired_lab/evidence/resumed/mci/test_000609/result-cpu.json": [
+      "test_000609.png"
+    ],
+    "paired_lab/evidence/resumed/mci/test_000609/result.json": [
+      "test_000609.png"
+    ],
+    "paired_lab/evidence/resumed/mci/test_000610/result-cpu.json": [
+      "test_000610.png"
+    ],
+    "paired_lab/evidence/resumed/mci/test_000610/result.json": [
+      "test_000610.png"
+    ],
+    "paired_lab/evidence/resumed/mci/test_000615/result-cpu.json": [
+      "test_000615.png"
+    ],
+    "paired_lab/evidence/resumed/mci/test_000615/result.json": [
+      "test_000615.png"
+    ],
+    "paired_lab/evidence/resumed/mci/test_000617/result-cpu.json": [
+      "test_000617.png"
+    ],
+    "paired_lab/evidence/resumed/mci/test_000617/result.json": [
+      "test_000617.png"
+    ],
+    "paired_lab/evidence/resumed/mci/test_000620/result-cpu.json": [
+      "test_000620.png"
+    ],
+    "paired_lab/evidence/resumed/mci/test_000620/result.json": [
+      "test_000620.png"
+    ],
+    "paired_lab/evidence/resumed/mci/test_000621/result-cpu.json": [
+      "test_000621.png"
+    ],
+    "paired_lab/evidence/resumed/mci/test_000621/result.json": [
+      "test_000621.png"
+    ],
+    "paired_lab/evidence/resumed/mci/test_000629/result-cpu.json": [
+      "test_000629.png"
+    ],
+    "paired_lab/evidence/resumed/mci/test_000629/result.json": [
+      "test_000629.png"
+    ],
+    "paired_lab/evidence/resumed/mci/test_000639/result-cpu.json": [
+      "test_000639.png"
+    ],
+    "paired_lab/evidence/resumed/mci/test_000639/result.json": [
+      "test_000639.png"
+    ],
+    "paired_lab/evidence/resumed/mci/test_000644/result-cpu.json": [
+      "test_000644.png"
+    ],
+    "paired_lab/evidence/resumed/mci/test_000644/result.json": [
+      "test_000644.png"
+    ],
+    "paired_lab/evidence/resumed/mci/test_000653/result-cpu.json": [
+      "test_000653.png"
+    ],
+    "paired_lab/evidence/resumed/mci/test_000653/result.json": [
+      "test_000653.png"
+    ],
+    "paired_lab/evidence/resumed/mci/test_000655/result-cpu.json": [
+      "test_000655.png"
+    ],
+    "paired_lab/evidence/resumed/mci/test_000655/result.json": [
+      "test_000655.png"
+    ],
+    "paired_lab/evidence/resumed/mci/test_000679/result-cpu.json": [
+      "test_000679.png"
+    ],
+    "paired_lab/evidence/resumed/mci/test_000679/result.json": [
+      "test_000679.png"
+    ],
+    "paired_lab/evidence/resumed/mci/test_000767/result-cpu.json": [
+      "test_000767.png"
+    ],
+    "paired_lab/evidence/resumed/mci/test_000767/result.json": [
+      "test_000767.png"
+    ],
+    "paired_lab/evidence/resumed/mci/test_000778/result-cpu.json": [
+      "test_000778.png"
+    ],
+    "paired_lab/evidence/resumed/mci/test_000778/result.json": [
+      "test_000778.png"
+    ],
+    "paired_lab/evidence/resumed/mci/test_000782/result-cpu.json": [
+      "test_000782.png"
+    ],
+    "paired_lab/evidence/resumed/mci/test_000782/result.json": [
+      "test_000782.png"
+    ],
+    "paired_lab/evidence/resumed/mci/test_000789/result-cpu.json": [
+      "test_000789.png"
+    ],
+    "paired_lab/evidence/resumed/mci/test_000789/result.json": [
+      "test_000789.png"
+    ],
+    "paired_lab/evidence/resumed/mci/test_000907/result-cpu.json": [
+      "test_000907.png"
+    ],
+    "paired_lab/evidence/resumed/mci/test_000907/result.json": [
+      "test_000907.png"
+    ],
+    "paired_lab/evidence/resumed/mci/test_000915/result-cpu.json": [
+      "test_000915.png"
+    ],
+    "paired_lab/evidence/resumed/mci/test_000915/result.json": [
+      "test_000915.png"
+    ],
+    "paired_lab/evidence/resumed/mci/test_000963/result-cpu.json": [
+      "test_000963.png"
+    ],
+    "paired_lab/evidence/resumed/mci/test_000963/result.json": [
+      "test_000963.png"
+    ],
+    "paired_lab/evidence/resumed/mci/test_001015/result-cpu.json": [
+      "test_001015.png"
+    ],
+    "paired_lab/evidence/resumed/mci/test_001015/result.json": [
+      "test_001015.png"
+    ],
+    "paired_lab/evidence/resumed/mci/test_001020/result-cpu.json": [
+      "test_001020.png"
+    ],
+    "paired_lab/evidence/resumed/mci/test_001020/result.json": [
+      "test_001020.png"
+    ],
+    "paired_lab/evidence/resumed/mci/test_001052/result-cpu.json": [
+      "test_001052.png"
+    ],
+    "paired_lab/evidence/resumed/mci/test_001052/result.json": [
+      "test_001052.png"
+    ],
+    "paired_lab/evidence/resumed/mci/test_001072/result-cpu.json": [
+      "test_001072.png"
+    ],
+    "paired_lab/evidence/resumed/mci/test_001072/result.json": [
+      "test_001072.png"
+    ],
+    "paired_lab/evidence/resumed/mci/test_001095/result-cpu.json": [
+      "test_001095.png"
+    ],
+    "paired_lab/evidence/resumed/mci/test_001095/result.json": [
+      "test_001095.png"
+    ],
+    "paired_lab/evidence/resumed/mci/test_001121/result-cpu.json": [
+      "test_001121.png"
+    ],
+    "paired_lab/evidence/resumed/mci/test_001121/result.json": [
+      "test_001121.png"
+    ],
+    "paired_lab/evidence/resumed/mci/test_001172/result-cpu.json": [
+      "test_001172.png"
+    ],
+    "paired_lab/evidence/resumed/mci/test_001172/result.json": [
+      "test_001172.png"
+    ],
+    "paired_lab/evidence/resumed/mci/test_001199/result-cpu.json": [
+      "test_001199.png"
+    ],
+    "paired_lab/evidence/resumed/mci/test_001199/result.json": [
+      "test_001199.png"
+    ],
+    "paired_lab/evidence/resumed/mci/test_001224/result-cpu.json": [
+      "test_001224.png"
+    ],
+    "paired_lab/evidence/resumed/mci/test_001224/result.json": [
+      "test_001224.png"
+    ],
+    "paired_lab/evidence/resumed/mci/test_001225/result-cpu.json": [
+      "test_001225.png"
+    ],
+    "paired_lab/evidence/resumed/mci/test_001225/result.json": [
+      "test_001225.png"
+    ],
+    "paired_lab/evidence/resumed/mci/test_001232/result-cpu.json": [
+      "test_001232.png"
+    ],
+    "paired_lab/evidence/resumed/mci/test_001232/result.json": [
+      "test_001232.png"
+    ],
+    "paired_lab/evidence/resumed/mci/test_001275/result-cpu.json": [
+      "test_001275.png"
+    ],
+    "paired_lab/evidence/resumed/mci/test_001275/result.json": [
+      "test_001275.png"
+    ],
+    "paired_lab/evidence/resumed/mci/test_001294/result-cpu.json": [
+      "test_001294.png"
+    ],
+    "paired_lab/evidence/resumed/mci/test_001294/result.json": [
+      "test_001294.png"
+    ],
+    "paired_lab/evidence/resumed/mci/test_001344/result-cpu.json": [
+      "test_001344.png"
+    ],
+    "paired_lab/evidence/resumed/mci/test_001344/result.json": [
+      "test_001344.png"
+    ],
+    "paired_lab/evidence/resumed/mci/test_001355/result-cpu.json": [
+      "test_001355.png"
+    ],
+    "paired_lab/evidence/resumed/mci/test_001355/result.json": [
+      "test_001355.png"
+    ],
+    "paired_lab/evidence/resumed/mci/test_001360/result-cpu.json": [
+      "test_001360.png"
+    ],
+    "paired_lab/evidence/resumed/mci/test_001360/result.json": [
+      "test_001360.png"
+    ],
+    "paired_lab/evidence/resumed/mci/test_001389/result-cpu.json": [
+      "test_001389.png"
+    ],
+    "paired_lab/evidence/resumed/mci/test_001389/result.json": [
+      "test_001389.png"
+    ],
+    "paired_lab/evidence/resumed/mci/test_001424/result-cpu.json": [
+      "test_001424.png"
+    ],
+    "paired_lab/evidence/resumed/mci/test_001424/result.json": [
+      "test_001424.png"
+    ],
+    "paired_lab/evidence/resumed/mci/test_001511/result-cpu.json": [
+      "test_001511.png"
+    ],
+    "paired_lab/evidence/resumed/mci/test_001511/result.json": [
+      "test_001511.png"
+    ],
+    "paired_lab/evidence/resumed/mci/test_001512/result-cpu.json": [
+      "test_001512.png"
+    ],
+    "paired_lab/evidence/resumed/mci/test_001512/result.json": [
+      "test_001512.png"
+    ],
+    "paired_lab/evidence/resumed/mci/test_001543/result-cpu.json": [
+      "test_001543.png"
+    ],
+    "paired_lab/evidence/resumed/mci/test_001543/result.json": [
+      "test_001543.png"
+    ],
+    "paired_lab/evidence/resumed/mci/test_001595/result-cpu.json": [
+      "test_001595.png"
+    ],
+    "paired_lab/evidence/resumed/mci/test_001595/result.json": [
+      "test_001595.png"
+    ],
+    "paired_lab/evidence/resumed/mci/test_001638/result-cpu.json": [
+      "test_001638.png"
+    ],
+    "paired_lab/evidence/resumed/mci/test_001638/result.json": [
+      "test_001638.png"
+    ],
+    "paired_lab/evidence/resumed/mci/test_001680/result-cpu.json": [
+      "test_001680.png"
+    ],
+    "paired_lab/evidence/resumed/mci/test_001680/result.json": [
+      "test_001680.png"
+    ],
+    "paired_lab/evidence/resumed/mci/test_001682/result-cpu.json": [
+      "test_001682.png"
+    ],
+    "paired_lab/evidence/resumed/mci/test_001682/result.json": [
+      "test_001682.png"
+    ],
+    "paired_lab/evidence/resumed/mci/test_001696/result-cpu.json": [
+      "test_001696.png"
+    ],
+    "paired_lab/evidence/resumed/mci/test_001696/result.json": [
+      "test_001696.png"
+    ],
+    "paired_lab/evidence/resumed/mci/test_001699/result-cpu.json": [
+      "test_001699.png"
+    ],
+    "paired_lab/evidence/resumed/mci/test_001699/result.json": [
+      "test_001699.png"
+    ],
+    "paired_lab/evidence/resumed/mci/test_001727/result-cpu.json": [
+      "test_001727.png"
+    ],
+    "paired_lab/evidence/resumed/mci/test_001727/result.json": [
+      "test_001727.png"
+    ],
+    "paired_lab/evidence/resumed/mci/test_001758/result-cpu.json": [
+      "test_001758.png"
+    ],
+    "paired_lab/evidence/resumed/mci/test_001758/result.json": [
+      "test_001758.png"
+    ],
+    "paired_lab/evidence/resumed/mci/test_001765/result-cpu.json": [
+      "test_001765.png"
+    ],
+    "paired_lab/evidence/resumed/mci/test_001765/result.json": [
+      "test_001765.png"
+    ],
+    "paired_lab/evidence/resumed/mci/test_001771/result-cpu.json": [
+      "test_001771.png"
+    ],
+    "paired_lab/evidence/resumed/mci/test_001771/result.json": [
+      "test_001771.png"
+    ],
+    "paired_lab/evidence/resumed/mci/test_001796/result-cpu.json": [
+      "test_001796.png"
+    ],
+    "paired_lab/evidence/resumed/mci/test_001796/result.json": [
+      "test_001796.png"
+    ],
+    "paired_lab/evidence/resumed/mci/test_001799/result-cpu.json": [
+      "test_001799.png"
+    ],
+    "paired_lab/evidence/resumed/mci/test_001799/result.json": [
+      "test_001799.png"
+    ],
+    "paired_lab/evidence/resumed/mci/test_001818/result-cpu.json": [
+      "test_001818.png"
+    ],
+    "paired_lab/evidence/resumed/mci/test_001818/result.json": [
+      "test_001818.png"
+    ],
+    "paired_lab/evidence/resumed/mci/test_001827/result-cpu.json": [
+      "test_001827.png"
+    ],
+    "paired_lab/evidence/resumed/mci/test_001827/result.json": [
+      "test_001827.png"
+    ],
+    "paired_lab/evidence/resumed/mci/test_001848/result-cpu.json": [
+      "test_001848.png"
+    ],
+    "paired_lab/evidence/resumed/mci/test_001848/result.json": [
+      "test_001848.png"
+    ],
+    "paired_lab/evidence/resumed/mci/test_001856/result-cpu.json": [
+      "test_001856.png"
+    ],
+    "paired_lab/evidence/resumed/mci/test_001856/result.json": [
+      "test_001856.png"
+    ],
+    "paired_lab/evidence/resumed/mci/test_001857/result-cpu.json": [
+      "test_001857.png"
+    ],
+    "paired_lab/evidence/resumed/mci/test_001857/result.json": [
+      "test_001857.png"
+    ],
+    "paired_lab/evidence/resumed/mci/test_001877/result-cpu.json": [
+      "test_001877.png"
+    ],
+    "paired_lab/evidence/resumed/mci/test_001877/result.json": [
+      "test_001877.png"
+    ],
+    "paired_lab/evidence/resumed/mci/test_001909/result-cpu.json": [
+      "test_001909.png"
+    ],
+    "paired_lab/evidence/resumed/mci/test_001909/result.json": [
+      "test_001909.png"
+    ],
+    "paired_lab/evidence/resumed/mci/test_001922/result-cpu.json": [
+      "test_001922.png"
+    ],
+    "paired_lab/evidence/resumed/mci/test_001922/result.json": [
+      "test_001922.png"
+    ],
+    "paired_lab/evidence/resumed/mci/test_001960/result-cpu.json": [
+      "test_001960.png"
+    ],
+    "paired_lab/evidence/resumed/mci/test_001960/result.json": [
+      "test_001960.png"
+    ],
+    "paired_lab/evidence/resumed/mci/test_001979/result-cpu.json": [
+      "test_001979.png"
+    ],
+    "paired_lab/evidence/resumed/mci/test_001979/result.json": [
+      "test_001979.png"
+    ],
+    "paired_lab/evidence/resumed/mci/test_001983/result-cpu.json": [
+      "test_001983.png"
+    ],
+    "paired_lab/evidence/resumed/mci/test_001983/result.json": [
+      "test_001983.png"
+    ],
+    "paired_lab/evidence/resumed/mci/test_002020/result-cpu.json": [
+      "test_002020.png"
+    ],
+    "paired_lab/evidence/resumed/mci/test_002020/result.json": [
+      "test_002020.png"
+    ],
+    "paired_lab/evidence/resumed/mci/test_002061/result-cpu.json": [
+      "test_002061.png"
+    ],
+    "paired_lab/evidence/resumed/mci/test_002061/result.json": [
+      "test_002061.png"
+    ],
+    "paired_lab/evidence/resumed/mci/test_002084/result-cpu.json": [
+      "test_002084.png"
+    ],
+    "paired_lab/evidence/resumed/mci/test_002084/result.json": [
+      "test_002084.png"
+    ]
+  },
+  "source_hashes": {
+    "counting.py": "b8ed0d1c4bb9e0668a9cdb7a791782c09ae903dc7c7c7d3876d1a4f19226a3b8",
+    "count_description.py": "90a3818d7792c73032c446926fb4b8d5be660dcf6bd425aac16cbe1ddf737058",
+    "evaluation.py": "f8f2e21d60b478a10b3cd68f63dd24295b2d270acf3febc1d07bb19a12320cb3",
+    "geo.py": "203f12f7e21b9380b8337a5ed15785b033c14ecfffaf82963e6efde3a8ce91ca",
+    "routing.py": "c9cac3fb8e7ef54cef7b6d986c72b2c798217fbac693ed275283daeeeb9b6b7f",
+    "scene_description.py": "13f0624a876322dbcdc77ed68bf4790bc6cbbd5db24eb5b23f6ca96f7793328f",
+    "server.py": "43cf4a241e822dd094719658a6940543ebca52dbc9235464435ff74c412533f6",
+    "stages.py": "58a2d821fc07e67f1fe4e9c21e63ab461db18f0ce790a71a648bc19d791bee2b",
+    "vqa_answers.py": "8c10916c0cb272fc8f34dab6f6aa7f9e4c398f47c9f02a110dca863187f28328",
+    "vqa_policy.py": "284b7d841f0e1e900b4d444b4024388d29a07d587486e7f2022fb38de6d5056a",
+    "paired_lab/bootstrap.py": "f5396bc1f3eb86c390a9aeb9f372a34f630d3c72901e8a54e809583768e4f683",
+    "paired_lab/compare_candidate.py": "3453e42cc24d5a0c765845c7506604337160d347f781735e52e8d0636ae37ab1",
+    "paired_lab/controller.py": "9a60ac3dcbd1d5ffb54d341bd476c7cc96531a33bc2e7657df331d00412037cc",
+    "paired_lab/engine.py": "1f200080d491012085ecb5860bc51c5c77d9a3b3ea36698edf5750630cc87280",
+    "paired_lab/evaluate.py": "3a873f21a232112e27700004f8a7fcaed0af24a8b92873525588b5f9d0d73d17",
+    "paired_lab/flood.py": "f3e0c77d47da114e1b3716b373356d81b3fc1451e7077754e066aa3da5f1536d",
+    "paired_lab/grounding_bridge.py": "53e327e72250ed5bfa13c45ac68bf044540cda4f7e398b6ec4d010fe0681313e",
+    "paired_lab/inputs.py": "44cdc6a6326a5ea9c0b157fb074613faebc503507fc5bfef00b571af6ad6234f",
+    "paired_lab/launch.py": "7543d2bde6e48f3095bae7848018e7d5c1541efb9edd2ddd578fe480c9315d67",
+    "paired_lab/mci.py": "c4e94359c90508c11fd947f7591e4da1028a73fb0082e8ae07c3821d8bb32320",
+    "paired_lab/recovery.py": "12d9ef8dde61462034c0254004521e419420bcfe0461011e6ca991c23427016e",
+    "paired_lab/registration.py": "cd75252bd54f635142e7081fd005d3c7f3ecce7a3e9ec1716d45d50bc4a30f4e",
+    "paired_lab/server.py": "9031205767d46aa0fe6c410172fc05c1160eec2be3d7e03cc164c1222a176824",
+    "paired_lab/setup_models.py": "ad10deb293ba65db871f36d51e8a0ae68ae009174cf59fc0ac2e2340c13cb9fd",
+    "paired_lab/setup_sources.py": "821175a3636563cbd9b16d09f9608aae64d75a2f6d3e47ed224dbae919aaa68b",
+    "paired_lab/single_bridge.py": "69d1325d734caa42e983f04f4c26b4e8433fc215ec0c67165ecff93c2beb2914",
+    "paired_lab/spectral_pair.py": "9f034d5c886d2c70585831f5ca02387f119ba60cf8a531d0889c1dfbcbc81f2a",
+    "paired_lab/test_controls.py": "0f1049ebaf67f96a6feb19b6bc325f18ed89c56feff2e9e0cabca457d33e8e41",
+    "paired_lab/test_inputs.py": "2c2ece65c40ec47230c656a39c9ba8f12a5983bb08a377d4f33be2d2a8e02d73",
+    "paired_lab/test_live.py": "6f7c276ef9d6b12cdb7651166bb213939cdd13d9257808bae16438f3945200e4",
+    "paired_lab/train_water.py": "502fa5fbabccf4f5136057a2e58db97d0cc6401fd767a92cb2060f1373ef4bd3",
+    "paired_lab/mci_vendor/model_decoder.py": "91acac053838b80f37aae56904bb34118d1a5599738665dbae626a43c5528d7f",
+    "paired_lab/mci_vendor/model_encoder_att.py": "a486048f7e044e8ddf7f2e69754c1a428ad8e909fff2db763e0c39b0491d6db7",
+    "paired_lab/mci_vendor/segformer.py": "cb0cf73c523538ce8082ccd96c63d783f4657d2e787ac3d2920daad771f9e082",
+    "paired_lab/mci_vendor/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "model_manifest": {
+    "repo": "lcybuaa/Change-Agent",
+    "revision": "1e679060173434cd22fd22a52effbf3c785c97a0",
+    "path": "/root/satquery/paired-lab/mci-model/MCI_model.pth",
+    "sha256": "34c6926342c40fdd6d50b43d50257cb46cb6b61763448de9ee551828a64b3eb9",
+    "source_revision": "68cbaa7f388b36e4fc10872f7a2911482d26ae5b",
+    "license_note": "Checkpoint card Apache-2.0; source MIT with academic-use statement. Preserve both statements; review before commercial release."
+  },
+  "model_sha256": "34c6926342c40fdd6d50b43d50257cb46cb6b61763448de9ee551828a64b3eb9",
+  "metadata_sha256": "8c8c3f494867b796306b98713e16ff72cbae1cf4a0a0c36931da16af9602daed",
+  "protocol": {
+    "task": "MCI road/building segmentation; raw captions retained but unscored",
+    "size": "40 locally unused official-test pairs, balanced 20 changed/20 unchanged",
+    "acceptance": {
+      "road_iou_min": 0.7,
+      "building_iou_min": 0.7,
+      "unchanged_false_positive_pixel_fraction_max": 0.01,
+      "execution_failures_max": 0
+    },
+    "threshold_basis": "Predeclared internal engineering floor for this bounded submission check, NOT an ISRO requirement or published benchmark threshold. No changes after results.",
+    "limits": "Local file-ID and exact compressed image-byte exclusions only. Geographic/source-scene independence and upstream model test exposure unknown. Does not establish full-system untouched acceptance or CDVQA performance.",
+    "decoding": "Existing greedy caption; segmentation argmax; no model or policy changes permitted"
+  }
+}

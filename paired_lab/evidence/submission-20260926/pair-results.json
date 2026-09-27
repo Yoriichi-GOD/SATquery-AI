@@ -1,0 +1,51 @@
+{
+  "cartosat_bounds_wgs84": [
+    85.77440495699264,
+    20.26936400166231,
+    85.89302932199284,
+    20.38058707823021
+  ],
+  "eos04_bounds_wgs84": [
+    76.13523194929404,
+    19.399257409426692,
+    76.39431608707686,
+    19.628777859481925
+  ],
+  "bounding_boxes_overlap": false,
+  "date_gap_days": 1215,
+  "checks": [
+    {
+      "task": "water_map",
+      "outcome": "refused",
+      "reason": "Water mapping requires matching georeferenced grids."
+    },
+    {
+      "task": "optical_sar",
+      "outcome": "refused",
+      "reason": "Geographic grids do not match. This lab does not silently register images."
+    },
+    {
+      "query": "Map water in this pair.",
+      "outcome": "refused",
+      "reason": "This optical\u2013SAR scene classifier returns land-cover labels, not pixel maps or coverage measurements. Ask \"Identify land-cover classes\". Water masks require the supported 13-band Sentinel-2 L1C / Sentinel-1 GRD pair; do not resize or relabel incompatible data to bypass this requirement."
+    },
+    {
+      "query": "Identify land cover.",
+      "plan": {
+        "task": "optical_sar",
+        "version": "unified-rules-v6",
+        "specialist": "BIFOLD ResNet50 \u00b7 SAR / optical / joint",
+        "device": "CPU",
+        "maturity": "supported",
+        "reason": "Optical\u2013SAR patch and a scene-level land-cover question.",
+        "threshold": 0.5,
+        "steps": [
+          "validate sensor contract",
+          "three modality predictions",
+          "save evidence"
+        ]
+      },
+      "note": "Planning does not imply input validation or successful inference."
+    }
+  ]
+}

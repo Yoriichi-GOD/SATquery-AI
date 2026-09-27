@@ -1,0 +1,49 @@
+{
+  "state": "ready",
+  "device": "Local CPU / CUDA specialists",
+  "demo_port": 8765,
+  "lab_port": 8767,
+  "controller": "unified-rules-v7",
+  "capabilities": {
+    "sar_scene": [
+      "BIFOLD SAR-only scene classifier",
+      "CPU",
+      "experimental"
+    ],
+    "spectral_pair": [
+      "NDVI + NDWI observed-date comparison",
+      "CPU",
+      "experimental"
+    ],
+    "vqa": [
+      "Remote-sensing Qwen2-VL-2B",
+      "CUDA GPU",
+      "supported"
+    ],
+    "ndvi": [
+      "Deterministic NDVI calculation",
+      "CPU",
+      "supported"
+    ],
+    "temporal": [
+      "MCI road/building change + caption",
+      "CPU",
+      "supported"
+    ],
+    "water_map": [
+      "WaterUNet \u00b7 SAR / optical / joint",
+      "CPU",
+      "supported"
+    ],
+    "optical_sar": [
+      "BIFOLD ResNet50 \u00b7 SAR / optical / joint",
+      "CPU",
+      "supported"
+    ],
+    "grounding": [
+      "Grounding DINO tiny \u2192 SAM base",
+      "CUDA GPU \u00b7 sequential models",
+      "experimental"
+    ]
+  }
+}

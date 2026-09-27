@@ -1,0 +1,1202 @@
+[
+  {
+    "filename": "test_000164.png",
+    "changeflag": 0,
+    "hashes": {
+      "A": "c3c643df0b9432fca1487ffc3752792d26a5f5fe2d58a4b7c418cf516f3ff89f",
+      "B": "cfa4fa59a919617de5cd22013eb296192fa82bc45bdcf78041a8fe7fe8bc2ed2",
+      "label": "3f4d71b63cd17da7aeda885c59160ea2e69ed17cfc27915ffaffe7f874e1b95c"
+    },
+    "state": "complete",
+    "caption": "the scene is the same as before",
+    "confusion": [
+      [
+        65536,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0
+      ]
+    ],
+    "changed_pixels": 0,
+    "seconds": 5.117641236000004
+  },
+  {
+    "filename": "test_000090.png",
+    "changeflag": 0,
+    "hashes": {
+      "A": "cb54cb4f178290041d6114b92ac82c59556ee026cba27df14b89ed9b229c99ec",
+      "B": "a27e631559f0c438283a00c4bb35356e39e60c64bee0937d31431cfd39a52c0b",
+      "label": "3f4d71b63cd17da7aeda885c59160ea2e69ed17cfc27915ffaffe7f874e1b95c"
+    },
+    "state": "complete",
+    "caption": "the scene is the same as before",
+    "confusion": [
+      [
+        65536,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0
+      ]
+    ],
+    "changed_pixels": 0,
+    "seconds": 0.22784260299999914
+  },
+  {
+    "filename": "test_000023.png",
+    "changeflag": 0,
+    "hashes": {
+      "A": "7a7235c3794899db32872f68e2fb24ff48cbf07d208bad7598bc93528f030be1",
+      "B": "6e503f0925c5e34d1f95824acb4d34c55835707ab9c9342700c53d8a3430781e",
+      "label": "3f4d71b63cd17da7aeda885c59160ea2e69ed17cfc27915ffaffe7f874e1b95c"
+    },
+    "state": "complete",
+    "caption": "the scene is the same as before",
+    "confusion": [
+      [
+        65536,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0
+      ]
+    ],
+    "changed_pixels": 0,
+    "seconds": 0.23663241000000568
+  },
+  {
+    "filename": "test_001706.png",
+    "changeflag": 0,
+    "hashes": {
+      "A": "68f4bdad5a73fc41c23ffeaaba73c1b11f5ef2c157be55e01fc28eb08570ff51",
+      "B": "1f6a726f9bd303eba4dd36638d89199f89c283eb4f53d0d7c673fd80340822f8",
+      "label": "3f4d71b63cd17da7aeda885c59160ea2e69ed17cfc27915ffaffe7f874e1b95c"
+    },
+    "state": "complete",
+    "caption": "the scene is the same as before",
+    "confusion": [
+      [
+        65536,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0
+      ]
+    ],
+    "changed_pixels": 0,
+    "seconds": 0.26714644599999815
+  },
+  {
+    "filename": "test_000746.png",
+    "changeflag": 0,
+    "hashes": {
+      "A": "72bc8290df4257e666f54253844d905344ac9f647c73ce6b714cb544a0e00e32",
+      "B": "b34ec416ae52ee3e66870a3ab7c1c0afcee5eb8f359eda74f16136660e782296",
+      "label": "3f4d71b63cd17da7aeda885c59160ea2e69ed17cfc27915ffaffe7f874e1b95c"
+    },
+    "state": "complete",
+    "caption": "the scene is the same as before",
+    "confusion": [
+      [
+        65536,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0
+      ]
+    ],
+    "changed_pixels": 0,
+    "seconds": 0.2803290000000018
+  },
+  {
+    "filename": "test_001402.png",
+    "changeflag": 0,
+    "hashes": {
+      "A": "78603138971779b0b925321976399d0c89a026fa4894659aa5804b0cafee2052",
+      "B": "3651c9f7bf6b5ff9acefb74c2a5deab2b35534f808c6ea3a4039022dfe6aa3d2",
+      "label": "3f4d71b63cd17da7aeda885c59160ea2e69ed17cfc27915ffaffe7f874e1b95c"
+    },
+    "state": "complete",
+    "caption": "the scene is the same as before",
+    "confusion": [
+      [
+        65536,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0
+      ]
+    ],
+    "changed_pixels": 0,
+    "seconds": 0.2725127010000037
+  },
+  {
+    "filename": "test_002134.png",
+    "changeflag": 0,
+    "hashes": {
+      "A": "5ebbe5257b6fc161453a91123486d3fb66c28213f46d79d1dfda815e85e442be",
+      "B": "fbc15095b151220bd408ae01e0e468fe49571a425e99badf9e82d2522a45a81e",
+      "label": "3f4d71b63cd17da7aeda885c59160ea2e69ed17cfc27915ffaffe7f874e1b95c"
+    },
+    "state": "complete",
+    "caption": "the scene is the same as before",
+    "confusion": [
+      [
+        65536,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0
+      ]
+    ],
+    "changed_pixels": 0,
+    "seconds": 0.25285051699999883
+  },
+  {
+    "filename": "test_000591.png",
+    "changeflag": 0,
+    "hashes": {
+      "A": "e833aec2e4ac0c986bfdc682e30791444441eae7ae6a38f9d05bb7fc9a1ac6ef",
+      "B": "3fc80492dee5bcfde5cc1d33d27456d40e546878020d797b713af6aa5d330538",
+      "label": "3f4d71b63cd17da7aeda885c59160ea2e69ed17cfc27915ffaffe7f874e1b95c"
+    },
+    "state": "complete",
+    "caption": "the scene is the same as before",
+    "confusion": [
+      [
+        65536,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0
+      ]
+    ],
+    "changed_pixels": 0,
+    "seconds": 0.23674423399999966
+  },
+  {
+    "filename": "test_001777.png",
+    "changeflag": 0,
+    "hashes": {
+      "A": "d22b5fa34d26f849236bb477855832188fb6e5ac25db8b137d5e2020d1f4c425",
+      "B": "1ede3f4c1e35ff15684711374600f8113ea73ca381b46b81b2e1c14b4f9202fb",
+      "label": "3f4d71b63cd17da7aeda885c59160ea2e69ed17cfc27915ffaffe7f874e1b95c"
+    },
+    "state": "complete",
+    "caption": "the scene is the same as before",
+    "confusion": [
+      [
+        65536,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0
+      ]
+    ],
+    "changed_pixels": 0,
+    "seconds": 0.22917272099999764
+  },
+  {
+    "filename": "test_000071.png",
+    "changeflag": 0,
+    "hashes": {
+      "A": "be145f5cb1ea3a55e373e5a9527c137e741541fefdb6c074eae240058217aa99",
+      "B": "db1157d852fc3b80613e604bbb6865d42afc414a8f141ef8404aadd7acaf918f",
+      "label": "3f4d71b63cd17da7aeda885c59160ea2e69ed17cfc27915ffaffe7f874e1b95c"
+    },
+    "state": "complete",
+    "caption": "the scene is the same as before",
+    "confusion": [
+      [
+        65536,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0
+      ]
+    ],
+    "changed_pixels": 0,
+    "seconds": 0.22994293599999338
+  },
+  {
+    "filename": "test_000337.png",
+    "changeflag": 0,
+    "hashes": {
+      "A": "8c8e0e898e7cd9ce880d08bef4dbb9dc42875cef538d6abd2d0bdb8e6698ec74",
+      "B": "e3a3991f3667e027590a0d18b0d40d3d07abe2398ac9cc039ad285c4f31acab3",
+      "label": "3f4d71b63cd17da7aeda885c59160ea2e69ed17cfc27915ffaffe7f874e1b95c"
+    },
+    "state": "complete",
+    "caption": "the scene is the same as before",
+    "confusion": [
+      [
+        65536,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0
+      ]
+    ],
+    "changed_pixels": 0,
+    "seconds": 0.2295375160000006
+  },
+  {
+    "filename": "test_001016.png",
+    "changeflag": 0,
+    "hashes": {
+      "A": "be68d8463371afb7e65fdabff132bdc386e3b6beef6ac97c012a88ea73ba0c65",
+      "B": "dfcfd21b887def463f1cae77aeba2cfbdd371018027a1c4b528c187e86aba75b",
+      "label": "3f4d71b63cd17da7aeda885c59160ea2e69ed17cfc27915ffaffe7f874e1b95c"
+    },
+    "state": "complete",
+    "caption": "the scene is the same as before",
+    "confusion": [
+      [
+        65536,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0
+      ]
+    ],
+    "changed_pixels": 0,
+    "seconds": 0.23842046099999692
+  },
+  {
+    "filename": "test_001367.png",
+    "changeflag": 0,
+    "hashes": {
+      "A": "894bbaef56653b3caf2936028d631acf5fca936cbe167fd2b56e0fe4c8c458c8",
+      "B": "85365cd96b06cc8f13038573d35f125b3cd6cc5d46bd36401726cd15ccfd97f2",
+      "label": "3f4d71b63cd17da7aeda885c59160ea2e69ed17cfc27915ffaffe7f874e1b95c"
+    },
+    "state": "complete",
+    "caption": "the scene is the same as before",
+    "confusion": [
+      [
+        65536,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0
+      ]
+    ],
+    "changed_pixels": 0,
+    "seconds": 0.23177273500000695
+  },
+  {
+    "filename": "test_002048.png",
+    "changeflag": 0,
+    "hashes": {
+      "A": "5744849e734757e76f8c2381d048c5b19c19cc2b993db3fe006e0ea2e89389a6",
+      "B": "ae845a6a07e858b8f65cfe8eabea4d138bfad76a3526dbfa61e6c0c5b2f93d58",
+      "label": "3f4d71b63cd17da7aeda885c59160ea2e69ed17cfc27915ffaffe7f874e1b95c"
+    },
+    "state": "complete",
+    "caption": "the scene is the same as before",
+    "confusion": [
+      [
+        65536,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0
+      ]
+    ],
+    "changed_pixels": 0,
+    "seconds": 0.23818548500000247
+  },
+  {
+    "filename": "test_000803.png",
+    "changeflag": 0,
+    "hashes": {
+      "A": "8484d4a7be061515983bf43f1d5724fd5a055707bdb01f23d32c0cb85edaeceb",
+      "B": "3d3095f141d92bea28d3c536f4960c72e1d6c3514456ce1d5d0c67d1eb01fb01",
+      "label": "3f4d71b63cd17da7aeda885c59160ea2e69ed17cfc27915ffaffe7f874e1b95c"
+    },
+    "state": "complete",
+    "caption": "the scene is the same as before",
+    "confusion": [
+      [
+        65536,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0
+      ]
+    ],
+    "changed_pixels": 0,
+    "seconds": 0.2530228680000022
+  },
+  {
+    "filename": "test_000724.png",
+    "changeflag": 0,
+    "hashes": {
+      "A": "f28e307417e475d0128766f9c0c595e994a49cc1ba0e07c29b96db6089a9d539",
+      "B": "6c902e2b944a26ebddcba7d4587e7941eb40b0a257fa3ff640c36637f432e375",
+      "label": "3f4d71b63cd17da7aeda885c59160ea2e69ed17cfc27915ffaffe7f874e1b95c"
+    },
+    "state": "complete",
+    "caption": "the scene is the same as before",
+    "confusion": [
+      [
+        65536,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0
+      ]
+    ],
+    "changed_pixels": 0,
+    "seconds": 0.23993732400000312
+  },
+  {
+    "filename": "test_000370.png",
+    "changeflag": 0,
+    "hashes": {
+      "A": "2c63b58617afb6b0775cc2af5c5ab72892954617395346528111504ed27d5bb1",
+      "B": "7d6934975f203574b1cdd4e0aff5c1d9c22e31cfa56b213dae5b30ca9e185d5f",
+      "label": "3f4d71b63cd17da7aeda885c59160ea2e69ed17cfc27915ffaffe7f874e1b95c"
+    },
+    "state": "complete",
+    "caption": "the scene is the same as before",
+    "confusion": [
+      [
+        65536,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0
+      ]
+    ],
+    "changed_pixels": 0,
+    "seconds": 0.22453537999999895
+  },
+  {
+    "filename": "test_001938.png",
+    "changeflag": 0,
+    "hashes": {
+      "A": "ccc3d234a4ce1e2a6525da0a76743b93903bfba0274a6f7ce6f07ef09a796738",
+      "B": "b49342d9106a4bb96f941503386607de7442b0ce8a522416053a6f7967f46446",
+      "label": "3f4d71b63cd17da7aeda885c59160ea2e69ed17cfc27915ffaffe7f874e1b95c"
+    },
+    "state": "complete",
+    "caption": "the scene is the same as before",
+    "confusion": [
+      [
+        65536,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0
+      ]
+    ],
+    "changed_pixels": 0,
+    "seconds": 0.21298623799999916
+  },
+  {
+    "filename": "test_002025.png",
+    "changeflag": 0,
+    "hashes": {
+      "A": "9c4f0eb564b431f529edaa1a57c82fb2482fb5b29ed4fadc6d46512c95da8874",
+      "B": "d36205f686f4116c753ccc5e33a3514134cf5c817378375069e7257bccac2fdb",
+      "label": "3f4d71b63cd17da7aeda885c59160ea2e69ed17cfc27915ffaffe7f874e1b95c"
+    },
+    "state": "complete",
+    "caption": "the scene is the same as before",
+    "confusion": [
+      [
+        65536,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0
+      ]
+    ],
+    "changed_pixels": 0,
+    "seconds": 0.2221939670000097
+  },
+  {
+    "filename": "test_001125.png",
+    "changeflag": 0,
+    "hashes": {
+      "A": "738478e4c31670c03db13278235d87936ddc0f7a76031fadf787657b5e58f07d",
+      "B": "5ab8977e0a147f6a7f5c218f76b8c7039dcd094ac5b36c261ab000b4e4a72d61",
+      "label": "3f4d71b63cd17da7aeda885c59160ea2e69ed17cfc27915ffaffe7f874e1b95c"
+    },
+    "state": "complete",
+    "caption": "the scene is the same as before",
+    "confusion": [
+      [
+        65536,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0
+      ]
+    ],
+    "changed_pixels": 0,
+    "seconds": 0.26394398399999375
+  },
+  {
+    "filename": "test_001612.png",
+    "changeflag": 1,
+    "hashes": {
+      "A": "f30314d7c6980267ce233e36cc22bec7678a0012f5952ed5b08bb9b9f0eb6cd8",
+      "B": "3501c9039686bfca7991da42f750d1fbd83ee780589e7b50b5d1b176951965d9",
+      "label": "29f3326f2203f640eee2877391fc41aa0ac0810a2918ac7e0221ce963be6d9ca"
+    },
+    "state": "complete",
+    "caption": "some buildings are built on the top side of the scene",
+    "confusion": [
+      [
+        56759,
+        1506,
+        196
+      ],
+      [
+        0,
+        0,
+        0
+      ],
+      [
+        635,
+        0,
+        6440
+      ]
+    ],
+    "changed_pixels": 8142,
+    "seconds": 0.26506549700000903
+  },
+  {
+    "filename": "test_000155.png",
+    "changeflag": 1,
+    "hashes": {
+      "A": "64e94be8b68d16107c47023dcded2ecdfe76c80b7e7c855fbf685224ed888bd2",
+      "B": "d23bf8d537bb3d255b948aab6a803e90b15982ad179858c419c1a84eddce782a",
+      "label": "5c9c5a75cc849f25b47799a7d00f797d8b6cbca8fc32d9dec2fba0cc8dc8528d"
+    },
+    "state": "complete",
+    "caption": "a road with many houses built along replaces the trees",
+    "confusion": [
+      [
+        45451,
+        171,
+        1544
+      ],
+      [
+        183,
+        6308,
+        0
+      ],
+      [
+        472,
+        0,
+        11407
+      ]
+    ],
+    "changed_pixels": 19430,
+    "seconds": 0.2623892029999979
+  },
+  {
+    "filename": "test_001634.png",
+    "changeflag": 1,
+    "hashes": {
+      "A": "d7e524362aab6f5a6114bd690b51170ec8cf6e6808720573f4e26035edf1521b",
+      "B": "f16f44e1b3bc8d3083cb612148b91c6f1e19e0c3e58c978fe05a5777ede38481",
+      "label": "9100cd632b5a6b06e62f5dbd6fbe3b50ecbf9c393997b81a84ac12e343291a89"
+    },
+    "state": "complete",
+    "caption": "the scene is the same as before",
+    "confusion": [
+      [
+        59545,
+        42,
+        69
+      ],
+      [
+        1394,
+        774,
+        0
+      ],
+      [
+        3668,
+        0,
+        44
+      ]
+    ],
+    "changed_pixels": 929,
+    "seconds": 0.26399806100000944
+  },
+  {
+    "filename": "test_000595.png",
+    "changeflag": 1,
+    "hashes": {
+      "A": "c93820d4f5d5bb2e5ea133677bdaad9edb367883cbc59f8b63c540262dea1039",
+      "B": "ebf6e2c38a69625b0bf65675df50c756a094ababb7da98eac6878f47bc38ac2a",
+      "label": "fdc607ebd881c20e70ea8a34cb4a6cb98b5653e7da47deda7f898fc1e88d7d47"
+    },
+    "state": "complete",
+    "caption": "massive houses along the roads appear in the desert",
+    "confusion": [
+      [
+        51703,
+        188,
+        768
+      ],
+      [
+        270,
+        2982,
+        0
+      ],
+      [
+        692,
+        0,
+        8933
+      ]
+    ],
+    "changed_pixels": 12871,
+    "seconds": 0.28295323599999733
+  },
+  {
+    "filename": "test_001629.png",
+    "changeflag": 1,
+    "hashes": {
+      "A": "660ee5b271bb4cea6f811f57866ae3e6324db3c0aac5e2c2d99890306b4dc195",
+      "B": "78a35453c7df4dfa4e0bf9dd7c9d844478b1545e684fef105fd3f63d5db5ce4c",
+      "label": "0df83877a4d04a79316868ed4060afb2f2ba5f34d1fb2b602d27f81a79ec0e02"
+    },
+    "state": "complete",
+    "caption": "a large building with a parking lot is built",
+    "confusion": [
+      [
+        39990,
+        1780,
+        392
+      ],
+      [
+        4336,
+        7055,
+        0
+      ],
+      [
+        802,
+        0,
+        11181
+      ]
+    ],
+    "changed_pixels": 20408,
+    "seconds": 0.27368697299999667
+  },
+  {
+    "filename": "test_001174.png",
+    "changeflag": 1,
+    "hashes": {
+      "A": "bdbc57511da9474a49762564dd11e567d542c8087b4d60e746480961f2e7dbe4",
+      "B": "bcc52f9acd194869856adc366a55b0b21cd7f7ae24d3ed744e8c48ec1e60dd2d",
+      "label": "7157787ec491a353273ee1f87925fe25c896526e53d23435cec8aa456e413d42"
+    },
+    "state": "complete",
+    "caption": "some houses are built along the road",
+    "confusion": [
+      [
+        61912,
+        0,
+        112
+      ],
+      [
+        0,
+        0,
+        0
+      ],
+      [
+        270,
+        0,
+        3242
+      ]
+    ],
+    "changed_pixels": 3354,
+    "seconds": 0.23709760799999913
+  },
+  {
+    "filename": "test_001325.png",
+    "changeflag": 1,
+    "hashes": {
+      "A": "7017c8f57433e8d9774c3a7ee3860177c61b37257039ed19679a1fe56b7d4f28",
+      "B": "9dfa64a39133101b32110630263624be32d37e468f8d10f19bee95e0b26bb9b4",
+      "label": "e67aeaeafa5f09fb9ccfbd3a19d053f21eb1581b1650cd136c920925bcd7c0a2"
+    },
+    "state": "complete",
+    "caption": "a row of houses is built along the road on the bareland",
+    "confusion": [
+      [
+        57764,
+        0,
+        582
+      ],
+      [
+        0,
+        0,
+        0
+      ],
+      [
+        1012,
+        0,
+        6178
+      ]
+    ],
+    "changed_pixels": 6760,
+    "seconds": 0.2493119570000033
+  },
+  {
+    "filename": "test_000408.png",
+    "changeflag": 1,
+    "hashes": {
+      "A": "8e869b97846c77b0632c0cdb664a7844a000d9a199eb71724eecacdf7382cac5",
+      "B": "0b1f9216409ae6a75072301952a1a300b10156e22ce6858a02f99f08c52a582f",
+      "label": "a11c0491565fbe744fedf832cf64d184785c06c7abd2eb4f6fc7dd6ac1fd6639"
+    },
+    "state": "complete",
+    "caption": "a road with a path to the road is built in the center",
+    "confusion": [
+      [
+        56323,
+        77,
+        534
+      ],
+      [
+        137,
+        4564,
+        0
+      ],
+      [
+        225,
+        0,
+        3676
+      ]
+    ],
+    "changed_pixels": 8851,
+    "seconds": 0.27183315800000685
+  },
+  {
+    "filename": "test_001258.png",
+    "changeflag": 1,
+    "hashes": {
+      "A": "61a88aa429559bf38e487272feb54cf460ac9e76ae150114c630a84e1f8b5c06",
+      "B": "71b164314978fed965e8b8ead5d3b696ecc15ef3ec83f395e233f71ab83ea09f",
+      "label": "bb3bb4e01999a1f6554fbf1032e0e110dbd62efd94fadd6939070af075bd0457"
+    },
+    "state": "complete",
+    "caption": "the scene is the same as before",
+    "confusion": [
+      [
+        61987,
+        0,
+        48
+      ],
+      [
+        0,
+        0,
+        0
+      ],
+      [
+        2832,
+        0,
+        669
+      ]
+    ],
+    "changed_pixels": 717,
+    "seconds": 0.24440071500001181
+  },
+  {
+    "filename": "test_001302.png",
+    "changeflag": 1,
+    "hashes": {
+      "A": "1da5dc9e939029d515fdf84fb886feb2fcfa54da7ed6a2600507aab1534e77d4",
+      "B": "f89dd15487badb90b7fa45880476e92145bf91895b0bd846630d553f39011b04",
+      "label": "bd41ee6599c273ce5b75a82404f6b90fe9151ad62293cd7c5efc6b8172759a73"
+    },
+    "state": "complete",
+    "caption": "the scene is the same as before",
+    "confusion": [
+      [
+        58577,
+        325,
+        540
+      ],
+      [
+        0,
+        0,
+        0
+      ],
+      [
+        5006,
+        97,
+        991
+      ]
+    ],
+    "changed_pixels": 1953,
+    "seconds": 0.2512697519999989
+  },
+  {
+    "filename": "test_001804.png",
+    "changeflag": 1,
+    "hashes": {
+      "A": "616366b42f1144ca2cb09982acb96efc9420f685e1c3872981367d35d7610203",
+      "B": "8cdbdb83feb99cd1564f49d501f2328fc6bc45f3271968bf84eed17ee6148a1a",
+      "label": "387953ca2624411d663bbdcd9f6e9fed33eb279ef6efb0d8a931ec73df18c380"
+    },
+    "state": "complete",
+    "caption": "several large buildings with parking lots appear in the desert",
+    "confusion": [
+      [
+        37544,
+        1022,
+        6765
+      ],
+      [
+        606,
+        7566,
+        0
+      ],
+      [
+        919,
+        81,
+        11033
+      ]
+    ],
+    "changed_pixels": 26467,
+    "seconds": 0.24338933200000668
+  },
+  {
+    "filename": "test_000890.png",
+    "changeflag": 1,
+    "hashes": {
+      "A": "66f7f28a3debaee26a1d22f4f4827ff2550db469c13e31834beb9fff5c29894c",
+      "B": "c551029da1a527bd9d585ed107abf8b8c02719aa08b88d3a673d3a29d6cff5fd",
+      "label": "a9632698d47dde86b809c9f8d011300ee720db52dd5889ec1b65d8a6c37d84ba"
+    },
+    "state": "complete",
+    "caption": "a building is built at the bottom corner",
+    "confusion": [
+      [
+        61653,
+        2436,
+        1
+      ],
+      [
+        0,
+        0,
+        0
+      ],
+      [
+        128,
+        0,
+        1318
+      ]
+    ],
+    "changed_pixels": 3755,
+    "seconds": 0.22330207199999563
+  },
+  {
+    "filename": "test_001603.png",
+    "changeflag": 1,
+    "hashes": {
+      "A": "a4615fb06ae7316c29d76e49ccc140613207c25197c523c54357b0d9a8e93226",
+      "B": "0b81ab6ff2cddcf5351ff14c711ad48ba572de6cdd20fcd42ab7c431b2632049",
+      "label": "e779ededd82cdd7f522b687e292c6ce5e2561e7432142eb4d205a605c300513d"
+    },
+    "state": "complete",
+    "caption": "some roads and a parking lot appear in the bareland",
+    "confusion": [
+      [
+        54778,
+        1232,
+        0
+      ],
+      [
+        2744,
+        6782,
+        0
+      ],
+      [
+        0,
+        0,
+        0
+      ]
+    ],
+    "changed_pixels": 8014,
+    "seconds": 0.23187340800001266
+  },
+  {
+    "filename": "test_000348.png",
+    "changeflag": 1,
+    "hashes": {
+      "A": "7e3861986590d264959546af7bc6527266c60ed01cf1a03a13cf6e112184572d",
+      "B": "081f4dec0c94126ca7388b6f6d6730dc0c274232a9880df49505d3906b9fcfec",
+      "label": "f0c35060ceba0a7c3c51af2dcb571e1ad76f5914cc2f1a25650900670846f364"
+    },
+    "state": "complete",
+    "caption": "some houses are built along the road",
+    "confusion": [
+      [
+        53605,
+        145,
+        443
+      ],
+      [
+        177,
+        1758,
+        0
+      ],
+      [
+        1482,
+        0,
+        7926
+      ]
+    ],
+    "changed_pixels": 10272,
+    "seconds": 0.22500487499999622
+  },
+  {
+    "filename": "test_000397.png",
+    "changeflag": 1,
+    "hashes": {
+      "A": "346568e4b0e581ba553ceed39da8e56bf59393b1468998969461033b2fa84c1a",
+      "B": "af23bb42cb0fb8acf896f59519b6ddde0fd94bfdb379bddf5ae5f420222e2345",
+      "label": "0eec1bb983327ea14ba34b973914918e5c21a8a38bab386809eb7b01875a9739"
+    },
+    "state": "complete",
+    "caption": "two houses are built in the forest",
+    "confusion": [
+      [
+        62706,
+        0,
+        183
+      ],
+      [
+        0,
+        0,
+        0
+      ],
+      [
+        248,
+        0,
+        2399
+      ]
+    ],
+    "changed_pixels": 2582,
+    "seconds": 0.2381842559999967
+  },
+  {
+    "filename": "test_001879.png",
+    "changeflag": 1,
+    "hashes": {
+      "A": "9cd5b463f9f9d237919dca651498ac3591d430f65c5c1b4b0e81f843d599c9ef",
+      "B": "c1fd7b9589a4ecc167e88af385354e9998231ab6922a3f3df1dd141a5e4370a8",
+      "label": "64bfab7cee907ced3b1ab3afcdec2e3365e1e35b576cb84e0084ca8e616fb52b"
+    },
+    "state": "complete",
+    "caption": "a road appears on the left and a road appears on the left",
+    "confusion": [
+      [
+        61354,
+        50,
+        44
+      ],
+      [
+        57,
+        2406,
+        0
+      ],
+      [
+        312,
+        0,
+        1313
+      ]
+    ],
+    "changed_pixels": 3813,
+    "seconds": 0.24548792400000252
+  },
+  {
+    "filename": "test_000289.png",
+    "changeflag": 1,
+    "hashes": {
+      "A": "efe676f9afedd48c646e154c3048b14c5d4bb1a40f4fc8f19966fac67a898b6f",
+      "B": "fb0174e6b2f0d0569402201f68d8900a0037f0fc650f74caac037fb4d4505610",
+      "label": "378e2ca3b19c4a17342bab2c3e34a4ac6cd63a70f72e367000cabdc8f7483d6e"
+    },
+    "state": "complete",
+    "caption": "some trees are removed and a parking lot is built",
+    "confusion": [
+      [
+        53559,
+        340,
+        18
+      ],
+      [
+        1316,
+        8825,
+        0
+      ],
+      [
+        1422,
+        0,
+        56
+      ]
+    ],
+    "changed_pixels": 9239,
+    "seconds": 0.22131671799999708
+  },
+  {
+    "filename": "test_001132.png",
+    "changeflag": 1,
+    "hashes": {
+      "A": "cd49dced01a77c9f92fbb0bd7332f0a82d7714db3a411c8141c8bfb70672e48f",
+      "B": "6fd043cba75400e3e3d507e9a716fccec7790413c7a5d7179c4d3d0ea95fdabb",
+      "label": "c3aa163171b51f02c42f6dfad99566349242889dd237f88e8c73ab0a35ccf573"
+    },
+    "state": "complete",
+    "caption": "a parking lot is built at the bottom",
+    "confusion": [
+      [
+        52163,
+        601,
+        392
+      ],
+      [
+        2785,
+        5961,
+        199
+      ],
+      [
+        1327,
+        862,
+        1246
+      ]
+    ],
+    "changed_pixels": 9261,
+    "seconds": 0.21626551100000313
+  },
+  {
+    "filename": "test_000618.png",
+    "changeflag": 1,
+    "hashes": {
+      "A": "c4de6a4a275de6fa7eb98fea2b0e59ce9312156ba9d17c2a10c595918ad52ac6",
+      "B": "fbb1d8046a9c6727dc58e2f12b6944664e2d6b433ffef0b2598664b530a4949a",
+      "label": "086e33c1104d06f19d82a3d2d2746bbb9e78a19fcc8b164d156d8c0d2fca2180"
+    },
+    "state": "complete",
+    "caption": "the vegetation disappears and a road with a road with some houses around",
+    "confusion": [
+      [
+        51662,
+        123,
+        273
+      ],
+      [
+        1723,
+        7475,
+        0
+      ],
+      [
+        447,
+        0,
+        3833
+      ]
+    ],
+    "changed_pixels": 11704,
+    "seconds": 0.23460593000000074
+  },
+  {
+    "filename": "test_000668.png",
+    "changeflag": 1,
+    "hashes": {
+      "A": "ac591586552d9e8e3330d605d6cf12e5e4e2293347456d26c2685ab8b4cc763d",
+      "B": "660bff99e2b2fb532716b14bcf1358305e4dec5af57a959fd92199d0b15ff0ea",
+      "label": "fd132aaec1c9ecef7792b3e56a271b54f4e7743b8047061388f513a86265855e"
+    },
+    "state": "complete",
+    "caption": "massive houses along the roads appear in the desert",
+    "confusion": [
+      [
+        37233,
+        905,
+        1697
+      ],
+      [
+        12,
+        9326,
+        0
+      ],
+      [
+        887,
+        0,
+        15476
+      ]
+    ],
+    "changed_pixels": 27404,
+    "seconds": 0.23932969099999468
+  }
+]

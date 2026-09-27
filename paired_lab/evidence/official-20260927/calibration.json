@@ -1,0 +1,111 @@
+{
+  "source_sha256": "f3bc18aa114030325803fb60778821b7835d0cd4773ed77c4fd3964ea5e08752",
+  "reference": "https://bhoonidhi.nrsc.gov.in/bhoonidhi_resources/help/docs/EOS-04_Handbook.pdf",
+  "reference_pages": "printed 66-68 / PDF 77-79",
+  "window": [
+    2744,
+    2544,
+    512,
+    512
+  ],
+  "bands": [
+    {
+      "polarization": "HH",
+      "member": "BH_E04_SAR_FR2_13SEP2023_8717_10742_6_SAN_STUC00ETD_F_HV_A_F/scene_HH/imagery_HH.tif",
+      "beta0_constant_db": 63.28,
+      "noise_bias": 129867.72,
+      "native_zero_pixels": 0,
+      "nonpositive_corrected_pixels": 720,
+      "positive_pixels": 261424,
+      "db_percentiles_2_50_98": [
+        -14.304758322045359,
+        -5.896465915143087,
+        -0.46472754770190905
+      ],
+      "scalar_check": {
+        "pixel": [
+          0,
+          0
+        ],
+        "dn": 1091,
+        "beta0": 0.4982819529587324
+      }
+    },
+    {
+      "polarization": "HV",
+      "member": "BH_E04_SAR_FR2_13SEP2023_8717_10742_6_SAN_STUC00ETD_F_HV_A_F/scene_HV/imagery_HV.tif",
+      "beta0_constant_db": 63.28,
+      "noise_bias": 108509.224,
+      "native_zero_pixels": 0,
+      "nonpositive_corrected_pixels": 33078,
+      "positive_pixels": 229066,
+      "db_percentiles_2_50_98": [
+        -26.8585454121567,
+        -14.117578492835822,
+        -8.011701229681504
+      ],
+      "scalar_check": {
+        "pixel": [
+          0,
+          0
+        ],
+        "dn": 535,
+        "beta0": 0.08350759614860409
+      }
+    },
+    {
+      "polarization": "VH",
+      "member": "BH_E04_SAR_FR2_13SEP2023_8717_10742_6_SAN_STUC00ETD_F_HV_A_F/scene_VH/imagery_VH.tif",
+      "beta0_constant_db": 63.28,
+      "noise_bias": 99836.146,
+      "native_zero_pixels": 0,
+      "nonpositive_corrected_pixels": 26120,
+      "positive_pixels": 236024,
+      "db_percentiles_2_50_98": [
+        -26.754776940320767,
+        -13.895410502828998,
+        -7.850951205959877
+      ],
+      "scalar_check": {
+        "pixel": [
+          0,
+          0
+        ],
+        "dn": 481,
+        "beta0": 0.061802754029761056
+      }
+    },
+    {
+      "polarization": "VV",
+      "member": "BH_E04_SAR_FR2_13SEP2023_8717_10742_6_SAN_STUC00ETD_F_HV_A_F/scene_VV/imagery_VV.tif",
+      "beta0_constant_db": 63.28,
+      "noise_bias": 83152.418,
+      "native_zero_pixels": 0,
+      "nonpositive_corrected_pixels": 458,
+      "positive_pixels": 261686,
+      "db_percentiles_2_50_98": [
+        -14.993943485577221,
+        -6.950332098621984,
+        -1.484434459832185
+      ],
+      "scalar_check": {
+        "pixel": [
+          0,
+          0
+        ],
+        "dn": 540,
+        "beta0": 0.09794829073480248
+      }
+    }
+  ],
+  "outputs": {
+    "beta0-linear.tif": "e3a6b6c9aaa2dad94966d6c73d94886476386e6628f146198059fcac549a22ed",
+    "beta0-db.tif": "5c6b5ef8544bd47acc7b1836d365684ed0e48188d30395af09d7c09c653f4bce"
+  },
+  "limits": [
+    "Beta0 is not sigma0. No terrain flattening, speckle filtering or semantic inference performed.",
+    "Native-zero exclusion is an explicit conservative policy; original sample has no TIFF nodata tag.",
+    "Signed nonpositive linear power retained; dB undefined there.",
+    "Independent numerical checks do not validate physical calibration against field reference targets."
+  ]
+}

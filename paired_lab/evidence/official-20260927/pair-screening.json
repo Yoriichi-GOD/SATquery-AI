@@ -1,0 +1,176 @@
+{
+  "optical": [
+    {
+      "product": "Cartosat MX 205132611",
+      "date": "2020-05-16",
+      "bbox": [
+        85.77440495699264,
+        20.26936400166231,
+        85.89302932199284,
+        20.38058707823021
+      ]
+    },
+    {
+      "product": "Cartosat merged archive 247677521 / metadata 247677522",
+      "date": "06-Jan-2022",
+      "bbox": [
+        78.24647,
+        15.590871,
+        78.361779,
+        15.702575
+      ]
+    }
+  ],
+  "sar": [
+    {
+      "product": "crs1-prefix",
+      "url": "https://bhoonidhi.nrsc.gov.in/bhoonidhi_resources/help/sampleprods/EOS-04/CRS/226981711.zip",
+      "productid": "223691071",
+      "rawdatastarttime": "2022-07-05 13:16:04.809000000",
+      "starttime": null,
+      "polarizations": "HH HV",
+      "beammodemnemonic": "CRS ",
+      "bbox": [
+        70.846916,
+        21.599722,
+        73.303321,
+        23.384804
+      ]
+    },
+    {
+      "product": "crs2-prefix",
+      "url": "https://bhoonidhi.nrsc.gov.in/bhoonidhi_resources/help/sampleprods/EOS-04/CRS/247111011.zip",
+      "productid": "247111011",
+      "rawdatastarttime": null,
+      "starttime": "2023-09-13T04:04:11.862000000Z",
+      "polarizations": "HH HV",
+      "beammodemnemonic": "CRS ",
+      "bbox": [
+        25.662689,
+        17.907381,
+        28.057913,
+        19.702322
+      ]
+    },
+    {
+      "product": "frs1-prefix",
+      "url": "https://bhoonidhi.nrsc.gov.in/bhoonidhi_resources/help/sampleprods/EOS-04/FRS1/226981731.zip",
+      "productid": "224318961",
+      "rawdatastarttime": "2022-07-31 13:10:46.662000000",
+      "starttime": null,
+      "polarizations": "HH HV VH VV",
+      "beammodemnemonic": "FRS1",
+      "bbox": [
+        72.551088,
+        22.911434,
+        72.783975,
+        23.122987
+      ]
+    },
+    {
+      "product": "mrs1-prefix",
+      "url": "https://bhoonidhi.nrsc.gov.in/bhoonidhi_resources/help/sampleprods/EOS-04/MRS/226981721.zip",
+      "productid": "225094341",
+      "rawdatastarttime": "2022-08-25 01:09:59.674000000",
+      "starttime": null,
+      "polarizations": "HH HV",
+      "beammodemnemonic": "MRS ",
+      "bbox": [
+        71.219349,
+        21.566842,
+        73.100965,
+        23.29879
+      ]
+    },
+    {
+      "product": "mrs2-prefix",
+      "url": "https://bhoonidhi.nrsc.gov.in/bhoonidhi_resources/help/sampleprods/EOS-04/MRS/247111021%28E04-MRS%29.zip",
+      "productid": "247111021",
+      "rawdatastarttime": null,
+      "starttime": "2023-09-16T00:20:03.213000000Z",
+      "polarizations": "HH HV",
+      "beammodemnemonic": "MRS ",
+      "bbox": [
+        83.171087,
+        17.781118,
+        85.008583,
+        19.478734
+      ]
+    },
+    {
+      "product": "frs2",
+      "bbox": [
+        76.13523194929404,
+        19.399257409426692,
+        76.39431608707686,
+        19.628777859481925
+      ],
+      "date": "2023-09-13",
+      "polarizations": "HH HV VH VV"
+    }
+  ],
+  "pairs": [
+    {
+      "optical": "Cartosat MX 205132611",
+      "sar": "crs1-prefix",
+      "bbox_overlap": false
+    },
+    {
+      "optical": "Cartosat MX 205132611",
+      "sar": "crs2-prefix",
+      "bbox_overlap": false
+    },
+    {
+      "optical": "Cartosat MX 205132611",
+      "sar": "frs1-prefix",
+      "bbox_overlap": false
+    },
+    {
+      "optical": "Cartosat MX 205132611",
+      "sar": "mrs1-prefix",
+      "bbox_overlap": false
+    },
+    {
+      "optical": "Cartosat MX 205132611",
+      "sar": "mrs2-prefix",
+      "bbox_overlap": false
+    },
+    {
+      "optical": "Cartosat MX 205132611",
+      "sar": "frs2",
+      "bbox_overlap": false
+    },
+    {
+      "optical": "Cartosat merged archive 247677521 / metadata 247677522",
+      "sar": "crs1-prefix",
+      "bbox_overlap": false
+    },
+    {
+      "optical": "Cartosat merged archive 247677521 / metadata 247677522",
+      "sar": "crs2-prefix",
+      "bbox_overlap": false
+    },
+    {
+      "optical": "Cartosat merged archive 247677521 / metadata 247677522",
+      "sar": "frs1-prefix",
+      "bbox_overlap": false
+    },
+    {
+      "optical": "Cartosat merged archive 247677521 / metadata 247677522",
+      "sar": "mrs1-prefix",
+      "bbox_overlap": false
+    },
+    {
+      "optical": "Cartosat merged archive 247677521 / metadata 247677522",
+      "sar": "mrs2-prefix",
+      "bbox_overlap": false
+    },
+    {
+      "optical": "Cartosat merged archive 247677521 / metadata 247677522",
+      "sar": "frs2",
+      "bbox_overlap": false
+    }
+  ],
+  "scope": "Bounding-box exclusion only. Non-overlap rules out pairing. Overlap would not prove registration or temporal compatibility.",
+  "pan": "PAN metadata unavailable in downloaded prefix; not assessed. No assertion that the full catalogue lacks a valid pair."
+}

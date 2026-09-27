@@ -9,3 +9,6 @@ Freeze the candidate code revision, package inventory, model hashes, preprocessi
 Evaluate once. Export per-case predictions and timing plus aggregate task metrics. Keep VQA/caption review separate from mask metrics. If a result informs changes, retire it to regression evidence and select a genuinely new acceptance set.
 
 Current blocker: a verified unused eligible population and predeclared acceptance thresholds have not been established. Existing 21 September cases must not be relabelled as untouched.
+
+
+26 September update: a bounded temporal/component protocol was frozen and executed; see [results](SUBMISSION_VALIDATION.md). This does not close the full-system untouched acceptance gate described above.

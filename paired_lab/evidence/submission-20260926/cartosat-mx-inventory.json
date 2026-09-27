@@ -1,0 +1,337 @@
+{
+  "archive": "cartosat-mx.zip",
+  "bytes": 176452118,
+  "sha256": "2614599a9a22d56fa12da238e40040f8d57f3526c03e19e9596e49c2c228ddb1",
+  "inspected_utc": "2026-09-26T14:41:56.705248+00:00",
+  "members": [
+    {
+      "name": "5132611/",
+      "bytes": 0,
+      "compressed_bytes": 0,
+      "crc": 0
+    },
+    {
+      "name": "5132611/205132611.jpg",
+      "bytes": 20360,
+      "compressed_bytes": 19842,
+      "crc": 11983073
+    },
+    {
+      "name": "5132611/ACC_REP.txt",
+      "bytes": 154,
+      "compressed_bytes": 99,
+      "crc": 783654268
+    },
+    {
+      "name": "5132611/BAND.dbf",
+      "bytes": 147,
+      "compressed_bytes": 51,
+      "crc": 526443449
+    },
+    {
+      "name": "5132611/BAND.prj",
+      "bytes": 389,
+      "compressed_bytes": 253,
+      "crc": 2636607220
+    },
+    {
+      "name": "5132611/BAND.shp",
+      "bytes": 236,
+      "compressed_bytes": 116,
+      "crc": 4274824811
+    },
+    {
+      "name": "5132611/BAND.shx",
+      "bytes": 108,
+      "compressed_bytes": 72,
+      "crc": 183314293
+    },
+    {
+      "name": "5132611/BAND1.tif",
+      "bytes": 117580635,
+      "compressed_bytes": 33699422,
+      "crc": 1448146049
+    },
+    {
+      "name": "5132611/BAND2.tif",
+      "bytes": 117580635,
+      "compressed_bytes": 43969431,
+      "crc": 539860138
+    },
+    {
+      "name": "5132611/BAND3.tif",
+      "bytes": 117580634,
+      "compressed_bytes": 46695238,
+      "crc": 2426578501
+    },
+    {
+      "name": "5132611/BAND4.tif",
+      "bytes": 117580635,
+      "compressed_bytes": 52063023,
+      "crc": 2567706995
+    },
+    {
+      "name": "5132611/BAND_META.txt",
+      "bytes": 2476,
+      "compressed_bytes": 1116,
+      "crc": 3827030504
+    },
+    {
+      "name": "5132611/BAND_META.xml",
+      "bytes": 4686,
+      "compressed_bytes": 1533,
+      "crc": 2478412831
+    }
+  ],
+  "rasters": [
+    {
+      "member": "5132611/BAND1.tif",
+      "driver": "GTiff",
+      "width": 7687,
+      "height": 7640,
+      "count": 1,
+      "dtypes": [
+        "uint16"
+      ],
+      "descriptions": [
+        null
+      ],
+      "colorinterp": [
+        "gray"
+      ],
+      "crs": "EPSG:32645",
+      "bounds": [
+        372099.2,
+        2241763.2,
+        384398.4,
+        2253987.2
+      ],
+      "transform": [
+        1.6,
+        0.0,
+        372099.2,
+        0.0,
+        -1.6,
+        2253987.2
+      ],
+      "res": [
+        1.6,
+        1.6
+      ],
+      "nodata": 0.0,
+      "scales": [
+        1.0
+      ],
+      "offsets": [
+        0.0
+      ],
+      "tags": {
+        "AREA_OR_POINT": "Area"
+      },
+      "band_tags": [
+        {
+          "STATISTICS_MAXIMUM": "2350",
+          "STATISTICS_MEAN": "199.18833704466",
+          "STATISTICS_MINIMUM": "4",
+          "STATISTICS_STDDEV": "30.888204648003"
+        }
+      ],
+      "gcps_count": 0,
+      "rpc": {},
+      "bounds_wgs84": [
+        85.77440495699264,
+        20.26936400166231,
+        85.89302932199284,
+        20.38058707823021
+      ]
+    },
+    {
+      "member": "5132611/BAND2.tif",
+      "driver": "GTiff",
+      "width": 7687,
+      "height": 7640,
+      "count": 1,
+      "dtypes": [
+        "uint16"
+      ],
+      "descriptions": [
+        null
+      ],
+      "colorinterp": [
+        "gray"
+      ],
+      "crs": "EPSG:32645",
+      "bounds": [
+        372099.2,
+        2241763.2,
+        384398.4,
+        2253987.2
+      ],
+      "transform": [
+        1.6,
+        0.0,
+        372099.2,
+        0.0,
+        -1.6,
+        2253987.2
+      ],
+      "res": [
+        1.6,
+        1.6
+      ],
+      "nodata": 0.0,
+      "scales": [
+        1.0
+      ],
+      "offsets": [
+        0.0
+      ],
+      "tags": {
+        "AREA_OR_POINT": "Area"
+      },
+      "band_tags": [
+        {
+          "STATISTICS_MAXIMUM": "2454",
+          "STATISTICS_MEAN": "295.94798417397",
+          "STATISTICS_MINIMUM": "1",
+          "STATISTICS_STDDEV": "61.140661141937"
+        }
+      ],
+      "gcps_count": 0,
+      "rpc": {},
+      "bounds_wgs84": [
+        85.77440495699264,
+        20.26936400166231,
+        85.89302932199284,
+        20.38058707823021
+      ]
+    },
+    {
+      "member": "5132611/BAND3.tif",
+      "driver": "GTiff",
+      "width": 7687,
+      "height": 7640,
+      "count": 1,
+      "dtypes": [
+        "uint16"
+      ],
+      "descriptions": [
+        null
+      ],
+      "colorinterp": [
+        "gray"
+      ],
+      "crs": "EPSG:32645",
+      "bounds": [
+        372099.2,
+        2241763.2,
+        384398.4,
+        2253987.2
+      ],
+      "transform": [
+        1.6,
+        0.0,
+        372099.2,
+        0.0,
+        -1.6,
+        2253987.2
+      ],
+      "res": [
+        1.6,
+        1.6
+      ],
+      "nodata": 0.0,
+      "scales": [
+        1.0
+      ],
+      "offsets": [
+        0.0
+      ],
+      "tags": {
+        "AREA_OR_POINT": "Area"
+      },
+      "band_tags": [
+        {
+          "STATISTICS_MAXIMUM": "2429",
+          "STATISTICS_MEAN": "237.9201063927",
+          "STATISTICS_MINIMUM": "1",
+          "STATISTICS_STDDEV": "87.306957435511"
+        }
+      ],
+      "gcps_count": 0,
+      "rpc": {},
+      "bounds_wgs84": [
+        85.77440495699264,
+        20.26936400166231,
+        85.89302932199284,
+        20.38058707823021
+      ]
+    },
+    {
+      "member": "5132611/BAND4.tif",
+      "driver": "GTiff",
+      "width": 7687,
+      "height": 7640,
+      "count": 1,
+      "dtypes": [
+        "uint16"
+      ],
+      "descriptions": [
+        null
+      ],
+      "colorinterp": [
+        "gray"
+      ],
+      "crs": "EPSG:32645",
+      "bounds": [
+        372099.2,
+        2241763.2,
+        384398.4,
+        2253987.2
+      ],
+      "transform": [
+        1.6,
+        0.0,
+        372099.2,
+        0.0,
+        -1.6,
+        2253987.2
+      ],
+      "res": [
+        1.6,
+        1.6
+      ],
+      "nodata": 0.0,
+      "scales": [
+        1.0
+      ],
+      "offsets": [
+        0.0
+      ],
+      "tags": {
+        "AREA_OR_POINT": "Area"
+      },
+      "band_tags": [
+        {
+          "STATISTICS_MAXIMUM": "2412",
+          "STATISTICS_MEAN": "369.63179955274",
+          "STATISTICS_MINIMUM": "1",
+          "STATISTICS_STDDEV": "86.106859654228"
+        }
+      ],
+      "gcps_count": 0,
+      "rpc": {},
+      "bounds_wgs84": [
+        85.77440495699264,
+        20.26936400166231,
+        85.89302932199284,
+        20.38058707823021
+      ]
+    }
+  ],
+  "metadata": {
+    "5132611/ACC_REP.txt": "       Product Accuracy Report\r\n       -----------------------\r\nAcross Track Accuracy(kms)= 0.00129482135177\r\nAlong Track Accuracy(kms)= 0.0012811678648\r\n",
+    "5132611/BAND_META.txt": "ProductID=205132611\r\nOTSProductID=$\r\nSatID=CARTOSAT-2E\r\nSensor=MX\r\nSessionNumber=1\r\nSegmentNumber=0\r\nStripNumber=1\r\nSceneNumber=82\r\nDateOfPass=16-May-2020\r\nDateOfDump=16-May-2020\r\nPassType=PLD\r\nImagingOrbitNo=16064\r\nDumpingOrbitNo=16064\r\nImagingMode=S\r\nProdCode=STUC00GTD\r\nProdType=ORTHO\r\nImageFormat=GEOTIFF\r\nProcessingLevel=ORTHORECTIFIED\r\nResampCode=CC\r\nShiftPercentage=0\r\nNoOfBands=4\r\nBandNumbers=1234\r\nStartBand=1\r\nNoScans=7640\r\nNoPixels=7687\r\nImageULLat=20.379865\r\nImageULLon=85.794242\r\nImageURLat=20.361795\r\nImageURLon=85.892285\r\nImageLLLat=20.288142\r\nImageLLLon=85.775219\r\nImageLRLat=20.270035\r\nImageLRLon=85.873191\r\nProdULLat=20.379799\r\nProdULLon=85.774405\r\nProdURLat=20.380587\r\nProdURLon=85.892243\r\nProdLLLat=20.269364\r\nProdLLLon=85.775275\r\nProdLRLat=20.270147\r\nProdLRLon=85.893029\r\nProdULMapX=372099.200000\r\nProdULMapY=2253987.200000\r\nProdURMapX=384398.400000\r\nProdURMapY=2253987.200000\r\nProdLLMapX=372099.200000\r\nProdLLMapY=2241763.200000\r\nProdLRMapX=384398.400000\r\nProdLRMapY=2241763.200000\r\nInputResolutionAlong=1.61\r\nInputResolutionAcross=1.63\r\nPixelSpacingAlong=1.6\r\nPixelSpacingAcross=1.6\r\nMapProjection=UTM\r\nMapOriginLat=20.324999\r\nMapOriginLon=85.833715\r\nEllipsoid=WGS84\r\nDatum=WGS84\r\nZoneNumber=45\r\nSceneCenterLat=20.324999\r\nSceneCenterLon=85.833715\r\nSatelliteAltitude=503.96654\r\nSunAzimuthAtCenter=86.04287\r\nSunElevationAtCenter=57.79374\r\nSatelliteHeadingAngle=192.04835\r\nImageHeadingAngle=191.11375\r\nSceneCenterRoll=-8.87488\r\nSceneCenterPitch=1.49472\r\nSceneCenterYaw=3.43658\r\nTiltAngle=-8.87488\r\nSceneStartTime=16-May-2020 03:52:56:6904\r\nSceneCentreTime=16-May-2020 03:52:57:4126\r\nSceneEndTime=16-May-2020 03:52:58:1349\r\nCompressionStatus=True\r\nOnBoardNUC=False\r\nGroundNUC=True\r\nNUCTableVersion=00069332\r\nIntegrationTime=0.000225000\r\nTDIStageSelection=15\r\nSourceOfOrbit=2\r\nSourceOfAttitude=3\r\nSourceOfAttitudeUsed=3\r\nMSMAttitudeUsed=False\r\nB1Temp=23.5\r\nB2Temp=23.5\r\nB3Temp=23.5\r\nB4Temp=23.5\r\nB1Lmin=0\r\nB2Lmin=0\r\nB3Lmin=0\r\nB4Lmin=0\r\nB1Lmax=64.717\r\nB2Lmax=40.499\r\nB3Lmax=39.251\r\nB4Lmax=38.187\r\nB1SaturationRadiance=64.717\r\nB2SaturationRadiance=40.499\r\nB3SaturationRadiance=39.251\r\nB4SaturationRadiance=38.187\r\nBlockLosses=0\r\nMeanElevation=-23\r\nDEMCorrection=TRUE\r\nDEMSource=ASTER30\r\nBytesPerPixel=2\r\nBitsPerPixel=11\r\nRestrictedArea=NA\r\nStripId=16848\r\nAOCEStripStartTime=2005160351120104250468\r\nJpegNoColumns=512\r\nJpegNoRows=512\r\nStationID=SAN\r\nGenAgency=NRSC\r\nGenerationDateTime=03-Dec-20 11:43:33\r\nRemarks=Generated by SPD-VADS at NRSC\r\nHostName=NRSC-PC\r\n",
+    "5132611/BAND_META.xml": "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\"?>\n<MetaData>\n    <ProductID>205132611</ProductID>\n    <OTSProductID>$</OTSProductID>\n    <SatID>CARTOSAT-2E</SatID>\n    <Sensor>MX</Sensor>\n    <SessionNumber>1</SessionNumber>\n    <SegmentNumber>0</SegmentNumber>\n    <StripNumber>1</StripNumber>\n    <SceneNumber>82</SceneNumber>\n    <DateOfPass>16-May-2020</DateOfPass>\n    <DateOfDump>16-May-2020</DateOfDump>\n    <PassType>PLD</PassType>\n    <ImagingOrbitNo>16064</ImagingOrbitNo>\n    <DumpingOrbitNo>16064</DumpingOrbitNo>\n    <ImagingMode>S</ImagingMode>\n    <ProdCode>STUC00GTD</ProdCode>\n    <ProdType>ORTHO</ProdType>\n    <ImageFormat>GEOTIFF</ImageFormat>\n    <ProcessingLevel>ORTHORECTIFIED</ProcessingLevel>\n    <ResampCode>CC</ResampCode>\n    <ShiftPercentage>0</ShiftPercentage>\n    <NoOfBands>4</NoOfBands>\n    <BandNumbers>1234</BandNumbers>\n    <StartBand>1</StartBand>\n    <NoScans>7640</NoScans>\n    <NoPixels>7687</NoPixels>\n    <ImageULLat>20.379865</ImageULLat>\n    <ImageULLon>85.794242</ImageULLon>\n    <ImageURLat>20.361795</ImageURLat>\n    <ImageURLon>85.892285</ImageURLon>\n    <ImageLLLat>20.288142</ImageLLLat>\n    <ImageLLLon>85.775219</ImageLLLon>\n    <ImageLRLat>20.270035</ImageLRLat>\n    <ImageLRLon>85.873191</ImageLRLon>\n    <ProdULLat>20.379799</ProdULLat>\n    <ProdULLon>85.774405</ProdULLon>\n    <ProdURLat>20.380587</ProdURLat>\n    <ProdURLon>85.892243</ProdURLon>\n    <ProdLLLat>20.269364</ProdLLLat>\n    <ProdLLLon>85.775275</ProdLLLon>\n    <ProdLRLat>20.270147</ProdLRLat>\n    <ProdLRLon>85.893029</ProdLRLon>\n    <ProdULMapX>372099.200000</ProdULMapX>\n    <ProdULMapY>2253987.200000</ProdULMapY>\n    <ProdURMapX>384398.400000</ProdURMapX>\n    <ProdURMapY>2253987.200000</ProdURMapY>\n    <ProdLLMapX>372099.200000</ProdLLMapX>\n    <ProdLLMapY>2241763.200000</ProdLLMapY>\n    <ProdLRMapX>384398.400000</ProdLRMapX>\n    <ProdLRMapY>2241763.200000</ProdLRMapY>\n    <InputResolutionAlong>1.61</InputResolutionAlong>\n    <InputResolutionAcross>1.63</InputResolutionAcross>\n    <PixelSpacingAlong>1.6</PixelSpacingAlong>\n    <PixelSpacingAcross>1.6</PixelSpacingAcross>\n    <MapProjection>UTM</MapProjection>\n    <MapOriginLat>20.324999</MapOriginLat>\n    <MapOriginLon>85.833715</MapOriginLon>\n    <Ellipsoid>WGS84</Ellipsoid>\n    <Datum>WGS84</Datum>\n    <ZoneNumber>45</ZoneNumber>\n    <SceneCenterLat>20.324999</SceneCenterLat>\n    <SceneCenterLon>85.833715</SceneCenterLon>\n    <SatelliteAltitude>503.96654</SatelliteAltitude>\n    <SunAzimuthAtCenter>86.04287</SunAzimuthAtCenter>\n    <SunElevationAtCenter>57.79374</SunElevationAtCenter>\n    <SatelliteHeadingAngle>192.04835</SatelliteHeadingAngle>\n    <ImageHeadingAngle>191.11375</ImageHeadingAngle>\n    <SceneCenterRoll>-8.87488</SceneCenterRoll>\n    <SceneCenterPitch>1.49472</SceneCenterPitch>\n    <SceneCenterYaw>3.43658</SceneCenterYaw>\n    <TiltAngle>-8.87488</TiltAngle>\n    <SceneStartTime>16-May-2020 03:52:56:6904</SceneStartTime>\n    <SceneCentreTime>16-May-2020 03:52:57:4126</SceneCentreTime>\n    <SceneEndTime>16-May-2020 03:52:58:1349</SceneEndTime>\n    <CompressionStatus>True</CompressionStatus>\n    <OnBoardNUC>False</OnBoardNUC>\n    <GroundNUC>True</GroundNUC>\n    <NUCTableVersion>00069332</NUCTableVersion>\n    <IntegrationTime>0.000225000</IntegrationTime>\n    <TDIStageSelection>15</TDIStageSelection>\n    <SourceOfOrbit>2</SourceOfOrbit>\n    <SourceOfAttitude>3</SourceOfAttitude>\n    <SourceOfAttitudeUsed>3</SourceOfAttitudeUsed>\n    <MSMAttitudeUsed>False</MSMAttitudeUsed>\n    <B1Temp>23.5</B1Temp>\n    <B2Temp>23.5</B2Temp>\n    <B3Temp>23.5</B3Temp>\n    <B4Temp>23.5</B4Temp>\n    <B1Lmin>0</B1Lmin>\n    <B2Lmin>0</B2Lmin>\n    <B3Lmin>0</B3Lmin>\n    <B4Lmin>0</B4Lmin>\n    <B1Lmax>64.717</B1Lmax>\n    <B2Lmax>40.499</B2Lmax>\n    <B3Lmax>39.251</B3Lmax>\n    <B4Lmax>38.187</B4Lmax>\n    <B1SaturationRadiance>64.717</B1SaturationRadiance>\n    <B2SaturationRadiance>40.499</B2SaturationRadiance>\n    <B3SaturationRadiance>39.251</B3SaturationRadiance>\n    <B4SaturationRadiance>38.187</B4SaturationRadiance>\n    <BlockLosses>0</BlockLosses>\n    <MeanElevation>-23</MeanElevation>\n    <DEMCorrection>TRUE</DEMCorrection>\n    <DEMSource>ASTER30</DEMSource>\n    <BytesPerPixel>2</BytesPerPixel>\n    <BitsPerPixel>11</BitsPerPixel>\n    <RestrictedArea>NA</RestrictedArea>\n    <StripId>16848</StripId>\n    <AOCEStripStartTime>2005160351120104250468</AOCEStripStartTime>\n    <JpegNoColumns>512</JpegNoColumns>\n    <JpegNoRows>512</JpegNoRows>\n    <StationID>SAN</StationID>\n    <GenAgency>NRSC</GenAgency>\n    <GenerationDateTime>03-Dec-20 11:43:33</GenerationDateTime>\n    <Remarks>Generated by SPD-VADS at NRSC</Remarks>\n    <HostName>NRSC-PC</HostName>\n</MetaData>\n"
+  }
+}
