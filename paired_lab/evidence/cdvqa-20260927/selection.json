@@ -1,0 +1,18 @@
+{
+  "seed": 20260927,
+  "filenames": [
+    "02457.png",
+    "01446.png",
+    "02560.png",
+    "02028.png",
+    "05209.png",
+    "02693.png",
+    "01793.png",
+    "09986.png",
+    "02573.png",
+    "09010.png",
+    "02735.png",
+    "06281.png"
+  ],
+  "scope": "12 distinct filenames sampled without consulting answers or model output. Existing checkpoint upstream exposure unknown; cross-domain exploratory subset."
+}

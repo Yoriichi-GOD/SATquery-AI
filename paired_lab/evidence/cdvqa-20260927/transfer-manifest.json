@@ -1,0 +1,241 @@
+{
+  "cases": [
+    {
+      "name": "02457.png",
+      "before": "/mnt/c/Users/nrgen/.codex/visualizations/2026/09/19/01a0b9f9-b20e-71a2-b139-ca9ab926b94e/cdvqa-data/selected/im1/02457.png",
+      "after": "/mnt/c/Users/nrgen/.codex/visualizations/2026/09/19/01a0b9f9-b20e-71a2-b139-ca9ab926b94e/cdvqa-data/selected/im2/02457.png",
+      "sha256_before": "6fad7c67e2adea1032cab80a37100d84c3e519b591d3935c1acadf306d4901dc",
+      "sha256_after": "925b1085ab4153f90b7f3835e120c6fe3be4e9572b4e298af8bd6b86aabe8e2c",
+      "native_shape": [
+        512,
+        512,
+        3
+      ],
+      "question_count": 39,
+      "building_questions": [
+        {
+          "id": 25207,
+          "question": "Did the areas of buildings change?",
+          "reference": "yes"
+        }
+      ]
+    },
+    {
+      "name": "01446.png",
+      "before": "/mnt/c/Users/nrgen/.codex/visualizations/2026/09/19/01a0b9f9-b20e-71a2-b139-ca9ab926b94e/cdvqa-data/selected/im1/01446.png",
+      "after": "/mnt/c/Users/nrgen/.codex/visualizations/2026/09/19/01a0b9f9-b20e-71a2-b139-ca9ab926b94e/cdvqa-data/selected/im2/01446.png",
+      "sha256_before": "a2f70d84ff7a7625ebc1a1e699dc804c47c18d402268be04db0df25abf2b1687",
+      "sha256_after": "d07f76a10866aa9cdbaa5eed42509b513907e554cd969f6f33de4c962b1fd034",
+      "native_shape": [
+        512,
+        512,
+        3
+      ],
+      "question_count": 44,
+      "building_questions": [
+        {
+          "id": 33500,
+          "question": "Did the regions of buildings change?",
+          "reference": "yes"
+        }
+      ]
+    },
+    {
+      "name": "02560.png",
+      "before": "/mnt/c/Users/nrgen/.codex/visualizations/2026/09/19/01a0b9f9-b20e-71a2-b139-ca9ab926b94e/cdvqa-data/selected/im1/02560.png",
+      "after": "/mnt/c/Users/nrgen/.codex/visualizations/2026/09/19/01a0b9f9-b20e-71a2-b139-ca9ab926b94e/cdvqa-data/selected/im2/02560.png",
+      "sha256_before": "585f1d092c0d0e131f8c755493e455a0ee455b77cd3912ddb5409f7f2815ff64",
+      "sha256_after": "124bb99fb96c756e788b5ac00d922e48174a4e71d6f1b59c4188ecb8994bcf50",
+      "native_shape": [
+        512,
+        512,
+        3
+      ],
+      "question_count": 35,
+      "building_questions": [
+        {
+          "id": 1267,
+          "question": "Did the regions of buildings change?",
+          "reference": "yes"
+        }
+      ]
+    },
+    {
+      "name": "02028.png",
+      "before": "/mnt/c/Users/nrgen/.codex/visualizations/2026/09/19/01a0b9f9-b20e-71a2-b139-ca9ab926b94e/cdvqa-data/selected/im1/02028.png",
+      "after": "/mnt/c/Users/nrgen/.codex/visualizations/2026/09/19/01a0b9f9-b20e-71a2-b139-ca9ab926b94e/cdvqa-data/selected/im2/02028.png",
+      "sha256_before": "3f5b4258728d7a4a39dc08e854be1fc0e9fe8e713cde538ce580a69dec8f8305",
+      "sha256_after": "b0efd1f7df8cf5c526b7ecf0ee769191883ddcb8fabeb4703daa7b6d61dc25f7",
+      "native_shape": [
+        512,
+        512,
+        3
+      ],
+      "question_count": 46,
+      "building_questions": [
+        {
+          "id": 9153,
+          "question": "Did the areas of buildings change?",
+          "reference": "yes"
+        }
+      ]
+    },
+    {
+      "name": "05209.png",
+      "before": "/mnt/c/Users/nrgen/.codex/visualizations/2026/09/19/01a0b9f9-b20e-71a2-b139-ca9ab926b94e/cdvqa-data/selected/im1/05209.png",
+      "after": "/mnt/c/Users/nrgen/.codex/visualizations/2026/09/19/01a0b9f9-b20e-71a2-b139-ca9ab926b94e/cdvqa-data/selected/im2/05209.png",
+      "sha256_before": "a2d9a2dad99edff89b9f0d7b17ca5ac5415148adc9a835c29f37e76df24070ac",
+      "sha256_after": "500bb80d1f986efe7d98d20ad8c85d8302593d8bd6ecfe0ad84b481809be06f9",
+      "native_shape": [
+        512,
+        512,
+        3
+      ],
+      "question_count": 37,
+      "building_questions": [
+        {
+          "id": 16629,
+          "question": "Have the areas of buildings changed?",
+          "reference": "yes"
+        }
+      ]
+    },
+    {
+      "name": "02693.png",
+      "before": "/mnt/c/Users/nrgen/.codex/visualizations/2026/09/19/01a0b9f9-b20e-71a2-b139-ca9ab926b94e/cdvqa-data/selected/im1/02693.png",
+      "after": "/mnt/c/Users/nrgen/.codex/visualizations/2026/09/19/01a0b9f9-b20e-71a2-b139-ca9ab926b94e/cdvqa-data/selected/im2/02693.png",
+      "sha256_before": "f2522177d3ace8d4ed15ec212a21c522b8ca90f577f4d7ecd674222ec24977cf",
+      "sha256_after": "48cddd6d72cc7ddfcde86f2d517f4ebf00111a8964e263f7db81ef286fd973dc",
+      "native_shape": [
+        512,
+        512,
+        3
+      ],
+      "question_count": 38,
+      "building_questions": []
+    },
+    {
+      "name": "01793.png",
+      "before": "/mnt/c/Users/nrgen/.codex/visualizations/2026/09/19/01a0b9f9-b20e-71a2-b139-ca9ab926b94e/cdvqa-data/selected/im1/01793.png",
+      "after": "/mnt/c/Users/nrgen/.codex/visualizations/2026/09/19/01a0b9f9-b20e-71a2-b139-ca9ab926b94e/cdvqa-data/selected/im2/01793.png",
+      "sha256_before": "f566c2f3bb3d4f1784b3c7ef3f2ecfdd85928752e3a8df89fcd0a6c5d8aa2e09",
+      "sha256_after": "99546ba82f85130e87aed06156769624cc921f1ee068f127ba1cf83519ffcdcb",
+      "native_shape": [
+        512,
+        512,
+        3
+      ],
+      "question_count": 48,
+      "building_questions": [
+        {
+          "id": 8909,
+          "question": "Did the regions of buildings change?",
+          "reference": "yes"
+        }
+      ]
+    },
+    {
+      "name": "09986.png",
+      "before": "/mnt/c/Users/nrgen/.codex/visualizations/2026/09/19/01a0b9f9-b20e-71a2-b139-ca9ab926b94e/cdvqa-data/selected/im1/09986.png",
+      "after": "/mnt/c/Users/nrgen/.codex/visualizations/2026/09/19/01a0b9f9-b20e-71a2-b139-ca9ab926b94e/cdvqa-data/selected/im2/09986.png",
+      "sha256_before": "8d25fea0060017403f69bd6c11454604c28028da4d6032e970621e5a1617f733",
+      "sha256_after": "ebf91c83b02e8efb81cc2ae9c37c9975cb2566ade6d6d59e3e8799a2e581d8b0",
+      "native_shape": [
+        512,
+        512,
+        3
+      ],
+      "question_count": 41,
+      "building_questions": []
+    },
+    {
+      "name": "02573.png",
+      "before": "/mnt/c/Users/nrgen/.codex/visualizations/2026/09/19/01a0b9f9-b20e-71a2-b139-ca9ab926b94e/cdvqa-data/selected/im1/02573.png",
+      "after": "/mnt/c/Users/nrgen/.codex/visualizations/2026/09/19/01a0b9f9-b20e-71a2-b139-ca9ab926b94e/cdvqa-data/selected/im2/02573.png",
+      "sha256_before": "12f959132bab2f199cff39987d3ef5c91ffab3f7cd0c9fe8d52c2969107ebd92",
+      "sha256_after": "56c8affd157f6a0a8023e8d569edb65efa5ac8928600397d49c660692b840fe6",
+      "native_shape": [
+        512,
+        512,
+        3
+      ],
+      "question_count": 43,
+      "building_questions": [
+        {
+          "id": 34321,
+          "question": "Did the areas of buildings change?",
+          "reference": "yes"
+        }
+      ]
+    },
+    {
+      "name": "09010.png",
+      "before": "/mnt/c/Users/nrgen/.codex/visualizations/2026/09/19/01a0b9f9-b20e-71a2-b139-ca9ab926b94e/cdvqa-data/selected/im1/09010.png",
+      "after": "/mnt/c/Users/nrgen/.codex/visualizations/2026/09/19/01a0b9f9-b20e-71a2-b139-ca9ab926b94e/cdvqa-data/selected/im2/09010.png",
+      "sha256_before": "a246e9fba3ec27913653ee1bba3ae0eae54576e60dd8670824e63e2e665a4340",
+      "sha256_after": "07f1147c1d3b5873396fb7835f4d13932ef85fbac9dc077d3545c333c401ce2e",
+      "native_shape": [
+        512,
+        512,
+        3
+      ],
+      "question_count": 44,
+      "building_questions": [
+        {
+          "id": 34947,
+          "question": "Have the areas of buildings changed?",
+          "reference": "yes"
+        }
+      ]
+    },
+    {
+      "name": "02735.png",
+      "before": "/mnt/c/Users/nrgen/.codex/visualizations/2026/09/19/01a0b9f9-b20e-71a2-b139-ca9ab926b94e/cdvqa-data/selected/im1/02735.png",
+      "after": "/mnt/c/Users/nrgen/.codex/visualizations/2026/09/19/01a0b9f9-b20e-71a2-b139-ca9ab926b94e/cdvqa-data/selected/im2/02735.png",
+      "sha256_before": "64f8fe1aeca6cd7844a37ad6a70a712170ca8496909a8ca2fec71c5399d1a9a0",
+      "sha256_after": "aee8ccdaa66dcee4ee5f2153c76f26fc361b157ae802485781b59549462eb8c6",
+      "native_shape": [
+        512,
+        512,
+        3
+      ],
+      "question_count": 38,
+      "building_questions": [
+        {
+          "id": 35663,
+          "question": "Have the regions of buildings changed?",
+          "reference": "yes"
+        }
+      ]
+    },
+    {
+      "name": "06281.png",
+      "before": "/mnt/c/Users/nrgen/.codex/visualizations/2026/09/19/01a0b9f9-b20e-71a2-b139-ca9ab926b94e/cdvqa-data/selected/im1/06281.png",
+      "after": "/mnt/c/Users/nrgen/.codex/visualizations/2026/09/19/01a0b9f9-b20e-71a2-b139-ca9ab926b94e/cdvqa-data/selected/im2/06281.png",
+      "sha256_before": "10328abffa22edbd977573a072c099ccf89f1127a9278d8caa2ff6e99c20ea16",
+      "sha256_after": "8cc70504275406a06b347b04e97bba9cd95720d64e83d41301fa6cb0e4f7f594",
+      "native_shape": [
+        512,
+        512,
+        3
+      ],
+      "question_count": 39,
+      "building_questions": []
+    }
+  ],
+  "code_hashes": {
+    "paired_lab/mci.py": "c4e94359c90508c11fd947f7591e4da1028a73fb0082e8ae07c3821d8bb32320",
+    "paired_lab/controller.py": "644ade09dedd57579d2fdea1623222a20e953392364d9e9a792afd99a51c7cbd",
+    "paired_lab/inputs.py": "44cdc6a6326a5ea9c0b157fb074613faebc503507fc5bfef00b571af6ad6234f",
+    "scripts/test_cdvqa.py": "98da27934519844a55049a39f0362448ff3f8534404f183c2b8a13c8c01583bc"
+  },
+  "protocol": "Component-only exploratory transfer: full RGB images bilinearly resized 512 to 256; no crop; no CRS/dates fabricated. Existing MCI unchanged, CPU, one call per pair. Binary building-change probe is yes iff at least one building-class mask pixel; threshold fixed before inference, no tuning. Only unqualified full-pair building change-or-not questions scored; other CDVQA tasks not answered. Not the served product or published CDVQA protocol. Images selected without labels; upstream exposure unknown.",
+  "source_checkpoint": {
+    "repo": "lcybuaa/Change-Agent",
+    "revision": "1e679060173434cd22fd22a52effbf3c785c97a0",
+    "path": "/root/satquery/paired-lab/mci-model/MCI_model.pth",
+    "sha256": "34c6926342c40fdd6d50b43d50257cb46cb6b61763448de9ee551828a64b3eb9",
+    "source_revision": "68cbaa7f388b36e4fc10872f7a2911482d26ae5b",
+    "license_note": "Checkpoint card Apache-2.0; source MIT with academic-use statement. Preserve both statements; review before commercial release."
+  }
+}

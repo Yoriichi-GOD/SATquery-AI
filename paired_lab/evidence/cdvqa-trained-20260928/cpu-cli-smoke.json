@@ -1,0 +1,62 @@
+{
+  "status": "experimental_model_output",
+  "answer": "yes",
+  "question": "Did the areas of non-vegetated ground surface change?",
+  "model": "paired-resnet50-gru-attention-v1",
+  "checkpoint_sha256": "8b1d6beb28d2f8a4a96937243255143c7f0426d394ff6a3f3645062337177b13",
+  "encoder_sha256": "11ad3fa62ca79e40addfd354a8ec4b7c75143b3038b8d2a807fbc68deab379ca",
+  "inputs": [
+    {
+      "role": "before",
+      "filename": "02180.png",
+      "sha256": "4cc261a0bbe323becb37a0353b2f21c7928f84e4cd2a6e56f5d7c84124276f38",
+      "size": [
+        512,
+        512
+      ]
+    },
+    {
+      "role": "after",
+      "filename": "02180.png",
+      "sha256": "6b21f21da1ce850ba48c5a9949884a22aeb5ace6d31f985ebb5d82d5f9a7413c",
+      "size": [
+        512,
+        512
+      ]
+    }
+  ],
+  "alignment": "User-declared; physical co-registration is not verified",
+  "preprocessing": "Full image bilinear resize to 256x256; ImageNet normalization; frozen ResNet50 4x4 spatial features",
+  "class_scores_uncalibrated": {
+    "0": 3.9130169848907376e-20,
+    "0_to_10": 6.75329150240378e-12,
+    "10_to_20": 9.683713830810348e-10,
+    "20_to_30": 4.955302834730446e-11,
+    "30_to_40": 3.3768535190326077e-10,
+    "40_to_50": 8.581418214914649e-11,
+    "50_to_60": 6.837260792258437e-13,
+    "60_to_70": 1.9273999063429414e-11,
+    "70_to_80": 4.267679959424342e-12,
+    "80_to_90": 1.8576236198147161e-13,
+    "90_to_100": 2.6462008074405827e-16,
+    "NVG_surface": 3.812171834884873e-16,
+    "buildings": 4.567791284104672e-11,
+    "low_vegetation": 7.764222598183323e-11,
+    "no": 2.860904046997348e-08,
+    "playgrounds": 2.7554333814627796e-11,
+    "trees": 7.768666265839386e-11,
+    "water": 1.8955475887929077e-14,
+    "yes": 1.0
+  },
+  "device": "cpu",
+  "encoder_and_classifier_seconds": 0.1310565980000007,
+  "limitations": [
+    "Benchmark-trained 19-answer classifier; not general-purpose VQA.",
+    "Ratio answers are predicted bins, not geospatial measurements.",
+    "Scores are not calibrated confidence or accuracy.",
+    "No masks, localization, official-sensor or arbitrary-scene validation.",
+    "CPU precision differs from CUDA benchmark; exact answer parity is not guaranteed."
+  ],
+  "model_load_seconds": 5.461636831999996,
+  "runner_seconds": 5.678200216999997
+}

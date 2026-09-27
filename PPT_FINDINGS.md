@@ -1,5 +1,14 @@
 # PPT-ready findings — use with the scope footnotes
 
+## New CDVQA specialist — measured 28 September 2026
+
+**69.90% overall accuracy — CDVQA Test-1, all 39,686 questions / 968 image pairs.**
+
+Test-2: **65.05%**, all 31,036 questions on the same 968 pairs. Macro accuracy: 61.13% / 61.19%. Question-only controls: 68.06% / 63.24%; paired inputs improve OA by 1.84 / 1.81 percentage points.
+
+Footnote: Experimental 19-answer specialist trained on official Train and selected on Val; separate CLI evaluation, not the served UI/router. Test sets share imagery/questions. Excluding 12 previously inspected pairs: 69.89% / 65.03%. No combined product-accuracy or official-sensor claim. [Full report and evidence](docs/CDVQA_FINAL_REPORT.md).
+
+
 ## Primary evidence slide
 
 **Query-driven analysis with inspectable spatial evidence**
@@ -13,7 +22,7 @@ Footnote: Temporal: fixed 100-pair LEVIR-MCI subset, 50 changed/50 unchanged. Wa
 
 ## Verification slide / backup
 
-- 70 software regression tests passed.
+- 85 software regression tests passed (28 September 2026).
 - 61/61 valid routing development challenges passed after fixes; 12 additional paraphrases passed.
 - 10 identical/brightness controls produced zero change pixels (five base scenes).
 - Original inputs and downloadable evidence retained; known artifact URLs remained accessible after restart.

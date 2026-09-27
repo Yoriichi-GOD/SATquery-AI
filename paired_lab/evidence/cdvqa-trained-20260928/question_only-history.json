@@ -1,0 +1,162 @@
+[
+  {
+    "epoch": 1,
+    "loss": 0.8240097877822181,
+    "oa": 0.6713095310504227,
+    "aa": 0.5689347553349963,
+    "by_type": {
+      "change_or_not": 0.8282037906451052,
+      "change_ratio": 0.2575,
+      "change_ratio_types": 0.6936488169364882,
+      "change_to_what": 0.5690072639225182,
+      "decrease_or_not": 0.7065556711758585,
+      "increase_or_not": 0.7473958333333334,
+      "largest_change": 0.4875,
+      "smallest_change": 0.26166666666666666
+    }
+  },
+  {
+    "epoch": 2,
+    "loss": 0.7689271305882653,
+    "oa": 0.6659570585730795,
+    "aa": 0.5676505814264718,
+    "by_type": {
+      "change_or_not": 0.8191618848895844,
+      "change_ratio": 0.29875,
+      "change_ratio_types": 0.7007056870070568,
+      "change_to_what": 0.5601291364003228,
+      "decrease_or_not": 0.7403746097814776,
+      "increase_or_not": 0.6770833333333334,
+      "largest_change": 0.4425,
+      "smallest_change": 0.3025
+    }
+  },
+  {
+    "epoch": 3,
+    "loss": 0.7640010624430901,
+    "oa": 0.683291770573566,
+    "aa": 0.589435639809051,
+    "by_type": {
+      "change_or_not": 0.8226395409494001,
+      "change_ratio": 0.32,
+      "change_ratio_types": 0.7152345371523454,
+      "change_to_what": 0.5690072639225182,
+      "decrease_or_not": 0.7403746097814776,
+      "increase_or_not": 0.7473958333333334,
+      "largest_change": 0.4875,
+      "smallest_change": 0.31333333333333335
+    }
+  },
+  {
+    "epoch": 4,
+    "loss": 0.7615144472251567,
+    "oa": 0.6825618879630193,
+    "aa": 0.5907206557156462,
+    "by_type": {
+      "change_or_not": 0.8191618848895844,
+      "change_ratio": 0.335,
+      "change_ratio_types": 0.7131589871315899,
+      "change_to_what": 0.5690072639225182,
+      "decrease_or_not": 0.7403746097814776,
+      "increase_or_not": 0.7473958333333334,
+      "largest_change": 0.4875,
+      "smallest_change": 0.31416666666666665
+    }
+  },
+  {
+    "epoch": 5,
+    "loss": 0.7587146269258602,
+    "oa": 0.680919652089289,
+    "aa": 0.587490321552093,
+    "by_type": {
+      "change_or_not": 0.8191618848895844,
+      "change_ratio": 0.3325,
+      "change_ratio_types": 0.7156496471564965,
+      "change_to_what": 0.5690072639225182,
+      "decrease_or_not": 0.7403746097814776,
+      "increase_or_not": 0.7473958333333334,
+      "largest_change": 0.4875,
+      "smallest_change": 0.28833333333333333
+    }
+  },
+  {
+    "epoch": 6,
+    "loss": 0.7580821340860322,
+    "oa": 0.680919652089289,
+    "aa": 0.583518644542093,
+    "by_type": {
+      "change_or_not": 0.8282037906451052,
+      "change_ratio": 0.3175,
+      "change_ratio_types": 0.7131589871315899,
+      "change_to_what": 0.5690072639225182,
+      "decrease_or_not": 0.7320499479708636,
+      "increase_or_not": 0.7473958333333334,
+      "largest_change": 0.4875,
+      "smallest_change": 0.2733333333333333
+    }
+  },
+  {
+    "epoch": 7,
+    "loss": 0.7573601601197738,
+    "oa": 0.6780609451979807,
+    "aa": 0.58458603232425,
+    "by_type": {
+      "change_or_not": 0.8226395409494001,
+      "change_ratio": 0.3325,
+      "change_ratio_types": 0.7131589871315899,
+      "change_to_what": 0.549636803874092,
+      "decrease_or_not": 0.6971904266389178,
+      "increase_or_not": 0.7473958333333334,
+      "largest_change": 0.4875,
+      "smallest_change": 0.32666666666666666
+    }
+  },
+  {
+    "epoch": 8,
+    "loss": 0.7574581324823143,
+    "oa": 0.6817711818015936,
+    "aa": 0.5885001747469127,
+    "by_type": {
+      "change_or_not": 0.8254216657972526,
+      "change_ratio": 0.3325,
+      "change_ratio_types": 0.7090078870900789,
+      "change_to_what": 0.5690072639225182,
+      "decrease_or_not": 0.7180020811654526,
+      "increase_or_not": 0.7473958333333334,
+      "largest_change": 0.4875,
+      "smallest_change": 0.31916666666666665
+    }
+  },
+  {
+    "epoch": 9,
+    "loss": 0.7555640712957974,
+    "oa": 0.6764187093242503,
+    "aa": 0.5798093685346632,
+    "by_type": {
+      "change_or_not": 0.8226395409494001,
+      "change_ratio": 0.3125,
+      "change_ratio_types": 0.6957243669572437,
+      "change_to_what": 0.5690072639225182,
+      "decrease_or_not": 0.7403746097814776,
+      "increase_or_not": 0.7473958333333334,
+      "largest_change": 0.43166666666666664,
+      "smallest_change": 0.31916666666666665
+    }
+  },
+  {
+    "epoch": 10,
+    "loss": 0.7535264718440152,
+    "oa": 0.6786083571558907,
+    "aa": 0.5853984133021822,
+    "by_type": {
+      "change_or_not": 0.8226395409494001,
+      "change_ratio": 0.3325,
+      "change_ratio_types": 0.7206309672063097,
+      "change_to_what": 0.5690072639225182,
+      "decrease_or_not": 0.7268470343392299,
+      "increase_or_not": 0.7057291666666666,
+      "largest_change": 0.4866666666666667,
+      "smallest_change": 0.31916666666666665
+    }
+  }
+]

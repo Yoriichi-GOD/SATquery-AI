@@ -1,0 +1,9 @@
+{
+  "command": "python -m unittest discover -s tests -v",
+  "environment": "/root/satquery/repo-check311",
+  "tests": 85,
+  "seconds": 2.632,
+  "exit_code": 0,
+  "result": "OK",
+  "scope": "Existing software regression suite; includes mocks. Separate real-model checks in release-verification.json."
+}

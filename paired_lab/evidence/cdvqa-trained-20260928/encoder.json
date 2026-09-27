@@ -1,0 +1,8 @@
+{
+  "weights": "ResNet50_Weights.IMAGENET1K_V2",
+  "checkpoint_hashes": {
+    "resnet50-11ad3fa6.pth": "11ad3fa62ca79e40addfd354a8ec4b7c75143b3038b8d2a807fbc68deab379ca"
+  },
+  "extraction_seconds": 96.825590077,
+  "feature_cache_sha256": "e7a2c9479d16346d8ba781f439ca7d05da7c7ded713a609badbc7ec090e59d91"
+}

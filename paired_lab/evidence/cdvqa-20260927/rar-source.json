@@ -1,0 +1,21 @@
+{
+  "file": "/mnt/c/Users/nrgen/.codex/visualizations/2026/09/19/01a0b9f9-b20e-71a2-b139-ca9ab926b94e/cdvqa-data/SECOND_train_set.rar",
+  "bytes": 2406111691,
+  "sha256": "5ee2a82b5824b3f5e3c5bfaf018835862e7623993ff9ac5ce57fd11fcfad2b4e",
+  "crc32": 3260249105,
+  "outer_member_crc_verified": true,
+  "source": {
+    "label_revision": "cc5893123dd32326de38745b65d2ffe45055937b",
+    "archive_url": "https://drive.google.com/file/d/1mN8jzCKKK27p3ODGoDgepjiRYGQpB34u/view",
+    "author_page": "https://captain-whu.github.io/SCD/",
+    "archive_bytes": 3785055247,
+    "last_modified": "Wed, 01 Jun 2022 10:53:14 GMT",
+    "downloaded_bytes": 348,
+    "label_hashes": {
+      "Test_answers.json": "6f1b7bb5db44f8fb003e12d44c685b1a84478986e1874d14c1f314543dc40ee1",
+      "Test_images.json": "99b8151791ab4c4e6e57cb8d548dbb7c0e93c0890692379d61f63e4a940f1ba5",
+      "Test_questions.json": "58eb0e091d143c719a979bb7b8fa34ff9bcabae126ee40b29309c699c806d9e2"
+    },
+    "scope": "Inventory only; selected archive entries must be CRC-verified when downloaded. Entire archive not downloaded or hashed."
+  }
+}

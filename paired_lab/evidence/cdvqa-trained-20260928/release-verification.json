@@ -1,0 +1,163 @@
+{
+  "Test": {
+    "questions": 39686,
+    "unique_pairs": 968,
+    "references_and_metrics_verified": true
+  },
+  "Test2": {
+    "questions": 31036,
+    "unique_pairs": 968,
+    "references_and_metrics_verified": true
+  },
+  "raw_input_validation_replay": [
+    {
+      "image": "02180.png",
+      "question": "Did the areas of non-vegetated ground surface change?",
+      "raw_input_answer": "yes",
+      "cached_answer": "yes",
+      "match": true,
+      "seconds": 5.1980394919999995
+    },
+    {
+      "image": "07502.png",
+      "question": "Did the regions of non-vegetated ground surface change?",
+      "raw_input_answer": "yes",
+      "cached_answer": "yes",
+      "match": true,
+      "seconds": 0.017936917000000108
+    },
+    {
+      "image": "09380.png",
+      "question": "Have the regions of trees changed?",
+      "raw_input_answer": "no",
+      "cached_answer": "no",
+      "match": true,
+      "seconds": 0.021748614999999916
+    },
+    {
+      "image": "00587.png",
+      "question": "Have the regions of non-vegetated ground surface changed?",
+      "raw_input_answer": "yes",
+      "cached_answer": "yes",
+      "match": true,
+      "seconds": 0.024068279999998055
+    },
+    {
+      "image": "01417.png",
+      "question": "Did the regions of non-vegetated ground surface change?",
+      "raw_input_answer": "yes",
+      "cached_answer": "yes",
+      "match": true,
+      "seconds": 0.020474930999998975
+    },
+    {
+      "image": "06250.png",
+      "question": "Did the regions of non-vegetated ground surface change?",
+      "raw_input_answer": "yes",
+      "cached_answer": "yes",
+      "match": true,
+      "seconds": 0.026496150999999912
+    },
+    {
+      "image": "06633.png",
+      "question": "Did the areas of non-vegetated ground surface change?",
+      "raw_input_answer": "yes",
+      "cached_answer": "yes",
+      "match": true,
+      "seconds": 0.0210282890000002
+    },
+    {
+      "image": "09777.png",
+      "question": "Have the areas of non-vegetated ground surface changed?",
+      "raw_input_answer": "yes",
+      "cached_answer": "yes",
+      "match": true,
+      "seconds": 0.025869710999998574
+    },
+    {
+      "image": "06533.png",
+      "question": "Have the regions of non-vegetated ground surface changed?",
+      "raw_input_answer": "yes",
+      "cached_answer": "yes",
+      "match": true,
+      "seconds": 0.03387910800000071
+    },
+    {
+      "image": "09026.png",
+      "question": "Have the areas of low vegetation changed?",
+      "raw_input_answer": "yes",
+      "cached_answer": "yes",
+      "match": true,
+      "seconds": 0.018202024000000705
+    },
+    {
+      "image": "07214.png",
+      "question": "Have the areas of non-vegetated ground surface changed?",
+      "raw_input_answer": "yes",
+      "cached_answer": "yes",
+      "match": true,
+      "seconds": 0.027068938999999403
+    },
+    {
+      "image": "02316.png",
+      "question": "Did the areas of non-vegetated ground surface change?",
+      "raw_input_answer": "yes",
+      "cached_answer": "yes",
+      "match": true,
+      "seconds": 0.02531675599999872
+    },
+    {
+      "image": "01787.png",
+      "question": "Did the areas of trees change?",
+      "raw_input_answer": "yes",
+      "cached_answer": "yes",
+      "match": true,
+      "seconds": 0.015495554999997552
+    },
+    {
+      "image": "03317.png",
+      "question": "Have the regions of non-vegetated ground surface changed?",
+      "raw_input_answer": "yes",
+      "cached_answer": "yes",
+      "match": true,
+      "seconds": 0.02593902799999981
+    },
+    {
+      "image": "00422.png",
+      "question": "Did the regions of non-vegetated ground surface change?",
+      "raw_input_answer": "yes",
+      "cached_answer": "yes",
+      "match": true,
+      "seconds": 0.03183337200000125
+    },
+    {
+      "image": "02640.png",
+      "question": "Did the regions of non-vegetated ground surface change?",
+      "raw_input_answer": "yes",
+      "cached_answer": "yes",
+      "match": true,
+      "seconds": 0.02770342899999889
+    }
+  ],
+  "runtime": {
+    "device": "NVIDIA GeForce RTX 5060 Laptop GPU",
+    "load_seconds": 3.532246078,
+    "peak_torch_allocated_bytes": 169873408,
+    "peak_torch_reserved_bytes": 182452224,
+    "parameter_count_classifier": 2648596,
+    "parameter_count_encoder": 23508032,
+    "scope": "16 validation image pairs; raw RGB file loading/preprocessing not included in encoder_and_classifier_seconds; peak Torch memory includes loaded model; not process-wide GPU peak"
+  },
+  "negative_controls": {
+    "unaligned": "Confirm that the ordered RGB inputs cover the same area and are already aligned.",
+    "unsupported": "Question is outside the trained CDVQA templates. See release.json supported_questions; this experimental CLI is not free-form VQA.",
+    "mismatched_dimensions": "Pair dimensions differ. This runner does not align or register images.",
+    "grayscale": "Supply prepared three-channel RGB images, not raw spectral/SAR bands.",
+    "empty_question": "Question is outside the trained CDVQA templates. See release.json supported_questions; this experimental CLI is not free-form VQA."
+  },
+  "software": {
+    "python": "3.11.16",
+    "torch": "2.8.0+cu128",
+    "cuda": "12.8"
+  }
+}

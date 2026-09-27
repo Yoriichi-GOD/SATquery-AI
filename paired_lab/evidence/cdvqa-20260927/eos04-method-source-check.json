@@ -1,0 +1,14 @@
+{
+  "url": "https://bharathk113.github.io/sar-segformer-portfolio/",
+  "scripts": [
+    "/sar-segformer-portfolio/assets/index-DTja0P_k.js"
+  ],
+  "excerpts": [
+    "nt-medium mb-6\",children:[P.jsx(\"span\",{className:\"w-2 h-2 rounded-full bg-cyan-400 animate-pulse\"}),\"Algorithm Theoretical Basis Document (ATBD)\"]}),P.jsxs(\"h1\",{className:\"text-5xl md:text-7xl font-extrabold text-white tracking-tight leading-tight mb-6\",children:[\"Mapping Water through the \",P.jsx(\"sp",
+    "1,238,0.3)] hover:shadow-[0_0_30px_rgba(34,211,238,0.5)]\",children:[\"Try Interactive Demo \",P.jsx(Zw,{size:20})]}),P.jsxs(\"a\",{href:\"assets/ATBD.pdf\",download:!0,className:\"bg-slate-800 hover:bg-slate-700 text-white px-8 py-4 rounded-lg font-bold transition-all flex items-center gap-2 border border-slat",
+    "e-700\",children:[\"Download ATBD \",P.jsx(Lm,{size:20})]})]})]})})]}),P.jsx(\"section\",{id:\"context\",className:\"py-24 bg-slate-950 relative border-t border-slate-900 scroll-mt-20\",children:P.jsx",
+    "raining protocol, dual-stratified evaluation, and ablation studies in the Algorithm Theoretical Basis Document.\"}),P.jsxs(\"a\",{href:\"assets/ATBD.pdf\",download:!0,className:\"inline-flex items-center gap-2 bg-cyan-500 hover:bg-cyan-400 text-slate-900 px-8 py-3 rounded-lg font-bold transition-colors\",child",
+    "ren:[\"Download ATBD PDF \",P.jsx(Lm,{size:18})]})]})]})]}),P.jsx(\"section\",{className:\"bg-gradient-to-r from-slate-900 via-slate-800 to-slate-900 border-t border-slate-800 py-10\",c",
+    "ildren:\"Coming Soon\"})]}),P.jsxs(\"p\",{className:\"text-slate-300 text-lg\",children:[\"Pre-trained model weights and inference scripts will be made available for download here soon. \",P.jsx(\"br\",{className:\"hidden md:block\"}),P.jsx(\"span\",{className:\"text-white font-semibold\",children:\"Stay tuned for updates!\"})]})]"
+  ]
+}

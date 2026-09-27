@@ -1,0 +1,8 @@
+{
+  "checkpoints": {
+    "question_only": "bcd524b0c39b7ff28baf350c723dff9245bb702a4c1e6bff78b059d037a48aa2",
+    "paired": "8b1d6beb28d2f8a4a96937243255143c7f0426d394ff6a3f3645062337177b13"
+  },
+  "selection": "Checkpoints chosen exclusively by validation OA before this script reads Test/Test2 answers",
+  "code_sha256": "2c01a2a34066fce28ced497b33e13e23d4467ed815d45faccf5feb70b9909a98"
+}

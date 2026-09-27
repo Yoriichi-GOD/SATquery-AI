@@ -1,0 +1,302 @@
+[
+  {
+    "name": "02457.png",
+    "png_status": 400,
+    "png_detail": {
+      "detail": {
+        "code": "input_or_request_not_supported",
+        "message": "Upload GeoTIFF/TIFF. Public benchmark samples are available separately.",
+        "next_steps": [
+          "Use a readable TIFF for paired scientific analysis. PNG/JPEG can be used in Single image for visual questions; changing a filename extension is not conversion."
+        ],
+        "analysis_started": false
+      }
+    },
+    "tiff_analysis_status": 400,
+    "tiff_analysis_detail": {
+      "detail": {
+        "code": "input_or_request_not_supported",
+        "message": "Uploaded pairs need a CRS and matching geographic grid. Use the supplied benchmark samples for trusted non-geographic paired crops.",
+        "next_steps": [
+          "Check that both images cover the same location and share the required CRS, pixel grid and alignment. Reproject or align them outside SatQuery; matching headers alone do not prove alignment."
+        ],
+        "analysis_started": false
+      }
+    }
+  },
+  {
+    "name": "01446.png",
+    "png_status": 400,
+    "png_detail": {
+      "detail": {
+        "code": "input_or_request_not_supported",
+        "message": "Upload GeoTIFF/TIFF. Public benchmark samples are available separately.",
+        "next_steps": [
+          "Use a readable TIFF for paired scientific analysis. PNG/JPEG can be used in Single image for visual questions; changing a filename extension is not conversion."
+        ],
+        "analysis_started": false
+      }
+    },
+    "tiff_analysis_status": 400,
+    "tiff_analysis_detail": {
+      "detail": {
+        "code": "input_or_request_not_supported",
+        "message": "Uploaded pairs need a CRS and matching geographic grid. Use the supplied benchmark samples for trusted non-geographic paired crops.",
+        "next_steps": [
+          "Check that both images cover the same location and share the required CRS, pixel grid and alignment. Reproject or align them outside SatQuery; matching headers alone do not prove alignment."
+        ],
+        "analysis_started": false
+      }
+    }
+  },
+  {
+    "name": "02560.png",
+    "png_status": 400,
+    "png_detail": {
+      "detail": {
+        "code": "input_or_request_not_supported",
+        "message": "Upload GeoTIFF/TIFF. Public benchmark samples are available separately.",
+        "next_steps": [
+          "Use a readable TIFF for paired scientific analysis. PNG/JPEG can be used in Single image for visual questions; changing a filename extension is not conversion."
+        ],
+        "analysis_started": false
+      }
+    },
+    "tiff_analysis_status": 400,
+    "tiff_analysis_detail": {
+      "detail": {
+        "code": "input_or_request_not_supported",
+        "message": "Uploaded pairs need a CRS and matching geographic grid. Use the supplied benchmark samples for trusted non-geographic paired crops.",
+        "next_steps": [
+          "Check that both images cover the same location and share the required CRS, pixel grid and alignment. Reproject or align them outside SatQuery; matching headers alone do not prove alignment."
+        ],
+        "analysis_started": false
+      }
+    }
+  },
+  {
+    "name": "02028.png",
+    "png_status": 400,
+    "png_detail": {
+      "detail": {
+        "code": "input_or_request_not_supported",
+        "message": "Upload GeoTIFF/TIFF. Public benchmark samples are available separately.",
+        "next_steps": [
+          "Use a readable TIFF for paired scientific analysis. PNG/JPEG can be used in Single image for visual questions; changing a filename extension is not conversion."
+        ],
+        "analysis_started": false
+      }
+    },
+    "tiff_analysis_status": 400,
+    "tiff_analysis_detail": {
+      "detail": {
+        "code": "input_or_request_not_supported",
+        "message": "Uploaded pairs need a CRS and matching geographic grid. Use the supplied benchmark samples for trusted non-geographic paired crops.",
+        "next_steps": [
+          "Check that both images cover the same location and share the required CRS, pixel grid and alignment. Reproject or align them outside SatQuery; matching headers alone do not prove alignment."
+        ],
+        "analysis_started": false
+      }
+    }
+  },
+  {
+    "name": "05209.png",
+    "png_status": 400,
+    "png_detail": {
+      "detail": {
+        "code": "input_or_request_not_supported",
+        "message": "Upload GeoTIFF/TIFF. Public benchmark samples are available separately.",
+        "next_steps": [
+          "Use a readable TIFF for paired scientific analysis. PNG/JPEG can be used in Single image for visual questions; changing a filename extension is not conversion."
+        ],
+        "analysis_started": false
+      }
+    },
+    "tiff_analysis_status": 400,
+    "tiff_analysis_detail": {
+      "detail": {
+        "code": "input_or_request_not_supported",
+        "message": "Uploaded pairs need a CRS and matching geographic grid. Use the supplied benchmark samples for trusted non-geographic paired crops.",
+        "next_steps": [
+          "Check that both images cover the same location and share the required CRS, pixel grid and alignment. Reproject or align them outside SatQuery; matching headers alone do not prove alignment."
+        ],
+        "analysis_started": false
+      }
+    }
+  },
+  {
+    "name": "02693.png",
+    "png_status": 400,
+    "png_detail": {
+      "detail": {
+        "code": "input_or_request_not_supported",
+        "message": "Upload GeoTIFF/TIFF. Public benchmark samples are available separately.",
+        "next_steps": [
+          "Use a readable TIFF for paired scientific analysis. PNG/JPEG can be used in Single image for visual questions; changing a filename extension is not conversion."
+        ],
+        "analysis_started": false
+      }
+    },
+    "tiff_analysis_status": 400,
+    "tiff_analysis_detail": {
+      "detail": {
+        "code": "input_or_request_not_supported",
+        "message": "Uploaded pairs need a CRS and matching geographic grid. Use the supplied benchmark samples for trusted non-geographic paired crops.",
+        "next_steps": [
+          "Check that both images cover the same location and share the required CRS, pixel grid and alignment. Reproject or align them outside SatQuery; matching headers alone do not prove alignment."
+        ],
+        "analysis_started": false
+      }
+    }
+  },
+  {
+    "name": "01793.png",
+    "png_status": 400,
+    "png_detail": {
+      "detail": {
+        "code": "input_or_request_not_supported",
+        "message": "Upload GeoTIFF/TIFF. Public benchmark samples are available separately.",
+        "next_steps": [
+          "Use a readable TIFF for paired scientific analysis. PNG/JPEG can be used in Single image for visual questions; changing a filename extension is not conversion."
+        ],
+        "analysis_started": false
+      }
+    },
+    "tiff_analysis_status": 400,
+    "tiff_analysis_detail": {
+      "detail": {
+        "code": "input_or_request_not_supported",
+        "message": "Uploaded pairs need a CRS and matching geographic grid. Use the supplied benchmark samples for trusted non-geographic paired crops.",
+        "next_steps": [
+          "Check that both images cover the same location and share the required CRS, pixel grid and alignment. Reproject or align them outside SatQuery; matching headers alone do not prove alignment."
+        ],
+        "analysis_started": false
+      }
+    }
+  },
+  {
+    "name": "09986.png",
+    "png_status": 400,
+    "png_detail": {
+      "detail": {
+        "code": "input_or_request_not_supported",
+        "message": "Upload GeoTIFF/TIFF. Public benchmark samples are available separately.",
+        "next_steps": [
+          "Use a readable TIFF for paired scientific analysis. PNG/JPEG can be used in Single image for visual questions; changing a filename extension is not conversion."
+        ],
+        "analysis_started": false
+      }
+    },
+    "tiff_analysis_status": 400,
+    "tiff_analysis_detail": {
+      "detail": {
+        "code": "input_or_request_not_supported",
+        "message": "Uploaded pairs need a CRS and matching geographic grid. Use the supplied benchmark samples for trusted non-geographic paired crops.",
+        "next_steps": [
+          "Check that both images cover the same location and share the required CRS, pixel grid and alignment. Reproject or align them outside SatQuery; matching headers alone do not prove alignment."
+        ],
+        "analysis_started": false
+      }
+    }
+  },
+  {
+    "name": "02573.png",
+    "png_status": 400,
+    "png_detail": {
+      "detail": {
+        "code": "input_or_request_not_supported",
+        "message": "Upload GeoTIFF/TIFF. Public benchmark samples are available separately.",
+        "next_steps": [
+          "Use a readable TIFF for paired scientific analysis. PNG/JPEG can be used in Single image for visual questions; changing a filename extension is not conversion."
+        ],
+        "analysis_started": false
+      }
+    },
+    "tiff_analysis_status": 400,
+    "tiff_analysis_detail": {
+      "detail": {
+        "code": "input_or_request_not_supported",
+        "message": "Uploaded pairs need a CRS and matching geographic grid. Use the supplied benchmark samples for trusted non-geographic paired crops.",
+        "next_steps": [
+          "Check that both images cover the same location and share the required CRS, pixel grid and alignment. Reproject or align them outside SatQuery; matching headers alone do not prove alignment."
+        ],
+        "analysis_started": false
+      }
+    }
+  },
+  {
+    "name": "09010.png",
+    "png_status": 400,
+    "png_detail": {
+      "detail": {
+        "code": "input_or_request_not_supported",
+        "message": "Upload GeoTIFF/TIFF. Public benchmark samples are available separately.",
+        "next_steps": [
+          "Use a readable TIFF for paired scientific analysis. PNG/JPEG can be used in Single image for visual questions; changing a filename extension is not conversion."
+        ],
+        "analysis_started": false
+      }
+    },
+    "tiff_analysis_status": 400,
+    "tiff_analysis_detail": {
+      "detail": {
+        "code": "input_or_request_not_supported",
+        "message": "Uploaded pairs need a CRS and matching geographic grid. Use the supplied benchmark samples for trusted non-geographic paired crops.",
+        "next_steps": [
+          "Check that both images cover the same location and share the required CRS, pixel grid and alignment. Reproject or align them outside SatQuery; matching headers alone do not prove alignment."
+        ],
+        "analysis_started": false
+      }
+    }
+  },
+  {
+    "name": "02735.png",
+    "png_status": 400,
+    "png_detail": {
+      "detail": {
+        "code": "input_or_request_not_supported",
+        "message": "Upload GeoTIFF/TIFF. Public benchmark samples are available separately.",
+        "next_steps": [
+          "Use a readable TIFF for paired scientific analysis. PNG/JPEG can be used in Single image for visual questions; changing a filename extension is not conversion."
+        ],
+        "analysis_started": false
+      }
+    },
+    "tiff_analysis_status": 400,
+    "tiff_analysis_detail": {
+      "detail": {
+        "code": "input_or_request_not_supported",
+        "message": "Uploaded pairs need a CRS and matching geographic grid. Use the supplied benchmark samples for trusted non-geographic paired crops.",
+        "next_steps": [
+          "Check that both images cover the same location and share the required CRS, pixel grid and alignment. Reproject or align them outside SatQuery; matching headers alone do not prove alignment."
+        ],
+        "analysis_started": false
+      }
+    }
+  },
+  {
+    "name": "06281.png",
+    "png_status": 400,
+    "png_detail": {
+      "detail": {
+        "code": "input_or_request_not_supported",
+        "message": "Upload GeoTIFF/TIFF. Public benchmark samples are available separately.",
+        "next_steps": [
+          "Use a readable TIFF for paired scientific analysis. PNG/JPEG can be used in Single image for visual questions; changing a filename extension is not conversion."
+        ],
+        "analysis_started": false
+      }
+    },
+    "tiff_analysis_status": 400,
+    "tiff_analysis_detail": {
+      "detail": {
+        "code": "input_or_request_not_supported",
+        "message": "Uploaded pairs need a CRS and matching geographic grid. Use the supplied benchmark samples for trusted non-geographic paired crops.",
+        "next_steps": [
+          "Check that both images cover the same location and share the required CRS, pixel grid and alignment. Reproject or align them outside SatQuery; matching headers alone do not prove alignment."
+        ],
+        "analysis_started": false
+      }
+    }
+  }
+]

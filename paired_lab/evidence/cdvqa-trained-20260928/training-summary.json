@@ -1,0 +1,12 @@
+{
+  "question_only": {
+    "best_validation": 0.683291770573566,
+    "seconds": 34.395031235999994,
+    "checkpoint_sha256": "bcd524b0c39b7ff28baf350c723dff9245bb702a4c1e6bff78b059d037a48aa2"
+  },
+  "paired": {
+    "best_validation": 0.7067696612128216,
+    "seconds": 71.921377425,
+    "checkpoint_sha256": "8b1d6beb28d2f8a4a96937243255143c7f0426d394ff6a3f3645062337177b13"
+  }
+}

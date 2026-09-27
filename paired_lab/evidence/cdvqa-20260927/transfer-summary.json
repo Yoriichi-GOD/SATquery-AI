@@ -1,0 +1,10 @@
+{
+  "pairs": 12,
+  "completed": 12,
+  "eligible_questions": 9,
+  "correct": 6,
+  "reference_distribution": {
+    "yes": 9
+  },
+  "scope": "Exploratory component probe only; see transfer-manifest.json. No full CDVQA score. Native inputs remain unsupported by served workflow."
+}

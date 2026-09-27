@@ -1,0 +1,35 @@
+{
+  "n": 39686,
+  "router_version": "unified-rules-v8",
+  "controller_sha256": "0601a778bef6b2edfb873e67420eaa8a7c39428a501cd9d426783231b5289a56",
+  "scope": "Final post-fix development replay; intent dispatch only, not semantic accuracy or full benchmark coverage.",
+  "by_type": {
+    "change_or_not": {
+      "refused": 11557,
+      "temporal": 2325
+    },
+    "change_ratio": {
+      "refused": 1936
+    },
+    "change_ratio_types": {
+      "refused": 5811
+    },
+    "change_to_what": {
+      "refused": 2991
+    },
+    "decrease_or_not": {
+      "refused": 3855,
+      "temporal": 803
+    },
+    "increase_or_not": {
+      "refused": 3830,
+      "temporal": 770
+    },
+    "largest_change": {
+      "refused": 2904
+    },
+    "smallest_change": {
+      "refused": 2904
+    }
+  }
+}

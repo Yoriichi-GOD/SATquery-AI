@@ -1,0 +1,37 @@
+{
+  "n": 39686,
+  "scope": "Intent dispatch only, before input validation; accepted does not mean executable or semantically answerable.",
+  "by_type": {
+    "change_or_not": {
+      "temporal": 6945,
+      "refused": 6937
+    },
+    "change_ratio": {
+      "temporal": 1704,
+      "refused": 232
+    },
+    "change_ratio_types": {
+      "refused": 2884,
+      "temporal": 2927
+    },
+    "change_to_what": {
+      "temporal": 1718,
+      "refused": 1273
+    },
+    "decrease_or_not": {
+      "refused": 2303,
+      "temporal": 2355
+    },
+    "increase_or_not": {
+      "refused": 2308,
+      "temporal": 2292
+    },
+    "largest_change": {
+      "temporal": 2904
+    },
+    "smallest_change": {
+      "temporal": 2904
+    }
+  },
+  "nonvegetated_or_playground_accepted": 10586
+}

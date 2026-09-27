@@ -1,0 +1,21 @@
+{
+  "candidate-freeze.json": "d4822447ab33927de97eadfa099799a9edb470afaf37462c8bad6d79d63f1836",
+  "cpu-cli-evidence.zip": "d31de854d71e6999debeb768cb351269477073ff7374e313b259906d89998556",
+  "cpu-cli-smoke.json": "6def1f701bef378d2258d7cd33ea5520970de7a49e308fda14143062a85dc5f4",
+  "encoder.json": "6c1024214eb47800f1d82c43794378eb5970624cc4eb5291ee38bf801c1a1c63",
+  "environment-freeze.txt": "326b5d85831373330acc833c126313a9306af69a5285015c6cff07e47590b14c",
+  "final-test-summary.json": "4b71fcab912829840db5b654816f00bd18ba7367595d9d6433aa0de91c2e5555",
+  "input-hashes.json": "f1452ccbbd492a64de44c365e104a9eca8fb169a384bfd1fdb654f8c9a7924ba",
+  "paired-history.json": "da2e2de100f0699f8c73912acb66b0dba37a54ade5706709d2850517acb23447",
+  "paired-validation-predictions.json": "9e352605956e3d6c6d1041c8c8c0155815726e8fa46159ef8f67d97d4be5e8ae",
+  "protocol.json": "e839f979b2767b6e7d6cad290dc5c724252cb1a1af73c33567283f28f91b4c03",
+  "question_only-history.json": "1d5bbf2ce39de8226a7f8f5bb644f0f8217d981317c7a41875c58429bb9b6924",
+  "question_only-validation-predictions.json": "6010243f73de00589cd69adbee44399986b32ef9d80ed8bf460af06b26306df9",
+  "release-verification.json": "52f6e05c237ab56860a88a8ed83b4ed6c0f982136d9de25a05de555804f45dd7",
+  "release.json": "4d1437a0265c5cb08a4d06a40529b3da926bd590da731afdf612afb8751b4199",
+  "software-regression.json": "84482aad2a3ea2d913d2b1a2317150dfab169398f8656d9f500bd21183c05696",
+  "Test-predictions.json": "65d5d3aeeff79a4d3e3af1ef33b199fd48f92ef3401b13fc3cbdd27eb42c338e",
+  "Test2-predictions.json": "a3a789e9ca14e306139d8c30eee1c2243f2059a948c0786fc9d6089f2927861a",
+  "training-summary.json": "dd7b9098acd9921f91e488e12ff58ff45947eab8f1ea9705dca1ba07c266ef3e",
+  "CDVQA_MODEL_RELEASE.zip": "32262727f9e1ab2418fdb31e1dc6f4147f6ce1f7a2ec5d3d21270c096a7342e2"
+}
