@@ -1,6 +1,6 @@
 """Normalize whole-scene caption requests only; preserve specific questions."""
 import re
-VERSION = 'scene-description-v1'
+VERSION = 'scene-description-v2'
 PROMPT = 'Describe this image in detail.'
 
 def is_scene_description(question):
@@ -9,7 +9,7 @@ def is_scene_description(question):
     q = re.sub(r'^please\s+', '', q)
     q = re.sub(r'^(?:can|could) you\s+', '', q)
     noun = r'(?:image|scene|picture|photo)'
-    patterns = [r'describe (?:this|the) '+noun+r'(?: in detail)?',
+    patterns = [r'analy[sz]e (?:this|the) '+noun+r'(?: in detail)?', r'describe (?:this|the) '+noun+r'(?: in detail)?',
                 r'describe (?:the )?(?:major |main )?visible features(?: in detail)?',
                 r'what (?:is in|do you see in|is visible in|can be seen in) (?:this|the) '+noun,
                 r'what does (?:this|the) '+noun+r' show']

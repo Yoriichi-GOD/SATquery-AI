@@ -1,0 +1,610 @@
+[
+  {
+    "question_id": 457,
+    "question": "What kind of area surrounds the harbor?",
+    "reference": "forested",
+    "previous_state": "refused",
+    "job": {
+      "state": "complete",
+      "stage": "Complete",
+      "plan": {
+        "task": "vqa",
+        "version": "unified-rules-v9",
+        "specialist": "Remote-sensing Qwen2-VL-2B",
+        "device": "CUDA GPU",
+        "maturity": "supported",
+        "reason": "Descriptive image-relative context; model interpretation, not coordinates, boxes or measurement.",
+        "decision": {
+          "tool": "vqa",
+          "rule": "visual_context",
+          "reason": "Descriptive image-relative context; model interpretation, not coordinates, boxes or measurement.",
+          "version": "rules-v8"
+        },
+        "mode": "baseline",
+        "threshold": 0.5,
+        "steps": [
+          "validate image",
+          "vqa",
+          "save evidence"
+        ]
+      },
+      "events": [
+        {
+          "stage": "Input checks passed; preparing specialist",
+          "at": "2026-09-28T09:19:45Z"
+        },
+        {
+          "stage": "Starting Remote-sensing Qwen2-VL-2B",
+          "at": "2026-09-28T09:19:45Z"
+        },
+        {
+          "stage": "Preparing single-image specialist input",
+          "at": "2026-09-28T09:19:45Z"
+        },
+        {
+          "stage": "Preparing image",
+          "at": "2026-09-28T09:19:45Z"
+        },
+        {
+          "stage": "Loading local model",
+          "at": "2026-09-28T09:19:56Z"
+        },
+        {
+          "stage": "Analyzing image",
+          "at": "2026-09-28T09:20:12Z"
+        },
+        {
+          "stage": "Specialist finished; collecting evidence",
+          "at": "2026-09-28T09:20:36Z"
+        },
+        {
+          "stage": "Collecting single-image evidence",
+          "at": "2026-09-28T09:20:36Z"
+        },
+        {
+          "stage": "Saving result and original inputs",
+          "at": "2026-09-28T09:20:36Z"
+        },
+        {
+          "stage": "Packaging evidence",
+          "at": "2026-09-28T09:20:36Z"
+        }
+      ],
+      "result": {
+        "task": "vqa",
+        "answer": "The harbor is surrounded by a dense forest, which suggests a natural and possibly remote location. The presence of the ship indicates that the area is accessible by water and likely used for maritime activities, such as cargo transport or tourism. The lack of visible infrastructure or buildings suggests that the area may be used for specific purposes, such as a private harbor or a facility related to maritime operations. The image does not provide enough detail to determine the exact nature of the surrounding area or the specific use of the harbor. Therefore, the answer is The aerial scene is Harbor.\n\nModel interpretation; may be inaccurate.",
+        "seconds": 50.801,
+        "statistics": null,
+        "trace": [
+          {
+            "step": "Load pinned checkpoint",
+            "seconds": 16.086
+          },
+          {
+            "step": "Generate model answer",
+            "seconds": 23.716
+          },
+          {
+            "tool": "Preserved main workspace",
+            "run_id": "564d3358cc654afdab135efef17df2cb",
+            "model": "AdaptLLM/remote-sensing-Qwen2-VL-2B-Instruct",
+            "revision": "7f5dd71bf0f40c282193d50160e848a387a08ffe",
+            "mode": "baseline",
+            "routing": {
+              "tool": "vqa",
+              "rule": "visual_context",
+              "reason": "Descriptive image-relative context; model interpretation, not coordinates, boxes or measurement.",
+              "version": "rules-v8"
+            }
+          }
+        ],
+        "limitations": [
+          "Model descriptions and visual counts remain interpretations, not verified measurements."
+        ],
+        "confidence": {
+          "kind": "See original run evidence; no invented confidence score."
+        },
+        "execution": {
+          "task": "vqa",
+          "version": "unified-rules-v9",
+          "specialist": "Remote-sensing Qwen2-VL-2B",
+          "device": "CUDA GPU",
+          "maturity": "supported",
+          "reason": "Descriptive image-relative context; model interpretation, not coordinates, boxes or measurement.",
+          "decision": {
+            "tool": "vqa",
+            "rule": "visual_context",
+            "reason": "Descriptive image-relative context; model interpretation, not coordinates, boxes or measurement.",
+            "version": "rules-v8"
+          },
+          "mode": "baseline",
+          "threshold": 0.5,
+          "steps": [
+            "validate image",
+            "vqa",
+            "save evidence"
+          ]
+        },
+        "id": "29c0c056faa84f2f84df9e6981e98c65",
+        "query": "What kind of area surrounds the harbor?",
+        "input_checks": {
+          "task": "vqa",
+          "inputs": [
+            {
+              "id": "5552881a7ff44e119106769cb5f8e29d",
+              "name": "P0110_0015.png",
+              "width": 512,
+              "height": 512,
+              "bytes": 403677,
+              "sha256": "5e81a619d0e3d7b6a983f77f4ef8c749dd79e18ed65f87e0a1666318e4d68512",
+              "preview": "/api/images/0ce986c9342a4b1a8ffc784a2cebf4c9",
+              "geo": null,
+              "main_id": "0ce986c9342a4b1a8ffc784a2cebf4c9",
+              "modality": "optical",
+              "is_single": true
+            }
+          ],
+          "plan": {
+            "task": "vqa",
+            "version": "unified-rules-v9",
+            "specialist": "Remote-sensing Qwen2-VL-2B",
+            "device": "CUDA GPU",
+            "maturity": "supported",
+            "reason": "Descriptive image-relative context; model interpretation, not coordinates, boxes or measurement.",
+            "decision": {
+              "tool": "vqa",
+              "rule": "visual_context",
+              "reason": "Descriptive image-relative context; model interpretation, not coordinates, boxes or measurement.",
+              "version": "rules-v8"
+            },
+            "mode": "baseline",
+            "threshold": 0.5,
+            "steps": [
+              "validate image",
+              "vqa",
+              "save evidence"
+            ]
+          }
+        },
+        "controller": "unified-rules-v9",
+        "created_at": "2026-09-28T09:20:36Z",
+        "execution_events": [
+          {
+            "stage": "Input checks passed; preparing specialist",
+            "at": "2026-09-28T09:19:45Z"
+          },
+          {
+            "stage": "Starting Remote-sensing Qwen2-VL-2B",
+            "at": "2026-09-28T09:19:45Z"
+          },
+          {
+            "stage": "Preparing single-image specialist input",
+            "at": "2026-09-28T09:19:45Z"
+          },
+          {
+            "stage": "Preparing image",
+            "at": "2026-09-28T09:19:45Z"
+          },
+          {
+            "stage": "Loading local model",
+            "at": "2026-09-28T09:19:56Z"
+          },
+          {
+            "stage": "Analyzing image",
+            "at": "2026-09-28T09:20:12Z"
+          },
+          {
+            "stage": "Specialist finished; collecting evidence",
+            "at": "2026-09-28T09:20:36Z"
+          },
+          {
+            "stage": "Collecting single-image evidence",
+            "at": "2026-09-28T09:20:36Z"
+          },
+          {
+            "stage": "Saving result and original inputs",
+            "at": "2026-09-28T09:20:36Z"
+          },
+          {
+            "stage": "Packaging evidence",
+            "at": "2026-09-28T09:20:36Z"
+          }
+        ],
+        "work_seconds_before_zip": 51.26223365599981
+      },
+      "request_seconds": 51.304800571999294
+    }
+  },
+  {
+    "question_id": 6465,
+    "question": "Where is the angular bridge situated in the image?",
+    "reference": "top-right",
+    "previous_state": "refused",
+    "job": {
+      "state": "complete",
+      "stage": "Complete",
+      "plan": {
+        "task": "vqa",
+        "version": "unified-rules-v9",
+        "specialist": "Remote-sensing Qwen2-VL-2B",
+        "device": "CUDA GPU",
+        "maturity": "supported",
+        "reason": "Descriptive image-relative context; model interpretation, not coordinates, boxes or measurement.",
+        "decision": {
+          "tool": "vqa",
+          "rule": "visual_context",
+          "reason": "Descriptive image-relative context; model interpretation, not coordinates, boxes or measurement.",
+          "version": "rules-v8"
+        },
+        "mode": "baseline",
+        "threshold": 0.5,
+        "steps": [
+          "validate image",
+          "vqa",
+          "save evidence"
+        ]
+      },
+      "events": [
+        {
+          "stage": "Input checks passed; preparing specialist",
+          "at": "2026-09-28T09:20:37Z"
+        },
+        {
+          "stage": "Starting Remote-sensing Qwen2-VL-2B",
+          "at": "2026-09-28T09:20:37Z"
+        },
+        {
+          "stage": "Preparing single-image specialist input",
+          "at": "2026-09-28T09:20:37Z"
+        },
+        {
+          "stage": "Analyzing image",
+          "at": "2026-09-28T09:20:37Z"
+        },
+        {
+          "stage": "Specialist finished; collecting evidence",
+          "at": "2026-09-28T09:20:42Z"
+        },
+        {
+          "stage": "Collecting single-image evidence",
+          "at": "2026-09-28T09:20:42Z"
+        },
+        {
+          "stage": "Saving result and original inputs",
+          "at": "2026-09-28T09:20:42Z"
+        },
+        {
+          "stage": "Packaging evidence",
+          "at": "2026-09-28T09:20:42Z"
+        }
+      ],
+      "result": {
+        "task": "vqa",
+        "answer": "The angular bridge is situated in the middle of the image, spanning the river. It is a significant landmark, likely serving as a connector between two areas separated by the river. The bridge's design, with its curved arch, suggests it is a bridge of some importance, possibly for transportation or commerce. The surrounding area appears to be a mix of industrial and possibly residential or commercial buildings, indicating that the bridge is likely a key thoroughfare for the area. Therefore, the answer is The angular bridge is in The aerial.\n\nModel interpretation; may be inaccurate.",
+        "seconds": 5.239,
+        "statistics": null,
+        "trace": [
+          {
+            "step": "Generate model answer",
+            "seconds": 5.074
+          },
+          {
+            "tool": "Preserved main workspace",
+            "run_id": "6a18af19266b434fa3adad510f001d0a",
+            "model": "AdaptLLM/remote-sensing-Qwen2-VL-2B-Instruct",
+            "revision": "7f5dd71bf0f40c282193d50160e848a387a08ffe",
+            "mode": "baseline",
+            "routing": {
+              "tool": "vqa",
+              "rule": "visual_context",
+              "reason": "Descriptive image-relative context; model interpretation, not coordinates, boxes or measurement.",
+              "version": "rules-v8"
+            }
+          }
+        ],
+        "limitations": [
+          "Model descriptions and visual counts remain interpretations, not verified measurements."
+        ],
+        "confidence": {
+          "kind": "See original run evidence; no invented confidence score."
+        },
+        "execution": {
+          "task": "vqa",
+          "version": "unified-rules-v9",
+          "specialist": "Remote-sensing Qwen2-VL-2B",
+          "device": "CUDA GPU",
+          "maturity": "supported",
+          "reason": "Descriptive image-relative context; model interpretation, not coordinates, boxes or measurement.",
+          "decision": {
+            "tool": "vqa",
+            "rule": "visual_context",
+            "reason": "Descriptive image-relative context; model interpretation, not coordinates, boxes or measurement.",
+            "version": "rules-v8"
+          },
+          "mode": "baseline",
+          "threshold": 0.5,
+          "steps": [
+            "validate image",
+            "vqa",
+            "save evidence"
+          ]
+        },
+        "id": "163f51a74eeb4230a9c29185e4a40ed6",
+        "query": "Where is the angular bridge situated in the image?",
+        "input_checks": {
+          "task": "vqa",
+          "inputs": [
+            {
+              "id": "6c67a0cc971942f4b181a3eeeabbacb7",
+              "name": "P1323_0020.png",
+              "width": 512,
+              "height": 512,
+              "bytes": 226559,
+              "sha256": "175dc121c01c2b4629795f2c8d8be41f93cc6a5b974a67458b4ebf8e3b5f4ca1",
+              "preview": "/api/images/1658928a56b4477b8a9427cb7984e2dc",
+              "geo": null,
+              "main_id": "1658928a56b4477b8a9427cb7984e2dc",
+              "modality": "optical",
+              "is_single": true
+            }
+          ],
+          "plan": {
+            "task": "vqa",
+            "version": "unified-rules-v9",
+            "specialist": "Remote-sensing Qwen2-VL-2B",
+            "device": "CUDA GPU",
+            "maturity": "supported",
+            "reason": "Descriptive image-relative context; model interpretation, not coordinates, boxes or measurement.",
+            "decision": {
+              "tool": "vqa",
+              "rule": "visual_context",
+              "reason": "Descriptive image-relative context; model interpretation, not coordinates, boxes or measurement.",
+              "version": "rules-v8"
+            },
+            "mode": "baseline",
+            "threshold": 0.5,
+            "steps": [
+              "validate image",
+              "vqa",
+              "save evidence"
+            ]
+          }
+        },
+        "controller": "unified-rules-v9",
+        "created_at": "2026-09-28T09:20:42Z",
+        "execution_events": [
+          {
+            "stage": "Input checks passed; preparing specialist",
+            "at": "2026-09-28T09:20:37Z"
+          },
+          {
+            "stage": "Starting Remote-sensing Qwen2-VL-2B",
+            "at": "2026-09-28T09:20:37Z"
+          },
+          {
+            "stage": "Preparing single-image specialist input",
+            "at": "2026-09-28T09:20:37Z"
+          },
+          {
+            "stage": "Analyzing image",
+            "at": "2026-09-28T09:20:37Z"
+          },
+          {
+            "stage": "Specialist finished; collecting evidence",
+            "at": "2026-09-28T09:20:42Z"
+          },
+          {
+            "stage": "Collecting single-image evidence",
+            "at": "2026-09-28T09:20:42Z"
+          },
+          {
+            "stage": "Saving result and original inputs",
+            "at": "2026-09-28T09:20:42Z"
+          },
+          {
+            "stage": "Packaging evidence",
+            "at": "2026-09-28T09:20:42Z"
+          }
+        ],
+        "work_seconds_before_zip": 5.391753658001107
+      },
+      "request_seconds": 5.408314858001177
+    }
+  },
+  {
+    "question_id": 10050,
+    "question": "Where is the roundabout located in the image?",
+    "reference": "top",
+    "previous_state": "refused",
+    "job": {
+      "state": "complete",
+      "stage": "Complete",
+      "plan": {
+        "task": "vqa",
+        "version": "unified-rules-v9",
+        "specialist": "Remote-sensing Qwen2-VL-2B",
+        "device": "CUDA GPU",
+        "maturity": "supported",
+        "reason": "Descriptive image-relative context; model interpretation, not coordinates, boxes or measurement.",
+        "decision": {
+          "tool": "vqa",
+          "rule": "visual_context",
+          "reason": "Descriptive image-relative context; model interpretation, not coordinates, boxes or measurement.",
+          "version": "rules-v8"
+        },
+        "mode": "baseline",
+        "threshold": 0.5,
+        "steps": [
+          "validate image",
+          "vqa",
+          "save evidence"
+        ]
+      },
+      "events": [
+        {
+          "stage": "Input checks passed; preparing specialist",
+          "at": "2026-09-28T09:20:42Z"
+        },
+        {
+          "stage": "Starting Remote-sensing Qwen2-VL-2B",
+          "at": "2026-09-28T09:20:42Z"
+        },
+        {
+          "stage": "Preparing single-image specialist input",
+          "at": "2026-09-28T09:20:42Z"
+        },
+        {
+          "stage": "Analyzing image",
+          "at": "2026-09-28T09:20:42Z"
+        },
+        {
+          "stage": "Specialist finished; collecting evidence",
+          "at": "2026-09-28T09:20:47Z"
+        },
+        {
+          "stage": "Collecting single-image evidence",
+          "at": "2026-09-28T09:20:47Z"
+        },
+        {
+          "stage": "Saving result and original inputs",
+          "at": "2026-09-28T09:20:47Z"
+        },
+        {
+          "stage": "Packaging evidence",
+          "at": "2026-09-28T09:20:47Z"
+        }
+      ],
+      "result": {
+        "task": "vqa",
+        "answer": "The roundabout is located in the upper right quadrant of the image. It is a significant feature that connects different roads and possibly serves as a junction for traffic flow. The roundabout is designed to manage the flow of vehicles and possibly to control the speed and direction of traffic. The surrounding area includes a mix of open spaces and buildings, indicating a well-developed urban environment. The roundabout's placement and the presence of multiple roads suggest it is a key infrastructure element in the area. Therefore, the answer is roundabout is in the upper right\n\nModel interpretation; may be inaccurate.",
+        "seconds": 4.809,
+        "statistics": null,
+        "trace": [
+          {
+            "step": "Generate model answer",
+            "seconds": 4.736
+          },
+          {
+            "tool": "Preserved main workspace",
+            "run_id": "6bb43ba01e874e5993c75e4b42099677",
+            "model": "AdaptLLM/remote-sensing-Qwen2-VL-2B-Instruct",
+            "revision": "7f5dd71bf0f40c282193d50160e848a387a08ffe",
+            "mode": "baseline",
+            "routing": {
+              "tool": "vqa",
+              "rule": "visual_context",
+              "reason": "Descriptive image-relative context; model interpretation, not coordinates, boxes or measurement.",
+              "version": "rules-v8"
+            }
+          }
+        ],
+        "limitations": [
+          "Model descriptions and visual counts remain interpretations, not verified measurements."
+        ],
+        "confidence": {
+          "kind": "See original run evidence; no invented confidence score."
+        },
+        "execution": {
+          "task": "vqa",
+          "version": "unified-rules-v9",
+          "specialist": "Remote-sensing Qwen2-VL-2B",
+          "device": "CUDA GPU",
+          "maturity": "supported",
+          "reason": "Descriptive image-relative context; model interpretation, not coordinates, boxes or measurement.",
+          "decision": {
+            "tool": "vqa",
+            "rule": "visual_context",
+            "reason": "Descriptive image-relative context; model interpretation, not coordinates, boxes or measurement.",
+            "version": "rules-v8"
+          },
+          "mode": "baseline",
+          "threshold": 0.5,
+          "steps": [
+            "validate image",
+            "vqa",
+            "save evidence"
+          ]
+        },
+        "id": "5432987672014872a53bd8aa41e40952",
+        "query": "Where is the roundabout located in the image?",
+        "input_checks": {
+          "task": "vqa",
+          "inputs": [
+            {
+              "id": "6a6b1b8b5f1148d9a5cc3a1d81927d9f",
+              "name": "P1598_0050.png",
+              "width": 512,
+              "height": 512,
+              "bytes": 257107,
+              "sha256": "05f296842ac9965ffbba08390dc07a5c7dbb78dffc5e366e0b5efec4abb46cf5",
+              "preview": "/api/images/f4b85b3c01b04e7184214524b47c71e3",
+              "geo": null,
+              "main_id": "f4b85b3c01b04e7184214524b47c71e3",
+              "modality": "optical",
+              "is_single": true
+            }
+          ],
+          "plan": {
+            "task": "vqa",
+            "version": "unified-rules-v9",
+            "specialist": "Remote-sensing Qwen2-VL-2B",
+            "device": "CUDA GPU",
+            "maturity": "supported",
+            "reason": "Descriptive image-relative context; model interpretation, not coordinates, boxes or measurement.",
+            "decision": {
+              "tool": "vqa",
+              "rule": "visual_context",
+              "reason": "Descriptive image-relative context; model interpretation, not coordinates, boxes or measurement.",
+              "version": "rules-v8"
+            },
+            "mode": "baseline",
+            "threshold": 0.5,
+            "steps": [
+              "validate image",
+              "vqa",
+              "save evidence"
+            ]
+          }
+        },
+        "controller": "unified-rules-v9",
+        "created_at": "2026-09-28T09:20:47Z",
+        "execution_events": [
+          {
+            "stage": "Input checks passed; preparing specialist",
+            "at": "2026-09-28T09:20:42Z"
+          },
+          {
+            "stage": "Starting Remote-sensing Qwen2-VL-2B",
+            "at": "2026-09-28T09:20:42Z"
+          },
+          {
+            "stage": "Preparing single-image specialist input",
+            "at": "2026-09-28T09:20:42Z"
+          },
+          {
+            "stage": "Analyzing image",
+            "at": "2026-09-28T09:20:42Z"
+          },
+          {
+            "stage": "Specialist finished; collecting evidence",
+            "at": "2026-09-28T09:20:47Z"
+          },
+          {
+            "stage": "Collecting single-image evidence",
+            "at": "2026-09-28T09:20:47Z"
+          },
+          {
+            "stage": "Saving result and original inputs",
+            "at": "2026-09-28T09:20:47Z"
+          },
+          {
+            "stage": "Packaging evidence",
+            "at": "2026-09-28T09:20:47Z"
+          }
+        ],
+        "work_seconds_before_zip": 4.963893420999739
+      },
+      "request_seconds": 4.978090159000203
+    }
+  }
+]

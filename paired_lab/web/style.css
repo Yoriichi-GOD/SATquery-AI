@@ -26,3 +26,5 @@ body:has(#evaluation:not([hidden])) main{padding-top:18px}
 #feedback{white-space:pre-line}
 
 .parameter-result{border:1px solid var(--line);border-radius:14px;padding:15px;margin-top:16px}.parameter-view{background:var(--input);color:var(--text);border:1px solid var(--gold);border-radius:8px;padding:10px}
+
+.views.input-pair{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px;align-items:start}.input-card{min-width:0}.input-card:only-child{grid-column:1/-1}.input-card button{width:100%;padding:0;background:transparent;border:0}.input-card img{width:100%;height:260px;object-fit:contain}.input-card p,.input-card small{overflow-wrap:anywhere}.suggestion{background:#111;color:#fff;border:1px solid #b89b59;border-radius:10px;padding:10px;margin:4px;text-align:left}#suggestions{margin:12px 0}@media(max-width:600px){.input-card img{height:160px}}

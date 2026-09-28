@@ -187,11 +187,36 @@ def work(jid,records,query,task,checks):
     finally:
         with lock:busy=False
 
+@app.post('/api/input-preview')
+async def input_preview(file:UploadFile=File(...), modality:str=Form('optical')):
+    """Display-only bounded raster read. Does not register, validate or analyze inputs."""
+    from input_preview import render
+    raw=await file.read(20*1024*1024+1)
+    if len(raw)>20*1024*1024:raise HTTPException(413,'Preview limit is 20 MB.')
+    try:png,label=render(raw,modality)
+    except Exception as e:raise HTTPException(400,'Cannot preview this raster. '+str(e))
+    return Response(png,media_type='image/png',headers={'X-Preview-Description':label})
+
+def suggested_queries(payload):
+    """Offer only requests passing the current input checks. Never execute a model."""
+    if not isinstance(payload,dict):return []
+    candidates=['Describe this image.','Calculate NDVI','Compare vegetation and water changes','Show road and building changes','Map water','Identify land-cover classes','Describe this SAR image']
+    result=[]
+    for query in candidates:
+        try:prepare({**payload,'query':query})
+        except (ValueError,TypeError,KeyError):continue
+        result.append(query)
+    return result[:3]
+
 @app.post('/api/analyze')
 async def analyze(request:Request):
     global busy
-    try:records,query,task,checks=prepare(await request.json())
-    except (ValueError,TypeError,KeyError) as e:raise HTTPException(400,recovery_detail(e))
+    payload=None
+    try:
+        payload=await request.json();records,query,task,checks=prepare(payload)
+    except (ValueError,TypeError,KeyError) as e:
+        detail=recovery_detail(e);detail['suggested_queries']=suggested_queries(payload)
+        raise HTTPException(400,detail)
     with lock:
         if busy:raise HTTPException(409,'One workspace run is already active. Please wait for it to finish.')
         busy=True

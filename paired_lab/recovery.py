@@ -3,8 +3,9 @@ def detail(message):
     message=str(message)
     lower=message.lower()
     specific = [
-        ('Forecasting and evacuation', 'Ask about an observed state, for example "Map water", using a supported input pair. Forecasting remains a future research task.'),
-        ('Paired NDVI comparison', 'Switch to Single image and run NDVI separately on each compatible calibrated image.'),
+        ('Choose what to compare', 'Select one of the compatible suggested questions below, or specify the feature you want to compare.'),
+        ('Forecasting and evacuation', 'Ask about an observed state, for example "Map water", using a supported input pair. Forecasting is outside SatQuery scope.'),
+        ('Paired NDVI comparison', 'For joint index comparison supply two calibrated Sentinel-2 dates with the required bands and quality mask, or run NDVI separately on compatible single images.'),
         ('This optical–SAR scene classifier', 'Ask "Identify land-cover classes" for this pair, or supply inputs that meet the water-mapping contract for a pixel mask.'),
     ]
     for prefix, action in specific:

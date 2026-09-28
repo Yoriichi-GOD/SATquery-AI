@@ -2,7 +2,7 @@
 import importlib.util, math, re
 from pathlib import Path
 from inputs import route as paired_route
-VERSION = 'unified-rules-v8'
+VERSION = 'unified-rules-v9'
 spec = importlib.util.spec_from_file_location('preserved_single_router', Path(__file__).resolve().parent.parent / 'routing.py')
 single = importlib.util.module_from_spec(spec); spec.loader.exec_module(single)
 SPECIALISTS = {
@@ -27,6 +27,7 @@ def selection(task, reason, **extra):
 
 def grounding_request(query):
     """Only explicit spatial requests select the experimental detector."""
+    if single.visual_context_question(query): return None
     q = query.lower()
     if not re.search(r'\b(outline|segment|highlight|locate|localize|localise|mark|draw|boxes|bounding|where)\b', q): return None
     if re.search(r'\b(ndvi|spectral|hectares?|km2|area|metres?|meters?|count|how many|chang\w*|before|after|sar|radar|health)\b', q):
@@ -88,6 +89,8 @@ def plan(query, records, threshold=.5):
     if len(records) != 2: raise ValueError('Supply one optical image, two optical dates, or one optical and one SAR image.')
     modes = sorted(r['modality'] for r in records)
     if modes == ['optical', 'optical']:
+        if re.fullmatch(r'(?:please )?(?:analy[sz]e|compare) (?:these |the |both )?(?:two )?(?:images|dates|observations)[.!?]*', q):
+            raise ValueError('Choose what to compare. Road/building change is available for compatible RGB dates; vegetation/water indices require calibrated multispectral dates.')
         # MCI has two change classes, not a general land-cover transition model.
         if re.search(r'\b(percentage|percent|ratio|fraction|proportion|how much)\b', q):
             raise ValueError('General land-cover change ratios and per-date class areas are not supported. Road/building predicted-mask pixel counts are available with the descriptive change result.')

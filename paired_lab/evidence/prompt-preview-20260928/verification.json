@@ -1,0 +1,10 @@
+{
+  "software_tests": 94,
+  "software_tests_passed": 94,
+  "historical_predictions_modified": false,
+  "targeted_previous_refusals": 3,
+  "live_completed": 3,
+  "semantic_accuracy": null,
+  "focused_instruction_retained": false,
+  "scope": "Development regression and browser smoke checks only"
+}

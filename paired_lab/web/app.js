@@ -1,7 +1,7 @@
 'use strict';
 const $=s=>document.querySelector(s);let samples=[],active=false;
 const element=(tag,text)=>{const n=document.createElement(tag);if(text!==undefined)n.textContent=text;return n};
-async function api(url,options){const r=await fetch(url,options);const j=await r.json();if(!r.ok)throw Error(typeof j.detail==='string'?j.detail:j.detail?.message?[j.detail.message,...(j.detail.next_steps||[]).map(x=>'Next step: '+x)].join('\n\n'):Array.isArray(j.detail)?'Check the required input fields and try again.':JSON.stringify(j.detail||'Request failed'));return j}
+async function api(url,options){const r=await fetch(url,options);const j=await r.json();if(!r.ok){showSuggestions(j.detail?.suggested_queries||[]);throw Error(typeof j.detail==='string'?j.detail:j.detail?.message?[j.detail.message,...(j.detail.next_steps||[]).map(x=>'Next step: '+x)].join('\n\n'):Array.isArray(j.detail)?'Check the required input fields and try again.':JSON.stringify(j.detail||'Request failed'))}return j}
 function feedback(text){$('#feedback').hidden=!text;$('#feedback').textContent=text}
 function views(items){
  $('#empty').hidden=true;const root=$('#views');root.hidden=false;root.replaceChildren();
@@ -58,7 +58,7 @@ function showExecution(plan,stage,events=[]){
 }
 function lockForm(locked){document.querySelectorAll('.picker-toggle').forEach(n=>n.disabled=locked);$('#form').querySelectorAll('input,select,textarea,button').forEach(n=>n.disabled=locked)}
 $('#form').onsubmit=async ev=>{
- ev.preventDefault();if(active)return;active=true;lockForm(true);$('#result').hidden=true;$('#execution').hidden=true;
+ ev.preventDefault();if(active)return;showSuggestions([]);active=true;lockForm(true);$('#result').hidden=true;$('#execution').hidden=true;
  const start=Date.now();let chosen;
  try{
   const payload={query:$('#question').value};const choice=$('#sample').value;
@@ -110,7 +110,7 @@ async function resumedEvidence(){try{
 }catch(e){feedback(e.message)}}resumedEvidence();
 
 function customPicker(select){
- const wrapper=element('div');wrapper.className='picker';const toggle=element('button');toggle.type='button';toggle.className='picker-toggle';toggle.setAttribute('aria-haspopup','listbox');toggle.setAttribute('aria-expanded','false');toggle.setAttribute('aria-label',select.id==='sample'?'Example dataset':select.id==='mode-a'?'First image modality':'Second image modality');const menu=element('div');menu.className='picker-menu';menu.id=select.id+'-choices';menu.setAttribute('role','listbox');menu.setAttribute('aria-label',toggle.getAttribute('aria-label'));menu.hidden=true;toggle.setAttribute('aria-controls',menu.id);
+ const wrapper=element('div');wrapper.className='picker';const toggle=element('button');toggle.type='button';toggle.className='picker-toggle';toggle.setAttribute('aria-haspopup','listbox');toggle.setAttribute('aria-expanded','false');toggle.setAttribute('aria-label',select.id==='sample'?'Example dataset':select.id==='single-modality'?'Input modality':select.id==='mode-a'?'First image modality':'Second image modality');const menu=element('div');menu.className='picker-menu';menu.id=select.id+'-choices';menu.setAttribute('role','listbox');menu.setAttribute('aria-label',toggle.getAttribute('aria-label'));menu.hidden=true;toggle.setAttribute('aria-controls',menu.id);
  const close=()=>{menu.hidden=true;toggle.setAttribute('aria-expanded','false')};
  const refresh=()=>{toggle.textContent=select.selectedOptions[0].textContent+' ▾';menu.querySelectorAll('button').forEach(b=>b.setAttribute('aria-selected',String(b.dataset.value===select.value)))};
  for(const option of select.options){if(select.id==='sample'&&['','single'].includes(option.value))continue;const button=element('button',option.textContent);button.type='button';button.setAttribute('role','option');button.dataset.value=option.value;button.onclick=()=>{select.value=option.value;select.dispatchEvent(new Event('change'));refresh();close();toggle.focus()};menu.append(button)}

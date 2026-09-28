@@ -6,8 +6,18 @@ unrecognized and compound requests fail closed. Version saved with each run.
 import math
 import re
 
-VERSION = 'rules-v7'
+VERSION = 'rules-v8'
 
+
+def visual_context_question(question):
+    """Whole-question descriptive location/context; never boxes or physical units."""
+    q = ' '.join(question.lower().strip().split()).rstrip('?.!')
+    q = re.sub(r'^(?:please |(?:can|could) you )', '', q)
+    if re.search(r'\b(and|or|then|count|measure|coordinates?|latitude|longitude|meters?|metres?|hectares?|depth|predict\w*|forecast\w*|chang\w*|before|after)\b', q):
+        return False
+    noun = r"[a-z][a-z -]{0,80}"
+    return bool(re.fullmatch(r'where (?:is|are) (?:the |a |an )?' + noun + r' (?:situated|located|positioned) in (?:this|the) (?:image|scene|picture)', q)
+                or re.fullmatch(r'what (?:kind|type) of area surrounds (?:the |a |an )?' + noun, q))
 
 def route(question, *, ndvi_supported=False, threshold=0.5):
     def decision(tool, rule, reason):
@@ -22,6 +32,8 @@ def route(question, *, ndvi_supported=False, threshold=0.5):
     q = re.sub(r'^(?:can|could) you\s+', '', q)
     if not q or len(question) > 500:
         return refuse('question_length', 'Enter a question between 1 and 500 characters.')
+    if visual_context_question(question):
+        return decision('vqa', 'visual_context', 'Descriptive image-relative context; model interpretation, not coordinates, boxes or measurement.')
     rural_q=re.sub(r'\brural\s*/\s*urban\b', 'rural or urban', q)
     rural_patterns=[
         r'is (?:this|the)(?: (?:image|scene|photo|picture|area))? (?:a |an )?rural or urban(?: (?:area|scene|image))?',
