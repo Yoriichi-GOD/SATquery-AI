@@ -23,6 +23,7 @@ On the frozen 90-chip Sen1Floods11 test replay: **SAR IoU 63.64% · optical 83.9
 On a selected 100-pair LEVIR-MCI test subset (50 changed / 50 unchanged): **road IoU 80.99% · building IoU 81.69%**. These are bounded task results, not overall system accuracy or official-sensor validation.
 
 - [Benchmark methodology and findings](BENCHMARK_REPORT.md)
+- [Public VQA diagnostic: why whole-response exact match is not semantic accuracy](paired_lab/evidence/public-benchmarks-20260927/README.md)
 - [Claim register](docs/CLAIM_REGISTER.md) and [priority closure](docs/PRIORITY_CLOSURE.md)
 - [Presentation findings](PPT_FINDINGS.md)
 - [Numerical tables](paired_lab/evidence/benchmark-20260921/metrics.csv)

@@ -15,6 +15,16 @@
         "n": 16,
         "exact_match": 12
       }
+    },
+    "scoring_context": {
+      "metric_name": "normalized_whole_response_exact_match_diagnostic",
+      "definition": "Lowercase and collapse whitespace; remove terminal .!?; compare the entire presented answer with the short reference. Refusals/errors count as non-matches.",
+      "interpretation": "Exact-response matches are not semantic correctness. Explanatory text and appended presentation disclaimers can prevent matching a correct short answer; genuinely wrong answers and refusals also contribute.",
+      "semantic_accuracy": null,
+      "semantic_review_status": "Not scored; no retrospective replacement accuracy computed.",
+      "published_benchmark_score": false,
+      "scope": "Reused-image regression subset, not a full benchmark or untouched acceptance set.",
+      "readme": "README.md"
     }
   },
   "VRSBench": {
@@ -66,6 +76,16 @@
         "n": 5,
         "exact_match": 0
       }
+    },
+    "scoring_context": {
+      "metric_name": "normalized_whole_response_exact_match_diagnostic",
+      "definition": "Lowercase and collapse whitespace; remove terminal .!?; compare the entire presented answer with the short reference. Refusals/errors count as non-matches.",
+      "interpretation": "Exact-response matches are not semantic correctness. Explanatory text and appended presentation disclaimers can prevent matching a correct short answer; genuinely wrong answers and refusals also contribute.",
+      "semantic_accuracy": null,
+      "semantic_review_status": "Not scored; no retrospective replacement accuracy computed.",
+      "published_benchmark_score": false,
+      "scope": "Reused-image regression subset, not a full benchmark or untouched acceptance set.",
+      "readme": "README.md"
     }
   }
 }

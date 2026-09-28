@@ -11,6 +11,18 @@ def sha(p): return hashlib.sha256(p.read_bytes()).hexdigest()
 def norm(s): return re.sub(r'[.!?]+$', '', ' '.join(str(s).lower().strip().split()))
 def save(p, x): p.write_text(json.dumps(x, indent=2))
 
+def scoring_context(dataset):
+    return {
+        'metric_name': 'normalized_whole_response_exact_match_diagnostic',
+        'definition': 'Lowercase and collapse whitespace; remove terminal .!?; compare the entire presented answer with the short reference. Refusals/errors count as non-matches.',
+        'interpretation': 'Exact-response matches are not semantic correctness. Explanatory text and appended presentation disclaimers can prevent matching a correct short answer; genuinely wrong answers and refusals also contribute.',
+        'semantic_accuracy': None,
+        'semantic_review_status': 'Not scored; no retrospective replacement accuracy computed.',
+        'published_benchmark_score': False,
+        'scope': 'Reused-image regression subset, not a full benchmark or untouched acceptance set.',
+        'readme': 'README.md',
+    }
+
 def main():
     ap=argparse.ArgumentParser();ap.add_argument('--root',type=Path,required=True);args=ap.parse_args()
     root=args.root.resolve();old=root/'paired_lab/evidence/benchmark-20260921';out=root/'paired_lab/evidence/public-benchmarks-20260927'
@@ -77,6 +89,7 @@ def main():
         for ds in sorted({r['dataset'] for r in rows}):
             subset=[r for r in rows if r['dataset']==ds]
             summary[ds]={'n':len(subset),'complete':sum(r['state']=='complete' for r in subset),'exact_match':sum(r['exact_match'] for r in subset),'states':{s:sum(r['state']==s for r in subset) for s in sorted({r['state'] for r in subset})},'categories':{cat:{'n':sum(r['category']==cat for r in subset),'exact_match':sum(r['exact_match'] for r in subset if r['category']==cat)} for cat in sorted({r['category'] for r in subset})}}
+        for ds in summary: summary[ds]['scoring_context']=scoring_context(ds)
         save(out/'summary.json',summary);print(json.dumps(summary),flush=True)
     finally:
         for p in children:

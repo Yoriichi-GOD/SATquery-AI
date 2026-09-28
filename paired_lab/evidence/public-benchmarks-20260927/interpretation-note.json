@@ -1,0 +1,77 @@
+{
+  "change": "Documentation and additive summary metadata only; no inference rerun or semantic rescoring",
+  "raw_rows_sha256": "73b159d00cd427257b0dafc08c2d6f9b53ee74810baec6070a1195db14b19bc6",
+  "original_summary": {
+    "RSVQA-LR": {
+      "n": 32,
+      "complete": 32,
+      "exact_match": 12,
+      "states": {
+        "complete": 32
+      },
+      "categories": {
+        "presence": {
+          "n": 16,
+          "exact_match": 0
+        },
+        "rural_urban": {
+          "n": 16,
+          "exact_match": 12
+        }
+      }
+    },
+    "VRSBench": {
+      "n": 45,
+      "complete": 42,
+      "exact_match": 0,
+      "states": {
+        "complete": 42,
+        "refused": 3
+      },
+      "categories": {
+        "image": {
+          "n": 2,
+          "exact_match": 0
+        },
+        "object category": {
+          "n": 6,
+          "exact_match": 0
+        },
+        "object color": {
+          "n": 2,
+          "exact_match": 0
+        },
+        "object existence": {
+          "n": 12,
+          "exact_match": 0
+        },
+        "object position": {
+          "n": 9,
+          "exact_match": 0
+        },
+        "object quantity": {
+          "n": 5,
+          "exact_match": 0
+        },
+        "object shape": {
+          "n": 1,
+          "exact_match": 0
+        },
+        "object size": {
+          "n": 2,
+          "exact_match": 0
+        },
+        "reasoning": {
+          "n": 1,
+          "exact_match": 0
+        },
+        "scene type": {
+          "n": 5,
+          "exact_match": 0
+        }
+      }
+    }
+  },
+  "original_numeric_fields_unchanged": true,
+  "raw_rows_unchanged": true
+}
