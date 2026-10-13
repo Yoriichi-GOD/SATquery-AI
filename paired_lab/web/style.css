@@ -28,3 +28,7 @@ body:has(#evaluation:not([hidden])) main{padding-top:18px}
 .parameter-result{border:1px solid var(--line);border-radius:14px;padding:15px;margin-top:16px}.parameter-view{background:var(--input);color:var(--text);border:1px solid var(--gold);border-radius:8px;padding:10px}
 
 .views.input-pair{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px;align-items:start}.input-card{min-width:0}.input-card:only-child{grid-column:1/-1}.input-card button{width:100%;padding:0;background:transparent;border:0}.input-card img{width:100%;height:260px;object-fit:contain}.input-card p,.input-card small{overflow-wrap:anywhere}.suggestion{background:#111;color:#fff;border:1px solid #b89b59;border-radius:10px;padding:10px;margin:4px;text-align:left}#suggestions{margin:12px 0}@media(max-width:600px){.input-card img{height:160px}}
+
+.current-benchmarks h3{margin-top:28px}.current-benchmarks{min-width:0}.current-benchmarks p{overflow-wrap:anywhere}.current-benchmarks table{display:block;overflow-x:auto;max-width:100%}.current-benchmarks .metrics p{font-size:12px;align-self:center}
+
+.current-benchmarks .water-metrics{grid-template-columns:repeat(3,minmax(0,1fr))}@media(max-width:650px){.current-benchmarks .water-metrics{grid-template-columns:1fr}}
