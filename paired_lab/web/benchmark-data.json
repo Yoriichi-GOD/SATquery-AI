@@ -878,11 +878,13 @@
   "sources": [
     {
       "path": "paired_lab/evidence/cdvqa-trained-20260928/final-test-summary.json",
+      "hash_method": "SHA-256 of UTF-8 text with LF line endings",
       "sha256": "4b71fcab912829840db5b654816f00bd18ba7367595d9d6433aa0de91c2e5555"
     },
     {
       "path": "paired_lab/evidence/benchmark-20260921/metrics.csv",
-      "sha256": "192e07b5798031a49d5c31e2ea1a075d2e663357577531d2d4279636c06dbeed"
+      "hash_method": "SHA-256 of UTF-8 text with LF line endings",
+      "sha256": "e163445b5e5d40ba25b807c44f12d956b2f108b88901a1309d64f9ee7ba7b0fb"
     }
   ]
 }

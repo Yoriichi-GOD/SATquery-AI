@@ -36,7 +36,7 @@ async function currentBenchmarks(){
   heading(detail,'Land cover · narrow fixture evaluation','12 existing Austrian fixtures from one source scene, mixing six validation and six test-labelled fixtures. Development evidence; not geographic generalisation.');
   detail.append(table(['Pathway','Micro F1'],metricRows('land_cover','12 existing fixtures','micro_f1').map(r=>[mode[r.path_or_class],pct(r.value_0_to_1)])));
   const a=element('a','Download saved benchmark data and source hashes');a.href='/assets/benchmark-data.json?v=20261014';a.download='satquery-benchmark-data.json';detail.append(a);
-  detail.append(element('h3','Source files'),...d.sources.map(s=>element('p',s.path+' · SHA-256 '+s.sha256)));
+  detail.append(element('h3','Source files'),...d.sources.map(s=>element('p',s.path+' · '+s.hash_method+' · '+s.sha256)));
   detail.append(element('h3','Archived development checks'));
  }catch(error){overview.append(element('p','Benchmark evidence unavailable: '+error.message));detail.append(element('p','Benchmark evidence unavailable: '+error.message));}
 }currentBenchmarks();

@@ -13,7 +13,7 @@ def build():
                 assert abs(score['aa']-sum(t['accuracy'] for t in score['by_type'].values())/len(score['by_type']))<1e-12
     with (ROOT/paths[1]).open(newline='') as f:rows=list(csv.DictReader(f))
     for r in rows:r['samples']=int(r['samples']);r['value_0_to_1']=float(r['value_0_to_1']);assert 0<=r['value_0_to_1']<=1
-    return {'cdvqa':cd,'metrics':rows,'sources':[{'path':p,'sha256':hashlib.sha256((ROOT/p).read_bytes()).hexdigest()} for p in paths]}
+    return {'cdvqa':cd,'metrics':rows,'sources':[{'path':p,'hash_method':'SHA-256 of UTF-8 text with LF line endings','sha256':hashlib.sha256((ROOT/p).read_bytes().replace(b'\r\n',b'\n')).hexdigest()} for p in paths]}
 if __name__=='__main__':
     data=build()
     if '--check' in sys.argv:assert json.loads(DEST.read_text())==data,'Browser evidence stale: run scripts/build_evidence_page.py'
