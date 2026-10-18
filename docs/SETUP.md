@@ -6,7 +6,15 @@ The tested deployment is Linux under WSL with Python 3.11, an existing `/root/sa
 
 ## Software checks without models
 
-From the repository root, create a Python 3.11 virtual environment, install `requirements-test.txt`, then run `python -m unittest discover -s tests -v`. The GitHub workflow runs the same command. Software tests include stubs/mocks and synthetic arrays; passing them does not establish model quality.
+From the repository root, create and activate a Python 3.11 virtual environment, then run:
+
+```sh
+python -m pip install -r requirements-test.txt
+python scripts/check_publication.py
+python -m unittest discover -s tests -v
+```
+
+The [GitHub workflow](../.github/workflows/software-tests.yml) runs both checks and uploads their logs. Keep Git history available: the publication checker defaults to comparing `HEAD^` with `HEAD`; CI supplies its push/PR base through `CI_BASE_SHA`. It checks newly committed files and recomputes saved CDVQA metrics, not uncommitted-file hygiene or GPU inference. Software tests include stubs/mocks and synthetic arrays; passing them does not establish model quality.
 
 ## Inference environment
 
@@ -31,6 +39,7 @@ Do not replace a working environment before validating a new one. Driver compati
 | Water | `paired_lab/checkpoints/water-v1.pt`; manifest SHA256 must match |
 | Grounding | `/root/satquery/grounding-lab/models.json` and referenced DINO/SAM assets; separate provisioning remains necessary |
 | Demonstration/evaluation | Sample catalogues, scenes and labels under the runtime tree; not all supplied by a clone |
+| Experimental CDVQA CLI | Trained checkpoint and release manifest under `/root/satquery/cdvqa/`, plus the pretrained ResNet50 encoder; [reproduction details and explicit-path example](CDVQA_FINAL_REPORT.md#reproduction-and-saved-assets). Separate from browser serving |
 
 `paired_lab/bootstrap.py` restores pinned paired assets but also downloads the **legacy ChangeFormer** model. It is not a complete application installer. `setup_sources.py` and `setup_models.py` are historical construction scripts: do not treat them as reproducible current setup commands.
 
