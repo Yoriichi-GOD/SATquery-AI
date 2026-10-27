@@ -1,12 +1,12 @@
 # Repository contents
 
-Start with the [README](README.md), [setup guide](docs/SETUP.md), and [claim register](docs/CLAIM_REGISTER.md). The served application and experimental CLI have separate evidence.
+Start with the [README](README.md), [reviewer walkthrough](docs/REVIEWER_GUIDE.md), [architecture](docs/ARCHITECTURE.md), [setup guide](docs/SETUP.md), and [claim register](docs/CLAIM_REGISTER.md). The served application and experimental CLI have separate evidence. [Product captures](docs/images/README.md) identify real screens; [presentation verification](docs/PRESENTATION_VERIFICATION.md) records the checks.
 
 | Location | Role |
 | --- | --- |
 | Root Python modules and `web/` | Current single-image service and UI |
-| `paired_lab/server.py`, `controller.py`, `web/` | Current unified interface and dispatch |
-| `paired_lab/mci.py`, `mci_vendor/` | Active temporal specialist |
+| `paired_lab/server.py`, `paired_lab/controller.py`, `paired_lab/web/` | Current unified interface and dispatch |
+| `paired_lab/mci.py`, `paired_lab/mci_vendor/` | Active temporal specialist |
 | `paired_lab/engine.py` | Active BIFOLD land-cover functions; explicitly marked legacy ChangeFormer functions |
 | [CDVQA model](paired_lab/cdvqa_model.py), [CLI](scripts/predict_cdvqa.py) | Experimental change-question specialist, not connected to the browser/router |
 | `grounding_lab/` | Experimental grounding implementation and its historical evidence |

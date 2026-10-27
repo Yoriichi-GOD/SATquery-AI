@@ -1,61 +1,114 @@
-# SatQuery AI
+<p align="center"><img src="web/art/logo.png" width="76" height="76" alt="SatQuery's Saturn emblem"></p>
 
-Query-driven analysis of prepared Earth-observation imagery, with input compatibility checks and inspectable evidence. Repository guide reviewed 18 October 2026; benchmark results retain their recorded evaluation dates and scopes.
+<h1 align="center">SatQuery AI</h1>
 
-Start with [measured results](#evidence), [setup and required assets](docs/SETUP.md), or the [code and evidence map](REPOSITORY_CONTENTS.md).
+<p align="center"><strong>Ask about Earth. Inspect the answer.</strong></p>
 
-## Current workflows
+<p align="center">
+  <a href="docs/REVIEWER_GUIDE.md">Product walkthrough</a> ·
+  <a href="#measured-evidence">Measured evidence</a> ·
+  <a href="docs/SETUP.md">Setup</a> ·
+  <a href="docs/ARCHITECTURE.md">Architecture</a>
+</p>
 
-| Input / task | Active implementation | Boundary |
+SatQuery helps remote-sensing researchers and analysts ask questions about **prepared satellite imagery**, compare observed dates, and inspect the evidence behind a result. It brings input checks, task selection, specialist execution, and review into one local interface.
+
+**Status:** local research prototype for **SIH26167**. Working analytical paths and separate experiments are described below. Model assets require additional provisioning. Documentation reviewed **27 October 2026**; measurements retain their original evaluation dates.
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="docs/images/workspace-water-dark.png">
+  <source media="(prefers-color-scheme: light)" srcset="docs/images/workspace-water-light.png">
+  <img src="docs/images/workspace-water-dark.png" alt="Actual SatQuery workspace: water overlay, three sensor-path masks, pixel counts and result for the supplied India example" width="1440">
+</picture>
+
+*Actual product screen, captured 27 October 2026 from a new run of the supplied India example. The 49.56% shown is predicted water coverage in this crop, not accuracy. [Walk through this example](docs/REVIEWER_GUIDE.md#1-map-water-and-inspect-three-pathways) · [Capture provenance](docs/images/README.md).*
+
+## From an observation to a reviewable result
+
+1. **Supply prepared imagery.** Upload one image or a compatible pair, or choose a supplied example. Declare the required modality and dates.
+2. **Ask a supported question.** Input checks and the controller select an eligible specialist. Unsupported or ambiguous requests receive requirements or suggestions.
+3. **Inspect the result.** Review the final output, switch between inputs and processing views, then inspect calculations, limitations, and downloadable evidence.
+
+Sensor calibration, quality masks, and spatial correspondence depend on the workflow. Matching metadata alone does not prove physical co-registration. See [input contracts](docs/ARCHITECTURE.md#input-contracts).
+
+## What you can run
+
+These paths are connected in the main interface once their assets are provisioned:
+
+| Input | Supported analysis | Execution |
 | --- | --- | --- |
-| Single image: VQA, descriptions and bounded visual counts | Qwen2-VL remote-sensing model; query-specific policies | Descriptions can omit or invent details; counts are model estimates |
-| Calibrated red/NIR GeoTIFF: NDVI | CPU numerical processing | Surface reflectance required; thresholded pixels are not vegetation health |
-| Two registered RGB dates: road/building change | MCI masks and caption | Prepared 256 × 256 crops; caption and mask evidence are separate |
-| Compatible optical/SAR: water | WaterUNet SAR-only, optical-only, joint | Sentinel-1/2 training contract; single-date water is not automatically flood extent |
-| Compatible optical/SAR: land-cover classes | BIFOLD ResNet50 | Scene labels, not spatial segmentation |
-| Single image: category grounding | Grounding DINO + SAM, experimental | Supported categories; not unrestricted referring-expression accuracy |
-| Two calibrated Sentinel-2 dates: NDVI / NDWI comparison | CPU spectral comparison, experimental | Common valid grid and quality mask; no general urban-expansion measurement |
-| Two aligned RGB dates: CDVQA change-question answering | Experimental [CLI specialist](scripts/predict_cdvqa.py) | Trained question templates; evaluated separately, **not integrated into the browser/router** |
+| One optical image | Visual questions, descriptions, estimated counts | Qwen2-VL; local CUDA |
+| Calibrated red/NIR GeoTIFF | NDVI and thresholded pixel coverage | CPU numerical processing |
+| Two prepared RGB dates | Road/building change masks and a separate caption | MCI; CPU |
+| Compatible optical/SAR pair | SAR-only, optical-only, and joint water masks | WaterUNet; CPU |
+| Compatible optical/SAR pair | Scene-level land-cover labels from three pathways | BIFOLD ResNet50; CPU |
 
-The unified interface at `http://localhost:8767` selects eligible specialists from the query and input metadata. It refuses unsupported requests rather than inventing a fallback. Prepared examples and user uploads are separate. Forecasting is outside scope.
+**Experimental browser paths:** category grounding, single Sentinel-1 scene classification, and paired Sentinel-2 NDVI/NDWI comparison. See [capabilities and boundaries](docs/ARCHITECTURE.md#capability-status).
 
-## Evidence
+**Separate experiment:** the [CDVQA CLI](scripts/predict_cdvqa.py) answers trained change-question templates on aligned RGB pairs. Its benchmark is separate from the published browser/router. [Report](docs/CDVQA_FINAL_REPORT.md).
 
-On the frozen 90-chip Sen1Floods11 test replay: **SAR IoU 63.64% · optical 83.90% · joint 82.64%**. Fusion is not assumed to outperform each modality.
+## Measured evidence
 
-On a selected 100-pair LEVIR-MCI test subset (50 changed / 50 unchanged): **road IoU 80.99% · building IoU 81.69%**. These are bounded task results, not overall system accuracy or official-sensor validation.
+Each task has its own metric and scope. These results do not form an overall SatQuery accuracy score.
 
-On the official CDVQA Test-1 / Test-2 splits, the experimental specialist recorded **69.90% / 65.05% overall answer accuracy** on 39,686 / 31,036 questions, respectively (28 September 2026). Both splits use the same 968 image pairs and overlap in questions; do not pool them. Question-only controls scored 68.06% / 63.24%. Twelve pairs had previously been inspected; see the [full report, controls and exclusion analysis](docs/CDVQA_FINAL_REPORT.md) and [saved numerical summary](paired_lab/evidence/cdvqa-trained-20260928/final-test-summary.json). These are saved benchmark results, not a fresh model evaluation.
+| Evaluation | Recorded result | Denominator and scope |
+| --- | --- | --- |
+| [CDVQA Test-1](docs/CDVQA_FINAL_REPORT.md) | **69.90%** answer accuracy | 39,686 questions / 968 pairs; experimental specialist, 28 Sep 2026 |
+| [CDVQA Test-2](docs/CDVQA_FINAL_REPORT.md) | **65.05%** answer accuracy | 31,036 questions / the **same 968 pairs**, 28 Sep 2026 |
+| [Water mapping](BENCHMARK_REPORT.md#water-retain-the-three-pathways) | SAR **63.64%** · optical **83.90%** · joint **82.64%** IoU | 90 Sen1Floods11 test chips; previously evaluated split, 21 Sep 2026 |
+| [Road/building change](BENCHMARK_REPORT.md#temporal-segmentation-and-captions-are-separate) | Road **80.99%** · building **81.69%** IoU | 100 selected LEVIR-MCI pairs: 50 changed / 50 unchanged; inherited checkpoint, 21 Sep 2026 |
 
-- [Benchmark methodology and findings](BENCHMARK_REPORT.md)
-- [Public VQA diagnostic: why whole-response exact match is not semantic accuracy](paired_lab/evidence/public-benchmarks-20260927/README.md)
-- [Claim register](docs/CLAIM_REGISTER.md) and [priority closure](docs/PRIORITY_CLOSURE.md)
-- [Presentation findings](PPT_FINDINGS.md)
-- [Numerical tables](paired_lab/evidence/benchmark-20260921/metrics.csv)
-- [Description review](paired_lab/evidence/benchmark-20260921/DESCRIPTION_REVIEW.md)
+CDVQA splits overlap in questions and share imagery; **do not pool them**. Question-only controls scored 68.06% / 63.24%. Twelve pairs were previously inspected; [controls and exclusion analysis](docs/CDVQA_FINAL_REPORT.md#previously-inspected-pairs-excluded) disclose that exposure. Joint water fusion did not exceed optical-only on this test set.
+
+[Benchmark findings](BENCHMARK_REPORT.md) · [Numerical tables](paired_lab/evidence/benchmark-20260921/metrics.csv) · [CDVQA predictions](paired_lab/evidence/cdvqa-trained-20260928/) · [Claim register](docs/CLAIM_REGISTER.md)
+
+<details>
+<summary><strong>See the in-app Evidence page</strong> — overview and detailed evaluations</summary>
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="docs/images/evidence-overview-dark.png">
+  <source media="(prefers-color-scheme: light)" srcset="docs/images/evidence-overview-light.png">
+  <img src="docs/images/evidence-overview-dark.png" alt="Actual Evidence page showing CDVQA question counts and separate SAR, optical and joint water IoU cards" width="1440">
+</picture>
+
+This screen displays saved evaluations. Opening it does not rerun the models. [Reviewer guide](docs/REVIEWER_GUIDE.md) · [Screenshot provenance](docs/images/README.md).
+
+</details>
 
 ## Run and verify
 
-See [setup and remaining reproduction requirements](docs/SETUP.md) before installing model assets. A fresh clone does **not** contain every runtime asset.
+**Start with [setup and required assets](docs/SETUP.md).** The tested target is Linux/WSL with Python 3.11. A clone does not include every asset needed for full inference.
 
-Software-only checks (Python 3.11, no checkpoint download):
+For software checks in an activated **Python 3.11** environment:
 
 ```sh
-python -m venv .venv-tests
-# Activate the environment using your shell's activation command.
 python -m pip install -r requirements-test.txt
 python scripts/check_publication.py
 python -m unittest discover -s tests -v
 ```
 
-These are the checks used by [software CI](.github/workflows/software-tests.yml). The publication checker recomputes CDVQA metrics from saved predictions and checks newly committed files; it does not scan uncommitted files. Tests use mocks and synthetic inputs and do not establish model accuracy. CI retains verification logs as run artifacts.
+[GitHub Actions](https://github.com/Yoriichi-GOD/SATquery-AI/actions/workflows/software-tests.yml) runs these checks. Tests include mocks and synthetic inputs. Publication checks cover newly committed files and recompute saved CDVQA metrics; they do not run model inference or scan all uncommitted files.
 
-For an already provisioned WSL runtime, run `./start.ps1` from PowerShell. The script derives the checkout path and accepts `-Python` and `-Distribution`; it does not install models. Native Linux: `python paired_lab/launch.py` in the provisioned environment.
+For a provisioned runtime, follow the [launch instructions](docs/SETUP.md#start-a-provisioned-runtime) and open **http://localhost:8767**. This is a local address, not a hosted demo.
 
-## Repository map and scope
+## Explore the project
 
-[Repository contents](REPOSITORY_CONTENTS.md) identifies active code, current evidence and historical snapshots. Historical archives are retained for provenance, not deployment.
+| I want to… | Open |
+| --- | --- |
+| See the product and strongest examples | [Reviewer walkthrough](docs/REVIEWER_GUIDE.md) |
+| Understand services and supported inputs | [Architecture and capabilities](docs/ARCHITECTURE.md) |
+| Install dependencies and identify missing assets | [Setup](docs/SETUP.md) |
+| Find active code and historical material | [Repository map](REPOSITORY_CONTENTS.md) |
+| Audit measured results | [Benchmark report](BENCHMARK_REPORT.md), [CDVQA report](docs/CDVQA_FINAL_REPORT.md), [claim register](docs/CLAIM_REGISTER.md) |
+| Check official-product work | [Official sample report](docs/OFFICIAL_SAMPLE_FINAL_REPORT.md) |
+| Find presentation material and remaining gates | [Presentation findings](PPT_FINDINGS.md), [priority closure](docs/PRIORITY_CLOSURE.md) |
+| Understand omitted assets | [Evidence storage](docs/EVIDENCE_STORAGE.md) |
+| Check this documentation pass | [Verification record](docs/PRESENTATION_VERIFICATION.md) |
 
-[Evidence storage](docs/EVIDENCE_STORAGE.md) explains which assets remain outside Git; [claim boundaries](docs/CLAIM_REGISTER.md) separate measured results from unsupported extrapolations.
+## Current boundaries
 
-This is a local research prototype. Authentication, multi-user isolation, deployment scalability and official Cartosat/RISAT model accuracy are not established. Review third-party model and dataset terms before redistribution or commercial use.
+- **Expert review remains necessary.** Descriptions and counts can be wrong. Masks and scores are predictions. Index thresholds do not establish vegetation health or flood extent.
+- **Official checks have limited scope.** Downloaded samples supported Cartosat ingestion/description execution and EOS-04 numerical calibration checks. Paired Cartosat/RISAT semantic accuracy remains unvalidated. [Exact scope](docs/OFFICIAL_SAMPLE_FINAL_REPORT.md).
+- **Operational readiness is open.** Authentication, multi-user isolation, full fresh-machine inference reproduction, and deployment scalability are not established. Forecasting is outside scope.
+
+Historical evidence and deliverables retain their existing paths. The [MIT license](LICENSE) covers repository code; model and dataset terms require their own review.

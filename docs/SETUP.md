@@ -47,10 +47,23 @@ Some active modules still use absolute `/root/satquery` asset/data paths, and ma
 
 ## Start a provisioned runtime
 
-PowerShell: `./start.ps1 -Distribution Ubuntu -Python /root/satquery/.venv/bin/python`; add `-Check` to probe both services without launching them. Linux: `python paired_lab/launch.py`.
+From an activated, provisioned Python environment in the Linux/WSL repository directory:
+
+```sh
+python paired_lab/launch.py --check
+python paired_lab/launch.py
+```
+
+`--check` only probes the two services; it succeeds when both are already running. The second command starts missing services and stays running until Ctrl+C. These commands do not provision model assets.
+
+The existing PowerShell wrapper accepts `./start.ps1 -Distribution Ubuntu -Python /root/satquery/.venv/bin/python` and `-Check`, but the 27 October presentation check hit a `wslpath` translation failure from PowerShell in a Windows checkout. Use the Linux/WSL commands above if that occurs. The wrapper is retained unchanged; its portability is not established by this documentation pass.
 
 Services bind to loopback: 8765 single-image/grounding, 8767 unified interface. Launcher logs default to repository `.runtime/logs/`; override with `SATQUERY_LOG_DIR`. No weights are downloaded by the launcher. Saved known artifact URLs can survive restart; the in-memory job index does not.
 
 ## Release gate
 
 Clean-machine full inference, asset restoration, commercial licensing review, authentication and multi-user isolation remain open. Do not describe this repository as turnkey SaaS or certified for official sensors.
+
+## Byte-exact evidence on Windows
+
+Frozen text evidence is hashed as bytes. A Windows checkout with automatic CRLF conversion can fail the development-manifest hash check when read from WSL, even though the stored Git blob is unchanged. Use a native Linux checkout with LF files for the documented Linux checks. For a separate new clone, `git -c core.autocrlf=false clone https://github.com/Yoriichi-GOD/SATquery-AI.git satquery` keeps the recorded text bytes. Do not rewrite a frozen manifest or regenerate outputs to hide a line-ending mismatch. This does not change the need to provision runtime assets.
