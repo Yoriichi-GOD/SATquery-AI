@@ -28,6 +28,8 @@ These improvements existed as local work after `cafdb80`. They add configurable 
 | Real CPU smoke | Water, MCI temporal, and three-path land-cover inference passed on tracked, previously inspected development examples; new outputs and CRC-checked ZIPs |
 | CDVQA HTTP | Supported question completed; missing alignment and unsupported query refused; 19 scores, matching checkpoint identity, ZIP CRC and original bytes checked |
 | Real browser | Template selection, uploads, missing-alignment refusal, CPU inference, two input views, 19 scores, image expansion, evidence download, replacement clearing, and unsupported-question refusal passed; zero JavaScript errors |
+| Documentation merge | 167 local links/anchors checked across 12 guides; 16 desktop/mobile light/dark previews passed; published product screenshots and provenance retained |
+| Preservation | 2,708 unrelated original files hashed unchanged, including all 395 excluded private/research/dataset files; historical measurements and model assets retained |
 | Layout | Desktop 1440 × 1000, dark/light; mobile 390 × 844 had no document-level horizontal overflow. These are bounded checks of the CDVQA flow, not every workflow or viewport |
 
 These are functional/regression results, not new accuracy measurements or new-machine model restoration. The existing isolated CPU environment and existing model assets were reused. GPU restoration, independent acceptance, broad grounding/description quality, and official paired-sensor semantic accuracy remain open.

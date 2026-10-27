@@ -1,0 +1,42 @@
+{
+  "captured_date": "2026-10-27",
+  "base_revision": "cafdb8055c063c5d9f283a2d71d404d0c5830a8b",
+  "capture_type": "Actual browser viewport; provisioned local published application; no mocked responses",
+  "viewport": {
+    "width": 1440,
+    "height": 1000
+  },
+  "sample_id": "flood-India_900498",
+  "question": "Map water in these images.",
+  "task": "water_map",
+  "predicted_water_pixels": {
+    "s1": 134387,
+    "s2": 130106,
+    "all": 129908
+  },
+  "denominator_pixels": 262144,
+  "coverage_percent": 49.56,
+  "checkpoint_sha256": "7844387fffd6c7e606895328e61be936304f979fee74411021f7312b3215f7ce",
+  "device": "CPU",
+  "browser_javascript_errors": [],
+  "evidence_zip_crc_passed": true,
+  "exported_scores_recomputed_counts_match": true,
+  "screenshots": [
+    {
+      "file": "workspace-water-dark.png",
+      "sha256": "2d727e98acd8905eddf5dfa9e7f961845e68d03475ede761263e097572240900"
+    },
+    {
+      "file": "workspace-water-light.png",
+      "sha256": "85c48920e4e4e87c9b3713f7d58753db9267036fe727608feb40774f07d0ba75"
+    },
+    {
+      "file": "evidence-overview-dark.png",
+      "sha256": "7e4c0bded493be3354ff209964bbb5cc7e356e94015604c094a5776b2143cc04"
+    },
+    {
+      "file": "evidence-overview-light.png",
+      "sha256": "802d9f35f5a832aa70e678e45945f943bc819594609ca548b738d4728eb3a147"
+    }
+  ]
+}

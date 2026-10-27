@@ -2,7 +2,7 @@
 
 Verified target: Linux/WSL, Python 3.11. Use a new environment and explicit asset/cache roots. Keep the working installation intact. See the [asset inventory](ASSETS.md) for public downloads and manual releases.
 
-## Software first
+## Software checks without models
 
 From the repository root:
 
@@ -11,6 +11,7 @@ python3.11 -m venv .venv-repro
 . .venv-repro/bin/activate
 python -m pip install -r requirements-test.txt
 python -m unittest discover -s tests -v
+python -m unittest discover -s scripts -p 'test_*.py' -v
 python scripts/check_publication.py
 ```
 
@@ -44,9 +45,16 @@ VQA/grounding serving requires CUDA. Install compatible CUDA builds of pinned to
 
 Rural/urban LoRA and CDVQA releases require maintainer provision; see [ASSETS.md](ASSETS.md). `python scripts/preflight.py --workflow all --verify-hashes --check-cuda --json` deliberately fails if a selected asset/dependency is missing. Select one workflow for a partial install. Presence/provenance/hash checks are not execution; run real inputs before claiming deployment readiness.
 
-## Start the interface
+## Start a provisioned runtime
 
-With the environment and asset variables above: `python paired_lab/launch.py`.
+From an activated, provisioned Python environment in the Linux/WSL repository directory:
+
+```sh
+python paired_lab/launch.py --check
+python paired_lab/launch.py
+```
+
+`--check` probes the two services and succeeds when both are already running. The second command starts missing services and stays running until Ctrl+C. Neither command provisions model assets.
 
 Windows PowerShell:
 
@@ -59,3 +67,9 @@ Add -Check to probe without launching. Loopback ports: 8765 single-image/groundi
 ## Verification limits
 
 See [executed verification](REPRODUCIBILITY_VERIFICATION.md). Isolated environment verification on an existing WSL host is not a new OS or independent researcher replication. GPU restoration, manual release availability, commercial licensing, authentication and multi-user isolation remain separate gates.
+
+## Byte-exact evidence on Windows
+
+Frozen text evidence is hashed as bytes. A Windows checkout with automatic CRLF conversion can fail the development-manifest hash check when read from WSL, even though the stored Git blob is unchanged. Use a native Linux checkout with LF files for the documented Linux checks. For a separate new clone, `git -c core.autocrlf=false clone https://github.com/Yoriichi-GOD/SATquery-AI.git satquery` keeps the recorded text bytes. Do not rewrite a frozen manifest or regenerate outputs to hide a line-ending mismatch. Runtime assets still require provisioning.
+
+The 27 October implementation review repaired Windows-to-WSL path handling and verified `start.ps1 -Check` against both running local services. This is a launcher health check, not fresh-machine installation proof. See the [review record](PENDING_RELEASE_REVIEW_20261027.md).
