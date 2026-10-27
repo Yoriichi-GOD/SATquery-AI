@@ -32,7 +32,8 @@ jobs:
         run: |
           set -o pipefail
           python -m unittest discover -s tests -v 2>&1 | tee software-tests.log
-          python -m unittest discover -s scripts -p 'test_*.py' -v 2>&1 | tee -a software-tests.log
+          python scripts/test_measure_landmarks.py -v 2>&1 | tee -a software-tests.log
+          python scripts/test_quality_readiness.py -v 2>&1 | tee -a software-tests.log
       - name: Preserve verification logs
         if: always()
         uses: actions/upload-artifact@v4

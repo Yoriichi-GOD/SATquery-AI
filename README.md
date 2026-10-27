@@ -85,7 +85,8 @@ For software checks in an activated **Python 3.11** environment:
 python -m pip install -r requirements-test.txt
 python scripts/check_publication.py
 python -m unittest discover -s tests -v
-python -m unittest discover -s scripts -p 'test_*.py' -v
+python scripts/test_measure_landmarks.py -v
+python scripts/test_quality_readiness.py -v
 ```
 
 [GitHub Actions](https://github.com/Yoriichi-GOD/SATquery-AI/actions/workflows/software-tests.yml) runs these checks. Tests include mocks and synthetic inputs. Publication checks cover newly committed files and recompute saved CDVQA metrics; they do not run model inference or scan all uncommitted files.

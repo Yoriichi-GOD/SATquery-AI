@@ -11,7 +11,8 @@ python3.11 -m venv .venv-repro
 . .venv-repro/bin/activate
 python -m pip install -r requirements-test.txt
 python -m unittest discover -s tests -v
-python -m unittest discover -s scripts -p 'test_*.py' -v
+python scripts/test_measure_landmarks.py -v
+python scripts/test_quality_readiness.py -v
 python scripts/check_publication.py
 ```
 

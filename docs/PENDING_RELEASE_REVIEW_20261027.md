@@ -34,7 +34,7 @@ These improvements existed as local work after `cafdb80`. They add configurable 
 
 These are functional/regression results, not new accuracy measurements or new-machine model restoration. The existing isolated CPU environment and existing model assets were reused. GPU restoration, independent acceptance, broad grounding/description quality, and official paired-sensor semantic accuracy remain open.
 
-Run the application suite with `python -m unittest discover -s tests -v` and helpers with `python -m unittest discover -s scripts -p 'test_*.py' -v`. [Setup](SETUP.md) describes the runtime; [the improvement audit](IMPROVEMENT_AUDIT.md) retains earlier evidence and [the protocol](EVALUATION_PROTOCOL_V1.md) defines evaluation boundaries. Existing frozen byte-hash checks still require an LF-preserving checkout; Windows CRLF conversion must not be “fixed” by changing a frozen expected hash.
+Run the application suite with `python -m unittest discover -s tests -v` and helpers with `python scripts/test_measure_landmarks.py -v` and `python scripts/test_quality_readiness.py -v`. [Setup](SETUP.md) describes the runtime; [the improvement audit](IMPROVEMENT_AUDIT.md) retains earlier evidence and [the protocol](EVALUATION_PROTOCOL_V1.md) defines evaluation boundaries. Existing frozen byte-hash checks still require an LF-preserving checkout; Windows CRLF conversion must not be “fixed” by changing a frozen expected hash.
 
 ## Publication boundary
 
@@ -43,3 +43,5 @@ Only reviewed application, test, configuration, tool source and documentation ch
 ## CI portability follow-up
 
 The first pushed integration commit failed GitHub Actions because Python 3.11 raised PermissionError while probing the developer's private legacy asset directory. Local privileged WSL checks had masked this condition. Asset discovery now uses explicit overrides without probing that directory and falls back to the current user's data directory when the legacy location is inaccessible. Two import-level regressions reproduce denied access and verify override precedence. After the fix, 117 application tests and 11 helper tests passed in the isolated Python 3.11 CPU environment. This changes runtime discovery, not models or historical scores.
+
+The follow-up CI run passed all 117 application checks, then exposed a helper-discovery error: the broad scripts pattern imported the historical PyTorch CDVQA experiment. CI and setup commands now name the two model-free helper suites explicitly (6 landmark + 5 readiness tests), preserving the experiment unchanged. The final check uses a fresh Python 3.11 environment with only requirements-test.txt installed, without model dependencies or downloads.
