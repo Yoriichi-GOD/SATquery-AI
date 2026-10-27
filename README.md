@@ -15,7 +15,7 @@ Start with [measured results](#evidence), [setup and required assets](docs/SETUP
 | Compatible optical/SAR: land-cover classes | BIFOLD ResNet50 | Scene labels, not spatial segmentation |
 | Single image: category grounding | Grounding DINO + SAM, experimental | Supported categories; not unrestricted referring-expression accuracy |
 | Two calibrated Sentinel-2 dates: NDVI / NDWI comparison | CPU spectral comparison, experimental | Common valid grid and quality mask; no general urban-expansion measurement |
-| Two aligned RGB dates: CDVQA change-question answering | Experimental [CLI specialist](scripts/predict_cdvqa.py) | Trained question templates; evaluated separately, **not integrated into the browser/router** |
+| Two aligned RGB dates: CDVQA change-question answering | Experimental [CLI and explicit RGB-pair mode](docs/IMPROVEMENT_AUDIT.md#cdvqa-integration-evidence) | Exact trained templates; backend integration verified; browser interaction check remains open |
 
 The unified interface at `http://localhost:8767` selects eligible specialists from the query and input metadata. It refuses unsupported requests rather than inventing a fallback. Prepared examples and user uploads are separate. Forecasting is outside scope.
 

@@ -9,7 +9,7 @@ async function currentBenchmarks(){
  const cards=parent=>{const d=element('div');d.className='metrics';parent.append(d);return d};
  try{
   const response=await fetch('/assets/benchmark-data.json?v=20261014');if(!response.ok)throw Error('Saved benchmark data could not be loaded');const d=await response.json();
-  heading(overview,'CDVQA · change-question answering','28 Sep 2026 · Experimental specialist evaluated separately; not connected to browser analysis.');
+  heading(overview,'CDVQA · change-question answering','28 Sep 2026 · Frozen specialist benchmark; experimental RGB-pair mode is now available. Integration does not change these scores.');
   const cc=cards(overview);
   for(const [key,label] of [['Test','Test-1'],['Test2','Test-2']]){const m=d.cdvqa[key].all_official.paired;metric(cc,label+' · overall accuracy',pct(m.oa));cc.lastElementChild.append(element('p',num(m.n)+' questions · '+num(m.pairs)+' image pairs'));}
   overview.append(element('p','Both splits share imagery and overlap in questions; do not pool them. See detailed results for question-only controls, per-type accuracy and previously inspected pair exclusions.'));

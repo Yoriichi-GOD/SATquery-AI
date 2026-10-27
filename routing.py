@@ -6,7 +6,7 @@ unrecognized and compound requests fail closed. Version saved with each run.
 import math
 import re
 
-VERSION = 'rules-v8'
+VERSION = 'rules-v9'
 
 
 def visual_context_question(question):
@@ -17,6 +17,7 @@ def visual_context_question(question):
         return False
     noun = r"[a-z][a-z -]{0,80}"
     return bool(re.fullmatch(r'where (?:is|are) (?:the |a |an )?' + noun + r' (?:situated|located|positioned) in (?:this|the) (?:image|scene|picture)', q)
+                or re.fullmatch(r'where (?:is|are) (?:the |a |an )?' + noun + r' in (?:this|the) (?:image|scene|picture)', q)
                 or re.fullmatch(r'what (?:kind|type) of area surrounds (?:the |a |an )?' + noun, q))
 
 def route(question, *, ndvi_supported=False, threshold=0.5):
@@ -34,6 +35,8 @@ def route(question, *, ndvi_supported=False, threshold=0.5):
         return refuse('question_length', 'Enter a question between 1 and 500 characters.')
     if visual_context_question(question):
         return decision('vqa', 'visual_context', 'Descriptive image-relative context; model interpretation, not coordinates, boxes or measurement.')
+    if re.fullmatch(r'(?:describe (?:this|the) area(?: briefly)?|what (?:is visible|do you see) in (?:this|the) area)',q):
+        return decision('vqa','single_image_description','Scene description; the word area does not request a physical measurement.')
     rural_q=re.sub(r'\brural\s*/\s*urban\b', 'rural or urban', q)
     rural_patterns=[
         r'is (?:this|the)(?: (?:image|scene|photo|picture|area))? (?:a |an )?rural or urban(?: (?:area|scene|image))?',

@@ -6,14 +6,14 @@ from fastapi.responses import FileResponse,JSONResponse,Response
 from fastapi.staticfiles import StaticFiles
 from starlette.middleware.trustedhost import TrustedHostMiddleware
 ROOT=Path(__file__).resolve().parent
-sys.path.insert(0,str(ROOT))
+sys.path.insert(0,str(ROOT));sys.path.insert(0,str(ROOT.parent))
 import engine
-import controller,single_bridge,grounding_bridge,mci,flood,spectral_pair,sar_single
+import controller,single_bridge,grounding_bridge,mci,flood,spectral_pair,sar_single,cdvqa_bridge
 from recovery import detail as recovery_detail
 import rasterio
 from inputs import inspect,route,validate
 import numpy as np
-DATA=engine.DATA/'app';DATA.mkdir(exist_ok=True)
+DATA=engine.DATA/'app';DATA.mkdir(parents=True,exist_ok=True)
 UPLOADS=DATA/'uploads';UPLOADS.mkdir(exist_ok=True)
 RUNS=DATA/'runs';RUNS.mkdir(exist_ok=True)
 app=FastAPI(title='SatQuery Unified Workspace',docs_url=None,redoc_url=None)
@@ -74,6 +74,20 @@ async def upload(file:UploadFile=File(...),modality:str=Form(...),date:str=Form(
     r['id']=iid;r['name']=Path(file.filename or 'image.tif').name;images[iid]=r
     return {k:v for k,v in r.items() if k not in ['data','path']}
 
+@app.get('/api/cdvqa-questions')
+def cdvqa_questions():return cdvqa_bridge.CONTRACT['supported_questions']
+
+@app.post('/api/cdvqa-images')
+async def upload_cdvqa(file:UploadFile=File(...)):
+    raw=await file.read(20*1024*1024+1)
+    if len(raw)>20*1024*1024:raise HTTPException(413,'Upload limit is 20 MB.')
+    iid=uuid.uuid4().hex;path=UPLOADS/(iid+'.rgb');path.write_bytes(raw)
+    try:r=cdvqa_bridge.inspect_rgb(path)
+    except Exception as e:
+        path.unlink(missing_ok=True);raise HTTPException(400,str(e))
+    r.update(id=iid,name=Path(file.filename or 'rgb-image').name);images[iid]=r
+    return {k:v for k,v in r.items() if k!='path'}
+
 @app.post('/api/single-images')
 async def upload_single(file:UploadFile=File(...),modality:str=Form("optical")):
     raw=await file.read(20*1024*1024+1)
@@ -121,7 +135,10 @@ def prepare(payload):
         checks={'task':task,'inputs':[{k:v for k,v in records[0].items() if k not in ['path','data']}]}
     else:
         if any(r.get('is_single') for r in records):raise ValueError('Use paired TIFF uploads for two-image analysis.')
-        if task=='spectral_pair':
+        if task=='cdvqa':
+            checks=cdvqa_bridge.validate(records,payload.get('aligned'))
+            cdvqa_bridge.available()
+        elif task=='spectral_pair':
             spectral_pair.validate(records)
             water_threshold=payload.get('water_threshold',0.0)
             if isinstance(water_threshold,bool) or not isinstance(water_threshold,(int,float)) or not np.isfinite(water_threshold) or not -1<=water_threshold<=1:raise ValueError('NDWI threshold must be a finite number from -1 to 1.')
@@ -147,6 +164,7 @@ def work(jid,records,query,task,checks):
         progress=lambda stage:progress_update(jid,stage)
         progress('Starting '+checks['plan']['specialist'])
         if task in ['vqa','ndvi']:result=single_bridge.run(records[0],query,checks['plan'],out,progress=progress)
+        elif task=='cdvqa':result=cdvqa_bridge.run(records,query,out,progress=progress)
         elif task=='sar_scene':result=sar_single.run(records[0],out,progress=progress)
         elif task=='spectral_pair':result=spectral_pair.analyse(records,checks['plan']['parameters'],checks['plan']['threshold'],checks['plan']['water_threshold'],out,progress,include_built_up=checks['plan']['include_built_up'])
         elif task=='grounding':result=grounding_bridge.run(records[0],query,checks['plan'],out,progress=progress)
@@ -173,7 +191,7 @@ def work(jid,records,query,task,checks):
         progress('Saving result and original inputs')
         result.update({'execution':checks['plan'],'id':jid,'query':query,'input_checks':checks,'controller':controller.VERSION,'created_at':time.strftime('%Y-%m-%dT%H:%M:%SZ',time.gmtime())})
         (out/'result.json').write_text(json.dumps(result,indent=2))
-        for i,r in enumerate(records):shutil.copy2(r['path'],out/(f'input-{i+1}.original' if r.get('is_single') else f'input-{i+1}.tif'))
+        for i,r in enumerate(records):shutil.copy2(r['path'],out/(f'input-{i+1}.original' if r.get('is_single') or r.get('cdvqa_rgb') else f'input-{i+1}.tif'))
         progress('Packaging evidence')
         result['execution_events']=jobs[jid]['events']
         result['work_seconds_before_zip']=time.perf_counter()-started

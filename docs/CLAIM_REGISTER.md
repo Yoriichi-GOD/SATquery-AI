@@ -4,7 +4,7 @@ Sources: [benchmark report](../BENCHMARK_REPORT.md), [metrics](../paired_lab/evi
 
 | Permitted claim | Evidence scope | Must accompany it / forbidden extrapolation |
 | --- | --- | --- |
-| CDVQA Test-1 / Test-2 OA 69.90% / 65.05% | 28 September; 39,686 / 31,036 questions on the same 968 pairs | Experimental CLI, not browser integration. Overlapping splits must not be pooled. Question-only OA 68.06% / 63.24%; 12 previously inspected pairs and exclusion analysis disclosed in report |
+| CDVQA Test-1 / Test-2 OA 69.90% / 65.05% | 28 September; 39,686 / 31,036 questions on the same 968 pairs | Experimental classifier; later interface integration does not change these benchmark scores. Overlapping splits must not be pooled. Question-only OA 68.06% / 63.24%; 12 previously inspected pairs and exclusion analysis disclosed in report |
 | Road IoU 80.99%; building IoU 81.69% | 100 selected LEVIR-MCI pairs, 50 changed/50 unchanged | Inherited checkpoint; not full CDVQA or official-sensor validation |
 | Water SAR 63.64%, optical 83.90%, joint 82.64% IoU | 90 Sen1Floods11 test chips replayed | Previously evaluated; no universal fusion advantage |
 | Bolivia joint IoU 81.58% | 15 held-region chips replayed | Small region-specific result; not universal transfer |

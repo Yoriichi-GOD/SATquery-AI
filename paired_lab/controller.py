@@ -2,10 +2,11 @@
 import importlib.util, math, re
 from pathlib import Path
 from inputs import route as paired_route
-VERSION = 'unified-rules-v9'
+VERSION = 'unified-rules-v10'
 spec = importlib.util.spec_from_file_location('preserved_single_router', Path(__file__).resolve().parent.parent / 'routing.py')
 single = importlib.util.module_from_spec(spec); spec.loader.exec_module(single)
 SPECIALISTS = {
+    'cdvqa': ('CDVQA frozen 19-answer RGB-pair classifier','CPU','experimental'),
     'sar_scene': ('BIFOLD SAR-only scene classifier','CPU','experimental'),
     'spectral_pair': ('NDVI + NDWI observed-date comparison','CPU','experimental'),
     'vqa': ('Remote-sensing Qwen2-VL-2B', 'CUDA GPU', 'supported'),
@@ -45,6 +46,11 @@ def plan(query, records, threshold=.5):
     if isinstance(threshold, bool) or not isinstance(threshold, (int, float)) or not math.isfinite(threshold) or not -1 <= threshold <= 1:
         raise ValueError('NDVI threshold must be a finite number from -1 to 1.')
     q = ' '.join(query.lower().split())
+    if any(r.get('cdvqa_rgb') for r in records):
+        import cdvqa_bridge
+        if len(records)!=2 or not all(r.get('cdvqa_rgb') for r in records):raise ValueError('CDVQA requires two prepared RGB uploads in its explicit experimental mode.')
+        if not cdvqa_bridge.supported(query):raise ValueError('Unsupported CDVQA question. Use an exact supported question from the template list; requests are not silently rewritten. Ratio answers are predicted bins, not measured area.')
+        return selection('cdvqa','Explicit experimental RGB pair and exact frozen question template.',steps=['validate ordered RGB pair and alignment declaration','verify release hashes','predict answer class','save raw scores and originals'])
     if re.search(r'\b(forecast\w*|predict\w*|tomorrow|evacuat\w*|future|next (?:day|week|month|year)|will .*(?:spread|flood|change|increase))\b', q):
         raise ValueError('Forecasting and evacuation advice are not implemented. Ask about water visible now, or supported road/building changes between observed dates. Future rainfall scenarios cannot be analysed by the current specialists.')
     if re.search(r'\b(depth|volume|temperature|soil moisture|population|rainfall|evaporation)\b', q):

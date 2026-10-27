@@ -19,7 +19,7 @@ Implemented and trained a new 19-answer paired RGB classifier. A frozen ImageNet
 
 Previously, the road/building temporal specialist did not implement the complete CDVQA answer vocabulary. This new result therefore establishes a CDVQA specialist baseline; it is not a before/after accuracy comparison against the old application. The paired-vs-question-only comparison below measures the contribution of visual inputs in this experiment.
 
-The new specialist is runnable through `scripts/predict_cdvqa.py`, with original-input hashes, checkpoint identity, uncalibrated class scores, timing and a ZIP evidence package. It is **not yet wired into the main browser/router**. Language and paired-upload UI changes remain deferred as requested. The CLI accepts trained question templates listed in release.json and requires the user to confirm prepared, aligned RGB inputs.
+The new specialist is runnable through `scripts/predict_cdvqa.py`, with original-input hashes, checkpoint identity, uncalibrated class scores, timing and a ZIP evidence package. At benchmark time it was not wired into the browser/router. The later [integration audit](IMPROVEMENT_AUDIT.md#cdvqa-integration-evidence) records explicit RGB-pair mode, real HTTP verification and the remaining browser check; benchmark scores are unchanged. The CLI accepts trained question templates listed in release.json and requires the user to confirm prepared, aligned RGB inputs.
 
 ## Protocol and integrity
 

@@ -17,7 +17,8 @@ function table(headers,rows){const t=element('table'),head=element('tr');headers
 function showResult(r){
  $('#result').hidden=false;$('#loading-art').hidden=true;$('#answer').textContent=r.answer;$('#metrics').replaceChildren();metric($('#metrics'),'Specialist execution',`${r.seconds.toFixed(2)} s`);metric($('#metrics'),'Compute',r.execution?.device||'Local');$('#scores').replaceChildren();
  const url=f=>`/api/runs/${r.id}/${f}`;
- if(r.task==='spectral_pair'){
+ if(r.task==='cdvqa'){views([['Before',url('before.png')],['After',url('after.png')]]);$('#scores').append(element('p','Experimental predicted answer class; not a measured quantity.'),table(['Answer class','Uncalibrated score'],Object.entries(r.class_scores_uncalibrated).sort((a,b)=>b[1]-a[1]).map(([k,v])=>[k,(100*v).toFixed(1)+'%'])));
+ }else if(r.task==='spectral_pair'){
   const items=[['Overview: before / after / change',url('comparison.png')]];
   for(const [key,label] of [['vegetation','Vegetation · NDVI'],['water','Water candidates · NDWI'],['built_up','Built-up expansion']]){
    const v=r.parameters[key];if(!v)continue;const card=element('section');card.className='parameter-result';card.append(element('h3',label));
@@ -71,11 +72,12 @@ $('#form').onsubmit=async ev=>{
    views([['Input preview',image.preview='/api/single-images/'+image.id]]);
   }else if(choice)payload.sample=choice;
   else{
+   const cdvqa=$('#pair-specialist').value==='cdvqa';payload.aligned=cdvqa&&$('#cdvqa-aligned').checked;
    payload.images=[];payload.threshold=Number($('#pair-ndvi').value);payload.water_threshold=Number($('#pair-ndwi').value);
    for(const suffix of ['a','b']){
-    const file=$(`#file-${suffix}`).files[0];if(!file)throw Error('Choose both TIFF files.');
+    const file=$(`#file-${suffix}`).files[0];if(!file)throw Error('Choose both image files.');
     const body=new FormData();body.append('file',file);body.append('modality',$(`#mode-${suffix}`).value);body.append('date',$(`#date-${suffix}`).value);
-    feedback('Checking uploaded image…');payload.images.push((await api('/api/images',{method:'POST',body})).id);
+    feedback('Checking uploaded image…');payload.images.push((await api(cdvqa?'/api/cdvqa-images':'/api/images',{method:'POST',body})).id);
    }
   }
   feedback('Validating input compatibility and selecting the specialist…');
@@ -100,6 +102,9 @@ function aggregate(rows){const s=rows.reduce((a,m)=>({tp:a.tp+m.tp,fp:a.fp+m.fp,
 async function boot(){try{const status=await api('/api/status');$('#status').textContent='Local workspace · '+status.state;samples=await api('/api/samples');for(const kind of ['temporal','optical_sar','water_map']){const group=element('optgroup');group.label=kind==='temporal'?'Temporal · paired optical examples':kind==='water_map'?'Water maps · Sen1Floods11':'Optical + SAR · BigEarthNet';for(const s of samples.filter(s=>s.kind===kind)){const o=element('option',s.name);o.value=s.id;group.append(o)}$('#sample').append(group)}$('#sample').value='single';selectSample();document.querySelectorAll('select').forEach(customPicker);const initial=new URLSearchParams(location.search).get('question');if(initial)$('#question').value=initial.slice(0,500);}catch(e){feedback(e.message)}}boot();
 
 function customPicker(select){
+ // Keep dynamic question options in a native, labelled select. The custom menu
+ // snapshots options at startup and would hide questions loaded afterward.
+ if(['pair-specialist','cdvqa-template'].includes(select.id))return;
  const wrapper=element('div');wrapper.className='picker';const toggle=element('button');toggle.type='button';toggle.className='picker-toggle';toggle.setAttribute('aria-haspopup','listbox');toggle.setAttribute('aria-expanded','false');toggle.setAttribute('aria-label',select.id==='sample'?'Example dataset':select.id==='single-modality'?'Input modality':select.id==='mode-a'?'First image modality':'Second image modality');const menu=element('div');menu.className='picker-menu';menu.id=select.id+'-choices';menu.setAttribute('role','listbox');menu.setAttribute('aria-label',toggle.getAttribute('aria-label'));menu.hidden=true;toggle.setAttribute('aria-controls',menu.id);
  const close=()=>{menu.hidden=true;toggle.setAttribute('aria-expanded','false')};
  const refresh=()=>{toggle.textContent=select.selectedOptions[0].textContent+' ▾';menu.querySelectorAll('button').forEach(b=>b.setAttribute('aria-selected',String(b.dataset.value===select.value)))};
@@ -127,3 +132,12 @@ function chooseSource(examples){
 }
 $('#own-mode').onclick=()=>chooseSource(false);$('#examples-mode').onclick=()=>chooseSource(true);
 for(const [id,value] of [['single-mode','single'],['pair-mode','']])$( '#'+id).onclick=()=>{if(active)return;ownInputMode=value;$('#single-mode').setAttribute('aria-pressed',String(value==='single'));$('#pair-mode').setAttribute('aria-pressed',String(value===''));chooseSource(false)};
+
+$('#pair-specialist').onchange=async()=>{
+ const selected=$('#pair-specialist').value==='cdvqa';$('#cdvqa-controls').hidden=!selected;
+ for(const side of ['a','b']){$(`#file-${side}`).accept=selected?'.png,.jpg,.jpeg,.tif,.tiff':'.tif,.tiff';if(selected){$(`#mode-${side}`).value='optical';$(`#mode-${side}`).dispatchEvent(new Event('change'));}}
+ $('#cdvqa-aligned').checked=false;$('#result').hidden=true;$('#execution').hidden=true;showSuggestions([]);
+ if(selected&&$('#cdvqa-template').options.length===1){try{for(const q of await api('/api/cdvqa-questions')){const opt=element('option',q);opt.value=q;$('#cdvqa-template').append(opt)}}catch(e){feedback(e.message)}}
+};
+$('#cdvqa-template').onchange=()=>{if($('#cdvqa-template').value)$('#question').value=$('#cdvqa-template').value};
+for(const id of ['file-a','file-b'])$('#'+id).addEventListener('change',()=>{$('#cdvqa-aligned').checked=false});
