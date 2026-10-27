@@ -1,56 +1,61 @@
 # Setup and reproducibility
 
-## Verified scope
+Verified target: Linux/WSL, Python 3.11. Use a new environment and explicit asset/cache roots. Keep the working installation intact. See the [asset inventory](ASSETS.md) for public downloads and manual releases.
 
-The tested deployment is Linux under WSL with Python 3.11, an existing `/root/satquery` asset tree and NVIDIA CUDA for VQA/grounding. The launcher is checkout-relative; asset provisioning is not yet a fully portable clone/install/run process.
+## Software first
 
-## Software checks without models
-
-From the repository root, create and activate a Python 3.11 virtual environment, then run:
+From the repository root:
 
 ```sh
+python3.11 -m venv .venv-repro
+. .venv-repro/bin/activate
 python -m pip install -r requirements-test.txt
-python scripts/check_publication.py
 python -m unittest discover -s tests -v
+python scripts/check_publication.py
 ```
 
-The [GitHub workflow](../.github/workflows/software-tests.yml) runs both checks and uploads their logs. Keep Git history available: the publication checker defaults to comparing `HEAD^` with `HEAD`; CI supplies its push/PR base through `CI_BASE_SHA`. It checks newly committed files and recomputes saved CDVQA metrics, not uncommitted-file hygiene or GPU inference. Software tests include stubs/mocks and synthetic arrays; passing them does not establish model quality.
+Publication checks compare committed history (HEAD^ to HEAD, or CI_BASE_SHA) and saved metrics, not all uncommitted files or GPU inference. Software tests include mocks and synthetic arrays; passing them does not prove model quality.
 
-## Inference environment
-
-`requirements-inference-tested.txt` reproduces the package/version inventory from the frozen benchmark baseline; its CUDA wheel index is explicit. `requirements-paired.txt` records the isolated dependencies from the paired runtime manifest. These are recorded constraints, not a claim that a clean installation has been demonstrated. `requirements-app.txt` is only the historical API overlay, not the complete environment.
-
-In an isolated Linux Python 3.11 environment:
+## Fresh CPU inference
 
 ```sh
-python -m pip install -r requirements-inference-tested.txt
-python -m pip install -r requirements-paired.txt
+export SATQUERY_ASSET_ROOT="$HOME/satquery-assets"
+export HF_HOME="$SATQUERY_ASSET_ROOT/hf-cache"
+export TORCH_HOME="$SATQUERY_ASSET_ROOT/torch-cache"
+python -m pip install torch==2.8.0 torchvision==0.23.0 --index-url https://download.pytorch.org/whl/cpu
+python -m pip install -r requirements-runtime.txt
+python -m pip check
+python scripts/preflight.py --workflow water --verify-hashes
+python scripts/smoke_runtime.py --workflow water --out .runtime/water-smoke
+python scripts/provision_assets.py --workflow temporal
+python scripts/smoke_runtime.py --workflow temporal --out .runtime/temporal-smoke
+python scripts/provision_assets.py --workflow land-cover
+python scripts/smoke_runtime.py --workflow land-cover --out .runtime/land-cover-smoke
+python scripts/preflight.py --workflow sar-scene --verify-hashes
 ```
 
-Do not replace a working environment before validating a new one. Driver compatibility, package-index availability and grounding dependencies must be checked separately.
+Each output must be a new directory. Smoke outputs include originals, hashes, predictions, environment metadata and a checked evidence ZIP. These are development checks, not accuracy benchmarks. Downloads need internet and several GB of disk space.
 
-## External assets and remaining gaps
+requirements-runtime.txt describes the active environment. requirements-inference-tested.txt and requirements-paired.txt preserve older benchmark inventories; do not overlay them on this environment.
 
-| Component | Required assets / restoration evidence |
-| --- | --- |
-| VQA | Hugging Face remote-sensing Qwen weights and cache; local LoRA adapter under `/root/satquery/experiments/lora-pilot-v1/adapter`; adapter restoration is not automated |
-| MCI | `/root/satquery/paired-lab/mci-model/manifest.json` and checkpoint; revision/hash in `paired_lab/runtime-manifest.json`; vendored model source is in `mci_vendor/` |
-| Land cover | Three BIFOLD snapshots, ConfigILM source/constants, `models.json`, isolated `deps/`; pinned revisions in runtime manifest |
-| Water | `paired_lab/checkpoints/water-v1.pt`; manifest SHA256 must match |
-| Grounding | `/root/satquery/grounding-lab/models.json` and referenced DINO/SAM assets; separate provisioning remains necessary |
-| Demonstration/evaluation | Sample catalogues, scenes and labels under the runtime tree; not all supplied by a clone |
-| Experimental CDVQA CLI | Trained checkpoint and release manifest under `/root/satquery/cdvqa/`, plus the pretrained ResNet50 encoder; [reproduction details and explicit-path example](CDVQA_FINAL_REPORT.md#reproduction-and-saved-assets). Separate from browser serving |
+## GPU and manual assets
 
-`paired_lab/bootstrap.py` restores pinned paired assets but also downloads the **legacy ChangeFormer** model. It is not a complete application installer. `setup_sources.py` and `setup_models.py` are historical construction scripts: do not treat them as reproducible current setup commands.
+VQA/grounding serving requires CUDA. Install compatible CUDA builds of pinned torch/torchvision in a separate environment, then requirements-runtime.txt. Provision vqa or grounding, then run `python scripts/preflight.py --workflow vqa --check-cuda` (or grounding). Driver compatibility is machine-specific; CPU smoke success does not certify GPU workflows.
 
-Some active modules still use absolute `/root/satquery` asset/data paths, and manifests contain resolved cache paths. A differently located asset tree requires a separate configuration migration. The `-Python` launcher option changes the interpreter, not those paths.
+Rural/urban LoRA and CDVQA releases require maintainer provision; see [ASSETS.md](ASSETS.md). `python scripts/preflight.py --workflow all --verify-hashes --check-cuda --json` deliberately fails if a selected asset/dependency is missing. Select one workflow for a partial install. Presence/provenance/hash checks are not execution; run real inputs before claiming deployment readiness.
 
-## Start a provisioned runtime
+## Start the interface
 
-PowerShell: `./start.ps1 -Distribution Ubuntu -Python /root/satquery/.venv/bin/python`; add `-Check` to probe both services without launching them. Linux: `python paired_lab/launch.py`.
+With the environment and asset variables above: `python paired_lab/launch.py`.
 
-Services bind to loopback: 8765 single-image/grounding, 8767 unified interface. Launcher logs default to repository `.runtime/logs/`; override with `SATQUERY_LOG_DIR`. No weights are downloaded by the launcher. Saved known artifact URLs can survive restart; the in-memory job index does not.
+Windows PowerShell:
 
-## Release gate
+```powershell
+./start.ps1 -Distribution Ubuntu -Python /absolute/path/to/venv/bin/python -AssetRoot /absolute/path/to/assets
+```
 
-Clean-machine full inference, asset restoration, commercial licensing review, authentication and multi-user isolation remain open. Do not describe this repository as turnkey SaaS or certified for official sensors.
+Add -Check to probe without launching. Loopback ports: 8765 single-image/grounding, 8767 unified. Logs default to .runtime/logs (SATQUERY_LOG_DIR overrides). Startup does not require every optional model; invoking a missing specialist fails. Saved artifact URLs can survive restart; the in-memory job index does not.
+
+## Verification limits
+
+See [executed verification](REPRODUCIBILITY_VERIFICATION.md). Isolated environment verification on an existing WSL host is not a new OS or independent researcher replication. GPU restoration, manual release availability, commercial licensing, authentication and multi-user isolation remain separate gates.

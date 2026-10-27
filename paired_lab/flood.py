@@ -1,5 +1,5 @@
 """Water segmentation: small locally trained U-Net, explicitly conditioned on available sensors."""
-import json,time,hashlib
+import json,time,hashlib,sys
 from pathlib import Path
 import numpy as np
 import torch
@@ -8,8 +8,10 @@ import torch.nn.functional as F
 from PIL import Image
 
 ROOT=Path(__file__).resolve().parent
-DATA=Path('/root/satquery/paired-lab/sen1floods11')
-WEIGHTS=ROOT/'checkpoints/water-v1.pt'
+sys.path.insert(0,str(ROOT.parent))
+from runtime_paths import PAIRED,WATER
+DATA=PAIRED/'sen1floods11'
+WEIGHTS=WATER
 S2_BANDS=['B01','B02','B03','B04','B05','B06','B07','B08','B8A','B09','B10','B11','B12']
 
 class Block(nn.Sequential):

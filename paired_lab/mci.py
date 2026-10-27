@@ -2,18 +2,20 @@
 import sys,time,json
 from pathlib import Path
 ROOT=Path(__file__).resolve().parent
-sys.path.insert(0,'/root/satquery/paired-lab/deps')
+sys.path.insert(0,str(ROOT.parent))
+from runtime_paths import PAIRED, read_manifest, manifest_path
+sys.path.insert(0,str(PAIRED/'deps'))
 import numpy as np,torch
 from PIL import Image
 _cache=None
-MANIFEST=Path('/root/satquery/paired-lab/mci-model/manifest.json')
+MANIFEST=PAIRED/'mci-model/manifest.json'
 def load(device='cpu'):
     global _cache
     if _cache is None:
         from mci_vendor.model_encoder_att import Encoder,AttentiveEncoder
         from mci_vendor.model_decoder import DecoderTransformer
         vocab=json.loads((ROOT/'mci_vendor/vocab.json').read_text())
-        state=torch.load(json.loads(MANIFEST.read_text())['path'],map_location='cpu',weights_only=True)
+        state=torch.load(manifest_path(read_manifest(MANIFEST),MANIFEST),map_location='cpu',weights_only=True)
         encoder=Encoder('segformer-mit_b1')
         att=AttentiveEncoder(train_stage=None,n_layers=3,feature_size=[16,16,512],heads=8,dropout=.1)
         dec=DecoderTransformer(encoder_dim=512,feature_dim=512,vocab_size=len(vocab),max_lengths=41,word_vocab=vocab,n_head=8,n_layers=1,dropout=.1)

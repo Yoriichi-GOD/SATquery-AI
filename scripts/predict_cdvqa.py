@@ -10,6 +10,8 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT / 'paired_lab'))
+sys.path.insert(0, str(ROOT))
+from runtime_paths import CDVQA, ENCODER
 
 def sha(path):
     return hashlib.sha256(Path(path).read_bytes()).hexdigest()
@@ -104,8 +106,8 @@ def main():
     p.add_argument('--after', required=True, type=Path)
     p.add_argument('--question', required=True)
     p.add_argument('--aligned', action='store_true')
-    p.add_argument('--model-dir', type=Path, default=Path(os.environ.get('SATQUERY_CDVQA_MODEL_DIR', '/root/satquery/cdvqa')))
-    p.add_argument('--encoder', type=Path, default=Path(os.environ.get('SATQUERY_CDVQA_ENCODER', '/root/.cache/torch/hub/checkpoints/resnet50-11ad3fa6.pth')))
+    p.add_argument('--model-dir', type=Path, default=CDVQA)
+    p.add_argument('--encoder', type=Path, default=ENCODER)
     p.add_argument('--device', choices=['cpu', 'cuda'], default='cpu')
     p.add_argument('--out', type=Path, required=True)
     a = p.parse_args()

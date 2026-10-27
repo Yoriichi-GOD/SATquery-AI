@@ -13,7 +13,9 @@ if __package__:
 else:
     from engine import CATEGORIES
 ROOT=Path(__file__).resolve().parent
-DATA=Path('/root/satquery/grounding-lab/app-data');DATA.mkdir(parents=True,exist_ok=True)
+sys.path.insert(0,str(ROOT.parent))
+from runtime_paths import GROUNDING
+DATA=GROUNDING/'app-data';DATA.mkdir(parents=True,exist_ok=True)
 app=FastAPI(title='SATquery Grounding Lab',docs_url=None,redoc_url=None)
 app.add_middleware(TrustedHostMiddleware,allowed_hosts=['localhost','127.0.0.1','testserver'])
 lock=threading.Lock();busy=False;pool=ThreadPoolExecutor(max_workers=1)
@@ -36,7 +38,7 @@ def page():return RedirectResponse('http://localhost:8767/?question=Outline%20bu
 def classic():return FileResponse(ROOT/'web/index.html')
 
 @app.get('/api/status')
-def status():return dict(busy=busy or bool(getattr(app.state,'gpu_busy',lambda:False)()),models_available=Path('/root/satquery/grounding-lab/models.json').exists(),isolated=True)
+def status():return dict(busy=busy or bool(getattr(app.state,'gpu_busy',lambda:False)()),models_available=(GROUNDING/'models.json').exists(),isolated=True)
 
 @app.post('/api/images')
 async def upload(file:UploadFile=File(...)):

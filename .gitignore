@@ -32,3 +32,9 @@ paired_lab/evidence/cdvqa-20260927/routing*-rows.json
 paired_lab/evidence/public-benchmarks-20260927/VRSBench_EVAL_vqa.json
 paired_lab/evidence/official-20260927/*-prefix.json
 paired_lab/evidence/submission-20260926/eos04-frs2-inventory.json
+
+# Private research drafts and separate Flood Lab acquisition material stay local.
+/Research/
+/emsr/
+/Nepal_2026_Flood_Dataset_Starter/
+/nepal_flood_2026_dataset_kit/

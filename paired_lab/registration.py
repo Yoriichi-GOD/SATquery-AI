@@ -1,6 +1,9 @@
 """Optical correspondence diagnostics. Does not silently warp or claim geographic truth."""
 import sys
-sys.path.insert(0,'/root/satquery/paired-lab/deps')
+from pathlib import Path
+sys.path.insert(0,str(Path(__file__).resolve().parents[1]))
+from runtime_paths import PAIRED
+sys.path.insert(0,str(PAIRED/'deps'))
 import cv2,numpy as np
 def diagnose(a,b):
     a=np.asarray(a);b=np.asarray(b)

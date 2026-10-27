@@ -1,6 +1,8 @@
 """Isolated Grounding DINO -> SAM experiment. All coordinates are image pixels."""
-import gc, hashlib, json, time
+import gc, hashlib, json, time, sys
 from pathlib import Path
+sys.path.insert(0,str(Path(__file__).resolve().parents[1]))
+from runtime_paths import GROUNDING, read_manifest, manifest_path
 import numpy as np
 from PIL import Image, ImageDraw, ImageFilter
 
@@ -24,7 +26,8 @@ def process(source,out,category='stadium',threshold=.3,mode='both',progress=lamb
     import torch
     from transformers import AutoProcessor, AutoModelForZeroShotObjectDetection, SamProcessor, SamModel
     started=time.perf_counter();out=Path(out);out.mkdir(parents=True,exist_ok=True)
-    records=json.loads(Path('/root/satquery/grounding-lab/models.json').read_text())
+    records=read_manifest(GROUNDING/'models.json')
+    records=[{**r,'path':str(manifest_path(r,GROUNDING/'models.json'))} for r in records]
     if category not in CATEGORIES or not .15<=threshold<=.8 or mode not in ('both','boxes'):raise ValueError('Invalid lab selection')
     if not torch.cuda.is_available():raise RuntimeError('The lab needs the local GPU.')
     free,total=torch.cuda.mem_get_info()

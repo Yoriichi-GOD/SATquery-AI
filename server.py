@@ -15,8 +15,9 @@ from fastapi.responses import FileResponse,JSONResponse,RedirectResponse
 from fastapi.staticfiles import StaticFiles
 from starlette.middleware.trustedhost import TrustedHostMiddleware
 from PIL import Image,ImageOps,UnidentifiedImageError
+from runtime_paths import APP_DATA, ASSET_ROOT, ADAPTER, vqa_path
 ROOT=Path(__file__).resolve().parent
-DATA=Path('/root/satquery/app-data');DATA.mkdir(exist_ok=True)
+DATA=APP_DATA;DATA.mkdir(parents=True,exist_ok=True)
 UPLOADS=DATA/'images';UPLOADS.mkdir(exist_ok=True)
 RUNS=DATA/'runs';RUNS.mkdir(exist_ok=True)
 MODEL_ID='AdaptLLM/remote-sensing-Qwen2-VL-2B-Instruct'
@@ -65,7 +66,7 @@ def preview(iid:str):
     if iid not in images:raise HTTPException(404,'Upload the image again.')
     return FileResponse(UPLOADS/f'{iid}.png',media_type='image/png')
 @app.get('/api/sample')
-def sample():return FileResponse('/root/satquery/demo_image.png',media_type='image/png')
+def sample():return FileResponse(ASSET_ROOT/'demo_image.png',media_type='image/png')
 @app.post('/api/analyze')
 def analyze(image_id:str=Form(...),question:str=Form(...),mode:str=Form('baseline'),threshold:float=Form(0.5)):
     global busy
@@ -85,7 +86,7 @@ def analyze(image_id:str=Form(...),question:str=Form(...),mode:str=Form('baselin
         raise HTTPException(422,'Select the rural/urban adapter or Original for this question.')
     if mode=='pilot_rural' and 'rural or urban' not in classification_question.lower():
         raise HTTPException(422,'The rural/urban adapter requires a rural or urban question. Select Original for other questions.')
-    if mode!='baseline' and not Path('/root/satquery/experiments/lora-pilot-v1/adapter/adapter_config.json').exists():raise HTTPException(503,'Pilot adapter is not available.')
+    if mode!='baseline' and not (ADAPTER/'adapter_config.json').exists():raise HTTPException(503,'Pilot adapter is not available.')
     with lock:
         if busy:raise HTTPException(409,'The model is processing a question. Please wait.')
         busy=True
@@ -103,7 +104,7 @@ def run_job(rid,iid):
         from transformers import Qwen2VLForConditionalGeneration,AutoProcessor
         if model is None:
             job.update(state='running',stage='Loading local model');start=time.perf_counter()
-            path=snapshot_download(MODEL_ID,revision=REVISION,local_files_only=True)
+            path=vqa_path()
             processor=AutoProcessor.from_pretrained(path,use_fast=False,min_pixels=256*28*28,max_pixels=512*28*28,size={'shortest_edge':256*28*28,'longest_edge':512*28*28})
             model=Qwen2VLForConditionalGeneration.from_pretrained(path,torch_dtype=torch.bfloat16,device_map={'':'cuda:0'},attn_implementation='sdpa').eval()
             job['trace'].append({'step':'Load pinned checkpoint','seconds':round(time.perf_counter()-start,3)})
@@ -124,11 +125,11 @@ def run_job(rid,iid):
         pilot=job['mode']!='baseline'
         if pilot and not hasattr(model,'peft_config'):
             from peft import PeftModel
-            model=PeftModel.from_pretrained(model,'/root/satquery/experiments/lora-pilot-v1/adapter').eval()
+            model=PeftModel.from_pretrained(model,str(ADAPTER)).eval()
         selected_processor=processor
         suffix=''
         if pilot:
-            selected_processor=AutoProcessor.from_pretrained(snapshot_download(MODEL_ID,revision=REVISION,local_files_only=True),use_fast=False,min_pixels=64*28*28,max_pixels=128*28*28,size={'shortest_edge':64*28*28,'longest_edge':128*28*28})
+            selected_processor=AutoProcessor.from_pretrained(vqa_path(),use_fast=False,min_pixels=64*28*28,max_pixels=128*28*28,size={'shortest_edge':64*28*28,'longest_edge':128*28*28})
             suffix=' Answer with only rural or urban.' if job['mode']=='pilot_rural' else ' Answer with only yes or no.'
         if job['routing']['rule']=='visual_count':
             suffix=' Answer with only a single integer. Do not describe the image.'
@@ -187,7 +188,7 @@ app.mount('/static',StaticFiles(directory=ROOT/'web'),name='static')
 
 @app.get('/api/scene-sample')
 def scene_sample():
-    return FileResponse('/root/satquery/scenes/dehradun-sentinel2-20211125.tif',media_type='image/tiff',filename='dehradun-sentinel2-20211125.tif')
+    return FileResponse(ASSET_ROOT/'scenes/dehradun-sentinel2-20211125.tif',media_type='image/tiff',filename='dehradun-sentinel2-20211125.tif')
 
 @app.post('/api/ndvi')
 def ndvi_run(image_id:str=Form(...),threshold:float=Form(0.5),question:str=Form('Calculate NDVI')):

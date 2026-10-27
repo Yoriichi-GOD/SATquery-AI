@@ -6,25 +6,40 @@ Land-cover functions in this module remain active; do not archive the module who
 """
 import sys,ast,json,time,hashlib
 from pathlib import Path
-DATA=Path('/root/satquery/paired-lab')
+sys.path.insert(0,str(Path(__file__).resolve().parents[1]))
+from runtime_paths import PAIRED, read_manifest, manifest_path
+DATA=PAIRED
 sys.path.insert(0,str(DATA/'deps'))
 import numpy as np
 import torch
 import torch.nn.functional as F
 from PIL import Image
 torch.set_num_threads(4)
-MODELS=json.loads((DATA/'models.json').read_text())
+MODELS={}
 S1=['VV','VH']
 S2=['B02','B03','B04','B05','B06','B07','B08','B8A','B11','B12']
 source=DATA/'ConfigILM/configilm/extra/BENv2_utils.py'
 constants={}
-for node in ast.parse(source.read_text()).body:
-    if isinstance(node,ast.Assign) and isinstance(node.targets[0],ast.Name) and node.targets[0].id in ['means','stds','NEW_LABELS_ORIGINAL_ORDER']:
-        constants[node.targets[0].id]=ast.literal_eval(node.value)
-CLASSES=sorted(constants['NEW_LABELS_ORIGINAL_ORDER'])
+CLASSES=[]
 _temporal=None;_fusion={}
 
+def configure():
+    """Load optional land-cover assets only when that workflow is selected."""
+    if constants:return
+    records=read_manifest(DATA/'models.json')
+    parsed={}
+    if not source.is_file():
+        raise ValueError(f'Missing normalization source {source}. Run python scripts/provision_assets.py --workflow land-cover.')
+    for node in ast.parse(source.read_text(encoding='utf-8')).body:
+        if isinstance(node,ast.Assign) and isinstance(node.targets[0],ast.Name) and node.targets[0].id in ['means','stds','NEW_LABELS_ORIGINAL_ORDER']:
+            parsed[node.targets[0].id]=ast.literal_eval(node.value)
+    if set(parsed)!={'means','stds','NEW_LABELS_ORIGINAL_ORDER'}:
+        raise ValueError('Incomplete BIFOLD normalization source; restore the pinned ConfigILM revision.')
+    MODELS.update({k:{**v,'path':str(manifest_path(v,DATA/'models.json'))} for k,v in records.items()})
+    constants.update(parsed);CLASSES[:]=sorted(parsed['NEW_LABELS_ORIGINAL_ORDER'])
+
 def load_temporal():
+    configure()
     global _temporal
     if _temporal is None:
         sys.path.insert(0,str(DATA/'ChangeFormer'))
@@ -66,6 +81,7 @@ def temporal(a,b,out):
     (out/'result.json').write_text(json.dumps(result,indent=2));return result
 
 def normalize(bands,order):
+    configure()
     values=[]
     for name in order:
         arr=np.asarray(bands[name],dtype=np.float32)
@@ -76,6 +92,7 @@ def normalize(bands,order):
     return torch.stack(values)[None]
 
 def load_fusion(kind):
+    configure()
     if kind not in _fusion:
         import timm
         from safetensors.torch import load_file

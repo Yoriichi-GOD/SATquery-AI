@@ -1,0 +1,230 @@
+{
+  "schema_version": 1,
+  "assets": [
+    {
+      "id": "vqa",
+      "workflows": [
+        "vqa"
+      ],
+      "root": "assets",
+      "path": "models/vqa",
+      "kind": "hf_snapshot",
+      "source": "AdaptLLM/remote-sensing-Qwen2-VL-2B-Instruct",
+      "revision": "7f5dd71bf0f40c282193d50160e848a387a08ffe",
+      "license": "Review pinned model card and Qwen2-VL base terms; no commercial clearance asserted.",
+      "required": [
+        "config.json",
+        "preprocessor_config.json",
+        "tokenizer_config.json",
+        "*.safetensors"
+      ],
+      "sha256": null,
+      "access": "public"
+    },
+    {
+      "id": "bifold-s1",
+      "workflows": [
+        "land-cover",
+        "sar-scene"
+      ],
+      "root": "paired",
+      "path": "models/s1",
+      "kind": "hf_snapshot",
+      "source": "BIFOLD-BigEarthNetv2-0/resnet50-s1-v0.2.0",
+      "revision": "d417b3c32f2172cbceb14e5b106dd9aa7b77c647",
+      "license": "Review pinned BIFOLD model card and upstream data terms.",
+      "required": [
+        "config.json",
+        "model.safetensors"
+      ],
+      "sha256": null,
+      "access": "public"
+    },
+    {
+      "id": "bifold-s2",
+      "workflows": [
+        "land-cover"
+      ],
+      "root": "paired",
+      "path": "models/s2",
+      "kind": "hf_snapshot",
+      "source": "BIFOLD-BigEarthNetv2-0/resnet50-s2-v0.2.0",
+      "revision": "f5a590cd5876845f62702260ff62ea5a325433bb",
+      "license": "Review pinned BIFOLD model card and upstream data terms.",
+      "required": [
+        "config.json",
+        "model.safetensors"
+      ],
+      "sha256": null,
+      "access": "public"
+    },
+    {
+      "id": "bifold-all",
+      "workflows": [
+        "land-cover"
+      ],
+      "root": "paired",
+      "path": "models/all",
+      "kind": "hf_snapshot",
+      "source": "BIFOLD-BigEarthNetv2-0/resnet50-all-v0.2.0",
+      "revision": "762acdc186cce6b31ecbc896ddab1721847d4c5e",
+      "license": "Review pinned BIFOLD model card and upstream data terms.",
+      "required": [
+        "config.json",
+        "model.safetensors"
+      ],
+      "sha256": null,
+      "access": "public"
+    },
+    {
+      "id": "configilm",
+      "workflows": [
+        "land-cover",
+        "sar-scene"
+      ],
+      "root": "paired",
+      "path": "ConfigILM",
+      "kind": "git",
+      "source": "https://github.com/lhackel-tub/ConfigILM.git",
+      "revision": "d5a6c64bee268e71f12e130bd839ab9dfe53cc08",
+      "license": "Inspect LICENSE at the pinned source revision; normalization constants used without executing source.",
+      "required": [
+        "configilm/extra/BENv2_utils.py"
+      ],
+      "sha256": null,
+      "access": "public"
+    },
+    {
+      "id": "mci",
+      "workflows": [
+        "temporal"
+      ],
+      "root": "paired",
+      "path": "mci-model/MCI_model.pth",
+      "kind": "hf_file",
+      "source": "lcybuaa/Change-Agent",
+      "revision": "1e679060173434cd22fd22a52effbf3c785c97a0",
+      "license": "Checkpoint card Apache-2.0; source MIT with academic-use statement. Preserve both statements; review before commercial release.",
+      "required": [],
+      "sha256": "34c6926342c40fdd6d50b43d50257cb46cb6b61763448de9ee551828a64b3eb9",
+      "access": "public"
+    },
+    {
+      "id": "water",
+      "workflows": [
+        "water"
+      ],
+      "root": "water",
+      "path": "",
+      "kind": "bundled",
+      "source": "paired_lab/train_water.py; Sen1Floods11 official train split",
+      "revision": "water-v1",
+      "license": "Local research weights; Sen1Floods11 data terms apply separately. Not official-sensor certified.",
+      "required": [],
+      "sha256": "7844387fffd6c7e606895328e61be936304f979fee74411021f7312b3215f7ce",
+      "access": "public"
+    },
+    {
+      "id": "dino",
+      "workflows": [
+        "grounding"
+      ],
+      "root": "grounding",
+      "path": "models/dino",
+      "kind": "hf_snapshot",
+      "source": "IDEA-Research/grounding-dino-tiny",
+      "revision": "a2bb814dd30d776dcf7e30523b00659f4f141c71",
+      "license": "Apache-2.0 recorded in installed pinned model manifest; review upstream terms.",
+      "required": [
+        "config.json",
+        "preprocessor_config.json",
+        "*.safetensors"
+      ],
+      "sha256": null,
+      "access": "public"
+    },
+    {
+      "id": "sam",
+      "workflows": [
+        "grounding"
+      ],
+      "root": "grounding",
+      "path": "models/sam",
+      "kind": "hf_snapshot",
+      "source": "facebook/sam-vit-base",
+      "revision": "70c1a07f894ebb5b307fd9eaaee97b9dfc16068f",
+      "license": "Apache-2.0 recorded in installed pinned model manifest; review upstream terms.",
+      "required": [
+        "config.json",
+        "preprocessor_config.json",
+        "*.safetensors"
+      ],
+      "sha256": null,
+      "access": "public"
+    },
+    {
+      "id": "vqa-adapter",
+      "workflows": [
+        "vqa-adapter"
+      ],
+      "root": "adapter",
+      "path": "",
+      "kind": "manual",
+      "source": "Maintainer-provided lora-pilot-v1; see NEW_CHAT_HANDOFF.md",
+      "revision": "lora-pilot-v1",
+      "license": "Local adapter; base-model and source-data terms still apply.",
+      "required": [
+        "adapter_config.json",
+        "adapter_model.safetensors"
+      ],
+      "sha256": null,
+      "access": "manual"
+    },
+    {
+      "id": "cdvqa",
+      "workflows": [
+        "cdvqa"
+      ],
+      "root": "cdvqa",
+      "path": "paired-best.pt",
+      "kind": "manual",
+      "source": "Maintainer-provided CDVQA_MODEL_RELEASE.zip; docs/CDVQA_FINAL_REPORT.md",
+      "revision": "20260928",
+      "license": "Local classifier; CDVQA/SECOND rights do not follow automatically from code license.",
+      "required": [],
+      "sha256": "8b1d6beb28d2f8a4a96937243255143c7f0426d394ff6a3f3645062337177b13",
+      "access": "manual"
+    },
+    {
+      "id": "cdvqa-release",
+      "workflows": [
+        "cdvqa"
+      ],
+      "root": "cdvqa",
+      "path": "release.json",
+      "kind": "manual",
+      "source": "Same maintainer release as paired-best.pt",
+      "revision": "20260928",
+      "license": "Release metadata; preserve supported question list.",
+      "required": [],
+      "sha256": null,
+      "access": "manual"
+    },
+    {
+      "id": "resnet50",
+      "workflows": [
+        "cdvqa"
+      ],
+      "root": "encoder",
+      "path": "",
+      "kind": "url",
+      "source": "https://download.pytorch.org/models/resnet50-11ad3fa6.pth",
+      "revision": "IMAGENET1K_V2",
+      "license": "Torchvision BSD-3-Clause code; pretrained data terms require separate review.",
+      "required": [],
+      "sha256": "11ad3fa62ca79e40addfd354a8ec4b7c75143b3038b8d2a807fbc68deab379ca",
+      "access": "public"
+    }
+  ],
+  "note": "Inference inventory, not a dataset redistribution license or a passing runtime test."
+}
