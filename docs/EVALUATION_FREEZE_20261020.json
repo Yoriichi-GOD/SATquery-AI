@@ -1,0 +1,39 @@
+{
+  "version": 1,
+  "frozen_date": "2026-10-20",
+  "purpose": "prospective evaluation protocol and baseline identity, not a new trained release",
+  "head": "cafdb8055c063c5d9f283a2d71d404d0c5830a8b",
+  "working_tree_status": " M README.md\n M docs/CDVQA_FINAL_REPORT.md\n M docs/CLAIM_REGISTER.md\n M docs/SETUP.md\n M grounding_lab/app.py\n M grounding_lab/engine.py\n M paired_lab/controller.py\n M paired_lab/engine.py\n M paired_lab/flood.py\n M paired_lab/mci.py\n M paired_lab/registration.py\n M paired_lab/server.py\n M paired_lab/start.ps1\n M paired_lab/web/app.js\n M paired_lab/web/index.html\n M routing.py\n M scripts/predict_cdvqa.py\n M server.py\n M start.ps1\n?? Nepal_2026_Flood_Dataset_Starter/\n?? Research/\n?? docs/ASSETS.md\n?? docs/EVALUATION_PROTOCOL_V1.md\n?? docs/IMPROVEMENT_AUDIT.md\n?? docs/REPRODUCIBILITY_VERIFICATION.md\n?? docs/RUNTIME_ASSETS.json\n?? emsr/\n?? nepal_flood_2026_dataset_kit/\n?? paired_lab/cdvqa-questions.json\n?? paired_lab/cdvqa_bridge.py\n?? requirements-runtime.txt\n?? runtime_paths.py\n?? scripts/check_cdvqa_dom.cjs\n?? scripts/preflight.py\n?? scripts/provision_assets.py\n?? scripts/smoke_cdvqa_http.py\n?? scripts/smoke_runtime.py\n?? tests/test_cdvqa_integration.py\n?? tests/test_preflight.py\n?? tests/test_prompt_regressions.py\n",
+  "files_sha256": {
+    "paired_lab/ORIGINAL_PROBLEM_STATEMENT.txt": "81ca5f8b36d18fb0ee9a712d1559d1a4273c50ed69a450987f6faa3fc20c9cdd",
+    "docs/EVALUATION_PROTOCOL_V1.md": "752ff938efd9b595314de1d45b49661c2e80af3fa90bb301e048477267378ff6",
+    "docs/CDVQA_FINAL_REPORT.md": "6491cf12f37bea3703e7aa1ba1f3b46f57866be99c74030eb199a8d3f0e53506",
+    "BENCHMARK_REPORT.md": "b5c20ebfd96eccf3a26675272a1dce99f580942227bff289626fe76ffbc7dd95",
+    "paired_lab/cdvqa_model.py": "8d9e92816e101f9e44af044af3e43d14effbe23ca056bff86a396078af53d2d3",
+    "paired_lab/cdvqa_bridge.py": "ed09bc73591beb5ef040a94488ad129bfb71b835ea54c47938af7c21b0069382",
+    "paired_lab/cdvqa-questions.json": "f4e6a2f165384555baeeec2429b5b60722e17c553805119ea433dafc424eeeb8",
+    "paired_lab/train_water.py": "502fa5fbabccf4f5136057a2e58db97d0cc6401fd767a92cb2060f1373ef4bd3",
+    "paired_lab/flood.py": "e526043034dfac07b4cd581df21877fc984dc5556f99e5710ee14d965e873333",
+    "paired_lab/server.py": "203aaf46fb3957b082581cc9efd35fb6ddfb577f61fa2d5e422b6f44e4236b0b",
+    "paired_lab/web/app.js": "f8950756cbeb266296ad3d0487e0965bec21698db13df352e660ba7f4dec0605",
+    "paired_lab/web/index.html": "ce0dac0365dfafd0ac9635ca9a059d875f98b0aeff5b5d336c2c09ee3c006620",
+    "scripts/train_cdvqa.py": "bf5f203ce31897a37cff8d6a0fbbdadb20f4372a761568f2c12de25567755f38",
+    "scripts/evaluate_cdvqa.py": "2c01a2a34066fce28ced497b33e13e23d4467ed815d45faccf5feb70b9909a98",
+    "scripts/verify_cdvqa_release.py": "fd5b6e9e2113bb2f488bfe8d3ab3ab93594fbe13946c6312a263c99a2ee2f986",
+    "requirements-runtime.txt": "e7e404d1935dbb8bc4ec7a6ed3b8b882786e86378eaf7dd1b5854e2226f7a472",
+    "requirements-test.txt": "be363d3c534248cefbf0872d41caa81a7561c48f7b5ce170c253192df12bb02d",
+    "paired_lab/evidence/cdvqa-trained-20260928/protocol.json": "e839f979b2767b6e7d6cad290dc5c724252cb1a1af73c33567283f28f91b4c03",
+    "paired_lab/evidence/cdvqa-trained-20260928/final-test-summary.json": "4b71fcab912829840db5b654816f00bd18ba7367595d9d6433aa0de91c2e5555",
+    "paired_lab/evidence/cdvqa-trained-20260928/candidate-freeze.json": "d4822447ab33927de97eadfa099799a9edb470afaf37462c8bad6d79d63f1836",
+    "paired_lab/evidence/cdvqa-trained-20260928/Test-predictions.json": "65d5d3aeeff79a4d3e3af1ef33b199fd48f92ef3401b13fc3cbdd27eb42c338e",
+    "paired_lab/evidence/cdvqa-trained-20260928/Test2-predictions.json": "a3a789e9ca14e306139d8c30eee1c2243f2059a948c0786fc9d6089f2927861a"
+  },
+  "browser_observed_models": {
+    "model": "paired-resnet50-gru-attention-v1",
+    "checkpoint_sha256": "8b1d6beb28d2f8a4a96937243255143c7f0426d394ff6a3f3645062337177b13",
+    "encoder_sha256": "11ad3fa62ca79e40addfd354a8ec4b7c75143b3038b8d2a807fbc68deab379ca"
+  },
+  "fresh_acceptance_manifest": null,
+  "unseen_acceptance_status": "not available; cannot certify unseen performance",
+  "training_executed": false
+}
