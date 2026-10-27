@@ -70,6 +70,37 @@ class PreflightTests(unittest.TestCase):
             with patch.dict(os.environ,{'SATQUERY_VQA_MODEL':str(snapshot)}):
                 self.assertEqual(preflight.paths.vqa_path(),str(snapshot))
 
+    def test_import_survives_inaccessible_legacy_root(self):
+        env=dict(os.environ)
+        env.pop('SATQUERY_ASSET_ROOT',None)
+        script="""
+from pathlib import Path
+from unittest.mock import patch
+original=Path.is_dir
+def inaccessible(path):
+    if path==Path('/root/satquery'):
+        raise PermissionError('legacy root is private')
+    return original(path)
+with patch.object(Path,'is_dir',inaccessible):
+    import runtime_paths as paths
+    print(paths.ASSET_ROOT)
+"""
+        result=subprocess.check_output([sys.executable,'-c',script],env=env,text=True)
+        self.assertEqual(result.strip(),str((Path.home()/'.local/share/satquery').resolve()))
+
+    def test_explicit_root_does_not_probe_legacy_install(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            env={**os.environ,'SATQUERY_ASSET_ROOT':tmp}
+            script="""
+from pathlib import Path
+from unittest.mock import patch
+with patch.object(Path,'is_dir',side_effect=AssertionError('unexpected legacy probe')):
+    import runtime_paths as paths
+    print(paths.ASSET_ROOT)
+"""
+            result=subprocess.check_output([sys.executable,'-c',script],env=env,text=True)
+            self.assertEqual(result.strip(),str(Path(tmp).resolve()))
+
     def test_relative_manifest_paths_follow_manifest(self):
         self.assertEqual(preflight.paths.manifest_path({'path':'model.pt'},Path('assets/release.json')),Path('assets/model.pt'))
 

@@ -39,3 +39,7 @@ Run the application suite with `python -m unittest discover -s tests -v` and hel
 ## Publication boundary
 
 Only reviewed application, test, configuration, tool source and documentation changes are committed. `Research/`, `emsr/`, and both Nepal dataset starter directories remain on the original machine. No raw acquisition data, private manuscript/PDF, runtime uploads, database, installed dependency directory, new model weight, or generated experiment cache is part of this release. Historical tracked evidence is retained.
+
+## CI portability follow-up
+
+The first pushed integration commit failed GitHub Actions because Python 3.11 raised PermissionError while probing the developer's private legacy asset directory. Local privileged WSL checks had masked this condition. Asset discovery now uses explicit overrides without probing that directory and falls back to the current user's data directory when the legacy location is inaccessible. Two import-level regressions reproduce denied access and verify override precedence. After the fix, 117 application tests and 11 helper tests passed in the isolated Python 3.11 CPU environment. This changes runtime discovery, not models or historical scores.

@@ -10,9 +10,22 @@ def location(name, default):
     return Path(os.environ.get(name, str(default))).expanduser().resolve()
 
 
-# Preserve the existing installation, but do not require /root on a new machine.
-ASSET_ROOT = location('SATQUERY_ASSET_ROOT', Path('/root/satquery') if Path('/root/satquery').is_dir()
-                      else Path.home() / '.local/share/satquery')
+def asset_root():
+    """Respect an explicit root; inaccessible legacy installs are unavailable."""
+    fallback = Path.home() / '.local/share/satquery'
+    if 'SATQUERY_ASSET_ROOT' in os.environ:
+        return location('SATQUERY_ASSET_ROOT', fallback)
+    legacy = Path('/root/satquery')
+    try:
+        if legacy.is_dir():
+            return legacy
+    except PermissionError:
+        pass
+    return fallback.resolve()
+
+
+# Preserve accessible existing installs without requiring root privileges.
+ASSET_ROOT = asset_root()
 PAIRED = location('SATQUERY_PAIRED_DIR', ASSET_ROOT / 'paired-lab')
 GROUNDING = location('SATQUERY_GROUNDING_DIR', ASSET_ROOT / 'grounding-lab')
 APP_DATA = location('SATQUERY_APP_DATA', ASSET_ROOT / 'app-data')
