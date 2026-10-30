@@ -61,6 +61,10 @@ class RegistrationTests(unittest.TestCase):
         self.labels[0,0]=7
         with self.assertRaises(BridgeError):register_rasters(tif(self.labels,from_origin(0,60,10,10)),self.dem)
 
+    def test_corrupt_raster_fails_with_explicit_status(self):
+        with self.assertRaises(BridgeError) as cm:register_rasters(b'not a tiff',self.dem)
+        self.assertEqual(cm.exception.status,422)
+
     def test_valid_zero_elevation_is_not_missing(self):
         value=register_rasters(self.pred,tif(np.zeros((3,3),dtype='float32'),from_origin(0,60,20,20),nodata=-9999))
         self.assertEqual(value['candidate_points'][0]['height_m'],0)

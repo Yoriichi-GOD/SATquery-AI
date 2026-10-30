@@ -1,5 +1,7 @@
 # First two build milestones — 30 October 2026
 
+Historical checkpoint. Later alignment and investigation completion: [current record](ALIGNMENT_AND_INVESTIGATION.md).
+
 This is a measured implementation checkpoint, not the organizer's final Day-1 submission or a claim that every item in the master prompt is complete.
 
 ## Implemented and verified

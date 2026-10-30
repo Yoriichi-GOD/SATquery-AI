@@ -29,6 +29,15 @@ def utc():return datetime.now(timezone.utc).isoformat()
 def digest(value):return hashlib.sha256(json.dumps(value,sort_keys=True,allow_nan=False,separators=(',',':')).encode()).hexdigest()
 
 
+def verify_trace(entries):
+    previous='0'*64
+    for entry in entries:
+        if (entry['previous_event_sha256']!=previous or entry['output_sha256']!=digest(entry['output']) or
+                entry['event_sha256']!=digest({k:v for k,v in entry.items() if k!='event_sha256'})):
+            raise ValueError('Trace integrity mismatch')
+        previous=entry['event_sha256']
+
+
 def plan(question):
     text=question.lower()
     if re.search(r'\b(depth|casualt\w*|death\w*|evacuat\w*|predict\w*|forecast\w*|confidence|probability|accuracy|safe|safest|damage|damaged|destroyed|guarantee|risk score)\b|ignore.*instruction|system prompt|\b(send|email|publish|delete|execute|download|acquire)\b',text):
@@ -87,10 +96,12 @@ class InvestigationEngine:
                 value=geo.coverage(payload['run_id'],payload['scene_id'],run=output['get_run'])
                 value={k:v for k,v in value.items() if k not in ['candidate_points','classes_on_mesh','candidate_fraction_on_mesh']}
                 if value['source_hashes']['analysis.tif']!=output['get_dem']['hashes']['analysis.tif']:raise BridgeError(409,'Terrain snapshot changed during investigation')
-                sources.append({'label':'Grid coverage calculation','url':f"/api/context/coverage?run_id={payload['run_id']}&scene_id={payload['scene_id']}",'sha256':digest(value),'hash_kind':'recorded_output_digest; live coverage endpoint includes display arrays'})
+                jid=payload.get('_job_id','recorded')
+                sources.append({'label':'Recorded grid coverage calculation','url':f"/api/investigations/{jid}/tools/analyze_coverage",'sha256':digest(value),'hash_kind':'canonical_json'})
             else:
                 p=payload['profile'];value=geo.transect(payload['scene_id'],p['start'],p['end'],p.get('samples',128))
-                sources.append({'label':'Profile source raster','url':f"/api/terrain/scenes/{payload['scene_id']}/raster",'sha256':value['source_sha256']})
+                jid=payload.get('_job_id','recorded')
+                sources.append({'label':'Recorded terrain profile','url':f"/api/investigations/{jid}/tools/terrain_transect",'sha256':digest(value),'hash_kind':'canonical_json'})
             check();output[name]=value;record(name,value,time.perf_counter()-started)
         claims=[]
         def claim(label,value,unit,source,field):claims.append({'label':label,'value':value,'unit':unit,'source':source,'field':field})
@@ -103,8 +114,12 @@ class InvestigationEngine:
             source=next(i for i,s in enumerate(sources) if s['label']=='Cached DSM and statistics')
             for label,key,unit in [('Minimum DSM height','elevation_min_m','m'),('Maximum DSM height','elevation_max_m','m'),('Median slope','slope_median_deg','degrees')]:claim(label,terrain['statistics'][key],unit,source,'/statistics/'+key)
         if 'analyze_coverage' in output:
-            source=next(i for i,s in enumerate(sources) if s['label']=='Grid coverage calculation')
+            source=next(i for i,s in enumerate(sources) if s['label']=='Recorded grid coverage calculation')
             claim('Common valid DEM cell centres',output['analyze_coverage']['common_valid_dem_cells'],'cells',source,'/common_valid_dem_cells')
+        if 'terrain_transect' in output:
+            source=next(i for i,s in enumerate(sources) if s['label']=='Recorded terrain profile')
+            claim('Transect length',output['terrain_transect']['length_m'],'m',source,'/length_m')
+            claim('Valid transect samples',output['terrain_transect']['valid_samples'],'samples',source,'/valid_samples')
         rows=[]
         if 'get_exposed_assets' in output:
             selected=[r for r in output['get_exposed_assets']['rows'] if r['status'] in ['exposed','unknown']]
@@ -125,6 +140,9 @@ class JobManager:
         for path in self.root.glob('investigation-*.json'):
             try:
                 item=json.loads(path.read_text(encoding='utf-8'))
+                try:verify_trace(item['trace'])
+                except (ValueError,KeyError,TypeError):
+                    item.update(state='failed',message='Saved trace integrity check failed',error_status=409);item.pop('result',None)
                 if item['state'] not in TERMINAL:item.update(state='interrupted',message='Server restarted; no completed answer claimed')
                 if re.fullmatch(r'investigation-[a-f0-9]{32}',item['id']):self.jobs[item['id']]=item
             except (ValueError,KeyError):continue
@@ -156,13 +174,17 @@ class JobManager:
         try:
             with self.lock:self.jobs[jid].update(state='running',message='Executing bounded tools');self.save(self.jobs[jid])
             check();engine=self.engine_factory(check)
-            result=engine.execute(self.jobs[jid]['selection'],check,record)
+            result=engine.execute({**self.jobs[jid]['selection'],'_job_id':jid},check,record)
             with self.lock:
                 check();self.jobs[jid].update(state=result['state'],result=result,message='Workflow '+result['state'])
         except BridgeError as error:
-            with self.lock:self.jobs[jid].update(state='cancelled' if error.status==499 else 'failed',message=error.message,error_status=error.status)
+            with self.lock:
+                cancelled=event.is_set() or error.status==499
+                self.jobs[jid].update(state='cancelled' if cancelled else 'failed',message='Investigation cancelled' if cancelled else error.message,error_status=499 if cancelled else error.status)
         except Exception:
-            with self.lock:self.jobs[jid].update(state='failed',message='Tool execution failed; no completed answer claimed',error_status=500)
+            with self.lock:
+                cancelled=event.is_set()
+                self.jobs[jid].update(state='cancelled' if cancelled else 'failed',message='Investigation cancelled' if cancelled else 'Tool execution failed; no completed answer claimed',error_status=499 if cancelled else 500)
         finally:
             with self.lock:
                 self.jobs[jid]['finished_utc']=utc();self.jobs[jid]['seconds']=time.perf_counter()-started
@@ -180,5 +202,14 @@ class JobManager:
             if value['state'] not in TERMINAL:
                 self.cancel_events[jid].set();self.jobs[jid].update(state='cancelling',message='Stopping; any in-flight local HTTP read has a bounded timeout');self.save(self.jobs[jid])
             return self.get(jid)
+
+    def tool_output(self,jid,tool):
+        if tool not in REGISTRY:raise BridgeError(404,'Unknown tool output')
+        job=self.get(jid)
+        try:verify_trace(job['trace'])
+        except (ValueError,KeyError,TypeError):raise BridgeError(409,'Recorded tool trace integrity check failed') from None
+        entry=next((e for e in job['trace'] if e['tool']==tool),None)
+        if entry is None:raise BridgeError(404,'Tool has no recorded output in this investigation')
+        return entry['output'],entry['output_sha256']
 
     def close(self):self.pool.shutdown(wait=True,cancel_futures=True)

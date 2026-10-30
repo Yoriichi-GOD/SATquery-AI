@@ -79,6 +79,15 @@ class JobTests(unittest.TestCase):
         m=self.manager();job=m.submit({'question':'water'});self.assertTrue(self.entered.wait(1))
         with self.assertRaises(BridgeError) as cm:m.submit({'question':'water'})
         self.assertEqual(cm.exception.status,409);self.release.set()
+
+    def test_cancel_wins_when_inflight_request_times_out(self):
+        parent=self
+        class Timeout:
+            def execute(self,payload,check,record):
+                parent.entered.set();parent.release.wait(2);raise BridgeError(503,'Upstream read timed out')
+        m=JobManager(self.tmp.name,lambda check:Timeout());self.addCleanup(m.close)
+        job=m.submit({'question':'water'});self.assertTrue(self.entered.wait(1));m.cancel(job['id']);self.release.set();m.close()
+        self.assertEqual(m.get(job['id'])['state'],'cancelled')
     def test_missing_upstream_never_completes(self):
         m=self.manager(True);job=m.submit({'question':'water'});self.release.set();m.close();self.assertEqual(m.get(job['id'])['state'],'failed')
     def test_trace_hash_chain_and_restart_readback(self):
@@ -93,3 +102,13 @@ class JobTests(unittest.TestCase):
     def test_job_id_traversal_refused(self):
         m=self.manager()
         with self.assertRaises(BridgeError):m.get('../../secret')
+
+    def test_recorded_tool_output_digest(self):
+        m=self.manager();job=m.submit({'question':'water'});self.release.set();m.close()
+        output,sha=m.tool_output(job['id'],'get_run');self.assertEqual(sha,digest(output))
+
+    def test_mutated_history_is_not_replayed_as_answer(self):
+        m=self.manager();job=m.submit({'question':'water'});self.release.set();m.close()
+        path=Path(self.tmp.name)/(job['id']+'.json');data=json.loads(path.read_text());data['trace'][0]['output']['answer_value']=999
+        path.write_text(json.dumps(data));restored=JobManager(self.tmp.name,lambda check:None);self.addCleanup(restored.close)
+        item=restored.get(job['id']);self.assertEqual(item['state'],'failed');self.assertNotIn('result',item)

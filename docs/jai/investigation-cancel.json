@@ -1,0 +1,11 @@
+{
+  "recorded_utc": "2026-10-30T11:45:19.957497+00:00",
+  "population": "USER_RECORDED induced upstream outage",
+  "job_id": "investigation-d9ac0788aa0f49e4ba107ecb6c95d2d6",
+  "state": "cancelled",
+  "seconds": 8.016500156999882,
+  "trace_events": 0,
+  "result_present": false,
+  "method": "Pause only owned Flood Lab process, start through browser, click Stop, wait for bounded read timeout, resume same process",
+  "message": "Investigation cancelled"
+}

@@ -1,6 +1,6 @@
 {
   "main_tests": {
-    "passed": 155,
+    "passed": 190,
     "failed": 0
   },
   "floodlab_tests": {
@@ -18,13 +18,19 @@
     "original workspace navigation",
     "1280x720 no horizontal overflow",
     "390x844 no horizontal overflow",
-    "real upstream outage clears metrics/image and recovers after resume"
+    "real upstream outage clears metrics/image and recovers after resume",
+    "real four-tool investigation",
+    "unsupported depth abstains with old claims removed",
+    "Stop under induced source outage suppresses final answer",
+    "saved job reload and cancellation persistence",
+    "changed flood selection clears old overlay",
+    "surface-picked metric profile",
+    "2D fallback hides 3D markers"
   ],
   "not_tested": [
     "full model inference on new extension origin",
-    "terrain/flood overlay alignment",
-    "independent scientific accuracy",
-    "multi-tool investigation"
+    "independent physical co-registration",
+    "independent scientific accuracy"
   ],
   "terrain_tests": {
     "passed": 14,
@@ -48,5 +54,20 @@
       "camera reset",
       "2D fallback"
     ]
+  },
+  "registration_profile_tests": {
+    "passed": 15,
+    "failed": 0
+  },
+  "investigation_tests": {
+    "passed": 20,
+    "failed": 0
+  },
+  "workflow_replay": {
+    "cases": 14,
+    "expected_terminal_states": 14,
+    "matched_claims": 24,
+    "valid_evidence_pointers": 10,
+    "population": "previously inspected real saved run and cached real DEM"
   }
 }

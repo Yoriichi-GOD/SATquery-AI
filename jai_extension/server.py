@@ -146,6 +146,11 @@ def attach(app, bridge, terrain=None):
         @investigations.get('/{job_id}')
         def investigation_status(job_id:str):return manager.get(job_id)
 
+        @investigations.get('/{job_id}/tools/{tool_name}')
+        def investigation_tool_output(job_id:str,tool_name:str):
+            value,sha=manager.tool_output(job_id,tool_name)
+            return JSONResponse(value,headers={'X-Output-SHA256':sha,'X-Content-Type-Options':'nosniff'})
+
         @investigations.post('/{job_id}/cancel')
         def investigation_cancel(job_id:str):return manager.cancel(job_id)
 
@@ -176,8 +181,8 @@ def create_app():
     @app.get("/", include_in_schema=False)
     def home():
         html = (root / "paired_lab/web/index.html").read_text(encoding="utf-8")
-        extra = '<link rel="stylesheet" href="/jai/assets/extension.css"><link rel="stylesheet" href="/jai/assets/workflow.css"><script defer src="/jai/assets/extension.js"></script><script defer src="/jai/assets/terrain.js"></script><script defer src="/jai/assets/workflow.js"></script>'
-        return HTMLResponse(html.replace("</head>", extra + "</head>"))
+        extra = '<link rel="stylesheet" href="/jai/assets/extension.css?v=20261030-investigation-2"><link rel="stylesheet" href="/jai/assets/workflow.css?v=20261030-investigation-2"><script defer src="/jai/assets/extension.js?v=20261030-investigation-2"></script><script defer src="/jai/assets/terrain.js?v=20261030-investigation-2"></script><script defer src="/jai/assets/workflow.js?v=20261030-investigation-2"></script>'
+        return HTMLResponse(html.replace("</head>", extra + "</head>"),headers={"Cache-Control":"no-store"})
 
     route = app.router.routes.pop()
     app.router.routes.insert(0, route)

@@ -15,3 +15,7 @@ Main application: 141/141 passed (117 existing + 24 extension). Flood Lab: 69 pa
 ## Final real failure-state check
 
 Paused only the owned Flood Lab child; refreshed the native Flood panel. Actual timeout returned the unavailable-service message, empty metrics and hidden old image. Resumed the same process; reload restored the genuine saved run. The expected outage response is not an unhandled JavaScript exception. See BROWSER_RECEIPT.json and images/. Final application revision captured: e42118c.
+
+## Alignment and investigation final implementation
+
+190 main checks passed: 155 prior plus 15 registration/profile and 20 investigation checks. The latter include cancellation precedence over an in-flight timeout, immutable derived-output pointers, modified history, date mismatch and feature-name injection. Fourteen declared real-source replay cases matched expected terminal states; 24 numerical/status claims matched machine fields and all ten source pointers resolved. The live Stop receipt records cancellation after 8.02s under an induced upstream outage, no completed answer, and recovery after the owned source resumed. Cross-section surface picking produced an approximately 805m profile with 128 valid display samples. Native saved-run switching cleared the prior grid context. See ALIGNMENT_AND_INVESTIGATION.md and the final replay/Stop receipts.
