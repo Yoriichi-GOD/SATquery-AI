@@ -83,7 +83,7 @@ def normalize(result):
 
 
 class FloodBridge:
-    def __init__(self, upstream="http://127.0.0.1:8770", session=None):
+    def __init__(self, upstream="http://127.0.0.1:8770", session=None, check=None):
         parsed = urlsplit(upstream)
         try:
             is_loopback = ipaddress.ip_address(parsed.hostname or "").is_loopback
@@ -96,12 +96,15 @@ class FloodBridge:
         self.upstream = upstream.rstrip("/")
         self.session = session or requests.Session()
         self.session.trust_env = False
+        self.check = check or (lambda: None)
 
     def read(self, path, cap=MAX_JSON):
+        self.check()
         try:
             with self.session.get(self.upstream + path, timeout=(2, 8), stream=True,
                                   headers={"Accept-Encoding": "identity"},
                                   allow_redirects=False) as response:
+                self.check()
                 if response.status_code == 404:
                     raise BridgeError(404, "Saved run or artifact not found")
                 if response.status_code != 200:
@@ -113,6 +116,7 @@ class FloodBridge:
                     raise BridgeError(413, "Artifact exceeds transfer limit")
                 chunks, size = [], 0
                 for block in response.iter_content(65536):
+                    self.check()
                     size += len(block)
                     if size > cap:
                         raise BridgeError(413, "Artifact exceeds transfer limit")

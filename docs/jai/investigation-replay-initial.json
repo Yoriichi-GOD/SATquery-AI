@@ -1,0 +1,207 @@
+{
+  "recorded_utc": "2026-10-30T11:37:57.269556+00:00",
+  "population": "FROZEN_REAL_OBSERVATION + NEW_REAL_DEM; previously inspected replay",
+  "run_id": "event-fe47db331390",
+  "scene_id": "terrain-45737e0da2983d9d",
+  "platform": "Linux-6.18.33.2-microsoft-standard-WSL2-x86_64-with-glibc2.43",
+  "cases": [
+    {
+      "case": "water",
+      "expected": "complete",
+      "actual": "complete",
+      "job_id": "investigation-9ec574547cb845f5bb2c00d271c25ef0",
+      "seconds": 0.08148207599970192,
+      "matched_claims": 4,
+      "valid_evidence_pointers": 1,
+      "tools": [
+        "get_run"
+      ]
+    },
+    {
+      "case": "assets",
+      "expected": "complete",
+      "actual": "complete",
+      "job_id": "investigation-c0c8884c84744279af088b21af22faee",
+      "seconds": 0.1574466899996878,
+      "matched_claims": 4,
+      "valid_evidence_pointers": 2,
+      "tools": [
+        "get_run",
+        "get_exposed_assets"
+      ]
+    },
+    {
+      "case": "terrain",
+      "expected": "complete",
+      "actual": "complete",
+      "job_id": "investigation-ae0faabd65044272933a256fd1e44312",
+      "seconds": 0.06218933900026968,
+      "matched_claims": 3,
+      "valid_evidence_pointers": 1,
+      "tools": [
+        "get_dem"
+      ]
+    },
+    {
+      "case": "combined",
+      "expected": "complete",
+      "actual": "complete",
+      "job_id": "investigation-67b5f92285bb495eaf3a442720738c9d",
+      "seconds": 0.4894854789999954,
+      "matched_claims": 8,
+      "valid_evidence_pointers": 4,
+      "tools": [
+        "get_run",
+        "get_exposed_assets",
+        "get_dem",
+        "analyze_coverage"
+      ]
+    },
+    {
+      "case": "profile",
+      "expected": "complete",
+      "actual": "complete",
+      "job_id": "investigation-516018de427643faa12223ed567fdfbf",
+      "seconds": 0.13229075399976864,
+      "matched_claims": 3,
+      "valid_evidence_pointers": 2,
+      "tools": [
+        "get_dem",
+        "terrain_transect"
+      ]
+    },
+    {
+      "case": "depth",
+      "expected": "abstained",
+      "actual": "abstained",
+      "job_id": "investigation-00b48c5b72534e759193e5053184acd1",
+      "seconds": 0.0354468820000875,
+      "matched_claims": 0,
+      "valid_evidence_pointers": 0,
+      "tools": []
+    },
+    {
+      "case": "safety",
+      "expected": "abstained",
+      "actual": "abstained",
+      "job_id": "investigation-78c83bcccdf1445e838c573f75db24f9",
+      "seconds": 0.036707365000438585,
+      "matched_claims": 0,
+      "valid_evidence_pointers": 0,
+      "tools": []
+    },
+    {
+      "case": "forecast",
+      "expected": "abstained",
+      "actual": "abstained",
+      "job_id": "investigation-8cba0ab7c6824767af024a1b23cf1b74",
+      "seconds": 0.03707010199968863,
+      "matched_claims": 0,
+      "valid_evidence_pointers": 0,
+      "tools": []
+    },
+    {
+      "case": "unrelated",
+      "expected": "abstained",
+      "actual": "abstained",
+      "job_id": "investigation-839cacf6ef844c898c0f8f67a4de0b94",
+      "seconds": 0.03594840899995688,
+      "matched_claims": 0,
+      "valid_evidence_pointers": 0,
+      "tools": []
+    },
+    {
+      "case": "injection",
+      "expected": "abstained",
+      "actual": "abstained",
+      "job_id": "investigation-839a2e59047941b9b841fb25a3e93bbf",
+      "seconds": 0.035615232000054675,
+      "matched_claims": 0,
+      "valid_evidence_pointers": 0,
+      "tools": []
+    },
+    {
+      "case": "wrong_year",
+      "expected": "abstained",
+      "actual": "abstained",
+      "job_id": "investigation-00f86c2bf9d24e79881a2a472f7bbd00",
+      "seconds": 0.0588271619999432,
+      "matched_claims": 0,
+      "valid_evidence_pointers": 0,
+      "tools": [
+        "get_run"
+      ]
+    },
+    {
+      "case": "missing_run",
+      "expected": "failed",
+      "actual": "failed",
+      "job_id": "investigation-4e55467c645645d8b6048a79346240eb",
+      "seconds": 0.0364453769998363,
+      "matched_claims": 0,
+      "valid_evidence_pointers": 0,
+      "tools": []
+    },
+    {
+      "case": "missing_dem",
+      "expected": "failed",
+      "actual": "failed",
+      "job_id": "investigation-6f27cbcbfdfb4fd5a15c3b5930ae20e2",
+      "seconds": 0.0364109790002658,
+      "matched_claims": 0,
+      "valid_evidence_pointers": 0,
+      "tools": []
+    },
+    {
+      "case": "no_dem_selected",
+      "expected": "abstained",
+      "actual": "abstained",
+      "job_id": "investigation-d3e55c18b0624ea184af292c704cf8c5",
+      "seconds": 0.037636378000115656,
+      "matched_claims": 0,
+      "valid_evidence_pointers": 0,
+      "tools": []
+    }
+  ],
+  "matched_claims": 22,
+  "valid_evidence_pointers": 10,
+  "performance": {
+    "manual_equivalent_api_gather": {
+      "n": 5,
+      "seconds": [
+        0.20028388599985192,
+        0.1933653209998738,
+        0.2251698650002254,
+        0.21302140200032227,
+        0.21246689300005528
+      ],
+      "p50_seconds": 0.21246689300005528,
+      "p95_seconds": 0.22274017240024477
+    },
+    "direct_static_summary": {
+      "n": 5,
+      "seconds": [
+        0.029230936999738333,
+        0.029072657999677176,
+        0.037839477000034094,
+        0.029540156000166462,
+        0.03467479400023876
+      ],
+      "p50_seconds": 0.029540156000166462,
+      "p95_seconds": 0.037206540400075025
+    },
+    "tool_workflow": {
+      "n": 5,
+      "seconds": [
+        0.27051178100009565,
+        0.30107565800017255,
+        0.27575437899986355,
+        0.2652422259998275,
+        0.31020409600023413
+      ],
+      "p50_seconds": 0.27575437899986355,
+      "p95_seconds": 0.3083784084002218
+    }
+  },
+  "timing_boundary": "Warm local HTTP/API gathering, no human click-time or acquisition/render measurement; N=5 each; static summary returns less information; no speed superiority claim"
+}
