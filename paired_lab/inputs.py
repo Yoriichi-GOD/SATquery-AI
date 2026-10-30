@@ -20,7 +20,7 @@ def inspect(path,modality,date='',units=''):
         tagged_date=tags.get('acquisition_date') or tags.get('acquired','')
         if date and tagged_date and date!=tagged_date:raise ValueError('Entered date conflicts with the TIFF acquisition date.')
         date=tagged_date or date
-        return {'path':str(path),'modality':modality,'date':date,'units':units or tags.get('units',''),'sensor':tags.get('sensor',''),'reflectance_units':tags.get('reflectance_units',''),'bands':bands,'shape':[ds.height,ds.width],'count':ds.count,'dtype':str(arr.dtype),'crs':ds.crs.to_string() if ds.crs else None,'transform':list(ds.transform)[:6],'sha256':hashlib.sha256(path.read_bytes()).hexdigest(),'data':arr.data}
+        return {'path':str(path),'modality':modality,'date':date,'units':units or tags.get('units',''),'sensor':tags.get('sensor',''),'reflectance_units':tags.get('reflectance_units',''),'bands':bands,'shape':[ds.height,ds.width],'count':ds.count,'dtype':str(arr.dtype),'crs':ds.crs.to_string() if ds.crs else None,'transform':list(ds.transform)[:6],'sha256':digest(path),'data':arr.data}
 
 def route(query,records):
     q=' '.join(query.lower().split())
@@ -104,3 +104,5 @@ def validate(records,task,trusted_benchmark=False,enforce_content=False):
             if diagnostics['status']=='misaligned':raise ValueError('Visible features are misaligned: estimated displacement exceeds 1.5 pixels. Align the pair explicitly.')
             if diagnostics['status']=='unverified' and not trusted_benchmark:raise ValueError('Could not verify shared optical features. Confirm location and registration before analysis.')
     return checks
+
+from paired_lab.external_data.common import digest

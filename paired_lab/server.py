@@ -33,7 +33,7 @@ async def local_only(request:Request,call_next):
 @app.get('/')
 def home():return FileResponse(ROOT/'web/index.html')
 @app.get('/api/status')
-def status():return {'state':'processing' if busy else 'ready','device':'Local CPU / CUDA specialists','demo_port':8765,'lab_port':8767,'controller':controller.VERSION,'capabilities':controller.SPECIALISTS}
+def status():return {'state':'processing' if busy else 'ready','device':'Local CPU / CUDA specialists','demo_port':8765,'lab_port':8767,'controller':controller.VERSION,'capabilities':controller.SPECIALISTS,'external_dataset_api':True}
 @app.get('/api/single-sample/{name}')
 def single_sample(name:str):
     paths={'vqa':'/api/sample','ndvi':'/api/scene-sample','grounding':'/grounding/api/samples/stadium'}
@@ -261,3 +261,9 @@ def single_evaluation(kind:str):
     if kind not in ['development','reliability']:raise HTTPException(404,'Unknown evidence.')
     try:return single_bridge.request('GET','/api/'+kind).json()
     except ValueError as e:raise HTTPException(503,str(e))
+
+
+# External datasets have separate private storage and bounded upload/worker limits.
+import os
+from paired_lab.external_data.service import install as install_external_data
+external_data = install_external_data(app, os.environ.get("SATQUERY_EXTERNAL_ROOT", str(ROOT.parent / ".runtime/external")))

@@ -3,6 +3,7 @@ import hashlib
 import json
 import stat
 import tempfile
+import time
 import unittest
 import zipfile
 from pathlib import Path
@@ -210,6 +211,72 @@ class ExternalDataTests(unittest.TestCase):
         p=self.root/'p.csv';r=self.root/'r.csv';p.write_text('case_id,answer\na,yes\n');r.write_text('case_id,answer\na,yes\nb,no\n')
         spec=protocol('vqa');spec.update(answer_normalization='exact',scene_ids=['a','b'])
         with self.assertRaisesRegex(DataError,'No silent dropping'):table_metrics(p,r,spec)
+
+    def test_export_recomputes_metrics_and_detects_tampering(self):
+        from paired_lab.external_data.runner import run,verify
+        value=self.store.create('Known answer export')
+        p=raster(self.root/'p.tif',np.array([[1,1,1],[0,0,0]],dtype='uint8'))
+        r=raster(self.root/'r.tif',np.array([[1,1,0],[1,0,0]],dtype='uint8'))
+        self.store.import_local(value['id'],p,'prediction');self.store.import_local(value['id'],r,'reference')
+        value=inspect_dataset(self.store,value['id']);spec=protocol();spec['dataset_revision']=value['revision']
+        params=dict(prediction_id=value['files'][0]['id'],reference_id=value['files'][1]['id'],protocol=spec)
+        out=self.root/'immutable'
+        with patch('paired_lab.external_data.runner.asset_inventory',return_value={}):result=run(self.store,value['id'],out,params)
+        self.assertEqual(result['state'],'EVALUATED');self.assertTrue(verify(out)['metrics_recomputed'])
+        with self.assertRaisesRegex(DataError,'never overwritten'):run(self.store,value['id'],out,params)
+        with (out/'metrics.json').open('a') as stream:stream.write(' ')
+        with self.assertRaisesRegex(DataError,'differs'):verify(out)
+
+    def test_no_label_ndvi_execution_exports_no_accuracy(self):
+        from paired_lab.external_data.runner import run,verify
+        values=np.array([[[.1,.3],[.2,.2]],[[.7,.3],[.6,.2]]],dtype='float32')
+        source=raster(self.root/'ndvi.tif',values,['red','nir'],dict(reflectance_units='surface_reflectance'))
+        value=self.imported(source);out=self.root/'prediction-only'
+        with patch('paired_lab.external_data.runner.asset_inventory',return_value={'ndvi':dict(status='checks_passed_inference_unverified',assets=[])}):
+            result=run(self.store,value['id'],out,dict(specialist='ndvi',threshold=.5))
+        self.assertEqual(result['state'],'EVALUATION_NOT_POSSIBLE');self.assertNotIn('accuracy',result['metrics'])
+        with rasterio.open(out/'predicted_mask.tif') as ds:self.assertEqual(ds.read(1).tolist(),[[1,0],[1,0]])
+        self.assertFalse(verify(out)['metrics_recomputed'])
+
+    def test_changed_dataset_refuses_execution(self):
+        from paired_lab.external_data.runner import run
+        source=raster(self.root/'data.tif');value=self.imported(source)
+        path=self.store.directory(value['id'])/value['files'][0]['path']
+        with path.open('ab') as stream:stream.write(b'tamper')
+        with patch('paired_lab.external_data.runner.asset_inventory',return_value={}):result=run(self.store,value['id'],self.root/'failure',dict(specialist='water_map'))
+        self.assertEqual(result['failures'][0]['code'],'DATASET_HASH_MISMATCH')
+
+    def test_protocol_revision_cannot_be_changed_after_labels(self):
+        from paired_lab.external_data.runner import run
+        value=self.imported(raster(self.root/'source.tif'))
+        with self.assertRaisesRegex(DataError,'revision'):run(self.store,value['id'],self.root/'bad',dict(protocol=protocol()))
+
+    def test_real_isolated_worker_cancel_and_competing_jobs(self):
+        from paired_lab.external_data.service import Service
+        service=Service(self.root/'service')
+        try:
+            value=service.store.create('Owned worker cancellation');service.store.import_local(value['id'],raster(self.root/'source.tif'))
+            job=service.submit(value['id'],'inspect',{})
+            with self.assertRaisesRegex(DataError,'already active'):service.submit(value['id'],'inspect',{})
+            for _ in range(100):
+                if service.process is not None:break
+                time.sleep(.01)
+            process=service.process;self.assertIsNotNone(process)
+            service.cancel(job['id'])
+            for _ in range(200):
+                if service.get(job['id'])['state']=='CANCELLED' and service.active is None:break
+                time.sleep(.01)
+            self.assertEqual(service.get(job['id'])['state'],'CANCELLED');self.assertIsNotNone(process.poll())
+        finally:service.close()
+
+    def test_worker_recovery_does_not_report_success(self):
+        from paired_lab.external_data.service import Service
+        from paired_lab.external_data.common import write_json
+        root=self.root/'recovery';folder=root/'jobs'/('a'*32);folder.mkdir(parents=True)
+        write_json(folder/'job.json',dict(id='a'*32,state='RUNNING'))
+        service=Service(root)
+        try:self.assertEqual(service.get('a'*32)['state'],'INTERRUPTED')
+        finally:service.close()
 
 
 if __name__=='__main__':unittest.main()

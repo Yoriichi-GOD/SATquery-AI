@@ -18,7 +18,7 @@ REGISTRY = {
     'sar_scene':dict(name='Sentinel-1 SAR scene classes',workflow='sar-scene',files=1,source=['paired_lab/sar_single.py:validate'],scope='Scene-level classes, not unrestricted radar VQA.'),
     'cdvqa':dict(name='Experimental CDVQA',workflow='cdvqa',files=2,source=['paired_lab/cdvqa_bridge.py','paired_lab/cdvqa-questions.json'],scope='Exact supported question templates; user-declared alignment/order.'),
     'flood_lab':dict(name='Flood Lab prepared SAR',workflow=None,files=2,source=['SatQuery---Flood-Lab/floodlab/core.py','SatQuery---Flood-Lab/floodlab/pipeline.py'],scope='Prepared event/OSM bundle required; arbitrary TIFFs cannot replace it.'),
-    'terrain':dict(name='Metric elevation context',workflow='numerical',files=1,source=['jai_extension/terrain.py:horn_slope'],scope='Known metre elevation units and projected grid; no automatic reprojection.'),
+    'terrain':dict(name='Metric elevation context',workflow='numerical',files=1,source=['jai_extension/terrain.py:slope_degrees'],scope='Known metre elevation units and projected grid; no automatic reprojection.'),
 }
 
 
@@ -43,10 +43,27 @@ def band_names(record):
     return [aliases.get((name or '').lower(),name) for name in names]
 
 
-def preflight(dataset, selected=None, assets=None, declarations=None):
+def preflight(dataset, selected=None, assets=None, declarations=None,root=None):
     declarations=declarations or {}
     files=[f for f in dataset['files'] if f.get('role','input')=='input' and f.get('raster')]
     if selected is not None:files=[f for f in files if f['id'] in selected]
+    needs_selection=len(files)>2
+    if needs_selection:files=[]
+    common=None
+    if len(files)==2 and root is not None:
+        a,b=[f['raster'] for f in files]
+        if a['crs']==b['crs'] and a['width']==b['width'] and a['height']==b['height'] and a['transform']==b['transform'] and a['full_pixels']<=1_048_576:
+            import rasterio
+            from .common import contained
+            from .raster import ENV,windows
+            with rasterio.Env(**ENV),rasterio.open(contained(root,files[0]['path'])) as left,rasterio.open(contained(root,files[1]['path'])) as right:
+                common=0
+                for window in windows(left.width,left.height):
+                    valid=np.ones((int(window.height),int(window.width)),dtype=bool)
+                    for ds in (left,right):
+                        for band in ds.indexes:
+                            arr=ds.read(band,window=window,masked=True);valid&=~np.ma.getmaskarray(arr)&np.isfinite(arr.data)
+                    common+=int(valid.sum())
     reports=[]
     for key,spec in REGISTRY.items():
         rows=[]
@@ -60,6 +77,7 @@ def preflight(dataset, selected=None, assets=None, declarations=None):
             status='MISSING' if observed is None or observed=='' or observed==[] else 'MATCH' if passed else 'MISMATCH'
             add(parameter,expected,observed,status,blocks)
         requirement('dataset.input_count',spec['files'],len(files),len(files)==spec['files'])
+        if needs_selection:add('dataset.case_selection','Select at most two input TIFFs for one case','More than two inputs; batch evaluation is deferred','MISSING',True,'Files were inventoried without guessing which pair belongs together.','Choose the exact files for this analysis case.')
         for fi,f in enumerate(files):
             r=f['raster'];tags=r['tags'];p=f['name']+'.';n=r['width']*r['height'];bands=band_names(r)
             add(p+'driver','GTiff',r['driver'],'MATCH' if r['driver']=='GTiff' else 'MISMATCH')
@@ -121,6 +139,11 @@ def preflight(dataset, selected=None, assets=None, declarations=None):
             same=a['crs']==b['crs'] and a['width']==b['width'] and a['height']==b['height'] and np.allclose(a['transform'],b['transform'],rtol=0,atol=1e-10)
             requirement('pair.grid','Equal CRS, dimensions and affine; no reprojection',[a['crs'],b['crs'],a['transform'],b['transform']],same,key!='cdvqa')
             add('pair.physical_registration','Independent control points/content validation','Matching headers do not prove physical co-registration','UNKNOWN',False)
+            add('pair.common_valid_coverage','At least one jointly valid native pixel',common,'MATCH' if common else 'MISMATCH' if common==0 else 'UNKNOWN',key in ('water_map','spectral_pair'))
+            bounds=[a['bounds'],b['bounds']]
+            comparable=a['crs'] and a['crs']==b['crs'] and all(v is not None for row in bounds for v in row)
+            overlap=max(0,min(bounds[0][2],bounds[1][2])-max(bounds[0][0],bounds[1][0]))*max(0,min(bounds[0][3],bounds[1][3])-max(bounds[0][1],bounds[1][1])) if comparable else None
+            add('pair.bounds_overlap','Positive overlap in the same declared CRS',overlap,'MATCH' if overlap else 'MISMATCH' if overlap==0 else 'UNKNOWN',False)
             dates=[r['tags'].get('acquisition_date') or r['tags'].get('acquired') for r in (a,b)]
             try:parsed=[datetime.strptime(d,'%Y-%m-%d') for d in dates]
             except (ValueError,TypeError):parsed=[]
@@ -136,7 +159,17 @@ def preflight(dataset, selected=None, assets=None, declarations=None):
                 from paired_lab.cdvqa_bridge import supported
                 requirement('question.template','One exact supported CDVQA template',declarations.get('question'),supported(declarations.get('question','')))
         if key=='flood_lab':add('prepared_event_adapter','Existing Flood Lab event/OSM manifest route','Arbitrary-TIFF execution adapter is not enabled','MISMATCH',True,'Flood Lab calculations are preserved, not rebuilt.','Prepare and validate the full event bundle in the existing Flood Lab workflow.')
+        if key=='vqa':add('external_execution_adapter','Verifiable cancellation of the actual model operation','Shared single-image service has no cancellation API','MISSING',True,'The original Workspace remains available; external execution is withheld rather than leaving a shared operation running after Stop.','Use the existing optical Workspace; add a cancellable isolated Qwen adapter before enabling this external path.')
         references=[f['name'] for f in dataset['files'] if f.get('role')=='reference']
+        for reference in [f for f in dataset['files'] if f.get('role')=='reference']:
+            r=reference.get('raster');prefix='reference.'+reference['name']+'.'
+            add(prefix+'format','Categorical raster or protocol-compatible label table','TIFF' if r else Path(reference['name']).suffix,'MATCH' if r or reference['name'].lower().endswith('.csv') else 'UNKNOWN',False)
+            if r:
+                aligned=bool(files and all(r[k]==files[0]['raster'][k] for k in ('crs','transform','width','height')) and r['crs'])
+                add(prefix+'grid_alignment','Equal prediction/source dimensions, CRS and affine',dict(crs=r['crs'],transform=r['transform'],dimensions=[r['height'],r['width']]),'MATCH' if aligned else 'MISMATCH',False)
+                add(prefix+'label_dtype','One integer categorical band',r['dtypes'],'MATCH' if r['count']==1 and all(np.dtype(t).kind in 'ui' for t in r['dtypes']) else 'MISMATCH',False)
+                add(prefix+'ignore_nodata_convention','Explicit protocol ignore values plus native NoData',dict(nodata=r['nodata_repr'],protocol=(declarations.get('protocol') or {}).get('ignore_values')),'MATCH' if 'ignore_values' in (declarations.get('protocol') or {}) else 'MISSING',False)
+            add(prefix+'class_semantics','Explicit native-reference mapping to declared model class semantics',(declarations.get('protocol') or {}).get('reference_class_mapping'),'MATCH' if (declarations.get('protocol') or {}).get('reference_class_mapping') else 'MISSING',False)
         add('evaluation.ground_truth','Independent compatible labels and predeclared class/ignore mapping',references,'UNKNOWN' if references else 'MISSING',False,
             'Labels are not required for prediction. No score is produced until their semantics/grid/protocol are verified.','Attach independent labels and freeze an evaluation protocol; predictions are never ground truth.')
         asset=(assets or {}).get(key,dict(status='not_checked',assets=[]))
@@ -144,8 +177,8 @@ def preflight(dataset, selected=None, assets=None, declarations=None):
         add('model.assets','Pinned assets and dependencies present',asset['status'],'MATCH' if ready else 'MISSING' if asset['status']=='blocked' else 'UNKNOWN',True,
             'Presence is distinct from a real model execution. Weight hashes are recorded at execution.','Run scripts/preflight.py and provision the documented checkpoint without substituting a model.')
         blockers=[r for r in rows if r['prevents_execution']]
-        data_blocks=[r for r in blockers if r['parameter']!='model.assets']
-        status='READY_FOR_ANALYSIS' if not blockers else 'MISSING_MODEL_ASSETS' if not data_blocks else 'MISSING_METADATA' if all(r['status'] in ('MISSING','UNKNOWN') for r in data_blocks) else 'INCOMPATIBLE_INPUT'
+        data_blocks=[r for r in blockers if r['parameter'] not in ('model.assets','external_execution_adapter','prepared_event_adapter')]
+        status='READY_FOR_ANALYSIS' if not blockers else ('MISSING_METADATA' if all(r['status'] in ('MISSING','UNKNOWN') for r in data_blocks) else 'INCOMPATIBLE_INPUT') if data_blocks else 'UNSUPPORTED_TASK' if any(r['parameter'] in ('external_execution_adapter','prepared_event_adapter') for r in blockers) else 'MISSING_MODEL_ASSETS'
         reports.append(dict(specialist=key,**spec,status=status,input_compatible=not data_blocks,eligible=not blockers,
             blocking_reasons=blockers,parameters=rows,model_availability=asset))
     return dict(dataset_id=dataset['id'],dataset_revision=dataset.get('revision'),

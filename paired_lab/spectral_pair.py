@@ -57,7 +57,7 @@ def validate(records):
                 if name!='scl':a=a*ds.scales[i-1]+ds.offsets[i-1]
                 elif ds.scales[i-1]!=1 or ds.offsets[i-1]!=0:raise ValueError('SCL must contain unscaled categorical labels.')
                 arrays[name]=a
-            loaded.append({'arrays':arrays,'profile':ds.profile.copy(),'sensor':tags['sensor'],'date':date,'sha256':hashlib.sha256(Path(r['path']).read_bytes()).hexdigest()})
+            loaded.append({'arrays':arrays,'profile':ds.profile.copy(),'sensor':tags['sensor'],'date':date,'sha256':digest(r['path'])})
     a,b=loaded
     if dates[0]>=dates[1]:raise ValueError('The before date must precede the after date.')
     if a['sensor']!=b['sensor']:raise ValueError('Use the same declared sensor/product convention at both dates.')
@@ -104,3 +104,5 @@ def analyse(records,tasks,threshold,water_threshold,out,progress=lambda s:None,i
             previews.append({'file':filename,'label':label+' source - '+d['date']+' - RGB preview','display':'RGB surface reflectance, fixed 0-0.3 stretch; invalid pixels black; source TIFF unchanged'})
     if include_built_up:results['built_up']={'status':'unavailable','reason':'No validated built-up expansion measurement in this workflow. NDVI loss is not urban growth.'}
     return {'task':'spectral_pair','source_previews':previews,'answer':'Observed-date spectral comparison. Green marks newly threshold-selected pixels; pink marks lost selection. Each parameter uses its own common valid area across the two dates.','seconds':time.perf_counter()-start,'parameters':results,'dates':[x['date'] for x in data],'trace':[{'tool':VERSION,'device':'cpu','source_sha256':[x['sha256'] for x in data],'dates':[x['date'] for x in data],'thresholds':{'vegetation':threshold,'water':water_threshold}}],'confidence':{'kind':'Deterministic arithmetic, not classification accuracy'},'limitations':['NDWI candidates can include built-up surfaces; not confirmed water or flood extent.','NDVI change is not vegetation health or urban expansion.','Matching metadata does not prove physical co-registration.','Season, sun angle and source processing can change index values.','SCL exclusions are only as reliable as supplied quality labels; no new cloud model is run.','No forecasting or built-up measurement is performed.']}
+
+from paired_lab.external_data.common import digest

@@ -18,7 +18,7 @@ def inspect_rgb(path):
             raise ValueError('CDVQA uploads require prepared RGB images, 32 pixels minimum per side and at most 1 megapixel. No automatic spectral rendering.')
         im.load()
         return dict(path=str(path),modality='optical',cdvqa_rgb=True,shape=[im.height,im.width],count=3,
-                    sha256=hashlib.sha256(Path(path).read_bytes()).hexdigest())
+                    sha256=digest(path))
 
 def validate(records,aligned):
     if len(records)!=2 or not all(r.get('cdvqa_rgb') for r in records):
@@ -47,3 +47,5 @@ def run(records,query,out,progress=lambda _:None):
     result.update(task='cdvqa',seconds=time.perf_counter()-start,
                   trace=[dict(tool=result['model'],checkpoint_sha256=result['checkpoint_sha256'],encoder_sha256=result['encoder_sha256'],preprocessing=result['preprocessing'])])
     return result
+
+from paired_lab.external_data.common import digest

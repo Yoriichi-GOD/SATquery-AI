@@ -5,3 +5,4 @@ pyproj==3.7.2
 fastapi==0.115.12
 python-multipart==0.0.20
 requests==2.34.2
+psutil==7.2.2

@@ -83,3 +83,19 @@ def copy_stream(source, target, check=lambda: None):
 def require_space(root, incoming, reserve=256 * CHUNK):
     if shutil.disk_usage(root).free < incoming + reserve:
         fail('INSUFFICIENT_DISK', 'Not enough free disk for this operation plus the reserved safety margin.')
+
+
+def request_check(value):
+    import math
+    if not isinstance(value,dict):fail('INVALID_REQUEST','Send an operation object.')
+    if 'inputs' in value:
+        if not isinstance(value['inputs'],list) or len(value['inputs'])>2 or len(set(map(str,value['inputs'])))!=len(value['inputs']):fail('INVALID_INPUT_SELECTION','Select at most two unique registered TIFF IDs.')
+        for item in value['inputs']:identifier(item)
+    for key in ('reference_id','prediction_id','prediction_job_id'):
+        if value.get(key) is not None:identifier(value[key])
+    for key in ('threshold','water_threshold'):
+        if key in value and (isinstance(value[key],bool) or not isinstance(value[key],(int,float)) or not math.isfinite(value[key]) or not -1<=value[key]<=1):fail('INVALID_THRESHOLD','Thresholds must be finite numbers between -1 and 1.')
+    if 'full_scan' in value and not isinstance(value['full_scan'],bool):fail('INVALID_REQUEST','full_scan must be a boolean.')
+    if 'question' in value and (not isinstance(value['question'],str) or len(value['question'])>500):fail('INVALID_QUESTION','Question must have at most 500 characters.')
+    if 'protocol' in value and not isinstance(value['protocol'],dict):fail('INVALID_PROTOCOL','Protocol must be a JSON object.')
+    return value
