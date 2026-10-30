@@ -217,8 +217,9 @@
     if(!state.library)state.library=new Promise((resolve,reject)=>{const script=node('script');script.src='/jai/assets/vendor/plotly-4.1.1.min.js';script.onload=resolve;script.onerror=()=>{state.library=null;reject(Error('3D unavailable. Showing the numeric 2D terrain.'));};document.head.append(script);});
     await state.library;
   }
-  const elevationScale=[[0,'#262626'],[.25,'#555451'],[.5,'#8b8982'],[.75,'#bbb6a9'],[1,'#eee6cf']];
-  const slopeScale=[[0,'#292929'],[.5,'#8a7753'],[1,'#e0bb6d']];
+  const elevationScale=[[0,'#28634e'],[.25,'#66935e'],[.5,'#b5ac6b'],[.75,'#a87653'],[1,'#f3eee2']];
+  const slopeScale=[[0,'#fff1b8'],[.35,'#e7b55c'],[.7,'#c46b38'],[1,'#8d342b']];
+  function terrainColour(q){const scale=state.colour==='slope'?slopeScale:elevationScale;const upper=scale.findIndex(stop=>stop[0]>=q);const hi=scale[upper<0?scale.length-1:upper],lo=scale[Math.max(0,upper-1)],t=(q-lo[0])/(hi[0]-lo[0]||1);const rgb=hex=>[1,3,5].map(i=>parseInt(hex.slice(i,i+2),16));return rgb(lo[1]).map((v,i)=>Math.round(v+(rgb(hi[1])[i]-v)*t));}
   function palette() {const style=getComputedStyle(document.documentElement);return {text:style.getPropertyValue('--text').trim(),muted:style.getPropertyValue('--muted').trim(),line:style.getPropertyValue('--line').trim()};}
   const plotConfig={responsive:true,displaylogo:false,displayModeBar:false};
   function drawSurface() {
@@ -244,7 +245,7 @@
     $('#earth-water-toggle').disabled=true;$('#earth-water-toggle').setAttribute('aria-pressed','false');
     const z=state.colour==='slope'?state.scene.mesh.slope_deg:state.scene.mesh.z_m,values=z.flat().filter(v=>v!==null),lo=Math.min(...values),hi=Math.max(...values);
     canvas.width=z[0].length;canvas.height=z.length;const ctx=canvas.getContext('2d'),image=ctx.createImageData(canvas.width,canvas.height);
-    for(let r=0;r<z.length;r++)for(let c=0;c<z[0].length;c++){const v=z[r][c],q=v===null?0:(v-lo)/(hi-lo||1),shade=Math.round(38+q*190);image.data.set(v===null?[20,20,20,255]:[shade,shade,Math.round(shade*.94),255],(r*canvas.width+c)*4);}
+    for(let r=0;r<z.length;r++)for(let c=0;c<z[0].length;c++){const v=z[r][c],q=v===null?0:(v-lo)/(hi-lo||1);image.data.set(v===null?[20,20,20,255]:[...terrainColour(q),255],(r*canvas.width+c)*4);}
     ctx.putImageData(image,0,0);viewNote();$('#earth-2d').textContent='Return to 3D';
   }
   function viewNote() {

@@ -1,0 +1,112 @@
+{
+  "workflow": "all",
+  "asset_root": "/root/satquery",
+  "assets": [
+    {
+      "id": "vqa",
+      "status": "present_not_executed",
+      "recovery": "Run python scripts/provision_assets.py --workflow vqa; see docs/ASSETS.md.",
+      "path": "/root/.cache/huggingface/hub/models--AdaptLLM--remote-sensing-Qwen2-VL-2B-Instruct/snapshots/7f5dd71bf0f40c282193d50160e848a387a08ffe"
+    },
+    {
+      "id": "bifold-s1",
+      "status": "present_not_executed",
+      "recovery": "Run python scripts/provision_assets.py --workflow land-cover; see docs/ASSETS.md.",
+      "path": "/root/.cache/huggingface/hub/models--BIFOLD-BigEarthNetv2-0--resnet50-s1-v0.2.0/snapshots/d417b3c32f2172cbceb14e5b106dd9aa7b77c647"
+    },
+    {
+      "id": "bifold-s2",
+      "status": "present_not_executed",
+      "recovery": "Run python scripts/provision_assets.py --workflow land-cover; see docs/ASSETS.md.",
+      "path": "/root/.cache/huggingface/hub/models--BIFOLD-BigEarthNetv2-0--resnet50-s2-v0.2.0/snapshots/f5a590cd5876845f62702260ff62ea5a325433bb"
+    },
+    {
+      "id": "bifold-all",
+      "status": "present_not_executed",
+      "recovery": "Run python scripts/provision_assets.py --workflow land-cover; see docs/ASSETS.md.",
+      "path": "/root/.cache/huggingface/hub/models--BIFOLD-BigEarthNetv2-0--resnet50-all-v0.2.0/snapshots/762acdc186cce6b31ecbc896ddab1721847d4c5e"
+    },
+    {
+      "id": "configilm",
+      "status": "present_not_executed",
+      "recovery": "Run python scripts/provision_assets.py --workflow land-cover; see docs/ASSETS.md.",
+      "path": "/root/satquery/paired-lab/ConfigILM"
+    },
+    {
+      "id": "mci",
+      "status": "hash_verified_not_executed",
+      "recovery": "Run python scripts/provision_assets.py --workflow temporal; see docs/ASSETS.md.",
+      "path": "/root/satquery/paired-lab/mci-model/MCI_model.pth",
+      "sha256": "34c6926342c40fdd6d50b43d50257cb46cb6b61763448de9ee551828a64b3eb9"
+    },
+    {
+      "id": "water",
+      "status": "hash_verified_not_executed",
+      "recovery": "Run python scripts/provision_assets.py --workflow water; see docs/ASSETS.md.",
+      "path": "/mnt/c/Users/nrgen/.codex/scratch/SATquery AI/paired_lab/checkpoints/water-v1.pt",
+      "sha256": "7844387fffd6c7e606895328e61be936304f979fee74411021f7312b3215f7ce"
+    },
+    {
+      "id": "dino",
+      "status": "present_not_executed",
+      "recovery": "Run python scripts/provision_assets.py --workflow grounding; see docs/ASSETS.md.",
+      "path": "/root/.cache/huggingface/hub/models--IDEA-Research--grounding-dino-tiny/snapshots/a2bb814dd30d776dcf7e30523b00659f4f141c71"
+    },
+    {
+      "id": "sam",
+      "status": "present_not_executed",
+      "recovery": "Run python scripts/provision_assets.py --workflow grounding; see docs/ASSETS.md.",
+      "path": "/root/.cache/huggingface/hub/models--facebook--sam-vit-base/snapshots/70c1a07f894ebb5b307fd9eaaee97b9dfc16068f"
+    },
+    {
+      "id": "vqa-adapter",
+      "status": "present_not_executed",
+      "recovery": "Provision from the maintainer release; see docs/ASSETS.md (Maintainer-provided lora-pilot-v1; see NEW_CHAT_HANDOFF.md).",
+      "path": "/root/satquery/experiments/lora-pilot-v1/adapter"
+    },
+    {
+      "id": "cdvqa",
+      "status": "hash_verified_not_executed",
+      "recovery": "Provision from the maintainer release; see docs/ASSETS.md (Maintainer-provided CDVQA_MODEL_RELEASE.zip; docs/CDVQA_FINAL_REPORT.md).",
+      "path": "/root/satquery/cdvqa/paired-best.pt",
+      "sha256": "8b1d6beb28d2f8a4a96937243255143c7f0426d394ff6a3f3645062337177b13"
+    },
+    {
+      "id": "cdvqa-release",
+      "status": "present_not_executed",
+      "recovery": "Provision from the maintainer release; see docs/ASSETS.md (Same maintainer release as paired-best.pt).",
+      "path": "/root/satquery/cdvqa/release.json"
+    },
+    {
+      "id": "resnet50",
+      "status": "hash_verified_not_executed",
+      "recovery": "Run python scripts/provision_assets.py --workflow cdvqa; see docs/ASSETS.md.",
+      "path": "/root/.cache/torch/hub/checkpoints/resnet50-11ad3fa6.pth",
+      "sha256": "11ad3fa62ca79e40addfd354a8ec4b7c75143b3038b8d2a807fbc68deab379ca"
+    }
+  ],
+  "dependencies": {
+    "numpy": "2.4.6",
+    "Pillow": "12.3.0",
+    "rasterio": "1.4.4",
+    "pyproj": "3.7.2",
+    "fastapi": "0.115.12",
+    "python-multipart": "0.0.20",
+    "requests": "2.34.2",
+    "uvicorn": "0.34.2",
+    "torch": "2.8.0+cu128",
+    "torchvision": "0.23.0+cu128",
+    "transformers": "4.51.3",
+    "accelerate": "1.6.0",
+    "huggingface-hub": "0.36.2",
+    "qwen-vl-utils": "0.0.8",
+    "peft": "0.15.2",
+    "timm": "MISSING",
+    "einops": "MISSING"
+  },
+  "dependency_recovery": "Install requirements-runtime.txt in an isolated Python 3.11 environment; see docs/SETUP.md.",
+  "gpu_required": true,
+  "cuda_available": true,
+  "status": "blocked",
+  "limitation": "Presence and hashes are not deployment or accuracy. Use a real inference smoke test. GPU not checked unless --check-cuda is supplied."
+}
