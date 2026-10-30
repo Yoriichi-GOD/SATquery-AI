@@ -1,0 +1,150 @@
+{
+  "recorded_utc": "2026-10-30T11:11:16.585156+00:00",
+  "population": "NEW_REAL_DEM",
+  "scene_id": "terrain-45737e0da2983d9d",
+  "statistics": {
+    "elevation_min_m": 1401.880859375,
+    "elevation_max_m": 2312.734619140625,
+    "elevation_median_m": 1711.195068359375,
+    "elevation_p05_m": 1450.6552734375,
+    "elevation_p95_m": 2196.29736328125,
+    "slope_median_deg": 34.58037465328844,
+    "slope_p95_deg": 48.06950964777038,
+    "valid_cells": 908,
+    "total_cells": 952,
+    "valid_fraction": 0.9537815126050421,
+    "valid_area_m2": 7354800.0,
+    "slope_valid_cells": 790
+  },
+  "hashes": {
+    "source.tif": "2ef95b224a1290ca7661316642efd8dbb8b824b41acd52732962892cce26fe96",
+    "analysis.tif": "dce6af83e76d2990e56d71bd698c78fa9cd1d198da420d12662ea49c7bc90d1c"
+  },
+  "controls": [
+    {
+      "analysis_cell": [
+        7,
+        7
+      ],
+      "metric_cell_centre": [
+        336003.98488717363,
+        3117836.0581964524
+      ],
+      "wgs84": [
+        85.32946925268277,
+        28.17607163926361
+      ],
+      "native_nearest_height_m": 1897.7818603515625,
+      "bilinear_analysis_height_m": 1914.1483154296875,
+      "difference_due_to_sampling_m": 16.366455078125
+    },
+    {
+      "analysis_cell": [
+        15,
+        14
+      ],
+      "metric_cell_centre": [
+        336633.98488717363,
+        3117116.0581964524
+      ],
+      "wgs84": [
+        85.33598503346195,
+        28.16965303401597
+      ],
+      "native_nearest_height_m": 1886.21923828125,
+      "bilinear_analysis_height_m": 1888.71826171875,
+      "difference_due_to_sampling_m": 2.4990234375
+    },
+    {
+      "analysis_cell": [
+        25,
+        20
+      ],
+      "metric_cell_centre": [
+        337173.98488717363,
+        3116216.0581964524
+      ],
+      "wgs84": [
+        85.34160872107708,
+        28.161598793466393
+      ],
+      "native_nearest_height_m": 1624.3756103515625,
+      "bilinear_analysis_height_m": 1625.1993408203125,
+      "difference_due_to_sampling_m": 0.82373046875
+    }
+  ],
+  "http_checks": [
+    {
+      "method": "GET",
+      "path": "/api/terrain/status",
+      "status": 200,
+      "seconds": 0.010607675000073868,
+      "bytes": 410
+    },
+    {
+      "method": "GET",
+      "path": "/api/terrain/scenes/terrain-45737e0da2983d9d",
+      "status": 200,
+      "seconds": 0.0404319360000045,
+      "bytes": 35192
+    },
+    {
+      "method": "GET",
+      "path": "/api/terrain/scenes/terrain-45737e0da2983d9d/raster",
+      "status": 200,
+      "seconds": 0.03911384899993209,
+      "bytes": 4186
+    },
+    {
+      "method": "POST",
+      "path": "/api/terrain/obtain",
+      "status": 422,
+      "seconds": 0.0029268689997934416,
+      "bytes": 61
+    },
+    {
+      "method": "POST",
+      "path": "/api/terrain/obtain",
+      "status": 422,
+      "seconds": 0.0033900009998433234,
+      "bytes": 115
+    },
+    {
+      "method": "GET",
+      "path": "/api/terrain/scenes/unknown",
+      "status": 404,
+      "seconds": 0.0012978449999536679,
+      "bytes": 34
+    }
+  ],
+  "interpretation": "Three real metric-cell roundtrips and raster/mesh matches. Native nearest and bilinear-reprojected heights use different sampling; their difference is not independent elevation accuracy.",
+  "source_provenance": {
+    "dataset": "COPERNICUS_90_PUBLIC_COG",
+    "source_url": "https://copernicus-dem-90m.s3.amazonaws.com/Copernicus_DSM_COG_30_N28_00_E085_00_DEM/Copernicus_DSM_COG_30_N28_00_E085_00_DEM.tif",
+    "tile": "Copernicus_DSM_COG_30_N28_00_E085_00_DEM",
+    "downloaded_utc": "2026-10-30T11:06:01.536997+00:00",
+    "bbox_requested_wgs84": [
+      85.3232,
+      28.1552,
+      85.3483,
+      28.182
+    ],
+    "native_spacing_degrees": [
+      0.0008333333333333334,
+      0.0008333333333333334
+    ],
+    "nominal_source_resolution_m": 90,
+    "analysis_crs": "EPSG:32645",
+    "analysis_pixel_size_m": [
+      90,
+      90
+    ],
+    "resampling": "bilinear; nodata retained",
+    "slope": "Horn 3x3; all neighbours valid; borders excluded",
+    "units": "metres; Copernicus DSM orthometric height EGM2008",
+    "release": "AWS Copernicus DEM 2021 release; not an event-date acquisition",
+    "software_sha256": "9c44493bdc8bfdbbe229fe64cf7d115f9de224a6596085f5d5ece63432494fe3",
+    "attribution": "Copernicus Digital Elevation Model accessed 30 October 2026 from AWS Registry of Open Data",
+    "license_url": "https://registry.opendata.aws/copernicus-dem/"
+  }
+}

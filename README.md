@@ -117,4 +117,4 @@ Historical evidence and deliverables retain their existing paths. The [MIT licen
 
 ## JAI 2026 Flood & Terrain extension
 
-New event work is on the `jai-flood-terrain-20261030` branch. The optional [Flood Intelligence integration](jai_extension/README.md) connects genuine saved Flood Lab evidence inside the existing workspace. [Verification and open failures](docs/jai/REGRESSION.md) distinguish new software checks from historical scientific results. Terrain is pending.
+New event work is on the `jai-flood-terrain-20261030` branch. The optional [Flood Intelligence integration](jai_extension/README.md) connects genuine saved Flood Lab evidence inside the existing workspace. [Verification and open failures](docs/jai/REGRESSION.md) distinguish new software checks from historical scientific results. Real public Copernicus GLO-90 terrain, numerical slope and the interactive 3D view are connected.

@@ -1,6 +1,6 @@
 {
   "main_tests": {
-    "passed": 141,
+    "passed": 155,
     "failed": 0
   },
   "floodlab_tests": {
@@ -22,7 +22,31 @@
   "not_tested": [
     "full model inference on new extension origin",
     "browser upstream-offline state",
-    "terrain",
-    "independent scientific accuracy"
-  ]
+    "terrain/flood overlay alignment",
+    "independent scientific accuracy",
+    "multi-tool investigation"
+  ],
+  "terrain_tests": {
+    "passed": 14,
+    "failed": 0
+  },
+  "terrain_http_checks": 6,
+  "terrain": {
+    "scene_id": "terrain-45737e0da2983d9d",
+    "population": "NEW_REAL_DEM",
+    "valid_cells": 908,
+    "total_cells": 952,
+    "analysis_shape": [
+      34,
+      28
+    ],
+    "source_nominal_resolution_m": 90,
+    "browser_controls": [
+      "rotation",
+      "slope/elevation",
+      "1x/2x height",
+      "camera reset",
+      "2D fallback"
+    ]
+  }
 }

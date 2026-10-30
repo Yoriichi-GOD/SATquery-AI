@@ -9,6 +9,8 @@ from fastapi.responses import HTMLResponse, JSONResponse, Response
 from fastapi.staticfiles import StaticFiles
 
 from .flood_bridge import BridgeError, FloodBridge, MIME
+from .terrain import TerrainStore
+from pydantic import BaseModel, StrictBool
 
 WEB = Path(__file__).parent / "web"
 
@@ -31,7 +33,11 @@ class ExtensionOrigin:
         await self.app(scope, receive, send)
 
 
-def attach(app, bridge):
+class TerrainRequest(BaseModel):
+    confirmed: StrictBool = False
+
+
+def attach(app, bridge, terrain=None):
     router = APIRouter(prefix="/api/flood")
 
     @app.exception_handler(BridgeError)
@@ -75,6 +81,29 @@ def attach(app, bridge):
         return Response(raw, media_type=MIME[name], headers=headers)
 
     app.include_router(router)
+    if terrain is not None:
+        trouter = APIRouter(prefix="/api/terrain")
+
+        @trouter.get("/status")
+        def terrain_status():
+            return terrain.status()
+
+        @trouter.post("/obtain")
+        def terrain_obtain(payload: TerrainRequest):
+            return terrain.obtain(payload.confirmed)
+
+        @trouter.get("/scenes/{scene_id}")
+        def terrain_scene(scene_id: str):
+            return terrain.scene(scene_id)
+
+        @trouter.get("/scenes/{scene_id}/raster")
+        def terrain_raster(scene_id: str):
+            value=terrain.scene(scene_id)
+            raw=(terrain.scene_root(scene_id)/"analysis.tif").read_bytes()
+            return Response(raw,media_type="image/tiff",headers={"X-Artifact-SHA256":value["hashes"]["analysis.tif"],
+                "Content-Disposition":'attachment; filename="copernicus90-syapru-metric.tif"',"X-Content-Type-Options":"nosniff"})
+
+        app.include_router(trouter)
     app.mount("/jai/assets", StaticFiles(directory=WEB), name="jai-assets")
     return app
 
@@ -92,7 +121,8 @@ def create_app():
     spec = importlib.util.spec_from_file_location("satquery_jai_baseline_server", source)
     module = importlib.util.module_from_spec(spec)
     spec.loader.exec_module(module)
-    app = attach(module.app, bridge)
+    terrain=TerrainStore(os.environ.get("JAI_TERRAIN_ROOT",str(root/".runtime/jai/terrain")))
+    app = attach(module.app, bridge, terrain)
     app.add_middleware(ExtensionOrigin, port=int(os.environ.get("JAI_PORT", "8767")))
 
     # Replace only the home response in this process, leaving baseline source untouched.
@@ -100,7 +130,7 @@ def create_app():
     @app.get("/", include_in_schema=False)
     def home():
         html = (root / "paired_lab/web/index.html").read_text(encoding="utf-8")
-        extra = '<link rel="stylesheet" href="/jai/assets/extension.css"><script defer src="/jai/assets/extension.js"></script>'
+        extra = '<link rel="stylesheet" href="/jai/assets/extension.css"><script defer src="/jai/assets/extension.js"></script><script defer src="/jai/assets/terrain.js"></script>'
         return HTMLResponse(html.replace("</head>", extra + "</head>"))
 
     route = app.router.routes.pop()

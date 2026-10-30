@@ -1,6 +1,6 @@
 # SATQuery JAI 2026 extension
 
-New event work: a read-only Flood Lab bridge and native Flood Intelligence panel in the approved existing SATQuery workspace. Terrain and investigation orchestration are pending their measured acceptance checks.
+New event work: a read-only Flood Lab bridge and native Flood Intelligence panel in the approved existing SATQuery workspace. A real public Copernicus GLO-90 terrain sample, numerical slope and interactive 3D are connected; investigation orchestration remains pending.
 
 This repository uses the prior applications as explicitly configured external baselines. It does not claim their models, acquisition pipelines or historical results were created at this event. See [baseline provenance](../docs/jai/BASELINE_PROVENANCE.md) and [rule status](../docs/jai/JAI_RULE_COMPLIANCE.md).
 
@@ -16,8 +16,12 @@ Run `python -m unittest discover -s tests -v` and `node --check jai_extension/we
 
 ## Data and AI disclosure
 
-OpenAI Codex assisted implementation and verification. Prior software and dataset terms remain applicable. This extension retrieves saved files only; it does not call an AI model or acquire new scenes. Historical SAR thresholds and map agreement retain their original limitations. Intersections do not establish damage, closures or casualty estimates. Settlement access with missing assessment is displayed as `NOT_ASSESSED`.
+OpenAI Codex assisted implementation and verification. Prior software and dataset terms remain applicable. The flood bridge retrieves saved files. Terrain obtains one explicitly approved public GLO-90 demo tile; it does not call an AI model or acquire new satellite flood scenes. Historical SAR thresholds and map agreement retain their original limitations. Intersections do not establish damage, closures or casualty estimates. Settlement access with missing assessment is displayed as `NOT_ASSESSED`.
 
 The adapter accepts only a configured literal loopback HTTP origin, follows no redirects, restricts files and transfer sizes, checks saved SHA-256 hashes, and never forwards arbitrary acquisition requests. The freeze map is a local integrity reference, not a signed external authenticity certificate.
 
 On the current host set JAI_PORT=8768 because the original SATQuery already occupies 8767. Runtime logs stay under .runtime/jai and are not committed. The root README describes the original app; this extension is optional.
+
+## Real terrain checkpoint
+
+Open Terrain for the saved Syapru GLO-90 surface. The first acquisition requires the visible public-download consent control. On this host the approved tile is already cached under .runtime/jai/terrain; that ignored data is not shipped in Git. A fresh checkout truthfully starts without it. Read ../docs/jai/DAY1_COMPLETION.md and DATA_SOURCES.md for measured results and scope.
