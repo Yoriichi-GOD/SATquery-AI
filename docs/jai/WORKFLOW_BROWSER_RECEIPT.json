@@ -1,0 +1,103 @@
+{
+  "recorded_utc": "2026-10-30T12:14:03.911475+00:00",
+  "application_revision": "9a47d05",
+  "screenshots": [
+    {
+      "file": "images/aligned-terrain-desktop.jpg",
+      "sha256": "68d49269ad49b5954e4b598efacce3b3778381da60b0316f2e6479aa599b6e2d",
+      "capture_utc": "2026-10-30T12:11:18.078707+00:00",
+      "actual_image_dimensions": [
+        1273,
+        895
+      ],
+      "application_revision": "9a47d05"
+    },
+    {
+      "file": "images/aligned-terrain-mobile.jpg",
+      "sha256": "5e7c12cc749d61c00117289ceec3a16d7e6704f889c323c2a4121b1486dea962",
+      "capture_utc": "2026-10-30T12:12:06.002522+00:00",
+      "actual_image_dimensions": [
+        383,
+        829
+      ],
+      "application_revision": "9a47d05"
+    },
+    {
+      "file": "images/investigation-desktop.jpg",
+      "sha256": "0d3de071e544ac14d04e4e75ee903f480173170c769d5f221fcc0546b6a51790",
+      "capture_utc": "2026-10-30T12:11:29.094816+00:00",
+      "actual_image_dimensions": [
+        1273,
+        895
+      ],
+      "application_revision": "9a47d05"
+    },
+    {
+      "file": "images/investigation-mobile.jpg",
+      "sha256": "237176faf978235c6734e4634f9d40304274b77a46bcc7e886f4b472c206996c",
+      "capture_utc": "2026-10-30T12:11:58.868806+00:00",
+      "actual_image_dimensions": [
+        383,
+        829
+      ],
+      "application_revision": "9a47d05"
+    }
+  ],
+  "alignment": {
+    "run_id": "event-fe47db331390",
+    "scene_id": "terrain-45737e0da2983d9d",
+    "common_valid_dem_centres": 816,
+    "valid_dem_cells": 908,
+    "markers_with_valid_dsm_support": 601,
+    "full_run_candidate_pixels": 956,
+    "physical_alignment": "NOT_INDEPENDENTLY_VALIDATED"
+  },
+  "browser_checks": {
+    "native_four_tool_answer": "complete, measured values and source links",
+    "surface_endpoint_picking": "Two actual 3D clicks selected start/end; 805m profile, 128/128 valid samples",
+    "entered_default_profile": "2160m, 128/128 valid samples",
+    "unsupported_depth": "ABSTAINED; old numerical claims removed",
+    "cancel": "CANCELLED under induced owned-upstream outage; no final result; see investigation-cancel.json",
+    "reload": "Recorded terminal job restored",
+    "run_selection": "Changing to nepal-syapru-004 cleared prior overlay, synchronized selected ID and disabled overlay pending alignment",
+    "fallback": "2D hides markers and disables overlay; returning to 3D restores availability"
+  },
+  "responsive_checks": [
+    {
+      "view": "investigation",
+      "viewport": [
+        1280,
+        720
+      ],
+      "document_overflow": false
+    },
+    {
+      "view": "investigation",
+      "viewport": [
+        390,
+        844
+      ],
+      "document_overflow": false
+    },
+    {
+      "view": "terrain",
+      "viewport": [
+        390,
+        844
+      ],
+      "document_overflow": false
+    },
+    {
+      "view": "terrain",
+      "viewport": [
+        1280,
+        900
+      ],
+      "document_overflow": false
+    }
+  ],
+  "reduced_motion": "Browser emulation preference verified and then reset; no full motion accessibility certification",
+  "browser_console": "No errors/warnings captured in final functional view checkpoints; induced outage is intentional and recorded separately",
+  "runtime_recovery": "Owned services stopped during tool-session transition; restored in persistent session. Original 8767 service untouched. No OS service installation or cloud deployment.",
+  "scope": "Engineering acceptance on saved/previously inspected inputs; no new scientific accuracy or operational-readiness claim"
+}

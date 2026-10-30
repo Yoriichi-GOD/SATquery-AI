@@ -38,3 +38,11 @@ This is visibly labelled a **rule-based tool workflow with no AI model**. There 
 - Runtime assets and job records are local and ignored. A new clone requires the original provisioned SATQuery/Flood Lab installations and real saved data. No cloud deployment, final presentation or organizer acceptance is implied.
 
 The performance replay is a local API diagnostic on previously inspected inputs. Direct summary returns less information. Manual-equivalent API gathering excludes human click time. The orchestration adds overhead; no speed superiority is claimed.
+
+## Final source and visual record
+
+Source revision 9a47d05 was used for the final screenshots and browser checks. Later documentation commits do not change the application. Main 190-test suite, 11 helper checks and full-branch publication/evidence consistency check passed locally. See WORKFLOW_BROWSER_RECEIPT.json for exact captures and bounded layout checks.
+
+![Measured multi-tool answer](images/investigation-desktop.jpg)
+
+![Real DSM with grid-mapped water candidate markers](images/aligned-terrain-desktop.jpg)

@@ -1,3 +1,5 @@
+Historical two-milestone script below. For the completed alignment/investigation flow, use DEMO_CURRENT.md.
+
 # Current two-minute demonstration
 
 Use the local extension on port 8768, with Flood Lab running on 8770. This script covers the currently verified two milestones; it does not narrate an unimplemented agent.

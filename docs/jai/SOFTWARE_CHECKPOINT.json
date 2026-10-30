@@ -69,5 +69,13 @@
     "matched_claims": 24,
     "valid_evidence_pointers": 10,
     "population": "previously inspected real saved run and cached real DEM"
-  }
+  },
+  "source_revision": "9a47d05",
+  "completion_scope": "Selected terrain/flood grid mapping and deterministic investigation workflow",
+  "helper_tests": {
+    "passed": 11,
+    "failed": 0
+  },
+  "publication_check": "passed against full branch from f5a5a5f",
+  "browser_receipt": "WORKFLOW_BROWSER_RECEIPT.json"
 }
