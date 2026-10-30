@@ -17,11 +17,11 @@
     "run selection",
     "original workspace navigation",
     "1280x720 no horizontal overflow",
-    "390x844 no horizontal overflow"
+    "390x844 no horizontal overflow",
+    "real upstream outage clears metrics/image and recovers after resume"
   ],
   "not_tested": [
     "full model inference on new extension origin",
-    "browser upstream-offline state",
     "terrain/flood overlay alignment",
     "independent scientific accuracy",
     "multi-tool investigation"

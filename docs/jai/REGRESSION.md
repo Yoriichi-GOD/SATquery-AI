@@ -11,3 +11,7 @@ Known limits at this checkpoint: unavailable-service and corrupted artifacts are
 ## Full baseline suites at the extension checkpoint
 
 Main application: 141/141 passed (117 existing + 24 extension). Flood Lab: 69 passed, 1 failed, 31 warnings. The unchanged test tests/test_nepal_registration.py expects damage_features_inspected=False, while the existing current dataset-readiness.json records True following earlier reference inspection. This historical-state assertion is not green; no saved reference record or old test was rewritten to conceal it. The original source audit hashes still match.
+
+## Final real failure-state check
+
+Paused only the owned Flood Lab child; refreshed the native Flood panel. Actual timeout returned the unavailable-service message, empty metrics and hidden old image. Resumed the same process; reload restored the genuine saved run. The expected outage response is not an unhandled JavaScript exception. See BROWSER_RECEIPT.json and images/. Final application revision captured: e42118c.

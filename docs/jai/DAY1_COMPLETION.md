@@ -20,7 +20,7 @@ Terrain receipt: six actual HTTP checks, exact raster/mesh matches and cell-cent
 - Existing helpers: six landmark and five readiness tests passed.
 - Publication evidence/hygiene check passed after the flood commit; rerun for terrain commit.
 - Flood Lab baseline: 69 passed / 1 failed / 31 warnings. The unchanged older test expects uninspected reference features, while existing current readiness metadata records inspected features. This remains a disclosed baseline failure.
-- Browser: real flood run selection and source preview; original Workspace navigation; 3D load and controls; real rotation; 2D fallback; 1280×720 and 1691×930 desktop and settled 390×844 layouts without document overflow. Source screenshots remain local. No errors/warnings were captured at these checkpoints.
+- Browser: real flood run selection and source preview; original Workspace navigation; 3D load and controls; real rotation; 2D fallback; 1280×720 and 1691×930 desktop and settled 390×844 layouts without document overflow. Screenshots captured from application revision e42118c are in images/, with hashes and actual timestamps in BROWSER_RECEIPT.json. No errors/warnings were captured at these checkpoints.
 
 ## Launch and stop
 
@@ -33,3 +33,9 @@ Multi-tool investigation and STOP/cancel trace, common-area terrain/flood overla
 No CDSE credentials/CCM authorization were checked; only the approved public GLO-90 path is connected. Terrain obtain currently supports one allowlisted demo window, not arbitrary AOIs. 16MiB downloads use fixed timeout and explicit retries; automated backoff/Retry-After handling and active download cancellation remain open. No independent vertical or flood truth was added. Cached terrain hashes are checked on access; cached artifacts are not source authenticity certificates.
 
 Organizer checkpoint, latest briefing windows, team handles and T1 repository exception remain unconfirmed. No `day1-final` tag is created or claimed. User explicitly selected the main repository. See JAI_RULE_COMPLIANCE.md for the exact record.
+
+Final outage verification: actual paused-upstream timeout cleared stale flood metrics and image; resuming restored the real run. Both services were left working. Final source milestone e42118c; later commits add documentation evidence only.
+
+![Native real saved-run view](images/flood-final.jpg)
+
+![Real Copernicus DSM surface](images/terrain-final.jpg)

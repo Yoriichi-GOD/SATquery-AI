@@ -1,0 +1,38 @@
+{
+  "screenshots": [
+    {
+      "file": "images/flood-final.jpg",
+      "captured_utc": "2026-10-30T11:18:48.417365+00:00",
+      "application_revision": "e42118c",
+      "sha256": "a7820b0c9c753e7414e71fb282eb425be9ad3a65c1e2a009623d8ff7d8ee478f",
+      "viewport": [
+        1691,
+        930
+      ]
+    },
+    {
+      "file": "images/terrain-final.jpg",
+      "captured_utc": "2026-10-30T11:18:57.533721+00:00",
+      "application_revision": "e42118c",
+      "sha256": "ab2114f2276253a0f6c4f1340cf20263e4d2730f17651ced813a10d1e419d8b5",
+      "viewport": [
+        1691,
+        930
+      ]
+    }
+  ],
+  "upstream_outage": {
+    "method": "Pause only owned Flood Lab process; refresh; resume same process",
+    "observed_message": "Flood Lab is unavailable; start the local service on port 8770",
+    "metrics_cleared": true,
+    "image_hidden": true,
+    "recovery": "Refresh/reload restored genuine saved run"
+  },
+  "terrain_rotation": "Real camera orientation changed during mouse drag; reset restored default",
+  "responsive": [
+    "1691x930",
+    "1280x720",
+    "390x844 settled layout no document overflow"
+  ],
+  "interpretation": "Browser functionality, not independent scientific accuracy"
+}

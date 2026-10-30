@@ -9,3 +9,5 @@ Participant selected the main SATquery-AI repository rather than a new event rem
 First real commits pushed to the user-selected main repository branch: bd451b2 (native verified flood integration), followed by 3b8cc85 (Windows UTF-8 correction preserving original README bytes).
 
 Participant explicitly approved one public GLO-90 tile download. Retrieved and hashed the genuine tile, processed the bounded metric window, passed 14 terrain tests and six real HTTP checks, inspected the rendered surface and its actual camera changes. Combined main suite: 155 passed; 11 measurement helpers passed. Second substantive checkpoint adds terrain and source documentation. No fabricated timestamps or day1-final tag.
+
+Terrain source milestone e42118c pushed after 155 passing main checks and publication validation. A final real paused-upstream browser test cleared stale fields and recovered on resume. Captured source-revision screenshots and hashes in the closing documentation commit. Both original baseline source hashes and the committed Plotly bytes matched their audited values.
