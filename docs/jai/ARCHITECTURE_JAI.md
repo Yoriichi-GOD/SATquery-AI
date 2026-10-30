@@ -4,11 +4,12 @@ The optional `start_jai.py` process loads the approved prior SATQuery installati
 
 ```text
 Native SATQuery workspace
-  Flood Intelligence -> /api/flood/* -> bounded loopback HTTP -> prior Flood Lab
-  Terrain -> /api/terrain/* -> verified local GLO-90 source/analysis TIFFs
-  Align -> /api/context/coverage -> hash-checked raster reprojection + shared support
-  Profile -> /api/terrain/scenes/{id}/transect -> bilinear metric samples with gaps
-  Investigate -> /api/investigations -> one bounded worker
+  Terrain & flood: one viewer + selection + adjacent questions
+    Saved flood views -> /api/flood/* -> bounded loopback HTTP -> prior Flood Lab
+    Terrain -> /api/terrain/* -> verified local GLO-90 source/analysis TIFFs
+    Automatic mapping -> /api/context/coverage -> hash-checked reprojection + shared support
+    Cross-section -> /api/terrain/scenes/{id}/transect -> bilinear metric samples with gaps
+    In-place question -> /api/investigations -> one bounded worker
       deterministic plan -> actual registered tools -> hash-chained records
       source-value claims + evidence pointers -> human review
       explicit Stop -> cancellation check, including after in-flight read timeout
@@ -24,6 +25,6 @@ Native SATQuery workspace
 
 The registry is visible at `/api/investigations/tools`. Derived coverage/profile evidence is served from `/api/investigations/{id}/tools/{tool}` using recorded outputs. Original files remain available through their guarded source routes. Facts name the machine field used; settlement status is explicitly NOT_ASSESSED when the saved record says assessment was not performed.
 
-The planner is deterministic and the UI declares that no AI model is called. There is no prompt evaluation of feature names; they are inert text. Requests have identifier/size/sample limits, one active job, a 45s checked deadline and bounded HTTP reads. Stop suppresses later output and takes precedence over a source timeout. Job traces survive server restart; unfinished jobs become interrupted. Hash chains detect local trace modification but are not signatures against a fully rewritten local store.
+The [unified UI](UNIFIED_WORKSPACE.md) keeps source dates, downloads, alignment details and tool traces in closed disclosures. Asset URLs include content hashes. A context-ready gate prevents questions from starting while the selection is loading. The planner is deterministic and the UI declares that no AI model is called. There is no prompt evaluation of feature names; they are inert text. Requests have identifier/size/sample limits, one active job, a 45s checked deadline and bounded HTTP reads. Stop suppresses later output and takes precedence over a source timeout. Job traces survive server restart; unfinished jobs become interrupted. Hash chains detect local trace modification but are not signatures against a fully rewritten local store.
 
 Runtime paths: `.runtime/jai/terrain`, `.runtime/jai/investigations` and `.runtime/jai/*.log`. Keep them out of Git. The original providers' licenses and source-time caveats remain applicable; source images, weights, credentials and private Research are not imported. See DATA_SOURCES.md and BASELINE_PROVENANCE.md.

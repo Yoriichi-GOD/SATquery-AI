@@ -1,0 +1,163 @@
+{
+  "application_revision": "9573886a1ce3fb2c930a46f027d5e48a7d2c5058",
+  "recorded_utc": "2026-10-30T13:35:49.433412+00:00",
+  "scope": "Browser/UI and software behaviour; not independent scientific accuracy.",
+  "main_suite": {
+    "tests": 190,
+    "seconds": 2.689,
+    "result": "passed"
+  },
+  "browser_checks": {
+    "combined_tools": 4,
+    "run_id": "event-fe47db331390",
+    "scene_id": "terrain-45737e0da2983d9d",
+    "candidate_markers": 601,
+    "displayed_measurements": {
+      "candidate_ha": 9.56,
+      "building_intersections": 2,
+      "road_intersection_m": 185.8,
+      "median_slope_deg": 34.6
+    },
+    "source_views": [
+      "before SAR",
+      "after SAR",
+      "water map",
+      "3D terrain"
+    ],
+    "context_loading_guard_replayed": true,
+    "stop_cancelled_no_answer": true,
+    "outage": "Owned Flood Lab SIGSTOP: terrain retained, flood metrics removed, flood image views disabled. SIGCONT, refresh and run reselection recovered.",
+    "service_resumed": true,
+    "profile_length_m": 2160,
+    "profile_samples_valid": "128/128",
+    "original_navigation_reload": [
+      "Workspace",
+      "Evidence"
+    ],
+    "matching_answer_reload": true,
+    "terrain_only_reload": true,
+    "unsupported_depth_safety_abstained": true,
+    "fallback_markers_disabled": true,
+    "mobile_ask_focus": "earth-question, visible in viewport",
+    "no_document_overflow": [
+      "961x871 default",
+      "1280x720",
+      "390x844"
+    ],
+    "sources_and_evidence_closed": true,
+    "sidebar_rgb": [
+      16,
+      16,
+      16
+    ],
+    "viewer_rgb": [
+      8,
+      8,
+      8
+    ],
+    "final_captured_console_warnings_errors": []
+  },
+  "http_export": {
+    "job_id": "investigation-7624a60e758942e28206feb230258488",
+    "selection": {
+      "question": "Which roads and buildings near the water candidates need inspection, and what does the terrain look like?",
+      "run_id": "event-fe47db331390",
+      "scene_id": "terrain-45737e0da2983d9d",
+      "profile": null
+    },
+    "state": "complete",
+    "tools": [
+      "get_run",
+      "get_exposed_assets",
+      "get_dem",
+      "analyze_coverage"
+    ],
+    "download_http_200": true,
+    "download_matches_record": true,
+    "headers": {
+      "date": "Fri, 30 Oct 2026 13:33:46 GMT",
+      "server": "uvicorn",
+      "content-disposition": "attachment; filename=\"investigation-7624a60e758942e28206feb230258488.json\"",
+      "x-content-type-options": "nosniff",
+      "cache-control": "no-store",
+      "content-length": "201311",
+      "content-type": "application/json",
+      "Connection": "close"
+    },
+    "download_sha256": "cef8dfcf52c5637b2a56eea267e6381e672b748ff1f3ed10375747421b5dc84a",
+    "browser_file_save": "Not verified; in-app browser download-event automation timed out. HTTP attachment and matching JSON verified separately."
+  },
+  "screenshots": [
+    {
+      "file": "images/unified-desktop.jpg",
+      "viewport": [
+        961,
+        871
+      ],
+      "image_dimensions": [
+        955,
+        866
+      ],
+      "full_page": false,
+      "application_revision": "9573886a1ce3fb2c930a46f027d5e48a7d2c5058",
+      "captured_utc": "2026-10-30T13:32:14.295332+00:00",
+      "sha256": "45a17ddcba78c21cbf52c4718c3afaedf3f2a2fae56d2545ef89fe8c7f122e49"
+    },
+    {
+      "file": "images/unified-desktop-1280.jpg",
+      "viewport": [
+        1280,
+        720
+      ],
+      "image_dimensions": [
+        1273,
+        1545
+      ],
+      "full_page": true,
+      "application_revision": "9573886a1ce3fb2c930a46f027d5e48a7d2c5058",
+      "captured_utc": "2026-10-30T13:32:57.310444+00:00",
+      "sha256": "904e7289cdbb5972b73eed174d240841e41c5dbe74e03accc61023096e2501e7"
+    },
+    {
+      "file": "images/unified-mobile-terrain.jpg",
+      "viewport": [
+        390,
+        844
+      ],
+      "image_dimensions": [
+        383,
+        829
+      ],
+      "full_page": false,
+      "application_revision": "9573886a1ce3fb2c930a46f027d5e48a7d2c5058",
+      "captured_utc": "2026-10-30T13:32:37.509591+00:00",
+      "sha256": "a515cdd4e2433e2ffad0a3e8d5e82d62a87dfae55a5bd74c574eafc4d128f59d"
+    },
+    {
+      "file": "images/unified-mobile-question.jpg",
+      "viewport": [
+        390,
+        844
+      ],
+      "image_dimensions": [
+        383,
+        829
+      ],
+      "full_page": false,
+      "application_revision": "9573886a1ce3fb2c930a46f027d5e48a7d2c5058",
+      "captured_utc": "2026-10-30T13:32:43.619930+00:00",
+      "sha256": "c0748740bde6c1c2cc56c9cb7e50156007d79eae9c51c98ea6eb8413441c3996"
+    }
+  ],
+  "source_sha256": {
+    "jai_extension/web/earth.js": "b6edbc22583eb40e29ed519ed117da109fbc0f1564e59cea3068f4cf7ea50bd2",
+    "jai_extension/web/earth.css": "18b787bcabc256a697a3901a9e58d42b3f03fd2d3bd7edff36ce6df37533fcdc",
+    "jai_extension/server.py": "184e185265aaa31eed2eb7458ad12979b118dcb4d259c99a59d3f4d53da67b39"
+  },
+  "limitations": [
+    "Physical co-registration is not independently validated.",
+    "Historical water candidates and infrastructure intersections do not establish damage or safety.",
+    "Existing Flood Lab historical metadata failure remains outside this main-suite result.",
+    "Browser file-save completion was not verified; export HTTP/JSON/headers were."
+  ]
+}

@@ -1,6 +1,6 @@
 # Alignment and investigation completion — 30 October 2026
 
-This closes the two implementation items selected by the participant: terrain/flood grid alignment and the bounded multi-tool investigation workflow. The earlier DAY1_COMPLETION.md is a historical checkpoint.
+This closes the two implementation items selected by the participant: terrain/flood grid alignment and the bounded multi-tool investigation workflow. The earlier DAY1_COMPLETION.md is a historical checkpoint. The navigation described below records this implementation checkpoint; the current interface combines terrain, flood and questions in [one workspace](UNIFIED_WORKSPACE.md). See [current demo](DEMO_CURRENT.md).
 
 ## Definition of Done checked
 
