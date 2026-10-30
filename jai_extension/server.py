@@ -146,6 +146,11 @@ def attach(app, bridge, terrain=None):
         @investigations.get('/{job_id}')
         def investigation_status(job_id:str):return manager.get(job_id)
 
+        @investigations.get('/{job_id}/download')
+        def investigation_download(job_id:str):
+            value=manager.get(job_id)
+            return JSONResponse(value,headers={'Content-Disposition':f'attachment; filename="{job_id}.json"','X-Content-Type-Options':'nosniff','Cache-Control':'no-store'})
+
         @investigations.get('/{job_id}/tools/{tool_name}')
         def investigation_tool_output(job_id:str,tool_name:str):
             value,sha=manager.tool_output(job_id,tool_name)
@@ -181,7 +186,11 @@ def create_app():
     @app.get("/", include_in_schema=False)
     def home():
         html = (root / "paired_lab/web/index.html").read_text(encoding="utf-8")
-        extra = '<link rel="stylesheet" href="/jai/assets/extension.css?v=20261030-investigation-2"><link rel="stylesheet" href="/jai/assets/workflow.css?v=20261030-investigation-2"><script defer src="/jai/assets/extension.js?v=20261030-investigation-2"></script><script defer src="/jai/assets/terrain.js?v=20261030-investigation-2"></script><script defer src="/jai/assets/workflow.js?v=20261030-investigation-2"></script>'
+        # Content-derived versions prevent stale UI contracts after an update.
+        import hashlib
+        css_version = hashlib.sha256((WEB/'earth.css').read_bytes()).hexdigest()[:12]
+        js_version = hashlib.sha256((WEB/'earth.js').read_bytes()).hexdigest()[:12]
+        extra = f'<link rel="stylesheet" href="/jai/assets/earth.css?v={css_version}"><script defer src="/jai/assets/earth.js?v={js_version}"></script>'
         return HTMLResponse(html.replace("</head>", extra + "</head>"),headers={"Cache-Control":"no-store"})
 
     route = app.router.routes.pop()
