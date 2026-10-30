@@ -1,0 +1,206 @@
+{
+  "recorded_utc": "2026-10-30T10:55:05.587697+00:00",
+  "population": "FROZEN_REAL_OBSERVATION",
+  "run_id": "event-fe47db331390",
+  "platform": "Linux-6.18.33.2-microsoft-standard-WSL2-x86_64-with-glibc2.43",
+  "listing_count": 18,
+  "scope": "HTTP and byte-integrity smoke; individual request times, not a p50/p95 benchmark; no scientific accuracy claim",
+  "checks": [
+    {
+      "path": "/",
+      "status": 200,
+      "expected": 200,
+      "seconds": 0.0059,
+      "bytes": 9443
+    },
+    {
+      "path": "/api/status",
+      "status": 200,
+      "expected": 200,
+      "seconds": 0.0017,
+      "bytes": 794
+    },
+    {
+      "path": "/api/samples",
+      "status": 200,
+      "expected": 200,
+      "seconds": 0.0024,
+      "bytes": 23402
+    },
+    {
+      "path": "/api/flood/health",
+      "status": 200,
+      "expected": 200,
+      "seconds": 0.0043,
+      "bytes": 83
+    },
+    {
+      "path": "/api/flood/runs",
+      "status": 200,
+      "expected": 200,
+      "seconds": 0.1444,
+      "bytes": 28376
+    },
+    {
+      "path": "/api/flood/runs/event-fe47db331390",
+      "status": 200,
+      "expected": 200,
+      "seconds": 0.035,
+      "bytes": 5584
+    },
+    {
+      "path": "/api/flood/runs/event-fe47db331390/artifact/connectivity.json",
+      "status": 200,
+      "expected": 200,
+      "seconds": 0.0245,
+      "bytes": 1609
+    },
+    {
+      "path": "/api/flood/runs/event-fe47db331390/artifact/debris-candidates.tif",
+      "status": 200,
+      "expected": 200,
+      "seconds": 0.0211,
+      "bytes": 5210
+    },
+    {
+      "path": "/api/flood/runs/event-fe47db331390/artifact/debris-exposure.csv",
+      "status": 200,
+      "expected": 200,
+      "seconds": 0.0195,
+      "bytes": 52092
+    },
+    {
+      "path": "/api/flood/runs/event-fe47db331390/artifact/exposure.csv",
+      "status": 200,
+      "expected": 200,
+      "seconds": 0.0199,
+      "bytes": 56000
+    },
+    {
+      "path": "/api/flood/runs/event-fe47db331390/artifact/graph.json",
+      "status": 200,
+      "expected": 200,
+      "seconds": 0.0563,
+      "bytes": 1555615
+    },
+    {
+      "path": "/api/flood/runs/event-fe47db331390/artifact/layers.geojson",
+      "status": 200,
+      "expected": 200,
+      "seconds": 0.0406,
+      "bytes": 1165261
+    },
+    {
+      "path": "/api/flood/runs/event-fe47db331390/artifact/manifest.json",
+      "status": 200,
+      "expected": 200,
+      "seconds": 0.0205,
+      "bytes": 3723
+    },
+    {
+      "path": "/api/flood/runs/event-fe47db331390/artifact/post.png",
+      "status": 200,
+      "expected": 200,
+      "seconds": 0.0207,
+      "bytes": 81430
+    },
+    {
+      "path": "/api/flood/runs/event-fe47db331390/artifact/pre.png",
+      "status": 200,
+      "expected": 200,
+      "seconds": 0.0197,
+      "bytes": 81504
+    },
+    {
+      "path": "/api/flood/runs/event-fe47db331390/artifact/prediction.tif",
+      "status": 200,
+      "expected": 200,
+      "seconds": 0.0184,
+      "bytes": 5648
+    },
+    {
+      "path": "/api/flood/runs/event-fe47db331390/artifact/report-en.html",
+      "status": 200,
+      "expected": 200,
+      "seconds": 0.025,
+      "bytes": 2232
+    },
+    {
+      "path": "/api/flood/runs/event-fe47db331390/artifact/report-ne.html",
+      "status": 200,
+      "expected": 200,
+      "seconds": 0.0214,
+      "bytes": 2762
+    },
+    {
+      "path": "/api/flood/runs/event-fe47db331390/artifact/result.json",
+      "status": 200,
+      "expected": 200,
+      "seconds": 0.0209,
+      "bytes": 2653
+    },
+    {
+      "path": "/api/flood/runs/event-fe47db331390/artifact/sensitivity.json",
+      "status": 200,
+      "expected": 200,
+      "seconds": 0.0193,
+      "bytes": 260
+    },
+    {
+      "path": "/api/flood/runs/event-fe47db331390/artifact/topology-audit.json",
+      "status": 200,
+      "expected": 200,
+      "seconds": 0.0189,
+      "bytes": 3634
+    },
+    {
+      "path": "/api/flood/runs/event-fe47db331390/candidate.png",
+      "status": 200,
+      "expected": 200,
+      "seconds": 0.0319,
+      "bytes": 9469
+    },
+    {
+      "path": "/api/flood/runs/event-fe47db331390/grid",
+      "status": 200,
+      "expected": 200,
+      "seconds": 0.0195,
+      "bytes": 291
+    },
+    {
+      "path": "/api/flood/runs/event-fe47db331390/exposure",
+      "status": 200,
+      "expected": 200,
+      "seconds": 0.0278,
+      "bytes": 86855
+    },
+    {
+      "path": "/api/flood/runs/missing",
+      "status": 404,
+      "expected": 404,
+      "seconds": 0.0052,
+      "bytes": 44
+    },
+    {
+      "path": "/api/flood/runs/event-fe47db331390/artifact/.env.local",
+      "status": 404,
+      "expected": 404,
+      "seconds": 0.0017,
+      "bytes": 40
+    },
+    {
+      "path": "/api/status",
+      "status": 403,
+      "expected": 403,
+      "seconds": 0.0019,
+      "bytes": 52
+    },
+    {
+      "path": "/api/status",
+      "status": 200,
+      "expected": 200,
+      "seconds": 0.0015,
+      "bytes": 794
+    }
+  ]
+}

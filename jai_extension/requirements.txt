@@ -1,0 +1,7 @@
+# New extension only. Existing model runtimes stay separate.
+fastapi==0.115.12
+uvicorn==0.34.2
+requests==2.34.2
+numpy==2.4.6
+rasterio==1.4.4
+Pillow==12.3.0

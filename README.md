@@ -5,9 +5,9 @@
 <p align="center"><strong>Ask about Earth. Inspect the answer.</strong></p>
 
 <p align="center">
-  <a href="docs/REVIEWER_GUIDE.md">Product walkthrough</a> ·
-  <a href="#measured-evidence">Measured evidence</a> ·
-  <a href="docs/SETUP.md">Setup</a> ·
+  <a href="docs/REVIEWER_GUIDE.md">Product walkthrough</a> Â·
+  <a href="#measured-evidence">Measured evidence</a> Â·
+  <a href="docs/SETUP.md">Setup</a> Â·
   <a href="docs/ARCHITECTURE.md">Architecture</a>
 </p>
 
@@ -21,7 +21,7 @@ SatQuery helps remote-sensing researchers and analysts ask questions about **pre
   <img src="docs/images/workspace-water-dark.png" alt="Actual SatQuery workspace: water overlay, three sensor-path masks, pixel counts and result for the supplied India example" width="1440">
 </picture>
 
-*Actual product screen, captured 27 October 2026 from a new run of the supplied India example. The 49.56% shown is predicted water coverage in this crop, not accuracy. [Walk through this example](docs/REVIEWER_GUIDE.md#1-map-water-and-inspect-three-pathways) · [Capture provenance](docs/images/README.md).*
+*Actual product screen, captured 27 October 2026 from a new run of the supplied India example. The 49.56% shown is predicted water coverage in this crop, not accuracy. [Walk through this example](docs/REVIEWER_GUIDE.md#1-map-water-and-inspect-three-pathways) Â· [Capture provenance](docs/images/README.md).*
 
 ## From an observation to a reviewable result
 
@@ -45,7 +45,7 @@ These paths are connected in the main interface once their assets are provisione
 
 **Experimental browser paths:** category grounding, single Sentinel-1 scene classification, and paired Sentinel-2 NDVI/NDWI comparison. See [capabilities and boundaries](docs/ARCHITECTURE.md#capability-status).
 
-**Experimental CDVQA mode:** answer one of 300 supported change-question templates on an aligned, ordered RGB pair through the browser or [CLI](scripts/predict_cdvqa.py). Alignment declaration and input checks are required. The browser integration does not change the historical benchmark scores. [Report](docs/CDVQA_FINAL_REPORT.md) · [Integration review](docs/PENDING_RELEASE_REVIEW_20261027.md).
+**Experimental CDVQA mode:** answer one of 300 supported change-question templates on an aligned, ordered RGB pair through the browser or [CLI](scripts/predict_cdvqa.py). Alignment declaration and input checks are required. The browser integration does not change the historical benchmark scores. [Report](docs/CDVQA_FINAL_REPORT.md) Â· [Integration review](docs/PENDING_RELEASE_REVIEW_20261027.md).
 
 ## Measured evidence
 
@@ -55,15 +55,15 @@ Each task has its own metric and scope. These results do not form an overall Sat
 | --- | --- | --- |
 | [CDVQA Test-1](docs/CDVQA_FINAL_REPORT.md) | **69.90%** answer accuracy | 39,686 questions / 968 pairs; experimental specialist, 28 Sep 2026 |
 | [CDVQA Test-2](docs/CDVQA_FINAL_REPORT.md) | **65.05%** answer accuracy | 31,036 questions / the **same 968 pairs**, 28 Sep 2026 |
-| [Water mapping](BENCHMARK_REPORT.md#water-retain-the-three-pathways) | SAR **63.64%** · optical **83.90%** · joint **82.64%** IoU | 90 Sen1Floods11 test chips; previously evaluated split, 21 Sep 2026 |
-| [Road/building change](BENCHMARK_REPORT.md#temporal-segmentation-and-captions-are-separate) | Road **80.99%** · building **81.69%** IoU | 100 selected LEVIR-MCI pairs: 50 changed / 50 unchanged; inherited checkpoint, 21 Sep 2026 |
+| [Water mapping](BENCHMARK_REPORT.md#water-retain-the-three-pathways) | SAR **63.64%** Â· optical **83.90%** Â· joint **82.64%** IoU | 90 Sen1Floods11 test chips; previously evaluated split, 21 Sep 2026 |
+| [Road/building change](BENCHMARK_REPORT.md#temporal-segmentation-and-captions-are-separate) | Road **80.99%** Â· building **81.69%** IoU | 100 selected LEVIR-MCI pairs: 50 changed / 50 unchanged; inherited checkpoint, 21 Sep 2026 |
 
 CDVQA splits overlap in questions and share imagery; **do not pool them**. Question-only controls scored 68.06% / 63.24%. Twelve pairs were previously inspected; [controls and exclusion analysis](docs/CDVQA_FINAL_REPORT.md#previously-inspected-pairs-excluded) disclose that exposure. Joint water fusion did not exceed optical-only on this test set.
 
-[Benchmark findings](BENCHMARK_REPORT.md) · [Numerical tables](paired_lab/evidence/benchmark-20260921/metrics.csv) · [CDVQA predictions](paired_lab/evidence/cdvqa-trained-20260928/) · [Claim register](docs/CLAIM_REGISTER.md)
+[Benchmark findings](BENCHMARK_REPORT.md) Â· [Numerical tables](paired_lab/evidence/benchmark-20260921/metrics.csv) Â· [CDVQA predictions](paired_lab/evidence/cdvqa-trained-20260928/) Â· [Claim register](docs/CLAIM_REGISTER.md)
 
 <details>
-<summary><strong>See the in-app Evidence page</strong> — overview and detailed evaluations</summary>
+<summary><strong>See the in-app Evidence page</strong> â€” overview and detailed evaluations</summary>
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="docs/images/evidence-overview-dark.png">
@@ -71,7 +71,7 @@ CDVQA splits overlap in questions and share imagery; **do not pool them**. Quest
   <img src="docs/images/evidence-overview-dark.png" alt="Actual Evidence page showing CDVQA question counts and separate SAR, optical and joint water IoU cards" width="1440">
 </picture>
 
-This capture predates CDVQA browser integration. It displays saved evaluations; opening the page does not rerun the models. [Reviewer guide](docs/REVIEWER_GUIDE.md) · [Screenshot provenance](docs/images/README.md).
+This capture predates CDVQA browser integration. It displays saved evaluations; opening the page does not rerun the models. [Reviewer guide](docs/REVIEWER_GUIDE.md) Â· [Screenshot provenance](docs/images/README.md).
 
 </details>
 
@@ -95,7 +95,7 @@ For a provisioned runtime, follow the [launch instructions](docs/SETUP.md#start-
 
 ## Explore the project
 
-| I want to… | Open |
+| I want toâ€¦ | Open |
 | --- | --- |
 | See the product and strongest examples | [Reviewer walkthrough](docs/REVIEWER_GUIDE.md) |
 | Understand services and supported inputs | [Architecture and capabilities](docs/ARCHITECTURE.md) |
@@ -114,3 +114,7 @@ For a provisioned runtime, follow the [launch instructions](docs/SETUP.md#start-
 - **Operational readiness is open.** Authentication, multi-user isolation, full fresh-machine inference reproduction, and deployment scalability are not established. Forecasting is outside scope.
 
 Historical evidence and deliverables retain their existing paths. The [MIT license](LICENSE) covers repository code; model and dataset terms require their own review.
+
+## JAI 2026 Flood & Terrain extension
+
+New event work is on the `jai-flood-terrain-20261030` branch. The optional [Flood Intelligence integration](jai_extension/README.md) connects genuine saved Flood Lab evidence inside the existing workspace. [Verification and open failures](docs/jai/REGRESSION.md) distinguish new software checks from historical scientific results. Terrain is pending.

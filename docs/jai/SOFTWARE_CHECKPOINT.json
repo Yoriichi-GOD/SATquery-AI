@@ -1,0 +1,28 @@
+{
+  "main_tests": {
+    "passed": 141,
+    "failed": 0
+  },
+  "floodlab_tests": {
+    "passed": 69,
+    "failed": 1,
+    "warnings": 31,
+    "failure": "Existing test_nepal_registration expects pre-inspection metadata; existing reference record now says inspected"
+  },
+  "adapter_http_checks": 28,
+  "artifact_hashes_matched": 15,
+  "browser": [
+    "real saved summary",
+    "before/after/candidate views",
+    "run selection",
+    "original workspace navigation",
+    "1280x720 no horizontal overflow",
+    "390x844 no horizontal overflow"
+  ],
+  "not_tested": [
+    "full model inference on new extension origin",
+    "browser upstream-offline state",
+    "terrain",
+    "independent scientific accuracy"
+  ]
+}
