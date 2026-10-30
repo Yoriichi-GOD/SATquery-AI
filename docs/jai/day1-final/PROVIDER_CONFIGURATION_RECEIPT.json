@@ -1,0 +1,19 @@
+{
+  "config_present": true,
+  "required_keys_present": {
+    "CDSE_CLIENT_ID": true,
+    "CDSE_CLIENT_SECRET": true
+  },
+  "credential_values_disclosed": false,
+  "token_disclosed": false,
+  "acquisition_performed": false,
+  "product_entitlements": "Not tested; authentication/scopes do not establish access to every data or DEM product.",
+  "authentication_http_status": 200,
+  "issuer_returned_scopes": [
+    "email",
+    "profile",
+    "user-context"
+  ],
+  "scope_status": "Issuer returned scopes; individual product permissions not verified",
+  "expires_in_seconds": 1800
+}

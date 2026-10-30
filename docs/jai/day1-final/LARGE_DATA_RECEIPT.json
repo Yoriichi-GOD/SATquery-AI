@@ -1,0 +1,49 @@
+{
+  "fixture": "Synthetic sparse BigTIFF with 40,000\u00d740,000 uint16 raster; one stored tile, NoData elsewhere; trailing sparse padding makes the uploaded file exactly 3 GiB.",
+  "dataset_id": "ece6fa5bf3144de984499c5329ac24bd",
+  "job_id": "d37b6fbf695a449a95f292dedd24cefc",
+  "input_bytes": 3221225472,
+  "source_allocated_bytes": 724992,
+  "retained_private_file_bytes": 3221225472,
+  "retained_allocated_bytes": 3221225472,
+  "sha256": "6d1307c024352b48a1c146b9335492ab81b3cfe2481c99ef50b0df9264f9343b",
+  "dimensions": [
+    40000,
+    40000
+  ],
+  "bands": 1,
+  "native_block": [
+    256,
+    256
+  ],
+  "upload_chunks": 384,
+  "chunk_bytes": 8388608,
+  "upload_seconds": 83.93048879699927,
+  "upload_mib_per_second": 36.60171701644887,
+  "inspection_wall_seconds": 30.89837534199978,
+  "raster_metadata_and_scan_seconds": 10.163599253999564,
+  "inspector_peak_observed_rss_bytes": 105369600,
+  "inspector_rss_cap_bytes": 536870912,
+  "server_baseline_rss_bytes": 626696192,
+  "server_peak_rss_bytes": 626708480,
+  "server_rss_increase_bytes": 12288,
+  "client_peak_rss_bytes": 101363712,
+  "status_request_max_seconds": 0.004133271000682726,
+  "status_requests": 12,
+  "total_seconds": 115.428399127999,
+  "inspection_state": "COMPLETE",
+  "specialists_eligible": [],
+  "max_native_read_window": [
+    256,
+    256,
+    1
+  ],
+  "full_pixels": 1600000000,
+  "valid_pixels": 65535,
+  "caveats": [
+    "Resource fixture, not independent real satellite data or model accuracy.",
+    "Measures HTTP upload, chunked hashing and full window scan. Original sparse bytes differ from the physically written private upload.",
+    "Peak resident memory is sampled at 50 ms for client/server and 100 ms for the inspector; brief unsampled peaks may be missed.",
+    "Real unfamiliar 3 GB judge dataset remains unavailable; suitability for it is unverified."
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "recorded_utc": "2026-10-30T15:12:56.828023+00:00",
+  "files": {
+    "paired_lab/external_data/common.py": "a16faf403762262651c5a7ae0b35d98ffb3df5f3f94b88fa3d2e6569f60966e2",
+    "paired_lab/external_data/contracts.py": "82c0edfac523d0a341894ab064a3a4381aef060fa0d4c54ac26176e1631eafc4",
+    "paired_lab/external_data/execution.py": "3aa07ad7dc9af601ea2b856c546ecb81b1e20c40a6845ec94e3a710c5dbbec2a",
+    "paired_lab/external_data/metrics.py": "fbd113efc3eca1d15e11503b2bf2f08832258924c93d18057d5a9525786aa116",
+    "paired_lab/external_data/raster.py": "c8f7a6a75dc3719223d77cec17b5aa1e456ed29dbb4fb95793eb9f1141fa14a2",
+    "paired_lab/external_data/runner.py": "b4cebbc785ba58955b907ec699368d321d1f99170db09416c846ba2c5f3d23d6",
+    "paired_lab/external_data/service.py": "7571b97e96c0e6404c045dcd58432db315ecd7ab4960c90f5d61ed07a45ced82",
+    "paired_lab/external_data/store.py": "1d18ba687460900ff38a9a9dfd8b0fb80d0680f10edccaec9727e5358a8bfe92",
+    "paired_lab/external_data/worker.py": "976b607da7724e9db8e6be736befdca01ed57f352621d853d31b06225c22ebc5",
+    "paired_lab/external_data/__init__.py": "5d8362d918ee579dfa0585fff7934bbabd36799ff8ee7a4ee35ab0ca0e3522ae",
+    "paired_lab/web/external.js": "e8a652c31b70799aab8595653b5bffb376b7781d4870e46035e2ee79da62954c",
+    "paired_lab/web/external.css": "50f27c77def463dc6d6124bc6ed50bbb18bc49bd38c8a7103f548d4cbbbb3c98",
+    "jai_extension/web/earth.js": "f1411b62b111741d6722ab73e821f447c2f64613a8613237bb3cfae2f2efede5",
+    "tests/test_external_data.py": "4328036f98a10a3d6101dbf0310ec09a0f35d1bb868021e344042e5b1e3eb363"
+  }
+}

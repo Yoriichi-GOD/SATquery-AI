@@ -1,0 +1,125 @@
+{
+  "dataset_id": "e753bd845e864f6d8822415696c9c8df",
+  "input_ids": [
+    "ab012b52355a46d7bd15e817b0416daf",
+    "661db6c63b114456962dd6f9d99cb777"
+  ],
+  "reference_id": "0d8fd245acb645808b2275f777044b59",
+  "prediction_job": "d19694469a784722800fa4abbec4b5b0",
+  "evaluation_job": "002e68240e68477da4a6b3b5146ba704",
+  "prediction_only": {
+    "state": "EVALUATION_NOT_POSSIBLE",
+    "code": "COMPATIBLE_GROUND_TRUTH_NOT_PROVIDED",
+    "message": "EVALUATION_NOT_POSSIBLE \u2014 COMPATIBLE_GROUND_TRUTH_NOT_PROVIDED"
+  },
+  "metrics": {
+    "per_class": [
+      {
+        "class_id": "0",
+        "class_name": "non_water",
+        "TP": 227968,
+        "FP": 7234,
+        "TN": 7699,
+        "FN": 1563,
+        "support": 229531,
+        "predicted": 235202,
+        "class_frequency": 0.9389153413181491,
+        "IoU": 0.9628450150993602,
+        "precision": 0.9692434588141258,
+        "recall": 0.9931904622904967,
+        "F1": 0.9810708514351251
+      },
+      {
+        "class_id": "1",
+        "class_name": "water",
+        "TP": 7699,
+        "FP": 1563,
+        "TN": 227968,
+        "FN": 7234,
+        "support": 14933,
+        "predicted": 9262,
+        "class_frequency": 0.06108465868185091,
+        "IoU": 0.4667192046556741,
+        "precision": 0.8312459511984452,
+        "recall": 0.5155695439630349,
+        "F1": 0.6364124819177516
+      }
+    ],
+    "confusion_matrix": [
+      [
+        227968,
+        1563
+      ],
+      [
+        7234,
+        7699
+      ]
+    ],
+    "confusion_order": [
+      "0",
+      "1"
+    ],
+    "confusion_orientation": "rows reference; columns prediction",
+    "denominator": 244464,
+    "macro": {
+      "IoU": 0.7147821098775171,
+      "precision": 0.9002447050062855,
+      "recall": 0.7543800031267658,
+      "F1": 0.8087416666764383
+    },
+    "micro": {
+      "IoU": 0.9305301645338209,
+      "precision": 0.9640151515151515,
+      "recall": 0.9640151515151515,
+      "F1": 0.9640151515151515
+    },
+    "undefined_rule": "Zero-denominator class scores are null and excluded from that macro mean; support is retained.",
+    "accuracy_limitation": "Accuracy may hide rare-class errors and is not interchangeable with per-class IoU/F1.",
+    "task": "segmentation",
+    "state": "EVALUATED",
+    "total_pixels": 262144,
+    "valid_pixels": 244464,
+    "excluded_pixels": 17680,
+    "reference_nodata_pixels": 0,
+    "prediction_nodata_pixels": 0,
+    "explicit_reference_ignore_pixels": 17680,
+    "coverage_fraction": 0.93255615234375,
+    "pixel_accuracy": 0.9640151515151515,
+    "class_semantics": {
+      "0": "non_water",
+      "1": "water"
+    },
+    "denominator_rule": "Only jointly valid prediction/reference pixels outside explicit reference ignore values; exclusion categories may overlap."
+  },
+  "verification": {
+    "status": "VERIFIED",
+    "artifacts": 18,
+    "metrics_recomputed": true,
+    "run_state": "EVALUATED",
+    "limitation": "Checks consistency of supplied artifacts; not independent source authenticity or unseen-data accuracy."
+  },
+  "timings": {
+    "evaluation_seconds": 0.05839765800010355,
+    "total_worker_seconds": 2.9459376039994822,
+    "peak_rss_bytes": 623570944,
+    "rss_scope": "This isolated worker, including metric/model imports. A remote/shared service GPU process is not included.",
+    "input_bytes": 4040670,
+    "export_bytes_before_zip": 802148
+  },
+  "evaluation_wall_seconds": 3.471947657999408,
+  "observed_worker_peak_rss_bytes": 107106304,
+  "prediction_timing": {
+    "inference_seconds": 3.707010062000336,
+    "evaluation_seconds": 2.5249992177123204e-06,
+    "total_worker_seconds": 24.298380862001068,
+    "peak_rss_bytes": 831508480,
+    "rss_scope": "This isolated worker, including metric/model imports. A remote/shared service GPU process is not included.",
+    "input_bytes": 4034597,
+    "export_bytes_before_zip": 5094501
+  },
+  "prediction_wall_seconds": 27.448719007999898,
+  "prediction_worker_peak_rss_bytes": 814223360,
+  "evidence_path": "/mnt/c/Users/nrgen/.codex/scratch/SATquery AI/.runtime/external/jobs/002e68240e68477da4a6b3b5146ba704/evidence",
+  "source_revision": "d93dab238229d9d23cdd03d0ccce65635e4e14f4",
+  "scope": "One previously evaluated genuine chip, reused unchanged through the new intake/evaluator. Regression/reproducibility evidence, not new accuracy or generalization."
+}

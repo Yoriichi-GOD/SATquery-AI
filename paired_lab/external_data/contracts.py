@@ -24,7 +24,13 @@ REGISTRY = {
 
 def asset_inventory():
     # The existing read-only provisioner checks pinned manifests/dependencies.
+    import sys
+    from runtime_paths import PAIRED
     from scripts.preflight import check
+    vendor=PAIRED/'deps'
+    # The existing engine uses this explicitly configured dependency directory.
+    # Include it consistently in the CLI and isolated-worker audit as well.
+    if vendor.is_dir() and str(vendor) not in sys.path:sys.path.insert(0,str(vendor))
     result={}
     for key, spec in REGISTRY.items():
         if spec['workflow'] is None:
@@ -77,6 +83,8 @@ def preflight(dataset, selected=None, assets=None, declarations=None,root=None):
             status='MISSING' if observed is None or observed=='' or observed==[] else 'MATCH' if passed else 'MISMATCH'
             add(parameter,expected,observed,status,blocks)
         requirement('dataset.input_count',spec['files'],len(files),len(files)==spec['files'])
+        rejected=[dict(name=f['name'],error=f.get('error'),state=f['state']) for f in dataset['files'] if f.get('role')=='input' and f['state']!='INSPECTED' and (selected is None or f['id'] in selected)]
+        if rejected:add('dataset.input_integrity','Every selected input inspected successfully',rejected,'MISMATCH',True,'A rejected/corrupt input is not a compatible model source.','Supply intact original bytes and rerun inspection; retained failures are available in the inventory.')
         if needs_selection:add('dataset.case_selection','Select at most two input TIFFs for one case','More than two inputs; batch evaluation is deferred','MISSING',True,'Files were inventoried without guessing which pair belongs together.','Choose the exact files for this analysis case.')
         for fi,f in enumerate(files):
             r=f['raster'];tags=r['tags'];p=f['name']+'.';n=r['width']*r['height'];bands=band_names(r)

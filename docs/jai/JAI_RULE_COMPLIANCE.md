@@ -22,3 +22,7 @@ Recorded 30 October 2026. New extension work is isolated from the prior applicat
 3. Verify that flow in the browser, including missing upstream and bad data.
 4. Add numerical terrain and real-source 3D after the flood path works.
 5. Record tests, actual commits and remaining unknowns before expanding to investigation orchestration.
+
+## Official checkpoint update — 30 October 2026
+
+The participant explicitly called the official Day 1 checkpoint. The prior unconfirmed-checkpoint status above is historical. Verified progress and open Day 2 items are frozen under day1-final; see [checkpoint note](day1-final/CHECKPOINT.md). The existing main repository choice and prior-code clearance remain participant-confirmed. The tag and full SHA must be verified against the remote; no tag movement or history rewriting is authorized.

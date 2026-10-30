@@ -1,0 +1,32 @@
+{
+  "task": "segmentation",
+  "dataset_revision": "0faeeed4369bd0bdd9e389c1858f6f10b60d0d4a6f15a0e05a1dbb7b1e46354c",
+  "scene_ids": [
+    "Ghana_313799"
+  ],
+  "split": "development",
+  "reference_provenance": "Existing Sen1Floods11 v1.1 hand-labelled reference; previously evaluated case, not an untouched acceptance sample.",
+  "license": "Original Sen1Floods11 dataset terms apply; source bytes are private runtime assets, not committed with this receipt.",
+  "training_exposure": "Official test chip, previously evaluated in this repository. No new training/tuning. Unknown upstream exposure remains.",
+  "excluded_case_ids": [],
+  "classes": {
+    "0": "non_water",
+    "1": "water"
+  },
+  "prediction_class_mapping": {
+    "0": 0,
+    "1": 1
+  },
+  "reference_class_mapping": {
+    "0": 0,
+    "1": 1
+  },
+  "ignore_values": [
+    -1,
+    255
+  ],
+  "prediction_semantics": "water",
+  "threshold": 0.5,
+  "preprocessing": "Use the unchanged original WaterUNet output. No reprojection, resize or label-based tuning.",
+  "population_selection": "Preselected first saved Ghana chip in the existing catalog; not selected by prediction quality."
+}

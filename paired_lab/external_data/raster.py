@@ -41,10 +41,14 @@ def inspect_raster(path, check=lambda: None, progress=lambda value: None, full=T
             determinant = t[0]*t[4]-t[1]*t[3]
             valid_transform = all(math.isfinite(v) for v in t) and abs(determinant)>1e-15
             crs = ds.crs
-            tags = {str(k):str(v)[:4096] for k,v in ds.tags().items()}
+            raw_tags=ds.tags();priority=['sensor','units','reflectance_units','acquisition_date','acquired','source_item','source_id','vertical_units','vertical_datum','terrain_corrected','relative_orbit','orbit_state','scene_id']
+            keys=list(dict.fromkeys([k for k in priority if k in raw_tags]+sorted(raw_tags)))[:64]
+            tags={str(k):str(raw_tags[k])[:1024] for k in keys}
+            metadata_truncated=len(keys)<len(raw_tags) or any(len(str(raw_tags[k]))>1024 for k in keys) or any(len(str(v or ''))>128 for v in ds.descriptions)
+            del raw_tags
             metadata = dict(driver=ds.driver, tiff_subtype='BigTIFF' if magic[2] in (43,0) and b'+' in magic else 'TIFF',
                 bytes=Path(path).stat().st_size, width=ds.width, height=ds.height, count=ds.count,
-                dtypes=list(ds.dtypes), bands=list(ds.descriptions), colorinterp=[v.name for v in ds.colorinterp],
+                dtypes=list(ds.dtypes), bands=[v[:128] if v else v for v in ds.descriptions],metadata_truncated=metadata_truncated, colorinterp=[v.name for v in ds.colorinterp],
                 scales=[finite(v) for v in ds.scales], offsets=[finite(v) for v in ds.offsets],
                 compression=ds.compression.name if ds.compression else None, tiled=ds.is_tiled,
                 blocks=[list(v) for v in ds.block_shapes], largest_decode_block_bytes=largest,

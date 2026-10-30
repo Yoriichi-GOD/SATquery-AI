@@ -179,11 +179,14 @@ def inspect_dataset(store,did,check=lambda:None,progress=lambda v:None,full=True
         for row in list(dataset['files']):
             check()
             if Path(row['name']).suffix.lower()=='.zip' and not row.get('expanded'):
+                row['sha256']=digest(contained(store.directory(did),row['path']),check);store.save(dataset)
+                if row.get('expected_sha256') and row['sha256']!=row['expected_sha256']:fail('DATASET_HASH_MISMATCH','Archive bytes differ from the supplied hash.')
                 extract_zip(store,dataset,row,check);row['expanded']=True;store.save(dataset)
         for i,row in enumerate(dataset['files']):
             check();progress(dict(stage='Hashing and inspecting '+row['name'],file=i+1,files=len(dataset['files'])))
             path=contained(store.directory(did),row['path'])
             row['sha256']=digest(path,check)
+            row.pop('raster',None)
             try:
                 if row.get('expected_sha256') and row['sha256']!=row['expected_sha256']:fail('DATASET_HASH_MISMATCH','Original bytes differ from the supplied SHA-256.')
                 suffix=Path(row['name']).suffix.lower()

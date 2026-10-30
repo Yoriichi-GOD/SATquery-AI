@@ -9,10 +9,16 @@ from .common import copy_stream, digest, fail
 
 
 def model_manifest(specialist,availability,check=lambda:None):
+    from scripts.preflight import inventory
+    specs={v['id']:v for v in inventory()}
     rows=[]
     for record in availability.get('assets',[]):
         path=Path(record['path']);files=[path] if path.is_file() else sorted(p for p in path.iterdir() if p.is_file() and p.suffix in ('.safetensors','.bin','.pt','.pth','.json')) if path.is_dir() else []
-        rows.append(dict(id=record['id'],path=str(path),files=[dict(name=f.name,bytes=f.stat().st_size,sha256=digest(f,check)) for f in files]))
+        if record['id']=='configilm':files.append(path/'configilm/extra/BENv2_utils.py')
+        hashes=[dict(name=f.relative_to(path).as_posix() if path.is_dir() else f.name,bytes=f.stat().st_size,sha256=digest(f,check)) for f in files]
+        expected=specs.get(record['id'],{})
+        if path.is_file() and expected.get('sha256') and hashes[0]['sha256']!=expected['sha256']:fail('MODEL_HASH_MISMATCH','Checkpoint differs from the pinned source inventory; no model was substituted.')
+        rows.append(dict(id=record['id'],path=str(path),source=expected.get('source'),revision=expected.get('revision'),expected_sha256=expected.get('sha256'),files=hashes))
     return dict(specialist=specialist,assets=rows,dependencies=availability.get('dependencies',{}),
         checkpoint_policy='Actual existing checkpoints only; no retraining, fallback model or network acquisition.')
 

@@ -27,6 +27,30 @@ def code_manifest():
         python=sys.version,platform=platform.platform(),packages={k:importlib.metadata.version(k) for k in ('numpy','rasterio','Pillow')})
 
 
+def peak_rss():
+    path=Path('/proc/self/status')
+    if path.is_file():
+        row=next(v for v in path.read_text().splitlines() if v.startswith('VmHWM:'))
+        return int(row.split()[1])*1024,'Linux /proc/self/status VmHWM after exec'
+    import psutil
+    memory=psutil.Process().memory_info()
+    return getattr(memory,'peak_wset',memory.rss),'Process peak working set, or current RSS if unavailable'
+
+
+def mask_preview(source,target,ignore_values=None):
+    import numpy as np
+    import rasterio
+    from PIL import Image
+    from rasterio.windows import Window
+    with rasterio.open(source,driver='GTiff') as ds:
+        array=ds.read(1,window=Window(0,0,min(512,ds.width),min(512,ds.height)),masked=True)
+        valid=~np.ma.getmaskarray(array)
+        if ignore_values:valid&=~np.isin(array.data,ignore_values)
+        rgba=np.zeros((*array.shape,4),dtype='uint8');rgba[valid]=[55,55,55,255]
+        for value,colour in [(1,[214,182,106,255]),(2,[183,111,73,255])]:rgba[valid&(array.data==value)]=colour
+        Image.fromarray(rgba).save(target)
+
+
 def freeze_protocol(dataset,parameters):
     supplied=parameters.get('protocol')
     if supplied and supplied.get('dataset_revision')!=dataset['revision']:fail('DATASET_REVISION_MISMATCH','Protocol does not name the current inspected dataset revision.')
@@ -63,6 +87,8 @@ def run(store,did,out,parameters,check=lambda:None,progress=lambda v:None):
         reference=lookup.get(parameters.get('reference_id'))
         imported_prediction=lookup.get(parameters.get('prediction_id'))
         if parameters.get('reference_id') and (not reference or reference['role']!='reference'):fail('INVALID_REFERENCE','Use a registered file explicitly assigned the independent reference role.')
+        if reference and reference['state']!='INSPECTED':fail('INVALID_REFERENCE','The selected reference did not pass intake inspection.')
+        if imported_prediction and imported_prediction['state']!='INSPECTED':fail('INVALID_PREDICTION','The selected prediction did not pass intake inspection.')
         for file in dataset['files']:
             check()
             if file.get('sha256') and digest(contained(store.directory(did),file['path']),check)!=file['sha256']:
@@ -129,12 +155,16 @@ def run(store,did,out,parameters,check=lambda:None,progress=lambda v:None):
         metrics=dict(state='CANCELLED' if getattr(exc,'code',None)=='CANCELLED' else 'PROCESSING_FAILED',failures=failed)
         write_json(out/'metrics.json',metrics)
     finally:
+        if metrics and metrics['state'] in ('EVALUATED','EVALUATION_NOT_POSSIBLE'):
+            for name,target in [('predicted_mask.tif','prediction-preview.png'),('reference.tif','reference-preview.png')]:
+                if (out/name).exists():mask_preview(out/name,out/target,protocol.get('ignore_values') if name=='reference.tif' else None)
         write_json(out/'failures.json',failed)
         for name,placeholder in [('model_manifest.json',{'status':'not executed'}),('compatibility_report.json',{'status':'preflight not reached'})]:
             if not (out/name).exists():write_json(out/name,placeholder)
         if not (out/'compatibility_report.csv').exists():(out/'compatibility_report.csv').write_text('specialist,parameter,status\n',encoding='utf-8')
         if not (out/'predictions.csv').exists():(out/'predictions.csv').write_text('case_id,status\n',encoding='utf-8')
-        timings.update(total_worker_seconds=time.perf_counter()-started,peak_rss_bytes=resource.getrusage(resource.RUSAGE_SELF).ru_maxrss*1024,
+        peak,method=peak_rss()
+        timings.update(total_worker_seconds=time.perf_counter()-started,peak_rss_bytes=peak,peak_rss_method=method,
             rss_scope='This isolated worker, including metric/model imports. A remote/shared service GPU process is not included.',
             input_bytes=sum(f['bytes'] for f in dataset['files']),export_bytes_before_zip=sum(p.stat().st_size for p in out.iterdir() if p.is_file()))
         write_json(out/'timings.json',timings)
@@ -145,7 +175,7 @@ def run(store,did,out,parameters,check=lambda:None,progress=lambda v:None):
         with zipfile.ZipFile(out/'evidence.zip','x',zipfile.ZIP_DEFLATED) as archive:
             for p in sorted(out.iterdir()):
                 if p.is_file() and p.name!='evidence.zip':archive.write(p,p.name)
-    return dict(state=metrics['state'],metrics=metrics,failures=failed,timings=timings)
+    return dict(state=metrics['state'],metrics=metrics,failures=failed,timings=timings,artifacts=sorted(p.name for p in out.iterdir() if p.is_file()))
 
 
 def verify(out):
