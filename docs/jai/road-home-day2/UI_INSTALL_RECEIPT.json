@@ -1,0 +1,47 @@
+{
+  "scope": "Unchanged allowlisted files prepared and handed over by UI collaborator. No backend or data edits.",
+  "files": [
+    {
+      "path": "paired_lab/web/index.html",
+      "ui_ready_sha256": "50b9ca29b1b29f359b86212a944c0b256dbad3576fd82f68bfafcb451ead4075",
+      "previous_sha256": "7f8448223f39ca054cda711e44b34e373cc4b193c760b00aeff65c8d6cbc7a4f",
+      "copied": true
+    },
+    {
+      "path": "paired_lab/web/app.js",
+      "ui_ready_sha256": "fe8e9c175ec20c8d42c9efa32fa4d03767b5928c713a8477556fe0b1a0c50b70",
+      "previous_sha256": "fe8e9c175ec20c8d42c9efa32fa4d03767b5928c713a8477556fe0b1a0c50b70",
+      "copied": false
+    },
+    {
+      "path": "paired_lab/web/external.js",
+      "ui_ready_sha256": "aeffd8f96893a39660addd415027e0c9ac8e57df4f0025e7cf592c3485195b17",
+      "previous_sha256": "c15b9510f597f505d74384428486868b30143dc12cfd279747e9fdfa3514a70a",
+      "copied": true
+    },
+    {
+      "path": "paired_lab/web/noir.js",
+      "ui_ready_sha256": "c5b9efcfe4656adca1e740f4dabf6953e8971f096305b3a6667af16761e6b960",
+      "previous_sha256": "501d9082b2282501e89c55abb414d079f9a813b0e5bcd3e0cf4f7eb2ebfd611d",
+      "copied": true
+    },
+    {
+      "path": "paired_lab/web/noir-data.js",
+      "ui_ready_sha256": "fcc92de4bf9a37711b44e3f6c0b8b032351bfe2a129ed376411379628ac41306",
+      "previous_sha256": "c12793541445b76cb9ae09922c2d314603106040dbaf12f8e2bbc33756d9f2cd",
+      "copied": true
+    },
+    {
+      "path": "paired_lab/web/noir.css",
+      "ui_ready_sha256": "8d57f7a2ce7a07c9f4cd31aeeb4f094d1e96e8e2dfa3b2a37c441bd94cd16096",
+      "previous_sha256": "8e9718314b801857befad7960036f907722288d3ce7b3a4d042f304ea6596d4c",
+      "copied": true
+    },
+    {
+      "path": "jai_extension/web/earth.js",
+      "ui_ready_sha256": "64d02af748dbee2d45bc1edb9c76dc5e76ab1ad52ec48aeff3141b3001e71146",
+      "previous_sha256": "05dda8b0878d33d466f7d9f4af51d0d300c1cd92b6d34fb7c9345e010684e17e",
+      "copied": true
+    }
+  ]
+}

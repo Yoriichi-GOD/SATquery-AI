@@ -1,0 +1,77 @@
+{
+  "recorded_utc": "2026-10-31T06:31:56.859200+00:00",
+  "deadline_utc": "2026-10-31T06:41:30+00:00",
+  "tested_backend_revision": "dfdafa742cf5a0a5aeef7555e7f022f62a8114a9",
+  "browser_narrative_revision": "19764d6c30762ac604fec4918eb78106b90c0569",
+  "local_head_at_receipt": "dfdafa742cf5a0a5aeef7555e7f022f62a8114a9",
+  "remote_refs_observed": {
+    "refs/heads/main": "dfdafa742cf5a0a5aeef7555e7f022f62a8114a9",
+    "refs/tags/day1-final": "a08d2706397d359edb060993ee3a14374b3d136f",
+    "refs/tags/day1-final^{}": "f3945347cf0f0a4581aa1480c8fa1501a25da4b4"
+  },
+  "day1_unchanged": true,
+  "historical_benchmark_files_unchanged": true,
+  "backend_sha256": {
+    "jai_extension/flood_bridge.py": "85c9c57b55d7f22a06fc5c354c7efaf0c21c4fee4d7437a5efe39a32253d0af6",
+    "jai_extension/investigation.py": "f98c92f48a70880361d7787ac7622c1c8db95920aa050ddfa0496fd1b8a5152d",
+    "jai_extension/server.py": "f687af1704df0fb9f7fbea25d17a36d48d6382cee7903237921fcb1a3873e5b7",
+    "jai_extension/visual_context.py": "0f7013cef14f89502565c0e32d87298401e3c0da13e33ce050a2b38eadf237f7"
+  },
+  "tests": {
+    "python_passed": 258,
+    "python_seconds": 34.999,
+    "portable_ui_boundary_passed": 5,
+    "ui_owner_adapter_passed": 9,
+    "nepal_http_passed": 36,
+    "legacy_real_runs_passed": 17,
+    "actual_http_cancel_passed": true,
+    "native_optical_overlay_previews_checked": 5
+  },
+  "ui_state": "Narrative checkpoint browser evidence retained. Latest user-requested RGB panel and fixed shell are UI-owned working changes, not blanket browser verified. See UI supplement for later actual results.",
+  "primary_browser": "Unavailable in primary chat; user explicitly permits finishing with incomplete browser verification.",
+  "working_tree_at_receipt": [
+    "M README.md",
+    " M docs/jai/DEMO_ROAD_HOME.md",
+    " M docs/jai/ROAD_HOME_UI_HANDOFF.md",
+    " M paired_lab/web/index.html",
+    "?? docs/jai/ROAD_HOME_DAY2_60MIN_RECEIPT.md",
+    "?? docs/jai/road-home-day2/",
+    "?? paired_lab/web/noir-layout.css",
+    "?? paired_lab/web/noir-layout.js",
+    "?? paired_lab/web/noir/thin-scientific-data-footer.png",
+    "?? paired_lab/web/visual-context.js"
+  ],
+  "images": [
+    {
+      "file": "images/terrain-final-both-loaded.png",
+      "sha256": "ad6f00b0ae6edb33b8c00cbaecda46293f4a6ae472d3c50eb5e5901692a48e53",
+      "dimensions": [
+        1913,
+        1076
+      ],
+      "captured_utc": "2026-10-31T06:17:25.998353+00:00",
+      "scope": "UI collaborator narrative checkpoint before subsequent RGB/fixed-shell changes. Not proof of later UI."
+    },
+    {
+      "file": "images/evidence-final-compare.png",
+      "sha256": "103b6e049ea37d8f489ff3ed31a526ae91cc3308dbb8cb04c730d9ccd5acb0be",
+      "dimensions": [
+        1913,
+        2428
+      ],
+      "captured_utc": "2026-10-31T06:13:21.371308+00:00",
+      "scope": "UI collaborator narrative checkpoint before subsequent RGB/fixed-shell changes. Not proof of later UI."
+    },
+    {
+      "file": "images/terrain-final-mobile.png",
+      "sha256": "f32d160e417a9317477e28ccb68900d59686a3d7b0eb8ebf9e37e7d690ffd787",
+      "dimensions": [
+        383,
+        829
+      ],
+      "captured_utc": "2026-10-31T06:18:09.999480+00:00",
+      "scope": "UI collaborator narrative checkpoint before subsequent RGB/fixed-shell changes. Not proof of later UI."
+    }
+  ],
+  "scope": "Existing frozen observations, source/functional integrity. No new scientific accuracy, acquisition, retraining or operational disaster claim."
+}

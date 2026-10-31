@@ -1,0 +1,139 @@
+{
+  "scope": "Every retained real saved example checked for compatible source-hash-verified optical context; unavailable does not imply a fabricated preview.",
+  "examples": [
+    {
+      "run_id": "auto-multisensor-001",
+      "optical_available": false,
+      "dates": [],
+      "reason": "No retained optical source matches this run's frozen source hash"
+    },
+    {
+      "run_id": "auto-syapru-001",
+      "optical_available": false,
+      "dates": [],
+      "reason": "Verified local optical RGB is unavailable for this example"
+    },
+    {
+      "run_id": "auto-topology-001",
+      "optical_available": false,
+      "dates": [],
+      "reason": "Verified local optical RGB is unavailable for this example"
+    },
+    {
+      "run_id": "event-02163045d752",
+      "optical_available": true,
+      "dates": [
+        "2026-08-24",
+        "2026-08-27"
+      ],
+      "reason": null
+    },
+    {
+      "run_id": "event-0b9a23cf6859",
+      "optical_available": true,
+      "dates": [
+        "2026-08-22",
+        "2026-08-27"
+      ],
+      "reason": null
+    },
+    {
+      "run_id": "event-5a5655b30ac4",
+      "optical_available": true,
+      "dates": [
+        "2026-08-22",
+        "2026-09-01"
+      ],
+      "reason": null
+    },
+    {
+      "run_id": "event-6f041cad8f90",
+      "optical_available": true,
+      "dates": [
+        "2026-08-22",
+        "2026-08-27"
+      ],
+      "reason": null
+    },
+    {
+      "run_id": "event-701e63177baa",
+      "optical_available": true,
+      "dates": [
+        "2026-08-22",
+        "2026-08-27"
+      ],
+      "reason": null
+    },
+    {
+      "run_id": "event-a2f6be3efa57",
+      "optical_available": false,
+      "dates": [],
+      "reason": "Verified local optical RGB is unavailable for this example"
+    },
+    {
+      "run_id": "event-a8ca968e692e",
+      "optical_available": true,
+      "dates": [
+        "2026-08-22",
+        "2026-08-27"
+      ],
+      "reason": null
+    },
+    {
+      "run_id": "event-dd38f1e7c7d2",
+      "optical_available": true,
+      "dates": [
+        "2026-08-22",
+        "2026-08-27"
+      ],
+      "reason": null
+    },
+    {
+      "run_id": "event-fc2bcf5e6994",
+      "optical_available": true,
+      "dates": [
+        "2026-08-22",
+        "2026-08-27"
+      ],
+      "reason": null
+    },
+    {
+      "run_id": "event-fe47db331390",
+      "optical_available": true,
+      "dates": [
+        "2026-08-22",
+        "2026-08-27"
+      ],
+      "reason": null
+    },
+    {
+      "run_id": "nepal-syapru-001",
+      "optical_available": false,
+      "dates": [],
+      "reason": "Verified local optical RGB is unavailable for this example"
+    },
+    {
+      "run_id": "nepal-syapru-002",
+      "optical_available": false,
+      "dates": [],
+      "reason": "Verified local optical RGB is unavailable for this example"
+    },
+    {
+      "run_id": "nepal-syapru-003",
+      "optical_available": false,
+      "dates": [],
+      "reason": "Verified local optical RGB is unavailable for this example"
+    },
+    {
+      "run_id": "nepal-syapru-004",
+      "optical_available": true,
+      "dates": [
+        "2026-08-12",
+        "2026-08-27"
+      ],
+      "reason": null
+    }
+  ],
+  "checked": 17,
+  "rgb_available": 10
+}

@@ -1,0 +1,207 @@
+{
+  "scope": "Native preview source/hash/colour population checks. Not browser toggles or classification accuracy.",
+  "context": {
+    "run_id": "event-fe47db331390",
+    "optical_available": true,
+    "before": {
+      "date": "2026-08-22",
+      "source_sha256": "ed892dbf52413907ed7f9f0ae58aca3d716c2e5fb452a54a0218d7dba2b2691b",
+      "grid": {
+        "crs": "EPSG:32645",
+        "transform": [
+          10.0,
+          0.0,
+          335340.0,
+          0.0,
+          -10.0,
+          3119190.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "pixel_size": [
+          10.0,
+          10.0
+        ],
+        "bounds": [
+          335340.0,
+          3114820.0,
+          337880.0,
+          3119190.0
+        ],
+        "bbox_wgs84": [
+          85.32251730742601,
+          28.148774465938864,
+          85.34899039745234,
+          28.188520432110007
+        ],
+        "width": 254,
+        "height": 437,
+        "source_sha256": "ed892dbf52413907ed7f9f0ae58aca3d716c2e5fb452a54a0218d7dba2b2691b"
+      },
+      "display": "RGB = B04/B03/B02; fixed reflectance 0\u20130.3 stretch; cloudy pixels retained; dataMask-invalid gray.",
+      "url": "/api/flood/runs/event-fe47db331390/visual/before.png"
+    },
+    "after": {
+      "date": "2026-08-27",
+      "source_sha256": "964b26a5c8f218e6605c09fd929bac7849abd3acc4c3b334aa714809f89069a1",
+      "grid": {
+        "crs": "EPSG:32645",
+        "transform": [
+          10.0,
+          0.0,
+          335340.0,
+          0.0,
+          -10.0,
+          3119190.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "pixel_size": [
+          10.0,
+          10.0
+        ],
+        "bounds": [
+          335340.0,
+          3114820.0,
+          337880.0,
+          3119190.0
+        ],
+        "bbox_wgs84": [
+          85.32251730742601,
+          28.148774465938864,
+          85.34899039745234,
+          28.188520432110007
+        ],
+        "width": 254,
+        "height": 437,
+        "source_sha256": "964b26a5c8f218e6605c09fd929bac7849abd3acc4c3b334aa714809f89069a1"
+      },
+      "display": "RGB = B04/B03/B02; fixed reflectance 0\u20130.3 stretch; cloudy pixels retained; dataMask-invalid gray.",
+      "url": "/api/flood/runs/event-fe47db331390/visual/after.png"
+    },
+    "overlays": [
+      {
+        "id": "water",
+        "label": "Water-change candidates",
+        "colour": "cyan",
+        "url": "/api/flood/runs/event-fe47db331390/visual/water.png",
+        "source_hashes": {
+          "prediction.tif": "b49b5b5978cd3606f2138306fa8bb687d65c268285f8816a660bbf0444d1ffa4"
+        },
+        "semantics": "Mapped context / possible exposure, not damage or closure"
+      },
+      {
+        "id": "debris",
+        "label": "Possible debris / surface-change candidates",
+        "colour": "copper",
+        "url": "/api/flood/runs/event-fe47db331390/visual/debris.png",
+        "source_hashes": {
+          "debris-candidates.tif": "d3f1849515bf76874a04988fc3d93fba8f21ee3b3f63bdae5f3ee5e0042e69d3"
+        },
+        "semantics": "Mapped context / possible exposure, not damage or closure"
+      },
+      {
+        "id": "buildings",
+        "label": "Mapped building outlines",
+        "colour": "violet",
+        "url": "/api/flood/runs/event-fe47db331390/visual/buildings.png",
+        "source_hashes": {
+          "layers.geojson": "449d23c335eb31455d8b77517cd04aa0a7f7e0d9e4f680b61a3b1173f2dd08fe"
+        },
+        "semantics": "Mapped context / possible exposure, not damage or closure"
+      }
+    ],
+    "limitations": [
+      "Optical dates differ from SAR; grid equality is not independent physical co-registration.",
+      "Mapped building footprints are historical OSM context, not detected debris or confirmed damage.",
+      "Candidate overlays mark positives only. Uncoloured RGB is not evidence of absence; inspect native masks for gray unknown coverage.",
+      "Water and debris support differ; turning overlays off changes display only, never measurements."
+    ],
+    "coverage": {
+      "water_valid_pixels": 99858,
+      "debris_valid_pixels": 30239
+    },
+    "grid": {
+      "crs": "EPSG:32645",
+      "transform": [
+        10.0,
+        0.0,
+        335340.0,
+        0.0,
+        -10.0,
+        3119190.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "pixel_size": [
+        10.0,
+        10.0
+      ],
+      "bounds": [
+        335340.0,
+        3114820.0,
+        337880.0,
+        3119190.0
+      ],
+      "bbox_wgs84": [
+        85.32251730742601,
+        28.148774465938864,
+        85.34899039745234,
+        28.188520432110007
+      ],
+      "width": 254,
+      "height": 437,
+      "source_sha256": "964b26a5c8f218e6605c09fd929bac7849abd3acc4c3b334aa714809f89069a1"
+    }
+  },
+  "previews": [
+    {
+      "kind": "before",
+      "bytes": 171845,
+      "png_sha256": "44460355fb97dd52b63c830b4139ff443fda0e04a0e6ac62cc5c7586a6acdadc",
+      "source_hashes": {
+        "optical.tif": "ed892dbf52413907ed7f9f0ae58aca3d716c2e5fb452a54a0218d7dba2b2691b"
+      },
+      "visible_pixels": 110998
+    },
+    {
+      "kind": "after",
+      "bytes": 241756,
+      "png_sha256": "0f0a3ebc0280fd4a974a3d466e6ede860e48af5c8b76629cb000afc1f7b442bb",
+      "source_hashes": {
+        "optical.tif": "964b26a5c8f218e6605c09fd929bac7849abd3acc4c3b334aa714809f89069a1"
+      },
+      "visible_pixels": 110998
+    },
+    {
+      "kind": "water",
+      "bytes": 2534,
+      "png_sha256": "64175d2d2a0cec83b0811b6c0769ba22d0d8cce3ae38c4079c3d050c1939a8d3",
+      "source_hashes": {
+        "prediction.tif": "b49b5b5978cd3606f2138306fa8bb687d65c268285f8816a660bbf0444d1ffa4"
+      },
+      "visible_pixels": 956
+    },
+    {
+      "kind": "debris",
+      "bytes": 1988,
+      "png_sha256": "e25f699ab761e6cbcb8d6c7168a38164a8d8734b7b912ab1aecbf4466edc41ba",
+      "source_hashes": {
+        "debris-candidates.tif": "d3f1849515bf76874a04988fc3d93fba8f21ee3b3f63bdae5f3ee5e0042e69d3"
+      },
+      "visible_pixels": 1041
+    },
+    {
+      "kind": "buildings",
+      "bytes": 1176,
+      "png_sha256": "6c67862fe9649b907eadac7b058f1d2a90784edd9e6af59db7a71d6a9c22c02f",
+      "source_hashes": {
+        "layers.geojson": "449d23c335eb31455d8b77517cd04aa0a7f7e0d9e4f680b61a3b1173f2dd08fe"
+      },
+      "visible_pixels": 324
+    }
+  ]
+}

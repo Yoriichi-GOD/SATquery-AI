@@ -23,6 +23,10 @@ SatQuery helps remote-sensing researchers and analysts ask questions about **pre
 
 *Actual product screen, captured 27 October 2026 from a new run of the supplied India example. The 49.56% shown is predicted water coverage in this crop, not accuracy. [Walk through this example](docs/REVIEWER_GUIDE.md#1-map-water-and-inspect-three-pathways) · [Capture provenance](docs/images/README.md).*
 
+## JAI 2026 — The Road Home
+
+The Nepal demonstration connects separate saved water and possible debris-change evidence, infrastructure intersections and real terrain. [Demo flow](docs/jai/DEMO_ROAD_HOME.md) · [Implementation receipt and verification limits](docs/jai/ROAD_HOME_DAY2_60MIN_RECEIPT.md) · [UI/API handoff](docs/jai/ROAD_HOME_UI_HANDOFF.md). Existing scientific results remain separate from this integration.
+
 ## From an observation to a reviewable result
 
 1. **Supply prepared imagery.** Upload one image or a compatible pair, or choose a supplied example. Declare the required modality and dates.

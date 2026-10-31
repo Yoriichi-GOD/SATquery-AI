@@ -1,0 +1,178 @@
+{
+  "recorded_utc": "2026-10-31T06:02:35.301800+00:00",
+  "scope": "Existing retained runs, read-only integrity and API-contract regression, not new scientific validation.",
+  "runs": [
+    {
+      "run_id": "auto-multisensor-001",
+      "status": "PASS",
+      "exposure_rows": 597,
+      "debris_available": true,
+      "grid": [
+        254,
+        437
+      ]
+    },
+    {
+      "run_id": "auto-syapru-001",
+      "status": "PASS",
+      "exposure_rows": 597,
+      "debris_available": false,
+      "grid": [
+        254,
+        437
+      ]
+    },
+    {
+      "run_id": "auto-topology-001",
+      "status": "PASS",
+      "exposure_rows": 597,
+      "debris_available": false,
+      "grid": [
+        254,
+        437
+      ]
+    },
+    {
+      "run_id": "event-02163045d752",
+      "status": "PASS",
+      "exposure_rows": 428,
+      "debris_available": true,
+      "grid": [
+        237,
+        420
+      ]
+    },
+    {
+      "run_id": "event-0b9a23cf6859",
+      "status": "PASS",
+      "exposure_rows": 597,
+      "debris_available": true,
+      "grid": [
+        254,
+        437
+      ]
+    },
+    {
+      "run_id": "event-5a5655b30ac4",
+      "status": "PASS",
+      "exposure_rows": 597,
+      "debris_available": true,
+      "grid": [
+        254,
+        437
+      ]
+    },
+    {
+      "run_id": "event-6f041cad8f90",
+      "status": "PASS",
+      "exposure_rows": 597,
+      "debris_available": true,
+      "grid": [
+        254,
+        437
+      ]
+    },
+    {
+      "run_id": "event-701e63177baa",
+      "status": "PASS",
+      "exposure_rows": 597,
+      "debris_available": true,
+      "grid": [
+        254,
+        437
+      ]
+    },
+    {
+      "run_id": "event-a2f6be3efa57",
+      "status": "PASS",
+      "exposure_rows": 597,
+      "debris_available": false,
+      "grid": [
+        254,
+        437
+      ]
+    },
+    {
+      "run_id": "event-a8ca968e692e",
+      "status": "PASS",
+      "exposure_rows": 597,
+      "debris_available": true,
+      "grid": [
+        254,
+        437
+      ]
+    },
+    {
+      "run_id": "event-dd38f1e7c7d2",
+      "status": "PASS",
+      "exposure_rows": 597,
+      "debris_available": true,
+      "grid": [
+        254,
+        437
+      ]
+    },
+    {
+      "run_id": "event-fc2bcf5e6994",
+      "status": "PASS",
+      "exposure_rows": 597,
+      "debris_available": true,
+      "grid": [
+        254,
+        437
+      ]
+    },
+    {
+      "run_id": "event-fe47db331390",
+      "status": "PASS",
+      "exposure_rows": 597,
+      "debris_available": true,
+      "grid": [
+        254,
+        437
+      ]
+    },
+    {
+      "run_id": "nepal-syapru-001",
+      "status": "PASS",
+      "exposure_rows": 405,
+      "debris_available": false,
+      "grid": [
+        273,
+        451
+      ]
+    },
+    {
+      "run_id": "nepal-syapru-002",
+      "status": "PASS",
+      "exposure_rows": 405,
+      "debris_available": false,
+      "grid": [
+        273,
+        451
+      ]
+    },
+    {
+      "run_id": "nepal-syapru-003",
+      "status": "PASS",
+      "exposure_rows": 405,
+      "debris_available": false,
+      "grid": [
+        273,
+        451
+      ]
+    },
+    {
+      "run_id": "nepal-syapru-004",
+      "status": "PASS",
+      "exposure_rows": 405,
+      "debris_available": true,
+      "grid": [
+        273,
+        451
+      ]
+    }
+  ],
+  "passed": 17,
+  "withheld": 0
+}

@@ -1,0 +1,31 @@
+{
+  "recorded_utc": "2026-10-31T06:10:27.112912+00:00",
+  "scope": "Actual HTTP cancel/recovery check; browser Stop click not verified. Owned optional upstream briefly paused and resumed in finally; originals untouched.",
+  "job_id": "investigation-1a736e67e8e049e5bb73586ef9fe48b8",
+  "state_before_cancel": "running",
+  "cancel_response_state": "cancelling",
+  "final_state": "cancelled",
+  "completed_answer_present": false,
+  "trace_events": 0,
+  "owned_flood_pid": 10583,
+  "upstream_pause_seconds": 0.032496771000296576,
+  "upstream_resumed_health": 200,
+  "terminal_job": {
+    "id": "investigation-1a736e67e8e049e5bb73586ef9fe48b8",
+    "state": "cancelled",
+    "created_utc": "2026-10-31T06:10:27.027116+00:00",
+    "selection": {
+      "question": "Which roads intersect possible debris candidates?",
+      "run_id": "event-fe47db331390",
+      "scene_id": null,
+      "profile": null
+    },
+    "trace": [],
+    "mode": "DETERMINISTIC_TOOL_WORKFLOW",
+    "ai_model_used": false,
+    "message": "Investigation cancelled",
+    "error_status": 499,
+    "finished_utc": "2026-10-31T06:10:27.057427+00:00",
+    "seconds": 0.025589687000319827
+  }
+}

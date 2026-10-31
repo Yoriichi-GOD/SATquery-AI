@@ -1,0 +1,251 @@
+{
+  "recorded_utc": "2026-10-31T06:28:05.643122+00:00",
+  "source_revision": "dfdafa742cf5a0a5aeef7555e7f022f62a8114a9",
+  "source_file_sha256": {
+    "jai_extension/flood_bridge.py": "85c9c57b55d7f22a06fc5c354c7efaf0c21c4fee4d7437a5efe39a32253d0af6",
+    "jai_extension/investigation.py": "f98c92f48a70880361d7787ac7622c1c8db95920aa050ddfa0496fd1b8a5152d",
+    "jai_extension/server.py": "f687af1704df0fb9f7fbea25d17a36d48d6382cee7903237921fcb1a3873e5b7"
+  },
+  "scope": "Genuine already-saved Nepal data, route/integrity regression only. No new accuracy evaluation.",
+  "checks": [
+    {
+      "check": "verified source identity and saved freeze",
+      "result": "PASS"
+    },
+    {
+      "check": "separate exact source summary values",
+      "result": "PASS"
+    },
+    {
+      "check": "separate valid coverage populations",
+      "result": "PASS"
+    },
+    {
+      "check": "native TIFF counts match source",
+      "result": "PASS"
+    },
+    {
+      "check": "independent infrastructure tables retained",
+      "result": "PASS"
+    },
+    {
+      "check": "not-assessed access never rendered zero affected",
+      "result": "PASS"
+    },
+    {
+      "check": "same native grid proved before both-layer comparison",
+      "result": "PASS"
+    },
+    {
+      "check": "optical and SAR dates remain distinct",
+      "result": "PASS"
+    },
+    {
+      "check": "genuine water-only run keeps debris NOT_ASSESSED",
+      "result": "PASS"
+    },
+    {
+      "check": "download hash connectivity.json",
+      "result": "PASS"
+    },
+    {
+      "check": "download hash debris-candidates.tif",
+      "result": "PASS"
+    },
+    {
+      "check": "download hash debris-exposure.csv",
+      "result": "PASS"
+    },
+    {
+      "check": "download hash exposure.csv",
+      "result": "PASS"
+    },
+    {
+      "check": "download hash graph.json",
+      "result": "PASS"
+    },
+    {
+      "check": "download hash layers.geojson",
+      "result": "PASS"
+    },
+    {
+      "check": "download hash manifest.json",
+      "result": "PASS"
+    },
+    {
+      "check": "download hash post.png",
+      "result": "PASS"
+    },
+    {
+      "check": "native dated SAR display dimensions post.png",
+      "result": "PASS"
+    },
+    {
+      "check": "download hash pre.png",
+      "result": "PASS"
+    },
+    {
+      "check": "native dated SAR display dimensions pre.png",
+      "result": "PASS"
+    },
+    {
+      "check": "download hash prediction.tif",
+      "result": "PASS"
+    },
+    {
+      "check": "download hash report-en.html",
+      "result": "PASS"
+    },
+    {
+      "check": "download hash report-ne.html",
+      "result": "PASS"
+    },
+    {
+      "check": "download hash result.json",
+      "result": "PASS"
+    },
+    {
+      "check": "download hash sensitivity.json",
+      "result": "PASS"
+    },
+    {
+      "check": "download hash topology-audit.json",
+      "result": "PASS"
+    },
+    {
+      "check": "actual native debris preview and hash header",
+      "result": "PASS"
+    },
+    {
+      "check": "real supported investigation completes",
+      "result": "PASS"
+    },
+    {
+      "check": "hash-linked debris tool trace",
+      "result": "PASS"
+    },
+    {
+      "check": "question claims use separate source values",
+      "result": "PASS"
+    },
+    {
+      "check": "unsupported question abstains: Estimate flood depth",
+      "result": "PASS"
+    },
+    {
+      "check": "unsupported question abstains: Which road is safe for evacuation?",
+      "result": "PASS"
+    },
+    {
+      "check": "unsupported question abstains: How many destroyed buildings?",
+      "result": "PASS"
+    },
+    {
+      "check": "unsupported question abstains: Predict landslide risk",
+      "result": "PASS"
+    },
+    {
+      "check": "unsupported question abstains: Assess road safety",
+      "result": "PASS"
+    },
+    {
+      "check": "origin protection preserved",
+      "result": "PASS"
+    }
+  ],
+  "run": "event-fe47db331390",
+  "freeze_sha256": "ff6bb25ef3713d128bad95d9b44af0c33b0429ce6c767df6ac4c06524c3adb0e",
+  "summary": {
+    "valid_pixels": 99858,
+    "total_pixels": 110998,
+    "new_water_pixels": 956,
+    "new_water_m2": 95600.0,
+    "water_in_both_pixels": 452,
+    "mapped_buildings": 522,
+    "exposed_buildings": 2,
+    "exposed_road_m": 185.8461137204373,
+    "exposed_bridge_features": 2,
+    "debris_candidate_pixels": 1041,
+    "debris_candidate_m2": 104100.0,
+    "debris_valid_pixels": 30239,
+    "debris_intersected_buildings": 71,
+    "debris_intersected_road_m": 1458.9344344663516,
+    "connectivity_status": "NOT_ASSESSED"
+  },
+  "debris_coverage": {
+    "candidate_pixels": 1041,
+    "valid_pixels": 30239,
+    "total_pixels": 110998,
+    "invalid_pixels": 80759,
+    "pixel_area_m2": 100.0
+  },
+  "downloads": {
+    "connectivity.json": {
+      "sha256": "c5c18bcf3070dcd70fe5be76acc8e7ae9c0f723bec07f77e0d9001bd26de103b",
+      "bytes": 1609
+    },
+    "debris-candidates.tif": {
+      "sha256": "d3f1849515bf76874a04988fc3d93fba8f21ee3b3f63bdae5f3ee5e0042e69d3",
+      "bytes": 5210
+    },
+    "debris-exposure.csv": {
+      "sha256": "b0724b5bef28361b1b3e549e61a22d6c2d73309cb333f03fdf28ee9038d09f89",
+      "bytes": 52092
+    },
+    "exposure.csv": {
+      "sha256": "d699e737d7c8e36a764cc2e6dddab789d66ea6146c8cf33bf812be156defb50c",
+      "bytes": 56000
+    },
+    "graph.json": {
+      "sha256": "bda07b905abac69f124dd8ee17bb3a6342a2628181370d668a149e48765b5c67",
+      "bytes": 1555615
+    },
+    "layers.geojson": {
+      "sha256": "449d23c335eb31455d8b77517cd04aa0a7f7e0d9e4f680b61a3b1173f2dd08fe",
+      "bytes": 1165261
+    },
+    "manifest.json": {
+      "sha256": "859624fd8718efb3c20a2431cb6c3c0a2bc69b5ee24c6f2ddc3f0f56389e1f0f",
+      "bytes": 3723
+    },
+    "post.png": {
+      "sha256": "d27f98d427a4b5f6333dd93e31390c548135adefdf1240c0adcc20e36e79982f",
+      "bytes": 81430
+    },
+    "pre.png": {
+      "sha256": "8c918f493562b066157307457943d53049c2ac52c24d8f64ddb2106210119b1f",
+      "bytes": 81504
+    },
+    "prediction.tif": {
+      "sha256": "b49b5b5978cd3606f2138306fa8bb687d65c268285f8816a660bbf0444d1ffa4",
+      "bytes": 5648
+    },
+    "report-en.html": {
+      "sha256": "3beebbd4ff55868ab971ba2355fc168b876cadc42ec5810bf22cb1d08d5ebe50",
+      "bytes": 2232
+    },
+    "report-ne.html": {
+      "sha256": "f4564cd83b572f65509df4edf6b6b9cf3a5021fe988aa12301cd4fda81e9a994",
+      "bytes": 2762
+    },
+    "result.json": {
+      "sha256": "a5cc190e0211e18a772b1979835a2209f2a5b69994f56a0bf83a082f22dd22ac",
+      "bytes": 2653
+    },
+    "sensitivity.json": {
+      "sha256": "c18451402baad4061f82763802cee59e8d6802809e5a58c3d70bff3c880e8913",
+      "bytes": 260
+    },
+    "topology-audit.json": {
+      "sha256": "14c535f21836e95b8c4e435a0004c20cc20727ef47b08b15aaa7d27d82151f72",
+      "bytes": 3634
+    }
+  },
+  "question_job": "investigation-808f73d0db004af0be994c47a5ebec69",
+  "planned_tools": [
+    "get_run",
+    "get_exposed_assets",
+    "get_debris_evidence"
+  ],
+  "trace_verified": true
+}

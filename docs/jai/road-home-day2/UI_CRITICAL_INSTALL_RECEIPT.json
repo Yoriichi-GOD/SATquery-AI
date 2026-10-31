@@ -1,0 +1,30 @@
+{
+  "recorded_utc": "2026-10-31T06:12:37.576408+00:00",
+  "scope": "Four source/display correctness fixes prepared and explicitly handed over by UI owner, unchanged bytes.",
+  "files": [
+    {
+      "path": "paired_lab/web/index.html",
+      "ui_ready_sha256": "2a91a2e14b8eecdde126d7175abb8cd951ae5dcd9b500c538c67fe4f1d9cc705",
+      "previous_sha256": "50b9ca29b1b29f359b86212a944c0b256dbad3576fd82f68bfafcb451ead4075",
+      "copied": true
+    },
+    {
+      "path": "paired_lab/web/noir.css",
+      "ui_ready_sha256": "ea1e7f030eb62d5c73f6d6ab12e138d6d440e6f519b8494d0f4244e6bfaa3912",
+      "previous_sha256": "8d57f7a2ce7a07c9f4cd31aeeb4f094d1e96e8e2dfa3b2a37c441bd94cd16096",
+      "copied": true
+    },
+    {
+      "path": "paired_lab/web/noir.js",
+      "ui_ready_sha256": "21c9e1ab98e35076f44cef87374933e6fe0be9f84640d8bd2e7d17f5e8c355f4",
+      "previous_sha256": "c5b9efcfe4656adca1e740f4dabf6953e8971f096305b3a6667af16761e6b960",
+      "copied": true
+    },
+    {
+      "path": "jai_extension/web/earth.js",
+      "ui_ready_sha256": "3313e623f18d9c7c235c891ea5048a58dc6fcbabf1f0514eeec0a0546cd4c0d7",
+      "previous_sha256": "64d02af748dbee2d45bc1edb9c76dc5e76ab1ad52ec48aeff3141b3001e71146",
+      "copied": true
+    }
+  ]
+}
