@@ -18,6 +18,7 @@ from jai_extension.geo_context import GeoContext
 REGISTRY={
     'get_run':'Verified saved summary, dates and artifact identities',
     'get_exposed_assets':'Verified historical feature intersections; not damage',
+    'get_debris_evidence':'Verified possible debris/surface-change proxy, its own coverage and intersections; not damage',
     'get_dem':'Verified cached DSM statistics and source identities',
     'analyze_coverage':'Actual reprojection and shared valid support',
     'terrain_transect':'Bilinear metric profile with missing-data gaps',
@@ -40,17 +41,19 @@ def verify_trace(entries):
 
 def plan(question):
     text=question.lower()
-    if re.search(r'\b(depth|casualt\w*|death\w*|evacuat\w*|predict\w*|forecast\w*|confidence|probability|accuracy|safe|safest|damage|damaged|destroyed|guarantee|risk score)\b|ignore.*instruction|system prompt|\b(send|email|publish|delete|execute|download|acquire)\b',text):
+    if re.search(r'\b(depth|casualt\w*|death\w*|evacuat\w*|predict\w*|forecast\w*|confidence|probability|accuracy|safe|safest|damage|damaged|destroyed|guarantee|risk|closed|closure|cut off)\b|ignore.*instruction|system prompt|\b(send|email|publish|delete|execute|download|acquire)\b',text):
         return [],'The saved evidence cannot establish depth, damage, safety, forecasts or casualties, or perform external actions. Ask about observed candidates, recorded intersections or terrain.'
     terrain=bool(re.search(r'\b(terrain|slope|elevation|dem|height|hill|mountain|coverage|overlap|align\w*)\b',text))
     assets=bool(re.search(r'\b(road\w*|building\w*|asset\w*|infrastructure|inspect\w*|exposure|intersect\w*)\b',text))
     water=bool(re.search(r'\b(water|flood|candidate\w*|summary|situation)\b',text))
+    debris=bool(re.search(r'\b(debris|landslide\w*|surface[ -]change\w*)\b',text))
     profile=bool(re.search(r'\b(transect|profile|cross.section)\b',text))
     if profile:return ['get_dem','terrain_transect'],None
-    if not any([terrain,assets,water]):return [],'Supported questions cover saved water candidates, road/building intersections, terrain and metric profiles.'
+    if not any([terrain,assets,water,debris]):return [],'Supported questions cover saved water and possible debris/surface-change candidates, road/building intersections, terrain and metric profiles.'
     tools=[]
-    if water or assets:tools.append('get_run')
+    if water or assets or debris:tools.append('get_run')
     if assets:tools.append('get_exposed_assets')
+    if debris:tools.append('get_debris_evidence')
     if terrain:tools.append('get_dem')
     if terrain and (water or assets):tools.append('analyze_coverage')
     return tools,None
@@ -88,6 +91,18 @@ class InvestigationEngine:
                 expected=next(a['sha256'] for a in output['get_run']['artifacts'] if a['name']=='exposure.csv')
                 if value['source_sha256']!=expected:raise BridgeError(409,'Exposure snapshot changed during investigation')
                 sources.append({'label':'Historical feature intersections','url':f"/api/flood/runs/{payload['run_id']}/artifact/exposure.csv",'sha256':value['source_sha256']})
+            elif name=='get_debris_evidence':
+                value=self.bridge.debris(payload['run_id'],run=output['get_run'])
+                if not value['debris_available']:
+                    record(name,value,time.perf_counter()-started)
+                    return {'state':'abstained','answer':'Possible debris/surface change is NOT_ASSESSED for this selected run. Complete verified debris evidence is unavailable; no zero or water-only answer is substituted.',
+                            'claims':[],'sources':sources,'planned_tools':tools,'tool_outputs':{**output,name:value},
+                            'mode':'DETERMINISTIC_TOOL_WORKFLOW','ai_model_used':False}
+                expected={a['name']:a['sha256'] for a in output['get_run']['artifacts']}
+                for artifact in value['artifacts']:
+                    if artifact['sha256']!=expected.get(artifact['name']):
+                        raise BridgeError(409,'Debris snapshot changed during investigation')
+                    sources.append({'label':'Possible debris · '+artifact['name'],'url':artifact['url'],'sha256':artifact['sha256']})
             elif name=='get_dem':
                 full=self.terrain.scene(payload['scene_id'])
                 value={k:full[k] for k in ['id','statistics','hashes','provenance','population']}
@@ -107,8 +122,14 @@ class InvestigationEngine:
         def claim(label,value,unit,source,field):claims.append({'label':label,'value':value,'unit':unit,'source':source,'field':field})
         run=output.get('get_run')
         if run:
-            for label,key,unit in [('New-water candidate area','new_water_m2','m²'),('Intersected buildings','exposed_buildings','buildings'),('Intersected road length','exposed_road_m','m'),('Settlement access','connectivity_status','')]:
+            for label,key,unit in [('New-water candidate area','new_water_m2','m²'),('Water intersected buildings','exposed_buildings','buildings'),('Water intersected road length','exposed_road_m','m'),('Settlement access','connectivity_status','')]:
                 if key in run['summary']:claim(label,run['summary'][key],unit,0,'/summary/'+('connectivity_assessed' if key=='connectivity_status' else key))
+        debris=output.get('get_debris_evidence')
+        if debris:
+            for label,key,unit in [('Possible debris candidate area','debris_candidate_m2','m²'),('Debris intersected buildings','debris_intersected_buildings','buildings'),('Debris intersected road length','debris_intersected_road_m','m'),('Debris valid coverage','debris_valid_pixels','pixels')]:
+                claim(label,debris['summary'][key],unit,0,'/summary/'+key)
+            if 'valid_pixels' in run['summary']:
+                claim('Water valid coverage',run['summary']['valid_pixels'],'pixels',0,'/summary/valid_pixels')
         terrain=output.get('get_dem')
         if terrain:
             source=next(i for i,s in enumerate(sources) if s['label']=='Cached DSM and statistics')
@@ -121,15 +142,21 @@ class InvestigationEngine:
             claim('Transect length',output['terrain_transect']['length_m'],'m',source,'/length_m')
             claim('Valid transect samples',output['terrain_transect']['valid_samples'],'samples',source,'/valid_samples')
         rows=[]
+        rows_by_layer={}
         if 'get_exposed_assets' in output:
             selected=[r for r in output['get_exposed_assets']['rows'] if r['status'] in ['exposed','unknown']]
             rows=sorted(selected,key=lambda r:(r['status']!='exposed',-r['exposed']))[:30]
+            rows_by_layer['water']=rows
+        if debris:
+            selected=[r for r in debris['rows'] if r['status'] in ['exposed','unknown']]
+            rows_by_layer['debris']=sorted(selected,key=lambda r:(r['status']!='exposed',-r['exposed']))[:30]
         lines=['Measured values come from the selected saved evidence.']
         if rows:lines.append('The table lists candidate intersections and missing-coverage records for human inspection; ordering is by recorded intersection, not hazard probability.')
         if run:lines.append('These are heuristic water candidates and historical OSM intersections. They do not establish damage, actual road closure or settlement isolation.')
+        if debris:lines.append('Possible debris/surface-change candidates use a fixed vegetation-to-bare, NDVI-loss and SAR-change proxy, not a trained or independently validated debris classifier. Water and debris have distinct valid coverage; counts and road lengths are not added. EMSR927 is class-mismatched checking-only evidence, not debris accuracy.')
         if terrain:lines.append('Terrain is the historical Copernicus DSM, not a flood-date measurement or a flood-depth estimate.')
         if 'analyze_coverage' in output:lines.append('Grid reprojection is checked; physical co-registration has not been independently validated.')
-        return {'state':'complete','answer':' '.join(lines),'claims':claims,'sources':sources,'review_rows':rows,
+        return {'state':'complete','answer':' '.join(lines),'claims':claims,'sources':sources,'review_rows':rows,'review_rows_by_layer':rows_by_layer,
                 'planned_tools':tools,'tool_outputs':output,'mode':'DETERMINISTIC_TOOL_WORKFLOW','ai_model_used':False}
 
 

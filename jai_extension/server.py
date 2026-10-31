@@ -81,6 +81,16 @@ def attach(app, bridge, terrain=None):
     def grid(run_id: str):
         return bridge.grid(run_id)
 
+    @router.get("/runs/{run_id}/debris")
+    def debris(run_id: str):
+        return bridge.debris(run_id)
+
+    @router.get("/runs/{run_id}/debris-candidate.png")
+    def debris_candidate(run_id: str):
+        raw, source = bridge.debris_candidate(run_id)
+        return Response(raw, media_type="image/png", headers={"X-Source-SHA256": source,
+                        "Cache-Control": "no-store", "X-Content-Type-Options": "nosniff"})
+
     @router.get("/runs/{run_id}/candidate.png")
     def candidate(run_id: str):
         raw, source = bridge.candidate(run_id)
