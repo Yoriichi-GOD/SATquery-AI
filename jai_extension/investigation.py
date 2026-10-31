@@ -41,7 +41,7 @@ def verify_trace(entries):
 
 def plan(question):
     text=question.lower()
-    if re.search(r'\b(depth|casualt\w*|death\w*|evacuat\w*|predict\w*|forecast\w*|confidence|probability|accuracy|safe|safest|damage|damaged|destroyed|guarantee|risk|closed|closure|cut off)\b|ignore.*instruction|system prompt|\b(send|email|publish|delete|execute|download|acquire)\b',text):
+    if re.search(r'\b(depth|casualt\w*|death\w*|evacuat\w*|predict\w*|forecast\w*|confidence|probability|accuracy|safe\w*|safety|damage\w*|destroy\w*|guarantee|risk\w*|closed|closure\w*|cut[ -]off|blocked|passable|impassable)\b|ignore.*instruction|system prompt|\b(send|email|publish|delete|execute|download|acquire)\b',text):
         return [],'The saved evidence cannot establish depth, damage, safety, forecasts or casualties, or perform external actions. Ask about observed candidates, recorded intersections or terrain.'
     terrain=bool(re.search(r'\b(terrain|slope|elevation|dem|height|hill|mountain|coverage|overlap|align\w*)\b',text))
     assets=bool(re.search(r'\b(road\w*|building\w*|asset\w*|infrastructure|inspect\w*|exposure|intersect\w*)\b',text))

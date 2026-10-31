@@ -100,9 +100,15 @@ class RoadHomeTests(unittest.TestCase):
     def test_csv_headers_ids_status_finiteness_and_units(self):
         variants=[CSV.replace(b'id,kind',b'wrong,kind'),CSV.replace(b'r1,road',b'b1,road'),
                   CSV.replace(b',exposed\n',b',safe\n'),CSV.replace(b',30,40',b',nan,40'),
-                  CSV.replace(b',30,40',b',60,40'),CSV.replace(b',m,exposed',b',km,exposed')]
+                  CSV.replace(b',30,40',b',60,40'),CSV.replace(b',m,exposed',b',km,exposed'),
+                  b'id,kind,exposed,observed,total,unit,status\n"unterminated',
+                  CSV.replace(b'id,kind',b'id,id')]
         for raw in variants:
             with self.subTest(raw=raw):self.status(422,self.b.exposure_table,raw,'a'*64,'debris')
+    def test_exposure_row_cap_enforced(self):
+        header=b'id,kind,exposed,observed,total,unit,status\n'
+        raw=header+b''.join(f'r{i},road,0,1,1,m,not_exposed\n'.encode() for i in range(10001))
+        self.status(413,self.b.exposure_table,raw,'a'*64,'debris')
     def test_png_is_native_and_hash_linked(self):
         from PIL import Image
         raw,sha=self.b.debris_candidate('one')
@@ -134,7 +140,7 @@ class RoadHomeTests(unittest.TestCase):
         r=e.execute({'question':'Show possible landslide debris','run_id':'one'},lambda:None,lambda *a:None)
         self.assertEqual(r['state'],'abstained');self.assertEqual(r['claims'],[])
     def test_unsafe_questions_abstain_before_source_access(self):
-        for q in ('Which road is safe?','How many buildings destroyed?','Calculate debris risk','Is the village cut off?','Give an evacuation route','Predict landslides'):
+        for q in ('Which road is safe?','Assess road safety','How many buildings destroyed?','Calculate debris risk','Is the village cut off?','Give an evacuation route','Predict landslides','Are the roads passable?'):
             self.assertEqual(plan(q)[0],[],q)
     def test_each_question_uses_selected_run_not_cached_last_run(self):
         self.b.results['two']['summary']['debris_intersected_road_m']=30
