@@ -86,6 +86,53 @@ class Day2Tests(unittest.TestCase):
         checks=[digest(output/'dataset_manifest.json')+'  dataset_manifest.json' if line.endswith('  dataset_manifest.json') else line for line in checks]
         (output/'checksums.sha256').write_text('\n'.join(checks)+'\n')
         with self.assertRaisesRegex(DataError,'reference bytes'):verify(output)
+    def test_label_mappings_cannot_silently_coerce_fractional_classes(self):
+        from paired_lab.external_data.metrics import protocol_check
+        for mutation in [dict(reference_class_mapping={'0':.9,'1':1}),dict(classes={'00':'background','1':'water'}),dict(ignore_values=[True]),dict(excluded_case_ids='case'),dict(scene_ids=[{}])]:
+            spec=protocol();spec.update(mutation)
+            with self.subTest(mutation=mutation):
+                with self.assertRaises(DataError):protocol_check(spec)
+    def test_independent_evaluator_refuses_oversized_native_decode_block(self):
+        from rasterio.transform import from_origin
+        from paired_lab.external_data.metrics import evaluate
+        source=self.root/'huge-strip.tif'
+        with rasterio.open(source,'w',driver='GTiff',width=16000,height=2000,count=1,dtype='uint8',tiled=True,blockxsize=16384,blockysize=2048,
+            SPARSE_OK='YES',crs='EPSG:32645',transform=from_origin(300000,3100000,10,10)) as ds:pass
+        with self.assertRaisesRegex(DataError,'decode blocks'):evaluate(source,source,protocol())
+    def test_mci_budget_covers_observed_cold_peak_and_operator_limit_is_bounded(self):
+        from paired_lab.external_data.common import worker_limit_bytes
+        with patch.dict('os.environ',{},clear=True):
+            self.assertGreater(worker_limit_bytes('analyze','temporal'),2198929408)
+            self.assertEqual(worker_limit_bytes('inspect'),512*1024**2)
+        with patch.dict('os.environ',{'SATQUERY_DATA_WORKER_RSS_MIB':'-1'}):
+            with self.assertRaises(DataError):worker_limit_bytes('analyze','temporal')
+    def test_insufficient_memory_refuses_before_launch_and_releases_lock(self):
+        from paired_lab.external_data.service import Service
+        service=Service(self.root/'memory-service')
+        try:
+            value=service.store.create('low memory');service.store.import_local(value['id'],raster(self.root/'small.tif'))
+            with patch('paired_lab.external_data.service.psutil.virtual_memory') as memory:
+                memory.return_value.available=0
+                with self.assertRaisesRegex(DataError,'Available RAM'):service.submit(value['id'],'inspect',{})
+            self.assertIsNone(service.active);self.assertFalse(service.store.upload_lock.locked())
+        finally:service.close()
+    def test_deadline_failure_retained_and_next_worker_recovers(self):
+        import time
+        from paired_lab.external_data.service import Service
+        service=Service(self.root/'deadline-service',timeout=0)
+        try:
+            value=service.store.create('deadline');service.store.import_local(value['id'],raster(self.root/'deadline.tif'))
+            job=service.submit(value['id'],'inspect',{})
+            for _ in range(300):
+                if service.active is None:break
+                time.sleep(.01)
+            result=service.get(job['id']);self.assertEqual(result['state'],'PROCESSING_FAILED');self.assertEqual(result['failures'][0]['code'],'WORKER_TIMEOUT')
+            service.timeout=30;next_job=service.submit(value['id'],'inspect',{})
+            for _ in range(3000):
+                if service.active is None:break
+                time.sleep(.01)
+            self.assertEqual(service.get(next_job['id'])['state'],'COMPLETE')
+        finally:service.close()
 
 
 if __name__=='__main__':unittest.main()

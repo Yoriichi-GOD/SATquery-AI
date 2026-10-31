@@ -4,14 +4,16 @@ from pathlib import Path
 import numpy as np
 import rasterio
 from .common import CHUNK, fail
-from .raster import ENV, windows
+from .raster import ENV,MAX_BLOCK_BYTES,windows
 
 
 def protocol_check(protocol):
     for key in ('task','dataset_revision','scene_ids','split','reference_provenance','license','training_exposure','excluded_case_ids'):
         if key not in protocol or protocol[key] is None or protocol[key]=='':fail('INCOMPLETE_PROTOCOL','Freeze protocol field: '+key)
     if protocol['task'] not in ('segmentation','classification','multilabel','vqa'):fail('UNSUPPORTED_TASK','Choose segmentation, classification, multilabel or VQA metrics.')
-    if not isinstance(protocol['scene_ids'],list) or not protocol['scene_ids'] or len(set(protocol['scene_ids']))!=len(protocol['scene_ids']):fail('INVALID_PROTOCOL','Scene IDs must be a nonempty unique list.')
+    if not isinstance(protocol['scene_ids'],list) or not protocol['scene_ids'] or any(not isinstance(v,str) or not 1<=len(v)<=200 for v in protocol['scene_ids']) or len(set(protocol['scene_ids']))!=len(protocol['scene_ids']):fail('INVALID_PROTOCOL','Scene IDs must be a nonempty unique list of strings.')
+    excluded=protocol['excluded_case_ids']
+    if not isinstance(excluded,list) or any(not isinstance(v,str) or not 1<=len(v)<=200 for v in excluded) or len(set(excluded))!=len(excluded):fail('INVALID_PROTOCOL','Excluded case IDs must be an explicit unique list of strings, including [] if none.')
     if protocol['split'] not in ('evaluation','test','development'):fail('INVALID_PROTOCOL','Declare evaluation, test or development split.')
     if protocol['task']!='vqa':
         if not isinstance(protocol.get('classes'),dict) or not 1<=len(protocol['classes'])<=64:fail('CLASS_MAPPING_REQUIRED','Declare 1–64 explicit class IDs and their semantics.')
@@ -19,12 +21,13 @@ def protocol_check(protocol):
     if protocol['task']=='segmentation':
         for key in ('prediction_class_mapping','reference_class_mapping','ignore_values'):
             if key not in protocol:fail('CLASS_MAPPING_REQUIRED','Freeze '+key+'; no label convention is guessed.')
-        if not isinstance(protocol['ignore_values'],list):fail('INVALID_PROTOCOL','Ignore values must be an explicit list, including [] if none.')
+        if not isinstance(protocol['ignore_values'],list) or any(isinstance(v,bool) or not isinstance(v,int) for v in protocol['ignore_values']):fail('INVALID_PROTOCOL','Ignore values must be explicit integer labels, including [] if none.')
         try:
             classes={int(k) for k in protocol['classes']}
+            if any(str(int(k))!=k for k in protocol['classes']):raise ValueError()
             for key in ('prediction_class_mapping','reference_class_mapping'):
                 mapping=protocol[key]
-                if not isinstance(mapping,dict) or not mapping or any(int(v) not in classes for v in mapping.values()):raise ValueError()
+                if not isinstance(mapping,dict) or not mapping or any(isinstance(v,bool) or not isinstance(v,(int,str)) or str(int(v))!=str(v) or int(v) not in classes for v in mapping.values()):raise ValueError()
                 if any(str(int(k))!=k for k in mapping):raise ValueError()
         except (ValueError,TypeError):fail('CLASS_MAPPING_REQUIRED','Raster mappings need integer native labels mapped to declared integer classes.')
     if protocol['task']=='vqa' and protocol.get('answer_normalization') not in ('exact','casefold_whitespace'):
@@ -66,6 +69,7 @@ def segmentation(prediction,reference,protocol,check=lambda:None):
     with rasterio.Env(**ENV),rasterio.open(prediction,driver='GTiff') as p,rasterio.open(reference,driver='GTiff') as r:
         if p.count!=1 or r.count!=1:fail('LABEL_BAND_MISMATCH','Prediction and reference each require one categorical band.')
         if any(np.dtype(t).kind not in 'ui' for t in p.dtypes+r.dtypes):fail('LABEL_DTYPE_MISMATCH','Categorical prediction/reference labels must use integer rasters.')
+        if any(max(h*w*np.dtype(t).itemsize*ds.count for (h,w),t in zip(ds.block_shapes,ds.dtypes))>MAX_BLOCK_BYTES for ds in (p,r)):fail('UNSAFE_RASTER_BLOCK','Prediction/reference native decode blocks exceed 16 MiB; explicit retiling is required before evaluation.')
         if not p.crs or not r.crs or p.crs!=r.crs or p.shape!=r.shape or not np.allclose(list(p.transform),list(r.transform),rtol=0,atol=1e-10):
             fail('LABEL_ALIGNMENT_MISMATCH','Prediction/reference CRS, dimensions and affine must match. No implicit reprojection.')
         if not all(np.isfinite(list(p.transform))) or abs(p.transform.determinant)<1e-15:fail('INVALID_TRANSFORM','Cannot evaluate a singular or non-finite grid.')

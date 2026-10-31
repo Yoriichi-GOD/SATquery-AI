@@ -139,7 +139,7 @@
       ' MiB. Set label files to reference. Re-importing an incomplete file restarts its temporary bytes; completed originals stay immutable.');
   }
   async function upload(){
-    if(busy())return;state.upload=new AbortController();controls();$('#ext-progress').hidden=false;
+    if(busy())return;state.upload=new AbortController();controls();$('#ext-progress').hidden=false;$('#ext-progress').value=0;
     let uploaded=0;const total=state.files.reduce((n,x)=>n+x.file.size,0);
     try{
       if(!state.dataset)state.dataset=await post('',{name:$('#ext-name').value||'External evaluation dataset'});
@@ -281,7 +281,7 @@
         operation_wall_seconds:job.wall_seconds,observed_worker_peak_rss:job.peak_observed_worker_rss_bytes},null,2)));evidence.append(details);
     }
   }
-  $('#ext-files').onchange=e=>pending(e.target.files);$('#ext-folder').onchange=e=>pending(e.target.files);
+  $('#ext-files').onchange=e=>{pending(e.target.files);e.target.value='';};$('#ext-folder').onchange=e=>{pending(e.target.files);e.target.value='';};
   $('#ext-import').onclick=upload;$('#ext-inspect').onclick=inspect;$('#ext-preflight').onclick=preflight;
   $('#ext-analyze').onclick=()=>launch('analyze');$('#ext-evaluate').onclick=()=>launch('evaluate');$('#ext-refresh').onclick=refresh;
   ['ext-specialist','ext-reference','ext-prediction','ext-threshold','ext-water-threshold'].forEach(id=>$('#'+id).onchange=()=>{remember();controls();});

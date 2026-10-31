@@ -118,3 +118,7 @@ Historical evidence and deliverables retain their existing paths. The [MIT licen
 ## JAI 2026 Flood & Terrain extension
 
 New event work is on the `jai-flood-terrain-20261030` branch. The optional [Terrain & flood workspace](docs/jai/UNIFIED_WORKSPACE.md) combines genuine saved Flood Lab evidence, terrain and adjacent questions in the native black interface, with sources and tool traces folded until needed. [Run the extension](jai_extension/README.md). [Verification and open failures](docs/jai/REGRESSION.md) distinguish new software checks from historical scientific results. Real public Copernicus GLO-90 terrain, numerical slope, grid-mapped water markers, cross-sections and a [source-based investigation workflow](docs/jai/ALIGNMENT_AND_INVESTIGATION.md) are connected.
+
+## External dataset readiness
+
+The [external dataset workflow](docs/external/README.md) adds private streamed intake, full TIFF compatibility reports, bounded specialist execution and independent evaluation/export verification. Open the optional local extension at **http://127.0.0.1:8768/#datasets**. Large-file inspection is separate from the models' small prepared-input limits. Missing compatible labels produce no accuracy score. The [Day 2 closure record](docs/external/day2/CLOSURE.md) separates genuine adapter runs, synthetic software checks and open scientific limits.

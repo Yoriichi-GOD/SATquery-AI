@@ -99,3 +99,12 @@ def request_check(value):
     if 'question' in value and (not isinstance(value['question'],str) or len(value['question'])>500):fail('INVALID_QUESTION','Question must have at most 500 characters.')
     if 'protocol' in value and not isinstance(value['protocol'],dict):fail('INVALID_PROTOCOL','Protocol must be a JSON object.')
     return value
+
+
+def worker_limit_bytes(operation,specialist=None):
+    if operation=='inspect':return 512*CHUNK
+    default=3072 if specialist=='temporal' else 2048
+    try:value=int(os.environ.get('SATQUERY_DATA_WORKER_RSS_MIB',str(default)))
+    except ValueError:fail('INVALID_RESOURCE_CONFIG','SATQUERY_DATA_WORKER_RSS_MIB must be an integer MiB ceiling.')
+    if not 128<=value<=8192:fail('INVALID_RESOURCE_CONFIG','Worker ceiling must be between 128 and 8192 MiB; no unbounded worker is permitted.')
+    return value*CHUNK

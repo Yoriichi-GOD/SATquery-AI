@@ -188,6 +188,10 @@ def preflight(dataset, selected=None, assets=None, declarations=None,root=None):
             'Labels are not required for prediction. No score is produced until their semantics/grid/protocol are verified.','Attach independent labels and freeze an evaluation protocol; predictions are never ground truth.')
         asset=(assets or {}).get(key,dict(status='not_checked',assets=[]))
         ready=asset['status']=='checks_passed_inference_unverified'
+        from .common import worker_limit_bytes
+        ceiling=worker_limit_bytes('analyze',key)
+        add('execution.worker_memory','Bounded ceiling; free RAM checked before launch',dict(ceiling_bytes=ceiling,additional_reserve_bytes=256*1024**2),'MATCH',False,
+            'This is a configured ceiling, not an allocation or promised memory use. The cold MCI fixture required more than 2 GiB; its default is 3 GiB.','None.')
         add('model.assets','Pinned assets and dependencies present',asset['status'],'MATCH' if ready else 'MISSING' if asset['status']=='blocked' else 'UNKNOWN',True,
             'Presence is distinct from a real model execution. Weight hashes are recorded at execution.','Run scripts/preflight.py and provision the documented checkpoint without substituting a model.')
         blockers=[r for r in rows if r['prevents_execution']]

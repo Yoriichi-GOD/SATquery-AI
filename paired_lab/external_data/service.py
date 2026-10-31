@@ -12,7 +12,7 @@ from pathlib import Path
 import psutil
 from fastapi import APIRouter,Request
 from fastapi.responses import FileResponse,JSONResponse,Response
-from .common import CHUNK,DataError,contained,fail,identifier,read_json,request_check,utc,write_json
+from .common import CHUNK,DataError,contained,fail,identifier,read_json,request_check,utc,write_json,worker_limit_bytes
 from .contracts import REGISTRY,asset_inventory,preflight,report_csv
 from .store import DatasetStore
 
@@ -58,8 +58,10 @@ class Service:
             if self.active:fail('WORKER_BUSY','One external operation is already active; wait or cancel it.')
             if operation=='inspect' and (not dataset['files'] or any(f['state'] not in ('STORED','INSPECTED','REJECTED') for f in dataset['files'])):fail('INCOMPLETE_UPLOAD','Finish or explicitly restart incomplete uploads before inspection.')
             if operation!='inspect' and not dataset.get('revision'):fail('DATASET_NOT_INSPECTED','Complete inspection before analysis or evaluation.')
+            ceiling=worker_limit_bytes(operation,parameters.get('specialist'))
+            if psutil.virtual_memory().available<ceiling+256*CHUNK:fail('INSUFFICIENT_MEMORY','Available RAM is below this worker ceiling plus 256 MiB reserve. Free memory or explicitly configure a smaller bounded ceiling; no worker was launched.')
             jid=uuid.uuid4().hex;folder=self.jobdir(jid);folder.mkdir()
-            value=dict(id=jid,dataset_id=did,operation=operation,state='QUEUED',created_utc=utc(),dataset_previous_state=dataset['state'],message='Waiting for the isolated data worker.')
+            value=dict(id=jid,dataset_id=did,operation=operation,state='QUEUED',created_utc=utc(),dataset_previous_state=dataset['state'],worker_rss_limit_bytes=ceiling,message='Waiting for the isolated data worker.')
             write_json(folder/'job.json',value)
             write_json(folder/'request.json',dict(root=str(self.store.root),dataset_id=did,operation=operation,parameters=parameters))
             dataset['state']='INSPECTING' if operation=='inspect' else 'PROCESSING';self.store.save(dataset)
@@ -79,7 +81,7 @@ class Service:
 
     def work(self,jid):
         folder=self.jobdir(jid);value=self.get(jid);started=time.perf_counter();peak=0;failure=None
-        limit=(512 if value['operation']=='inspect' else int(os.environ.get('SATQUERY_DATA_WORKER_RSS_MIB','2048')))*CHUNK
+        limit=value['worker_rss_limit_bytes']
         env={**os.environ,'HF_HUB_OFFLINE':'1','TRANSFORMERS_OFFLINE':'1','OMP_NUM_THREADS':'4','OPENBLAS_NUM_THREADS':'1'}
         repo=Path(__file__).resolve().parents[2]
         try:
