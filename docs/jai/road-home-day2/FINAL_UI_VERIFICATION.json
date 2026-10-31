@@ -1,0 +1,134 @@
+{
+  "recorded_utc": "2026-10-31T06:36:01.880488+00:00",
+  "repository": "C:\\Users\\nrgen\\.codex\\scratch\\SATquery AI",
+  "installed_ui_files": {
+    "paired_lab/web/index.html": "4eab3f573d81e0050256809be687749243d46c42e721ded7905229a849d6624c",
+    "paired_lab/web/app.js": "fe8e9c175ec20c8d42c9efa32fa4d03767b5928c713a8477556fe0b1a0c50b70",
+    "paired_lab/web/external.js": "aeffd8f96893a39660addd415027e0c9ac8e57df4f0025e7cf592c3485195b17",
+    "paired_lab/web/noir-data.js": "fcc92de4bf9a37711b44e3f6c0b8b032351bfe2a129ed376411379628ac41306",
+    "paired_lab/web/noir.js": "21c9e1ab98e35076f44cef87374933e6fe0be9f84640d8bd2e7d17f5e8c355f4",
+    "paired_lab/web/noir.css": "ea1e7f030eb62d5c73f6d6ab12e138d6d440e6f519b8494d0f4244e6bfaa3912",
+    "jai_extension/web/earth.js": "3313e623f18d9c7c235c891ea5048a58dc6fcbabf1f0514eeec0a0546cd4c0d7",
+    "paired_lab/web/noir-layout.css": "14a86f4aa964bc36d6bad71d8c118240da7e8deef25e723d365375557991ab65",
+    "paired_lab/web/noir-layout.js": "d93b88378f4ea0e2dbf5ffa36f2065b5d6fd8c76560bbb432ea29637bb12a1ea",
+    "paired_lab/web/visual-context.js": "394831095cdb74762910929b14f5e507defe791afc9d2467e6a6b07338df159c",
+    "paired_lab/web/noir/saturn-brand-logo.png": "fadc216a555f2c84651d41af39f8178352b94e178a697c376b998687ba917560",
+    "paired_lab/web/noir/saturn-brand-icon-only.png": "77f85c93cc66ee122886b3237ae6e256aec0702cf41eab2290f15b17c0f9aa2a",
+    "paired_lab/web/noir/scientific-noir-background.png": "79bf0e52cca240d9c3b1f8e1f17656134636ccb1cbdd3f222c8f2dafbbf93e4e",
+    "paired_lab/web/noir/floating-galaxy.png": "9bf2db732e6df8b9401784ab04bf51c952a9055dd0c4a63088807f5a3359a7ad",
+    "paired_lab/web/noir/satellite-earth-execution.png": "fdaf05e0129cc253c417bca88106bb4a38632202080f1107a5942fa38a90e5a0",
+    "paired_lab/web/noir/thin-scientific-data-footer.png": "08c603794093aec944e9c72d42bbe1e8f8d163653a34d876725020c4f4295829"
+  },
+  "new_dependencies": [],
+  "latest_correction": {
+    "implemented": [
+      "transparent fixed header",
+      "fixed 64-66px metadata footer",
+      "original footer artwork non-text crop",
+      "independent desktop panes",
+      "mobile scroll inside content area",
+      "neutral borderless glass panels",
+      "full-table dialog",
+      "verified dated RGB beside terrain",
+      "independent water/debris/building overlay toggles"
+    ],
+    "verification": "STATIC_AND_LIVE_HTTP_CONTRACTS_PASSED; latest rendered layout NOT VERIFIED due browser tool startup failure"
+  },
+  "tests": {
+    "baseline_python": 234,
+    "shared_final_python": 258,
+    "data_adapter_node": 9,
+    "optical_dom_contract_node": 6,
+    "live_http": 27,
+    "javascript_syntax": "passed"
+  },
+  "earlier_browser_proved": [
+    "all four unified routes at six viewport sizes:24 no-overflow checks",
+    "genuine Workspace NDVI execution",
+    "real 3D terrain",
+    "before/after SAR, water/debris and confirmed loaded independent masks",
+    "real three-tool water/debris contextual question and six source references",
+    "Evidence source selection, comparison, zoom, fit, opacity, visibility, layer ordering",
+    "rapid flood-to-DSM switch and honest empty source state",
+    "run-switch immediate clear and no-debris fallback",
+    "historical detailed evaluations preserved",
+    "reduced-motion animation disabled"
+  ],
+  "earlier_responsive_file": "C:\\Users\\nrgen\\.codex\\.chatgpt-projects\\g-p-6ad52225bccc8191b1ed5af2ed6b0646\\scientific-noir-20261031\\responsive-final.json",
+  "screenshots": [
+    {
+      "file": "C:\\Users\\nrgen\\.codex\\.chatgpt-projects\\g-p-6ad52225bccc8191b1ed5af2ed6b0646\\scientific-noir-20261031\\screenshots\\datasets-light-tablet.png",
+      "sha256": "4b8b02d2aa0e40db96c51639c155a21cb7d4236254761b52ebfc7c0d5bca4861",
+      "scope": "before latest fixed-shell/glass/RGB correction",
+      "exclude_from_pass_evidence": false
+    },
+    {
+      "file": "C:\\Users\\nrgen\\.codex\\.chatgpt-projects\\g-p-6ad52225bccc8191b1ed5af2ed6b0646\\scientific-noir-20261031\\screenshots\\datasets-tablet.png",
+      "sha256": "77ba4ddd373e7d9066d88649fc9214ca7efd198e8bc0482cd5f64e94349ad3c8",
+      "scope": "before latest fixed-shell/glass/RGB correction",
+      "exclude_from_pass_evidence": false
+    },
+    {
+      "file": "C:\\Users\\nrgen\\.codex\\.chatgpt-projects\\g-p-6ad52225bccc8191b1ed5af2ed6b0646\\scientific-noir-20261031\\screenshots\\evidence-final-compare.png",
+      "sha256": "103b6e049ea37d8f489ff3ed31a526ae91cc3308dbb8cb04c730d9ccd5acb0be",
+      "scope": "before latest fixed-shell/glass/RGB correction",
+      "exclude_from_pass_evidence": false
+    },
+    {
+      "file": "C:\\Users\\nrgen\\.codex\\.chatgpt-projects\\g-p-6ad52225bccc8191b1ed5af2ed6b0646\\scientific-noir-20261031\\screenshots\\evidence-final-mobile.png",
+      "sha256": "eb1d4e2ced22aa7734d156e485d76f2292ddd2e8ec7df6fe0188a62301412820",
+      "scope": "before latest fixed-shell/glass/RGB correction",
+      "exclude_from_pass_evidence": false
+    },
+    {
+      "file": "C:\\Users\\nrgen\\.codex\\.chatgpt-projects\\g-p-6ad52225bccc8191b1ed5af2ed6b0646\\scientific-noir-20261031\\screenshots\\evidence-live.png",
+      "sha256": "1cada24d9ddb7d76486b0beeb5bd2f1fe94c2a0525604bc517c30cdfb421c506",
+      "scope": "before latest fixed-shell/glass/RGB correction",
+      "exclude_from_pass_evidence": false
+    },
+    {
+      "file": "C:\\Users\\nrgen\\.codex\\.chatgpt-projects\\g-p-6ad52225bccc8191b1ed5af2ed6b0646\\scientific-noir-20261031\\screenshots\\terrain-1920.png",
+      "sha256": "f7ba3099be4c7cebc98bb5d61b52c442fe84fc4373fb31fc065a5b57847c0eb6",
+      "scope": "before latest fixed-shell/glass/RGB correction",
+      "exclude_from_pass_evidence": false
+    },
+    {
+      "file": "C:\\Users\\nrgen\\.codex\\.chatgpt-projects\\g-p-6ad52225bccc8191b1ed5af2ed6b0646\\scientific-noir-20261031\\screenshots\\terrain-final-both-loaded.png",
+      "sha256": "ad6f00b0ae6edb33b8c00cbaecda46293f4a6ae472d3c50eb5e5901692a48e53",
+      "scope": "before latest fixed-shell/glass/RGB correction",
+      "exclude_from_pass_evidence": false
+    },
+    {
+      "file": "C:\\Users\\nrgen\\.codex\\.chatgpt-projects\\g-p-6ad52225bccc8191b1ed5af2ed6b0646\\scientific-noir-20261031\\screenshots\\terrain-final-both.png",
+      "sha256": "4cdca7139100b9cb4750b50b2b505e97c62771cd8e6e41369c253006b95c70e0",
+      "scope": "before latest fixed-shell/glass/RGB correction",
+      "exclude_from_pass_evidence": true
+    },
+    {
+      "file": "C:\\Users\\nrgen\\.codex\\.chatgpt-projects\\g-p-6ad52225bccc8191b1ed5af2ed6b0646\\scientific-noir-20261031\\screenshots\\terrain-final-mobile.png",
+      "sha256": "f32d160e417a9317477e28ccb68900d59686a3d7b0eb8ebf9e37e7d690ffd787",
+      "scope": "before latest fixed-shell/glass/RGB correction",
+      "exclude_from_pass_evidence": false
+    },
+    {
+      "file": "C:\\Users\\nrgen\\.codex\\.chatgpt-projects\\g-p-6ad52225bccc8191b1ed5af2ed6b0646\\scientific-noir-20261031\\screenshots\\terrain-mobile.png",
+      "sha256": "51edc832858511563d05cd427de3b71c948bd67e4383a288c7be19060422d503",
+      "scope": "before latest fixed-shell/glass/RGB correction",
+      "exclude_from_pass_evidence": false
+    },
+    {
+      "file": "C:\\Users\\nrgen\\.codex\\.chatgpt-projects\\g-p-6ad52225bccc8191b1ed5af2ed6b0646\\scientific-noir-20261031\\screenshots\\workspace-1440.png",
+      "sha256": "d5e788575ebd3daf283f81cec4c74a652ab8f9a6161420dad867f819653d1f05",
+      "scope": "before latest fixed-shell/glass/RGB correction",
+      "exclude_from_pass_evidence": false
+    }
+  ],
+  "unverified": [
+    "latest fixed header/footer and independent-scroll geometry",
+    "latest glass contrast and long-table dialog keyboard/render checks",
+    "latest RGB controls in the real browser",
+    "final full upload/Stop/offline/cross-section matrix and native file saving",
+    "legacy /classic separate applications not redesigned"
+  ],
+  "browser_blocker": "cua_repl kernel cannot start: Windows helper setup refresh error; reset/reconnect also failed. No alternate browser control path used."
+}
