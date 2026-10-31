@@ -1,0 +1,6 @@
+{
+  "recorded_utc": "2026-10-31T06:49:54.626005+00:00",
+  "scope": "All currently tracked working-tree files, known high-confidence secret formats. No exhaustive historical/entropy/credential-provider scan or security certification.",
+  "tracked_files_scanned": 2532,
+  "findings": []
+}
