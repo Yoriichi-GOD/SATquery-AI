@@ -16,7 +16,7 @@
   const state = {
     booted:false, contextLoading:true, runs:[], scenes:[], run:null, scene:null, exposure:null, coverage:null,
     view:'terrain', colour:'elevation', height:1, water:true, fallback:false,
-    selection:0, requests:null, plotVersion:0, plotPromise:Promise.resolve(), library:null,
+    debris:null, selection:0, requests:null, plotVersion:0, plotPromise:Promise.resolve(), library:null,
     job:null, activeJob:null, submitting:false, sourcesLoaded:false, plotReady:false, poll:0, picking:false, points:[], profile:null,
   };
 
@@ -28,18 +28,21 @@
       <div><span class="eyebrow">CONNECTED EARTH OBSERVATIONS</span><h1>Terrain & flood.</h1></div>
       <p>See the context. Ask the question. Inspect the evidence.</p>
     </div>
+    <nav class="sq-story" aria-label="Observation investigation sequence">
+      <button data-story="pre">01 Before</button><button data-story="post">02 After</button><button data-story="water">03 Water</button><button data-story="debris">04 Debris</button><button data-story="infrastructure">05 Infrastructure</button><button data-story="terrain">06 Terrain</button><button data-story="evidence">07 Evidence</button>
+    </nav>
     <div class="earth-layout">
       <div class="earth-visual">
         <div class="earth-view-header"><div><span class="earth-kicker" id="earth-view-kicker">COPERNICUS DSM</span><h2 id="earth-view-title">Terrain context</h2></div><button class="earth-text-button" id="earth-ask-focus">Ask about this view ↗</button></div>
         <div class="earth-view-tabs" role="group" aria-label="Observation view">
           <button data-view="terrain" aria-pressed="true">3D terrain</button>
-          <button data-view="pre">Before SAR</button><button data-view="post">After SAR</button><button data-view="water">Water map</button>
+          <button data-view="pre">Before SAR</button><button data-view="post">After SAR</button><button data-view="water">Water map</button><button data-view="debris" disabled>Debris proxy</button><button data-view="both" disabled>Compare masks</button>
         </div>
         <div class="earth-viewer" id="earth-viewer">
           <div id="earth-surface" aria-label="Interactive measured terrain surface"></div>
           <canvas id="earth-fallback" width="128" height="128" aria-label="Numeric terrain grid fallback" hidden></canvas>
           <img id="earth-image" alt="Selected saved satellite observation" hidden draggable="false">
-          <div class="earth-empty" id="earth-empty" hidden><img src="/art/empty-planet.png" alt=""><p id="earth-empty-text">Choose available observations to inspect this area.</p></div>
+          <div class="sq-mask-compare" id="earth-mask-compare" hidden></div><div class="earth-empty" id="earth-empty" hidden><img src="/art/empty-planet.png" alt=""><p id="earth-empty-text">Choose available observations to inspect this area.</p></div>
         </div>
         <div class="earth-view-toolbar" id="earth-terrain-controls">
           <label class="earth-compact-label" for="earth-colour">Colour<select id="earth-colour"><option value="elevation">Elevation</option><option value="slope">Slope</option></select></label>
@@ -133,7 +136,7 @@
     if(state.activeJob||state.submitting)return;
     state.contextLoading=true;setBusy(false);
     const token=++state.selection;state.requests?.abort();state.requests=new AbortController();const signal=state.requests.signal;
-    state.run=null;state.scene=null;state.coverage=null;state.exposure=null;state.profile=null;state.points=[];state.picking=false;
+    state.run=null;state.scene=null;state.coverage=null;state.exposure=null;state.debris=null;window.SQNoir?.context(null,null);$('#earth-mask-compare').hidden=true;$('#earth-mask-compare').replaceChildren();state.profile=null;state.points=[];state.picking=false;
     ++state.plotVersion;$('#earth-key-metrics').replaceChildren();$('#earth-context-chips').replaceChildren();$('#earth-dates').textContent='Checking the selected source dates…';showEmpty('Loading the selected area…');
     $('#earth-pick').textContent='Pick cross-section points';$('#earth-profile-pick').textContent='Pick on terrain';
     $('#earth-profile-chart').hidden=true;$('#earth-profile-summary').textContent='Choose two terrain points';$('#earth-profile-state').textContent='Missing-data gaps remain visible.';
@@ -153,6 +156,7 @@
     state.run=runResult.status==='fulfilled'?runResult.value:null;state.scene=sceneResult.status==='fulfilled'?sceneResult.value:null;
     updateContext();drawView();
     const tasks=[];
+    if(state.run)tasks.push(api('/api/flood/runs/'+encodeURIComponent(runID)+'/debris',{signal}).then(value=>{if(!isCurrent(token))return;state.debris=value;updateContext();showIntersections();if(state.view==='debris')drawView();}).catch(error=>{if(isCurrent(token)&&error.name!=='AbortError'){$('[data-view="debris"]').disabled=true;$('[data-story="debris"]').disabled=true;}}));
     if(state.run)tasks.push(api('/api/flood/runs/'+encodeURIComponent(runID)+'/exposure',{signal}).then(value=>{if(isCurrent(token)){state.exposure=value;showIntersections();}}).catch(error=>{if(isCurrent(token)&&error.name!=='AbortError')$('#earth-intersection-count').textContent='Unavailable';}));
     if(state.run&&state.scene)tasks.push(api('/api/context/coverage?run_id='+encodeURIComponent(runID)+'&scene_id='+encodeURIComponent(sceneID),{signal}).then(value=>{
       if(!isCurrent(token))return;state.coverage=value;$('#earth-water-toggle').disabled=state.fallback;
@@ -171,11 +175,14 @@
   }
 
   function updateContext() {
+    window.SQNoir?.context(state.run,state.scene,state.view,state.debris);
     const dates=state.run?.provenance.inputs||[];
     $('#earth-dates').textContent=state.run?date(dates[0]?.datetime)+' → '+date(dates[1]?.datetime)+' · saved SAR pair':state.scene?'Cached Copernicus surface model · terrain context':'No recorded observations selected';
     updateChips();showMetrics();showSources();
     const enabled=Boolean(state.run||state.scene);$('#earth-run-question').disabled=!enabled||state.contextLoading||Boolean(state.activeJob||state.submitting);
-    document.querySelectorAll('[data-view]').forEach(button=>button.disabled=button.dataset.view==='terrain'?!state.scene:!state.run);
+    document.querySelectorAll('[data-view]').forEach(button=>button.disabled=button.dataset.view==='terrain'?!state.scene:['debris','both'].includes(button.dataset.view)?!state.debris?.debris_available:!state.run);
+    document.querySelectorAll('[data-story]').forEach(b=>{b.disabled=b.dataset.story==='debris'?!state.debris?.debris_available:b.dataset.story==='terrain'?!state.scene:!state.run;});
+    if(['debris','both'].includes(state.view)&&!state.debris?.debris_available)state.view=state.run?'post':'terrain';
     if(state.view==='terrain'&&!state.scene&&state.run)state.view='post';
     else if(state.view!=='terrain'&&!state.run&&state.scene)state.view='terrain';
     if(state.scene){const m=state.scene.mesh,r=Math.floor(m.z_m.length/2),good=m.z_m[r].map((v,i)=>v!==null?i:null).filter(v=>v!==null);if(good.length>3){$('#earth-x1').value=m.x_m[good[1]].toFixed(3);$('#earth-y1').value=m.y_m[r].toFixed(3);$('#earth-x2').value=m.x_m[good.at(-2)].toFixed(3);$('#earth-y2').value=m.y_m[r].toFixed(3);}}
@@ -189,7 +196,8 @@
   function showMetrics() {
     const target=$('#earth-key-metrics');target.replaceChildren();
     if(state.scene){metric(target,'DSM elevation',number(state.scene.statistics.elevation_min_m,0)+'–'+number(state.scene.statistics.elevation_max_m,0)+' m');metric(target,'Median slope',number(state.scene.statistics.slope_median_deg)+'°');}
-    if(state.run){const s=state.run.summary;metric(target,'Water candidates',s.new_water_m2==null?'Unavailable':number(s.new_water_m2/10000,2)+' ha');metric(target,'Building intersections',number(s.exposed_buildings,0));}
+    if(state.debris?.debris_available&&['debris','both'].includes(state.view)){const s=state.debris.summary,c=state.debris.coverage;metric(target,'Debris building intersections',number(s.debris_intersected_buildings,0));metric(target,'Debris road intersections',number(s.debris_intersected_road_m)+' m');metric(target,'Possible debris proxy',s.debris_candidate_m2==null?'Unavailable':number(s.debris_candidate_m2/10000,2)+' ha');metric(target,'Debris observed support',number(c?.valid_pixels,0)+' / '+number(c?.total_pixels,0)+' px');}
+    if(state.run){const s=state.run.summary;metric(target,'Water candidates',s.new_water_m2==null?'Unavailable':number(s.new_water_m2/10000,2)+' ha');metric(target,'Water building intersections',number(s.exposed_buildings,0));metric(target,'Water road intersections',number(s.exposed_road_m)+' m');}
   }
   function showSources() {
     const content=$('#earth-source-content'),downloads=$('#earth-downloads');
@@ -199,6 +207,7 @@
       state.run.artifacts.forEach(a=>{const link=node('a',a.name+' ↓');link.href=a.url;link.download=a.name;link.title='Saved SHA-256 '+a.sha256;downloads.append(link);});
       state.run.limitations.forEach(text=>$('#earth-run-limits').append(node('li',text)));
     }
+    if(state.debris?.debris_available){const d=node('details');d.append(node('summary','Debris proxy · independent coverage and source record'),node('pre',safeJSON(state.debris)));content.append(d);}
     if(state.scene){content.append(field('Terrain source',state.scene.provenance.dataset),field('Source resolution',state.scene.provenance.nominal_source_resolution_m+' m nominal'),field('Terrain time basis',state.scene.provenance.release));
       const details=node('details');details.append(node('summary','Terrain provenance & hashes'),node('pre',safeJSON({id:state.scene.id,...state.scene.provenance,hashes:state.scene.hashes})));content.append(details);
       const link=node('a','Metric terrain GeoTIFF ↓');link.href='/api/terrain/scenes/'+state.scene.id+'/raster';link.download='copernicus90-metric.tif';downloads.append(link);
@@ -208,7 +217,9 @@
     const target=$('#earth-intersection-table');target.replaceChildren();if(!rows)return;
     const selected=rows.filter(r=>r.status==='exposed'||r.status==='unknown').sort((a,b)=>(a.status!=='exposed')-(b.status!=='exposed')||b.exposed-a.exposed);
     $('#earth-intersection-count').textContent=selected.length+' review records';
+    target.append(node('h3','Water candidate intersections'));
     target.append(table(['Feature','Kind','Intersection','Coverage status'],selected.slice(0,40).map(r=>[r.id,r.kind,number(r.exposed)+' '+r.unit,r.status])));
+    if(state.debris?.debris_available){const rows=state.debris.rows||[],d=rows.filter(r=>r.status==='exposed'||r.status==='unknown');target.append(node('h3','Debris proxy intersections · separate coverage'),table(['Feature','Kind','Intersection','Coverage status'],d.slice(0,40).map(r=>[r.id,r.kind,number(r.exposed)+' '+r.unit,r.status])),node('p','Debris rows: '+d.length+'. Water/debris intersections are never summed. Access is NOT_ASSESSED.'));}
     target.append(node('p','Showing '+Math.min(selected.length,40)+' of '+selected.length+' exposed/unknown records. The source CSV retains the complete table.','earth-muted'));
   }
 
@@ -249,27 +260,37 @@
     ctx.putImageData(image,0,0);viewNote();$('#earth-2d').textContent='Return to 3D';
   }
   function viewNote() {
-    const label=state.view==='pre'?'Before SAR':state.view==='post'?'After SAR':'Saved water map';
-    $('#earth-view-note').textContent=state.view!=='terrain'?(state.view==='water'?'Blue: water at both dates · Gold: new-water candidate · Gray: invalid':label+' · recorded radar preview · drag to pan'):
+    const label=state.view==='pre'?'Before SAR':state.view==='post'?'After SAR':state.view==='debris'?'Debris proxy':'Saved water map';
+    $('#earth-view-note').textContent=state.view!=='terrain'?(state.view==='debris'?'Copper: possible debris/surface change · gray: invalid · unvalidated proxy':state.view==='water'?'Blue: water at both dates · Gold: new-water candidate · Gray: invalid':label+' · recorded radar preview · drag to pan'):
       state.fallback?'2D numeric terrain · water markers hidden · gray/black cells may be unavailable':
       'Drag to rotate · '+state.height+'× height · 90 m source'+(state.coverage&&state.water?' · Gold: water candidates (not depth)':'');
   }
   let imageVersion=0,zoom=1,offset=[0,0],drag=null;
   function drawView() {
+    ++imageVersion;
+    window.SQNoir?.context(state.run,state.scene,state.view,state.debris);showMetrics();$('#earth-mask-compare').hidden=true;
     document.querySelectorAll('[data-view]').forEach(b=>b.setAttribute('aria-pressed',String(b.dataset.view===state.view)));
     const terrain=state.view==='terrain';$('#earth-terrain-controls').hidden=!terrain;$('#earth-image-controls').hidden=terrain;
     $('#earth-empty').hidden=true;$('#earth-image').hidden=true;$('#earth-surface').hidden=!terrain;$('#earth-fallback').hidden=true;
-    $('#earth-view-kicker').textContent=terrain?'COPERNICUS · 90 M DSM':'SENTINEL-1 · SAVED OBSERVATION';
-    $('#earth-view-title').textContent=terrain?'Terrain & water context':state.view==='pre'?'Before the event':state.view==='post'?'After the event':'Water candidates';
+    $('#earth-view-kicker').textContent=terrain?'COPERNICUS · 90 M DSM':['debris','both'].includes(state.view)?'OPTICAL + SAR · UNVALIDATED PROXY':'SENTINEL-1 · SAVED OBSERVATION';
+    $('#earth-view-title').textContent=terrain?'Terrain & water context':state.view==='pre'?'Before the event':state.view==='post'?'After the event':state.view==='debris'?'Possible debris / surface change':'Water candidates';
+    const inputs=state.run?.provenance.inputs||[],dp=state.debris?.provenance||{};
+    if(state.run){const sarDates=date(inputs[0]?.datetime)+' to '+date(inputs[1]?.datetime);$('#earth-dates').textContent=['debris','both'].includes(state.view)?'SAR: '+sarDates+' / Optical debris proxy: '+date(dp.pre_date)+' to '+date(dp.post_date):sarDates+' / saved SAR pair';}
     viewNote();
     if(terrain&&state.scene){drawSurface();return;}
     ++state.plotVersion;
-    if(!terrain&&state.run){const version=++imageVersion,selection=state.selection,img=$('#earth-image');resetImage();img.onload=()=>{if(version===imageVersion&&selection===state.selection&&state.view!=='terrain')img.hidden=false;};img.onerror=()=>{if(version===imageVersion){img.hidden=true;showEmpty('This saved image is unavailable or failed its evidence check.');}};img.alt=state.view==='water'?'Verified categorical water candidate map':(state.view==='pre'?'Before':'After')+' Sentinel-1 radar preview';img.src='/api/flood/runs/'+state.run.id+(state.view==='water'?'/candidate.png':'/artifact/'+(state.view==='pre'?'pre.png':'post.png'));return;}
+    if(state.view==='both'&&state.run&&state.debris?.debris_available){
+      $('#earth-image-controls').hidden=true;const target=$('#earth-mask-compare');target.hidden=false;target.replaceChildren();
+      for(const [label,path,note] of [['Water candidates','/candidate.png','Blue: water in both / Gold: new water / Gray: invalid'],['Possible debris proxy','/debris-candidate.png','Copper: candidate / Dark: observed noncandidate / Gray: unknown']]){const f=node('figure'),img=node('img');img.src='/api/flood/runs/'+state.run.id+path;img.alt=label;img.onerror=()=>{img.replaceWith(node('p','Verified preview unavailable. Check source integrity.'));};f.append(img,node('figcaption',label),node('p',note));target.append(f);}
+      $('#earth-view-title').textContent='Water & debris / independent coverage';$('#earth-view-note').textContent='Separate native masks. Candidate intersections are not damage. Gray remains unknown. No counts are combined.';return;
+    }
+    if(!terrain&&state.run){const version=++imageVersion,selection=state.selection,img=$('#earth-image');resetImage();img.onload=()=>{if(version===imageVersion&&selection===state.selection&&state.view!=='terrain')img.hidden=false;};img.onerror=()=>{if(version===imageVersion){img.hidden=true;showEmpty('This saved image is unavailable or failed its evidence check.');}};img.alt=state.view==='debris'?'Verified possible debris proxy with invalid coverage':state.view==='water'?'Verified categorical water candidate map':(state.view==='pre'?'Before':'After')+' Sentinel-1 radar preview';img.src='/api/flood/runs/'+state.run.id+(state.view==='debris'?'/debris-candidate.png':state.view==='water'?'/candidate.png':'/artifact/'+(state.view==='pre'?'pre.png':'post.png'));return;}
     showEmpty(terrain?'No cached terrain is selected. Open Sources to choose or obtain a sample.':'Select an available saved flood observation to see its imagery.');
   }
   function showEmpty(text){$('#earth-surface').hidden=true;$('#earth-fallback').hidden=true;$('#earth-empty').hidden=false;$('#earth-empty-text').textContent=text;}
   function resetImage(){zoom=1;offset=[0,0];transformImage();}
   function transformImage(){$('#earth-image').style.transform=`translate(${offset[0]}px,${offset[1]}px) scale(${zoom})`;}
+  document.querySelectorAll('[data-story]').forEach(button=>button.onclick=()=>{const view=button.dataset.story;if(view==='infrastructure'||view==='evidence'){const d=$(view==='evidence'?'#earth-sources':'#earth-intersections');d.open=true;d.scrollIntoView({block:'start',behavior:matchMedia('(prefers-reduced-motion: reduce)').matches?'auto':'smooth'});}else{state.view=view;drawView();}});
   document.querySelectorAll('[data-view]').forEach(button=>button.onclick=()=>{state.view=button.dataset.view;drawView();});
   $('#earth-colour').onchange=()=>{state.colour=$('#earth-colour').value;drawSurface();};
   $('#earth-height').onchange=()=>{state.height=Number($('#earth-height').value);drawSurface();};
@@ -277,7 +298,7 @@
   $('#earth-reset').onclick=()=>{if(window.Plotly&&state.scene&&!state.fallback)Plotly.relayout($('#earth-surface'),{'scene.camera':{up:{x:0,y:0,z:1},center:{x:0,y:0,z:0},eye:{x:1.35,y:1.35,z:1.05}}});};
   $('#earth-2d').onclick=()=>{state.fallback=!state.fallback;$('#earth-2d').textContent=state.fallback?'Return to 3D':'Use 2D fallback';drawSurface();};
   $('#earth-image-more').onclick=()=>{zoom=Math.min(8,zoom*1.3);transformImage();};$('#earth-image-less').onclick=()=>{zoom=Math.max(1,zoom/1.3);transformImage();};$('#earth-image-reset').onclick=resetImage;
-  $('#earth-viewer').onpointerdown=e=>{if(state.view==='terrain'||!state.run)return;drag=[e.clientX-offset[0],e.clientY-offset[1]];e.currentTarget.setPointerCapture(e.pointerId);};
+  $('#earth-viewer').onpointerdown=e=>{if(['terrain','both'].includes(state.view)||!state.run)return;drag=[e.clientX-offset[0],e.clientY-offset[1]];e.currentTarget.setPointerCapture(e.pointerId);};
   $('#earth-viewer').onpointermove=e=>{if(drag){offset=[e.clientX-drag[0],e.clientY-drag[1]];transformImage();}};$('#earth-viewer').onpointerup=$('#earth-viewer').onpointercancel=()=>drag=null;
   new MutationObserver(()=>{if(state.scene&&state.view==='terrain'&&!panel.hidden)drawSurface();if(state.profile)drawProfile();}).observe(document.documentElement,{attributes:true,attributeFilter:['data-theme']});
   new ResizeObserver(()=>{if(state.plotReady&&window.Plotly&&!panel.hidden&&!$('#earth-surface').hidden&&!state.fallback&&state.view==='terrain')Plotly.Plots.resize($('#earth-surface'));}).observe($('#earth-viewer'));
@@ -297,11 +318,14 @@
     const text=[],water=claimValue(result,'/summary/new_water_m2'),buildings=claimValue(result,'/summary/exposed_buildings'),roads=claimValue(result,'/summary/exposed_road_m');
     if(water!=null)text.push(number(water/10000,2)+' ha of new-water candidates in the saved run.');
     if(buildings!=null&&roads!=null)text.push(number(buildings,0)+' mapped '+(buildings===1?'building':'buildings')+' and '+number(roads)+' m of roads intersect those candidates.');
+    const debris=claimValue(result,'/summary/debris_candidate_m2');if(debris!=null)text.push(number(debris/10000,2)+' ha of possible debris / surface-change candidates; unvalidated proxy.');
+    const db=claimValue(result,'/summary/debris_intersected_buildings'),dr=claimValue(result,'/summary/debris_intersected_road_m');if(db!=null&&dr!=null)text.push('Debris intersections: '+number(db,0)+' buildings and '+number(dr)+' m of roads. Counts are separate from water.');
     const slope=claimValue(result,'/statistics/slope_median_deg');if(slope!=null)text.push('Median terrain slope is '+number(slope)+'°.');
     const length=claimValue(result,'/length_m');if(length!=null)text.push('The selected cross-section spans '+number(length)+' m.');
     return text.join(' ')||'Measured evidence is ready for inspection.';
   }
   function renderJob(job){
+    window.SQNoir?.execution('terrain',{...job,message:job.message||'Analysis '+job.state});
     state.job=job;const busy=!terminal.has(job.state);state.activeJob=busy?job.id:null;setBusy(busy);if(job.state==='cancelling')$('#earth-stop').disabled=true;
     const stages={queued:'Preparing the selected analysis…',running:'Checking observations and running the required tools…',cancelling:'Stopping. Any current source read has a bounded timeout.',cancelled:'Analysis stopped. No completed answer was produced.',failed:job.message,interrupted:job.message,abstained:'This question needs evidence or a method we do not have.',complete:'Analysis complete · '+job.trace.length+' '+(job.trace.length===1?'tool':'tools')+' · saved evidence'};
     feedback(stages[job.state]||job.message);
@@ -318,8 +342,8 @@
     if(claimValue(result,'/summary/connectivity_assessed')==='NOT_ASSESSED')limits.append(node('p','Settlement access: not assessed.'));
     const a=$('#earth-job-download');a.href='/api/investigations/'+job.id+'/download';a.download=job.id+'.json';
   }
-  async function pollJob(id){const token=++state.poll;state.activeJob=id;setBusy(true);try{for(let i=0;i<120&&token===state.poll;i++){const value=await api('/api/investigations/'+id);if(token!==state.poll)return;renderJob(value);if(terminal.has(value.state)){if(!panel.hidden)$('#earth-answer').focus({preventScroll:true});return;}await new Promise(resolve=>setTimeout(resolve,500));}if(token===state.poll)feedback('Checking paused. Refresh or reload to restore the saved job status.');}catch(error){if(token===state.poll){state.activeJob=null;setBusy(false);feedback(error.message);}}}
-  $('#earth-question-form').onsubmit=async event=>{event.preventDefault();if(state.activeJob||state.submitting||state.contextLoading||!(state.run||state.scene))return;state.submitting=true;try{const question=$('#earth-question').value.trim();if(question.length<3)throw Error('Enter a question about this area.');setBusy(true);$('#earth-answer').hidden=true;feedback('Preparing this area…');const payload={question,run_id:state.run?.id||null,scene_id:state.scene?.id||null};if(/transect|cross.section|profile/i.test(question))payload.profile=profilePayload();const job=await post('/api/investigations',payload);localStorage.setItem('earth-last-job',job.id);renderJob(job);pollJob(job.id);}catch(error){state.activeJob=null;setBusy(false);feedback(error.message);}finally{state.submitting=false;}};
+  async function pollJob(id){const token=++state.poll;state.activeJob=id;setBusy(true);try{for(let i=0;i<120&&token===state.poll;i++){const value=await api('/api/investigations/'+id);if(token!==state.poll)return;renderJob(value);if(terminal.has(value.state)){if(!panel.hidden)$('#earth-answer').focus({preventScroll:true});return;}await new Promise(resolve=>setTimeout(resolve,500));}if(token===state.poll)window.SQNoir?.execution('terrain',{state:'idle'});if(token===state.poll)feedback('Checking paused. Refresh or reload to restore the saved job status.');}catch(error){if(token===state.poll){state.activeJob=null;window.SQNoir?.execution('terrain',{state:'idle'});setBusy(false);feedback(error.message);}}}
+  $('#earth-question-form').onsubmit=async event=>{event.preventDefault();if(state.activeJob||state.submitting||state.contextLoading||!(state.run||state.scene))return;state.submitting=true;try{const question=$('#earth-question').value.trim();if(question.length<3)throw Error('Enter a question about this area.');setBusy(true);$('#earth-answer').hidden=true;feedback('Preparing this area…');const payload={question,run_id:state.run?.id||null,scene_id:state.scene?.id||null};if(/transect|cross.section|profile/i.test(question))payload.profile=profilePayload();const job=await post('/api/investigations',payload);localStorage.setItem('earth-last-job',job.id);renderJob(job);pollJob(job.id);}catch(error){state.activeJob=null;window.SQNoir?.execution('terrain',{state:'idle'});setBusy(false);feedback(error.message);}finally{state.submitting=false;}};
   $('#earth-stop').onclick=async()=>{if(!state.activeJob)return;try{$('#earth-stop').disabled=true;renderJob(await post('/api/investigations/'+state.activeJob+'/cancel',{}));}catch(error){feedback(error.message);}};
   $('#earth-ask-focus').onclick=()=>{$('#earth-question').focus();$('#earth-question').scrollIntoView({block:'nearest',behavior:matchMedia('(prefers-reduced-motion: reduce)').matches?'auto':'smooth'});};
   document.querySelectorAll('[data-prompt]').forEach(button=>button.onclick=()=>{const prompts={overview:state.run&&state.scene?'Summarize the saved water candidates and terrain in this area.':state.scene?'Summarize the terrain elevation and slope.':'Summarize the saved water candidates.',assets:'Which roads and buildings near the water candidates need inspection?',slope:'What are the terrain elevation and slope?'};$('#earth-question').value=prompts[button.dataset.prompt];$('#earth-question').focus();});

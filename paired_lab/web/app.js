@@ -4,6 +4,7 @@ const element=(tag,text)=>{const n=document.createElement(tag);if(text!==undefin
 async function api(url,options){const r=await fetch(url,options);const j=await r.json();if(!r.ok){showSuggestions(j.detail?.suggested_queries||[]);throw Error(typeof j.detail==='string'?j.detail:j.detail?.message?[j.detail.message,...(j.detail.next_steps||[]).map(x=>'Next step: '+x)].join('\n\n'):Array.isArray(j.detail)?'Check the required input fields and try again.':JSON.stringify(j.detail||'Request failed'))}return j}
 function feedback(text){$('#feedback').hidden=!text;$('#feedback').textContent=text}
 function views(items){
+ window.SQNoir?.views(items);
  $('#empty').hidden=true;const root=$('#views');root.hidden=false;root.replaceChildren();
  const hero=element('button');hero.type='button';hero.className='hero-view';hero.setAttribute('aria-label','Open selected image full size');
  const image=element('img'),caption=element('p');hero.append(image);const strip=element('div');strip.className='stage-strip';strip.setAttribute('aria-label','Analysis images');
@@ -49,9 +50,10 @@ function showResult(r){
   const names=Object.keys(r.scores.all).sort((a,b)=>r.scores.all[b]-r.scores.all[a]);$('#scores').append(element('p','Model scores — not measured accuracy'),table(['Land cover','SAR','Optical','Joint'],names.map(c=>[c,...['s1','s2','all'].map(k=>(r.scores[k][c]*100).toFixed(1)+'%')])));
  }
  $('#visual-note').textContent='Final output shown first. Select a thumbnail to inspect a processing image; click the large image to expand.';
- $('#download').href=url('evidence.zip');$('#json').href=url('result.json');$('#trace').textContent=JSON.stringify({controller:r.controller,checks:r.input_checks,confidence:r.confidence,tools:r.trace},null,2);$('#limits').replaceChildren(...r.limitations.map(x=>element('li',x)));
+ $('#download').href=url('evidence.zip');$('#json').href=url('result.json');$('#trace').textContent=JSON.stringify({controller:r.controller,checks:r.input_checks,confidence:r.confidence,tools:r.trace},null,2);$('#limits').replaceChildren(...r.limitations.map(x=>element('li',x)));window.SQNoir?.result(r);
 }
 function showExecution(plan,stage,events=[]){
+ window.SQNoir?.execution('workspace',{state:active&&stage!=='Complete'&&!stage.startsWith('Unable')?'running':'complete',message:stage});
  $('#execution').hidden=false;$('#loading-art').hidden=!active||stage==='Complete'||stage.startsWith('Unable');$('#specialist').textContent=plan.specialist;
  $('#device').textContent=plan.device+(plan.maturity==='experimental'?' · EXPERIMENTAL':'');
  $('#route-reason').textContent=plan.reason;$('#current-stage').textContent=stage;
@@ -92,7 +94,7 @@ $('#form').onsubmit=async ev=>{
   }
   throw Error('Waiting timed out. The run may still be active; check the service before submitting again.');
  }catch(e){feedback(e.message);if(chosen)$('#current-stage').textContent='Unable to complete — '+e.message;}
- finally{active=false;lockForm(false);$('#loading-art').hidden=true;if(!$('#result').hidden)$('#result').scrollIntoView({behavior:'smooth',block:'nearest'})}
+ finally{active=false;window.SQNoir?.execution('workspace',{state:'idle'});lockForm(false);$('#loading-art').hidden=true;if(!$('#result').hidden)$('#result').scrollIntoView({behavior:matchMedia('(prefers-reduced-motion: reduce)').matches?'auto':'smooth',block:'nearest'})}
 };
 $('#sample').onchange=selectSample;$('#close').onclick=()=>$('#viewer').close();
 function theme(t){document.documentElement.dataset.theme=t;localStorage.setItem('satquery-theme',t);$('#theme').textContent=t==='dark'?'☀':'☾'}

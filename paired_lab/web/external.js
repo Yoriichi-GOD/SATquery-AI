@@ -29,6 +29,8 @@
   function sameInputs(a,b){return Array.isArray(a)&&Array.isArray(b)&&a.length===b.length&&a.every((v,i)=>v===b[i]);}
   function busy(){return Boolean(state.phase||state.job||state.upload||state.submitting);}
   function controls(){
+    window.SQNoir?.dataset(state.dataset,state.files,state.lastJob);
+    window.SQNoir?.execution('datasets',{state:state.job||state.upload?'running':'idle',id:state.job,message:state.upload?'Uploading selected files':state.job?'Dataset worker running':'',running:Boolean(state.job||state.upload)});
     const locked=busy();
     document.querySelectorAll('#external input,#external select,#external textarea,#external button').forEach(n=>n.disabled=locked);
     document.querySelectorAll('.ext-input-select').forEach(n=>n.disabled=locked||n.dataset.eligible!=='true');
