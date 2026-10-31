@@ -96,6 +96,8 @@ The UI collaborator owns the latest RGB panel/toggles and its separately request
 
 All **17 retained real examples** were checked through the live visual-context API: **10 provide verified compatible RGB**, and **7 explicitly report unavailable**. The UI owner installed an adjacent dated RGB panel and independent default-off cyan/copper/violet checkboxes, with exact-grid checks, abort/selection guards and honest missing-source handling. Latest browser startup then failed in the UI chat too; those new RGB controls and the newly requested fixed shell were **not click-through verified**. The earlier narrative comparison remains supported by its retained screenshot and checks. See [per-example availability](road-home-day2/OPTICAL_EXAMPLES_RECEIPT.json).
 
+The UI collaborator's [27-check final HTTP receipt](road-home-day2/FINAL_UI_HTTP_RECEIPT.json) confirms the new scripts/styles are referenced and served byte-exactly, cache versions match, the footer asset matches the supplied original, real dated RGB loads, and all three native RGBA overlays contain actual source-linked pixels. It explicitly records **no rendered latest-layout verification** and no CSS-parser pass. The [closeout supplement](road-home-day2/CLOSEOUT_SUPPLEMENT.json) distinguishes committed source, later UI candidate hashes, remote refs and remaining browser limits.
+
 ## Judge commands and demonstration
 
 In the documented provisioned Linux/WSL environment, from the repository root with existing local services/data available:

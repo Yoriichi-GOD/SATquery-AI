@@ -1,0 +1,41 @@
+{
+  "recorded_utc": "2026-10-31T06:35:09.330898+00:00",
+  "reviewed_head": "f5ba818d4226fe23f65f7a7e75fb5850883bc7e8",
+  "remote_refs": {
+    "refs/heads/main": "f5ba818d4226fe23f65f7a7e75fb5850883bc7e8",
+    "refs/tags/day1-final": "a08d2706397d359edb060993ee3a14374b3d136f",
+    "refs/tags/day1-final^{}": "f3945347cf0f0a4581aa1480c8fa1501a25da4b4"
+  },
+  "ui_candidate_source_hashes": {
+    "paired_lab/web/index.html": "4eab3f573d81e0050256809be687749243d46c42e721ded7905229a849d6624c",
+    "paired_lab/web/noir-layout.css": "14a86f4aa964bc36d6bad71d8c118240da7e8deef25e723d365375557991ab65",
+    "paired_lab/web/noir-layout.js": "d93b88378f4ea0e2dbf5ffa36f2065b5d6fd8c76560bbb432ea29637bb12a1ea",
+    "paired_lab/web/visual-context.js": "394831095cdb74762910929b14f5e507defe791afc9d2467e6a6b07338df159c"
+  },
+  "latest_ui_browser_verification": "NOT_VERIFIED: startup failure in both chats; user permits incomplete browser closeout. Earlier narrative checkpoint screenshots and24responsivechecks remain separately scoped.",
+  "latest_ui_source_checks": "Syntax checks pass. Eleven content-version tokens and six supplied artwork byte matches verified. Real RGB and overlays independently checked through HTTP.",
+  "optical_examples": {
+    "checked": 17,
+    "hash_verified_rgb_available": 10,
+    "explicitly_unavailable": 7
+  },
+  "runtime_services": {
+    "extension_port": 8768,
+    "floodlab_port": 8770,
+    "original_ports": [
+      8765,
+      8767
+    ]
+  },
+  "scope": "Display-only RGB/overlays; no changes to scientific source artifacts, thresholds, training or reference labels.",
+  "working_tree_before_supplement": [
+    "M docs/jai/ROAD_HOME_DAY2_60MIN_RECEIPT.md",
+    " M paired_lab/web/index.html",
+    "?? docs/jai/road-home-day2/FINAL_UI_HTTP_RECEIPT.json",
+    "?? docs/jai/road-home-day2/LATEST_STATIC_ASSET_RECEIPT.json",
+    "?? paired_lab/web/noir-layout.css",
+    "?? paired_lab/web/noir-layout.js",
+    "?? paired_lab/web/noir/thin-scientific-data-footer.png",
+    "?? paired_lab/web/visual-context.js"
+  ]
+}

@@ -1,0 +1,139 @@
+{
+  "recorded_utc": "2026-10-31T06:33:32.053678+00:00",
+  "scope": "Static/cache/source-byte checks and HTTP availability. Not browser rendering verification.",
+  "content_versions": [
+    {
+      "file": "style.css",
+      "version": "26e479759958"
+    },
+    {
+      "file": "app.js",
+      "version": "fe8e9c175ec2"
+    },
+    {
+      "file": "upload_preview.js",
+      "version": "4efea3ed54a6"
+    },
+    {
+      "file": "benchmarks.js",
+      "version": "2710a6d88747"
+    },
+    {
+      "file": "external.css",
+      "version": "36fe691e9adf"
+    },
+    {
+      "file": "external.js",
+      "version": "aeffd8f96893"
+    },
+    {
+      "file": "noir-data.js",
+      "version": "fcc92de4bf9a"
+    },
+    {
+      "file": "noir.js",
+      "version": "21c9e1ab98e3"
+    },
+    {
+      "file": "noir-layout.css",
+      "version": "14a86f4aa964"
+    },
+    {
+      "file": "noir-layout.js",
+      "version": "d93b88378f4e"
+    },
+    {
+      "file": "visual-context.js",
+      "version": "394831095cdb"
+    }
+  ],
+  "supplied_artwork": [
+    {
+      "file": "paired_lab/web/noir/floating-galaxy.png",
+      "sha256": "9bf2db732e6df8b9401784ab04bf51c952a9055dd0c4a63088807f5a3359a7ad",
+      "bytes": 3004242,
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "source": "User-supplied Scientific Noir kit; exact original artwork bytes. Not scientific imagery."
+    },
+    {
+      "file": "paired_lab/web/noir/satellite-earth-execution.png",
+      "sha256": "fdaf05e0129cc253c417bca88106bb4a38632202080f1107a5942fa38a90e5a0",
+      "bytes": 2792747,
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "source": "User-supplied Scientific Noir kit; exact original artwork bytes. Not scientific imagery."
+    },
+    {
+      "file": "paired_lab/web/noir/saturn-brand-icon-only.png",
+      "sha256": "77f85c93cc66ee122886b3237ae6e256aec0702cf41eab2290f15b17c0f9aa2a",
+      "bytes": 583164,
+      "dimensions": [
+        743,
+        743
+      ],
+      "source": "User-supplied Scientific Noir kit; exact original artwork bytes. Not scientific imagery."
+    },
+    {
+      "file": "paired_lab/web/noir/saturn-brand-logo.png",
+      "sha256": "fadc216a555f2c84651d41af39f8178352b94e178a697c376b998687ba917560",
+      "bytes": 1116391,
+      "dimensions": [
+        2172,
+        724
+      ],
+      "source": "User-supplied Scientific Noir kit; exact original artwork bytes. Not scientific imagery."
+    },
+    {
+      "file": "paired_lab/web/noir/scientific-noir-background.png",
+      "sha256": "79bf0e52cca240d9c3b1f8e1f17656134636ccb1cbdd3f222c8f2dafbbf93e4e",
+      "bytes": 2328940,
+      "dimensions": [
+        1695,
+        928
+      ],
+      "source": "User-supplied Scientific Noir kit; exact original artwork bytes. Not scientific imagery."
+    },
+    {
+      "file": "paired_lab/web/noir/thin-scientific-data-footer.png",
+      "sha256": "08c603794093aec944e9c72d42bbe1e8f8d163653a34d876725020c4f4295829",
+      "bytes": 509075,
+      "dimensions": [
+        2171,
+        724
+      ],
+      "source": "User-supplied Scientific Noir kit; exact original artwork bytes. Not scientific imagery."
+    }
+  ],
+  "served_routes": [
+    {
+      "path": "/",
+      "http_status": 200,
+      "sha256": "d034f08adc9fdf5238a2e026bceeabe5282e12476c8e40d6a6b7048c00875a1b"
+    },
+    {
+      "path": "/jai/assets/earth.js",
+      "http_status": 200,
+      "sha256": "3313e623f18d9c7c235c891ea5048a58dc6fcbabf1f0514eeec0a0546cd4c0d7"
+    },
+    {
+      "path": "/assets/noir.js",
+      "http_status": 200,
+      "sha256": "21c9e1ab98e35076f44cef87374933e6fe0be9f84640d8bd2e7d17f5e8c355f4"
+    },
+    {
+      "path": "/assets/noir-data.js",
+      "http_status": 200,
+      "sha256": "fcc92de4bf9a37711b44e3f6c0b8b032351bfe2a129ed376411379628ac41306"
+    },
+    {
+      "path": "/assets/noir.css",
+      "http_status": 200,
+      "sha256": "ea1e7f030eb62d5c73f6d6ab12e138d6d440e6f519b8494d0f4244e6bfaa3912"
+    }
+  ]
+}

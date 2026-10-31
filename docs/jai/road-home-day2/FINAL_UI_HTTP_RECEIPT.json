@@ -1,0 +1,39 @@
+{
+  "scope": "Live HTTP, original asset bytes, source references and optical product contracts. No rendered layout verification.",
+  "passed": 27,
+  "checks": [
+    "noir-layout.css is referenced by the active home response",
+    "noir-layout.css served bytes match installed source",
+    "noir-layout.css cache version matches source",
+    "noir-layout.js is referenced by the active home response",
+    "noir-layout.js served bytes match installed source",
+    "noir-layout.js cache version matches source",
+    "visual-context.js is referenced by the active home response",
+    "visual-context.js served bytes match installed source",
+    "visual-context.js cache version matches source",
+    "noir.js is referenced by the active home response",
+    "noir.js served bytes match installed source",
+    "noir.js cache version matches source",
+    "noir-data.js is referenced by the active home response",
+    "noir-data.js served bytes match installed source",
+    "noir-data.js cache version matches source",
+    "Footer artwork is the original supplied PNG",
+    "Optical metadata run identity matches",
+    "Genuine dated RGB is available",
+    "before RGB preserves native dimensions",
+    "after RGB preserves native dimensions",
+    "water overlay has native RGBA support",
+    "water overlay has actual source-linked visible pixels",
+    "debris overlay has native RGBA support",
+    "debris overlay has actual source-linked visible pixels",
+    "buildings overlay has native RGBA support",
+    "buildings overlay has actual source-linked visible pixels",
+    "Overlay support populations remain independent"
+  ],
+  "css_parser": "Unavailable; no CSS render/parse pass claimed",
+  "rendered_latest_layout": "BLOCKED_BROWSER_TOOL_STARTUP_FAILURE",
+  "optical_sources": {
+    "before": "ed892dbf52413907ed7f9f0ae58aca3d716c2e5fb452a54a0218d7dba2b2691b",
+    "after": "964b26a5c8f218e6605c09fd929bac7849abd3acc4c3b334aa714809f89069a1"
+  }
+}
