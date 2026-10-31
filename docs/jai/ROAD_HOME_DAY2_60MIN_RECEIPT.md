@@ -98,6 +98,8 @@ All **17 retained real examples** were checked through the live visual-context A
 
 The UI collaborator's [27-check final HTTP receipt](road-home-day2/FINAL_UI_HTTP_RECEIPT.json) confirms the new scripts/styles are referenced and served byte-exactly, cache versions match, the footer asset matches the supplied original, real dated RGB loads, and all three native RGBA overlays contain actual source-linked pixels. It explicitly records **no rendered latest-layout verification** and no CSS-parser pass. The [closeout supplement](road-home-day2/CLOSEOUT_SUPPLEMENT.json) distinguishes committed source, later UI candidate hashes, remote refs and remaining browser limits.
 
+**Final installed UI checkpoint: `bc07854`**, committed and pushed after the UI owner explicitly released its six finished paths for this task's authorized closure. Six isolated optical DOM contract tests passed: true dates/URLs, independent default-off overlays, off-state removal, failed RGB base handling, immediate source clearing/late-response refusal, mismatched run/grid refusal and honest terrain-only state. These tests do not render CSS. The latest fixed shell/RGB/table view remains a **committed implementation candidate with rendered QA incomplete**, not an uncommitted file handoff. Source/APIs, supplied imagery, original terrain and saved measurements remain unchanged by this final UI commit.
+
 ## Judge commands and demonstration
 
 In the documented provisioned Linux/WSL environment, from the repository root with existing local services/data available:
