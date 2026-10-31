@@ -1,0 +1,64 @@
+{
+  "recorded_utc": "2026-10-31T05:38:59.847805+00:00",
+  "reviewed_documentation_commit": "e89877dfc98c3e5c08b2119cd6723029701cb25b",
+  "tested_application_revision": "f6fa44f8e3fbf284deb9fbca2898847453e300a7",
+  "source_to_reviewed_commit_changes": [
+    "docs/external/day2/ADAPTER_RECEIPT.json",
+    "docs/external/day2/BROWSER_REGRESSION_RECEIPT.json",
+    "docs/external/day2/BROWSER_UPLOAD_RESTART.json",
+    "docs/external/day2/BROWSER_UPLOAD_STOP.json",
+    "docs/external/day2/BROWSER_WORKER_STOP.json",
+    "docs/external/day2/CLOSURE.md",
+    "docs/external/day2/FINAL_BROWSER_PROTOCOL.json",
+    "docs/external/day2/FINAL_VERIFICATION_RECEIPT.json",
+    "docs/external/day2/HTTP_READINESS_RECEIPT.json",
+    "docs/external/day2/MODEL_SMOKE_COMBINED_INITIAL.json",
+    "docs/external/day2/MODEL_SMOKE_MCI.json",
+    "docs/external/day2/images/evaluation-desktop.jpg",
+    "docs/external/day2/images/evaluation-mobile.jpg",
+    "docs/external/day2/images/terrain-regression.jpg"
+  ],
+  "source_to_reviewed_commit_is_documentation_only": true,
+  "verified_remote": "https://github.com/Yoriichi-GOD/SATquery-AI.git",
+  "remote_refs_at_reviewed_checkpoint": {
+    "refs/heads/jai-day2-20261031": "e89877dfc98c3e5c08b2119cd6723029701cb25b",
+    "refs/heads/main": "e89877dfc98c3e5c08b2119cd6723029701cb25b",
+    "refs/tags/day1-final": "a08d2706397d359edb060993ee3a14374b3d136f",
+    "refs/tags/day1-final^{}": "f3945347cf0f0a4581aa1480c8fa1501a25da4b4"
+  },
+  "day1_tag_unchanged": true,
+  "publication_check": {
+    "base": "f3945347cf0f0a4581aa1480c8fa1501a25da4b4",
+    "result": "PASS",
+    "new_files_checked": 18,
+    "saved_prediction_rows_recomputed": {
+      "Test": 39686,
+      "Test2": 31036
+    },
+    "scope": "File hygiene and agreement of historical saved predictions/scopes/controls with their summary. No new inference."
+  },
+  "documentation_review": {
+    "relative_links_checked_before_receipt": 26,
+    "json_receipts_checked_before_receipt": 10,
+    "image_hashes_checked": 3,
+    "frozen_evidence_unchanged": true
+  },
+  "receipt_sha256": {
+    "ADAPTER_RECEIPT.json": "f23c6811b9bde5f7e9be1627399630a1fdcf1dfedc090b9e72b787072dbb9683",
+    "BROWSER_REGRESSION_RECEIPT.json": "a18ca5218eb67b9ceae44395dae557c21dcf57486de8c5d3f20fc9e2efc1575b",
+    "BROWSER_UPLOAD_RESTART.json": "6d5d29d961e87063078621851e2cd1bde9a005383c8eff020632303f3db755aa",
+    "BROWSER_UPLOAD_STOP.json": "9aa9f86ef21a71140b82e639f0e9e06f05c1164b6af00184aa3ef52fbb7064d2",
+    "BROWSER_WORKER_STOP.json": "3c9e25f880e0ad5be252a7848ad2a04d82ae1d3c92e60d8130ad1f7816864dde",
+    "CLOSURE.md": "692603edd17baf24d98875975c90c1f833c213ed0df2898bc057318a8a7f2c46",
+    "FINAL_BROWSER_PROTOCOL.json": "d9613d353537c429f56349b897dc6532411b1c9763df4d35eb2ae0880ab011f4",
+    "FINAL_VERIFICATION_RECEIPT.json": "c1c1fbd2f189840e7c5ca6d72a8034e5972b16001928208fcc7ef6078f9a6589",
+    "HTTP_READINESS_RECEIPT.json": "cb3bf0f3d39d9ea8e654cb8540812e193c5cad918a1115594366b91af17bfbfd",
+    "images\\evaluation-desktop.jpg": "55ae3ffbc60b0e826dec83e599b373da07b40fedcf5567435c0a01f27d81f43d",
+    "images\\evaluation-mobile.jpg": "ee9a38309261e767cd0b3daf1d443bdfa121a87b687b7bde83ad61f56eeda3ce",
+    "images\\terrain-regression.jpg": "38a45874cbfbfaa02c78183269ae22c6106f0f6d74d3ae7b0457bfd85a5eddb0",
+    "MODEL_SMOKE_COMBINED_INITIAL.json": "f8ca3e058a094c7d03e1c76e7bfb094eea7ee89c2850a8bb2f04c81c2e1f27f7",
+    "MODEL_SMOKE_MCI.json": "71d954240d45f06bfd8cc86981ef2f19a33efa7adcea416933251dc2baf1b494",
+    "PLAN.md": "6ea1968bc7cce63cad6c4d332572dacf6626a4fbc6990a3b79eeb91e2d46fc6d"
+  },
+  "publication_note": "This record observes the already-pushed reviewed checkpoint. The receipt is committed additively afterwards; its containing commit cannot include its own SHA. Read git log origin/main for the final head. No source code changes follow the tested revision in this closeout."
+}
