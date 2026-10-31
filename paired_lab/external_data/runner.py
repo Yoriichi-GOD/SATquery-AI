@@ -4,13 +4,13 @@ import importlib.metadata
 import json
 import os
 import platform
-import resource
 import subprocess
 import sys
 import time
 import zipfile
+import tempfile
 from pathlib import Path
-from .common import contained,copy_stream,digest,fail,read_json,request_check,utc,write_json
+from .common import CHUNK,contained,copy_stream,digest,fail,read_json,request_check,require_space,utc,write_json
 from .contracts import REGISTRY,asset_inventory,preflight,report_csv
 from .execution import execute,model_manifest,prediction_table
 from .metrics import evaluate,protocol_check
@@ -100,6 +100,8 @@ def run(store,did,out,parameters,check=lambda:None,progress=lambda v:None):
             verify(previous/'evidence')
             prior_dataset=read_json(previous/'evidence/dataset_manifest.json')
             if any(f['id'] not in lookup or lookup[f['id']].get('sha256')!=f.get('sha256') for f in prior_dataset['files']):fail('DATASET_HASH_MISMATCH','The prior prediction source files differ from this dataset.')
+            prior_report=read_json(previous/'evidence/compatibility_report.json')
+            if parameters.get('inputs') is not None and parameters['inputs']!=prior_report.get('selected_inputs'):fail('PREDICTION_SELECTION_MISMATCH','These are different input files from the unchanged prediction. Select its original inputs or run a new analysis.')
             name='predicted_mask.tif' if protocol['task']=='segmentation' else 'predictions.csv'
             copy_stream(previous/'evidence'/name,out/name,check)
             if name.endswith('.tif'):prediction_table(out,{},protocol['scene_ids'],'unchanged prior prediction')
@@ -175,11 +177,34 @@ def run(store,did,out,parameters,check=lambda:None,progress=lambda v:None):
         with zipfile.ZipFile(out/'evidence.zip','x',zipfile.ZIP_DEFLATED) as archive:
             for p in sorted(out.iterdir()):
                 if p.is_file() and p.name!='evidence.zip':archive.write(p,p.name)
-    return dict(state=metrics['state'],metrics=metrics,failures=failed,timings=timings,artifacts=sorted(p.name for p in out.iterdir() if p.is_file()))
+    return dict(state=metrics['state'],analysis_result=result,metrics=metrics,failures=failed,timings=timings,
+        evaluation_scope={k:protocol.get(k) for k in ('split','scene_ids','reference_provenance','training_exposure','license')},
+        artifacts=sorted(p.name for p in out.iterdir() if p.is_file()))
 
 
 def verify(out):
-    out=Path(out);expected={}
+    out=Path(out)
+    if out.is_file():
+        try:
+            with zipfile.ZipFile(out) as archive,tempfile.TemporaryDirectory(prefix='satquery-verify-') as temporary:
+                entries=archive.infolist()
+                if len(entries)>256 or sum(v.file_size for v in entries)>4*1024**3:fail('EXPORT_ARCHIVE_LIMIT','Evidence ZIP exceeds 256 flat artifacts or 4 GiB uncompressed.')
+                root=Path(temporary);require_space(root,sum(v.file_size for v in entries))
+                seen=set()
+                for entry in entries:
+                    name=entry.filename
+                    if '/' in name or '\\' in name or name in seen or entry.is_dir() or ((entry.external_attr>>16)&0o170000) not in (0,0o100000):fail('UNSAFE_EXPORT_ARCHIVE','Evidence ZIP requires unique flat regular files; links and traversal are forbidden.')
+                    if entry.flag_bits&1:fail('ENCRYPTED_ARCHIVE','Encrypted evidence exports cannot be independently verified.')
+                    seen.add(name);target=contained(root,name)
+                    with archive.open(entry) as source,target.open('xb') as destination:
+                        written=0
+                        while chunk:=source.read(CHUNK):
+                            written+=len(chunk)
+                            if written>entry.file_size:fail('EXPORT_ARCHIVE_LIMIT','Evidence member exceeds its declared size.')
+                            destination.write(chunk)
+                return {**verify(root),'verified_input':'downloaded ZIP'}
+        except zipfile.BadZipFile:fail('CORRUPT_EXPORT_ARCHIVE','Evidence ZIP failed its directory or CRC checks.')
+    expected={}
     for line in (out/'checksums.sha256').read_text(encoding='utf-8').splitlines():
         sha,name=line.split('  ',1)
         if '/' in name or '\\' in name or name in expected:fail('INVALID_CHECKSUM_MANIFEST','Invalid or duplicate artifact name.')
@@ -191,6 +216,12 @@ def verify(out):
     actual={p.name for p in out.iterdir() if p.is_file()}-{'checksums.sha256','evidence.zip'}
     if actual!=set(expected):fail('INCOMPLETE_CHECKSUMS','Unexpected or unhashed export artifacts exist.')
     metrics=read_json(out/'metrics.json');protocol=read_json(out/'evaluation_protocol.json')
+    dataset=read_json(out/'dataset_manifest.json');request=read_json(out/'request.json') if (out/'request.json').exists() else {}
+    if protocol.get('dataset_revision')!=dataset.get('revision'):fail('DATASET_REVISION_MISMATCH','Exported protocol and source dataset revisions differ.')
+    if metrics['state']=='EVALUATED' and request.get('reference_id'):
+        source=next((f for f in dataset['files'] if f['id']==request['reference_id'] and f['role']=='reference'),None)
+        name='reference.tif' if protocol['task']=='segmentation' else 'reference.csv'
+        if not source or digest(out/name)!=source.get('sha256'):fail('REFERENCE_SOURCE_MISMATCH','The scored reference bytes differ from their recorded source hash.')
     if metrics['state']=='EVALUATED':
         prediction=out/'predicted_mask.tif' if protocol['task']=='segmentation' else out/'predictions.csv'
         reference=out/'reference.tif' if protocol['task']=='segmentation' else out/'reference.csv'

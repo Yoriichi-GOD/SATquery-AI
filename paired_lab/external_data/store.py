@@ -99,6 +99,18 @@ class DatasetStore:
             if not part.is_file() or part.stat().st_size!=row['bytes']:fail('INCOMPLETE_UPLOAD','Uploaded bytes do not match the declared size.')
             os.replace(part,path);row.update(state='STORED',received=row['bytes']);self.save(value);return row
 
+    def restart_file(self,did,fid):
+        """Explicitly restart only incomplete temporary bytes; completed originals are immutable."""
+        if not self.upload_lock.acquire(False):fail('UPLOAD_BUSY','Wait for the bounded upload chunk to finish.')
+        try:
+            with self.lock:
+                value,row,path=self.file(did,fid)
+                if value['state'] in ('INSPECTING','PROCESSING'):fail('DATASET_BUSY','Stop the worker before restarting an incomplete upload.')
+                if row['state'] not in ('UPLOADING','INTERRUPTED','CANCELLED') or path.exists():fail('ORIGINAL_IMMUTABLE','Completed originals cannot be restarted or overwritten.')
+                path.with_suffix(path.suffix+'.part').unlink(missing_ok=True)
+                row.update(state='UPLOADING',received=0);value.update(state='UPLOADING',revision=None);self.save(value);return row
+        finally:self.upload_lock.release()
+
     def import_local(self,did,source,role='input'):
         source=Path(source)
         # Only the operator CLI accepts paths; HTTP never accepts a filesystem path.

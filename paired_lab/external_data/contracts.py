@@ -46,7 +46,8 @@ def band_names(record):
     names=record.get('bands',[])
     aliases={'b04':'red','b4':'red','red':'red','b03':'green','b3':'green','green':'green',
         'b02':'blue','b2':'blue','blue':'blue','b08':'nir','b8':'nir','nir':'nir','scl':'scl'}
-    return [aliases.get((name or '').lower(),name) for name in names]
+    colour=record.get('colorinterp',[])
+    return [aliases.get((name or '').lower(),name) if name else colour[i] if i<len(colour) and colour[i] in ('red','green','blue') else None for i,name in enumerate(names)]
 
 
 def preflight(dataset, selected=None, assets=None, declarations=None,root=None):
@@ -93,6 +94,8 @@ def preflight(dataset, selected=None, assets=None, declarations=None,root=None):
             requirement(p+'input_bytes','At most 20 MiB for the existing bounded specialist',f['bytes'],f['bytes']<=20*1024**2,key!='flood_lab')
             requirement(p+'dimensions','At most 1,048,576 pixels', [r['height'],r['width']],n<=1_048_576)
             requirement(p+'band_limit','At most 14 bands',r['count'],r['count']<=14)
+            add(p+'metadata_completeness','Complete contract metadata without truncation',r.get('metadata_truncated',False),'MISMATCH' if r.get('metadata_truncated') else 'MATCH',True,
+                'Oversized metadata was bounded during inspection; it cannot silently stand in for the full input contract.','Reduce excessive nonessential metadata in a separate preparation artifact, preserving the original.')
             requirement(p+'transform','Finite nonsingular affine',r['transform'],r['valid_transform'],key not in ('vqa','cdvqa'))
             requirement(p+'CRS','Declared spatial reference',r['crs'],bool(r['crs']),key not in ('vqa','ndvi','cdvqa'))
             requirement(p+'scale_offset','Finite scale and offset for every band', [r['scales'],r['offsets']],all(v is not None for v in r['scales']+r['offsets']))
@@ -114,7 +117,8 @@ def preflight(dataset, selected=None, assets=None, declarations=None,root=None):
                     scl=bands.index('scl');requirement(p+'SCL_scale_offset',[1,0],[r['scales'][scl],r['offsets'][scl]],r['scales'][scl]==1 and r['offsets'][scl]==0)
             if key=='spectral_pair':requirement(p+'sensor','Sentinel-2 or Sentinel-2 L2A',tags.get('sensor'),tags.get('sensor') in ('Sentinel-2','Sentinel-2 L2A'))
             if key in ('temporal','cdvqa'):
-                requirement(p+'RGB_order',['red','green','blue'],r['bands'],bands==['red','green','blue'])
+                rgb=[str(v).lower() if v else v for v in r['bands']] if key=='temporal' else bands
+                requirement(p+'RGB_order',['red','green','blue'],dict(descriptions=r['bands'],colour_interpretation=r['colorinterp']),rgb==['red','green','blue'])
                 requirement(p+'RGB_dtype','uint8',r['dtypes'],all(t=='uint8' for t in r['dtypes']))
                 requirement(p+'RGB_scale_offset','Identity', [r['scales'],r['offsets']],all(v==1 for v in r['scales']) and all(v==0 for v in r['offsets']))
                 if key=='temporal':requirement(p+'checkpoint_dimensions',[256,256],[r['height'],r['width']],r['height']==r['width']==256)
@@ -138,12 +142,14 @@ def preflight(dataset, selected=None, assets=None, declarations=None,root=None):
                     for field in ('terrain_corrected','relative_orbit','orbit_state','scene_id'):
                         requirement(p+field,'Declared in verified prepared-event manifest',tags.get(field),bool(tags.get(field)))
             if key=='terrain':
+                requirement(p+'native_vertical_calibration','Identity scale/offset for metre elevations',[r['scales'],r['offsets']],r['scales']==[1] and r['offsets']==[0])
                 requirement(p+'elevation_bands',1,r['count'],r['count']==1)
                 requirement(p+'vertical_units','metre, meter, metres, meters or m',tags.get('units') or tags.get('vertical_units'),(tags.get('units') or tags.get('vertical_units')) in ('m','metre','meter','metres','meters'))
                 requirement(p+'metric_grid','Projected metre, north-up, unrotated',r['linear_units'],r['projected'] and r['linear_units'] in ('metre','meter') and r['north_up'])
                 add(p+'vertical_datum','Declared vertical datum',tags.get('vertical_datum'),'MATCH' if tags.get('vertical_datum') else 'UNKNOWN',False)
         if len(files)==2:
             a,b=[f['raster'] for f in files]
+            requirement('pair.dimensions','Equal width and height',[[a['height'],a['width']],[b['height'],b['width']]],a['height']==b['height'] and a['width']==b['width'])
             same=a['crs']==b['crs'] and a['width']==b['width'] and a['height']==b['height'] and np.allclose(a['transform'],b['transform'],rtol=0,atol=1e-10)
             requirement('pair.grid','Equal CRS, dimensions and affine; no reprojection',[a['crs'],b['crs'],a['transform'],b['transform']],same,key!='cdvqa')
             add('pair.physical_registration','Independent control points/content validation','Matching headers do not prove physical co-registration','UNKNOWN',False)

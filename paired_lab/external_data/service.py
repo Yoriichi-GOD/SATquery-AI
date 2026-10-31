@@ -50,15 +50,21 @@ class Service:
 
     def submit(self,did,operation,parameters):
         if operation not in ('inspect','analyze','evaluate'):fail('UNSUPPORTED_TASK','Choose inspect, analyze or evaluate.')
-        request_check(parameters);dataset=self.store.get(did)
-        with self.lock:
+        request_check(parameters)
+        if not self.store.upload_lock.acquire(False):fail('UPLOAD_BUSY','Finish the current upload chunk before starting an operation.')
+        try:
+          with self.lock,self.store.lock:
+            dataset=self.store.get(did)
             if self.active:fail('WORKER_BUSY','One external operation is already active; wait or cancel it.')
+            if operation=='inspect' and (not dataset['files'] or any(f['state'] not in ('STORED','INSPECTED','REJECTED') for f in dataset['files'])):fail('INCOMPLETE_UPLOAD','Finish or explicitly restart incomplete uploads before inspection.')
+            if operation!='inspect' and not dataset.get('revision'):fail('DATASET_NOT_INSPECTED','Complete inspection before analysis or evaluation.')
             jid=uuid.uuid4().hex;folder=self.jobdir(jid);folder.mkdir()
             value=dict(id=jid,dataset_id=did,operation=operation,state='QUEUED',created_utc=utc(),dataset_previous_state=dataset['state'],message='Waiting for the isolated data worker.')
             write_json(folder/'job.json',value)
             write_json(folder/'request.json',dict(root=str(self.store.root),dataset_id=did,operation=operation,parameters=parameters))
             dataset['state']='INSPECTING' if operation=='inspect' else 'PROCESSING';self.store.save(dataset)
             self.active=jid;self.pool.submit(self.work,jid)
+        finally:self.store.upload_lock.release()
         return value
 
     def terminate(self,process):
@@ -183,8 +189,11 @@ def install(app,root):
             service.store.upload_lock.release()
     @router.post('/{did}/files/{fid}/finish')
     def finish(did:str,fid:str):
-        if service.store.upload_lock.locked():fail('UPLOAD_BUSY','Finish the current chunk first.')
-        return service.store.finish_file(did,fid)
+        if not service.store.upload_lock.acquire(False):fail('UPLOAD_BUSY','Finish the current chunk first.')
+        try:return service.store.finish_file(did,fid)
+        finally:service.store.upload_lock.release()
+    @router.post('/{did}/files/{fid}/restart')
+    def restart(did:str,fid:str):return service.store.restart_file(did,fid)
     @router.post('/{did}/files/{fid}/role')
     async def role(did:str,fid:str,request:Request):
         value=await small_json(request);role=value.get('role')
