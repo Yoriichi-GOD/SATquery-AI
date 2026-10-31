@@ -1,0 +1,344 @@
+{
+  "scope": "Existing genuine inputs and clearly stated refusals. No new independent scientific benchmark, accuracy or sensor-transfer claim.",
+  "cases": [
+    {
+      "specialist": "ndvi",
+      "dataset_id": "d7165be9eaa0432c86f56b2d991d14ea",
+      "inputs": [
+        "7e7c70ee2cfa4c2ea7d8dbeef7e0a24c"
+      ],
+      "status": "READY_FOR_ANALYSIS",
+      "eligible": true,
+      "blocking_parameters": [],
+      "source_paths": [
+        "/root/satquery/scenes/dehradun-sentinel2-20211125.tif"
+      ],
+      "job_id": "d8244b1b4d7347b89d54763b7e4e197b",
+      "state": "EVALUATION_NOT_POSSIBLE",
+      "result": {
+        "state": "EVALUATION_NOT_POSSIBLE",
+        "analysis_result": {
+          "task": "ndvi",
+          "statistics": {
+            "numerical_precision": "float64 reflectance arithmetic, threshold comparison and NDVI export",
+            "calibration_version": "c1-header-verified-v2",
+            "exclusion_counts": {
+              "nodata_or_nonfinite": 0,
+              "negative_reflectance": 0,
+              "zero_denominator": 0,
+              "quality_after_reflectance_checks": 0
+            },
+            "excluded_pixels": 0,
+            "selected_percent_of_crop": 14.786148071289062,
+            "threshold": 0.5,
+            "valid_pixels": 262144,
+            "total_pixels": 262144,
+            "selected_pixels": 38761,
+            "valid_coverage_percent": 100.0,
+            "selected_percent_of_valid": 14.786148071289062,
+            "selected_area_m2": 3876100.0,
+            "area_method": "Projected grid area from affine determinant; not terrain surface area.",
+            "ndvi_min": -0.11406418886026737,
+            "ndvi_max": 0.8720458399410769,
+            "ndvi_mean": 0.2718112970070255,
+            "quality_mask_available": true,
+            "quality_rule": "SCL 4,5,6,7 retained; other classes excluded.",
+            "interpretation": "Pixels meeting the stated NDVI threshold; not a vegetation health, density, or species diagnosis."
+          },
+          "threshold": 0.5
+        },
+        "metrics": {
+          "state": "EVALUATION_NOT_POSSIBLE",
+          "code": "COMPATIBLE_GROUND_TRUTH_NOT_PROVIDED",
+          "message": "EVALUATION_NOT_POSSIBLE \u2014 COMPATIBLE_GROUND_TRUTH_NOT_PROVIDED"
+        },
+        "failures": [],
+        "timings": {
+          "inference_seconds": 0.5165852819991414,
+          "evaluation_seconds": 4.399000317789614e-06,
+          "total_worker_seconds": 26.077410958001565,
+          "peak_rss_bytes": 128958464,
+          "peak_rss_method": "Linux /proc/self/status VmHWM after exec",
+          "rss_scope": "This isolated worker, including metric/model imports. A remote/shared service GPU process is not included.",
+          "input_bytes": 3235336,
+          "export_bytes_before_zip": 2337010
+        },
+        "evaluation_scope": {
+          "split": "not scored",
+          "scene_ids": [
+            "d7165be9eaa0432c86f56b2d991d14ea"
+          ],
+          "reference_provenance": null,
+          "training_exposure": "unknown",
+          "license": "Operator must supply original dataset licence; not redistributed by this tool."
+        },
+        "artifacts": [
+          "checksums.sha256",
+          "compatibility_report.csv",
+          "compatibility_report.json",
+          "dataset_manifest.json",
+          "evaluation_protocol.json",
+          "evidence.zip",
+          "failures.json",
+          "metrics.json",
+          "metrics.md",
+          "model_manifest.json",
+          "ndvi.tif",
+          "overlay.png",
+          "predicted_mask.tif",
+          "prediction-preview.png",
+          "predictions.csv",
+          "preprocessing_manifest.json",
+          "reproduce.md",
+          "request.json",
+          "result.json",
+          "software_manifest.json",
+          "timings.json"
+        ]
+      },
+      "observed_peak_worker_rss_bytes": 133615616,
+      "wall_seconds": 26.76497030000246,
+      "verification": {
+        "status": "VERIFIED",
+        "artifacts": 19,
+        "metrics_recomputed": false,
+        "run_state": "EVALUATION_NOT_POSSIBLE",
+        "limitation": "Checks consistency of supplied artifacts; not independent source authenticity or unseen-data accuracy.",
+        "verified_input": "downloaded ZIP"
+      }
+    },
+    {
+      "specialist": "cdvqa",
+      "dataset_id": "456c65bef83444b0bb14ff027b5de9ec",
+      "inputs": [
+        "8583bc31ec71464b88438cc6e49153a2",
+        "1e7c4087056c4edf942d3c93db1a0e8a"
+      ],
+      "status": "READY_FOR_ANALYSIS",
+      "eligible": true,
+      "blocking_parameters": [],
+      "source_paths": [
+        "/mnt/c/Users/nrgen/.codex/scratch/SATquery AI/paired_lab/samples/levir-test_102_0512_0000/before.tif",
+        "/mnt/c/Users/nrgen/.codex/scratch/SATquery AI/paired_lab/samples/levir-test_102_0512_0000/after.tif"
+      ],
+      "job_id": "bf4bd8ea5b1f4fed90ba9ce6bc521928",
+      "state": "EVALUATION_NOT_POSSIBLE",
+      "result": {
+        "state": "EVALUATION_NOT_POSSIBLE",
+        "analysis_result": {
+          "status": "experimental_model_output",
+          "answer": "yes",
+          "question": "did the areas of buildings change",
+          "model": "paired-resnet50-gru-attention-v1",
+          "checkpoint_sha256": "8b1d6beb28d2f8a4a96937243255143c7f0426d394ff6a3f3645062337177b13",
+          "encoder_sha256": "11ad3fa62ca79e40addfd354a8ec4b7c75143b3038b8d2a807fbc68deab379ca",
+          "inputs": [
+            {
+              "role": "before",
+              "filename": "original.tif",
+              "sha256": "29b6a845c0ca1b4fcbffe9c863cff6d24a2425166e3fd7086692be4555907357",
+              "size": [
+                256,
+                256
+              ]
+            },
+            {
+              "role": "after",
+              "filename": "original.tif",
+              "sha256": "1d1dc8b4c4713f5899602139686c5793d80cbdd07be51435dffd6271f7ba1952",
+              "size": [
+                256,
+                256
+              ]
+            }
+          ],
+          "alignment": "User-declared; physical co-registration is not verified",
+          "preprocessing": "Full image bilinear resize to 256x256; ImageNet normalization; frozen ResNet50 4x4 spatial features",
+          "class_scores_uncalibrated": {
+            "0": 5.1707940210861516e-17,
+            "0_to_10": 1.014985751696118e-11,
+            "10_to_20": 4.2871056704640864e-10,
+            "20_to_30": 9.665657163537844e-10,
+            "30_to_40": 7.27520488297273e-10,
+            "40_to_50": 1.0945170325626918e-09,
+            "50_to_60": 3.5083009414238475e-11,
+            "60_to_70": 8.58927026725631e-11,
+            "70_to_80": 3.650589552872674e-11,
+            "80_to_90": 1.3741867886662984e-12,
+            "90_to_100": 3.349931958348748e-14,
+            "NVG_surface": 3.869147363610992e-11,
+            "buildings": 1.8637279219912983e-11,
+            "low_vegetation": 8.291474451471714e-11,
+            "no": 4.780123163072858e-06,
+            "playgrounds": 1.4331404986356322e-11,
+            "trees": 1.0372545045100878e-09,
+            "water": 6.822979681242458e-12,
+            "yes": 0.999995231628418
+          },
+          "device": "cpu",
+          "encoder_and_classifier_seconds": 0.4800439339996956,
+          "limitations": [
+            "Benchmark-trained 19-answer classifier; not general-purpose VQA.",
+            "Ratio answers are predicted bins, not geospatial measurements.",
+            "Scores are not calibrated confidence or accuracy.",
+            "No masks, localization, official-sensor or arbitrary-scene validation.",
+            "CPU precision differs from CUDA benchmark; exact answer parity is not guaranteed."
+          ],
+          "task": "cdvqa",
+          "seconds": 6.275554765998095,
+          "trace": [
+            {
+              "tool": "paired-resnet50-gru-attention-v1",
+              "checkpoint_sha256": "8b1d6beb28d2f8a4a96937243255143c7f0426d394ff6a3f3645062337177b13",
+              "encoder_sha256": "11ad3fa62ca79e40addfd354a8ec4b7c75143b3038b8d2a807fbc68deab379ca",
+              "preprocessing": "Full image bilinear resize to 256x256; ImageNet normalization; frozen ResNet50 4x4 spatial features"
+            }
+          ]
+        },
+        "metrics": {
+          "state": "EVALUATION_NOT_POSSIBLE",
+          "code": "COMPATIBLE_GROUND_TRUTH_NOT_PROVIDED",
+          "message": "EVALUATION_NOT_POSSIBLE \u2014 COMPATIBLE_GROUND_TRUTH_NOT_PROVIDED"
+        },
+        "failures": [],
+        "timings": {
+          "inference_seconds": 6.352908635002677,
+          "evaluation_seconds": 3.916997229680419e-06,
+          "total_worker_seconds": 8.943239582000388,
+          "peak_rss_bytes": 953819136,
+          "peak_rss_method": "Linux /proc/self/status VmHWM after exec",
+          "rss_scope": "This isolated worker, including metric/model imports. A remote/shared service GPU process is not included.",
+          "input_bytes": 393496,
+          "export_bytes_before_zip": 652185
+        },
+        "evaluation_scope": {
+          "split": "not scored",
+          "scene_ids": [
+            "456c65bef83444b0bb14ff027b5de9ec"
+          ],
+          "reference_provenance": null,
+          "training_exposure": "unknown",
+          "license": "Operator must supply original dataset licence; not redistributed by this tool."
+        },
+        "artifacts": [
+          "after.png",
+          "before.png",
+          "checksums.sha256",
+          "compatibility_report.csv",
+          "compatibility_report.json",
+          "dataset_manifest.json",
+          "evaluation_protocol.json",
+          "evidence.zip",
+          "failures.json",
+          "metrics.json",
+          "metrics.md",
+          "model_manifest.json",
+          "predictions.csv",
+          "preprocessing_manifest.json",
+          "reproduce.md",
+          "request.json",
+          "result.json",
+          "software_manifest.json",
+          "timings.json"
+        ]
+      },
+      "observed_peak_worker_rss_bytes": 1040220160,
+      "wall_seconds": 12.318689507999807,
+      "verification": {
+        "status": "VERIFIED",
+        "artifacts": 17,
+        "metrics_recomputed": false,
+        "run_state": "EVALUATION_NOT_POSSIBLE",
+        "limitation": "Checks consistency of supplied artifacts; not independent source authenticity or unseen-data accuracy.",
+        "verified_input": "downloaded ZIP"
+      }
+    },
+    {
+      "specialist": "optical_sar",
+      "dataset_id": "f25f5ac1412848adb563942464b589ac",
+      "inputs": [
+        "08271df7f9d94d5886ceeabc6387d1bf",
+        "64cb96139daf4d0c92d4593e717289c9"
+      ],
+      "status": "INCOMPATIBLE_INPUT",
+      "eligible": false,
+      "blocking_parameters": [
+        "optical.tif.CRS",
+        "optical.tif.projected_metre_grid",
+        "optical.tif.north_up",
+        "optical.tif.resolution",
+        "sar.tif.CRS",
+        "sar.tif.projected_metre_grid",
+        "sar.tif.north_up",
+        "sar.tif.resolution",
+        "pair.acquisition_dates",
+        "pair.interval_days"
+      ],
+      "source_paths": [
+        "/mnt/c/Users/nrgen/.codex/scratch/SATquery AI/paired_lab/samples/ben-validation-33-69/optical.tif",
+        "/mnt/c/Users/nrgen/.codex/scratch/SATquery AI/paired_lab/samples/ben-validation-33-69/sar.tif"
+      ],
+      "job_id": "e91be05602284cd1a89fc534be675579",
+      "state": "PROCESSING_FAILED",
+      "result": {
+        "state": "PROCESSING_FAILED",
+        "analysis_result": null,
+        "metrics": {
+          "state": "PROCESSING_FAILED",
+          "failures": [
+            {
+              "code": "INCOMPATIBLE_INPUT",
+              "message": "Specialist preflight failed. Inspect every blocking parameter in compatibility_report.json.",
+              "at_utc": "2026-10-31T05:11:13.120935+00:00"
+            }
+          ]
+        },
+        "failures": [
+          {
+            "code": "INCOMPATIBLE_INPUT",
+            "message": "Specialist preflight failed. Inspect every blocking parameter in compatibility_report.json.",
+            "at_utc": "2026-10-31T05:11:13.120935+00:00"
+          }
+        ],
+        "timings": {
+          "total_worker_seconds": 2.4120580759990844,
+          "peak_rss_bytes": 92094464,
+          "peak_rss_method": "Linux /proc/self/status VmHWM after exec",
+          "rss_scope": "This isolated worker, including metric/model imports. A remote/shared service GPU process is not included.",
+          "input_bytes": 694778,
+          "export_bytes_before_zip": 487446
+        },
+        "evaluation_scope": {
+          "split": "not scored",
+          "scene_ids": [
+            "f25f5ac1412848adb563942464b589ac"
+          ],
+          "reference_provenance": null,
+          "training_exposure": "unknown",
+          "license": "Operator must supply original dataset licence; not redistributed by this tool."
+        },
+        "artifacts": [
+          "checksums.sha256",
+          "compatibility_report.csv",
+          "compatibility_report.json",
+          "dataset_manifest.json",
+          "evaluation_protocol.json",
+          "evidence.zip",
+          "failures.json",
+          "metrics.json",
+          "metrics.md",
+          "model_manifest.json",
+          "predictions.csv",
+          "preprocessing_manifest.json",
+          "reproduce.md",
+          "request.json",
+          "software_manifest.json",
+          "timings.json"
+        ]
+      },
+      "observed_peak_worker_rss_bytes": 92139520,
+      "wall_seconds": 3.0704722459995537,
+      "incompatible_model_not_loaded": true
+    }
+  ]
+}

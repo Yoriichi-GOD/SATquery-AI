@@ -1,0 +1,89 @@
+{
+  "source": {
+    "revision": "b7402d583a4ec164a074b76844261e7c541f6e3f",
+    "tracked_worktree_changes": [
+      " M paired_lab/external_data/common.py",
+      " M paired_lab/external_data/execution.py",
+      " M paired_lab/external_data/metrics.py",
+      " M paired_lab/web/external.js",
+      " M tests/test_external_data.py",
+      " M tests/test_external_day2.py"
+    ],
+    "source_sha256": {
+      "paired_lab/external_data/common.py": "a16faf403762262651c5a7ae0b35d98ffb3df5f3f94b88fa3d2e6569f60966e2",
+      "paired_lab/external_data/contracts.py": "b28ac715c9f1411de63d94c4d8a3a6896175196e31fa95cd287ba196c1aa32a8",
+      "paired_lab/external_data/execution.py": "3aa07ad7dc9af601ea2b856c546ecb81b1e20c40a6845ec94e3a710c5dbbec2a",
+      "paired_lab/external_data/metrics.py": "374338c24290846e24f9713188e45cfbb4466672864553136e109fa7ebbd66c6",
+      "paired_lab/external_data/raster.py": "e9e03697cc90173c9a617da295bb4f0f236336e6a529383d6fc263c16c9b35c3",
+      "paired_lab/external_data/runner.py": "db5ae3c046605d617f004f432c4b0d7471fcba78b29fce23932d459fe35348bd",
+      "paired_lab/external_data/service.py": "351b4e8d997a9e511ef6707166a30f2b3382d806b5225e032e876b24a6356e42",
+      "paired_lab/external_data/store.py": "f6c62674ea44021e5e6b3cddf798da213f32be15e7533ea0d2316776778158b8",
+      "paired_lab/external_data/worker.py": "a7cc5568eee0f1d03a8a706212383c2dc4b6e2a28ae68bc6e1d929723b9ba6ef",
+      "paired_lab/external_data/__init__.py": "a4af55dad8919459f3c8b60b2c4387f16ccdeab4704b3883b158027f8d5d59ef",
+      "geo.py": "203f12f7e21b9380b8337a5ed15785b033c14ecfffaf82963e6efde3a8ce91ca",
+      "paired_lab/inputs.py": "585bca63a5b8280faf1b6aa1ab2e749df56db83a125f25480403220010e2a5b4",
+      "paired_lab/flood.py": "efb60a0b8c552924478f9ed92d8c9a728594b83957feab39740e9c16d5a65136",
+      "paired_lab/mci.py": "59f1acd96d963947ab96c2d948a7ec58257ab49b97aa4b1a64d68ba35ab8b863",
+      "paired_lab/sar_single.py": "c7366a4fb71dbb24ae92a80f80f6f5b1a180ab0135c4c2307bf7590b7140f59f",
+      "paired_lab/engine.py": "8c524f1897d856fbd270ddfff0dd6f54ad0a12196e1478169b33fa406fa92cb8",
+      "paired_lab/spectral_pair.py": "b8319eab85fd41c8bf3c2c922c70c1c9cca6525ea6315f36b8995fc1d0db9c51",
+      "paired_lab/cdvqa_bridge.py": "e560166bb06853dcebe9aad24d05f62c7392b5ced94f36e8d61d9496218f6986"
+    },
+    "python": "3.11.16 (main, Sep  1 2026, 14:18:37) [Clang 22.1.3 ]",
+    "platform": "Linux-6.18.33.2-microsoft-standard-WSL2-x86_64-with-glibc2.43",
+    "packages": {
+      "numpy": "2.4.6",
+      "rasterio": "1.4.4",
+      "Pillow": "12.3.0"
+    }
+  },
+  "scope": "Existing publisher benchmark crops and their original model calls only. No invented CRS, dates, sensor labels, independent ground truth, new accuracy or external-preflight bypass.",
+  "cases": [
+    {
+      "model": "BIFOLD",
+      "publisher_case": "ben-validation-33-69",
+      "source_sha256": [
+        "0704241b9c4c3e1fff05f53ac353537884a25ec617a03bfd963d1035c1a83d2c",
+        "4ef6d8fa31d27a5e23718c84c1704063bd15e06748e9b6bb8fa3447615fb9bf1"
+      ],
+      "output": "/mnt/c/Users/nrgen/.codex/scratch/SATquery AI/.runtime/day2-model-smoke/6e0ec32a70824be9882063af24e61b0d/BIFOLD",
+      "external_geospatial_status": "Refused for absent geographic metadata; this model-only legacy fixture does not establish a compatible external geospatial dataset.",
+      "state": "EXECUTED",
+      "modality_score_counts": {
+        "s1": 19,
+        "s2": 19,
+        "all": 19
+      },
+      "result_sha256": "4da87a86d81e0efa615703947be26758e5d90d8b9531dbcbd4066cb014952741",
+      "accuracy": "NOT_SCORED \u2014 model loading/execution only; no compatible independent labels used",
+      "seconds": 5.272433530000853,
+      "peak_rss": [
+        1126764544,
+        "Linux /proc/self/status VmHWM after exec"
+      ]
+    },
+    {
+      "model": "MCI",
+      "publisher_case": "levir-test_102_0512_0000",
+      "source_sha256": [
+        "29b6a845c0ca1b4fcbffe9c863cff6d24a2425166e3fd7086692be4555907357",
+        "1d1dc8b4c4713f5899602139686c5793d80cbdd07be51435dffd6271f7ba1952"
+      ],
+      "output": "/mnt/c/Users/nrgen/.codex/scratch/SATquery AI/.runtime/day2-model-smoke/6e0ec32a70824be9882063af24e61b0d/MCI",
+      "external_geospatial_status": "Refused for absent geographic metadata; this model-only legacy fixture does not establish a compatible external geospatial dataset.",
+      "state": "EXECUTED",
+      "mask_denominator": 65536,
+      "class_pixels": {
+        "road": 9623,
+        "building": 13819
+      },
+      "result_sha256": "c8fba57754342f529d55f0f2f350511bc60e51bdd0308e94bbba7325271f4180",
+      "accuracy": "NOT_SCORED \u2014 model loading/execution only; no compatible independent labels used",
+      "seconds": 6.254196054000204,
+      "peak_rss": [
+        2498650112,
+        "Linux /proc/self/status VmHWM after exec"
+      ]
+    }
+  ]
+}

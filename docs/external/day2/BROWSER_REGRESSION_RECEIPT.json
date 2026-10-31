@@ -1,0 +1,56 @@
+{
+  "recorded_utc": "2026-10-31T05:36:33.120292+00:00",
+  "application_revision": "f6fa44f8e3fbf284deb9fbca2898847453e300a7",
+  "final_browser_warning_error_logs": [],
+  "capture_scope": "Final browser navigation check; not an audit of every prior log or every legacy screen.",
+  "viewport_checks": [
+    {
+      "viewport": [
+        1280,
+        720
+      ],
+      "document_client_width": 1273,
+      "document_scroll_width": 1273
+    },
+    {
+      "viewport": [
+        390,
+        844
+      ],
+      "document_client_width": 383,
+      "document_scroll_width": 383
+    }
+  ],
+  "terrain_observation": "Retained 90 m Copernicus DSM colour elevation surface with saved water candidates; 601 mapped locations on valid DSM support. No depth or damage inference.",
+  "temporary_viewport_reset": true,
+  "handoff_url": "http://127.0.0.1:8768/#datasets",
+  "images": [
+    {
+      "file": "images/evaluation-desktop.jpg",
+      "dimensions": [
+        1273,
+        1912
+      ],
+      "captured_utc": "2026-10-31T05:29:49.330787+00:00",
+      "sha256": "55ae3ffbc60b0e826dec83e599b373da07b40fedcf5567435c0a01f27d81f43d"
+    },
+    {
+      "file": "images/evaluation-mobile.jpg",
+      "dimensions": [
+        383,
+        829
+      ],
+      "captured_utc": "2026-10-31T05:29:40.078642+00:00",
+      "sha256": "ee9a38309261e767cd0b3daf1d443bdfa121a87b687b7bde83ad61f56eeda3ce"
+    },
+    {
+      "file": "images/terrain-regression.jpg",
+      "dimensions": [
+        1273,
+        1545
+      ],
+      "captured_utc": "2026-10-31T05:33:36.337865+00:00",
+      "sha256": "38a45874cbfbfaa02c78183269ae22c6106f0f6d74d3ae7b0457bfd85a5eddb0"
+    }
+  ]
+}

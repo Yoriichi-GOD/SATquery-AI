@@ -1,0 +1,31 @@
+{
+  "task": "segmentation",
+  "dataset_revision": "8db0fe6d1c0f600964a120c035f265e8640f9bd58d1031bd2c1f7d8da8ea0867",
+  "scene_ids": [
+    "11b7f8cb12004ac5af1615dda8a01104"
+  ],
+  "split": "development",
+  "reference_provenance": "Hand-constructed independent known-answer software fixture. Not satellite observations or scientific ground truth.",
+  "license": "Generated software QA fixture; no external dataset redistributed.",
+  "training_exposure": "Not applicable: deterministic NDVI arithmetic; fixture is not an acceptance dataset.",
+  "excluded_case_ids": [],
+  "classes": {
+    "0": "below_ndvi_threshold",
+    "1": "meets_ndvi_threshold"
+  },
+  "prediction_class_mapping": {
+    "0": 0,
+    "1": 1
+  },
+  "reference_class_mapping": {
+    "0": 0,
+    "1": 1
+  },
+  "ignore_values": [
+    255
+  ],
+  "prediction_semantics": "ndvi_threshold",
+  "threshold": 0.5,
+  "preprocessing": "Original source bytes retained, calibrated NDVI arithmetic at fixed threshold 0.5; no resize/reprojection/filling.",
+  "population_selection": "All pixels of one declared software fixture; ignore the supplied invalid top ten rows."
+}

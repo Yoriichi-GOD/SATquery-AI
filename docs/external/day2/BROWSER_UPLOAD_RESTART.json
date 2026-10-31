@@ -1,0 +1,30 @@
+{
+  "id": "96d398552a0f408d8780d1fa46c04490",
+  "name": "DAY2 \u00b7 SYNTHETIC upload abort recovery",
+  "state": "CANCELLED",
+  "created_utc": "2026-10-31T05:13:49.637445+00:00",
+  "files": [
+    {
+      "id": "1da8131725194b4e9954d1646be4a16d",
+      "name": "original.tif",
+      "bytes": 3221225472,
+      "role": "input",
+      "state": "CANCELLED",
+      "received": 0,
+      "path": "files/1da8131725194b4e9954d1646be4a16d/original.tif",
+      "expected_sha256": null
+    }
+  ],
+  "failures": [],
+  "revision": null,
+  "limits": {
+    "dataset_bytes": 4294967296,
+    "chunk_bytes": 8388608,
+    "files": 256,
+    "disk_reserve_bytes": 268435456
+  },
+  "source_authenticity": "Not independently verified; retain acquisition/licence records.",
+  "updated_utc": "2026-10-31T05:14:32.903261+00:00",
+  "ui_restart_progress_observed_percent": 20.05208396911621,
+  "temporary_files_after_second_stop": 0
+}

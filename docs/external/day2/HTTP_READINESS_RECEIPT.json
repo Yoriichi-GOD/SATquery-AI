@@ -1,0 +1,66 @@
+{
+  "scope": "Synthetic HTTP correctness and failure tests; no scientific performance claim.",
+  "checks": [
+    {
+      "check": "foreign browser origin refused",
+      "result": "PASS",
+      "detail": null
+    },
+    {
+      "check": "wrong resume offset refused",
+      "result": "PASS",
+      "detail": null
+    },
+    {
+      "check": "oversized chunk refused",
+      "result": "PASS",
+      "detail": null
+    },
+    {
+      "check": "failed chunk did not advance received bytes",
+      "result": "PASS",
+      "detail": null
+    },
+    {
+      "check": "partial upload cancel recorded",
+      "result": "PASS",
+      "detail": null
+    },
+    {
+      "check": "incomplete file explicitly restarts",
+      "result": "PASS",
+      "detail": null
+    },
+    {
+      "check": "corrupt TIFF retained as explicit failure",
+      "result": "PASS",
+      "detail": null
+    },
+    {
+      "check": "incompatible specialist refused before inference",
+      "result": "PASS",
+      "detail": null
+    },
+    {
+      "check": "no incompatible checkpoint loaded",
+      "result": "PASS",
+      "detail": null
+    },
+    {
+      "check": "supported numerical execution returned actual result",
+      "result": "PASS",
+      "detail": null
+    },
+    {
+      "check": "no labels never becomes an accuracy score",
+      "result": "PASS",
+      "detail": null
+    }
+  ],
+  "passed": 11,
+  "retained_private_datasets": [
+    "d0738f37205c4f6695f95cfc71c36084",
+    "063fc5a4ef47421cbbf88e18b26be12c",
+    "f0d7a51ea6d940d3a97f04118363b30c"
+  ]
+}

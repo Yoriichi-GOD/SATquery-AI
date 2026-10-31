@@ -1,0 +1,19 @@
+{
+  "id": "cd7da6ac9fe346df8bb4d3e4a1ccb066",
+  "dataset_id": "4d48ea67296541f88cbe872a7fbec666",
+  "operation": "inspect",
+  "state": "CANCELLED",
+  "created_utc": "2026-10-31T05:13:00.572678+00:00",
+  "dataset_previous_state": "UPLOADING",
+  "message": "Operation stopped; completed originals retained. No later successful result is accepted.",
+  "failures": [
+    {
+      "code": "CANCELLED",
+      "message": "The actual isolated worker was stopped."
+    }
+  ],
+  "finished_utc": "2026-10-31T05:13:01.266056+00:00",
+  "wall_seconds": 0.6343146059989522,
+  "peak_observed_worker_rss_bytes": 56946688,
+  "worker_rss_limit_bytes": 536870912
+}
