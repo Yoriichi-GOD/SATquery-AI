@@ -1,0 +1,32 @@
+{
+  "checked_utc": "2026-10-31T06:51:06.936516+00:00",
+  "scope": "Anonymous HTTP access without account credentials; not organizer portal receipt or every judge access.",
+  "links": [
+    {
+      "url": "https://github.com/Yoriichi-GOD/SATquery-AI",
+      "http_status": 200,
+      "anonymous": true
+    },
+    {
+      "url": "https://github.com/Yoriichi-GOD/SATquery-AI/blob/main/README.md",
+      "http_status": 200,
+      "anonymous": true
+    },
+    {
+      "url": "https://github.com/Yoriichi-GOD/SATquery-AI/blob/main/docs/jai/submission/SUBMISSION_INDEX.md",
+      "http_status": 200,
+      "anonymous": true
+    },
+    {
+      "url": "https://github.com/Yoriichi-GOD/SATquery-AI/blob/main/docs/jai/submission/SATQuery_The_Road_Home_JAI2026.pptx",
+      "http_status": 200,
+      "anonymous": true
+    },
+    {
+      "url": "https://github.com/Yoriichi-GOD/SATquery-AI/blob/main/docs/jai/ROAD_HOME_DAY2_60MIN_RECEIPT.md",
+      "http_status": 200,
+      "anonymous": true
+    }
+  ],
+  "live_demo": "Local machine only; no remotely hosted URL supplied."
+}
