@@ -12,6 +12,7 @@ from .flood_bridge import BridgeError, FloodBridge, MIME
 from .terrain import TerrainStore
 from .geo_context import GeoContext
 from .investigation import InvestigationEngine,JobManager,REGISTRY
+from .visual_context import VisualContext
 from pydantic import BaseModel, StrictBool, Field, FiniteFloat
 from typing import Optional
 
@@ -53,8 +54,9 @@ class InvestigationRequest(BaseModel):
     profile: Optional[ProfileRequest] = None
 
 
-def attach(app, bridge, terrain=None):
+def attach(app, bridge, terrain=None, visual_root=None):
     router = APIRouter(prefix="/api/flood")
+    visuals = VisualContext(bridge, visual_root)
 
     @app.exception_handler(BridgeError)
     async def bridge_error(request: Request, error: BridgeError):
@@ -76,6 +78,17 @@ def attach(app, bridge, terrain=None):
     @router.get("/runs/{run_id}/exposure")
     def exposure(run_id: str):
         return bridge.exposure(run_id)
+
+    @router.get("/runs/{run_id}/visual-context")
+    def visual_context(run_id: str):
+        return visuals.catalogue(run_id)
+
+    @router.get("/runs/{run_id}/visual/{kind}.png")
+    def visual_preview(run_id: str, kind: str):
+        import json
+        raw, hashes = visuals.preview(run_id, kind)
+        return Response(raw,media_type="image/png",headers={"X-Source-Hashes":json.dumps(hashes),
+                        "Cache-Control":"no-store","X-Content-Type-Options":"nosniff"})
 
     @router.get("/runs/{run_id}/grid")
     def grid(run_id: str):
@@ -188,7 +201,7 @@ def create_app():
     module = importlib.util.module_from_spec(spec)
     spec.loader.exec_module(module)
     terrain=TerrainStore(os.environ.get("JAI_TERRAIN_ROOT",str(root/".runtime/jai/terrain")))
-    app = attach(module.app, bridge, terrain)
+    app = attach(module.app, bridge, terrain, os.environ.get("FLOODLAB_BASELINE_ROOT"))
     app.add_middleware(ExtensionOrigin, port=int(os.environ.get("JAI_PORT", "8767")))
 
     # Replace only the home response in this process, leaving baseline source untouched.
