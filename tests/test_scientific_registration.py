@@ -22,6 +22,7 @@ class RegistrationTests(unittest.TestCase):
         self.assertEqual(r['status'],'MISALIGNED')
         np.testing.assert_allclose(r['estimated_translation_xy_px'],[4,-3],atol=.15)
         self.assertLess(r['post_fit_held_out_residual_median_px'],.15)
+        self.assertAlmostEqual(r['pre_correction_displacement_median_m'],50,delta=1)
         self.assertFalse(r['corrected_raster_created'])
     def test_known_rotation_is_supported(self):
         m=self.cv2.getRotationMatrix2D((128,128),2,1)

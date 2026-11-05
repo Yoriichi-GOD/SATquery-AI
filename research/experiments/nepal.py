@@ -16,7 +16,7 @@ from shapely.geometry import shape, mapping, box
 from shapely.ops import unary_union
 
 from research.evaluation.metrics import binary_metrics, ranking_metrics, paired_spatial_interval
-from research.terrain_exposure.graph import project, mask_geometry, touched_cells, finite_stat
+from research.terrain_exposure.graph import project, mask_geometry, touched_cells, finite_stat, Receptor, build_graph, receptor_summary
 from research.terrain_exposure.hydrology import derive, path
 from research.terrain_exposure.io import read_raster, sha256, canonical_hash, save_json
 from research.terrain_exposure.replay import load_nepal, verify_output
@@ -117,6 +117,18 @@ def run(flood_root,terrain_source,prediction_run,protocol_path,output,registrati
                      'attributes':{'direct_candidate_fraction':direct_fraction,'along_network_distance_m':network,
                                    'hand_m':hand,'same_cell_unresolved':same_cell,
                                    'interpretation':'Screening association, not damage/exposure validation'}})
+    # Execute D through the same source/pathway/receptor engine used by the real replay.
+    # Reference grades are not passed to that engine; only evaluation-unit geometries.
+    graph_receptors=[Receptor(row['reference_id'],'road',shape(row['geometry']),grid.crs,
+        {'sha256':sha256(reference),'dataset':'EMSR927 original infrastructure geometry; labels withheld from graph'},
+        'Pre-event OSM; see EMSR927 source_v1 date records') for row in rows]
+    full_graph=build_graph(hydro,[water],graph_receptors,terrain_provenance,target_width_m=cfg['required_feature_width_m'])
+    full_scores={item['id']:item['layers'].get('water') for item in receptor_summary(full_graph)['receptors']}
+    for row in rows:
+        item=full_scores[row['reference_id']]
+        row['scores']['D_full_graph']=(None if item is None or item['ordinal_screening_tier'] is None else
+            (float(item['direct_intersection']),float(item['potential_connection']),
+             -item['along_network_distance_m'] if item['along_network_distance_m'] is not None else 0.0))
     output.mkdir(parents=True)
     # Freeze identities, labels, support and parameters before metric calculation.
     freeze={'protocol_sha256':canonical_hash(protocol),'source_prediction_manifest_sha256':sha256(Path(prediction_run)/'manifest.json'),
@@ -124,6 +136,8 @@ def run(flood_root,terrain_source,prediction_run,protocol_path,output,registrati
             'evaluation_support_sha256':canonical_hash(mapping(support)),
             'rows_sha256':canonical_hash(rows),'receptor_ids':[r['reference_id'] for r in rows],
             'configuration_sha256':canonical_hash(cfg),'exclusions':exclusions,'split':protocol['split']}
+    freeze['full_graph_content_sha256']=full_graph['content_sha256']
+    freeze['full_graph_summary']=full_graph['summary']
     save_json(output/'freeze.json',freeze);save_json(output/'protocol.json',protocol)
     save_json(output/'rows.json',rows)
     save_json(output/'evaluation-support.geojson',{'type':'FeatureCollection','features':[{'type':'Feature',

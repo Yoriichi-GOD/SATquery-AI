@@ -19,7 +19,7 @@
     "A_image_only": "Post VV < -17 dB intersection-length fraction",
     "B_image_temporal": "Frozen new-water-candidate intersection-length fraction",
     "C_temporal_terrain": "Lexicographic: direct candidate intersection, potential D8 downstream path, negative along-path length",
-    "D_full_graph": "C with explicit source/pathway/receptor evidence and observation-coverage abstention",
+    "D_full_graph": "Actual shared build_graph engine on reference-unit geometries with grades withheld; component relationships, coverage and same-cell abstention",
     "proximity_only": "Negative geometric distance to temporal candidate polygons",
     "terrain_only": "Negative minimum flowpath HAND over receptor cells",
     "no_terrain_graph": "B_image_temporal (targeted graph ablation)",

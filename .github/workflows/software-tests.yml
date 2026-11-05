@@ -43,3 +43,19 @@ jobs:
             software-tests.log
             publication-check.log
           retention-days: 30
+  scientific:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+          cache: pip
+          cache-dependency-path: research/requirements-scientific-lock.txt
+      - name: Install isolated CPU scientific environment
+        run: python -m pip install -r research/requirements-scientific-lock.txt
+      - name: Run numerical, graph, registration and integration checks
+        run: python -m unittest discover -s tests -v
+      - name: Execute the explicitly synthetic public code example
+        run: python -m research.terrain_exposure.demo --output /tmp/satquery-synthetic-example

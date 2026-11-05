@@ -22,6 +22,7 @@ REGISTRY={
     'get_dem':'Verified cached DSM statistics and source identities',
     'analyze_coverage':'Actual reprojection and shared valid support',
     'terrain_transect':'Bilinear metric profile with missing-data gaps',
+    'get_terrain_exposure':'Hash-verified offline terrain/drainage graph and screening; resolution gates apply, not event propagation',
 }
 TERMINAL={'complete','abstained','cancelled','failed','interrupted'}
 
@@ -43,6 +44,8 @@ def plan(question):
     text=question.lower()
     if re.search(r'\b(depth|casualt\w*|death\w*|evacuat\w*|predict\w*|forecast\w*|confidence|probability|accuracy|safe\w*|safety|damage\w*|destroy\w*|guarantee|risk\w*|closed|closure\w*|cut[ -]off|blocked|passable|impassable)\b|ignore.*instruction|system prompt|\b(send|email|publish|delete|execute|download|acquire)\b',text):
         return [],'The saved evidence cannot establish depth, damage, safety, forecasts or casualties, or perform external actions. Ask about observed candidates, recorded intersections or terrain.'
+    if re.search(r'\b(downstream|drainage|catchment\w*|watershed\w*|hand|pathway\w*|hydrolog\w*)\b|flow (accumulation|direction|network)|terrain.conditioned|source.to.receptor',text):
+        return ['get_run','get_terrain_exposure'],None
     terrain=bool(re.search(r'\b(terrain|slope|elevation|dem|height|hill|mountain|coverage|overlap|align\w*)\b',text))
     assets=bool(re.search(r'\b(road\w*|building\w*|asset\w*|infrastructure|inspect\w*|exposure|intersect\w*)\b',text))
     water=bool(re.search(r'\b(water|flood|candidate\w*|summary|situation)\b',text))
@@ -60,11 +63,13 @@ def plan(question):
 
 
 class InvestigationEngine:
-    def __init__(self,bridge,terrain):self.bridge,self.terrain=bridge,terrain
+    def __init__(self,bridge,terrain,exposure=None):self.bridge,self.terrain,self.terrain_exposure=bridge,terrain,exposure
 
     def execute(self,payload,check,record):
         tools,refusal=plan(payload['question'])
         if refusal:return {'state':'abstained','answer':refusal,'claims':[],'sources':[],'planned_tools':[],'mode':'DETERMINISTIC_TOOL_WORKFLOW','ai_model_used':False}
+        if 'get_terrain_exposure' in tools:
+            return self.execute_terrain_exposure(payload,check,record,tools)
         if 'get_dem' in tools and not payload.get('scene_id'):
             return {'state':'abstained','answer':'Select an available cached terrain scene first. No acquisition was performed.','claims':[],'sources':[],'planned_tools':tools}
         if 'get_run' in tools and not payload.get('run_id'):
@@ -158,6 +163,35 @@ class InvestigationEngine:
         if 'analyze_coverage' in output:lines.append('Grid reprojection is checked; physical co-registration has not been independently validated.')
         return {'state':'complete','answer':' '.join(lines),'claims':claims,'sources':sources,'review_rows':rows,'review_rows_by_layer':rows_by_layer,
                 'planned_tools':tools,'tool_outputs':output,'mode':'DETERMINISTIC_TOOL_WORKFLOW','ai_model_used':False}
+
+
+    def execute_terrain_exposure(self,payload,check,record,tools):
+        base={'claims':[],'sources':[],'planned_tools':tools,'mode':'DETERMINISTIC_TOOL_WORKFLOW','ai_model_used':False}
+        if not payload.get('run_id') or self.terrain_exposure is None:
+            return {**base,'state':'abstained','answer':'Terrain-conditioned exposure is NOT_ASSESSED. Select a saved run with an operator-produced scientific replay; no data was acquired.'}
+        check();started=time.perf_counter();run=self.bridge.detail(payload['run_id'])
+        if run.get('population')!='FROZEN_REAL_OBSERVATION':raise BridgeError(422,'Choose a genuine saved observation')
+        years=set(re.findall(r'\b20\d{2}\b',payload['question']))
+        if years and years!={str(run['provenance'].get('event_time',''))[:4]}:
+            return {**base,'state':'abstained','answer':'Requested year does not match the selected saved event.'}
+        record('get_run',run,time.perf_counter()-started);check();started=time.perf_counter()
+        value=self.terrain_exposure.for_flood_run(run);check()
+        record('get_terrain_exposure',value,time.perf_counter()-started)
+        summary=value['summary'];sources=value['sources']
+        claims=[{'label':label,'value':summary['hydrology'][key],'unit':unit,'source':0,'field':'/hydrology/'+key}
+                for label,key,unit in [('Valid terrain cells','valid_cells','cells'),('Derived drainage cells','stream_cells','cells'),
+                                       ('Maximum depression filling','maximum_fill_m','m')]]
+        scale=summary['resolution']['status']
+        requires_receptor=bool(re.search(r'\b(road\w*|building\w*|bridge\w*|infrastructure|receptor\w*|expos\w*|reach\w*)\b',payload['question'].lower()))
+        limited=requires_receptor and scale in {'INSUFFICIENT_RESOLUTION','COARSE_CONTEXT_ONLY'}
+        answer=('The cached replay computes potential drainage, contributing area, catchments and flowpath HAND. '
+                'These describe the conditioned historical DSM, not floodwave/debris-flow propagation. ')
+        answer+=('Infrastructure-scale connectivity is unavailable: the terrain fails the declared resolution requirement. '
+                 if limited else 'Derived terrain relationships are available for coarse contextual inspection. ')
+        answer+='Physical sensor registration and independent exposure validation remain unverified.'
+        return {**base,'state':'abstained' if limited else 'complete','answer':answer,'claims':claims,'sources':sources,
+                'tool_outputs':{'get_run':run,'get_terrain_exposure':value},'resolution_status':scale,
+                'review_rows':[],'review_rows_by_layer':{}}
 
 
 class JobManager:

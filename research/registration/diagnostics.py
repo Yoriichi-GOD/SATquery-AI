@@ -90,15 +90,18 @@ def audit(a, b, valid_a, valid_b, grid_a, grid_b, *, modalities=("optical", "opt
     raw=np.linalg.norm(displacement,axis=1)
     post=np.linalg.norm(residual,axis=1)
     metres=np.sqrt((residual[:,0]*grid_a.transform.a)**2+(residual[:,1]*grid_a.transform.e)**2)
+    raw_metres=np.sqrt((displacement[:,0]*grid_a.transform.a)**2+(displacement[:,1]*grid_a.transform.e)**2)
     rotation=math.degrees(math.atan2(model[1,0],model[0,0]))
     scale=math.hypot(model[0,0],model[1,0])
     trustworthy=(post<=1.5)
     result.update(pre_correction_displacement_median_px=float(np.median(raw)),
                   pre_correction_displacement_p95_px=float(np.percentile(raw,95)),
+                  pre_correction_displacement_median_m=float(np.median(raw_metres)),
                   estimated_translation_xy_px=model[:,2].tolist(), estimated_rotation_deg=rotation,
                   estimated_scale=scale, post_fit_held_out_residual_median_px=float(np.median(post)),
                   post_fit_held_out_residual_p95_px=float(np.percentile(post,95)),
                   post_fit_held_out_residual_median_m=float(np.median(metres)),
+                  post_fit_held_out_residual_p95_m=float(np.percentile(metres,95)),
                   held_out_within_1_5_px_fraction=float(trustworthy.mean()),
                   tie_points=[{"a_xy":p.tolist(),"b_xy":q.tolist(),"held_out":bool(h)} for p,q,h in zip(x,y,held)])
     if abs(rotation)>5 or not .95<=scale<=1.05 or trustworthy.mean()<.7:
