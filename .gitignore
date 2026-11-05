@@ -38,3 +38,18 @@ paired_lab/evidence/submission-20260926/eos04-frs2-inventory.json
 /emsr/
 /Nepal_2026_Flood_Dataset_Starter/
 /nepal_flood_2026_dataset_kit/
+
+# Explicit scientific source allowlist; other private research stays ignored.
+!/research/
+/research/*
+!/research/__init__.py
+!/research/requirements-scientific*.txt
+!/research/terrain_exposure/
+!/research/datasets/
+!/research/registration/
+!/research/experiments/
+!/research/evaluation/
+!/research/cases/
+!/research/results/
+/research/results/*
+!/research/results/terrain-exposure-20261105/

@@ -54,7 +54,8 @@ class Grid:
 
     def centre(self, index):
         r, c = divmod(int(index), self.shape[1])
-        return self.transform * (c + 0.5, r + 0.5)
+        return (self.transform.c + (c + 0.5)*self.transform.a,
+                self.transform.f + (r + 0.5)*self.transform.e)
 
     def describe(self):
         return {"shape": list(self.shape), "transform": list(self.transform)[:6], "crs": self.crs,

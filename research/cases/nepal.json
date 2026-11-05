@@ -1,0 +1,26 @@
+{
+  "case_id": "nepal-syapru-20260826",
+  "event_time": "2026-08-26T00:00:00Z",
+  "run_id": "event-fe47db331390",
+  "role": "previously_inspected_development_replay",
+  "split": "development",
+  "test_set": "NOT_AVAILABLE",
+  "dem_resolution_m": 90,
+  "dem_buffer_m": 1800,
+  "conditioning": "fill",
+  "stream_area_m2": 100000,
+  "required_feature_width_m": 10,
+  "terrain_source_sha256": "2ef95b224a1290ca7661316642efd8dbb8b824b41acd52732962892cce26fe96",
+  "terrain_source_url": "https://copernicus-dem-90m.s3.amazonaws.com/Copernicus_DSM_COG_30_N28_00_E085_00_DEM/Copernicus_DSM_COG_30_N28_00_E085_00_DEM.tif",
+  "terrain_license": "https://registry.opendata.aws/copernicus-dem/",
+  "vertical_datum": "EGM2008 orthometric; DSM includes surface objects",
+  "water": {"positive_codes": [2], "valid_codes": [0, 1, 2]},
+  "debris": {"positive_codes": [1], "valid_codes": [0, 1]},
+  "parameter_selection": "Declared engineering baselines; no selection against Nepal reference labels",
+  "limitations": [
+    "Historical GLO-90 DSM is not event-time terrain",
+    "Buffered AOI is not a complete upstream basin; contributing areas are truncated",
+    "Native 90m terrain cannot resolve building-level or road-width flow paths",
+    "Registration and label semantics must be audited before scientific interpretation"
+  ]
+}
