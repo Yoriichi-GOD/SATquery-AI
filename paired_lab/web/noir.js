@@ -5,7 +5,7 @@
   if (!D || !$('#lab')) return;
   const make = (tag, text, cls) => {const n = document.createElement(tag); if (text != null) n.textContent = text; if (cls) n.className = cls; return n;};
   const A = '/assets/noir/';
-  const css = make('link'); css.rel = 'stylesheet'; css.href = '/assets/noir.css?v=ea1e7f030eb6'; document.head.append(css);
+  const css = make('link'); css.rel = 'stylesheet'; css.href = '/assets/noir.css?v=ea1e7f030eb6'; document.head.insertBefore(css,document.querySelector('link[href^="/assets/noir-layout.css"]'));
   const brand = $('.brand'); brand.setAttribute('aria-label', 'SATquery AI · Workspace');
   brand.replaceChildren();
   const fullLogo = make('img'); fullLogo.src = A + 'saturn-brand-logo.png'; fullLogo.alt = 'SATquery AI — See a higher perspective'; fullLogo.className = 'sq-brand-full';

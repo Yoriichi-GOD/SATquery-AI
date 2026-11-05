@@ -1,0 +1,29 @@
+/* Playbook: Scientific Space typography. Fixed chrome is solid and never blurred. */
+@font-face{font-family:Geist;src:url('/assets/fonts/geist-latin-400-normal.woff2') format('woff2');font-weight:400;font-display:swap}
+@font-face{font-family:Geist;src:url('/assets/fonts/geist-latin-500-normal.woff2') format('woff2');font-weight:500;font-display:swap}
+@font-face{font-family:'Space Grotesk';src:url('/assets/fonts/space-grotesk-latin-500-normal.woff2') format('woff2');font-weight:500;font-display:swap}
+@font-face{font-family:'IBM Plex Mono';src:url('/assets/fonts/ibm-plex-mono-latin-400-normal.woff2') format('woff2');font-weight:400;font-display:swap}
+:root{--sq-header-h:108px;--sq-body:Geist,'Nirmala UI','Segoe UI',sans-serif;--sq-display:'Space Grotesk',Geist,'Segoe UI',sans-serif;--sq-mono:'IBM Plex Mono',Consolas,monospace;--sq-ease:cubic-bezier(.16,1,.3,1)}
+html{scroll-padding-top:calc(var(--sq-header-h) + 16px)}
+body.sq-document-scroll{padding-top:var(--sq-header-h);font-family:var(--sq-body);font-size:16px;line-height:1.65}
+body.sq-document-scroll>header{position:fixed;inset:0 0 auto;z-index:50;background:var(--bg)!important;backdrop-filter:none!important;-webkit-backdrop-filter:none!important;filter:none;box-shadow:none}
+body.sq-document-scroll>header::before,body.sq-document-scroll>header::after{backdrop-filter:none!important;-webkit-backdrop-filter:none!important;filter:none}
+body.sq-document-scroll h1,body.sq-document-scroll h2,body.sq-document-scroll h3{font-family:var(--sq-display);font-weight:500;letter-spacing:-.03em;text-wrap:balance}
+body.sq-document-scroll p{font-family:var(--sq-body);line-height:1.65;text-wrap:pretty}
+body.sq-document-scroll :is(button,input,select,textarea,label,summary){font-family:var(--sq-body)}
+body.sq-document-scroll :is(button,input,select,textarea){font-size:14px}
+body.sq-document-scroll :is(button,label,summary){font-weight:500}
+body.sq-document-scroll :is(pre,code,.map-heading>p,.visual-note,.sq-footer-field,.earth-context-chips){font-family:var(--sq-mono);font-variant-numeric:tabular-nums}
+body.sq-document-scroll .sq-footer :is(span,small),body.sq-document-scroll .earth-context-chips span{font-family:var(--sq-mono);font-variant-numeric:tabular-nums}
+body.sq-document-scroll .eyebrow,body.sq-document-scroll .earth-kicker,body.sq-document-scroll .response-kicker{font-family:var(--sq-body)!important;font-weight:500;letter-spacing:.1em}
+body.sq-document-scroll .workspace>aside>p,body.sq-document-scroll .question-panel>p,body.sq-document-scroll .earth-sidebar>p{font-size:15px;max-width:65ch}
+body.sq-document-scroll .earth-answer>p,body.sq-document-scroll #answer{font-size:18px;max-width:65ch}
+body.sq-document-scroll button{transition:background-color 140ms var(--sq-ease),border-color 140ms var(--sq-ease),color 140ms var(--sq-ease)}
+body.sq-document-scroll header nav button{font:500 14px/1.45 var(--sq-body)}
+body.sq-document-scroll header nav button.active::after{box-shadow:none}
+body.sq-document-scroll :is(button,a,summary,input,select,textarea):focus-visible{outline:2px solid var(--sq-focus,#c5e8ef);outline-offset:4px}
+body.sq-document-scroll :is(textarea,input){caret-color:var(--sq-focus,#c5e8ef)}
+body.sq-document-scroll ::selection{background:#596f7d;color:#fff}
+@media(hover:hover) and (pointer:fine){html[data-sq-input=pointer] body.sq-document-scroll button:not(header nav button):active:not(:disabled){transform:scale(.985)}}
+html[data-sq-input=keyboard] body.sq-document-scroll button{transition:none}
+@media(prefers-reduced-motion:reduce){body.sq-document-scroll *,body.sq-document-scroll *::before,body.sq-document-scroll *::after{animation:none!important;transition:none!important;scroll-behavior:auto!important}}

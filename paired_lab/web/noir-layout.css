@@ -1,15 +1,15 @@
-/* User-requested shell: fixed chrome, independent panes, neutral glass. */
+/* Fixed, unblurred header. Document scrolls; charts and table dialogs retain their own bounded viewports. */
 :root{--sq-header-h:108px;--sq-footer-h:66px;--sq-glass:rgba(18,18,18,.26)}
-html,body{height:100%;overflow:hidden}
-body.sq-shell{height:100dvh;overflow:hidden}
-body.sq-shell>header{position:fixed;inset:0 0 auto;z-index:50;background:transparent!important;border:0;backdrop-filter:none;box-shadow:none}
-body.sq-shell>main,body.sq-shell:has(#evaluation:not([hidden]))>main{position:fixed;top:var(--sq-header-h);bottom:var(--sq-footer-h);left:0;right:0;width:100%;max-width:1920px;margin-inline:auto;padding:20px clamp(20px,3.4vw,66px) 16px;min-height:0;overflow:hidden;display:flex;flex-direction:column}
+html,body{height:auto;min-height:100%;overflow:visible}
+body.sq-shell{height:auto;min-height:100dvh;overflow:visible;padding-top:var(--sq-header-h);padding-bottom:var(--sq-footer-h)}
+body.sq-shell>header{position:fixed;inset:0 0 auto;z-index:50;background:var(--bg)!important;border:0;backdrop-filter:none;-webkit-backdrop-filter:none;box-shadow:none}
+body.sq-shell>main,body.sq-shell:has(#evaluation:not([hidden]))>main{position:relative;inset:auto;width:100%;max-width:1920px;margin-inline:auto;padding:20px clamp(20px,3.4vw,66px) 16px;min-height:0;overflow:visible;display:block}
 body.sq-shell>main>.intro{flex:none;margin-bottom:18px}
 body.sq-shell .intro h1{font-size:clamp(29px,2.8vw,45px)}
 body.sq-shell>main>section{flex:1;min-height:0}
 body.sq-shell #lab,body.sq-shell #earth,body.sq-shell #evaluation{display:flex;flex-direction:column;min-height:0}
-body.sq-shell .workspace,body.sq-shell .earth-layout{flex:1;min-height:0;align-items:stretch;overflow:hidden}
-body.sq-shell .visual,body.sq-shell .workspace>aside,body.sq-shell .earth-visual,body.sq-shell .earth-sidebar,body.sq-shell .sq-catalog,body.sq-shell .sq-stage-panel,body.sq-shell .sq-inspector{position:relative;top:auto;height:100%;min-height:0;overflow-y:auto;overflow-x:hidden;overscroll-behavior:contain;scrollbar-gutter:stable;scrollbar-width:thin;scrollbar-color:#8c949c66 transparent;border:0!important;border-radius:12px;background:var(--sq-glass)!important;backdrop-filter:blur(10px);box-shadow:none}
+body.sq-shell .workspace,body.sq-shell .earth-layout{height:auto;min-height:0;align-items:start;overflow:visible}
+body.sq-shell .visual,body.sq-shell .workspace>aside,body.sq-shell .earth-visual,body.sq-shell .earth-sidebar,body.sq-shell .sq-catalog,body.sq-shell .sq-stage-panel,body.sq-shell .sq-inspector{position:relative;top:auto;height:auto;max-height:none;min-height:0;overflow:visible;overscroll-behavior:auto;scrollbar-width:thin;scrollbar-color:#8c949c66 transparent;border:0!important;border-radius:12px;background:var(--sq-glass)!important;backdrop-filter:blur(10px);box-shadow:none}
 body.sq-shell .visual{display:flex;flex-direction:column}
 body.sq-shell #empty{flex:1;min-height:360px;padding:16px 0}
 body.sq-shell #empty img{max-height:260px}
@@ -23,7 +23,7 @@ body.sq-shell .earth-viewer{height:clamp(290px,43dvh,580px);min-height:290px;bac
 body.sq-shell .earth-key-metrics{grid-template-columns:repeat(auto-fit,minmax(115px,1fr));gap:14px}
 body.sq-shell .earth-key-metrics,body.sq-shell .earth-layer-state,body.sq-shell .earth-disclosure,body.sq-shell .earth-source-row{border-color:#ffffff18}
 body.sq-shell .earth-answer-metrics>div,body.sq-shell .metric-card,body.sq-shell .sq-measure,body.sq-shell .sq-distribution,body.sq-shell .parameter-result{border:0;background:rgba(255,255,255,.035);box-shadow:none}
-body.sq-shell #external{overflow:auto;overscroll-behavior:contain;scrollbar-gutter:stable}
+body.sq-shell #external{overflow:visible;overscroll-behavior:contain;scrollbar-gutter:stable}
 body.sq-shell #external .ext-card{background:var(--sq-glass);backdrop-filter:blur(10px);border:0;box-shadow:none}
 body.sq-shell .sq-evidence{display:flex;flex-direction:column;flex:1;min-height:0}
 body.sq-shell .sq-evidence-intro{flex:none;display:flex!important;margin-bottom:18px}
@@ -50,7 +50,7 @@ body.sq-shell .sq-table-dialog-body{height:calc(100% - 70px);overflow:auto;paddi
 body.sq-shell .sq-table-dialog table{display:table!important;overflow:visible!important;min-width:100%;max-width:none;font-size:14px}
 body.sq-shell .sq-table-dialog th{position:sticky;top:0;background:#171717;z-index:1;white-space:nowrap}
 body.sq-shell .sq-table-dialog td,body.sq-shell .sq-table-dialog th{padding:12px 16px;text-align:left;max-width:none;min-width:130px;overflow-wrap:anywhere;font-size:14px}
-body.sq-shell>footer.sq-footer{position:fixed;inset:auto 0 0;z-index:45;min-height:64px;height:66px;max-height:72px;margin:0;padding:23px clamp(20px,3.4vw,66px) 7px;background:rgba(10,10,10,.18);backdrop-filter:blur(8px);border:0;display:grid;grid-template-columns:1fr 1.25fr 1.4fr .7fr;gap:12px;overflow:hidden;align-items:start}
+body.sq-shell>footer.sq-footer{position:fixed;inset:auto 0 0;z-index:45;min-height:64px;height:66px;max-height:72px;margin:0;padding:23px clamp(20px,3.4vw,66px) 7px;background:var(--bg);backdrop-filter:none;-webkit-backdrop-filter:none;border:0;display:grid;grid-template-columns:1fr 1.25fr 1.4fr .7fr;gap:12px;overflow:hidden;align-items:start}
 body.sq-shell .sq-footer>.sq-footer-field{border:0;min-width:0;padding:0;max-width:none}
 body.sq-shell .sq-footer small{font-size:9px;line-height:1.3;letter-spacing:1px;white-space:nowrap}
 body.sq-shell .sq-footer span{font-size:11px;line-height:1.4;margin:3px 0 0;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
@@ -62,13 +62,13 @@ body.sq-shell #viewer{max-height:calc(100dvh - 30px)}
 :root[data-theme=light] body.sq-shell .sq-table-dialog{background:rgba(244,244,244,.96)}
 :root[data-theme=light] body.sq-shell .sq-table-dialog th{background:#ececec}
 @media(min-width:900px){body.sq-shell .workspace{grid-template-columns:minmax(0,1.6fr) minmax(330px,1fr)}body.sq-shell .earth-layout{grid-template-columns:minmax(0,1.7fr) minmax(340px,1fr)}body.sq-shell .sq-evidence-grid{grid-template-columns:minmax(175px,.65fr) minmax(0,1.65fr) minmax(240px,1fr)}body.sq-shell .sq-inspector{grid-column:auto}body.sq-shell #sq-inspector-content{display:block}}
-@media(max-width:899px){body.sq-shell>main,body.sq-shell:has(#evaluation:not([hidden]))>main{overflow:auto;padding:18px 16px 14px;display:block}body.sq-shell #lab,body.sq-shell #earth,body.sq-shell #evaluation,body.sq-shell .sq-evidence{display:block;height:auto;overflow:visible}body.sq-shell .workspace,body.sq-shell .earth-layout,body.sq-shell .sq-evidence-grid{grid-template-columns:1fr;height:auto;overflow:visible}body.sq-shell .visual,body.sq-shell .workspace>aside,body.sq-shell .earth-visual,body.sq-shell .earth-sidebar,body.sq-shell .sq-catalog,body.sq-shell .sq-stage-panel,body.sq-shell .sq-inspector{height:auto;max-height:none;overflow:visible;position:relative;backdrop-filter:blur(8px)}body.sq-shell .sq-inspector{grid-column:auto}body.sq-shell #sq-inspector-content{display:block}body.sq-shell #external{overflow:visible}body.sq-shell .earth-viewer{height:340px;min-height:280px}body.sq-shell .sq-stage{height:350px}body.sq-shell #empty{min-height:330px}body.sq-shell #empty img{max-height:240px}body.sq-shell .sq-story{margin-top:16px}body.sq-shell .sq-table-dialog{width:calc(100vw - 20px);height:calc(100dvh - 24px)}}
+@media(max-width:899px){body.sq-shell>main,body.sq-shell:has(#evaluation:not([hidden]))>main{overflow:visible;padding:18px 16px 14px;display:block}body.sq-shell #lab,body.sq-shell #earth,body.sq-shell #evaluation,body.sq-shell .sq-evidence{display:block;height:auto;overflow:visible}body.sq-shell .workspace,body.sq-shell .earth-layout,body.sq-shell .sq-evidence-grid{grid-template-columns:1fr;height:auto;overflow:visible}body.sq-shell .visual,body.sq-shell .workspace>aside,body.sq-shell .earth-visual,body.sq-shell .earth-sidebar,body.sq-shell .sq-catalog,body.sq-shell .sq-stage-panel,body.sq-shell .sq-inspector{height:auto;max-height:none;overflow:visible;position:relative;backdrop-filter:blur(8px)}body.sq-shell .sq-inspector{grid-column:auto}body.sq-shell #sq-inspector-content{display:block}body.sq-shell #external{overflow:visible}body.sq-shell .earth-viewer{height:340px;min-height:280px}body.sq-shell .sq-stage{height:350px}body.sq-shell #empty{min-height:330px}body.sq-shell #empty img{max-height:240px}body.sq-shell .sq-story{margin-top:16px}body.sq-shell .sq-table-dialog{width:calc(100vw - 20px);height:calc(100dvh - 24px)}}
 @media(max-width:650px){body.sq-shell>footer.sq-footer{grid-template-columns:repeat(4,max-content)!important;gap:24px!important;padding:23px 18px 7px!important;overflow-x:auto;overflow-y:hidden;height:64px;min-height:64px}body.sq-shell .sq-footer>.sq-footer-field{min-width:max-content;border:0!important}body.sq-shell .sq-footer span{max-width:none;white-space:nowrap}body.sq-shell .sq-table-dialog-head{padding:12px;height:64px}body.sq-shell .sq-table-dialog-body{height:calc(100% - 64px);padding:10px}body.sq-shell .sq-table-dialog-head h2{font-size:18px}}
 @media(prefers-reduced-transparency:reduce){body.sq-shell .visual,body.sq-shell .workspace>aside,body.sq-shell .earth-visual,body.sq-shell .earth-sidebar,body.sq-shell .sq-catalog,body.sq-shell .sq-stage-panel,body.sq-shell .sq-inspector{background:#101010!important;backdrop-filter:none}}
 
-body.sq-shell .sq-observation-pair{display:grid;grid-template-columns:minmax(0,1.3fr) minmax(235px,.8fr);height:clamp(350px,48dvh,580px);min-height:350px;gap:14px;padding:0 16px}
-body.sq-shell .sq-observation-pair>.earth-viewer{height:100%;min-height:0}
-body.sq-shell .sq-visual-context{min-width:0;overflow:auto;padding:12px 10px;background:rgba(255,255,255,.025);border-radius:8px;scrollbar-gutter:stable}
+body.sq-shell .sq-observation-pair{display:grid;grid-template-columns:minmax(0,1.3fr) minmax(235px,.8fr);height:auto;min-height:0;align-items:start;gap:14px;padding:0 16px}
+body.sq-shell .sq-observation-pair>.earth-viewer{height:clamp(350px,48dvh,580px);min-height:350px}
+body.sq-shell .sq-visual-context{min-width:0;overflow:visible;padding:12px 10px;background:rgba(255,255,255,.025);border-radius:8px;scrollbar-gutter:stable}
 body.sq-shell .sq-visual-context h3{font-size:16px;margin:5px 0 12px}
 body.sq-shell .sq-rgb-dates{display:flex;gap:5px;flex-wrap:wrap}
 body.sq-shell .sq-rgb-dates button{font-size:11px;padding:7px;flex:1}

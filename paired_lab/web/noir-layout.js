@@ -1,4 +1,4 @@
-/* Fixed shell and scroll ownership. No analytical state is changed here. */
+/* Fixed chrome and document scroll ownership. No analytical state is changed here. */
 (() => {
   'use strict';
   const $=s=>document.querySelector(s),make=(tag,text,cls)=>{const n=document.createElement(tag);if(text!=null)n.textContent=text;if(cls)n.className=cls;return n;};
@@ -25,7 +25,7 @@
   function enhance(){
     scheduled=false;
     for(const [selector,label] of [['.visual','Workspace images'],['.workspace>aside','Workspace analysis'],['.earth-visual','Terrain and observations'],['.earth-sidebar','Contextual analysis'],['.sq-catalog','Evidence catalogue'],['.sq-stage-panel','Evidence layers and tables'],['.sq-inspector','Source inspector']]){
-      const pane=$(selector);if(pane){pane.tabIndex=0;if(!pane.hasAttribute('aria-label'))pane.setAttribute('aria-label',label+'; independently scrollable');}
+      const pane=$(selector);if(pane){pane.tabIndex=0;if(!pane.hasAttribute('aria-label'))pane.setAttribute('aria-label',label);}
     }
     for(const table of document.querySelectorAll('main table:not([data-sq-expandable])')){
       table.dataset.sqExpandable='true';
