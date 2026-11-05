@@ -4,6 +4,7 @@
   const header = document.querySelector('body > header');
   if (!header) return;
   const root = document.documentElement;
+  const footer = document.querySelector('body > footer');
   const reduced = matchMedia('(prefers-reduced-motion: reduce)');
   let animation = null, revision = 0;
   const cancel = () => {revision++; if (animation) animation.cancel(); animation = null;};
@@ -12,8 +13,15 @@
     if (height > 0 && root.style.getPropertyValue('--sq-header-h') !== height + 'px') {
       root.style.setProperty('--sq-header-h', height + 'px');
     }
+    const footerHeight = footer ? Math.max(0, Math.ceil(footer.getBoundingClientRect().height)) : 0;
+    if (root.style.getPropertyValue('--sq-scroll-footer-h') !== footerHeight + 'px') {
+      root.style.setProperty('--sq-scroll-footer-h', footerHeight + 'px');
+    }
   };
-  if (typeof ResizeObserver !== 'undefined') new ResizeObserver(measure).observe(header);
+  if (typeof ResizeObserver !== 'undefined') {
+    const observer = new ResizeObserver(measure);
+    observer.observe(header); if (footer) observer.observe(footer);
+  }
   window.addEventListener('resize', measure, {passive:true});
   document.fonts?.ready.then(measure);
   measure();

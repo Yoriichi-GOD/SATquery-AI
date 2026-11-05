@@ -6,7 +6,7 @@ const vm=require('node:vm');
 const defaultSource=[__dirname+'/../paired_lab/web/workspace-shell.js',__dirname+'/../web/workspace-shell.js',__dirname+'/workspace-shell.js'].find(file=>fs.existsSync(file));
 const source=fs.readFileSync(process.argv[2]||defaultSource,'utf8');
 function setup({missingHeader=false,reduce=false,noAnimation=false}={}){
-  let height=96;const values=new Map(),docEvents={},headerEvents={},windowEvents={},frames=[],animations=[];
+  let height=96,footerHeight=66;const values=new Map(),docEvents={},headerEvents={},windowEvents={},frames=[],animations=[];
   const root={dataset:{},style:{getPropertyValue:key=>values.get(key),setProperty:(key,value)=>values.set(key,value)}};
   const section={hidden:false,animate:noAnimation?undefined:(keyframes,options)=>{
     const item={keyframes,options,cancelled:false,cancel(){this.cancelled=true;}};animations.push(item);return item;
@@ -14,12 +14,13 @@ function setup({missingHeader=false,reduce=false,noAnimation=false}={}){
   const header={getBoundingClientRect:()=>({height}),addEventListener:(name,fn)=>headerEvents[name]=fn};
   const media={matches:reduce,addEventListener:(name,fn)=>media.changed=fn};
   let resize;
-  const document={documentElement:root,querySelector:()=>missingHeader?null:header,querySelectorAll:()=>[{hidden:true},section],
+  const footer={getBoundingClientRect:()=>({height:footerHeight})};
+  const document={documentElement:root,querySelector:selector=>selector==='body > header'?(missingHeader?null:header):footer,querySelectorAll:()=>[{hidden:true},section],
     addEventListener:(name,fn)=>docEvents[name]=fn,fonts:{ready:Promise.resolve()}};
   vm.runInNewContext(source,{document,window:{addEventListener:(name,fn)=>windowEvents[name]=fn},
     matchMedia:()=>media,ResizeObserver:class{constructor(fn){resize=fn;}observe(){}},requestAnimationFrame:fn=>frames.push(fn)});
   return {root,values,animations,section,media,resize,windowEvents,docEvents,frames,
-    setHeight:value=>height=value,
+    setHeight:value=>height=value,setFooterHeight:value=>footerHeight=value,
     click:(detail=1,isNav=true)=>headerEvents.click({detail,target:{closest:()=>isNav?{}:null}}),
     flush:()=>{while(frames.length)frames.shift()();}};
 }
@@ -52,4 +53,9 @@ test('theme and other header controls do not animate the evidence',()=>{
 });
 test('missing header or unavailable animation API leaves content usable',()=>{
   assert.doesNotThrow(()=>setup({missingHeader:true}));const c=setup({noAnimation:true});c.click();assert.doesNotThrow(c.flush);
+});
+
+test('footer height reserves the lower clipped viewport after wrapping',()=>{
+  const c=setup();assert.equal(c.values.get('--sq-scroll-footer-h'),'66px');
+  c.setFooterHeight(94.3);c.resize();assert.equal(c.values.get('--sq-scroll-footer-h'),'95px');
 });

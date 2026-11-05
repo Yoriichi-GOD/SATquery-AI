@@ -25,3 +25,8 @@ Shared transitions are short and interruptible, skip keyboard navigation, respec
 and never blur or recolor analytical images. See [binding shell rules](UI_SHELL_RULES.md) and
 [verification and limits](UI_SHELL_VERIFICATION_20261105.json). The rendered check for this correction
 is incomplete because browser control was disabled; prior screenshots do not verify this layout.
+
+Latest scrolling clarification: keep the header transparent and fixed, and clip the single page
+viewport below its measured lower edge. Content scrolls within that viewport and disappears at
+the header boundary. Whole Workspace/Terrain/Evidence columns stay together, with no independent
+column scrolling. The footer is measured and excluded from this viewport as well.

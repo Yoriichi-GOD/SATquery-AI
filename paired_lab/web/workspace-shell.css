@@ -27,3 +27,10 @@ body.sq-document-scroll ::selection{background:#596f7d;color:#fff}
 @media(hover:hover) and (pointer:fine){html[data-sq-input=pointer] body.sq-document-scroll button:not(header nav button):active:not(:disabled){transform:scale(.985)}}
 html[data-sq-input=keyboard] body.sq-document-scroll button{transition:none}
 @media(prefers-reduced-motion:reduce){body.sq-document-scroll *,body.sq-document-scroll *::before,body.sq-document-scroll *::after{animation:none!important;transition:none!important;scroll-behavior:auto!important}}
+
+/* One scrolling page, clipped at the transparent header's lower edge. */
+html.sq-clipped-scroll{height:100%;overflow:hidden}
+body.sq-document-scroll.sq-clipped-scroll{height:100dvh;min-height:0;overflow:hidden;padding:0}
+body.sq-document-scroll.sq-clipped-scroll>main,
+body.sq-shell.sq-document-scroll.sq-clipped-scroll:has(#evaluation:not([hidden]))>main{position:fixed;top:var(--sq-header-h);right:0;bottom:var(--sq-scroll-footer-h,var(--sq-footer-h,0px));left:0;width:100%;height:auto;min-height:0;margin:0 auto;overflow-y:auto;overflow-x:hidden;overscroll-behavior-y:contain;scrollbar-gutter:stable;scroll-padding-block:20px;display:block}
+body.sq-document-scroll.sq-clipped-scroll>footer{position:fixed;inset:auto 0 0;width:100%;margin:0 auto;z-index:45}

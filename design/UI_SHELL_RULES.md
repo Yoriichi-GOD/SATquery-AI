@@ -1,12 +1,12 @@
 # SATQuery fixed header and frontend rules — 5 November 2026
 
-The user's explicit requirement: **transparent header/taskbar, no fill and no blur; keep the header fixed and let the body scroll**.
-This replaces the previous internally scrolling fixed-main shell. It applies to SATQuery and Flood Lab.
+The user's explicit requirement: **transparent header/taskbar, no fill and no blur; keep the header fixed and scroll the page in a viewport clipped below it**.
+Latest clarification: content must disappear at the header edge. One shared page viewport scrolls below the header; individual columns do not scroll independently. It applies to SATQuery and Flood Lab.
 
 | Before | After | Why |
 |---|---|---|
 | Flood Lab sticky header with 14 px backdrop blur | Fixed header, transparent background, both backdrop-filter declarations set to none | Honour the requested stable, clear taskbar |
-| Main content locked between fixed header/footer; separate scrolling panes | Normal document flow under the header, with measured space reserved | Scrolling the body keeps the investigation in one readable page |
+| Main content locked between fixed header/footer; separate scrolling panes | One page viewport begins at the measured header edge and clips scrolled content | The transparent header never overlaps scrolling content |
 | Hard-to-verify header height at responsive sizes | ResizeObserver plus font-ready/window-resize measurement | Wrapped navigation cannot cover content after font loading |
 | Main SATQuery refers to Space Grotesk without a font asset | Local Space Grotesk 500, Geist 400/500, Plex Mono 400 with OFL notices | Apply the supplied frontend playbook's actual font roles |
 | Inconsistent or absent transitions | 180 ms pointer-only route feedback; explicit 140 ms control colors | Show context changes without creating fake progress or delays |
@@ -38,7 +38,7 @@ footer remains fixed, with its measured height reserved at the bottom of the bod
 
 ## Verification and exact limits
 
-Eight behavioural tests exercise responsive header measurement, font completion, keyboard cancellation,
+Nine behavioural tests exercise responsive header measurement, font completion, keyboard cancellation,
 pointer-only navigation, repeated navigation, reduced motion and missing-capability fallbacks.
 They use DOM doubles and do **not** prove rendered CSS geometry. JavaScript syntax and CSS parsing,
 installed-file hashes, local HTTP asset delivery and existing regressions are checked separately.
@@ -51,3 +51,7 @@ verify no covered controls after font load, keyboard/rapid navigation, and reduc
 
 No satellite pixels, thresholds, masks, model weights, frozen results, backend API contracts or Day 1 tag
 were changed. Main and Flood Lab receive the same shared shell files and attribution notices.
+
+The 5 November follow-up retains a transparent, fixed, unblurred header and clips the single
+page viewport at its measured lower edge. A measured fixed footer bounds the other edge.
+Flood Lab answer focus now scrolls the shared page, not the non-scrolling sidebar.
