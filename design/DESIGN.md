@@ -13,7 +13,7 @@ The implemented CSS shapes reserve space while these assets are pending. No comp
 ## Current shell and typography — 5 November 2026
 
 The latest user requirement takes precedence over older shell descriptions: **no blur on the header
-or taskbar, keep the header fixed, and let the body scroll**. The header uses a solid theme background.
+or taskbar, keep the header fixed, and let the body scroll**. The header is transparent, with no background fill or blur.
 Its measured height reserves space above normal document flow. SATQuery's metadata footer remains
 fixed with its measured space reserved below. Whole Workspace/Terrain/Evidence columns are no longer
 separate scrolling viewports; charts, horizontal data tables and modal contents retain bounded viewports.

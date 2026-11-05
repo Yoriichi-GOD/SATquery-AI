@@ -1,11 +1,11 @@
 # SATQuery fixed header and frontend rules — 5 November 2026
 
-The user's explicit requirement: **no blur on the header/taskbar; keep the header fixed and let the body scroll**.
+The user's explicit requirement: **transparent header/taskbar, no fill and no blur; keep the header fixed and let the body scroll**.
 This replaces the previous internally scrolling fixed-main shell. It applies to SATQuery and Flood Lab.
 
 | Before | After | Why |
 |---|---|---|
-| Flood Lab sticky header with 14 px backdrop blur | Fixed header, solid theme background, both backdrop-filter declarations set to none | Honour the requested stable, clear taskbar |
+| Flood Lab sticky header with 14 px backdrop blur | Fixed header, transparent background, both backdrop-filter declarations set to none | Honour the requested stable, clear taskbar |
 | Main content locked between fixed header/footer; separate scrolling panes | Normal document flow under the header, with measured space reserved | Scrolling the body keeps the investigation in one readable page |
 | Hard-to-verify header height at responsive sizes | ResizeObserver plus font-ready/window-resize measurement | Wrapped navigation cannot cover content after font loading |
 | Main SATQuery refers to Space Grotesk without a font asset | Local Space Grotesk 500, Geist 400/500, Plex Mono 400 with OFL notices | Apply the supplied frontend playbook's actual font roles |

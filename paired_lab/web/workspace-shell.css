@@ -1,4 +1,4 @@
-/* Playbook: Scientific Space typography. Fixed chrome is solid and never blurred. */
+/* Playbook: Scientific Space typography. Fixed chrome is transparent and never blurred. */
 @font-face{font-family:Geist;src:url('/assets/fonts/geist-latin-400-normal.woff2') format('woff2');font-weight:400;font-display:swap}
 @font-face{font-family:Geist;src:url('/assets/fonts/geist-latin-500-normal.woff2') format('woff2');font-weight:500;font-display:swap}
 @font-face{font-family:'Space Grotesk';src:url('/assets/fonts/space-grotesk-latin-500-normal.woff2') format('woff2');font-weight:500;font-display:swap}
@@ -6,7 +6,7 @@
 :root{--sq-header-h:108px;--sq-body:Geist,'Nirmala UI','Segoe UI',sans-serif;--sq-display:'Space Grotesk',Geist,'Segoe UI',sans-serif;--sq-mono:'IBM Plex Mono',Consolas,monospace;--sq-ease:cubic-bezier(.16,1,.3,1)}
 html{scroll-padding-top:calc(var(--sq-header-h) + 16px)}
 body.sq-document-scroll{padding-top:var(--sq-header-h);font-family:var(--sq-body);font-size:16px;line-height:1.65}
-body.sq-document-scroll>header{position:fixed;inset:0 0 auto;z-index:50;background:var(--bg)!important;backdrop-filter:none!important;-webkit-backdrop-filter:none!important;filter:none;box-shadow:none}
+body.sq-document-scroll>header{position:fixed;inset:0 0 auto;z-index:50;background:transparent!important;border:0;backdrop-filter:none!important;-webkit-backdrop-filter:none!important;filter:none;box-shadow:none}
 body.sq-document-scroll>header::before,body.sq-document-scroll>header::after{backdrop-filter:none!important;-webkit-backdrop-filter:none!important;filter:none}
 body.sq-document-scroll h1,body.sq-document-scroll h2,body.sq-document-scroll h3{font-family:var(--sq-display);font-weight:500;letter-spacing:-.03em;text-wrap:balance}
 body.sq-document-scroll p{font-family:var(--sq-body);line-height:1.65;text-wrap:pretty}
