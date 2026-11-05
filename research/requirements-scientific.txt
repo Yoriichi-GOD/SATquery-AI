@@ -1,0 +1,8 @@
+# CPU-only scientific tools. Existing inference runtimes/checkpoints are separate.
+numpy==2.4.6
+rasterio==1.4.4
+pyproj==3.7.2
+shapely==2.2.0
+fiona==1.10.1
+opencv-python-headless==4.11.0.86
+matplotlib==3.10.8
