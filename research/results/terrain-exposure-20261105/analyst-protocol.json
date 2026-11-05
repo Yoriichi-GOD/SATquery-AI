@@ -1,0 +1,30 @@
+{
+  "active_analyst_time": null,
+  "claim_policy": "No human productivity, percentage savings or participant-count claim",
+  "human_manual_actions": null,
+  "population": "SCRIPTED_OPERATIONS_NO_HUMAN_PARTICIPANTS",
+  "protocol": "prepared-artifact-scripted-workflow-v1",
+  "tasks": [
+    {
+      "description": "Retrieve new-water candidate pixels, area and paired-valid coverage",
+      "id": "water-measurement",
+      "rubric": "Exact native mask arithmetic and source identity"
+    },
+    {
+      "description": "List mapped buildings with exact geometric candidate intersections",
+      "id": "candidate-building-intersections",
+      "rubric": "Exact ID set from independent raw-mask geometry intersection"
+    },
+    {
+      "description": "Assess whether a building-scale downstream claim is supported",
+      "id": "downstream-building-assessment",
+      "rubric": "Abstain when declared terrain sampling gate fails"
+    },
+    {
+      "description": "Retrieve the candidate-mask and DSM source hashes",
+      "id": "source-provenance",
+      "rubric": "Exact source SHA-256 identity"
+    }
+  ],
+  "timing_scope": "Prepared local artifacts; excludes model inference, terrain preprocessing, acquisition, UI and human decision time"
+}

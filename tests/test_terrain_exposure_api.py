@@ -65,6 +65,11 @@ class ScientificStoreTests(unittest.TestCase):
         result=engine.execute({'question':'Show catchments and flow accumulation','run_id':'fixture'},lambda:None,lambda *a:None)
         self.assertEqual(result['state'],'complete')
         self.assertEqual(plan('Predict the flood depth downstream')[0],[])
+        empty=TerrainExposureStore(self.root/'missing')
+        missing=InvestigationEngine(Bridge(),None,empty).execute(
+            {'question':'Show drainage pathways','run_id':'fixture'},lambda:None,lambda *args:None)
+        self.assertEqual(missing['state'],'abstained');self.assertEqual(missing['claims'],[])
+        self.assertEqual(missing['tool_outputs']['get_terrain_exposure']['status'],'NOT_ASSESSED')
     def test_additive_http_routes_and_verified_download(self):
         from fastapi.testclient import TestClient
         class Bridge:upstream='http://127.0.0.1:1'

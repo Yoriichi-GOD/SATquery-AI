@@ -1,0 +1,28 @@
+{
+  "normalization": "LF-normalized UTF8 text, no source files modified",
+  "files": {
+    "research/terrain_exposure/compact.py": "069bf8df884c983b4e47d8115470774b2ca4e0656c25f78a0394de7a1724cf79",
+    "research/terrain_exposure/demo.py": "c4e60515d4db4018cd7e0c83424fc0d63ec0d93e74db53510cc769143d3076e5",
+    "research/terrain_exposure/graph.py": "fb675ad9ca1c58d93d00bb2063abbe314d60d3841e1161438dde50870e60e4e5",
+    "research/terrain_exposure/hydrology.py": "df509d94b90b3ea13c001d2f7f948f1edb6ae37801487bf7723519520caa8224",
+    "research/terrain_exposure/io.py": "ac0d9536cc865d401f7520e2303daff795259ab98dc74e8aeff81296a634255b",
+    "research/terrain_exposure/replay.py": "b6197ba050ad4a9bf9e756e12043a69ad1a3cff0efb39d73242f6481f8fa6140",
+    "research/terrain_exposure/__init__.py": "abf8e4ccd10170bc89e8e62acc728934a20376bfe35e23966e7c7be466551833",
+    "research/evaluation/figures.py": "61556c32b9300934dd8ec3df79751cb853ec41f3127334600f142423046b5fb7",
+    "research/evaluation/metrics.py": "4ef663c16cf831e65623187ecd149815d201486662ddf9ab3030afcfa905ce8e",
+    "research/evaluation/__init__.py": "b9d1c5f64d528e6220e5daf5ae3acd3ccb1a3ef8f3acb2abb4757fd63a42508b",
+    "research/experiments/analyst.py": "55400fcb8a2e5f35da3389cc096c366f9ba37cbe6d72de1888a4a5321cd48889",
+    "research/experiments/nepal.py": "9904bb09696454583a3cafa500ccb9bd2b3a61cb9babc855232360b10f58f24c",
+    "research/experiments/__init__.py": "0ea98dd9e439dc20c4104e8da0ee1e2f40ab6586e9bbb381ac8b4751e9e3364f",
+    "research/registration/diagnostics.py": "1a45c6c06d279c56b22af59bae37380cfb1dabbc9e9ab82ccde27056121ee8b9",
+    "research/registration/__init__.py": "434a4efd3d4e7e54b4436b8d4210af35dd97080b1be20219c90e6d285b7f0e5f",
+    "research/datasets/acquire.py": "ca2319b5668e001b50613efc1d93bf0b2ae7fb78b5590e5877d28b4796d9dc2b",
+    "research/datasets/__init__.py": "0ffc18f28c4a3f8d3b8567ebce2a03ab0eaa2494e1121beb5fa109e8f1b35313",
+    "research/cases/urban.py": "fab67efd29fb1376e04f7ee5244cfa1acc1f949bee16f252e557a9085beb1713",
+    "jai_extension/investigation.py": "2a2856f6f8512766203fabe14c7affac793aff28f430f57ee1ab8135f8a198c5",
+    "jai_extension/server.py": "7d5395825effeecb6c1b001f52ac18a5ea8789e67ace359cc3e1aaa139d41a2e",
+    "jai_extension/terrain_exposure.py": "0d60f491cdc111e728d419be0546a328887f2c5d0513ef756a23c9ff4da7e1fd",
+    "scripts/verify_terrain_exposure.py": "d0d9969c9e166748c6f6e5dbef953bf5bc96899508c2d0543b83469332aed52e",
+    "scripts/verify_scientific_http.py": "6b750e4fbfc544cf81c6f92e6d68bbc444e5d579752bd78b0115c6660de68c6c"
+  }
+}

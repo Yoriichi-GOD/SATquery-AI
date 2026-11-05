@@ -5,6 +5,9 @@
   "bbox_source": "Declared exploratory window, not a surveyed settlement boundary",
   "analysis_crs": "EPSG:32643",
   "resolution_m": 90,
+  "source_sha256": {
+    "Copernicus_DSM_COG_30_N28_00_E077_00_DEM": "e596216203e2f993a6d11f9fb33ff9dfbcf83a57ae1a01d51b3ac5650d485bd9"
+  },
   "required_feature_width_m": 5,
   "stream_area_m2": 100000,
   "stac_intervals": ["2020-10-01T00:00:00Z/2020-10-31T23:59:59Z", "2025-10-01T00:00:00Z/2025-10-31T23:59:59Z"],

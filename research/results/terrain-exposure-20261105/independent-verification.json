@@ -1,0 +1,18 @@
+{
+  "experiment_manifest_sha256": "ec1b65d7442e39f4eabe5c2addfe48ba5338df4ecd1a98536bdd63fa22567862",
+  "independent_hand_cells_checked": 6141,
+  "ranking_methods_recomputed": 8,
+  "reference_units": 22,
+  "relationship_statuses": {
+    "DIRECT_GEOMETRIC_INTERSECTION": 168,
+    "NOT_CONNECTED_WITHIN_DOMAIN": 315684,
+    "POTENTIAL_DOWNSTREAM_CONNECTION": 15590,
+    "UNAVAILABLE_EVIDENCE": 51843,
+    "UNRESOLVED_WITHIN_DEM_CELL": 586
+  },
+  "relationships_checked": 383871,
+  "scope": "Saved artifact integrity, numeric invariants, topology and metric recalculation; not scientific accuracy",
+  "source_manifest_sha256": "ffc0d671e3a36dec2da6a6dd66c1e1d472a11b50621f950a6c74e09c88413c62",
+  "status": "PASS",
+  "valid_dem_cells": 6141
+}

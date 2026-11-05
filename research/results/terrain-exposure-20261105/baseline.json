@@ -1,0 +1,16 @@
+{
+  "base_commit": "fe8a038d1aebe84e1385e228749901c4a18f7f36",
+  "baseline_failure": "Windows CRLF changed a frozen JSONL worktree hash; exact LF bytes restored and checkout attribute fixed",
+  "branch": "codex/scientific-terrain-20261105",
+  "day1_final_commit": "f3945347cf0f0a4581aa1480c8fa1501a25da4b4",
+  "day1_tag_object": "a08d2706397d359edb060993ee3a14374b3d136f",
+  "historical_evidence_changed": false,
+  "history_rewritten": false,
+  "initial_tests": {
+    "errors": 1,
+    "passed": 257,
+    "run": 258
+  },
+  "original_main_changed": false,
+  "original_worktree_state": []
+}

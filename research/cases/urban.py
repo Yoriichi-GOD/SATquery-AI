@@ -51,7 +51,9 @@ def run(config_path,cache,output,with_discovery=True):
     receipts=[];paths=[]
     for name,url in tiles(config['bbox_wgs84']):
         p=cache/(name+'.tif')
-        receipts.append(download(url,p,license_url=LICENSE));paths.append(p)
+        expected=config.get('source_sha256',{}).get(name)
+        if expected is None:raise ValueError('Pin the public terrain source hash before analytical replay')
+        receipts.append(download(url,p,license_url=LICENSE,expected_sha256=expected));paths.append(p)
     bounds=transform_bounds('EPSG:4326',config['analysis_crs'],*config['bbox_wgs84'],densify_pts=21)
     resolution=config['resolution_m']
     left,bottom,right,top=bounds

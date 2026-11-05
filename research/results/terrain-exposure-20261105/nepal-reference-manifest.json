@@ -1,0 +1,13 @@
+{
+  "files": {
+    "evaluation-support.geojson": "b1f648195b01ff7df117eea4f671536d2390ba30e4004cf7c52afdb5a2e6ac66",
+    "freeze.json": "74c4f24003aebe072a10e5d3577351329d299a46cef4095a78fa8e26f8ec0bc2",
+    "metrics.csv": "6d8b191c16100f03c5ce9e4aaeafc9c779d613a19e67e3321826173e1cae06c8",
+    "metrics.json": "c94ea9eb77565389c8d5cd514213d99318a25c5f522513acfac11aeab52cef31",
+    "protocol.json": "365f9e71caff768511bacbc695673f813b9c2d7c728b235569ce0f4121533941",
+    "rows.json": "35f738cec31b43eb26873fc8115e2d154374e885f7098d390d1a3229e8a49c31"
+  },
+  "population": "GENUINE_REFERENCE_SCREENING_DIAGNOSTIC",
+  "source_config_sha256": "9f787d7daa14f8879e3c2fff81c78b471e601e6946aa7c3c3140737c76f4995f",
+  "state": "complete"
+}

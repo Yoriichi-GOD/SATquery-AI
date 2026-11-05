@@ -1,0 +1,28 @@
+{
+  "active_analyst_seconds": null,
+  "claim_policy": "No human productivity, percentage savings or participant-count claim",
+  "completed_operations": 40,
+  "human_manual_actions": null,
+  "human_participants": 0,
+  "limitations": [
+    "Prepared evidence shifts work into preprocessing; raw engine creation is excluded",
+    "Logical artifact opens are instrumented software operations, not human actions",
+    "OS/file caches and repeated same-case operations affect timings; no productivity inference"
+  ],
+  "methods": {
+    "satquery_prepared_evidence": {
+      "median_seconds": 0.005589439499996018,
+      "operations": 20
+    },
+    "scripted_gis": {
+      "median_seconds": 0.033207048000001294,
+      "operations": 20
+    }
+  },
+  "population": "SCRIPTED_OPERATIONS_NO_HUMAN_PARTICIPANTS",
+  "protocol_sha256": "7be17462657a5270fa7c0ec013b5d0d10bbcc0083edd9bea9ce71894b3a38bef",
+  "repeats": 5,
+  "rubric_matches": 40,
+  "source_run_manifest_sha256": "ffc0d671e3a36dec2da6a6dd66c1e1d472a11b50621f950a6c74e09c88413c62",
+  "timing_scope": "Prepared local artifacts; excludes model inference, terrain preprocessing, acquisition, UI and human decision time"
+}

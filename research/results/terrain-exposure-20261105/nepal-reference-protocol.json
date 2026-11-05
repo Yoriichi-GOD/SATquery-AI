@@ -1,0 +1,46 @@
+{
+  "acceptance": "This diagnostic cannot close class-compatible water/debris validation or H1-H3 by itself",
+  "area": "Saved Nepal raster footprint intersected with reference AOI, post-event image footprint and paired-valid SAR support",
+  "bootstrap_replicates": 500,
+  "candidate_layer": "water",
+  "confidence_ablation": "UNAVAILABLE: no calibrated source confidence exists; none invented",
+  "k": [
+    5,
+    10
+  ],
+  "label_field": "damage_gra",
+  "layer": "transportationL_v1",
+  "methods": {
+    "A_image_only": "Post VV < -17 dB intersection-length fraction",
+    "B_image_temporal": "Frozen new-water-candidate intersection-length fraction",
+    "C_temporal_terrain": "Lexicographic: direct candidate intersection, potential D8 downstream path, negative along-path length",
+    "D_full_graph": "C with explicit source/pathway/receptor evidence and observation-coverage abstention",
+    "no_temporal_information": "A_image_only (targeted temporal ablation)",
+    "no_terrain_graph": "B_image_temporal (targeted graph ablation)",
+    "proximity_only": "Negative geometric distance to temporal candidate polygons",
+    "terrain_only": "Negative minimum flowpath HAND over receptor cells"
+  },
+  "minimum_fragment_length_m": 1.0,
+  "negative_grades": [
+    "No visible damage"
+  ],
+  "parameter_selection": "Fixed engineering baselines; no metric-driven tuning",
+  "positive_grades": [
+    "Destroyed",
+    "Damaged"
+  ],
+  "reference": "EMSR927_AOI01_GRA_PRODUCT_v1.gpkg",
+  "reference_sha256": "56b3d9e0ea870a025492d84b61a0462b21c486bef52a903ccd0bb00b33c17920",
+  "registration_prerequisite": "Record optical audit and unvalidated cross-sensor/absolute alignment; withhold validated accuracy claim",
+  "scientific_status": "EXPLORATORY_ASSOCIATION_NOT_EXPOSURE_OR_DAMAGE_VALIDATION",
+  "seed": 20261105,
+  "spatial_block_m": 500,
+  "split": "previously_inspected_development_replay",
+  "target_caveat": "Reference grade is the ranking target; potential connectivity is never re-labelled as damage. No visible damage is not proof of no exposure.",
+  "task": "Rank reference-graded road fragments for review using observed candidate/terrain proxies",
+  "task_id": "emsr927-road-grade-screening-diagnostic-v1",
+  "unit": "In-support fragment of an independently graded road segment; grade inherited from its source segment",
+  "unknown_grades": [
+    "Possibly damaged"
+  ]
+}

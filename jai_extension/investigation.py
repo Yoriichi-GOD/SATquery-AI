@@ -175,7 +175,15 @@ class InvestigationEngine:
         if years and years!={str(run['provenance'].get('event_time',''))[:4]}:
             return {**base,'state':'abstained','answer':'Requested year does not match the selected saved event.'}
         record('get_run',run,time.perf_counter()-started);check();started=time.perf_counter()
-        value=self.terrain_exposure.for_flood_run(run);check()
+        try:
+            value=self.terrain_exposure.for_flood_run(run)
+        except BridgeError as error:
+            if error.status not in {404,422}:raise
+            unavailable={'status':'NOT_ASSESSED','reason':error.message}
+            check();record('get_terrain_exposure',unavailable,time.perf_counter()-started)
+            return {**base,'state':'abstained','answer':'Terrain-conditioned exposure is NOT_ASSESSED: '+error.message,
+                    'tool_outputs':{'get_run':run,'get_terrain_exposure':unavailable}}
+        check()
         record('get_terrain_exposure',value,time.perf_counter()-started)
         summary=value['summary'];sources=value['sources']
         claims=[{'label':label,'value':summary['hydrology'][key],'unit':unit,'source':0,'field':'/hydrology/'+key}

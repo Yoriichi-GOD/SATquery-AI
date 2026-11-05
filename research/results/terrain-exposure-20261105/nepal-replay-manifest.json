@@ -1,0 +1,114 @@
+{
+  "config_sha256": "423867b626a89e70061e4cb1623238197a2e88530b08e3b9929a3610009de6e3",
+  "files": {
+    "aspect_deg.tif": "8e7526c53edf0c7db9fe3cf014150b7f5db5e47145e148eea93046dd7d2b68c8",
+    "catchment_outlet.tif": "def4e7b51fc06142593986d66d1c26a507f465548f16a7120b539e966963cd97",
+    "conditioned_dem.tif": "ea5ae1a3b9eef9d14642804c9ec45c5dbef9d7a4d377387367d5bba08b2a27e3",
+    "configuration.json": "370523718da6fb1dcf444c3a472c85f477df84c0e0db0297cdeb02af496b7979",
+    "contributing_area_m2.tif": "a64f7903d22ecee7ff09d40d1038c4b4fa57854dcceeb06fb6bd14b33ffb6c59",
+    "downstream_index.tif": "ce1cd045505352bee4a711ac06c3751da2aa9ddd0c514a4f04a42a03026dca9d",
+    "drainage.geojson": "b930eef0f856e420f7995de49d449e677c328b2e0563598589d5448df9650238",
+    "fill_depth.tif": "4e54ec580bdf92dc2fd43031b56bde297c2c7153f59a4b8db2cf6bf296bc8a40",
+    "flow_direction_d8.tif": "a852a3efc5632924e1004b848fc7aba0e44b91a0bb32c90032ad2855c7f27823",
+    "graph.json": "e94a46b68d9ba9d5b978b62a5f1fac79ea21cb85447fe454cf76d2f2ff01e0ea",
+    "hand_m.tif": "1cec9e9241efd8fb0a49cc6b7be016f2d65f12df1d428f0568a388df929bb7f5",
+    "nodes.geojson": "1b4d20ed4c04b24bb38361f09e528c9c97ba86c6729b7847f99aac899ad30bb2",
+    "original_dem.tif": "e291ccf2cbc4c36a4543093610ff21da392b34968103a3ce6d9fccd876b45424",
+    "receptors.json": "04e0781c67c94a34279ab1daa88ac4f3cc8351c5b398be157185c6062193a351",
+    "relationships.csv": "8ed3f74a6ca421e6ef77b3bfcd341b3a0072be1c40dddcd7d9e2a7af0e35f338",
+    "slope_deg.tif": "7f993c4f0189bde6f2a166d05b44c43ce8e64340179efc377a051ba31b73e177",
+    "streams.tif": "c441f6827c634da7b61561878796620350d04e9026f90e0c99d2ebab32f4c715",
+    "summary.json": "b2d48fd827df1ed5763048acc922a511b0064eb943fd430de237904fcea10d98"
+  },
+  "original_sources": {
+    "debris": {
+      "band": 1,
+      "dataset": "Retained Sentinel observations / existing Flood Lab candidate mask",
+      "descriptions": [
+        null
+      ],
+      "filename": "debris-candidates.tif",
+      "frozen_artifact_sha256": "d3f1849515bf76874a04988fc3d93fba8f21ee3b3f63bdae5f3ee5e0042e69d3",
+      "grid": {
+        "cell_area_m2": 100.0,
+        "cell_size_m": [
+          10.0,
+          10.0
+        ],
+        "crs": "EPSG:32645",
+        "shape": [
+          437,
+          254
+        ],
+        "transform": [
+          10.0,
+          0.0,
+          335340.0,
+          0.0,
+          -10.0,
+          3119190.0
+        ]
+      },
+      "license": "Contains modified Copernicus Sentinel data 2026",
+      "nodata": 255.0,
+      "sha256": "d3f1849515bf76874a04988fc3d93fba8f21ee3b3f63bdae5f3ee5e0042e69d3",
+      "tags": {
+        "AREA_OR_POINT": "Area"
+      }
+    },
+    "infrastructure": {
+      "dataset": "Historical OpenStreetMap",
+      "filename": "layers.geojson",
+      "license": "ODbL",
+      "sha256": "449d23c335eb31455d8b77517cd04aa0a7f7e0d9e4f680b61a3b1173f2dd08fe",
+      "url": "https://www.openstreetmap.org/copyright"
+    },
+    "terrain": {
+      "buffer_m": 1800,
+      "dataset": "Copernicus GLO-90 DSM / AWS 2021 release",
+      "license": "https://registry.opendata.aws/copernicus-dem/",
+      "observation_time": "Historical DSM; exact acquisition dates unavailable",
+      "resampling": "Bilinear to metric 90m grid; NoData retained",
+      "sha256": "2ef95b224a1290ca7661316642efd8dbb8b824b41acd52732962892cce26fe96",
+      "source_url": "https://copernicus-dem-90m.s3.amazonaws.com/Copernicus_DSM_COG_30_N28_00_E085_00_DEM/Copernicus_DSM_COG_30_N28_00_E085_00_DEM.tif",
+      "vertical_datum": "EGM2008 orthometric; DSM includes surface objects"
+    },
+    "water": {
+      "band": 1,
+      "dataset": "Retained Sentinel observations / existing Flood Lab candidate mask",
+      "descriptions": [
+        null
+      ],
+      "filename": "prediction.tif",
+      "frozen_artifact_sha256": "b49b5b5978cd3606f2138306fa8bb687d65c268285f8816a660bbf0444d1ffa4",
+      "grid": {
+        "cell_area_m2": 100.0,
+        "cell_size_m": [
+          10.0,
+          10.0
+        ],
+        "crs": "EPSG:32645",
+        "shape": [
+          437,
+          254
+        ],
+        "transform": [
+          10.0,
+          0.0,
+          335340.0,
+          0.0,
+          -10.0,
+          3119190.0
+        ]
+      },
+      "license": "Contains modified Copernicus Sentinel data 2026",
+      "nodata": 255.0,
+      "sha256": "b49b5b5978cd3606f2138306fa8bb687d65c268285f8816a660bbf0444d1ffa4",
+      "tags": {
+        "AREA_OR_POINT": "Area"
+      }
+    }
+  },
+  "schema_version": "satquery.terrain-exposure/1",
+  "state": "complete"
+}

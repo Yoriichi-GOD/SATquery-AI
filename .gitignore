@@ -43,6 +43,7 @@ paired_lab/evidence/submission-20260926/eos04-frs2-inventory.json
 !/research/
 /research/*
 !/research/__init__.py
+!/research/README.md
 !/research/requirements-scientific*.txt
 !/research/terrain_exposure/
 !/research/datasets/

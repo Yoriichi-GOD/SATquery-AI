@@ -4,6 +4,32 @@ Started 5 November 2026. Branch `codex/scientific-terrain-20261105`, isolated wo
 Baseline commit: `fe8a038d1aebe84e1385e228749901c4a18f7f36`; original main was clean.
 Immutable `day1-final`: `f3945347cf0f0a4581aa1480c8fa1501a25da4b4`.
 
+## Current milestone closure
+
+**PARTIAL — independently validated exposure assessment has not been established.**
+The initial audit below is retained as history. Current evidence and completion gates are in the
+[measured report](../../research/results/terrain-exposure-20261105/REPORT.md) and
+[machine-readable status](../../research/results/terrain-exposure-20261105/completion.json).
+
+| Priority | Requirement | Current status |
+|---|---|---|
+| P0 | Typed terrain graph, metric hydrology and genuine terrain replay | PASS for coarse numerical/geometry scope |
+| P0 | Infrastructure relationship exports | PARTIAL; operational, but 90 m insufficient for infrastructure scale |
+| P0 | Independent class-compatible Nepal exposure/extent validation | BLOCKED; suitable labels and registration unavailable |
+| P0 | Controlled ablations | PARTIAL; eight methods on 22 explicitly graded road fragments, diagnostic target |
+| P1 | Registration | PARTIAL; synthetic transforms tested, genuine optical audit unavailable |
+| P1 | Urban transfer | PARTIAL; two genuine public DSM runs, ingestion and resolution refusals |
+| P1 | Reproducibility | PARTIAL; pinned CPU/public examples, externally provisioned Nepal source dependencies |
+| P2 | Analyst harness | PASS for 40 scripted operations; no human productivity evidence |
+| P0 | Application/evidence preservation | PASS; 287 Python tests, retained 6/5 helper checks, 5 UI contracts and genuine HTTP checks |
+
+The new branch has additive commits `bf05367`, `9a6c32a` and `055fa8b` plus the final closure commit.
+No original benchmark score, model checkpoint, Day 1 tag or main history was rewritten.
+The complete local exports are under `research/results/local-20261105/`; large third-party data remain ignored.
+Do not start parameter tuning on the inspected reference labels. The next dependency is compatible independent
+Nepal labels, trustworthy registration and appropriate terrain/drainage data. Rendered UI behaviour and human
+analyst improvements remain unverified.
+
 ## Definition of done
 
 | Priority | Requirement | Initial status | Acceptance evidence |

@@ -1,0 +1,35 @@
+{
+  "sources": [
+    {
+      "bytes": 5180973,
+      "credentials_used": false,
+      "etag": "\"9c5e0478014927405f9183ced099a9ab\"",
+      "license_url": "https://registry.opendata.aws/copernicus-dem/",
+      "retrieved_utc": "2026-11-05T04:59:39.939864+00:00",
+      "role": "input",
+      "sha256": "79a8de0eff48fad58c043829d93a37a2fecfa762ee8e7bb0404483e328260146",
+      "url": "https://copernicus-dem-90m.s3.amazonaws.com/Copernicus_DSM_COG_30_N25_00_E082_00_DEM/Copernicus_DSM_COG_30_N25_00_E082_00_DEM.tif"
+    },
+    {
+      "bytes": 4960629,
+      "credentials_used": false,
+      "etag": "\"40f1d54d24d95f7ddbf7193be78e5f64\"",
+      "license_url": "https://registry.opendata.aws/copernicus-dem/",
+      "retrieved_utc": "2026-11-05T04:59:42.253128+00:00",
+      "role": "input",
+      "sha256": "5c26010fba8fd2d5413291c35394ff2c78141fdc4b5d3f68c745606b712bc047",
+      "url": "https://copernicus-dem-90m.s3.amazonaws.com/Copernicus_DSM_COG_30_N25_00_E083_00_DEM/Copernicus_DSM_COG_30_N25_00_E083_00_DEM.tif"
+    },
+    {
+      "bytes": 4788792,
+      "credentials_used": false,
+      "etag": "\"6558cb40ff02f572716740ede63c49a7\"",
+      "license_url": "https://registry.opendata.aws/copernicus-dem/",
+      "retrieved_utc": "2026-11-05T04:59:40.365033+00:00",
+      "role": "input",
+      "sha256": "e596216203e2f993a6d11f9fb33ff9dfbcf83a57ae1a01d51b3ac5650d485bd9",
+      "url": "https://copernicus-dem-90m.s3.amazonaws.com/Copernicus_DSM_COG_30_N28_00_E077_00_DEM/Copernicus_DSM_COG_30_N28_00_E077_00_DEM.tif"
+    }
+  ],
+  "status": "PASS"
+}

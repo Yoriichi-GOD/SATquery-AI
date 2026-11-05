@@ -1,0 +1,29 @@
+{
+  "configuration_sha256": "75dd50429d56d629ea52f9340506b2db7d746d84808b11c0ea4397f99b5e8396",
+  "files": {
+    "catchment_outlet.tif": "76f01bf276b235d5102c6d140636367c82bc0cf34d3a52a7cdb6c41d299bbb18",
+    "conditioned_dem.tif": "d9d89e06d6bf50be1cfae146317595df2fb83d97e87a73caf8dbf184590047c4",
+    "contributing_area_m2.tif": "afeedfb8b597d650dd8a73a9ccb11952b705f372989334097759cad487c64454",
+    "fill_depth.tif": "c13183ce66cf9a1654007da13c0dfa2498661291e83c9b12e15766d49cd40ff6",
+    "flow_direction_d8.tif": "f6f9b02493d7cc4557b4a9d927ee97e276a952317e844345909bcaafcc8c9d05",
+    "hand_m.tif": "599b10edec052a0acbc181145e6954929fed1f417e193dab843591d0596d5cbe",
+    "original_dem.tif": "e0a017dbb0bf456fffa863d9689aec2aec3b6489a97eb3005e4c9b97c58f71e8",
+    "slope_deg.tif": "13ddb9a3254c40bea20692d4f7db5906d020fd3f1edc326da8089259d8057b71",
+    "stac-2020-10-01.json": "078431f88f9f4778a014014fea21c7a27c08772e7244af5bed76a9fb01c6897c",
+    "stac-2025-10-01.json": "514419594d43be2283b70faf5adeb818f75d5be4b7838e87b22355dd08373a82",
+    "summary.json": "f4a9794886c34c87baa3287da7fd2932f25ac0ce88b1e746b6c5e5c65338dac3"
+  },
+  "sources": [
+    {
+      "bytes": 4788792,
+      "credentials_used": false,
+      "etag": "\"6558cb40ff02f572716740ede63c49a7\"",
+      "license_url": "https://registry.opendata.aws/copernicus-dem/",
+      "retrieved_utc": "2026-11-05T04:59:40.365033+00:00",
+      "role": "input",
+      "sha256": "e596216203e2f993a6d11f9fb33ff9dfbcf83a57ae1a01d51b3ac5650d485bd9",
+      "url": "https://copernicus-dem-90m.s3.amazonaws.com/Copernicus_DSM_COG_30_N28_00_E077_00_DEM/Copernicus_DSM_COG_30_N28_00_E077_00_DEM.tif"
+    }
+  ],
+  "state": "complete"
+}
