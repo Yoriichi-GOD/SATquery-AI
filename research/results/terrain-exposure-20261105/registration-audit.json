@@ -1,0 +1,158 @@
+{
+  "absolute_geolocation": "NOT_VALIDATED",
+  "common_valid_fraction": 0.2991044883691598,
+  "corrected_raster_created": false,
+  "cross_sensor": {
+    "reason": "Optical-to-SAR matching not validated",
+    "status": "UNAVAILABLE"
+  },
+  "grid_a": {
+    "cell_area_m2": 100.0,
+    "cell_size_m": [
+      10.0,
+      10.0
+    ],
+    "crs": "EPSG:32645",
+    "shape": [
+      437,
+      254
+    ],
+    "transform": [
+      10.0,
+      0.0,
+      335340.0,
+      0.0,
+      -10.0,
+      3119190.0
+    ]
+  },
+  "grid_b": {
+    "cell_area_m2": 100.0,
+    "cell_size_m": [
+      10.0,
+      10.0
+    ],
+    "crs": "EPSG:32645",
+    "shape": [
+      437,
+      254
+    ],
+    "transform": [
+      10.0,
+      0.0,
+      335340.0,
+      0.0,
+      -10.0,
+      3119190.0
+    ]
+  },
+  "keypoints_a": 274,
+  "keypoints_b": 573,
+  "matches": 0,
+  "method": "SIFT mutual ratio matches; train-only RANSAC similarity; held-out residuals",
+  "modalities": [
+    "optical",
+    "optical"
+  ],
+  "physical_registration": "UNVERIFIED",
+  "population": "GENUINE_SAVED_OPTICAL_PAIR",
+  "reason": "INSUFFICIENT_TRUSTWORTHY_TIE_POINTS",
+  "resampling": "None; diagnostics only",
+  "sources": [
+    {
+      "band": 1,
+      "date": "2026-08-22",
+      "descriptions": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "filename": "default.tif",
+      "grid": {
+        "cell_area_m2": 100.0,
+        "cell_size_m": [
+          10.0,
+          10.0
+        ],
+        "crs": "EPSG:32645",
+        "shape": [
+          437,
+          254
+        ],
+        "transform": [
+          10.0,
+          0.0,
+          335340.0,
+          0.0,
+          -10.0,
+          3119190.0
+        ]
+      },
+      "nodata": null,
+      "quality_mask": "dataMask=1; SCL in 4,5,6; finite all seven bands",
+      "request_sha256": "eaa76d68c5ba7d0f1f70fe4a45d7a2ff9ec7c84d71aec2e1b5736b91c9741984",
+      "sensor": "Sentinel-2 L2A",
+      "sha256": "ed892dbf52413907ed7f9f0ae58aca3d716c2e5fb452a54a0218d7dba2b2691b",
+      "tags": {
+        "AREA_OR_POINT": "Area",
+        "TIFFTAG_RESOLUTIONUNIT": "1 (unitless)",
+        "TIFFTAG_XRESOLUTION": "1",
+        "TIFFTAG_YRESOLUTION": "1"
+      }
+    },
+    {
+      "band": 1,
+      "date": "2026-08-27",
+      "descriptions": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "filename": "default.tif",
+      "grid": {
+        "cell_area_m2": 100.0,
+        "cell_size_m": [
+          10.0,
+          10.0
+        ],
+        "crs": "EPSG:32645",
+        "shape": [
+          437,
+          254
+        ],
+        "transform": [
+          10.0,
+          0.0,
+          335340.0,
+          0.0,
+          -10.0,
+          3119190.0
+        ]
+      },
+      "nodata": null,
+      "quality_mask": "dataMask=1; SCL in 4,5,6; finite all seven bands",
+      "request_sha256": "0c16d7bbf25c39a9076a2399ca186c42a5a1727a86b9759aafde8e5c264c4729",
+      "sensor": "Sentinel-2 L2A",
+      "sha256": "964b26a5c8f218e6605c09fd929bac7849abd3acc4c3b334aa714809f89069a1",
+      "tags": {
+        "AREA_OR_POINT": "Area",
+        "TIFFTAG_RESOLUTIONUNIT": "1 (unitless)",
+        "TIFFTAG_XRESOLUTION": "1",
+        "TIFFTAG_YRESOLUTION": "1"
+      }
+    }
+  ],
+  "status": "UNAVAILABLE",
+  "threshold_pixels": 1.5,
+  "valid_a_fraction": 0.33881691562010124,
+  "valid_b_fraction": 0.8006630750103605,
+  "vertical_datum": "Not inferred from image grids"
+}

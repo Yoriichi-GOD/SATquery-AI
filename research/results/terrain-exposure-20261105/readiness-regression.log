@@ -1,0 +1,9 @@
+/mnt/c/Users/nrgen/.codex/.chatgpt-projects/g-p-6ad52225bccc8191b1ed5af2ed6b0646/scientific-development/repo/scripts/audit_quality_readiness.py:24: PendingDeprecationWarning: Use `@` matmul instead of `*` mul operator for matrix multiplication
+  return max(float(np.linalg.norm(np.asarray((~a)*(b*p))-np.asarray(p))) for p in points)
+.../mnt/c/Users/nrgen/.codex/.chatgpt-projects/g-p-6ad52225bccc8191b1ed5af2ed6b0646/scientific-development/repo/scripts/test_quality_readiness.py:19: PendingDeprecationWarning: Use `@` matmul instead of `*` mul operator for matrix multiplication
+  self.assertEqual(grid_error(a,a*Affine.translation(3,4),512,512),5)
+..
+----------------------------------------------------------------------
+Ran 5 tests in 0.045s
+
+OK

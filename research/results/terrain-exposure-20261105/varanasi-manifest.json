@@ -1,0 +1,39 @@
+{
+  "configuration_sha256": "b32bc830b09abff01945073c4458298e2f7f535796e6206c059f03563ee73d2d",
+  "files": {
+    "catchment_outlet.tif": "2c817c7ddd36d3865323634b2b951b9051c82d1faa8dc9c64838b7e453ce40a8",
+    "conditioned_dem.tif": "c4e7b3482239cfe5ab83fbbd57b2877bfaf8e82e64fb1b28e442b76f0b8ff170",
+    "contributing_area_m2.tif": "498026a02ece90f9318ae8608478bd762cd9f53bf8153aedc7ed3b956b4511c1",
+    "fill_depth.tif": "9b2f1faa10d53f14a62a9ed88153716b45710a257b9c9c1928d0add2baf04f8e",
+    "flow_direction_d8.tif": "b1aeb9aeb557bab1d298f1ffb3f5c37c124f575d1ccf123729d217457ef7c929",
+    "hand_m.tif": "ef9cf32ae5bb82ca0aeb1a28a719adbb36c893768123c5f3f20e6a0a11e529e7",
+    "original_dem.tif": "809a290e81fc6a81390d5fc4f09767f7894da0b73ce5198d7c7de72427f2199c",
+    "slope_deg.tif": "1f7b6db7b47a8c65e092b122c1878015cd27e6ef1e9d17de7e854d9a332818e1",
+    "stac-2020-10-01.json": "37ce7224ae41ee69984cf3fb45e02b182723ef026c5e51b6e6f0ed1f269a17aa",
+    "stac-2025-10-01.json": "ac3781351f0cea9099e54972278a759bcb1305e88709076d73e6cc2851d928ec",
+    "summary.json": "59633691554f2201cb890975d24e6139b8598e9643d139c7abd11529050f03fc"
+  },
+  "sources": [
+    {
+      "bytes": 5180973,
+      "credentials_used": false,
+      "etag": "\"9c5e0478014927405f9183ced099a9ab\"",
+      "license_url": "https://registry.opendata.aws/copernicus-dem/",
+      "retrieved_utc": "2026-11-05T04:59:39.939864+00:00",
+      "role": "input",
+      "sha256": "79a8de0eff48fad58c043829d93a37a2fecfa762ee8e7bb0404483e328260146",
+      "url": "https://copernicus-dem-90m.s3.amazonaws.com/Copernicus_DSM_COG_30_N25_00_E082_00_DEM/Copernicus_DSM_COG_30_N25_00_E082_00_DEM.tif"
+    },
+    {
+      "bytes": 4960629,
+      "credentials_used": false,
+      "etag": "\"40f1d54d24d95f7ddbf7193be78e5f64\"",
+      "license_url": "https://registry.opendata.aws/copernicus-dem/",
+      "retrieved_utc": "2026-11-05T04:59:42.253128+00:00",
+      "role": "input",
+      "sha256": "5c26010fba8fd2d5413291c35394ff2c78141fdc4b5d3f68c745606b712bc047",
+      "url": "https://copernicus-dem-90m.s3.amazonaws.com/Copernicus_DSM_COG_30_N25_00_E083_00_DEM/Copernicus_DSM_COG_30_N25_00_E083_00_DEM.tif"
+    }
+  ],
+  "state": "complete"
+}

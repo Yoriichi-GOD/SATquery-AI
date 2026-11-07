@@ -1,2 +1,17 @@
 # Auto detect text files and perform LF normalization
 * text=auto
+
+# These source records are byte-hashed by the frozen evaluation manifest.
+*.jsonl text eol=lf
+/research/terrain_exposure/** text eol=lf
+/research/evaluation/** text eol=lf
+/research/experiments/** text eol=lf
+/research/cases/** text eol=lf
+/research/registration/** text eol=lf
+/research/datasets/** text eol=lf
+/research/requirements-scientific*.txt text eol=lf
+# Preserve exact bytes in the new content-addressed scientific receipts.
+/research/results/terrain-exposure-20261105/** -text
+/research/results/terrain-exposure-20261105/** whitespace=cr-at-eol
+# Generated scientific vector artwork is reviewed as a rendered image, not path text.
+/research/results/terrain-exposure-20261105/figures/*.svg -diff

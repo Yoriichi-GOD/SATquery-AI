@@ -1,0 +1,18 @@
+{
+  "case_id": "varanasi",
+  "role": "preliminary_coarse_terrain_transfer_development",
+  "bbox_wgs84": [82.95, 25.22, 83.08, 25.38],
+  "bbox_source": "Declared exploratory window, not authoritative river or municipal boundary",
+  "analysis_crs": "EPSG:32644",
+  "resolution_m": 90,
+  "source_sha256": {
+    "Copernicus_DSM_COG_30_N25_00_E082_00_DEM": "79a8de0eff48fad58c043829d93a37a2fecfa762ee8e7bb0404483e328260146",
+    "Copernicus_DSM_COG_30_N25_00_E083_00_DEM": "5c26010fba8fd2d5413291c35394ff2c78141fdc4b5d3f68c745606b712bc047"
+  },
+  "required_feature_width_m": 5,
+  "stream_area_m2": 100000,
+  "stac_intervals": ["2020-10-01T00:00:00Z/2020-10-31T23:59:59Z", "2025-10-01T00:00:00Z/2025-10-31T23:59:59Z"],
+  "literature": ["https://doi.org/10.1007/s44327-025-00051-9", "https://www.mdpi.com/2673-7086/5/4/69"],
+  "missing_inputs": ["Authoritative river/drainage corridors", "High-resolution bare-earth terrain", "Class-compatible flood references", "Calibrated multitemporal built-up maps"],
+  "legal_claims": "UNAVAILABLE: no cadastral or legal authorization records"
+}

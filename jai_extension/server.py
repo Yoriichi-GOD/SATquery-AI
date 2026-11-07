@@ -13,6 +13,7 @@ from .terrain import TerrainStore
 from .geo_context import GeoContext
 from .investigation import InvestigationEngine,JobManager,REGISTRY
 from .visual_context import VisualContext
+from .terrain_exposure import TerrainExposureStore,ARTIFACTS as SCIENTIFIC_ARTIFACTS
 from pydantic import BaseModel, StrictBool, Field, FiniteFloat
 from typing import Optional
 
@@ -54,7 +55,7 @@ class InvestigationRequest(BaseModel):
     profile: Optional[ProfileRequest] = None
 
 
-def attach(app, bridge, terrain=None, visual_root=None):
+def attach(app, bridge, terrain=None, visual_root=None, exposure_store=None):
     router = APIRouter(prefix="/api/flood")
     visuals = VisualContext(bridge, visual_root)
 
@@ -121,6 +122,22 @@ def attach(app, bridge, terrain=None, visual_root=None):
 
     app.include_router(router)
     if terrain is not None:
+        exposure_store=exposure_store or TerrainExposureStore(os.environ.get('JAI_TERRAIN_EXPOSURE_ROOT',str(terrain.root.parent/'terrain-exposure')))
+        scientific=APIRouter(prefix='/api/terrain-exposure')
+
+        @scientific.get('/runs')
+        def scientific_runs():return exposure_store.status()
+
+        @scientific.get('/runs/{run_id}')
+        def scientific_run(run_id:str):return exposure_store.detail(run_id)
+
+        @scientific.get('/runs/{run_id}/artifact/{name}')
+        def scientific_artifact(run_id:str,name:str):
+            raw,sha=exposure_store.verified(run_id,name)
+            return Response(raw,media_type=SCIENTIFIC_ARTIFACTS[name],headers={'X-Artifact-SHA256':sha,
+                'Content-Disposition':f'attachment; filename="{name}"','Cache-Control':'no-store','X-Content-Type-Options':'nosniff'})
+
+        app.include_router(scientific)
         geo=GeoContext(bridge,terrain)
         trouter = APIRouter(prefix="/api/terrain")
 
@@ -155,7 +172,7 @@ def attach(app, bridge, terrain=None, visual_root=None):
             return geo.coverage(run_id,scene_id)
 
         app.include_router(context)
-        manager=JobManager(terrain.root.parent/'investigations',lambda check:InvestigationEngine(FloodBridge(bridge.upstream,check=check),terrain))
+        manager=JobManager(terrain.root.parent/'investigations',lambda check:InvestigationEngine(FloodBridge(bridge.upstream,check=check),terrain,exposure_store))
         app.state.jai_investigations=manager
         app.add_event_handler('shutdown',manager.close)
         investigations=APIRouter(prefix='/api/investigations')

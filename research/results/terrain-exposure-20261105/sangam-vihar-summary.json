@@ -1,0 +1,120 @@
+{
+  "built_up_change": "UNAVAILABLE: categorical temporal maps not supplied; ingestion API implemented",
+  "case_id": "sangam-vihar",
+  "configuration": {
+    "analysis_crs": "EPSG:32643",
+    "bbox_source": "Declared exploratory window, not a surveyed settlement boundary",
+    "bbox_wgs84": [
+      77.225,
+      28.47,
+      77.28,
+      28.51
+    ],
+    "case_id": "sangam-vihar",
+    "legal_claims": "UNAVAILABLE: CSE report descriptions do not establish parcel-level legal status",
+    "literature": [
+      "https://www.cseindia.org/water-and-wastewater-visioning-for-dense-unplanned-urban-settlements-a-case-of-sangam-vihar-delhi-12617"
+    ],
+    "missing_inputs": [
+      "Georeferenced surveyed municipal drains/outlets",
+      "Street-scale bare-earth terrain or surveyed levels",
+      "Independent waterlogging labels",
+      "Calibrated multitemporal built-up maps"
+    ],
+    "required_feature_width_m": 5,
+    "resolution_m": 90,
+    "role": "preliminary_coarse_terrain_transfer_development",
+    "stac_intervals": [
+      "2020-10-01T00:00:00Z/2020-10-31T23:59:59Z",
+      "2025-10-01T00:00:00Z/2025-10-31T23:59:59Z"
+    ],
+    "stream_area_m2": 100000
+  },
+  "configuration_sha256": "75dd50429d56d629ea52f9340506b2db7d746d84808b11c0ea4397f99b5e8396",
+  "discovery": [
+    {
+      "file": "stac-2020-10-01.json",
+      "items": 14,
+      "status": "DISCOVERED_NOT_DOWNLOADED",
+      "truncated": true
+    },
+    {
+      "file": "stac-2025-10-01.json",
+      "items": 6,
+      "status": "DISCOVERED_NOT_DOWNLOADED",
+      "truncated": true
+    }
+  ],
+  "grid": {
+    "cell_area_m2": 8100.0,
+    "cell_size_m": [
+      90.0,
+      90.0
+    ],
+    "crs": "EPSG:32643",
+    "shape": [
+      51,
+      61
+    ],
+    "transform": [
+      90.0,
+      0.0,
+      717750.0,
+      0.0,
+      -90.0,
+      3155850.0
+    ]
+  },
+  "hydrology": {
+    "boundary_condition": "Open outer edge and NoData perimeter; external contributing area unavailable",
+    "conditioning": "fill",
+    "filled_cells": 181,
+    "flat_parent_routes": 181,
+    "flow_method": "D8 steepest descent; Priority-Flood parent on filled flats",
+    "hand_valid_cells": 3006,
+    "interpretation": "Potential topographic drainage; not flood/debris propagation or flood depth",
+    "maximum_fill_m": 11.501469960673376,
+    "outlet_accumulation_sum_cells": 3111,
+    "outlets": 30,
+    "stream_cells": 466,
+    "stream_threshold_m2": 100000,
+    "total_cells": 3111,
+    "valid_cells": 3111,
+    "valid_fraction": 1.0
+  },
+  "legal_claims": "UNAVAILABLE: CSE report descriptions do not establish parcel-level legal status",
+  "limitations": [
+    "Same generic drainage algorithm, not a zero-shot validated urban model",
+    "DSM is not bare-earth and has no kerbs, culverts or drain capacity",
+    "Window edges are open artificial outlets, not verified municipal outlets",
+    "Temporal STAC discovery is not processed change-detection imagery",
+    "Two-cell scale gate is necessary screening, not a sufficient physics criterion"
+  ],
+  "missing_inputs": [
+    "Georeferenced surveyed municipal drains/outlets",
+    "Street-scale bare-earth terrain or surveyed levels",
+    "Independent waterlogging labels",
+    "Calibrated multitemporal built-up maps"
+  ],
+  "population": "GENUINE_PUBLIC_DSM_COARSE_TRANSFER",
+  "resolution": {
+    "minimum_cells_across_feature": 2,
+    "required_feature_width_m": 5,
+    "status": "INSUFFICIENT_RESOLUTION",
+    "warning": "Sampling gate alone does not validate drains, elevations or flow."
+  },
+  "sources": [
+    {
+      "bytes": 4788792,
+      "credentials_used": false,
+      "etag": "\"6558cb40ff02f572716740ede63c49a7\"",
+      "license_url": "https://registry.opendata.aws/copernicus-dem/",
+      "retrieved_utc": "2026-11-05T04:59:40.365033+00:00",
+      "role": "input",
+      "sha256": "e596216203e2f993a6d11f9fb33ff9dfbcf83a57ae1a01d51b3ac5650d485bd9",
+      "url": "https://copernicus-dem-90m.s3.amazonaws.com/Copernicus_DSM_COG_30_N28_00_E077_00_DEM/Copernicus_DSM_COG_30_N28_00_E077_00_DEM.tif"
+    }
+  ],
+  "status": "COARSE_TERRAIN_COMPLETE_STREET_CONNECTIVITY_WITHHELD",
+  "urban_exposure": "UNAVAILABLE: no suitable surveyed drainage, receptor labels or high-resolution terrain"
+}

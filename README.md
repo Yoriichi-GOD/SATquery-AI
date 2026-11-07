@@ -23,6 +23,16 @@ SatQuery helps remote-sensing researchers and analysts ask questions about **pre
 
 *Actual product screen, captured 27 October 2026 from a new run of the supplied India example. The 49.56% shown is predicted water coverage in this crop, not accuracy. [Walk through this example](docs/REVIEWER_GUIDE.md#1-map-water-and-inspect-three-pathways) · [Capture provenance](docs/images/README.md).*
 
+## Terrain-conditioned scientific development — 5 November 2026
+
+This development branch adds a tested CPU drainage/evidence-graph engine, read-only investigation integration,
+genuine Nepal replay, independent-reference screening diagnostics and two public urban terrain examples.
+**Independent exposure validation remains incomplete.** The 90 m DSM is insufficient for building/street-scale
+connectivity; class-compatible Nepal water/debris/exposure labels and trustworthy registration are still missing.
+[Measured report](research/results/terrain-exposure-20261105/REPORT.md) ·
+[Reproduce the experiments](docs/research/REPRODUCIBILITY.md) ·
+[Scientific workspace](research/README.md). Historical benchmarks and `day1-final` remain unchanged.
+
 ## JAI 2026 submission, attribution and AI disclosure
 
 **The Road Home** investigates existing saved Syapru Besi, Nepal observations: separate water-change and possible debris/surface-change candidates, mapped infrastructure intersections and historical terrain context. This is a local research prototype, not an operational warning, damage, evacuation or prediction service. [Submission index](docs/jai/submission/SUBMISSION_INDEX.md) · [Presentation](docs/jai/submission/SATQuery_The_Road_Home_JAI2026.pptx) · [Demo script](docs/jai/DEMO_ROAD_HOME.md) · [Final implementation and limits](docs/jai/ROAD_HOME_DAY2_60MIN_RECEIPT.md).

@@ -1,0 +1,17 @@
+{
+  "case_id": "sangam-vihar",
+  "role": "preliminary_coarse_terrain_transfer_development",
+  "bbox_wgs84": [77.225, 28.47, 77.28, 28.51],
+  "bbox_source": "Declared exploratory window, not a surveyed settlement boundary",
+  "analysis_crs": "EPSG:32643",
+  "resolution_m": 90,
+  "source_sha256": {
+    "Copernicus_DSM_COG_30_N28_00_E077_00_DEM": "e596216203e2f993a6d11f9fb33ff9dfbcf83a57ae1a01d51b3ac5650d485bd9"
+  },
+  "required_feature_width_m": 5,
+  "stream_area_m2": 100000,
+  "stac_intervals": ["2020-10-01T00:00:00Z/2020-10-31T23:59:59Z", "2025-10-01T00:00:00Z/2025-10-31T23:59:59Z"],
+  "literature": ["https://www.cseindia.org/water-and-wastewater-visioning-for-dense-unplanned-urban-settlements-a-case-of-sangam-vihar-delhi-12617"],
+  "missing_inputs": ["Georeferenced surveyed municipal drains/outlets", "Street-scale bare-earth terrain or surveyed levels", "Independent waterlogging labels", "Calibrated multitemporal built-up maps"],
+  "legal_claims": "UNAVAILABLE: CSE report descriptions do not establish parcel-level legal status"
+}

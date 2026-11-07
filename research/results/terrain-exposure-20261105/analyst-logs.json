@@ -1,0 +1,662 @@
+[
+  {
+    "active_analyst_seconds": null,
+    "answer": {
+      "area_m2": 95600.0,
+      "pixels": 956,
+      "valid_pixels": 99858
+    },
+    "answer_sha256": "83ad8e0ed34d1adf7684b6aa3a988fb9f0d364986e49dd1239fff80f68db2eb9",
+    "completed": true,
+    "human_manual_actions": null,
+    "logical_artifact_reads": 1,
+    "method": "scripted_gis",
+    "repetition": 0,
+    "rubric_match": true,
+    "seconds": 0.2697140410000003,
+    "task_id": "water-measurement"
+  },
+  {
+    "active_analyst_seconds": null,
+    "answer": {
+      "area_m2": 95600.0,
+      "pixels": 956,
+      "valid_pixels": 99858
+    },
+    "answer_sha256": "83ad8e0ed34d1adf7684b6aa3a988fb9f0d364986e49dd1239fff80f68db2eb9",
+    "completed": true,
+    "human_manual_actions": null,
+    "logical_artifact_reads": 1,
+    "method": "satquery_prepared_evidence",
+    "repetition": 0,
+    "rubric_match": true,
+    "seconds": 0.0036316240000004996,
+    "task_id": "water-measurement"
+  },
+  {
+    "active_analyst_seconds": null,
+    "answer": {
+      "ids": [
+        "way/854115547",
+        "way/854115573"
+      ]
+    },
+    "answer_sha256": "f0e977c88961c7098c56b07598f29e37f6b0135350ec77d1062fb3ba210bdacd",
+    "completed": true,
+    "human_manual_actions": null,
+    "logical_artifact_reads": 2,
+    "method": "scripted_gis",
+    "repetition": 0,
+    "rubric_match": true,
+    "seconds": 0.20145852100000639,
+    "task_id": "candidate-building-intersections"
+  },
+  {
+    "active_analyst_seconds": null,
+    "answer": {
+      "ids": [
+        "way/854115547",
+        "way/854115573"
+      ]
+    },
+    "answer_sha256": "f0e977c88961c7098c56b07598f29e37f6b0135350ec77d1062fb3ba210bdacd",
+    "completed": true,
+    "human_manual_actions": null,
+    "logical_artifact_reads": 1,
+    "method": "satquery_prepared_evidence",
+    "repetition": 0,
+    "rubric_match": true,
+    "seconds": 0.010014540000000238,
+    "task_id": "candidate-building-intersections"
+  },
+  {
+    "active_analyst_seconds": null,
+    "answer": {
+      "status": "ABSTAIN_INSUFFICIENT_RESOLUTION"
+    },
+    "answer_sha256": "50ee21a54b3131a5219b8157e3afbc2d15dbc18ccd11a9ecdf02c6ca20011bc2",
+    "completed": true,
+    "human_manual_actions": null,
+    "logical_artifact_reads": 1,
+    "method": "scripted_gis",
+    "repetition": 0,
+    "rubric_match": true,
+    "seconds": 0.0034409380000042233,
+    "task_id": "downstream-building-assessment"
+  },
+  {
+    "active_analyst_seconds": null,
+    "answer": {
+      "status": "ABSTAIN_INSUFFICIENT_RESOLUTION"
+    },
+    "answer_sha256": "50ee21a54b3131a5219b8157e3afbc2d15dbc18ccd11a9ecdf02c6ca20011bc2",
+    "completed": true,
+    "human_manual_actions": null,
+    "logical_artifact_reads": 1,
+    "method": "satquery_prepared_evidence",
+    "repetition": 0,
+    "rubric_match": true,
+    "seconds": 0.0034363729999995485,
+    "task_id": "downstream-building-assessment"
+  },
+  {
+    "active_analyst_seconds": null,
+    "answer": {
+      "candidate_sha256": "b49b5b5978cd3606f2138306fa8bb687d65c268285f8816a660bbf0444d1ffa4",
+      "terrain_sha256": "2ef95b224a1290ca7661316642efd8dbb8b824b41acd52732962892cce26fe96"
+    },
+    "answer_sha256": "53871c81c442f7014994fa7bafd9b6e24118401df090ec3067bf1060af37ffc1",
+    "completed": true,
+    "human_manual_actions": null,
+    "logical_artifact_reads": 2,
+    "method": "scripted_gis",
+    "repetition": 0,
+    "rubric_match": true,
+    "seconds": 0.07422284500000131,
+    "task_id": "source-provenance"
+  },
+  {
+    "active_analyst_seconds": null,
+    "answer": {
+      "candidate_sha256": "b49b5b5978cd3606f2138306fa8bb687d65c268285f8816a660bbf0444d1ffa4",
+      "terrain_sha256": "2ef95b224a1290ca7661316642efd8dbb8b824b41acd52732962892cce26fe96"
+    },
+    "answer_sha256": "53871c81c442f7014994fa7bafd9b6e24118401df090ec3067bf1060af37ffc1",
+    "completed": true,
+    "human_manual_actions": null,
+    "logical_artifact_reads": 2,
+    "method": "satquery_prepared_evidence",
+    "repetition": 0,
+    "rubric_match": true,
+    "seconds": 0.0073841979999969,
+    "task_id": "source-provenance"
+  },
+  {
+    "active_analyst_seconds": null,
+    "answer": {
+      "area_m2": 95600.0,
+      "pixels": 956,
+      "valid_pixels": 99858
+    },
+    "answer_sha256": "83ad8e0ed34d1adf7684b6aa3a988fb9f0d364986e49dd1239fff80f68db2eb9",
+    "completed": true,
+    "human_manual_actions": null,
+    "logical_artifact_reads": 1,
+    "method": "satquery_prepared_evidence",
+    "repetition": 1,
+    "rubric_match": true,
+    "seconds": 0.0033994140000004336,
+    "task_id": "water-measurement"
+  },
+  {
+    "active_analyst_seconds": null,
+    "answer": {
+      "area_m2": 95600.0,
+      "pixels": 956,
+      "valid_pixels": 99858
+    },
+    "answer_sha256": "83ad8e0ed34d1adf7684b6aa3a988fb9f0d364986e49dd1239fff80f68db2eb9",
+    "completed": true,
+    "human_manual_actions": null,
+    "logical_artifact_reads": 1,
+    "method": "scripted_gis",
+    "repetition": 1,
+    "rubric_match": true,
+    "seconds": 0.013927844999997774,
+    "task_id": "water-measurement"
+  },
+  {
+    "active_analyst_seconds": null,
+    "answer": {
+      "ids": [
+        "way/854115547",
+        "way/854115573"
+      ]
+    },
+    "answer_sha256": "f0e977c88961c7098c56b07598f29e37f6b0135350ec77d1062fb3ba210bdacd",
+    "completed": true,
+    "human_manual_actions": null,
+    "logical_artifact_reads": 1,
+    "method": "satquery_prepared_evidence",
+    "repetition": 1,
+    "rubric_match": true,
+    "seconds": 0.00858452399999976,
+    "task_id": "candidate-building-intersections"
+  },
+  {
+    "active_analyst_seconds": null,
+    "answer": {
+      "ids": [
+        "way/854115547",
+        "way/854115573"
+      ]
+    },
+    "answer_sha256": "f0e977c88961c7098c56b07598f29e37f6b0135350ec77d1062fb3ba210bdacd",
+    "completed": true,
+    "human_manual_actions": null,
+    "logical_artifact_reads": 2,
+    "method": "scripted_gis",
+    "repetition": 1,
+    "rubric_match": true,
+    "seconds": 0.15209425999999837,
+    "task_id": "candidate-building-intersections"
+  },
+  {
+    "active_analyst_seconds": null,
+    "answer": {
+      "status": "ABSTAIN_INSUFFICIENT_RESOLUTION"
+    },
+    "answer_sha256": "50ee21a54b3131a5219b8157e3afbc2d15dbc18ccd11a9ecdf02c6ca20011bc2",
+    "completed": true,
+    "human_manual_actions": null,
+    "logical_artifact_reads": 1,
+    "method": "satquery_prepared_evidence",
+    "repetition": 1,
+    "rubric_match": true,
+    "seconds": 0.004034042999997212,
+    "task_id": "downstream-building-assessment"
+  },
+  {
+    "active_analyst_seconds": null,
+    "answer": {
+      "status": "ABSTAIN_INSUFFICIENT_RESOLUTION"
+    },
+    "answer_sha256": "50ee21a54b3131a5219b8157e3afbc2d15dbc18ccd11a9ecdf02c6ca20011bc2",
+    "completed": true,
+    "human_manual_actions": null,
+    "logical_artifact_reads": 1,
+    "method": "scripted_gis",
+    "repetition": 1,
+    "rubric_match": true,
+    "seconds": 0.0034329180000014503,
+    "task_id": "downstream-building-assessment"
+  },
+  {
+    "active_analyst_seconds": null,
+    "answer": {
+      "candidate_sha256": "b49b5b5978cd3606f2138306fa8bb687d65c268285f8816a660bbf0444d1ffa4",
+      "terrain_sha256": "2ef95b224a1290ca7661316642efd8dbb8b824b41acd52732962892cce26fe96"
+    },
+    "answer_sha256": "53871c81c442f7014994fa7bafd9b6e24118401df090ec3067bf1060af37ffc1",
+    "completed": true,
+    "human_manual_actions": null,
+    "logical_artifact_reads": 2,
+    "method": "satquery_prepared_evidence",
+    "repetition": 1,
+    "rubric_match": true,
+    "seconds": 0.007503905000000088,
+    "task_id": "source-provenance"
+  },
+  {
+    "active_analyst_seconds": null,
+    "answer": {
+      "candidate_sha256": "b49b5b5978cd3606f2138306fa8bb687d65c268285f8816a660bbf0444d1ffa4",
+      "terrain_sha256": "2ef95b224a1290ca7661316642efd8dbb8b824b41acd52732962892cce26fe96"
+    },
+    "answer_sha256": "53871c81c442f7014994fa7bafd9b6e24118401df090ec3067bf1060af37ffc1",
+    "completed": true,
+    "human_manual_actions": null,
+    "logical_artifact_reads": 2,
+    "method": "scripted_gis",
+    "repetition": 1,
+    "rubric_match": true,
+    "seconds": 0.03383519500000176,
+    "task_id": "source-provenance"
+  },
+  {
+    "active_analyst_seconds": null,
+    "answer": {
+      "area_m2": 95600.0,
+      "pixels": 956,
+      "valid_pixels": 99858
+    },
+    "answer_sha256": "83ad8e0ed34d1adf7684b6aa3a988fb9f0d364986e49dd1239fff80f68db2eb9",
+    "completed": true,
+    "human_manual_actions": null,
+    "logical_artifact_reads": 1,
+    "method": "scripted_gis",
+    "repetition": 2,
+    "rubric_match": true,
+    "seconds": 0.013635526999998149,
+    "task_id": "water-measurement"
+  },
+  {
+    "active_analyst_seconds": null,
+    "answer": {
+      "area_m2": 95600.0,
+      "pixels": 956,
+      "valid_pixels": 99858
+    },
+    "answer_sha256": "83ad8e0ed34d1adf7684b6aa3a988fb9f0d364986e49dd1239fff80f68db2eb9",
+    "completed": true,
+    "human_manual_actions": null,
+    "logical_artifact_reads": 1,
+    "method": "satquery_prepared_evidence",
+    "repetition": 2,
+    "rubric_match": true,
+    "seconds": 0.0034958170000010114,
+    "task_id": "water-measurement"
+  },
+  {
+    "active_analyst_seconds": null,
+    "answer": {
+      "ids": [
+        "way/854115547",
+        "way/854115573"
+      ]
+    },
+    "answer_sha256": "f0e977c88961c7098c56b07598f29e37f6b0135350ec77d1062fb3ba210bdacd",
+    "completed": true,
+    "human_manual_actions": null,
+    "logical_artifact_reads": 2,
+    "method": "scripted_gis",
+    "repetition": 2,
+    "rubric_match": true,
+    "seconds": 0.15761055600000162,
+    "task_id": "candidate-building-intersections"
+  },
+  {
+    "active_analyst_seconds": null,
+    "answer": {
+      "ids": [
+        "way/854115547",
+        "way/854115573"
+      ]
+    },
+    "answer_sha256": "f0e977c88961c7098c56b07598f29e37f6b0135350ec77d1062fb3ba210bdacd",
+    "completed": true,
+    "human_manual_actions": null,
+    "logical_artifact_reads": 1,
+    "method": "satquery_prepared_evidence",
+    "repetition": 2,
+    "rubric_match": true,
+    "seconds": 0.011024652000003243,
+    "task_id": "candidate-building-intersections"
+  },
+  {
+    "active_analyst_seconds": null,
+    "answer": {
+      "status": "ABSTAIN_INSUFFICIENT_RESOLUTION"
+    },
+    "answer_sha256": "50ee21a54b3131a5219b8157e3afbc2d15dbc18ccd11a9ecdf02c6ca20011bc2",
+    "completed": true,
+    "human_manual_actions": null,
+    "logical_artifact_reads": 1,
+    "method": "scripted_gis",
+    "repetition": 2,
+    "rubric_match": true,
+    "seconds": 0.0037410010000016314,
+    "task_id": "downstream-building-assessment"
+  },
+  {
+    "active_analyst_seconds": null,
+    "answer": {
+      "status": "ABSTAIN_INSUFFICIENT_RESOLUTION"
+    },
+    "answer_sha256": "50ee21a54b3131a5219b8157e3afbc2d15dbc18ccd11a9ecdf02c6ca20011bc2",
+    "completed": true,
+    "human_manual_actions": null,
+    "logical_artifact_reads": 1,
+    "method": "satquery_prepared_evidence",
+    "repetition": 2,
+    "rubric_match": true,
+    "seconds": 0.0037232490000036478,
+    "task_id": "downstream-building-assessment"
+  },
+  {
+    "active_analyst_seconds": null,
+    "answer": {
+      "candidate_sha256": "b49b5b5978cd3606f2138306fa8bb687d65c268285f8816a660bbf0444d1ffa4",
+      "terrain_sha256": "2ef95b224a1290ca7661316642efd8dbb8b824b41acd52732962892cce26fe96"
+    },
+    "answer_sha256": "53871c81c442f7014994fa7bafd9b6e24118401df090ec3067bf1060af37ffc1",
+    "completed": true,
+    "human_manual_actions": null,
+    "logical_artifact_reads": 2,
+    "method": "scripted_gis",
+    "repetition": 2,
+    "rubric_match": true,
+    "seconds": 0.034268550999996705,
+    "task_id": "source-provenance"
+  },
+  {
+    "active_analyst_seconds": null,
+    "answer": {
+      "candidate_sha256": "b49b5b5978cd3606f2138306fa8bb687d65c268285f8816a660bbf0444d1ffa4",
+      "terrain_sha256": "2ef95b224a1290ca7661316642efd8dbb8b824b41acd52732962892cce26fe96"
+    },
+    "answer_sha256": "53871c81c442f7014994fa7bafd9b6e24118401df090ec3067bf1060af37ffc1",
+    "completed": true,
+    "human_manual_actions": null,
+    "logical_artifact_reads": 2,
+    "method": "satquery_prepared_evidence",
+    "repetition": 2,
+    "rubric_match": true,
+    "seconds": 0.007144835999994825,
+    "task_id": "source-provenance"
+  },
+  {
+    "active_analyst_seconds": null,
+    "answer": {
+      "area_m2": 95600.0,
+      "pixels": 956,
+      "valid_pixels": 99858
+    },
+    "answer_sha256": "83ad8e0ed34d1adf7684b6aa3a988fb9f0d364986e49dd1239fff80f68db2eb9",
+    "completed": true,
+    "human_manual_actions": null,
+    "logical_artifact_reads": 1,
+    "method": "satquery_prepared_evidence",
+    "repetition": 3,
+    "rubric_match": true,
+    "seconds": 0.0035963939999987815,
+    "task_id": "water-measurement"
+  },
+  {
+    "active_analyst_seconds": null,
+    "answer": {
+      "area_m2": 95600.0,
+      "pixels": 956,
+      "valid_pixels": 99858
+    },
+    "answer_sha256": "83ad8e0ed34d1adf7684b6aa3a988fb9f0d364986e49dd1239fff80f68db2eb9",
+    "completed": true,
+    "human_manual_actions": null,
+    "logical_artifact_reads": 1,
+    "method": "scripted_gis",
+    "repetition": 3,
+    "rubric_match": true,
+    "seconds": 0.013533395000003168,
+    "task_id": "water-measurement"
+  },
+  {
+    "active_analyst_seconds": null,
+    "answer": {
+      "ids": [
+        "way/854115547",
+        "way/854115573"
+      ]
+    },
+    "answer_sha256": "f0e977c88961c7098c56b07598f29e37f6b0135350ec77d1062fb3ba210bdacd",
+    "completed": true,
+    "human_manual_actions": null,
+    "logical_artifact_reads": 1,
+    "method": "satquery_prepared_evidence",
+    "repetition": 3,
+    "rubric_match": true,
+    "seconds": 0.009248551999995414,
+    "task_id": "candidate-building-intersections"
+  },
+  {
+    "active_analyst_seconds": null,
+    "answer": {
+      "ids": [
+        "way/854115547",
+        "way/854115573"
+      ]
+    },
+    "answer_sha256": "f0e977c88961c7098c56b07598f29e37f6b0135350ec77d1062fb3ba210bdacd",
+    "completed": true,
+    "human_manual_actions": null,
+    "logical_artifact_reads": 2,
+    "method": "scripted_gis",
+    "repetition": 3,
+    "rubric_match": true,
+    "seconds": 0.1539704639999968,
+    "task_id": "candidate-building-intersections"
+  },
+  {
+    "active_analyst_seconds": null,
+    "answer": {
+      "status": "ABSTAIN_INSUFFICIENT_RESOLUTION"
+    },
+    "answer_sha256": "50ee21a54b3131a5219b8157e3afbc2d15dbc18ccd11a9ecdf02c6ca20011bc2",
+    "completed": true,
+    "human_manual_actions": null,
+    "logical_artifact_reads": 1,
+    "method": "satquery_prepared_evidence",
+    "repetition": 3,
+    "rubric_match": true,
+    "seconds": 0.003998432000003049,
+    "task_id": "downstream-building-assessment"
+  },
+  {
+    "active_analyst_seconds": null,
+    "answer": {
+      "status": "ABSTAIN_INSUFFICIENT_RESOLUTION"
+    },
+    "answer_sha256": "50ee21a54b3131a5219b8157e3afbc2d15dbc18ccd11a9ecdf02c6ca20011bc2",
+    "completed": true,
+    "human_manual_actions": null,
+    "logical_artifact_reads": 1,
+    "method": "scripted_gis",
+    "repetition": 3,
+    "rubric_match": true,
+    "seconds": 0.0035971579999980463,
+    "task_id": "downstream-building-assessment"
+  },
+  {
+    "active_analyst_seconds": null,
+    "answer": {
+      "candidate_sha256": "b49b5b5978cd3606f2138306fa8bb687d65c268285f8816a660bbf0444d1ffa4",
+      "terrain_sha256": "2ef95b224a1290ca7661316642efd8dbb8b824b41acd52732962892cce26fe96"
+    },
+    "answer_sha256": "53871c81c442f7014994fa7bafd9b6e24118401df090ec3067bf1060af37ffc1",
+    "completed": true,
+    "human_manual_actions": null,
+    "logical_artifact_reads": 2,
+    "method": "satquery_prepared_evidence",
+    "repetition": 3,
+    "rubric_match": true,
+    "seconds": 0.007377401999995925,
+    "task_id": "source-provenance"
+  },
+  {
+    "active_analyst_seconds": null,
+    "answer": {
+      "candidate_sha256": "b49b5b5978cd3606f2138306fa8bb687d65c268285f8816a660bbf0444d1ffa4",
+      "terrain_sha256": "2ef95b224a1290ca7661316642efd8dbb8b824b41acd52732962892cce26fe96"
+    },
+    "answer_sha256": "53871c81c442f7014994fa7bafd9b6e24118401df090ec3067bf1060af37ffc1",
+    "completed": true,
+    "human_manual_actions": null,
+    "logical_artifact_reads": 2,
+    "method": "scripted_gis",
+    "repetition": 3,
+    "rubric_match": true,
+    "seconds": 0.03669440699999882,
+    "task_id": "source-provenance"
+  },
+  {
+    "active_analyst_seconds": null,
+    "answer": {
+      "area_m2": 95600.0,
+      "pixels": 956,
+      "valid_pixels": 99858
+    },
+    "answer_sha256": "83ad8e0ed34d1adf7684b6aa3a988fb9f0d364986e49dd1239fff80f68db2eb9",
+    "completed": true,
+    "human_manual_actions": null,
+    "logical_artifact_reads": 1,
+    "method": "scripted_gis",
+    "repetition": 4,
+    "rubric_match": true,
+    "seconds": 0.01635838699999681,
+    "task_id": "water-measurement"
+  },
+  {
+    "active_analyst_seconds": null,
+    "answer": {
+      "area_m2": 95600.0,
+      "pixels": 956,
+      "valid_pixels": 99858
+    },
+    "answer_sha256": "83ad8e0ed34d1adf7684b6aa3a988fb9f0d364986e49dd1239fff80f68db2eb9",
+    "completed": true,
+    "human_manual_actions": null,
+    "logical_artifact_reads": 1,
+    "method": "satquery_prepared_evidence",
+    "repetition": 4,
+    "rubric_match": true,
+    "seconds": 0.003833653999997466,
+    "task_id": "water-measurement"
+  },
+  {
+    "active_analyst_seconds": null,
+    "answer": {
+      "ids": [
+        "way/854115547",
+        "way/854115573"
+      ]
+    },
+    "answer_sha256": "f0e977c88961c7098c56b07598f29e37f6b0135350ec77d1062fb3ba210bdacd",
+    "completed": true,
+    "human_manual_actions": null,
+    "logical_artifact_reads": 2,
+    "method": "scripted_gis",
+    "repetition": 4,
+    "rubric_match": true,
+    "seconds": 0.1624816530000004,
+    "task_id": "candidate-building-intersections"
+  },
+  {
+    "active_analyst_seconds": null,
+    "answer": {
+      "ids": [
+        "way/854115547",
+        "way/854115573"
+      ]
+    },
+    "answer_sha256": "f0e977c88961c7098c56b07598f29e37f6b0135350ec77d1062fb3ba210bdacd",
+    "completed": true,
+    "human_manual_actions": null,
+    "logical_artifact_reads": 1,
+    "method": "satquery_prepared_evidence",
+    "repetition": 4,
+    "rubric_match": true,
+    "seconds": 0.009742277999997384,
+    "task_id": "candidate-building-intersections"
+  },
+  {
+    "active_analyst_seconds": null,
+    "answer": {
+      "status": "ABSTAIN_INSUFFICIENT_RESOLUTION"
+    },
+    "answer_sha256": "50ee21a54b3131a5219b8157e3afbc2d15dbc18ccd11a9ecdf02c6ca20011bc2",
+    "completed": true,
+    "human_manual_actions": null,
+    "logical_artifact_reads": 1,
+    "method": "scripted_gis",
+    "repetition": 4,
+    "rubric_match": true,
+    "seconds": 0.003530974000000242,
+    "task_id": "downstream-building-assessment"
+  },
+  {
+    "active_analyst_seconds": null,
+    "answer": {
+      "status": "ABSTAIN_INSUFFICIENT_RESOLUTION"
+    },
+    "answer_sha256": "50ee21a54b3131a5219b8157e3afbc2d15dbc18ccd11a9ecdf02c6ca20011bc2",
+    "completed": true,
+    "human_manual_actions": null,
+    "logical_artifact_reads": 1,
+    "method": "satquery_prepared_evidence",
+    "repetition": 4,
+    "rubric_match": true,
+    "seconds": 0.0035246200000003114,
+    "task_id": "downstream-building-assessment"
+  },
+  {
+    "active_analyst_seconds": null,
+    "answer": {
+      "candidate_sha256": "b49b5b5978cd3606f2138306fa8bb687d65c268285f8816a660bbf0444d1ffa4",
+      "terrain_sha256": "2ef95b224a1290ca7661316642efd8dbb8b824b41acd52732962892cce26fe96"
+    },
+    "answer_sha256": "53871c81c442f7014994fa7bafd9b6e24118401df090ec3067bf1060af37ffc1",
+    "completed": true,
+    "human_manual_actions": null,
+    "logical_artifact_reads": 2,
+    "method": "scripted_gis",
+    "repetition": 4,
+    "rubric_match": true,
+    "seconds": 0.032578901000000826,
+    "task_id": "source-provenance"
+  },
+  {
+    "active_analyst_seconds": null,
+    "answer": {
+      "candidate_sha256": "b49b5b5978cd3606f2138306fa8bb687d65c268285f8816a660bbf0444d1ffa4",
+      "terrain_sha256": "2ef95b224a1290ca7661316642efd8dbb8b824b41acd52732962892cce26fe96"
+    },
+    "answer_sha256": "53871c81c442f7014994fa7bafd9b6e24118401df090ec3067bf1060af37ffc1",
+    "completed": true,
+    "human_manual_actions": null,
+    "logical_artifact_reads": 2,
+    "method": "satquery_prepared_evidence",
+    "repetition": 4,
+    "rubric_match": true,
+    "seconds": 0.008265116000004014,
+    "task_id": "source-provenance"
+  }
+]

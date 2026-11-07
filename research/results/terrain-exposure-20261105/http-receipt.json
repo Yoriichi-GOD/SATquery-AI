@@ -1,0 +1,421 @@
+{
+  "abstention_rate": 0.8333333333333334,
+  "abstentions": 5,
+  "base": "http://127.0.0.1:18868",
+  "checks": [
+    {
+      "path": "/",
+      "sha256": "d034f08adc9fdf5238a2e026bceeabe5282e12476c8e40d6a6b7048c00875a1b",
+      "status": 200
+    },
+    {
+      "path": "/api/terrain-exposure/runs",
+      "sha256": "2c0c36e7e136039eec47e4b68975a9d45c3552d93bf1f0b2c23e71c8a5235a04",
+      "status": 200
+    },
+    {
+      "path": "/api/terrain-exposure/runs/terrain-exposure-nepal",
+      "sha256": "c7848720dff2385ce494b054ceacbcb6dd0844df3843e155258d362dfdc8daf5",
+      "status": 200
+    },
+    {
+      "path": "/api/terrain-exposure/runs/terrain-exposure-nepal/artifact/summary.json",
+      "sha256": "b2d48fd827df1ed5763048acc922a511b0064eb943fd430de237904fcea10d98",
+      "status": 200
+    },
+    {
+      "path": "/api/terrain-exposure/runs/terrain-exposure-nepal/artifact/receptors.json",
+      "sha256": "04e0781c67c94a34279ab1daa88ac4f3cc8351c5b398be157185c6062193a351",
+      "status": 200
+    },
+    {
+      "path": "/api/terrain-exposure/runs/not-a-run",
+      "sha256": "e074769273cd4b61f17dfad38389df1766a2b0df7b032e69c60c37999c0ea074",
+      "status": 404
+    },
+    {
+      "path": "/api/terrain-exposure/runs/terrain-exposure-nepal/artifact/secret",
+      "sha256": "4bede885f404e8a57bc6ea8049b572cdf65cf52dc6840cb36585c039b5025b39",
+      "status": 404
+    },
+    {
+      "path": "/api/flood/runs/event-fe47db331390",
+      "sha256": "ac52203d19c193e9868e13e5eeb4919e2a75e0a79b1158787f00f533faf4879c",
+      "status": 200
+    },
+    {
+      "path": "/api/flood/runs/event-fe47db331390/debris",
+      "sha256": "74b7708bda85addcaeef0ebfb5a2fc7d271fa09593b6f7c56071bab330bf159a",
+      "status": 200
+    },
+    {
+      "path": "/api/investigations/investigation-bb26f67d3bbe441f887a75a36e846a19",
+      "sha256": "10294c19ef2d3bf00af711801b34efb178f4c3a74099a370eb94981bf95c96cf",
+      "status": 200
+    },
+    {
+      "path": "/api/investigations/investigation-bb26f67d3bbe441f887a75a36e846a19",
+      "sha256": "b1d49e8353d990085bc01efbbdb5d8834349147e601a9d13b7461305dd4ca4f2",
+      "status": 200
+    },
+    {
+      "path": "/api/investigations/investigation-bb26f67d3bbe441f887a75a36e846a19",
+      "sha256": "b1d49e8353d990085bc01efbbdb5d8834349147e601a9d13b7461305dd4ca4f2",
+      "status": 200
+    },
+    {
+      "path": "/api/investigations/investigation-bb26f67d3bbe441f887a75a36e846a19",
+      "sha256": "b1d49e8353d990085bc01efbbdb5d8834349147e601a9d13b7461305dd4ca4f2",
+      "status": 200
+    },
+    {
+      "path": "/api/investigations/investigation-bb26f67d3bbe441f887a75a36e846a19",
+      "sha256": "b1d49e8353d990085bc01efbbdb5d8834349147e601a9d13b7461305dd4ca4f2",
+      "status": 200
+    },
+    {
+      "path": "/api/investigations/investigation-bb26f67d3bbe441f887a75a36e846a19",
+      "sha256": "b1d49e8353d990085bc01efbbdb5d8834349147e601a9d13b7461305dd4ca4f2",
+      "status": 200
+    },
+    {
+      "path": "/api/investigations/investigation-bb26f67d3bbe441f887a75a36e846a19",
+      "sha256": "b1d49e8353d990085bc01efbbdb5d8834349147e601a9d13b7461305dd4ca4f2",
+      "status": 200
+    },
+    {
+      "path": "/api/investigations/investigation-bb26f67d3bbe441f887a75a36e846a19",
+      "sha256": "5f0d4afa21f119e07afe5c1ccd60bdb7f71bce2f45567a6fab9c83862b5709e3",
+      "status": 200
+    },
+    {
+      "path": "/api/investigations/investigation-bb26f67d3bbe441f887a75a36e846a19",
+      "sha256": "7632723dc3b952e905ea2a1622d01609d93e92e95d95d484630772f5dda675e8",
+      "status": 200
+    },
+    {
+      "path": "/api/terrain-exposure/runs/terrain-exposure-nepal/artifact/summary.json",
+      "sha256": "b2d48fd827df1ed5763048acc922a511b0064eb943fd430de237904fcea10d98",
+      "status": 200
+    },
+    {
+      "path": "/api/terrain-exposure/runs/terrain-exposure-nepal/artifact/summary.json",
+      "sha256": "b2d48fd827df1ed5763048acc922a511b0064eb943fd430de237904fcea10d98",
+      "status": 200
+    },
+    {
+      "path": "/api/terrain-exposure/runs/terrain-exposure-nepal/artifact/summary.json",
+      "sha256": "b2d48fd827df1ed5763048acc922a511b0064eb943fd430de237904fcea10d98",
+      "status": 200
+    },
+    {
+      "path": "/api/investigations/investigation-e2ccc29cc4a9451ca50d15fddbab89e4",
+      "sha256": "6a9a05c012d6a68f4ad0cdcb36d504fbe344213b0c162bdb6a6bdfdbbdefb6bd",
+      "status": 200
+    },
+    {
+      "path": "/api/investigations/investigation-e2ccc29cc4a9451ca50d15fddbab89e4",
+      "sha256": "097ff49287d2cdc196593f341273215af2aab45a6602aaaa87ee0764e5600457",
+      "status": 200
+    },
+    {
+      "path": "/api/investigations/investigation-e2ccc29cc4a9451ca50d15fddbab89e4",
+      "sha256": "097ff49287d2cdc196593f341273215af2aab45a6602aaaa87ee0764e5600457",
+      "status": 200
+    },
+    {
+      "path": "/api/investigations/investigation-e2ccc29cc4a9451ca50d15fddbab89e4",
+      "sha256": "097ff49287d2cdc196593f341273215af2aab45a6602aaaa87ee0764e5600457",
+      "status": 200
+    },
+    {
+      "path": "/api/investigations/investigation-e2ccc29cc4a9451ca50d15fddbab89e4",
+      "sha256": "097ff49287d2cdc196593f341273215af2aab45a6602aaaa87ee0764e5600457",
+      "status": 200
+    },
+    {
+      "path": "/api/investigations/investigation-e2ccc29cc4a9451ca50d15fddbab89e4",
+      "sha256": "097ff49287d2cdc196593f341273215af2aab45a6602aaaa87ee0764e5600457",
+      "status": 200
+    },
+    {
+      "path": "/api/investigations/investigation-e2ccc29cc4a9451ca50d15fddbab89e4",
+      "sha256": "097ff49287d2cdc196593f341273215af2aab45a6602aaaa87ee0764e5600457",
+      "status": 200
+    },
+    {
+      "path": "/api/investigations/investigation-e2ccc29cc4a9451ca50d15fddbab89e4",
+      "sha256": "097ff49287d2cdc196593f341273215af2aab45a6602aaaa87ee0764e5600457",
+      "status": 200
+    },
+    {
+      "path": "/api/investigations/investigation-e2ccc29cc4a9451ca50d15fddbab89e4",
+      "sha256": "09fbfff3f535271c4732eae23ca08d0ba34c7a7467804a5724bf6d330faec6b3",
+      "status": 200
+    },
+    {
+      "path": "/api/terrain-exposure/runs/terrain-exposure-nepal/artifact/summary.json",
+      "sha256": "b2d48fd827df1ed5763048acc922a511b0064eb943fd430de237904fcea10d98",
+      "status": 200
+    },
+    {
+      "path": "/api/terrain-exposure/runs/terrain-exposure-nepal/artifact/summary.json",
+      "sha256": "b2d48fd827df1ed5763048acc922a511b0064eb943fd430de237904fcea10d98",
+      "status": 200
+    },
+    {
+      "path": "/api/terrain-exposure/runs/terrain-exposure-nepal/artifact/summary.json",
+      "sha256": "b2d48fd827df1ed5763048acc922a511b0064eb943fd430de237904fcea10d98",
+      "status": 200
+    },
+    {
+      "path": "/api/investigations/investigation-01ffa94348124b22b4835aeb92edc157",
+      "sha256": "cb1c6f664afae2061b14999eb9bc4732d81723faf204afc97a13e933e348e76c",
+      "status": 200
+    },
+    {
+      "path": "/api/investigations/investigation-01ffa94348124b22b4835aeb92edc157",
+      "sha256": "807f37ad9fc446be232337a2f4b7fceae1cbf5aea870224d5ad2916cd1884760",
+      "status": 200
+    },
+    {
+      "path": "/api/investigations/investigation-01ffa94348124b22b4835aeb92edc157",
+      "sha256": "807f37ad9fc446be232337a2f4b7fceae1cbf5aea870224d5ad2916cd1884760",
+      "status": 200
+    },
+    {
+      "path": "/api/investigations/investigation-01ffa94348124b22b4835aeb92edc157",
+      "sha256": "807f37ad9fc446be232337a2f4b7fceae1cbf5aea870224d5ad2916cd1884760",
+      "status": 200
+    },
+    {
+      "path": "/api/investigations/investigation-01ffa94348124b22b4835aeb92edc157",
+      "sha256": "807f37ad9fc446be232337a2f4b7fceae1cbf5aea870224d5ad2916cd1884760",
+      "status": 200
+    },
+    {
+      "path": "/api/investigations/investigation-01ffa94348124b22b4835aeb92edc157",
+      "sha256": "807f37ad9fc446be232337a2f4b7fceae1cbf5aea870224d5ad2916cd1884760",
+      "status": 200
+    },
+    {
+      "path": "/api/investigations/investigation-01ffa94348124b22b4835aeb92edc157",
+      "sha256": "807f37ad9fc446be232337a2f4b7fceae1cbf5aea870224d5ad2916cd1884760",
+      "status": 200
+    },
+    {
+      "path": "/api/investigations/investigation-01ffa94348124b22b4835aeb92edc157",
+      "sha256": "652139b48d1f3f01c900206a42157d57f700bce08034956ed24c22edf7ed3433",
+      "status": 200
+    },
+    {
+      "path": "/api/investigations/investigation-01ffa94348124b22b4835aeb92edc157",
+      "sha256": "7f50f32e370dd79c8f135584b75fc7d3c671605e271cf18f6730083a84c164e5",
+      "status": 200
+    },
+    {
+      "path": "/api/terrain-exposure/runs/terrain-exposure-nepal/artifact/summary.json",
+      "sha256": "b2d48fd827df1ed5763048acc922a511b0064eb943fd430de237904fcea10d98",
+      "status": 200
+    },
+    {
+      "path": "/api/terrain-exposure/runs/terrain-exposure-nepal/artifact/summary.json",
+      "sha256": "b2d48fd827df1ed5763048acc922a511b0064eb943fd430de237904fcea10d98",
+      "status": 200
+    },
+    {
+      "path": "/api/terrain-exposure/runs/terrain-exposure-nepal/artifact/summary.json",
+      "sha256": "b2d48fd827df1ed5763048acc922a511b0064eb943fd430de237904fcea10d98",
+      "status": 200
+    },
+    {
+      "path": "/api/investigations/investigation-6120c62f3065464fadf46a357b123b20",
+      "sha256": "ed5e9ee1447ba18d7bfb0af27cf3ee75a36f9dc0daf82700179f81ea44939021",
+      "status": 200
+    },
+    {
+      "path": "/api/investigations/investigation-fff351da72ec4fd49407ceb3c321b31d",
+      "sha256": "03bcc6df5c44037512aa0a9517e60d399d69bdb5ab9b403f726a00aa161b66fb",
+      "status": 200
+    },
+    {
+      "path": "/api/investigations/investigation-d70531eb829248c68b2f98288bccbe27",
+      "sha256": "c906802ef64e8a05c99aa4d193a90e2bf5b7ad2ebb6c6f5643d4a6be23dc06d2",
+      "status": 200
+    },
+    {
+      "path": "/api/investigations/investigation-d70531eb829248c68b2f98288bccbe27",
+      "sha256": "aabd9db3d12e0e7ff6e1f6a1fc574b636d080f811fc683831ec1de2949d3daa5",
+      "status": 200
+    }
+  ],
+  "claims": 9,
+  "full_receipt_location": "research/results/local-20261105/http-final.json (ignored original)",
+  "full_receipt_sha256": "747df67f37291de7139d504922aa3088437dd04dd61c5293f43c5b3f3fb72f20",
+  "jobs": [
+    {
+      "claims": [
+        {
+          "field": "/hydrology/valid_cells",
+          "label": "Valid terrain cells",
+          "source": 0,
+          "unit": "cells",
+          "value": 6141
+        },
+        {
+          "field": "/hydrology/stream_cells",
+          "label": "Derived drainage cells",
+          "source": 0,
+          "unit": "cells",
+          "value": 1096
+        },
+        {
+          "field": "/hydrology/maximum_fill_m",
+          "label": "Maximum depression filling",
+          "source": 0,
+          "unit": "m",
+          "value": 22.52279807977243
+        }
+      ],
+      "id": "investigation-bb26f67d3bbe441f887a75a36e846a19",
+      "question": "Show catchments and flow accumulation",
+      "sources": [
+        {
+          "label": "Terrain-conditioned replay summary",
+          "sha256": "b2d48fd827df1ed5763048acc922a511b0064eb943fd430de237904fcea10d98",
+          "url": "/api/terrain-exposure/runs/terrain-exposure-nepal/artifact/summary.json"
+        },
+        {
+          "label": "Mapped receptor screening attributes",
+          "sha256": "04e0781c67c94a34279ab1daa88ac4f3cc8351c5b398be157185c6062193a351",
+          "url": "/api/terrain-exposure/runs/terrain-exposure-nepal/artifact/receptors.json"
+        }
+      ],
+      "state": "complete",
+      "trace_events": 2,
+      "verified_trace_head": "a06f7b0bcc2542d29da5755b771b7edfd53d183b533815175ccfa58bb3f204f5"
+    },
+    {
+      "claims": [
+        {
+          "field": "/hydrology/valid_cells",
+          "label": "Valid terrain cells",
+          "source": 0,
+          "unit": "cells",
+          "value": 6141
+        },
+        {
+          "field": "/hydrology/stream_cells",
+          "label": "Derived drainage cells",
+          "source": 0,
+          "unit": "cells",
+          "value": 1096
+        },
+        {
+          "field": "/hydrology/maximum_fill_m",
+          "label": "Maximum depression filling",
+          "source": 0,
+          "unit": "m",
+          "value": 22.52279807977243
+        }
+      ],
+      "id": "investigation-e2ccc29cc4a9451ca50d15fddbab89e4",
+      "question": "Which buildings have downstream connections?",
+      "sources": [
+        {
+          "label": "Terrain-conditioned replay summary",
+          "sha256": "b2d48fd827df1ed5763048acc922a511b0064eb943fd430de237904fcea10d98",
+          "url": "/api/terrain-exposure/runs/terrain-exposure-nepal/artifact/summary.json"
+        },
+        {
+          "label": "Mapped receptor screening attributes",
+          "sha256": "04e0781c67c94a34279ab1daa88ac4f3cc8351c5b398be157185c6062193a351",
+          "url": "/api/terrain-exposure/runs/terrain-exposure-nepal/artifact/receptors.json"
+        }
+      ],
+      "state": "abstained",
+      "trace_events": 2,
+      "verified_trace_head": "a0f6ca5a5ffba1684851749e7e202849fc9040d45597617fb0380514b7ba9234"
+    },
+    {
+      "claims": [
+        {
+          "field": "/hydrology/valid_cells",
+          "label": "Valid terrain cells",
+          "source": 0,
+          "unit": "cells",
+          "value": 6141
+        },
+        {
+          "field": "/hydrology/stream_cells",
+          "label": "Derived drainage cells",
+          "source": 0,
+          "unit": "cells",
+          "value": 1096
+        },
+        {
+          "field": "/hydrology/maximum_fill_m",
+          "label": "Maximum depression filling",
+          "source": 0,
+          "unit": "m",
+          "value": 22.52279807977243
+        }
+      ],
+      "id": "investigation-01ffa94348124b22b4835aeb92edc157",
+      "question": "Show debris pathways near roads",
+      "sources": [
+        {
+          "label": "Terrain-conditioned replay summary",
+          "sha256": "b2d48fd827df1ed5763048acc922a511b0064eb943fd430de237904fcea10d98",
+          "url": "/api/terrain-exposure/runs/terrain-exposure-nepal/artifact/summary.json"
+        },
+        {
+          "label": "Mapped receptor screening attributes",
+          "sha256": "04e0781c67c94a34279ab1daa88ac4f3cc8351c5b398be157185c6062193a351",
+          "url": "/api/terrain-exposure/runs/terrain-exposure-nepal/artifact/receptors.json"
+        }
+      ],
+      "state": "abstained",
+      "trace_events": 2,
+      "verified_trace_head": "141bcffacd71eec3e1bb0697a6785619312208eb88f6fdc638dd11bbf0497cb0"
+    },
+    {
+      "claims": [],
+      "id": "investigation-6120c62f3065464fadf46a357b123b20",
+      "question": "Predict flood depth downstream",
+      "sources": [],
+      "state": "abstained",
+      "trace_events": 0,
+      "verified_trace_head": null
+    },
+    {
+      "claims": [],
+      "id": "investigation-fff351da72ec4fd49407ceb3c321b31d",
+      "question": "Are roads safe downstream?",
+      "sources": [],
+      "state": "abstained",
+      "trace_events": 0,
+      "verified_trace_head": null
+    },
+    {
+      "claims": [],
+      "id": "investigation-d70531eb829248c68b2f98288bccbe27",
+      "question": "Show catchments in 2020",
+      "sources": [],
+      "state": "abstained",
+      "trace_events": 0,
+      "verified_trace_head": null
+    }
+  ],
+  "limitations": [
+    "Development query set, not routing population accuracy",
+    "Source support is not independent physical truth",
+    "HTTP/source checks do not verify rendered browser behaviour"
+  ],
+  "mechanically_source_supported_claims": 9,
+  "note": "Derived compact receipt; original full hash-verified trace retained locally, no truncated trace presented as complete",
+  "population": "GENUINE_SAVED_DATA_HTTP_REPLAY_WITH_DEVELOPMENT_QUERY_SET",
+  "queries": 6,
+  "source_support_rate": 1.0,
+  "unsupported_by_recorded_source_claims": 0
+}

@@ -1,0 +1,213 @@
+{
+  "case_id": "nepal-syapru-20260826",
+  "configuration_sha256": "423867b626a89e70061e4cb1623238197a2e88530b08e3b9929a3610009de6e3",
+  "environment": {
+    "device": "CPU",
+    "packages": {
+      "fiona": "1.10.1",
+      "matplotlib": "3.10.8",
+      "numpy": "2.4.6",
+      "opencv-python-headless": "4.11.0.86",
+      "pyproj": "3.7.2",
+      "rasterio": "1.4.4",
+      "shapely": "2.2.0"
+    },
+    "platform": "Linux-6.18.33.2-microsoft-standard-WSL2-x86_64-with-glibc2.43",
+    "processor": "",
+    "python": "3.11.16",
+    "training": false
+  },
+  "graph": {
+    "edge_count": 24038,
+    "node_count": 7381,
+    "receptor_count": 597,
+    "relationship_count": 383871,
+    "relationship_statuses": {
+      "DIRECT_GEOMETRIC_INTERSECTION": 168,
+      "NOT_CONNECTED_WITHIN_DOMAIN": 315684,
+      "POTENTIAL_DOWNSTREAM_CONNECTION": 15590,
+      "UNAVAILABLE_EVIDENCE": 51843,
+      "UNRESOLVED_WITHIN_DEM_CELL": 586
+    }
+  },
+  "graph_content_sha256": "2105b6e018f5c0e7f3b5720e72b7748cb30abe80a17e03f2cf62b92374b6871f",
+  "hydrology": {
+    "boundary_condition": "Open outer edge and NoData perimeter; external contributing area unavailable",
+    "conditioning": "fill",
+    "filled_cells": 75,
+    "flat_parent_routes": 75,
+    "flow_method": "D8 steepest descent; Priority-Flood parent on filled flats",
+    "hand_valid_cells": 6141,
+    "interpretation": "Potential topographic drainage; not flood/debris propagation or flood depth",
+    "maximum_fill_m": 22.52279807977243,
+    "outlet_accumulation_sum_cells": 6141,
+    "outlets": 4,
+    "stream_cells": 1096,
+    "stream_threshold_m2": 100000,
+    "total_cells": 6141,
+    "valid_cells": 6141,
+    "valid_fraction": 1.0
+  },
+  "independent_reference_used": false,
+  "limitations": [
+    "No rainfall, discharge, water depth, floodwave or debris-flow dynamics",
+    "Coarse DSM includes vegetation/buildings; pathways are scale dependent",
+    "Observation quality and physical registration require independent checking",
+    "No damaged, safe, blocked or inaccessible infrastructure is inferred",
+    "Historical GLO-90 DSM is not event-time terrain",
+    "Buffered AOI is not a complete upstream basin; contributing areas are truncated",
+    "Native 90m terrain cannot resolve building-level or road-width flow paths",
+    "Registration and label semantics must be audited before scientific interpretation"
+  ],
+  "observations": {
+    "debris": {
+      "candidate_area_m2": 104100.0,
+      "candidate_components": 127,
+      "candidate_pixels": 1041,
+      "grid": {
+        "cell_area_m2": 100.0,
+        "cell_size_m": [
+          10.0,
+          10.0
+        ],
+        "crs": "EPSG:32645",
+        "shape": [
+          437,
+          254
+        ],
+        "transform": [
+          10.0,
+          0.0,
+          335340.0,
+          0.0,
+          -10.0,
+          3119190.0
+        ]
+      },
+      "provenance": {
+        "band": 1,
+        "dataset": "Retained Sentinel observations / existing Flood Lab candidate mask",
+        "descriptions": [
+          null
+        ],
+        "filename": "debris-candidates.tif",
+        "frozen_artifact_sha256": "d3f1849515bf76874a04988fc3d93fba8f21ee3b3f63bdae5f3ee5e0042e69d3",
+        "grid": {
+          "cell_area_m2": 100.0,
+          "cell_size_m": [
+            10.0,
+            10.0
+          ],
+          "crs": "EPSG:32645",
+          "shape": [
+            437,
+            254
+          ],
+          "transform": [
+            10.0,
+            0.0,
+            335340.0,
+            0.0,
+            -10.0,
+            3119190.0
+          ]
+        },
+        "license": "Contains modified Copernicus Sentinel data 2026",
+        "nodata": 255.0,
+        "sha256": "d3f1849515bf76874a04988fc3d93fba8f21ee3b3f63bdae5f3ee5e0042e69d3",
+        "tags": {
+          "AREA_OR_POINT": "Area"
+        }
+      },
+      "times": [
+        "2026-08-22",
+        "2026-08-27"
+      ],
+      "unknown_pixels": 80759,
+      "valid_pixels": 30239
+    },
+    "water": {
+      "candidate_area_m2": 95600.0,
+      "candidate_components": 516,
+      "candidate_pixels": 956,
+      "grid": {
+        "cell_area_m2": 100.0,
+        "cell_size_m": [
+          10.0,
+          10.0
+        ],
+        "crs": "EPSG:32645",
+        "shape": [
+          437,
+          254
+        ],
+        "transform": [
+          10.0,
+          0.0,
+          335340.0,
+          0.0,
+          -10.0,
+          3119190.0
+        ]
+      },
+      "provenance": {
+        "band": 1,
+        "dataset": "Retained Sentinel observations / existing Flood Lab candidate mask",
+        "descriptions": [
+          null
+        ],
+        "filename": "prediction.tif",
+        "frozen_artifact_sha256": "b49b5b5978cd3606f2138306fa8bb687d65c268285f8816a660bbf0444d1ffa4",
+        "grid": {
+          "cell_area_m2": 100.0,
+          "cell_size_m": [
+            10.0,
+            10.0
+          ],
+          "crs": "EPSG:32645",
+          "shape": [
+            437,
+            254
+          ],
+          "transform": [
+            10.0,
+            0.0,
+            335340.0,
+            0.0,
+            -10.0,
+            3119190.0
+          ]
+        },
+        "license": "Contains modified Copernicus Sentinel data 2026",
+        "nodata": 255.0,
+        "sha256": "b49b5b5978cd3606f2138306fa8bb687d65c268285f8816a660bbf0444d1ffa4",
+        "tags": {
+          "AREA_OR_POINT": "Area"
+        }
+      },
+      "times": [
+        "2026-08-16T12:21:41.058298Z",
+        "2026-08-28T12:21:41.762029Z"
+      ],
+      "unknown_pixels": 11140,
+      "valid_pixels": 99858
+    }
+  },
+  "population": "GENUINE_SAVED_OBSERVATION_REPLAY",
+  "recorded_utc": "2026-11-05T04:44:21.048516+00:00",
+  "resolution": {
+    "minimum_cells_across_feature": 2,
+    "required_feature_width_m": 10,
+    "status": "INSUFFICIENT_RESOLUTION",
+    "warning": "Sampling gate alone does not validate drains, elevations or flow."
+  },
+  "schema_version": "satquery.terrain-exposure/1",
+  "seconds": 144.120809971,
+  "source_run_id": "event-fe47db331390",
+  "status": "COMPLETE_REPLAY_NOT_SCIENTIFIC_VALIDATION",
+  "storage_migration": {
+    "algorithm_rerun": false,
+    "source_graph_sha256": "9a706352d58a175a5baf6556977b61ed284ececc864c87836d2fccabc501099b",
+    "source_manifest_sha256": "a31ef08de71a1c17e4cf58a0cf698017b55de16b5d0d435d308d344ec05395fb"
+  }
+}

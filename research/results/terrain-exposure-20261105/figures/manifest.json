@@ -1,0 +1,16 @@
+{
+  "files": {
+    "paired-differences.pdf": "12df2ef26543b064486312b60610f05e5e59249489749de6fe0167361716349a",
+    "paired-differences.png": "61b5a5047299a920545434264f03f894817ab8550b5a05a382ebc5188e1a78c9",
+    "paired-differences.svg": "02c2dc98d4315956270a1dcae9b9e2d9d2b968e7be4c0fdb606564b9d46778fb",
+    "screening-comparison.pdf": "15b0e57b9de6bf5f75f4a32f604e503648d55b6379da1fc93ed98a0a84eef588",
+    "screening-comparison.png": "e6153aefc13f7bca36dc7f03d508cb51931f6de4fbb259af95657ab288fee519",
+    "screening-comparison.svg": "42e010976cd56ea2d536dee36c00f238cb8b688de9eb76020334b0186c80d7dc",
+    "terrain-derivations.pdf": "e842f7cf42cb34950c9cfbeb551f35607bfedd67d4f722a989dedc1409ae8f57",
+    "terrain-derivations.png": "53c9026c9f8541f807a3cfcc0a5726553216171b374f35755c4142a4f38c6ef3",
+    "terrain-derivations.svg": "ef6ab3cb71695ae8eaa1a900bf3f1fe7e448ffd93488393d35405eb5d410dc11"
+  },
+  "method": "Matplotlib from actual evaluation files; no manually entered performance values",
+  "source_metrics_sha256": "c94ea9eb77565389c8d5cd514213d99318a25c5f522513acfac11aeab52cef31",
+  "source_terrain_manifest_sha256": "ffc0d671e3a36dec2da6a6dd66c1e1d472a11b50621f950a6c74e09c88413c62"
+}

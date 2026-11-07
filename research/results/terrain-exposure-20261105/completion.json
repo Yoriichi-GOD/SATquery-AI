@@ -1,0 +1,72 @@
+{
+  "criteria": [
+    {
+      "evidence": "nepal-replay-summary.json; independent-verification.json",
+      "priority": "P0",
+      "requirement": "Terrain-conditioned typed graph engine",
+      "status": "PASS"
+    },
+    {
+      "evidence": "6141 cell routing/HAND arithmetic replay; not dynamic validation",
+      "priority": "P0",
+      "requirement": "Real DEM hydrological relationships",
+      "status": "PASS"
+    },
+    {
+      "evidence": "Operational geometric/potential screening; 90m insufficient at infrastructure scale",
+      "priority": "P0",
+      "requirement": "Infrastructure exposure relationships/exports",
+      "status": "PARTIAL"
+    },
+    {
+      "evidence": "Mixed-class references; no water-only/debris-proxy/exposure labels; registration unavailable",
+      "priority": "P0",
+      "requirement": "Class-compatible independent Nepal exposure/extent validation",
+      "status": "BLOCKED"
+    },
+    {
+      "evidence": "Eight configurations measured on 22 reference-graded road fragments; target is screening diagnostic",
+      "priority": "P0",
+      "requirement": "Controlled ablations",
+      "status": "PARTIAL"
+    },
+    {
+      "evidence": "Known-transform tests pass; genuine audit has no trustworthy matches; no optical/SAR validation",
+      "priority": "P1",
+      "requirement": "Registration quality",
+      "status": "PARTIAL"
+    },
+    {
+      "evidence": "Two genuine public DSM runs and tested categorical-map ingestion; street-scale analysis withheld",
+      "priority": "P1",
+      "requirement": "Urban transfer",
+      "status": "PARTIAL"
+    },
+    {
+      "evidence": "Pinned CPU environment and public terrain examples; full Nepal imagery/reference sources externally provisioned",
+      "priority": "P1",
+      "requirement": "Reproducible execution",
+      "status": "PARTIAL"
+    },
+    {
+      "evidence": "40/40 scripted operations match rubric; zero human participants; no productivity claim",
+      "priority": "P2",
+      "requirement": "Analyst harness",
+      "status": "PASS"
+    },
+    {
+      "evidence": "287 regression tests; five UI contract checks; unchanged original main, benchmarks and day1-final",
+      "priority": "P0",
+      "requirement": "Original evidence/application preservation",
+      "status": "PASS"
+    }
+  ],
+  "hypotheses": {
+    "H1": "NOT_ESTABLISHED: compatible exposure labels unavailable",
+    "H2": "NOT_ESTABLISHED: temporal baseline lower in narrow road-grade diagnostic",
+    "H3": "NOT_ESTABLISHED: full graph/proximity paired spatial interval crosses zero",
+    "H4": "BOUNDED_SOFTWARE_EVIDENCE_ONLY: nine source-supported claims and explicit abstentions",
+    "H5": "NOT_TESTED: coarse urban terrain execution is not independently validated transfer"
+  },
+  "mission_status": "PARTIAL_NOT_INDEPENDENTLY_VALIDATED"
+}
