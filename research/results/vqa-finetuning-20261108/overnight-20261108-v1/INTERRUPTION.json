@@ -1,0 +1,21 @@
+{
+  "run_id": "overnight-20261108-v1",
+  "state": "interrupted",
+  "recorded_utc": "2026-11-07T20:50:28.743110+00:00",
+  "reason": "Observed machine restart; worker and launcher absent, recently written Git and heartbeat files zero-filled",
+  "last_retained_optimizer_update": 29,
+  "validated_training_checkpoint": false,
+  "fine_tuning_gain_established": false,
+  "final_reference_opened": false,
+  "training_source_hashes_match": true,
+  "corpus_sha256_matches": true,
+  "native_training_images_reverified": 2304,
+  "interrupted_archive_bytes_preserved": 3506238536,
+  "archive_prefix_retained_bytes": 3472883712,
+  "final_archive_sha256_required": true,
+  "download_accounting_previous_plus_interrupted_and_inflight": 4478933789,
+  "recovery_run_id": "overnight-20261108-v2",
+  "same_frozen_protocol": true,
+  "production_defaults_changed": false,
+  "day1_final_unchanged": true
+}

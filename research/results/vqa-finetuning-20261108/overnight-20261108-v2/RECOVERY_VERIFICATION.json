@@ -1,0 +1,27 @@
+{
+  "run_id": "overnight-20261108-v2",
+  "recorded_utc": "2026-11-07T20:56:58.577Z",
+  "reason": "Same-protocol recovery after observed host restart interrupted v1 at optimizer update 29",
+  "same_protocol_and_corpus_sha256": true,
+  "same_training_source_sha256": true,
+  "native_training_images_hash_reverified": 2304,
+  "archive_bytes": 3976656690,
+  "archive_sha256": "67f99c1dd437fdab94fea1f54e049ad56d198c3c873237c79d9b944200d248b1",
+  "archive_matches_pinned_upstream_lfs_sha256": true,
+  "accounted_download_bytes": 5184033359,
+  "download_cap_bytes": 6442450944,
+  "post_restart_vqa_contract_tests_passed": 15,
+  "git_restored_files": [
+    "packed-refs",
+    "worktree index"
+  ],
+  "git_reference_objects_verified": 14,
+  "git_full_object_check_without_reflogs": "PASSED",
+  "git_objects_removed": false,
+  "git_reflogs_edited": false,
+  "day1_final_commit": "f3945347cf0f0a4581aa1480c8fa1501a25da4b4",
+  "final_reference_opened_at_receipt": false,
+  "training_complete_at_receipt": false,
+  "full_benchmark_complete_at_receipt": false,
+  "production_defaults_changed": false
+}

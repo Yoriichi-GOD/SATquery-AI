@@ -1,0 +1,111 @@
+{
+  "scope": "Same 64 validation questions/settings; prompt effect, not fine-tuning gain",
+  "raw": {
+    "n": 64,
+    "completed": 64,
+    "correct": 5,
+    "strict_correct": 5,
+    "missing": 0,
+    "errors": 0,
+    "truncated": 56,
+    "accuracy": 0.078125,
+    "per_category": {
+      "category": {
+        "n": 7,
+        "correct": 0
+      },
+      "colour": {
+        "n": 7,
+        "correct": 0
+      },
+      "direction": {
+        "n": 7,
+        "correct": 0
+      },
+      "other": {
+        "n": 7,
+        "correct": 4
+      },
+      "position": {
+        "n": 6,
+        "correct": 0
+      },
+      "presence": {
+        "n": 6,
+        "correct": 0
+      },
+      "quantity": {
+        "n": 6,
+        "correct": 1
+      },
+      "scene": {
+        "n": 6,
+        "correct": 0
+      },
+      "shape": {
+        "n": 6,
+        "correct": 0
+      },
+      "size": {
+        "n": 6,
+        "correct": 0
+      }
+    },
+    "scorer": "vrs-normalised-whole-answer-v1",
+    "official_gpt_score": null
+  },
+  "short": {
+    "n": 64,
+    "completed": 64,
+    "correct": 19,
+    "strict_correct": 19,
+    "missing": 0,
+    "errors": 0,
+    "truncated": 12,
+    "accuracy": 0.296875,
+    "per_category": {
+      "category": {
+        "n": 7,
+        "correct": 0
+      },
+      "colour": {
+        "n": 7,
+        "correct": 3
+      },
+      "direction": {
+        "n": 7,
+        "correct": 1
+      },
+      "other": {
+        "n": 7,
+        "correct": 5
+      },
+      "position": {
+        "n": 6,
+        "correct": 2
+      },
+      "presence": {
+        "n": 6,
+        "correct": 4
+      },
+      "quantity": {
+        "n": 6,
+        "correct": 2
+      },
+      "scene": {
+        "n": 6,
+        "correct": 1
+      },
+      "shape": {
+        "n": 6,
+        "correct": 1
+      },
+      "size": {
+        "n": 6,
+        "correct": 0
+      }
+    },
+    "scorer": "vrs-normalised-whole-answer-v1",
+    "official_gpt_score": null
+  }
+}

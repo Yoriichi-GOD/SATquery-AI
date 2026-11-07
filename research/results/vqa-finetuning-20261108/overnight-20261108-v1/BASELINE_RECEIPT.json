@@ -1,0 +1,24 @@
+{
+  "run_id": "overnight-20261108-v1",
+  "recorded_utc": "2026-11-07T20:33:04.806121+00:00",
+  "scope": "Completed official-training-holdout baseline and prompt diagnostic; no final VRSBench evaluation or tuning-gain claim",
+  "aggregate_files_sha256": {
+    "BASELINE_VALIDATION.json": "aec32529432f931657e8c9c70faed749681633be696f2a8df033fcd6f3ab8773",
+    "PROMPT_DIAGNOSTIC.json": "3045c8ee69bfc4aa7a543bcfaaa060529232e6aeb8e375f77f2494e222d69b37"
+  },
+  "baseline_prediction_sha256": "4711dd0d9ff70bba77925ce293a9d41bd1e03f2c3b461e0d30bd32b7a2b04c7c",
+  "baseline_expected_and_unique_prediction_ids": 1093,
+  "first_training_progress_observed": {
+    "optimizer_step": 23,
+    "micro_steps": 184,
+    "epoch": 1,
+    "loss": 1.6319405063986778,
+    "learning_rate": 2.9870129870129872e-05,
+    "gradient_norm": 1.9562007188796997,
+    "seconds": 117.26060902100107,
+    "peak_allocated_GiB": 4.97410249710083
+  },
+  "training_complete": false,
+  "final_benchmark_complete": false,
+  "production_defaults_changed": false
+}

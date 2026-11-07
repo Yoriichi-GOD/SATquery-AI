@@ -1,0 +1,54 @@
+{
+  "n": 1093,
+  "completed": 1093,
+  "correct": 368,
+  "strict_correct": 363,
+  "missing": 0,
+  "errors": 0,
+  "truncated": 167,
+  "accuracy": 0.3366880146386093,
+  "per_category": {
+    "category": {
+      "n": 94,
+      "correct": 8
+    },
+    "colour": {
+      "n": 126,
+      "correct": 52
+    },
+    "scene": {
+      "n": 32,
+      "correct": 9
+    },
+    "quantity": {
+      "n": 188,
+      "correct": 55
+    },
+    "other": {
+      "n": 376,
+      "correct": 180
+    },
+    "position": {
+      "n": 137,
+      "correct": 19
+    },
+    "presence": {
+      "n": 71,
+      "correct": 43
+    },
+    "direction": {
+      "n": 11,
+      "correct": 1
+    },
+    "size": {
+      "n": 37,
+      "correct": 0
+    },
+    "shape": {
+      "n": 21,
+      "correct": 1
+    }
+  },
+  "scorer": "vrs-normalised-whole-answer-v1",
+  "official_gpt_score": null
+}

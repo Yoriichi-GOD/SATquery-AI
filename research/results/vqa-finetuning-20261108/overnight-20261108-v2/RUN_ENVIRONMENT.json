@@ -1,0 +1,39 @@
+{
+  "python": "3.11.16",
+  "torch": "2.8.0+cu128",
+  "transformers": "4.51.3",
+  "peft": "0.15.2",
+  "gpu": "NVIDIA GeForce RTX 5060 Laptop GPU",
+  "model": {
+    "id": "AdaptLLM/remote-sensing-Qwen2-VL-2B-Instruct",
+    "revision": "7f5dd71bf0f40c282193d50160e848a387a08ffe",
+    "dtype": "bfloat16",
+    "attention": "sdpa",
+    "local_files_only": true
+  },
+  "effective": {
+    "min_visual_tokens": 256,
+    "max_visual_tokens": 512,
+    "batch_size": 4,
+    "max_new_tokens": 32,
+    "do_sample": false,
+    "caption_max_new_tokens": 192,
+    "vision_mode": "native"
+  },
+  "source_sha256": {
+    "__init__.py": "687fbbe4ad99a6dd2df434bb7ac5afb2910cd34e8a65a5bfc3d4a26c76892c56",
+    "acquire.py": "a4ae7fe28fde81b20621503ae6c71e7efd2965e21651b6528ac269c067a448f6",
+    "campaign.py": "69df710c278d94ac74e485070681fcb4c6a7be5ec947171f875c112799bbe87e",
+    "core.py": "2fee885106fc3912f2b86987e20504e18a91a05173be6e643825c6ebab2ffde5",
+    "cycle_smoke.py": "f1af3e7e53ca94a0d0ca3bdcafa4242dd22256bf19471437e147d3beb85b1a84",
+    "gpu.py": "52e9239c9295fefeadb43033aa129d04dcb74a31ce9ac3c13d55267f48f7cc6c",
+    "parity.py": "975b0708870effe839627dd7ed368713516d560f92474398ee3731174027bd57",
+    "parity_batch.py": "5adf0adaed2919cfeaa5d190707b5a6df4d7f7a798fa0fb015379d9230cc1d26",
+    "prepare.py": "a2105dcb0613d41349d31c116827005ebe377ed27370012265417730b6fa7701",
+    "train.py": "e3a30a3c08a9b111bdfda0e3887b4bacaf91dbf79cf89314499bab7153e6d799",
+    "vision.py": "91d536bb9b2a398b5e951f790795a45630e7747bc8c62632c77d0d7c355da391"
+  },
+  "protocol_sha256": "a66a1235e15ab9ce9434339fc6c3e381c7ec82f494ae5cfcde0c04f814db5547",
+  "resource_plan_sha256": "7e6b55df96f77ac938fdd3eba5ec8140b9cc383e9f4dfc634207857388899b3a",
+  "corpus_sha256": "333a2f5134cc370b41b9ed5be83552b62dd978c1f9394adc96edd922c70505cc"
+}
