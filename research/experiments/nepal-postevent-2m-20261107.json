@@ -1,0 +1,16 @@
+{
+  "schema":"satquery.postevent-terrain-suitability/1",
+  "source":"https://zenodo.org/records/22842746", "archive":"rasuwa_post_vantor_composites.zip",
+  "source_epoch":"2026-08-27through2026-09-08;AFTERtheevent;neverprioreventcausalinput",
+  "bbox":[85.3232,28.1491,85.3483,28.1882],"native_posting_m":2,"native_crs":"EPSG:32645",
+  "vertical_reference":"WGS84ellipsoid;notEGM2008;noelevationdifferencingagainstGLO30withoutdatumharmonization",
+  "access":"ZIPstorednativeCOGmembersviaHTTPRange;boundednativewindow;nofullarchive",
+  "metadata_preflight":"134105bytesarchive-directoryandTIFFheaderconfirmed2mpostingandenvelopecoverage;validpixelcoveragenotyetknown",
+  "quality":{"nodata":-9999,"minimum_reported_composite_input_count":2,"meaning":"Inputcountisnotindependentstereo-paircountorcalibratedaccuracy","fullcase_minimum_valid_fraction":0.95},
+  "analysis_pixel_m":[5,30],"target_feature_width_m":10,
+  "hydrology":{"conditioning":"fill","stream_area_m2":100000,"buffer_m":0,"boundary":"Finitecasewindowonly;nooutsidecontributingarea"},
+  "metrics":["nativevalidsupport","inputcountdistribution","qualityfilteredcoverage","slope/HANDresolutioncontext","savedcandidateareaandlocalterraincoverage"],
+  "infrastructure_claim":"DoNOTreleasethisasanupgradeforvalidatedeventexposure;smallerpostingpassesnecessarysamplingonlyandposteventconsequenceleakageprecludespriorhazardclaim",
+  "no_graph_explosion":"Noallsourcecomponent×receptorgraphuntilquality/registrationvintagegatespass",
+  "limits":{"native_window_maxpixels":4000000,"analysis_maxpixels":1000000,"max_localbytes":33554432,"no_fullarchive":true,"training":false}
+}
