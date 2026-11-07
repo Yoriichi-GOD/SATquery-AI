@@ -1,0 +1,15 @@
+{
+  "repository": "https://github.com/kinnuworks/lifeline",
+  "commit": "2945725810d6088317f65e3edb72db578c0b9528",
+  "license": "MIT, Dhiraj Kavuri 2026",
+  "files": {
+    "src/lifeline/access/montecarlo.py": "24f978b231288f9b30fce7d87575fc84e6d491800e531abe0aff5fa05f060afa",
+    "src/lifeline/access/graph.py": "9b29da533b655840ec3d570db53d69a47ec20ef6d0d3162726bc5d15b87f5266",
+    "src/lifeline/access/chokepoints.py": "41ee10f79e58a7fc8e91818ae63e773b2cf6bcf5da62927eaf665cf66969baf1",
+    "src/lifeline/radar/change.py": "6d4f19660ec3582a4c3148f3888b0929b2db15bf2cc744cdc98c6a3db2f43611",
+    "src/lifeline/radar/terrain.py": "89e1bc39a6e19943291e9f13edce68b9568df0e149318b06d459fcc0e6f0111e",
+    "LICENSE": "08e60a34f182b05b05139b01d0618ae892b5c65b0328d9a12001dfaa64c0ab2f"
+  },
+  "native_rasters_present": false,
+  "source_review_only_until_pure_kernel_test": true
+}

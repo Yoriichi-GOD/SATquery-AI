@@ -1,0 +1,127 @@
+{
+  "scope": "development question-routing smoke test, not independent language or disaster accuracy",
+  "correct": 4,
+  "count": 12,
+  "cases": [
+    {
+      "question": "How many buildings intersect the water candidates?",
+      "expected": "buildings",
+      "intent": "water",
+      "model": "AdaptLLM/remote-sensing-Qwen2-VL-2B-Instruct",
+      "revision": "7f5dd71bf0f40c282193d50160e848a387a08ffe",
+      "generation_valid": true,
+      "seconds": 24.977043703000163,
+      "correct": false
+    },
+    {
+      "question": "What area is newly observed water?",
+      "expected": "water",
+      "intent": "water",
+      "model": "AdaptLLM/remote-sensing-Qwen2-VL-2B-Instruct",
+      "revision": "7f5dd71bf0f40c282193d50160e848a387a08ffe",
+      "generation_valid": true,
+      "seconds": 0.04668452900114062,
+      "correct": true
+    },
+    {
+      "question": "How much road length is exposed?",
+      "expected": "roads",
+      "intent": "water",
+      "model": "AdaptLLM/remote-sensing-Qwen2-VL-2B-Instruct",
+      "revision": "7f5dd71bf0f40c282193d50160e848a387a08ffe",
+      "generation_valid": true,
+      "seconds": 0.04035482100152876,
+      "correct": false
+    },
+    {
+      "question": "Which settlements lost access to their nearest hospital?",
+      "expected": "connectivity",
+      "intent": "limitations",
+      "model": "AdaptLLM/remote-sensing-Qwen2-VL-2B-Instruct",
+      "revision": "7f5dd71bf0f40c282193d50160e848a387a08ffe",
+      "generation_valid": true,
+      "seconds": 0.03512648199830437,
+      "correct": false
+    },
+    {
+      "question": "Write a situation report.",
+      "expected": "summary",
+      "intent": "summary",
+      "model": "AdaptLLM/remote-sensing-Qwen2-VL-2B-Instruct",
+      "revision": "7f5dd71bf0f40c282193d50160e848a387a08ffe",
+      "generation_valid": true,
+      "seconds": 0.09040659200036316,
+      "correct": true
+    },
+    {
+      "question": "How many people died?",
+      "expected": "limitations",
+      "intent": "limitations",
+      "model": "AdaptLLM/remote-sensing-Qwen2-VL-2B-Instruct",
+      "revision": "7f5dd71bf0f40c282193d50160e848a387a08ffe",
+      "generation_valid": true,
+      "seconds": 0.0410790169989923,
+      "correct": true
+    },
+    {
+      "question": "कति भवन प्रभावित छन्?",
+      "expected": "buildings",
+      "intent": "summary",
+      "model": "AdaptLLM/remote-sensing-Qwen2-VL-2B-Instruct",
+      "revision": "7f5dd71bf0f40c282193d50160e848a387a08ffe",
+      "generation_valid": true,
+      "seconds": 0.04229496700099844,
+      "correct": false
+    },
+    {
+      "question": "बाढीको क्षेत्रफल कति छ?",
+      "expected": "water",
+      "intent": "summary",
+      "model": "AdaptLLM/remote-sensing-Qwen2-VL-2B-Instruct",
+      "revision": "7f5dd71bf0f40c282193d50160e848a387a08ffe",
+      "generation_valid": true,
+      "seconds": 0.04047352900124679,
+      "correct": false
+    },
+    {
+      "question": "सडकको अवस्था के छ?",
+      "expected": "roads",
+      "intent": "water",
+      "model": "AdaptLLM/remote-sensing-Qwen2-VL-2B-Instruct",
+      "revision": "7f5dd71bf0f40c282193d50160e848a387a08ffe",
+      "generation_valid": true,
+      "seconds": 0.07787652499973774,
+      "correct": false
+    },
+    {
+      "question": "कुन बस्तीको अस्पताल जाने बाटो बन्द छ?",
+      "expected": "connectivity",
+      "intent": "limitations",
+      "model": "AdaptLLM/remote-sensing-Qwen2-VL-2B-Instruct",
+      "revision": "7f5dd71bf0f40c282193d50160e848a387a08ffe",
+      "generation_valid": true,
+      "seconds": 0.0774254789994302,
+      "correct": false
+    },
+    {
+      "question": "स्थिति प्रतिवेदन लेख्नुहोस्।",
+      "expected": "summary",
+      "intent": "summary",
+      "model": "AdaptLLM/remote-sensing-Qwen2-VL-2B-Instruct",
+      "revision": "7f5dd71bf0f40c282193d50160e848a387a08ffe",
+      "generation_valid": true,
+      "seconds": 0.09070955399874947,
+      "correct": true
+    },
+    {
+      "question": "के यो नतिजा निश्चित छ?",
+      "expected": "limitations",
+      "intent": "water",
+      "model": "AdaptLLM/remote-sensing-Qwen2-VL-2B-Instruct",
+      "revision": "7f5dd71bf0f40c282193d50160e848a387a08ffe",
+      "generation_valid": true,
+      "seconds": 0.08848285999920336,
+      "correct": false
+    }
+  ]
+}

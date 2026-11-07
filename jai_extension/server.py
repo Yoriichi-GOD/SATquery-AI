@@ -14,6 +14,7 @@ from .geo_context import GeoContext
 from .investigation import InvestigationEngine,JobManager,REGISTRY
 from .visual_context import VisualContext
 from .terrain_exposure import TerrainExposureStore,ARTIFACTS as SCIENTIFIC_ARTIFACTS
+from .research_cases import CaseResearchStore,router as research_cases_router
 from pydantic import BaseModel, StrictBool, Field, FiniteFloat
 from typing import Optional
 
@@ -219,6 +220,8 @@ def create_app():
     spec.loader.exec_module(module)
     terrain=TerrainStore(os.environ.get("JAI_TERRAIN_ROOT",str(root/".runtime/jai/terrain")))
     app = attach(module.app, bridge, terrain, os.environ.get("FLOODLAB_BASELINE_ROOT"))
+    app.include_router(research_cases_router(CaseResearchStore(os.environ.get('SATQUERY_CASE_RESEARCH_ROOT',
+        str(Path(__file__).resolve().parents[1]/'research/results/case-campaign-20261107')))))
     app.add_middleware(ExtensionOrigin, port=int(os.environ.get("JAI_PORT", "8767")))
 
     # Replace only the home response in this process, leaving baseline source untouched.

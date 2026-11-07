@@ -1,0 +1,38 @@
+{
+  "checked_on": "2026-11-05",
+  "url": "http://127.0.0.1:18870/#response",
+  "tool": "Codex computer-use in-app browser",
+  "state": "CORE_FLOW_VERIFIED_FINAL_PHONE_EVIDENCE_DELTA_NOT_RENDERED",
+  "checks": [
+    "1440px cosmic Workspace/Response/Evidence visually inspected",
+    "390x844 route overflow reproduced then fixed: document 383px at viewport 390px; table container 347px",
+    "Frozen Nepal baseline loaded; four-road scenario yields one possible route through unknown observations",
+    "Conservative route view excludes unknown sections and displays no mapped route",
+    "Manual one-road repair remains unknown at AOI boundary; off-network remains not assessed",
+    "Reset returns to original candidate assumptions",
+    "Changing dataset clears previous result and export links",
+    "Missing service destinations show Not assessed; repair control disabled",
+    "Field-kit download completed through the browser; bytes match live API SHA256",
+    "Building-exposure query returns one mapped intersection with source pointer for nepal-syapru-004",
+    "Genuine optical preview loaded at native 273x451 with CSS filter none",
+    "Enter opens source-labelled optical zoom modal; Escape closes it",
+    "Dark and neutral light theme inspected on phone",
+    "No console errors or warnings observed at the recorded checkpoint"
+  ],
+  "not_verified": [
+    "Final mobile Evidence-only CSS adjustment after browser became disabled",
+    "Final projector 16:9 geometry matrix",
+    "Full fresh satellite acquisition through the redesigned interface",
+    "Final desktop screenshot capture; browser disabled before it could be saved"
+  ],
+  "screenshot": "screenshots/response-phone.jpg",
+  "screenshot_scope": "Cosmic response on phone after route table overflow correction; predates final mobile Evidence-only CSS change",
+  "screenshot_sha256": "f4a99d8a8b9dfbcd7c9d37fd2677094860cddc0d56f2fcf5ed23b159da3d54d3",
+  "downloaded_zip_sha256": "d88f100c837c1fe921188e93ce390c275b04bf1cf1b9c3a7e1131d199972373a",
+  "final_ui_files": {
+    "web/index.html": "326df5257887e215d97721e31fa532e302613f42ba8fbf1f3127036c586ce158",
+    "web/response-panel.css": "2f6caf845e049bd3c3635022f4930babf1e86e6b3f3573fcbac1ead8c0ae1f4f",
+    "web/cosmic-shell.css": "eddfe2951dc6897476ec08bc9054b05e4a0e8737029d1075d3f9d86e940327d7",
+    "web/response-panel.js": "3a611220762c26c4c9203993ee7cdcb152f0804b5414183a925e1faa5b1609e4"
+  }
+}

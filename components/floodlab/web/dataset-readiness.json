@@ -1,0 +1,245 @@
+{
+  "references": [
+    {
+      "area": "syapru_besi",
+      "filename": "EMSR927_AOI01_GRA_PRODUCT_v1.gpkg",
+      "bytes": 4648960,
+      "sha256": "56b3d9e0ea870a025492d84b61a0462b21c486bef52a903ccd0bb00b33c17920",
+      "integrity": "ok",
+      "role": "evaluation_only",
+      "layers": [
+        {
+          "name": "areaOfInterestA_v1",
+          "geometry": "MULTIPOLYGON",
+          "epsg": 4326
+        },
+        {
+          "name": "imageFootprintA_v1",
+          "geometry": "MULTIPOLYGON",
+          "epsg": 4326
+        },
+        {
+          "name": "builtUpP_v1",
+          "geometry": "POINT",
+          "epsg": 4326
+        },
+        {
+          "name": "facilitiesA_v1",
+          "geometry": "MULTIPOLYGON",
+          "epsg": 4326
+        },
+        {
+          "name": "observedEventA_v1",
+          "geometry": "MULTIPOLYGON",
+          "epsg": 4326
+        },
+        {
+          "name": "transportationA_v1",
+          "geometry": "MULTIPOLYGON",
+          "epsg": 4326
+        },
+        {
+          "name": "transportationL_v1",
+          "geometry": "MULTILINESTRING",
+          "epsg": 4326
+        },
+        {
+          "name": "transportationP_v1",
+          "geometry": "POINT",
+          "epsg": 4326
+        }
+      ],
+      "damage_features_inspected": false
+    },
+    {
+      "area": "timure",
+      "filename": "EMSR927_AOI02_GRA_PRODUCT_v2.gpkg",
+      "bytes": 4648960,
+      "sha256": "59375c884371862849eb05dc1c1b6c7622d8ea5a457aece9f8206ae898f29e1b",
+      "integrity": "ok",
+      "role": "evaluation_only",
+      "layers": [
+        {
+          "name": "areaOfInterestA_v2",
+          "geometry": "MULTIPOLYGON",
+          "epsg": 4326
+        },
+        {
+          "name": "imageFootprintA_v2",
+          "geometry": "MULTIPOLYGON",
+          "epsg": 4326
+        },
+        {
+          "name": "builtUpP_v2",
+          "geometry": "POINT",
+          "epsg": 4326
+        },
+        {
+          "name": "facilitiesA_v2",
+          "geometry": "MULTIPOLYGON",
+          "epsg": 4326
+        },
+        {
+          "name": "observedEventA_v2",
+          "geometry": "MULTIPOLYGON",
+          "epsg": 4326
+        },
+        {
+          "name": "transportationL_v2",
+          "geometry": "MULTILINESTRING",
+          "epsg": 4326
+        },
+        {
+          "name": "transportationP_v2",
+          "geometry": "POINT",
+          "epsg": 4326
+        }
+      ],
+      "damage_features_inspected": false
+    }
+  ],
+  "areas": [
+    {
+      "area": "syapru_besi",
+      "official_bounds": [
+        85.32320008,
+        28.14911693,
+        85.34826837,
+        28.18818783
+      ],
+      "kit_bounds": [
+        85.31954003,
+        28.14613501,
+        85.3512199,
+        28.19004919
+      ],
+      "candidate_pairs": [
+        {
+          "pre": "S1D_IW_GRDH_1SDV_20260816T122141_20260816T122206_004151_007980_B091_COG",
+          "post": "S1D_IW_GRDH_1SDV_20260828T122141_20260828T122206_004326_007FA4_C73B_COG",
+          "pre_datetime": "2026-08-16T12:21:41.058298Z",
+          "post_datetime": "2026-08-28T12:21:41.762029Z",
+          "relative_orbit": 85,
+          "orbit_state": "ascending",
+          "platform": "sentinel-1d",
+          "gap_days": 12.000008145034721,
+          "full_aoi_footprint_coverage": true,
+          "imagery_downloaded": false
+        },
+        {
+          "pre": "S1D_IW_GRDH_1SDV_20260824T001844_20260824T001909_004260_007D5D_45FC_COG",
+          "post": "S1D_IW_GRDH_1SDV_20260905T001844_20260905T001909_004435_00837B_60FD_COG",
+          "pre_datetime": "2026-08-24T00:18:44.555468Z",
+          "post_datetime": "2026-09-05T00:18:44.831563Z",
+          "relative_orbit": 19,
+          "orbit_state": "descending",
+          "platform": "sentinel-1d",
+          "gap_days": 12.00000319554398,
+          "full_aoi_footprint_coverage": true,
+          "imagery_downloaded": false
+        }
+      ],
+      "recommended_metadata_pair": {
+        "pre": "S1D_IW_GRDH_1SDV_20260816T122141_20260816T122206_004151_007980_B091_COG",
+        "post": "S1D_IW_GRDH_1SDV_20260828T122141_20260828T122206_004326_007FA4_C73B_COG",
+        "pre_datetime": "2026-08-16T12:21:41.058298Z",
+        "post_datetime": "2026-08-28T12:21:41.762029Z",
+        "relative_orbit": 85,
+        "orbit_state": "ascending",
+        "platform": "sentinel-1d",
+        "gap_days": 12.000008145034721,
+        "full_aoi_footprint_coverage": true,
+        "imagery_downloaded": false
+      }
+    },
+    {
+      "area": "timure",
+      "official_bounds": [
+        85.357083,
+        28.242372,
+        85.3805787,
+        28.27994405
+      ],
+      "kit_bounds": [
+        85.35337058,
+        28.23877994,
+        85.38428845,
+        28.28351666
+      ],
+      "candidate_pairs": [
+        {
+          "pre": "S1D_IW_GRDH_1SDV_20260816T122141_20260816T122206_004151_007980_B091_COG",
+          "post": "S1D_IW_GRDH_1SDV_20260828T122141_20260828T122206_004326_007FA4_C73B_COG",
+          "pre_datetime": "2026-08-16T12:21:41.058298Z",
+          "post_datetime": "2026-08-28T12:21:41.762029Z",
+          "relative_orbit": 85,
+          "orbit_state": "ascending",
+          "platform": "sentinel-1d",
+          "gap_days": 12.000008145034721,
+          "full_aoi_footprint_coverage": true,
+          "imagery_downloaded": false
+        },
+        {
+          "pre": "S1D_IW_GRDH_1SDV_20260819T001036_20260819T001101_004187_007ABD_B38C_COG",
+          "post": "S1D_IW_GRDH_1SDV_20260831T001037_20260831T001102_004362_0080EC_65B9_COG",
+          "pre_datetime": "2026-08-19T00:10:36.889384Z",
+          "post_datetime": "2026-08-31T00:10:37.647071Z",
+          "relative_orbit": 121,
+          "orbit_state": "descending",
+          "platform": "sentinel-1d",
+          "gap_days": 12.000008769525463,
+          "full_aoi_footprint_coverage": true,
+          "imagery_downloaded": false
+        },
+        {
+          "pre": "S1D_IW_GRDH_1SDV_20260824T001844_20260824T001909_004260_007D5D_45FC_COG",
+          "post": "S1D_IW_GRDH_1SDV_20260905T001844_20260905T001909_004435_00837B_60FD_COG",
+          "pre_datetime": "2026-08-24T00:18:44.555468Z",
+          "post_datetime": "2026-09-05T00:18:44.831563Z",
+          "relative_orbit": 19,
+          "orbit_state": "descending",
+          "platform": "sentinel-1d",
+          "gap_days": 12.00000319554398,
+          "full_aoi_footprint_coverage": true,
+          "imagery_downloaded": false
+        }
+      ],
+      "recommended_metadata_pair": {
+        "pre": "S1D_IW_GRDH_1SDV_20260816T122141_20260816T122206_004151_007980_B091_COG",
+        "post": "S1D_IW_GRDH_1SDV_20260828T122141_20260828T122206_004326_007FA4_C73B_COG",
+        "pre_datetime": "2026-08-16T12:21:41.058298Z",
+        "post_datetime": "2026-08-28T12:21:41.762029Z",
+        "relative_orbit": 85,
+        "orbit_state": "ascending",
+        "platform": "sentinel-1d",
+        "gap_days": 12.000008145034721,
+        "full_aoi_footprint_coverage": true,
+        "imagery_downloaded": false
+      }
+    }
+  ],
+  "catalogue_counts": {
+    "syapru_besi_s1_post": 9,
+    "syapru_besi_s1_pre": 9,
+    "syapru_besi_s2_post": 8,
+    "syapru_besi_s2_pre": 9,
+    "timure_s1_post": 9,
+    "timure_s1_pre": 9,
+    "timure_s2_post": 9,
+    "timure_s2_pre": 9
+  },
+  "errors": [],
+  "credentials_present": {
+    "CDSE_ACCESS_TOKEN": false,
+    "OHSOME_API_KEY": false
+  },
+  "status": "Metadata and reference registration only; no imagery or historical OSM downloaded",
+  "remaining": [
+    "Authenticated scene download",
+    "SAR calibration and terrain correction",
+    "DEM acquisition",
+    "Historical OSM including road topology and routing context",
+    "Optical preparation and cloud masks",
+    "Real prediction, AI integration and independent scoring"
+  ]
+}

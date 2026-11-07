@@ -1,0 +1,30 @@
+{
+  "job": {
+    "job_id": "event-fe47db331390",
+    "state": "complete",
+    "message": "Evidence saved. Debris coverage and road access may be incomplete; inspect the run limitations.",
+    "updated_at": "2026-10-15T03:42:40.248517+00:00",
+    "run_id": "event-fe47db331390"
+  },
+  "verified_downloads": 15,
+  "copilot_value_matches": true,
+  "original_workspace_http": 200,
+  "summary": {
+    "valid_pixels": 99858,
+    "total_pixels": 110998,
+    "new_water_pixels": 956,
+    "new_water_m2": 95600.0,
+    "water_in_both_pixels": 452,
+    "mapped_buildings": 522,
+    "exposed_buildings": 2,
+    "exposed_road_m": 185.8461137204373,
+    "exposed_bridge_features": 2,
+    "connectivity_assessed": false,
+    "potentially_cut_off": 0,
+    "debris_candidate_pixels": 1041,
+    "debris_candidate_m2": 104100.0,
+    "debris_valid_pixels": 30239,
+    "debris_intersected_buildings": 71,
+    "debris_intersected_road_m": 1458.9344344663516
+  }
+}

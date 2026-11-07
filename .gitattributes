@@ -15,3 +15,7 @@
 /research/results/terrain-exposure-20261105/** whitespace=cr-at-eol
 # Generated scientific vector artwork is reviewed as a rendered image, not path text.
 /research/results/terrain-exposure-20261105/figures/*.svg -diff
+# Pinned imported sources and content-addressed release receipts retain exact bytes.
+/components/floodlab/** -text
+/components/FLOODLAB_SOURCE_MANIFEST.json -text
+/research/results/case-campaign-20261107/** -text

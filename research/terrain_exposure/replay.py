@@ -78,10 +78,10 @@ def load_nepal(flood_root, terrain_source, config):
                                   provenance, feature["properties"].get("snapshot") or manifest["osm_snapshot"]))
     z, valid, dem_grid = metric_dem(terrain_source, observations[0].grid,
                                    config["dem_resolution_m"], config["dem_buffer_m"])
-    dem_provenance = {"sha256": sha256(terrain_source), "dataset": "Copernicus GLO-90 DSM / AWS 2021 release",
+    dem_provenance = {"sha256": sha256(terrain_source), "dataset": config.get("terrain_product", "Copernicus GLO-90 DSM / AWS 2021 release"),
                       "source_url": config["terrain_source_url"], "license": config["terrain_license"],
                       "vertical_datum": config["vertical_datum"], "observation_time": "Historical DSM; exact acquisition dates unavailable",
-                      "resampling": "Bilinear to metric 90m grid; NoData retained", "buffer_m": config["dem_buffer_m"]}
+                      "resampling": f"Bilinear to metric {config['dem_resolution_m']}m grid; NoData retained", "buffer_m": config["dem_buffer_m"]}
     return z, valid, dem_grid, observations, receptors, dem_provenance
 
 

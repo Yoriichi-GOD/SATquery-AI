@@ -1,0 +1,58 @@
+{
+  "input": {
+    "bounds": {
+      "bbox": [
+        335240,
+        3114750,
+        337970,
+        3119260
+      ],
+      "properties": {
+        "crs": "http://www.opengis.net/def/crs/EPSG/0/32645"
+      }
+    },
+    "data": [
+      {
+        "type": "sentinel-1-grd",
+        "dataFilter": {
+          "timeRange": {
+            "from": "2026-08-16T12:21:30Z",
+            "to": "2026-08-16T12:22:00Z"
+          },
+          "acquisitionMode": "IW",
+          "polarization": "DV",
+          "orbitDirection": "ASCENDING",
+          "resolution": "HIGH"
+        },
+        "processing": {
+          "orthorectify": true,
+          "demInstance": "COPERNICUS_30",
+          "backCoeff": "GAMMA0_TERRAIN",
+          "radiometricTerrainOversampling": 2,
+          "speckleFilter": {
+            "type": "NONE"
+          }
+        }
+      }
+    ]
+  },
+  "output": {
+    "width": 273,
+    "height": 451,
+    "responses": [
+      {
+        "identifier": "default",
+        "format": {
+          "type": "image/tiff"
+        }
+      },
+      {
+        "identifier": "userdata",
+        "format": {
+          "type": "application/json"
+        }
+      }
+    ]
+  },
+  "evalscript": "//VERSION=3\nfunction setup(){return {input:[\"VV\",\"VH\",\"localIncidenceAngle\",\"shadowMask\",\"dataMask\",\"scatteringArea\"],output:{bands:6,sampleType:\"FLOAT32\"},mosaicking:\"TILE\"};}\nfunction evaluatePixel(samples){if(samples.length!==1)return [0,0,0,1,0,0];let s=samples[0];return [s.VV,s.VH,s.localIncidenceAngle,s.shadowMask,s.dataMask,s.scatteringArea];}\nfunction updateOutputMetadata(scenes,inputMetadata,outputMetadata){outputMetadata.userData={scenes:scenes.tiles,inputMetadata:inputMetadata};}"
+}

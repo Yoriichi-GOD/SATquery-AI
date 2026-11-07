@@ -1,0 +1,88 @@
+{
+  "checked_on": "2026-11-05",
+  "state": "SOURCE_BEHAVIOUR_REGRESSIONS_PASS_RENDERED_CHECK_INCOMPLETE",
+  "requirements": {
+    "header_fixed": true,
+    "header_blur_removed": true,
+    "normal_document_scroll": true,
+    "playbook_fonts_self_hosted": true,
+    "impeccable_and_emil_guidance_applied": true
+  },
+  "shared_behaviour_tests": {
+    "passed": 8,
+    "scope": "DOM doubles, not a rendered browser"
+  },
+  "existing_python_regressions": {
+    "passed": 86,
+    "failures": 0
+  },
+  "css_parse": "PASS, existing local PostCSS package; not layout verification",
+  "javascript_syntax": "PASS",
+  "http": {
+    "base": "http://127.0.0.1:18870",
+    "assets": {
+      "workspace-shell.css": {
+        "sha256": "abc7fd43afc2112f5ef3c66432feae7e02e8983988c0d6f464f43cb5c857aaf2",
+        "bytes": 3722
+      },
+      "workspace-shell.js": {
+        "sha256": "ab529c2fd1dd8a9684642a0c338f96c3877e54b52dc3ea1859d0d1575cbf61d7",
+        "bytes": 1865
+      },
+      "cosmic-shell.css": {
+        "sha256": "b15389ddb6010dc9ac476de84983ceefdf9b01a8829d5e0fbf91c8ff629066d7",
+        "bytes": 9784
+      },
+      "fonts/geist-latin-400-normal.woff2": {
+        "sha256": "ead637fd0b6b887d829b3ce3f25fdc242b1de0cfb69c0d97987933675d1315ba",
+        "bytes": 12956
+      },
+      "fonts/geist-latin-500-normal.woff2": {
+        "sha256": "6145bf6706dbc1b6686f04f871489cf724951f00b752745896ccdcac07639a53",
+        "bytes": 13296
+      },
+      "fonts/geist-OFL.txt": {
+        "sha256": "71609cbb5c78b5870d712eab73a31d76622635c6ed034ab5cee3b9ecbda8685f",
+        "bytes": 4486
+      },
+      "fonts/ibm-plex-mono-latin-400-normal.woff2": {
+        "sha256": "08949f728dc52d528e69b1667d15c89a5686a4ee9a296ff90983985f99c380f7",
+        "bytes": 14708
+      },
+      "fonts/ibm-plex-mono-OFL.txt": {
+        "sha256": "23b0a9d0c6d3f140a0b77e483c5cfa6bba574325ef5cb189ed9f2fec4884533f",
+        "bytes": 5299
+      },
+      "fonts/space-grotesk-latin-500-normal.woff2": {
+        "sha256": "1b1a8131d9edf975d9decee81e2f2bf504812f7a4f498e5500f28a613e22e64c",
+        "bytes": 13312
+      },
+      "fonts/space-grotesk-OFL.txt": {
+        "sha256": "18a4de52385f6b988782639d5d0cc1326e5a8c2de9a7f01d7b20d9aedcc60943",
+        "bytes": 4401
+      }
+    },
+    "status": {
+      "state": "saved flood evidence and bounded automatic water/exposure runs available",
+      "lab_port": 8770
+    },
+    "state": "PASS"
+  },
+  "browser": "INCOMPLETE_LOCAL_BROWSER_DISABLED",
+  "installed_files": {
+    "scripts/test_workspace_shell.cjs": "768ec64d16e3033a30ae3c59467371571ce548de4723d06be0fb56cd1d4e7243",
+    "web/cosmic-shell.css": "b15389ddb6010dc9ac476de84983ceefdf9b01a8829d5e0fbf91c8ff629066d7",
+    "web/index.html": "a17c88f5055ea95c2d2be8f155a21826d5c9ab39bf49da5b45da1eb22a23d9cf",
+    "web/workspace-shell.css": "abc7fd43afc2112f5ef3c66432feae7e02e8983988c0d6f464f43cb5c857aaf2",
+    "web/workspace-shell.js": "ab529c2fd1dd8a9684642a0c338f96c3877e54b52dc3ea1859d0d1575cbf61d7",
+    "docs/lifeline/UI_SHELL_RULES.md": "b8c9cb3c82eac6135e2541c2d5be87dc0359282f3de026cd69e78959ed3d26b9",
+    "web/fonts/geist-latin-400-normal.woff2": "ead637fd0b6b887d829b3ce3f25fdc242b1de0cfb69c0d97987933675d1315ba",
+    "web/fonts/geist-latin-500-normal.woff2": "6145bf6706dbc1b6686f04f871489cf724951f00b752745896ccdcac07639a53",
+    "web/fonts/geist-OFL.txt": "71609cbb5c78b5870d712eab73a31d76622635c6ed034ab5cee3b9ecbda8685f",
+    "web/fonts/ibm-plex-mono-latin-400-normal.woff2": "08949f728dc52d528e69b1667d15c89a5686a4ee9a296ff90983985f99c380f7",
+    "web/fonts/ibm-plex-mono-OFL.txt": "23b0a9d0c6d3f140a0b77e483c5cfa6bba574325ef5cb189ed9f2fec4884533f",
+    "web/fonts/space-grotesk-latin-500-normal.woff2": "1b1a8131d9edf975d9decee81e2f2bf504812f7a4f498e5500f28a613e22e64c",
+    "web/fonts/space-grotesk-OFL.txt": "18a4de52385f6b988782639d5d0cc1326e5a8c2de9a7f01d7b20d9aedcc60943"
+  },
+  "day1_tag_unchanged": "f3945347cf0f0a4581aa1480c8fa1501a25da4b4"
+}

@@ -1,0 +1,12 @@
+{
+  "source_files": {
+    "files": 103,
+    "original_matches_snapshot": true
+  },
+  "ignored_local_data": {
+    "files": 59,
+    "original_matches_snapshot": true
+  },
+  "isolated_data_matches_snapshot": true,
+  "checked_at": "2026-11-05T08:23:03.355165+00:00"
+}

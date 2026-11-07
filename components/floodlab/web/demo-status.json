@@ -1,0 +1,18 @@
+{
+  "real_run": "nepal-syapru-004",
+  "imagery": "S1D August 16/28 and S2 August 12/27, 2026; aligned 10m grid",
+  "historical_osm": "July 27 snapshot; 582 historical road versions verified",
+  "connectivity": "graph computed; settlement conclusions remain unknown due coverage/boundary and snapping",
+  "debris": "unvalidated vegetation-loss/bare-ground/SAR-change proxy",
+  "ai": "Qwen3-0.6B routing plus evidence templates; 9/12 development routing checks; explicit-topic fallback",
+  "reference_comparison": "one AOI diagnostic landslide agreement: IoU 0.3279, F1 0.4939; not independent accuracy validation",
+  "arbitrary_area_date": "Workspace API full fresh run verified: event-fe47db331390; SAR, optical/debris proxy, historical road graph, exposure, reports, hashes",
+  "submission_ready": false,
+  "remaining": [
+    "browser visual/interaction verification",
+    "independent validation and Nepali review",
+    "demo recording",
+    "public repository/submission authorization"
+  ],
+  "regression_tests": 69
+}

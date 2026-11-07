@@ -1,0 +1,22 @@
+[
+  {
+    "port": 8767,
+    "status": 200
+  },
+  {
+    "port": 8770,
+    "status": 200
+  },
+  {
+    "run": "nepal-syapru-001",
+    "verified_downloads": 10
+  },
+  {
+    "run": "nepal-syapru-002",
+    "verified_downloads": 12
+  },
+  {
+    "run": "synthetic-bridge-001",
+    "verified_downloads": 10
+  }
+]

@@ -1,0 +1,156 @@
+{
+  "checked_at": "2026-11-05T08:22:19.458966+00:00",
+  "base_url": "http://127.0.0.1:18870",
+  "state": "PASS",
+  "population": "GENUINE_SAVED_NETWORK_REPLAY_NOT_FIELD_VALIDATION",
+  "baseline_scenario_id": "18589793f3e51f9ada338a4f",
+  "repair_scenario_id": "9390d857e88064dc892b9255",
+  "baseline_summary": {
+    "mapped_before_route": 1,
+    "no_mapped_route_in_scenario": 0,
+    "not_assessed": 1,
+    "observation_supported_mapped_routes": 0,
+    "possible_routes_through_unknown": 0,
+    "settlements": 2,
+    "unknown_aoi_boundary": 1
+  },
+  "repair_summary": {
+    "mapped_before_route": 1,
+    "no_mapped_route_in_scenario": 0,
+    "not_assessed": 1,
+    "observation_supported_mapped_routes": 0,
+    "possible_routes_through_unknown": 1,
+    "settlements": 2,
+    "unknown_aoi_boundary": 0
+  },
+  "repair_way_ids": [
+    "way/332122791",
+    "way/83925854",
+    "way/84566285",
+    "way/84566287"
+  ],
+  "search": {
+    "bundle_search": "Directed pre-event shortest-path bundles only; not global optimum",
+    "bundles_skipped_size_limit": 0,
+    "candidate_way_count": 13,
+    "rankings": [
+      {
+        "newly_observation_supported_mapped_routes": [],
+        "newly_possible_mapped_routes": [
+          "node/267564991"
+        ],
+        "possible_gain": 1,
+        "rank": 1,
+        "repaired_candidate_length_m": 1206.8014514362885,
+        "restore_way_ids": [
+          "way/332122791",
+          "way/83925854",
+          "way/84566285",
+          "way/84566287"
+        ],
+        "scope": "Conditional model counterfactual; unknown observations remain unknown",
+        "supported_gain": 0
+      }
+    ],
+    "scenarios_evaluated": 14,
+    "search_complete": true,
+    "seconds": 10.130679779000275,
+    "state": "COMPLETE_DECLARED_SEARCH"
+  },
+  "no_hub_state": "NOT_ASSESSED_NO_HUBS",
+  "exports": {
+    "response.json": {
+      "sha256": "d647ce2b0cdbf4193a9e15afdf10558737b5a2423a799263dddce417162c55b7",
+      "bytes": 514741
+    },
+    "routes.geojson": {
+      "sha256": "9709e69084a01047b0f4386206dcdda9ebcd5f87fdeca2049aae3e6f102275e8",
+      "bytes": 138746
+    },
+    "facts.json": {
+      "sha256": "fbe947e33e3e2b6480459ad277877cf6f952009c027bc6c47de3dbb1e6716d64",
+      "bytes": 1055
+    },
+    "fieldkit.kml": {
+      "sha256": "5906d117dadccd09351124e9079d9b2f9dc7a34055396dab46f387e0a4d4a6c2",
+      "bytes": 53372
+    },
+    "alert-en.txt": {
+      "sha256": "e422d01c3d7a8b524a3678d7c4cfe349c244272bf3db4369a277abc4ebc0dae4",
+      "bytes": 358
+    },
+    "alert-ne.txt": {
+      "sha256": "68deaf3b37454b346b6edbcbc060c97fdcf48e71adb1557cedc7b550677978b8",
+      "bytes": 613
+    },
+    "evidence.json": {
+      "sha256": "ff928758aa7093d4cee8a29505c43c4761cb9c41b89ee8329ae74e74988f119f",
+      "bytes": 1884
+    },
+    "bundle.zip": {
+      "sha256": "d88f100c837c1fe921188e93ce390c275b04bf1cf1b9c3a7e1131d199972373a",
+      "bytes": 80387
+    }
+  },
+  "served_ui_assets": {
+    "/assets/cosmic/floating-galaxy.png": {
+      "sha256": "9bf2db732e6df8b9401784ab04bf51c952a9055dd0c4a63088807f5a3359a7ad",
+      "bytes": 3004242
+    },
+    "/assets/cosmic/saturn-brand-icon-only.png": {
+      "sha256": "77f85c93cc66ee122886b3237ae6e256aec0702cf41eab2290f15b17c0f9aa2a",
+      "bytes": 583164
+    },
+    "/assets/cosmic/saturn-brand-logo.png": {
+      "sha256": "fadc216a555f2c84651d41af39f8178352b94e178a697c376b998687ba917560",
+      "bytes": 1116391
+    },
+    "/assets/cosmic/scientific-noir-background.png": {
+      "sha256": "79bf0e52cca240d9c3b1f8e1f17656134636ccb1cbdd3f222c8f2dafbbf93e4e",
+      "bytes": 2328940
+    },
+    "/assets/cosmic/thin-scientific-data-footer.png": {
+      "sha256": "08c603794093aec944e9c72d42bbe1e8f8d163653a34d876725020c4f4295829",
+      "bytes": 509075
+    },
+    "/assets/fonts/geist-OFL.txt": {
+      "sha256": "71609cbb5c78b5870d712eab73a31d76622635c6ed034ab5cee3b9ecbda8685f",
+      "bytes": 4486
+    },
+    "/assets/fonts/geist-latin-400-normal.woff2": {
+      "sha256": "ead637fd0b6b887d829b3ce3f25fdc242b1de0cfb69c0d97987933675d1315ba",
+      "bytes": 12956
+    },
+    "/assets/fonts/geist-latin-500-normal.woff2": {
+      "sha256": "6145bf6706dbc1b6686f04f871489cf724951f00b752745896ccdcac07639a53",
+      "bytes": 13296
+    },
+    "/assets/fonts/ibm-plex-mono-OFL.txt": {
+      "sha256": "23b0a9d0c6d3f140a0b77e483c5cfa6bba574325ef5cb189ed9f2fec4884533f",
+      "bytes": 5299
+    },
+    "/assets/fonts/ibm-plex-mono-latin-400-normal.woff2": {
+      "sha256": "08949f728dc52d528e69b1667d15c89a5686a4ee9a296ff90983985f99c380f7",
+      "bytes": 14708
+    },
+    "/assets/fonts/space-grotesk-OFL.txt": {
+      "sha256": "18a4de52385f6b988782639d5d0cc1326e5a8c2de9a7f01d7b20d9aedcc60943",
+      "bytes": 4401
+    },
+    "/assets/fonts/space-grotesk-latin-500-normal.woff2": {
+      "sha256": "1b1a8131d9edf975d9decee81e2f2bf504812f7a4f498e5500f28a613e22e64c",
+      "bytes": 13312
+    }
+  },
+  "frozen_files_verified_unchanged": 15,
+  "checks": [
+    "live GET/POST",
+    "all field exports and SHA headers",
+    "KML XML parse",
+    "ZIP CRC and exact payloads",
+    "missing hubs remain null",
+    "invalid repairs rejected",
+    "unknown observations preserved",
+    "all frozen source hashes unchanged"
+  ]
+}

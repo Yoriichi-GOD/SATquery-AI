@@ -1,0 +1,19 @@
+{
+  "schema": "satquery.case-campaign/1",
+  "frozen_before_new_measurements": true,
+  "purpose": "Acquire genuine case data and measure supported temporal/terrain quantities; validate accuracy only with compatible independent references",
+  "cases": {
+    "nepal": {"bbox": [85.3232,28.1491,85.3483,28.1882], "crs": "EPSG:32645", "event": "2026-08-26", "role": "previously_inspected_development", "inputs": "retained Sentinel1/2 candidates and historical OSM; new native GLO30 and historical NASADEM context"},
+    "kedarnath": {"bbox": [78.96,30.60,79.12,30.80], "crs": "EPSG:32644", "event": "2013-06-16", "before": "2013-05-22", "after": "2013-06-23", "role": "exploratory_upper_Mandakini_window_not_event_boundary", "missing_modality": "Sentinel1/2 unavailable2013"},
+    "varanasi": {"bbox": [82.95,25.22,83.08,25.38], "crs": "EPSG:32644", "before": "2017", "after": "2023", "role": "exploratory_city_river_window_not_municipal_boundary"},
+    "sangam-vihar": {"bbox": [77.225,28.47,77.28,28.51], "crs": "EPSG:32643", "before": "2017", "after": "2023", "role": "southern_Delhi_exploratory_window_not_surveyed_settlement_boundary"}
+  },
+  "acquisition_limits": {"native_window_max_pixels": 4000000, "analysis_grid_max_pixels": 1000000, "analysis_pixel_m": 30, "maximum_individual_archive_mib": 80, "total_local_raw_budget_gib": 2, "paid_calls": 0, "credentials": "public account-free signing only; tokens are never persisted"},
+  "urban": {"product": "io-lulc-annual-v02", "years": [2017,2023], "built_code": 7, "water_code": 1, "unknown_codes": [0,10], "classes_are": "annual model predictions, not independent reference labels", "metrics": ["common_observed_area", "built_stock_each_year", "gross_nonbuilt_to_built", "gross_built_to_nonbuilt", "net_built_difference", "transition_matrix", "water_stock", "30m_terrain_context", "cross_product_agreement_not_accuracy"]},
+  "landsat": {"collection": "landsat-c2-l2", "bands": ["blue","green","red","nir08","swir16","swir22","qa_pixel","qa_radsat"], "reflectance_scale": 0.0000275, "reflectance_offset": -0.2, "excluded_qa_pixel_bits": [0,1,2,3,4,5], "saturated_pixels_excluded": true, "new_water_rule": "MNDWI after>0 and before<=0, on common valid support", "vegetation_loss_rule": "NDVI_before>0.4 AND NDVI_after<0.2 AND NDVI_drop>=0.25; proxy only, not debris classification", "threshold_selection": "fixed before viewing case outputs; no metric-driven tuning"},
+  "terrain": {"product": "CopernicusGLO30", "comparison_pixel_m": [30,90], "conditioning": "fill", "stream_area_m2": 100000, "urban_target_width_m": 5, "nepal_target_width_m": 10, "historical_terrain": "NASADEM where accessible; neither model certifies event-time topography", "physical_flow_or_water_depth_claim": false},
+  "reference_policy": {"EMSR927": "all delivered areas treated as development/context, not strict untouched holdouts", "EMSR049": "pre-event reference base mapping, not flood truth", "WorldCover": "cross-product context only; v100/v200 method change confounds temporal comparison", "JRC": "historical water context, not event truth", "unlisted_infrastructure": "not automatic negative labels"},
+  "experiment_policy": "Run A-D only on compatible targets and common support; retain original22road diagnostic separately; report missing labels and abstentions instead of inventing IoU/F1",
+  "evidence_tracing_control": "scripted source-support and tamper/unknown challenge set with and without provenance gate; zero human participant or productivity claim",
+  "publication": "private local research release; no push or paper submission authorized"
+}

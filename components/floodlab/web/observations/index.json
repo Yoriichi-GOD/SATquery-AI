@@ -1,0 +1,173 @@
+{
+  "auto-multisensor-001": {
+    "optical-pre": {
+      "url": "/assets/observations/ed892dbf52413907ed7f9f0ae58aca3d716c2e5fb452a54a0218d7dba2b2691b.png",
+      "date": "2026-08-22",
+      "source_sha256": "ed892dbf52413907ed7f9f0ae58aca3d716c2e5fb452a54a0218d7dba2b2691b",
+      "description": "Sentinel-2 RGB (B04/B03/B02), fixed 0\u20130.3 reflectance display and gamma 2.2. Clouds remain visible; black indicates invalid/no data. Display preview, not a classification."
+    },
+    "optical-post": {
+      "url": "/assets/observations/964b26a5c8f218e6605c09fd929bac7849abd3acc4c3b334aa714809f89069a1.png",
+      "date": "2026-08-27",
+      "source_sha256": "964b26a5c8f218e6605c09fd929bac7849abd3acc4c3b334aa714809f89069a1",
+      "description": "Sentinel-2 RGB (B04/B03/B02), fixed 0\u20130.3 reflectance display and gamma 2.2. Clouds remain visible; black indicates invalid/no data. Display preview, not a classification."
+    },
+    "sar_pair_sha256": "6a8560f1745fceb13372cb2fb3a66e426a754a8af635f64571b098866d84b38b:a294a6e2ad122a23f8896f352a5ec25be0ca4a9d3b56493aefc371a8a2283363"
+  },
+  "event-5a5655b30ac4": {
+    "optical-pre": {
+      "url": "/assets/observations/ed892dbf52413907ed7f9f0ae58aca3d716c2e5fb452a54a0218d7dba2b2691b.png",
+      "date": "2026-08-22",
+      "source_sha256": "ed892dbf52413907ed7f9f0ae58aca3d716c2e5fb452a54a0218d7dba2b2691b",
+      "description": "Sentinel-2 RGB (B04/B03/B02), fixed 0\u20130.3 reflectance display and gamma 2.2. Clouds remain visible; black indicates invalid/no data. Display preview, not a classification."
+    },
+    "optical-post": {
+      "url": "/assets/observations/34540f18388bf64d0970b50b120b01611e7c91e3707e937404911f980c776a17.png",
+      "date": "2026-09-01",
+      "source_sha256": "34540f18388bf64d0970b50b120b01611e7c91e3707e937404911f980c776a17",
+      "description": "Sentinel-2 RGB (B04/B03/B02), fixed 0\u20130.3 reflectance display and gamma 2.2. Clouds remain visible; black indicates invalid/no data. Display preview, not a classification."
+    },
+    "sar_pair_sha256": "6a8560f1745fceb13372cb2fb3a66e426a754a8af635f64571b098866d84b38b:a294a6e2ad122a23f8896f352a5ec25be0ca4a9d3b56493aefc371a8a2283363"
+  },
+  "event-701e63177baa": {
+    "optical-pre": {
+      "url": "/assets/observations/ed892dbf52413907ed7f9f0ae58aca3d716c2e5fb452a54a0218d7dba2b2691b.png",
+      "date": "2026-08-22",
+      "source_sha256": "ed892dbf52413907ed7f9f0ae58aca3d716c2e5fb452a54a0218d7dba2b2691b",
+      "description": "Sentinel-2 RGB (B04/B03/B02), fixed 0\u20130.3 reflectance display and gamma 2.2. Clouds remain visible; black indicates invalid/no data. Display preview, not a classification."
+    },
+    "optical-post": {
+      "url": "/assets/observations/964b26a5c8f218e6605c09fd929bac7849abd3acc4c3b334aa714809f89069a1.png",
+      "date": "2026-08-27",
+      "source_sha256": "964b26a5c8f218e6605c09fd929bac7849abd3acc4c3b334aa714809f89069a1",
+      "description": "Sentinel-2 RGB (B04/B03/B02), fixed 0\u20130.3 reflectance display and gamma 2.2. Clouds remain visible; black indicates invalid/no data. Display preview, not a classification."
+    },
+    "sar_pair_sha256": "6a8560f1745fceb13372cb2fb3a66e426a754a8af635f64571b098866d84b38b:a294a6e2ad122a23f8896f352a5ec25be0ca4a9d3b56493aefc371a8a2283363"
+  },
+  "event-fe47db331390": {
+    "optical-pre": {
+      "url": "/assets/observations/ed892dbf52413907ed7f9f0ae58aca3d716c2e5fb452a54a0218d7dba2b2691b.png",
+      "date": "2026-08-22",
+      "source_sha256": "ed892dbf52413907ed7f9f0ae58aca3d716c2e5fb452a54a0218d7dba2b2691b",
+      "description": "Sentinel-2 RGB (B04/B03/B02), fixed 0\u20130.3 reflectance display and gamma 2.2. Clouds remain visible; black indicates invalid/no data. Display preview, not a classification."
+    },
+    "optical-post": {
+      "url": "/assets/observations/964b26a5c8f218e6605c09fd929bac7849abd3acc4c3b334aa714809f89069a1.png",
+      "date": "2026-08-27",
+      "source_sha256": "964b26a5c8f218e6605c09fd929bac7849abd3acc4c3b334aa714809f89069a1",
+      "description": "Sentinel-2 RGB (B04/B03/B02), fixed 0\u20130.3 reflectance display and gamma 2.2. Clouds remain visible; black indicates invalid/no data. Display preview, not a classification."
+    },
+    "sar_pair_sha256": "6a8560f1745fceb13372cb2fb3a66e426a754a8af635f64571b098866d84b38b:a294a6e2ad122a23f8896f352a5ec25be0ca4a9d3b56493aefc371a8a2283363"
+  },
+  "nepal-syapru-004": {
+    "optical-pre": {
+      "url": "/assets/observations/52ece7b6cdf31c995fa946c21691f5333258e63643e8c95a26a1f7be32928991.png",
+      "date": "2026-08-12",
+      "source_sha256": "52ece7b6cdf31c995fa946c21691f5333258e63643e8c95a26a1f7be32928991",
+      "description": "Sentinel-2 RGB (B04/B03/B02), fixed 0\u20130.3 reflectance display and gamma 2.2. Clouds remain visible; black indicates invalid/no data. Display preview, not a classification."
+    },
+    "optical-post": {
+      "url": "/assets/observations/5ffe4091276bee9b0cfbdd7ece4ed3f6dd027275f5628d5307da1b5e3aa4e134.png",
+      "date": "2026-08-27",
+      "source_sha256": "5ffe4091276bee9b0cfbdd7ece4ed3f6dd027275f5628d5307da1b5e3aa4e134",
+      "description": "Sentinel-2 RGB (B04/B03/B02), fixed 0\u20130.3 reflectance display and gamma 2.2. Clouds remain visible; black indicates invalid/no data. Display preview, not a classification."
+    },
+    "sar_pair_sha256": "2885413c698400dc9910482755528e15ed9c433d96816f7646e6990a2e54f1e7:4edcd6bf2a9e73bc563bd44566b3a1a4821c9191827c2579bb4964e843885a29"
+  },
+  "auto-syapru-001": {
+    "optical-pre": {
+      "url": "/assets/observations/ed892dbf52413907ed7f9f0ae58aca3d716c2e5fb452a54a0218d7dba2b2691b.png",
+      "date": "2026-08-22",
+      "source_sha256": "ed892dbf52413907ed7f9f0ae58aca3d716c2e5fb452a54a0218d7dba2b2691b",
+      "description": "Sentinel-2 RGB (B04/B03/B02), fixed 0\u20130.3 reflectance display and gamma 2.2. Clouds remain visible; black indicates invalid/no data. Display preview, not a classification."
+    },
+    "optical-post": {
+      "url": "/assets/observations/964b26a5c8f218e6605c09fd929bac7849abd3acc4c3b334aa714809f89069a1.png",
+      "date": "2026-08-27",
+      "source_sha256": "964b26a5c8f218e6605c09fd929bac7849abd3acc4c3b334aa714809f89069a1",
+      "description": "Sentinel-2 RGB (B04/B03/B02), fixed 0\u20130.3 reflectance display and gamma 2.2. Clouds remain visible; black indicates invalid/no data. Display preview, not a classification."
+    },
+    "sar_pair_sha256": "6a8560f1745fceb13372cb2fb3a66e426a754a8af635f64571b098866d84b38b:a294a6e2ad122a23f8896f352a5ec25be0ca4a9d3b56493aefc371a8a2283363",
+    "shared_grid_match": true
+  },
+  "auto-topology-001": {
+    "optical-pre": {
+      "url": "/assets/observations/ed892dbf52413907ed7f9f0ae58aca3d716c2e5fb452a54a0218d7dba2b2691b.png",
+      "date": "2026-08-22",
+      "source_sha256": "ed892dbf52413907ed7f9f0ae58aca3d716c2e5fb452a54a0218d7dba2b2691b",
+      "description": "Sentinel-2 RGB (B04/B03/B02), fixed 0\u20130.3 reflectance display and gamma 2.2. Clouds remain visible; black indicates invalid/no data. Display preview, not a classification."
+    },
+    "optical-post": {
+      "url": "/assets/observations/964b26a5c8f218e6605c09fd929bac7849abd3acc4c3b334aa714809f89069a1.png",
+      "date": "2026-08-27",
+      "source_sha256": "964b26a5c8f218e6605c09fd929bac7849abd3acc4c3b334aa714809f89069a1",
+      "description": "Sentinel-2 RGB (B04/B03/B02), fixed 0\u20130.3 reflectance display and gamma 2.2. Clouds remain visible; black indicates invalid/no data. Display preview, not a classification."
+    },
+    "sar_pair_sha256": "6a8560f1745fceb13372cb2fb3a66e426a754a8af635f64571b098866d84b38b:a294a6e2ad122a23f8896f352a5ec25be0ca4a9d3b56493aefc371a8a2283363",
+    "shared_grid_match": true
+  },
+  "event-a2f6be3efa57": {
+    "optical-pre": {
+      "url": "/assets/observations/ed892dbf52413907ed7f9f0ae58aca3d716c2e5fb452a54a0218d7dba2b2691b.png",
+      "date": "2026-08-22",
+      "source_sha256": "ed892dbf52413907ed7f9f0ae58aca3d716c2e5fb452a54a0218d7dba2b2691b",
+      "description": "Sentinel-2 RGB (B04/B03/B02), fixed 0\u20130.3 reflectance display and gamma 2.2. Clouds remain visible; black indicates invalid/no data. Display preview, not a classification."
+    },
+    "optical-post": {
+      "url": "/assets/observations/964b26a5c8f218e6605c09fd929bac7849abd3acc4c3b334aa714809f89069a1.png",
+      "date": "2026-08-27",
+      "source_sha256": "964b26a5c8f218e6605c09fd929bac7849abd3acc4c3b334aa714809f89069a1",
+      "description": "Sentinel-2 RGB (B04/B03/B02), fixed 0\u20130.3 reflectance display and gamma 2.2. Clouds remain visible; black indicates invalid/no data. Display preview, not a classification."
+    },
+    "sar_pair_sha256": "6a8560f1745fceb13372cb2fb3a66e426a754a8af635f64571b098866d84b38b:a294a6e2ad122a23f8896f352a5ec25be0ca4a9d3b56493aefc371a8a2283363",
+    "shared_grid_match": true
+  },
+  "nepal-syapru-001": {
+    "optical-pre": {
+      "url": "/assets/observations/52ece7b6cdf31c995fa946c21691f5333258e63643e8c95a26a1f7be32928991.png",
+      "date": "2026-08-12",
+      "source_sha256": "52ece7b6cdf31c995fa946c21691f5333258e63643e8c95a26a1f7be32928991",
+      "description": "Sentinel-2 RGB (B04/B03/B02), fixed 0\u20130.3 reflectance display and gamma 2.2. Clouds remain visible; black indicates invalid/no data. Display preview, not a classification."
+    },
+    "optical-post": {
+      "url": "/assets/observations/5ffe4091276bee9b0cfbdd7ece4ed3f6dd027275f5628d5307da1b5e3aa4e134.png",
+      "date": "2026-08-27",
+      "source_sha256": "5ffe4091276bee9b0cfbdd7ece4ed3f6dd027275f5628d5307da1b5e3aa4e134",
+      "description": "Sentinel-2 RGB (B04/B03/B02), fixed 0\u20130.3 reflectance display and gamma 2.2. Clouds remain visible; black indicates invalid/no data. Display preview, not a classification."
+    },
+    "sar_pair_sha256": "2885413c698400dc9910482755528e15ed9c433d96816f7646e6990a2e54f1e7:4edcd6bf2a9e73bc563bd44566b3a1a4821c9191827c2579bb4964e843885a29",
+    "shared_grid_match": true
+  },
+  "nepal-syapru-002": {
+    "optical-pre": {
+      "url": "/assets/observations/52ece7b6cdf31c995fa946c21691f5333258e63643e8c95a26a1f7be32928991.png",
+      "date": "2026-08-12",
+      "source_sha256": "52ece7b6cdf31c995fa946c21691f5333258e63643e8c95a26a1f7be32928991",
+      "description": "Sentinel-2 RGB (B04/B03/B02), fixed 0\u20130.3 reflectance display and gamma 2.2. Clouds remain visible; black indicates invalid/no data. Display preview, not a classification."
+    },
+    "optical-post": {
+      "url": "/assets/observations/5ffe4091276bee9b0cfbdd7ece4ed3f6dd027275f5628d5307da1b5e3aa4e134.png",
+      "date": "2026-08-27",
+      "source_sha256": "5ffe4091276bee9b0cfbdd7ece4ed3f6dd027275f5628d5307da1b5e3aa4e134",
+      "description": "Sentinel-2 RGB (B04/B03/B02), fixed 0\u20130.3 reflectance display and gamma 2.2. Clouds remain visible; black indicates invalid/no data. Display preview, not a classification."
+    },
+    "sar_pair_sha256": "2885413c698400dc9910482755528e15ed9c433d96816f7646e6990a2e54f1e7:4edcd6bf2a9e73bc563bd44566b3a1a4821c9191827c2579bb4964e843885a29",
+    "shared_grid_match": true
+  },
+  "nepal-syapru-003": {
+    "optical-pre": {
+      "url": "/assets/observations/52ece7b6cdf31c995fa946c21691f5333258e63643e8c95a26a1f7be32928991.png",
+      "date": "2026-08-12",
+      "source_sha256": "52ece7b6cdf31c995fa946c21691f5333258e63643e8c95a26a1f7be32928991",
+      "description": "Sentinel-2 RGB (B04/B03/B02), fixed 0\u20130.3 reflectance display and gamma 2.2. Clouds remain visible; black indicates invalid/no data. Display preview, not a classification."
+    },
+    "optical-post": {
+      "url": "/assets/observations/5ffe4091276bee9b0cfbdd7ece4ed3f6dd027275f5628d5307da1b5e3aa4e134.png",
+      "date": "2026-08-27",
+      "source_sha256": "5ffe4091276bee9b0cfbdd7ece4ed3f6dd027275f5628d5307da1b5e3aa4e134",
+      "description": "Sentinel-2 RGB (B04/B03/B02), fixed 0\u20130.3 reflectance display and gamma 2.2. Clouds remain visible; black indicates invalid/no data. Display preview, not a classification."
+    },
+    "sar_pair_sha256": "2885413c698400dc9910482755528e15ed9c433d96816f7646e6990a2e54f1e7:4edcd6bf2a9e73bc563bd44566b3a1a4821c9191827c2579bb4964e843885a29",
+    "shared_grid_match": true
+  }
+}

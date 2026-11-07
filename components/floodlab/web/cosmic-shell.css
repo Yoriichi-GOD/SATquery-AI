@@ -1,0 +1,54 @@
+/* SATQuery's existing Scientific Noir identity. Artwork never alters evidence pixels. */
+:root,:root[data-theme=dark]{color-scheme:dark;--bg:#020304;--card:rgba(15,17,20,.68);--input:#101317;--text:#f3f5f7;--muted:#b4bcc6;--line:#ffffff26;--gold:#d7e3e9;--header:none;--footer:none;--sq-focus:#c5e8ef;--sq-glass:rgba(15,17,20,.58)}
+:root[data-theme=light]{color-scheme:light;--bg:#edf0f3;--card:rgba(250,252,253,.9);--input:#e7ecf0;--text:#17202a;--muted:#4d5c6a;--line:#364e6c3d;--gold:#294c60;--sq-focus:#1d5669;--sq-glass:rgba(250,252,253,.88)}
+html{scroll-padding-top:calc(var(--sq-header-h) + 16px)}body{padding-top:var(--sq-header-h);font:400 14px/1.6 Geist,'Segoe UI',sans-serif;background:var(--bg);isolation:isolate}
+body::before{content:'';position:fixed;inset:0;z-index:-1;pointer-events:none;background:linear-gradient(#02030455,#02030488),url('/assets/cosmic/scientific-noir-background.png') center top/cover no-repeat;opacity:.72}
+:root[data-theme=light] body::before{opacity:.08;filter:grayscale(1)}
+body *{scrollbar-color:#6d788666 transparent;scrollbar-width:thin}body [hidden]{display:none!important}
+body>header{position:fixed;inset:0 0 auto;z-index:20;min-height:92px;height:auto;padding:12px clamp(20px,3.2vw,60px);gap:34px;background:transparent;border:0;backdrop-filter:none;-webkit-backdrop-filter:none}
+:root[data-theme=light] body>header{background:transparent}
+body .brand{flex:none;min-width:0}.brand img.sq-brand-full{display:block;width:255px;max-width:100%;height:72px;object-fit:contain}
+:root[data-theme=light] .brand img.sq-brand-full{filter:brightness(.25) saturate(.35)}
+body header nav{gap:28px;align-self:stretch;align-items:center}body header nav button{font:500 14px/1.4 Geist,'Segoe UI',sans-serif;padding:15px 0;border:0;background:none;color:var(--muted);min-height:44px;position:relative}
+body header nav button.active{color:var(--text);border:0}body header nav button.active::after{content:'';position:absolute;bottom:4px;left:0;right:0;height:2px;background:linear-gradient(90deg,#e7d3b2,#d2ecf0,#d8c7e7)}
+body header .status{padding:0;gap:20px;color:var(--muted);font:11px/1.5 'IBM Plex Mono',Consolas,monospace}body #theme{width:40px;height:40px;border:1px solid var(--line);background:transparent;color:var(--text)}
+body main{max-width:1800px;margin:auto;padding:32px clamp(20px,3.2vw,60px) 20px;min-width:0}
+body h1,body h2,body h3{font-family:'Space Grotesk',Geist,'Segoe UI',sans-serif;font-weight:500;letter-spacing:-.035em}
+body .intro{margin:0 0 28px;align-items:end;gap:32px}body .intro h1{font-size:clamp(30px,3.4vw,48px);line-height:1.12;margin:10px 0 0;max-width:22ch}body .intro>p{font-size:14px;line-height:1.65;max-width:370px;margin:0;color:var(--muted)}
+body .eyebrow,.response-kicker{font:400 10px/1.6 'IBM Plex Mono',Consolas,monospace;letter-spacing:.17em;color:var(--muted)}
+body .workspace{grid-template-columns:minmax(0,1.65fr) minmax(340px,1fr);gap:24px;height:auto;min-height:0;align-items:start}
+body .visual,body .workspace>aside{border:0;border-radius:12px;background:var(--sq-glass);box-shadow:none;min-width:0;backdrop-filter:blur(10px)}
+body .visual{background:var(--sq-glass)}body .visual,body .workspace>aside{height:auto;overflow:visible}body .workspace>aside{padding:24px}
+body .map-heading{padding:22px 24px 0}.map-heading h2{font-size:23px;line-height:1.3}.map-heading p{font:11px/1.7 'IBM Plex Mono',Consolas,monospace;overflow-wrap:anywhere}
+body .map-stage{background:#030507;border-radius:8px;min-height:260px}.map-stage img,.map-stage svg{filter:none}
+body .visual-note{font:11px/1.7 'IBM Plex Mono',Consolas,monospace}.layer-controls{gap:12px}
+body input,body select,body textarea{font:400 14px/1.55 Geist,'Segoe UI',sans-serif;border-radius:7px;border-color:var(--line);background:var(--input);color:var(--text)}
+body input[type=checkbox]{accent-color:#b9d9e2}body textarea{line-height:1.7}body label{font-size:12px}
+body button{font-family:Geist,'Segoe UI',sans-serif;min-height:40px;touch-action:manipulation}
+body button:focus-visible,body a:focus-visible,body select:focus-visible,body textarea:focus-visible,body input:focus-visible,body summary:focus-visible{outline:2px solid var(--sq-focus);outline-offset:4px}
+body #copilot-form>button,body #event-form>button{background:linear-gradient(115deg,#e1e9ec,#d9e6e7 55%,#e6dcc9);color:#10171c;border:0;border-radius:7px;font-weight:500;min-height:44px;padding:10px 18px;margin-top:14px}
+body .question-panel h2{font-size:25px}body .question-panel>p{font-size:13px;max-width:50ch}body .analysis-settings p{line-height:1.7}
+body .flood-metrics>div,body .answer-metric{background:#ffffff05;border:0;border-radius:5px;padding:14px}body .flood-metrics{gap:12px;margin:22px 0}
+body .flood-metrics .value{font:500 24px/1.3 'Space Grotesk',Geist,sans-serif;font-variant-numeric:tabular-nums}body .flood-metrics small{font-size:11px}
+body .boundary,body #coverage,body .processing-record{line-height:1.7}body td,body th{font-size:12px;border-color:var(--line)}body th{font-weight:500}
+body a{color:var(--gold);text-underline-offset:4px}body details{border-color:var(--line)}body summary{min-height:40px;display:list-item;align-content:center}
+body .evidence-card{background:transparent;border:0;border-radius:0}body #evaluation .evaluation-art{object-fit:contain;opacity:.88}
+body #response-view{padding-top:4px;max-width:none}.response-heading{margin-bottom:24px;gap:32px}.response-heading h1{font:500 clamp(30px,3.2vw,45px)/1.15 'Space Grotesk',Geist,sans-serif;letter-spacing:-.04em;margin-top:8px}
+.response-picker{width:min(100%,330px)}.response-picker label{margin:0}#response-load{font-weight:500;background:#dae6e9!important;color:#111c23!important;border:0!important}
+#response-view .response-grid{gap:32px}#response-view .response-grid>div{min-width:0}#response-view .response-actions{padding:24px;background:var(--sq-glass);border:0;border-radius:12px;align-self:start;backdrop-filter:blur(10px)}
+#response-view button,#response-view select{border-radius:7px;font-size:13px}#response-view .response-actions h2{font-size:26px;line-height:1.25}#response-view .response-actions p{font-size:13px}
+#response-view .response-counts dt{font-size:13px}#response-view .response-counts dd{font:500 23px/1.3 'Space Grotesk',Geist,sans-serif}#response-view .response-counts>div{padding:12px 0;align-items:center}
+#response-map{background:#040608cc;border:1px solid #ffffff12;border-radius:10px;min-height:200px}#response-map-note{font-size:11px;max-width:80ch}
+#response-repairs{margin:24px 0 14px}#response-repairs h3{font-size:15px;letter-spacing:-.015em}.response-repair button{width:100%;background:#dae6e9!important;color:#111c23!important;border:0!important;font-weight:500}
+.response-manual{margin:18px 0 8px;padding:12px 0 0}.response-manual label{display:block;margin:14px 0 8px;line-height:1.5}.response-manual select,.response-manual button{width:100%;margin:0 0 10px}
+#response-view .response-exports a{font-size:12px}#response-view .response-exports a:last-child{order:-1;width:100%;font-size:15px;font-weight:500}.response-exports a:first-child{font-size:12px;width:auto;font-weight:400}
+body>footer{position:relative;min-height:90px;max-width:1800px;margin:16px auto 0;padding:32px clamp(20px,3.2vw,60px) 24px;background:none;align-items:start;gap:24px;overflow:hidden;color:var(--muted);font:10px/1.6 'IBM Plex Mono',Consolas,monospace;letter-spacing:.08em}
+body>footer::before{content:'';position:absolute;inset:0 0 auto;height:18px;pointer-events:none;background:url('/assets/cosmic/thin-scientific-data-footer.png') center 42%/max(100%,1100px) auto no-repeat;opacity:.8}
+body>footer span:nth-child(2){letter-spacing:0;text-align:center}body>footer span:last-child{text-align:right}
+@media(min-width:1600px){body .workspace{grid-template-columns:minmax(0,1.8fr) minmax(390px,1fr)}}
+@media(max-width:1100px){body header{gap:22px}.brand img.sq-brand-full{width:210px;height:64px}body header nav{gap:22px}body header .status>span{display:none}body .workspace{grid-template-columns:minmax(0,1.2fr) minmax(340px,1fr)}}
+@media(max-width:900px){body #response-view .response-actions{padding:22px}.response-picker{width:100%}body .response-heading{gap:18px}.response-counts dd{font-size:20px!important}}
+@media(max-width:800px){body>header{padding:9px 20px;gap:4px 16px;min-height:0;flex-wrap:wrap}.brand img.sq-brand-full{width:207px;height:62px}body header nav{order:3;width:100%;gap:12px;justify-content:space-between}body header nav button{padding:10px 0}body header .status{margin-left:auto}body main{padding:24px 18px 16px}body .intro{display:block;margin-bottom:24px}body .intro h1{font-size:34px}body .intro>p{margin-top:16px;font-size:13px;max-width:44ch}body .workspace{display:block;height:auto;min-height:0}.visual{min-height:440px;margin-bottom:18px}body .workspace>aside{padding:22px}.map-stage{min-height:280px}body .map-heading{padding:20px 20px 0}body>footer{padding-inline:20px;gap:18px}body>footer span:nth-child(2){display:none}}
+@media(max-width:800px){body #evaluation .evidence-card{display:block;height:auto;min-height:0;overflow:visible}body #evaluation .evidence-layout{display:block}body #evaluation .evidence-layout>div{overflow:visible;padding:0}body #evaluation .evaluation-art{display:none}}
+@media(max-width:520px){body .response-heading h1{font-size:32px}body #response-view .response-actions{padding:20px}body .response-counts dt{font-size:12px!important;max-width:26ch}body .response-grid{gap:24px!important}body .flood-metrics .value{font-size:21px}.response-exports{gap:14px 18px}body>footer span{font-size:9px}}
+@media(prefers-reduced-motion:reduce){body *,body *::before,body *::after{scroll-behavior:auto!important;animation:none!important;transition:none!important}}

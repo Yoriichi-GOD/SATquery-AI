@@ -1,0 +1,167 @@
+{
+  "population": "EXHAUSTIVE_SYNTHETIC_DIRECTED_NETWORK_CONTRACT",
+  "contract": "Three fixed nodes; settlement 2 to service node 0; every directed edge independently absent/clear/disrupted/unknown",
+  "upstream_commit": "2945725810d6088317f65e3edb72db578c0b9528",
+  "upstream_source_sha256": "24f978b231288f9b30fce7d87575fc84e6d491800e531abe0aff5fa05f060afa",
+  "upstream_scope": "Actual audited _undirected_csr numerical function; NOT full acquisition/detection/closure pipeline",
+  "totals": {
+    "all_graphs": 4096,
+    "our_bound_matches": 4096,
+    "known_state_graphs": 729,
+    "our_known_matches": 729,
+    "upstream_undirected_kernel_matches": 521,
+    "upstream_false_route_positives": 208,
+    "upstream_false_route_negatives": 0
+  },
+  "counterexamples": [
+    {
+      "edges": [
+        [
+          1,
+          0,
+          1
+        ],
+        [
+          1,
+          2,
+          1
+        ]
+      ],
+      "expected_directed_route": false,
+      "upstream_undirected_route": true
+    },
+    {
+      "edges": [
+        [
+          1,
+          0,
+          1
+        ],
+        [
+          1,
+          2,
+          1
+        ],
+        [
+          2,
+          1,
+          2
+        ]
+      ],
+      "expected_directed_route": false,
+      "upstream_undirected_route": true
+    },
+    {
+      "edges": [
+        [
+          1,
+          0,
+          1
+        ],
+        [
+          1,
+          2,
+          1
+        ],
+        [
+          2,
+          0,
+          2
+        ]
+      ],
+      "expected_directed_route": false,
+      "upstream_undirected_route": true
+    },
+    {
+      "edges": [
+        [
+          1,
+          0,
+          1
+        ],
+        [
+          1,
+          2,
+          1
+        ],
+        [
+          2,
+          0,
+          2
+        ],
+        [
+          2,
+          1,
+          2
+        ]
+      ],
+      "expected_directed_route": false,
+      "upstream_undirected_route": true
+    },
+    {
+      "edges": [
+        [
+          0,
+          2,
+          1
+        ]
+      ],
+      "expected_directed_route": false,
+      "upstream_undirected_route": true
+    },
+    {
+      "edges": [
+        [
+          0,
+          2,
+          1
+        ],
+        [
+          2,
+          1,
+          1
+        ]
+      ],
+      "expected_directed_route": false,
+      "upstream_undirected_route": true
+    },
+    {
+      "edges": [
+        [
+          0,
+          2,
+          1
+        ],
+        [
+          2,
+          1,
+          2
+        ]
+      ],
+      "expected_directed_route": false,
+      "upstream_undirected_route": true
+    },
+    {
+      "edges": [
+        [
+          0,
+          2,
+          1
+        ],
+        [
+          2,
+          0,
+          2
+        ]
+      ],
+      "expected_directed_route": false,
+      "upstream_undirected_route": true
+    }
+  ],
+  "seconds": 0.46273470599953725,
+  "limitations": [
+    "Synthetic route semantics only, not flood/landslide accuracy or real settlement access",
+    "Unknown-observation cases test our bounds; no comparison with an assumed upstream closure prior",
+    "This establishes a bounded directionality improvement, not overall superiority"
+  ]
+}

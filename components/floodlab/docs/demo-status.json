@@ -1,0 +1,54 @@
+{
+  "as_of": "2026-10-15",
+  "workspace": "http://localhost:8770/",
+  "production_workspace": "http://localhost:8767/ (separate; not changed)",
+  "verified_full_area_date_run": "event-fe47db331390",
+  "second_official_aoi_run": "event-02163045d752",
+  "regression_tests": {
+    "passed": 70,
+    "failed": 0,
+    "errors": 0,
+    "skipped": 0,
+    "warnings": 31,
+    "seconds": 2.4
+  },
+  "external_water_map_agreement": {
+    "reference": "UNOSAT Product 4259; preliminary, not field validated",
+    "valid_pixels": 57446,
+    "iou": 0.013386655440959797,
+    "f1": 0.02641964026087318,
+    "precision": 0.3745583038869258,
+    "recall": 0.013692731656906649,
+    "interpretation": "Poor agreement; not ground-truth accuracy"
+  },
+  "debris_proxy_diagnostic": {
+    "reference": "EMSR927 mass movement/landslide class",
+    "valid_pixels": 47127,
+    "iou": 0.29056405542057917,
+    "f1": 0.4502900172992775,
+    "precision": 0.9857429271552685,
+    "recall": 0.29179030662710187,
+    "interpretation": "Class-mismatched diagnostic only, not debris validation"
+  },
+  "area_date_runtime_seconds": {
+    "n": 5,
+    "mean": 51.6,
+    "min": 35.5,
+    "max": 81.8,
+    "note": "Four Syapru rectangle runs and one Timure request; small sample"
+  },
+  "graph_verification": "Synthetic known-answer graph tests pass; real settlement isolation remains unknown.",
+  "browser_verification": "Local Workspace checked: selectable optical/SAR views, question controls, result, processing record and disclosure sections visible.",
+  "nepali_review": "Pending native human review; model router development test scored 9/12.",
+  "demo_recording": "Not produced.",
+  "submission_ready": false,
+  "remaining": [
+    "Field-validated flood accuracy",
+    "Direct debris validation",
+    "Real settlement isolation where graph inputs are unknown",
+    "Native Nepali review",
+    "Screen recording",
+    "Official Track B PDF constraint confirmation",
+    "Organizer reuse clearance and owner submission authorization"
+  ]
+}

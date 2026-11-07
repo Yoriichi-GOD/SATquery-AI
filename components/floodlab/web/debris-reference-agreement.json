@@ -1,0 +1,34 @@
+{
+  "run": "nepal-syapru-004",
+  "role": "post-freeze diagnostic reference agreement; not validated debris accuracy",
+  "reference": "EMSR927_AOI01_GRA_PRODUCT_v1.gpkg",
+  "reference_sha256": "56b3d9e0ea870a025492d84b61a0462b21c486bef52a903ccd0bb00b33c17920",
+  "prediction_sha256": "f572e3dc73d896f1bdf6189d2ffc120b510aea2cd486a04acf6dee380b46468a",
+  "classes": {
+    "prediction": "vegetation-to-bare plus SAR-change debris candidates",
+    "reference": "6-Mass Movement / Landslide"
+  },
+  "reference_post_date": "2026-08-27T05:05:00Z",
+  "reference_pre_date": "2025-11-29T05:11:00Z",
+  "reference_source_resolution_m": 0.3,
+  "comparison_grid_m": 10,
+  "valid_pixels": 26150,
+  "tp": 2112,
+  "fp": 11,
+  "fn": 4318,
+  "tn": 19709,
+  "iou": 0.327899394503959,
+  "f1": 0.4938618028761838,
+  "precision": 0.9948186528497409,
+  "recall": 0.32846034214618974,
+  "events": 1,
+  "areas": 1,
+  "thresholds_changed_after_scoring": false,
+  "limitations": [
+    "Vegetation-loss proxy is narrower than mapped landslide extent and misses debris over already bare surfaces.",
+    "Reference baseline image is November 2025; prediction optical baseline is August 2026.",
+    "Cloud/terrain-invalid pixels excluded; results do not apply to excluded area.",
+    "Reference 0.3m source is rasterized at 10m with pixel-centre rule; boundary differences matter.",
+    "No model training or threshold tuning used this reference."
+  ]
+}

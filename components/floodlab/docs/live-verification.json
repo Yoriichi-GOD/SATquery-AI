@@ -1,0 +1,44 @@
+{
+  "runs": [
+    {
+      "run_id": "nepal-syapru-004",
+      "verified_downloads": 15,
+      "summary": {
+        "valid_pixels": 31838,
+        "total_pixels": 123123,
+        "new_water_pixels": 361,
+        "new_water_m2": 36100.0,
+        "water_in_both_pixels": 87,
+        "mapped_buildings": 355,
+        "exposed_buildings": 1,
+        "exposed_road_m": 87.39535286076142,
+        "exposed_bridge_features": 2,
+        "connectivity_assessed": false,
+        "potentially_cut_off": 0,
+        "debris_candidate_pixels": 2123,
+        "debris_candidate_m2": 212300.0,
+        "debris_valid_pixels": 26150,
+        "debris_intersected_buildings": 114,
+        "debris_intersected_road_m": 2025.3845099639504
+      }
+    },
+    {
+      "run_id": "auto-syapru-001",
+      "verified_downloads": 12,
+      "summary": {
+        "valid_pixels": 99858,
+        "total_pixels": 110998,
+        "new_water_pixels": 956,
+        "new_water_m2": 95600.0,
+        "water_in_both_pixels": 452,
+        "mapped_buildings": 522,
+        "exposed_buildings": 2,
+        "exposed_road_m": 185.84611372043727,
+        "exposed_bridge_features": 2,
+        "connectivity_assessed": false,
+        "potentially_cut_off": 0
+      }
+    }
+  ],
+  "original_workspace_http": 200
+}

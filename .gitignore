@@ -54,3 +54,5 @@ paired_lab/evidence/submission-20260926/eos04-frs2-inventory.json
 !/research/results/
 /research/results/*
 !/research/results/terrain-exposure-20261105/
+!/research/results/case-campaign-20261107/
+/research/datasets/local/
