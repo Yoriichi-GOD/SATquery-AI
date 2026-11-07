@@ -1,0 +1,10 @@
+{
+  "cases": [
+    "kedarnath",
+    "nepal",
+    "sangam-vihar",
+    "varanasi"
+  ],
+  "numeric_repeat_identical": true,
+  "scope": "Final protocol/input identity guards executed on actual data; timings excluded"
+}

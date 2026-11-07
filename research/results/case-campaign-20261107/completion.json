@@ -1,0 +1,29 @@
+{
+  "definition_of_done": "Acquired-data measurements and integrated research release; publication validation remains partial",
+  "hypotheses": {
+    "H1": "NOT_PROVED:promising conditional terrain road-grade association only",
+    "H2": "NOT_PROVED:annual urban model transitions measured without independent change labels",
+    "H3": "NOT_PROVED:full graph below simpler terrain baseline; graph\u2013proximity interval crosseszero",
+    "H4": "SOFTWARE_GUARDS_TESTED;actual analyst/semantic causal experiment not run"
+  },
+  "publication_readiness": "NOT_READY_FOR_VALIDATED_SUPERIORITY_CLAIMS",
+  "steps": {
+    "1_consolidated_release": "VERIFIED_LOCAL:302 main tests,86 component tests,31 live HTTP checks; original main/Day1 preserved; browser rendering not verified",
+    "2_nepal_measurement_prerequisites": "PARTIAL:target semantics/reference roles audited; 30m acquired; registration and10m feature resolution unresolved",
+    "3_frozen_ABCD_comparison": "DEVELOPMENT_EXECUTED:22road fragments; no untouched class-compatible exposure validation",
+    "4_urban_cases": "TEMPORAL_AND_TERRAIN_MEASURED_BOTH; historical infrastructure acquisition failed; exposure/transfer not validated",
+    "5_kedarnath": "HISTORICAL_LANDSAT_AND_TERRAIN_PROCESSED;5.98% common clear; registration unavailable; event extent/exposure not validated",
+    "6_evidence_and_novelty": "43software fault trials executed;8comparator review; human semantic experiment and scientific superiority unproved"
+  },
+  "synthetic_accuracy_results": false,
+  "training_performed": false,
+  "verification": {
+    "browser_rendering": "NOT_RUN",
+    "component_tests": 86,
+    "live_http_checks": 31,
+    "main_tests": 302,
+    "pinned_component_files_verified": 145,
+    "repeated_numeric_results_identical": true,
+    "source_files_verified": 94
+  }
+}

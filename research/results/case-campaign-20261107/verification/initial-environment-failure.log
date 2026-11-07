@@ -1,0 +1,422 @@
+test_numeric_parser_does_not_guess_from_narrative (test_baseball_counting.BaseballCountingTests.test_numeric_parser_does_not_guess_from_narrative) ... ok
+test_observation_preserved_without_speculative_relative_clause (test_baseball_counting.BaseballCountingTests.test_observation_preserved_without_speculative_relative_clause) ... ok
+test_whole_question_routes_and_compound_refusals (test_baseball_counting.BaseballCountingTests.test_whole_question_routes_and_compound_refusals) ... ok
+test_area_noun_presence_is_not_measurement (test_benchmark_routes.BenchmarkRouteRegressions.test_area_noun_presence_is_not_measurement) ... ok
+test_classifier_does_not_locate (test_benchmark_routes.BenchmarkRouteRegressions.test_classifier_does_not_locate) ... ok
+test_natural_road_comparison (test_benchmark_routes.BenchmarkRouteRegressions.test_natural_road_comparison) ... ok
+test_unavailable_physical_measurements (test_benchmark_routes.BenchmarkRouteRegressions.test_unavailable_physical_measurements) ... ok
+test_visual_counts_remain_estimates (test_benchmark_routes.BenchmarkRouteRegressions.test_visual_counts_remain_estimates) ... ok
+test_water_does_not_silently_drop_vegetation (test_benchmark_routes.BenchmarkRouteRegressions.test_water_does_not_silently_drop_vegetation) ... ok
+test_multiclass_rankings (test_cdvqa_boundaries.CDVQABoundaries.test_multiclass_rankings) ... ok
+test_semantic_change_ratios (test_cdvqa_boundaries.CDVQABoundaries.test_semantic_change_ratios) ... ok
+test_semantic_transitions (test_cdvqa_boundaries.CDVQABoundaries.test_semantic_transitions) ... ok
+test_supported_temporal_survives (test_cdvqa_boundaries.CDVQABoundaries.test_supported_temporal_survives) ... ok
+test_unsupported_land_classes (test_cdvqa_boundaries.CDVQABoundaries.test_unsupported_land_classes) ... ok
+test_alignment_and_dimensions_required (test_cdvqa_integration.CDVQAIntegrationTests.test_alignment_and_dimensions_required) ... ok
+test_explicit_supported_dispatch (test_cdvqa_integration.CDVQAIntegrationTests.test_explicit_supported_dispatch) ... ok
+test_missing_checkpoint_actionable (test_cdvqa_integration.CDVQAIntegrationTests.test_missing_checkpoint_actionable) ... ok
+test_mixed_modes_refused (test_cdvqa_integration.CDVQAIntegrationTests.test_mixed_modes_refused) ... ok
+test_rgb_contract (test_cdvqa_integration.CDVQAIntegrationTests.test_rgb_contract) ... ok
+test_unsupported_and_compound_refused (test_cdvqa_integration.CDVQAIntegrationTests.test_unsupported_and_compound_refused) ... ok
+test_adapter_cannot_force_wrong_answer_format (test_dispatch.DispatchTests.test_adapter_cannot_force_wrong_answer_format) ... ok
+test_busy_guard (test_dispatch.DispatchTests.test_busy_guard) ... ok
+test_ndvi_dispatch_and_saved_reason (test_dispatch.DispatchTests.test_ndvi_dispatch_and_saved_reason) ... ok
+test_ndvi_worker_keeps_denominators_and_waits_for_views (test_dispatch.DispatchTests.test_ndvi_worker_keeps_denominators_and_waits_for_views) ... ok
+test_rgb_ndvi_and_direct_endpoint_mismatch (test_dispatch.DispatchTests.test_rgb_ndvi_and_direct_endpoint_mismatch) ... ok
+test_temporal_refuses_before_scheduling (test_dispatch.DispatchTests.test_temporal_refuses_before_scheduling) ... ok
+test_vqa_dispatch_and_saved_reason (test_dispatch.DispatchTests.test_vqa_dispatch_and_saved_reason) ... ok
+test_invalid_inputs_refused (test_eos04_calibration.EOS04CalibrationTests.test_invalid_inputs_refused) ... ok
+test_known_power_and_db (test_eos04_calibration.EOS04CalibrationTests.test_known_power_and_db) ... ok
+test_no_uint16_square_overflow (test_eos04_calibration.EOS04CalibrationTests.test_no_uint16_square_overflow) ... ok
+test_noise_bias_and_nonpositive_preserved (test_eos04_calibration.EOS04CalibrationTests.test_noise_bias_and_nonpositive_preserved) ... ok
+test_disagreement_with_saved_score_fails_closed (test_evaluation.EvaluationTests.test_disagreement_with_saved_score_fails_closed) ... ok
+test_exact_match_not_substrings (test_evaluation.EvaluationTests.test_exact_match_not_substrings) ... ok
+test_saved_predictions_and_regressions (test_evaluation.EvaluationTests.test_saved_predictions_and_regressions) ... ERROR
+test_browser_scores_match_saved_sources (test_evidence_page.EvidencePageTests.test_browser_scores_match_saved_sources) ... ok
+test_two_splits_and_three_water_pathways (test_evidence_page.EvidencePageTests.test_two_splits_and_three_water_pathways) ... ok
+test_cancel_partial_upload_preserves_completed_original (test_external_data.ExternalDataTests.test_cancel_partial_upload_preserves_completed_original) ... ok
+test_cap_and_disk_space (test_external_data.ExternalDataTests.test_cap_and_disk_space) ... ok
+test_changed_dataset_refuses_execution (test_external_data.ExternalDataTests.test_changed_dataset_refuses_execution) ... /root/satquery/.venv/lib/python3.11/site-packages/rasterio/transform.py:178: PendingDeprecationWarning: Use `@` matmul instead of `*` mul operator for matrix multiplication
+  return Affine.translation(west, north) * Affine.scale(xsize, -ysize)
+/mnt/c/Users/nrgen/.codex/.chatgpt-projects/g-p-6ad52225bccc8191b1ed5af2ed6b0646/research-campaign-20261107/repo/paired_lab/external_data/raster.py:53: PendingDeprecationWarning: is_tiled will be removed in a future version. Please consider copying the body of this function into your program or module.
+  compression=ds.compression.name if ds.compression else None, tiled=ds.is_tiled,
+ok
+test_classification_vqa_and_multilabel_protocols (test_external_data.ExternalDataTests.test_classification_vqa_and_multilabel_protocols) ... ok
+test_complete_water_mismatch_report_not_first_failure (test_external_data.ExternalDataTests.test_complete_water_mismatch_report_not_first_failure) ... /root/satquery/.venv/lib/python3.11/site-packages/rasterio/transform.py:178: PendingDeprecationWarning: Use `@` matmul instead of `*` mul operator for matrix multiplication
+  return Affine.translation(west, north) * Affine.scale(xsize, -ysize)
+/mnt/c/Users/nrgen/.codex/.chatgpt-projects/g-p-6ad52225bccc8191b1ed5af2ed6b0646/research-campaign-20261107/repo/paired_lab/external_data/raster.py:53: PendingDeprecationWarning: is_tiled will be removed in a future version. Please consider copying the body of this function into your program or module.
+  compression=ds.compression.name if ds.compression else None, tiled=ds.is_tiled,
+ok
+test_completed_original_cannot_be_overwritten (test_external_data.ExternalDataTests.test_completed_original_cannot_be_overwritten) ... ok
+test_correct_ndvi_contract_eligible_without_fake_accuracy (test_external_data.ExternalDataTests.test_correct_ndvi_contract_eligible_without_fake_accuracy) ... ok
+test_disguised_and_truncated_tiffs_retained_as_failures (test_external_data.ExternalDataTests.test_disguised_and_truncated_tiffs_retained_as_failures) ... ok
+test_expected_hash_mismatch_retained (test_external_data.ExternalDataTests.test_expected_hash_mismatch_retained) ... ok
+test_export_recomputes_metrics_and_detects_tampering (test_external_data.ExternalDataTests.test_export_recomputes_metrics_and_detects_tampering) ... ok
+test_ignore_and_nodata_excluded (test_external_data.ExternalDataTests.test_ignore_and_nodata_excluded) ... /root/satquery/.venv/lib/python3.11/site-packages/rasterio/transform.py:178: PendingDeprecationWarning: Use `@` matmul instead of `*` mul operator for matrix multiplication
+  return Affine.translation(west, north) * Affine.scale(xsize, -ysize)
+ok
+test_inspection_cancellation_and_recovery (test_external_data.ExternalDataTests.test_inspection_cancellation_and_recovery) ... /mnt/c/Users/nrgen/.codex/.chatgpt-projects/g-p-6ad52225bccc8191b1ed5af2ed6b0646/research-campaign-20261107/repo/paired_lab/external_data/raster.py:53: PendingDeprecationWarning: is_tiled will be removed in a future version. Please consider copying the body of this function into your program or module.
+  compression=ds.compression.name if ds.compression else None, tiled=ds.is_tiled,
+ok
+test_known_confusion (test_external_data.ExternalDataTests.test_known_confusion) ... ok
+test_label_alignment_and_class_mismatch (test_external_data.ExternalDataTests.test_label_alignment_and_class_mismatch) ... ok
+test_large_metadata_inspection_is_not_specialist_compatibility (test_external_data.ExternalDataTests.test_large_metadata_inspection_is_not_specialist_compatibility) ... ok
+test_missing_crs_and_singular_transform_reported (test_external_data.ExternalDataTests.test_missing_crs_and_singular_transform_reported) ... /root/satquery/.venv/lib/python3.11/site-packages/rasterio/__init__.py:366: NotGeoreferencedWarning: Dataset has no geotransform, gcps, or rpcs. The identity matrix will be returned.
+  dataset = writer(
+/root/satquery/.venv/lib/python3.11/site-packages/rasterio/__init__.py:356: NotGeoreferencedWarning: Dataset has no geotransform, gcps, or rpcs. The identity matrix will be returned.
+  dataset = DatasetReader(path, driver=driver, sharing=sharing, **kwargs)
+/mnt/c/Users/nrgen/.codex/.chatgpt-projects/g-p-6ad52225bccc8191b1ed5af2ed6b0646/research-campaign-20261107/repo/paired_lab/external_data/raster.py:60: PendingDeprecationWarning: Use `@` matmul instead of `*` mul operator for matrix multiplication
+  resolution=[finite(v) for v in ds.res], bounds=[finite(v) for v in ds.bounds],
+ok
+test_missing_labels_never_score (test_external_data.ExternalDataTests.test_missing_labels_never_score) ... ok
+test_nan_nodata_denominator (test_external_data.ExternalDataTests.test_nan_nodata_denominator) ... ok
+test_no_label_ndvi_execution_exports_no_accuracy (test_external_data.ExternalDataTests.test_no_label_ndvi_execution_exports_no_accuracy) ... ok
+test_no_valid_pixels_no_zero_accuracy (test_external_data.ExternalDataTests.test_no_valid_pixels_no_zero_accuracy) ... /root/satquery/.venv/lib/python3.11/site-packages/rasterio/transform.py:178: PendingDeprecationWarning: Use `@` matmul instead of `*` mul operator for matrix multiplication
+  return Affine.translation(west, north) * Affine.scale(xsize, -ysize)
+ok
+test_perfect_and_all_false_positives_negatives (test_external_data.ExternalDataTests.test_perfect_and_all_false_positives_negatives) ... ok
+test_protocol_revision_cannot_be_changed_after_labels (test_external_data.ExternalDataTests.test_protocol_revision_cannot_be_changed_after_labels) ... /mnt/c/Users/nrgen/.codex/.chatgpt-projects/g-p-6ad52225bccc8191b1ed5af2ed6b0646/research-campaign-20261107/repo/paired_lab/external_data/raster.py:53: PendingDeprecationWarning: is_tiled will be removed in a future version. Please consider copying the body of this function into your program or module.
+  compression=ds.compression.name if ds.compression else None, tiled=ds.is_tiled,
+ok
+test_real_isolated_worker_cancel_and_competing_jobs (test_external_data.ExternalDataTests.test_real_isolated_worker_cancel_and_competing_jobs) ... ok
+test_reference_population_cannot_silently_drop_cases (test_external_data.ExternalDataTests.test_reference_population_cannot_silently_drop_cases) ... ok
+test_streamed_hash_matches_known_bytes (test_external_data.ExternalDataTests.test_streamed_hash_matches_known_bytes) ... ok
+test_tiff_metadata_and_multiband_statistics (test_external_data.ExternalDataTests.test_tiff_metadata_and_multiband_statistics) ... ok
+test_valid_zip_preserves_archive_and_member_hashes (test_external_data.ExternalDataTests.test_valid_zip_preserves_archive_and_member_hashes) ... ok
+test_worker_recovery_does_not_report_success (test_external_data.ExternalDataTests.test_worker_recovery_does_not_report_success) ... ok
+test_zip_ratio_rejected_before_extracting (test_external_data.ExternalDataTests.test_zip_ratio_rejected_before_extracting) ... ok
+test_zip_symlink_rejected (test_external_data.ExternalDataTests.test_zip_symlink_rejected) ... ok
+test_zip_traversal_rejected (test_external_data.ExternalDataTests.test_zip_traversal_rejected) ... ok
+test_cdvqa_accepts_explicit_rgb_colour_interpretation_without_invented_band_names (test_external_day2.Day2Tests.test_cdvqa_accepts_explicit_rgb_colour_interpretation_without_invented_band_names) ... ok
+test_cdvqa_unequal_rgb_dimensions_blocked_before_model (test_external_day2.Day2Tests.test_cdvqa_unequal_rgb_dimensions_blocked_before_model) ... ok
+test_deadline_failure_retained_and_next_worker_recovers (test_external_day2.Day2Tests.test_deadline_failure_retained_and_next_worker_recovers) ... ok
+test_downloaded_zip_recomputes_metrics (test_external_day2.Day2Tests.test_downloaded_zip_recomputes_metrics) ... ok
+test_export_reference_source_hash_is_checked (test_external_day2.Day2Tests.test_export_reference_source_hash_is_checked) ... /root/satquery/.venv/lib/python3.11/site-packages/rasterio/transform.py:178: PendingDeprecationWarning: Use `@` matmul instead of `*` mul operator for matrix multiplication
+  return Affine.translation(west, north) * Affine.scale(xsize, -ysize)
+/mnt/c/Users/nrgen/.codex/.chatgpt-projects/g-p-6ad52225bccc8191b1ed5af2ed6b0646/research-campaign-20261107/repo/paired_lab/external_data/raster.py:53: PendingDeprecationWarning: is_tiled will be removed in a future version. Please consider copying the body of this function into your program or module.
+  compression=ds.compression.name if ds.compression else None, tiled=ds.is_tiled,
+ok
+test_export_zip_traversal_and_links_refused (test_external_day2.Day2Tests.test_export_zip_traversal_and_links_refused) ... ok
+test_incomplete_upload_restart_cleans_only_temporary_bytes (test_external_day2.Day2Tests.test_incomplete_upload_restart_cleans_only_temporary_bytes) ... ok
+test_independent_evaluator_refuses_oversized_native_decode_block (test_external_day2.Day2Tests.test_independent_evaluator_refuses_oversized_native_decode_block) ... /root/satquery/.venv/lib/python3.11/site-packages/rasterio/transform.py:178: PendingDeprecationWarning: Use `@` matmul instead of `*` mul operator for matrix multiplication
+  return Affine.translation(west, north) * Affine.scale(xsize, -ysize)
+ok
+test_insufficient_memory_refuses_before_launch_and_releases_lock (test_external_day2.Day2Tests.test_insufficient_memory_refuses_before_launch_and_releases_lock) ... ok
+test_label_mappings_cannot_silently_coerce_fractional_classes (test_external_day2.Day2Tests.test_label_mappings_cannot_silently_coerce_fractional_classes) ... ok
+test_mci_budget_covers_observed_cold_peak_and_operator_limit_is_bounded (test_external_day2.Day2Tests.test_mci_budget_covers_observed_cold_peak_and_operator_limit_is_bounded) ... ok
+test_scaled_terrain_cannot_be_treated_as_native_metres (test_external_day2.Day2Tests.test_scaled_terrain_cannot_be_treated_as_native_metres) ... /mnt/c/Users/nrgen/.codex/.chatgpt-projects/g-p-6ad52225bccc8191b1ed5af2ed6b0646/research-campaign-20261107/repo/paired_lab/external_data/raster.py:53: PendingDeprecationWarning: is_tiled will be removed in a future version. Please consider copying the body of this function into your program or module.
+  compression=ds.compression.name if ds.compression else None, tiled=ds.is_tiled,
+ok
+test_worker_cannot_start_during_upload_chunk (test_external_day2.Day2Tests.test_worker_cannot_start_during_upload_chunk) ... ok
+test_counts (test_focused_count.FocusedCountTests.test_counts) ... ok
+test_no_contradictory_prose_or_truncation (test_focused_count.FocusedCountTests.test_no_contradictory_prose_or_truncation) ... ok
+test_ndvi_and_mask (test_geo.GeoTests.test_ndvi_and_mask) ... ok
+test_offset_applied_once (test_geo.GeoTests.test_offset_applied_once) ... ok
+test_pixel_centre (test_geo.GeoTests.test_pixel_centre) ... /mnt/c/Users/nrgen/.codex/.chatgpt-projects/g-p-6ad52225bccc8191b1ed5af2ed6b0646/research-campaign-20261107/repo/geo.py:91: PendingDeprecationWarning: Use `@` matmul instead of `*` mul operator for matrix multiplication
+  x,y=Affine(*metadata['transform'])*(col+.5,row+.5)
+ok
+test_allowlist_only (test_jai_flood_bridge.BridgeTests.test_allowlist_only) ... ok
+test_compressed_response_refused (test_jai_flood_bridge.BridgeTests.test_compressed_response_refused) ... ok
+test_empty_runs (test_jai_flood_bridge.BridgeTests.test_empty_runs) ... ok
+test_exposure_keeps_saved_values (test_jai_flood_bridge.BridgeTests.test_exposure_keeps_saved_values) ... ok
+test_freeze_cannot_allow_arbitrary_path (test_jai_flood_bridge.BridgeTests.test_freeze_cannot_allow_arbitrary_path) ... ok
+test_health_identifies_real_service (test_jai_flood_bridge.BridgeTests.test_health_identifies_real_service) ... ok
+test_listing_labels_synthetic_population (test_jai_flood_bridge.BridgeTests.test_listing_labels_synthetic_population) ... ok
+test_missing_population_withheld (test_jai_flood_bridge.BridgeTests.test_missing_population_withheld) ... ok
+test_modified_preview_refused (test_jai_flood_bridge.BridgeTests.test_modified_preview_refused) ... ok
+test_modified_result_refused (test_jai_flood_bridge.BridgeTests.test_modified_result_refused) ... ok
+test_nan_upstream_json_refused (test_jai_flood_bridge.BridgeTests.test_nan_upstream_json_refused) ... ok
+test_negative_measurement_refused (test_jai_flood_bridge.BridgeTests.test_negative_measurement_refused) ... ok
+test_no_false_zero_for_unassessed_connectivity (test_jai_flood_bridge.BridgeTests.test_no_false_zero_for_unassessed_connectivity) ... ok
+test_nonfinite_measurement_refused (test_jai_flood_bridge.BridgeTests.test_nonfinite_measurement_refused) ... ok
+test_only_literal_loopback_origins (test_jai_flood_bridge.BridgeTests.test_only_literal_loopback_origins) ... ok
+test_path_traversal_refused (test_jai_flood_bridge.BridgeTests.test_path_traversal_refused) ... ok
+test_redirect_is_not_followed (test_jai_flood_bridge.BridgeTests.test_redirect_is_not_followed) ... ok
+test_stopped_upstream (test_jai_flood_bridge.BridgeTests.test_stopped_upstream) ... ok
+test_summary_and_manifest_verified (test_jai_flood_bridge.BridgeTests.test_summary_and_manifest_verified) ... ok
+test_transfer_limit (test_jai_flood_bridge.BridgeTests.test_transfer_limit) ... ok
+test_unknown_run (test_jai_flood_bridge.BridgeTests.test_unknown_run) ... ok
+test_linear_plane_distance_and_height (test_jai_geo_context.ProfileTests.test_linear_plane_distance_and_height) ... /mnt/c/Users/nrgen/.codex/.chatgpt-projects/g-p-6ad52225bccc8191b1ed5af2ed6b0646/research-campaign-20261107/repo/jai_extension/geo_context.py:152: PendingDeprecationWarning: Use `@` matmul instead of `*` mul operator for matrix multiplication
+  c,r=(~ds.transform)*(x,y)
+ok
+test_no_interpolation_across_nodata (test_jai_geo_context.ProfileTests.test_no_interpolation_across_nodata) ... ok
+test_nonfinite_and_excessive_samples_refused (test_jai_geo_context.ProfileTests.test_nonfinite_and_excessive_samples_refused) ... ok
+test_out_of_bounds_and_equal_points_refused (test_jai_geo_context.ProfileTests.test_out_of_bounds_and_equal_points_refused) ... ok
+test_sample_corner_and_negative_heights (test_jai_geo_context.ProfileTests.test_sample_corner_and_negative_heights) ... ok
+test_all_invalid_source_refused (test_jai_geo_context.RegistrationTests.test_all_invalid_source_refused) ... ok
+test_corrupt_raster_fails_with_explicit_status (test_jai_geo_context.RegistrationTests.test_corrupt_raster_fails_with_explicit_status) ... /root/satquery/.venv/lib/python3.11/site-packages/rasterio/transform.py:178: PendingDeprecationWarning: Use `@` matmul instead of `*` mul operator for matrix multiplication
+  return Affine.translation(west, north) * Affine.scale(xsize, -ysize)
+ok
+test_degree_terrain_grid_refused (test_jai_geo_context.RegistrationTests.test_degree_terrain_grid_refused) ... ok
+test_fraction_preserves_patch_missed_by_nearest (test_jai_geo_context.RegistrationTests.test_fraction_preserves_patch_missed_by_nearest) ... /mnt/c/Users/nrgen/.codex/.chatgpt-projects/g-p-6ad52225bccc8191b1ed5af2ed6b0646/research-campaign-20261107/repo/jai_extension/geo_context.py:99: PendingDeprecationWarning: Use `@` matmul instead of `*` mul operator for matrix multiplication
+  source_col,source_row=(~source.transform)*(sx[0],sy[0])
+ok
+test_geographic_source_reprojects_using_its_crs (test_jai_geo_context.RegistrationTests.test_geographic_source_reprojects_using_its_crs) ... /root/satquery/.venv/lib/python3.11/site-packages/rasterio/transform.py:178: PendingDeprecationWarning: Use `@` matmul instead of `*` mul operator for matrix multiplication
+  return Affine.translation(west, north) * Affine.scale(xsize, -ysize)
+/root/satquery/.venv/lib/python3.11/site-packages/rasterio/transform.py:189: PendingDeprecationWarning: Use `@` matmul instead of `*` mul operator for matrix multiplication
+  return Affine.translation(west, north) * Affine.scale(
+/mnt/c/Users/nrgen/.codex/.chatgpt-projects/g-p-6ad52225bccc8191b1ed5af2ed6b0646/research-campaign-20261107/repo/jai_extension/geo_context.py:99: PendingDeprecationWarning: Use `@` matmul instead of `*` mul operator for matrix multiplication
+  source_col,source_row=(~source.transform)*(sx[0],sy[0])
+ok
+test_known_native_to_coarse_cell (test_jai_geo_context.RegistrationTests.test_known_native_to_coarse_cell) ... /root/satquery/.venv/lib/python3.11/site-packages/rasterio/transform.py:178: PendingDeprecationWarning: Use `@` matmul instead of `*` mul operator for matrix multiplication
+  return Affine.translation(west, north) * Affine.scale(xsize, -ysize)
+/mnt/c/Users/nrgen/.codex/.chatgpt-projects/g-p-6ad52225bccc8191b1ed5af2ed6b0646/research-campaign-20261107/repo/jai_extension/geo_context.py:99: PendingDeprecationWarning: Use `@` matmul instead of `*` mul operator for matrix multiplication
+  source_col,source_row=(~source.transform)*(sx[0],sy[0])
+ok
+test_nodata_terrain_hides_overlay (test_jai_geo_context.RegistrationTests.test_nodata_terrain_hides_overlay) ... /root/satquery/.venv/lib/python3.11/site-packages/rasterio/transform.py:178: PendingDeprecationWarning: Use `@` matmul instead of `*` mul operator for matrix multiplication
+  return Affine.translation(west, north) * Affine.scale(xsize, -ysize)
+/mnt/c/Users/nrgen/.codex/.chatgpt-projects/g-p-6ad52225bccc8191b1ed5af2ed6b0646/research-campaign-20261107/repo/jai_extension/geo_context.py:99: PendingDeprecationWarning: Use `@` matmul instead of `*` mul operator for matrix multiplication
+  source_col,source_row=(~source.transform)*(sx[0],sy[0])
+ok
+test_shifted_nonoverlapping_rasters_refused (test_jai_geo_context.RegistrationTests.test_shifted_nonoverlapping_rasters_refused) ... /root/satquery/.venv/lib/python3.11/site-packages/rasterio/transform.py:178: PendingDeprecationWarning: Use `@` matmul instead of `*` mul operator for matrix multiplication
+  return Affine.translation(west, north) * Affine.scale(xsize, -ysize)
+ok
+test_unknown_class_refused (test_jai_geo_context.RegistrationTests.test_unknown_class_refused) ... ok
+test_valid_zero_elevation_is_not_missing (test_jai_geo_context.RegistrationTests.test_valid_zero_elevation_is_not_missing) ... /mnt/c/Users/nrgen/.codex/.chatgpt-projects/g-p-6ad52225bccc8191b1ed5af2ed6b0646/research-campaign-20261107/repo/jai_extension/geo_context.py:99: PendingDeprecationWarning: Use `@` matmul instead of `*` mul operator for matrix multiplication
+  source_col,source_row=(~source.transform)*(sx[0],sy[0])
+ok
+test_changed_exposure_snapshot_refused (test_jai_investigation.EngineTests.test_changed_exposure_snapshot_refused) ... ok
+test_combined_answer_has_verified_coverage_claim (test_jai_investigation.EngineTests.test_combined_answer_has_verified_coverage_claim) ... ok
+test_combined_question_plans_four_tools (test_jai_investigation.EngineTests.test_combined_question_plans_four_tools) ... ok
+test_date_mismatch_abstains_with_no_claims (test_jai_investigation.EngineTests.test_date_mismatch_abstains_with_no_claims) ... ok
+test_feature_name_remains_plain_data (test_jai_investigation.EngineTests.test_feature_name_remains_plain_data) ... ok
+test_missing_terrain_abstains_without_acquisition (test_jai_investigation.EngineTests.test_missing_terrain_abstains_without_acquisition) ... ok
+test_profile_requires_actual_endpoints (test_jai_investigation.EngineTests.test_profile_requires_actual_endpoints) ... ok
+test_unknown_run_fails_explicitly (test_jai_investigation.EngineTests.test_unknown_run_fails_explicitly) ... ok
+test_unrelated_prompt_abstains (test_jai_investigation.EngineTests.test_unrelated_prompt_abstains) ... ok
+test_unsupported_depth_and_external_action_abstain (test_jai_investigation.EngineTests.test_unsupported_depth_and_external_action_abstain) ... ok
+test_water_answer_matches_actual_source_fields (test_jai_investigation.EngineTests.test_water_answer_matches_actual_source_fields) ... ok
+test_cancel_running_job_prevents_late_answer (test_jai_investigation.JobTests.test_cancel_running_job_prevents_late_answer) ... ok
+test_cancel_wins_when_inflight_request_times_out (test_jai_investigation.JobTests.test_cancel_wins_when_inflight_request_times_out) ... ok
+test_job_id_traversal_refused (test_jai_investigation.JobTests.test_job_id_traversal_refused) ... ok
+test_missing_upstream_never_completes (test_jai_investigation.JobTests.test_missing_upstream_never_completes) ... ok
+test_mutated_history_is_not_replayed_as_answer (test_jai_investigation.JobTests.test_mutated_history_is_not_replayed_as_answer) ... ok
+test_only_one_active_job (test_jai_investigation.JobTests.test_only_one_active_job) ... ok
+test_recorded_tool_output_digest (test_jai_investigation.JobTests.test_recorded_tool_output_digest) ... ok
+test_restart_marks_incomplete_job_interrupted (test_jai_investigation.JobTests.test_restart_marks_incomplete_job_interrupted) ... ok
+test_trace_hash_chain_and_restart_readback (test_jai_investigation.JobTests.test_trace_hash_chain_and_restart_readback) ... ok
+test_missing_origin_preserved (test_jai_origin.OriginTests.test_missing_origin_preserved) ... ok
+test_other_origin_rejected (test_jai_origin.OriginTests.test_other_origin_rejected) ... ok
+test_same_origin_adapted_to_baseline (test_jai_origin.OriginTests.test_same_origin_adapted_to_baseline) ... ok
+test_45_degree_east_plane (test_jai_terrain.TerrainTests.test_45_degree_east_plane) ... /root/satquery/.venv/lib/python3.11/site-packages/rasterio/transform.py:178: PendingDeprecationWarning: Use `@` matmul instead of `*` mul operator for matrix multiplication
+  return Affine.translation(west, north) * Affine.scale(xsize, -ysize)
+ok
+test_cell_centres_and_coverage_area (test_jai_terrain.TerrainTests.test_cell_centres_and_coverage_area) ... ok
+test_degrees_are_rejected_before_gradient (test_jai_terrain.TerrainTests.test_degrees_are_rejected_before_gradient) ... ok
+test_empty_hash_map_is_refused (test_jai_terrain.TerrainTests.test_empty_hash_map_is_refused) ... ok
+test_empty_region_rejected (test_jai_terrain.TerrainTests.test_empty_region_rejected) ... ok
+test_flat_100m_plane (test_jai_terrain.TerrainTests.test_flat_100m_plane) ... ok
+test_invalid_spacing_and_rotated_transform (test_jai_terrain.TerrainTests.test_invalid_spacing_and_rotated_transform) ... ok
+test_mesh_cap_and_separate_source_extrema (test_jai_terrain.TerrainTests.test_mesh_cap_and_separate_source_extrema) ... ok
+test_modified_cached_raster_is_refused (test_jai_terrain.TerrainTests.test_modified_cached_raster_is_refused) ... ok
+test_network_requires_explicit_confirmation (test_jai_terrain.TerrainTests.test_network_requires_explicit_confirmation) ... ok
+test_nodata_invalidates_entire_horn_neighbourhood (test_jai_terrain.TerrainTests.test_nodata_invalidates_entire_horn_neighbourhood) ... ok
+test_north_and_diagonal_gradient (test_jai_terrain.TerrainTests.test_north_and_diagonal_gradient) ... ok
+test_scene_path_traversal_refused (test_jai_terrain.TerrainTests.test_scene_path_traversal_refused) ... ok
+test_zero_and_negative_heights_remain_valid (test_jai_terrain.TerrainTests.test_zero_and_negative_heights_remain_valid) ... ok
+test_context_does_not_drop_compound_task_or_threshold (test_ndvi_context.NDVIContextTests.test_context_does_not_drop_compound_task_or_threshold) ... ok
+test_image_context_preserves_calibration_gate (test_ndvi_context.NDVIContextTests.test_image_context_preserves_calibration_gate) ... ok
+test_boundary_export_and_stage_mask_match_selected_count (test_ndvi_precision.NDVIPrecisionTests.test_boundary_export_and_stage_mask_match_selected_count) ... ok
+test_real_punjab_pixels_do_not_round_onto_threshold (test_ndvi_precision.NDVIPrecisionTests.test_real_punjab_pixels_do_not_round_onto_threshold) ... ok
+test_counts_and_visual_questions (test_open_vqa.OpenVQATests.test_counts_and_visual_questions) ... ok
+test_measurement_and_tools (test_open_vqa.OpenVQATests.test_measurement_and_tools) ... ok
+test_preserve_counts_snow_and_uncertainty (test_open_vqa.OpenVQATests.test_preserve_counts_snow_and_uncertainty) ... ok
+test_corrupt_weight_is_not_ready (test_preflight.PreflightTests.test_corrupt_weight_is_not_ready) ... ok
+test_custom_root_does_not_leak_developer_paths (test_preflight.PreflightTests.test_custom_root_does_not_leak_developer_paths) ... ok
+test_explicit_root_does_not_probe_legacy_install (test_preflight.PreflightTests.test_explicit_root_does_not_probe_legacy_install) ... ok
+test_import_survives_inaccessible_legacy_root (test_preflight.PreflightTests.test_import_survives_inaccessible_legacy_root) ... ok
+test_missing_file_explains_recovery (test_preflight.PreflightTests.test_missing_file_explains_recovery) ... ok
+test_missing_shard_rejected_even_with_other_weight_present (test_preflight.PreflightTests.test_missing_shard_rejected_even_with_other_weight_present) ... ok
+test_relative_manifest_paths_follow_manifest (test_preflight.PreflightTests.test_relative_manifest_paths_follow_manifest) ... ok
+test_verified_hash_never_claims_inference (test_preflight.PreflightTests.test_verified_hash_never_claims_inference) ... ok
+test_vqa_override_requires_pinned_provenance (test_preflight.PreflightTests.test_vqa_override_requires_pinned_provenance) ... ok
+test_vqa_pinned_cache_directory_is_accepted (test_preflight.PreflightTests.test_vqa_pinned_cache_directory_is_accepted) ... ok
+test_natural_presence (test_presence_routing.PresenceRoutingTests.test_natural_presence) ... ok
+test_unsupported_still_refused (test_presence_routing.PresenceRoutingTests.test_unsupported_still_refused) ... ok
+test_bounded_rgb_and_original_unchanged (test_prompt_preview.PreviewTests.test_bounded_rgb_and_original_unchanged) ... ok
+test_invalid_inputs (test_prompt_preview.PreviewTests.test_invalid_inputs) ... ok
+test_sar_and_unlabelled_multiband (test_prompt_preview.PreviewTests.test_sar_and_unlabelled_multiband) ... ok
+test_comparison_recovery_does_not_invent_missing_dates (test_prompt_preview.PromptTests.test_comparison_recovery_does_not_invent_missing_dates) ... ok
+test_generic_rgb_pair_clarifies (test_prompt_preview.PromptTests.test_generic_rgb_pair_clarifies) ... ok
+test_guards_remain (test_prompt_preview.PromptTests.test_guards_remain) ... ok
+test_recorded_context_questions (test_prompt_preview.PromptTests.test_recorded_context_questions) ... ok
+test_scene_paraphrases_use_detailed_description (test_prompt_preview.PromptTests.test_scene_paraphrases_use_detailed_description) ... ok
+test_suggestions_validate_without_execution (test_prompt_preview.PromptTests.test_suggestions_validate_without_execution) ... ok
+test_broad_rgb_comparison_explains_choices (test_prompt_regressions.PromptRegressionTests.test_broad_rgb_comparison_explains_choices) ... ok
+test_explicit_grounding_preserved (test_prompt_regressions.PromptRegressionTests.test_explicit_grounding_preserved) ... ok
+test_measurement_and_compound_controls (test_prompt_regressions.PromptRegressionTests.test_measurement_and_compound_controls) ... ok
+test_scene_area_is_not_measurement (test_prompt_regressions.PromptRegressionTests.test_scene_area_is_not_measurement) ... ok
+test_spatial_description_not_detector (test_prompt_regressions.PromptRegressionTests.test_spatial_description_not_detector) ... ok
+test_forecast_recovery_does_not_request_dates (test_request_boundaries.RequestBoundaryTests.test_forecast_recovery_does_not_request_dates) ... ok
+test_forecasts_refused_for_all_input_modes (test_request_boundaries.RequestBoundaryTests.test_forecasts_refused_for_all_input_modes) ... ok
+test_recovery_does_not_claim_automatic_repair (test_request_boundaries.RequestBoundaryTests.test_recovery_does_not_claim_automatic_repair) ... ok
+test_scene_classifier_cannot_pretend_to_map (test_request_boundaries.RequestBoundaryTests.test_scene_classifier_cannot_pretend_to_map) ... ok
+test_temporal_not_general_object_matching (test_request_boundaries.RequestBoundaryTests.test_temporal_not_general_object_matching) ... ok
+test_water_cannot_answer_other_measurements (test_request_boundaries.RequestBoundaryTests.test_water_cannot_answer_other_measurements) ... ok
+test_categorical_mask_refuses_unknown_classes (test_road_home.RoadHomeTests.test_categorical_mask_refuses_unknown_classes) ... ok
+test_changed_debris_snapshot_rejected_in_investigation (test_road_home.RoadHomeTests.test_changed_debris_snapshot_rejected_in_investigation) ... ok
+test_corrupt_hash_valid_tiff_withheld (test_road_home.RoadHomeTests.test_corrupt_hash_valid_tiff_withheld) ... ok
+test_csv_headers_ids_status_finiteness_and_units (test_road_home.RoadHomeTests.test_csv_headers_ids_status_finiteness_and_units) ... ok
+test_debris_question_uses_distinct_actual_tool (test_road_home.RoadHomeTests.test_debris_question_uses_distinct_actual_tool) ... ok
+test_each_question_uses_selected_run_not_cached_last_run (test_road_home.RoadHomeTests.test_each_question_uses_selected_run_not_cached_last_run) ... ok
+test_exposure_row_cap_enforced (test_road_home.RoadHomeTests.test_exposure_row_cap_enforced) ... ok
+test_fractional_and_bool_counts_refused (test_road_home.RoadHomeTests.test_fractional_and_bool_counts_refused) ... ok
+test_missing_debris_is_not_assessed_without_zero (test_road_home.RoadHomeTests.test_missing_debris_is_not_assessed_without_zero) ... ok
+test_missing_debris_question_abstains (test_road_home.RoadHomeTests.test_missing_debris_question_abstains) ... ok
+test_partial_metadata_never_enables_debris (test_road_home.RoadHomeTests.test_partial_metadata_never_enables_debris) ... ok
+test_png_is_native_and_hash_linked (test_road_home.RoadHomeTests.test_png_is_native_and_hash_linked) ... ok
+test_registered_routes_and_source_header (test_road_home.RoadHomeTests.test_registered_routes_and_source_header) ... ok
+test_separate_coverage_and_native_counts (test_road_home.RoadHomeTests.test_separate_coverage_and_native_counts) ... ok
+test_stale_cross_run_snapshot_refused (test_road_home.RoadHomeTests.test_stale_cross_run_snapshot_refused) ... ok
+test_summary_coverage_mismatch_refused (test_road_home.RoadHomeTests.test_summary_coverage_mismatch_refused) ... ok
+test_summary_road_total_mismatch_refused (test_road_home.RoadHomeTests.test_summary_road_total_mismatch_refused) ... ok
+test_tampered_mask_hash_withheld (test_road_home.RoadHomeTests.test_tampered_mask_hash_withheld) ... ok
+test_unsafe_questions_abstain_before_source_access (test_road_home.RoadHomeTests.test_unsafe_questions_abstain_before_source_access) ... ok
+test_case_spacing_and_whole_question (test_routing.RoutingTests.test_case_spacing_and_whole_question) ... ok
+test_failure_modes (test_routing.RoutingTests.test_failure_modes) ... ok
+test_invalid_thresholds (test_routing.RoutingTests.test_invalid_thresholds) ... ok
+test_rgb_never_ndvi (test_routing.RoutingTests.test_rgb_never_ndvi) ... ok
+test_no_measurement_or_temporal_bypass (test_rural_phrasing.RuralPhrasingTests.test_no_measurement_or_temporal_bypass) ... ok
+test_variants (test_rural_phrasing.RuralPhrasingTests.test_variants) ... ok
+test_invalid_pixels (test_sar_single.SARSingleTests.test_invalid_pixels) ... ok
+test_no_fake_vqa_grounding_or_measurements (test_sar_single.SARSingleTests.test_no_fake_vqa_grounding_or_measurements) ... ok
+test_scene_route (test_sar_single.SARSingleTests.test_scene_route) ... ok
+test_wrong_sensor_units_and_grid (test_sar_single.SARSingleTests.test_wrong_sensor_units_and_grid) ... ok
+test_equivalent_whole_scene_requests (test_scene_description.SceneDescriptionTests.test_equivalent_whole_scene_requests) ... ok
+test_specific_questions_remain_specific (test_scene_description.SceneDescriptionTests.test_specific_questions_remain_specific) ... ok
+test_scientific_acquisition (unittest.loader._FailedTest.test_scientific_acquisition) ... ERROR
+test_scientific_graph (unittest.loader._FailedTest.test_scientific_graph) ... ERROR
+test_fill_depression_and_preserve_original (test_scientific_hydrology.HydrologyTests.test_fill_depression_and_preserve_original) ... ok
+test_flat_is_acyclic_and_deterministic (test_scientific_hydrology.HydrologyTests.test_flat_is_acyclic_and_deterministic) ... ok
+test_known_east_plane_accumulation_hand_and_aspect (test_scientific_hydrology.HydrologyTests.test_known_east_plane_accumulation_hand_and_aspect) ... ok
+test_nodata_disconnects_basins_and_stays_unknown (test_scientific_hydrology.HydrologyTests.test_nodata_disconnects_basins_and_stays_unknown) ... ok
+test_reject_invalid_grid_missing_terrain_and_cycle (test_scientific_hydrology.HydrologyTests.test_reject_invalid_grid_missing_terrain_and_cycle) ... ok
+test_unconditioned_sink_is_retained (test_scientific_hydrology.HydrologyTests.test_unconditioned_sink_is_retained) ... ok
+test_scientific_metrics (unittest.loader._FailedTest.test_scientific_metrics) ... ERROR
+test_deliberate_shift_and_held_out_error (test_scientific_registration.RegistrationTests.test_deliberate_shift_and_held_out_error) ... skipped 'Install research/requirements-scientific.txt'
+test_known_rotation_is_supported (test_scientific_registration.RegistrationTests.test_known_rotation_is_supported) ... skipped 'Install research/requirements-scientific.txt'
+test_low_texture_nodata_clouds_and_cross_sensor (test_scientific_registration.RegistrationTests.test_low_texture_nodata_clouds_and_cross_sensor) ... skipped 'Install research/requirements-scientific.txt'
+test_mismatched_resolution_is_not_silently_warped (test_scientific_registration.RegistrationTests.test_mismatched_resolution_is_not_silently_warped) ... skipped 'Install research/requirements-scientific.txt'
+test_calibration_quality_and_sensor_refuse (test_spectral_pair.SpectralPairTests.test_calibration_quality_and_sensor_refuse) ... ok
+test_common_quality_denominator (test_spectral_pair.SpectralPairTests.test_common_quality_denominator) ... ok
+test_dates_and_grids_refuse (test_spectral_pair.SpectralPairTests.test_dates_and_grids_refuse) ... ok
+test_partial_result_missing_green (test_spectral_pair.SpectralPairTests.test_partial_result_missing_green) ... ok
+test_query_selected_parameters_and_no_forecast (test_spectral_pair.SpectralPairTests.test_query_selected_parameters_and_no_forecast) ... ok
+test_scalar_truth_and_exports (test_spectral_pair.SpectralPairTests.test_scalar_truth_and_exports) ... ok
+test_corrected_sample_preserved_and_views_aligned (test_stages.StageTests.test_corrected_sample_preserved_and_views_aligned) ... ok
+test_additive_http_routes_and_verified_download (test_terrain_exposure_api.ScientificStoreTests.test_additive_http_routes_and_verified_download) ... ERROR
+test_incomplete_run_not_listed_as_completed (test_terrain_exposure_api.ScientificStoreTests.test_incomplete_run_not_listed_as_completed) ... ok
+test_match_selected_observation_and_no_stale_substitution (test_terrain_exposure_api.ScientificStoreTests.test_match_selected_observation_and_no_stale_substitution) ... ok
+test_routing_and_resolution_abstention_preserve_evidence (test_terrain_exposure_api.ScientificStoreTests.test_routing_and_resolution_abstention_preserve_evidence) ... ok
+test_tampered_receptors_and_path_escape_fail (test_terrain_exposure_api.ScientificStoreTests.test_tampered_receptors_and_path_escape_fail) ... ok
+test_grounding_categories_and_boxes (test_unified.RoutingTests.test_grounding_categories_and_boxes) ... ok
+test_grounding_size_and_sar_refused (test_unified.RoutingTests.test_grounding_size_and_sar_refused) ... ok
+test_invalid_threshold_and_rgb_ndvi (test_unified.RoutingTests.test_invalid_threshold_and_rgb_ndvi) ... ok
+test_no_unsupported_grounding_fallback (test_unified.RoutingTests.test_no_unsupported_grounding_fallback) ... ok
+test_presence_and_count_do_not_become_grounding (test_unified.RoutingTests.test_presence_and_count_do_not_become_grounding) ... ok
+test_six_routes (test_unified.RoutingTests.test_six_routes) ... ok
+test_temporal_supported_and_unsupported_tasks (test_unified.RoutingTests.test_temporal_supported_and_unsupported_tasks) ... ok
+test_water_contract_routing (test_unified.RoutingTests.test_water_contract_routing) ... ok
+test_failed_specialist_never_calls_vqa (test_unified.WorkerTests.test_failed_specialist_never_calls_vqa) ... ok
+test_stage_history_and_bundle (test_unified.WorkerTests.test_stage_history_and_bundle) ... ok
+test_unknown_specialist_fails_closed (test_unified.WorkerTests.test_unknown_specialist_fails_closed) ... ok
+test_date_path_injection_refused (test_visual_context.LocalOpticalTests.test_date_path_injection_refused) ... ok
+test_grid_mismatch_withheld (test_visual_context.LocalOpticalTests.test_grid_mismatch_withheld) ... ok
+test_no_unapproved_root_means_unavailable (test_visual_context.LocalOpticalTests.test_no_unapproved_root_means_unavailable) ... ok
+test_tampered_or_absent_source_unavailable (test_visual_context.LocalOpticalTests.test_tampered_or_absent_source_unavailable) ... ok
+test_true_rgb_preview_and_invalid_mask_preserve_source (test_visual_context.LocalOpticalTests.test_true_rgb_preview_and_invalid_mask_preserve_source) ... ok
+test_conflicting_binary_output_withheld (test_vqa_answers.VQAAnswerTests.test_conflicting_binary_output_withheld) ... ok
+test_does_not_complete_truncated_description (test_vqa_answers.VQAAnswerTests.test_does_not_complete_truncated_description) ... ok
+test_exact_terminal_label_only (test_vqa_answers.VQAAnswerTests.test_exact_terminal_label_only) ... ok
+test_formatting_is_not_visual_verification (test_vqa_answers.VQAAnswerTests.test_formatting_is_not_visual_verification) ... ok
+test_negative_sentence_not_converted_to_presence (test_vqa_answers.VQAAnswerTests.test_negative_sentence_not_converted_to_presence) ... ok
+test_observed_dehradun_overclaim_is_withheld (test_vqa_answers.VQAAnswerTests.test_observed_dehradun_overclaim_is_withheld) ... ok
+test_sundarbans_season_and_health_not_presented (test_vqa_answers.VQAAnswerTests.test_sundarbans_season_and_health_not_presented) ... ok
+
+======================================================================
+ERROR: test_saved_predictions_and_regressions (test_evaluation.EvaluationTests.test_saved_predictions_and_regressions)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/mnt/c/Users/nrgen/.codex/.chatgpt-projects/g-p-6ad52225bccc8191b1ed5af2ed6b0646/research-campaign-20261107/repo/tests/test_evaluation.py", line 8, in test_saved_predictions_and_regressions
+    result = evaluation.development()
+             ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/c/Users/nrgen/.codex/.chatgpt-projects/g-p-6ad52225bccc8191b1ed5af2ed6b0646/research-campaign-20261107/repo/evaluation.py", line 49, in development
+    raise ValueError('Development inputs disagree with the frozen manifest hash.')
+ValueError: Development inputs disagree with the frozen manifest hash.
+
+======================================================================
+ERROR: test_scientific_acquisition (unittest.loader._FailedTest.test_scientific_acquisition)
+----------------------------------------------------------------------
+ImportError: Failed to import test module: test_scientific_acquisition
+Traceback (most recent call last):
+  File "/root/.local/share/uv/python/cpython-3.11.16-linux-x86_64-gnu/lib/python3.11/unittest/loader.py", line 419, in _find_test_path
+    module = self._get_module_from_name(name)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/.local/share/uv/python/cpython-3.11.16-linux-x86_64-gnu/lib/python3.11/unittest/loader.py", line 362, in _get_module_from_name
+    __import__(name)
+  File "/mnt/c/Users/nrgen/.codex/.chatgpt-projects/g-p-6ad52225bccc8191b1ed5af2ed6b0646/research-campaign-20261107/repo/tests/test_scientific_acquisition.py", line 12, in <module>
+    from research.cases.urban import tiles,ingest_built_up
+  File "/mnt/c/Users/nrgen/.codex/.chatgpt-projects/g-p-6ad52225bccc8191b1ed5af2ed6b0646/research-campaign-20261107/repo/research/cases/urban.py", line 17, in <module>
+    from research.terrain_exposure.graph import Observation,build_graph,export_graph
+  File "/mnt/c/Users/nrgen/.codex/.chatgpt-projects/g-p-6ad52225bccc8191b1ed5af2ed6b0646/research-campaign-20261107/repo/research/terrain_exposure/graph.py", line 13, in <module>
+    from shapely.geometry import shape, mapping, Point, LineString, box
+ModuleNotFoundError: No module named 'shapely'
+
+
+======================================================================
+ERROR: test_scientific_graph (unittest.loader._FailedTest.test_scientific_graph)
+----------------------------------------------------------------------
+ImportError: Failed to import test module: test_scientific_graph
+Traceback (most recent call last):
+  File "/root/.local/share/uv/python/cpython-3.11.16-linux-x86_64-gnu/lib/python3.11/unittest/loader.py", line 419, in _find_test_path
+    module = self._get_module_from_name(name)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/.local/share/uv/python/cpython-3.11.16-linux-x86_64-gnu/lib/python3.11/unittest/loader.py", line 362, in _get_module_from_name
+    __import__(name)
+  File "/mnt/c/Users/nrgen/.codex/.chatgpt-projects/g-p-6ad52225bccc8191b1ed5af2ed6b0646/research-campaign-20261107/repo/tests/test_scientific_graph.py", line 4, in <module>
+    from shapely.geometry import Point, box
+ModuleNotFoundError: No module named 'shapely'
+
+
+======================================================================
+ERROR: test_scientific_metrics (unittest.loader._FailedTest.test_scientific_metrics)
+----------------------------------------------------------------------
+ImportError: Failed to import test module: test_scientific_metrics
+Traceback (most recent call last):
+  File "/root/.local/share/uv/python/cpython-3.11.16-linux-x86_64-gnu/lib/python3.11/unittest/loader.py", line 419, in _find_test_path
+    module = self._get_module_from_name(name)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/.local/share/uv/python/cpython-3.11.16-linux-x86_64-gnu/lib/python3.11/unittest/loader.py", line 362, in _get_module_from_name
+    __import__(name)
+  File "/mnt/c/Users/nrgen/.codex/.chatgpt-projects/g-p-6ad52225bccc8191b1ed5af2ed6b0646/research-campaign-20261107/repo/tests/test_scientific_metrics.py", line 3, in <module>
+    from shapely.geometry import box
+ModuleNotFoundError: No module named 'shapely'
+
+
+======================================================================
+ERROR: test_additive_http_routes_and_verified_download (test_terrain_exposure_api.ScientificStoreTests.test_additive_http_routes_and_verified_download)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/root/satquery/.venv/lib/python3.11/site-packages/starlette/testclient.py", line 30, in <module>
+    import httpx
+ModuleNotFoundError: No module named 'httpx'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/mnt/c/Users/nrgen/.codex/.chatgpt-projects/g-p-6ad52225bccc8191b1ed5af2ed6b0646/research-campaign-20261107/repo/tests/test_terrain_exposure_api.py", line 74, in test_additive_http_routes_and_verified_download
+    from fastapi.testclient import TestClient
+  File "/root/satquery/.venv/lib/python3.11/site-packages/fastapi/testclient.py", line 1, in <module>
+    from starlette.testclient import TestClient as TestClient  # noqa
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/satquery/.venv/lib/python3.11/site-packages/starlette/testclient.py", line 32, in <module>
+    raise RuntimeError(
+RuntimeError: The starlette.testclient module requires the httpx package to be installed.
+You can install this with:
+    $ pip install httpx
+
+
+----------------------------------------------------------------------
+Ran 276 tests in 4.760s
+
+FAILED (errors=5, skipped=4)

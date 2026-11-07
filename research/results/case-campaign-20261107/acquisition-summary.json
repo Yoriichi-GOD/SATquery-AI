@@ -1,0 +1,19 @@
+{
+  "kedarnath": {
+    "acquired_raster_windows": 20,
+    "unavailable_raster_windows": 0
+  },
+  "nepal": {
+    "acquired_raster_windows": 1,
+    "additional_buffered_terrain_windows": 1,
+    "unavailable_raster_windows": 0
+  },
+  "sangam-vihar": {
+    "acquired_raster_windows": 7,
+    "unavailable_raster_windows": 0
+  },
+  "varanasi": {
+    "acquired_raster_windows": 8,
+    "unavailable_raster_windows": 0
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "files": {
+    "case-panels.png": "285d1add673fa58570a449320bfe48f5c5a9647354fc2b486b7b6aa3c8246865",
+    "dem-30m.tif": "301b1ea77ea8dd438b642b05a4515cc83ab5e86f2324b46f7dd63d98a7c0b3d9",
+    "dem-90m.tif": "32cababc03fc6fe0f01e9af6ffa93fd13bcd154735b50d84f52237b1cda114af",
+    "hand-30m.tif": "3b0a030bb2b693612d2312f3aa3998020875591de17942b239cf86a4fc3db1fa",
+    "hand-90m.tif": "b8ebb554cf10a8e792410da6e6e5f167d1cda803ed09f4f7c6daaf97c01afa4f",
+    "slope-30m.tif": "6c08f5c99b4ae825a2e5406bdb8d58ca025eefc97de4b5e0162ad5fe87078996",
+    "slope-90m.tif": "c6595ea116e74218377bd5da78f525c8b0f13e5845eb500e1cbbee6ed1fd882a",
+    "sources.json": "3935e4588e22dc91a55ba9d20196dc705374f2cc7d28f57d25c7b4bc15a8a585",
+    "summary.json": "6fdf2c7210ceb5b74e6178e061ecde21fccc97ebc96a779e62e34f10fa9e3ad5"
+  }
+}

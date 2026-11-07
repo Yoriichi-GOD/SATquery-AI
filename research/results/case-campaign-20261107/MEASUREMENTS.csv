@@ -1,0 +1,8 @@
+case,metric,value,unit,denominator,denominator_unit,period,evidence_role
+varanasi,annual_model_net_built_change,1594.65,ha,23208.78,ha,2017–2023,annual_model_transition_not_surveyed_construction
+sangam-vihar,annual_model_net_built_change,77.73,ha,2388.24,ha,2017–2023,annual_model_transition_not_surveyed_construction
+kedarnath,common_clear_coverage,0.059794840834829395,fraction,377658,ROI30m_pixels,2013-05-22/2013-06-23,quality_gate_registration_unavailable
+kedarnath,new-water-proxy,1.62,ha,2032.38,ha,2013-05-22/2013-06-23,conditional_spectral_proxy_not_event_extent
+kedarnath,vegetation-loss-proxy,0.0,ha,2032.38,ha,2013-05-22/2013-06-23,conditional_spectral_proxy_not_event_extent
+nepal,water_candidate_area,9.56,ha,998.58,ha,retained_event_fe47db331390,saved_candidate_mask_not_independent_truth
+nepal,debris_candidate_area,10.41,ha,302.39,ha,retained_event_fe47db331390,saved_candidate_mask_not_independent_truth

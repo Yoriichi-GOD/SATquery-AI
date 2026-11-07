@@ -20,3 +20,5 @@
 /components/floodlab/** -whitespace
 /components/FLOODLAB_SOURCE_MANIFEST.json -text
 /research/results/case-campaign-20261107/** -text
+/research/results/case-campaign-20261107/** whitespace=cr-at-eol
+/research/results/case-campaign-20261107/figures/*.svg -diff

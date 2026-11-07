@@ -1,0 +1,250 @@
+{
+  "accuracy_metrics": "NOT_ASSESSED:no compatible independent targets",
+  "bbox": [
+    78.96,
+    30.6,
+    79.12,
+    30.8
+  ],
+  "boundary_role": "exploratory_upper_Mandakini_window_not_event_boundary",
+  "case_id": "kedarnath",
+  "historical": {
+    "after": {
+      "clear_fraction_of_roi": 0.0775145766804887,
+      "qa_clear_pixels": 29274,
+      "valid_pixels": 370261
+    },
+    "after_date": "2013-06-23",
+    "before": {
+      "clear_fraction_of_roi": 0.356764585948133,
+      "qa_clear_pixels": 134735,
+      "valid_pixels": 377615
+    },
+    "before_date": "2013-05-22",
+    "common_clear_fraction": 0.059794840834829395,
+    "common_clear_pixels": 22582,
+    "event_timing": "Postevent June23 does not observe peak June16\u201317 inundation",
+    "exposure_validation": "NOT_ASSESSED:historical matched receptor inventory and class-compatible event reference absent",
+    "new-water-proxy": {
+      "area_ha": 1.62,
+      "candidate_pixels": 18,
+      "interpretation": "Fixed spectral proxy; not confirmed flood/debris or damage",
+      "registration_status": "UNAVAILABLE",
+      "valid_area_ha": 2032.38,
+      "valid_pixels": 22582
+    },
+    "registration": {
+      "absolute_geolocation": "NOT_VALIDATED",
+      "common_valid_fraction": 0.057427681352915,
+      "corrected_raster_created": false,
+      "grid_a": {
+        "cell_area_m2": 900.0,
+        "cell_size_m": [
+          30.0,
+          30.0
+        ],
+        "crs": "EPSG:32644",
+        "shape": [
+          749,
+          525
+        ],
+        "transform": [
+          30.0,
+          0.0,
+          304410.0,
+          0.0,
+          -30.0,
+          3409230.0
+        ]
+      },
+      "grid_b": {
+        "cell_area_m2": 900.0,
+        "cell_size_m": [
+          30.0,
+          30.0
+        ],
+        "crs": "EPSG:32644",
+        "shape": [
+          749,
+          525
+        ],
+        "transform": [
+          30.0,
+          0.0,
+          304410.0,
+          0.0,
+          -30.0,
+          3409230.0
+        ]
+      },
+      "keypoints_a": 757,
+      "keypoints_b": 163,
+      "matches": 0,
+      "method": "SIFT mutual ratio matches; train-only RANSAC similarity; held-out residuals",
+      "modalities": [
+        "optical",
+        "optical"
+      ],
+      "physical_registration": "UNVERIFIED",
+      "reason": "INSUFFICIENT_TRUSTWORTHY_TIE_POINTS",
+      "resampling": "None; diagnostics only",
+      "status": "UNAVAILABLE",
+      "threshold_pixels": 1.5,
+      "valid_a_fraction": 0.34264098162629536,
+      "valid_b_fraction": 0.07444592790387183,
+      "vertical_datum": "Not inferred from image grids"
+    },
+    "roi_area_ha": 33989.22,
+    "roi_pixels": 377658,
+    "vegetation-loss-proxy": {
+      "area_ha": 0.0,
+      "candidate_pixels": 0,
+      "interpretation": "Fixed spectral proxy; not confirmed flood/debris or damage",
+      "registration_status": "UNAVAILABLE",
+      "valid_area_ha": 2032.38,
+      "valid_pixels": 22582
+    }
+  },
+  "limitations": [
+    "Finite exploratory ROI; external contributing area unavailable",
+    "DSM routes do not model culverts, urban sewers, hydraulic depth or debris physics"
+  ],
+  "protocol_sha256": "7db20238e570bb6c2068b3b34e4864b4049d2453d2dd3627941e0bc009d7cdf5",
+  "seconds": 6.721208562994434,
+  "terrain": {
+    "30": {
+      "analysis_pixel_m": 30,
+      "elevation_m": {
+        "median": 3606.9321232631364,
+        "n": 377658,
+        "p10": 2171.7632694713325,
+        "p90": 5085.509654338879
+      },
+      "grid": {
+        "cell_area_m2": 900.0,
+        "cell_size_m": [
+          30.0,
+          30.0
+        ],
+        "crs": "EPSG:32644",
+        "shape": [
+          749,
+          525
+        ],
+        "transform": [
+          30.0,
+          0.0,
+          304410.0,
+          0.0,
+          -30.0,
+          3409230.0
+        ]
+      },
+      "hand_m": {
+        "median": 156.23068404224796,
+        "n": 375652,
+        "p10": 13.752702355639121,
+        "p90": 431.593899423781
+      },
+      "historical_role": "SRTM2000-derived reprocessing; not June2013 surface",
+      "hydrology": {
+        "boundary_condition": "Open outer edge and NoData perimeter; external contributing area unavailable",
+        "conditioning": "fill",
+        "filled_cells": 2747,
+        "flat_parent_routes": 2753,
+        "flow_method": "D8 steepest descent; Priority-Flood parent on filled flats",
+        "hand_valid_cells": 375652,
+        "interpretation": "Potential topographic drainage; not flood/debris propagation or flood depth",
+        "maximum_fill_m": 40.78798013011601,
+        "outlet_accumulation_sum_cells": 377658,
+        "outlets": 55,
+        "stream_cells": 19857,
+        "stream_threshold_m2": 100000,
+        "total_cells": 393225,
+        "valid_cells": 377658,
+        "valid_fraction": 0.9604119778752622
+      },
+      "slope_degrees": {
+        "median": 32.89572436916464,
+        "n": 375118,
+        "p10": 13.260500632019985,
+        "p90": 47.548795586019665
+      },
+      "source_information_scale_m": 30,
+      "source_product": "NASADEM_HGT_v001",
+      "street_scale_gate": {
+        "minimum_cells_across_feature": 2,
+        "required_feature_width_m": 5,
+        "status": "INSUFFICIENT_RESOLUTION",
+        "warning": "Sampling gate alone does not validate drains, elevations or flow."
+      }
+    },
+    "90": {
+      "analysis_pixel_m": 90,
+      "elevation_m": {
+        "median": 3608.210483703543,
+        "n": 41956,
+        "p10": 2172.0078048339765,
+        "p90": 5086.528252314337
+      },
+      "grid": {
+        "cell_area_m2": 8100.0,
+        "cell_size_m": [
+          90.0,
+          90.0
+        ],
+        "crs": "EPSG:32644",
+        "shape": [
+          251,
+          176
+        ],
+        "transform": [
+          90.0,
+          0.0,
+          304380.0,
+          0.0,
+          -90.0,
+          3409290.0
+        ]
+      },
+      "hand_m": {
+        "median": 141.86301043760977,
+        "n": 41932,
+        "p10": 0.0,
+        "p90": 417.57905331106303
+      },
+      "historical_role": "SRTM2000-derived reprocessing; not June2013 surface",
+      "hydrology": {
+        "boundary_condition": "Open outer edge and NoData perimeter; external contributing area unavailable",
+        "conditioning": "fill",
+        "filled_cells": 193,
+        "flat_parent_routes": 193,
+        "flow_method": "D8 steepest descent; Priority-Flood parent on filled flats",
+        "hand_valid_cells": 41932,
+        "interpretation": "Potential topographic drainage; not flood/debris propagation or flood depth",
+        "maximum_fill_m": 30.752478611837205,
+        "outlet_accumulation_sum_cells": 41956,
+        "outlets": 22,
+        "stream_cells": 6989,
+        "stream_threshold_m2": 100000,
+        "total_cells": 44176,
+        "valid_cells": 41956,
+        "valid_fraction": 0.9497464686707715
+      },
+      "slope_degrees": {
+        "median": 31.183139746794662,
+        "n": 41112,
+        "p10": 12.934045745615292,
+        "p90": 43.88391611478962
+      },
+      "source_information_scale_m": 30,
+      "source_product": "NASADEM_HGT_v001",
+      "street_scale_gate": {
+        "minimum_cells_across_feature": 2,
+        "required_feature_width_m": 5,
+        "status": "INSUFFICIENT_RESOLUTION",
+        "warning": "Sampling gate alone does not validate drains, elevations or flow."
+      }
+    }
+  }
+}

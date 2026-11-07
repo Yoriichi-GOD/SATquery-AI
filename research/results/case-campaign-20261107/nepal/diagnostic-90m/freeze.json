@@ -1,0 +1,84 @@
+{
+  "configuration_sha256": "bcf512b8031f04643a422bf6b1f1b16073b8447045d25fefd8f3fcc031618bd4",
+  "evaluation_support_sha256": "5d9a0a1f3d5c0ddf786ebabbe15f0873c106a6584afcbad667d93a9240b12e7f",
+  "exclusions": [
+    {
+      "grade": "Possibly damaged",
+      "reason": "UNKNOWN_REFERENCE_GRADE",
+      "reference_id": "1"
+    },
+    {
+      "grade": "Possibly damaged",
+      "reason": "UNKNOWN_REFERENCE_GRADE",
+      "reference_id": "6"
+    },
+    {
+      "grade": "Possibly damaged",
+      "reason": "UNKNOWN_REFERENCE_GRADE",
+      "reference_id": "9"
+    },
+    {
+      "grade": "Possibly damaged",
+      "reason": "UNKNOWN_REFERENCE_GRADE",
+      "reference_id": "16"
+    },
+    {
+      "grade": "Possibly damaged",
+      "reason": "UNKNOWN_REFERENCE_GRADE",
+      "reference_id": "17"
+    },
+    {
+      "grade": "Possibly damaged",
+      "reason": "UNKNOWN_REFERENCE_GRADE",
+      "reference_id": "25"
+    },
+    {
+      "grade": "No visible damage",
+      "reason": "OUTSIDE_COMMON_SUPPORT_OR_TOO_SHORT",
+      "reference_id": "26"
+    }
+  ],
+  "full_graph_content_sha256": "cd87b0b17cc9a79b20109a4a8c9c1e8e3329c459c0d76358e4a65c97ffcaae52",
+  "full_graph_summary": {
+    "edge_count": 10875,
+    "node_count": 6679,
+    "receptor_count": 22,
+    "relationship_count": 11352,
+    "relationship_statuses": {
+      "DIRECT_GEOMETRIC_INTERSECTION": 7,
+      "NOT_CONNECTED_WITHIN_DOMAIN": 7300,
+      "POTENTIAL_DOWNSTREAM_CONNECTION": 4032,
+      "UNRESOLVED_WITHIN_DEM_CELL": 13
+    }
+  },
+  "protocol_sha256": "73497b93f0473f07633e4a50f659f1689d8a28b948e4beec56fa10f1f29aca47",
+  "receptor_ids": [
+    "2",
+    "3",
+    "4",
+    "5",
+    "7",
+    "8",
+    "10",
+    "11",
+    "12",
+    "13",
+    "14",
+    "15",
+    "18",
+    "19",
+    "20",
+    "21",
+    "22",
+    "23",
+    "24",
+    "27",
+    "28",
+    "29"
+  ],
+  "reference_sha256": "56b3d9e0ea870a025492d84b61a0462b21c486bef52a903ccd0bb00b33c17920",
+  "registration_audit_sha256": "f24fae35ddc890cb0d7d652ee764627d04409b1d87894a5fe28188f41ced8e66",
+  "rows_sha256": "d5c7ad36680e721971f0c16871d70ff5cd0df09fb0174c85dee9d9454e1d3599",
+  "source_prediction_manifest_sha256": "4cdbb2ddf7fab929220b377c6a3b40edf8d8ef76b248b273a07ce4a3f31d8e1c",
+  "split": "previously_inspected_development_replay"
+}

@@ -1,0 +1,78 @@
+{
+  "kedarnath:historical.common_clear_fraction": {
+    "artifact": "kedarnath/summary.json",
+    "fact_id": "kedarnath:historical.common_clear_fraction",
+    "kind": "conditional_measurement",
+    "quality": "Not independently validated accuracy; preserve case limitations",
+    "sha256": "d7ff1a603a3326de9f90106107d6c7d553b4a6c5e09a79b79fdfe0ad51e0a38c",
+    "unit": "fraction",
+    "value": 0.059794840834829395
+  },
+  "kedarnath:historical.new-water-proxy.area_ha": {
+    "artifact": "kedarnath/summary.json",
+    "fact_id": "kedarnath:historical.new-water-proxy.area_ha",
+    "kind": "conditional_measurement",
+    "quality": "Not independently validated accuracy; preserve case limitations",
+    "sha256": "d7ff1a603a3326de9f90106107d6c7d553b4a6c5e09a79b79fdfe0ad51e0a38c",
+    "unit": "ha",
+    "value": 1.62
+  },
+  "kedarnath:historical.vegetation-loss-proxy.area_ha": {
+    "artifact": "kedarnath/summary.json",
+    "fact_id": "kedarnath:historical.vegetation-loss-proxy.area_ha",
+    "kind": "conditional_measurement",
+    "quality": "Not independently validated accuracy; preserve case limitations",
+    "sha256": "d7ff1a603a3326de9f90106107d6c7d553b4a6c5e09a79b79fdfe0ad51e0a38c",
+    "unit": "ha",
+    "value": 0.0
+  },
+  "nepal:terrain.30.hydrology.valid_cells": {
+    "artifact": "nepal/summary.json",
+    "fact_id": "nepal:terrain.30.hydrology.valid_cells",
+    "kind": "conditional_measurement",
+    "quality": "Not independently validated accuracy; preserve case limitations",
+    "sha256": "6fdf2c7210ceb5b74e6178e061ecde21fccc97ebc96a779e62e34f10fa9e3ad5",
+    "unit": "cells",
+    "value": 11869
+  },
+  "nepal:validated_exposure_f1": {
+    "reason": "Compatible independent exposure targets unavailable",
+    "value": null
+  },
+  "sangam-vihar:urban.common_area_ha": {
+    "artifact": "sangam-vihar/summary.json",
+    "fact_id": "sangam-vihar:urban.common_area_ha",
+    "kind": "conditional_measurement",
+    "quality": "Not independently validated accuracy; preserve case limitations",
+    "sha256": "9df140c393d8840c0877febf06820558ac6a8ee1a285af5f6493d019d9af8bcd",
+    "unit": "ha",
+    "value": 2388.24
+  },
+  "sangam-vihar:urban.net_built_difference_ha": {
+    "artifact": "sangam-vihar/summary.json",
+    "fact_id": "sangam-vihar:urban.net_built_difference_ha",
+    "kind": "conditional_measurement",
+    "quality": "Not independently validated accuracy; preserve case limitations",
+    "sha256": "9df140c393d8840c0877febf06820558ac6a8ee1a285af5f6493d019d9af8bcd",
+    "unit": "ha",
+    "value": 77.73
+  },
+  "varanasi:urban.common_area_ha": {
+    "artifact": "varanasi/summary.json",
+    "fact_id": "varanasi:urban.common_area_ha",
+    "kind": "conditional_measurement",
+    "quality": "Not independently validated accuracy; preserve case limitations",
+    "sha256": "f3e42b1eaa5d575461776cab1249248c99835da431cfc4b33d576f48284e064e",
+    "unit": "ha",
+    "value": 23208.78
+  },
+  "varanasi:urban.net_built_difference_ha": {
+    "artifact": "varanasi/summary.json",
+    "fact_id": "varanasi:urban.net_built_difference_ha",
+    "kind": "conditional_measurement",
+    "quality": "Not independently validated accuracy; preserve case limitations",
+    "sha256": "f3e42b1eaa5d575461776cab1249248c99835da431cfc4b33d576f48284e064e",
+    "unit": "ha",
+    "value": 1594.65
+  }
+}

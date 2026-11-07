@@ -1,0 +1,200 @@
+{
+  "browser_verification": "NOT_RUN:local browser control disabled",
+  "checks": [
+    {
+      "bytes": 10185,
+      "path": "http://127.0.0.1:18968/",
+      "sha256": "fdc4061211a1c3878078d1541e5d9f9fdc229724ccacc5157366129476d22c1a",
+      "status": 200
+    },
+    {
+      "bytes": 48838,
+      "path": "http://127.0.0.1:18968/jai/assets/earth.js",
+      "sha256": "3313e623f18d9c7c235c891ea5048a58dc6fcbabf1f0514eeec0a0546cd4c0d7",
+      "status": 200
+    },
+    {
+      "bytes": 9831,
+      "path": "http://127.0.0.1:18968/jai/assets/earth.css",
+      "sha256": "06bb30b46a35998bff158375f01c010c8f392ebeec37b4e02fb8ae34fce67cb4",
+      "status": 200
+    },
+    {
+      "bytes": 822,
+      "path": "http://127.0.0.1:18968/api/status",
+      "sha256": "abbb01848ad329f069f464d5d90c4c8cc21a9b489077e995cfe23db7698851fd",
+      "status": 200
+    },
+    {
+      "bytes": 23402,
+      "path": "http://127.0.0.1:18968/api/samples",
+      "sha256": "02b0a25c5e96ace4d002aea9bbdc64690ae26dd92599a546313963800f2ece47",
+      "status": 200
+    },
+    {
+      "bytes": 83,
+      "path": "http://127.0.0.1:18968/api/flood/health",
+      "sha256": "fe3d887cf746c82b7a22fc743ed32072c51305bb7b73810be0bf12bb69e8e6da",
+      "status": 200
+    },
+    {
+      "bytes": 7164,
+      "path": "http://127.0.0.1:18968/api/flood/runs/event-fe47db331390",
+      "sha256": "ac52203d19c193e9868e13e5eeb4919e2a75e0a79b1158787f00f533faf4879c",
+      "status": 200
+    },
+    {
+      "bytes": 7116,
+      "path": "http://127.0.0.1:18968/api/flood/runs/nepal-syapru-004",
+      "sha256": "4de067e7a896b7a38164241270ef64d8ed89b861d5af6a351afc1abd1a3c8df1",
+      "status": 200
+    },
+    {
+      "bytes": 1537,
+      "path": "http://127.0.0.1:18968/api/research/cases",
+      "sha256": "c41e405ff2711f6e414d67665c80c1af3b40c80e65660b1f1c1f6d6a22b5c1f1",
+      "status": 200
+    },
+    {
+      "bytes": 4563,
+      "path": "http://127.0.0.1:18968/api/research/cases/nepal",
+      "sha256": "6fdf2c7210ceb5b74e6178e061ecde21fccc97ebc96a779e62e34f10fa9e3ad5",
+      "status": 200
+    },
+    {
+      "bytes": 1915,
+      "path": "http://127.0.0.1:18968/api/research/cases/nepal/sources",
+      "sha256": "3935e4588e22dc91a55ba9d20196dc705374f2cc7d28f57d25c7b4bc15a8a585",
+      "status": 200
+    },
+    {
+      "bytes": 215155,
+      "path": "http://127.0.0.1:18968/api/research/cases/nepal/panels.png",
+      "sha256": "285d1add673fa58570a449320bfe48f5c5a9647354fc2b486b7b6aa3c8246865",
+      "status": 200
+    },
+    {
+      "bytes": 7340,
+      "path": "http://127.0.0.1:18968/api/research/cases/kedarnath",
+      "sha256": "d7ff1a603a3326de9f90106107d6c7d553b4a6c5e09a79b79fdfe0ad51e0a38c",
+      "status": 200
+    },
+    {
+      "bytes": 36925,
+      "path": "http://127.0.0.1:18968/api/research/cases/kedarnath/sources",
+      "sha256": "919c22704e01b1409e884e8e5af3d9cfd398ead90e5cb59f8f2cf4ba08966c84",
+      "status": 200
+    },
+    {
+      "bytes": 409739,
+      "path": "http://127.0.0.1:18968/api/research/cases/kedarnath/panels.png",
+      "sha256": "34ba166afc02b50aa15085e4c2f43810295bd8cc30894cd0857f569bfec90304",
+      "status": 200
+    },
+    {
+      "bytes": 7974,
+      "path": "http://127.0.0.1:18968/api/research/cases/varanasi",
+      "sha256": "f3e42b1eaa5d575461776cab1249248c99835da431cfc4b33d576f48284e064e",
+      "status": 200
+    },
+    {
+      "bytes": 14713,
+      "path": "http://127.0.0.1:18968/api/research/cases/varanasi/sources",
+      "sha256": "f2f1173339d3aff0c269191b902d60f938a0f190f317ed9a4faee6a0f57b715e",
+      "status": 200
+    },
+    {
+      "bytes": 1362933,
+      "path": "http://127.0.0.1:18968/api/research/cases/varanasi/panels.png",
+      "sha256": "90f996c00d286675bae99b90f807e5793bd2591b5a25087283c41e8154cb9381",
+      "status": 200
+    },
+    {
+      "bytes": 7887,
+      "path": "http://127.0.0.1:18968/api/research/cases/sangam-vihar",
+      "sha256": "9df140c393d8840c0877febf06820558ac6a8ee1a285af5f6493d019d9af8bcd",
+      "status": 200
+    },
+    {
+      "bytes": 12864,
+      "path": "http://127.0.0.1:18968/api/research/cases/sangam-vihar/sources",
+      "sha256": "5b50830e1746b522910762f69e329d7934b6fa97cb71b29bf1ec5c5a71bd72e8",
+      "status": 200
+    },
+    {
+      "bytes": 305556,
+      "path": "http://127.0.0.1:18968/api/research/cases/sangam-vihar/panels.png",
+      "sha256": "3889ab54d235fe4e355422c3465fa785dcfd3886c716aa5f3ff6c89364f3c8d5",
+      "status": 200
+    },
+    {
+      "bytes": 34,
+      "path": "http://127.0.0.1:18968/api/research/cases/not-a-case",
+      "sha256": "d6c861ab57f8180a16735224f3816931fb306085ac7b48274246fdbd8e955aae",
+      "status": 404
+    },
+    {
+      "bytes": 410,
+      "path": "http://127.0.0.1:18968/api/terrain/status",
+      "sha256": "be005b6a91b92c77b1c6a626eced4787325b306c3fd386ca9aad0882684d3082",
+      "status": 200
+    },
+    {
+      "bytes": 35192,
+      "path": "http://127.0.0.1:18968/api/terrain/scenes/terrain-45737e0da2983d9d",
+      "sha256": "92b923bcb5f72b85e2a94bc673f65e3192684c29acc3ca9068907cc2f4053144",
+      "status": 200
+    },
+    {
+      "bytes": 412,
+      "path": "http://127.0.0.1:18968/api/terrain-exposure/runs",
+      "sha256": "be62f0444f7c27e3746fe4e0a1b3083c30d696c8f78447189645085698af5db1",
+      "status": 200
+    },
+    {
+      "bytes": 487699,
+      "path": "http://127.0.0.1:18968/api/terrain-exposure/runs/terrain-exposure-nepal-glo30",
+      "sha256": "2a4c0d937a00ff27e14e95e7531aaba69b51313c1c331fb2c28c8d801874197e",
+      "status": 200
+    },
+    {
+      "bytes": 140752,
+      "path": "http://127.0.0.1:18970/api/response/runs/nepal-syapru-004",
+      "sha256": "229cb4b53bb35ab95f2aa303be72b4758f461d613bc205e3af61aca65aee99aa",
+      "status": 200
+    },
+    {
+      "bytes": 46851,
+      "path": "http://127.0.0.1:18970/api/response/runs/nepal-syapru-004/scenarios/f2b1fc4b989434e453dee784/bundle.zip",
+      "sha256": "7a7a950e5fac096e2519060f57ef405586db12a2ea8bc65930f83f76a33050aa",
+      "status": 200
+    },
+    {
+      "bytes": 5400,
+      "path": "http://127.0.0.1:18970/api/response/runs/event-fe47db331390",
+      "sha256": "d7bc6f2efda5c783648f97bbfe26673ce0b34bc8f7065e618509c5fdbff529a4",
+      "status": 200
+    },
+    {
+      "bytes": 381,
+      "path": "http://127.0.0.1:18968/api/investigations/investigation-b46f792684a940ee9db8b88eea717809",
+      "sha256": "e54be96c774968bfaebfbc97d19e081b8f4983e6aee8835f4881373009afd068",
+      "status": 200
+    },
+    {
+      "bytes": 992358,
+      "path": "http://127.0.0.1:18968/api/investigations/investigation-b46f792684a940ee9db8b88eea717809",
+      "sha256": "629153a9ac3934d7a8ff74d8911fc1cb475adef76c8adc448562edb169d4dfc0",
+      "status": 200
+    }
+  ],
+  "investigation": {
+    "ai_model_used": false,
+    "id": "investigation-b46f792684a940ee9db8b88eea717809",
+    "resolution_status": "INSUFFICIENT_RESOLUTION",
+    "state": "abstained"
+  },
+  "preserved_terrain_scene": "terrain-45737e0da2983d9d",
+  "scope": "Live HTTP, source checksum, image parsing, saved-response exports and resolution abstention; not browser rendering or inference validation",
+  "status": "PASS"
+}

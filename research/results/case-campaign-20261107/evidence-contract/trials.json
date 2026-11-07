@@ -1,0 +1,666 @@
+[
+  {
+    "claim": {
+      "artifact": "varanasi/summary.json",
+      "fact_id": "varanasi:urban.net_built_difference_ha",
+      "kind": "conditional_measurement",
+      "sha256": "f3e42b1eaa5d575461776cab1249248c99835da431cfc4b33d576f48284e064e",
+      "unit": "ha",
+      "value": 1594.65
+    },
+    "expected_supported": true,
+    "fault": "valid",
+    "gate_accepted": true,
+    "gate_status": "SUPPORTED_TYPED_MEASUREMENT",
+    "id": "varanasi:urban.net_built_difference_ha:valid",
+    "ungated_accepted": true
+  },
+  {
+    "claim": {
+      "artifact": "varanasi/summary.json",
+      "fact_id": "varanasi:urban.net_built_difference_ha",
+      "kind": "conditional_measurement",
+      "sha256": "f3e42b1eaa5d575461776cab1249248c99835da431cfc4b33d576f48284e064e",
+      "unit": "ha",
+      "value": 1595.65
+    },
+    "expected_supported": false,
+    "fault": "changed_value",
+    "gate_accepted": false,
+    "gate_status": "VALUE_MISMATCH",
+    "id": "varanasi:urban.net_built_difference_ha:changed_value",
+    "ungated_accepted": true
+  },
+  {
+    "claim": {
+      "artifact": "varanasi/summary.json",
+      "fact_id": "varanasi:urban.net_built_difference_ha",
+      "kind": "conditional_measurement",
+      "sha256": "f3e42b1eaa5d575461776cab1249248c99835da431cfc4b33d576f48284e064e",
+      "unit": "confirmed_buildings",
+      "value": 1594.65
+    },
+    "expected_supported": false,
+    "fault": "wrong_unit",
+    "gate_accepted": false,
+    "gate_status": "UNIT_MISMATCH",
+    "id": "varanasi:urban.net_built_difference_ha:wrong_unit",
+    "ungated_accepted": true
+  },
+  {
+    "claim": {
+      "artifact": "varanasi/summary.json",
+      "fact_id": "varanasi:urban.net_built_difference_ha",
+      "kind": "conditional_measurement",
+      "sha256": "0000000000000000000000000000000000000000000000000000000000000000",
+      "unit": "ha",
+      "value": 1594.65
+    },
+    "expected_supported": false,
+    "fault": "wrong_hash",
+    "gate_accepted": false,
+    "gate_status": "SOURCE_HASH_MISMATCH",
+    "id": "varanasi:urban.net_built_difference_ha:wrong_hash",
+    "ungated_accepted": true
+  },
+  {
+    "claim": {
+      "artifact": "varanasi/summary.json",
+      "fact_id": "varanasi:urban.net_built_difference_ha",
+      "kind": "confirmed_damage",
+      "sha256": "f3e42b1eaa5d575461776cab1249248c99835da431cfc4b33d576f48284e064e",
+      "unit": "ha",
+      "value": 1594.65
+    },
+    "expected_supported": false,
+    "fault": "unsupported_damage",
+    "gate_accepted": false,
+    "gate_status": "UNSUPPORTED_INTERPRETATION",
+    "id": "varanasi:urban.net_built_difference_ha:unsupported_damage",
+    "ungated_accepted": true
+  },
+  {
+    "claim": {
+      "artifact": "varanasi/summary.json",
+      "fact_id": "varanasi:urban.common_area_ha",
+      "kind": "conditional_measurement",
+      "sha256": "f3e42b1eaa5d575461776cab1249248c99835da431cfc4b33d576f48284e064e",
+      "unit": "ha",
+      "value": 23208.78
+    },
+    "expected_supported": true,
+    "fault": "valid",
+    "gate_accepted": true,
+    "gate_status": "SUPPORTED_TYPED_MEASUREMENT",
+    "id": "varanasi:urban.common_area_ha:valid",
+    "ungated_accepted": true
+  },
+  {
+    "claim": {
+      "artifact": "varanasi/summary.json",
+      "fact_id": "varanasi:urban.common_area_ha",
+      "kind": "conditional_measurement",
+      "sha256": "f3e42b1eaa5d575461776cab1249248c99835da431cfc4b33d576f48284e064e",
+      "unit": "ha",
+      "value": 23209.78
+    },
+    "expected_supported": false,
+    "fault": "changed_value",
+    "gate_accepted": false,
+    "gate_status": "VALUE_MISMATCH",
+    "id": "varanasi:urban.common_area_ha:changed_value",
+    "ungated_accepted": true
+  },
+  {
+    "claim": {
+      "artifact": "varanasi/summary.json",
+      "fact_id": "varanasi:urban.common_area_ha",
+      "kind": "conditional_measurement",
+      "sha256": "f3e42b1eaa5d575461776cab1249248c99835da431cfc4b33d576f48284e064e",
+      "unit": "confirmed_buildings",
+      "value": 23208.78
+    },
+    "expected_supported": false,
+    "fault": "wrong_unit",
+    "gate_accepted": false,
+    "gate_status": "UNIT_MISMATCH",
+    "id": "varanasi:urban.common_area_ha:wrong_unit",
+    "ungated_accepted": true
+  },
+  {
+    "claim": {
+      "artifact": "varanasi/summary.json",
+      "fact_id": "varanasi:urban.common_area_ha",
+      "kind": "conditional_measurement",
+      "sha256": "0000000000000000000000000000000000000000000000000000000000000000",
+      "unit": "ha",
+      "value": 23208.78
+    },
+    "expected_supported": false,
+    "fault": "wrong_hash",
+    "gate_accepted": false,
+    "gate_status": "SOURCE_HASH_MISMATCH",
+    "id": "varanasi:urban.common_area_ha:wrong_hash",
+    "ungated_accepted": true
+  },
+  {
+    "claim": {
+      "artifact": "varanasi/summary.json",
+      "fact_id": "varanasi:urban.common_area_ha",
+      "kind": "confirmed_damage",
+      "sha256": "f3e42b1eaa5d575461776cab1249248c99835da431cfc4b33d576f48284e064e",
+      "unit": "ha",
+      "value": 23208.78
+    },
+    "expected_supported": false,
+    "fault": "unsupported_damage",
+    "gate_accepted": false,
+    "gate_status": "UNSUPPORTED_INTERPRETATION",
+    "id": "varanasi:urban.common_area_ha:unsupported_damage",
+    "ungated_accepted": true
+  },
+  {
+    "claim": {
+      "artifact": "sangam-vihar/summary.json",
+      "fact_id": "sangam-vihar:urban.net_built_difference_ha",
+      "kind": "conditional_measurement",
+      "sha256": "9df140c393d8840c0877febf06820558ac6a8ee1a285af5f6493d019d9af8bcd",
+      "unit": "ha",
+      "value": 77.73
+    },
+    "expected_supported": true,
+    "fault": "valid",
+    "gate_accepted": true,
+    "gate_status": "SUPPORTED_TYPED_MEASUREMENT",
+    "id": "sangam-vihar:urban.net_built_difference_ha:valid",
+    "ungated_accepted": true
+  },
+  {
+    "claim": {
+      "artifact": "sangam-vihar/summary.json",
+      "fact_id": "sangam-vihar:urban.net_built_difference_ha",
+      "kind": "conditional_measurement",
+      "sha256": "9df140c393d8840c0877febf06820558ac6a8ee1a285af5f6493d019d9af8bcd",
+      "unit": "ha",
+      "value": 78.73
+    },
+    "expected_supported": false,
+    "fault": "changed_value",
+    "gate_accepted": false,
+    "gate_status": "VALUE_MISMATCH",
+    "id": "sangam-vihar:urban.net_built_difference_ha:changed_value",
+    "ungated_accepted": true
+  },
+  {
+    "claim": {
+      "artifact": "sangam-vihar/summary.json",
+      "fact_id": "sangam-vihar:urban.net_built_difference_ha",
+      "kind": "conditional_measurement",
+      "sha256": "9df140c393d8840c0877febf06820558ac6a8ee1a285af5f6493d019d9af8bcd",
+      "unit": "confirmed_buildings",
+      "value": 77.73
+    },
+    "expected_supported": false,
+    "fault": "wrong_unit",
+    "gate_accepted": false,
+    "gate_status": "UNIT_MISMATCH",
+    "id": "sangam-vihar:urban.net_built_difference_ha:wrong_unit",
+    "ungated_accepted": true
+  },
+  {
+    "claim": {
+      "artifact": "sangam-vihar/summary.json",
+      "fact_id": "sangam-vihar:urban.net_built_difference_ha",
+      "kind": "conditional_measurement",
+      "sha256": "0000000000000000000000000000000000000000000000000000000000000000",
+      "unit": "ha",
+      "value": 77.73
+    },
+    "expected_supported": false,
+    "fault": "wrong_hash",
+    "gate_accepted": false,
+    "gate_status": "SOURCE_HASH_MISMATCH",
+    "id": "sangam-vihar:urban.net_built_difference_ha:wrong_hash",
+    "ungated_accepted": true
+  },
+  {
+    "claim": {
+      "artifact": "sangam-vihar/summary.json",
+      "fact_id": "sangam-vihar:urban.net_built_difference_ha",
+      "kind": "confirmed_damage",
+      "sha256": "9df140c393d8840c0877febf06820558ac6a8ee1a285af5f6493d019d9af8bcd",
+      "unit": "ha",
+      "value": 77.73
+    },
+    "expected_supported": false,
+    "fault": "unsupported_damage",
+    "gate_accepted": false,
+    "gate_status": "UNSUPPORTED_INTERPRETATION",
+    "id": "sangam-vihar:urban.net_built_difference_ha:unsupported_damage",
+    "ungated_accepted": true
+  },
+  {
+    "claim": {
+      "artifact": "sangam-vihar/summary.json",
+      "fact_id": "sangam-vihar:urban.common_area_ha",
+      "kind": "conditional_measurement",
+      "sha256": "9df140c393d8840c0877febf06820558ac6a8ee1a285af5f6493d019d9af8bcd",
+      "unit": "ha",
+      "value": 2388.24
+    },
+    "expected_supported": true,
+    "fault": "valid",
+    "gate_accepted": true,
+    "gate_status": "SUPPORTED_TYPED_MEASUREMENT",
+    "id": "sangam-vihar:urban.common_area_ha:valid",
+    "ungated_accepted": true
+  },
+  {
+    "claim": {
+      "artifact": "sangam-vihar/summary.json",
+      "fact_id": "sangam-vihar:urban.common_area_ha",
+      "kind": "conditional_measurement",
+      "sha256": "9df140c393d8840c0877febf06820558ac6a8ee1a285af5f6493d019d9af8bcd",
+      "unit": "ha",
+      "value": 2389.24
+    },
+    "expected_supported": false,
+    "fault": "changed_value",
+    "gate_accepted": false,
+    "gate_status": "VALUE_MISMATCH",
+    "id": "sangam-vihar:urban.common_area_ha:changed_value",
+    "ungated_accepted": true
+  },
+  {
+    "claim": {
+      "artifact": "sangam-vihar/summary.json",
+      "fact_id": "sangam-vihar:urban.common_area_ha",
+      "kind": "conditional_measurement",
+      "sha256": "9df140c393d8840c0877febf06820558ac6a8ee1a285af5f6493d019d9af8bcd",
+      "unit": "confirmed_buildings",
+      "value": 2388.24
+    },
+    "expected_supported": false,
+    "fault": "wrong_unit",
+    "gate_accepted": false,
+    "gate_status": "UNIT_MISMATCH",
+    "id": "sangam-vihar:urban.common_area_ha:wrong_unit",
+    "ungated_accepted": true
+  },
+  {
+    "claim": {
+      "artifact": "sangam-vihar/summary.json",
+      "fact_id": "sangam-vihar:urban.common_area_ha",
+      "kind": "conditional_measurement",
+      "sha256": "0000000000000000000000000000000000000000000000000000000000000000",
+      "unit": "ha",
+      "value": 2388.24
+    },
+    "expected_supported": false,
+    "fault": "wrong_hash",
+    "gate_accepted": false,
+    "gate_status": "SOURCE_HASH_MISMATCH",
+    "id": "sangam-vihar:urban.common_area_ha:wrong_hash",
+    "ungated_accepted": true
+  },
+  {
+    "claim": {
+      "artifact": "sangam-vihar/summary.json",
+      "fact_id": "sangam-vihar:urban.common_area_ha",
+      "kind": "confirmed_damage",
+      "sha256": "9df140c393d8840c0877febf06820558ac6a8ee1a285af5f6493d019d9af8bcd",
+      "unit": "ha",
+      "value": 2388.24
+    },
+    "expected_supported": false,
+    "fault": "unsupported_damage",
+    "gate_accepted": false,
+    "gate_status": "UNSUPPORTED_INTERPRETATION",
+    "id": "sangam-vihar:urban.common_area_ha:unsupported_damage",
+    "ungated_accepted": true
+  },
+  {
+    "claim": {
+      "artifact": "kedarnath/summary.json",
+      "fact_id": "kedarnath:historical.common_clear_fraction",
+      "kind": "conditional_measurement",
+      "sha256": "d7ff1a603a3326de9f90106107d6c7d553b4a6c5e09a79b79fdfe0ad51e0a38c",
+      "unit": "fraction",
+      "value": 0.059794840834829395
+    },
+    "expected_supported": true,
+    "fault": "valid",
+    "gate_accepted": true,
+    "gate_status": "SUPPORTED_TYPED_MEASUREMENT",
+    "id": "kedarnath:historical.common_clear_fraction:valid",
+    "ungated_accepted": true
+  },
+  {
+    "claim": {
+      "artifact": "kedarnath/summary.json",
+      "fact_id": "kedarnath:historical.common_clear_fraction",
+      "kind": "conditional_measurement",
+      "sha256": "d7ff1a603a3326de9f90106107d6c7d553b4a6c5e09a79b79fdfe0ad51e0a38c",
+      "unit": "fraction",
+      "value": 1.0597948408348294
+    },
+    "expected_supported": false,
+    "fault": "changed_value",
+    "gate_accepted": false,
+    "gate_status": "VALUE_MISMATCH",
+    "id": "kedarnath:historical.common_clear_fraction:changed_value",
+    "ungated_accepted": true
+  },
+  {
+    "claim": {
+      "artifact": "kedarnath/summary.json",
+      "fact_id": "kedarnath:historical.common_clear_fraction",
+      "kind": "conditional_measurement",
+      "sha256": "d7ff1a603a3326de9f90106107d6c7d553b4a6c5e09a79b79fdfe0ad51e0a38c",
+      "unit": "confirmed_buildings",
+      "value": 0.059794840834829395
+    },
+    "expected_supported": false,
+    "fault": "wrong_unit",
+    "gate_accepted": false,
+    "gate_status": "UNIT_MISMATCH",
+    "id": "kedarnath:historical.common_clear_fraction:wrong_unit",
+    "ungated_accepted": true
+  },
+  {
+    "claim": {
+      "artifact": "kedarnath/summary.json",
+      "fact_id": "kedarnath:historical.common_clear_fraction",
+      "kind": "conditional_measurement",
+      "sha256": "0000000000000000000000000000000000000000000000000000000000000000",
+      "unit": "fraction",
+      "value": 0.059794840834829395
+    },
+    "expected_supported": false,
+    "fault": "wrong_hash",
+    "gate_accepted": false,
+    "gate_status": "SOURCE_HASH_MISMATCH",
+    "id": "kedarnath:historical.common_clear_fraction:wrong_hash",
+    "ungated_accepted": true
+  },
+  {
+    "claim": {
+      "artifact": "kedarnath/summary.json",
+      "fact_id": "kedarnath:historical.common_clear_fraction",
+      "kind": "confirmed_damage",
+      "sha256": "d7ff1a603a3326de9f90106107d6c7d553b4a6c5e09a79b79fdfe0ad51e0a38c",
+      "unit": "fraction",
+      "value": 0.059794840834829395
+    },
+    "expected_supported": false,
+    "fault": "unsupported_damage",
+    "gate_accepted": false,
+    "gate_status": "UNSUPPORTED_INTERPRETATION",
+    "id": "kedarnath:historical.common_clear_fraction:unsupported_damage",
+    "ungated_accepted": true
+  },
+  {
+    "claim": {
+      "artifact": "kedarnath/summary.json",
+      "fact_id": "kedarnath:historical.new-water-proxy.area_ha",
+      "kind": "conditional_measurement",
+      "sha256": "d7ff1a603a3326de9f90106107d6c7d553b4a6c5e09a79b79fdfe0ad51e0a38c",
+      "unit": "ha",
+      "value": 1.62
+    },
+    "expected_supported": true,
+    "fault": "valid",
+    "gate_accepted": true,
+    "gate_status": "SUPPORTED_TYPED_MEASUREMENT",
+    "id": "kedarnath:historical.new-water-proxy.area_ha:valid",
+    "ungated_accepted": true
+  },
+  {
+    "claim": {
+      "artifact": "kedarnath/summary.json",
+      "fact_id": "kedarnath:historical.new-water-proxy.area_ha",
+      "kind": "conditional_measurement",
+      "sha256": "d7ff1a603a3326de9f90106107d6c7d553b4a6c5e09a79b79fdfe0ad51e0a38c",
+      "unit": "ha",
+      "value": 2.62
+    },
+    "expected_supported": false,
+    "fault": "changed_value",
+    "gate_accepted": false,
+    "gate_status": "VALUE_MISMATCH",
+    "id": "kedarnath:historical.new-water-proxy.area_ha:changed_value",
+    "ungated_accepted": true
+  },
+  {
+    "claim": {
+      "artifact": "kedarnath/summary.json",
+      "fact_id": "kedarnath:historical.new-water-proxy.area_ha",
+      "kind": "conditional_measurement",
+      "sha256": "d7ff1a603a3326de9f90106107d6c7d553b4a6c5e09a79b79fdfe0ad51e0a38c",
+      "unit": "confirmed_buildings",
+      "value": 1.62
+    },
+    "expected_supported": false,
+    "fault": "wrong_unit",
+    "gate_accepted": false,
+    "gate_status": "UNIT_MISMATCH",
+    "id": "kedarnath:historical.new-water-proxy.area_ha:wrong_unit",
+    "ungated_accepted": true
+  },
+  {
+    "claim": {
+      "artifact": "kedarnath/summary.json",
+      "fact_id": "kedarnath:historical.new-water-proxy.area_ha",
+      "kind": "conditional_measurement",
+      "sha256": "0000000000000000000000000000000000000000000000000000000000000000",
+      "unit": "ha",
+      "value": 1.62
+    },
+    "expected_supported": false,
+    "fault": "wrong_hash",
+    "gate_accepted": false,
+    "gate_status": "SOURCE_HASH_MISMATCH",
+    "id": "kedarnath:historical.new-water-proxy.area_ha:wrong_hash",
+    "ungated_accepted": true
+  },
+  {
+    "claim": {
+      "artifact": "kedarnath/summary.json",
+      "fact_id": "kedarnath:historical.new-water-proxy.area_ha",
+      "kind": "confirmed_damage",
+      "sha256": "d7ff1a603a3326de9f90106107d6c7d553b4a6c5e09a79b79fdfe0ad51e0a38c",
+      "unit": "ha",
+      "value": 1.62
+    },
+    "expected_supported": false,
+    "fault": "unsupported_damage",
+    "gate_accepted": false,
+    "gate_status": "UNSUPPORTED_INTERPRETATION",
+    "id": "kedarnath:historical.new-water-proxy.area_ha:unsupported_damage",
+    "ungated_accepted": true
+  },
+  {
+    "claim": {
+      "artifact": "kedarnath/summary.json",
+      "fact_id": "kedarnath:historical.vegetation-loss-proxy.area_ha",
+      "kind": "conditional_measurement",
+      "sha256": "d7ff1a603a3326de9f90106107d6c7d553b4a6c5e09a79b79fdfe0ad51e0a38c",
+      "unit": "ha",
+      "value": 0.0
+    },
+    "expected_supported": true,
+    "fault": "valid",
+    "gate_accepted": true,
+    "gate_status": "SUPPORTED_TYPED_MEASUREMENT",
+    "id": "kedarnath:historical.vegetation-loss-proxy.area_ha:valid",
+    "ungated_accepted": true
+  },
+  {
+    "claim": {
+      "artifact": "kedarnath/summary.json",
+      "fact_id": "kedarnath:historical.vegetation-loss-proxy.area_ha",
+      "kind": "conditional_measurement",
+      "sha256": "d7ff1a603a3326de9f90106107d6c7d553b4a6c5e09a79b79fdfe0ad51e0a38c",
+      "unit": "ha",
+      "value": 1.0
+    },
+    "expected_supported": false,
+    "fault": "changed_value",
+    "gate_accepted": false,
+    "gate_status": "VALUE_MISMATCH",
+    "id": "kedarnath:historical.vegetation-loss-proxy.area_ha:changed_value",
+    "ungated_accepted": true
+  },
+  {
+    "claim": {
+      "artifact": "kedarnath/summary.json",
+      "fact_id": "kedarnath:historical.vegetation-loss-proxy.area_ha",
+      "kind": "conditional_measurement",
+      "sha256": "d7ff1a603a3326de9f90106107d6c7d553b4a6c5e09a79b79fdfe0ad51e0a38c",
+      "unit": "confirmed_buildings",
+      "value": 0.0
+    },
+    "expected_supported": false,
+    "fault": "wrong_unit",
+    "gate_accepted": false,
+    "gate_status": "UNIT_MISMATCH",
+    "id": "kedarnath:historical.vegetation-loss-proxy.area_ha:wrong_unit",
+    "ungated_accepted": true
+  },
+  {
+    "claim": {
+      "artifact": "kedarnath/summary.json",
+      "fact_id": "kedarnath:historical.vegetation-loss-proxy.area_ha",
+      "kind": "conditional_measurement",
+      "sha256": "0000000000000000000000000000000000000000000000000000000000000000",
+      "unit": "ha",
+      "value": 0.0
+    },
+    "expected_supported": false,
+    "fault": "wrong_hash",
+    "gate_accepted": false,
+    "gate_status": "SOURCE_HASH_MISMATCH",
+    "id": "kedarnath:historical.vegetation-loss-proxy.area_ha:wrong_hash",
+    "ungated_accepted": true
+  },
+  {
+    "claim": {
+      "artifact": "kedarnath/summary.json",
+      "fact_id": "kedarnath:historical.vegetation-loss-proxy.area_ha",
+      "kind": "confirmed_damage",
+      "sha256": "d7ff1a603a3326de9f90106107d6c7d553b4a6c5e09a79b79fdfe0ad51e0a38c",
+      "unit": "ha",
+      "value": 0.0
+    },
+    "expected_supported": false,
+    "fault": "unsupported_damage",
+    "gate_accepted": false,
+    "gate_status": "UNSUPPORTED_INTERPRETATION",
+    "id": "kedarnath:historical.vegetation-loss-proxy.area_ha:unsupported_damage",
+    "ungated_accepted": true
+  },
+  {
+    "claim": {
+      "artifact": "nepal/summary.json",
+      "fact_id": "nepal:terrain.30.hydrology.valid_cells",
+      "kind": "conditional_measurement",
+      "sha256": "6fdf2c7210ceb5b74e6178e061ecde21fccc97ebc96a779e62e34f10fa9e3ad5",
+      "unit": "cells",
+      "value": 11869
+    },
+    "expected_supported": true,
+    "fault": "valid",
+    "gate_accepted": true,
+    "gate_status": "SUPPORTED_TYPED_MEASUREMENT",
+    "id": "nepal:terrain.30.hydrology.valid_cells:valid",
+    "ungated_accepted": true
+  },
+  {
+    "claim": {
+      "artifact": "nepal/summary.json",
+      "fact_id": "nepal:terrain.30.hydrology.valid_cells",
+      "kind": "conditional_measurement",
+      "sha256": "6fdf2c7210ceb5b74e6178e061ecde21fccc97ebc96a779e62e34f10fa9e3ad5",
+      "unit": "cells",
+      "value": 11870
+    },
+    "expected_supported": false,
+    "fault": "changed_value",
+    "gate_accepted": false,
+    "gate_status": "VALUE_MISMATCH",
+    "id": "nepal:terrain.30.hydrology.valid_cells:changed_value",
+    "ungated_accepted": true
+  },
+  {
+    "claim": {
+      "artifact": "nepal/summary.json",
+      "fact_id": "nepal:terrain.30.hydrology.valid_cells",
+      "kind": "conditional_measurement",
+      "sha256": "6fdf2c7210ceb5b74e6178e061ecde21fccc97ebc96a779e62e34f10fa9e3ad5",
+      "unit": "confirmed_buildings",
+      "value": 11869
+    },
+    "expected_supported": false,
+    "fault": "wrong_unit",
+    "gate_accepted": false,
+    "gate_status": "UNIT_MISMATCH",
+    "id": "nepal:terrain.30.hydrology.valid_cells:wrong_unit",
+    "ungated_accepted": true
+  },
+  {
+    "claim": {
+      "artifact": "nepal/summary.json",
+      "fact_id": "nepal:terrain.30.hydrology.valid_cells",
+      "kind": "conditional_measurement",
+      "sha256": "0000000000000000000000000000000000000000000000000000000000000000",
+      "unit": "cells",
+      "value": 11869
+    },
+    "expected_supported": false,
+    "fault": "wrong_hash",
+    "gate_accepted": false,
+    "gate_status": "SOURCE_HASH_MISMATCH",
+    "id": "nepal:terrain.30.hydrology.valid_cells:wrong_hash",
+    "ungated_accepted": true
+  },
+  {
+    "claim": {
+      "artifact": "nepal/summary.json",
+      "fact_id": "nepal:terrain.30.hydrology.valid_cells",
+      "kind": "confirmed_damage",
+      "sha256": "6fdf2c7210ceb5b74e6178e061ecde21fccc97ebc96a779e62e34f10fa9e3ad5",
+      "unit": "cells",
+      "value": 11869
+    },
+    "expected_supported": false,
+    "fault": "unsupported_damage",
+    "gate_accepted": false,
+    "gate_status": "UNSUPPORTED_INTERPRETATION",
+    "id": "nepal:terrain.30.hydrology.valid_cells:unsupported_damage",
+    "ungated_accepted": true
+  },
+  {
+    "expected_supported": false,
+    "fault": "unavailable",
+    "gate_accepted": false,
+    "gate_status": "UNAVAILABLE_EVIDENCE",
+    "id": "nepal:validated_exposure_f1",
+    "ungated_accepted": true
+  },
+  {
+    "expected_supported": false,
+    "fault": "unavailable",
+    "gate_accepted": false,
+    "gate_status": "UNKNOWN_FACT",
+    "id": "invented_fact",
+    "ungated_accepted": true
+  },
+  {
+    "expected_supported": false,
+    "fault": "tampered_artifact",
+    "gate_accepted": false,
+    "gate_status": "SOURCE_HASH_MISMATCH",
+    "id": "tampered-artifact",
+    "ungated_accepted": true
+  }
+]

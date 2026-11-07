@@ -1,0 +1,61 @@
+{
+  "absolute_geolocation": "NOT_VALIDATED",
+  "common_valid_fraction": 0.057427681352915,
+  "corrected_raster_created": false,
+  "grid_a": {
+    "cell_area_m2": 900.0,
+    "cell_size_m": [
+      30.0,
+      30.0
+    ],
+    "crs": "EPSG:32644",
+    "shape": [
+      749,
+      525
+    ],
+    "transform": [
+      30.0,
+      0.0,
+      304410.0,
+      0.0,
+      -30.0,
+      3409230.0
+    ]
+  },
+  "grid_b": {
+    "cell_area_m2": 900.0,
+    "cell_size_m": [
+      30.0,
+      30.0
+    ],
+    "crs": "EPSG:32644",
+    "shape": [
+      749,
+      525
+    ],
+    "transform": [
+      30.0,
+      0.0,
+      304410.0,
+      0.0,
+      -30.0,
+      3409230.0
+    ]
+  },
+  "keypoints_a": 757,
+  "keypoints_b": 163,
+  "matches": 0,
+  "method": "SIFT mutual ratio matches; train-only RANSAC similarity; held-out residuals",
+  "modalities": [
+    "optical",
+    "optical"
+  ],
+  "physical_registration": "UNVERIFIED",
+  "reason": "INSUFFICIENT_TRUSTWORTHY_TIE_POINTS",
+  "resampling": "None; diagnostics only",
+  "status": "UNAVAILABLE",
+  "threshold_pixels": 1.5,
+  "valid_a_fraction": 0.34264098162629536,
+  "valid_b_fraction": 0.07444592790387183,
+  "vertical_datum": "Not inferred from image grids"
+}

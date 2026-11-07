@@ -1,0 +1,8 @@
+Traceback (most recent call last):
+  File "/mnt/c/Users/nrgen/.codex/.chatgpt-projects/g-p-6ad52225bccc8191b1ed5af2ed6b0646/research-campaign-20261107/repo/scripts/verify_case_campaign.py", line 56, in <module>
+    p=argparse.ArgumentParser();p.add_argument('--work',required=True);p.add_argument('--pack',required=True);a=p.parse_args();verify(a.work,a.pack)
+                                                                                                                               ^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/c/Users/nrgen/.codex/.chatgpt-projects/g-p-6ad52225bccc8191b1ed5af2ed6b0646/research-campaign-20261107/repo/scripts/verify_case_campaign.py", line 19, in verify
+    assert without_timing(a)==without_timing(b),'Repeat changed numeric results'
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: Repeat changed numeric results

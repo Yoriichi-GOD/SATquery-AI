@@ -1,0 +1,297 @@
+{
+  "accuracy_metrics": "NOT_ASSESSED:no compatible independent targets",
+  "bbox": [
+    77.225,
+    28.47,
+    77.28,
+    28.51
+  ],
+  "boundary_role": "southern_Delhi_exploratory_window_not_surveyed_settlement_boundary",
+  "case_id": "sangam-vihar",
+  "limitations": [
+    "Finite exploratory ROI; external contributing area unavailable",
+    "DSM routes do not model culverts, urban sewers, hydraulic depth or debris physics"
+  ],
+  "protocol_sha256": "7db20238e570bb6c2068b3b34e4864b4049d2453d2dd3627941e0bc009d7cdf5",
+  "seconds": 1.0499198010002146,
+  "terrain": {
+    "30": {
+      "analysis_pixel_m": 30,
+      "elevation_m": {
+        "median": 248.1079699787084,
+        "n": 26535,
+        "p10": 234.58178055805797,
+        "p90": 267.0153746690564
+      },
+      "grid": {
+        "cell_area_m2": 900.0,
+        "cell_size_m": [
+          30.0,
+          30.0
+        ],
+        "crs": "EPSG:32643",
+        "shape": [
+          152,
+          183
+        ],
+        "transform": [
+          30.0,
+          0.0,
+          717750.0,
+          0.0,
+          -30.0,
+          3155820.0
+        ]
+      },
+      "hand_m": {
+        "median": 4.6929410800141795,
+        "n": 24042,
+        "p10": 0.49865411830085404,
+        "p90": 14.08987394278035
+      },
+      "historical_role": "Modern DSM; event-time terrain not certified",
+      "hydrology": {
+        "boundary_condition": "Open outer edge and NoData perimeter; external contributing area unavailable",
+        "conditioning": "fill",
+        "filled_cells": 3321,
+        "flat_parent_routes": 3321,
+        "flow_method": "D8 steepest descent; Priority-Flood parent on filled flats",
+        "hand_valid_cells": 24042,
+        "interpretation": "Potential topographic drainage; not flood/debris propagation or flood depth",
+        "maximum_fill_m": 26.71433796491428,
+        "outlet_accumulation_sum_cells": 26535,
+        "outlets": 75,
+        "stream_cells": 1522,
+        "stream_threshold_m2": 100000,
+        "total_cells": 27816,
+        "valid_cells": 26535,
+        "valid_fraction": 0.9539473684210527
+      },
+      "slope_degrees": {
+        "median": 2.2604532508701904,
+        "n": 25871,
+        "p10": 0.7630538914638997,
+        "p90": 5.204690185192612
+      },
+      "source_information_scale_m": 30,
+      "source_product": "CopernicusGLO30",
+      "street_scale_gate": {
+        "minimum_cells_across_feature": 2,
+        "required_feature_width_m": 5,
+        "status": "INSUFFICIENT_RESOLUTION",
+        "warning": "Sampling gate alone does not validate drains, elevations or flow."
+      }
+    },
+    "90": {
+      "analysis_pixel_m": 90,
+      "elevation_m": {
+        "median": 248.00397684562606,
+        "n": 2953,
+        "p10": 234.77996378645037,
+        "p90": 266.77262616127143
+      },
+      "grid": {
+        "cell_area_m2": 8100.0,
+        "cell_size_m": [
+          90.0,
+          90.0
+        ],
+        "crs": "EPSG:32643",
+        "shape": [
+          51,
+          61
+        ],
+        "transform": [
+          90.0,
+          0.0,
+          717750.0,
+          0.0,
+          -90.0,
+          3155850.0
+        ]
+      },
+      "hand_m": {
+        "median": 4.282571039156068,
+        "n": 2881,
+        "p10": 0.0,
+        "p90": 13.488081497557687
+      },
+      "historical_role": "Modern DSM; event-time terrain not certified",
+      "hydrology": {
+        "boundary_condition": "Open outer edge and NoData perimeter; external contributing area unavailable",
+        "conditioning": "fill",
+        "filled_cells": 181,
+        "flat_parent_routes": 181,
+        "flow_method": "D8 steepest descent; Priority-Flood parent on filled flats",
+        "hand_valid_cells": 2881,
+        "interpretation": "Potential topographic drainage; not flood/debris propagation or flood depth",
+        "maximum_fill_m": 13.129313170647833,
+        "outlet_accumulation_sum_cells": 2953,
+        "outlets": 21,
+        "stream_cells": 465,
+        "stream_threshold_m2": 100000,
+        "total_cells": 3111,
+        "valid_cells": 2953,
+        "valid_fraction": 0.9492124718739955
+      },
+      "slope_degrees": {
+        "median": 1.3664019544483292,
+        "n": 2733,
+        "p10": 0.37377522156969045,
+        "p90": 2.9853064166987586
+      },
+      "source_information_scale_m": 30,
+      "source_product": "CopernicusGLO30",
+      "street_scale_gate": {
+        "minimum_cells_across_feature": 2,
+        "required_feature_width_m": 5,
+        "status": "INSUFFICIENT_RESOLUTION",
+        "warning": "Sampling gate alone does not validate drains, elevations or flow."
+      }
+    }
+  },
+  "urban": {
+    "built_after_ha": 926.15,
+    "built_before_ha": 848.42,
+    "common_area_ha": 2388.24,
+    "common_fraction_of_roi": 1.0,
+    "common_pixels": 238824,
+    "gross_built_gain_ha": 100.8,
+    "gross_built_loss_ha": 23.07,
+    "jrc_occurrence": {
+      "nonzero_area_ha": 3.96,
+      "role": "1984\u20132024 historical water context",
+      "valid_area_ha": 2388.15,
+      "valid_cells": 26535,
+      "values": {
+        "median": 0.0,
+        "n": 26535,
+        "p10": 0.0,
+        "p90": 0.0
+      }
+    },
+    "jrc_seasonality": {
+      "nonzero_area_ha": 0.0,
+      "role": "2024 seasonal water context; not event truth",
+      "valid_area_ha": 2388.15,
+      "valid_cells": 26535,
+      "values": {
+        "median": 0.0,
+        "n": 26535,
+        "p10": 0.0,
+        "p90": 0.0
+      }
+    },
+    "measurement": "Native10m annual model class transitions2017\u20132023, not verified physical change",
+    "native_crs": "EPSG:32643",
+    "native_transform": [
+      10.0,
+      0.0,
+      717750.0,
+      0.0,
+      -10.0,
+      3155820.0
+    ],
+    "net_built_difference_ha": 77.73,
+    "pixel_area_m2": 100.0,
+    "roi_pixels": 238824,
+    "terrain_conditioned_gain_context": {
+      "analysis_grid_m": 30,
+      "gain_sampled_cells": 1121,
+      "hand_m": {
+        "median": 4.70992620735646,
+        "n": 939,
+        "p10": 0.2527652213520071,
+        "p90": 13.076626615590392
+      },
+      "interpretation": "Descriptive topographic context of resampled class gains; no validated exposure labels or drain survey",
+      "slope_degrees": {
+        "median": 2.776949998258328,
+        "n": 1029,
+        "p10": 0.7141305799740414,
+        "p90": 6.207489868438608
+      }
+    },
+    "transition_pixels": {
+      "11:1": 0,
+      "11:11": 36025,
+      "11:2": 30088,
+      "11:4": 0,
+      "11:5": 361,
+      "11:7": 2284,
+      "11:8": 7,
+      "11:9": 0,
+      "1:1": 0,
+      "1:11": 15,
+      "1:2": 14,
+      "1:4": 0,
+      "1:5": 0,
+      "1:7": 6,
+      "1:8": 0,
+      "1:9": 0,
+      "2:1": 0,
+      "2:11": 7279,
+      "2:2": 65916,
+      "2:4": 0,
+      "2:5": 609,
+      "2:7": 3006,
+      "2:8": 0,
+      "2:9": 0,
+      "4:1": 0,
+      "4:11": 0,
+      "4:2": 0,
+      "4:4": 0,
+      "4:5": 0,
+      "4:7": 0,
+      "4:8": 0,
+      "4:9": 0,
+      "5:1": 0,
+      "5:11": 140,
+      "5:2": 2615,
+      "5:4": 0,
+      "5:5": 672,
+      "5:7": 4761,
+      "5:8": 0,
+      "5:9": 0,
+      "7:1": 71,
+      "7:11": 293,
+      "7:2": 1793,
+      "7:4": 0,
+      "7:5": 122,
+      "7:7": 82535,
+      "7:8": 28,
+      "7:9": 0,
+      "8:1": 0,
+      "8:11": 0,
+      "8:2": 15,
+      "8:4": 0,
+      "8:5": 65,
+      "8:7": 23,
+      "8:8": 81,
+      "8:9": 0,
+      "9:1": 0,
+      "9:11": 0,
+      "9:2": 0,
+      "9:4": 0,
+      "9:5": 0,
+      "9:7": 0,
+      "9:8": 0,
+      "9:9": 0
+    },
+    "water_after_ha": 0.71,
+    "water_before_ha": 0.35,
+    "worldcover_context_30m_nearest": {
+      "2020": {
+        "built_area_ha": 718.2,
+        "valid_area_ha": 2388.15,
+        "water_area_ha": 1.17
+      },
+      "2021": {
+        "built_area_ha": 731.52,
+        "valid_area_ha": 2388.15,
+        "water_area_ha": 0.18
+      }
+    },
+    "worldcover_temporal_difference": "NOT_REPORTED:2020v100 and2021v200 algorithms differ"
+  }
+}

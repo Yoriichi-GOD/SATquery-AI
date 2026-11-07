@@ -1,0 +1,297 @@
+{
+  "accuracy_metrics": "NOT_ASSESSED:no compatible independent targets",
+  "bbox": [
+    82.95,
+    25.22,
+    83.08,
+    25.38
+  ],
+  "boundary_role": "exploratory_city_river_window_not_municipal_boundary",
+  "case_id": "varanasi",
+  "limitations": [
+    "Finite exploratory ROI; external contributing area unavailable",
+    "DSM routes do not model culverts, urban sewers, hydraulic depth or debris physics"
+  ],
+  "protocol_sha256": "7db20238e570bb6c2068b3b34e4864b4049d2453d2dd3627941e0bc009d7cdf5",
+  "seconds": 4.82298427799833,
+  "terrain": {
+    "30": {
+      "analysis_pixel_m": 30,
+      "elevation_m": {
+        "median": 78.75792489792636,
+        "n": 257868,
+        "p10": 71.94935609919112,
+        "p90": 82.60293189239974
+      },
+      "grid": {
+        "cell_area_m2": 900.0,
+        "cell_size_m": [
+          30.0,
+          30.0
+        ],
+        "crs": "EPSG:32644",
+        "shape": [
+          598,
+          446
+        ],
+        "transform": [
+          30.0,
+          0.0,
+          696180.0,
+          0.0,
+          -30.0,
+          2808660.0
+        ]
+      },
+      "hand_m": {
+        "median": 1.5224125424749744,
+        "n": 215018,
+        "p10": 0.0,
+        "p90": 5.9515698707002285
+      },
+      "historical_role": "Modern DSM; event-time terrain not certified",
+      "hydrology": {
+        "boundary_condition": "Open outer edge and NoData perimeter; external contributing area unavailable",
+        "conditioning": "fill",
+        "filled_cells": 80459,
+        "flat_parent_routes": 88608,
+        "flow_method": "D8 steepest descent; Priority-Flood parent on filled flats",
+        "hand_valid_cells": 215018,
+        "interpretation": "Potential topographic drainage; not flood/debris propagation or flood depth",
+        "maximum_fill_m": 10.483521016390853,
+        "outlet_accumulation_sum_cells": 257868,
+        "outlets": 316,
+        "stream_cells": 15788,
+        "stream_threshold_m2": 100000,
+        "total_cells": 266708,
+        "valid_cells": 257868,
+        "valid_fraction": 0.9668551374536947
+      },
+      "slope_degrees": {
+        "median": 1.1907613858375234,
+        "n": 255784,
+        "p10": 0.19955409936563692,
+        "p90": 3.3125092066883615
+      },
+      "source_information_scale_m": 30,
+      "source_product": "CopernicusGLO30",
+      "street_scale_gate": {
+        "minimum_cells_across_feature": 2,
+        "required_feature_width_m": 5,
+        "status": "INSUFFICIENT_RESOLUTION",
+        "warning": "Sampling gate alone does not validate drains, elevations or flow."
+      }
+    },
+    "90": {
+      "analysis_pixel_m": 90,
+      "elevation_m": {
+        "median": 78.86168711991759,
+        "n": 28651,
+        "p10": 72.01924972768772,
+        "p90": 82.33977484496965
+      },
+      "grid": {
+        "cell_area_m2": 8100.0,
+        "cell_size_m": [
+          90.0,
+          90.0
+        ],
+        "crs": "EPSG:32644",
+        "shape": [
+          200,
+          149
+        ],
+        "transform": [
+          90.0,
+          0.0,
+          696150.0,
+          0.0,
+          -90.0,
+          2808720.0
+        ]
+      },
+      "hand_m": {
+        "median": 1.284376839405951,
+        "n": 25892,
+        "p10": 0.0,
+        "p90": 5.370661392194151
+      },
+      "historical_role": "Modern DSM; event-time terrain not certified",
+      "hydrology": {
+        "boundary_condition": "Open outer edge and NoData perimeter; external contributing area unavailable",
+        "conditioning": "fill",
+        "filled_cells": 7316,
+        "flat_parent_routes": 7426,
+        "flow_method": "D8 steepest descent; Priority-Flood parent on filled flats",
+        "hand_valid_cells": 25892,
+        "interpretation": "Potential topographic drainage; not flood/debris propagation or flood depth",
+        "maximum_fill_m": 8.25379765834684,
+        "outlet_accumulation_sum_cells": 28651,
+        "outlets": 110,
+        "stream_cells": 4577,
+        "stream_threshold_m2": 100000,
+        "total_cells": 29800,
+        "valid_cells": 28651,
+        "valid_fraction": 0.9614429530201343
+      },
+      "slope_degrees": {
+        "median": 0.4666365408646031,
+        "n": 27959,
+        "p10": 0.12339653238235077,
+        "p90": 1.3731600166679518
+      },
+      "source_information_scale_m": 30,
+      "source_product": "CopernicusGLO30",
+      "street_scale_gate": {
+        "minimum_cells_across_feature": 2,
+        "required_feature_width_m": 5,
+        "status": "INSUFFICIENT_RESOLUTION",
+        "warning": "Sampling gate alone does not validate drains, elevations or flow."
+      }
+    }
+  },
+  "urban": {
+    "built_after_ha": 17571.18,
+    "built_before_ha": 15976.53,
+    "common_area_ha": 23208.78,
+    "common_fraction_of_roi": 1.0,
+    "common_pixels": 2320878,
+    "gross_built_gain_ha": 1868.2,
+    "gross_built_loss_ha": 273.55,
+    "jrc_occurrence": {
+      "nonzero_area_ha": 1598.85,
+      "role": "1984\u20132024 historical water context",
+      "valid_area_ha": 23208.12,
+      "valid_cells": 257868,
+      "values": {
+        "median": 0.0,
+        "n": 257868,
+        "p10": 0.0,
+        "p90": 0.0
+      }
+    },
+    "jrc_seasonality": {
+      "nonzero_area_ha": 1387.53,
+      "role": "2024 seasonal water context; not event truth",
+      "valid_area_ha": 23208.12,
+      "valid_cells": 257868,
+      "values": {
+        "median": 0.0,
+        "n": 257868,
+        "p10": 0.0,
+        "p90": 0.0
+      }
+    },
+    "measurement": "Native10m annual model class transitions2017\u20132023, not verified physical change",
+    "native_crs": "EPSG:32644",
+    "native_transform": [
+      10.0,
+      0.0,
+      696180.0,
+      0.0,
+      -10.0,
+      2808660.0
+    ],
+    "net_built_difference_ha": 1594.65,
+    "pixel_area_m2": 100.0,
+    "roi_pixels": 2320878,
+    "terrain_conditioned_gain_context": {
+      "analysis_grid_m": 30,
+      "gain_sampled_cells": 20760,
+      "hand_m": {
+        "median": 0.7912867473521743,
+        "n": 15972,
+        "p10": 0.01461143617507901,
+        "p90": 4.100352602379599
+      },
+      "interpretation": "Descriptive topographic context of resampled class gains; no validated exposure labels or drain survey",
+      "slope_degrees": {
+        "median": 0.7199180670292081,
+        "n": 20503,
+        "p10": 0.1740154148613107,
+        "p90": 2.5598724433047644
+      }
+    },
+    "transition_pixels": {
+      "11:1": 1129,
+      "11:11": 19965,
+      "11:2": 1501,
+      "11:4": 0,
+      "11:5": 12642,
+      "11:7": 24049,
+      "11:8": 373,
+      "11:9": 0,
+      "1:1": 81558,
+      "1:11": 358,
+      "1:2": 103,
+      "1:4": 0,
+      "1:5": 83,
+      "1:7": 1961,
+      "1:8": 7012,
+      "1:9": 0,
+      "2:1": 112,
+      "2:11": 2149,
+      "2:2": 9811,
+      "2:4": 0,
+      "2:5": 1246,
+      "2:7": 4481,
+      "2:8": 0,
+      "2:9": 0,
+      "4:1": 0,
+      "4:11": 0,
+      "4:2": 0,
+      "4:4": 0,
+      "4:5": 0,
+      "4:7": 0,
+      "4:8": 0,
+      "4:9": 0,
+      "5:1": 1872,
+      "5:11": 22627,
+      "5:2": 2995,
+      "5:4": 24,
+      "5:5": 329332,
+      "5:7": 154833,
+      "5:8": 16,
+      "5:9": 0,
+      "7:1": 4506,
+      "7:11": 8493,
+      "7:2": 3482,
+      "7:4": 4,
+      "7:5": 10631,
+      "7:7": 1570298,
+      "7:8": 239,
+      "7:9": 0,
+      "8:1": 10481,
+      "8:11": 2742,
+      "8:2": 1,
+      "8:4": 0,
+      "8:5": 204,
+      "8:7": 1496,
+      "8:8": 28069,
+      "8:9": 0,
+      "9:1": 0,
+      "9:11": 0,
+      "9:2": 0,
+      "9:4": 0,
+      "9:5": 0,
+      "9:7": 0,
+      "9:8": 0,
+      "9:9": 0
+    },
+    "water_after_ha": 996.58,
+    "water_before_ha": 910.75,
+    "worldcover_context_30m_nearest": {
+      "2020": {
+        "built_area_ha": 10190.97,
+        "valid_area_ha": 23208.12,
+        "water_area_ha": 1421.28
+      },
+      "2021": {
+        "built_area_ha": 10176.84,
+        "valid_area_ha": 23208.12,
+        "water_area_ha": 1140.12
+      }
+    },
+    "worldcover_temporal_difference": "NOT_REPORTED:2020v100 and2021v200 algorithms differ"
+  }
+}

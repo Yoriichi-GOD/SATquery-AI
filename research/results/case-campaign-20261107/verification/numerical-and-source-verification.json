@@ -1,0 +1,18 @@
+{
+  "failed_repeat_v2": "Retained as rejected:undeclared buffered DEM was accidentally globbed into Nepal context; fixed manifest-only source selection and regression test",
+  "four_case_numeric_repeat_identical": true,
+  "local_source_files_verified": 94,
+  "pinned_component_files_verified": 145,
+  "sangam-vihar": {
+    "independently_counted_common_pixels": 238824,
+    "net_built_ha": 77.73,
+    "transition_matrix_exact": true
+  },
+  "scope": "Arithmetic, repeatability, hashes and software contracts; no field, exposure or independent accuracy validation",
+  "updated_plot_rendering": "Binary panels fixed at0/1; measured summaries retained byte-identical fromv1; true LandsatRGB added fromv3",
+  "varanasi": {
+    "independently_counted_common_pixels": 2320878,
+    "net_built_ha": 1594.65,
+    "transition_matrix_exact": true
+  }
+}

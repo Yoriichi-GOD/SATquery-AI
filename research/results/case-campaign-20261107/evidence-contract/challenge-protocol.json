@@ -1,0 +1,24 @@
+{
+  "baseline": "Ungated relay accepts supplied typed payload; deliberately lacks checks",
+  "extra_challenges": [
+    "unknown target",
+    "unknown fact",
+    "tampered actual artifact"
+  ],
+  "human_participants": 0,
+  "llm_trials": 0,
+  "mutations": [
+    "value+1",
+    "wrong unit",
+    "wrong source hash",
+    "damage interpretation"
+  ],
+  "not_measured": [
+    "Natural-language correctness",
+    "Human productivity",
+    "Operational reliability",
+    "Scientific H4 causal effect"
+  ],
+  "population": "SCRIPTED_MEASUREMENT_CONTRACT_FAULTS",
+  "valid_fact_count": 8
+}

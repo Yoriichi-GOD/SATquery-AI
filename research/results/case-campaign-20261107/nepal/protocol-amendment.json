@@ -1,0 +1,30 @@
+{
+  "comparison": "Same native GLO30 source resampled to30m and90m; not a hydraulic or independent accuracy experiment",
+  "metric_replay_buffer_m": 1800,
+  "purpose": "Finite buffered DEM context for30/90m sensitivity; no parameter or label selection",
+  "role": "previously_inspected_development",
+  "source_bbox_wgs84": [
+    85.30289697771877,
+    28.131392353507813,
+    85.36859313513398,
+    28.205896962101114
+  ],
+  "source_buffer_m": 1900,
+  "source_masks_unchanged": {
+    "connectivity.json": "c5c18bcf3070dcd70fe5be76acc8e7ae9c0f723bec07f77e0d9001bd26de103b",
+    "debris-candidates.tif": "d3f1849515bf76874a04988fc3d93fba8f21ee3b3f63bdae5f3ee5e0042e69d3",
+    "debris-exposure.csv": "b0724b5bef28361b1b3e549e61a22d6c2d73309cb333f03fdf28ee9038d09f89",
+    "exposure.csv": "d699e737d7c8e36a764cc2e6dddab789d66ea6146c8cf33bf812be156defb50c",
+    "graph.json": "bda07b905abac69f124dd8ee17bb3a6342a2628181370d668a149e48765b5c67",
+    "layers.geojson": "449d23c335eb31455d8b77517cd04aa0a7f7e0d9e4f680b61a3b1173f2dd08fe",
+    "manifest.json": "859624fd8718efb3c20a2431cb6c3c0a2bc69b5ee24c6f2ddc3f0f56389e1f0f",
+    "post.png": "d27f98d427a4b5f6333dd93e31390c548135adefdf1240c0adcc20e36e79982f",
+    "pre.png": "8c918f493562b066157307457943d53049c2ac52c24d8f64ddb2106210119b1f",
+    "prediction.tif": "b49b5b5978cd3606f2138306fa8bb687d65c268285f8816a660bbf0444d1ffa4",
+    "report-en.html": "3beebbd4ff55868ab971ba2355fc168b876cadc42ec5810bf22cb1d08d5ebe50",
+    "report-ne.html": "f4564cd83b572f65509df4edf6b6b9cf3a5021fe988aa12301cd4fda81e9a994",
+    "result.json": "a5cc190e0211e18a772b1979835a2209f2a5b69994f56a0bf83a082f22dd22ac",
+    "sensitivity.json": "c18451402baad4061f82763802cee59e8d6802809e5a58c3d70bff3c880e8913",
+    "topology-audit.json": "14c535f21836e95b8c4e435a0004c20cc20727ef47b08b15aaa7d27d82151f72"
+  }
+}

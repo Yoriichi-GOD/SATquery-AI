@@ -1,0 +1,64 @@
+{
+  "case_id": "nepal",
+  "inputs": [
+    {
+      "account_credentials_used": false,
+      "bbox_wgs84": [
+        85.3232,
+        28.1491,
+        85.3483,
+        28.1882
+      ],
+      "bytes": 45278,
+      "filename": "dem30-28-85.tif",
+      "license_url": "https://registry.opendata.aws/copernicus-dem/",
+      "limitations": [
+        "Requested geographic bbox enclosed by native pixel window; analysis must apply its exact ROI",
+        "Derived window hash plus remote ETag identify input; no full-global-tile checksum is asserted"
+      ],
+      "native_window": {
+        "crs": "EPSG:4326",
+        "dtype": "float32",
+        "native_resolution": [
+          0.0002777777777777778,
+          0.0002777777777777778
+        ],
+        "native_shape": [
+          3600,
+          3600
+        ],
+        "nodata": null,
+        "offset": 0.0,
+        "scale": 1.0,
+        "transform": [
+          0.0002777777777777778,
+          0.0,
+          85.32319444444445,
+          0.0,
+          -0.0002777777777777778,
+          28.18847222222222
+        ],
+        "units": null,
+        "window_col_row_width_height": [
+          1164,
+          2922,
+          91,
+          142
+        ]
+      },
+      "pixels": 12922,
+      "product": "CopernicusGLO30",
+      "public_sas_token_persisted": false,
+      "resampling": "none; native source pixel window",
+      "retrieved_utc": "2026-11-07T09:05:25.107642+00:00",
+      "role": "input",
+      "sha256": "35edfdcbaf05a7b077d9316a06efd7c8c713eb98995509f30d54a502b17aaf5a",
+      "source_content_length": 38402839,
+      "source_etag": "\"0e1522e26e1a768bdaa827aa64436a0b\"",
+      "source_full_file_sha256": "UNAVAILABLE_WINDOWED_REMOTE_SOURCE",
+      "source_url": "https://copernicus-dem-30m.s3.amazonaws.com/Copernicus_DSM_COG_10_N28_00_E085_00_DEM/Copernicus_DSM_COG_10_N28_00_E085_00_DEM.tif",
+      "valid_pixels": 12922
+    }
+  ],
+  "missing": []
+}

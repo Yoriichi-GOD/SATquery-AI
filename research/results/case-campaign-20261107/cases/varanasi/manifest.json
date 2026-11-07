@@ -1,0 +1,15 @@
+{
+  "files": {
+    "case-panels.png": "b97b9b0c28123a2590852c4b1de5a714864afb5f1d4b2543edf78c4c00bb226b",
+    "dem-30m.tif": "41c0fb5ff1362e49d28eaa3629e486b33f664adef3e07a0c6844855081a99a5b",
+    "dem-90m.tif": "c52b72f7b1adc0bbe0899068ebc659afbeeaa531c8be1a41fde6e0bf12859fb4",
+    "hand-30m.tif": "644598a9723ff0fe5ef49cf4624da3e89e593a75e1e6f6d38b62695b8749c6c1",
+    "hand-90m.tif": "eef4148402e75730b2411ad22b24a4dd178f3278a0aeeeec6fc559fc6614b3bc",
+    "slope-30m.tif": "fad3fb505334676aaad1aadf39ef9e28c5d9a633a88b126539520132c7f9a41b",
+    "slope-90m.tif": "4ac70de49223dd2b4da73880fff63b0d089b0f1074cec2259244f0675ed76845",
+    "sources.json": "f2f1173339d3aff0c269191b902d60f938a0f190f317ed9a4faee6a0f57b715e",
+    "summary.json": "f3e42b1eaa5d575461776cab1249248c99835da431cfc4b33d576f48284e064e",
+    "transition-matrix.csv": "aa50a6a6badc4a21d04c2664735794ce9b39704d3535424e4d8b42a17607a236",
+    "urban-gain-30m.tif": "c603b7053117723b3b1b9ec3a441e0dcd45102a8bfdeb1345eebcb0b6a9225f5"
+  }
+}

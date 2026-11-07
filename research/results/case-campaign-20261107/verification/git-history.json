@@ -1,0 +1,10 @@
+{
+  "source_commit": "d145083acecd753fa769638bacd31cfa495a5478",
+  "branch": "codex/research-release-20261107",
+  "preserved_main_commit": "000874586423fcdfa02d85f938e38c1de71260c0",
+  "preserved_scientific_commit": "dda332f426865630e5230b9dec9ad33c2621e6a2",
+  "day1_tag_object": "a08d2706397d359edb060993ee3a14374b3d136f",
+  "day1_commit": "f3945347cf0f0a4581aa1480c8fa1501a25da4b4",
+  "pushed_this_campaign": false,
+  "scope": "Local isolated release; original main and Day1 history unchanged"
+}

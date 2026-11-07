@@ -1,0 +1,153 @@
+{
+  "accuracy_metrics": "NOT_ASSESSED:no compatible independent targets",
+  "bbox": [
+    85.3232,
+    28.1491,
+    85.3483,
+    28.1882
+  ],
+  "boundary_role": "previously_inspected_development",
+  "case_id": "nepal",
+  "limitations": [
+    "Finite exploratory ROI; external contributing area unavailable",
+    "DSM routes do not model culverts, urban sewers, hydraulic depth or debris physics"
+  ],
+  "protocol_sha256": "7db20238e570bb6c2068b3b34e4864b4049d2453d2dd3627941e0bc009d7cdf5",
+  "seconds": 0.9654575799941085,
+  "terrain": {
+    "30": {
+      "analysis_pixel_m": 30,
+      "elevation_m": {
+        "median": 1742.149083765059,
+        "n": 11869,
+        "p10": 1477.3793021465729,
+        "p90": 2103.2004160356028
+      },
+      "grid": {
+        "cell_area_m2": 900.0,
+        "cell_size_m": [
+          30.0,
+          30.0
+        ],
+        "crs": "EPSG:32645",
+        "shape": [
+          146,
+          85
+        ],
+        "transform": [
+          30.0,
+          0.0,
+          335340.0,
+          0.0,
+          -30.0,
+          3119190.0
+        ]
+      },
+      "hand_m": {
+        "median": 181.5507927647219,
+        "n": 11718,
+        "p10": 19.449028209240648,
+        "p90": 437.9360383179995
+      },
+      "historical_role": "Modern DSM; event-time terrain not certified",
+      "hydrology": {
+        "boundary_condition": "Open outer edge and NoData perimeter; external contributing area unavailable",
+        "conditioning": "fill",
+        "filled_cells": 238,
+        "flat_parent_routes": 238,
+        "flow_method": "D8 steepest descent; Priority-Flood parent on filled flats",
+        "hand_valid_cells": 11718,
+        "interpretation": "Potential topographic drainage; not flood/debris propagation or flood depth",
+        "maximum_fill_m": 27.992534028675436,
+        "outlet_accumulation_sum_cells": 11869,
+        "outlets": 4,
+        "stream_cells": 513,
+        "stream_threshold_m2": 100000,
+        "total_cells": 12410,
+        "valid_cells": 11869,
+        "valid_fraction": 0.956406124093473
+      },
+      "slope_degrees": {
+        "median": 36.91154892398575,
+        "n": 11413,
+        "p10": 23.229299217233258,
+        "p90": 49.27997618517792
+      },
+      "source_information_scale_m": 30,
+      "source_product": "CopernicusGLO30",
+      "street_scale_gate": {
+        "minimum_cells_across_feature": 2,
+        "required_feature_width_m": 10,
+        "status": "INSUFFICIENT_RESOLUTION",
+        "warning": "Sampling gate alone does not validate drains, elevations or flow."
+      }
+    },
+    "90": {
+      "analysis_pixel_m": 90,
+      "elevation_m": {
+        "median": 1743.4890312180141,
+        "n": 1335,
+        "p10": 1480.7302361009363,
+        "p90": 2106.908496982832
+      },
+      "grid": {
+        "cell_area_m2": 8100.0,
+        "cell_size_m": [
+          90.0,
+          90.0
+        ],
+        "crs": "EPSG:32645",
+        "shape": [
+          49,
+          29
+        ],
+        "transform": [
+          90.0,
+          0.0,
+          335340.0,
+          0.0,
+          -90.0,
+          3119220.0
+        ]
+      },
+      "hand_m": {
+        "median": 168.23731458975203,
+        "n": 1333,
+        "p10": 0.0,
+        "p90": 437.40665448235455
+      },
+      "historical_role": "Modern DSM; event-time terrain not certified",
+      "hydrology": {
+        "boundary_condition": "Open outer edge and NoData perimeter; external contributing area unavailable",
+        "conditioning": "fill",
+        "filled_cells": 39,
+        "flat_parent_routes": 39,
+        "flow_method": "D8 steepest descent; Priority-Flood parent on filled flats",
+        "hand_valid_cells": 1333,
+        "interpretation": "Potential topographic drainage; not flood/debris propagation or flood depth",
+        "maximum_fill_m": 17.62507237502996,
+        "outlet_accumulation_sum_cells": 1335,
+        "outlets": 2,
+        "stream_cells": 182,
+        "stream_threshold_m2": 100000,
+        "total_cells": 1421,
+        "valid_cells": 1335,
+        "valid_fraction": 0.9394792399718508
+      },
+      "slope_degrees": {
+        "median": 34.91261394805519,
+        "n": 1185,
+        "p10": 21.296436151362066,
+        "p90": 44.92899998098311
+      },
+      "source_information_scale_m": 30,
+      "source_product": "CopernicusGLO30",
+      "street_scale_gate": {
+        "minimum_cells_across_feature": 2,
+        "required_feature_width_m": 10,
+        "status": "INSUFFICIENT_RESOLUTION",
+        "warning": "Sampling gate alone does not validate drains, elevations or flow."
+      }
+    }
+  }
+}

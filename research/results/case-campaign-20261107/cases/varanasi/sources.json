@@ -1,0 +1,470 @@
+{
+  "case_id": "varanasi",
+  "inputs": [
+    {
+      "account_credentials_used": false,
+      "bbox_wgs84": [
+        82.95,
+        25.22,
+        83.08,
+        25.38
+      ],
+      "bytes": 337988,
+      "filename": "dem30-25-82.tif",
+      "license_url": "https://registry.opendata.aws/copernicus-dem/",
+      "limitations": [
+        "Requested geographic bbox enclosed by native pixel window; analysis must apply its exact ROI",
+        "Derived window hash plus remote ETag identify input; no full-global-tile checksum is asserted"
+      ],
+      "native_window": {
+        "crs": "EPSG:4326",
+        "dtype": "float32",
+        "native_resolution": [
+          0.0002777777777777778,
+          0.0002777777777777778
+        ],
+        "native_shape": [
+          3600,
+          3600
+        ],
+        "nodata": null,
+        "offset": 0.0,
+        "scale": 1.0,
+        "transform": [
+          0.0002777777777777778,
+          0.0,
+          82.94986111111112,
+          0.0,
+          -0.0002777777777777778,
+          25.380138888888887
+        ],
+        "units": null,
+        "window_col_row_width_height": [
+          3420,
+          2232,
+          180,
+          577
+        ]
+      },
+      "pixels": 103860,
+      "product": "CopernicusGLO30",
+      "public_sas_token_persisted": false,
+      "resampling": "none; native source pixel window",
+      "retrieved_utc": "2026-11-07T09:05:27.104096+00:00",
+      "role": "input",
+      "sha256": "a2b91d25d7204ea30c30bb8682eae9b6674da2d28932f01c5ae3e68ddef42c35",
+      "source_content_length": 44606645,
+      "source_etag": "\"7d7c616e76cd0a5fc2a546bdb215b443\"",
+      "source_full_file_sha256": "UNAVAILABLE_WINDOWED_REMOTE_SOURCE",
+      "source_url": "https://copernicus-dem-30m.s3.amazonaws.com/Copernicus_DSM_COG_10_N25_00_E082_00_DEM/Copernicus_DSM_COG_10_N25_00_E082_00_DEM.tif",
+      "valid_pixels": 103860
+    },
+    {
+      "account_credentials_used": false,
+      "bbox_wgs84": [
+        82.95,
+        25.22,
+        83.08,
+        25.38
+      ],
+      "bytes": 515240,
+      "filename": "dem30-25-83.tif",
+      "license_url": "https://registry.opendata.aws/copernicus-dem/",
+      "limitations": [
+        "Requested geographic bbox enclosed by native pixel window; analysis must apply its exact ROI",
+        "Derived window hash plus remote ETag identify input; no full-global-tile checksum is asserted"
+      ],
+      "native_window": {
+        "crs": "EPSG:4326",
+        "dtype": "float32",
+        "native_resolution": [
+          0.0002777777777777778,
+          0.0002777777777777778
+        ],
+        "native_shape": [
+          3600,
+          3600
+        ],
+        "nodata": null,
+        "offset": 0.0,
+        "scale": 1.0,
+        "transform": [
+          0.0002777777777777778,
+          0.0,
+          82.99986111111112,
+          0.0,
+          -0.0002777777777777778,
+          25.380138888888887
+        ],
+        "units": null,
+        "window_col_row_width_height": [
+          0,
+          2232,
+          289,
+          577
+        ]
+      },
+      "pixels": 166753,
+      "product": "CopernicusGLO30",
+      "public_sas_token_persisted": false,
+      "resampling": "none; native source pixel window",
+      "retrieved_utc": "2026-11-07T09:05:29.281426+00:00",
+      "role": "input",
+      "sha256": "e7f614fa6c63c87de9ed6f4619a4f2e71ccb1f5ddc3a79f9ec853b2f10f15898",
+      "source_content_length": 43045561,
+      "source_etag": "\"b6f3782f03df352d63c23d8f2ffe846b\"",
+      "source_full_file_sha256": "UNAVAILABLE_WINDOWED_REMOTE_SOURCE",
+      "source_url": "https://copernicus-dem-30m.s3.amazonaws.com/Copernicus_DSM_COG_10_N25_00_E083_00_DEM/Copernicus_DSM_COG_10_N25_00_E083_00_DEM.tif",
+      "valid_pixels": 166753
+    },
+    {
+      "account_credentials_used": false,
+      "bbox_wgs84": [
+        82.95,
+        25.22,
+        83.08,
+        25.38
+      ],
+      "bytes": 76690,
+      "filename": "lulc-2017.tif",
+      "license_url": "https://planetarycomputer.microsoft.com/dataset/io-lulc-annual-v02",
+      "limitations": [
+        "Requested geographic bbox enclosed by native pixel window; analysis must apply its exact ROI",
+        "Derived window hash plus remote ETag identify input; no full-global-tile checksum is asserted"
+      ],
+      "native_window": {
+        "crs": "EPSG:32644",
+        "dtype": "uint8",
+        "native_resolution": [
+          10.0,
+          10.0
+        ],
+        "native_shape": [
+          89013,
+          61044
+        ],
+        "nodata": 0,
+        "offset": 0.0,
+        "scale": 1.0,
+        "transform": [
+          10.0,
+          0.0,
+          696180.0,
+          0.0,
+          -10.0,
+          2808660.0
+        ],
+        "units": null,
+        "window_col_row_width_height": [
+          50140,
+          73570,
+          1337,
+          1793
+        ]
+      },
+      "pixels": 2397241,
+      "product": "ImpactObservatoryEsri annualLULCv02 2017",
+      "public_sas_token_persisted": false,
+      "resampling": "none; native source pixel window",
+      "retrieved_utc": "2026-11-07T09:05:34.533595+00:00",
+      "role": "input",
+      "sha256": "ead3f4263c8b64e454deaa06e080d63f524894ac795c70b6491ed98c2ed2999a",
+      "source_content_length": 235288003,
+      "source_etag": "\"0x8DB93930CE9C1F3\"",
+      "source_full_file_sha256": "UNAVAILABLE_WINDOWED_REMOTE_SOURCE",
+      "source_url": "https://ai4edataeuwest.blob.core.windows.net/io-lulc/io-annual-lulc-v02/44R_20170101-20180101.tif",
+      "valid_pixels": 2397241
+    },
+    {
+      "account_credentials_used": false,
+      "bbox_wgs84": [
+        82.95,
+        25.22,
+        83.08,
+        25.38
+      ],
+      "bytes": 70160,
+      "filename": "lulc-2023.tif",
+      "license_url": "https://planetarycomputer.microsoft.com/dataset/io-lulc-annual-v02",
+      "limitations": [
+        "Requested geographic bbox enclosed by native pixel window; analysis must apply its exact ROI",
+        "Derived window hash plus remote ETag identify input; no full-global-tile checksum is asserted"
+      ],
+      "native_window": {
+        "crs": "EPSG:32644",
+        "dtype": "uint8",
+        "native_resolution": [
+          10.0,
+          10.0
+        ],
+        "native_shape": [
+          89013,
+          61044
+        ],
+        "nodata": 0,
+        "offset": 0.0,
+        "scale": 1.0,
+        "transform": [
+          10.0,
+          0.0,
+          696180.0,
+          0.0,
+          -10.0,
+          2808660.0
+        ],
+        "units": null,
+        "window_col_row_width_height": [
+          50140,
+          73570,
+          1337,
+          1793
+        ]
+      },
+      "pixels": 2397241,
+      "product": "ImpactObservatoryEsri annualLULCv02 2023",
+      "public_sas_token_persisted": false,
+      "resampling": "none; native source pixel window",
+      "retrieved_utc": "2026-11-07T09:05:39.982895+00:00",
+      "role": "input",
+      "sha256": "cfc4de52d37989062bba9cc5294c57cce9949683dd6d7fa219c3bc1baaadea1f",
+      "source_content_length": 215485094,
+      "source_etag": "\"0x8DC28B683F8DE7E\"",
+      "source_full_file_sha256": "UNAVAILABLE_WINDOWED_REMOTE_SOURCE",
+      "source_url": "https://ai4edataeuwest.blob.core.windows.net/io-lulc/io-annual-lulc-v02/44R_20230101-20240101.tif",
+      "valid_pixels": 2397241
+    },
+    {
+      "account_credentials_used": false,
+      "bbox_wgs84": [
+        82.95,
+        25.22,
+        83.08,
+        25.38
+      ],
+      "bytes": 302446,
+      "filename": "worldcover-2020.tif",
+      "license_url": "https://esa-worldcover.org/en/data-access",
+      "limitations": [
+        "Requested geographic bbox enclosed by native pixel window; analysis must apply its exact ROI",
+        "Derived window hash plus remote ETag identify input; no full-global-tile checksum is asserted"
+      ],
+      "native_window": {
+        "crs": "EPSG:4326",
+        "dtype": "uint8",
+        "native_resolution": [
+          8.333333333333333e-05,
+          8.333333333333333e-05
+        ],
+        "native_shape": [
+          36000,
+          36000
+        ],
+        "nodata": 0,
+        "offset": 0.0,
+        "scale": 1.0,
+        "transform": [
+          8.333333333333333e-05,
+          0.0,
+          82.95,
+          0.0,
+          -8.333333333333333e-05,
+          25.38
+        ],
+        "units": null,
+        "window_col_row_width_height": [
+          23400,
+          19440,
+          1560,
+          1920
+        ]
+      },
+      "pixels": 2995200,
+      "product": "ESAWorldCover2020v100",
+      "public_sas_token_persisted": false,
+      "resampling": "none; native source pixel window",
+      "retrieved_utc": "2026-11-07T09:05:43.525790+00:00",
+      "role": "cross_product_context_not_reference",
+      "sha256": "9ea3801af15972ca30ba28433849752809b57ff9065a6bc6b2594c34343a2d69",
+      "source_content_length": 123094162,
+      "source_etag": "\"597469e6d1b8119acf9ebe0a57391032-15\"",
+      "source_full_file_sha256": "UNAVAILABLE_WINDOWED_REMOTE_SOURCE",
+      "source_url": "https://esa-worldcover.s3.eu-central-1.amazonaws.com/v100/2020/map/ESA_WorldCover_10m_2020_v100_N24E081_Map.tif",
+      "valid_pixels": 2995200
+    },
+    {
+      "account_credentials_used": false,
+      "bbox_wgs84": [
+        82.95,
+        25.22,
+        83.08,
+        25.38
+      ],
+      "bytes": 303224,
+      "filename": "worldcover-2021.tif",
+      "license_url": "https://esa-worldcover.org/en/data-access",
+      "limitations": [
+        "Requested geographic bbox enclosed by native pixel window; analysis must apply its exact ROI",
+        "Derived window hash plus remote ETag identify input; no full-global-tile checksum is asserted"
+      ],
+      "native_window": {
+        "crs": "EPSG:4326",
+        "dtype": "uint8",
+        "native_resolution": [
+          8.333333333333333e-05,
+          8.333333333333333e-05
+        ],
+        "native_shape": [
+          36000,
+          36000
+        ],
+        "nodata": 0,
+        "offset": 0.0,
+        "scale": 1.0,
+        "transform": [
+          8.333333333333333e-05,
+          0.0,
+          82.95,
+          0.0,
+          -8.333333333333333e-05,
+          25.38
+        ],
+        "units": null,
+        "window_col_row_width_height": [
+          23400,
+          19440,
+          1560,
+          1920
+        ]
+      },
+      "pixels": 2995200,
+      "product": "ESAWorldCover2021v200",
+      "public_sas_token_persisted": false,
+      "resampling": "none; native source pixel window",
+      "retrieved_utc": "2026-11-07T09:05:45.934622+00:00",
+      "role": "cross_product_context_not_reference",
+      "sha256": "0de6d4f5ddc990858a957f0ddb0d3b2977ecc96f7026420af55180e88448c031",
+      "source_content_length": 126723055,
+      "source_etag": "\"041beb75f2f25974ec262438baa9b94b-16\"",
+      "source_full_file_sha256": "UNAVAILABLE_WINDOWED_REMOTE_SOURCE",
+      "source_url": "https://esa-worldcover.s3.eu-central-1.amazonaws.com/v200/2021/map/ESA_WorldCover_10m_2021_v200_N24E081_Map.tif",
+      "valid_pixels": 2995200
+    },
+    {
+      "account_credentials_used": false,
+      "bbox_wgs84": [
+        82.95,
+        25.22,
+        83.08,
+        25.38
+      ],
+      "bytes": 23239,
+      "filename": "jrc-occurrence.tif",
+      "license_url": "https://global-surface-water.appspot.com/download",
+      "limitations": [
+        "Requested geographic bbox enclosed by native pixel window; analysis must apply its exact ROI",
+        "Derived window hash plus remote ETag identify input; no full-global-tile checksum is asserted"
+      ],
+      "native_window": {
+        "crs": "EPSG:4326",
+        "dtype": "uint8",
+        "native_resolution": [
+          0.00025,
+          0.00025
+        ],
+        "native_shape": [
+          40000,
+          40000
+        ],
+        "nodata": 255,
+        "offset": 0.0,
+        "scale": 1.0,
+        "transform": [
+          0.00025,
+          0.0,
+          82.94975000000017,
+          0.0,
+          -0.00025,
+          25.380249999999965
+        ],
+        "units": null,
+        "window_col_row_width_height": [
+          11799,
+          18479,
+          521,
+          641
+        ]
+      },
+      "pixels": 333961,
+      "product": "JRCGSWv1.5 occurrence",
+      "public_sas_token_persisted": false,
+      "resampling": "none; native source pixel window",
+      "retrieved_utc": "2026-11-07T09:05:49.005306+00:00",
+      "role": "historical_water_context_not_event_reference",
+      "sha256": "19c3b86ce90b871567cc201067be7ccc81fd25b2cc5b8597ff4ccae87e5bd56a",
+      "source_content_length": 95259734,
+      "source_etag": "00b2663d23619727a2f5e3a9cbc0e75f-1",
+      "source_full_file_sha256": "UNAVAILABLE_WINDOWED_REMOTE_SOURCE",
+      "source_url": "https://s3.waw4-1.cloudferro.com/swift/v1/global-surface-water/download2024/Aggregated/VER1-5/occurrence/occurrence_80E_30N_v1_5_2024.tif",
+      "valid_pixels": 333961
+    },
+    {
+      "account_credentials_used": false,
+      "bbox_wgs84": [
+        82.95,
+        25.22,
+        83.08,
+        25.38
+      ],
+      "bytes": 9629,
+      "filename": "jrc-seasonality.tif",
+      "license_url": "https://global-surface-water.appspot.com/download",
+      "limitations": [
+        "Requested geographic bbox enclosed by native pixel window; analysis must apply its exact ROI",
+        "Derived window hash plus remote ETag identify input; no full-global-tile checksum is asserted"
+      ],
+      "native_window": {
+        "crs": "EPSG:4326",
+        "dtype": "uint8",
+        "native_resolution": [
+          0.00025,
+          0.00025
+        ],
+        "native_shape": [
+          40000,
+          40000
+        ],
+        "nodata": 255,
+        "offset": 0.0,
+        "scale": 1.0,
+        "transform": [
+          0.00025,
+          0.0,
+          82.94975000000017,
+          0.0,
+          -0.00025,
+          25.380249999999965
+        ],
+        "units": null,
+        "window_col_row_width_height": [
+          11799,
+          18479,
+          521,
+          641
+        ]
+      },
+      "pixels": 333961,
+      "product": "JRCGSWv1.5 seasonality",
+      "public_sas_token_persisted": false,
+      "resampling": "none; native source pixel window",
+      "retrieved_utc": "2026-11-07T09:05:51.113505+00:00",
+      "role": "historical_water_context_not_event_reference",
+      "sha256": "beb1213d3ec2e6bac49f49d75c4a77db492b04d09a1c1d3bae9f100abee0d199",
+      "source_content_length": 32066358,
+      "source_etag": "9c1bd0cfde27b11d33abe70d17496e67-1",
+      "source_full_file_sha256": "UNAVAILABLE_WINDOWED_REMOTE_SOURCE",
+      "source_url": "https://s3.waw4-1.cloudferro.com/swift/v1/global-surface-water/download2024/Aggregated/VER1-5/seasonality/seasonality_80E_30N_v1_5_2024.tif",
+      "valid_pixels": 333961
+    }
+  ],
+  "missing": []
+}

@@ -1,0 +1,48 @@
+{
+  "application_inference": "Not rerun; imports and retained specialist status only",
+  "device": "CPU",
+  "existing_runtime_fallback": "Read-only .pth fallback appended to isolated environment; pinned research packages resolve first",
+  "module_locations": {
+    "cv2": {
+      "path": "/tmp/satquery-research-20261107/lib/python3.11/site-packages/cv2/__init__.py",
+      "version": "4.11.0"
+    },
+    "fastapi": {
+      "path": "/tmp/satquery-research-20261107/lib/python3.11/site-packages/fastapi/__init__.py",
+      "version": "0.115.12"
+    },
+    "fiona": {
+      "path": "/tmp/satquery-research-20261107/lib/python3.11/site-packages/fiona/__init__.py",
+      "version": "1.10.1"
+    },
+    "numpy": {
+      "path": "/tmp/satquery-research-20261107/lib/python3.11/site-packages/numpy/__init__.py",
+      "version": "2.4.6"
+    },
+    "rasterio": {
+      "path": "/tmp/satquery-research-20261107/lib/python3.11/site-packages/rasterio/__init__.py",
+      "version": "1.4.4"
+    },
+    "shapely": {
+      "path": "/tmp/satquery-research-20261107/lib/python3.11/site-packages/shapely/__init__.py",
+      "version": "2.2.0"
+    },
+    "torch": {
+      "path": "/root/satquery/.venv/lib/python3.11/site-packages/torch/__init__.py",
+      "version": "2.8.0+cu128"
+    }
+  },
+  "packages": {
+    "fiona": "1.10.1",
+    "matplotlib": "3.10.8",
+    "numpy": "2.4.6",
+    "opencv-python-headless": "4.11.0.86",
+    "pyproj": "3.7.2",
+    "rasterio": "1.4.4",
+    "shapely": "2.2.0"
+  },
+  "platform": "Linux-6.18.33.2-microsoft-standard-WSL2-x86_64-with-glibc2.43",
+  "processor": "",
+  "python": "3.11.16",
+  "training": false
+}

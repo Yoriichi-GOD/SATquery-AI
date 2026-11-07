@@ -1,0 +1,21 @@
+{
+  "H4_status": "Software contract guards verified on predefined faults; real analyst/semantic experiment remains unperformed",
+  "humans": 0,
+  "incorrect_decisions": 0,
+  "invalid_claims": 35,
+  "invalid_rejected": 35,
+  "models": 0,
+  "population": "SCRIPTED_CONTRACT_FAULT_INJECTION_NOT_HUMAN_STUDY",
+  "statuses": {
+    "SOURCE_HASH_MISMATCH": 9,
+    "SUPPORTED_TYPED_MEASUREMENT": 8,
+    "UNAVAILABLE_EVIDENCE": 1,
+    "UNIT_MISMATCH": 8,
+    "UNKNOWN_FACT": 1,
+    "UNSUPPORTED_INTERPRETATION": 8,
+    "VALUE_MISMATCH": 8
+  },
+  "trials": 43,
+  "valid_accepted": 8,
+  "valid_claims": 8
+}

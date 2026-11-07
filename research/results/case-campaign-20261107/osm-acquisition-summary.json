@@ -1,0 +1,47 @@
+{
+  "kedarnath": {
+    "attempts": [
+      {
+        "endpoint": "https://overpass-api.de/api/interpreter",
+        "error_type": "HTTPError",
+        "http_status": 406
+      },
+      {
+        "endpoint": "https://overpass.kumi.systems/api/interpreter",
+        "error_type": "HTTPError",
+        "http_status": 429
+      }
+    ],
+    "state": "UNAVAILABLE"
+  },
+  "sangam-vihar": {
+    "attempts": [
+      {
+        "endpoint": "https://overpass-api.de/api/interpreter",
+        "error_type": "HTTPError",
+        "http_status": 406
+      },
+      {
+        "endpoint": "https://overpass.kumi.systems/api/interpreter",
+        "error_type": "HTTPError",
+        "http_status": 429
+      }
+    ],
+    "state": "UNAVAILABLE"
+  },
+  "varanasi": {
+    "attempts": [
+      {
+        "endpoint": "https://overpass-api.de/api/interpreter",
+        "error_type": "HTTPError",
+        "http_status": 406
+      },
+      {
+        "endpoint": "https://overpass.kumi.systems/api/interpreter",
+        "error_type": "HTTPError",
+        "http_status": 429
+      }
+    ],
+    "state": "UNAVAILABLE"
+  }
+}

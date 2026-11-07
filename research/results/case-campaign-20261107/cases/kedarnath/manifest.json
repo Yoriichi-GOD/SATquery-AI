@@ -1,0 +1,16 @@
+{
+  "files": {
+    "case-panels.png": "3d4d7414ae25328b1a1b52d59eb5ccdcdb1b44439c734f7bff637ab46c840cfa",
+    "dem-30m.tif": "b26f4dd4658887ba8976889133f1fff2b28dd0103bd8b853509ff03e4417b961",
+    "dem-90m.tif": "1e85a992bf52f6d5f622b21f2e735e5a0c32b5131bdf19c4d9f20cae340c52b7",
+    "hand-30m.tif": "e408303444473eaee4341209c8f808bc8e875bf3273eb3c941130d4ffcc5a68f",
+    "hand-90m.tif": "f46ab18bcc7cbe81f275d5f401416e5b0b48006f5efe73b5f736e013a9f16db0",
+    "new-water-proxy.tif": "954a555cc4d6ddbbc2e7cdce7ed700c4814c9fe4e6350aaf0979c70c54fbfb89",
+    "registration.json": "5331965f9967aad31eb2bb53719f0ce3cd44ba516406e19455de6b733e346732",
+    "slope-30m.tif": "a105e658da2a03ed16ff212b35dfdebd6ac5bea54395a1fdf2723eb2de460b62",
+    "slope-90m.tif": "cf19c235933864d1d8abe7c06c7eccfe9d02b94d6329ee46984c3501a77e9dfe",
+    "sources.json": "919c22704e01b1409e884e8e5af3d9cfd398ead90e5cb59f8f2cf4ba08966c84",
+    "summary.json": "d7ff1a603a3326de9f90106107d6c7d553b4a6c5e09a79b79fdfe0ad51e0a38c",
+    "vegetation-loss-proxy.tif": "d3e03d1bb2f0193816f317260b5c90fc82b7a4d1e651316b05064c130e9642fa"
+  }
+}
