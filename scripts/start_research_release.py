@@ -15,6 +15,7 @@ def main():
     env={**os.environ,'SATQUERY_BASELINE_ROOT':str(ROOT),'FLOODLAB_BASELINE_ROOT':str(flood),
         'FLOODLAB_UPSTREAM':f'http://127.0.0.1:{a.flood_port}','JAI_PORT':str(a.port),
         'SATQUERY_CASE_RESEARCH_ROOT':str(ROOT/'research/results/case-campaign-20261107'),
+        'SATQUERY_APP_DATA':str(ROOT/'.runtime/research-release/app-data'),
         'JAI_TERRAIN_EXPOSURE_ROOT':str(ROOT/'.runtime/research-release/terrain-exposure')}
     processes=[];handles=[]
     try:

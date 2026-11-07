@@ -74,6 +74,20 @@ def declared_terrain_files(folder,records,historical=False):
     if any(Path(name).name!=name for name in names):raise ValueError('Unsafe registered terrain filename')
     return [Path(folder)/name for name in names]
 
+def validate_inventory(case,cfg,protocol,acquisition,protocol_hash):
+    if acquisition.get('case_id')!=case or acquisition.get('protocol_sha256')!=protocol_hash:
+        raise ValueError('Acquisition case/protocol identity mismatch')
+    acquired=[r for r in acquisition['assets'] if r['state']=='ACQUIRED'];labels=[r['label'] for r in acquired]
+    if len(labels)!=len(set(labels)):raise ValueError('Duplicate acquired asset label')
+    for r in acquired:
+        if Path(r['file']).name!=r['file'] or r['receipt']['bbox_wgs84']!=cfg['bbox']:
+            raise ValueError('Acquired source path/ROI mismatch')
+    required=set()
+    if case in ['varanasi','sangam-vihar']:
+        required={'lulc-2017','lulc-2023','worldcover-2020','worldcover-2021','jrc-occurrence','jrc-seasonality'}
+    if case=='kedarnath':required={f'landsat-{epoch}-{band}' for epoch in ['before','after'] for band in protocol['landsat']['bands']}
+    if required-set(labels):raise ValueError('Required computational input not registered as acquired')
+
 def terrain(folder,cfg,out,protocol,records):
     result={};hydros={}
     for cell in protocol['terrain']['comparison_pixel_m']:
@@ -189,6 +203,7 @@ def process(sources,output,cases=None):
         if cases and case not in cases:continue
         start=time.monotonic();folder=Path(sources)/case;out=output/case;out.mkdir()
         acquisition=json.loads((folder/'acquisition.json').read_text());inputs=[]
+        validate_inventory(case,cfg,protocol,acquisition,sha256(PROTOCOL))
         for item in acquisition['assets']:
             if item['state']!='ACQUIRED':continue
             file=folder/item['file']

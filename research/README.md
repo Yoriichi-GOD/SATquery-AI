@@ -1,5 +1,13 @@
 # Scientific development workspace
 
+Latest: [four-case acquired-data report](results/case-campaign-20261107/REPORT.md),
+[actual measurement table](results/case-campaign-20261107/MEASUREMENTS.csv),
+[figures](results/case-campaign-20261107/figures/) and
+[reproduction/startup instructions](../docs/research/CASE_CAMPAIGN_20261107.md).
+The new campaign acquired37 native raster windows and processed Nepal, historical Kedarnath,
+Varanasi and southern Sangam Vihar. Private local source windows are in
+`research/datasets/local/campaign-20261107/`; their portable checksum manifest is in the report folder.
+
 This branch adds terrain-conditioned, inspectable exposure screening to the existing SATquery system.
 **The scientific mission remains partial: independent exposure validation is not established.**
 

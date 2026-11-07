@@ -94,11 +94,12 @@ def figures(out,cases,metrics):
     import matplotlib;matplotlib.use('Agg')
     import matplotlib.pyplot as plt
     import numpy as np
-    (out/'figures').mkdir()
+    (out/'figures').mkdir(exist_ok=True)
     fig,axes=plt.subplots(1,2,figsize=(10,4),layout='constrained')
     for ax,case in zip(axes,['varanasi','sangam-vihar']):
         u=cases[case]['urban'];ax.bar(['2017','2023'],[u['built_before_ha'],u['built_after_ha']],color=['#777777','#222222'])
-        ax.set_ylabel('Built class (ha), common10m support');ax.set_title(case)
+        ax.set_ylim(0,max(u['built_before_ha'],u['built_after_ha'])*1.16)
+        ax.set_ylabel('Built class (ha), common 10 m support');ax.set_title(case.replace('-',' ').title())
         ax.text(.5,.96,f"Net +{u['net_built_difference_ha']:,.2f} ha",transform=ax.transAxes,ha='center',va='top')
     fig.suptitle('Annual land-cover model transitions; not independently surveyed construction',fontsize=10)
     for ext in ['png','pdf','svg']:fig.savefig(out/f'figures/urban-built-stock.{ext}',dpi=180)
@@ -107,10 +108,10 @@ def figures(out,cases,metrics):
     fig,ax=plt.subplots(figsize=(10,4.5),layout='constrained');x=np.arange(len(methods))
     for i,cell in enumerate(['30','90']):
         values=[metrics[cell]['results'][m]['average_precision'] for m in methods]
-        ax.bar(x+(i-.5)*.36,values,.36,color=['#222222','#999999'][i],label=f'{cell}m analysis of sameGLO30')
+        ax.bar(x+(i-.5)*.36,values,.36,color=['#222222','#999999'][i],label=f'{cell} m analysis of same GLO-30')
     ax.set_xticks(x,['A image','B temporal','C terrain','D graph','Proximity','Terrain only']);ax.set_ylim(0,1)
     ax.set_ylabel('Average precision');ax.legend(fontsize=8)
-    ax.set_title('22previously inspected road-grade fragments;14positive/8negative\nExploratory association; no exposure truth or independent test',fontsize=10)
+    ax.set_title('22 previously inspected road-grade fragments; 14 positive / 8 negative\nExploratory association; no exposure truth or independent test',fontsize=10)
     for ext in ['png','pdf','svg']:fig.savefig(out/f'figures/nepal-development-baselines.{ext}',dpi=180)
     plt.close(fig)
 

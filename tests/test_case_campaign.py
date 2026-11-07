@@ -3,11 +3,15 @@ from pathlib import Path
 import numpy as np
 import rasterio
 from affine import Affine
-from research.cases.process_campaign import transitions,landsat_clear,index,roi,metric_grid,warp,declared_terrain_files
+from research.cases.process_campaign import transitions,landsat_clear,index,roi,metric_grid,warp,declared_terrain_files,validate_inventory
 from research.datasets.cog import public_url,native_window,acquire
 from research.evaluation.evidence_contract import check
 
 class CaseCampaignTests(unittest.TestCase):
+    def test_stale_or_missing_required_registration_refused(self):
+        cfg={'bbox':[1,1,2,2]};a={'case_id':'varanasi','protocol_sha256':'correct','assets':[]}
+        with self.assertRaisesRegex(ValueError,'identity'):validate_inventory('varanasi',cfg,{},a,'changed')
+        with self.assertRaisesRegex(ValueError,'not registered'):validate_inventory('varanasi',cfg,{},a,'correct')
     def test_unregistered_buffer_cannot_enter_measurement(self):
         with tempfile.TemporaryDirectory() as d:
             root=Path(d);(root/'dem30-buffer.tif').write_bytes(b'not a registered input')
