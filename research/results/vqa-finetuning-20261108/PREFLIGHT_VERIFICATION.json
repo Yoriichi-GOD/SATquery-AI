@@ -1,0 +1,22 @@
+{
+  "application_tests": 327,
+  "new_core_contract_tests_included": 15,
+  "torch_cache_contract_tests": 5,
+  "real_gpu_smoke_updates": 8,
+  "closed_loop_reload_questions": 8,
+  "native_parity_questions_per_arm": 32,
+  "scope": "Software and training-only preflight; no completed fine-tuning or VRSBench accuracy claim yet",
+  "source_sha256": {
+    "__init__.py": "687fbbe4ad99a6dd2df434bb7ac5afb2910cd34e8a65a5bfc3d4a26c76892c56",
+    "acquire.py": "a4ae7fe28fde81b20621503ae6c71e7efd2965e21651b6528ac269c067a448f6",
+    "campaign.py": "dcd764a1999d69c53b3feaee7f48c034bef521506bf867946eda6d8e1ff86165",
+    "core.py": "2fee885106fc3912f2b86987e20504e18a91a05173be6e643825c6ebab2ffde5",
+    "cycle_smoke.py": "f1af3e7e53ca94a0d0ca3bdcafa4242dd22256bf19471437e147d3beb85b1a84",
+    "gpu.py": "52e9239c9295fefeadb43033aa129d04dcb74a31ce9ac3c13d55267f48f7cc6c",
+    "parity.py": "975b0708870effe839627dd7ed368713516d560f92474398ee3731174027bd57",
+    "parity_batch.py": "5adf0adaed2919cfeaa5d190707b5a6df4d7f7a798fa0fb015379d9230cc1d26",
+    "prepare.py": "a2105dcb0613d41349d31c116827005ebe377ed27370012265417730b6fa7701",
+    "train.py": "e3a30a3c08a9b111bdfda0e3887b4bacaf91dbf79cf89314499bab7153e6d799",
+    "vision.py": "91d536bb9b2a398b5e951f790795a45630e7747bc8c62632c77d0d7c355da391"
+  }
+}

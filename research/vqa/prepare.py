@@ -3,7 +3,7 @@ from collections import Counter
 import json
 from pathlib import Path
 
-from .acquire import acquire_images
+from .acquire import acquire_images, fetch_file
 from .core import (balanced_rows, save_json, sha256, split_images, stable_key,
                    training_records, verify_disjoint)
 
@@ -21,6 +21,11 @@ def prepare(root, config, budget, progress=print):
             if sha256(receipt['path']) != receipt['sha256']:
                 raise ValueError('Prepared native image changed')
         return corpus
+    if not source.exists():
+        fetch_file('VRSBench_train.json', source, budget, progress)
+    sources = json.loads((root/'research/results/vqa-finetuning-20261108/SOURCE_RECEIPTS.json').read_text())
+    if sha256(source) != sources['files']['VRSBench_train.json']['sha256']:
+        raise ValueError('Pinned native training annotation checksum mismatch')
     raw_rows = json.loads(source.read_text())
     rows, rejected = training_records(raw_rows)
     train_names, dev_names = split_images(rows, config['seed'], config['data']['train_images'], config['data']['dev_images'])
@@ -38,11 +43,12 @@ def prepare(root, config, budget, progress=print):
         digest = images[name]['sha256']
         if digest in seen: duplicate_train.append(name)
         else: kept_train.append(name); seen.add(digest)
-    training = [r for r in rows if r['image'] in set(kept_train)]
+    train_set, dev_set = set(kept_train), set(kept_dev)
+    training = [r for r in rows if r['image'] in train_set]
     train = balanced_rows([r for r in training if r['task'] == 'vqa'], config['data']['train_vqa_rows'], config['seed'])
     train += balanced_rows([r for r in training if r['task'] == 'caption'], config['data']['train_caption_rows'], config['seed'])
-    dev = [r for r in rows if r['image'] in set(kept_dev) and r['task'] == 'vqa']
-    captions = balanced_rows([r for r in rows if r['image'] in set(kept_dev) and r['task'] == 'caption'], 32, config['seed'])
+    dev = [r for r in rows if r['image'] in dev_set and r['task'] == 'vqa']
+    captions = balanced_rows([r for r in rows if r['image'] in dev_set and r['task'] == 'caption'], 32, config['seed'])
     for row in train+dev+captions:
         row['image_path'] = images[row['image']]['path']
         row['image_sha256'] = images[row['image']]['sha256']

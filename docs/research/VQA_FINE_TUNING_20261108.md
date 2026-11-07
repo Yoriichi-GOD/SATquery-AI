@@ -28,3 +28,34 @@ The [VRSBench authors](https://github.com/lx709/VRSBench) use GPT-based judging 
 The [upstream model card](https://huggingface.co/AdaptLLM/remote-sensing-Qwen2-VL-2B-Instruct) and [training-data card](https://huggingface.co/datasets/AdaptLLM/remote-sensing-visual-instructions) identify its domain adaptation. The named upstream caption corpora are not proof that all VRSBench/foundation-model overlap is absent. VRSBench text annotations are CC-BY-4.0; source imagery has separate terms, including academic-only DOTA restrictions. No raw-image redistribution is introduced.
 
 The existing tested Transformers/PEFT training path is reused; no TRL migration or quantized-model substitution is required. [Qwen2-VL documentation matching Transformers 4.51.3](https://huggingface.co/docs/transformers/v4.51.3/en/model_doc/qwen2_vl) describes the processor/model interface. All claimed gains must be supported by the new run's artifacts, not expected benefits of LoRA.
+
+## Verified before the long worker
+
+- 327 application regression tests passed, including 15 new pure split/scorer/target-mask contracts.
+- Five Torch contracts passed for exact-pixel/grid cache invalidation, inference-only use and restoration of the native encoder.
+- Eight actual training updates changed 224 LoRA tensors (2,179,072 trainable parameters), with finite losses and 4.90 GiB peak allocation at the selected 256–512 visual-token setting.
+- A discarded closed-loop preflight wrote/evaluated two checkpoints and reproduced all eight answers after adapter reload. These are mechanical checks, not VQA accuracy results.
+- The prepared corpus has 9,216 training examples (8,192 VQA plus 1,024 captions), 1,093 validation VQA questions and 32 caption examples on the training holdout. Train/dev native pixel hashes and filename-source groups are disjoint.
+- A proposed per-image vision optimization changed 3/64 greedy answers and was rejected. The retained method reuses the **original native batch encoder result** only across identical pixel/grid tensors in the baseline and adapter passes. It matched all 32 baseline and all 32 smoke-adapter answers against separate native runs. Resource probes are not independent performance/accuracy benchmarks.
+
+[Data audit](../../research/results/vqa-finetuning-20261108/DATA_AUDIT.json) ·
+[GPU feasibility](../../research/results/vqa-finetuning-20261108/GPU_FEASIBILITY.json) ·
+[Closed-loop check](../../research/results/vqa-finetuning-20261108/CYCLE_SMOKE.json) ·
+[Native-path parity](../../research/results/vqa-finetuning-20261108/NATIVE_BATCH_PARITY.json) ·
+[Rejected optimization](../../research/results/vqa-finetuning-20261108/VISION_PARITY.json) ·
+[Source receipts](../../research/results/vqa-finetuning-20261108/SOURCE_RECEIPTS.json).
+
+## Execute and inspect
+
+Provision the pinned base model using the existing [asset instructions](../ASSETS.md) and activate a compatible Python 3.11 CUDA/PEFT environment. The model loader is local-only. Preparing the native data requires public network access; no paid API is used.
+
+```sh
+python -m research.vqa.prepare
+python -m research.vqa.campaign --run-id a-fresh-run-id
+```
+
+Each run creates a fresh private runtime directory and a separate result subfolder beneath `research/results/vqa-finetuning-20261108/`. Existing run identities are never overwritten. Raw imagery, model weights and intermediate predictions remain ignored; completed compact prediction exports and measured summaries are written into the result subfolder. The final reference JSON is not acquired until the candidate/checkpoint/inference identities are frozen. Unlabelled final image bytes may prefetch during training without entering optimization.
+
+On the current Windows/WSL host, `scripts/launch_vqa_overnight.py --run-id NAME` waits for the worker and temporarily requests that Windows remain awake. Use the documented existing `/root/satquery/.venv` GPU environment; this is a host-specific launcher, not a portable runtime claim. The request is released when the helper exits. Keep the laptop plugged in with its lid open.
+
+Progress is recorded in `.runtime/vqa-20261108/current-status.json`, the run's `heartbeat.json`, its archive status, and the worker log. These are execution state, not measured model gains. A failed or incomplete run must not be reported as a completed benchmark. The worker does not change production model defaults or the Day 1 tag.

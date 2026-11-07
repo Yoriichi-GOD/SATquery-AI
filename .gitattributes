@@ -4,6 +4,7 @@
 # These source records are byte-hashed by the frozen evaluation manifest.
 *.jsonl text eol=lf
 /research/terrain_exposure/** text eol=lf
+/research/vqa/** text eol=lf
 /research/evaluation/** text eol=lf
 /research/experiments/** text eol=lf
 /research/cases/** text eol=lf
@@ -24,3 +25,5 @@
 /research/results/case-campaign-20261107/figures/*.svg -diff
 /research/results/validation-closure-20261107/** -text
 /research/results/validation-closure-20261107/** whitespace=cr-at-eol
+/research/results/vqa-finetuning-20261108/** -text
+/research/results/vqa-finetuning-20261108/** whitespace=cr-at-eol

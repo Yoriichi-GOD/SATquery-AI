@@ -1,0 +1,51 @@
+{
+  "config_sha256": "a66a1235e15ab9ce9434339fc6c3e381c7ec82f494ae5cfcde0c04f814db5547",
+  "source_sha256": "8a126b8342eeeb364e5673c166be09f92ebaae81a60dd43885d64dc084be7e73",
+  "split": {
+    "train_images": 2048,
+    "dev_images": 256,
+    "train_groups": 1283,
+    "dev_groups": 256
+  },
+  "rejected_rows": {
+    "grounding_out_of_scope": 36313,
+    "unobservable_metadata_question": 21,
+    "exact_duplicate_rows": 1
+  },
+  "duplicate_pixel_images_removed": {
+    "train": [],
+    "dev": []
+  },
+  "corpus_sha256": "333a2f5134cc370b41b9ed5be83552b62dd978c1f9394adc96edd922c70505cc",
+  "train_rows": 9216,
+  "dev_vqa_rows": 1093,
+  "dev_caption_rows": 32,
+  "train_buckets": {
+    "size": 382,
+    "category": 749,
+    "caption": 1024,
+    "other": 2500,
+    "position": 1162,
+    "quantity": 1471,
+    "colour": 879,
+    "presence": 564,
+    "shape": 170,
+    "scene": 242,
+    "direction": 73
+  },
+  "dev_buckets": {
+    "category": 94,
+    "colour": 126,
+    "scene": 32,
+    "quantity": 188,
+    "other": 376,
+    "position": 137,
+    "presence": 71,
+    "direction": 11,
+    "size": 37,
+    "shape": 21
+  },
+  "sampling_categories": "Question-pattern buckets, not native official evaluation categories",
+  "upstream_checkpoint_exposure": "Not ruled out by local split checks",
+  "raw_images_committed": false
+}

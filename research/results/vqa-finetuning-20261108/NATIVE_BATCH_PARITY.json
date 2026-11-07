@@ -1,0 +1,25 @@
+{
+  "support": "32 training-only questions in both arms; smoke adapter, not an accuracy trial",
+  "effective": {
+    "min_visual_tokens": 256,
+    "max_visual_tokens": 512,
+    "batch_size": 4,
+    "max_new_tokens": 32,
+    "do_sample": false,
+    "caption_max_new_tokens": 192,
+    "vision_mode": "native"
+  },
+  "answer_differences": {
+    "base": [],
+    "candidate": []
+  },
+  "passed": true,
+  "timings": {
+    "native_base": 18.607290161000492,
+    "native_candidate": 13.769166187999872,
+    "paired_native_reuse": 23.664030772000842
+  },
+  "pair_questions_per_second": 2.7045265710068493,
+  "vision_encoder_math": "Original batched encoder output reused only for identical pixels/grids; no per-image recalculation",
+  "production_weights_modified": false
+}

@@ -1,0 +1,39 @@
+{
+  "purpose": "Eight real training updates and batch inference; discarded adapter, no VQA gain claim",
+  "effective": {
+    "min_visual_tokens": 256,
+    "max_visual_tokens": 512,
+    "batch_size": 4,
+    "max_new_tokens": 32,
+    "do_sample": false,
+    "caption_max_new_tokens": 192
+  },
+  "steps": 8,
+  "finite_losses": [
+    0.7806068062782288,
+    1.0738999843597412,
+    1.2230075597763062,
+    2.4706361293792725,
+    0.6929599642753601,
+    2.0141799449920654,
+    0.37176477909088135,
+    0.9726505875587463
+  ],
+  "updated_parameter_tensors": 224,
+  "trainable_parameters": 2179072,
+  "seconds": 6.378069770998991,
+  "peak_allocated_GiB": 4.898266792297363,
+  "gpu": "NVIDIA GeForce RTX 5060 Laptop GPU",
+  "training_only_images": [
+    "00096_0000.png",
+    "00103_0000.png",
+    "00115_0000.png",
+    "00117_0000.png",
+    "00159_0000.png",
+    "00183_0000.png",
+    "00201_0000.png",
+    "00204_0000.png"
+  ],
+  "batch_predictions": 4,
+  "scope": "Training-only resource and gradient verification; no held-out accuracy measured"
+}

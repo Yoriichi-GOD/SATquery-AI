@@ -1,0 +1,10 @@
+{
+  "purpose": "Training-only mechanical preflight; discarded adapters and no VQA accuracy claim",
+  "optimizer_steps": 2,
+  "micro_steps": 16,
+  "checkpoints_written_and_evaluated": 2,
+  "reloaded_questions": 8,
+  "answer_differences": [],
+  "passed": true,
+  "production_model_changed": false
+}

@@ -1,0 +1,36 @@
+{
+  "dataset": "xiang709/VRSBench",
+  "revision": "6cee2968fd752a6d51c6cb2d18dded2bc0baa218",
+  "files": {
+    "Images_train.zip": {
+      "bytes": 8359313269,
+      "git_oid": "0aad91d85d45765f254b8dc0f4b67e012152e782",
+      "sha256": "ece04d7e402621b924e5be9865fd0c725afb59cc96fbf0392409196a50c60481",
+      "url": "https://huggingface.co/datasets/xiang709/VRSBench/resolve/6cee2968fd752a6d51c6cb2d18dded2bc0baa218/Images_train.zip"
+    },
+    "Images_val.zip": {
+      "bytes": 3976656690,
+      "git_oid": "55b6fe9d82225863a8a21a1b33550f9ca9225edc",
+      "sha256": "67f99c1dd437fdab94fea1f54e049ad56d198c3c873237c79d9b944200d248b1",
+      "url": "https://huggingface.co/datasets/xiang709/VRSBench/resolve/6cee2968fd752a6d51c6cb2d18dded2bc0baa218/Images_val.zip"
+    },
+    "VRSBench_EVAL_vqa.json": {
+      "bytes": 9358245,
+      "git_oid": "e9e1adb40125ec9353b39fb22a949e424e242463",
+      "sha256": null,
+      "url": "https://huggingface.co/datasets/xiang709/VRSBench/resolve/6cee2968fd752a6d51c6cb2d18dded2bc0baa218/VRSBench_EVAL_vqa.json"
+    },
+    "VRSBench_train.json": {
+      "bytes": 64923606,
+      "git_oid": "0976f91982453b5a5ccb190c24b8c1e69ed8bb37",
+      "sha256": "8a126b8342eeeb364e5673c166be09f92ebaae81a60dd43885d64dc084be7e73",
+      "url": "https://huggingface.co/datasets/xiang709/VRSBench/resolve/6cee2968fd752a6d51c6cb2d18dded2bc0baa218/VRSBench_train.json"
+    }
+  },
+  "annotations_license": "CC-BY-4.0",
+  "image_terms": "Source-image terms remain separate, including DOTA academic-only restrictions",
+  "metadata_source": "https://huggingface.co/api/datasets/xiang709/VRSBench/tree/6cee2968fd752a6d51c6cb2d18dded2bc0baa218?recursive=true&limit=1000",
+  "model_card": "https://huggingface.co/AdaptLLM/remote-sensing-Qwen2-VL-2B-Instruct/blob/7f5dd71bf0f40c282193d50160e848a387a08ffe/README.md",
+  "official_evaluation": "https://github.com/lx709/VRSBench/tree/main/eval_fianl",
+  "gpt_metric_executed": false
+}

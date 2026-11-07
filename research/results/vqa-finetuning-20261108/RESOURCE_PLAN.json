@@ -1,0 +1,20 @@
+{
+  "base_protocol_sha256": "a66a1235e15ab9ce9434339fc6c3e381c7ec82f494ae5cfcde0c04f814db5547",
+  "effective": {
+    "min_visual_tokens": 256,
+    "max_visual_tokens": 512,
+    "batch_size": 4,
+    "max_new_tokens": 32,
+    "do_sample": false,
+    "caption_max_new_tokens": 192,
+    "vision_mode": "native"
+  },
+  "parity_passed": true,
+  "parity_receipt_sha256": "6e5733d8953f7027cf12a3461d84cb0b6e9133a014b920fc2ec570b83ae7436b",
+  "native_batch_reuse_for_final_paired_inference": true,
+  "rejected_per_image_reencoding": {
+    "reason": "3 of 64 training-only answers differed from the native path",
+    "receipt": "VISION_PARITY.json"
+  },
+  "selection_basis": "Resource timing/memory and native-path equivalence only; no validation or final-test accuracy used"
+}

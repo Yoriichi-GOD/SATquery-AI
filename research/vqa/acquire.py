@@ -4,10 +4,13 @@ import io
 from pathlib import Path
 import struct
 import threading
+import time
 import zipfile
 import zlib
 
 import requests
+from requests.adapters import HTTPAdapter
+from urllib3.util.retry import Retry
 
 from .core import DATASET_REVISION, image_name, sha256
 
@@ -89,6 +92,9 @@ class RemoteZip(io.RawIOBase):
             raise ValueError('Invalid bounded ZIP range')
         if not hasattr(self.sessions, 'session'):
             self.sessions.session = requests.Session()
+            retries = Retry(total=4, connect=4, read=3, status=3, backoff_factor=.7,
+                            status_forcelist=(429, 500, 502, 503, 504), allowed_methods=('GET',))
+            self.sessions.session.mount('https://', HTTPAdapter(max_retries=retries))
         # A unique stable range query prevents signed-redirect cache collisions.
         url = BASE+self.name+f'?download=true&range_start={start}&range_end={end}'
         with self.sessions.session.get(url, headers={'Range': f'bytes={start}-{end}'},
@@ -134,7 +140,7 @@ class RemoteZip(io.RawIOBase):
         return decoded
 
 
-def acquire_images(names, destination, budget, progress=lambda message: None, workers=6):
+def acquire_images(names, destination, budget, progress=lambda message: None, workers=3):
     """Read original selected PNG members, not re-encoded Dataset Viewer previews."""
     names = list(dict.fromkeys(image_name(n) for n in names))
     destination = Path(destination)
@@ -180,3 +186,29 @@ def acquire_images(names, destination, budget, progress=lambda message: None, wo
                 future.cancel()
             raise
     return records
+
+
+def fetch_native_evaluation_archive(destination, budget, expected_sha256, progress=print, deadline=None, stop_event=None):
+    """Resumable exact ranges; partially transferred bytes are not accepted as data."""
+    target = Path(destination)
+    remote = RemoteZip('Images_val.zip', budget)
+    if target.exists():
+        if target.stat().st_size != remote.size or sha256(target) != expected_sha256:
+            raise ValueError('Cached evaluation archive identity mismatch')
+        return target
+    target.parent.mkdir(parents=True, exist_ok=True)
+    partial = target.with_suffix('.zip.part')
+    offset = partial.stat().st_size if partial.exists() else 0
+    if offset > remote.size:
+        raise ValueError('Partial archive exceeds its pinned native size')
+    with partial.open('ab') as stream:
+        while offset < remote.size:
+            if stop_event is not None and stop_event.is_set(): raise InterruptedError('Worker stopped; native partial archive retained')
+            if deadline and time.monotonic() >= deadline: raise TimeoutError('Download wall-time ceiling reached')
+            chunk = remote.at(offset, min(8*1024*1024, remote.size-offset))
+            stream.write(chunk); stream.flush(); offset += len(chunk)
+            progress(f'Native evaluation archive: {offset}/{remote.size} bytes')
+    if sha256(partial) != expected_sha256:
+        raise ValueError('Full native evaluation archive SHA-256 mismatch; partial retained')
+    partial.rename(target)
+    return target
