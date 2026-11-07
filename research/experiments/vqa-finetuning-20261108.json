@@ -1,0 +1,15 @@
+{
+  "schema_version": 1,
+  "campaign": "vqa-finetuning-20261108",
+  "seed": 20261108,
+  "hypothesis": "Broader image-grounded supervised LoRA adaptation improves whole-answer VQA over the same pretrained model with a matched short-answer prompt; prompt-only gains are reported separately.",
+  "model": {"id": "AdaptLLM/remote-sensing-Qwen2-VL-2B-Instruct", "revision": "7f5dd71bf0f40c282193d50160e848a387a08ffe", "dtype": "bfloat16", "attention": "sdpa", "local_files_only": true},
+  "data": {"dataset": "xiang709/VRSBench", "revision": "6cee2968fd752a6d51c6cb2d18dded2bc0baa218", "train_images": 2048, "dev_images": 256, "train_vqa_rows": 8192, "train_caption_rows": 1024, "split": "Official train only, filename-source-group hash separation; no official validation/evaluation data in training or checkpoint selection", "max_train_images_per_group": 4},
+  "train": {"rank": 8, "alpha": 16, "dropout": 0.05, "target_modules": "model\\.layers\\.\\d+\\.self_attn\\.(q_proj|k_proj|v_proj|o_proj)", "learning_rate": 0.0001, "weight_decay": 0.01, "gradient_accumulation": 8, "batch_size": 1, "max_optimizer_steps": 1536, "max_epochs": 2, "checkpoint_steps": [384, 768, 1152, 1536], "warmup_steps": 77, "gradient_clip": 1.0, "answer_only_loss": true, "gradient_checkpointing": true, "max_sequence_tokens": 1024},
+  "inference": {"min_visual_tokens": 256, "max_visual_tokens": 512, "batch_size": 4, "max_new_tokens": 32, "do_sample": false, "caption_max_new_tokens": 192},
+  "resource_fallbacks": {"visual_tokens": [[256, 512], [128, 256]], "inference_batches": [4, 2, 1], "selection": "Resource failures only, before measured arms; every measured arm uses the chosen fixed settings"},
+  "selection": {"metric": "normalised whole-answer exact match on held-out official-training images", "tie_break": "Earlier checkpoint", "required_gain": 0.02, "max_bucket_decline": 0.05, "bucket_min_questions": 30, "final_test_used_for_selection": false, "automatic_production_promotion": false},
+  "final_evaluation": {"support": "Entire pinned VRSBench_EVAL_vqa.json, with all expected questions in denominator", "arms": ["base_matched_prompt", "selected_adapter_matched_prompt"], "metrics": ["strict whole-answer exact match", "normalised whole-answer exact match", "native per-category scores", "completion/error/truncation", "paired filename-source-group bootstrap", "known previously inspected image subset"], "official_gpt_judge": "Not run without separate paid-API authorization; export predictions without claiming published GPT scores", "historical_exposure": "Existing 2026-09 VRSBench diagnostics are disclosed; no pristine full-test claim", "labels": "Acquire/open final references only after candidate and inference settings are frozen; never pass references into inference prompts"},
+  "limits": {"max_wall_seconds": 43200, "max_download_bytes": 6442450944, "paid_compute": false, "max_candidates": 1, "single_seed_exploratory": true},
+  "preserve": ["Existing model and pilot adapters", "Historical benchmark artifacts", "day1-final", "Current production defaults", "Paired specialists and terrain workflows"]
+}

@@ -46,6 +46,7 @@ paired_lab/evidence/submission-20260926/eos04-frs2-inventory.json
 !/research/README.md
 !/research/requirements-scientific*.txt
 !/research/terrain_exposure/
+!/research/vqa/
 !/research/datasets/
 !/research/registration/
 !/research/experiments/
@@ -57,4 +58,5 @@ paired_lab/evidence/submission-20260926/eos04-frs2-inventory.json
 !/research/results/case-campaign-20261107/
 !/research/results/validation-closure-20261107/
 !/research/results/sih-public-comparison-20261107/
+!/research/results/vqa-finetuning-20261108/
 /research/datasets/local/
