@@ -1,6 +1,11 @@
 # Scientific development workspace
 
-Latest: [four-case acquired-data report](results/case-campaign-20261107/REPORT.md),
+Latest: [validation closure and external test](results/validation-closure-20261107/REPORT.md),
+[reproduction](../docs/research/VALIDATION_CLOSURE_20261107.md).
+This adds native official Delhi drainage, genuine2m post-event Nepal terrain and a sealed six-event
+external water-component test. It retains failed quality gates and the negative terrain-filter result.
+
+Previous: [four-case acquired-data report](results/case-campaign-20261107/REPORT.md),
 [actual measurement table](results/case-campaign-20261107/MEASUREMENTS.csv),
 [figures](results/case-campaign-20261107/figures/) and
 [reproduction/startup instructions](../docs/research/CASE_CAMPAIGN_20261107.md).

@@ -22,3 +22,5 @@
 /research/results/case-campaign-20261107/** -text
 /research/results/case-campaign-20261107/** whitespace=cr-at-eol
 /research/results/case-campaign-20261107/figures/*.svg -diff
+/research/results/validation-closure-20261107/** -text
+/research/results/validation-closure-20261107/** whitespace=cr-at-eol

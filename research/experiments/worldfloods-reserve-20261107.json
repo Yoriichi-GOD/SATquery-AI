@@ -1,0 +1,14 @@
+{
+  "schema":"satquery.unopened-component-reserve/1",
+  "dataset":"isp-uv-es/WorldFloodsv2","revision":"1f3faa2989e69930ac31d5c0a79fd224461123f8",
+  "ids":["EMSR422_AOI06_DEL_PRODUCT","EMSR438_AOI02_DEL_MONIT03","EMSR466_AOI01_DEL_PRODUCT","EMSR9284_01YLITORNIONORTHERN_DEL_MONIT01_v1"],
+  "selection":"Lexical-first item per remaining distinct official test activation not in six-event evaluation or aggregate-metadata-exposed264",
+  "pixel_window":"Fixed native center512x512;noresize;not selected by water content or metrics",
+  "access_so_far":"Public directory names and file sizes only; reserve imagery,labelpixels,andaggregateannotationmetadata notreadinthiscampaign",
+  "status":"RESERVED_UNOPENED_LOCAL_WORKSPACE_ONLY",
+  "release_condition":"Freeze newmethods,thresholds,validity,metrics on development evidence before executing once; no reserve label inspection during implementation",
+  "consume_rule":"After first scoring or inspection, mark reserve consumed; later runs are replays/development, never a fresh blind test",
+  "independence":"Separate EMSRactivations from six-event test; upstream globally unknown; no geographical-disjointness claim until footprint audit before scoring",
+  "claim_scope":"Curated total-water component only; not case-specific exposure or new-water truth",
+  "execution_in_this_campaign":false
+}
