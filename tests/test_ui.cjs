@@ -1,8 +1,8 @@
 // DOM wiring tests with explicit test doubles, not a browser or visual validation.
 const fs=require('node:fs'),vm=require('node:vm'),assert=require('node:assert/strict');
 const elements=new Map();
-class Element {
- constructor(tag='div',id=''){this.tagName=tag;this.id=id;this.children=[];this.dataset={};this.style={};this.value='';this.hidden=false;this.checked=true;this.textContent='';this.classList={add(){},remove(){},toggle(){}};this.parentElement=this;}
+class Element extends EventTarget {
+ constructor(tag='div',id=''){super();this.tagName=tag;this.id=id;this.children=[];this.dataset={};this.style={};this.value='';this.hidden=false;this.checked=true;this.textContent='';this.classList={add(){},remove(){},toggle(){}};this.parentElement=this;}
  append(...children){this.children.push(...children);for(const c of children){c.parentElement=this;if(c.id)elements.set(c.id,c)}}
  before(child){this.parentElement.append(child)}
  replaceChildren(...children){this.children=[];this.append(...children)}
@@ -12,6 +12,8 @@ class Element {
  click(){}
 }
 const html=fs.readFileSync('web/index.html','utf8');new Element().innerHTML=html;
+const navigation=[...html.matchAll(/<button\b[^>]*data-view="([^"]+)"[^>]*>/g)].map(match=>{const e=new Element('button');e.dataset.view=match[1];return e});
+const querySelector=selector=>{const view=/^\.nav\[data-view="([^"]+)"\]$/.exec(selector)?.[1];const e=navigation.find(n=>n.dataset.view===view);assert(e,`Unsupported or missing selector ${selector}`);return e};
 const byId=id=>{assert(elements.has(id),`Missing element #${id}`);return elements.get(id)};
 byId('mode').value='baseline';
 const development=JSON.parse(fs.readFileSync('results/overnight-development-rescore.json','utf8'));
@@ -20,7 +22,7 @@ const run=JSON.parse(fs.readFileSync('results/ndvi-integration.json','utf8'));
 run.routing={reason:'TEST FIXTURE: calibrated coverage dispatch'};
 run.processing_stages=Object.fromEntries(['rgb','false-colour','evidence','mask'].map(n=>[n,`/api/runs/${run.id}/${n}`]));
 const calls=[];
-const context=vm.createContext({document:{getElementById:byId,createElement:t=>new Element(t),querySelectorAll:()=>[],documentElement:{dataset:{}}},localStorage:{getItem(){return 'dark'},setItem(){}},matchMedia:()=>({matches:true}),setInterval:()=>1,clearInterval(){},setTimeout,Date,FormData,URL,Blob,console,
+const context=vm.createContext({document:{getElementById:byId,createElement:t=>new Element(t),querySelector,querySelectorAll:()=>[],documentElement:{dataset:{}}},location:{hash:''},localStorage:{getItem(){return 'dark'},setItem(){}},matchMedia:()=>({matches:true}),setInterval:()=>1,clearInterval(){},setTimeout,Date,FormData,URL,Blob,console,
  fetch:async(url,options)=>{calls.push({url,options});let data={};
  if(url==='/api/status')data={state:'idle'};
  else if(url==='/api/development')data=development;
@@ -34,12 +36,18 @@ const context=vm.createContext({document:{getElementById:byId,createElement:t=>n
  }});
 vm.runInContext(fs.readFileSync('web/app.js','utf8'),context);
 (async()=>{
+ assert.equal(querySelector('.nav[data-view="explore"]')['aria-current'],'page');
  await vm.runInContext('loadDevelopment()',context);
  assert.equal(byId('base-score').textContent,'38.3%');assert.equal(byId('adapter-score').textContent,'78.3%');
  assert.equal(byId('regressions').children.length,2);assert.equal(byId('dev-rows').children.length,4);
  assert.equal(byId('scene-sample').parentElement.id,'empty');
  await vm.runInContext("upload(new Blob(['test'],{type:'image/tiff'}))",context);
  assert.equal(byId('filename').textContent,'corrected.tif');assert.equal(byId('scene-sample').hidden,true);
+ const fullButton=byId('image-tools').children.find(e=>e['aria-label']==='Open image full screen');
+ assert(fullButton,'Full-screen control is wired');let fullClicks=0;fullButton.click=()=>fullClicks++;
+ const pointer=(type,x,y)=>byId('satellite').dispatchEvent(Object.assign(new Event(type),{clientX:x,clientY:y}));
+ pointer('pointerdown',100,100);pointer('click',102,101);assert.equal(fullClicks,1,'A click opens the image');
+ pointer('pointerdown',100,100);pointer('click',120,120);assert.equal(fullClicks,1,'Dragging does not open the image');
  byId('question').value='Calculate NDVI';
  await byId('question-form').onsubmit({preventDefault(){}});
  assert.equal(calls.filter(c=>c.url==='/api/analyze').length,1);
@@ -53,5 +61,5 @@ vm.runInContext(fs.readFileSync('web/app.js','utf8'),context);
  assert.equal(byId('processing-stages').hidden,true);assert.equal(byId('ndvi-overlay').hidden,true);
  assert.equal(byId('analyze').disabled,false);
  assert(!html.includes('value="ndvi"'));
- console.log('PASS: development comparison, regressions, sample empty state, loaded filename, automatic dispatch, four run artifact views, refusal clearing, restored controls. DOM doubles only; no visual QA.');
+ console.log('PASS: development comparison, regressions, sample empty state, loaded filename, click/drag guard, automatic dispatch, four run artifact views, refusal clearing, restored controls. DOM doubles only; no visual QA.');
 })().catch(e=>{console.error(e);process.exitCode=1});

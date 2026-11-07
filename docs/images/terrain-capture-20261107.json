@@ -1,0 +1,77 @@
+{
+  "captured_date": "2026-11-07",
+  "application_base_revision": "727793592d083c1fb4b8b22a0ff0844db47fbf64",
+  "capture_type": "Actual unretouched browser viewport; CUA screenshot bytes saved verbatim; no mocked APIs, compositing or CSS changes",
+  "url": "http://127.0.0.1:8768/#terrain",
+  "viewport": {
+    "width": 1280,
+    "height": 720,
+    "override_used": false
+  },
+  "screenshot": {
+    "file": "terrain-workspace-20261107.jpg",
+    "format": "JPEG",
+    "bytes": 116141,
+    "sha256": "3a9b8375ce909643181cd2f3d3b3f36d9cf44c044908c8a77a568627ab186faf"
+  },
+  "selected_run_id": "event-fe47db331390",
+  "terrain_scene_id": "terrain-45737e0da2983d9d",
+  "terrain_scene_sha256": "2b71739b1fddd7c4c5715511787274194ce7891751dafd55dd7ab25ad9bef6ab",
+  "terrain": {
+    "source": "Copernicus GLO-90 DSM",
+    "nominal_spacing_m": 90,
+    "colour": "elevation",
+    "height_exaggeration": 1,
+    "water_candidate_markers": true,
+    "water_depth_claim": false
+  },
+  "optical": {
+    "display_date": "2026-08-27",
+    "available_before_date": "2026-08-22",
+    "retained_native_sources": [
+      {
+        "date": "2026-08-22",
+        "bytes": 1422454,
+        "sha256": "ed892dbf52413907ed7f9f0ae58aca3d716c2e5fb452a54a0218d7dba2b2691b",
+        "copy_verified": true,
+        "raw_data_committed": false
+      },
+      {
+        "date": "2026-08-27",
+        "bytes": 1482156,
+        "sha256": "964b26a5c8f218e6605c09fd929bac7849abd3acc4c3b334aa714809f89069a1",
+        "copy_verified": true,
+        "raw_data_committed": false
+      }
+    ],
+    "natural_image_size": {
+      "width": 254,
+      "height": 437
+    },
+    "water_overlay": false,
+    "debris_overlay": false,
+    "mapped_buildings_overlay": false
+  },
+  "observed_browser_checks": {
+    "terrain_canvas_count": 1,
+    "terrain_viewer_css_width": 424,
+    "terrain_viewer_css_height": 350,
+    "optical_decoded": true,
+    "header_position": "fixed",
+    "header_y": 0,
+    "header_backdrop_filter": "none",
+    "observed_javascript_errors": []
+  },
+  "source_file_sha256": {
+    "paired_lab/web/index.html": "7792e8ac7526546e008234fc2ab21f8c4b24ed80d63f5aee576c01f351f55712",
+    "paired_lab/web/noir-layout.css": "7f35f8cde0935d28efca36cf3652f071feb95e55324bdfaf740a8110d58f1f32",
+    "paired_lab/web/workspace-shell.css": "76bbafcb7c7c0f149df17bfc6b08a9d932789bb381dd79156f561ded3058db8c",
+    "jai_extension/web/earth.js": "3313e623f18d9c7c235c891ea5048a58dc6fcbabf1f0514eeec0a0546cd4c0d7",
+    "jai_extension/web/earth.css": "06bb30b46a35998bff158375f01c010c8f392ebeec37b4e02fb8ae34fce67cb4",
+    "jai_extension/visual_context.py": "bad6bcceb165f059ed70a2eb954ab6c9af66caae3ba0ff5c91477a5e178bb9d7"
+  },
+  "scope": "Focused terrain/RGB rendering check; no new inference, complete UI regression, scientific validation or fresh-machine restoration claim",
+  "runtime": "Existing Python 3.11 validation environment plus installed model packages; documented separate Flood Lab environment; cached native terrain and hash-verified optical crops",
+  "raw_sources_committed": false,
+  "historical_screenshots_modified": false
+}

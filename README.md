@@ -13,31 +13,30 @@
 
 SatQuery helps remote-sensing researchers and analysts ask questions about **prepared satellite imagery**, compare observed dates, and inspect the evidence behind a result. It brings input checks, task selection, specialist execution, and review into one local interface.
 
-**Status:** local research prototype for **SIH26167**. Working analytical paths and separate experiments are described below. Model assets require additional provisioning. Documentation reviewed **27 October 2026**; measurements retain their original evaluation dates.
+**Status:** local research prototype for **SIH26167**. Working analytical paths and separate experiments are described below. Model assets require additional provisioning. Documentation reviewed **7 November 2026**; measurements retain their original evaluation dates.
 
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="docs/images/workspace-water-dark.png">
-  <source media="(prefers-color-scheme: light)" srcset="docs/images/workspace-water-light.png">
-  <img src="docs/images/workspace-water-dark.png" alt="Actual SatQuery workspace: water overlay, three sensor-path masks, pixel counts and result for the supplied India example" width="1440">
-</picture>
+<a href="docs/images/terrain-workspace-20261107.jpg"><img src="docs/images/terrain-workspace-20261107.jpg" alt="Actual SatQuery cosmic interface: interactive 3D Nepal terrain with saved water-candidate markers, retained optical RGB, independent overlay toggles and the adjacent investigation composer" width="1280"></a>
 
-*Actual product screen, captured 27 October 2026 from a new run of the supplied India example. The 49.56% shown is predicted water coverage in this crop, not accuracy. [Walk through this example](docs/REVIEWER_GUIDE.md#1-map-water-and-inspect-three-pathways) · [Capture provenance](docs/images/README.md).*
+*Actual browser capture, 7 November 2026: the cosmic Terrain & flood workspace with 90 m Copernicus terrain, saved Nepal water candidates, verified optical RGB and questions in the same view. Candidate markers and mapped infrastructure provide context for review; they do not establish damage, water depth or safe access. [Run this workspace](jai_extension/README.md) · [Capture provenance](docs/images/README.md#terrain-workspace--7-november-2026).*
 
-## Terrain-conditioned scientific development — 5 November 2026
+## Current research release — 7 November 2026
 
-This development branch adds a tested CPU drainage/evidence-graph engine, read-only investigation integration,
-genuine Nepal replay, independent-reference screening diagnostics and two public urban terrain examples.
-**Independent exposure validation remains incomplete.** The 90 m DSM is insufficient for building/street-scale
-connectivity; class-compatible Nepal water/debris/exposure labels and trustworthy registration are still missing.
-[Measured report](research/results/terrain-exposure-20261105/REPORT.md) ·
-[Reproduce the experiments](docs/research/REPRODUCIBILITY.md) ·
+The consolidated application includes the existing specialists, Flood Lab response workflows and a CPU drainage/evidence-graph engine. The four-case campaign acquired and processed **37 native raster windows** across Nepal, Kedarnath, Varanasi and southern Sangam Vihar, retaining measurements, figures, source receipts and failed quality gates. The saved Nepal analysis retains **9.56 ha of water candidates** and **10.41 ha of possible debris/surface-change candidates**; infrastructure intersections indicate possible exposure.
+
+Subsequent validation work acquired official Delhi drainage and genuine **2 m post-event Nepal terrain**, then evaluated the water component on six predeclared external event windows. The finer terrain's **89.98% quality-supported coverage fails the 95% full-case gate**. On the external component test, the fixed slope filter reduced IoU from **0.700446 to 0.596378** relative to the spectral baseline. These results are retained, not presented as an improvement. The screenshot above uses the separate **90 m demonstration surface**.
+
+**Independent case-specific exposure accuracy, physical sensor registration, transfer and broad novelty remain unproved.**
+[Four-case measurements](research/results/case-campaign-20261107/REPORT.md) ·
+[Validation results and remaining gates](research/results/validation-closure-20261107/REPORT.md) ·
+[Terrain framework experiments](research/results/terrain-exposure-20261105/REPORT.md) ·
+[Reproduction](docs/research/REPRODUCIBILITY.md) ·
 [Scientific workspace](research/README.md). Historical benchmarks and `day1-final` remain unchanged.
 
 ## JAI 2026 submission, attribution and AI disclosure
 
 **The Road Home** investigates existing saved Syapru Besi, Nepal observations: separate water-change and possible debris/surface-change candidates, mapped infrastructure intersections and historical terrain context. This is a local research prototype, not an operational warning, damage, evacuation or prediction service. [Submission index](docs/jai/submission/SUBMISSION_INDEX.md) · [Presentation](docs/jai/submission/SATQuery_The_Road_Home_JAI2026.pptx) · [Demo script](docs/jai/DEMO_ROAD_HOME.md) · [Final implementation and limits](docs/jai/ROAD_HOME_DAY2_60MIN_RECEIPT.md).
 
-**Setup and execution:** use [Python 3.11 / WSL setup](docs/SETUP.md), [model/data provisioning](docs/ASSETS.md), and [extension startup](jai_extension/README.md). The extension uses `python start_jai.py` with the documented SATQuery/Flood Lab roots and loopback port 8768. Existing data and model assets must be provisioned; a clone alone is not a complete inference install. Run `python -m unittest discover -s tests`, `node tests/test_road_home_ui.cjs`, and `python scripts/verify_road_home.py` in the provisioned environment. The final RGB/layout rendered browser check remains incomplete; software and HTTP checks are not new scientific accuracy.
+**Setup and execution:** use [Python 3.11 / WSL setup](docs/SETUP.md), [model/data provisioning](docs/ASSETS.md), and [extension startup](jai_extension/README.md). The extension uses `python start_jai.py` with the documented SATQuery/Flood Lab roots and loopback port 8768. Existing data and model assets must be provisioned; a clone alone is not a complete inference install. Run `python -m unittest discover -s tests`, `node tests/test_road_home_ui.cjs`, and `python scripts/verify_road_home.py` in the provisioned environment. A 7 November browser check verified the captured 3D terrain, retained optical RGB and fixed header; it does not establish every UI route or new scientific accuracy. [Exact capture scope](docs/images/terrain-capture-20261107.json).
 
 **Third-party libraries:** Python, NumPy, Rasterio/GDAL, Pillow, FastAPI, Pydantic, Requests, Uvicorn, PyTorch, torchvision, Transformers, timm, einops, SciPy, OpenCV and Plotly power the application; Flood Lab also uses Shapely and NetworkX. Exact pinned dependencies and licenses/provenance are retained in [runtime requirements](requirements-runtime.txt), [test requirements](requirements-test.txt), [asset inventory](docs/RUNTIME_ASSETS.json), [Plotly attribution](docs/jai/THIRD_PARTY.json) and the prior projects' notices. This short submission deck was exported using OpenAI Artifact Tool; no new application dependency was introduced.
 
