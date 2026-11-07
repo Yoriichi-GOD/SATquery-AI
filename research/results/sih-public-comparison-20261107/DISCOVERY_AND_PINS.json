@@ -1,0 +1,767 @@
+{
+  "checked_date": "2026-11-07",
+  "queries": [
+    "\"satquery\" \"SIH\": pages 1–2, 60 per page",
+    "SatQuery: page 1",
+    "\"26167\": page 1",
+    "\"satellite\" \"SIH2026\": page 1",
+    "Public web search supplement"
+  ],
+  "coverage_limit": "Keyword matches are not verified SIH teams, finalists or final submissions; broad unrelated results excluded from the candidate list; 10 selected competitors inspected deeply; no exhaustive ranking.",
+  "candidates": [
+    {
+      "repository": "dehliwalb-bot/SIH2026",
+      "default_branch": "main",
+      "archived": false,
+      "size_kib": 4,
+      "url": "https://github.com/dehliwalb-bot/SIH2026"
+    },
+    {
+      "repository": "barun20saha/sih_SatQuery",
+      "default_branch": "main",
+      "archived": false,
+      "size_kib": 1239,
+      "url": "https://github.com/barun20saha/sih_SatQuery"
+    },
+    {
+      "repository": "archoudhury19/satquery-ai",
+      "default_branch": "main",
+      "archived": false,
+      "size_kib": 76026,
+      "url": "https://github.com/archoudhury19/satquery-ai"
+    },
+    {
+      "repository": "purvanshjoshi/SatQuery-AI",
+      "default_branch": "main",
+      "archived": false,
+      "size_kib": 101,
+      "url": "https://github.com/purvanshjoshi/SatQuery-AI"
+    },
+    {
+      "repository": "awdtyo/SatQueryAI-SIH26",
+      "default_branch": "main",
+      "archived": false,
+      "size_kib": 644,
+      "url": "https://github.com/awdtyo/SatQueryAI-SIH26"
+    },
+    {
+      "repository": "yaswinrajm/sih",
+      "default_branch": "main",
+      "archived": false,
+      "size_kib": 31484,
+      "url": "https://github.com/yaswinrajm/sih"
+    },
+    {
+      "repository": "AadrikaGupta234/SatQuery",
+      "default_branch": "main",
+      "archived": false,
+      "size_kib": 1827,
+      "url": "https://github.com/AadrikaGupta234/SatQuery"
+    },
+    {
+      "repository": "mannatnandi2007/SatQuery_SIH",
+      "default_branch": "main",
+      "archived": false,
+      "size_kib": 25057,
+      "url": "https://github.com/mannatnandi2007/SatQuery_SIH"
+    },
+    {
+      "repository": "sameelkazi/satquery",
+      "default_branch": "main",
+      "archived": false,
+      "size_kib": 115979,
+      "url": "https://github.com/sameelkazi/satquery"
+    },
+    {
+      "repository": "iit2025213-ops/SatQuery",
+      "default_branch": "main",
+      "archived": false,
+      "size_kib": 63007,
+      "url": "https://github.com/iit2025213-ops/SatQuery"
+    },
+    {
+      "repository": "Godavenger/SIH2026",
+      "default_branch": "main",
+      "archived": false,
+      "size_kib": 0,
+      "url": "https://github.com/Godavenger/SIH2026"
+    },
+    {
+      "repository": "hasinireddy-k/sih1",
+      "default_branch": "main",
+      "archived": false,
+      "size_kib": 27563,
+      "url": "https://github.com/hasinireddy-k/sih1"
+    },
+    {
+      "repository": "Rudraksh-wq/SatQuery_AI_SIH2026",
+      "default_branch": "main",
+      "archived": false,
+      "size_kib": 2861,
+      "url": "https://github.com/Rudraksh-wq/SatQuery_AI_SIH2026"
+    },
+    {
+      "repository": "khushidimri601-source/SatQuery-",
+      "default_branch": "main",
+      "archived": false,
+      "size_kib": 6596,
+      "url": "https://github.com/khushidimri601-source/SatQuery-"
+    },
+    {
+      "repository": "divyvekariya78-ops/Spectra_SIH26167",
+      "default_branch": "main",
+      "archived": false,
+      "size_kib": 125285,
+      "url": "https://github.com/divyvekariya78-ops/Spectra_SIH26167"
+    },
+    {
+      "repository": "shravani07-k/SatQuery-AI-SIH26167",
+      "default_branch": "main",
+      "archived": false,
+      "size_kib": 136076,
+      "url": "https://github.com/shravani07-k/SatQuery-AI-SIH26167"
+    },
+    {
+      "repository": "AditheGreat99/SatQuery-AI",
+      "default_branch": "main",
+      "archived": false,
+      "size_kib": 1111,
+      "url": "https://github.com/AditheGreat99/SatQuery-AI"
+    },
+    {
+      "repository": "AyushCODE1757/satquery-ai",
+      "default_branch": "main",
+      "archived": false,
+      "size_kib": 76677,
+      "url": "https://github.com/AyushCODE1757/satquery-ai"
+    },
+    {
+      "repository": "aadi1876a/SATQuery-AI",
+      "default_branch": "main",
+      "archived": false,
+      "size_kib": 82148,
+      "url": "https://github.com/aadi1876a/SATQuery-AI"
+    },
+    {
+      "repository": "BhaskarKr777/satquery-ai-orbit",
+      "default_branch": "main",
+      "archived": false,
+      "size_kib": 8,
+      "url": "https://github.com/BhaskarKr777/satquery-ai-orbit"
+    },
+    {
+      "repository": "Angad016/SIH-SATQueryAI-",
+      "default_branch": "main",
+      "archived": false,
+      "size_kib": 1444,
+      "url": "https://github.com/Angad016/SIH-SATQueryAI-"
+    },
+    {
+      "repository": "dishasinha2/SatQuery-fd",
+      "default_branch": "main",
+      "archived": false,
+      "size_kib": 156,
+      "url": "https://github.com/dishasinha2/SatQuery-fd"
+    },
+    {
+      "repository": "Ashishkumar-Mendhe/SatQuery_AI",
+      "default_branch": "main",
+      "archived": false,
+      "size_kib": 103372,
+      "url": "https://github.com/Ashishkumar-Mendhe/SatQuery_AI"
+    },
+    {
+      "repository": "AdityaRoy0804/SatQuery-AI",
+      "default_branch": "main",
+      "archived": false,
+      "size_kib": 667,
+      "url": "https://github.com/AdityaRoy0804/SatQuery-AI"
+    },
+    {
+      "repository": "AuraSakar/SIH26167-SatQuery",
+      "default_branch": "main",
+      "archived": false,
+      "size_kib": 19175,
+      "url": "https://github.com/AuraSakar/SIH26167-SatQuery"
+    },
+    {
+      "repository": "Krish-creator9/SatQuery_SIH2026",
+      "default_branch": "main",
+      "archived": false,
+      "size_kib": 3222,
+      "url": "https://github.com/Krish-creator9/SatQuery_SIH2026"
+    },
+    {
+      "repository": "aliaman78638/satquery-ai-sih26167",
+      "default_branch": "main",
+      "archived": false,
+      "size_kib": 4,
+      "url": "https://github.com/aliaman78638/satquery-ai-sih26167"
+    },
+    {
+      "repository": "Devang8007/SATQuery_AI",
+      "default_branch": "main",
+      "archived": false,
+      "size_kib": 2847,
+      "url": "https://github.com/Devang8007/SATQuery_AI"
+    },
+    {
+      "repository": "sodapagluXD/SATQUERY-SIH",
+      "default_branch": "main",
+      "archived": false,
+      "size_kib": 47,
+      "url": "https://github.com/sodapagluXD/SATQUERY-SIH"
+    },
+    {
+      "repository": "Sahil-Kumar-nith/Satquery_AI_SIH2026",
+      "default_branch": "main",
+      "archived": false,
+      "size_kib": 361,
+      "url": "https://github.com/Sahil-Kumar-nith/Satquery_AI_SIH2026"
+    },
+    {
+      "repository": "JsmJmn-nitg/SatQueryAI",
+      "default_branch": "main",
+      "archived": false,
+      "size_kib": 296,
+      "url": "https://github.com/JsmJmn-nitg/SatQueryAI"
+    },
+    {
+      "repository": "priyanshuroy012/SIH_SATQUERY",
+      "default_branch": "main",
+      "archived": false,
+      "size_kib": 4669,
+      "url": "https://github.com/priyanshuroy012/SIH_SATQUERY"
+    },
+    {
+      "repository": "MokshdaSharma/SatQuery_AI-SIH26167",
+      "default_branch": "main",
+      "archived": false,
+      "size_kib": 724,
+      "url": "https://github.com/MokshdaSharma/SatQuery_AI-SIH26167"
+    },
+    {
+      "repository": "SAI-MANOHITHA/SIH26167-SatQuery-AI",
+      "default_branch": "main",
+      "archived": false,
+      "size_kib": 5,
+      "url": "https://github.com/SAI-MANOHITHA/SIH26167-SatQuery-AI"
+    },
+    {
+      "repository": "Kshitij-Patil-007/sih2026",
+      "default_branch": "main",
+      "archived": false,
+      "size_kib": 13882,
+      "url": "https://github.com/Kshitij-Patil-007/sih2026"
+    },
+    {
+      "repository": "srushtim1307/SATQuery_SIH",
+      "default_branch": "main",
+      "archived": false,
+      "size_kib": 9974,
+      "url": "https://github.com/srushtim1307/SATQuery_SIH"
+    },
+    {
+      "repository": "Harshmalhotra2007/SIH26167-SatQuery-AI",
+      "default_branch": "main",
+      "archived": false,
+      "size_kib": 804,
+      "url": "https://github.com/Harshmalhotra2007/SIH26167-SatQuery-AI"
+    },
+    {
+      "repository": "rikin-2911/SatQuery-AI-SIH26",
+      "default_branch": "main",
+      "archived": false,
+      "size_kib": 62905,
+      "url": "https://github.com/rikin-2911/SatQuery-AI-SIH26"
+    },
+    {
+      "repository": "Hardik2811-wq/SatQueryAI_SIH2026",
+      "default_branch": "main",
+      "archived": false,
+      "size_kib": 776,
+      "url": "https://github.com/Hardik2811-wq/SatQueryAI_SIH2026"
+    },
+    {
+      "repository": "SREERAG-CODER/SatQuery-AI-SIH26167-",
+      "default_branch": "main",
+      "archived": false,
+      "size_kib": 35,
+      "url": "https://github.com/SREERAG-CODER/SatQuery-AI-SIH26167-"
+    },
+    {
+      "repository": "Rishav-Kaushal/SatQuery-ISRO_SIH2026",
+      "default_branch": "main",
+      "archived": false,
+      "size_kib": 0,
+      "url": "https://github.com/Rishav-Kaushal/SatQuery-ISRO_SIH2026"
+    },
+    {
+      "repository": "Anindya-Dev/satquery-sih-final",
+      "default_branch": "main",
+      "archived": false,
+      "size_kib": 13677,
+      "url": "https://github.com/Anindya-Dev/satquery-sih-final"
+    },
+    {
+      "repository": "rohitwadettiwar123/SIH_Satquery-AI",
+      "default_branch": "main",
+      "archived": false,
+      "size_kib": 72843,
+      "url": "https://github.com/rohitwadettiwar123/SIH_Satquery-AI"
+    },
+    {
+      "repository": "Godavenger/SatQuery-AI-SIH26167",
+      "default_branch": "main",
+      "archived": false,
+      "size_kib": 15948,
+      "url": "https://github.com/Godavenger/SatQuery-AI-SIH26167"
+    },
+    {
+      "repository": "ShrikantPachpute/SatQuery-AI-SIH26",
+      "default_branch": "main",
+      "archived": false,
+      "size_kib": 17,
+      "url": "https://github.com/ShrikantPachpute/SatQuery-AI-SIH26"
+    },
+    {
+      "repository": "Dheeraj08-AU/SatQuery-SIH",
+      "default_branch": "main",
+      "archived": false,
+      "size_kib": 20519,
+      "url": "https://github.com/Dheeraj08-AU/SatQuery-SIH"
+    },
+    {
+      "repository": "ManasManiOjha/satquery-ai-sih",
+      "default_branch": "main",
+      "archived": false,
+      "size_kib": 57,
+      "url": "https://github.com/ManasManiOjha/satquery-ai-sih"
+    },
+    {
+      "repository": "Khushisgh01/SatQuery_SIH",
+      "default_branch": "main",
+      "archived": false,
+      "size_kib": 719,
+      "url": "https://github.com/Khushisgh01/SatQuery_SIH"
+    },
+    {
+      "repository": "bishuk-dev/SIH-26167-SATQuery",
+      "default_branch": "main",
+      "archived": false,
+      "size_kib": 19718,
+      "url": "https://github.com/bishuk-dev/SIH-26167-SATQuery"
+    },
+    {
+      "repository": "thodetivarshith/satcoders-satquery-ai",
+      "default_branch": "main",
+      "archived": false,
+      "size_kib": 29197,
+      "url": "https://github.com/thodetivarshith/satcoders-satquery-ai"
+    },
+    {
+      "repository": "VaibhavUPratap/SatQuery-SIH",
+      "default_branch": "main",
+      "archived": false,
+      "size_kib": 31779,
+      "url": "https://github.com/VaibhavUPratap/SatQuery-SIH"
+    },
+    {
+      "repository": "sanvithakonakanti/SIH-SATQUERY-AI",
+      "default_branch": "main",
+      "archived": false,
+      "size_kib": 0,
+      "url": "https://github.com/sanvithakonakanti/SIH-SATQUERY-AI"
+    },
+    {
+      "repository": "div-del/SATQUERY_SIH_DEV2",
+      "default_branch": "main",
+      "archived": false,
+      "size_kib": 44,
+      "url": "https://github.com/div-del/SATQUERY_SIH_DEV2"
+    },
+    {
+      "repository": "swarnimlovesyou/satquery-ai",
+      "default_branch": "main",
+      "archived": false,
+      "size_kib": 6000,
+      "url": "https://github.com/swarnimlovesyou/satquery-ai"
+    },
+    {
+      "repository": "SARDHAK-CYBER/SIH26167-SIH2026",
+      "default_branch": "main",
+      "archived": false,
+      "size_kib": 133,
+      "url": "https://github.com/SARDHAK-CYBER/SIH26167-SIH2026"
+    },
+    {
+      "repository": "ajlaanayan-crypto/SIH-SatQuery-AI",
+      "default_branch": "main",
+      "archived": false,
+      "size_kib": 905,
+      "url": "https://github.com/ajlaanayan-crypto/SIH-SatQuery-AI"
+    },
+    {
+      "repository": "Mrunal-Baravkar/SIH-2026-Satquery-AI",
+      "default_branch": "main",
+      "archived": false,
+      "size_kib": 5352,
+      "url": "https://github.com/Mrunal-Baravkar/SIH-2026-Satquery-AI"
+    },
+    {
+      "repository": "gorjikushal1596-byte/SATQUERY-AI-SIH-2026",
+      "default_branch": "main",
+      "archived": false,
+      "size_kib": 84,
+      "url": "https://github.com/gorjikushal1596-byte/SATQUERY-AI-SIH-2026"
+    },
+    {
+      "repository": "ManasManiOjha/satquery-ai",
+      "default_branch": "main",
+      "archived": false,
+      "size_kib": 28,
+      "url": "https://github.com/ManasManiOjha/satquery-ai"
+    },
+    {
+      "repository": "harshkulkarni2234/SatQuery-Ai_SIH",
+      "default_branch": "master",
+      "archived": false,
+      "size_kib": 64944,
+      "url": "https://github.com/harshkulkarni2234/SatQuery-Ai_SIH"
+    },
+    {
+      "repository": "Lavu1807/SIH-26167-SatQuery",
+      "default_branch": "main",
+      "archived": false,
+      "size_kib": 5,
+      "url": "https://github.com/Lavu1807/SIH-26167-SatQuery"
+    },
+    {
+      "repository": "Pratyush-Ambast/Sih-SatQuery-Explanation",
+      "default_branch": "main",
+      "archived": false,
+      "size_kib": 41,
+      "url": "https://github.com/Pratyush-Ambast/Sih-SatQuery-Explanation"
+    },
+    {
+      "repository": "omb-11/satquery-ai",
+      "default_branch": "main",
+      "archived": false,
+      "size_kib": 2271,
+      "url": "https://github.com/omb-11/satquery-ai"
+    },
+    {
+      "repository": "sihggv/sih-SatQuery-AI",
+      "default_branch": "main",
+      "archived": false,
+      "size_kib": 340,
+      "url": "https://github.com/sihggv/sih-SatQuery-AI"
+    },
+    {
+      "repository": "Pratyush-Ambast/Sih-SatQuery-Demo",
+      "default_branch": "main",
+      "archived": false,
+      "size_kib": 28,
+      "url": "https://github.com/Pratyush-Ambast/Sih-SatQuery-Demo"
+    },
+    {
+      "repository": "mdhaduk85-dot/Spectra_SIH26167",
+      "default_branch": "main",
+      "archived": false,
+      "size_kib": 125306,
+      "url": "https://github.com/mdhaduk85-dot/Spectra_SIH26167"
+    },
+    {
+      "repository": "TanmayJain-dev/satquery-ai",
+      "default_branch": "master",
+      "archived": false,
+      "size_kib": 6478,
+      "url": "https://github.com/TanmayJain-dev/satquery-ai"
+    },
+    {
+      "repository": "Gowrav-M/satquery-ai-sih-2026-evidence",
+      "default_branch": "main",
+      "archived": false,
+      "size_kib": 9446,
+      "url": "https://github.com/Gowrav-M/satquery-ai-sih-2026-evidence"
+    },
+    {
+      "repository": "KING-OF-FLAME/satquery-ai",
+      "default_branch": "main",
+      "archived": false,
+      "size_kib": 43697,
+      "url": "https://github.com/KING-OF-FLAME/satquery-ai"
+    },
+    {
+      "repository": "Vivek-Maheshwari-07/SatQuery-AI-Research_SIH_2026",
+      "default_branch": "main",
+      "archived": false,
+      "size_kib": 315,
+      "url": "https://github.com/Vivek-Maheshwari-07/SatQuery-AI-Research_SIH_2026"
+    },
+    {
+      "repository": "Avi-choudhary/SatQuery",
+      "default_branch": "master",
+      "archived": false,
+      "size_kib": 16130,
+      "url": "https://github.com/Avi-choudhary/SatQuery"
+    },
+    {
+      "repository": "aakash1552005/SatQuery-AI",
+      "default_branch": "main",
+      "archived": false,
+      "size_kib": 15118,
+      "url": "https://github.com/aakash1552005/SatQuery-AI"
+    },
+    {
+      "repository": "Sri-Sabarish/SatQuery-AI",
+      "default_branch": "main",
+      "archived": false,
+      "size_kib": 138932,
+      "url": "https://github.com/Sri-Sabarish/SatQuery-AI"
+    },
+    {
+      "repository": "cattolatte/satquery",
+      "default_branch": "main",
+      "archived": false,
+      "size_kib": 567,
+      "url": "https://github.com/cattolatte/satquery"
+    },
+    {
+      "repository": "syed-imadulla/satquery-ai-research",
+      "default_branch": "main",
+      "archived": false,
+      "size_kib": 0,
+      "url": "https://github.com/syed-imadulla/satquery-ai-research"
+    },
+    {
+      "repository": "xarjunpatil/SIH26167-SatQuery-AI-An-Interactive-Vision-Language-Assistant-for-Multimodal",
+      "default_branch": "main",
+      "archived": false,
+      "size_kib": 27,
+      "url": "https://github.com/xarjunpatil/SIH26167-SatQuery-AI-An-Interactive-Vision-Language-Assistant-for-Multimodal"
+    },
+    {
+      "repository": "meghana-now/SatQuery-ai-demo",
+      "default_branch": "main",
+      "archived": false,
+      "size_kib": 75,
+      "url": "https://github.com/meghana-now/SatQuery-ai-demo"
+    },
+    {
+      "repository": "anushka1-del/SatQueryAI",
+      "default_branch": "main",
+      "archived": false,
+      "size_kib": 11,
+      "url": "https://github.com/anushka1-del/SatQueryAI"
+    },
+    {
+      "repository": "NGTanush/SatQuery-SIH",
+      "default_branch": "main",
+      "archived": false,
+      "size_kib": 27534,
+      "url": "https://github.com/NGTanush/SatQuery-SIH"
+    },
+    {
+      "repository": "HarshSingh7718/SIH-26167-SATQuery",
+      "default_branch": "main",
+      "archived": false,
+      "size_kib": 19718,
+      "url": "https://github.com/HarshSingh7718/SIH-26167-SATQuery"
+    },
+    {
+      "repository": "prajwalangadi97-crypto/sih",
+      "default_branch": "main",
+      "archived": false,
+      "size_kib": 1936,
+      "url": "https://github.com/prajwalangadi97-crypto/sih"
+    },
+    {
+      "repository": "anshikagarg0410/SatQuery_SIH",
+      "default_branch": "main",
+      "archived": false,
+      "size_kib": 690,
+      "url": "https://github.com/anshikagarg0410/SatQuery_SIH"
+    },
+    {
+      "repository": "AshutoshP29/SatQueryAI",
+      "default_branch": "main",
+      "archived": false,
+      "size_kib": 142915,
+      "url": "https://github.com/AshutoshP29/SatQueryAI"
+    },
+    {
+      "repository": "Twerkynut/satquery-ai",
+      "default_branch": "main",
+      "archived": false,
+      "size_kib": 28103,
+      "url": "https://github.com/Twerkynut/satquery-ai"
+    },
+    {
+      "repository": "trushendarreddy-cell/SatQuery-AI",
+      "default_branch": "main",
+      "archived": false,
+      "size_kib": 316,
+      "url": "https://github.com/trushendarreddy-cell/SatQuery-AI"
+    },
+    {
+      "repository": "farhanwajid/SatQuery-AI---An-Interactive-Vision-Language-Assistant-for-Multimodal-Remote-Sensing-Image-Analysis-",
+      "default_branch": "main",
+      "archived": false,
+      "size_kib": 0,
+      "url": "https://github.com/farhanwajid/SatQuery-AI---An-Interactive-Vision-Language-Assistant-for-Multimodal-Remote-Sensing-Image-Analysis-"
+    },
+    {
+      "repository": "saurabhrawatgthb/SatQuery-AI",
+      "default_branch": "main",
+      "archived": false,
+      "size_kib": 101,
+      "url": "https://github.com/saurabhrawatgthb/SatQuery-AI"
+    },
+    {
+      "repository": "trushendarreddy-cell/SatQuery-AI-fronend-v4",
+      "default_branch": "master",
+      "archived": false,
+      "size_kib": 34825,
+      "url": "https://github.com/trushendarreddy-cell/SatQuery-AI-fronend-v4"
+    },
+    {
+      "repository": "Paradoxankan/SIH-26",
+      "default_branch": "master",
+      "archived": false,
+      "size_kib": 103,
+      "url": "https://github.com/Paradoxankan/SIH-26"
+    },
+    {
+      "repository": "divyaa-26/SatQuery",
+      "default_branch": "master",
+      "archived": false,
+      "size_kib": 10,
+      "url": "https://github.com/divyaa-26/SatQuery"
+    },
+    {
+      "repository": "mangesham001-cyber/SIH2026",
+      "default_branch": "main",
+      "archived": false,
+      "size_kib": 4,
+      "url": "https://github.com/mangesham001-cyber/SIH2026"
+    },
+    {
+      "repository": "TECH-PIYUSH/SIH2026",
+      "default_branch": "main",
+      "archived": false,
+      "size_kib": 3,
+      "url": "https://github.com/TECH-PIYUSH/SIH2026"
+    },
+    {
+      "repository": "viggy291007-cpu/SIH2026",
+      "default_branch": "main",
+      "archived": false,
+      "size_kib": 3,
+      "url": "https://github.com/viggy291007-cpu/SIH2026"
+    }
+  ],
+  "source_pins": [
+    {
+      "repository": "Yoriichi-GOD/SATquery-AI",
+      "branch": "main",
+      "sha": "fe8a038d1aebe84e1385e228749901c4a18f7f36",
+      "date": "2026-10-31T06:51:15Z",
+      "source": "https://api.github.com/repos/Yoriichi-GOD/SATquery-AI/branches/main",
+      "scope": "Public source and retained artifacts inspected; no competitor runtime executed"
+    },
+    {
+      "repository": "nbsayan7-cell/SatQuery-AI",
+      "branch": "main",
+      "sha": "884cdd6408fc6de48b3db959d150ffc954960301",
+      "date": "2026-09-08T12:37:52Z",
+      "source": "https://api.github.com/repos/nbsayan7-cell/SatQuery-AI/branches/main",
+      "scope": "Public source and retained artifacts inspected; no competitor runtime executed"
+    },
+    {
+      "repository": "Gowrav-M/satquery-ai-sih-2026-evidence",
+      "branch": "main",
+      "sha": "77042af4db679f62b1657b86133ca56a504c788c",
+      "date": "2026-09-27T07:53:56Z",
+      "source": "https://api.github.com/repos/Gowrav-M/satquery-ai-sih-2026-evidence/branches/main",
+      "scope": "Public source and retained artifacts inspected; no competitor runtime executed"
+    },
+    {
+      "repository": "Anindya-Dev/satquery-sih-final",
+      "branch": "main",
+      "sha": "e72948f0c82140db0599fae4f7dedf1d8a6f20c9",
+      "date": "2026-09-11T21:55:26Z",
+      "source": "https://api.github.com/repos/Anindya-Dev/satquery-sih-final/branches/main",
+      "scope": "Public source and retained artifacts inspected; no competitor runtime executed"
+    },
+    {
+      "repository": "Vivek-Maheshwari-07/SatQuery-AI-Research_SIH_2026",
+      "branch": "main",
+      "sha": "b24c6d42348305413f394cb5341f16f93635a0bd",
+      "date": "2026-09-27T16:53:47Z",
+      "source": "https://api.github.com/repos/Vivek-Maheshwari-07/SatQuery-AI-Research_SIH_2026/branches/main",
+      "scope": "Public source and retained artifacts inspected; no competitor runtime executed"
+    },
+    {
+      "repository": "bishuk-dev/SIH-26167-SATQuery",
+      "branch": "main",
+      "sha": "e260c9f41eb327832325db5d7bb505b27f2b4e78",
+      "date": "2026-09-10T23:01:06Z",
+      "matches_audited": true,
+      "source": "https://api.github.com/repos/bishuk-dev/SIH-26167-SATQuery/branches/main",
+      "scope": "Public source and retained artifacts inspected; no competitor runtime executed"
+    },
+    {
+      "repository": "awdtyo/SatQueryAI-SIH26",
+      "branch": "main",
+      "sha": "c20b7a77817775f48d1f1ba2d435a9de9c97c3a9",
+      "date": "2026-10-04T17:01:12Z",
+      "matches_audited": true,
+      "source": "https://api.github.com/repos/awdtyo/SatQueryAI-SIH26/branches/main",
+      "scope": "Public source and retained artifacts inspected; no competitor runtime executed"
+    },
+    {
+      "repository": "siddhtyagi18/SatQuery-AI",
+      "branch": "main",
+      "sha": "0d0cb3ba5ffc04eaa181111793a83352b670c581",
+      "date": "2026-09-16T17:20:45Z",
+      "matches_audited": true,
+      "source": "https://api.github.com/repos/siddhtyagi18/SatQuery-AI/branches/main",
+      "scope": "Public source and retained artifacts inspected; no competitor runtime executed"
+    },
+    {
+      "repository": "divyptl/SIH-2026",
+      "branch": "main",
+      "sha": "589f5d59564a2c02911fe825c5577321f57f9ae1",
+      "date": "2026-10-21T18:45:47Z",
+      "matches_audited": true,
+      "source": "https://api.github.com/repos/divyptl/SIH-2026/branches/main",
+      "scope": "Public source and retained artifacts inspected; no competitor runtime executed"
+    },
+    {
+      "repository": "cattolatte/satquery",
+      "branch": "main",
+      "sha": "c3acd278160dabc4c2f2eca2a113129b53d5bd12",
+      "date": "2026-09-10T02:49:25Z",
+      "matches_audited": true,
+      "source": "https://api.github.com/repos/cattolatte/satquery/branches/main",
+      "scope": "Public source and retained artifacts inspected; no competitor runtime executed"
+    },
+    {
+      "repository": "Argho009/sih-2026",
+      "branch": "main",
+      "sha": "d2217fe9417748fa9ca840ef07fe8610d9f34041",
+      "date": "2026-09-30T13:33:08Z",
+      "matches_audited": true,
+      "source": "https://api.github.com/repos/Argho009/sih-2026/branches/main",
+      "scope": "Public source and retained artifacts inspected; no competitor runtime executed"
+    }
+  ],
+  "candidate_count": 93,
+  "deep_audited_competitor_count": 10,
+  "local_snapshot": {
+    "branch": "codex/validation-closure-20261107",
+    "sha": "727793592d083c1fb4b8b22a0ff0844db47fbf64",
+    "runtime_evidence": "Retained Nov 7 verification; no inference or full application suites rerun during source audit"
+  }
+}

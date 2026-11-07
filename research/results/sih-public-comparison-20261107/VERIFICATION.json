@@ -1,0 +1,58 @@
+{
+  "checked_date": "2026-11-07",
+  "status": "PASS",
+  "scope": "Static source, saved-result arithmetic and documentation integrity; no competitor execution or fresh model-accuracy validation",
+  "public_main_tree": {
+    "sha": "fe8a038d1aebe84e1385e228749901c4a18f7f36",
+    "entries": 2923,
+    "truncated": false,
+    "source": "https://api.github.com/repos/Yoriichi-GOD/SATquery-AI/git/trees/fe8a038d1aebe84e1385e228749901c4a18f7f36?recursive=1",
+    "path_counts": {
+      "research/terrain_exposure/": 0,
+      "research/results/case-campaign-20261107/": 0,
+      "research/results/validation-closure-20261107/": 0,
+      "components/floodlab/": 0
+    }
+  },
+  "candidate_count": 93,
+  "deep_audited_competitors": 10,
+  "pin_count": 11,
+  "checks_not_run": [
+    "Competitor code/tests/models",
+    "Competitor hosted UI",
+    "New model inference/head-to-head evaluation",
+    "Fresh browser rendering",
+    "Full local product regression rerun (read-only research turn)"
+  ],
+  "local_links_checked": 49,
+  "external_link_targets_syntax_checked": 203,
+  "reference_uses_checked": 118,
+  "unresolved_links": [],
+  "source_pins_format_and_uniqueness": "PASS",
+  "candidate_count_and_uniqueness": "PASS",
+  "git_baseline": "727793592d083c1fb4b8b22a0ff0844db47fbf64",
+  "day1_tag_object": "a08d2706397d359edb060993ee3a14374b3d136f",
+  "day1_peeled_commit": "f3945347cf0f0a4581aa1480c8fa1501a25da4b4",
+  "changed_tracked_paths": [
+    ".gitignore"
+  ],
+  "retained_http_check_count": 31,
+  "arithmetic_checks": {
+    "cattolatte_fused_vs_better_sensor_pp": 1.39,
+    "bishuk_joint_vs_optical_macro_ap_pp": 0.0478,
+    "bishuk_joint_minus_optical_macro_f1": -0.00625199,
+    "our_cdvqa_test1_visual_gain_pp": 1.84,
+    "our_cdvqa_test2_visual_gain_pp": 1.81,
+    "our_external_water_slope_filter_iou_delta": -0.104068,
+    "siddhtyagi_crop_pixels": 8388608
+  },
+  "product_and_frozen_evidence_changes": "NONE_IN_GIT_DIFF",
+  "audit_file_sha256": {
+    "ADAPTER_TEAMS_AUDIT.md": "b9a041a948e526b4faf01eeafb52f07322893bbf50e4179fae9ae0c4c24d1e48",
+    "AGENT_TEAMS_AUDIT.md": "faf011cd9a9ddd262b07a0bc0b53dbe0a9320bda097f4930f9ee4f9e401fb50d",
+    "BISHUK_AUDIT.md": "97fadb5d66ea71493848079f7892581c7298850fb2761d25050b9dd94d3955f7",
+    "DISCOVERY_AND_PINS.json": "62173a4753ca2be991d10f2e99cb54a74f0ca61828f4c0fce0810a39d53fb871",
+    "OTHER_TEAMS_AUDIT.md": "843a65975799a41a55f574b24b029a35eafce8f48aa068305c0e560fcf8734db",
+    "REPORT.md": "d48cc2e0ebd99501bc09e40af9f0ddeee135dc46e11435d4d60f63a4b0232a0a"
+  }
+}
