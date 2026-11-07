@@ -1,0 +1,21 @@
+{
+  "schema": "satquery.external-water-component-test/1",
+  "frozen_before_selected_annotation_pixels": true,
+  "dataset": "isp-uv-es/WorldFloodsv2", "revision": "1f3faa2989e69930ac31d5c0a79fd224461123f8",
+  "license": "CC-BY-NC4.0;https://huggingface.co/datasets/isp-uv-es/WorldFloodsv2",
+  "selection": "One lexical-first item per first6distinct official test EMSR codes, excluding264 whose aggregate annotation metadata was inspected during access research; fixed center512x512 native window; no selecting by water content or scores",
+  "ids": ["EMSR273_01GRILE_DEL_MONIT04_v2","EMSR286_08ITUANGONORTH_DEL_MONIT02_v1","EMSR333_01RATTALORO_DEL_MONIT01_v1","EMSR342_06NORTHNORMANTON_DEL_v1","EMSR347_06MWANZA_DEL_v1","EMSR419_AOI01_DEL_MONIT01"],
+  "window": {"width":512,"height":512,"alignment":"floor((dimension−512)/2);noresize;failratherthanchangeselectionifassetunavailable"},
+  "input_bands_one_based": {"green":3,"nir":8,"swir1":12},
+  "methods": {"MNDWI0":"(green−swir1)/(green+swir1)>0","NDWI0":"(green−nir)/(green+nir)>0","MNDWI0_slope15":"MNDWI0 AND nativeGLO30-derivedslope<=15degrees;resamplecontinuousslopebilineartoimage;unknownterrainexcludesallscoresoncommonsupport","all_land":"Alwaysfalsecontrol","all_water":"Alwaystruecontrol"},
+  "threshold_policy": "Existing zero spectral threshold;15degree predeclared engineeringfilter;no fitting, calibration or tuning afterreferenceinspection",
+  "reference": {"band1": "0invalid1clear2cloud","band2":"0invalid1land2water","common_support":"band1=1 AND band2in1,2 AND finitepositivegreen/nir/swir AND validterrainforALLmethods",
+    "semantics":"Curated total-surface-water benchmark labels combining mapped flood/hydrology and JRC permanentwater;notnew-water-only,purefieldtruthorbuilding/roadexposure",
+    "cloud_QA":"Reference clear mask used only in final scoring, neverprediction",
+    "date_alignment":"Retain source-reference and S2observationdates; mismatch is uncertainty,not silentlycorrected"},
+  "pre_score_seal":"Persist everyimage-onlyandterrainpredictionandtheirhashesbeforeacquiringorreadingselectedlabelpixelvalues",
+  "metrics": ["per-eventTPFPFNTN","per-eventIoUF1precisionrecall","micrototals","macroeventIoU","commonsupportcoverage","terrainablationpairedIoUdifference"],
+  "inference_claim":"New-to-this-workspace fixedcomponenttest;notfullA–D/exposurevalidationorprooftransfertofourprescribedcases",
+  "history_check":"Sen1Floods11excludedbecausepreviouslyused;WorldFloodsnousagefoundinboundedtrackedresearch/docs/evidencesearch;upstreamunseenexposureunknown",
+  "limits": {"maxpixels":262144,"maxlocalbytesperasset":33554432,"maxremoterangeblockbytes":33554432,"fullglobaldownload":false,"training":false,"modeldownloads":false}
+}

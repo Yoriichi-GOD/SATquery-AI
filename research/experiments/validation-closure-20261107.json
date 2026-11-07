@@ -1,0 +1,45 @@
+{
+  "schema": "satquery.validation-closure/1",
+  "parent_release": "3933c741497fa87d203254f1ad0c70652b6b43a5",
+  "frozen_before_new_reference_values_or_scores": true,
+  "purpose": "Close data-quality and reference-access prerequisites; evaluate only semantically compatible tasks",
+  "kedarnath_scene_selection": {
+    "bbox": [78.96,30.60,79.12,30.80],
+    "before": "LC08_L2SP_145039_20130522_02_T1",
+    "candidate_start": "2013-06-18T00:00:00Z", "candidate_end": "2013-09-15T23:59:59Z",
+    "same_sensor_path_row_tier": "Landsat8 path145 row039 Tier1; full case footprint coverage required",
+    "ranking": "Descending common QA-clear fraction with fixed May22 baseline, then ascending observation time, then itemID",
+    "selection_inputs": "Only scene metadata, QA_PIXEL, QA_RADSAT and source validity; no reflectance change predictions or reference grades",
+    "excluded_qa_bits": [0,1,2,3,4,5], "saturation_rule": "QA_RADSAT=0",
+    "minimum_common_clear_fraction": 0.25,
+    "post_selection": "Acquire reflectance only for the single best eligible scene; no threshold retuning or second-best substitution after registration/analysis",
+    "temporal_interpretation": "Later postevent scene is seasonal/recovery context; not peak June16–17 extent or causal disaster attribution"
+  },
+  "registration": {
+    "frozen_existing_method": "SIFT mutual0.7;20ties;train-onlyRANSAC;1in4heldout;coverage hull>=0.03;>=3quadrants",
+    "additional_acceptance": "Held-out PRE-correction p95 displacement<=1.5px for uncorrected relative alignment; post-fit residual is not proof of existing alignment",
+    "minimum_heldout_points": 5,
+    "correction": "No source correction or automatic physical/absolute/SAR-optical pass",
+    "controls": "Actual image self-pair, deterministic+4x−3yshift, unrelated random image; controls remain software tests not ground control"
+  },
+  "delhi_drainage": {
+    "bbox": [77.225,28.47,77.28,28.51], "crs": "EPSG:32643",
+    "official_host": "gsdl.org.in",
+    "services": ["DIFC/sangam","DIFC/storm_drain_08082024","DIFC/DIFC_portal_data"],
+    "layers": "Sangam service all0–7; Aug2024stormdrains all0–20; portal WaterLogging_50m and DEM metadata",
+    "roles": "Native mapped drainage/utility/colony geometry and positive-only waterlogging context; not event exposure labels",
+    "epochs": "Service-name vintage is not surveyed observation time; unknown dates remain unknown; no2017/2023drain state inferred",
+    "coverage": "All featureIDs intersecting the fixed envelope; no manual convenient subset; bounded25000features or unavailable",
+    "metrics": "Unique clipped mapped drain length;2017/2023built-class gains near mapped drains at30/90/150m; model-stream-to-reference distance and sensitivity at30/90m",
+    "terrain_reference": "Official drains include engineered channels; disagreement is expected for bare D8DSM and does not measure exposure accuracy",
+    "unknown": "Not mapped is not absence; no waterlogging negatives; no drain blockage/capacity/flow direction inferred",
+    "license": "No explicit native redistribution license established; raw geometry remains private local research"
+  },
+  "holdout_policy": {
+    "EMSR927": "All existing AOIs previously inspected development",
+    "Sen1Floods11": "Already trained/evaluated in SATQuery; not a new untouched test",
+    "new_external": "Must identify unseen event/geography and freeze IDs before reading annotation pixel values; standard benchmark use is not case-specific exposure truth",
+    "case_accuracy": "Do not calculate exposureprecision/recall or IoU without compatible positive and negative reference support"
+  },
+  "limits": {"maximum_asset_bytes": 33554432,"maximum_total_new_bytes": 536870912,"paid_api_calls":0,"training":false,"publish":false}
+}
