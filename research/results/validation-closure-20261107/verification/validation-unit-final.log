@@ -1,0 +1,13 @@
+test_all_water_terrain_ablation_on_common_support (tests.test_validation_closure.ValidationClosureTests.test_all_water_terrain_ablation_on_common_support) ... ok
+test_confusion_unknown_excluded_and_empty_positive_not_perfect (tests.test_validation_closure.ValidationClosureTests.test_confusion_unknown_excluded_and_empty_positive_not_perfect) ... ok
+test_exact_drain_buffer_area_and_no_reference_unknown (tests.test_validation_closure.ValidationClosureTests.test_exact_drain_buffer_area_and_no_reference_unknown) ... ok
+test_external_test_window_is_fixed_not_label_selected (tests.test_validation_closure.ValidationClosureTests.test_external_test_window_is_fixed_not_label_selected) ... ok
+test_missing_control_and_unknown_cannot_pass (tests.test_validation_closure.ValidationClosureTests.test_missing_control_and_unknown_cannot_pass) ... ok
+test_multipart_drain_and_polygon_hole_preserved (tests.test_validation_closure.ValidationClosureTests.test_multipart_drain_and_polygon_hole_preserved) ... ok
+test_only_relative_alignment_claim_with_sufficient_support (tests.test_validation_closure.ValidationClosureTests.test_only_relative_alignment_claim_with_sufficient_support) ... ok
+test_postfit_success_does_not_pass_uncorrected_alignment (tests.test_validation_closure.ValidationClosureTests.test_postfit_success_does_not_pass_uncorrected_alignment) ... ok
+
+----------------------------------------------------------------------
+Ran 8 tests in 0.022s
+
+OK

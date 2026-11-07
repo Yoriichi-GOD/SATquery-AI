@@ -1,0 +1,32 @@
+{
+  "browser": "NOTRUN_RESEARCHCLIONLY",
+  "data_access": {
+    "delhi_drainage": "CLOSED_NATIVE_GEOMETRY_ACQUIRED;epoch/fieldverification/completenessnotclosed",
+    "kedarnath": "QUALITYSEARCH_EXECUTED_NOELIGIBLEREPLACEMENT",
+    "nepal_finer_terrain": "CLOSED_NATIVE2mPOSTEVENTCROP_ACQUIRED;89.98%qualitycoveragefails95%fullcasegate"
+  },
+  "decision": "Do not deploy blanket slope filter as improvement; freeze futuremethodbeforeunopenedreserve; obtaincasecompatiblelabels/controlratherthaninventaccuracy",
+  "evaluation": {
+    "case_exposure": "NOTASSESSED:compatiblepositive/negativeindependenttargetsabsent",
+    "four_event_reserve": "DECLARED_UNOPENED_NOTEXECUTED",
+    "registration": "ABSOLUTE_AND_SAR_OPTICAL_NOTVALIDATED",
+    "six_event_water_component": "EXECUTED_ON_PREDICTION_SEALED_NEWLOCALSUPPORT;nowconsumed",
+    "transfer_and_novelty": "NOTPROVED"
+  },
+  "modeldownloads": false,
+  "pushed": false,
+  "status": "VALIDATION_PREREQUISITES_ADVANCED_NOT_SCIENTIFIC_PROGRAM_COMPLETE",
+  "threshold_tuning": false,
+  "training": false,
+  "verified": {
+    "credential_pattern_scan_text_files": 63,
+    "external_confusion_rows_recomputed": 30,
+    "floodlab_tests": 86,
+    "local_report_links_verified": 13,
+    "main_tests": 312,
+    "prior_campaign_files_unchanged": 78,
+    "private_source_files_verified": 189,
+    "saved_nepal_candidate_counts_preserved": true,
+    "scope": "Integrity/arithmetics/links; not field or scientific accuracy validation"
+  }
+}

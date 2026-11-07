@@ -1,0 +1,107 @@
+{
+  "bytes": 1234340,
+  "full_remote_checksum": "NOT_ASSERTED",
+  "grid": {
+    "cell_area_m2": 100.0,
+    "cell_size_m": [
+      10.0,
+      10.0
+    ],
+    "crs": "EPSG:32633",
+    "shape": [
+      512,
+      512
+    ],
+    "transform": [
+      10.0,
+      0.0,
+      280840.0,
+      0.0,
+      -10.0,
+      4198550.0
+    ]
+  },
+  "license": "CC-BY-NC4.0",
+  "native_block_shapes": [
+    [
+      512,
+      512
+    ],
+    [
+      512,
+      512
+    ],
+    [
+      512,
+      512
+    ],
+    [
+      512,
+      512
+    ],
+    [
+      512,
+      512
+    ],
+    [
+      512,
+      512
+    ],
+    [
+      512,
+      512
+    ],
+    [
+      512,
+      512
+    ],
+    [
+      512,
+      512
+    ],
+    [
+      512,
+      512
+    ],
+    [
+      512,
+      512
+    ],
+    [
+      512,
+      512
+    ],
+    [
+      512,
+      512
+    ],
+    [
+      512,
+      512
+    ],
+    [
+      512,
+      512
+    ]
+  ],
+  "reference_product": "WorldFloodsv2@1f3faa2989e69930ac31d5c0a79fd224461123f8",
+  "resampling": "None;nativewindow",
+  "selected_bands": [
+    3,
+    8,
+    12
+  ],
+  "sha256": "355da09573d0713e2b9e39a41b2436cbd85c3c7c318fd19da265d913694273dd",
+  "source_bands": 15,
+  "source_shape": [
+    1268,
+    1535
+  ],
+  "source_url": "https://huggingface.co/datasets/isp-uv-es/WorldFloodsv2/resolve/1f3faa2989e69930ac31d5c0a79fd224461123f8/test/S2/EMSR333_01RATTALORO_DEL_MONIT01_v1.tif",
+  "window": [
+    511,
+    378,
+    512,
+    512
+  ]
+}

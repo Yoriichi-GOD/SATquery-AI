@@ -1,0 +1,38 @@
+[
+  {
+    "id": "LC08_L2SP_145039_20130911_02_T1",
+    "tier1": true,
+    "full_covers": true,
+    "fraction_of_geographic_rectangle": 1.0
+  },
+  {
+    "id": "LC08_L2SP_145039_20130826_02_T1",
+    "tier1": true,
+    "full_covers": true,
+    "fraction_of_geographic_rectangle": 1.0
+  },
+  {
+    "id": "LC08_L2SP_145039_20130810_02_T1",
+    "tier1": true,
+    "full_covers": false,
+    "fraction_of_geographic_rectangle": 0.9999889925326193
+  },
+  {
+    "id": "LC08_L2SP_145039_20130725_02_T2",
+    "tier1": false,
+    "full_covers": false,
+    "fraction_of_geographic_rectangle": 0.9927848747194169
+  },
+  {
+    "id": "LC08_L2SP_145039_20130709_02_T1",
+    "tier1": true,
+    "full_covers": false,
+    "fraction_of_geographic_rectangle": 0.9985850428648891
+  },
+  {
+    "id": "LC08_L2SP_145039_20130623_02_T1",
+    "tier1": true,
+    "full_covers": false,
+    "fraction_of_geographic_rectangle": 0.9831360836340636
+  }
+]

@@ -1,0 +1,8 @@
+{
+  "credential_pattern_scan_text_files": 63,
+  "local_report_links_verified": 13,
+  "prior_campaign_files_unchanged": 78,
+  "private_source_files_verified": 189,
+  "saved_nepal_candidate_counts_preserved": true,
+  "scope": "Integrity/arithmetics/links; not field or scientific accuracy validation"
+}

@@ -1,0 +1,17 @@
+{
+  "files": {
+    "dem-30m.tif": "6cad45a1c2a086363aa4afb68b04630011a06a73cbb9e1a9bf31cabd132acf82",
+    "dem-5m.tif": "2162e1f5e33b6d063389dbe74013fa24582ee3a91af8c50408428197628ac85c",
+    "elevation.source.json": "76a8b26248169c915938ce38dec0c8356edccd0dfa6562e10b7b604d304a905d",
+    "elevation.tif": "5cae245c07452ff515a64464eaceaa8417eda4b557bc4c2508b31e935fb29d9c",
+    "hand-30m.tif": "6aa7b23b5e0d73c6ed2c9c8315fbe32022c2e4a6981a55596de1a5e49e01c2f0",
+    "hand-5m.tif": "2f7160e62f25581113961c9d4359dc0bd5bdbd9ed96a7ca0b8c474ac646da4ce",
+    "input_count.source.json": "38f72a3c94de73639afbf82150cd668763fdae20534dacf7dcab073ae1a31559",
+    "input_count.tif": "986d7cdd1fc30f89210db987a2a85ef8b752cd9a9cb30732d861374e18bd3e2d",
+    "protocol.json": "557af9942a3299737bc296f60aa88509647a521f2d181b4dad36089609392008",
+    "quality-filtered-native.tif": "6e54fe820abfa51699d87facbf6372c7eb04ad9434a28465ba8fffdd27d2296e",
+    "slope-30m.tif": "f4386d1ca64ba8684e488c03b431df4b0ecd8659339e5d639fd570633525b3bf",
+    "slope-5m.tif": "d8a6f312c6d04b87e405a5e7ac16f8facf63d4e510683e9e8fd78ca8dd42ee4b",
+    "summary.json": "cdb00bfa11f03428b5125512110a02d20cc4968157d0e8559307040ce3f802b7"
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "files": {
+    "dem-30m.tif": "b6ceb9c38fc8d1260d5e791f4836ed820ac67a575f250ba9cc3ce64a8b9bc7c1",
+    "dem-90m.tif": "6517d8304a89765197ce42b2719a0b0a8360a2d970238899f63e294eccf3b1a5",
+    "drainage-context.pdf": "da273bdf90b24b2b4c90cd1a9593c6956156a625d93a5079fda6d0269142573a",
+    "drainage-context.png": "0727a1a47a2ac4743877c0b320fb5ccf6d9d322c97413c53b1491da7cac4b40d",
+    "hand-30m.tif": "e930dd3c66bab5179e9e8a277a3ba1f4aaa42a5d2e798f8b763efbf0887f88b5",
+    "hand-90m.tif": "d1f6f1f4689876c7c81bf64bf42b1da633b709cd9b15095f10832149d3d34361",
+    "protocol.json": "5afe57b32c5bf087968ad7eac032c35a59fe22627a316787cc450379b38ddfcc",
+    "slope-30m.tif": "546e857d8d43c36f7acfe992e3dae7b253c0f058cb30123babc83ddb0413d02d",
+    "slope-90m.tif": "e06825dac93a1a71e4e469916ec7471572c6cd6a4919d88174245ee75d0c1665",
+    "summary.json": "e0bf0df1455cfd5fa816d7f7a2f617651fae48db801ba42eb78ad94c7ad4dd91"
+  }
+}

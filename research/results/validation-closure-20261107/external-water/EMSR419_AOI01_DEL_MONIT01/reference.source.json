@@ -1,0 +1,54 @@
+{
+  "bytes": 6861,
+  "full_remote_checksum": "NOT_ASSERTED",
+  "grid": {
+    "cell_area_m2": 100.0,
+    "cell_size_m": [
+      10.0,
+      10.0
+    ],
+    "crs": "EPSG:32640",
+    "shape": [
+      512,
+      512
+    ],
+    "transform": [
+      10.0,
+      0.0,
+      579780.0,
+      0.0,
+      -10.0,
+      2847670.0
+    ]
+  },
+  "license": "CC-BY-NC4.0",
+  "native_block_shapes": [
+    [
+      512,
+      512
+    ],
+    [
+      512,
+      512
+    ]
+  ],
+  "reference_product": "WorldFloodsv2@1f3faa2989e69930ac31d5c0a79fd224461123f8",
+  "resampling": "None;nativewindow",
+  "selected_bands": [
+    1,
+    2
+  ],
+  "sha256": "1eb60c6cb6422fde8354f64dc62ecebc14de8fc2050e27c2f9c9985b0e9c2c24",
+  "source_bands": 2,
+  "source_shape": [
+    2278,
+    2192
+  ],
+  "source_url": "https://huggingface.co/datasets/isp-uv-es/WorldFloodsv2/resolve/1f3faa2989e69930ac31d5c0a79fd224461123f8/test/gt/EMSR419_AOI01_DEL_MONIT01.tif",
+  "window": [
+    840,
+    883,
+    512,
+    512
+  ]
+}

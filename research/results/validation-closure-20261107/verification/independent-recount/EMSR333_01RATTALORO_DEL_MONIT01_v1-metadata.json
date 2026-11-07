@@ -1,0 +1,101 @@
+{
+  "abstract": "NaN",
+  "aoi_code": "01RATTALORO",
+  "area_of_interest_file": "EMSR333_01RATTALORO_DEL_MONIT01_v1_area_of_interest_a.shp",
+  "area_of_interest_polygon": {
+    "coordinates": [
+      [
+        [
+          12.62242823500003,
+          37.830368005000025
+        ],
+        [
+          12.45174994000007,
+          37.830368005000025
+        ],
+        [
+          12.45174994000007,
+          37.94090656900005
+        ],
+        [
+          12.62242823500003,
+          37.94090656900005
+        ],
+        [
+          12.62242823500003,
+          37.830368005000025
+        ]
+      ]
+    ],
+    "type": "Polygon"
+  },
+  "bounding box": {
+    "east": 12.614352072000031,
+    "north": 37.92774556000006,
+    "south": 37.856536292000044,
+    "west": 12.490849766000053
+  },
+  "bounds": [
+    275730.0,
+    4189650.0,
+    291080.0,
+    4202330.0
+  ],
+  "cloud_probability": 0.2242647110525248,
+  "cloudprob_image_path": "2018-11-04.geojson",
+  "country": "NaN",
+  "crs": "EPSG:32633",
+  "date_ems_code": "2018-11-02T00:00:00+00:00",
+  "ems_code": "EMSR333",
+  "encoding_values": [
+    {
+      "0": "invalid",
+      "1": "clear",
+      "2": "cloud"
+    },
+    {
+      "0": "invalid",
+      "1": "land",
+      "2": "water"
+    }
+  ],
+  "event id": "EMSR333_01RATTALORO_DEL_MONIT01_v1",
+  "event type": "Flash flood",
+  "gtversion": "v2",
+  "hydrology_file": "EMSR333_01RATTALORO_DEL_MONIT01_v1_hydrography_a.shp",
+  "hydrology_file_l": "EMSR333_01RATTALORO_DEL_MONIT01_v1_hydrography_l.shp",
+  "layer name": "EMSR333_01RATTALORO_DEL_MONIT01_v1_observed_event_a",
+  "method clouds": "s2cloudless",
+  "names2file": "2018-11-04",
+  "observed_event_file": "EMSR333_01RATTALORO_DEL_MONIT01_v1_observed_event_a.shp",
+  "permanent_water_image_path": "2018.tif",
+  "pixels clouds S2": 129140,
+  "pixels flood water S2": 11890,
+  "pixels hydro water S2": 10983,
+  "pixels invalid S2": 101016,
+  "pixels land S2": 1491671,
+  "pixels permanent water S2": 233790,
+  "pixels water S2": 224553,
+  "purpose": "NaN",
+  "reference system": "epsg:4326",
+  "s2_date": "2018-11-04T09:52:33.150000+00:00",
+  "s2_image_path": "2018-11-04.tif",
+  "satellite": "Sentinel-2",
+  "satellite date": "2018-11-04T09:51:59+00:00",
+  "satellite_pre_event": "Sentinel-2",
+  "shape": [
+    1268,
+    1535
+  ],
+  "source": "CopernicusEMS",
+  "timestamp_pre_event": "2018-10-30T09:51:21+00:00",
+  "transform": [
+    10.0,
+    0.0,
+    275730.0,
+    0.0,
+    -10.0,
+    4202330.0
+  ],
+  "valids": 1.0
+}

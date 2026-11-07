@@ -1,0 +1,40 @@
+........................................................................ [ 83%]
+..............                                                           [100%]
+=============================== warnings summary ===============================
+tests/test_evaluate.py: 1 warning
+tests/test_pipeline.py: 6 warnings
+tests/test_response_store.py: 5 warnings
+  /root/satquery-flood-lab/venv/lib/python3.11/site-packages/rasterio/transform.py:178: PendingDeprecationWarning: Use `@` matmul instead of `*` mul operator for matrix multiplication
+    return Affine.translation(west, north) * Affine.scale(xsize, -ysize)
+
+tests/test_evaluate.py: 3 warnings
+tests/test_pipeline.py: 9 warnings
+  /mnt/c/Users/nrgen/.codex/.chatgpt-projects/g-p-6ad52225bccc8191b1ed5af2ed6b0646/research-campaign-20261107/repo/components/floodlab/floodlab/pipeline.py:117: DeprecationWarning: The 'shapely.ops.transform()' function is deprecated. Use 'shapely.transform()' or 'shapely.transform_coordseq()' instead. See https://shapely.readthedocs.io/en/latest/manual.html#shapely.ops.transform for more details.
+    layers.append(dict(f,geometry=mapping(transform_geometry(reproject,shape(f['geometry'])))))
+
+tests/test_evaluate.py::test_freeze_rejects_mutation
+tests/test_pipeline.py::test_end_to_end_exports
+tests/test_pipeline.py::test_repeat_is_reproducible
+tests/test_pipeline.py::test_repeat_is_reproducible
+  /mnt/c/Users/nrgen/.codex/.chatgpt-projects/g-p-6ad52225bccc8191b1ed5af2ed6b0646/research-campaign-20261107/repo/components/floodlab/floodlab/pipeline.py:118: DeprecationWarning: The 'shapely.ops.transform()' function is deprecated. Use 'shapely.transform()' or 'shapely.transform_coordseq()' instead. See https://shapely.readthedocs.io/en/latest/manual.html#shapely.ops.transform for more details.
+    layers.append({'id':'new-water','type':'Feature','properties':{'kind':'new-water-candidate'},'geometry':mapping(transform_geometry(reproject,flood))})
+
+tests/test_evaluate.py::test_freeze_rejects_mutation
+tests/test_pipeline.py::test_end_to_end_exports
+tests/test_pipeline.py::test_repeat_is_reproducible
+tests/test_pipeline.py::test_repeat_is_reproducible
+  /root/satquery-flood-lab/venv/lib/python3.11/site-packages/rasterio/__init__.py:366: NotGeoreferencedWarning: Dataset has no geotransform, gcps, or rpcs. The identity matrix will be returned.
+    dataset = writer(
+
+tests/test_historical.py::test_preserves_original_nodes
+tests/test_historical.py::test_explicit_vehicle_overrides_general_access
+tests/test_historical.py::test_roundabout_defaults_oneway
+  /mnt/c/Users/nrgen/.codex/.chatgpt-projects/g-p-6ad52225bccc8191b1ed5af2ed6b0646/research-campaign-20261107/repo/components/floodlab/floodlab/historical.py:20: DeprecationWarning: The 'shapely.ops.transform()' function is deprecated. Use 'shapely.transform()' or 'shapely.transform_coordseq()' instead. See https://shapely.readthedocs.io/en/latest/manual.html#shapely.ops.transform for more details.
+    return {'type':'Feature','id':f"way/{row['osm_id']}",'geometry':mapping(transform(project,geom)),'properties':{'kind':'bridge' if tags.get('bridge') not in (None,'no') else 'road','node_ids':nodes,'oneway':direction,'osm_version':row['version'],'tags':tags}},None
+
+tests/test_pipeline.py::test_grid_mismatch_rejected
+  /mnt/c/Users/nrgen/.codex/.chatgpt-projects/g-p-6ad52225bccc8191b1ed5af2ed6b0646/research-campaign-20261107/repo/components/floodlab/tests/test_pipeline.py:45: PendingDeprecationWarning: Use `@` matmul instead of `*` mul operator for matrix multiplication
+    with rasterio.open(p,'r+') as ds:ds.transform=ds.transform*rasterio.Affine.translation(1,0)
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+86 passed, 36 warnings in 2.80s

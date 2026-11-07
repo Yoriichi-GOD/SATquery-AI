@@ -1,0 +1,128 @@
+[
+  {
+    "id": "EMSR273_01GRILE_DEL_MONIT04_v2",
+    "independence_limit": "Curatedbenchmarkcombinesflood/hydrology/JRC;neitherfieldtruthnorcaseexposurelabels",
+    "optical_date": "2018-03-28T09:30:32.460000+00:00",
+    "optical_minus_reference_days": 5.715607175925927,
+    "reference_encoding": [
+      {
+        "0": "invalid",
+        "1": "clear",
+        "2": "cloud"
+      },
+      {
+        "0": "invalid",
+        "1": "land",
+        "2": "water"
+      }
+    ],
+    "reference_source": "CopernicusEMS",
+    "reference_source_date": "2018-03-22T16:20:04+00:00",
+    "source_sensor": "COSMO-SkyMed"
+  },
+  {
+    "id": "EMSR286_08ITUANGONORTH_DEL_MONIT02_v1",
+    "independence_limit": "Curatedbenchmarkcombinesflood/hydrology/JRC;neitherfieldtruthnorcaseexposurelabels",
+    "optical_date": "2018-05-22T15:36:21.460000+00:00",
+    "optical_minus_reference_days": 5.324074074074074e-06,
+    "reference_encoding": [
+      {
+        "0": "invalid",
+        "1": "clear",
+        "2": "cloud"
+      },
+      {
+        "0": "invalid",
+        "1": "land",
+        "2": "water"
+      }
+    ],
+    "reference_source": "CopernicusEMS",
+    "reference_source_date": "2018-05-22T15:36:21+00:00",
+    "source_sensor": "Sentinel-2"
+  },
+  {
+    "id": "EMSR333_01RATTALORO_DEL_MONIT01_v1",
+    "independence_limit": "Curatedbenchmarkcombinesflood/hydrology/JRC;neitherfieldtruthnorcaseexposurelabels",
+    "optical_date": "2018-11-04T09:52:33.150000+00:00",
+    "optical_minus_reference_days": 0.0003952546296296296,
+    "reference_encoding": [
+      {
+        "0": "invalid",
+        "1": "clear",
+        "2": "cloud"
+      },
+      {
+        "0": "invalid",
+        "1": "land",
+        "2": "water"
+      }
+    ],
+    "reference_source": "CopernicusEMS",
+    "reference_source_date": "2018-11-04T09:51:59+00:00",
+    "source_sensor": "Sentinel-2"
+  },
+  {
+    "id": "EMSR342_06NORTHNORMANTON_DEL_v1",
+    "independence_limit": "Curatedbenchmarkcombinesflood/hydrology/JRC;neitherfieldtruthnorcaseexposurelabels",
+    "optical_date": "2019-02-09T00:51:56.500000+00:00",
+    "optical_minus_reference_days": 0.003431712962962963,
+    "reference_encoding": [
+      {
+        "0": "invalid",
+        "1": "clear",
+        "2": "cloud"
+      },
+      {
+        "0": "invalid",
+        "1": "land",
+        "2": "water"
+      }
+    ],
+    "reference_source": "CopernicusEMS",
+    "reference_source_date": "2019-02-09T00:47:00+00:00",
+    "source_sensor": "Sentinel-2"
+  },
+  {
+    "id": "EMSR347_06MWANZA_DEL_v1",
+    "independence_limit": "Curatedbenchmarkcombinesflood/hydrology/JRC;neitherfieldtruthnorcaseexposurelabels",
+    "optical_date": "2019-03-10T08:04:11.500000+00:00",
+    "optical_minus_reference_days": 0.018883101851851852,
+    "reference_encoding": [
+      {
+        "0": "invalid",
+        "1": "clear",
+        "2": "cloud"
+      },
+      {
+        "0": "invalid",
+        "1": "land",
+        "2": "water"
+      }
+    ],
+    "reference_source": "CopernicusEMS",
+    "reference_source_date": "2019-03-10T07:37:00+00:00",
+    "source_sensor": "Sentinel-2"
+  },
+  {
+    "id": "EMSR419_AOI01_DEL_MONIT01",
+    "independence_limit": "Curatedbenchmarkcombinesflood/hydrology/JRC;neitherfieldtruthnorcaseexposurelabels",
+    "optical_date": "2020-01-16T06:52:18.251000+00:00",
+    "optical_minus_reference_days": 3.01340568287037,
+    "reference_encoding": [
+      {
+        "0": "invalid",
+        "1": "clear",
+        "2": "cloud"
+      },
+      {
+        "0": "invalid",
+        "1": "land",
+        "2": "water"
+      }
+    ],
+    "reference_source": "CopernicusEMS",
+    "reference_source_date": "2020-01-13T06:33:00+00:00",
+    "source_sensor": "Landsat-8"
+  }
+]

@@ -1,0 +1,101 @@
+{
+  "abstract": "NaN",
+  "aoi_code": "06NORTHNORMANTON",
+  "area_of_interest_file": "EMSR342_06NORTHNORMANTON_DEL_v1_area_of_interest_a.shp",
+  "area_of_interest_polygon": {
+    "coordinates": [
+      [
+        [
+          141.1805037050001,
+          -17.959281018999945
+        ],
+        [
+          140.6706828130001,
+          -17.959281018999945
+        ],
+        [
+          140.6765657950001,
+          -17.443931790999955
+        ],
+        [
+          141.1781506530001,
+          -17.441609638999978
+        ],
+        [
+          141.1805037050001,
+          -17.959281018999945
+        ]
+      ]
+    ],
+    "type": "Polygon"
+  },
+  "bounding box": {
+    "east": 141.1784264160001,
+    "north": -17.441857605999928,
+    "south": -17.959281018999945,
+    "west": 140.67172473900007
+  },
+  "bounds": [
+    465120.0,
+    8014280.0,
+    519120.0,
+    8071590.0
+  ],
+  "cloud_probability": 0.3270845938102812,
+  "cloudprob_image_path": "None",
+  "country": "NaN",
+  "crs": "EPSG:32754",
+  "date_ems_code": "2019-01-31T00:00:00+00:00",
+  "ems_code": "EMSR342",
+  "encoding_values": [
+    {
+      "0": "invalid",
+      "1": "clear",
+      "2": "cloud"
+    },
+    {
+      "0": "invalid",
+      "1": "land",
+      "2": "water"
+    }
+  ],
+  "event id": "EMSR342_06NORTHNORMANTON_DEL_v1",
+  "event type": "Flash flood",
+  "gtversion": "v2",
+  "hydrology_file": "EMSR342_06NORTHNORMANTON_DEL_v1_hydrography_a.shp",
+  "hydrology_file_l": "EMSR342_06NORTHNORMANTON_DEL_v1_hydrography_l.shp",
+  "layer name": "EMSR342_06NORTHNORMANTON_DEL_v1_observed_event_a",
+  "method clouds": "s2cloudless",
+  "names2file": "2019-02-09",
+  "observed_event_file": "EMSR342_06NORTHNORMANTON_DEL_v1_observed_event_a.shp",
+  "permanent_water_image_path": "2019.tif",
+  "pixels clouds S2": 9118464,
+  "pixels flood water S2": 11097799,
+  "pixels hydro water S2": 74025,
+  "pixels invalid S2": 294610,
+  "pixels land S2": 14787293,
+  "pixels permanent water S2": 1340976,
+  "pixels water S2": 10143431,
+  "purpose": "NaN",
+  "reference system": "epsg:4326",
+  "s2_date": "2019-02-09T00:51:56.500000+00:00",
+  "s2_image_path": "2019-02-09.tif",
+  "satellite": "Sentinel-2",
+  "satellite date": "2019-02-09T00:47:00+00:00",
+  "satellite_pre_event": "Sentinel-2",
+  "shape": [
+    5731,
+    5400
+  ],
+  "source": "CopernicusEMS",
+  "timestamp_pre_event": "2019-01-05T00:47:00+00:00",
+  "transform": [
+    10.0,
+    0.0,
+    465120.0,
+    0.0,
+    -10.0,
+    8071590.0
+  ],
+  "valids": 1.0
+}

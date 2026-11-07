@@ -1,0 +1,3619 @@
+{
+  "frozen_run_hashes_verified": 15,
+  "infrastructure_source": "RetainedhistoricalOSM;notcompletefieldinventory",
+  "interpretation": "Coverageonly;posteventterrainandunverifiedalignmentprecludevalidatedexposureclaim",
+  "layers": {
+    "debris": {
+      "candidate_area_ha": 10.41,
+      "candidate_area_with_terrain_quality_ha": 10.38,
+      "candidate_pixels": 1041,
+      "candidate_pixels_with_terrain_quality": 1038,
+      "observation_valid_pixels": 30239,
+      "observation_valid_pixels_with_terrain_quality": 29843,
+      "sampling": "Native2m quality mask sampled nearest at frozen10m candidate-cell centres;notfractionalcellcoverage",
+      "source_sha256": "d3f1849515bf76874a04988fc3d93fba8f21ee3b3f63bdae5f3ee5e0042e69d3"
+    },
+    "water": {
+      "candidate_area_ha": 9.56,
+      "candidate_area_with_terrain_quality_ha": 7.83,
+      "candidate_pixels": 956,
+      "candidate_pixels_with_terrain_quality": 783,
+      "observation_valid_pixels": 99858,
+      "observation_valid_pixels_with_terrain_quality": 90682,
+      "sampling": "Native2m quality mask sampled nearest at frozen10m candidate-cell centres;notfractionalcellcoverage",
+      "source_sha256": "b49b5b5978cd3606f2138306fa8bb687d65c268285f8816a660bbf0444d1ffa4"
+    }
+  },
+  "mapped_receptors": 597,
+  "no_source_candidates_modified": true,
+  "receptor_terrain_support": {
+    "FULL_NATIVE_QUALITY_FOOTPRINT": 576,
+    "PARTIAL_NATIVE_QUALITY_FOOTPRINT": 21
+  },
+  "rows": [
+    {
+      "id": "way/84792450",
+      "kind": "road",
+      "status": "FULL_NATIVE_QUALITY_FOOTPRINT",
+      "terrain_quality_fraction": 1.0
+    },
+    {
+      "id": "way/341557602",
+      "kind": "road",
+      "status": "PARTIAL_NATIVE_QUALITY_FOOTPRINT",
+      "terrain_quality_fraction": 0.3218553924630866
+    },
+    {
+      "id": "way/851001718",
+      "kind": "building",
+      "status": "FULL_NATIVE_QUALITY_FOOTPRINT",
+      "terrain_quality_fraction": 1.0
+    },
+    {
+      "id": "way/853760524",
+      "kind": "building",
+      "status": "FULL_NATIVE_QUALITY_FOOTPRINT",
+      "terrain_quality_fraction": 1.0
+    },
+    {
+      "id": "way/854113228",
+      "kind": "building",
+      "status": "FULL_NATIVE_QUALITY_FOOTPRINT",
+      "terrain_quality_fraction": 1.0
+    },
+    {
+      "id": "way/854116031",
+      "kind": "building",
+      "status": "FULL_NATIVE_QUALITY_FOOTPRINT",
+      "terrain_quality_fraction": 1.0
+    },
+    {
+      "id": "way/854113192",
+      "kind": "building",
+      "status": "FULL_NATIVE_QUALITY_FOOTPRINT",
+      "terrain_quality_fraction": 0.9999999999999999
+    },
+    {
+      "id": "way/854385666",
+      "kind": "building",
+      "status": "FULL_NATIVE_QUALITY_FOOTPRINT",
+      "terrain_quality_fraction": 0.9999999999999999
+    },
+    {
+      "id": "way/854113204",
+      "kind": "building",
+      "status": "FULL_NATIVE_QUALITY_FOOTPRINT",
+      "terrain_quality_fraction": 0.9999999999999999
+    },
+    {
+      "id": "way/1132149404",
+      "kind": "building",
+      "status": "FULL_NATIVE_QUALITY_FOOTPRINT",
+      "terrain_quality_fraction": 1.0
+    },
+    {
+      "id": "way/769001602",
+      "kind": "building",
+      "status": "FULL_NATIVE_QUALITY_FOOTPRINT",
+      "terrain_quality_fraction": 1.0
+    },
+    {
+      "id": "way/854116028",
+      "kind": "building",
+      "status": "FULL_NATIVE_QUALITY_FOOTPRINT",
+      "terrain_quality_fraction": 0.9999999999999999
+    },
+    {
+      "id": "way/1132149393",
+      "kind": "building",
+      "status": "FULL_NATIVE_QUALITY_FOOTPRINT",
+      "terrain_quality_fraction": 1.0
+    },
+    {
+      "id": "way/851013769",
+      "kind": "building",
+      "status": "FULL_NATIVE_QUALITY_FOOTPRINT",
+      "terrain_quality_fraction": 1.0
+    },
+    {
+      "id": "way/851013786",
+      "kind": "building",
+      "status": "FULL_NATIVE_QUALITY_FOOTPRINT",
+      "terrain_quality_fraction": 1.0
+    },
+    {
+      "id": "way/851013800",
+      "kind": "building",
+      "status": "FULL_NATIVE_QUALITY_FOOTPRINT",
+      "terrain_quality_fraction": 0.9999999999999999
+    },
+    {
+      "id": "way/769001595",
+      "kind": "building",
+      "status": "FULL_NATIVE_QUALITY_FOOTPRINT",
+      "terrain_quality_fraction": 0.9999999999999998
+    },
+    {
+      "id": "way/784777269",
+      "kind": "road",
+      "status": "FULL_NATIVE_QUALITY_FOOTPRINT",
+      "terrain_quality_fraction": 1.0
+    },
+    {
+      "id": "way/84566285",
+      "kind": "bridge",
+      "status": "FULL_NATIVE_QUALITY_FOOTPRINT",
+      "terrain_quality_fraction": 1.0
+    },
+    {
+      "id": "way/1034310841",
+      "kind": "road",
+      "status": "FULL_NATIVE_QUALITY_FOOTPRINT",
+      "terrain_quality_fraction": 1.0
+    },
+    {
+      "id": "way/216048669",
+      "kind": "road",
+      "status": "PARTIAL_NATIVE_QUALITY_FOOTPRINT",
+      "terrain_quality_fraction": 0.801324426345804
+    },
+    {
+      "id": "way/344279093",
+      "kind": "building",
+      "status": "FULL_NATIVE_QUALITY_FOOTPRINT",
+      "terrain_quality_fraction": 1.0
+    },
+    {
+      "id": "way/507258017",
+      "kind": "building",
+      "status": "FULL_NATIVE_QUALITY_FOOTPRINT",
+      "terrain_quality_fraction": 0.9999999999999999
+    },
+    {
+      "id": "way/769001612",
+      "kind": "building",
+      "status": "FULL_NATIVE_QUALITY_FOOTPRINT",
+      "terrain_quality_fraction": 1.0
+    },
+    {
+      "id": "way/850782570",
+      "kind": "building",
+      "status": "FULL_NATIVE_QUALITY_FOOTPRINT",
+      "terrain_quality_fraction": 1.0
+    },
+    {
+      "id": "way/854115553",
+      "kind": "building",
+      "status": "FULL_NATIVE_QUALITY_FOOTPRINT",
+      "terrain_quality_fraction": 1.0
+    },
+    {
+      "id": "way/853760517",
+      "kind": "building",
+      "status": "FULL_NATIVE_QUALITY_FOOTPRINT",
+      "terrain_quality_fraction": 1.0
+    },
+    {
+      "id": "way/853760518",
+      "kind": "building",
+      "status": "FULL_NATIVE_QUALITY_FOOTPRINT",
+      "terrain_quality_fraction": 1.0
+    },
+    {
+      "id": "way/854385625",
+      "kind": "building",
+      "status": "FULL_NATIVE_QUALITY_FOOTPRINT",
+      "terrain_quality_fraction": 1.0
+    },
+    {
+      "id": "way/854385640",
+      "kind": "building",
+      "status": "FULL_NATIVE_QUALITY_FOOTPRINT",
+      "terrain_quality_fraction": 1.0
+    },
+    {
+      "id": "way/854385653",
+      "kind": "building",
+      "status": "FULL_NATIVE_QUALITY_FOOTPRINT",
+      "terrain_quality_fraction": 1.0
+    },
+    {
+      "id": "way/854115524",
+      "kind": "building",
+      "status": "FULL_NATIVE_QUALITY_FOOTPRINT",
+      "terrain_quality_fraction": 1.0
+    },
+    {
+      "id": "way/760438576",
+      "kind": "building",
+      "status": "FULL_NATIVE_QUALITY_FOOTPRINT",
+      "terrain_quality_fraction": 1.0
+    },
+    {
+      "id": "way/934778587",
+      "kind": "building",
+      "status": "FULL_NATIVE_QUALITY_FOOTPRINT",
+      "terrain_quality_fraction": 1.0
+    },
+    {
+      "id": "way/1132149388",
+      "kind": "building",
+      "status": "FULL_NATIVE_QUALITY_FOOTPRINT",
+      "terrain_quality_fraction": 1.0
+    },
+    {
+      "id": "way/1132149407",
+      "kind": "building",
+      "status": "FULL_NATIVE_QUALITY_FOOTPRINT",
+      "terrain_quality_fraction": 1.0
+    },
+    {
+      "id": "way/854115535",
+      "kind": "building",
+      "status": "FULL_NATIVE_QUALITY_FOOTPRINT",
+      "terrain_quality_fraction": 1.0
+    },
+    {
+      "id": "way/854385655",
+      "kind": "building",
+      "status": "FULL_NATIVE_QUALITY_FOOTPRINT",
+      "terrain_quality_fraction": 1.0
+    },
+    {
+      "id": "way/854385679",
+      "kind": "building",
+      "status": "FULL_NATIVE_QUALITY_FOOTPRINT",
+      "terrain_quality_fraction": 1.0
+    },
+    {
+      "id": "way/851013781",
+      "kind": "building",
+      "status": "FULL_NATIVE_QUALITY_FOOTPRINT",
+      "terrain_quality_fraction": 1.0
+    },
+    {
+      "id": "way/851013785",
+      "kind": "building",
+      "status": "FULL_NATIVE_QUALITY_FOOTPRINT",
+      "terrain_quality_fraction": 1.0
+    },
+    {
+      "id": "way/851013792",
+      "kind": "building",
+      "status": "FULL_NATIVE_QUALITY_FOOTPRINT",
+      "terrain_quality_fraction": 1.0
+    },
+    {
+      "id": "way/344279094",
+      "kind": "building",
+      "status": "FULL_NATIVE_QUALITY_FOOTPRINT",
+      "terrain_quality_fraction": 0.9999999999999998
+    },
+    {
+      "id": "way/854115472",
+      "kind": "building",
+      "status": "FULL_NATIVE_QUALITY_FOOTPRINT",
+      "terrain_quality_fraction": 1.0
+    },
+    {
+      "id": "way/934778611",
+      "kind": "road",
+      "status": "FULL_NATIVE_QUALITY_FOOTPRINT",
+      "terrain_quality_fraction": 1.0
+    },
+    {
+      "id": "way/332122791",
+      "kind": "road",
+      "status": "FULL_NATIVE_QUALITY_FOOTPRINT",
+      "terrain_quality_fraction": 1.0
+    },
+    {
+      "id": "way/343478482",
+      "kind": "road",
+      "status": "PARTIAL_NATIVE_QUALITY_FOOTPRINT",
+      "terrain_quality_fraction": 0.7720089389672532
+    },
+    {
+      "id": "way/341557608",
+      "kind": "bridge",
+      "status": "FULL_NATIVE_QUALITY_FOOTPRINT",
+      "terrain_quality_fraction": 1.0
+    },
+    {
+      "id": "way/886925427",
+      "kind": "road",
+      "status": "PARTIAL_NATIVE_QUALITY_FOOTPRINT",
+      "terrain_quality_fraction": 0.1299242923526738
+    },
+    {
+      "id": "way/848938548",
+      "kind": "road",
+      "status": "PARTIAL_NATIVE_QUALITY_FOOTPRINT",
+      "terrain_quality_fraction": 0.004984056815945936
+    },
+    {
+      "id": "way/1162337476",
+      "kind": "building",
+      "status": "FULL_NATIVE_QUALITY_FOOTPRINT",
+      "terrain_quality_fraction": 1.0
+    },
+    {
+      "id": "way/854115525",
+      "kind": "building",
+      "status": "FULL_NATIVE_QUALITY_FOOTPRINT",
+      "terrain_quality_fraction": 1.0
+    },
+    {
+      "id": "way/854115541",
+      "kind": "building",
+      "status": "FULL_NATIVE_QUALITY_FOOTPRINT",
+      "terrain_quality_fraction": 1.0
+    },
+    {
+      "id": "way/474658594",
+      "kind": "building",
+      "status": "FULL_NATIVE_QUALITY_FOOTPRINT",
+      "terrain_quality_fraction": 1.0
+    },
+    {
+      "id": "way/1132149401",
+      "kind": "building",
+      "status": "FULL_NATIVE_QUALITY_FOOTPRINT",
+      "terrain_quality_fraction": 1.0
+    },
+    {
+      "id": "way/1154989014",
+      "kind": "building",
+      "status": "FULL_NATIVE_QUALITY_FOOTPRINT",
+      "terrain_quality_fraction": 1.0
+    },
+    {
+      "id": "way/341605566",
+      "kind": "building",
+      "status": "FULL_NATIVE_QUALITY_FOOTPRINT",
+      "terrain_quality_fraction": 1.0
+    },
+    {
+      "id": "way/850782563",
+      "kind": "building",
+      "status": "FULL_NATIVE_QUALITY_FOOTPRINT",
+      "terrain_quality_fraction": 1.0
+    },
+    {
+      "id": "way/854115487",
+      "kind": "building",
+      "status": "FULL_NATIVE_QUALITY_FOOTPRINT",
+      "terrain_quality_fraction": 1.0
+    },
+    {
+      "id": "way/138829079",
+      "kind": "road",
+      "status": "PARTIAL_NATIVE_QUALITY_FOOTPRINT",
+      "terrain_quality_fraction": 0.8843884163801695
+    },
+    {
+      "id": "way/643869488",
+      "kind": "road",
+      "status": "FULL_NATIVE_QUALITY_FOOTPRINT",
+      "terrain_quality_fraction": 1.0
+    },
+    {
+      "id": "way/854385619",
+      "kind": "building",
+      "status": "FULL_NATIVE_QUALITY_FOOTPRINT",
+      "terrain_quality_fraction": 1.0
+    },
+    {
+      "id": "way/851001710",
+      "kind": "building",
+      "status": "FULL_NATIVE_QUALITY_FOOTPRINT",
+      "terrain_quality_fraction": 1.0
+    },
+    {
+      "id": "way/851001714",
+      "kind": "building",
+      "status": "FULL_NATIVE_QUALITY_FOOTPRINT",
+      "terrain_quality_fraction": 1.0
+    },
+    {
+      "id": "way/854113194",
+      "kind": "building",
+      "status": "FULL_NATIVE_QUALITY_FOOTPRINT",
+      "terrain_quality_fraction": 1.0
+    },
+    {
+      "id": "way/854113231",
+      "kind": "building",
+      "status": "FULL_NATIVE_QUALITY_FOOTPRINT",
+      "terrain_quality_fraction": 1.0
+    },
+    {
+      "id": "way/854385667",
+      "kind": "building",
+      "status": "FULL_NATIVE_QUALITY_FOOTPRINT",
+      "terrain_quality_fraction": 1.0
+    },
+    {
+      "id": "way/854115562",
+      "kind": "building",
+      "status": "FULL_NATIVE_QUALITY_FOOTPRINT",
+      "terrain_quality_fraction": 1.0
+    },
+    {
+      "id": "way/854116047",
+      "kind": "building",
+      "status": "FULL_NATIVE_QUALITY_FOOTPRINT",
+      "terrain_quality_fraction": 1.0
+    },
+    {
+      "id": "way/769001600",
+      "kind": "building",
+      "status": "FULL_NATIVE_QUALITY_FOOTPRINT",
+      "terrain_quality_fraction": 0.9999999999999998
+    },
+    {
+      "id": "way/854385616",
+      "kind": "building",
+      "status": "FULL_NATIVE_QUALITY_FOOTPRINT",
+      "terrain_quality_fraction": 1.0
+    },
+    {
+      "id": "way/854385618",
+      "kind": "building",
+      "status": "FULL_NATIVE_QUALITY_FOOTPRINT",
+      "terrain_quality_fraction": 1.0
+    },
+    {
+      "id": "way/851001726",
+      "kind": "building",
+      "status": "FULL_NATIVE_QUALITY_FOOTPRINT",
+      "terrain_quality_fraction": 0.9999999999999998
+    },
+    {
+      "id": "way/854113209",
+      "kind": "building",
+      "status": "FULL_NATIVE_QUALITY_FOOTPRINT",
+      "terrain_quality_fraction": 1.0
+    },
+    {
+      "id": "way/854113171",
+      "kind": "building",
+      "status": "FULL_NATIVE_QUALITY_FOOTPRINT",
+      "terrain_quality_fraction": 1.0
+    },
+    {
+      "id": "way/854385659",
+      "kind": "building",
+      "status": "FULL_NATIVE_QUALITY_FOOTPRINT",
+      "terrain_quality_fraction": 1.0
+    },
+    {
+      "id": "way/1132149395",
+      "kind": "building",
+      "status": "FULL_NATIVE_QUALITY_FOOTPRINT",
+      "terrain_quality_fraction": 0.9999999999999998
+    },
+    {
+      "id": "way/854115488",
+      "kind": "building",
+      "status": "FULL_NATIVE_QUALITY_FOOTPRINT",
+      "terrain_quality_fraction": 1.0
+    },
+    {
+      "id": "way/854115796",
+      "kind": "building",
+      "status": "FULL_NATIVE_QUALITY_FOOTPRINT",
+      "terrain_quality_fraction": 1.0
+    },
+    {
+      "id": "way/854115516",
+      "kind": "building",
+      "status": "FULL_NATIVE_QUALITY_FOOTPRINT",
+      "terrain_quality_fraction": 1.0
+    },
+    {
+      "id": "way/854115468",
+      "kind": "building",
+      "status": "FULL_NATIVE_QUALITY_FOOTPRINT",
+      "terrain_quality_fraction": 1.0
+    },
+    {
+      "id": "way/341561873",
+      "kind": "road",
+      "status": "FULL_NATIVE_QUALITY_FOOTPRINT",
+      "terrain_quality_fraction": 1.0
+    },
+    {
+      "id": "way/688345878",
+      "kind": "road",
+      "status": "FULL_NATIVE_QUALITY_FOOTPRINT",
+      "terrain_quality_fraction": 1.0
+    },
+    {
+      "id": "way/83925828",
+      "kind": "road",
+      "status": "PARTIAL_NATIVE_QUALITY_FOOTPRINT",
+      "terrain_quality_fraction": 0.38068099804679434
+    },
+    {
+      "id": "way/886704211",
+      "kind": "bridge",
+      "status": "FULL_NATIVE_QUALITY_FOOTPRINT",
+      "terrain_quality_fraction": 1.0
+    },
+    {
+      "id": "way/1034310842",
+      "kind": "road",
+      "status": "FULL_NATIVE_QUALITY_FOOTPRINT",
+      "terrain_quality_fraction": 1.0
+    },
+    {
+      "id": "way/934964429",
+      "kind": "road",
+      "status": "FULL_NATIVE_QUALITY_FOOTPRINT",
+      "terrain_quality_fraction": 1.0
+    },
+    {
+      "id": "way/850782572",
+      "kind": "building",
+      "status": "FULL_NATIVE_QUALITY_FOOTPRINT",
+      "terrain_quality_fraction": 1.0
+    },
+    {
+      "id": "way/854115545",
+      "kind": "building",
+      "status": "FULL_NATIVE_QUALITY_FOOTPRINT",
+      "terrain_quality_fraction": 1.0
+    },
+    {
+      "id": "way/854115566",
+      "kind": "building",
+      "status": "FULL_NATIVE_QUALITY_FOOTPRINT",
+      "terrain_quality_fraction": 1.0
+    },
+    {
+      "id": "way/854115456",
+      "kind": "building",
+      "status": "FULL_NATIVE_QUALITY_FOOTPRINT",
+      "terrain_quality_fraction": 1.0
+    },
+    {
+      "id": "way/760438589",
+      "kind": "building",
+      "status": "FULL_NATIVE_QUALITY_FOOTPRINT",
+      "terrain_quality_fraction": 1.0
+    },
+    {
+      "id": "way/851001716",
+      "kind": "building",
+      "status": "FULL_NATIVE_QUALITY_FOOTPRINT",
+      "terrain_quality_fraction": 1.0
+    },
+    {
+      "id": "way/854115583",
+      "kind": "building",
+      "status": "FULL_NATIVE_QUALITY_FOOTPRINT",
+      "terrain_quality_fraction": 1.0
+    },
+    {
+      "id": "way/854116032",
+      "kind": "building",
+      "status": "FULL_NATIVE_QUALITY_FOOTPRINT",
+      "terrain_quality_fraction": 0.9999999999999999
+    },
+    {
+      "id": "way/854113169",
+      "kind": "building",
+      "status": "FULL_NATIVE_QUALITY_FOOTPRINT",
+      "terrain_quality_fraction": 0.9999999999999998
+    },
+    {
+      "id": "way/854385645",
+      "kind": "building",
+      "status": "FULL_NATIVE_QUALITY_FOOTPRINT",
+      "terrain_quality_fraction": 1.0
+    },
+    {
+      "id": "way/760438585",
+      "kind": "building",
+      "status": "FULL_NATIVE_QUALITY_FOOTPRINT",
+      "terrain_quality_fraction": 1.0
+    },
+    {
+      "id": "way/769001574",
+      "kind": "building",
+      "status": "FULL_NATIVE_QUALITY_FOOTPRINT",
+      "terrain_quality_fraction": 1.0
+    },
+    {
+      "id": "way/853760523",
+      "kind": "building",
+      "status": "FULL_NATIVE_QUALITY_FOOTPRINT",
+      "terrain_quality_fraction": 1.0
+    },
+    {
+      "id": "way/854113224",
+      "kind": "building",
+      "status": "FULL_NATIVE_QUALITY_FOOTPRINT",
+      "terrain_quality_fraction": 1.0
+    },
+    {
+      "id": "way/854385611",
+      "kind": "building",
+      "status": "FULL_NATIVE_QUALITY_FOOTPRINT",
+      "terrain_quality_fraction": 1.0
+    },
+    {
+      "id": "way/854113188",
+      "kind": "building",
+      "status": "FULL_NATIVE_QUALITY_FOOTPRINT",
+      "terrain_quality_fraction": 1.0
+    },
+    {
+      "id": "way/934778588",
+      "kind": "building",
+      "status": "FULL_NATIVE_QUALITY_FOOTPRINT",
+      "terrain_quality_fraction": 1.0
+    },
+    {
+      "id": "way/769001594",
+      "kind": "building",
+      "status": "FULL_NATIVE_QUALITY_FOOTPRINT",
+      "terrain_quality_fraction": 1.0
+    },
+    {
+      "id": "way/854385676",
+      "kind": "building",
+      "status": "FULL_NATIVE_QUALITY_FOOTPRINT",
+      "terrain_quality_fraction": 1.0
+    },
+    {
+      "id": "way/854115490",
+      "kind": "building",
+      "status": "FULL_NATIVE_QUALITY_FOOTPRINT",
+      "terrain_quality_fraction": 0.9999999999999999
+    },
+    {
+      "id": "way/854115458",
+      "kind": "building",
+      "status": "FULL_NATIVE_QUALITY_FOOTPRINT",
+      "terrain_quality_fraction": 1.0
+    },
+    {
+      "id": "way/344279099",
+      "kind": "building",
+      "status": "FULL_NATIVE_QUALITY_FOOTPRINT",
+      "terrain_quality_fraction": 1.0
+    },
+    {
+      "id": "way/854115457",
+      "kind": "building",
+      "status": "FULL_NATIVE_QUALITY_FOOTPRINT",
+      "terrain_quality_fraction": 1.0
+    },
+    {
+      "id": "way/1132149402",
+      "kind": "building",
+      "status": "FULL_NATIVE_QUALITY_FOOTPRINT",
+      "terrain_quality_fraction": 1.0
+    },
+    {
+      "id": "way/854115563",
+      "kind": "building",
+      "status": "FULL_NATIVE_QUALITY_FOOTPRINT",
+      "terrain_quality_fraction": 1.0
+    },
+    {
+      "id": "way/854385681",
+      "kind": "building",
+      "status": "FULL_NATIVE_QUALITY_FOOTPRINT",
+      "terrain_quality_fraction": 1.0
+    },
+    {
+      "id": "way/84566287",
+      "kind": "road",
+      "status": "FULL_NATIVE_QUALITY_FOOTPRINT",
+      "terrain_quality_fraction": 1.0
+    },
+    {
+      "id": "way/344279068",
+      "kind": "building",
+      "status": "FULL_NATIVE_QUALITY_FOOTPRINT",
+      "terrain_quality_fraction": 1.0
+    },
+    {
+      "id": "way/851374924",
+      "kind": "building",
+      "status": "FULL_NATIVE_QUALITY_FOOTPRINT",
+      "terrain_quality_fraction": 1.0
+    },
+    {
+      "id": "way/344279073",
+      "kind": "building",
+      "status": "FULL_NATIVE_QUALITY_FOOTPRINT",
+      "terrain_quality_fraction": 0.9999999999999998
+    },
+    {
+      "id": "way/344279067",
+      "kind": "building",
+      "status": "FULL_NATIVE_QUALITY_FOOTPRINT",
+      "terrain_quality_fraction": 0.9999999999999998
+    },
+    {
+      "id": "way/344279072",
+      "kind": "building",
+      "status": "FULL_NATIVE_QUALITY_FOOTPRINT",
+      "terrain_quality_fraction": 1.0
+    },
+    {
+      "id": "way/344279077",
+      "kind": "building",
+      "status": "FULL_NATIVE_QUALITY_FOOTPRINT",
+      "terrain_quality_fraction": 1.0
+    },
+    {
+      "id": "way/507258013",
+      "kind": "building",
+      "status": "FULL_NATIVE_QUALITY_FOOTPRINT",
+      "terrain_quality_fraction": 0.9999999999999998
+    },
+    {
+      "id": "way/851001715",
+      "kind": "building",
+      "status": "FULL_NATIVE_QUALITY_FOOTPRINT",
+      "terrain_quality_fraction": 1.0
+    },
+    {
+      "id": "way/854115551",
+      "kind": "building",
+      "status": "FULL_NATIVE_QUALITY_FOOTPRINT",
+      "terrain_quality_fraction": 1.0
+    },
+    {
+      "id": "way/854115570",
+      "kind": "building",
+      "status": "FULL_NATIVE_QUALITY_FOOTPRINT",
+      "terrain_quality_fraction": 1.0
+    },
+    {
+      "id": "way/854115518",
+      "kind": "building",
+      "status": "FULL_NATIVE_QUALITY_FOOTPRINT",
+      "terrain_quality_fraction": 0.9999999999999998
+    },
+    {
+      "id": "way/854113198",
+      "kind": "building",
+      "status": "FULL_NATIVE_QUALITY_FOOTPRINT",
+      "terrain_quality_fraction": 1.0
+    },
+    {
+      "id": "way/851001722",
+      "kind": "building",
+      "status": "FULL_NATIVE_QUALITY_FOOTPRINT",
+      "terrain_quality_fraction": 1.0
+    },
+    {
+      "id": "way/854113167",
+      "kind": "building",
+      "status": "FULL_NATIVE_QUALITY_FOOTPRINT",
+      "terrain_quality_fraction": 1.0
+    },
+    {
+      "id": "way/1132149389",
+      "kind": "building",
+      "status": "FULL_NATIVE_QUALITY_FOOTPRINT",
+      "terrain_quality_fraction": 1.0
+    },
+    {
+      "id": "way/847078096",
+      "kind": "building",
+      "status": "FULL_NATIVE_QUALITY_FOOTPRINT",
+      "terrain_quality_fraction": 1.0
+    },
+    {
+      "id": "way/854385661",
+      "kind": "building",
+      "status": "FULL_NATIVE_QUALITY_FOOTPRINT",
+      "terrain_quality_fraction": 1.0
+    },
+    {
+      "id": "way/854385665",
+      "kind": "building",
+      "status": "FULL_NATIVE_QUALITY_FOOTPRINT",
+      "terrain_quality_fraction": 1.0
+    },
+    {
+      "id": "way/854115798",
+      "kind": "building",
+      "status": "FULL_NATIVE_QUALITY_FOOTPRINT",
+      "terrain_quality_fraction": 1.0
+    },
+    {
+      "id": "way/853716997",
+      "kind": "road",
+      "status": "PARTIAL_NATIVE_QUALITY_FOOTPRINT",
+      "terrain_quality_fraction": 0.024464079492955388
+    },
+    {
+      "id": "way/688346120",
+      "kind": "road",
+      "status": "FULL_NATIVE_QUALITY_FOOTPRINT",
+      "terrain_quality_fraction": 1.0
+    },
+    {
+      "id": "way/83925852",
+      "kind": "road",
+      "status": "PARTIAL_NATIVE_QUALITY_FOOTPRINT",
+      "terrain_quality_fraction": 0.12314660344295116
+    },
+    {
+      "id": "way/344279098",
+      "kind": "building",
+      "status": "FULL_NATIVE_QUALITY_FOOTPRINT",
+      "terrain_quality_fraction": 0.9999999999999999
+    },
+    {
+      "id": "way/344279103",
+      "kind": "building",
+      "status": "FULL_NATIVE_QUALITY_FOOTPRINT",
+      "terrain_quality_fraction": 1.0
+    },
+    {
+      "id": "way/850782568",
+      "kind": "building",
+      "status": "FULL_NATIVE_QUALITY_FOOTPRINT",
+      "terrain_quality_fraction": 1.0
+    },
+    {
+      "id": "way/854385637",
+      "kind": "building",
+      "status": "FULL_NATIVE_QUALITY_FOOTPRINT",
+      "terrain_quality_fraction": 1.0
+    },
+    {
+      "id": "way/344279078",
+      "kind": "building",
+      "status": "FULL_NATIVE_QUALITY_FOOTPRINT",
+      "terrain_quality_fraction": 1.0
+    },
+    {
+      "id": "way/344279081",
+      "kind": "building",
+      "status": "FULL_NATIVE_QUALITY_FOOTPRINT",
+      "terrain_quality_fraction": 1.0
+    },
+    {
+      "id": "way/854115539",
+      "kind": "building",
+      "status": "FULL_NATIVE_QUALITY_FOOTPRINT",
+      "terrain_quality_fraction": 1.0
+    },
+    {
+      "id": "way/854115522",
+      "kind": "building",
+      "status": "FULL_NATIVE_QUALITY_FOOTPRINT",
+      "terrain_quality_fraction": 1.0
+    },
+    {
+      "id": "way/851001706",
+      "kind": "building",
+      "status": "FULL_NATIVE_QUALITY_FOOTPRINT",
+      "terrain_quality_fraction": 1.0
+    },
+    {
+      "id": "way/851001711",
+      "kind": "building",
+      "status": "FULL_NATIVE_QUALITY_FOOTPRINT",
+      "terrain_quality_fraction": 1.0
+    },
+    {
+      "id": "way/760438580",
+      "kind": "building",
+      "status": "FULL_NATIVE_QUALITY_FOOTPRINT",
+      "terrain_quality_fraction": 1.0
+    },
+    {
+      "id": "way/934778589",
+      "kind": "building",
+      "status": "FULL_NATIVE_QUALITY_FOOTPRINT",
+      "terrain_quality_fraction": 0.9999999999999999
+    },
+    {
+      "id": "way/851013784",
+      "kind": "building",
+      "status": "FULL_NATIVE_QUALITY_FOOTPRINT",
+      "terrain_quality_fraction": 1.0
+    },
+    {
+      "id": "way/851013791",
+      "kind": "building",
+      "status": "FULL_NATIVE_QUALITY_FOOTPRINT",
+      "terrain_quality_fraction": 1.0
+    },
+    {
+      "id": "way/851374927",
+      "kind": "building",
+      "status": "FULL_NATIVE_QUALITY_FOOTPRINT",
+      "terrain_quality_fraction": 1.0
+    },
+    {
+      "id": "way/854115471",
+      "kind": "building",
+      "status": "FULL_NATIVE_QUALITY_FOOTPRINT",
+      "terrain_quality_fraction": 1.0
+    },
+    {
+      "id": "way/854115486",
+      "kind": "building",
+      "status": "FULL_NATIVE_QUALITY_FOOTPRINT",
+      "terrain_quality_fraction": 1.0
+    },
+    {
+      "id": "way/850782560",
+      "kind": "building",
+      "status": "FULL_NATIVE_QUALITY_FOOTPRINT",
+      "terrain_quality_fraction": 0.9999999999999998
+    },
+    {
+      "id": "way/854113193",
+      "kind": "building",
+      "status": "FULL_NATIVE_QUALITY_FOOTPRINT",
+      "terrain_quality_fraction": 1.0
+    },
+    {
+      "id": "way/854385627",
+      "kind": "building",
+      "status": "FULL_NATIVE_QUALITY_FOOTPRINT",
+      "terrain_quality_fraction": 1.0
+    },
+    {
+      "id": "way/854385647",
+      "kind": "building",
+      "status": "FULL_NATIVE_QUALITY_FOOTPRINT",
+      "terrain_quality_fraction": 1.0
+    },
+    {
+      "id": "way/399526178",
+      "kind": "road",
+      "status": "FULL_NATIVE_QUALITY_FOOTPRINT",
+      "terrain_quality_fraction": 1.0
+    },
+    {
+      "id": "way/854385684",
+      "kind": "road",
+      "status": "FULL_NATIVE_QUALITY_FOOTPRINT",
+      "terrain_quality_fraction": 1.0
+    },
+    {
+      "id": "way/343478483",
+      "kind": "road",
+      "status": "FULL_NATIVE_QUALITY_FOOTPRINT",
+      "terrain_quality_fraction": 1.0
+    },
+    {
+      "id": "way/83925854",
+      "kind": "road",
+      "status": "FULL_NATIVE_QUALITY_FOOTPRINT",
+      "terrain_quality_fraction": 1.0
+    },
+    {
+      "id": "way/1359685639",
+      "kind": "road",
+      "status": "PARTIAL_NATIVE_QUALITY_FOOTPRINT",
+      "terrain_quality_fraction": 0.8784650791003294
+    },
+    {
+      "id": "way/344279095",
+      "kind": "building",
+      "status": "FULL_NATIVE_QUALITY_FOOTPRINT",
+      "terrain_quality_fraction": 1.0
+    },
+    {
+      "id": "way/507258012",
+      "kind": "building",
+      "status": "FULL_NATIVE_QUALITY_FOOTPRINT",
+      "terrain_quality_fraction": 0.9999999999999999
+    },
+    {
+      "id": "way/507258016",
+      "kind": "building",
+      "status": "FULL_NATIVE_QUALITY_FOOTPRINT",
+      "terrain_quality_fraction": 0.9999999999999997
+    },
+    {
+      "id": "way/1132149386",
+      "kind": "building",
+      "status": "FULL_NATIVE_QUALITY_FOOTPRINT",
+      "terrain_quality_fraction": 0.9999999999999998
+    },
+    {
+      "id": "way/854115560",
+      "kind": "building",
+      "status": "FULL_NATIVE_QUALITY_FOOTPRINT",
+      "terrain_quality_fraction": 1.0
+    },
+    {
+      "id": "way/854113199",
+      "kind": "building",
+      "status": "FULL_NATIVE_QUALITY_FOOTPRINT",
+      "terrain_quality_fraction": 0.9999999999999998
+    },
+    {
+      "id": "way/854113213",
+      "kind": "building",
+      "status": "FULL_NATIVE_QUALITY_FOOTPRINT",
+      "terrain_quality_fraction": 1.0
+    },
+    {
+      "id": "way/934778586",
+      "kind": "building",
+      "status": "FULL_NATIVE_QUALITY_FOOTPRINT",
+      "terrain_quality_fraction": 0.9999999999999999
+    },
+    {
+      "id": "way/854385648",
+      "kind": "building",
+      "status": "FULL_NATIVE_QUALITY_FOOTPRINT",
+      "terrain_quality_fraction": 1.0
+    },
+    {
+      "id": "way/854385650",
+      "kind": "building",
+      "status": "FULL_NATIVE_QUALITY_FOOTPRINT",
+      "terrain_quality_fraction": 1.0
+    },
+    {
+      "id": "way/934778590",
+      "kind": "building",
+      "status": "FULL_NATIVE_QUALITY_FOOTPRINT",
+      "terrain_quality_fraction": 1.0
+    },
+    {
+      "id": "way/847078095",
+      "kind": "building",
+      "status": "FULL_NATIVE_QUALITY_FOOTPRINT",
+      "terrain_quality_fraction": 1.0
+    },
+    {
+      "id": "way/854113211",
+      "kind": "building",
+      "status": "FULL_NATIVE_QUALITY_FOOTPRINT",
+      "terrain_quality_fraction": 1.0
+    },
+    {
+      "id": "way/1132149391",
+      "kind": "building",
+      "status": "FULL_NATIVE_QUALITY_FOOTPRINT",
+      "terrain_quality_fraction": 1.0
+    },
+    {
+      "id": "way/851013778",
+      "kind": "building",
+      "status": "FULL_NATIVE_QUALITY_FOOTPRINT",
+      "terrain_quality_fraction": 0.9999999999999998
+    },
+    {
+      "id": "way/851013782",
+      "kind": "building",
+      "status": "FULL_NATIVE_QUALITY_FOOTPRINT",
+      "terrain_quality_fraction": 0.9999999999999999
+    },
+    {
+      "id": "way/216050424",
+      "kind": "road",
+      "status": "PARTIAL_NATIVE_QUALITY_FOOTPRINT",
+      "terrain_quality_fraction": 0.16012688205282402
+    },
+    {
+      "id": "way/854115552",
+      "kind": "building",
+      "status": "FULL_NATIVE_QUALITY_FOOTPRINT",
+      "terrain_quality_fraction": 1.0
+    },
+    {
+      "id": "way/504509852",
+      "kind": "road",
+      "status": "FULL_NATIVE_QUALITY_FOOTPRINT",
+      "terrain_quality_fraction": 1.0
+    },
+    {
+      "id": "way/854115799",
+      "kind": "road",
+      "status": "FULL_NATIVE_QUALITY_FOOTPRINT",
+      "terrain_quality_fraction": 1.0
+    },
+    {
+      "id": "way/344279076",
+      "kind": "building",
+      "status": "FULL_NATIVE_QUALITY_FOOTPRINT",
+      "terrain_quality_fraction": 1.0
+    },
+    {
+      "id": "way/854115544",
+      "kind": "building",
+      "status": "FULL_NATIVE_QUALITY_FOOTPRINT",
+      "terrain_quality_fraction": 1.0
+    },
+    {
+      "id": "way/760438588",
+      "kind": "building",
+      "status": "FULL_NATIVE_QUALITY_FOOTPRINT",
+      "terrain_quality_fraction": 1.0
+    },
+    {
+      "id": "way/769001615",
+      "kind": "building",
+      "status": "FULL_NATIVE_QUALITY_FOOTPRINT",
+      "terrain_quality_fraction": 1.0
+    },
+    {
+      "id": "way/850782573",
+      "kind": "building",
+      "status": "FULL_NATIVE_QUALITY_FOOTPRINT",
+      "terrain_quality_fraction": 1.0
+    },
+    {
+      "id": "way/850782574",
+      "kind": "building",
+      "status": "FULL_NATIVE_QUALITY_FOOTPRINT",
+      "terrain_quality_fraction": 1.0
+    },
+    {
+      "id": "way/854115572",
+      "kind": "building",
+      "status": "FULL_NATIVE_QUALITY_FOOTPRINT",
+      "terrain_quality_fraction": 1.0
+    },
+    {
+      "id": "way/1132149399",
+      "kind": "building",
+      "status": "FULL_NATIVE_QUALITY_FOOTPRINT",
+      "terrain_quality_fraction": 1.0
+    },
+    {
+      "id": "way/854115528",
+      "kind": "building",
+      "status": "FULL_NATIVE_QUALITY_FOOTPRINT",
+      "terrain_quality_fraction": 0.9999999999999998
+    },
+    {
+      "id": "way/854115538",
+      "kind": "building",
+      "status": "FULL_NATIVE_QUALITY_FOOTPRINT",
+      "terrain_quality_fraction": 1.0
+    },
+    {
+      "id": "way/851001702",
+      "kind": "building",
+      "status": "FULL_NATIVE_QUALITY_FOOTPRINT",
+      "terrain_quality_fraction": 1.0
+    },
+    {
+      "id": "way/854113196",
+      "kind": "building",
+      "status": "FULL_NATIVE_QUALITY_FOOTPRINT",
+      "terrain_quality_fraction": 1.0
+    },
+    {
+      "id": "way/854385613",
+      "kind": "building",
+      "status": "FULL_NATIVE_QUALITY_FOOTPRINT",
+      "terrain_quality_fraction": 1.0
+    },
+    {
+      "id": "way/854115519",
+      "kind": "building",
+      "status": "FULL_NATIVE_QUALITY_FOOTPRINT",
+      "terrain_quality_fraction": 1.0
+    },
+    {
+      "id": "way/760438583",
+      "kind": "building",
+      "status": "FULL_NATIVE_QUALITY_FOOTPRINT",
+      "terrain_quality_fraction": 1.0
+    },
+    {
+      "id": "way/854113178",
+      "kind": "building",
+      "status": "FULL_NATIVE_QUALITY_FOOTPRINT",
+      "terrain_quality_fraction": 1.0
+    },
+    {
+      "id": "way/854385624",
+      "kind": "building",
+      "status": "FULL_NATIVE_QUALITY_FOOTPRINT",
+      "terrain_quality_fraction": 1.0
+    },
+    {
+      "id": "way/851013768",
+      "kind": "building",
+      "status": "FULL_NATIVE_QUALITY_FOOTPRINT",
+      "terrain_quality_fraction": 1.0
+    },
+    {
+      "id": "way/854115463",
+      "kind": "building",
+      "status": "FULL_NATIVE_QUALITY_FOOTPRINT",
+      "terrain_quality_fraction": 1.0
+    },
+    {
+      "id": "way/854385680",
+      "kind": "building",
+      "status": "FULL_NATIVE_QUALITY_FOOTPRINT",
+      "terrain_quality_fraction": 1.0
+    },
+    {
+      "id": "way/121203553",
+      "kind": "road",
+      "status": "FULL_NATIVE_QUALITY_FOOTPRINT",
+      "terrain_quality_fraction": 1.0
+    },
+    {
+      "id": "way/876322352",
+      "kind": "road",
+      "status": "FULL_NATIVE_QUALITY_FOOTPRINT",
+      "terrain_quality_fraction": 1.0
+    },
+    {
+      "id": "way/850782575",
+      "kind": "building",
+      "status": "FULL_NATIVE_QUALITY_FOOTPRINT",
+      "terrain_quality_fraction": 0.9999999999999999
+    },
+    {
+      "id": "way/851001700",
+      "kind": "building",
+      "status": "FULL_NATIVE_QUALITY_FOOTPRINT",
+      "terrain_quality_fraction": 1.0
+    },
+    {
+      "id": "way/854115542",
+      "kind": "building",
+      "status": "FULL_NATIVE_QUALITY_FOOTPRINT",
+      "terrain_quality_fraction": 1.0
+    },
+    {
+      "id": "way/769001604",
+      "kind": "building",
+      "status": "FULL_NATIVE_QUALITY_FOOTPRINT",
+      "terrain_quality_fraction": 1.0
+    },
+    {
+      "id": "way/851001717",
+      "kind": "building",
+      "status": "FULL_NATIVE_QUALITY_FOOTPRINT",
+      "terrain_quality_fraction": 1.0
+    },
+    {
+      "id": "way/854115578",
+      "kind": "building",
+      "status": "FULL_NATIVE_QUALITY_FOOTPRINT",
+      "terrain_quality_fraction": 1.0
+    },
+    {
+      "id": "way/760438578",
+      "kind": "building",
+      "status": "FULL_NATIVE_QUALITY_FOOTPRINT",
+      "terrain_quality_fraction": 1.0
+    },
+    {
+      "id": "way/853760510",
+      "kind": "building",
+      "status": "FULL_NATIVE_QUALITY_FOOTPRINT",
+      "terrain_quality_fraction": 1.0
+    },
+    {
+      "id": "way/1132149405",
+      "kind": "building",
+      "status": "FULL_NATIVE_QUALITY_FOOTPRINT",
+      "terrain_quality_fraction": 1.0
+    },
+    {
+      "id": "way/850782576",
+      "kind": "building",
+      "status": "FULL_NATIVE_QUALITY_FOOTPRINT",
+      "terrain_quality_fraction": 0.9999999999999999
+    },
+    {
+      "id": "way/344279065",
+      "kind": "building",
+      "status": "FULL_NATIVE_QUALITY_FOOTPRINT",
+      "terrain_quality_fraction": 1.0
+    },
+    {
+      "id": "way/854385660",
+      "kind": "building",
+      "status": "FULL_NATIVE_QUALITY_FOOTPRINT",
+      "terrain_quality_fraction": 1.0
+    },
+    {
+      "id": "way/851013788",
+      "kind": "building",
+      "status": "FULL_NATIVE_QUALITY_FOOTPRINT",
+      "terrain_quality_fraction": 1.0
+    },
+    {
+      "id": "way/854115485",
+      "kind": "building",
+      "status": "FULL_NATIVE_QUALITY_FOOTPRINT",
+      "terrain_quality_fraction": 1.0
+    },
+    {
+      "id": "way/854115462",
+      "kind": "building",
+      "status": "FULL_NATIVE_QUALITY_FOOTPRINT",
+      "terrain_quality_fraction": 1.0
+    },
+    {
+      "id": "way/141325669",
+      "kind": "road",
+      "status": "PARTIAL_NATIVE_QUALITY_FOOTPRINT",
+      "terrain_quality_fraction": 0.8350250214870611
+    },
+    {
+      "id": "way/850782562",
+      "kind": "building",
+      "status": "FULL_NATIVE_QUALITY_FOOTPRINT",
+      "terrain_quality_fraction": 1.0
+    },
+    {
+      "id": "way/854115555",
+      "kind": "building",
+      "status": "FULL_NATIVE_QUALITY_FOOTPRINT",
+      "terrain_quality_fraction": 1.0
+    },
+    {
+      "id": "way/343478478",
+      "kind": "road",
+      "status": "FULL_NATIVE_QUALITY_FOOTPRINT",
+      "terrain_quality_fraction": 1.0
+    },
+    {
+      "id": "way/854115476",
+      "kind": "road",
+      "status": "PARTIAL_NATIVE_QUALITY_FOOTPRINT",
+      "terrain_quality_fraction": 0.5585953353158799
+    },
+    {
+      "id": "way/344279070",
+      "kind": "building",
+      "status": "FULL_NATIVE_QUALITY_FOOTPRINT",
+      "terrain_quality_fraction": 1.0
+    },
+    {
+      "id": "way/854115549",
+      "kind": "building",
+      "status": "FULL_NATIVE_QUALITY_FOOTPRINT",
+      "terrain_quality_fraction": 1.0
+    },
+    {
+      "id": "way/854115569",
+      "kind": "building",
+      "status": "FULL_NATIVE_QUALITY_FOOTPRINT",
+      "terrain_quality_fraction": 1.0
+    },
+    {
+      "id": "way/854385633",
+      "kind": "building",
+      "status": "FULL_NATIVE_QUALITY_FOOTPRINT",
+      "terrain_quality_fraction": 1.0
+    },
+    {
+      "id": "way/854115581",
+      "kind": "building",
+      "status": "FULL_NATIVE_QUALITY_FOOTPRINT",
+      "terrain_quality_fraction": 1.0
+    },
+    {
+      "id": "way/854113214",
+      "kind": "building",
+      "status": "FULL_NATIVE_QUALITY_FOOTPRINT",
+      "terrain_quality_fraction": 1.0
+    },
+    {
+      "id": "way/854113222",
+      "kind": "building",
+      "status": "FULL_NATIVE_QUALITY_FOOTPRINT",
+      "terrain_quality_fraction": 1.0
+    },
+    {
+      "id": "way/854385652",
+      "kind": "building",
+      "status": "FULL_NATIVE_QUALITY_FOOTPRINT",
+      "terrain_quality_fraction": 1.0
+    },
+    {
+      "id": "way/760438581",
+      "kind": "building",
+      "status": "FULL_NATIVE_QUALITY_FOOTPRINT",
+      "terrain_quality_fraction": 1.0
+    },
+    {
+      "id": "way/769001572",
+      "kind": "building",
+      "status": "FULL_NATIVE_QUALITY_FOOTPRINT",
+      "terrain_quality_fraction": 0.9999999999999998
+    },
+    {
+      "id": "way/934778623",
+      "kind": "building",
+      "status": "FULL_NATIVE_QUALITY_FOOTPRINT",
+      "terrain_quality_fraction": 1.0
+    },
+    {
+      "id": "way/853760509",
+      "kind": "building",
+      "status": "FULL_NATIVE_QUALITY_FOOTPRINT",
+      "terrain_quality_fraction": 1.0
+    },
+    {
+      "id": "way/854115534",
+      "kind": "building",
+      "status": "FULL_NATIVE_QUALITY_FOOTPRINT",
+      "terrain_quality_fraction": 0.9999999999999999
+    },
+    {
+      "id": "way/854385621",
+      "kind": "building",
+      "status": "FULL_NATIVE_QUALITY_FOOTPRINT",
+      "terrain_quality_fraction": 1.0
+    },
+    {
+      "id": "way/344279101",
+      "kind": "building",
+      "status": "FULL_NATIVE_QUALITY_FOOTPRINT",
+      "terrain_quality_fraction": 0.9999999999999999
+    },
+    {
+      "id": "way/851013779",
+      "kind": "building",
+      "status": "FULL_NATIVE_QUALITY_FOOTPRINT",
+      "terrain_quality_fraction": 1.0
+    },
+    {
+      "id": "way/851013803",
+      "kind": "building",
+      "status": "FULL_NATIVE_QUALITY_FOOTPRINT",
+      "terrain_quality_fraction": 0.9999999999999999
+    },
+    {
+      "id": "way/854115469",
+      "kind": "building",
+      "status": "FULL_NATIVE_QUALITY_FOOTPRINT",
+      "terrain_quality_fraction": 1.0
+    },
+    {
+      "id": "way/850782561",
+      "kind": "building",
+      "status": "FULL_NATIVE_QUALITY_FOOTPRINT",
+      "terrain_quality_fraction": 1.0
+    },
+    {
+      "id": "way/934778621",
+      "kind": "building",
+      "status": "FULL_NATIVE_QUALITY_FOOTPRINT",
+      "terrain_quality_fraction": 1.0
+    },
+    {
+      "id": "way/344279088",
+      "kind": "building",
+      "status": "FULL_NATIVE_QUALITY_FOOTPRINT",
+      "terrain_quality_fraction": 1.0
+    },
+    {
+      "id": "way/769001610",
+      "kind": "building",
+      "status": "FULL_NATIVE_QUALITY_FOOTPRINT",
+      "terrain_quality_fraction": 1.0
+    },
+    {
+      "id": "way/769001597",
+      "kind": "building",
+      "status": "FULL_NATIVE_QUALITY_FOOTPRINT",
+      "terrain_quality_fraction": 0.9999999999999999
+    },
+    {
+      "id": "way/851001709",
+      "kind": "building",
+      "status": "FULL_NATIVE_QUALITY_FOOTPRINT",
+      "terrain_quality_fraction": 1.0
+    },
+    {
+      "id": "way/851001719",
+      "kind": "building",
+      "status": "FULL_NATIVE_QUALITY_FOOTPRINT",
+      "terrain_quality_fraction": 1.0
+    },
+    {
+      "id": "way/854113223",
+      "kind": "building",
+      "status": "FULL_NATIVE_QUALITY_FOOTPRINT",
+      "terrain_quality_fraction": 1.0
+    },
+    {
+      "id": "way/769001608",
+      "kind": "building",
+      "status": "FULL_NATIVE_QUALITY_FOOTPRINT",
+      "terrain_quality_fraction": 1.0
+    },
+    {
+      "id": "way/854113203",
+      "kind": "building",
+      "status": "FULL_NATIVE_QUALITY_FOOTPRINT",
+      "terrain_quality_fraction": 1.0
+    },
+    {
+      "id": "way/854115577",
+      "kind": "building",
+      "status": "FULL_NATIVE_QUALITY_FOOTPRINT",
+      "terrain_quality_fraction": 1.0
+    },
+    {
+      "id": "way/851001732",
+      "kind": "building",
+      "status": "FULL_NATIVE_QUALITY_FOOTPRINT",
+      "terrain_quality_fraction": 1.0
+    },
+    {
+      "id": "way/854113176",
+      "kind": "building",
+      "status": "FULL_NATIVE_QUALITY_FOOTPRINT",
+      "terrain_quality_fraction": 0.9999999999999997
+    },
+    {
+      "id": "way/854115561",
+      "kind": "building",
+      "status": "FULL_NATIVE_QUALITY_FOOTPRINT",
+      "terrain_quality_fraction": 1.0
+    },
+    {
+      "id": "way/854115568",
+      "kind": "building",
+      "status": "FULL_NATIVE_QUALITY_FOOTPRINT",
+      "terrain_quality_fraction": 1.0
+    },
+    {
+      "id": "way/851013789",
+      "kind": "building",
+      "status": "FULL_NATIVE_QUALITY_FOOTPRINT",
+      "terrain_quality_fraction": 0.9999999999999999
+    },
+    {
+      "id": "way/851013795",
+      "kind": "building",
+      "status": "FULL_NATIVE_QUALITY_FOOTPRINT",
+      "terrain_quality_fraction": 0.9999999999999999
+    },
+    {
+      "id": "way/851013799",
+      "kind": "building",
+      "status": "FULL_NATIVE_QUALITY_FOOTPRINT",
+      "terrain_quality_fraction": 1.0
+    },
+    {
+      "id": "way/854115515",
+      "kind": "building",
+      "status": "FULL_NATIVE_QUALITY_FOOTPRINT",
+      "terrain_quality_fraction": 1.0
+    },
+    {
+      "id": "way/504509855",
+      "kind": "road",
+      "status": "FULL_NATIVE_QUALITY_FOOTPRINT",
+      "terrain_quality_fraction": 1.0
+    },
+    {
+      "id": "way/851374918",
+      "kind": "building",
+      "status": "FULL_NATIVE_QUALITY_FOOTPRINT",
+      "terrain_quality_fraction": 1.0
+    },
+    {
+      "id": "way/854115480",
+      "kind": "building",
+      "status": "FULL_NATIVE_QUALITY_FOOTPRINT",
+      "terrain_quality_fraction": 1.0
+    },
+    {
+      "id": "way/850782569",
+      "kind": "building",
+      "status": "FULL_NATIVE_QUALITY_FOOTPRINT",
+      "terrain_quality_fraction": 1.0
+    },
+    {
+      "id": "way/850782571",
+      "kind": "building",
+      "status": "FULL_NATIVE_QUALITY_FOOTPRINT",
+      "terrain_quality_fraction": 0.9999999999999998
+    },
+    {
+      "id": "way/1132149396",
+      "kind": "building",
+      "status": "FULL_NATIVE_QUALITY_FOOTPRINT",
+      "terrain_quality_fraction": 1.0
+    },
+    {
+      "id": "way/854385634",
+      "kind": "building",
+      "status": "FULL_NATIVE_QUALITY_FOOTPRINT",
+      "terrain_quality_fraction": 1.0
+    },
+    {
+      "id": "way/854113215",
+      "kind": "building",
+      "status": "FULL_NATIVE_QUALITY_FOOTPRINT",
+      "terrain_quality_fraction": 1.0
+    },
+    {
+      "id": "way/934778620",
+      "kind": "building",
+      "status": "FULL_NATIVE_QUALITY_FOOTPRINT",
+      "terrain_quality_fraction": 0.9999999999999998
+    },
+    {
+      "id": "way/854113177",
+      "kind": "building",
+      "status": "FULL_NATIVE_QUALITY_FOOTPRINT",
+      "terrain_quality_fraction": 1.0
+    },
+    {
+      "id": "way/854385628",
+      "kind": "building",
+      "status": "FULL_NATIVE_QUALITY_FOOTPRINT",
+      "terrain_quality_fraction": 1.0
+    },
+    {
+      "id": "way/851013770",
+      "kind": "building",
+      "status": "FULL_NATIVE_QUALITY_FOOTPRINT",
+      "terrain_quality_fraction": 1.0
+    },
+    {
+      "id": "way/854115797",
+      "kind": "building",
+      "status": "FULL_NATIVE_QUALITY_FOOTPRINT",
+      "terrain_quality_fraction": 1.0
+    },
+    {
+      "id": "way/851013774",
+      "kind": "building",
+      "status": "FULL_NATIVE_QUALITY_FOOTPRINT",
+      "terrain_quality_fraction": 0.9999999999999998
+    },
+    {
+      "id": "way/344279100",
+      "kind": "building",
+      "status": "FULL_NATIVE_QUALITY_FOOTPRINT",
+      "terrain_quality_fraction": 1.0
+    },
+    {
+      "id": "way/344279102",
+      "kind": "building",
+      "status": "FULL_NATIVE_QUALITY_FOOTPRINT",
+      "terrain_quality_fraction": 1.0
+    },
+    {
+      "id": "way/507258018",
+      "kind": "building",
+      "status": "FULL_NATIVE_QUALITY_FOOTPRINT",
+      "terrain_quality_fraction": 1.0
+    },
+    {
+      "id": "way/769001578",
+      "kind": "building",
+      "status": "FULL_NATIVE_QUALITY_FOOTPRINT",
+      "terrain_quality_fraction": 1.0
+    },
+    {
+      "id": "way/769001606",
+      "kind": "building",
+      "status": "FULL_NATIVE_QUALITY_FOOTPRINT",
+      "terrain_quality_fraction": 0.9999999999999999
+    },
+    {
+      "id": "way/851001724",
+      "kind": "building",
+      "status": "FULL_NATIVE_QUALITY_FOOTPRINT",
+      "terrain_quality_fraction": 1.0
+    },
+    {
+      "id": "way/854385671",
+      "kind": "building",
+      "status": "FULL_NATIVE_QUALITY_FOOTPRINT",
+      "terrain_quality_fraction": 1.0
+    },
+    {
+      "id": "way/854113221",
+      "kind": "building",
+      "status": "FULL_NATIVE_QUALITY_FOOTPRINT",
+      "terrain_quality_fraction": 1.0
+    },
+    {
+      "id": "way/854385641",
+      "kind": "building",
+      "status": "FULL_NATIVE_QUALITY_FOOTPRINT",
+      "terrain_quality_fraction": 1.0
+    },
+    {
+      "id": "way/854115523",
+      "kind": "building",
+      "status": "FULL_NATIVE_QUALITY_FOOTPRINT",
+      "terrain_quality_fraction": 1.0
+    },
+    {
+      "id": "way/851001727",
+      "kind": "building",
+      "status": "FULL_NATIVE_QUALITY_FOOTPRINT",
+      "terrain_quality_fraction": 1.0
+    },
+    {
+      "id": "way/851001729",
+      "kind": "building",
+      "status": "FULL_NATIVE_QUALITY_FOOTPRINT",
+      "terrain_quality_fraction": 1.0
+    },
+    {
+      "id": "way/854116034",
+      "kind": "building",
+      "status": "FULL_NATIVE_QUALITY_FOOTPRINT",
+      "terrain_quality_fraction": 1.0
+    },
+    {
+      "id": "way/854385646",
+      "kind": "building",
+      "status": "FULL_NATIVE_QUALITY_FOOTPRINT",
+      "terrain_quality_fraction": 1.0
+    },
+    {
+      "id": "way/854113195",
+      "kind": "building",
+      "status": "FULL_NATIVE_QUALITY_FOOTPRINT",
+      "terrain_quality_fraction": 1.0
+    },
+    {
+      "id": "way/854115470",
+      "kind": "building",
+      "status": "FULL_NATIVE_QUALITY_FOOTPRINT",
+      "terrain_quality_fraction": 1.0
+    },
+    {
+      "id": "way/341988093",
+      "kind": "road",
+      "status": "PARTIAL_NATIVE_QUALITY_FOOTPRINT",
+      "terrain_quality_fraction": 0.3723796749642346
+    },
+    {
+      "id": "way/850782567",
+      "kind": "road",
+      "status": "PARTIAL_NATIVE_QUALITY_FOOTPRINT",
+      "terrain_quality_fraction": 0.9955155109294013
+    },
+    {
+      "id": "way/341557610",
+      "kind": "road",
+      "status": "FULL_NATIVE_QUALITY_FOOTPRINT",
+      "terrain_quality_fraction": 1.0
+    },
+    {
+      "id": "way/934964432",
+      "kind": "road",
+      "status": "FULL_NATIVE_QUALITY_FOOTPRINT",
+      "terrain_quality_fraction": 1.0
+    },
+    {
+      "id": "way/344279075",
+      "kind": "building",
+      "status": "FULL_NATIVE_QUALITY_FOOTPRINT",
+      "terrain_quality_fraction": 1.0
+    },
+    {
+      "id": "way/344279091",
+      "kind": "building",
+      "status": "FULL_NATIVE_QUALITY_FOOTPRINT",
+      "terrain_quality_fraction": 1.0
+    },
+    {
+      "id": "way/851001725",
+      "kind": "building",
+      "status": "FULL_NATIVE_QUALITY_FOOTPRINT",
+      "terrain_quality_fraction": 1.0
+    },
+    {
+      "id": "way/769001592",
+      "kind": "building",
+      "status": "FULL_NATIVE_QUALITY_FOOTPRINT",
+      "terrain_quality_fraction": 0.9999999999999998
+    },
+    {
+      "id": "way/854115533",
+      "kind": "building",
+      "status": "FULL_NATIVE_QUALITY_FOOTPRINT",
+      "terrain_quality_fraction": 1.0
+    },
+    {
+      "id": "way/854385644",
+      "kind": "building",
+      "status": "FULL_NATIVE_QUALITY_FOOTPRINT",
+      "terrain_quality_fraction": 1.0
+    },
+    {
+      "id": "way/854113207",
+      "kind": "building",
+      "status": "FULL_NATIVE_QUALITY_FOOTPRINT",
+      "terrain_quality_fraction": 0.9999999999999999
+    },
+    {
+      "id": "way/934778584",
+      "kind": "building",
+      "status": "FULL_NATIVE_QUALITY_FOOTPRINT",
+      "terrain_quality_fraction": 1.0
+    },
+    {
+      "id": "way/854113186",
+      "kind": "building",
+      "status": "FULL_NATIVE_QUALITY_FOOTPRINT",
+      "terrain_quality_fraction": 1.0
+    },
+    {
+      "id": "way/854113212",
+      "kind": "building",
+      "status": "FULL_NATIVE_QUALITY_FOOTPRINT",
+      "terrain_quality_fraction": 1.0
+    },
+    {
+      "id": "way/854113229",
+      "kind": "building",
+      "status": "FULL_NATIVE_QUALITY_FOOTPRINT",
+      "terrain_quality_fraction": 1.0
+    },
+    {
+      "id": "way/854385658",
+      "kind": "building",
+      "status": "FULL_NATIVE_QUALITY_FOOTPRINT",
+      "terrain_quality_fraction": 1.0
+    },
+    {
+      "id": "way/851013771",
+      "kind": "building",
+      "status": "FULL_NATIVE_QUALITY_FOOTPRINT",
+      "terrain_quality_fraction": 1.0
+    },
+    {
+      "id": "way/854115483",
+      "kind": "building",
+      "status": "FULL_NATIVE_QUALITY_FOOTPRINT",
+      "terrain_quality_fraction": 0.9999999999999999
+    },
+    {
+      "id": "way/854115466",
+      "kind": "building",
+      "status": "FULL_NATIVE_QUALITY_FOOTPRINT",
+      "terrain_quality_fraction": 1.0
+    },
+    {
+      "id": "way/83925870",
+      "kind": "bridge",
+      "status": "FULL_NATIVE_QUALITY_FOOTPRINT",
+      "terrain_quality_fraction": 1.0
+    },
+    {
+      "id": "way/343478477",
+      "kind": "road",
+      "status": "FULL_NATIVE_QUALITY_FOOTPRINT",
+      "terrain_quality_fraction": 1.0
+    },
+    {
+      "id": "way/851001708",
+      "kind": "building",
+      "status": "FULL_NATIVE_QUALITY_FOOTPRINT",
+      "terrain_quality_fraction": 1.0
+    },
+    {
+      "id": "way/854115547",
+      "kind": "building",
+      "status": "FULL_NATIVE_QUALITY_FOOTPRINT",
+      "terrain_quality_fraction": 1.0
+    },
+    {
+      "id": "way/474054895",
+      "kind": "building",
+      "status": "FULL_NATIVE_QUALITY_FOOTPRINT",
+      "terrain_quality_fraction": 0.9999999999999998
+    },
+    {
+      "id": "way/854113205",
+      "kind": "building",
+      "status": "FULL_NATIVE_QUALITY_FOOTPRINT",
+      "terrain_quality_fraction": 0.9999999999999998
+    },
+    {
+      "id": "way/854385617",
+      "kind": "building",
+      "status": "FULL_NATIVE_QUALITY_FOOTPRINT",
+      "terrain_quality_fraction": 0.9999999999999998
+    },
+    {
+      "id": "way/854385620",
+      "kind": "building",
+      "status": "FULL_NATIVE_QUALITY_FOOTPRINT",
+      "terrain_quality_fraction": 1.0
+    },
+    {
+      "id": "way/934778622",
+      "kind": "building",
+      "status": "FULL_NATIVE_QUALITY_FOOTPRINT",
+      "terrain_quality_fraction": 1.0
+    },
+    {
+      "id": "way/1132149409",
+      "kind": "building",
+      "status": "FULL_NATIVE_QUALITY_FOOTPRINT",
+      "terrain_quality_fraction": 1.0
+    },
+    {
+      "id": "way/854115527",
+      "kind": "building",
+      "status": "FULL_NATIVE_QUALITY_FOOTPRINT",
+      "terrain_quality_fraction": 0.9999999999999999
+    },
+    {
+      "id": "way/854113219",
+      "kind": "building",
+      "status": "FULL_NATIVE_QUALITY_FOOTPRINT",
+      "terrain_quality_fraction": 1.0
+    },
+    {
+      "id": "way/854385636",
+      "kind": "building",
+      "status": "FULL_NATIVE_QUALITY_FOOTPRINT",
+      "terrain_quality_fraction": 0.9999999999999998
+    },
+    {
+      "id": "way/850782566",
+      "kind": "building",
+      "status": "FULL_NATIVE_QUALITY_FOOTPRINT",
+      "terrain_quality_fraction": 1.0
+    },
+    {
+      "id": "way/851013773",
+      "kind": "building",
+      "status": "FULL_NATIVE_QUALITY_FOOTPRINT",
+      "terrain_quality_fraction": 1.0
+    },
+    {
+      "id": "way/121203554",
+      "kind": "road",
+      "status": "FULL_NATIVE_QUALITY_FOOTPRINT",
+      "terrain_quality_fraction": 1.0
+    },
+    {
+      "id": "way/744931251",
+      "kind": "road",
+      "status": "PARTIAL_NATIVE_QUALITY_FOOTPRINT",
+      "terrain_quality_fraction": 0.03731576631306501
+    },
+    {
+      "id": "way/851001707",
+      "kind": "building",
+      "status": "FULL_NATIVE_QUALITY_FOOTPRINT",
+      "terrain_quality_fraction": 1.0
+    },
+    {
+      "id": "way/854115543",
+      "kind": "building",
+      "status": "FULL_NATIVE_QUALITY_FOOTPRINT",
+      "terrain_quality_fraction": 1.0
+    },
+    {
+      "id": "way/854385630",
+      "kind": "building",
+      "status": "FULL_NATIVE_QUALITY_FOOTPRINT",
+      "terrain_quality_fraction": 1.0
+    },
+    {
+      "id": "way/854113184",
+      "kind": "building",
+      "status": "FULL_NATIVE_QUALITY_FOOTPRINT",
+      "terrain_quality_fraction": 1.0
+    },
+    {
+      "id": "way/854385673",
+      "kind": "building",
+      "status": "FULL_NATIVE_QUALITY_FOOTPRINT",
+      "terrain_quality_fraction": 1.0
+    },
+    {
+      "id": "way/853760514",
+      "kind": "building",
+      "status": "FULL_NATIVE_QUALITY_FOOTPRINT",
+      "terrain_quality_fraction": 1.0
+    },
+    {
+      "id": "way/854385682",
+      "kind": "building",
+      "status": "FULL_NATIVE_QUALITY_FOOTPRINT",
+      "terrain_quality_fraction": 0.9999999999999998
+    },
+    {
+      "id": "way/760438577",
+      "kind": "building",
+      "status": "FULL_NATIVE_QUALITY_FOOTPRINT",
+      "terrain_quality_fraction": 1.0
+    },
+    {
+      "id": "way/760438586",
+      "kind": "building",
+      "status": "FULL_NATIVE_QUALITY_FOOTPRINT",
+      "terrain_quality_fraction": 1.0
+    },
+    {
+      "id": "way/851001704",
+      "kind": "building",
+      "status": "FULL_NATIVE_QUALITY_FOOTPRINT",
+      "terrain_quality_fraction": 1.0
+    },
+    {
+      "id": "way/851001705",
+      "kind": "building",
+      "status": "FULL_NATIVE_QUALITY_FOOTPRINT",
+      "terrain_quality_fraction": 1.0
+    },
+    {
+      "id": "way/851001730",
+      "kind": "building",
+      "status": "FULL_NATIVE_QUALITY_FOOTPRINT",
+      "terrain_quality_fraction": 0.9999999999999999
+    },
+    {
+      "id": "way/851001735",
+      "kind": "building",
+      "status": "FULL_NATIVE_QUALITY_FOOTPRINT",
+      "terrain_quality_fraction": 1.0
+    },
+    {
+      "id": "way/854385626",
+      "kind": "building",
+      "status": "FULL_NATIVE_QUALITY_FOOTPRINT",
+      "terrain_quality_fraction": 1.0
+    },
+    {
+      "id": "way/854115574",
+      "kind": "building",
+      "status": "FULL_NATIVE_QUALITY_FOOTPRINT",
+      "terrain_quality_fraction": 1.0
+    },
+    {
+      "id": "way/507228540",
+      "kind": "building",
+      "status": "FULL_NATIVE_QUALITY_FOOTPRINT",
+      "terrain_quality_fraction": 1.0
+    },
+    {
+      "id": "way/851013775",
+      "kind": "building",
+      "status": "FULL_NATIVE_QUALITY_FOOTPRINT",
+      "terrain_quality_fraction": 1.0
+    },
+    {
+      "id": "way/854115564",
+      "kind": "building",
+      "status": "FULL_NATIVE_QUALITY_FOOTPRINT",
+      "terrain_quality_fraction": 1.0
+    },
+    {
+      "id": "way/344279086",
+      "kind": "building",
+      "status": "FULL_NATIVE_QUALITY_FOOTPRINT",
+      "terrain_quality_fraction": 1.0
+    },
+    {
+      "id": "way/769001613",
+      "kind": "building",
+      "status": "FULL_NATIVE_QUALITY_FOOTPRINT",
+      "terrain_quality_fraction": 1.0
+    },
+    {
+      "id": "way/854115529",
+      "kind": "building",
+      "status": "FULL_NATIVE_QUALITY_FOOTPRINT",
+      "terrain_quality_fraction": 1.0
+    },
+    {
+      "id": "way/854385683",
+      "kind": "building",
+      "status": "FULL_NATIVE_QUALITY_FOOTPRINT",
+      "terrain_quality_fraction": 1.0
+    },
+    {
+      "id": "way/854115567",
+      "kind": "building",
+      "status": "FULL_NATIVE_QUALITY_FOOTPRINT",
+      "terrain_quality_fraction": 1.0
+    },
+    {
+      "id": "way/854385674",
+      "kind": "building",
+      "status": "FULL_NATIVE_QUALITY_FOOTPRINT",
+      "terrain_quality_fraction": 1.0
+    },
+    {
+      "id": "way/854385677",
+      "kind": "building",
+      "status": "FULL_NATIVE_QUALITY_FOOTPRINT",
+      "terrain_quality_fraction": 0.9999999999999998
+    },
+    {
+      "id": "way/851001733",
+      "kind": "building",
+      "status": "FULL_NATIVE_QUALITY_FOOTPRINT",
+      "terrain_quality_fraction": 0.9999999999999999
+    },
+    {
+      "id": "way/853760520",
+      "kind": "building",
+      "status": "FULL_NATIVE_QUALITY_FOOTPRINT",
+      "terrain_quality_fraction": 0.9999999999999999
+    },
+    {
+      "id": "way/854385623",
+      "kind": "building",
+      "status": "FULL_NATIVE_QUALITY_FOOTPRINT",
+      "terrain_quality_fraction": 1.0
+    },
+    {
+      "id": "way/854385656",
+      "kind": "building",
+      "status": "FULL_NATIVE_QUALITY_FOOTPRINT",
+      "terrain_quality_fraction": 0.9999999999999998
+    },
+    {
+      "id": "way/343797434",
+      "kind": "building",
+      "status": "FULL_NATIVE_QUALITY_FOOTPRINT",
+      "terrain_quality_fraction": 1.0
+    },
+    {
+      "id": "way/507228539",
+      "kind": "building",
+      "status": "FULL_NATIVE_QUALITY_FOOTPRINT",
+      "terrain_quality_fraction": 1.0
+    },
+    {
+      "id": "way/851374921",
+      "kind": "building",
+      "status": "FULL_NATIVE_QUALITY_FOOTPRINT",
+      "terrain_quality_fraction": 0.9999999999999999
+    },
+    {
+      "id": "way/854115482",
+      "kind": "building",
+      "status": "FULL_NATIVE_QUALITY_FOOTPRINT",
+      "terrain_quality_fraction": 0.9999999999999999
+    },
+    {
+      "id": "way/854115484",
+      "kind": "building",
+      "status": "FULL_NATIVE_QUALITY_FOOTPRINT",
+      "terrain_quality_fraction": 1.0
+    },
+    {
+      "id": "way/854113187",
+      "kind": "building",
+      "status": "FULL_NATIVE_QUALITY_FOOTPRINT",
+      "terrain_quality_fraction": 1.0
+    },
+    {
+      "id": "way/854115554",
+      "kind": "building",
+      "status": "FULL_NATIVE_QUALITY_FOOTPRINT",
+      "terrain_quality_fraction": 1.0
+    },
+    {
+      "id": "way/1266396385",
+      "kind": "road",
+      "status": "FULL_NATIVE_QUALITY_FOOTPRINT",
+      "terrain_quality_fraction": 1.0
+    },
+    {
+      "id": "way/1208014078",
+      "kind": "road",
+      "status": "FULL_NATIVE_QUALITY_FOOTPRINT",
+      "terrain_quality_fraction": 1.0
+    },
+    {
+      "id": "way/1132149403",
+      "kind": "building",
+      "status": "FULL_NATIVE_QUALITY_FOOTPRINT",
+      "terrain_quality_fraction": 1.0
+    },
+    {
+      "id": "way/507471924",
+      "kind": "building",
+      "status": "FULL_NATIVE_QUALITY_FOOTPRINT",
+      "terrain_quality_fraction": 0.9999999999999999
+    },
+    {
+      "id": "way/344279080",
+      "kind": "building",
+      "status": "FULL_NATIVE_QUALITY_FOOTPRINT",
+      "terrain_quality_fraction": 1.0
+    },
+    {
+      "id": "way/507258014",
+      "kind": "building",
+      "status": "FULL_NATIVE_QUALITY_FOOTPRINT",
+      "terrain_quality_fraction": 1.0
+    },
+    {
+      "id": "way/854385635",
+      "kind": "building",
+      "status": "FULL_NATIVE_QUALITY_FOOTPRINT",
+      "terrain_quality_fraction": 0.9999999999999999
+    },
+    {
+      "id": "way/1162337471",
+      "kind": "building",
+      "status": "FULL_NATIVE_QUALITY_FOOTPRINT",
+      "terrain_quality_fraction": 1.0
+    },
+    {
+      "id": "way/1162337472",
+      "kind": "building",
+      "status": "FULL_NATIVE_QUALITY_FOOTPRINT",
+      "terrain_quality_fraction": 1.0
+    },
+    {
+      "id": "way/1162337473",
+      "kind": "building",
+      "status": "FULL_NATIVE_QUALITY_FOOTPRINT",
+      "terrain_quality_fraction": 1.0
+    },
+    {
+      "id": "way/1162337475",
+      "kind": "building",
+      "status": "FULL_NATIVE_QUALITY_FOOTPRINT",
+      "terrain_quality_fraction": 1.0
+    },
+    {
+      "id": "way/1132149390",
+      "kind": "building",
+      "status": "FULL_NATIVE_QUALITY_FOOTPRINT",
+      "terrain_quality_fraction": 1.0
+    },
+    {
+      "id": "way/851001720",
+      "kind": "building",
+      "status": "FULL_NATIVE_QUALITY_FOOTPRINT",
+      "terrain_quality_fraction": 1.0
+    },
+    {
+      "id": "way/851001721",
+      "kind": "building",
+      "status": "FULL_NATIVE_QUALITY_FOOTPRINT",
+      "terrain_quality_fraction": 0.9999999999999999
+    },
+    {
+      "id": "way/854113216",
+      "kind": "building",
+      "status": "FULL_NATIVE_QUALITY_FOOTPRINT",
+      "terrain_quality_fraction": 1.0
+    },
+    {
+      "id": "way/851001723",
+      "kind": "building",
+      "status": "FULL_NATIVE_QUALITY_FOOTPRINT",
+      "terrain_quality_fraction": 1.0
+    },
+    {
+      "id": "way/854113206",
+      "kind": "building",
+      "status": "FULL_NATIVE_QUALITY_FOOTPRINT",
+      "terrain_quality_fraction": 1.0
+    },
+    {
+      "id": "way/854115521",
+      "kind": "building",
+      "status": "FULL_NATIVE_QUALITY_FOOTPRINT",
+      "terrain_quality_fraction": 1.0
+    },
+    {
+      "id": "way/851001701",
+      "kind": "building",
+      "status": "FULL_NATIVE_QUALITY_FOOTPRINT",
+      "terrain_quality_fraction": 1.0
+    },
+    {
+      "id": "way/854115536",
+      "kind": "building",
+      "status": "FULL_NATIVE_QUALITY_FOOTPRINT",
+      "terrain_quality_fraction": 1.0
+    },
+    {
+      "id": "way/854385614",
+      "kind": "building",
+      "status": "FULL_NATIVE_QUALITY_FOOTPRINT",
+      "terrain_quality_fraction": 1.0
+    },
+    {
+      "id": "way/850782565",
+      "kind": "building",
+      "status": "FULL_NATIVE_QUALITY_FOOTPRINT",
+      "terrain_quality_fraction": 0.9999999999999999
+    },
+    {
+      "id": "way/854385663",
+      "kind": "building",
+      "status": "FULL_NATIVE_QUALITY_FOOTPRINT",
+      "terrain_quality_fraction": 1.0
+    },
+    {
+      "id": "way/851013796",
+      "kind": "building",
+      "status": "FULL_NATIVE_QUALITY_FOOTPRINT",
+      "terrain_quality_fraction": 0.9999999999999998
+    },
+    {
+      "id": "way/854115517",
+      "kind": "building",
+      "status": "FULL_NATIVE_QUALITY_FOOTPRINT",
+      "terrain_quality_fraction": 1.0
+    },
+    {
+      "id": "way/854115460",
+      "kind": "building",
+      "status": "FULL_NATIVE_QUALITY_FOOTPRINT",
+      "terrain_quality_fraction": 1.0
+    },
+    {
+      "id": "way/769001581",
+      "kind": "building",
+      "status": "FULL_NATIVE_QUALITY_FOOTPRINT",
+      "terrain_quality_fraction": 1.0
+    },
+    {
+      "id": "way/854115556",
+      "kind": "building",
+      "status": "FULL_NATIVE_QUALITY_FOOTPRINT",
+      "terrain_quality_fraction": 1.0
+    },
+    {
+      "id": "way/853760521",
+      "kind": "building",
+      "status": "FULL_NATIVE_QUALITY_FOOTPRINT",
+      "terrain_quality_fraction": 1.0
+    },
+    {
+      "id": "way/854113190",
+      "kind": "building",
+      "status": "FULL_NATIVE_QUALITY_FOOTPRINT",
+      "terrain_quality_fraction": 1.0
+    },
+    {
+      "id": "way/854385654",
+      "kind": "building",
+      "status": "FULL_NATIVE_QUALITY_FOOTPRINT",
+      "terrain_quality_fraction": 1.0
+    },
+    {
+      "id": "way/507471926",
+      "kind": "building",
+      "status": "FULL_NATIVE_QUALITY_FOOTPRINT",
+      "terrain_quality_fraction": 1.0
+    },
+    {
+      "id": "way/854113201",
+      "kind": "building",
+      "status": "FULL_NATIVE_QUALITY_FOOTPRINT",
+      "terrain_quality_fraction": 1.0
+    },
+    {
+      "id": "way/886844150",
+      "kind": "building",
+      "status": "FULL_NATIVE_QUALITY_FOOTPRINT",
+      "terrain_quality_fraction": 1.0
+    },
+    {
+      "id": "way/934778583",
+      "kind": "building",
+      "status": "FULL_NATIVE_QUALITY_FOOTPRINT",
+      "terrain_quality_fraction": 1.0
+    },
+    {
+      "id": "way/851001734",
+      "kind": "building",
+      "status": "FULL_NATIVE_QUALITY_FOOTPRINT",
+      "terrain_quality_fraction": 1.0
+    },
+    {
+      "id": "way/854385649",
+      "kind": "building",
+      "status": "FULL_NATIVE_QUALITY_FOOTPRINT",
+      "terrain_quality_fraction": 1.0
+    },
+    {
+      "id": "way/854385669",
+      "kind": "building",
+      "status": "FULL_NATIVE_QUALITY_FOOTPRINT",
+      "terrain_quality_fraction": 1.0
+    },
+    {
+      "id": "way/854113210",
+      "kind": "building",
+      "status": "FULL_NATIVE_QUALITY_FOOTPRINT",
+      "terrain_quality_fraction": 1.0
+    },
+    {
+      "id": "way/1132149408",
+      "kind": "building",
+      "status": "FULL_NATIVE_QUALITY_FOOTPRINT",
+      "terrain_quality_fraction": 1.0
+    },
+    {
+      "id": "way/850782564",
+      "kind": "building",
+      "status": "FULL_NATIVE_QUALITY_FOOTPRINT",
+      "terrain_quality_fraction": 0.9999999999999999
+    },
+    {
+      "id": "way/851001712",
+      "kind": "building",
+      "status": "FULL_NATIVE_QUALITY_FOOTPRINT",
+      "terrain_quality_fraction": 1.0
+    },
+    {
+      "id": "way/854115546",
+      "kind": "building",
+      "status": "FULL_NATIVE_QUALITY_FOOTPRINT",
+      "terrain_quality_fraction": 1.0
+    },
+    {
+      "id": "way/507228537",
+      "kind": "building",
+      "status": "FULL_NATIVE_QUALITY_FOOTPRINT",
+      "terrain_quality_fraction": 0.9999999999999999
+    },
+    {
+      "id": "way/851013780",
+      "kind": "building",
+      "status": "FULL_NATIVE_QUALITY_FOOTPRINT",
+      "terrain_quality_fraction": 1.0
+    },
+    {
+      "id": "way/854115489",
+      "kind": "building",
+      "status": "FULL_NATIVE_QUALITY_FOOTPRINT",
+      "terrain_quality_fraction": 0.9999999999999999
+    },
+    {
+      "id": "way/246173479",
+      "kind": "road",
+      "status": "PARTIAL_NATIVE_QUALITY_FOOTPRINT",
+      "terrain_quality_fraction": 0.05227963039907283
+    },
+    {
+      "id": "way/934778615",
+      "kind": "road",
+      "status": "FULL_NATIVE_QUALITY_FOOTPRINT",
+      "terrain_quality_fraction": 1.0
+    },
+    {
+      "id": "way/343478476",
+      "kind": "road",
+      "status": "PARTIAL_NATIVE_QUALITY_FOOTPRINT",
+      "terrain_quality_fraction": 0.07286306690742204
+    },
+    {
+      "id": "way/854113170",
+      "kind": "building",
+      "status": "FULL_NATIVE_QUALITY_FOOTPRINT",
+      "terrain_quality_fraction": 1.0
+    },
+    {
+      "id": "way/854113230",
+      "kind": "building",
+      "status": "FULL_NATIVE_QUALITY_FOOTPRINT",
+      "terrain_quality_fraction": 1.0
+    },
+    {
+      "id": "way/1162337474",
+      "kind": "building",
+      "status": "FULL_NATIVE_QUALITY_FOOTPRINT",
+      "terrain_quality_fraction": 1.0
+    },
+    {
+      "id": "way/854113225",
+      "kind": "building",
+      "status": "FULL_NATIVE_QUALITY_FOOTPRINT",
+      "terrain_quality_fraction": 1.0
+    },
+    {
+      "id": "way/854385622",
+      "kind": "building",
+      "status": "FULL_NATIVE_QUALITY_FOOTPRINT",
+      "terrain_quality_fraction": 1.0
+    },
+    {
+      "id": "way/851001728",
+      "kind": "building",
+      "status": "FULL_NATIVE_QUALITY_FOOTPRINT",
+      "terrain_quality_fraction": 0.9999999999999999
+    },
+    {
+      "id": "way/854113181",
+      "kind": "building",
+      "status": "FULL_NATIVE_QUALITY_FOOTPRINT",
+      "terrain_quality_fraction": 1.0
+    },
+    {
+      "id": "way/854113180",
+      "kind": "building",
+      "status": "FULL_NATIVE_QUALITY_FOOTPRINT",
+      "terrain_quality_fraction": 1.0
+    },
+    {
+      "id": "way/854385668",
+      "kind": "building",
+      "status": "FULL_NATIVE_QUALITY_FOOTPRINT",
+      "terrain_quality_fraction": 1.0
+    },
+    {
+      "id": "way/851013787",
+      "kind": "building",
+      "status": "FULL_NATIVE_QUALITY_FOOTPRINT",
+      "terrain_quality_fraction": 1.0
+    },
+    {
+      "id": "way/853760546",
+      "kind": "building",
+      "status": "FULL_NATIVE_QUALITY_FOOTPRINT",
+      "terrain_quality_fraction": 0.9999999999999999
+    },
+    {
+      "id": "way/474658593",
+      "kind": "building",
+      "status": "FULL_NATIVE_QUALITY_FOOTPRINT",
+      "terrain_quality_fraction": 1.0
+    },
+    {
+      "id": "way/851374923",
+      "kind": "building",
+      "status": "FULL_NATIVE_QUALITY_FOOTPRINT",
+      "terrain_quality_fraction": 1.0
+    },
+    {
+      "id": "way/854385608",
+      "kind": "road",
+      "status": "FULL_NATIVE_QUALITY_FOOTPRINT",
+      "terrain_quality_fraction": 1.0
+    },
+    {
+      "id": "way/1359685638",
+      "kind": "road",
+      "status": "FULL_NATIVE_QUALITY_FOOTPRINT",
+      "terrain_quality_fraction": 1.0
+    },
+    {
+      "id": "way/344279061",
+      "kind": "building",
+      "status": "FULL_NATIVE_QUALITY_FOOTPRINT",
+      "terrain_quality_fraction": 1.0
+    },
+    {
+      "id": "way/344279096",
+      "kind": "building",
+      "status": "FULL_NATIVE_QUALITY_FOOTPRINT",
+      "terrain_quality_fraction": 1.0
+    },
+    {
+      "id": "way/854385632",
+      "kind": "building",
+      "status": "FULL_NATIVE_QUALITY_FOOTPRINT",
+      "terrain_quality_fraction": 1.0
+    },
+    {
+      "id": "way/854115540",
+      "kind": "building",
+      "status": "FULL_NATIVE_QUALITY_FOOTPRINT",
+      "terrain_quality_fraction": 1.0
+    },
+    {
+      "id": "way/1132149398",
+      "kind": "building",
+      "status": "FULL_NATIVE_QUALITY_FOOTPRINT",
+      "terrain_quality_fraction": 1.0
+    },
+    {
+      "id": "way/854113191",
+      "kind": "building",
+      "status": "FULL_NATIVE_QUALITY_FOOTPRINT",
+      "terrain_quality_fraction": 0.9999999999999999
+    },
+    {
+      "id": "way/853760515",
+      "kind": "building",
+      "status": "FULL_NATIVE_QUALITY_FOOTPRINT",
+      "terrain_quality_fraction": 1.0
+    },
+    {
+      "id": "way/854385642",
+      "kind": "building",
+      "status": "FULL_NATIVE_QUALITY_FOOTPRINT",
+      "terrain_quality_fraction": 1.0
+    },
+    {
+      "id": "way/851001731",
+      "kind": "building",
+      "status": "FULL_NATIVE_QUALITY_FOOTPRINT",
+      "terrain_quality_fraction": 1.0
+    },
+    {
+      "id": "way/1162337470",
+      "kind": "building",
+      "status": "FULL_NATIVE_QUALITY_FOOTPRINT",
+      "terrain_quality_fraction": 1.0
+    },
+    {
+      "id": "way/854116033",
+      "kind": "building",
+      "status": "FULL_NATIVE_QUALITY_FOOTPRINT",
+      "terrain_quality_fraction": 0.9999999999999998
+    },
+    {
+      "id": "way/851013783",
+      "kind": "building",
+      "status": "FULL_NATIVE_QUALITY_FOOTPRINT",
+      "terrain_quality_fraction": 1.0
+    },
+    {
+      "id": "way/507228538",
+      "kind": "building",
+      "status": "FULL_NATIVE_QUALITY_FOOTPRINT",
+      "terrain_quality_fraction": 1.0
+    },
+    {
+      "id": "way/851013794",
+      "kind": "building",
+      "status": "FULL_NATIVE_QUALITY_FOOTPRINT",
+      "terrain_quality_fraction": 1.0
+    },
+    {
+      "id": "way/851013797",
+      "kind": "building",
+      "status": "FULL_NATIVE_QUALITY_FOOTPRINT",
+      "terrain_quality_fraction": 0.9999999999999999
+    },
+    {
+      "id": "way/850782558",
+      "kind": "building",
+      "status": "FULL_NATIVE_QUALITY_FOOTPRINT",
+      "terrain_quality_fraction": 1.0
+    },
+    {
+      "id": "way/854115461",
+      "kind": "building",
+      "status": "FULL_NATIVE_QUALITY_FOOTPRINT",
+      "terrain_quality_fraction": 1.0
+    },
+    {
+      "id": "way/851013767",
+      "kind": "building",
+      "status": "FULL_NATIVE_QUALITY_FOOTPRINT",
+      "terrain_quality_fraction": 1.0
+    },
+    {
+      "id": "way/854385662",
+      "kind": "building",
+      "status": "FULL_NATIVE_QUALITY_FOOTPRINT",
+      "terrain_quality_fraction": 1.0
+    },
+    {
+      "id": "way/1450729094",
+      "kind": "road",
+      "status": "FULL_NATIVE_QUALITY_FOOTPRINT",
+      "terrain_quality_fraction": 1.0
+    },
+    {
+      "id": "way/340634328",
+      "kind": "road",
+      "status": "PARTIAL_NATIVE_QUALITY_FOOTPRINT",
+      "terrain_quality_fraction": 0.17889165109712696
+    },
+    {
+      "id": "way/853760522",
+      "kind": "building",
+      "status": "FULL_NATIVE_QUALITY_FOOTPRINT",
+      "terrain_quality_fraction": 1.0
+    },
+    {
+      "id": "way/854115565",
+      "kind": "building",
+      "status": "FULL_NATIVE_QUALITY_FOOTPRINT",
+      "terrain_quality_fraction": 1.0
+    },
+    {
+      "id": "way/1132149392",
+      "kind": "building",
+      "status": "FULL_NATIVE_QUALITY_FOOTPRINT",
+      "terrain_quality_fraction": 1.0
+    },
+    {
+      "id": "way/344279090",
+      "kind": "building",
+      "status": "FULL_NATIVE_QUALITY_FOOTPRINT",
+      "terrain_quality_fraction": 1.0
+    },
+    {
+      "id": "way/769001596",
+      "kind": "building",
+      "status": "FULL_NATIVE_QUALITY_FOOTPRINT",
+      "terrain_quality_fraction": 0.9999999999999999
+    },
+    {
+      "id": "way/854113173",
+      "kind": "building",
+      "status": "FULL_NATIVE_QUALITY_FOOTPRINT",
+      "terrain_quality_fraction": 1.0
+    },
+    {
+      "id": "way/769001589",
+      "kind": "building",
+      "status": "FULL_NATIVE_QUALITY_FOOTPRINT",
+      "terrain_quality_fraction": 1.0
+    },
+    {
+      "id": "way/854385672",
+      "kind": "building",
+      "status": "FULL_NATIVE_QUALITY_FOOTPRINT",
+      "terrain_quality_fraction": 1.0
+    },
+    {
+      "id": "way/853760513",
+      "kind": "building",
+      "status": "FULL_NATIVE_QUALITY_FOOTPRINT",
+      "terrain_quality_fraction": 1.0
+    },
+    {
+      "id": "way/854385643",
+      "kind": "building",
+      "status": "FULL_NATIVE_QUALITY_FOOTPRINT",
+      "terrain_quality_fraction": 1.0
+    },
+    {
+      "id": "way/851001703",
+      "kind": "building",
+      "status": "FULL_NATIVE_QUALITY_FOOTPRINT",
+      "terrain_quality_fraction": 1.0
+    },
+    {
+      "id": "way/854115582",
+      "kind": "building",
+      "status": "FULL_NATIVE_QUALITY_FOOTPRINT",
+      "terrain_quality_fraction": 1.0
+    },
+    {
+      "id": "way/854116030",
+      "kind": "building",
+      "status": "FULL_NATIVE_QUALITY_FOOTPRINT",
+      "terrain_quality_fraction": 0.9999999999999999
+    },
+    {
+      "id": "way/854385615",
+      "kind": "building",
+      "status": "FULL_NATIVE_QUALITY_FOOTPRINT",
+      "terrain_quality_fraction": 0.9999999999999998
+    },
+    {
+      "id": "way/934778585",
+      "kind": "building",
+      "status": "FULL_NATIVE_QUALITY_FOOTPRINT",
+      "terrain_quality_fraction": 0.9999999999999999
+    },
+    {
+      "id": "way/854115520",
+      "kind": "building",
+      "status": "FULL_NATIVE_QUALITY_FOOTPRINT",
+      "terrain_quality_fraction": 0.9999999999999998
+    },
+    {
+      "id": "way/854116035",
+      "kind": "building",
+      "status": "FULL_NATIVE_QUALITY_FOOTPRINT",
+      "terrain_quality_fraction": 0.9999999999999998
+    },
+    {
+      "id": "way/934778616",
+      "kind": "building",
+      "status": "FULL_NATIVE_QUALITY_FOOTPRINT",
+      "terrain_quality_fraction": 1.0
+    },
+    {
+      "id": "way/854113227",
+      "kind": "building",
+      "status": "FULL_NATIVE_QUALITY_FOOTPRINT",
+      "terrain_quality_fraction": 1.0
+    },
+    {
+      "id": "way/854113197",
+      "kind": "building",
+      "status": "FULL_NATIVE_QUALITY_FOOTPRINT",
+      "terrain_quality_fraction": 1.0
+    },
+    {
+      "id": "way/344279062",
+      "kind": "building",
+      "status": "FULL_NATIVE_QUALITY_FOOTPRINT",
+      "terrain_quality_fraction": 1.0
+    },
+    {
+      "id": "way/758628977",
+      "kind": "road",
+      "status": "FULL_NATIVE_QUALITY_FOOTPRINT",
+      "terrain_quality_fraction": 1.0
+    },
+    {
+      "id": "way/341557611",
+      "kind": "road",
+      "status": "FULL_NATIVE_QUALITY_FOOTPRINT",
+      "terrain_quality_fraction": 1.0
+    },
+    {
+      "id": "way/769001584",
+      "kind": "building",
+      "status": "FULL_NATIVE_QUALITY_FOOTPRINT",
+      "terrain_quality_fraction": 1.0
+    },
+    {
+      "id": "way/853760516",
+      "kind": "building",
+      "status": "FULL_NATIVE_QUALITY_FOOTPRINT",
+      "terrain_quality_fraction": 1.0
+    },
+    {
+      "id": "way/854115526",
+      "kind": "building",
+      "status": "FULL_NATIVE_QUALITY_FOOTPRINT",
+      "terrain_quality_fraction": 1.0
+    },
+    {
+      "id": "way/854115580",
+      "kind": "building",
+      "status": "FULL_NATIVE_QUALITY_FOOTPRINT",
+      "terrain_quality_fraction": 1.0
+    },
+    {
+      "id": "way/854385657",
+      "kind": "building",
+      "status": "FULL_NATIVE_QUALITY_FOOTPRINT",
+      "terrain_quality_fraction": 1.0
+    },
+    {
+      "id": "way/854385639",
+      "kind": "building",
+      "status": "FULL_NATIVE_QUALITY_FOOTPRINT",
+      "terrain_quality_fraction": 1.0
+    },
+    {
+      "id": "way/507471923",
+      "kind": "building",
+      "status": "FULL_NATIVE_QUALITY_FOOTPRINT",
+      "terrain_quality_fraction": 1.0
+    },
+    {
+      "id": "way/934778617",
+      "kind": "building",
+      "status": "FULL_NATIVE_QUALITY_FOOTPRINT",
+      "terrain_quality_fraction": 1.0
+    },
+    {
+      "id": "way/507472008",
+      "kind": "building",
+      "status": "FULL_NATIVE_QUALITY_FOOTPRINT",
+      "terrain_quality_fraction": 1.0
+    },
+    {
+      "id": "way/854113182",
+      "kind": "building",
+      "status": "FULL_NATIVE_QUALITY_FOOTPRINT",
+      "terrain_quality_fraction": 1.0
+    },
+    {
+      "id": "way/854113183",
+      "kind": "building",
+      "status": "FULL_NATIVE_QUALITY_FOOTPRINT",
+      "terrain_quality_fraction": 0.9999999999999998
+    },
+    {
+      "id": "way/854113217",
+      "kind": "building",
+      "status": "FULL_NATIVE_QUALITY_FOOTPRINT",
+      "terrain_quality_fraction": 1.0
+    },
+    {
+      "id": "way/854113218",
+      "kind": "building",
+      "status": "FULL_NATIVE_QUALITY_FOOTPRINT",
+      "terrain_quality_fraction": 1.0
+    },
+    {
+      "id": "way/344279089",
+      "kind": "building",
+      "status": "FULL_NATIVE_QUALITY_FOOTPRINT",
+      "terrain_quality_fraction": 0.9999999999999999
+    },
+    {
+      "id": "way/854115537",
+      "kind": "building",
+      "status": "FULL_NATIVE_QUALITY_FOOTPRINT",
+      "terrain_quality_fraction": 1.0
+    },
+    {
+      "id": "way/851013776",
+      "kind": "building",
+      "status": "FULL_NATIVE_QUALITY_FOOTPRINT",
+      "terrain_quality_fraction": 1.0
+    },
+    {
+      "id": "way/851013790",
+      "kind": "building",
+      "status": "FULL_NATIVE_QUALITY_FOOTPRINT",
+      "terrain_quality_fraction": 1.0
+    },
+    {
+      "id": "way/854116029",
+      "kind": "building",
+      "status": "FULL_NATIVE_QUALITY_FOOTPRINT",
+      "terrain_quality_fraction": 1.0
+    },
+    {
+      "id": "way/344279071",
+      "kind": "building",
+      "status": "FULL_NATIVE_QUALITY_FOOTPRINT",
+      "terrain_quality_fraction": 1.0
+    },
+    {
+      "id": "way/1034310843",
+      "kind": "road",
+      "status": "FULL_NATIVE_QUALITY_FOOTPRINT",
+      "terrain_quality_fraction": 1.0
+    },
+    {
+      "id": "way/850782559",
+      "kind": "building",
+      "status": "FULL_NATIVE_QUALITY_FOOTPRINT",
+      "terrain_quality_fraction": 1.0
+    },
+    {
+      "id": "way/341557606",
+      "kind": "bridge",
+      "status": "FULL_NATIVE_QUALITY_FOOTPRINT",
+      "terrain_quality_fraction": 1.0
+    },
+    {
+      "id": "way/504509854",
+      "kind": "road",
+      "status": "FULL_NATIVE_QUALITY_FOOTPRINT",
+      "terrain_quality_fraction": 1.0
+    },
+    {
+      "id": "way/760438582",
+      "kind": "road",
+      "status": "FULL_NATIVE_QUALITY_FOOTPRINT",
+      "terrain_quality_fraction": 1.0
+    },
+    {
+      "id": "way/504509847",
+      "kind": "road",
+      "status": "PARTIAL_NATIVE_QUALITY_FOOTPRINT",
+      "terrain_quality_fraction": 0.754266490673116
+    },
+    {
+      "id": "way/934778614",
+      "kind": "road",
+      "status": "FULL_NATIVE_QUALITY_FOOTPRINT",
+      "terrain_quality_fraction": 1.0
+    },
+    {
+      "id": "way/344279104",
+      "kind": "building",
+      "status": "FULL_NATIVE_QUALITY_FOOTPRINT",
+      "terrain_quality_fraction": 1.0
+    },
+    {
+      "id": "way/769001573",
+      "kind": "building",
+      "status": "FULL_NATIVE_QUALITY_FOOTPRINT",
+      "terrain_quality_fraction": 1.0
+    },
+    {
+      "id": "way/853760525",
+      "kind": "building",
+      "status": "FULL_NATIVE_QUALITY_FOOTPRINT",
+      "terrain_quality_fraction": 0.9999999999999999
+    },
+    {
+      "id": "way/474658300",
+      "kind": "building",
+      "status": "FULL_NATIVE_QUALITY_FOOTPRINT",
+      "terrain_quality_fraction": 0.9999999999999999
+    },
+    {
+      "id": "way/853760511",
+      "kind": "building",
+      "status": "FULL_NATIVE_QUALITY_FOOTPRINT",
+      "terrain_quality_fraction": 1.0
+    },
+    {
+      "id": "way/854113208",
+      "kind": "building",
+      "status": "FULL_NATIVE_QUALITY_FOOTPRINT",
+      "terrain_quality_fraction": 1.0
+    },
+    {
+      "id": "way/854113226",
+      "kind": "building",
+      "status": "FULL_NATIVE_QUALITY_FOOTPRINT",
+      "terrain_quality_fraction": 1.0
+    },
+    {
+      "id": "way/854115557",
+      "kind": "building",
+      "status": "FULL_NATIVE_QUALITY_FOOTPRINT",
+      "terrain_quality_fraction": 1.0
+    },
+    {
+      "id": "way/854115579",
+      "kind": "building",
+      "status": "FULL_NATIVE_QUALITY_FOOTPRINT",
+      "terrain_quality_fraction": 1.0
+    },
+    {
+      "id": "way/854385664",
+      "kind": "building",
+      "status": "FULL_NATIVE_QUALITY_FOOTPRINT",
+      "terrain_quality_fraction": 1.0
+    },
+    {
+      "id": "way/854385678",
+      "kind": "building",
+      "status": "FULL_NATIVE_QUALITY_FOOTPRINT",
+      "terrain_quality_fraction": 1.0
+    },
+    {
+      "id": "way/851013772",
+      "kind": "building",
+      "status": "FULL_NATIVE_QUALITY_FOOTPRINT",
+      "terrain_quality_fraction": 1.0
+    },
+    {
+      "id": "way/851013777",
+      "kind": "building",
+      "status": "FULL_NATIVE_QUALITY_FOOTPRINT",
+      "terrain_quality_fraction": 0.9999999999999998
+    },
+    {
+      "id": "way/851013793",
+      "kind": "building",
+      "status": "FULL_NATIVE_QUALITY_FOOTPRINT",
+      "terrain_quality_fraction": 1.0
+    },
+    {
+      "id": "way/854115465",
+      "kind": "building",
+      "status": "FULL_NATIVE_QUALITY_FOOTPRINT",
+      "terrain_quality_fraction": 1.0
+    },
+    {
+      "id": "way/854115481",
+      "kind": "building",
+      "status": "FULL_NATIVE_QUALITY_FOOTPRINT",
+      "terrain_quality_fraction": 1.0
+    },
+    {
+      "id": "way/504509851",
+      "kind": "road",
+      "status": "FULL_NATIVE_QUALITY_FOOTPRINT",
+      "terrain_quality_fraction": 1.0
+    },
+    {
+      "id": "way/886704210",
+      "kind": "road",
+      "status": "FULL_NATIVE_QUALITY_FOOTPRINT",
+      "terrain_quality_fraction": 1.0
+    },
+    {
+      "id": "way/1017959928",
+      "kind": "bridge",
+      "status": "FULL_NATIVE_QUALITY_FOOTPRINT",
+      "terrain_quality_fraction": 1.0
+    },
+    {
+      "id": "way/769001580",
+      "kind": "building",
+      "status": "FULL_NATIVE_QUALITY_FOOTPRINT",
+      "terrain_quality_fraction": 1.0
+    },
+    {
+      "id": "way/344279079",
+      "kind": "building",
+      "status": "FULL_NATIVE_QUALITY_FOOTPRINT",
+      "terrain_quality_fraction": 1.0
+    },
+    {
+      "id": "way/760438587",
+      "kind": "building",
+      "status": "FULL_NATIVE_QUALITY_FOOTPRINT",
+      "terrain_quality_fraction": 1.0
+    },
+    {
+      "id": "way/854115575",
+      "kind": "building",
+      "status": "FULL_NATIVE_QUALITY_FOOTPRINT",
+      "terrain_quality_fraction": 1.0
+    },
+    {
+      "id": "way/769001599",
+      "kind": "building",
+      "status": "FULL_NATIVE_QUALITY_FOOTPRINT",
+      "terrain_quality_fraction": 1.0
+    },
+    {
+      "id": "way/854385609",
+      "kind": "building",
+      "status": "FULL_NATIVE_QUALITY_FOOTPRINT",
+      "terrain_quality_fraction": 1.0
+    },
+    {
+      "id": "way/854113179",
+      "kind": "building",
+      "status": "FULL_NATIVE_QUALITY_FOOTPRINT",
+      "terrain_quality_fraction": 1.0
+    },
+    {
+      "id": "way/1132149394",
+      "kind": "building",
+      "status": "FULL_NATIVE_QUALITY_FOOTPRINT",
+      "terrain_quality_fraction": 1.0
+    },
+    {
+      "id": "way/851374926",
+      "kind": "building",
+      "status": "FULL_NATIVE_QUALITY_FOOTPRINT",
+      "terrain_quality_fraction": 1.0
+    },
+    {
+      "id": "way/851374920",
+      "kind": "building",
+      "status": "FULL_NATIVE_QUALITY_FOOTPRINT",
+      "terrain_quality_fraction": 0.9999999999999998
+    },
+    {
+      "id": "way/851374922",
+      "kind": "building",
+      "status": "FULL_NATIVE_QUALITY_FOOTPRINT",
+      "terrain_quality_fraction": 0.9999999999999998
+    },
+    {
+      "id": "way/1359685640",
+      "kind": "bridge",
+      "status": "FULL_NATIVE_QUALITY_FOOTPRINT",
+      "terrain_quality_fraction": 1.0
+    },
+    {
+      "id": "way/344279082",
+      "kind": "building",
+      "status": "FULL_NATIVE_QUALITY_FOOTPRINT",
+      "terrain_quality_fraction": 1.0
+    },
+    {
+      "id": "way/344279092",
+      "kind": "building",
+      "status": "FULL_NATIVE_QUALITY_FOOTPRINT",
+      "terrain_quality_fraction": 1.0
+    },
+    {
+      "id": "way/853760519",
+      "kind": "building",
+      "status": "FULL_NATIVE_QUALITY_FOOTPRINT",
+      "terrain_quality_fraction": 1.0
+    },
+    {
+      "id": "way/854115530",
+      "kind": "building",
+      "status": "FULL_NATIVE_QUALITY_FOOTPRINT",
+      "terrain_quality_fraction": 1.0
+    },
+    {
+      "id": "way/1162337477",
+      "kind": "building",
+      "status": "FULL_NATIVE_QUALITY_FOOTPRINT",
+      "terrain_quality_fraction": 1.0
+    },
+    {
+      "id": "way/854385631",
+      "kind": "building",
+      "status": "FULL_NATIVE_QUALITY_FOOTPRINT",
+      "terrain_quality_fraction": 1.0
+    },
+    {
+      "id": "way/853760512",
+      "kind": "building",
+      "status": "FULL_NATIVE_QUALITY_FOOTPRINT",
+      "terrain_quality_fraction": 1.0
+    },
+    {
+      "id": "way/854113185",
+      "kind": "building",
+      "status": "FULL_NATIVE_QUALITY_FOOTPRINT",
+      "terrain_quality_fraction": 1.0
+    },
+    {
+      "id": "way/769001603",
+      "kind": "building",
+      "status": "FULL_NATIVE_QUALITY_FOOTPRINT",
+      "terrain_quality_fraction": 0.9999999999999998
+    },
+    {
+      "id": "way/853760508",
+      "kind": "building",
+      "status": "FULL_NATIVE_QUALITY_FOOTPRINT",
+      "terrain_quality_fraction": 1.0
+    },
+    {
+      "id": "way/854113168",
+      "kind": "building",
+      "status": "FULL_NATIVE_QUALITY_FOOTPRINT",
+      "terrain_quality_fraction": 1.0
+    },
+    {
+      "id": "way/851013801",
+      "kind": "building",
+      "status": "FULL_NATIVE_QUALITY_FOOTPRINT",
+      "terrain_quality_fraction": 1.0
+    },
+    {
+      "id": "way/643869490",
+      "kind": "road",
+      "status": "FULL_NATIVE_QUALITY_FOOTPRINT",
+      "terrain_quality_fraction": 1.0
+    },
+    {
+      "id": "way/854113202",
+      "kind": "building",
+      "status": "FULL_NATIVE_QUALITY_FOOTPRINT",
+      "terrain_quality_fraction": 1.0
+    },
+    {
+      "id": "way/760438590",
+      "kind": "building",
+      "status": "FULL_NATIVE_QUALITY_FOOTPRINT",
+      "terrain_quality_fraction": 1.0
+    },
+    {
+      "id": "way/1132149397",
+      "kind": "building",
+      "status": "FULL_NATIVE_QUALITY_FOOTPRINT",
+      "terrain_quality_fraction": 1.0
+    },
+    {
+      "id": "way/854115532",
+      "kind": "building",
+      "status": "FULL_NATIVE_QUALITY_FOOTPRINT",
+      "terrain_quality_fraction": 1.0
+    },
+    {
+      "id": "way/854113220",
+      "kind": "building",
+      "status": "FULL_NATIVE_QUALITY_FOOTPRINT",
+      "terrain_quality_fraction": 0.9999999999999998
+    },
+    {
+      "id": "way/854115571",
+      "kind": "building",
+      "status": "FULL_NATIVE_QUALITY_FOOTPRINT",
+      "terrain_quality_fraction": 1.0
+    },
+    {
+      "id": "way/854385612",
+      "kind": "building",
+      "status": "FULL_NATIVE_QUALITY_FOOTPRINT",
+      "terrain_quality_fraction": 0.9999999999999999
+    },
+    {
+      "id": "way/934778618",
+      "kind": "building",
+      "status": "FULL_NATIVE_QUALITY_FOOTPRINT",
+      "terrain_quality_fraction": 1.0
+    },
+    {
+      "id": "way/854115464",
+      "kind": "building",
+      "status": "FULL_NATIVE_QUALITY_FOOTPRINT",
+      "terrain_quality_fraction": 0.9999999999999999
+    },
+    {
+      "id": "way/1450733045",
+      "kind": "road",
+      "status": "FULL_NATIVE_QUALITY_FOOTPRINT",
+      "terrain_quality_fraction": 1.0
+    },
+    {
+      "id": "way/1450733046",
+      "kind": "road",
+      "status": "FULL_NATIVE_QUALITY_FOOTPRINT",
+      "terrain_quality_fraction": 1.0
+    },
+    {
+      "id": "way/1098177636",
+      "kind": "road",
+      "status": "FULL_NATIVE_QUALITY_FOOTPRINT",
+      "terrain_quality_fraction": 1.0
+    },
+    {
+      "id": "way/83925838",
+      "kind": "bridge",
+      "status": "FULL_NATIVE_QUALITY_FOOTPRINT",
+      "terrain_quality_fraction": 1.0
+    },
+    {
+      "id": "way/344279083",
+      "kind": "building",
+      "status": "FULL_NATIVE_QUALITY_FOOTPRINT",
+      "terrain_quality_fraction": 1.0
+    },
+    {
+      "id": "way/344279097",
+      "kind": "building",
+      "status": "FULL_NATIVE_QUALITY_FOOTPRINT",
+      "terrain_quality_fraction": 1.0
+    },
+    {
+      "id": "way/507471921",
+      "kind": "building",
+      "status": "FULL_NATIVE_QUALITY_FOOTPRINT",
+      "terrain_quality_fraction": 0.9999999999999999
+    },
+    {
+      "id": "way/854113200",
+      "kind": "building",
+      "status": "FULL_NATIVE_QUALITY_FOOTPRINT",
+      "terrain_quality_fraction": 0.9999999999999999
+    },
+    {
+      "id": "way/854115548",
+      "kind": "building",
+      "status": "FULL_NATIVE_QUALITY_FOOTPRINT",
+      "terrain_quality_fraction": 1.0
+    },
+    {
+      "id": "way/854115558",
+      "kind": "building",
+      "status": "FULL_NATIVE_QUALITY_FOOTPRINT",
+      "terrain_quality_fraction": 1.0
+    },
+    {
+      "id": "way/851374919",
+      "kind": "building",
+      "status": "FULL_NATIVE_QUALITY_FOOTPRINT",
+      "terrain_quality_fraction": 1.0
+    },
+    {
+      "id": "way/344279069",
+      "kind": "building",
+      "status": "FULL_NATIVE_QUALITY_FOOTPRINT",
+      "terrain_quality_fraction": 1.0
+    },
+    {
+      "id": "way/769001607",
+      "kind": "building",
+      "status": "FULL_NATIVE_QUALITY_FOOTPRINT",
+      "terrain_quality_fraction": 1.0
+    },
+    {
+      "id": "way/854115531",
+      "kind": "building",
+      "status": "FULL_NATIVE_QUALITY_FOOTPRINT",
+      "terrain_quality_fraction": 1.0
+    },
+    {
+      "id": "way/769001588",
+      "kind": "building",
+      "status": "FULL_NATIVE_QUALITY_FOOTPRINT",
+      "terrain_quality_fraction": 1.0
+    },
+    {
+      "id": "way/854115576",
+      "kind": "building",
+      "status": "FULL_NATIVE_QUALITY_FOOTPRINT",
+      "terrain_quality_fraction": 1.0
+    },
+    {
+      "id": "way/854113172",
+      "kind": "building",
+      "status": "FULL_NATIVE_QUALITY_FOOTPRINT",
+      "terrain_quality_fraction": 1.0
+    },
+    {
+      "id": "way/934778619",
+      "kind": "building",
+      "status": "FULL_NATIVE_QUALITY_FOOTPRINT",
+      "terrain_quality_fraction": 1.0
+    },
+    {
+      "id": "way/854113189",
+      "kind": "building",
+      "status": "FULL_NATIVE_QUALITY_FOOTPRINT",
+      "terrain_quality_fraction": 0.9999999999999999
+    },
+    {
+      "id": "way/854385670",
+      "kind": "building",
+      "status": "FULL_NATIVE_QUALITY_FOOTPRINT",
+      "terrain_quality_fraction": 1.0
+    },
+    {
+      "id": "way/1132149406",
+      "kind": "building",
+      "status": "FULL_NATIVE_QUALITY_FOOTPRINT",
+      "terrain_quality_fraction": 1.0
+    },
+    {
+      "id": "way/854385629",
+      "kind": "building",
+      "status": "FULL_NATIVE_QUALITY_FOOTPRINT",
+      "terrain_quality_fraction": 1.0
+    },
+    {
+      "id": "way/854385638",
+      "kind": "building",
+      "status": "FULL_NATIVE_QUALITY_FOOTPRINT",
+      "terrain_quality_fraction": 1.0
+    },
+    {
+      "id": "way/851001713",
+      "kind": "building",
+      "status": "FULL_NATIVE_QUALITY_FOOTPRINT",
+      "terrain_quality_fraction": 1.0
+    },
+    {
+      "id": "way/854115459",
+      "kind": "building",
+      "status": "FULL_NATIVE_QUALITY_FOOTPRINT",
+      "terrain_quality_fraction": 1.0
+    },
+    {
+      "id": "way/854115467",
+      "kind": "building",
+      "status": "FULL_NATIVE_QUALITY_FOOTPRINT",
+      "terrain_quality_fraction": 0.9999999999999999
+    },
+    {
+      "id": "way/344279074",
+      "kind": "building",
+      "status": "FULL_NATIVE_QUALITY_FOOTPRINT",
+      "terrain_quality_fraction": 1.0
+    },
+    {
+      "id": "way/344279085",
+      "kind": "building",
+      "status": "FULL_NATIVE_QUALITY_FOOTPRINT",
+      "terrain_quality_fraction": 1.0
+    },
+    {
+      "id": "way/854113174",
+      "kind": "building",
+      "status": "FULL_NATIVE_QUALITY_FOOTPRINT",
+      "terrain_quality_fraction": 1.0
+    },
+    {
+      "id": "way/854113175",
+      "kind": "building",
+      "status": "FULL_NATIVE_QUALITY_FOOTPRINT",
+      "terrain_quality_fraction": 1.0
+    },
+    {
+      "id": "way/934778613",
+      "kind": "road",
+      "status": "PARTIAL_NATIVE_QUALITY_FOOTPRINT",
+      "terrain_quality_fraction": 0.4952653467083591
+    },
+    {
+      "id": "way/594716135",
+      "kind": "road",
+      "status": "FULL_NATIVE_QUALITY_FOOTPRINT",
+      "terrain_quality_fraction": 1.0
+    },
+    {
+      "id": "way/1017959927",
+      "kind": "road",
+      "status": "FULL_NATIVE_QUALITY_FOOTPRINT",
+      "terrain_quality_fraction": 1.0
+    },
+    {
+      "id": "way/343797433",
+      "kind": "building",
+      "status": "FULL_NATIVE_QUALITY_FOOTPRINT",
+      "terrain_quality_fraction": 0.9999999999999999
+    },
+    {
+      "id": "way/344279066",
+      "kind": "building",
+      "status": "FULL_NATIVE_QUALITY_FOOTPRINT",
+      "terrain_quality_fraction": 1.0
+    },
+    {
+      "id": "way/854115559",
+      "kind": "building",
+      "status": "FULL_NATIVE_QUALITY_FOOTPRINT",
+      "terrain_quality_fraction": 0.9999999999999999
+    },
+    {
+      "id": "way/851001699",
+      "kind": "building",
+      "status": "FULL_NATIVE_QUALITY_FOOTPRINT",
+      "terrain_quality_fraction": 1.0
+    },
+    {
+      "id": "way/854115573",
+      "kind": "building",
+      "status": "FULL_NATIVE_QUALITY_FOOTPRINT",
+      "terrain_quality_fraction": 0.9999999999999998
+    },
+    {
+      "id": "way/854115550",
+      "kind": "building",
+      "status": "FULL_NATIVE_QUALITY_FOOTPRINT",
+      "terrain_quality_fraction": 0.9999999999999998
+    },
+    {
+      "id": "way/769001583",
+      "kind": "building",
+      "status": "FULL_NATIVE_QUALITY_FOOTPRINT",
+      "terrain_quality_fraction": 1.0
+    },
+    {
+      "id": "way/769001609",
+      "kind": "building",
+      "status": "FULL_NATIVE_QUALITY_FOOTPRINT",
+      "terrain_quality_fraction": 0.9999999999999998
+    },
+    {
+      "id": "way/854385651",
+      "kind": "building",
+      "status": "FULL_NATIVE_QUALITY_FOOTPRINT",
+      "terrain_quality_fraction": 1.0
+    },
+    {
+      "id": "way/1132149400",
+      "kind": "building",
+      "status": "FULL_NATIVE_QUALITY_FOOTPRINT",
+      "terrain_quality_fraction": 0.9999999999999998
+    },
+    {
+      "id": "way/769001590",
+      "kind": "building",
+      "status": "FULL_NATIVE_QUALITY_FOOTPRINT",
+      "terrain_quality_fraction": 0.9999999999999999
+    },
+    {
+      "id": "way/854385675",
+      "kind": "building",
+      "status": "FULL_NATIVE_QUALITY_FOOTPRINT",
+      "terrain_quality_fraction": 1.0
+    },
+    {
+      "id": "way/851013798",
+      "kind": "building",
+      "status": "FULL_NATIVE_QUALITY_FOOTPRINT",
+      "terrain_quality_fraction": 1.0
+    },
+    {
+      "id": "way/851013802",
+      "kind": "building",
+      "status": "FULL_NATIVE_QUALITY_FOOTPRINT",
+      "terrain_quality_fraction": 1.0
+    }
+  ],
+  "source_run": "event-fe47db331390",
+  "terrain_quality_sha256": "6e54fe820abfa51699d87facbf6372c7eb04ad9434a28465ba8fffdd27d2296e"
+}

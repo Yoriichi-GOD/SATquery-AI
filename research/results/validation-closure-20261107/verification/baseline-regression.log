@@ -1,0 +1,64 @@
+/mnt/c/Users/nrgen/.codex/.chatgpt-projects/g-p-6ad52225bccc8191b1ed5af2ed6b0646/research-campaign-20261107/repo/.runtime/validation-env/lib/python3.11/site-packages/rasterio/transform.py:178: PendingDeprecationWarning: Use `@` matmul instead of `*` mul operator for matrix multiplication
+  return Affine.translation(west, north) * Affine.scale(xsize, -ysize)
+/mnt/c/Users/nrgen/.codex/.chatgpt-projects/g-p-6ad52225bccc8191b1ed5af2ed6b0646/research-campaign-20261107/repo/paired_lab/external_data/raster.py:53: PendingDeprecationWarning: is_tiled will be removed in a future version. Please consider copying the body of this function into your program or module.
+  compression=ds.compression.name if ds.compression else None, tiled=ds.is_tiled,
+/mnt/c/Users/nrgen/.codex/.chatgpt-projects/g-p-6ad52225bccc8191b1ed5af2ed6b0646/research-campaign-20261107/repo/.runtime/validation-env/lib/python3.11/site-packages/rasterio/transform.py:178: PendingDeprecationWarning: Use `@` matmul instead of `*` mul operator for matrix multiplication
+  return Affine.translation(west, north) * Affine.scale(xsize, -ysize)
+/mnt/c/Users/nrgen/.codex/.chatgpt-projects/g-p-6ad52225bccc8191b1ed5af2ed6b0646/research-campaign-20261107/repo/paired_lab/external_data/raster.py:53: PendingDeprecationWarning: is_tiled will be removed in a future version. Please consider copying the body of this function into your program or module.
+  compression=ds.compression.name if ds.compression else None, tiled=ds.is_tiled,
+/mnt/c/Users/nrgen/.codex/.chatgpt-projects/g-p-6ad52225bccc8191b1ed5af2ed6b0646/research-campaign-20261107/repo/.runtime/validation-env/lib/python3.11/site-packages/rasterio/transform.py:178: PendingDeprecationWarning: Use `@` matmul instead of `*` mul operator for matrix multiplication
+  return Affine.translation(west, north) * Affine.scale(xsize, -ysize)
+/mnt/c/Users/nrgen/.codex/.chatgpt-projects/g-p-6ad52225bccc8191b1ed5af2ed6b0646/research-campaign-20261107/repo/paired_lab/external_data/raster.py:53: PendingDeprecationWarning: is_tiled will be removed in a future version. Please consider copying the body of this function into your program or module.
+  compression=ds.compression.name if ds.compression else None, tiled=ds.is_tiled,
+/mnt/c/Users/nrgen/.codex/.chatgpt-projects/g-p-6ad52225bccc8191b1ed5af2ed6b0646/research-campaign-20261107/repo/.runtime/validation-env/lib/python3.11/site-packages/rasterio/__init__.py:366: NotGeoreferencedWarning: Dataset has no geotransform, gcps, or rpcs. The identity matrix will be returned.
+  dataset = writer(
+/mnt/c/Users/nrgen/.codex/.chatgpt-projects/g-p-6ad52225bccc8191b1ed5af2ed6b0646/research-campaign-20261107/repo/.runtime/validation-env/lib/python3.11/site-packages/rasterio/__init__.py:356: NotGeoreferencedWarning: Dataset has no geotransform, gcps, or rpcs. The identity matrix will be returned.
+  dataset = DatasetReader(path, driver=driver, sharing=sharing, **kwargs)
+/mnt/c/Users/nrgen/.codex/.chatgpt-projects/g-p-6ad52225bccc8191b1ed5af2ed6b0646/research-campaign-20261107/repo/paired_lab/external_data/raster.py:60: PendingDeprecationWarning: Use `@` matmul instead of `*` mul operator for matrix multiplication
+  resolution=[finite(v) for v in ds.res], bounds=[finite(v) for v in ds.bounds],
+/mnt/c/Users/nrgen/.codex/.chatgpt-projects/g-p-6ad52225bccc8191b1ed5af2ed6b0646/research-campaign-20261107/repo/.runtime/validation-env/lib/python3.11/site-packages/rasterio/transform.py:178: PendingDeprecationWarning: Use `@` matmul instead of `*` mul operator for matrix multiplication
+  return Affine.translation(west, north) * Affine.scale(xsize, -ysize)
+/mnt/c/Users/nrgen/.codex/.chatgpt-projects/g-p-6ad52225bccc8191b1ed5af2ed6b0646/research-campaign-20261107/repo/paired_lab/external_data/raster.py:53: PendingDeprecationWarning: is_tiled will be removed in a future version. Please consider copying the body of this function into your program or module.
+  compression=ds.compression.name if ds.compression else None, tiled=ds.is_tiled,
+/mnt/c/Users/nrgen/.codex/.chatgpt-projects/g-p-6ad52225bccc8191b1ed5af2ed6b0646/research-campaign-20261107/repo/.runtime/validation-env/lib/python3.11/site-packages/rasterio/transform.py:178: PendingDeprecationWarning: Use `@` matmul instead of `*` mul operator for matrix multiplication
+  return Affine.translation(west, north) * Affine.scale(xsize, -ysize)
+/mnt/c/Users/nrgen/.codex/.chatgpt-projects/g-p-6ad52225bccc8191b1ed5af2ed6b0646/research-campaign-20261107/repo/paired_lab/external_data/raster.py:53: PendingDeprecationWarning: is_tiled will be removed in a future version. Please consider copying the body of this function into your program or module.
+  compression=ds.compression.name if ds.compression else None, tiled=ds.is_tiled,
+/mnt/c/Users/nrgen/.codex/.chatgpt-projects/g-p-6ad52225bccc8191b1ed5af2ed6b0646/research-campaign-20261107/repo/.runtime/validation-env/lib/python3.11/site-packages/rasterio/transform.py:178: PendingDeprecationWarning: Use `@` matmul instead of `*` mul operator for matrix multiplication
+  return Affine.translation(west, north) * Affine.scale(xsize, -ysize)
+/mnt/c/Users/nrgen/.codex/.chatgpt-projects/g-p-6ad52225bccc8191b1ed5af2ed6b0646/research-campaign-20261107/repo/paired_lab/external_data/raster.py:53: PendingDeprecationWarning: is_tiled will be removed in a future version. Please consider copying the body of this function into your program or module.
+  compression=ds.compression.name if ds.compression else None, tiled=ds.is_tiled,
+/mnt/c/Users/nrgen/.codex/.chatgpt-projects/g-p-6ad52225bccc8191b1ed5af2ed6b0646/research-campaign-20261107/repo/geo.py:91: PendingDeprecationWarning: Use `@` matmul instead of `*` mul operator for matrix multiplication
+  x,y=Affine(*metadata['transform'])*(col+.5,row+.5)
+/mnt/c/Users/nrgen/.codex/.chatgpt-projects/g-p-6ad52225bccc8191b1ed5af2ed6b0646/research-campaign-20261107/repo/jai_extension/geo_context.py:152: PendingDeprecationWarning: Use `@` matmul instead of `*` mul operator for matrix multiplication
+  c,r=(~ds.transform)*(x,y)
+/mnt/c/Users/nrgen/.codex/.chatgpt-projects/g-p-6ad52225bccc8191b1ed5af2ed6b0646/research-campaign-20261107/repo/.runtime/validation-env/lib/python3.11/site-packages/rasterio/transform.py:178: PendingDeprecationWarning: Use `@` matmul instead of `*` mul operator for matrix multiplication
+  return Affine.translation(west, north) * Affine.scale(xsize, -ysize)
+/mnt/c/Users/nrgen/.codex/.chatgpt-projects/g-p-6ad52225bccc8191b1ed5af2ed6b0646/research-campaign-20261107/repo/jai_extension/geo_context.py:99: PendingDeprecationWarning: Use `@` matmul instead of `*` mul operator for matrix multiplication
+  source_col,source_row=(~source.transform)*(sx[0],sy[0])
+/mnt/c/Users/nrgen/.codex/.chatgpt-projects/g-p-6ad52225bccc8191b1ed5af2ed6b0646/research-campaign-20261107/repo/.runtime/validation-env/lib/python3.11/site-packages/rasterio/transform.py:178: PendingDeprecationWarning: Use `@` matmul instead of `*` mul operator for matrix multiplication
+  return Affine.translation(west, north) * Affine.scale(xsize, -ysize)
+/mnt/c/Users/nrgen/.codex/.chatgpt-projects/g-p-6ad52225bccc8191b1ed5af2ed6b0646/research-campaign-20261107/repo/.runtime/validation-env/lib/python3.11/site-packages/rasterio/transform.py:189: PendingDeprecationWarning: Use `@` matmul instead of `*` mul operator for matrix multiplication
+  return Affine.translation(west, north) * Affine.scale(
+/mnt/c/Users/nrgen/.codex/.chatgpt-projects/g-p-6ad52225bccc8191b1ed5af2ed6b0646/research-campaign-20261107/repo/jai_extension/geo_context.py:99: PendingDeprecationWarning: Use `@` matmul instead of `*` mul operator for matrix multiplication
+  source_col,source_row=(~source.transform)*(sx[0],sy[0])
+/mnt/c/Users/nrgen/.codex/.chatgpt-projects/g-p-6ad52225bccc8191b1ed5af2ed6b0646/research-campaign-20261107/repo/.runtime/validation-env/lib/python3.11/site-packages/rasterio/transform.py:178: PendingDeprecationWarning: Use `@` matmul instead of `*` mul operator for matrix multiplication
+  return Affine.translation(west, north) * Affine.scale(xsize, -ysize)
+/mnt/c/Users/nrgen/.codex/.chatgpt-projects/g-p-6ad52225bccc8191b1ed5af2ed6b0646/research-campaign-20261107/repo/jai_extension/geo_context.py:99: PendingDeprecationWarning: Use `@` matmul instead of `*` mul operator for matrix multiplication
+  source_col,source_row=(~source.transform)*(sx[0],sy[0])
+/mnt/c/Users/nrgen/.codex/.chatgpt-projects/g-p-6ad52225bccc8191b1ed5af2ed6b0646/research-campaign-20261107/repo/.runtime/validation-env/lib/python3.11/site-packages/rasterio/transform.py:178: PendingDeprecationWarning: Use `@` matmul instead of `*` mul operator for matrix multiplication
+  return Affine.translation(west, north) * Affine.scale(xsize, -ysize)
+/mnt/c/Users/nrgen/.codex/.chatgpt-projects/g-p-6ad52225bccc8191b1ed5af2ed6b0646/research-campaign-20261107/repo/jai_extension/geo_context.py:99: PendingDeprecationWarning: Use `@` matmul instead of `*` mul operator for matrix multiplication
+  source_col,source_row=(~source.transform)*(sx[0],sy[0])
+/mnt/c/Users/nrgen/.codex/.chatgpt-projects/g-p-6ad52225bccc8191b1ed5af2ed6b0646/research-campaign-20261107/repo/.runtime/validation-env/lib/python3.11/site-packages/rasterio/transform.py:178: PendingDeprecationWarning: Use `@` matmul instead of `*` mul operator for matrix multiplication
+  return Affine.translation(west, north) * Affine.scale(xsize, -ysize)
+/mnt/c/Users/nrgen/.codex/.chatgpt-projects/g-p-6ad52225bccc8191b1ed5af2ed6b0646/research-campaign-20261107/repo/jai_extension/geo_context.py:99: PendingDeprecationWarning: Use `@` matmul instead of `*` mul operator for matrix multiplication
+  source_col,source_row=(~source.transform)*(sx[0],sy[0])
+/mnt/c/Users/nrgen/.codex/.chatgpt-projects/g-p-6ad52225bccc8191b1ed5af2ed6b0646/research-campaign-20261107/repo/.runtime/validation-env/lib/python3.11/site-packages/rasterio/transform.py:178: PendingDeprecationWarning: Use `@` matmul instead of `*` mul operator for matrix multiplication
+  return Affine.translation(west, north) * Affine.scale(xsize, -ysize)
+/mnt/c/Users/nrgen/.codex/.chatgpt-projects/g-p-6ad52225bccc8191b1ed5af2ed6b0646/research-campaign-20261107/repo/.runtime/validation-env/lib/python3.11/site-packages/rasterio/transform.py:178: PendingDeprecationWarning: Use `@` matmul instead of `*` mul operator for matrix multiplication
+  return Affine.translation(west, north) * Affine.scale(xsize, -ysize)
+----------------------------------------------------------------------
+Ran 302 tests in 6.884s
+
+OK

@@ -1,0 +1,250 @@
+[
+  {
+    "common_clear_fraction": 0.19564261845373326,
+    "common_clear_pixels": 73886,
+    "datetime": "2013-08-26T05:14:19.163948Z",
+    "id": "LC08_L2SP_145039_20130826_02_T1",
+    "receipts": {
+      "qa_pixel": {
+        "account_credentials_used": false,
+        "bbox_wgs84": [
+          78.96,
+          30.6,
+          79.12,
+          30.8
+        ],
+        "bytes": 61425,
+        "license_url": "https://www.usgs.gov/landsat-missions/landsat-data-access",
+        "limitations": [
+          "Requested geographic bbox enclosed by native pixel window; analysis must apply its exact ROI",
+          "Derived window hash plus remote ETag identify input; no full-global-tile checksum is asserted"
+        ],
+        "native_window": {
+          "crs": "EPSG:32644",
+          "dtype": "uint16",
+          "native_resolution": [
+            30.0,
+            30.0
+          ],
+          "native_shape": [
+            7851,
+            7711
+          ],
+          "nodata": null,
+          "offset": 0.0,
+          "scale": 1.0,
+          "transform": [
+            30.0,
+            0.0,
+            304395.0,
+            0.0,
+            -30.0,
+            3409245.0
+          ],
+          "units": null,
+          "window_col_row_width_height": [
+            1117,
+            2049,
+            525,
+            749
+          ]
+        },
+        "pixels": 393225,
+        "product": "LC08_L2SP_145039_20130826_02_T1:qa_pixel",
+        "public_sas_token_persisted": false,
+        "resampling": "none; native source pixel window",
+        "retrieved_utc": "2026-11-07T12:56:11.609879+00:00",
+        "role": "input",
+        "sha256": "46614c8b62b543cd9a62a7208e5c78ece32ef8f1dc7532a74da9b47623cbadc1",
+        "source_content_length": 5104357,
+        "source_etag": "\"0x8D8E38C84A29363\"",
+        "source_full_file_sha256": "UNAVAILABLE_WINDOWED_REMOTE_SOURCE",
+        "source_url": "https://landsateuwest.blob.core.windows.net/landsat-c2/level-2/standard/oli-tirs/2013/145/039/LC08_L2SP_145039_20130826_20200912_02_T1/LC08_L2SP_145039_20130826_20200912_02_T1_QA_PIXEL.TIF",
+        "valid_pixels": 393225
+      },
+      "qa_radsat": {
+        "account_credentials_used": false,
+        "bbox_wgs84": [
+          78.96,
+          30.6,
+          79.12,
+          30.8
+        ],
+        "bytes": 7489,
+        "license_url": "https://www.usgs.gov/landsat-missions/landsat-data-access",
+        "limitations": [
+          "Requested geographic bbox enclosed by native pixel window; analysis must apply its exact ROI",
+          "Derived window hash plus remote ETag identify input; no full-global-tile checksum is asserted"
+        ],
+        "native_window": {
+          "crs": "EPSG:32644",
+          "dtype": "uint16",
+          "native_resolution": [
+            30.0,
+            30.0
+          ],
+          "native_shape": [
+            7851,
+            7711
+          ],
+          "nodata": null,
+          "offset": 0.0,
+          "scale": 1.0,
+          "transform": [
+            30.0,
+            0.0,
+            304395.0,
+            0.0,
+            -30.0,
+            3409245.0
+          ],
+          "units": null,
+          "window_col_row_width_height": [
+            1117,
+            2049,
+            525,
+            749
+          ]
+        },
+        "pixels": 393225,
+        "product": "LC08_L2SP_145039_20130826_02_T1:qa_radsat",
+        "public_sas_token_persisted": false,
+        "resampling": "none; native source pixel window",
+        "retrieved_utc": "2026-11-07T12:56:13.668421+00:00",
+        "role": "input",
+        "sha256": "088d9390c05163392e60efc2ec10aea6591bac759fbd439a20d89141ba87fd4a",
+        "source_content_length": 231257,
+        "source_etag": "\"0x8D8E38C845E2B0E\"",
+        "source_full_file_sha256": "UNAVAILABLE_WINDOWED_REMOTE_SOURCE",
+        "source_url": "https://landsateuwest.blob.core.windows.net/landsat-c2/level-2/standard/oli-tirs/2013/145/039/LC08_L2SP_145039_20130826_20200912_02_T1/LC08_L2SP_145039_20130826_20200912_02_T1_QA_RADSAT.TIF",
+        "valid_pixels": 393225
+      }
+    },
+    "roi_pixels": 377658,
+    "scene_cloud_cover": 46.23
+  },
+  {
+    "common_clear_fraction": 0.062278569499388335,
+    "common_clear_pixels": 23520,
+    "datetime": "2013-09-11T05:14:16.617619Z",
+    "id": "LC08_L2SP_145039_20130911_02_T1",
+    "receipts": {
+      "qa_pixel": {
+        "account_credentials_used": false,
+        "bbox_wgs84": [
+          78.96,
+          30.6,
+          79.12,
+          30.8
+        ],
+        "bytes": 35807,
+        "license_url": "https://www.usgs.gov/landsat-missions/landsat-data-access",
+        "limitations": [
+          "Requested geographic bbox enclosed by native pixel window; analysis must apply its exact ROI",
+          "Derived window hash plus remote ETag identify input; no full-global-tile checksum is asserted"
+        ],
+        "native_window": {
+          "crs": "EPSG:32644",
+          "dtype": "uint16",
+          "native_resolution": [
+            30.0,
+            30.0
+          ],
+          "native_shape": [
+            7851,
+            7711
+          ],
+          "nodata": null,
+          "offset": 0.0,
+          "scale": 1.0,
+          "transform": [
+            30.0,
+            0.0,
+            304395.0,
+            0.0,
+            -30.0,
+            3409245.0
+          ],
+          "units": null,
+          "window_col_row_width_height": [
+            1117,
+            2049,
+            525,
+            749
+          ]
+        },
+        "pixels": 393225,
+        "product": "LC08_L2SP_145039_20130911_02_T1:qa_pixel",
+        "public_sas_token_persisted": false,
+        "resampling": "none; native source pixel window",
+        "retrieved_utc": "2026-11-07T12:56:16.861677+00:00",
+        "role": "input",
+        "sha256": "257e8d21837b186cd87bddb4e9a24976aa12d324902b5790c28942eed0f53add",
+        "source_content_length": 5246226,
+        "source_etag": "\"0x8D8E38C8E431707\"",
+        "source_full_file_sha256": "UNAVAILABLE_WINDOWED_REMOTE_SOURCE",
+        "source_url": "https://landsateuwest.blob.core.windows.net/landsat-c2/level-2/standard/oli-tirs/2013/145/039/LC08_L2SP_145039_20130911_20200913_02_T1/LC08_L2SP_145039_20130911_20200913_02_T1_QA_PIXEL.TIF",
+        "valid_pixels": 393225
+      },
+      "qa_radsat": {
+        "account_credentials_used": false,
+        "bbox_wgs84": [
+          78.96,
+          30.6,
+          79.12,
+          30.8
+        ],
+        "bytes": 7505,
+        "license_url": "https://www.usgs.gov/landsat-missions/landsat-data-access",
+        "limitations": [
+          "Requested geographic bbox enclosed by native pixel window; analysis must apply its exact ROI",
+          "Derived window hash plus remote ETag identify input; no full-global-tile checksum is asserted"
+        ],
+        "native_window": {
+          "crs": "EPSG:32644",
+          "dtype": "uint16",
+          "native_resolution": [
+            30.0,
+            30.0
+          ],
+          "native_shape": [
+            7851,
+            7711
+          ],
+          "nodata": null,
+          "offset": 0.0,
+          "scale": 1.0,
+          "transform": [
+            30.0,
+            0.0,
+            304395.0,
+            0.0,
+            -30.0,
+            3409245.0
+          ],
+          "units": null,
+          "window_col_row_width_height": [
+            1117,
+            2049,
+            525,
+            749
+          ]
+        },
+        "pixels": 393225,
+        "product": "LC08_L2SP_145039_20130911_02_T1:qa_radsat",
+        "public_sas_token_persisted": false,
+        "resampling": "none; native source pixel window",
+        "retrieved_utc": "2026-11-07T12:56:18.921432+00:00",
+        "role": "input",
+        "sha256": "56897fcfa14b3de94573e236bb5cd6d14f3a66dfe7bf816e3b12efeafe2896d3",
+        "source_content_length": 235949,
+        "source_etag": "\"0x8D8E38C8DF4738C\"",
+        "source_full_file_sha256": "UNAVAILABLE_WINDOWED_REMOTE_SOURCE",
+        "source_url": "https://landsateuwest.blob.core.windows.net/landsat-c2/level-2/standard/oli-tirs/2013/145/039/LC08_L2SP_145039_20130911_20200913_02_T1/LC08_L2SP_145039_20130911_20200913_02_T1_QA_RADSAT.TIF",
+        "valid_pixels": 393225
+      }
+    },
+    "roi_pixels": 377658,
+    "scene_cloud_cover": 45.27
+  }
+]

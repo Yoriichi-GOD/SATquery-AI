@@ -1,0 +1,100 @@
+{
+  "abstract": "NaN",
+  "aoi_code": "AOI01",
+  "area_of_interest_file": "EMSR419_AOI01_DEL_MONIT01_areaOfInterestA_r1_v1.shp",
+  "area_of_interest_polygon": {
+    "coordinates": [
+      [
+        [
+          57.929206503000046,
+          25.80248556400005
+        ],
+        [
+          57.86909071700006,
+          25.61934305400007
+        ],
+        [
+          57.71220940300003,
+          25.633303822000073
+        ],
+        [
+          57.72592568700003,
+          25.823772659000042
+        ],
+        [
+          57.929206503000046,
+          25.80248556400005
+        ]
+      ]
+    ],
+    "type": "Polygon"
+  },
+  "bounding box": {
+    "east": 57.889203218000034,
+    "north": 25.821814086000074,
+    "south": 25.658193162000032,
+    "west": 57.72056371600007
+  },
+  "bounds": [
+    571380.0,
+    2833720.0,
+    593300.0,
+    2856500.0
+  ],
+  "cloud_probability": 0.0309833703070881,
+  "cloudprob_image_path": "2020-01-16.geojson",
+  "country": "NaN",
+  "crs": "EPSG:32640",
+  "date_ems_code": "2020-01-13T00:00:00+00:00",
+  "ems_code": "EMSR419",
+  "encoding_values": [
+    {
+      "0": "invalid",
+      "1": "clear",
+      "2": "cloud"
+    },
+    {
+      "0": "invalid",
+      "1": "land",
+      "2": "water"
+    }
+  ],
+  "event id": "EMSR419_AOI01_DEL_MONIT01",
+  "event type": "Riverine flood",
+  "gtversion": "v2",
+  "hydrology_file": "EMSR419_AOI01_DEL_MONIT01_hydrographyA_r1_v1.shp",
+  "layer name": "EMSR419_AOI01_DEL_MONIT01_observedEventA_r1_v1",
+  "method clouds": "s2cloudless",
+  "names2file": "2020-01-16",
+  "observed_event_file": "EMSR419_AOI01_DEL_MONIT01_observedEventA_r1_v1.shp",
+  "permanent_water_image_path": "2020.tif",
+  "pixels clouds S2": 0,
+  "pixels flood water S2": 126432,
+  "pixels hydro water S2": 9345,
+  "pixels invalid S2": 1179154,
+  "pixels land S2": 2398693,
+  "pixels permanent water S2": 1279752,
+  "pixels water S2": 1415529,
+  "purpose": "NaN",
+  "reference system": "epsg:4326",
+  "s2_date": "2020-01-16T06:52:18.251000+00:00",
+  "s2_image_path": "2020-01-16.tif",
+  "satellite": "Landsat-8",
+  "satellite date": "2020-01-13T06:33:00+00:00",
+  "satellite_pre_event": "Sentinel-2",
+  "shape": [
+    2278,
+    2192
+  ],
+  "source": "CopernicusEMS",
+  "timestamp_pre_event": "2019-10-08T06:37:00+00:00",
+  "transform": [
+    10.0,
+    0.0,
+    571380.0,
+    0.0,
+    -10.0,
+    2856500.0
+  ],
+  "valids": 1
+}

@@ -1,0 +1,9 @@
+{
+  "ids": [
+    "LC08_L2SP_145039_20130826_02_T1",
+    "LC08_L2SP_145039_20130911_02_T1"
+  ],
+  "no_change_predictions_or_reference_labels_read": true,
+  "protocol_sha256": "2f6d89b1f53232734e1afc051a8147bb8a1f6832c67c2eb9fec71482f8362e38",
+  "selection_rule": "AllsameL8T1path145row039fullAOIcoverageinpredeclaredtimewindow"
+}

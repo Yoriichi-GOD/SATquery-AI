@@ -1,0 +1,54 @@
+{
+  "bytes": 6360,
+  "full_remote_checksum": "NOT_ASSERTED",
+  "grid": {
+    "cell_area_m2": 100.0,
+    "cell_size_m": [
+      10.0,
+      10.0
+    ],
+    "crs": "EPSG:32754",
+    "shape": [
+      512,
+      512
+    ],
+    "transform": [
+      10.0,
+      0.0,
+      489560.0,
+      0.0,
+      -10.0,
+      8045500.0
+    ]
+  },
+  "license": "CC-BY-NC4.0",
+  "native_block_shapes": [
+    [
+      512,
+      512
+    ],
+    [
+      512,
+      512
+    ]
+  ],
+  "reference_product": "WorldFloodsv2@1f3faa2989e69930ac31d5c0a79fd224461123f8",
+  "resampling": "None;nativewindow",
+  "selected_bands": [
+    1,
+    2
+  ],
+  "sha256": "1f78b20e44a500bbc5d5637f55c046d36c13b6038557f47e1a12cf842e66d28d",
+  "source_bands": 2,
+  "source_shape": [
+    5731,
+    5400
+  ],
+  "source_url": "https://huggingface.co/datasets/isp-uv-es/WorldFloodsv2/resolve/1f3faa2989e69930ac31d5c0a79fd224461123f8/test/gt/EMSR342_06NORTHNORMANTON_DEL_v1.tif",
+  "window": [
+    2444,
+    2609,
+    512,
+    512
+  ]
+}

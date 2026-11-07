@@ -1,0 +1,304 @@
+{
+  "accuracy_metrics": "NOT_ASSESSED:No matched exposuretruth or complete positive/negative labels",
+  "attribute_update_strings": {
+    " ": 55,
+    "28Dec20": 5,
+    "9march21": 23
+  },
+  "case_id": "southern-sangam-vihar",
+  "inventories": {
+    "Aug2024_Agency_Drains": {
+      "gross_built_gain_near_mapped_drains": {
+        "150": {
+          "area_ha": 7.145235682406799,
+          "fraction": 0.07088527462705158,
+          "interpretation": "Proximity association only; not blockage, causality or confirmed exposure"
+        },
+        "30": {
+          "area_ha": 5.314425662595355,
+          "fraction": 0.05272247681146186,
+          "interpretation": "Proximity association only; not blockage, causality or confirmed exposure"
+        },
+        "90": {
+          "area_ha": 6.759752397465336,
+          "fraction": 0.06706103568914024,
+          "interpretation": "Proximity association only; not blockage, causality or confirmed exposure"
+        }
+      },
+      "mapped_unique_clipped_length_m": 12748.263483247274
+    },
+    "Sangam_Storm_Drain": {
+      "gross_built_gain_near_mapped_drains": {
+        "150": {
+          "area_ha": 4.8743144535361385,
+          "fraction": 0.04835629418190613,
+          "interpretation": "Proximity association only; not blockage, causality or confirmed exposure"
+        },
+        "30": {
+          "area_ha": 3.646309851539458,
+          "fraction": 0.036173708844637484,
+          "interpretation": "Proximity association only; not blockage, causality or confirmed exposure"
+        },
+        "90": {
+          "area_ha": 4.361182027305592,
+          "fraction": 0.04326569471533325,
+          "interpretation": "Proximity association only; not blockage, causality or confirmed exposure"
+        }
+      },
+      "mapped_unique_clipped_length_m": 9648.159274950016
+    }
+  },
+  "layer_counts": [
+    {
+      "name": "Sangam_Vihar_UC_Colony",
+      "positive_measure_intersections": 46,
+      "query_features": 46,
+      "service": "DIFC/sangam"
+    },
+    {
+      "name": "Assembly Constituencies",
+      "positive_measure_intersections": 5,
+      "query_features": 5,
+      "service": "DIFC/sangam"
+    },
+    {
+      "name": "UnauthorisedColony",
+      "positive_measure_intersections": 80,
+      "query_features": 80,
+      "service": "DIFC/sangam"
+    },
+    {
+      "name": "Storm_Drain",
+      "positive_measure_intersections": 83,
+      "query_features": 90,
+      "service": "DIFC/sangam"
+    },
+    {
+      "name": "UPDATED_SEWER_LINE",
+      "positive_measure_intersections": 206,
+      "query_features": 288,
+      "service": "DIFC/sangam"
+    },
+    {
+      "name": "UPDATED_WATER_PIPE_LINE",
+      "positive_measure_intersections": 722,
+      "query_features": 784,
+      "service": "DIFC/sangam"
+    },
+    {
+      "name": "Sewer_Pipe_Line",
+      "positive_measure_intersections": 652,
+      "query_features": 874,
+      "service": "DIFC/sangam"
+    },
+    {
+      "name": "Water_Pipe_Line",
+      "positive_measure_intersections": 637,
+      "query_features": 696,
+      "service": "DIFC/sangam"
+    },
+    {
+      "name": "NHAI_Storm_Drains",
+      "positive_measure_intersections": 0,
+      "query_features": 0,
+      "service": "DIFC/storm_drain_08082024"
+    },
+    {
+      "name": "JAMIA_INSTITUTE_Storm_Drains",
+      "positive_measure_intersections": 0,
+      "query_features": 0,
+      "service": "DIFC/storm_drain_08082024"
+    },
+    {
+      "name": "I&FC_Storm_Drains",
+      "positive_measure_intersections": 0,
+      "query_features": 0,
+      "service": "DIFC/storm_drain_08082024"
+    },
+    {
+      "name": "FOREST_Storm_Drains",
+      "positive_measure_intersections": 0,
+      "query_features": 0,
+      "service": "DIFC/storm_drain_08082024"
+    },
+    {
+      "name": "EDMC_Storm_Drains",
+      "positive_measure_intersections": 0,
+      "query_features": 0,
+      "service": "DIFC/storm_drain_08082024"
+    },
+    {
+      "name": "North_DMC_Storm_Drains",
+      "positive_measure_intersections": 0,
+      "query_features": 0,
+      "service": "DIFC/storm_drain_08082024"
+    },
+    {
+      "name": "SDMC_Storm_Drains",
+      "positive_measure_intersections": 43,
+      "query_features": 46,
+      "service": "DIFC/storm_drain_08082024"
+    },
+    {
+      "name": "New_Delhi_Municiple_Council_Storm_Drains",
+      "positive_measure_intersections": 0,
+      "query_features": 0,
+      "service": "DIFC/storm_drain_08082024"
+    },
+    {
+      "name": "PWD_Storm_Drains",
+      "positive_measure_intersections": 77,
+      "query_features": 84,
+      "service": "DIFC/storm_drain_08082024"
+    },
+    {
+      "name": "DDA_Storm_Drains",
+      "positive_measure_intersections": 0,
+      "query_features": 0,
+      "service": "DIFC/storm_drain_08082024"
+    },
+    {
+      "name": "DUSIB_Storm_Drains",
+      "positive_measure_intersections": 0,
+      "query_features": 0,
+      "service": "DIFC/storm_drain_08082024"
+    },
+    {
+      "name": "DSIIDC_Storm_Drains",
+      "positive_measure_intersections": 0,
+      "query_features": 0,
+      "service": "DIFC/storm_drain_08082024"
+    },
+    {
+      "name": "DMRC_Storm_Drains",
+      "positive_measure_intersections": 0,
+      "query_features": 0,
+      "service": "DIFC/storm_drain_08082024"
+    },
+    {
+      "name": "DJB_Storm_Drains",
+      "positive_measure_intersections": 0,
+      "query_features": 0,
+      "service": "DIFC/storm_drain_08082024"
+    },
+    {
+      "name": "DELHI_CANTT_Storm_Drains",
+      "positive_measure_intersections": 0,
+      "query_features": 0,
+      "service": "DIFC/storm_drain_08082024"
+    },
+    {
+      "name": "CPWD_Storm_Drains",
+      "positive_measure_intersections": 0,
+      "query_features": 0,
+      "service": "DIFC/storm_drain_08082024"
+    },
+    {
+      "name": "UP_Irrigation_Storm_Drains",
+      "positive_measure_intersections": 0,
+      "query_features": 0,
+      "service": "DIFC/storm_drain_08082024"
+    },
+    {
+      "name": "Old_Agra_canal_Storm_Drains",
+      "positive_measure_intersections": 0,
+      "query_features": 0,
+      "service": "DIFC/storm_drain_08082024"
+    },
+    {
+      "name": "NTPC_Storm_Drains",
+      "positive_measure_intersections": 0,
+      "query_features": 0,
+      "service": "DIFC/storm_drain_08082024"
+    },
+    {
+      "name": "Other_Storm_Drains",
+      "positive_measure_intersections": 0,
+      "query_features": 0,
+      "service": "DIFC/storm_drain_08082024"
+    },
+    {
+      "name": "Airport_Drains_DDA",
+      "positive_measure_intersections": 0,
+      "query_features": 0,
+      "service": "DIFC/storm_drain_08082024"
+    },
+    {
+      "name": "WaterLogging_50m",
+      "positive_measure_intersections": 1,
+      "query_features": 1,
+      "service": "DIFC/DIFC_portal_data"
+    }
+  ],
+  "license": "Raw official native geometry retained private locally; redistribution terms not established",
+  "limitations": [
+    "Drainage vintage and2017/2023network completeness unknown",
+    "Drain proximity cannot prove encroachment, blockage or floodcausality",
+    "Coarse DSM omits culverts and engineered conveyance; source epochs differ",
+    "No future-vintage geometry is used as independent2017/2023exposuretruth"
+  ],
+  "mapped_distinct_nodes": 90,
+  "mapped_node_pairs": 83,
+  "native_reference_acquisition_sha256": "fa067d7bdf747a4e7cc903d99f633aedd3f1410bd28fb7db4b8bb2bd2d7d6d32",
+  "network_warning": "Node identifiers retained for future verified routing; no network direction/capacity/condition inferred in this experiment",
+  "official_disclaimer": "GSDL does not guarantee accuracy/reliability/completeness or groundtruthing; supplying department responsible https://gsdl.org.in/",
+  "protocol_sha256": "2f6d89b1f53232734e1afc051a8147bb8a1f6832c67c2eb9fec71482f8362e38",
+  "reported_invert_MSL_positive_only": {
+    "median": 230.26,
+    "n": 83,
+    "p10": 224.296,
+    "p90": 234.4682
+  },
+  "reported_width_and_elevation_values": "Nonpositive/null values excluded as unknown, not physical zero; units inferred from published field names; vertical datum not independently verified",
+  "reported_width_m_positive_only": {
+    "median": 1.0,
+    "n": 83,
+    "p10": 0.9,
+    "p90": 1.2
+  },
+  "role": "OFFICIAL_MAPPED_CONTEXT_NOT_SURVEYED_GROUND_TRUTH",
+  "terrain_reference_agreement": {
+    "30": {
+      "interpretation": "Descriptive DSM-vs-engineered-network agreement, not exposure precision/recall",
+      "mapped_drain_to_modelstream_m": {
+        "median": 90.3500075415475,
+        "n": 967,
+        "p10": 16.322279330065324,
+        "p90": 204.51528177261906
+      },
+      "model_stream_cells": 1522,
+      "reference_sampling": "Every10m along unique clipped lines;modelstreamcellcenters",
+      "stream_to_mapped_drain_m": {
+        "median": 1059.5996096872555,
+        "n": 1522,
+        "p10": 124.19057563406201,
+        "p90": 2800.933862616947
+      },
+      "within30m_fraction": 0.02956636005256242,
+      "within90m_fraction": 0.0657030223390276
+    },
+    "90": {
+      "interpretation": "Descriptive DSM-vs-engineered-network agreement, not exposure precision/recall",
+      "mapped_drain_to_modelstream_m": {
+        "median": 93.22296162463604,
+        "n": 967,
+        "p10": 34.86183851546599,
+        "p90": 201.6098463267412
+      },
+      "model_stream_cells": 465,
+      "reference_sampling": "Every10m along unique clipped lines;modelstreamcellcenters",
+      "stream_to_mapped_drain_m": {
+        "median": 1139.0896537354195,
+        "n": 465,
+        "p10": 113.55852056951456,
+        "p90": 2873.0820727527885
+      },
+      "within30m_fraction": 0.02795698924731183,
+      "within90m_fraction": 0.07311827956989247
+    }
+  },
+  "urban_gross_gain_ha": 100.8,
+  "waterlogging_label_coverage": "Positive-only point with unknown eventdate; no exposed/unexposed denominator",
+  "waterlogging_mapped_points": 1,
+  "width_necessary_sampling_median_half_m": 0.5
+}

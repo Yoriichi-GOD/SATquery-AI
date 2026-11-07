@@ -1,0 +1,101 @@
+{
+  "abstract": "NaN",
+  "aoi_code": "08ITUANGONORTH",
+  "area_of_interest_file": "EMSR286_08ITUANGONORTH_DEL_MONIT02_v1_area_of_interest_a.shp",
+  "area_of_interest_polygon": {
+    "coordinates": [
+      [
+        [
+          -75.63981964199996,
+          6.903656495000064
+        ],
+        [
+          -75.89297699399998,
+          6.903656495000064
+        ],
+        [
+          -75.89297699399998,
+          7.175808688000075
+        ],
+        [
+          -75.63981964199996,
+          7.175808688000075
+        ],
+        [
+          -75.63981964199996,
+          6.903656495000064
+        ]
+      ]
+    ],
+    "type": "Polygon"
+  },
+  "bounding box": {
+    "east": -75.63981964199996,
+    "north": 7.141014639000048,
+    "south": 6.903656495000064,
+    "west": -75.83469518699997
+  },
+  "bounds": [
+    401340.0,
+    763140.0,
+    429360.0,
+    793280.0
+  ],
+  "cloud_probability": 0.3722398345308765,
+  "cloudprob_image_path": "None",
+  "country": "NaN",
+  "crs": "EPSG:32618",
+  "date_ems_code": "2018-05-16T00:00:00+00:00",
+  "ems_code": "EMSR286",
+  "encoding_values": [
+    {
+      "0": "invalid",
+      "1": "clear",
+      "2": "cloud"
+    },
+    {
+      "0": "invalid",
+      "1": "land",
+      "2": "water"
+    }
+  ],
+  "event id": "EMSR286_08ITUANGONORTH_DEL_MONIT02_v1",
+  "event type": "Riverine flood",
+  "gtversion": "v2",
+  "hydrology_file": "EMSR286_08ITUANGONORTH_DEL_MONIT02_v1_hydrography_a.shp",
+  "hydrology_file_l": "EMSR286_08ITUANGONORTH_DEL_MONIT02_v1_hydrography_l.shp",
+  "layer name": "EMSR286_08ITUANGONORTH_DEL_MONIT02_v1_observed_event_a",
+  "method clouds": "s2cloudless",
+  "names2file": "2018-05-22",
+  "observed_event_file": "EMSR286_08ITUANGONORTH_DEL_MONIT02_v1_observed_event_a.shp",
+  "permanent_water_image_path": "2018.tif",
+  "pixels clouds S2": 3097693,
+  "pixels flood water S2": 146524,
+  "pixels hydro water S2": 50873,
+  "pixels invalid S2": 26646,
+  "pixels land S2": 5900494,
+  "pixels permanent water S2": 5964,
+  "pixels water S2": 203034,
+  "purpose": "NaN",
+  "reference system": "epsg:4326",
+  "s2_date": "2018-05-22T15:36:21.460000+00:00",
+  "s2_image_path": "2018-05-22.tif",
+  "satellite": "Sentinel-2",
+  "satellite date": "2018-05-22T15:36:21+00:00",
+  "satellite_pre_event": "Sentinel-2",
+  "shape": [
+    3014,
+    2802
+  ],
+  "source": "CopernicusEMS",
+  "timestamp_pre_event": "2018-04-07T15:36:19+00:00",
+  "transform": [
+    10.0,
+    0.0,
+    401340.0,
+    0.0,
+    -10.0,
+    793280.0
+  ],
+  "valids": 1
+}

@@ -1,0 +1,219 @@
+{
+  "case_quality_gate": "INSUFFICIENT_CASE_COVERAGE",
+  "full_event_exposure_accuracy": "NOT_ASSESSED",
+  "interpretation": "Highresolutionposteventmorphologicalcontext;cannotvalidatepre-eventhazardpredictionorconfirmdamage",
+  "limitations": [
+    "PublishedsouthernmostWorldView3stripmaybebiased;inputcountdoesnotcertifylocalquality",
+    "Native2mpostingnot2mverticalaccuracy",
+    "Providerstablegroundcoregistrationisnotlocalsurveycontrol",
+    "Posteventtopographycanencodeconsequences;mustnotleakintoaprior-eventcausalbenchmark",
+    "FinitewindowandNoDataperimetersopentopographicboundaries"
+  ],
+  "native_valid_fraction": 0.9950231315019895,
+  "native_valid_pixels": 2656664,
+  "population": "ACTUAL_POSTEVENT_OPTICAL_STEREO_DEM_NOT_PREEVENT_TERRAIN",
+  "protocol_sha256": "834792e0fb8a2c6c2f66878a03168073c47627dfb6af5b8ffd18193133e4a719",
+  "quality_count_ge2_pixels": 2402436,
+  "quality_valid_fraction": 0.8998049403135338,
+  "reported_input_count": {
+    "median": 2.0,
+    "n": 2656664,
+    "p10": 2.0,
+    "p90": 2.0
+  },
+  "roi_native2m_pixels": 2669952,
+  "source_record": "https://zenodo.org/records/22842746",
+  "sources": {
+    "elevation": {
+      "bytes": 9379799,
+      "full_archive_hash": "NOT_VERIFIED_WINDOWED_ACCESS",
+      "license": "CC-BY-NC4.0;originalLevel1Bimagerycopyright2026Vantor",
+      "member": "composites/rasuwa_post_vantor_20260827-20260908_2m_ordered_v1.0.tif",
+      "native_crs": "EPSG:32645",
+      "native_resolution_m": [
+        2.0,
+        2.0
+      ],
+      "native_shape": [
+        15340,
+        16748
+      ],
+      "resampling": "None;native2mwindow",
+      "sha256": "5cae245c07452ff515a64464eaceaa8417eda4b557bc4c2508b31e935fb29d9c",
+      "source_archive_url": "https://zenodo.org/records/22842746/files/rasuwa_post_vantor_composites.zip",
+      "source_epoch": "2026-08-27through2026-09-08postevent",
+      "source_nodata": -9999.0,
+      "source_record": "https://doi.org/10.5281/zenodo.22842746",
+      "source_vertical_reference": "WGS84ellipsoid",
+      "transform": [
+        2.0,
+        0.0,
+        335346.0002048236,
+        0.0,
+        -2.0,
+        3119188.6879733764
+      ],
+      "window": [
+        2500,
+        9793,
+        1263,
+        2184
+      ]
+    },
+    "input_count": {
+      "bytes": 159991,
+      "full_archive_hash": "NOT_VERIFIED_WINDOWED_ACCESS",
+      "license": "CC-BY-NC4.0;originalLevel1Bimagerycopyright2026Vantor",
+      "member": "composites/rasuwa_post_vantor_20260827-20260908_2m_count_v1.0.tif",
+      "native_crs": "EPSG:32645",
+      "native_resolution_m": [
+        2.0,
+        2.0
+      ],
+      "native_shape": [
+        15340,
+        16748
+      ],
+      "resampling": "None;native2mwindow",
+      "sha256": "986d7cdd1fc30f89210db987a2a85ef8b752cd9a9cb30732d861374e18bd3e2d",
+      "source_archive_url": "https://zenodo.org/records/22842746/files/rasuwa_post_vantor_composites.zip",
+      "source_epoch": "2026-08-27through2026-09-08postevent",
+      "source_nodata": -9999.0,
+      "source_record": "https://doi.org/10.5281/zenodo.22842746",
+      "source_vertical_reference": "WGS84ellipsoid",
+      "transform": [
+        2.0,
+        0.0,
+        335346.0002048236,
+        0.0,
+        -2.0,
+        3119188.6879733764
+      ],
+      "window": [
+        2500,
+        9793,
+        1263,
+        2184
+      ]
+    }
+  },
+  "terrain": {
+    "30": {
+      "exposure_readiness": "NOT_VALIDATED:posteventvintage,registration,accuracyandphysicaladequacyunresolved",
+      "grid": {
+        "cell_area_m2": 900.0,
+        "cell_size_m": [
+          30.0,
+          30.0
+        ],
+        "crs": "EPSG:32645",
+        "shape": [
+          146,
+          85
+        ],
+        "transform": [
+          30.0,
+          0.0,
+          335340.0,
+          0.0,
+          -30.0,
+          3119190.0
+        ]
+      },
+      "hand_m": {
+        "median": 169.77114388981977,
+        "n": 10114,
+        "p10": 17.747320704760615,
+        "p90": 402.72773635414535
+      },
+      "hydrology": {
+        "boundary_condition": "Open outer edge and NoData perimeter; external contributing area unavailable",
+        "conditioning": "fill",
+        "filled_cells": 68,
+        "flat_parent_routes": 68,
+        "flow_method": "D8 steepest descent; Priority-Flood parent on filled flats",
+        "hand_valid_cells": 10114,
+        "interpretation": "Potential topographic drainage; not flood/debris propagation or flood depth",
+        "maximum_fill_m": 7.094942496001295,
+        "outlet_accumulation_sum_cells": 10671,
+        "outlets": 41,
+        "stream_cells": 427,
+        "stream_threshold_m2": 100000,
+        "total_cells": 12410,
+        "valid_cells": 10671,
+        "valid_fraction": 0.8598710717163578
+      },
+      "necessary_sampling_gate": {
+        "minimum_cells_across_feature": 2,
+        "required_feature_width_m": 10,
+        "status": "INSUFFICIENT_RESOLUTION",
+        "warning": "Sampling gate alone does not validate drains, elevations or flow."
+      },
+      "slope_degrees": {
+        "median": 37.16317406845053,
+        "n": 9631,
+        "p10": 22.935429163640887,
+        "p90": 48.26881458895035
+      }
+    },
+    "5": {
+      "exposure_readiness": "NOT_VALIDATED:posteventvintage,registration,accuracyandphysicaladequacyunresolved",
+      "grid": {
+        "cell_area_m2": 25.0,
+        "cell_size_m": [
+          5.0,
+          5.0
+        ],
+        "crs": "EPSG:32645",
+        "shape": [
+          874,
+          506
+        ],
+        "transform": [
+          5.0,
+          0.0,
+          335345.0,
+          0.0,
+          -5.0,
+          3119190.0
+        ]
+      },
+      "hand_m": {
+        "median": 172.7111736960086,
+        "n": 340098,
+        "p10": 20.78860574714254,
+        "p90": 408.5080056940016
+      },
+      "hydrology": {
+        "boundary_condition": "Open outer edge and NoData perimeter; external contributing area unavailable",
+        "conditioning": "fill",
+        "filled_cells": 4089,
+        "flat_parent_routes": 4089,
+        "flow_method": "D8 steepest descent; Priority-Flood parent on filled flats",
+        "hand_valid_cells": 340098,
+        "interpretation": "Potential topographic drainage; not flood/debris propagation or flood depth",
+        "maximum_fill_m": 13.389849453012175,
+        "outlet_accumulation_sum_cells": 384261,
+        "outlets": 415,
+        "stream_cells": 2712,
+        "stream_threshold_m2": 100000,
+        "total_cells": 442244,
+        "valid_cells": 384261,
+        "valid_fraction": 0.8688891200332848
+      },
+      "necessary_sampling_gate": {
+        "minimum_cells_across_feature": 2,
+        "required_feature_width_m": 10,
+        "status": "SCALE_GATE_PASSED",
+        "warning": "Sampling gate alone does not validate drains, elevations or flow."
+      },
+      "slope_degrees": {
+        "median": 38.93879611881315,
+        "n": 375339,
+        "p10": 20.71782253381087,
+        "p90": 54.11374608973898
+      }
+    }
+  },
+  "vertical_datum_comparison": "NO_ELEVATION_DIFFERENCING_WITH_EGM2008_GLO30"
+}

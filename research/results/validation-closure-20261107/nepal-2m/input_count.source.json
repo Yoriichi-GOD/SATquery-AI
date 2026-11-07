@@ -1,0 +1,36 @@
+{
+  "bytes": 159991,
+  "full_archive_hash": "NOT_VERIFIED_WINDOWED_ACCESS",
+  "license": "CC-BY-NC4.0;originalLevel1Bimagerycopyright2026Vantor",
+  "member": "composites/rasuwa_post_vantor_20260827-20260908_2m_count_v1.0.tif",
+  "native_crs": "EPSG:32645",
+  "native_resolution_m": [
+    2.0,
+    2.0
+  ],
+  "native_shape": [
+    15340,
+    16748
+  ],
+  "resampling": "None;native2mwindow",
+  "sha256": "986d7cdd1fc30f89210db987a2a85ef8b752cd9a9cb30732d861374e18bd3e2d",
+  "source_archive_url": "https://zenodo.org/records/22842746/files/rasuwa_post_vantor_composites.zip",
+  "source_epoch": "2026-08-27through2026-09-08postevent",
+  "source_nodata": -9999.0,
+  "source_record": "https://doi.org/10.5281/zenodo.22842746",
+  "source_vertical_reference": "WGS84ellipsoid",
+  "transform": [
+    2.0,
+    0.0,
+    335346.0002048236,
+    0.0,
+    -2.0,
+    3119188.6879733764
+  ],
+  "window": [
+    2500,
+    9793,
+    1263,
+    2184
+  ]
+}

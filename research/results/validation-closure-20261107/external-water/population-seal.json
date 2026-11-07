@@ -1,0 +1,13 @@
+{
+  "annotation_pixel_values_read": false,
+  "ids": [
+    "EMSR273_01GRILE_DEL_MONIT04_v2",
+    "EMSR286_08ITUANGONORTH_DEL_MONIT02_v1",
+    "EMSR333_01RATTALORO_DEL_MONIT01_v1",
+    "EMSR342_06NORTHNORMANTON_DEL_v1",
+    "EMSR347_06MWANZA_DEL_v1",
+    "EMSR419_AOI01_DEL_MONIT01"
+  ],
+  "protocol_sha256": "22800bab216b6b48889ca3cb0157356e58eb74167fd2efcd5d071c8e9b759973",
+  "selection": "Fixed before source/label pixels; no replacement of failed examples"
+}

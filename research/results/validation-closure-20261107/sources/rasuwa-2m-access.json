@@ -1,0 +1,153 @@
+{
+  "source_record": "https://zenodo.org/records/22842746",
+  "archive": "rasuwa_post_vantor_composites.zip",
+  "files": [
+    {
+      "file": "composites/00_rasuwa_post_wv02_20260908_B030001100EF4C10-B030001100EF4E10-B030001100EF4F10_2m_preview.png",
+      "method": 0,
+      "bytes": 2207913,
+      "compressed": 2207913
+    },
+    {
+      "file": "composites/00_rasuwa_post_wv03_20260827_B040001100881410-B040001100881610-B040001100882F10-B040001100881710_2m_median_preview.png",
+      "method": 0,
+      "bytes": 625024,
+      "compressed": 625024
+    },
+    {
+      "file": "composites/rasuwa_post_vantor_20260827-20260908_2m_count_v1.0.tif",
+      "method": 0,
+      "bytes": 10485812,
+      "compressed": 10485812
+    },
+    {
+      "file": "composites/rasuwa_post_vantor_20260827-20260908_2m_ordered_hs_v1.0.tif",
+      "method": 0,
+      "bytes": 107923467,
+      "compressed": 107923467
+    },
+    {
+      "file": "composites/rasuwa_post_vantor_20260827-20260908_2m_ordered_source_index.csv",
+      "method": 8,
+      "bytes": 386,
+      "compressed": 167
+    },
+    {
+      "file": "composites/rasuwa_post_vantor_20260827-20260908_2m_ordered_source_v1.0.tif",
+      "method": 0,
+      "bytes": 3157409,
+      "compressed": 3157409
+    },
+    {
+      "file": "composites/rasuwa_post_vantor_20260827-20260908_2m_ordered_v1.0.tif",
+      "method": 0,
+      "bytes": 399637988,
+      "compressed": 399637988
+    },
+    {
+      "file": "composites/rasuwa_post_vantor_20260827-20260908_2m_wmean_hs_v1.0.tif",
+      "method": 0,
+      "bytes": 107274574,
+      "compressed": 107274574
+    },
+    {
+      "file": "composites/rasuwa_post_vantor_20260827-20260908_2m_wmean_v1.0.tif",
+      "method": 0,
+      "bytes": 399682084,
+      "compressed": 399682084
+    },
+    {
+      "file": "composites/rasuwa_post_wv02_20260908_B030001100EF4C10-B030001100EF4E10-B030001100EF4F10_2m_count_v1.0.tif",
+      "method": 0,
+      "bytes": 2968645,
+      "compressed": 2968645
+    },
+    {
+      "file": "composites/rasuwa_post_wv02_20260908_B030001100EF4C10-B030001100EF4E10-B030001100EF4F10_2m_ordered_hs_v1.0.tif",
+      "method": 0,
+      "bytes": 13277519,
+      "compressed": 13277519
+    },
+    {
+      "file": "composites/rasuwa_post_wv02_20260908_B030001100EF4C10-B030001100EF4E10-B030001100EF4F10_2m_ordered_source_index.csv",
+      "method": 8,
+      "bytes": 249,
+      "compressed": 95
+    },
+    {
+      "file": "composites/rasuwa_post_wv02_20260908_B030001100EF4C10-B030001100EF4E10-B030001100EF4F10_2m_ordered_source_v1.0.tif",
+      "method": 0,
+      "bytes": 995098,
+      "compressed": 995098
+    },
+    {
+      "file": "composites/rasuwa_post_wv02_20260908_B030001100EF4C10-B030001100EF4E10-B030001100EF4F10_2m_ordered_v1.0.tif",
+      "method": 0,
+      "bytes": 44696733,
+      "compressed": 44696733
+    },
+    {
+      "file": "composites/rasuwa_post_wv02_20260908_B030001100EF4C10-B030001100EF4E10-B030001100EF4F10_2m_wmean_hs_v1.0.tif",
+      "method": 0,
+      "bytes": 13325452,
+      "compressed": 13325452
+    },
+    {
+      "file": "composites/rasuwa_post_wv02_20260908_B030001100EF4C10-B030001100EF4E10-B030001100EF4F10_2m_wmean_v1.0.tif",
+      "method": 0,
+      "bytes": 44724655,
+      "compressed": 44724655
+    },
+    {
+      "file": "composites/rasuwa_post_wv03_20260827_B040001100881410-B040001100881610-B040001100882F10-B040001100881710_2m_count_v1.0.tif",
+      "method": 0,
+      "bytes": 10915984,
+      "compressed": 10915984
+    },
+    {
+      "file": "composites/rasuwa_post_wv03_20260827_B040001100881410-B040001100881610-B040001100882F10-B040001100881710_2m_median_hs_v1.0.tif",
+      "method": 0,
+      "bytes": 47568513,
+      "compressed": 47568513
+    },
+    {
+      "file": "composites/rasuwa_post_wv03_20260827_B040001100881410-B040001100881610-B040001100882F10-B040001100881710_2m_median_v1.0.tif",
+      "method": 0,
+      "bytes": 182154270,
+      "compressed": 182154270
+    },
+    {
+      "file": "composites/rasuwa_post_wv03_20260827_B040001100881410-B040001100881610-B040001100882F10-B040001100881710_2m_nmad_v1.0.tif",
+      "method": 0,
+      "bytes": 136542928,
+      "compressed": 136542928
+    }
+  ],
+  "metadata_bytes_transferred": 134105,
+  "selected_header": {
+    "crs": "EPSG:32645",
+    "shape": [
+      15340,
+      16748
+    ],
+    "resolution": [
+      2.0,
+      2.0
+    ],
+    "bounds": [
+      330346.0002048236,
+      3108094.6879733764,
+      363842.0002048236,
+      3138774.6879733764
+    ],
+    "wgs84_envelope": [
+      85.2688037250328,
+      28.08746003510353,
+      85.6140956393568,
+      28.368193473294685
+    ],
+    "Syapru_bbox_envelope_fraction": 1.0,
+    "pixel_validity_not_read": true,
+    "post_event_only": true
+  }
+}

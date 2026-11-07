@@ -1,0 +1,72 @@
+{
+  "metrics": {
+    "MNDWI0": {
+      "accuracy": 0.936280914605693,
+      "f1": 0.4331280702968242,
+      "fn": 4877,
+      "fp": 11509,
+      "iou": 0.27642850834584476,
+      "n": 257160,
+      "precision": 0.35229894760538016,
+      "recall": 0.56209032953219,
+      "tn": 234514,
+      "tp": 6260
+    },
+    "MNDWI0_slope15": {
+      "accuracy": 0.9363742417172188,
+      "f1": 0.4334879855965653,
+      "fn": 4877,
+      "fp": 11485,
+      "iou": 0.2767217752630183,
+      "n": 257160,
+      "precision": 0.3527754296985066,
+      "recall": 0.56209032953219,
+      "tn": 234538,
+      "tp": 6260
+    },
+    "NDWI0": {
+      "accuracy": 0.9536203142012755,
+      "f1": 0.02069135396994827,
+      "fn": 11011,
+      "fp": 916,
+      "iou": 0.010453828922260018,
+      "n": 257160,
+      "precision": 0.12092130518234165,
+      "recall": 0.011313639220615965,
+      "tn": 245107,
+      "tp": 126
+    },
+    "all_land": {
+      "accuracy": 0.9566923316223362,
+      "f1": 0.0,
+      "fn": 11137,
+      "fp": 0,
+      "iou": 0.0,
+      "n": 257160,
+      "precision": null,
+      "recall": 0.0,
+      "tn": 246023,
+      "tp": 0
+    },
+    "all_water": {
+      "accuracy": 0.04330766837766371,
+      "f1": 0.08301993686101597,
+      "fn": 0,
+      "fp": 246023,
+      "iou": 0.04330766837766371,
+      "n": 257160,
+      "precision": 0.04330766837766371,
+      "recall": 1.0,
+      "tn": 0,
+      "tp": 11137
+    }
+  },
+  "pixels": 257160,
+  "population": "NEW_WORKSPACE_FIXED_TOTAL_WATER_COMPONENT_TEST",
+  "prediction_seal_sha256": "1f8d55ddca9ba8abd7a6f14c8fd78d10b761da31207b048744c32da71bedc16f",
+  "reference_clear_pixels": 257344,
+  "reference_sha256": "6551ff97fdfe6ff2919e1ffdc223f03bba813f1c5b8fc24aa0211eb3a3e44d10",
+  "reference_water_pixels": 11137,
+  "terrain_common_support_fraction": 0.980987548828125,
+  "total_window_pixels": 262144
+}

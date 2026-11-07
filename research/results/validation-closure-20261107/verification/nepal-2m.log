@@ -1,0 +1,3 @@
+{"asset": "elevation", "state": "NATIVE2M_WINDOW_ACQUIRED", "pixels": 2758392, "bytes": 9379799}
+{"asset": "input_count", "state": "NATIVE2M_WINDOW_ACQUIRED", "pixels": 2758392, "bytes": 159991}
+{"roi_pixels": 2669952, "quality_fraction": 0.8998049403135338, "case_gate": "INSUFFICIENT_CASE_COVERAGE"}

@@ -1,0 +1,25 @@
+{
+  "protocol_sha256": "2f6d89b1f53232734e1afc051a8147bb8a1f6832c67c2eb9fec71482f8362e38",
+  "ranking": [
+    {
+      "common_clear_fraction": 0.19564261845373326,
+      "common_clear_pixels": 73886,
+      "datetime": "2013-08-26T05:14:19.163948Z",
+      "id": "LC08_L2SP_145039_20130826_02_T1",
+      "roi_pixels": 377658,
+      "scene_cloud_cover": 46.23
+    },
+    {
+      "common_clear_fraction": 0.062278569499388335,
+      "common_clear_pixels": 23520,
+      "datetime": "2013-09-11T05:14:16.617619Z",
+      "id": "LC08_L2SP_145039_20130911_02_T1",
+      "roi_pixels": 377658,
+      "scene_cloud_cover": 45.27
+    }
+  ],
+  "role": "QAselectedlaterseasoncontext_not_peakdisasterextent",
+  "selected_before_reflectance_change_or_registration": true,
+  "selected_id": null,
+  "threshold": 0.25
+}

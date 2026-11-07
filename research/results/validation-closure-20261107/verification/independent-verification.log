@@ -1,0 +1,8 @@
+Traceback (most recent call last):
+  File "/mnt/c/Users/nrgen/.codex/.chatgpt-projects/g-p-6ad52225bccc8191b1ed5af2ed6b0646/research-campaign-20261107/repo/scripts/verify_validation_closure.py", line 65, in <module>
+    p=argparse.ArgumentParser();p.add_argument('--sources',required=True);p.add_argument('--output',required=True);a=p.parse_args();verify(a.sources,a.output)
+                                                                                                                                    ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/c/Users/nrgen/.codex/.chatgpt-projects/g-p-6ad52225bccc8191b1ed5af2ed6b0646/research-campaign-20261107/repo/scripts/verify_validation_closure.py", line 30, in verify
+    assert all(stored[k]==v for k,v in counts.items())
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError

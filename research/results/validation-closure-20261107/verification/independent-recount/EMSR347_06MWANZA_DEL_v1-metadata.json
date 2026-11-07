@@ -1,0 +1,100 @@
+{
+  "abstract": "NaN",
+  "aoi_code": "06MWANZA",
+  "area_of_interest_file": "EMSR347_06MWANZA_DEL_v1_area_of_interest_a.shp",
+  "area_of_interest_polygon": {
+    "coordinates": [
+      [
+        [
+          35.052412151000055,
+          -15.799173120999967
+        ],
+        [
+          34.35325705500003,
+          -15.799173120999967
+        ],
+        [
+          34.35325705500003,
+          -15.246377553999935
+        ],
+        [
+          35.052412151000055,
+          -15.246377553999935
+        ],
+        [
+          35.052412151000055,
+          -15.799173120999967
+        ]
+      ]
+    ],
+    "type": "Polygon"
+  },
+  "bounding box": {
+    "east": 35.052412151000055,
+    "north": -15.25254829599993,
+    "south": -15.79815773799993,
+    "west": 34.35325705500003
+  },
+  "bounds": [
+    644940.0,
+    8252200.0,
+    720440.0,
+    8313980.0
+  ],
+  "cloud_probability": 0.058987917298069,
+  "cloudprob_image_path": "None",
+  "country": "NaN",
+  "crs": "EPSG:32736",
+  "date_ems_code": "2019-03-10T00:00:00+00:00",
+  "ems_code": "EMSR347",
+  "encoding_values": [
+    {
+      "0": "invalid",
+      "1": "clear",
+      "2": "cloud"
+    },
+    {
+      "0": "invalid",
+      "1": "land",
+      "2": "water"
+    }
+  ],
+  "event id": "EMSR347_06MWANZA_DEL_v1",
+  "event type": "Riverine flood",
+  "gtversion": "v2",
+  "hydrology_file": "EMSR347_06MWANZA_DEL_v1_hydrography_a.shp",
+  "layer name": "EMSR347_06MWANZA_DEL_v1_observed_event_a",
+  "method clouds": "s2cloudless",
+  "names2file": "2019-03-10",
+  "observed_event_file": "EMSR347_06MWANZA_DEL_v1_observed_event_a.shp",
+  "permanent_water_image_path": "2019.tif",
+  "pixels clouds S2": 2266343,
+  "pixels flood water S2": 272314,
+  "pixels hydro water S2": 395806,
+  "pixels invalid S2": 747565,
+  "pixels land S2": 43746554,
+  "pixels permanent water S2": 18421,
+  "pixels water S2": 685593,
+  "purpose": "NaN",
+  "reference system": "epsg:4326",
+  "s2_date": "2019-03-10T08:04:11.500000+00:00",
+  "s2_image_path": "2019-03-10.tif",
+  "satellite": "Sentinel-2",
+  "satellite date": "2019-03-10T07:37:00+00:00",
+  "satellite_pre_event": "Sentinel-2",
+  "shape": [
+    6178,
+    7550
+  ],
+  "source": "CopernicusEMS",
+  "timestamp_pre_event": "2018-11-10T09:50:00+00:00",
+  "transform": [
+    10.0,
+    0.0,
+    644940.0,
+    0.0,
+    -10.0,
+    8313980.0
+  ],
+  "valids": 1
+}
