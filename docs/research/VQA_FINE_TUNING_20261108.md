@@ -59,3 +59,14 @@ Each run creates a fresh private runtime directory and a separate result subfold
 On the current Windows/WSL host, `scripts/launch_vqa_overnight.py --run-id NAME` waits for the worker and temporarily requests that Windows remain awake. Use the documented existing `/root/satquery/.venv` GPU environment; this is a host-specific launcher, not a portable runtime claim. The request is released when the helper exits. Keep the laptop plugged in with its lid open.
 
 Progress is recorded in `.runtime/vqa-20261108/current-status.json`, the run's `heartbeat.json`, its archive status, and the worker log. These are execution state, not measured model gains. A failed or incomplete run must not be reported as a completed benchmark. The worker does not change production model defaults or the Day 1 tag.
+
+### Recover a frozen evaluation after power loss
+
+Confirm worker/launcher processes are absent and the heartbeat is stale before preserving its old lock. Do not remove a live worker's lock. Preserve the interrupted status, heartbeat and lock as evidence. The recovery path applies only after a sealed candidate and final-reference identity exist; it never resumes or repeats training.
+
+```sh
+python scripts/vqa_evaluation_recovery.py --run-id EXISTING-RUN --attempt-id UNIQUE-ATTEMPT --audit-only
+python scripts/launch_vqa_overnight.py --run-id EXISTING-RUN --resume-frozen-evaluation --attempt-id UNIQUE-ATTEMPT
+```
+
+Inspect the audit before launch. It checks the native archive and unchanged reference seal, then validates both arms' hashes, identities and support batch by batch. An unexpected pattern of widespread damage requires diagnosis rather than a blind restart. Preserve the stale lock before launching. The worker verifies the original model weights and runtime, reproduces 32 saved answers per arm, rechecks all native evaluation images and retained prediction hashes, and preserves invalid/incomplete batches before repeating them. The original wall-time ceiling, frozen model, scoring rules and full denominator remain unchanged. Empty/error attempts remain failures. No production promotion occurs automatically.

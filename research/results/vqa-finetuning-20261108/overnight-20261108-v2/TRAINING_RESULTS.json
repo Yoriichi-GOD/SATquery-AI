@@ -1,0 +1,377 @@
+{
+  "run_id": "overnight-20261108-v2",
+  "scope": "Official-training filename-group holdout used for checkpoint selection; not the final VRSBench evaluation or published GPT metric",
+  "baseline": {
+    "n": 1093,
+    "completed": 1093,
+    "correct": 368,
+    "strict_correct": 363,
+    "missing": 0,
+    "errors": 0,
+    "truncated": 167,
+    "accuracy": 0.3366880146386093,
+    "per_category": {
+      "category": {
+        "n": 94,
+        "correct": 8
+      },
+      "colour": {
+        "n": 126,
+        "correct": 52
+      },
+      "scene": {
+        "n": 32,
+        "correct": 9
+      },
+      "quantity": {
+        "n": 188,
+        "correct": 55
+      },
+      "other": {
+        "n": 376,
+        "correct": 180
+      },
+      "position": {
+        "n": 137,
+        "correct": 19
+      },
+      "presence": {
+        "n": 71,
+        "correct": 43
+      },
+      "direction": {
+        "n": 11,
+        "correct": 1
+      },
+      "size": {
+        "n": 37,
+        "correct": 0
+      },
+      "shape": {
+        "n": 21,
+        "correct": 1
+      }
+    },
+    "scorer": "vrs-normalised-whole-answer-v1",
+    "official_gpt_score": null
+  },
+  "selected": {
+    "n": 1093,
+    "completed": 1093,
+    "correct": 665,
+    "strict_correct": 657,
+    "missing": 0,
+    "errors": 0,
+    "truncated": 0,
+    "accuracy": 0.6084172003659652,
+    "per_category": {
+      "category": {
+        "n": 94,
+        "correct": 44
+      },
+      "colour": {
+        "n": 126,
+        "correct": 79
+      },
+      "scene": {
+        "n": 32,
+        "correct": 22
+      },
+      "quantity": {
+        "n": 188,
+        "correct": 93
+      },
+      "other": {
+        "n": 376,
+        "correct": 282
+      },
+      "position": {
+        "n": 137,
+        "correct": 57
+      },
+      "presence": {
+        "n": 71,
+        "correct": 58
+      },
+      "direction": {
+        "n": 11,
+        "correct": 4
+      },
+      "size": {
+        "n": 37,
+        "correct": 15
+      },
+      "shape": {
+        "n": 21,
+        "correct": 11
+      }
+    },
+    "scorer": "vrs-normalised-whole-answer-v1",
+    "official_gpt_score": null
+  },
+  "selected_optimizer_step": 1536,
+  "optimizer_steps": 1536,
+  "micro_steps": 12288,
+  "eligible_training_rows": 9216,
+  "trainable_parameters": 2179072,
+  "peak_allocated_GiB": 5.05741548538208,
+  "validation_gate": {
+    "passed": true,
+    "gain": 0.27172918572735594,
+    "bucket_regressions": [],
+    "scope": "Validation point-estimate gate; not independent scientific or production approval"
+  },
+  "paired_validation": {
+    "gain": 0.2717291857273559,
+    "ci95": [
+      0.24131455399061033,
+      0.3022421524663677
+    ],
+    "groups": 256,
+    "repetitions": 1000,
+    "seed": 20261108,
+    "scope": "Filename-source-group bootstrap; not proven geographic independence"
+  },
+  "checkpoints": [
+    {
+      "optimizer_step": 384,
+      "score": {
+        "n": 1093,
+        "completed": 1093,
+        "correct": 629,
+        "strict_correct": 621,
+        "missing": 0,
+        "errors": 0,
+        "truncated": 0,
+        "accuracy": 0.57548032936871,
+        "per_category": {
+          "category": {
+            "n": 94,
+            "correct": 43
+          },
+          "colour": {
+            "n": 126,
+            "correct": 83
+          },
+          "scene": {
+            "n": 32,
+            "correct": 21
+          },
+          "quantity": {
+            "n": 188,
+            "correct": 83
+          },
+          "other": {
+            "n": 376,
+            "correct": 265
+          },
+          "position": {
+            "n": 137,
+            "correct": 48
+          },
+          "presence": {
+            "n": 71,
+            "correct": 61
+          },
+          "direction": {
+            "n": 11,
+            "correct": 0
+          },
+          "size": {
+            "n": 37,
+            "correct": 13
+          },
+          "shape": {
+            "n": 21,
+            "correct": 12
+          }
+        },
+        "scorer": "vrs-normalised-whole-answer-v1",
+        "official_gpt_score": null
+      },
+      "adapter_sha256": "ccb309511f998e47c687498502b30ce38f42be36f9ffcd19c21e1ad32ecf0851",
+      "seconds": 2749.421740333
+    },
+    {
+      "optimizer_step": 768,
+      "score": {
+        "n": 1093,
+        "completed": 1093,
+        "correct": 646,
+        "strict_correct": 636,
+        "missing": 0,
+        "errors": 0,
+        "truncated": 0,
+        "accuracy": 0.5910338517840805,
+        "per_category": {
+          "category": {
+            "n": 94,
+            "correct": 45
+          },
+          "colour": {
+            "n": 126,
+            "correct": 80
+          },
+          "scene": {
+            "n": 32,
+            "correct": 21
+          },
+          "quantity": {
+            "n": 188,
+            "correct": 85
+          },
+          "other": {
+            "n": 376,
+            "correct": 273
+          },
+          "position": {
+            "n": 137,
+            "correct": 53
+          },
+          "presence": {
+            "n": 71,
+            "correct": 58
+          },
+          "direction": {
+            "n": 11,
+            "correct": 4
+          },
+          "size": {
+            "n": 37,
+            "correct": 16
+          },
+          "shape": {
+            "n": 21,
+            "correct": 11
+          }
+        },
+        "scorer": "vrs-normalised-whole-answer-v1",
+        "official_gpt_score": null
+      },
+      "adapter_sha256": "4ea792c11c934bbbd8301bbd319383d2e578fb318683dc43dc7b7cd670990b29",
+      "seconds": 4857.711915823
+    },
+    {
+      "optimizer_step": 1152,
+      "score": {
+        "n": 1093,
+        "completed": 1093,
+        "correct": 660,
+        "strict_correct": 653,
+        "missing": 0,
+        "errors": 0,
+        "truncated": 0,
+        "accuracy": 0.6038426349496798,
+        "per_category": {
+          "category": {
+            "n": 94,
+            "correct": 48
+          },
+          "colour": {
+            "n": 126,
+            "correct": 83
+          },
+          "scene": {
+            "n": 32,
+            "correct": 22
+          },
+          "quantity": {
+            "n": 188,
+            "correct": 88
+          },
+          "other": {
+            "n": 376,
+            "correct": 274
+          },
+          "position": {
+            "n": 137,
+            "correct": 57
+          },
+          "presence": {
+            "n": 71,
+            "correct": 59
+          },
+          "direction": {
+            "n": 11,
+            "correct": 5
+          },
+          "size": {
+            "n": 37,
+            "correct": 15
+          },
+          "shape": {
+            "n": 21,
+            "correct": 9
+          }
+        },
+        "scorer": "vrs-normalised-whole-answer-v1",
+        "official_gpt_score": null
+      },
+      "adapter_sha256": "8d59781bb594e30c9ae3ff91f151fdc9cfa06096493af812843f1a6cf1f9eabc",
+      "seconds": 6849.221098947
+    },
+    {
+      "optimizer_step": 1536,
+      "score": {
+        "n": 1093,
+        "completed": 1093,
+        "correct": 665,
+        "strict_correct": 657,
+        "missing": 0,
+        "errors": 0,
+        "truncated": 0,
+        "accuracy": 0.6084172003659652,
+        "per_category": {
+          "category": {
+            "n": 94,
+            "correct": 44
+          },
+          "colour": {
+            "n": 126,
+            "correct": 79
+          },
+          "scene": {
+            "n": 32,
+            "correct": 22
+          },
+          "quantity": {
+            "n": 188,
+            "correct": 93
+          },
+          "other": {
+            "n": 376,
+            "correct": 282
+          },
+          "position": {
+            "n": 137,
+            "correct": 57
+          },
+          "presence": {
+            "n": 71,
+            "correct": 58
+          },
+          "direction": {
+            "n": 11,
+            "correct": 4
+          },
+          "size": {
+            "n": 37,
+            "correct": 15
+          },
+          "shape": {
+            "n": 21,
+            "correct": 11
+          }
+        },
+        "scorer": "vrs-normalised-whole-answer-v1",
+        "official_gpt_score": null
+      },
+      "adapter_sha256": "c01775b17c5c267c302274614f294f3d68b6d7207706a72702ad60acbf4ae968",
+      "seconds": 8777.883009616002
+    }
+  ],
+  "selection_sha256": "624e158421a13c6ba3783e508a5ee3fbb3a8ecc792edf95eefc162f1f2e93f3a",
+  "adapter_sha256": "c01775b17c5c267c302274614f294f3d68b6d7207706a72702ad60acbf4ae968",
+  "protocol_sha256": "a66a1235e15ab9ce9434339fc6c3e381c7ec82f494ae5cfcde0c04f814db5547",
+  "production_defaults_changed": false
+}

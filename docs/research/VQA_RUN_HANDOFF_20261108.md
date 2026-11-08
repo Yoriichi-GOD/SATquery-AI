@@ -1,5 +1,15 @@
 # VQA overnight execution receipt
 
+## Latest: frozen evaluation resumed after laptop shutdown
+
+On 8 November the laptop shut down during the full paired evaluation. The last status flag still said running, but launcher/worker processes were absent and the heartbeat was stale. Training had completed all 1,536 updates and the candidate had already been frozen. Its official-training holdout score is **665/1,093 (60.84%)**, compared with **368/1,093 (33.67%)** for the matched-prompt base model; truncations fell from 167 to zero. These are selection-validation diagnostics, not the final benchmark result. [Measured training results](../../research/results/vqa-finetuning-20261108/overnight-20261108-v2/TRAINING_RESULTS.json).
+
+Recovery attempt `power-recovery-20261108-verified` retained **31,156 hash-verified predictions per arm** and identified two damaged/incomplete tail batches. The native archive, original source, corpus, final-reference seal, candidate freeze and model weights remain fixed. Both model arms must reproduce 32 saved validation answers before new benchmark inference proceeds. Invalid batches are preserved and repeated with their original batch shapes; valid predictions must retain their original hashes. No retraining or checkpoint reselection occurs.
+
+The original **14:21 IST** wall-time ceiling is retained, including downtime. Current state remains `.runtime/vqa-20261108/current-status.json`; the resumed log is `.runtime/vqa-20261108/overnight-20261108-v2-power-recovery-20261108-verified.worker.log`. Software recovery contracts cover torn data, foreign identities, missing arms, reference seals, failed-attempt denominators and the original deadline. Final benchmark results remain pending until `FINAL_RESULTS.json`, both full prediction exports and `REPORT.md` are complete.
+
+## Earlier launch and recovery records
+
 **Active recovery run: `overnight-20261108-v2`, launched 8 November 2026 at 02:21 IST.** The machine restarted during v1 after 29 retained optimizer updates, before a saved training-validation checkpoint. The interrupted run is preserved and disclosed; no tuning gain or completed full benchmark is claimed.
 
 The replacement uses identical training code, protocol and corpus hashes. All 2,304 native training images were rehashed. The complete 3,976,656,690-byte evaluation-image archive matches the pinned upstream SHA-256 `67f99c1dd437fdab94fea1f54e049ad56d198c3c873237c79d9b944200d248b1`. Cumulative conservative download accounting, including the interrupted transfer, is 5,184,033,359 bytes against the unchanged 6 GiB ceiling.
