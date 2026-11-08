@@ -2,14 +2,18 @@
 
 The user authorized an overnight local training and VRSBench evaluation cycle. The current release and Day 1 tag are preserved; this work is isolated on `codex/vqa-finetuning-20261108`.
 
+**Completed 8 November at 11:42 IST**, including recovery after a laptop shutdown. The full 37,409-question matched comparison produced 12,163 baseline versus 23,379 adapter matches: **32.51% versus 62.50% normalised whole-answer exact match**. The predeclared native-file overlap diagnostic identified two training/evaluation duplicate images, covering six questions. Excluding them leaves 37,403 questions and **32.51% versus 62.49%**. Full exports and both cohorts were independently recounted. [Final report and limitations](../../research/results/vqa-finetuning-20261108/overnight-20261108-v2/REPORT.md).
+
+This is one configuration and one seed under a fixed short-answer prompt and 32-token output cap. The score includes answer-format effects; it is not the published GPT-judge metric or proof of improved visual reasoning, geographic transfer or end-to-end application accuracy. Foundation-model exposure remains unknown, historical benchmark inspection is disclosed, and production defaults remain unchanged.
+
 ## Definition of done
 
-1. Verify the current model/data identities and historical benchmark exposure.
-2. Test split separation, target masking, scorer behavior and real GPU memory/backward execution before the long job.
-3. Train a separate LoRA adapter on eligible official training data, with caption replay and validation-only checkpoint selection.
-4. Freeze checkpoint and inference identities before acquiring final references; run baseline and candidate on the pinned VRSBench evaluation questions.
-5. Retain raw predictions, every eligible denominator, failures, resources, per-category results and paired uncertainty. Reload the adapter and verify genuine inference before any integration decision.
-6. Keep production defaults unchanged until review of the measured result. A running job, lower training loss or answer-format improvement alone is not completion or proof of better visual reasoning.
+- [x] Verify the current model/data identities and disclose historical benchmark exposure and its unknowns.
+- [x] Test split separation, target masking, scorer behavior and real GPU memory/backward execution before the long job.
+- [x] Train a separate LoRA adapter on eligible official training data, with caption replay and validation-only checkpoint selection.
+- [x] Freeze checkpoint and inference identities before acquiring final references; run both arms on all pinned VRSBench evaluation questions.
+- [x] Retain raw predictions, full denominators, failures, resources, per-category results and paired uncertainty; verify adapter reload and independently recount both full and overlap-excluded results.
+- [x] Preserve production defaults and the Day 1 tag. Keep exact-answer improvement distinct from visual-reasoning or application-integration claims.
 
 The [frozen experiment configuration](../../research/experiments/vqa-finetuning-20261108.json) sets the data/label boundaries, seed, candidate/checkpoint budget, resource ceilings, inference controls and selection gates. Maximum budget: 12 elapsed hours for the worker, 6 GiB public downloads, one candidate configuration and no paid compute or paid evaluator. Native data and weights remain local and ignored by Git.
 

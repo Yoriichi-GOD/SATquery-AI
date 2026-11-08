@@ -1,6 +1,16 @@
 # VQA overnight execution receipt
 
-## Latest: frozen evaluation resumed after laptop shutdown
+## Complete and independently verified
+
+The worker completed successfully on **8 November 2026 at 11:42 IST**, before its original 14:21 IST ceiling; the launcher recorded exit code zero. Both complete 37,409-answer exports, the report and fixed metrics exist and passed an independent recount. The full set improved from **12,163/37,409 (32.51%)** to **23,379/37,409 (62.50%)** normalised exact match. Neither arm had missing rows or execution errors; truncations fell from 4,741 to zero.
+
+Two native evaluation PNGs are byte-identical to actual training PNGs. The registered exclusion diagnostic removes their six questions: **12,160/37,403 (32.51%)** versus **23,375/37,403 (62.49%)**. This exclusion was also independently recounted. Filename grouping/native-file hashing does not establish geographic independence or absence of foundation-model exposure. Historical prior inspection remains disclosed.
+
+All 31,156 retained predictions per arm preserve their original hashes. Both model arms reproduced 32 saved answers after reload. The full regression suite passed **336 tests**, including nine new recovery contracts, and the implementation CI passed. Model defaults, original frozen sources and the Day 1 checkpoint remain preserved. Official GPT judging and production promotion were not performed.
+
+[Report](../../research/results/vqa-finetuning-20261108/overnight-20261108-v2/REPORT.md) · [Full results](../../research/results/vqa-finetuning-20261108/overnight-20261108-v2/FINAL_RESULTS.json) · [Independent recount](../../research/results/vqa-finetuning-20261108/overnight-20261108-v2/INDEPENDENT_RECOUNT.json) · [Overlap verification](../../research/results/vqa-finetuning-20261108/overnight-20261108-v2/OVERLAP_AUDIT.json).
+
+## Shutdown recovery record
 
 On 8 November the laptop shut down during the full paired evaluation. The last status flag still said running, but launcher/worker processes were absent and the heartbeat was stale. Training had completed all 1,536 updates and the candidate had already been frozen. Its official-training holdout score is **665/1,093 (60.84%)**, compared with **368/1,093 (33.67%)** for the matched-prompt base model; truncations fell from 167 to zero. These are selection-validation diagnostics, not the final benchmark result. [Measured training results](../../research/results/vqa-finetuning-20261108/overnight-20261108-v2/TRAINING_RESULTS.json).
 

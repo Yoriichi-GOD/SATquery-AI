@@ -1,0 +1,26 @@
+{
+  "run_id": "overnight-20261108-v2",
+  "attempt_id": "power-recovery-20261108-verified",
+  "audited_utc": "2026-11-08T04:38:07.038660+00:00",
+  "valid_questions_each_arm": 31156,
+  "invalid_batches": [
+    {
+      "batch": "007789",
+      "reason": "JSONDecodeError"
+    },
+    {
+      "batch": "007790",
+      "reason": "FileNotFoundError"
+    }
+  ],
+  "total_questions_each_arm": 37409,
+  "native_archive_sha256": "67f99c1dd437fdab94fea1f54e049ad56d198c3c873237c79d9b944200d248b1",
+  "candidate_freeze_sha256": "069ee04d1e836fc762476ef31b906a58c8be5dd90d9a3e3146fc8c29c77fd491",
+  "resume_orchestration_sha256": "d0b97604d1561515977461fb5ae4856b10697a1315a43313084cda15dc110bdd",
+  "training_or_candidate_selection_changed": false,
+  "reloaded_validation_answers_matched_per_arm": 32,
+  "native_images_redecoded": 9349,
+  "new_training_steps": 0,
+  "original_started_utc": "2026-11-07T20:51:29.511506+00:00",
+  "original_deadline_utc": "2026-11-08T08:51:29.511506+00:00"
+}

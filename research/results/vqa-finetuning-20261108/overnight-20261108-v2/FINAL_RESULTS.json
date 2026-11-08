@@ -1,0 +1,470 @@
+{
+  "run_id": "overnight-20261108-v2",
+  "completed_utc": "2026-11-08T06:12:21.992264+00:00",
+  "scope": "Full pinned model-only VRSBench VQA; deterministic whole-answer diagnostics, not the published GPT-judge metric or end-to-end application accuracy",
+  "metrics": {
+    "base": {
+      "n": 37409,
+      "completed": 37409,
+      "correct": 12163,
+      "strict_correct": 12067,
+      "missing": 0,
+      "errors": 0,
+      "truncated": 4741,
+      "accuracy": 0.3251356625410997,
+      "per_category": {
+        "object color": {
+          "n": 3550,
+          "correct": 1544
+        },
+        "object quantity": {
+          "n": 6374,
+          "correct": 2334
+        },
+        "object existence": {
+          "n": 7789,
+          "correct": 5230
+        },
+        "object position": {
+          "n": 5828,
+          "correct": 1060
+        },
+        "object category": {
+          "n": 5434,
+          "correct": 576
+        },
+        "object direction": {
+          "n": 477,
+          "correct": 72
+        },
+        "object size": {
+          "n": 1011,
+          "correct": 121
+        },
+        "object shape": {
+          "n": 1423,
+          "correct": 107
+        },
+        "scene type": {
+          "n": 3197,
+          "correct": 573
+        },
+        "reasoning": {
+          "n": 902,
+          "correct": 287
+        },
+        "image": {
+          "n": 1129,
+          "correct": 168
+        },
+        "rural or urban": {
+          "n": 295,
+          "correct": 91
+        }
+      },
+      "scorer": "vrs-normalised-whole-answer-v1",
+      "official_gpt_score": null
+    },
+    "candidate": {
+      "n": 37409,
+      "completed": 37409,
+      "correct": 23379,
+      "strict_correct": 23136,
+      "missing": 0,
+      "errors": 0,
+      "truncated": 0,
+      "accuracy": 0.6249565612553128,
+      "per_category": {
+        "object color": {
+          "n": 3550,
+          "correct": 2152
+        },
+        "object quantity": {
+          "n": 6374,
+          "correct": 3287
+        },
+        "object existence": {
+          "n": 7789,
+          "correct": 7001
+        },
+        "object position": {
+          "n": 5828,
+          "correct": 2952
+        },
+        "object category": {
+          "n": 5434,
+          "correct": 2921
+        },
+        "object direction": {
+          "n": 477,
+          "correct": 216
+        },
+        "object size": {
+          "n": 1011,
+          "correct": 497
+        },
+        "object shape": {
+          "n": 1423,
+          "correct": 812
+        },
+        "scene type": {
+          "n": 3197,
+          "correct": 1733
+        },
+        "reasoning": {
+          "n": 902,
+          "correct": 569
+        },
+        "image": {
+          "n": 1129,
+          "correct": 1006
+        },
+        "rural or urban": {
+          "n": 295,
+          "correct": 233
+        }
+      },
+      "scorer": "vrs-normalised-whole-answer-v1",
+      "official_gpt_score": null
+    }
+  },
+  "paired_gain": {
+    "gain": 0.29982089871421314,
+    "ci95": [
+      0.2912859007832898,
+      0.3086769783566797
+    ],
+    "groups": 5167,
+    "repetitions": 1000,
+    "seed": 20261108,
+    "scope": "Filename-source-group bootstrap; not proven geographic independence"
+  },
+  "known_reused_image_subset": {
+    "base": {
+      "n": 45,
+      "completed": 45,
+      "correct": 12,
+      "strict_correct": 12,
+      "missing": 0,
+      "errors": 0,
+      "truncated": 8,
+      "accuracy": 0.26666666666666666,
+      "per_category": {
+        "scene type": {
+          "n": 5,
+          "correct": 0
+        },
+        "object existence": {
+          "n": 12,
+          "correct": 7
+        },
+        "object quantity": {
+          "n": 5,
+          "correct": 2
+        },
+        "object size": {
+          "n": 2,
+          "correct": 0
+        },
+        "object position": {
+          "n": 9,
+          "correct": 1
+        },
+        "image": {
+          "n": 2,
+          "correct": 0
+        },
+        "object category": {
+          "n": 6,
+          "correct": 1
+        },
+        "object shape": {
+          "n": 1,
+          "correct": 0
+        },
+        "reasoning": {
+          "n": 1,
+          "correct": 0
+        },
+        "object color": {
+          "n": 2,
+          "correct": 1
+        }
+      },
+      "scorer": "vrs-normalised-whole-answer-v1",
+      "official_gpt_score": null
+    },
+    "candidate": {
+      "n": 45,
+      "completed": 45,
+      "correct": 27,
+      "strict_correct": 27,
+      "missing": 0,
+      "errors": 0,
+      "truncated": 0,
+      "accuracy": 0.6,
+      "per_category": {
+        "scene type": {
+          "n": 5,
+          "correct": 0
+        },
+        "object existence": {
+          "n": 12,
+          "correct": 12
+        },
+        "object quantity": {
+          "n": 5,
+          "correct": 3
+        },
+        "object size": {
+          "n": 2,
+          "correct": 0
+        },
+        "object position": {
+          "n": 9,
+          "correct": 4
+        },
+        "image": {
+          "n": 2,
+          "correct": 2
+        },
+        "object category": {
+          "n": 6,
+          "correct": 3
+        },
+        "object shape": {
+          "n": 1,
+          "correct": 0
+        },
+        "reasoning": {
+          "n": 1,
+          "correct": 1
+        },
+        "object color": {
+          "n": 2,
+          "correct": 2
+        }
+      },
+      "scorer": "vrs-normalised-whole-answer-v1",
+      "official_gpt_score": null
+    }
+  },
+  "exposure_registry_scope": "Minimum known prior inspection from two saved manifests; not exhaustive, no untouched-test claim",
+  "excluding_detected_training_pixel_overlap": {
+    "base": {
+      "n": 37403,
+      "completed": 37403,
+      "correct": 12160,
+      "strict_correct": 12064,
+      "missing": 0,
+      "errors": 0,
+      "truncated": 4740,
+      "accuracy": 0.32510761168890195,
+      "per_category": {
+        "object color": {
+          "n": 3549,
+          "correct": 1544
+        },
+        "object quantity": {
+          "n": 6372,
+          "correct": 2332
+        },
+        "object existence": {
+          "n": 7789,
+          "correct": 5230
+        },
+        "object position": {
+          "n": 5826,
+          "correct": 1059
+        },
+        "object category": {
+          "n": 5434,
+          "correct": 576
+        },
+        "object direction": {
+          "n": 477,
+          "correct": 72
+        },
+        "object size": {
+          "n": 1011,
+          "correct": 121
+        },
+        "object shape": {
+          "n": 1423,
+          "correct": 107
+        },
+        "scene type": {
+          "n": 3196,
+          "correct": 573
+        },
+        "reasoning": {
+          "n": 902,
+          "correct": 287
+        },
+        "image": {
+          "n": 1129,
+          "correct": 168
+        },
+        "rural or urban": {
+          "n": 295,
+          "correct": 91
+        }
+      },
+      "scorer": "vrs-normalised-whole-answer-v1",
+      "official_gpt_score": null
+    },
+    "candidate": {
+      "n": 37403,
+      "completed": 37403,
+      "correct": 23375,
+      "strict_correct": 23132,
+      "missing": 0,
+      "errors": 0,
+      "truncated": 0,
+      "accuracy": 0.6249498703312568,
+      "per_category": {
+        "object color": {
+          "n": 3549,
+          "correct": 2152
+        },
+        "object quantity": {
+          "n": 6372,
+          "correct": 3285
+        },
+        "object existence": {
+          "n": 7789,
+          "correct": 7001
+        },
+        "object position": {
+          "n": 5826,
+          "correct": 2951
+        },
+        "object category": {
+          "n": 5434,
+          "correct": 2921
+        },
+        "object direction": {
+          "n": 477,
+          "correct": 216
+        },
+        "object size": {
+          "n": 1011,
+          "correct": 497
+        },
+        "object shape": {
+          "n": 1423,
+          "correct": 812
+        },
+        "scene type": {
+          "n": 3196,
+          "correct": 1732
+        },
+        "reasoning": {
+          "n": 902,
+          "correct": 569
+        },
+        "image": {
+          "n": 1129,
+          "correct": 1006
+        },
+        "rural or urban": {
+          "n": 295,
+          "correct": 233
+        }
+      },
+      "scorer": "vrs-normalised-whole-answer-v1",
+      "official_gpt_score": null
+    }
+  },
+  "native_images_decoded": 9349,
+  "training_pixel_overlap_images": [
+    "06505_0000.png",
+    "10445_0000.png"
+  ],
+  "independent_foundation_model_exposure": "NOT_ESTABLISHED",
+  "validation_selection": {
+    "n": 1093,
+    "completed": 1093,
+    "correct": 665,
+    "strict_correct": 657,
+    "missing": 0,
+    "errors": 0,
+    "truncated": 0,
+    "accuracy": 0.6084172003659652,
+    "per_category": {
+      "category": {
+        "n": 94,
+        "correct": 44
+      },
+      "colour": {
+        "n": 126,
+        "correct": 79
+      },
+      "scene": {
+        "n": 32,
+        "correct": 22
+      },
+      "quantity": {
+        "n": 188,
+        "correct": 93
+      },
+      "other": {
+        "n": 376,
+        "correct": 282
+      },
+      "position": {
+        "n": 137,
+        "correct": 57
+      },
+      "presence": {
+        "n": 71,
+        "correct": 58
+      },
+      "direction": {
+        "n": 11,
+        "correct": 4
+      },
+      "size": {
+        "n": 37,
+        "correct": 15
+      },
+      "shape": {
+        "n": 21,
+        "correct": 11
+      }
+    },
+    "scorer": "vrs-normalised-whole-answer-v1",
+    "official_gpt_score": null
+  },
+  "validation_gate": {
+    "passed": true,
+    "gain": 0.27172918572735594,
+    "bucket_regressions": [],
+    "scope": "Validation point-estimate gate; not independent scientific or production approval"
+  },
+  "prediction_sha256": {
+    "base": "00ff0954f2784c1686da0e45b601a876dd3b2861e321f45b977f74a5911d9060",
+    "candidate": "7b95d4d7e572caa8b1aeeb77f21563426e19c081c084ccbef9230c982d39e10d"
+  },
+  "reference_sha256": "4a797f5fc456331a55938b689350228bb7aa200b7e9a3972a6604b14dcfc175c",
+  "candidate_freeze_sha256": "069ee04d1e836fc762476ef31b906a58c8be5dd90d9a3e3146fc8c29c77fd491",
+  "elapsed_seconds": 33652.835083,
+  "accounted_download_bytes": 5193391604,
+  "production_defaults_changed": false,
+  "official_gpt_judge": "NOT_RUN",
+  "resumed_after_shutdown": {
+    "attempt_id": "power-recovery-20261108-verified",
+    "retained_questions_each_arm": 31156,
+    "preserved_invalid_batches": [
+      {
+        "batch": "007789",
+        "reason": "JSONDecodeError"
+      },
+      {
+        "batch": "007790",
+        "reason": "FileNotFoundError"
+      }
+    ],
+    "original_wall_ceiling_preserved": true
+  }
+}

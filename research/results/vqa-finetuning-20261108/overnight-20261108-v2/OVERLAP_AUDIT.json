@@ -1,0 +1,47 @@
+{
+  "verified_utc": "2026-11-08T06:16:09.907577+00:00",
+  "scope": "Exact native PNG byte duplication, independently compared against actual training files. This does not establish geographic independence or absence of historical/foundation-model exposure.",
+  "overlap_images": [
+    {
+      "evaluation_image": "06505_0000.png",
+      "training_images": [
+        "04818_0000.png"
+      ],
+      "native_png_sha256": "d694d2a25f94f6d621e2a6b6b8447c6cf5b7b744c310aa88ca4b1f0608ccde69",
+      "evaluation_questions": 3
+    },
+    {
+      "evaluation_image": "10445_0000.png",
+      "training_images": [
+        "00708_0000.png"
+      ],
+      "native_png_sha256": "d90db7a359fa8ae03350c1557f79199f7298aff1703a22d3f74b7ca140945ad8",
+      "evaluation_questions": 3
+    }
+  ],
+  "excluded_questions": 6,
+  "retained_questions_each_arm": 37403,
+  "independently_recounted_excluding_overlap": {
+    "base": {
+      "n": 37403,
+      "completed": 37403,
+      "correct": 12160,
+      "strict_correct": 12064,
+      "missing": 0,
+      "errors": 0,
+      "truncated": 4740,
+      "accuracy": 0.32510761168890195
+    },
+    "candidate": {
+      "n": 37403,
+      "completed": 37403,
+      "correct": 23375,
+      "strict_correct": 23132,
+      "missing": 0,
+      "errors": 0,
+      "truncated": 0,
+      "accuracy": 0.6249498703312568
+    }
+  },
+  "paired_gain_excluding_overlap": 0.29984225864235486
+}

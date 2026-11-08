@@ -1,0 +1,37 @@
+{
+  "verified_utc": "2026-11-08T06:12:58.975448+00:00",
+  "scope": "Independent standard-library metric implementation; same registered normalization, full sealed exports and native final references",
+  "questions_each_arm": 37409,
+  "recounts": {
+    "base": {
+      "n": 37409,
+      "completed": 37409,
+      "correct": 12163,
+      "strict_correct": 12067,
+      "missing": 0,
+      "errors": 0,
+      "truncated": 4741,
+      "accuracy": 0.3251356625410997
+    },
+    "candidate": {
+      "n": 37409,
+      "completed": 37409,
+      "correct": 23379,
+      "strict_correct": 23136,
+      "missing": 0,
+      "errors": 0,
+      "truncated": 0,
+      "accuracy": 0.6249565612553128
+    }
+  },
+  "paired_gain": 0.29982089871421314,
+  "retained_original_questions_each_arm_hash_verified": 31156,
+  "reference_sha256": "4a797f5fc456331a55938b689350228bb7aa200b7e9a3972a6604b14dcfc175c",
+  "prediction_sha256": {
+    "base": "00ff0954f2784c1686da0e45b601a876dd3b2861e321f45b977f74a5911d9060",
+    "candidate": "7b95d4d7e572caa8b1aeeb77f21563426e19c081c084ccbef9230c982d39e10d"
+  },
+  "complete_report_and_exports_present": true,
+  "official_gpt_judge": "NOT_RUN",
+  "production_defaults_changed": false
+}
